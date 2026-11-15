@@ -30,7 +30,7 @@ This deliberately narrows the first mechanics report to a **falsifiable question
 7. Future experiment/FE crack-path overlay with DIC validation: **not available**.
 
 ## Required comparison tables
-- **T1:** verified 32-work matrix and top-ten closest prior models, including limitations of abstract-only inference.
+- **T1:** screening 41-work matrix and top-ten closest prior models, including limitations of abstract-only inference.
 - **T2:** 6 proposed simulations against A/B/C capability and experimental cost.
 - **T3:** benchmark progression: analytic/legacy homogeneous vs one-hole vs multi-void vs *future* interface model.
 - **T4:** blinded mesh and increment convergence; record missing/failed runs, not just selected winners.
@@ -38,11 +38,11 @@ This deliberately narrows the first mechanics report to a **falsifiable question
 
 ## Expected scientific results by stage (no double counting)
 - **Already achieved independently:** method experience in homogeneous cracked plates, source evidence for T3→T6, signed SIF, MTS and isolated T/GMTS investigations; this is *not* a research result on new cementitious architecture.
-- **Stage 0 under Issue #7:** literature review, access-qualified matrix, source inventory, critical hypothesis and feasibility decisions. The matrix is a **screening bibliography**, not evidence that 32 primary papers have been read cover to cover.
+- **Stage 0 under Issue #7:** literature review, access-qualified matrix, source inventory, critical hypothesis and feasibility decisions. The matrix is a **screening bibliography**, not evidence that 41 primary papers have been read cover to cover.
 - **Future after explicit approval:** independent single-phase architecture G2/G1 experiments with falsification, a bounded generalization or documented failure, and possible laboratory test design.
 - **Future after new qualification:** two-phase polymer–cement CZM and/or auxetic hinge dynamics, linked to simulations 1/3/4/5 in the proposal.
 
 ## Scientific publication standards
 Do not write “first” or “novel crack steering” without a detailed closest-paper method table. Do not infer physical arrest from an unpropagated path, `K` at an invalid interface, or enhanced durability from reduced elastic stress alone. An adequately verified **negative result** (no change in crack-driving force at controlled architecture parameters) is an acceptable scientific conclusion and should not be rewritten as a positive one.
 
-**Approval gate:** the researcher reviews the newest proposal, selects G2/G1 or rejects both, approves physical dimensions and geometry, and only then may authorize a separate FEM/CZM issue.
+**Approval gate:** the researcher reviews the newest proposal, has selected G2 for focused analysis (G1 is optional), reviews its mathematical admissibility, approves physical dimensions and geometry, and only then may authorize a separate FEM/CZM issue.
