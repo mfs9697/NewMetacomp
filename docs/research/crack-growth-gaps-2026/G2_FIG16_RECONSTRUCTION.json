@@ -1,0 +1,175 @@
+{
+  "schema": "newmetacomp.g2.figure16.geometry.preliminary.v1",
+  "status": "source_reconstruction_not_fem_qualified",
+  "created_date": "2026-11-15",
+  "reference": {
+    "article": "Alshoaibi and Fageehi (2023), Materials 16 6481, section 3.3, Figure 16(a)",
+    "doi": "10.3390/ma16196481",
+    "figure_url": "https://mdpi-res.com/materials/materials-16-06481/article_deploy/html/images/materials-16-06481-g016a-550.jpg"
+  },
+  "coordinate_system": {
+    "origin": "lower-left corner of rectangular plate",
+    "axis_x": "right",
+    "axis_y": "up",
+    "unit": "F (printed figure length unit, not independently authenticated physical unit)",
+    "scale_note": "The 2023 text labels hole diameter 0.5 cm and a=1 cm; the original Cornell 1990 experiments use inches. Do not merge scales."
+  },
+  "rectangle": {
+    "xmin": 0,
+    "ymin": 0,
+    "xmax": 20,
+    "ymax": 8,
+    "confidence": "read_directly_from_Figure_16"
+  },
+  "holes": [
+    {
+      "id": "top",
+      "center": [
+        5.55,
+        6.75
+      ],
+      "radius": 0.25,
+      "derivation": "x=10-4.45; y=8-1.25; diameter=0.5",
+      "confidence": "dimensioned_figure"
+    },
+    {
+      "id": "middle",
+      "center": [
+        5.55,
+        4.75
+      ],
+      "radius": 0.25,
+      "derivation": "first minus 2 along y",
+      "confidence": "dimensioned_figure"
+    },
+    {
+      "id": "bottom",
+      "center": [
+        5.55,
+        2.75
+      ],
+      "radius": 0.25,
+      "derivation": "middle minus 2 along y",
+      "confidence": "dimensioned_figure"
+    }
+  ],
+  "initial_crack": {
+    "mouth": [
+      5,
+      0
+    ],
+    "tip": [
+      5,
+      1
+    ],
+    "orientation": "vertical up",
+    "length": 1,
+    "confidence": "mouth x from 5 dimension; length from 2023 §3.3 text, figure only has a"
+  },
+  "boundary_conditions": {
+    "load": {
+      "point": [
+        10,
+        8
+      ],
+      "type": "vertical downward point resultant",
+      "magnitude": null,
+      "unit": null,
+      "confidence": "position/direction on figure; magnitude unavailable in §3.3"
+    },
+    "left_support": {
+      "point": [
+        1,
+        0
+      ],
+      "type": "hinge/pin",
+      "prescribed_ux": 0,
+      "prescribed_uy": 0,
+      "confidence": "symbol plus assumed symmetric span with right support x=19; left x is NOT explicitly dimensioned in Fig.16"
+    },
+    "right_support": {
+      "point": [
+        19,
+        0
+      ],
+      "type": "vertical roller",
+      "prescribed_uy": 0,
+      "prescribed_ux": "free",
+      "confidence": "center-to-support horizontal length 9 shown in figure"
+    },
+    "other_boundaries": {
+      "traction": "zero where not explicitly loaded/support-contact; includes crack faces and hole walls",
+      "confidence": "idealization inferred, not explicitly tabulated"
+    }
+  },
+  "material_2023": {
+    "material": "PMMA",
+    "young_modulus_GPa": 2.8,
+    "poisson_ratio": 0.3,
+    "source": "§3.3",
+    "plane_state": null,
+    "thickness": null,
+    "confidence": "E/nu explicit; plane assumption and thickness not specified for this example"
+  },
+  "separate_physical_interpretations": [
+    {
+      "name": "2023_text_implied_centimeter_scale",
+      "scale_mm_per_F": 10,
+      "provenance": "2023 §3.3 hole diameter=0.5cm, starter crack=1cm; rectangle dimensions are unlabeled in Fig.16",
+      "status": "consistent_text_interpretation_not_measured_experiment"
+    },
+    {
+      "name": "1990_inch_experiment_context",
+      "scale_mm_per_F": 25.4,
+      "provenance": "Cornell report 90-8 original 20x8 inch specimens 0.5 inch thickness and hole size; geometry of an individual specimen differs",
+      "status": "do_not_claim_fig16_matches_specimen"
+    }
+  ],
+  "original_experiment": {
+    "source": "Ingraffea and Grigoriu, Probabilistic Fracture Mechanics: A Validation of Predictive Capability, Cornell Report 90-8 (1990), DTIC ADA228877, section 5",
+    "url": "https://apps.dtic.mil/sti/citations/ADA228877",
+    "geometry_units": "inches",
+    "rectangle_in": [
+      20,
+      8
+    ],
+    "thickness_in": 0.5,
+    "experimental_specimens_with_holes": 7,
+    "examples_from_report": [
+      {
+        "id": 1,
+        "initial_crack_length_in": 1,
+        "crack_distance_from_load_line_in": 6
+      },
+      {
+        "id": 2,
+        "initial_crack_length_in": 2.5,
+        "crack_distance_from_load_line_in": 6
+      },
+      {
+        "id": 3,
+        "initial_crack_length_in": 1.5,
+        "crack_distance_from_load_line_in": 5
+      }
+    ],
+    "experiment_loading": "CMOD controlled; do not assume a single constant applied P as experimental control",
+    "method": "PROFRANC, MTS, increment 0.25 inch, stopped near a hole approx 0.1 of hole radius; does not simulate automatic intersection",
+    "source_access": "full-text OCR transcription accessible via Academia page; archival DTIC PDF not downloaded or visually verified"
+  },
+  "independent_comparison": {
+    "source": "Holl 2014 PhD thesis section 5.1 Figure 5.3",
+    "url": "https://www.ikm.uni-hannover.de/fileadmin/ikm/publications/2014_Holl_PhD_Thesis_01.pdf",
+    "status": "a different reproduced configuration; shows hole center x=6a, notch length 1.5a and a=25.4 mm; not interchangeable with Figure16 2023"
+  },
+  "unresolved": [
+    "Published figure16 length unit itself unspecified; 2023 narrative says centimeters while Cornell experiments are inches",
+    "Left support x=1F from symmetry inferred rather than separately dimensioned",
+    "Load P magnitude and transverse application method not specified in §3.3",
+    "Thickness and plane stress/plane strain assumption not given for §3.3",
+    "2023 initial crack (d=5F, a=1F) not identified with a named Cornell specimen",
+    "Experimental Fig.17 curve has no machine-readable path coordinates; color plots are qualitative until digitized with uncertainty",
+    "E=2.8GPa nu=0.3 in 2023 are not Cornell report's separately measured material constants",
+    "The report scan and specific experimental specimen metadata need archival visual verification"
+  ],
+  "authorization": "geometry/BC provenance document only; no PDE, SIF or crack trajectory computations authorized"
+}
