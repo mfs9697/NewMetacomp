@@ -8,6 +8,7 @@
 - **G4** is deferred pending new interface FEM/CZM; **G5** is not a novel standalone hinge mechanism (Xu 2020, Xie 2025); **G6** deferred pending transient dynamic fracture validation.
 
 ### Closest direct counterexamples
+**Important update:** Direct competitors Arunkumar–Nithin 2023 ([10.3233/SFC-220294](https://doi.org/10.3233/SFC-220294)), Alshoaibi–Fageehi 2022 ([10.3390/ma15010363](https://doi.org/10.3390/ma15010363)), and Fageehi–Alshoaibi 2024 ([10.3390/app14020897](https://doi.org/10.3390/app14020897)) **veto** broad claims of novel hole steering, SIF change, or hole/no-hole free-path comparisons. See [G2 focused audit and controlled factorization](G2_FOCUSED_AUDIT_AND_TEST_PROTOCOL.md).
 1. [Gao–Liu–Wei, JMPS 2026](https://doi.org/10.1016/j.jmps.2026.106729): architecture-sensitive crack paths and a topology-consistent configurational driving force in discrete lattices.
 2. [Li–Liu–Jin–Du, EFM 2026](https://doi.org/10.1016/j.engfracmech.2026.112098): concrete aggregate bypass/penetration transition.
 3. [Gupta–Moini, Materials and Structures 2026](https://doi.org/10.1617/s11527-026-03269-0): broad cementitious architected fracture/toughening mechanisms.
@@ -68,4 +69,4 @@ No automatic branching, void crossing, interface penetration or physical arrest 
 For a later concrete/cementitious specimen: notched three-point bending or SCB with manufactured smooth perforations and fixed notch geometry, optical DIC of advancing path, load–CMOD and imaging of fracture zones. Measure size dependence and FPZ length. If the material is quasibrittle at the cell size, abandon elastic LEFM alone and calibrate a cohesive model rather than fitting impossible effective `K` values.
 
 ## Disposition
-**Recommended research decision:** approve *scope formulation* G2+G1 only after the unreviewed 2026 primary manuscripts and signed proposal versions are checked; do **not** issue a simulation permit on the basis of this Stage-0 document. If primary sources defeat novelty, close with an explicit negative novelty verdict and pivot to G4 only after heterogeneous/CZM qualification.
+**Recommended research decision (updated):** the researcher selected G2 for focused scrutiny. Before any numerical campaign, use the stricter G2 audit for V0 external validation and V1 frozen-tip energetics. Broad G2 novelty is rejected; a nuanced counterfactual comparison remains a conditional question only. Final execution permit still requires the unreviewed 2026 primary manuscripts and signed proposal versions are checked; do **not** issue a simulation permit on the basis of this Stage-0 document. If primary sources defeat novelty, close with an explicit negative novelty verdict and pivot to G4 only after heterogeneous/CZM qualification.
