@@ -176,14 +176,12 @@ solid='MAT-C1-C2-C3';
 if localPilot
  % Partition the same THREE-HOLE solid by nonintersecting guide disks.
  % CSG union reconstructs all the original material: NO fourth hole.
- bulk=['(',solid,')'];
  sf=['((',solid,')'];
  for j=1:numel(localHoleIndices)
     k=localHoleIndices(j);
     guideName=sprintf('G%d',k);
     cols{4+j}=[1;holeX(k);holeY(k);guideOuterR(j)];
     names{end+1}=guideName; %#ok<AGROW>
-    bulk=[bulk,'-',guideName]; %#ok<AGROW>
     sf=[sf,'-',guideName]; %#ok<AGROW>
  end
  sf=[sf,')'];
