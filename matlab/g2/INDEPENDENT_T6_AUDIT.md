@@ -52,3 +52,47 @@ A successful `INDEPENDENT_T6_GEOMETRY_PASS` is an additional *geometric* check o
 `E = 47245 - 12018 = 35227`, `B = 2(35227)-3(23207)=833`, `I=35227-833=34394`, `chi=12018-35227+23207=-2`. The independent MATLAB check recomputes these from connectivity rather than taking the reported counts on trust.
 
 **No claimed independent runtime PASS yet.** Do not merge or perform mechanics on this basis.
+
+## Actual first independent audit (2026-11-16 22:02:49 Kyiv): implementation exception, not a geometric verdict
+
+The researcher executed the audit from this PR and supplied actual batch output. Free RAM **7.10 GiB**, R2023a, original inputs hashed by PowerShell:
+
+```text
+Source candidate SHA256:
+9D74134FDF4765449C0F4E4EC87EA5B9E3B0A94B542A80E7E04DF3BC4EDC6A96
+
+Pinned specimen JSON SHA256:
+45A88FA0926472DDBE5E70E4C80A97B88196DD45D8A266FA04273F89790B47BF
+
+Audit output:
+outputs/g2_independent_t6/run_20261116_220249_096/
+```
+
+First audit stopped at **`g2_independent_t6_checker.m:102`**:
+
+```text
+Error using *
+Incorrect dimensions for matrix multiplication.
+dj=(x*dNr).*(y*dNs)-(x*dNs).*(y*dNr);
+```
+
+The root cause was our incorrect coordinate indexing `x=X6(T6,1); y=X6(T6,2);`. In MATLAB, this is not guaranteed to return **M-elements by 6-nodes** arrays for a matrix-valued row subscript. The intended, shape-safe operation is:
+
+```matlab
+x=reshape(X6(T6(:),1),size(T6));
+y=reshape(X6(T6(:),2),size(T6));
+```
+
+The correction is isolated in `g2_independent_t6_jacobian.m`, a read-only **13-position** quadratic Jacobian helper. The original independent 38-gate checker calls this helper, leaving **all acceptance thresholds and other checks unchanged**.
+
+A deterministic no-PDE synthetic test `check_g2_independent_t6_jacobian.m` is now called **before** loading the author's MAT:
+- Two separate affine T6 elements with expected constant positive Jacobians **2 and 6 mm²**, verifying the exact **2-by-6** gathering layout.
+- One inverted T6 that must be rejected as negative.
+- One intentionally displaced midside producing a non-affine, nonconstant Jacobian that must be detected.
+- Original inputs must not be modified.
+
+**Test/code status:** source-level verification and independent arithmetic cross-check of these manufactured cases succeeded. **New MATLAB runtime has not yet been executed**, so do not claim the synthetic preflight or the 38 geometry gates passed. The original failed `run_20261116_220249_096` remains immutable and documented as **`HOLD_INDEPENDENT_T6_EXCEPTION`**; this is **NOT `HOLD_T6_GEOMETRY`**.
+
+Repeat the same command below after fetching the latest PR head. It writes a new audit run, reads exactly the **same source candidate MAT and geometry JSON**, and does **not** regenerate a mesh. Expected first new evidence is `G2_INDEPENDENT_T6_SYNTHETIC_PASS=1`, followed by actual 38-gate results or another explicit diagnostic. A synthetic PASS does not imply 38/38 on the real candidate.
+
+**If a geometric gate fails after the corrected Jacobian**, preserve its actual name and computed evidence. Do not suppress, weaken or reclassify it to get a PASS.
