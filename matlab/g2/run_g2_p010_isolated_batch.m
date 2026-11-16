@@ -53,6 +53,19 @@ try
      end
      close(R.figure);R=rmfield(R,'figure');
  end
+ if isfield(R,'tipZoomFigure')&&ishandle(R.tipZoomFigure)
+     try
+        exportgraphics(R.tipZoomFigure,fullfile(folder, ...
+             'p010_inner_tip_zoom.png'),'Resolution',280);
+        exportgraphics(R.tipZoomFigure,fullfile(folder, ...
+             'p010_inner_tip_zoom.pdf'),'ContentType','vector');
+        fprintf('P010_INNER_DISK_FIGURE=%s\n', ...
+             fullfile(folder,'p010_inner_tip_zoom.png'));
+     catch MEplot
+        fprintf(2,'G2_P010_ZOOM_EXPORT_WARNING=%s\n',MEplot.message);
+     end
+     close(R.tipZoomFigure);R=rmfield(R,'tipZoomFigure');
+ end
  if R.pass
      X3=R.coord3;T3=R.connect3; %#ok<NASGU>
      X6=R.coord6;T6=R.connect6; %#ok<NASGU>
