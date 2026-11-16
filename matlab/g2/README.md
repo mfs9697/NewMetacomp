@@ -86,3 +86,18 @@ The physical test was CMOD controlled. The marker `P` shows **where the load is 
 2. Visually verify the vector PDF and the edge-labelled PDE geometry (exact 3 holes, no extra face/edge).
 3. Save the MATLAB console output and figure as evidence and compare the original Cornell Fig. 5.1/5.2 when archival scan becomes available.
 4. Only then consider *separate crack-bank topology/meshing task*; still no automatic permission for physical LEFM runs.
+
+### 16 November 2026 — First author batch, preflight failure and fix
+
+The first **actually executed MATLAB R2023a** command started MATLAB with **9.98 GiB free physical memory**, then stopped **before CAD creation** at `g2_specimen1_pencil_mesh.m:39`. Its output included:
+
+```text
+If you specify a message identifier argument,
+you must specify the message text argument.
+```
+
+The immediate defect was our invalid `assert(cond,'G2:PDEToolboxMissing')`; that concealed an unsatisfied dependency check. The same check incorrectly treated `generateMesh` exclusively as a MATLAB file, although it is a **PDE model method**. This branch corrects *all* malformed ID-bearing asserts in the pilot and runner, replaces the test with `g2_pde_toolbox_preflight.m` (checks `createpde`, `decsg` and model methods), and writes `PDE_PREFLIGHT_PASS` and details to both the log and `batch_summary.json`.
+
+**Original first batch is a HOLD, not a geometry failure.** There is no claim the next batch succeeds: subsequent actual meshing/pairing gates must still be executed and observed. Warning lines pointing at obsolete Google Drive MATLAB startup folders are unrelated to the shown exception and can be cleaned independently in the author's MATLAB path settings.
+
+After fetching the latest head of this branch, repeat the exact launcher shown above. Collect a **new** timestamped `run_*` directory, retaining the original failed run without editing it.
