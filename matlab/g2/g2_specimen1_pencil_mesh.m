@@ -455,8 +455,9 @@ for k=1:2
  plot(XX(edge,1),XX(edge,2),'r-','LineWidth',3.0);
  for j=1:numel(elementIDs)
     q=XX(T(elementIDs(j),:),:);
-    patch(ax,q(:,1),q(:,2),'none', ...
-      'EdgeColor',[.9,.22,.1],'LineWidth',1.5);
+    patch(ax,'XData',q(:,1),'YData',q(:,2), ...
+      'FaceColor','none','EdgeColor',[.9,.22,.1], ...
+      'LineWidth',1.5);
  end
  plot(ax,center(1),center(2),'ro','MarkerSize',5);
  axis(ax,'equal');grid(ax,'on');
