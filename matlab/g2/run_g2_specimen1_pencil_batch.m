@@ -1,4 +1,4 @@
-function R = run_g2_specimen1_pencil_batch()
+function R = run_g2_specimen1_pencil_batch(Hmax_mm)
 %RUN_G2_SPECIMEN1_PENCIL_BATCH  Headless 3-hole pencil/collapse CAD pilot.
 %
 % Called by MATLAB R2023a:
@@ -6,6 +6,11 @@ function R = run_g2_specimen1_pencil_batch()
 %
 % This job has ZERO physics: NO K/G, stiffness, solve, propagation.
 % A candidate-geometry PASS is NOT an accepted p010 LEFM mesh.
+% Optional Hmax_mm is the SINGLE varied control in a preregistered trial.
+if nargin<1,Hmax_mm=7;end
+assert(isnumeric(Hmax_mm)&&isscalar(Hmax_mm)&&isfinite(Hmax_mm)&& ...
+    Hmax_mm>=5&&Hmax_mm<=7, 'G2:InvalidHmaxControl', ...
+    'Hmax_mm must be finite and within the controlled 5-to-7 mm range.');
 here=fileparts(mfilename('fullpath'));
 repoRoot=fileparts(fileparts(here));
 outRoot=fullfile(repoRoot,'outputs','g2_specimen1_pencil');
@@ -25,9 +30,16 @@ fprintf('MATLAB_RELEASE=%s\n',version('-release'));
 fprintf('SOURCE_FILE=%s\n',mfilename('fullpath'));
 fprintf('OUTDIR=%s\n',folder);
 fprintf('PHYSICAL_SOLVE=NO\n');
+fprintf('CONTROL_HMAX_MM=%.9g\n',Hmax_mm);
+fprintf('CONTROL_HMIN_MM=0.12\nCONTROL_HGRAD=1.12\n');
+fprintf('CONTROL_HEDGE_MM=0.45\nCONTROL_CHANNEL_HALF_WIDTH_MM=0.02\n');
+fprintf('CONTROL_T3_MIN_ANGLE_DEG=20\nCONTROL_T3_MAX_NEIGHBOR_RATIO=1.8\n');
 summary=struct('stage','NOT_RUN','pass',false, ...
     'approvedForLEFM',false,'sourceFile',mfilename('fullpath'), ...
     'MATLABRelease',version('-release'),'folder',folder, ...
+    'controls',struct('Hmax_mm',Hmax_mm,'Hmin_mm',.12, ...
+    'Hgrad',1.12,'Hedge_mm',.45,'ChannelHalfWidth_mm',.020, ...
+    'MinimumT3Angle_deg',20,'MaximumNeighborRatio',1.8), ...
     'error','','geometry',struct());
 try
    probe=g2_pde_toolbox_preflight();
@@ -47,7 +59,8 @@ try
    fprintf('T3_FORENSICS_SELFTEST_PASS=%d\n',selfTestPass);
    assert(selfTestPass,'G2:ForensicsSelfTest', ...
        'Manufactured T3 worst-edge diagnostic failed.');
-   R=g2_specimen1_pencil_mesh('Plot',true);
+   R=g2_specimen1_pencil_mesh('Plot',true, ...
+       'Hmax_mm',Hmax_mm);
    summary.stage=R.stage;
    summary.pass=R.pass;
    summary.approvedForLEFM=R.approvedForLEFM;
