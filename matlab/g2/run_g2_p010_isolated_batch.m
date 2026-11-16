@@ -6,6 +6,13 @@ here=fileparts(mfilename('fullpath'));
 repo=fileparts(fileparts(here));
 vendor=fullfile(here,'vendor_p010_a14d8872');
 addpath(vendor,'-begin');
+actualMain=which('main_m1i_increment_ring_geometry_only');
+actualT6=which('T3toT6_fast');
+assert(strcmpi(actualMain,fullfile(vendor, ...
+     'main_m1i_increment_ring_geometry_only.m')) && ...
+     strcmpi(actualT6,fullfile(vendor,'T3toT6_fast.m')), ...
+     'G2P010:VendorShadowed', ...
+     'MATLAB must resolve both pinned vendor sources, not personal startup paths.');
 outRoot=fullfile(repo,'outputs','g2_p010_isolated');
 if ~exist(outRoot,'dir'),mkdir(outRoot);end
 folder=fullfile(outRoot,['run_',datestr(now,'yyyymmdd_HHMMSS_FFF')]);
