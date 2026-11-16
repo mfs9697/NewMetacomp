@@ -175,3 +175,32 @@ If only **5.44 GiB** remains available, the explicit 6-GiB guard will deliberate
 New diagnostic evidence includes `quality_forensics.json` with the numeric **3-hole surface distances** for every top pair; `summary.geometry.sameOverLimitEdgeIDsBeforeAfter` tests exact failing-edge identity. Request the new batch log and worst-edge image. If the `6mm` trial fails the same bound, compare the all-23 spatial locations before proposing a local hole-focused refinement; do not launch repeated indiscriminate parameter sweeps.
 
 **Status:** new one-variable source patch statically inspected only. The researcher has NOT yet run 6mm, and no mesh-quality improvement is claimed.
+
+### 16 November 2026 — Fourth author batch: controlled `Hmax=6mm` still HOLD, but decisive provenance
+
+**Actual researcher's batch** `outputs/g2_specimen1_pencil/run_20261116_200724_582/`, MATLAB R2023a, PDE 3.10, free RAM **8.90 GiB**. Run explicitly changed only `Hmax_mm=6` from reference `7`. Fixed controls: `Hmin=.12mm`, `Hgrad=1.12`, lip `Hedge=.45mm`, channel half-width `.020mm`, min angle ≥20°, max adjacent-longest-edge ratio ≤1.8.
+
+| Observed measure | Reference `Hmax=7` | Trial `Hmax=6` |
+|---|---:|---:|
+| Native minimum T3 angle (deg) | 20.96808450 | **26.26756357** |
+| Collapsed minimum T3 angle (deg) | 20.96808450 | **26.26756357** |
+| Native maximum adjacent-longest-edge ratio | 2.48807517 | **2.25936462** |
+| Collapsed maximum adjacent-longest-edge ratio | 2.48807517 | **2.25936462** |
+| Over-1.8 edges (native and collapsed) | 23/24545 | **19/27520** |
+| Identical failing node-edge IDs before/after collapse | not tested | **TRUE** |
+
+Worst pair for `Hmax=6`: T3 elements **11068 and 15775**, midpoint **(161.584367,174.251564) mm**, closest to **upper hole #3** `center=(152.4,171.45)mm, R=6.35mm`, distance to the **circle wall =3.25215391mm** (=0.512R). Thus both runs show their **worst spatial size jump near the same upper-hole region**, though different individual elements (mesh regeneration renumbers IDs). The same failing edge IDs exist **pre/post collapse within the 6mm run**; this refutes the hypothesis that collapse creates the quality-criterion violations, not a claim of global mesh convergence.
+
+**Disposition:** `HOLD_T3_QUALITY`, **not accepted**. Reducing global `Hmax` improved observed maximum ratio but did not reach 1.8. Do **not** run an automatic `Hmax=5` or indiscriminate `Hgrad` sweep before examining the *whole spatial distribution* of the **19** native bad edges. The relative outer-hull/upper-hole gradation likely needs **local targeted meshing**, but the one worst edge cannot establish whether all 19 form the same cluster.
+
+#### Next evidence extraction: NO MATLAB RUN
+
+The original batch already wrote `quality_forensics.json` with **all 19** over-limit shared-edge nodes, owner elements, and midpoints. Added a **read-only PowerShell** retrospective inspector `matlab/g2/inspect_g2_quality_run.ps1`. Run from repo root (after `git pull --ff-only`):
+
+```powershell
+powershell -NoProfile -ExecutionPolicy Bypass -File .\matlab\g2\inspect_g2_quality_run.ps1 -RunDir ".\outputs\g2_specimen1_pencil\run_20261116_200724_582"
+```
+
+The inspector checks the original JSON/geometry sources, counts violations by nearest hole and distance from their surfaces (within 1 hole radius, 1–2 radii, farther), and prints all 19 element pairs/coordinates and ranked top ratios. It performs **no MATLAB execution, modifies no mesh or log, and writes no files**. Save or paste its console output; it determines whether our next controlled parameter should target a single upper-hole collar or a more dispersed PDE grading issue. The inspector source is new and **not yet executed in Windows PowerShell**; classify any parsing problem separately.
+
+Current 5-GiB launcher RAM guard is unchanged; no additional numerical experiment, p010 integration, full independent T6 check or physical BVP was performed on this update.
