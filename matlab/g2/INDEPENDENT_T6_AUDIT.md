@@ -96,3 +96,38 @@ A deterministic no-PDE synthetic test `check_g2_independent_t6_jacobian.m` is no
 Repeat the same command below after fetching the latest PR head. It writes a new audit run, reads exactly the **same source candidate MAT and geometry JSON**, and does **not** regenerate a mesh. Expected first new evidence is `G2_INDEPENDENT_T6_SYNTHETIC_PASS=1`, followed by actual 38-gate results or another explicit diagnostic. A synthetic PASS does not imply 38/38 on the real candidate.
 
 **If a geometric gate fails after the corrected Jacobian**, preserve its actual name and computed evidence. Do not suppress, weaken or reclassify it to get a PASS.
+
+## Actual second independent batch (2026-11-16 22:09:01 Kyiv) — **38/38 PASS**
+
+The researcher reran the corrected independent checker against the **same original saved geometry MAT** and immutable source JSON. This is actual MATLAB R2023a user-provided evidence, not local or CI execution by ChatGPT:
+
+```text
+Free RAM: 7.16 GiB
+Source MAT SHA256:
+9D74134FDF4765449C0F4E4EC87EA5B9E3B0A94B542A80E7E04DF3BC4EDC6A96
+Source geometry JSON SHA256:
+45A88FA0926472DDBE5E70E4C80A97B88196DD45D8A266FA04273F89790B47BF
+G2_INDEPENDENT_T6_SYNTHETIC_PASS=1
+G2_INDEPENDENT_T6_SYNTHETIC_POSITIVE_DET_RANGE=[2.000000000,6.000000000]
+G2_INDEPENDENT_T6_SYNTHETIC_INVERTED_DETECTED=1
+G2_INDEPENDENT_T6_SYNTHETIC_NONAFFINE_DETECTED=1
+G2_INDEPENDENT_T6_GATES=38/38
+G2_INDEPENDENT_T6_PASS=1
+G2_INDEPENDENT_T6_BOUNDARY_LOOPS=4
+G2_INDEPENDENT_T6_EULER=-2
+G2_INDEPENDENT_T6_TIP=6
+G2_INDEPENDENT_T6_MAX_RATIO=1.62557238
+G2_INDEPENDENT_T6_MIN_ANGLE_DEG=33.63741002
+G2_INDEPENDENT_T6_NO_LEFM=1
+G2_INDEPENDENT_T6_GEOMETRY_ACCEPTED=1
+G2_INDEPENDENT_T6_DONE=1; P010_PROTECTED_CORE_PENDING=1; NO_LEFM=1
+```
+
+**Original, untouched independent audit output directory:**
+`outputs/g2_independent_t6/run_20261116_220901_848/`, including `independent_t6_summary.json` and console log on the researcher's machine.
+
+**Decision:** ACCEPT **the current three-hole, three-annulus, pencil-collapsed `T3→T6` geometry-only candidate** as an independently checked geometric **reference baseline** for the next research stage. The first failed independent audit from 22:02 was an indexing/shape **implementation exception** and has been preserved; this rerun resolves that blocker without any source mesh regeneration.
+
+**Important nuance:** this is a 38-gate independent audit of the existing **non-p010 straight-sided T6 candidate**; it does not certify a protected tip patch, physical boundary condition, mode-mixity, EDI support, SIF, crack trajectory or Cornell experimental match. The independent checker intentionally returns `approvedForLEFM=false` even with `38/38`. Do not merge draft PRs automatically; do not rename the current source mesh as a physics-ready benchmark. The next structural task is to port/adapt the source **3-mm/64-sector p010 tip patch + 0.3-mm collar** and perform new T3/T6 qualification on that **changed** mesh family, after which genuine experimental support/loading/CMOD source verification is still necessary.
+
+**Provenance note:** The upstream `EdgeCrackHoleLEFM` p010 mesh has its own separate 15/15 kernel and 21/21 whole-T6 qualification; those pass counts are NOT to be copied to this Cornell geometry.
