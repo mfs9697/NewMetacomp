@@ -1,0 +1,29 @@
+function ok = check_g2_t3_quality_forensics()
+%CHECK_G2_T3_QUALITY_FORENSICS Independent synthetic test without PDE Toolbox.
+% Two positive T3 elements share one edge. Their size ratio is > 1.8.
+X=[0,0;1,0;0,1;3,-1];
+T=[1,2,3;2,1,4];
+tip=[.5,.5];
+holeCenters=[100,100;120,100;140,100];
+holeRadii=[2;2;2];
+Xcopy=X;Tcopy=T;
+F=g2_t3_quality_forensics(X,T,tip,holeCenters,holeRadii,12);
+assert(F.positiveAreaAll,'G2:TestOrientation', ...
+    'Both manufactured elements must have positive area.');
+assert(F.interiorEdges==1,'G2:TestEdgeCount', ...
+    'Two triangles should share exactly one interior edge.');
+assert(isequal(F.worst.edgeNodes,[1 2]),'G2:TestSharedEdge', ...
+    'The sole interior edge must connect nodes 1 and 2.');
+assert(F.ratioOver1p8Count==1 && F.maxNeighborRatio>1.8, ...
+    'G2:TestSizeRatio','Expected a flagged internal size jump.');
+assert(isequal(sort(F.worst.elementIDs),[1 2]), ...
+    'G2:TestOwners','Incorrect pair of actual adjacent T3 owners.');
+assert(all(abs(F.worst.edgeMidpoint_mm-[.5 0])<eps), ...
+    'G2:TestLocation','Expected the shared-edge midpoint at (0.5,0).');
+assert(isequal(X,Xcopy) && isequal(T,Tcopy), ...
+    'G2:TestPure','Forensics may not modify mesh arrays.');
+fprintf(['G2_T3_FORENSICS_SYNTHETIC_PASS=1; ', ...
+    'ratio=%.6f, worst edge=(%.3f, %.3f)\n'], ...
+    F.maxNeighborRatio,F.worst.edgeMidpoint_mm);
+ok=true;
+end
