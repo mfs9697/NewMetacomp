@@ -7,7 +7,9 @@
 [CmdletBinding()]
 param(
     [string]$MatlabExe = 'C:\Program Files\MATLAB\R2023a\bin\matlab.exe',
-    [double]$MinFreeGiB = 5.0
+    [double]$MinFreeGiB = 5.0,
+    [ValidateRange(5.0,7.0)]
+    [double]$Hmax_mm = 7.0
 )
 $ErrorActionPreference = 'Stop'
 $repoRoot = (Resolve-Path (Join-Path $PSScriptRoot '..\..')).Path
@@ -38,9 +40,12 @@ try {
     exit 17
 }
 $matlabPath = $scriptDir.Replace("'", "''")
-$expr = "addpath('$matlabPath');run_g2_specimen1_pencil_batch"
+# Invariant-culture MATLAB numeric literal regardless of Windows locale.
+$hmaxLiteral = $Hmax_mm.ToString('G17', [System.Globalization.CultureInfo]::InvariantCulture)
+$expr = "addpath('$matlabPath');run_g2_specimen1_pencil_batch($hmaxLiteral)"
 Write-Host "Repository: $repoRoot"
 Write-Host "MATLAB: $MatlabExe"
+Write-Host ("Hmax_mm control: {0} (sole changed parameter; default 7)" -f $hmaxLiteral)
 Write-Host "Command: matlab -batch <g2 geometry-only runner>"
 & $MatlabExe -batch $expr
 $rc = $LASTEXITCODE
