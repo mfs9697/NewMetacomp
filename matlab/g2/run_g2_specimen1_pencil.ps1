@@ -11,7 +11,8 @@ param(
     [ValidateRange(5.0,7.0)]
     [double]$Hmax_mm = 7.0,
     [ValidateRange(0.0,3.0)]
-    [double]$LocalHoleAnnulusHface_mm = 0.0
+    [double]$LocalHoleAnnulusHface_mm = 0.0,
+    [switch]$IncludeMiddleHoleAnnulus
 )
 $ErrorActionPreference = 'Stop'
 $repoRoot = (Resolve-Path (Join-Path $PSScriptRoot '..\..')).Path
@@ -53,11 +54,19 @@ if ($LocalHoleAnnulusHface_mm -gt 0) {
         throw "Local 3R annulus pilot requires Hmax_mm = 6 (preregistered base)."
     }
 }
-$expr = "addpath('$matlabPath');run_g2_specimen1_pencil_batch($hmaxLiteral,$localLiteral)"
+$middleFlag=0
+if ($IncludeMiddleHoleAnnulus.IsPresent) {
+    if ($Hmax_mm -ne 6.0 -or $LocalHoleAnnulusHface_mm -ne 1.5) {
+        throw "Middle-hole pilot requires the observed Hmax=6 / Hface=1.5 mm controls."
+    }
+    $middleFlag=1
+}
+$expr = "addpath('$matlabPath');run_g2_specimen1_pencil_batch($hmaxLiteral,$localLiteral,$middleFlag)"
 Write-Host "Repository: $repoRoot"
 Write-Host "MATLAB: $MatlabExe"
 Write-Host ("Hmax_mm control: {0} (default 7)" -f $hmaxLiteral)
-Write-Host ("Upper/lower hole 3R annulus Hface target: {0} mm (0=disabled)" -f $localLiteral)
+Write-Host ("Hole annulus 3R Hface target: {0} mm (0=disabled)" -f $localLiteral)
+Write-Host ("Include middle-hole annulus: {0} (opt-in; 0=original lower+upper)" -f $middleFlag)
 Write-Host "Command: matlab -batch <g2 geometry-only runner>"
 & $MatlabExe -batch $expr
 $rc = $LASTEXITCODE
