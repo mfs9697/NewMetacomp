@@ -1,3 +1,32 @@
+# Recommended workflow: MATLAB R2023a BATCH + experimental pencil collapse
+
+**Researcher decision (16 Nov 2026):** all new geometry runs use `matlab -batch`; crack faces are modeled by a finite-width **pencil channel and guarded collapse**, following the established *geometry strategy* of [EdgeCrackHoleLEFM](https://github.com/mfs9697/EdgeCrackHoleLEFM). The previous `build_g2_specimen1_geometry.m` remains an **uncracked illustration only** and MUST NOT substitute for the crack mesh.
+
+**Latest upstream family audited:** `src/trajectory/edge_trajectory_candidate_mesh_pencil_p010.m`, `edge_pencil_join_native_mesh.m`, `edge_pencil_crack_banks_from_topology.m`, `edge_pencil_mesh_invariants.m` in EdgeCrackHoleLEFM main @ `a14d8872ab588ac551e41b4531bffee2dcd0ce2c`. The H0 trial C evidence is [H0_PENCIL_P010_QUALIFIED_GEOMETRY_REFERENCE_2026-10-28.md](https://github.com/mfs9697/EdgeCrackHoleLEFM/blob/main/docs/H0_PENCIL_P010_QUALIFIED_GEOMETRY_REFERENCE_2026-10-28.md). **Do not reuse its two-hole 300×400-mm hard-coded geometry/BC as Cornell #1.**
+
+### One command on Windows
+
+From a local checkout of **branch `research/g2-pencil-collapse-batch-20261116`** (which includes stacked PR #12 and original geometry JSON), in PowerShell:
+
+```powershell
+powershell -NoProfile -ExecutionPolicy Bypass -File .\matlab\g2\run_g2_specimen1_pencil.ps1
+```
+
+The launcher checks for MATLAB R2023a, **at least 5 GiB free physical RAM**, and source JSON, then executes `matlab -batch`. Headless MATLAB produces an **immutable per-run folder** under `outputs/g2_specimen1_pencil/run_YYYYmmdd_HHMMSS_FFF/` with `batch_console.log` and `batch_summary.json`. On a candidate pass it additionally writes `GEOMETRY_ONLY_candidate.mat` (T3/T6 arrays and bank IDs) and a vector PDF/PNG if plotting succeeds. On a HOLD the batch exits **nonzero**, and the exact stage/reason is in the summary. Generated output is ignored by Git.
+
+The pilot `g2_specimen1_pencil_mesh.m` does **not** import physical source states or solve a PDE:
+1. Read nominal specimen #1 JSON (508×203.2 mm, three exact CAD circles, initial `(101.6,0)→(101.6,25.4)` mm).
+2. Subtract a pencil-shaped channel with half-width `0.020 mm` from the bottom boundary; preserve the single geometric tip.
+3. Native PDE `generateMesh` (T3 **geometry**, with `Hmin=.12mm`, `Hmax=7mm`, `Hgrad=1.12` and lip `Hedge=.45mm` pilot targets).
+4. Identify both physical lip chains, pair their arclength stations, adjust each pair to the centerline **while preserving distinct node IDs** and leave **only one common tip**. Reject mismatched numbers/stations, bad quality or lost topology; no invented correspondence or blind retry.
+5. Construct straight-sided T6 with unique midsides, check 4 boundary loops (outer + three holes), each circle's boundary, T3 angles/neighbor growth, bank chains and solid area.
+
+**Crucial difference from verified upstream H0/H3:** this isolated *first transfer* currently does **NOT** incorporate the upstream **3-mm structured p010 tip patch** or **0.3-mm analytical collar**, nor the original independent 21-gate T6 checker. Thus even if `CANDIDATE_TOPOLOGY_PASS`, the flag `approvedForLEFM=false` is never relaxed. In particular, **do not calculate K, G, COD, EDI or crack paths from this candidate mesh**. Follow-up engineering must port/pin the protected p010/collar for the **vertical crack, three circles, eccentric load geometry**, qualify the final conforming T3/T6 mesh and obtain independent signed EDI/COD before any physics.
+
+This branch contains **unexecuted MATLAB source**. Static checks are not runtime evidence. The first `-batch` invocation may produce `HOLD_UNMATCHED_LIP_COUNTS`, `HOLD_T3_QUALITY` or another genuine diagnostic; that is a useful preflight, not a scientific failure to conceal. Never loosen thresholds or replace the tip by coincident but welded IDs to claim success.
+
+### Older geometry-only display
+
 # MATLAB geometry-only reconstruction — Cornell (1990), specimen #1
 
 This directory constructs **the nominal specimen #1 geometry**, as recorded in [G2_SPECIMEN1_1990_GEOMETRY.json](../../docs/research/crack-growth-gaps-2026/G2_SPECIMEN1_1990_GEOMETRY.json), and **nothing more**.
@@ -57,3 +86,121 @@ The physical test was CMOD controlled. The marker `P` shows **where the load is 
 2. Visually verify the vector PDF and the edge-labelled PDE geometry (exact 3 holes, no extra face/edge).
 3. Save the MATLAB console output and figure as evidence and compare the original Cornell Fig. 5.1/5.2 when archival scan becomes available.
 4. Only then consider *separate crack-bank topology/meshing task*; still no automatic permission for physical LEFM runs.
+
+### 16 November 2026 — First author batch, preflight failure and fix
+
+The first **actually executed MATLAB R2023a** command started MATLAB with **9.98 GiB free physical memory**, then stopped **before CAD creation** at `g2_specimen1_pencil_mesh.m:39`. Its output included:
+
+```text
+If you specify a message identifier argument,
+you must specify the message text argument.
+```
+
+The immediate defect was our invalid `assert(cond,'G2:PDEToolboxMissing')`; that concealed an unsatisfied dependency check. The same check incorrectly treated `generateMesh` exclusively as a MATLAB file, although it is a **PDE model method**. This branch corrects *all* malformed ID-bearing asserts in the pilot and runner, replaces the test with `g2_pde_toolbox_preflight.m` (checks `createpde`, `decsg` and model methods), and writes `PDE_PREFLIGHT_PASS` and details to both the log and `batch_summary.json`.
+
+**Original first batch is a HOLD, not a geometry failure.** There is no claim the next batch succeeds: subsequent actual meshing/pairing gates must still be executed and observed. Warning lines pointing at obsolete Google Drive MATLAB startup folders are unrelated to the shown exception and can be cleaned independently in the author's MATLAB path settings.
+
+After fetching the latest head of this branch, repeat the exact launcher shown above. Collect a **new** timestamped `run_*` directory, retaining the original failed run without editing it.
+
+### 16 November 2026 — Actual second MATLAB batch: `HOLD_T3_QUALITY`, source-localized diagnostics added
+
+The author actually ran head `6fa2c3e` in MATLAB **R2023a** (PDE Toolbox **v3.10**) at **19:19 Kyiv**, with **8.10 GiB free RAM**, producing:
+
+```text
+PDE_PREFLIGHT_PASS=1
+CANDIDATE_GEOMETRY_PASS=0
+HOLD_STAGE=HOLD_T3_QUALITY
+HOLD_REASON=Min angle 20.9681 deg, neighbor ratio 2.4881.
+```
+
+Original output: `outputs/g2_specimen1_pencil/run_20261116_191917_065/batch_summary.json`. **Do not overwrite or reinterpret it as PASS.**
+
+This means native CAD/PDE mesh was created and the candidate got past lip station matching, post-collapse positive-area gate and minimum-angle computation. The source rule remains **minimum angle >=20 deg and max adjacent longest-edge ratio <=1.8**. Thus **the angle passes**, while **2.4881 > 1.8 is a genuine quality HOLD**. It does not identify whether the bad pair originates in the native PDE mesh or is worsened by station-matched collapse.
+
+#### Diagnostic-only revision (not a mesh repair)
+
+Added `g2_t3_quality_forensics.m` and `check_g2_t3_quality_forensics.m`. On the next batch:
+
+- Runs an isolated **two-triangle manufactured test** for worst-edge ownership and size ratio (no PDE).
+- Measures the actual maximum ratio and minimum angle **on the identical T3 connectivity** both **before** (`X0`) and **after** (`X`) collapse.
+- Reports numbers of interior edges with ratio >1.8, quantiles, 12 highest-ratio adjacent-element pairs with **actual node/element IDs**, their midpoint coordinates and a tentative geometric region classification.
+- Exports `quality_forensics.json` and `quality_worst_edge_zoom.pdf/png` **also when `HOLD_T3_QUALITY` occurs**. Local diagnostic plot shows **the same worst after-collapse element IDs** in the native vs collapsed coordinates.
+- Does NOT change `Hmax=7mm`, `Hgrad=1.12`, `Hedge=.45mm`, pencil half-width `.020mm`, `Hmin=.12mm`, source geometry, bank pairing or acceptance thresholds; no physical FEM.
+
+**Scientific next decision, after the log:** if **native ratio is already >1.8**, inspect exact edge location and consider a *controlled independent one-parameter mesh refinement trial*, with other settings and acceptance gates frozen. If **native is acceptable but collapsed ratio fails**, diagnose local pencil lip station shifts/shoulder/tip and port the original upstream protected `p010` core/collar, rather than globally reducing Hmax. A source-geometry-specific locally modified tip patch is **unqualified** until independently retested.
+
+**Repeat after `git pull --ff-only` on the branch**, using the unchanged PowerShell command. A failed geometry-quality gate **still correctly exits 1** and is not an executable failure to suppress. Please retain `quality_forensics.json`, `batch_summary.json` and `quality_worst_edge_zoom.png`.
+
+Original author's two stale MATLAB startup-path warnings remain unrelated to this mesh-quality result.
+
+### 16 November 2026 — Third actual MATLAB run: native-origin size-jump HOLD and controlled Hmax trial
+
+**Researcher-observed run:** `run_20261116_192745_160`, MATLAB **R2023a/PDE 3.10**, free RAM **5.44 GiB**, manufactured T3 forensics **PASS**, native and collapsed mesh generated. Results:
+
+| Actual metric | Native T3 | Collapsed T3 |
+|---|---:|---:|
+| Minimum angle | 20.96808450 deg | 20.96808450 deg |
+| Maximum adjacent longest-edge ratio | **2.48807517** | **2.48807517** |
+| Internal edges over fixed 1.8 cutoff | **23 / 24545** | **23 / 24545** |
+
+Worst internal T3 adjacency: **element IDs 12620 and 13711**, shared-edge midpoint **(161.828814,171.865234) mm**. Its distance to the **upper circle center** `(152.4,171.45)` is approximately **9.438 mm**; subtract radius `6.35mm` to get **~3.09mm clearance to the upper hole wall**. The original diagnostic's `bulk_or_outer_boundary` label was misleading because it used a fixed **3mm** cutoff. Source defect now corrected by reporting a **numeric nearest hole-wall distance**, hole ID, and scale-based zone.
+
+**Interpretation:** max ratio is already too high **before collapse**. The count and max are identical on both meshes, but the original console *alone* cannot establish that all 23 failing physical edges have identical IDs. New `sameOverLimitEdgeIDsBeforeAfter` field compares the full underlying failed connectivity sets. This is a **native PDE spatial size gradation** problem in the hole neighborhood, *not evidence of crack-bank failure*. No source threshold or test result has been changed.
+
+#### One-variable, no-auto-retry experiment
+
+Prepare **one manual** `Hmax_mm=6` candidate, compared to the original **7mm** baseline. All other controls are unchanged:
+
+| Control | Baseline | Pilot |
+|---|---:|---:|
+| `Hmax_mm` | 7 | **6** |
+| `Hmin_mm` | .12 | .12 |
+| `Hgrad` | 1.12 | 1.12 |
+| `Hedge_mm` (pencil lips) | .45 | .45 |
+| `ChannelHalfWidth_mm` | .020 | .020 |
+| `TipShoulder_mm` | .30 | .30 |
+| Hole CAD-chord target | original `.70*2*r*sin(pi/120)` | unchanged |
+| `MaxT3Elements` | 40000 | 40000 |
+| Min T3 angle / max T3 ratio | >=20 deg / <=1.8 | **unchanged** |
+
+Execute from the correct checked-out branch when free RAM is sufficient. `-MinFreeGiB 6` is a conservative resource control for this slightly denser pilot (the scripted default is still 5).
+
+```powershell
+git pull --ff-only
+powershell -NoProfile -ExecutionPolicy Bypass -File .\matlab\g2\run_g2_specimen1_pencil.ps1 -Hmax_mm 6 -MinFreeGiB 6
+```
+
+If only **5.44 GiB** remains available, the explicit 6-GiB guard will deliberately stop before MATLAB. Release memory first rather than weakening the guard. The `-Hmax_mm` option is recorded (locale-invariant) in console and `batch_summary.json`. The no-option command continues to run the **7mm baseline** unchanged. No one should infer an accepted LEFM mesh from `CANDIDATE_TOPOLOGY_PASS`.
+
+New diagnostic evidence includes `quality_forensics.json` with the numeric **3-hole surface distances** for every top pair; `summary.geometry.sameOverLimitEdgeIDsBeforeAfter` tests exact failing-edge identity. Request the new batch log and worst-edge image. If the `6mm` trial fails the same bound, compare the all-23 spatial locations before proposing a local hole-focused refinement; do not launch repeated indiscriminate parameter sweeps.
+
+**Status:** new one-variable source patch statically inspected only. The researcher has NOT yet run 6mm, and no mesh-quality improvement is claimed.
+
+### 16 November 2026 — Fourth author batch: controlled `Hmax=6mm` still HOLD, but decisive provenance
+
+**Actual researcher's batch** `outputs/g2_specimen1_pencil/run_20261116_200724_582/`, MATLAB R2023a, PDE 3.10, free RAM **8.90 GiB**. Run explicitly changed only `Hmax_mm=6` from reference `7`. Fixed controls: `Hmin=.12mm`, `Hgrad=1.12`, lip `Hedge=.45mm`, channel half-width `.020mm`, min angle ≥20°, max adjacent-longest-edge ratio ≤1.8.
+
+| Observed measure | Reference `Hmax=7` | Trial `Hmax=6` |
+|---|---:|---:|
+| Native minimum T3 angle (deg) | 20.96808450 | **26.26756357** |
+| Collapsed minimum T3 angle (deg) | 20.96808450 | **26.26756357** |
+| Native maximum adjacent-longest-edge ratio | 2.48807517 | **2.25936462** |
+| Collapsed maximum adjacent-longest-edge ratio | 2.48807517 | **2.25936462** |
+| Over-1.8 edges (native and collapsed) | 23/24545 | **19/27520** |
+| Identical failing node-edge IDs before/after collapse | not tested | **TRUE** |
+
+Worst pair for `Hmax=6`: T3 elements **11068 and 15775**, midpoint **(161.584367,174.251564) mm**, closest to **upper hole #3** `center=(152.4,171.45)mm, R=6.35mm`, distance to the **circle wall =3.25215391mm** (=0.512R). Thus both runs show their **worst spatial size jump near the same upper-hole region**, though different individual elements (mesh regeneration renumbers IDs). The same failing edge IDs exist **pre/post collapse within the 6mm run**; this refutes the hypothesis that collapse creates the quality-criterion violations, not a claim of global mesh convergence.
+
+**Disposition:** `HOLD_T3_QUALITY`, **not accepted**. Reducing global `Hmax` improved observed maximum ratio but did not reach 1.8. Do **not** run an automatic `Hmax=5` or indiscriminate `Hgrad` sweep before examining the *whole spatial distribution* of the **19** native bad edges. The relative outer-hull/upper-hole gradation likely needs **local targeted meshing**, but the one worst edge cannot establish whether all 19 form the same cluster.
+
+#### Next evidence extraction: NO MATLAB RUN
+
+The original batch already wrote `quality_forensics.json` with **all 19** over-limit shared-edge nodes, owner elements, and midpoints. Added a **read-only PowerShell** retrospective inspector `matlab/g2/inspect_g2_quality_run.ps1`. Run from repo root (after `git pull --ff-only`):
+
+```powershell
+powershell -NoProfile -ExecutionPolicy Bypass -File .\matlab\g2\inspect_g2_quality_run.ps1 -RunDir ".\outputs\g2_specimen1_pencil\run_20261116_200724_582"
+```
+
+The inspector checks the original JSON/geometry sources, counts violations by nearest hole and distance from their surfaces (within 1 hole radius, 1–2 radii, farther), and prints all 19 element pairs/coordinates and ranked top ratios. It performs **no MATLAB execution, modifies no mesh or log, and writes no files**. Save or paste its console output; it determines whether our next controlled parameter should target a single upper-hole collar or a more dispersed PDE grading issue. The inspector source is new and **not yet executed in Windows PowerShell**; classify any parsing problem separately.
+
+Current 5-GiB launcher RAM guard is unchanged; no additional numerical experiment, p010 integration, full independent T6 check or physical BVP was performed on this update.
