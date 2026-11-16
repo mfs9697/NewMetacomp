@@ -231,7 +231,6 @@ e1=X(E(:,1),:);e2=X(E(:,2),:);
 onCrack=cnt==1&abs(e1(:,1)-cx)<1e-8& ...
  abs(e2(:,1)-cx)<1e-8&min(e1(:,2),e2(:,2))>=ymin-1e-8& ...
  max(e1(:,2),e2(:,2))<=yt+1e-8;
-ownerX=mean(X(T(owner, :),1),2);
 % Use centroid X of triangles, NOT a hard-coded physical bank sign.
 ce=(X(T(owner,1),1)+X(T(owner,2),1)+X(T(owner,3),1))/3;
 bLeft=find(onCrack&ce<cx-1e-9);
@@ -260,7 +259,7 @@ if abs(syL(1)-ymin)>1e-8||abs(syL(end)-yt)>1e-8
  R.stage='HOLD_CRACK_MOUTH_OR_TIP';return
 end
 % Ensure EACH bank comprises consecutive edge segments, no missing edges.
-canon=@(v)sort(sort([v(1:end-1),v(2:end)],2),1);
+canon=@(v)sortrows(sort([v(1:end-1),v(2:end)],2));
 leftEdges=sort(E(bLeft,:),2);rightEdges=sort(E(bRight,:),2);
 if ~isequal(sortrows(leftEdges),sortrows(canon(leftBank)))|| ...
    ~isequal(sortrows(rightEdges),sortrows(canon(rightBank)))
@@ -273,7 +272,6 @@ X6=[X;Xm];
 T6=[T,n3+ic(1:size(T,1)), ...
  n3+ic(size(T,1)+(1:size(T,1))), ...
  n3+ic(2*size(T,1)+(1:size(T,1)))];
-midIDs=n3+(1:size(E,1))';
 [~,lAll]=ismember(sortrows(leftEdges),E,'rows');
 [~,rAll]=ismember(sortrows(rightEdges),E,'rows');
 leftBankT6=sort([leftBank;n3+lAll]);
