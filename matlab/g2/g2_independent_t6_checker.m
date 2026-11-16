@@ -170,8 +170,13 @@ expectedCrackLen=2*norm(tip-mouth);
 g.outerPlatePerimeter=abs(plateLen-expectedPerimeter)<1e-5;
 g.doubleCrackBoundaryLength= ...
     abs(crackLen-expectedCrackLen)<1e-5;
-g.physicalCrackMouthAndTipCoordinates=abs(min([p1(crackE,2);p2(crackE,2)])-ymin)<tol&& ...
+if any(crackE)
+ g.physicalCrackMouthAndTipCoordinates= ...
+    abs(min([p1(crackE,2);p2(crackE,2)])-ymin)<tol&& ...
     abs(max([p1(crackE,2);p2(crackE,2)])-tip(2))<tol;
+else
+ g.physicalCrackMouthAndTipCoordinates=false;
+end
 
 % Element area vs analytically exact rectangle less three true circles.
 % T3 boundary has *chords*, not curved isoparametric T6 arcs, so a small
@@ -225,7 +230,7 @@ g.savedBanksExactlyCoverCrackBoundaryT6Nodes= ...
 coordsY=sort([p1(crackE,2),p2(crackE,2)],2);
 [~,~,edgeGeomGroup]=unique(round(coordsY/tol),'rows');
 g.everyGeometricCrackEdgeHasTwoTopologicalTwins= ...
-    all(accumarray(edgeGeomGroup,1)==2);
+    any(crackE)&&all(accumarray(edgeGeomGroup,1)==2);
 
 % Coincident T6 node pairs are permitted ONLY on the crack, not on the
 % hole boundaries or internal guide circles.
