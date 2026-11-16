@@ -44,9 +44,9 @@ F.nonManifoldEdges=nnz(counts>2);
 F.maxNeighborRatio=max(ordered);
 F.ratioOver1p8Count=nnz(ratios>1.8);
 F.ratioOver1p8Fraction=nnz(ratios>1.8)/max(1,numel(ii));
-F.ratioQuantiles=struct('p50',prctile(ratios,50), ...
-    'p90',prctile(ratios,90),'p95',prctile(ratios,95), ...
-    'p99',prctile(ratios,99));
+F.ratioQuantiles=struct('p50',local_quantile(ordered,.50), ...
+    'p90',local_quantile(ordered,.90),'p95',local_quantile(ordered,.95), ...
+    'p99',local_quantile(ordered,.99));
 F.topPairs=repmat(struct('rank',0,'ratio',0,'edgeNodes',[], ...
     'elementIDs',[],'edgeMidpoint_mm',[],'centroidMidpoint_mm',[], ...
     'elementSizes_mm',[],'zone',''),0,1);
@@ -93,4 +93,15 @@ if dmin<3
     return
 end
 zone='bulk_or_outer_boundary';
+end
+
+function val=local_quantile(sortedDesc,p)
+% Linear-interpolated percentile without Statistics Toolbox dependency.
+S=flipud(sortedDesc(:));
+n=numel(S);
+if n==0,val=NaN;return,end
+pos=1+(n-1)*p;
+lo=floor(pos);hi=ceil(pos);
+val=(hi-pos)*S(lo)+(pos-lo)*S(hi);
+if lo==hi,val=S(lo);end
 end
