@@ -86,25 +86,17 @@ g.allMidsidesAreGeometricMidpoints= ...
  max(vecnorm(X6(midLo,:)- ...
  .5*(X6(edges(:,1),:)+X6(edges(:,2),:)),2,2))<1e-10;
 
-% Actual quadratic T6 Jacobian at 13 sampling positions. With straight
-% mid-edge coordinates this must be constant and positive everywhere.
-x=X6(T6,1);y=X6(T6,2);
+% Independent 13-position quadratic T6 Jacobians. The first audit
+% mistakenly indexed x=X6(T6,1): it did not guarantee an M-by-6
+% matrix. Shape-safe gathering is covered by an explicit synthetic test.
 a=X6(cn(:,2),:)-X6(cn(:,1),:);
 b=X6(cn(:,3),:)-X6(cn(:,1),:);
 a2=a(:,1).*b(:,2)-a(:,2).*b(:,1);
-pts=[1/3,1/3;0,0;1,0;0,1;.5,0;.5,.5;0,.5; ...
-     .1,.1;.8,.1;.1,.8;.45,.45;.1,.45;.45,.1];
-detMin=inf;detErr=0;
-for j=1:size(pts,1)
- rr=pts(j,1);ss=pts(j,2);tt=1-rr-ss;
- dNr=[-(4*tt-1);4*rr-1;0;4*(tt-rr);4*ss;-4*ss];
- dNs=[-(4*tt-1);0;4*ss-1;-4*rr;4*rr;4*(tt-ss)];
- dj=(x*dNr).*(y*dNs)-(x*dNs).*(y*dNr);
- detMin=min(detMin,min(dj));
- detErr=max(detErr,max(abs(dj-a2)./max(abs(a2),eps)));
-end
-g.everyT3AreaAndT6JacobianPositive=all(a2>0)&&detMin>0;
-g.straightT6JacobianConstantTo1e8=detErr<1e-8;
+J6=g2_independent_t6_jacobian(X6,T6);
+detMin=J6.minDet_mm2;
+detErr=J6.maxRelativeVariation;
+g.everyT3AreaAndT6JacobianPositive=J6.allPositive;
+g.straightT6JacobianConstantTo1e8=J6.constantTo1e8;
 
 % Independent T3 element corner-angle and adjacent size gate.
 L12=vecnorm(X6(cn(:,2),:)-X6(cn(:,1),:),2,2);
