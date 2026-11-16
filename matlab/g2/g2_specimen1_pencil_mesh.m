@@ -224,6 +224,36 @@ end
 if any(cnt>2)
  R.stage='HOLD_NONMANIFOLD_T3';return
 end
+% A single plate with a mouth-connected slit and three holes has
+% precisely FOUR boundary loops: outer/slit + three distinct circles.
+boundaryEdges=E(cnt==1,:);
+[~,~,remap]=unique(boundaryEdges(:));
+reb=reshape(remap,size(boundaryEdges));
+parts=conncomp(graph(reb(:,1),reb(:,2)));
+R.summary.boundaryComponents=max(parts);
+if R.summary.boundaryComponents~=4
+ R.stage='HOLD_BOUNDARY_COMPONENTS';
+ R.message=sprintf('Expected four boundary components; found %d.', ...
+    R.summary.boundaryComponents);
+ return
+end
+% CAD circles remain circles in the native geometry. Linear T3 elements
+% represent each circle by chords; do not mistake this for exact curved T6.
+boundaryEndpoints1=X(boundaryEdges(:,1),:);
+boundaryEndpoints2=X(boundaryEdges(:,2),:);
+R.summary.circleBoundaryChordCounts=zeros(1,3);
+for k=1:3
+ c=[holeX(k),holeY(k)];
+ r=radius(k);
+ onCircle=abs(vecnorm(boundaryEndpoints1-c,2,2)-r)<1e-5 & ...
+          abs(vecnorm(boundaryEndpoints2-c,2,2)-r)<1e-5;
+ R.summary.circleBoundaryChordCounts(k)=nnz(onCircle);
+end
+if any(R.summary.circleBoundaryChordCounts<12)
+ R.stage='HOLD_CIRCLE_BOUNDARY_FIDELITY';
+ R.message='Each of the three true CAD circles requires at least 12 native boundary chords.';
+ return
+end
 
 % Identify the real crack-bank boundary EDGES by connectivity (one owner)
 % and geometry (both ends lie on vertical midline, y in [0,yt]).
@@ -313,6 +343,10 @@ R.gates=struct( ...
  'exactlyOneSharedTipTopologicalNode',isequal(common(:),tipID), ...
  'T6MidSideIdsRemainDistinctOnBanks', ...
     isequal(intersect(leftBankT6,rightBankT6),tipID), ...
+ 'fourBoundaryLoopsThreeHolesAndOuterSlit', ...
+    R.summary.boundaryComponents==4, ...
+ 'allThreeCircleBoundaryChains', ...
+    all(R.summary.circleBoundaryChordCounts>=12), ...
  'areaMatchesSolidMinusThreeDisks',relativeArea<=0.005);
 R.pass=all(cell2mat(struct2cell(R.gates)));
 R.stage='CANDIDATE_TOPOLOGY_PASS';
