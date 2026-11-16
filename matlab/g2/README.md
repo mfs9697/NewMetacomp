@@ -101,3 +101,34 @@ The immediate defect was our invalid `assert(cond,'G2:PDEToolboxMissing')`; that
 **Original first batch is a HOLD, not a geometry failure.** There is no claim the next batch succeeds: subsequent actual meshing/pairing gates must still be executed and observed. Warning lines pointing at obsolete Google Drive MATLAB startup folders are unrelated to the shown exception and can be cleaned independently in the author's MATLAB path settings.
 
 After fetching the latest head of this branch, repeat the exact launcher shown above. Collect a **new** timestamped `run_*` directory, retaining the original failed run without editing it.
+
+### 16 November 2026 — Actual second MATLAB batch: `HOLD_T3_QUALITY`, source-localized diagnostics added
+
+The author actually ran head `6fa2c3e` in MATLAB **R2023a** (PDE Toolbox **v3.10**) at **19:19 Kyiv**, with **8.10 GiB free RAM**, producing:
+
+```text
+PDE_PREFLIGHT_PASS=1
+CANDIDATE_GEOMETRY_PASS=0
+HOLD_STAGE=HOLD_T3_QUALITY
+HOLD_REASON=Min angle 20.9681 deg, neighbor ratio 2.4881.
+```
+
+Original output: `outputs/g2_specimen1_pencil/run_20261116_191917_065/batch_summary.json`. **Do not overwrite or reinterpret it as PASS.**
+
+This means native CAD/PDE mesh was created and the candidate got past lip station matching, post-collapse positive-area gate and minimum-angle computation. The source rule remains **minimum angle >=20 deg and max adjacent longest-edge ratio <=1.8**. Thus **the angle passes**, while **2.4881 > 1.8 is a genuine quality HOLD**. It does not identify whether the bad pair originates in the native PDE mesh or is worsened by station-matched collapse.
+
+#### Diagnostic-only revision (not a mesh repair)
+
+Added `g2_t3_quality_forensics.m` and `check_g2_t3_quality_forensics.m`. On the next batch:
+
+- Runs an isolated **two-triangle manufactured test** for worst-edge ownership and size ratio (no PDE).
+- Measures the actual maximum ratio and minimum angle **on the identical T3 connectivity** both **before** (`X0`) and **after** (`X`) collapse.
+- Reports numbers of interior edges with ratio >1.8, quantiles, 12 highest-ratio adjacent-element pairs with **actual node/element IDs**, their midpoint coordinates and a tentative geometric region classification.
+- Exports `quality_forensics.json` and `quality_worst_edge_zoom.pdf/png` **also when `HOLD_T3_QUALITY` occurs**. Local diagnostic plot shows **the same worst after-collapse element IDs** in the native vs collapsed coordinates.
+- Does NOT change `Hmax=7mm`, `Hgrad=1.12`, `Hedge=.45mm`, pencil half-width `.020mm`, `Hmin=.12mm`, source geometry, bank pairing or acceptance thresholds; no physical FEM.
+
+**Scientific next decision, after the log:** if **native ratio is already >1.8**, inspect exact edge location and consider a *controlled independent one-parameter mesh refinement trial*, with other settings and acceptance gates frozen. If **native is acceptable but collapsed ratio fails**, diagnose local pencil lip station shifts/shoulder/tip and port the original upstream protected `p010` core/collar, rather than globally reducing Hmax. A source-geometry-specific locally modified tip patch is **unqualified** until independently retested.
+
+**Repeat after `git pull --ff-only` on the branch**, using the unchanged PowerShell command. A failed geometry-quality gate **still correctly exits 1** and is not an executable failure to suppress. Please retain `quality_forensics.json`, `batch_summary.json` and `quality_worst_edge_zoom.png`.
+
+Original author's two stale MATLAB startup-path warnings remain unrelated to this mesh-quality result.
