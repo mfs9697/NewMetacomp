@@ -27,6 +27,12 @@ addParameter(ip,'Hmin_mm',.12,@(v)isnumeric(v)&&isscalar(v)&&v>0);
 addParameter(ip,'Hmax_mm',7,@(v)isnumeric(v)&&isscalar(v)&&v>0);
 addParameter(ip,'Hgrad',1.12,@(v)isnumeric(v)&&isscalar(v)&&v>=1&&v<=1.3);
 addParameter(ip,'Hedge_mm',.45,@(v)isnumeric(v)&&isscalar(v)&&v>0);
+% Opt-in pilot: partition ONLY lower/upper hole neighborhoods into
+% true-CAD concentric annular material faces and set one common Hface.
+% Default [] retains the prior byte-equivalent unpartitioned baseline.
+addParameter(ip,'LocalHoleAnnulusHface_mm',[], ...
+ @(v)isempty(v)||(isnumeric(v)&&isscalar(v)&&isfinite(v)&&v>=.8&&v<=3));
+
 addParameter(ip,'PairStationTolerance_mm',.15,@(v)isnumeric(v)&&isscalar(v)&&v>0);
 addParameter(ip,'MaxT3Elements',40000,@(v)isnumeric(v)&&isscalar(v)&&v>0);
 addParameter(ip,'Plot',false,@(v)islogical(v)&&isscalar(v));
@@ -55,6 +61,12 @@ G=J.nominal_geometry_mm;
 assert(numel(G.holes)==3,'G2:RequireThreeHoles', ...
  'Cornell specimen #1 must have exactly three holes.');
 w=o.ChannelHalfWidth_mm;
+localPilot=~isempty(o.LocalHoleAnnulusHface_mm);
+if localPilot
+ assert(abs(o.Hmax_mm-6)<1e-12, ...
+  'G2:LocalPilotRequiresHmax6', ...
+  'Preregistered local annulus pilot requires Hmax_mm=6 (unchanged baseline).');
+end
 assert(o.Hmin_mm<=o.Hedge_mm&&o.Hedge_mm<=o.Hmax_mm, ...
  'G2:MeshControls', ...
  'Require Hmin <= lip Hedge <= Hmax in millimetres.');
@@ -94,6 +106,35 @@ for k=1:3
  'Circle %d overlaps circle %d.',j,k);
  end
 end
+if localPilot
+ % Fixed 3R guide radius: all 19 actual Hmax6 violating edges are within
+ % 2R of a circular WALL. Internal guide contours are NOT physical holes.
+ localHoleIndices=[1,3];
+ guideOuterR=3*radius(localHoleIndices);
+ for j=1:2
+  k=localHoleIndices(j);
+  assert(holeX(k)-guideOuterR(j)>xmin && ...
+     holeX(k)+guideOuterR(j)<xmax && ...
+     holeY(k)-guideOuterR(j)>ymin && ...
+     holeY(k)+guideOuterR(j)<ymax, ...
+     'G2:GuideCircleOutsidePlate', ...
+     'Local annular guide circle must lie strictly inside plate.');
+  for kk=1:3
+   if kk==k,continue,end
+   assert(norm([holeX(k)-holeX(kk),holeY(k)-holeY(kk)])> ...
+       guideOuterR(j)+radius(kk), ...
+       'G2:GuideCircleOverlapsHole', ...
+       'Local annular guide circle may not intersect another true hole.');
+  end
+ end
+ assert(norm([holeX(1)-holeX(3),holeY(1)-holeY(3)])> ...
+    sum(guideOuterR), ...
+    'G2:GuidesOverlap', 'Two annular guide circles overlap.');
+ % Circle-to-crack clearance: guide radius 19.05mm, x offset 50.8mm.
+ assert(all(holeX(localHoleIndices)-guideOuterR>cx+w), ...
+  'G2:GuideCrossesPencil', ...
+  'A guide circle must not intersect the crack channel.');
+end
 
 % The channel is cut INTO the outer polygon from the bottom boundary.
 % Left and right slopes meet at ONE real apex/tip in the native CAD.
@@ -101,16 +142,49 @@ end
 outer=[cx+w,ymin;xmax,ymin;xmax,ymax;xmin,ymax; ...
  xmin,ymin;cx-w,ymin;cx-w,yshoulder;cx,yt;cx+w,yshoulder];
 Np=size(outer,1);
-cols=cell(4,1);
+if localPilot,nShapes=6;else,nShapes=4;end
+cols=cell(nShapes,1);
 cols{1}=[2;Np;outer(:,1);outer(:,2)];
 for k=1:3,cols{k+1}=[1;holeX(k);holeY(k);radius(k)];end
-gd=zeros(max(cellfun(@numel,cols)),4);
-for k=1:4,gd(1:numel(cols{k}),k)=cols{k};end
-ns=char('MAT','C1','C2','C3').';
-[dl,~]=decsg(gd,'MAT-C1-C2-C3',ns);
+if localPilot
+ cols{5}=[1;holeX(1);holeY(1);guideOuterR(1)];
+ cols{6}=[1;holeX(3);holeY(3);guideOuterR(2)];
+ % This formula is PHYSICALLY IDENTICAL to MAT-C1-C2-C3 but retains
+ % the lower/upper guide-circle edges as separate material subdomains.
+ % No additional void is removed and no mechanical interface is imposed.
+ sf=['((MAT-C1-C2-C3)-G1-G3)' ...
+     '+((MAT-C1-C2-C3)*G1)' ...
+     '+((MAT-C1-C2-C3)*G3)'];
+ ns=char('MAT','C1','C2','C3','G1','G3').';
+else
+ sf='MAT-C1-C2-C3';
+ ns=char('MAT','C1','C2','C3').';
+end
+gd=zeros(max(cellfun(@numel,cols)),nShapes);
+for k=1:nShapes,gd(1:numel(cols{k}),k)=cols{k};end
+[dl,~]=decsg(gd,sf,ns);
 model=createpde(1);
 geometryFromEdges(model,dl);
 geom=model.Geometry;
+annulusFaceIDs=[];
+if localPilot
+ sample=[holeX(1)+2*radius(1),holeY(1); ...
+         holeX(3)+2*radius(3),holeY(3); ...
+         xmax-25,(ymin+ymax)/2];
+ fIDs=nearestFace(geom,sample);
+ R.summary.geometryFaceCount=geom.NumFaces;
+ R.summary.localAnnulusProbeFaces=fIDs;
+ R.summary.localAnnulusGuideOuterRadii_mm=guideOuterR(:).';
+ R.summary.localAnnulusSampleCoords_mm=sample;
+ if geom.NumFaces~=3 || numel(unique(fIDs))~=3
+    R.stage='HOLD_LOCAL_ANNULUS_PARTITION';
+    R.message=sprintf(['Expected 3 connected material subdomains ', ...
+        '(bulk, lower/upper annuli), got NumFaces=%d and probe IDs=%s.'], ...
+        geom.NumFaces,mat2str(fIDs));
+    return
+ end
+ annulusFaceIDs=fIDs(1:2);
+end
 
 % Explicitly select left/right CAD lips including the tapered shoulder.
 lseg=[cx-w,(ymin+yshoulder)/2; ...
@@ -144,9 +218,17 @@ for k=1:3
     .70*2*radius(k)*sin(pi/120)}]; %#ok<AGROW>
 end
 ticMesh=tic;
-m=generateMesh(model,'GeometricOrder','linear', ...
- 'Hmin',o.Hmin_mm,'Hmax',o.Hmax_mm,'Hgrad',o.Hgrad, ...
- 'Hedge',hedge);
+if localPilot
+ m=generateMesh(model,'GeometricOrder','linear', ...
+  'Hmin',o.Hmin_mm,'Hmax',o.Hmax_mm,'Hgrad',o.Hgrad, ...
+  'Hedge',hedge, ...
+  'Hface',{annulusFaceIDs(:)',o.LocalHoleAnnulusHface_mm});
+else
+ % No modification of previously observed Hmax6 source mesh settings.
+ m=generateMesh(model,'GeometricOrder','linear', ...
+  'Hmin',o.Hmin_mm,'Hmax',o.Hmax_mm,'Hgrad',o.Hgrad, ...
+  'Hedge',hedge);
+end
 dt=toc(ticMesh);
 X0=m.Nodes.';T=m.Elements.';
 R.summary.nativeT3Count=size(T,1);
@@ -156,6 +238,19 @@ R.summary.channelHalfWidth_mm=w;
 R.summary.channelApex_mm=tip;
 R.summary.sourceJSON=char(o.JsonPath);
 R.summary.sourceMethod='EdgeCrackHoleLEFM H0-H3 pencil collapse; isolated Cornell three-hole adaptation';
+R.summary.localAnnulusPilot=localPilot;
+R.summary.localAnnulusFaceTarget_mm=o.LocalHoleAnnulusHface_mm;
+R.summary.localAnnulusPhysicalHoleCount=3;
+R.summary.localAnnulusGuidesAreNotHoles=localPilot;
+if localPilot
+ fprintf('G2_LOCAL_ANNULUS_PILOT=1\n');
+ fprintf('G2_LOCAL_ANNULUS_HFACE_MM=%.6f\n',o.LocalHoleAnnulusHface_mm);
+ fprintf('G2_LOCAL_ANNULUS_GUIDE_RADIUS_MM=%s\n',mat2str(guideOuterR));
+ fprintf('G2_LOCAL_ANNULUS_FACE_IDS=%s\n',mat2str(annulusFaceIDs));
+ fprintf('G2_CAD_MATERIAL_FACES=%d\n',geom.NumFaces);
+else
+ fprintf('G2_LOCAL_ANNULUS_PILOT=0\n');
+end
 % A diagnostic figure exists even when the subsequent collapse is held.
 % This allows review of the native 3-circle mesh and finite pencil lips.
 if o.Plot
