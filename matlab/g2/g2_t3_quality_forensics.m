@@ -54,7 +54,10 @@ F.ratioQuantiles=struct('p50',local_quantile(ordered,.50), ...
     'p99',local_quantile(ordered,.99));
 F.topPairs=repmat(struct('rank',0,'ratio',0,'edgeNodes',[], ...
     'elementIDs',[],'edgeMidpoint_mm',[],'centroidMidpoint_mm',[], ...
-    'elementSizes_mm',[],'zone',''),0,1);
+    'elementSizes_mm',[],'zone','', ...
+    'nearestHoleIndex',0,'nearestHoleWallDistance_mm',NaN, ...
+    'nearestHoleCenterDistance_mm',NaN, ...
+    'crackTipDistance_mm',NaN),0,1);
 centroids=(X(T(:,1),:)+X(T(:,2),:)+X(T(:,3),:))/3;
 for k=1:min(topN,numel(idx))
     kk=idx(k);
@@ -62,13 +65,18 @@ for k=1:min(topN,numel(idx))
     t1=u(kk);t2=v(kk);
     mid=.5*(X(e(1),:)+X(e(2),:));
     cm=.5*(centroids(t1,:)+centroids(t2,:));
-    zone=local_zone(mid,crackTip,holeCenters,holeRadii);
+    [zone,holeIndex,holeWallDistance,holeCenterDistance,dTip]= ...
+        local_zone(mid,crackTip,holeCenters,holeRadii);
     F.topPairs(k,1)=struct('rank',k,'ratio',ordered(k), ...
         'edgeNodes',e,'elementIDs',[t1,t2], ...
         'edgeMidpoint_mm',mid, ...
         'centroidMidpoint_mm',cm, ...
         'elementSizes_mm',[h(t1),h(t2)], ...
-        'zone',zone);
+        'zone',zone, ...
+        'nearestHoleIndex',holeIndex, ...
+        'nearestHoleWallDistance_mm',holeWallDistance, ...
+        'nearestHoleCenterDistance_mm',holeCenterDistance, ...
+        'crackTipDistance_mm',dTip);
 end
 if isempty(F.topPairs)
     F.worst=struct();
@@ -80,24 +88,26 @@ F.hasQualityHOLD=F.maxNeighborRatio>1.8;
 F.examinedOnly=true;
 end
 
-function zone=local_zone(mid,tip,holes,radii)
+function [zone,k,dWall,dCenter,dTip]=local_zone(mid,tip,holes,radii)
+% Always return ACTUAL signed distance to nearest circular surface.
+% The category is just a visualization label; the metric is authoritative.
 dTip=norm(mid-tip(:).');
+dCenters=vecnorm(holes-mid,2,2);
+dWalls=dCenters-radii(:);
+[~,k]=min(abs(dWalls));
+dWall=dWalls(k);
+dCenter=dCenters(k);
 if dTip<3.4
     zone='within_3p4mm_of_crack_tip';
-    return
-end
-% Channel extends from bottom edge to tip; distinguish long crack faces.
-if abs(mid(1)-tip(1))<2 && mid(2)>=-1&&mid(2)<tip(2)+1
+elseif abs(mid(1)-tip(1))<2 && mid(2)>=-1 && mid(2)<tip(2)+1
     zone='crack_channel_neighborhood';
-    return
+elseif abs(dWall)<=radii(k)
+    % One local radius from the surface is an explicit scale-based zone;
+    % the former fixed 3-mm cutoff misclassified 3.09 mm near upper hole.
+    zone=sprintf('hole_%d_within_one_radius_of_wall',k);
+else
+    zone='bulk_or_outer_boundary';
 end
-dHole=vecnorm(holes-mid,2,2)-radii(:);
-[dmin,k]=min(abs(dHole));
-if dmin<3
-    zone=sprintf('hole_%d_boundary_neighborhood',k);
-    return
-end
-zone='bulk_or_outer_boundary';
 end
 
 function val=local_quantile(sortedDesc,p)
