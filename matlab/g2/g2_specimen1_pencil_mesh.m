@@ -247,6 +247,37 @@ edgeMin=accumarray(ic,repmat(hh,3,1),[],@min);
 rmax=max(edgeMax(cnt==2)./edgeMin(cnt==2));
 R.summary.minimumAngle_deg=minAng;
 R.summary.maxAdjacentLongestEdgeRatio=rmax;
+holesXY=[holeX,holeY];
+Fbefore=g2_t3_quality_forensics(X0,T,tip,holesXY,radius,12);
+Fafter=g2_t3_quality_forensics(X,T,tip,holesXY,radius,12);
+R.qualityForensics=struct('native',Fbefore,'collapsed',Fafter, ...
+    'comparison','same T3 connectivity before and after coordinate-only collapse');
+R.summary.nativeMinimumAngle_deg=Fbefore.minimumT3Angle_deg;
+R.summary.nativeMaxAdjacentLongestEdgeRatio=Fbefore.maxNeighborRatio;
+R.summary.nativeOverLimitEdges=Fbefore.ratioOver1p8Count;
+R.summary.collapsedOverLimitEdges=Fafter.ratioOver1p8Count;
+R.summary.worstJumpLocation_mm=Fafter.worst.edgeMidpoint_mm;
+R.summary.worstJumpZone=Fafter.worst.zone;
+R.summary.worstJumpElements=Fafter.worst.elementIDs;
+R.summary.worstJumpEdge=Fafter.worst.edgeNodes;
+fprintf('G2_T3_NATIVE_MIN_ANGLE_DEG=%.8f\n',Fbefore.minimumT3Angle_deg);
+fprintf('G2_T3_COLLAPSED_MIN_ANGLE_DEG=%.8f\n',Fafter.minimumT3Angle_deg);
+fprintf('G2_T3_NATIVE_MAX_RATIO=%.8f\n',Fbefore.maxNeighborRatio);
+fprintf('G2_T3_COLLAPSED_MAX_RATIO=%.8f\n',Fafter.maxNeighborRatio);
+fprintf('G2_T3_NATIVE_RATIO_HOLDS=%d/%d\n', ...
+ Fbefore.ratioOver1p8Count,Fbefore.interiorEdges);
+fprintf('G2_T3_COLLAPSED_RATIO_HOLDS=%d/%d\n', ...
+ Fafter.ratioOver1p8Count,Fafter.interiorEdges);
+fprintf('G2_T3_WORST_EDGE_MIDPOINT_MM=(%.6f,%.6f)\n', ...
+ Fafter.worst.edgeMidpoint_mm);
+fprintf('G2_T3_WORST_ZONE=%s\n',Fafter.worst.zone);
+fprintf('G2_T3_WORST_PAIR_ELEMENTS=[%d,%d]\n', ...
+ Fafter.worst.elementIDs);
+if o.Plot
+ R.forensicFigure=local_quality_figure(X0,X,T, ...
+    Fafter.worst.edgeMidpoint_mm,Fafter.worst.edgeNodes, ...
+    Fafter.worst.elementIDs,Fbefore.maxNeighborRatio,Fafter.maxNeighborRatio);
+end
 if minAng<20||rmax>1.8
  R.stage='HOLD_T3_QUALITY';
  R.message=sprintf('Min angle %.4f deg, neighbor ratio %.4f.',minAng,rmax);
@@ -405,4 +436,35 @@ if o.Plot
  title('Three CAD holes + two collapsed banks (candidate; no p010)');
  R.figure=fig;
 end
+end
+
+
+function fig=local_quality_figure(Xnative,Xcollapsed,T,center,edge,elementIDs,rBefore,rAfter)
+% Read-only local overlay of the *same* worst joined element pair.
+fig=figure('Visible','off','Color','w', ...
+    'Name','Cornell #1 T3 edge-size jump — diagnostic');
+halfWidth=16; % mm, plot window only; no mesh/refinement parameter
+for k=1:2
+ ax=subplot(1,2,k,'Parent',fig);
+ if k==1,XX=Xnative;name='BEFORE collapse';else,XX=Xcollapsed;name='AFTER collapse';end
+ centroids=(XX(T(:,1),:)+XX(T(:,2),:)+XX(T(:,3),:))/3;
+ nearby=abs(centroids(:,1)-center(1))<halfWidth & ...
+        abs(centroids(:,2)-center(2))<halfWidth;
+ triplot(T(nearby,:),XX(:,1),XX(:,2), ...
+     'Color',[.58,.68,.75]);hold(ax,'on');
+ plot(XX(edge,1),XX(edge,2),'r-','LineWidth',3.0);
+ for j=1:numel(elementIDs)
+    q=XX(T(elementIDs(j),:),:);
+    patch(ax,q(:,1),q(:,2),'none', ...
+      'EdgeColor',[.9,.22,.1],'LineWidth',1.5);
+ end
+ plot(ax,center(1),center(2),'ro','MarkerSize',5);
+ axis(ax,'equal');grid(ax,'on');
+ xlim(ax,center(1)+halfWidth*[-1 1]);
+ ylim(ax,center(2)+halfWidth*[-1 1]);
+ xlabel(ax,'x (mm)');ylabel(ax,'y (mm)');
+ title(ax,sprintf('%s (whole-mesh ratio %.3f)',name, ...
+     rBefore*(k==1)+rAfter*(k==2)));
+end
+sgtitle(fig,'Actual adjacent-T3 size jump — SAME element IDs (geometry only)');
 end
