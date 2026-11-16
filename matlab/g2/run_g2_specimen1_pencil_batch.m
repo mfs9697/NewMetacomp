@@ -49,6 +49,30 @@ try
    summary.approvedForLEFM=R.approvedForLEFM;
    summary.geometry=R.summary;
    summary.message=R.message;
+   if isfield(R,'qualityForensics')
+       summary.qualityForensics=R.qualityForensics;
+       qFile=fullfile(folder,'quality_forensics.json');
+       fq=fopen(qFile,'w');
+       assert(fq>=0,'G2:CannotWriteForensics', ...
+           'Cannot write quality evidence: %s',qFile);
+       fwrite(fq,jsonencode(R.qualityForensics,'PrettyPrint',true),'char');
+       fclose(fq);
+       fprintf('QUALITY_FORENSICS_JSON=%s\n',qFile);
+   end
+   if isfield(R,'forensicFigure')&&ishandle(R.forensicFigure)
+       try
+           exportgraphics(R.forensicFigure, ...
+               fullfile(folder,'quality_worst_edge_zoom.pdf'), ...
+               'ContentType','vector');
+           exportgraphics(R.forensicFigure, ...
+               fullfile(folder,'quality_worst_edge_zoom.png'), ...
+               'Resolution',220);
+       catch plotError
+           fprintf(2,'QUALITY_PLOT_EXPORT_WARNING=%s\n',plotError.message);
+       end
+       close(R.forensicFigure);
+       R=rmfield(R,'forensicFigure');
+   end
    if isfield(R,'figure')&&ishandle(R.figure)
        try
            exportgraphics(R.figure, ...
