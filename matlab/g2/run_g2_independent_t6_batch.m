@@ -47,6 +47,10 @@ summary=struct('pass',false,'stage','HOLD_NOT_RUN', ...
     'error','');
 C=struct('pass',false,'stage','NOT_RUN');
 try
+    selfCheck=check_g2_independent_t6_jacobian();
+    assert(selfCheck,'G2Independent:JacobianSelfCheck', ...
+        'Synthetic independent T6 Jacobian preflight failed.');
+    summary.syntheticT6JacobianPreflightPassed=true;
     S=load(matFile);
     C=g2_independent_t6_checker(S,geometryFile);
     summary.pass=C.pass;
