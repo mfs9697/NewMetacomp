@@ -132,3 +132,46 @@ Added `g2_t3_quality_forensics.m` and `check_g2_t3_quality_forensics.m`. On the 
 **Repeat after `git pull --ff-only` on the branch**, using the unchanged PowerShell command. A failed geometry-quality gate **still correctly exits 1** and is not an executable failure to suppress. Please retain `quality_forensics.json`, `batch_summary.json` and `quality_worst_edge_zoom.png`.
 
 Original author's two stale MATLAB startup-path warnings remain unrelated to this mesh-quality result.
+
+### 16 November 2026 — Third actual MATLAB run: native-origin size-jump HOLD and controlled Hmax trial
+
+**Researcher-observed run:** `run_20261116_192745_160`, MATLAB **R2023a/PDE 3.10**, free RAM **5.44 GiB**, manufactured T3 forensics **PASS**, native and collapsed mesh generated. Results:
+
+| Actual metric | Native T3 | Collapsed T3 |
+|---|---:|---:|
+| Minimum angle | 20.96808450 deg | 20.96808450 deg |
+| Maximum adjacent longest-edge ratio | **2.48807517** | **2.48807517** |
+| Internal edges over fixed 1.8 cutoff | **23 / 24545** | **23 / 24545** |
+
+Worst internal T3 adjacency: **element IDs 12620 and 13711**, shared-edge midpoint **(161.828814,171.865234) mm**. Its distance to the **upper circle center** `(152.4,171.45)` is approximately **9.438 mm**; subtract radius `6.35mm` to get **~3.09mm clearance to the upper hole wall**. The original diagnostic's `bulk_or_outer_boundary` label was misleading because it used a fixed **3mm** cutoff. Source defect now corrected by reporting a **numeric nearest hole-wall distance**, hole ID, and scale-based zone.
+
+**Interpretation:** max ratio is already too high **before collapse**. The count and max are identical on both meshes, but the original console *alone* cannot establish that all 23 failing physical edges have identical IDs. New `sameOverLimitEdgeIDsBeforeAfter` field compares the full underlying failed connectivity sets. This is a **native PDE spatial size gradation** problem in the hole neighborhood, *not evidence of crack-bank failure*. No source threshold or test result has been changed.
+
+#### One-variable, no-auto-retry experiment
+
+Prepare **one manual** `Hmax_mm=6` candidate, compared to the original **7mm** baseline. All other controls are unchanged:
+
+| Control | Baseline | Pilot |
+|---|---:|---:|
+| `Hmax_mm` | 7 | **6** |
+| `Hmin_mm` | .12 | .12 |
+| `Hgrad` | 1.12 | 1.12 |
+| `Hedge_mm` (pencil lips) | .45 | .45 |
+| `ChannelHalfWidth_mm` | .020 | .020 |
+| `TipShoulder_mm` | .30 | .30 |
+| Hole CAD-chord target | original `.70*2*r*sin(pi/120)` | unchanged |
+| `MaxT3Elements` | 40000 | 40000 |
+| Min T3 angle / max T3 ratio | >=20 deg / <=1.8 | **unchanged** |
+
+Execute from the correct checked-out branch when free RAM is sufficient. `-MinFreeGiB 6` is a conservative resource control for this slightly denser pilot (the scripted default is still 5).
+
+```powershell
+git pull --ff-only
+powershell -NoProfile -ExecutionPolicy Bypass -File .\matlab\g2\run_g2_specimen1_pencil.ps1 -Hmax_mm 6 -MinFreeGiB 6
+```
+
+If only **5.44 GiB** remains available, the explicit 6-GiB guard will deliberately stop before MATLAB. Release memory first rather than weakening the guard. The `-Hmax_mm` option is recorded (locale-invariant) in console and `batch_summary.json`. The no-option command continues to run the **7mm baseline** unchanged. No one should infer an accepted LEFM mesh from `CANDIDATE_TOPOLOGY_PASS`.
+
+New diagnostic evidence includes `quality_forensics.json` with the numeric **3-hole surface distances** for every top pair; `summary.geometry.sameOverLimitEdgeIDsBeforeAfter` tests exact failing-edge identity. Request the new batch log and worst-edge image. If the `6mm` trial fails the same bound, compare the all-23 spatial locations before proposing a local hole-focused refinement; do not launch repeated indiscriminate parameter sweeps.
+
+**Status:** new one-variable source patch statically inspected only. The researcher has NOT yet run 6mm, and no mesh-quality improvement is claimed.
