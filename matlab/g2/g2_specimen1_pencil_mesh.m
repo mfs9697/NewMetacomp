@@ -167,6 +167,16 @@ model=createpde(1);
 geometryFromEdges(model,dl);
 geom=model.Geometry;
 annulusFaceIDs=[];
+if localPilot && o.Plot
+ % If CAD decomposition fails the face gate, retain a diagnostic drawing
+ % of the ACTUAL PDE geometry; never interpret a failed partition as valid.
+ cadFig=figure('Visible','off','Color','w', ...
+     'Name','G2 local annulus CAD decomposition — face IDs');
+ pdegplot(model,'FaceLabels','on','EdgeLabels','off');
+ axis equal;grid on;
+ title('Three true holes + two internal 3R guide contours (not holes)');
+ R.figure=cadFig;
+end
 if localPilot
  sample=[holeX(1)+2*radius(1),holeY(1); ...
          holeX(3)+2*radius(3),holeY(3); ...
@@ -184,6 +194,9 @@ if localPilot
     return
  end
  annulusFaceIDs=fIDs(1:2);
+ fprintf('G2_LOCAL_CAD_FACE_PREFLIGHT_PASS=1\n');
+ fprintf('G2_LOCAL_CAD_FACE_IDS=%s\n',mat2str(annulusFaceIDs));
+ fprintf('G2_LOCAL_CAD_FACE_COUNT=%d\n',geom.NumFaces);
 end
 
 % Explicitly select left/right CAD lips including the tapered shoulder.
@@ -254,6 +267,7 @@ end
 % A diagnostic figure exists even when the subsequent collapse is held.
 % This allows review of the native 3-circle mesh and finite pencil lips.
 if o.Plot
+ if isfield(R,'figure')&&ishandle(R.figure),close(R.figure);end
  nativeFig=figure('Visible','off','Color','w', ...
     'Name','Cornell #1 native pencil-channel pre-collapse mesh');
  triplot(T,X0(:,1),X0(:,2),'Color',[.60 .72 .80]);hold on;
