@@ -43,6 +43,10 @@ try
            'Required PDE capability missing: %s', ...
            strjoin(probe.failedChecks,'; '));
    end
+   selfTestPass=check_g2_t3_quality_forensics();
+   fprintf('T3_FORENSICS_SELFTEST_PASS=%d\n',selfTestPass);
+   assert(selfTestPass,'G2:ForensicsSelfTest', ...
+       'Manufactured T3 worst-edge diagnostic failed.');
    R=g2_specimen1_pencil_mesh('Plot',true);
    summary.stage=R.stage;
    summary.pass=R.pass;
