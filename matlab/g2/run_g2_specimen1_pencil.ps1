@@ -9,7 +9,9 @@ param(
     [string]$MatlabExe = 'C:\Program Files\MATLAB\R2023a\bin\matlab.exe',
     [double]$MinFreeGiB = 5.0,
     [ValidateRange(5.0,7.0)]
-    [double]$Hmax_mm = 7.0
+    [double]$Hmax_mm = 7.0,
+    [ValidateRange(0.0,3.0)]
+    [double]$LocalHoleAnnulusHface_mm = 0.0
 )
 $ErrorActionPreference = 'Stop'
 $repoRoot = (Resolve-Path (Join-Path $PSScriptRoot '..\..')).Path
@@ -42,10 +44,20 @@ try {
 $matlabPath = $scriptDir.Replace("'", "''")
 # Invariant-culture MATLAB numeric literal regardless of Windows locale.
 $hmaxLiteral = $Hmax_mm.ToString('G17', [System.Globalization.CultureInfo]::InvariantCulture)
-$expr = "addpath('$matlabPath');run_g2_specimen1_pencil_batch($hmaxLiteral)"
+$localLiteral = $LocalHoleAnnulusHface_mm.ToString('G17', [System.Globalization.CultureInfo]::InvariantCulture)
+if ($LocalHoleAnnulusHface_mm -gt 0) {
+    if ($LocalHoleAnnulusHface_mm -lt 0.8) {
+        throw "Local annulus Hface target must be at least 0.8 mm, or exactly 0 (off)."
+    }
+    if ($Hmax_mm -ne 6.0) {
+        throw "Local 3R annulus pilot requires Hmax_mm = 6 (preregistered base)."
+    }
+}
+$expr = "addpath('$matlabPath');run_g2_specimen1_pencil_batch($hmaxLiteral,$localLiteral)"
 Write-Host "Repository: $repoRoot"
 Write-Host "MATLAB: $MatlabExe"
-Write-Host ("Hmax_mm control: {0} (sole changed parameter; default 7)" -f $hmaxLiteral)
+Write-Host ("Hmax_mm control: {0} (default 7)" -f $hmaxLiteral)
+Write-Host ("Upper/lower hole 3R annulus Hface target: {0} mm (0=disabled)" -f $localLiteral)
 Write-Host "Command: matlab -batch <g2 geometry-only runner>"
 & $MatlabExe -batch $expr
 $rc = $LASTEXITCODE
