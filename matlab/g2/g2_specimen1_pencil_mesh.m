@@ -139,6 +139,19 @@ R.summary.channelHalfWidth_mm=w;
 R.summary.channelApex_mm=tip;
 R.summary.sourceJSON=char(o.JsonPath);
 R.summary.sourceMethod='EdgeCrackHoleLEFM H0-H3 pencil collapse; isolated Cornell three-hole adaptation';
+% A diagnostic figure exists even when the subsequent collapse is held.
+% This allows review of the native 3-circle mesh and finite pencil lips.
+if o.Plot
+ nativeFig=figure('Visible','off','Color','w', ...
+    'Name','Cornell #1 native pencil-channel pre-collapse mesh');
+ triplot(T,X0(:,1),X0(:,2),'Color',[.60 .72 .80]);hold on;
+ plot(outer([1:end 1],1),outer([1:end 1],2), ...
+    'r-','LineWidth',1.2);
+ axis equal;grid on;
+ xlabel('x (mm)');ylabel('y (mm)');
+ title('Native pencil channel before collapse — geometry only');
+ R.figure=nativeFig;
+end
 if size(T,1)>o.MaxT3Elements
  R.stage='HOLD_WORK_BUDGET';
  R.message=sprintf('Native T3 count %d > cap %d.',size(T,1),o.MaxT3Elements);
@@ -365,6 +378,7 @@ R.physicalTipNode=tipID;
 R.bankPairing=struct('leftSourceNodes',ln,'rightSourceNodes',rn, ...
  'station_mm',pairedY,'sourceStationMismatch_mm',ysL-ysR);
 if o.Plot
+ if isfield(R,'figure')&&ishandle(R.figure),close(R.figure);end
  fig=figure('Color','w','Visible','off', ...
     'Name','Cornell #1 experimental pencil-collapsed T3 (NOT LEFM)');
  triplot(T,X(:,1),X(:,2),'Color',[.5 .67 .78]);hold on;
