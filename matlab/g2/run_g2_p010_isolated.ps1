@@ -26,16 +26,16 @@ if ($jsonSha -ne '45A88FA0926472DDBE5E70E4C80A97B88196DD45D8A266FA04273F89790B47
 # Verify pinned upstream copies by Git blob identity *and* a clean local
 # working tree. Git handles Windows checkout EOL filters itself.
 $pinned=@(
-    @('build_m1i_trial_tip_annulus_p010.m','9440ceda09609b4bcbb4bc7da2874f9fffde62b1'),
-    @('build_m1i_trial_tip_disk_p010.m','877aa59c8d6cadc0987c791e1d13204f98125d7e'),
-    @('build_twohole_literal_annulus.m','16b2045836f548bbc38eea944663a9eb09a5eec3'),
-    @('cut_twohole_literal_annulus.m','bfdd4418193da5792e28e07562fffa46bfab8196'),
-    @('T3toT6_fast.m','29bf9d8e233b24d70cdc81e392f8b24e239c1afa'),
-    @('main_m1i_increment_ring_geometry_only.m','40fbc6b2e4f35299f773fc14736961d4136a7bf7')
+    @{ Name='build_m1i_trial_tip_annulus_p010.m'; SHA='9440ceda09609b4bcbb4bc7da2874f9fffde62b1' }
+    @{ Name='build_m1i_trial_tip_disk_p010.m'; SHA='877aa59c8d6cadc0987c791e1d13204f98125d7e' }
+    @{ Name='build_twohole_literal_annulus.m'; SHA='16b2045836f548bbc38eea944663a9eb09a5eec3' }
+    @{ Name='cut_twohole_literal_annulus.m'; SHA='bfdd4418193da5792e28e07562fffa46bfab8196' }
+    @{ Name='T3toT6_fast.m'; SHA='29bf9d8e233b24d70cdc81e392f8b24e239c1afa' }
+    @{ Name='main_m1i_increment_ring_geometry_only.m'; SHA='40fbc6b2e4f35299f773fc14736961d4136a7bf7' }
 )
 $verified=0
 foreach($item in $pinned) {
-    $name=$item[0];$expected=$item[1]
+    $name=$item.Name;$expected=$item.SHA
     $file=Join-Path $vendor $name
     if (-not (Test-Path -LiteralPath $file -PathType Leaf)) {
         throw "Pinned p010 MATLAB source missing: $file"
