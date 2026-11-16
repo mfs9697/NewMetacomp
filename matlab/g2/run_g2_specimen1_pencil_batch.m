@@ -30,6 +30,19 @@ summary=struct('stage','NOT_RUN','pass',false, ...
     'MATLABRelease',version('-release'),'folder',folder, ...
     'error','','geometry',struct());
 try
+   probe=g2_pde_toolbox_preflight();
+   summary.environment=probe;
+   fprintf('PDE_MODEL_CLASS=%s\n',probe.modelClass);
+   fprintf('PDE_TOOLBOX_VERSION=%s\n',probe.PDEToolboxVersion);
+   for k=1:numel(probe.failedChecks)
+       fprintf(2,'PDE_PREFLIGHT_FAILURE_%d=%s\n',k,probe.failedChecks{k});
+   end
+   fprintf('PDE_PREFLIGHT_PASS=%d\n',probe.pass);
+   if ~probe.pass
+       error('G2:PDEToolboxUnavailable', ...
+           'Required PDE capability missing: %s', ...
+           strjoin(probe.failedChecks,'; '));
+   end
    R=g2_specimen1_pencil_mesh('Plot',true);
    summary.stage=R.stage;
    summary.pass=R.pass;
@@ -76,7 +89,8 @@ catch ME
 end
 summaryFile=fullfile(folder,'batch_summary.json');
 fid=fopen(summaryFile,'w');
-assert(fid>=0,'G2:CannotWriteSummary');
+assert(fid>=0,'G2:CannotWriteSummary', ...
+    'Unable to write batch_summary.json: %s',summaryFile);
 fwrite(fid,jsonencode(summary,'PrettyPrint',true),'char');
 fclose(fid);
 fprintf('SUMMARY_JSON=%s\n',summaryFile);
