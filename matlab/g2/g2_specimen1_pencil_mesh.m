@@ -32,6 +32,10 @@ addParameter(ip,'Hedge_mm',.45,@(v)isnumeric(v)&&isscalar(v)&&v>0);
 % Default [] retains the prior byte-equivalent unpartitioned baseline.
 addParameter(ip,'LocalHoleAnnulusHface_mm',[], ...
  @(v)isempty(v)||(isnumeric(v)&&isscalar(v)&&isfinite(v)&&v>=.8&&v<=3));
+% Strictly opt-in: one additional middle-hole Hface region while keeping
+% the originally observed lower+upper ring partition and target untouched.
+addParameter(ip,'IncludeMiddleHoleAnnulus',false, ...
+ @(v)islogical(v)&&isscalar(v));
 
 addParameter(ip,'PairStationTolerance_mm',.15,@(v)isnumeric(v)&&isscalar(v)&&v>0);
 addParameter(ip,'MaxT3Elements',40000,@(v)isnumeric(v)&&isscalar(v)&&v>0);
@@ -62,6 +66,12 @@ assert(numel(G.holes)==3,'G2:RequireThreeHoles', ...
  'Cornell specimen #1 must have exactly three holes.');
 w=o.ChannelHalfWidth_mm;
 localPilot=~isempty(o.LocalHoleAnnulusHface_mm);
+middlePilot=o.IncludeMiddleHoleAnnulus;
+if middlePilot
+ assert(localPilot && abs(o.LocalHoleAnnulusHface_mm-1.5)<1e-12, ...
+    'G2:MiddlePilotRequiresPinnedHface', ...
+    'Middle-hole pilot requires the pinned 1.5-mm Hface target.');
+end
 if localPilot
  assert(abs(o.Hmax_mm-6)<1e-12, ...
   'G2:LocalPilotRequiresHmax6', ...
@@ -107,11 +117,16 @@ for k=1:3
  end
 end
 if localPilot
- % Fixed 3R guide radius: all 19 actual Hmax6 violating edges are within
- % 2R of a circular WALL. Internal guide contours are NOT physical holes.
- localHoleIndices=[1,3];
+ % Fixed 3R guide radius: lower+upper 2-ring pilot has been observed.
+ % The only new experiment adds middle hole #2 with the same 3R/Hface.
+ % Internal guide contours do NOT remove physical material.
+ if middlePilot
+     localHoleIndices=[1,2,3];
+ else
+     localHoleIndices=[1,3];
+ end
  guideOuterR=3*radius(localHoleIndices);
- for j=1:2
+ for j=1:numel(localHoleIndices)
   k=localHoleIndices(j);
   assert(holeX(k)-guideOuterR(j)>xmin && ...
      holeX(k)+guideOuterR(j)<xmax && ...
@@ -127,9 +142,15 @@ if localPilot
        'Local annular guide circle may not intersect another true hole.');
   end
  end
- assert(norm([holeX(1)-holeX(3),holeY(1)-holeY(3)])> ...
-    sum(guideOuterR), ...
-    'G2:GuidesOverlap', 'Two annular guide circles overlap.');
+ for ja=1:numel(localHoleIndices)
+   for jb=1:ja-1
+     ka=localHoleIndices(ja);kb=localHoleIndices(jb);
+     assert(norm([holeX(ka)-holeX(kb),holeY(ka)-holeY(kb)])> ...
+       guideOuterR(ja)+guideOuterR(jb), ...
+       'G2:GuidesOverlap', ...
+       'Internal 3R guide circles %d and %d overlap.',ka,kb);
+   end
+ end
  % Circle-to-crack clearance: guide radius 19.05mm, x offset 50.8mm.
  assert(all(holeX(localHoleIndices)-guideOuterR>cx+w), ...
   'G2:GuideCrossesPencil', ...
@@ -142,24 +163,38 @@ end
 outer=[cx+w,ymin;xmax,ymin;xmax,ymax;xmin,ymax; ...
  xmin,ymin;cx-w,ymin;cx-w,yshoulder;cx,yt;cx+w,yshoulder];
 Np=size(outer,1);
-if localPilot,nShapes=6;else,nShapes=4;end
+if localPilot
+ nShapes=4+numel(localHoleIndices);
+else
+ nShapes=4;
+end
 cols=cell(nShapes,1);
 cols{1}=[2;Np;outer(:,1);outer(:,2)];
 for k=1:3,cols{k+1}=[1;holeX(k);holeY(k);radius(k)];end
+names={'MAT','C1','C2','C3'};
+solid='MAT-C1-C2-C3';
 if localPilot
- cols{5}=[1;holeX(1);holeY(1);guideOuterR(1)];
- cols{6}=[1;holeX(3);holeY(3);guideOuterR(2)];
- % This formula is PHYSICALLY IDENTICAL to MAT-C1-C2-C3 but retains
- % the lower/upper guide-circle edges as separate material subdomains.
- % No additional void is removed and no mechanical interface is imposed.
- sf=['((MAT-C1-C2-C3)-G1-G3)' ...
-     '+((MAT-C1-C2-C3)*G1)' ...
-     '+((MAT-C1-C2-C3)*G3)'];
- ns=char('MAT','C1','C2','C3','G1','G3').';
+ % Partition the same THREE-HOLE solid by nonintersecting guide disks.
+ % CSG union reconstructs all the original material: NO fourth hole.
+ bulk=['(',solid,')'];
+ sf=['((',solid,')'];
+ for j=1:numel(localHoleIndices)
+    k=localHoleIndices(j);
+    guideName=sprintf('G%d',k);
+    cols{4+j}=[1;holeX(k);holeY(k);guideOuterR(j)];
+    names{end+1}=guideName; %#ok<AGROW>
+    bulk=[bulk,'-',guideName]; %#ok<AGROW>
+    sf=[sf,'-',guideName]; %#ok<AGROW>
+ end
+ sf=[sf,')'];
+ for j=1:numel(localHoleIndices)
+    k=localHoleIndices(j);
+    sf=[sf,'+((',solid,')*G',num2str(k),')']; %#ok<AGROW>
+ end
 else
- sf='MAT-C1-C2-C3';
- ns=char('MAT','C1','C2','C3').';
+ sf=solid;
 end
+ns=char(names{:}).';
 gd=zeros(max(cellfun(@numel,cols)),nShapes);
 for k=1:nShapes,gd(1:numel(cols{k}),k)=cols{k};end
 [dl,~]=decsg(gd,sf,ns);
@@ -174,26 +209,30 @@ if localPilot && o.Plot
      'Name','G2 local annulus CAD decomposition — face IDs');
  pdegplot(model,'FaceLabels','on','EdgeLabels','off');
  axis equal;grid on;
- title('Three true holes + two internal 3R guide contours (not holes)');
+ title(sprintf('Three true holes + %d internal 3R guide contours', ...
+   numel(localHoleIndices)));
  R.figure=cadFig;
 end
 if localPilot
- sample=[holeX(1)+2*radius(1),holeY(1); ...
-         holeX(3)+2*radius(3),holeY(3); ...
+ sample=[holeX(localHoleIndices)+2*radius(localHoleIndices), ...
+         holeY(localHoleIndices); ...
          xmax-25,(ymin+ymax)/2];
  fIDs=nearestFace(geom,sample);
  R.summary.geometryFaceCount=geom.NumFaces;
  R.summary.localAnnulusProbeFaces=fIDs;
  R.summary.localAnnulusGuideOuterRadii_mm=guideOuterR(:).';
  R.summary.localAnnulusSampleCoords_mm=sample;
- if geom.NumFaces~=3 || numel(unique(fIDs))~=3
+ R.summary.localAnnulusHoleIndices=localHoleIndices;
+ expectedFaces=1+numel(localHoleIndices);
+ if geom.NumFaces~=expectedFaces || ...
+       numel(unique(fIDs))~=expectedFaces
     R.stage='HOLD_LOCAL_ANNULUS_PARTITION';
-    R.message=sprintf(['Expected 3 connected material subdomains ', ...
-        '(bulk, lower/upper annuli), got NumFaces=%d and probe IDs=%s.'], ...
-        geom.NumFaces,mat2str(fIDs));
+    R.message=sprintf(['Expected %d distinct material faces ', ...
+        '(bulk + selected annuli), got NumFaces=%d and probe IDs=%s.'], ...
+        expectedFaces,geom.NumFaces,mat2str(fIDs));
     return
  end
- annulusFaceIDs=fIDs(1:2);
+ annulusFaceIDs=fIDs(1:end-1);
  fprintf('G2_LOCAL_CAD_FACE_PREFLIGHT_PASS=1\n');
  fprintf('G2_LOCAL_CAD_FACE_IDS=%s\n',mat2str(annulusFaceIDs));
  fprintf('G2_LOCAL_CAD_FACE_COUNT=%d\n',geom.NumFaces);
@@ -252,12 +291,15 @@ R.summary.channelApex_mm=tip;
 R.summary.sourceJSON=char(o.JsonPath);
 R.summary.sourceMethod='EdgeCrackHoleLEFM H0-H3 pencil collapse; isolated Cornell three-hole adaptation';
 R.summary.localAnnulusPilot=localPilot;
+R.summary.includeMiddleHoleAnnulus=middlePilot;
 R.summary.localAnnulusFaceTarget_mm=o.LocalHoleAnnulusHface_mm;
 R.summary.localAnnulusPhysicalHoleCount=3;
 R.summary.localAnnulusGuidesAreNotHoles=localPilot;
 if localPilot
  fprintf('G2_LOCAL_ANNULUS_PILOT=1\n');
  fprintf('G2_LOCAL_ANNULUS_HFACE_MM=%.6f\n',o.LocalHoleAnnulusHface_mm);
+ fprintf('G2_INCLUDE_MIDDLE_HOLE_ANNULUS=%d\n',middlePilot);
+ fprintf('G2_LOCAL_ANNULUS_HOLE_INDICES=%s\n',mat2str(localHoleIndices));
  fprintf('G2_LOCAL_ANNULUS_GUIDE_RADIUS_MM=%s\n',mat2str(guideOuterR));
  fprintf('G2_LOCAL_ANNULUS_FACE_IDS=%s\n',mat2str(annulusFaceIDs));
  fprintf('G2_CAD_MATERIAL_FACES=%d\n',geom.NumFaces);
