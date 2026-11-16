@@ -49,6 +49,13 @@ F.nonManifoldEdges=nnz(counts>2);
 F.maxNeighborRatio=max(ordered);
 F.ratioOver1p8Count=nnz(ratios>1.8);
 F.ratioOver1p8Fraction=nnz(ratios>1.8)/max(1,numel(ii));
+% Full connectivity fingerprint of quality-HOLD edges; distinguishes
+% an unchanged count from the same *actual* edge IDs before/after collapse.
+failedInteriorEdges=ii(ratios>1.8);
+F.overLimitEdgeNodeIDs=edges(failedInteriorEdges,:);
+F.overLimitOwnerElementIDs=[elo(failedInteriorEdges),ehi(failedInteriorEdges)];
+F.overLimitEdgeMidpoints_mm=.5*(X(edges(failedInteriorEdges,1),:)+ ...
+    X(edges(failedInteriorEdges,2),:));
 F.ratioQuantiles=struct('p50',local_quantile(ordered,.50), ...
     'p90',local_quantile(ordered,.90),'p95',local_quantile(ordered,.95), ...
     'p99',local_quantile(ordered,.99));
