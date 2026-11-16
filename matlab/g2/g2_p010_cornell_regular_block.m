@@ -285,5 +285,15 @@ if o.Plot
  title(sprintf('Frozen p010 (2,788 T3) + 0.3 mm collar (128 T3) — %s', ...
     R.stage),'Interpreter','none');
  R.figure=fig;
+ zoomFig=figure('Color','w','Visible','off', ...
+     'Name','Cornell #1 p010 regular innermost crack-tip disk');
+ triplot(Tu,Xu(:,1)-tip(1),Xu(:,2)-tip(2), ...
+      'Color',[.38,.54,.66]);hold on;
+ plot(0,0,'r.','MarkerSize',18);
+ axis equal;grid on;box on;
+ xlim([-.95,.95]);ylim([-.95,.95]);
+ xlabel('x - x_{tip} (mm)');ylabel('y - y_{tip} (mm)');
+ title('Source p010: regular inner-disk mesh, original 0.1 mm pitch scaled');
+ R.tipZoomFigure=zoomFig;
 end
 end
