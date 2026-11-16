@@ -1,3 +1,32 @@
+# Recommended workflow: MATLAB R2023a BATCH + experimental pencil collapse
+
+**Researcher decision (16 Nov 2026):** all new geometry runs use `matlab -batch`; crack faces are modeled by a finite-width **pencil channel and guarded collapse**, following the established *geometry strategy* of [EdgeCrackHoleLEFM](https://github.com/mfs9697/EdgeCrackHoleLEFM). The previous `build_g2_specimen1_geometry.m` remains an **uncracked illustration only** and MUST NOT substitute for the crack mesh.
+
+**Latest upstream family audited:** `src/trajectory/edge_trajectory_candidate_mesh_pencil_p010.m`, `edge_pencil_join_native_mesh.m`, `edge_pencil_crack_banks_from_topology.m`, `edge_pencil_mesh_invariants.m` in EdgeCrackHoleLEFM main @ `a14d8872ab588ac551e41b4531bffee2dcd0ce2c`. The H0 trial C evidence is [H0_PENCIL_P010_QUALIFIED_GEOMETRY_REFERENCE_2026-10-28.md](https://github.com/mfs9697/EdgeCrackHoleLEFM/blob/main/docs/H0_PENCIL_P010_QUALIFIED_GEOMETRY_REFERENCE_2026-10-28.md). **Do not reuse its two-hole 300×400-mm hard-coded geometry/BC as Cornell #1.**
+
+### One command on Windows
+
+From a local checkout of **branch `research/g2-pencil-collapse-batch-20261116`** (which includes stacked PR #12 and original geometry JSON), in PowerShell:
+
+```powershell
+powershell -NoProfile -ExecutionPolicy Bypass -File .\matlab\g2\run_g2_specimen1_pencil.ps1
+```
+
+The launcher checks for MATLAB R2023a, **at least 5 GiB free physical RAM**, and source JSON, then executes `matlab -batch`. Headless MATLAB produces an **immutable per-run folder** under `outputs/g2_specimen1_pencil/run_YYYYmmdd_HHMMSS_FFF/` with `batch_console.log` and `batch_summary.json`. On a candidate pass it additionally writes `GEOMETRY_ONLY_candidate.mat` (T3/T6 arrays and bank IDs) and a vector PDF/PNG if plotting succeeds. On a HOLD the batch exits **nonzero**, and the exact stage/reason is in the summary. Generated output is ignored by Git.
+
+The pilot `g2_specimen1_pencil_mesh.m` does **not** import physical source states or solve a PDE:
+1. Read nominal specimen #1 JSON (508×203.2 mm, three exact CAD circles, initial `(101.6,0)→(101.6,25.4)` mm).
+2. Subtract a pencil-shaped channel with half-width `0.020 mm` from the bottom boundary; preserve the single geometric tip.
+3. Native PDE `generateMesh` (T3 **geometry**, with `Hmin=.12mm`, `Hmax=7mm`, `Hgrad=1.12` and lip `Hedge=.45mm` pilot targets).
+4. Identify both physical lip chains, pair their arclength stations, adjust each pair to the centerline **while preserving distinct node IDs** and leave **only one common tip**. Reject mismatched numbers/stations, bad quality or lost topology; no invented correspondence or blind retry.
+5. Construct straight-sided T6 with unique midsides, check 4 boundary loops (outer + three holes), each circle's boundary, T3 angles/neighbor growth, bank chains and solid area.
+
+**Crucial difference from verified upstream H0/H3:** this isolated *first transfer* currently does **NOT** incorporate the upstream **3-mm structured p010 tip patch** or **0.3-mm analytical collar**, nor the original independent 21-gate T6 checker. Thus even if `CANDIDATE_TOPOLOGY_PASS`, the flag `approvedForLEFM=false` is never relaxed. In particular, **do not calculate K, G, COD, EDI or crack paths from this candidate mesh**. Follow-up engineering must port/pin the protected p010/collar for the **vertical crack, three circles, eccentric load geometry**, qualify the final conforming T3/T6 mesh and obtain independent signed EDI/COD before any physics.
+
+This branch contains **unexecuted MATLAB source**. Static checks are not runtime evidence. The first `-batch` invocation may produce `HOLD_UNMATCHED_LIP_COUNTS`, `HOLD_T3_QUALITY` or another genuine diagnostic; that is a useful preflight, not a scientific failure to conceal. Never loosen thresholds or replace the tip by coincident but welded IDs to claim success.
+
+### Older geometry-only display
+
 # MATLAB geometry-only reconstruction — Cornell (1990), specimen #1
 
 This directory constructs **the nominal specimen #1 geometry**, as recorded in [G2_SPECIMEN1_1990_GEOMETRY.json](../../docs/research/crack-growth-gaps-2026/G2_SPECIMEN1_1990_GEOMETRY.json), and **nothing more**.
