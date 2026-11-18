@@ -1,0 +1,146 @@
+{
+  "schema": "NewMetacomp.G2.MaterialContrastPolicy.v1",
+  "scope": "frozen-geometry two-phase linear-elastic comparison on the accepted numerical State 2; illustrative moduli; no crack growth, no onset, no toughness, no CZM",
+  "issue": 33,
+  "base": {
+    "repo": "mfs9697/NewMetacomp",
+    "parentPR": 32,
+    "parentHead": "f2c9790d9802e9ce40a55978ea0b6e13feafb7bf",
+    "chainDir": "outputs/g2_trajectory_chain_v1_attempt2",
+    "rejectedChainDir": "outputs/g2_trajectory_chain_v1",
+    "evidenceSHAFile": "matlab/g2/evidence/wp34_20261118/SHA256SUMS_original_outputs.txt",
+    "rootSHA256": "fa24bc438b8d2f0aad1f6aa8536faa587cd2d0f8216a367558dd1c1d7cd14edb",
+    "reviewSHA256": "e5ad2c170b47374bc6eb90a7b5d3d82dedbf0d2bdf7276d9a6751a4ca7f78055",
+    "state2SHA256": "4603095bbb1ad3a61d9433febc6638500d9b6810a5c29c6da3b45c117c1ee2e6",
+    "meshSHA256": "9269be43141014eff1e9f7ef6ef0cdc82b2772c62a12ccf3d847549c7485c412",
+    "trajectoryPolicySHA256": "1d6af7f6f3e8af389ab02330d9a1eaebdbc00bedb52aad54db902b4de36b39dc",
+    "cornellJSON_SHA256": "45a88fa0926472ddbe5e70e4c80a97b88196dd45d8a266fa04273f89790b47bf",
+    "trustedP0SHA256": "15201996b4165aa9980f61f370a75749b1ce28ec0accaa061902641524c37c58",
+    "recordedState2_KI_MPa_sqrt_m_per_kN": 0.195982362,
+    "recordedState2_KII_MPa_sqrt_m_per_kN": 0.003149970
+  },
+  "frozenGeometry": {
+    "crackPolyline_mm": [[101.6, 0], [101.6, 25.4], [102.4722795671, 29.3037326185], [103.4091509165, 33.1924691839]],
+    "crackPolylineTolerance_mm": 1e-9,
+    "holeCenters_mm": [[152.4, 69.85], [152.4, 120.65], [152.4, 171.45]],
+    "holeRadius_mm": 6.35,
+    "interfaceRadius_mm": 19.05,
+    "tipGuideRadius_mm": 15,
+    "plate_mm": [508, 203.2],
+    "expectedT3": 28625,
+    "expectedT6Nodes": 58161
+  },
+  "phaseMap": {
+    "labels": {"matrix": 1, "reinforcement": 2},
+    "interfaceDefinition": "closed polygon through the saved T3 vertices lying on the nominal 19.05 mm circle, in angular order (inscribed polygon of the nominal circle)",
+    "onCircleTolerance_mm": 1e-9,
+    "minGapToNextT3Vertex_mm": 1e-3,
+    "midsideOnChordTolerance_mm": 1e-9,
+    "areaIdentityRelTol": 1e-12,
+    "plateAreaIdentityRelTol": 1e-9,
+    "voidPenetrationTolerance_mm": 1e-9,
+    "classification": "mapper = T3 edge-adjacency flood fill blocked at interface chords; verifier = independent point-in-polygon of all six T6 nodes; both must agree element by element",
+    "centroidOnlyClassification": "forbidden"
+  },
+  "materials": {
+    "plane": "stress",
+    "E_matrix_MPa": 3268.115,
+    "nu_matrix": 0.35,
+    "nu_reinforcement": 0.35,
+    "thickness_mm": 12.7,
+    "illustrativeOnly": true
+  },
+  "cases": [
+    {"id": "H1", "solver": "original g2_t6_elasticity + g2_trajectory_sif_on_mesh", "ratio": 1, "phaseAware": false},
+    {"id": "M0", "solver": "g2_t6_elasticity_phase + g2_material_sif_on_mesh", "ratio": 1, "phaseAware": true},
+    {"id": "Msoft", "solver": "g2_t6_elasticity_phase + g2_material_sif_on_mesh", "ratio": 0.5, "phaseAware": true},
+    {"id": "Mstiff", "solver": "g2_t6_elasticity_phase + g2_material_sif_on_mesh", "ratio": 2, "phaseAware": true}
+  ],
+  "bvp": {
+    "P_N": 1,
+    "pin_mm": [25.4, 0],
+    "roller_mm": [482.6, 0],
+    "load_mm": [254, 203.2],
+    "loadDirection": "downward"
+  },
+  "benchmark": {
+    "type": "concentric coated circular hole in a finite disk, plane stress; exact Lame (axisymmetric) + Michell cos(2theta) fields; traction-free hole, perfectly bonded interface, Dirichlet exact displacement on the outer circle",
+    "a_mm": 6.35,
+    "b_mm": 19.05,
+    "c_mm": 57.15,
+    "remoteUniaxialStress_MPa": 1,
+    "ratios": [0.5, 2, 10],
+    "Hmax_mm": [2.4, 1.2, 0.6],
+    "exactFieldSelfCheckRelTol": 1e-7,
+    "finestDisplacementRelErrorMax": 5e-3,
+    "finestEnergyRelErrorMax": 5e-3,
+    "finestInterfaceTractionMomentRelErrorMax": 2e-2,
+    "minObservedOrderFinestPair": 1.0,
+    "requireMonotoneDecrease": true,
+    "identityRatio1RelTol": 1e-12,
+    "referenceAssemblyRelTol": 1e-12,
+    "negativeControlsMustFail": ["swappedPhases", "partiallyDetachedInterface"]
+  },
+  "identityM0": {
+    "stiffnessMatrixRelTol": 1e-13,
+    "displacementRelTol": 1e-9,
+    "KRelTolOfKref": 1e-9,
+    "energyRelTol": 1e-9,
+    "reactionRelTolOfP": 1e-9,
+    "complianceRelTol": 1e-9,
+    "MTSAbsTol_deg": 1e-7,
+    "bitwiseRequired": false
+  },
+  "sifGates": {
+    "inheritFrom": "G2_TRAJECTORY_POLICY_v1.json verification block, unchanged",
+    "elasticRelativeResidualMax": 1e-8,
+    "COD_EDI_maxFractionOfKref": 0.03,
+    "pathSpread_maxFraction": 0.005,
+    "JEnergyIdentityMaxFraction": 0.005,
+    "quadratureDriftMaxFraction": 0.001,
+    "minWholeCrackNormalOpening_mm": -1e-9,
+    "highMixitySignGateAbsKIIoverKI": 0.01,
+    "qAnnuli_mm": [[0.4, 2.6], [0.2, 1.0], [0.4, 1.6], [0.8, 2.6], [1.2, 2.4]],
+    "qSupportMustBeMatrixOnly": true,
+    "minQSupportClearanceToReinforcement_mm": 1,
+    "EDIandCODMaterial": "matrix (E_matrix, nu_matrix) only",
+    "heterogeneousEnergyIdentityRelTol": 1e-9,
+    "interfaceNodalForceBalanceRelTol": 1e-8,
+    "annulusResultantRelTol": 1e-8,
+    "stiffnessPositiveDefiniteRequired": true
+  },
+  "uncertainty": {
+    "primaryEstimator": "EDI 6x6 on q annulus 0.4-2.6 mm",
+    "U_R": "max(|R_EDI,c - R_EDI,1| over the five q annuli, |R_EDI,4x4 - R_EDI|, |R_COD - R_EDI|)",
+    "coverageFactor": 2,
+    "resolvedIf": "|R_EDI - 1| > 2*U_R and sign(R_COD - 1) == sign(R_EDI - 1)",
+    "conservativeSensitivity": "U_R,cons = R_EDI*(dG_M + dG_H1), dG = |G_EDI - G_COD|/G_EDI; reported, also classified",
+    "KIIResolvedIf": "|KII_EDI| > max(|KII_EDI - KII_COD|, five-annulus spread of KII, |KII_6x6 - KII_4x4|) and sign(KII_COD) == sign(KII_EDI)",
+    "meshRefinementOfRatio": "NOT studied in this assignment (out of scope); stated as a limitation"
+  },
+  "units": {
+    "K_raw": "MPa sqrt(mm) at P = 1 N",
+    "K_phys_1N_MPa_sqrt_m": "K_raw / sqrt(1000)",
+    "K_per_kN_MPa_sqrt_m": "K_raw * sqrt(1000)",
+    "G_1N_N_per_mm": "(K_raw,I^2 + K_raw,II^2) / E_matrix (plane stress E' = E)",
+    "G_1N_J_per_m2": "1000 * G_1N_N_per_mm",
+    "compliance_mm_per_N": "|u_y(load node)| / P"
+  },
+  "resources": {
+    "freePhysicalRAM_GiB_min": 5,
+    "oneMatlabProcess": true,
+    "matlabRelease": "R2023a"
+  },
+  "stopRules": [
+    "SOURCE: any hash mismatch of chain, mesh, policy, Cornell JSON or committed sources",
+    "PHASE: any phase-map, interface-conformity, void, area or label-agreement failure",
+    "BENCHMARK: any benchmark gate or negative-control expectation failure",
+    "IDENTITY: any M0 identity gate failure",
+    "SIF: any inherited SIF gate failure in any case",
+    "QPHASE: any q-support element or node outside the matrix phase",
+    "INTERFACE: heterogeneous energy identity, interface nodal force balance or annulus resultant failure",
+    "RAM: free physical RAM below 5 GiB at launch"
+  ],
+  "noRetryAfterHoldWithoutDocumentedInvestigation": true,
+  "forbidden": ["State 3", "crack advance", "CZM", "physical onset", "toughness claim", "experimental match", "changing tolerances after results", "increasing contrast after a null result"]
+}
