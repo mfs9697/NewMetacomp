@@ -124,7 +124,7 @@ Units:
    - **Conservative rule.** It treats the 0.879 % COD–EDI K offset as independent in each case. Under it the effect is not resolved (U ≈ 3.5 %).
    - **Which one the data support.** The offset is the same in all four cases to 4e−6 relative (0.8786–0.8790 %). The conservative rule also assigns ±3.5 % to M0, which is bitwise identical to H1. So the conservative rule overstates the uncertainty of a same-mesh ratio. It is still reported as preregistered.
    - **What neither rule covers.** Neither rule measures how R_mat depends on mesh refinement. That is not studied here (out of scope). So protocol rule 5 (stability under independent refinement) is **not yet met**. The result is a resolved same-mesh effect, not a refinement-qualified screening claim.
-6. **Null result?** Not on this mesh. R_mat differs from 1 by 2–3 %, far beyond the primary U_R, and the effect is antisymmetric in log(E_r/E_m) to first order. The magnitude is modest, and it is bounded by the geometry: bands at about 42 mm from the tip, three bands, a 12.7 mm outer-to-hole ratio.
+6. **Null result?** Not on this mesh. R_mat differs from 1 by 2–3 %, far beyond the primary U_R, and it is monotone in E_r/E_m. It is not symmetric: ln R_mat is +0.0216 at 0.5 and −0.0298 at 2. The magnitude is modest and reflects this geometry: three bands with outer radius 3× the hole radius, about 42 mm from the tip.
 
 ## 6. Limitations
 
