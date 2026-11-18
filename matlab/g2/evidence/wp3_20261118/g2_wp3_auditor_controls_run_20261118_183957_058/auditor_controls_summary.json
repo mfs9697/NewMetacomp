@@ -1,0 +1,209 @@
+{
+  "pass": true,
+  "baseline": {
+    "pass": true,
+    "gatesPassed": 34,
+    "gatesTotal": 34
+  },
+  "controls": [
+    {
+      "id": "N1_badBend_kinkVertexMoved",
+      "auditorPass": false,
+      "failedGates": [
+        "G3_everyBoundaryEdgeExactlyOneClass",
+        "G4_platePerimeterAndDoubleCrackLength",
+        "G5_allBankNodesOnPolyline",
+        "G5_upperOnPlusNLowerOnMinusN",
+        "G5_everySegmentHasTwinEdgesOnBothBanks",
+        "G5_eachKinkVertexHasOneNodePerBank",
+        "G6_rotatedKernelAndCollarMatchP0LocalCoordinates",
+        "G8_lastSegmentLengthAndSavedTangent",
+        "G10_kinkAdmissibilityK1toK10"
+      ],
+      "expectedGroups": [
+        "G3",
+        "G5"
+      ],
+      "exception": "",
+      "detected": true
+    },
+    {
+      "id": "N2_badMiter_kinkNodeDisplaced",
+      "auditorPass": false,
+      "failedGates": [
+        "G1_uniqueMidsidesAtGeometricMidpoints",
+        "G3_everyBoundaryEdgeExactlyOneClass",
+        "G4_platePerimeterAndDoubleCrackLength",
+        "G5_allBankNodesOnPolyline",
+        "G5_upperOnPlusNLowerOnMinusN",
+        "G5_twinsCoincideWithDistinctIDs",
+        "G5_banksReachMouthAndTip",
+        "G5_everySegmentHasTwinEdgesOnBothBanks",
+        "G5_eachKinkVertexHasOneNodePerBank",
+        "G5_coincidentNodesOnlyBankTwins"
+      ],
+      "expectedGroups": [
+        "G5"
+      ],
+      "exception": "",
+      "detected": true
+    },
+    {
+      "id": "N3_weldedBanks_finalSegment",
+      "auditorPass": false,
+      "failedGates": [
+        "G1_T6CornersEqualT3AndAllNodesUsed",
+        "G1_uniqueMidsidesAtGeometricMidpoints",
+        "G4_platePerimeterAndDoubleCrackLength",
+        "G4_connectedEulerMinusTwo",
+        "G5_upperOnPlusNLowerOnMinusN",
+        "G6_kernelAndCollarConnectivityIdenticalToP0",
+        "G8_tipFanSixTrianglesSevenNeighboursPitch"
+      ],
+      "expectedGroups": [
+        "G5"
+      ],
+      "exception": "",
+      "detected": true
+    },
+    {
+      "id": "N4_seamNodeMovedRadially",
+      "auditorPass": false,
+      "failedGates": [
+        "G1_uniqueMidsidesAtGeometricMidpoints",
+        "G6_rotatedKernelAndCollarMatchP0LocalCoordinates",
+        "G7_seams64Plus64TwoOwnersOppositeSides",
+        "G7_65IdentitiesOnEachSeamCircle",
+        "G7_rimSeamEdgesSingleChords"
+      ],
+      "expectedGroups": [
+        "G7"
+      ],
+      "exception": "",
+      "detected": true
+    },
+    {
+      "id": "N5_wrongHoleCentre",
+      "auditorPass": false,
+      "failedGates": [
+        "G3_everyBoundaryEdgeExactlyOneClass",
+        "G3_fourComponentsThreePureHoleLoops"
+      ],
+      "expectedGroups": [
+        "G3"
+      ],
+      "exception": "",
+      "detected": true
+    },
+    {
+      "id": "N6_invertedElement",
+      "auditorPass": false,
+      "failedGates": [
+        "G2_allT3AreasAndT6JacobiansPositive"
+      ],
+      "expectedGroups": [
+        "G2"
+      ],
+      "exception": "",
+      "detected": true
+    },
+    {
+      "id": "N7_clippedQ",
+      "auditorPass": false,
+      "failedGates": [
+        "G9_nodalQEqualsRecomputation"
+      ],
+      "expectedGroups": [
+        "G9"
+      ],
+      "exception": "",
+      "detected": true
+    },
+    {
+      "id": "N8a_segmentIntoHole1",
+      "auditorPass": false,
+      "failedGates": [
+        "G3_everyBoundaryEdgeExactlyOneClass",
+        "G4_platePerimeterAndDoubleCrackLength",
+        "G5_bankSetsValidEqualSizeShareOnlyTip",
+        "G5_allBankNodesOnPolyline",
+        "G5_upperOnPlusNLowerOnMinusN",
+        "G5_banksReachMouthAndTip",
+        "G5_everySegmentHasTwinEdgesOnBothBanks",
+        "G6_rotatedKernelAndCollarMatchP0LocalCoordinates",
+        "G6_exactly2916ElementsInsideRimNoExteriorNodeInside",
+        "G7_seams64Plus64TwoOwnersOppositeSides",
+        "G7_65IdentitiesOnEachSeamCircle",
+        "G7_rimSeamEdgesSingleChords",
+        "G8_tipFanSixTrianglesSevenNeighboursPitch",
+        "G8_lastSegmentLengthAndSavedTangent",
+        "G9_nodalQEqualsRecomputation",
+        "G9_qActive2443EqualsP0AllInKernel",
+        "G9_qSupportInsideInradiusZeroOutsideClearOfKink",
+        "G10_kinkAdmissibilityK1toK10"
+      ],
+      "expectedGroups": [
+        "G10"
+      ],
+      "exception": "",
+      "detected": true
+    },
+    {
+      "id": "N8b_fold100deg",
+      "auditorPass": false,
+      "failedGates": [
+        "G3_everyBoundaryEdgeExactlyOneClass",
+        "G4_platePerimeterAndDoubleCrackLength",
+        "G5_bankSetsValidEqualSizeShareOnlyTip",
+        "G5_allBankNodesOnPolyline",
+        "G5_upperOnPlusNLowerOnMinusN",
+        "G5_banksReachMouthAndTip",
+        "G5_everySegmentHasTwinEdgesOnBothBanks",
+        "G6_rotatedKernelAndCollarMatchP0LocalCoordinates",
+        "G6_exactly2916ElementsInsideRimNoExteriorNodeInside",
+        "G7_seams64Plus64TwoOwnersOppositeSides",
+        "G7_65IdentitiesOnEachSeamCircle",
+        "G7_rimSeamEdgesSingleChords",
+        "G8_tipFanSixTrianglesSevenNeighboursPitch",
+        "G8_lastSegmentLengthAndSavedTangent",
+        "G9_nodalQEqualsRecomputation",
+        "G9_qActive2443EqualsP0AllInKernel",
+        "G9_qSupportInsideInradiusZeroOutsideClearOfKink",
+        "G10_kinkAdmissibilityK1toK10"
+      ],
+      "expectedGroups": [
+        "G10"
+      ],
+      "exception": "",
+      "detected": true
+    },
+    {
+      "id": "N9_straightMeshKinkedManifest",
+      "auditorPass": false,
+      "failedGates": [
+        "G4_platePerimeterAndDoubleCrackLength",
+        "G5_bankSetsValidEqualSizeShareOnlyTip",
+        "G5_banksReachMouthAndTip",
+        "G5_everySegmentHasTwinEdgesOnBothBanks",
+        "G5_eachKinkVertexHasOneNodePerBank",
+        "G6_rotatedKernelAndCollarMatchP0LocalCoordinates",
+        "G6_exactly2916ElementsInsideRimNoExteriorNodeInside",
+        "G7_seams64Plus64TwoOwnersOppositeSides",
+        "G7_65IdentitiesOnEachSeamCircle",
+        "G7_rimSeamEdgesSingleChords",
+        "G8_tipFanSixTrianglesSevenNeighboursPitch",
+        "G9_nodalQEqualsRecomputation",
+        "G9_qActive2443EqualsP0AllInKernel",
+        "G9_qSupportInsideInradiusZeroOutsideClearOfKink"
+      ],
+      "expectedGroups": [
+        "G5",
+        "G6",
+        "G8"
+      ],
+      "exception": "",
+      "detected": true
+    }
+  ],
+  "exception": ""
+}

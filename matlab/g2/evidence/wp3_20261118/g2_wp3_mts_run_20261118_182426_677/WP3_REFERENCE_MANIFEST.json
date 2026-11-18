@@ -1,0 +1,107 @@
+{
+  "schema": "NewMetacomp.G2.WP3.FirstKink.ReferenceManifest.v1",
+  "analytical_trial_geometry": true,
+  "physical_propagation": false,
+  "idealized_propagation_demo": true,
+  "physical_onset": false,
+  "state0": {
+    "crackPolyline_mm": [
+      [
+        101.6,
+        0
+      ],
+      [
+        101.6,
+        25.4
+      ]
+    ],
+    "tip_mm": [
+      101.6,
+      25.4
+    ],
+    "t": [
+      0,
+      1
+    ],
+    "n": [
+      -1,
+      0
+    ],
+    "KI_MPa_sqrt_m_per_kN": 0.166436,
+    "KII_MPa_sqrt_m_per_kN": 0.018827,
+    "source": "SIF_WP2_RESULTS.md family A plane stress (PR #23 513044cc)"
+  },
+  "mts": {
+    "formula": "theta = 2*atan2(-2*KII, KI + hypot(KI, sqrt(8)*KII))",
+    "theta_rad": -0.21983632666638747,
+    "theta_deg": -12.595693701643276,
+    "status": "OK",
+    "stationarityResidual_rel": 0
+  },
+  "trial": {
+    "DeltaA_mm": 4,
+    "tip_mm": [
+      102.47227956707886,
+      29.303732618514836
+    ],
+    "t": [
+      0.21806989176971425,
+      0.97593315462870978
+    ],
+    "n": [
+      -0.97593315462870978,
+      0.21806989176971425
+    ],
+    "crackPolyline_mm": [
+      [
+        101.6,
+        0
+      ],
+      [
+        101.6,
+        25.4
+      ],
+      [
+        102.47227956707886,
+        29.303732618514836
+      ]
+    ],
+    "inheritedGuardMinKinkTangentDot": 0.98,
+    "inheritedGuardWouldReject": true,
+    "note": "4 mm is a provisional numerical increment, not a physical step"
+  },
+  "bvp": {
+    "pin_mm": [
+      25.4,
+      0
+    ],
+    "roller_mm": [
+      482.6,
+      0
+    ],
+    "load_mm": [
+      254,
+      203.2
+    ],
+    "P_N": 1,
+    "thickness_mm": 12.7,
+    "E_MPa": 3268.115,
+    "nu": 0.35,
+    "plane": "stress",
+    "note": "idealized WP2 BVP, NOT the experiment"
+  },
+  "sources": {
+    "geometryJSON_SHA256": "45A88FA0926472DDBE5E70E4C80A97B88196DD45D8A266FA04273F89790B47BF",
+    "vendor_SHA256": {
+      "T3toT6_fast_m": "69E42378343353F59D733F52CF65600F63CE60F849DE62BE744ED9C33F589090",
+      "build_m1i_trial_tip_annulus_p010_m": "C06F1164753BF642542F254B56488E340914730560666AB859FDC09B98241C2C",
+      "build_m1i_trial_tip_disk_p010_m": "36D371EEBC36ACCD79229F492755574926D71F2DC81ADCDFF22F45E639915999",
+      "build_twohole_literal_annulus_m": "46F262AA5E3AF782BEBC9F8D1A950703CDBAB05100D927DDCD40A25B79949BE1",
+      "cut_twohole_literal_annulus_m": "3D8876DC67422ABBF01C6201D44D2BA786430032CB15D7037D4ADC569F20185A",
+      "main_m1i_increment_ring_geometry_only_m": "2A9DFF578DD5154E47851ED7FCF19850BA6426CFBFA0D5A6F3192F738F47300B"
+    },
+    "gitHEAD": "d559dd68352b83a5ddd6a6165fdcc9c16e57f563",
+    "PR23_head": "513044cc2c5e2db68fc6630c3fe356769abd5e83",
+    "MATLAB": "2023a"
+  }
+}
