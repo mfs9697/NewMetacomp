@@ -22,7 +22,7 @@ assert(~exist(folder,'dir'),'G2Material:RunExists','Run folder exists.');mkdir(f
 diary(fullfile(folder,'material_contrast_console.log'));cl=onCleanup(@()diary('off')); %#ok<NASGU>
 L=struct('schema','NewMetacomp.G2.MaterialContrastLedger.v1','issue',33,'started',datestr(now,31), ...
  'status','RUNNING','stages',struct([]),'physicalFractureGrowthProven',false);
-L.matlabRelease=version('-release');L.policySHA256=g2_sha256_file(fullfile(here,'G2_MATERIAL_POLICY_v1.json'));
+L.matlabRelease=['R',version('-release')];   % version('-release') returns '2023a' (run A HOLD)L.policySHA256=g2_sha256_file(fullfile(here,'G2_MATERIAL_POLICY_v1.json'));
 fprintf('G2_MATERIAL_CONTRAST run %s, MATLAB %s, policy %s\n',strrep(folder,repo,'<repo>'),L.matlabRelease,L.policySHA256);
 try
  % ================= S0 SOURCE
