@@ -1,0 +1,15 @@
+{
+  "schema": "NewMetacomp.G2.MaterialContrastLedger.v1",
+  "issue": 33,
+  "started": "2026-11-19 00:33:03",
+  "status": "HOLD",
+  "stages": [],
+  "physicalFractureGrowthProven": false,
+  "matlabRelease": "2023a",
+  "policySHA256": "E60156F60DC8BAE05F2AB1B1A25BC93BD84CEDB7485591B01ADA2413D946A971",
+  "hold": {
+    "identifier": "G2Material:Release",
+    "message": "MATLAB 2023a is not R2023a."
+  },
+  "finished": "2026-11-19 00:33:03"
+}

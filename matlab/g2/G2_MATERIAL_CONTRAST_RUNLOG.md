@@ -23,3 +23,14 @@ Every formal run writes a new `outputs/g2_material_contrast_v1/run_<time>/`. Fai
 - **Message:** `Unrecognized field name "policySHA256"`.
 - **Cause:** the run A fix appended a `%` comment to a line that also carried the `L.policySHA256=…` assignment, so the comment swallowed that assignment.
 - **Fix:** the assignment is restored on its own line. No numerical code, gate or policy changed.
+
+## Run C: `run_20261119_003430_660`, HEAD `e50e92f`, **GO** (accepted)
+
+- All stages S0–S5 PASS. This is the accepted evidence.
+- Reported in `G2_MATERIAL_CONTRAST_RESULTS.md`; figures come from the read-only report batch.
+
+## Run D: `run_20261119_004048_245`, HEAD `048877e`, HOLD (dirty source, guard working)
+
+- **Purpose:** deterministic replay of run C.
+- **What happened:** it was launched while sanitized evidence copies were still untracked under `matlab/g2/evidence/`. The S0 `G2Material:DirtySource` guard refused the run before any computation.
+- **Response:** commit the evidence, then replay from a clean tree (run E). No code changed.
