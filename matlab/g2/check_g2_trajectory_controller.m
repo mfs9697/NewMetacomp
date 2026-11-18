@@ -33,7 +33,7 @@ assert(~wrongCount.pass&&~wrongCount.gates.K1_polylineIdentity&& ...
  'Wrong count/length/hole must be rejected.');
 assert(~strcmp(M1.status,'DOCUMENTED_PURE_MODE_II'), ...
  'G2ChainTest:Tensile','Wrong MTS regime.');
-temp=fullfile(tempdir,['g2_trajectory_contract_',char(java.util.UUID.randomUUID)]);
+temp=tempname;
 mkdir(temp);
 c=onCleanup(@()cleanup(temp)); %#ok<NASGU>
 file=fullfile(temp,'REVIEW.mat');
