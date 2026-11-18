@@ -1,0 +1,92 @@
+{
+  "pass": true,
+  "tests": {
+    "A1": {
+      "theta": [
+        -0,
+        -0
+      ],
+      "pass": true
+    },
+    "A2": {
+      "theta_deg": [
+        -70.528779365509308,
+        70.528779365509308
+      ],
+      "exact_deg": [
+        -70.528779365509308,
+        70.528779365509308
+      ],
+      "pass": true
+    },
+    "A3": {
+      "maxAntisymmetry_rad": 0,
+      "signRule": true,
+      "allOK": true,
+      "pass": true
+    },
+    "A4": {
+      "maxResidualGrid": 1.0907647399176715E-15,
+      "residualCornell": 0,
+      "pass": true
+    },
+    "A5": {
+      "ratiosTested": 43,
+      "maxArgmaxError_rad": 1.5535226913776512E-6,
+      "gridSpacing_rad": 3.1415926535897933E-6,
+      "minHoopMinusGridMax": 0,
+      "maxSecondDerivative": -0.75,
+      "pass": true
+    },
+    "A6": {
+      "relErr": [
+        2.3333557308546915E-12,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    "A7": {
+      "maxDiff_rad": 4.4408920985006262E-16,
+      "pass": true
+    },
+    "A8": {
+      "statuses": [
+        "HOLD_ZERO_K",
+        "HOLD_NEGATIVE_KI_CONTACT_OR_COMPRESSION",
+        "HOLD_NEGATIVE_KI_CONTACT_OR_COMPRESSION",
+        "HOLD_NONFINITE_K",
+        "HOLD_NONFINITE_K"
+      ],
+      "pass": true
+    },
+    "A9": {
+      "theta_deg": -12.595693701643276,
+      "cos": 0.97593315462870978,
+      "t1": [
+        0.21806989176971425,
+        0.97593315462870978
+      ],
+      "n1": [
+        -0.97593315462870978,
+        0.21806989176971425
+      ],
+      "tip1": [
+        102.47227956707886,
+        29.303732618514836
+      ],
+      "errors": [
+        1.6432757377060625E-9,
+        4.628709748821791E-9,
+        4.628709748821791E-9,
+        2.9211406626927783E-9
+      ],
+      "inheritedGuardMinKinkTangentDot": 0.98,
+      "inheritedGuardWouldReject": true,
+      "inheritedGuardBound_deg": 11.478340954533577,
+      "status": "OK",
+      "pass": true
+    }
+  },
+  "exception": ""
+}
