@@ -208,7 +208,7 @@ end
 H=sortrows(H,1);
 end
 
-function make_root(chain,rootHash,meshHash,p0Hash,shaP,src)
+function chain=make_root(chain,rootHash,meshHash,p0Hash,shaP,src)
 mkdir(chain);
 Root=struct('schema','NewMetacomp.G2.TrajectoryRoot.v1','stateIndex',1,'rootHash',rootHash, ...
  'rootMeshHash',meshHash,'p0SHA256',p0Hash,'policySHA256',shaP,'sourceHashes',src, ...
