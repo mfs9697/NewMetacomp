@@ -98,7 +98,7 @@ R.summary=struct('T3elements',size(T3,1),'T3nodes',size(X3,1),'T6nodes',size(X6,
  'exteriorT3',numel(rows.exterior),'minAngle_deg',angMin,'minAngleAt_mm',cenT(iAng,:),'maxNeighborRatio',ratMax, ...
  'maxRatioAt_mm',.5*(cenT(lo(inE(iRat)),:)+cenT(hi(inE(iRat)),:)),'rimSeamEdges',numel(rimEdge),'coreSeamEdges',numel(coreEdge), ...
  'crackBankEdgesPerSide',[numel(bU),numel(bL)],'bankT6NodesPerSide',[numel(upT6),numel(loT6)],'qActiveT6',numel(qActive), ...
- 'tip_mm',tip,'tangent',F.t,'normal',F.n,'tipNode',tipNode,'kinkNodeIDs',kinkIDs.','rimCoordinateMismatch_mm',coordDiff, ...
+ 'tip_mm',tip,'tangent',F.t,'normal',F.n,'tipNode',tipNode,'kinkNodeIDs',reshape(kinkIDs.',1,[]),'rimCoordinateMismatch_mm',coordDiff, ...
  'polyline_mm',P,'turn_deg',F.turns_deg.','exterior',E.summary,'block',B.summary);
 fprintf('G2_KJOIN_GATES=%d/%d\n',nnz(v),numel(v));
 fprintf('G2_KJOIN_T3=%d T6_NODES=%d MIN_ANGLE=%.6f MAX_RATIO=%.6f\n',size(T3,1),size(X6,1),angMin,ratMax);
@@ -109,7 +109,7 @@ R.X3=X3;R.T3=T3;R.X6=X6;R.T6=T6;R.upperBankT6=upT6;R.lowerBankT6=loT6;R.physical
 R.nodalQ=q;R.qActiveT6Rows=qActive;R.elementRows=rows;R.collarOuterIDs=outerIDs;
 R.extraVertexXY=E.extraVertexXY;R.extraVertexNodes=map(E.extraVertexNodes);R.includeHoles=true;R.plateXRange=E.plateXRange;
 R.crackPolyline=P;R.tipTangent=F.t;R.tipNormal=F.n;
-if size(kinkIDs,1)==1,R.kinkNodeIDs=kinkIDs(:);else,R.kinkNodeIDs=kinkIDs;end
+R.kinkNodeIDs=reshape(kinkIDs.',[],1);
 end
 
 function [d,k]=polydist(X,P)
