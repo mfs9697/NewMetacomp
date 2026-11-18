@@ -48,7 +48,13 @@ shaP=g2_sha256_file(policyFile);shaJ=g2_sha256_file(original);
 assert(strcmpi(shaJ,policy.base.cornellJSON_SHA256), ...
  'G2Chain:SourceJSONChanged','Original Cornell source geometry hash changed.');
 R.policySHA256=shaP;
+% WP3.4 D8: the qualified numerical stack is MATLAB R2023a + PDE Toolbox.
+rel=version('-release');pv=ver('pde');
+R.matlabRelease=rel;R.pdeToolboxVersion='';if ~isempty(pv),R.pdeToolboxVersion=pv(1).Version;end
+assert(strcmp(rel,'2023a')&&~isempty(pv),'G2Chain:MatlabRelease', ...
+ 'MATLAB R2023a with PDE Toolbox is required (found R%s).',rel);
 source=local_source_hashes(here);
+R.sourceHashes=source; % WP3.4 D1: exposed so the lock closure can be tested
 vendor=fullfile(here,'vendor_p010_a14d8872');
 assert(strcmpi(which('main_m1i_increment_ring_geometry_only'), ...
  fullfile(vendor,'main_m1i_increment_ring_geometry_only.m'))&& ...
@@ -57,6 +63,11 @@ assert(strcmpi(which('main_m1i_increment_ring_geometry_only'), ...
 assert(isfolder(char(o.SeedStepDir))&&isfile(char(o.P0Mat)), ...
  'G2Chain:MissingSeed','Accepted WP3 step 1 and P0 MAT must exist.');
 seed=char(o.SeedStepDir);
+% WP3.4 D5: the chain must never be, or lie inside, the seed or P0 evidence folders
+% (and vice versa); otherwise -Run would write into original evidence.
+cAbs=local_abs(char(o.ChainDir));sAbs=local_abs(seed);pAbs=local_abs(fileparts(local_abs(char(o.P0Mat))));
+assert(~local_inside(cAbs,sAbs)&&~local_inside(sAbs,cAbs)&&~local_inside(cAbs,pAbs)&&~local_inside(pAbs,cAbs), ...
+ 'G2Chain:SelfReference','Chain folder overlaps the seed or P0 evidence folder.');
 [S1,rootHash,ok,why]=g2_wp3_state_io('load',fullfile(seed,'state'));
 assert(ok,'G2Chain:RootIntegrity','WP3 state 1 hash or schema HOLD: %s.',why);
 assert(S1.stateIndex==1&&~S1.physical_onset&&S1.idealized_propagation_demo&& ...
@@ -97,7 +108,7 @@ end
 if ~o.Run
  if isfolder(char(o.ChainDir))
   [chainState,status]=local_verify_chain_readonly(char(o.ChainDir), ...
-   S1,rootHash,S1.meshSHA256,p0Hash,shaP,source,policy);
+   S1,rootHash,S1.meshSHA256,p0Hash,shaP,source,policy,G,char(o.P0Mat),original);
   R.lastStateIndex=chainState.stateIndex;
   if strcmp(status,'HOLD_PARTIAL_STEP')
    R.pass=false;R.stage='HOLD_PARTIAL_STEP';R.stopReason='INTEGRITY';
@@ -116,6 +127,8 @@ if ~o.Run
  fprintf('G2_TRAJECTORY_PREFLIGHT_PASS=1\n');
  fprintf('G2_TRAJECTORY_NEXT_TURN_DEG=%.12f, TRIAL_TIP_MM=(%.12f,%.12f)\n', ...
  M.theta_deg,R.forecast.tip_mm);
+ fprintf('G2_TRAJECTORY_K1_K10=%d/10 SOURCE_FILES_HASHED=%d MATLAB=R%s PDE=%s\n', ...
+  nnz(cell2mat(struct2cell(R.forecast.admissibility.gates))),numel(source),rel,R.pdeToolboxVersion);
  fprintf('G2_TRAJECTORY_DRY_NO_MESH_NO_FEM_NO_FILES=1\n');
  return
 end
@@ -126,6 +139,12 @@ assert(isscalar(A)&&all(isfield(A,{'token','policySHA256','maxStateIndex'}))&& .
  o.MaxStateIndex<=A.maxStateIndex&&A.maxStateIndex<=policy.scopeLimits.maxStateIndex, ...
  'G2Chain:AuthorizationRequired', ...
  'A SHA-bound explicit numerical-march authorization for state 2 is required.');
+% WP3.4 D4 (policy reviewContract.commitBeforeRun; upstream PencilMarch:DirtySource):
+% a numerical chain is only written from committed, clean kernel sources.
+[gitHead,gitDirty]=local_git_state(repo);
+assert(~isempty(gitHead)&&isempty(gitDirty),'G2Chain:DirtySource', ...
+ 'Run requires committed, clean matlab/g2 and Cornell JSON sources (HEAD "%s"; changes: %s).',gitHead,gitDirty);
+R.gitHead=gitHead;
 assert(~o.ForbidNewComputation||isfolder(char(o.ChainDir)), ...
  'G2Chain:NewWorkForbidden','No established chain; no new computation allowed.');
 chain=char(o.ChainDir);rootFile=fullfile(chain,'ROOT.mat');
@@ -143,7 +162,7 @@ else
  Root=struct('schema','NewMetacomp.G2.TrajectoryRoot.v1','stateIndex',1, ...
   'rootHash',rootHash,'rootMeshHash',S1.meshSHA256, ...
   'p0SHA256',p0Hash,'policySHA256',shaP, ...
-  'sourceHashes',source,'seedDirectory',seed, ...
+  'sourceHashes',source,'seedDirectory',seed,'gitHead',gitHead, ...
   'numericalOnly',true,'physicalFractureGrowthProven',false);
  g2_trajectory_record('write',rootFile,Root);
 end
@@ -179,7 +198,7 @@ for k=S1.stateIndex+1:o.MaxStateIndex
   assert(ok,'G2Chain:ChildStateIntegrity','Saved child State: %s.',why);
   [review,reviewHash,v,why]=g2_trajectory_record('read',reviewFile);
   assert(v,'G2Chain:ChildReviewIntegrity','Saved review: %s.',why);
-  local_verify_child(child,review,parent,parentHash,reviewHash,shaP,stepDir,source);
+  local_verify_child(child,review,parent,parentHash,reviewHash,shaP,stepDir,source,G,char(o.P0Mat),original);
   assert(isequal(review.polyline_mm,F.polyline_mm), ...
    'G2Chain:ForecastDrift','Saved review path differs from current MTS forecast.');
   R.statesReused=R.statesReused+1;
@@ -191,7 +210,7 @@ for k=S1.stateIndex+1:o.MaxStateIndex
  if isfile(reviewFile)
   [review,reviewHash,v,why]=g2_trajectory_record('read',reviewFile);
   assert(v,'G2Chain:ReviewIntegrity','Saved interrupted review: %s.',why);
-  local_verify_review(review,parent,parentHash,shaP,stepDir,source);
+  local_verify_review(review,parent,parentHash,shaP,stepDir,source,G,char(o.P0Mat),original);
   assert(isequal(review.polyline_mm,F.polyline_mm), ...
    'G2Chain:ForecastDrift','Saved review no longer matches MTS recurrence.');
   child=local_child_state(parent,review,parentHash,reviewHash,shaP);
@@ -252,7 +271,7 @@ for k=S1.stateIndex+1:o.MaxStateIndex
   review=struct('schema','NewMetacomp.G2.TrajectoryReview.v1', ...
    'stateIndex',k,'parentStateSHA256',parentHash, ...
    'policySHA256',shaP,'sourceHashes',source, ...
-   'p0SHA256',p0Hash,'meshFile', ...
+   'p0SHA256',p0Hash,'gitHead',gitHead,'meshFile', ...
    'KINKED_GEOMETRY_ONLY_candidate.mat','meshSHA256',meshHash, ...
    'polyline_mm',Pnew,'tip_mm',F.tip_mm,'tangent',F.tangent, ...
    'localTurn_deg',M.theta_deg,'forecast',F, ...
@@ -302,7 +321,7 @@ if isfield(a,'step')&&a.step==k
 end
 end
 
-function [last,status]=local_verify_chain_readonly(chain,S0,rootHash,rootMeshHash,p0Hash,policySHA,source,policy)
+function [last,status]=local_verify_chain_readonly(chain,S0,rootHash,rootMeshHash,p0Hash,policySHA,source,policy,G,p0Mat,jsonFile)
 % Read-only full ancestry audit. No meshing, FEM, file or folder write.
 rootFile=fullfile(chain,'ROOT.mat');
 [Root,~,ok,why]=g2_trajectory_record('read',rootFile);
@@ -323,12 +342,12 @@ for k=S0.stateIndex+1:policy.scopeLimits.maxStateIndex
   assert(valid,'G2Chain:ChildIntegrity','Read-only State %d: %s.',k,why);
   [rev,rh,valid,why]=g2_trajectory_record('read',revFile);
   assert(valid,'G2Chain:ReviewIntegrity','Read-only Review %d: %s.',k,why);
-  local_verify_child(child,rev,last,parentHash,rh,policySHA,stepDir,source);
+  local_verify_child(child,rev,last,parentHash,rh,policySHA,stepDir,source,G,p0Mat,jsonFile);
   last=child;parentHash=ch;
  elseif isfile(revFile)
   [rev,~,valid,why]=g2_trajectory_record('read',revFile);
   assert(valid,'G2Chain:ReviewIntegrity','Pending review %d: %s.',k,why);
-  local_verify_review(rev,last,parentHash,policySHA,stepDir,source);
+  local_verify_review(rev,last,parentHash,policySHA,stepDir,source,G,p0Mat,jsonFile);
   status='VERIFIED_REVIEW_NEEDS_STATE';return
  elseif isfolder(stepDir)
   status='HOLD_PARTIAL_STEP';return
@@ -373,9 +392,16 @@ S2.eligibleForAutomaticPhysicalAcceptance=false;
 S2.appliedTheta_rad=deg2rad(Review.localTurn_deg);
 S2.created=datestr(now,31);
 S2.note='Policy-capped qualified NUMERICAL trajectory state, not physical propagation.';
+% WP3.4 D7: do not carry the WP2 (state 0) K provenance into a trajectory state.
+stale=intersect(fieldnames(S2),{'KI_fullPrecisionWP2','KII_fullPrecisionWP2'});
+if ~isempty(stale),S2=rmfield(S2,stale);end
+S2.Ksource=sprintf(['g2_trajectory_sif_on_mesh on the state-%d protected mesh %s: 6x6 EDI annulus ', ...
+ '0.4-2.6 mm (signed); blind bank COD %+.9g/%+.9g; review %s'],Review.stateIndex,Review.meshSHA256, ...
+ S2.KI_COD_MPa_sqrt_m_per_kN,S2.KII_COD_MPa_sqrt_m_per_kN,reviewHash);
+if isfield(Review,'gitHead'),S2.gitHead=Review.gitHead;end
 end
 
-function local_verify_review(Rev,Parent,parentHash,policyHash,stepDir,src)
+function local_verify_review(Rev,Parent,parentHash,policyHash,stepDir,src,G,p0Mat,jsonFile)
 assert(strcmp(Rev.schema,'NewMetacomp.G2.TrajectoryReview.v1')&& ...
  Rev.stateIndex==Parent.stateIndex+1&& ...
  strcmpi(Rev.parentStateSHA256,parentHash)&& ...
@@ -387,6 +413,11 @@ assert(strcmp(Rev.schema,'NewMetacomp.G2.TrajectoryReview.v1')&& ...
 assert(isequal(Rev.polyline_mm(1:end-1,:),Parent.crackPolyline_mm)&& ...
  isequal(Rev.polyline_mm(end,:),Rev.tip_mm), ...
  'G2Chain:ReviewPath','Review path is not a one-segment continuation of the parent.');
+% WP3.4 D3: the reviewed tip must be the signed-MTS forecast from the parent K (exact).
+Mp=g2_mts_direction(Parent.KI_MPa_sqrt_m_per_kN,Parent.KII_MPa_sqrt_m_per_kN);
+Fp=local_forecast(Parent,Mp,G);
+assert(strcmp(Mp.status,'OK')&&isequal(Rev.polyline_mm,Fp.polyline_mm)&&isequal(Rev.tangent(:).',Fp.tangent(:).'), ...
+ 'G2Chain:ForecastDrift','Saved review path is not the signed-MTS forecast from its parent.');
 assert(isfile(fullfile(stepDir,Rev.meshFile))&& ...
  strcmpi(g2_sha256_file(fullfile(stepDir,Rev.meshFile)),Rev.meshSHA256), ...
  'G2Chain:ReviewMeshSHA','Audited mesh bytes differ from review manifest.');
@@ -416,10 +447,24 @@ screen=[ ...
  abs(K.KII/K.KI)<=q.highMixitySignGateAbsKIIoverKI||K.KII_sign_edi_vs_cod_match];
 assert(all(screen),'G2Chain:ReviewNumericScreens', ...
  'A saved review does not satisfy the versioned mandatory numerical criteria.');
+% WP3.4 D2: bind the mesh CONTENT to the review and re-derive the independent
+% geometry audit from the saved arrays (no mesher, no FEM). A review that cites
+% any other valid mesh, or a mesh that no longer audits 34/34, is a HOLD.
+Dm=load(fullfile(stepDir,Rev.meshFile));
+assert(all(isfield(Dm,{'crackPolyline','tipTangent'}))&&isequal(Dm.crackPolyline,Rev.polyline_mm)&& ...
+ isequal(Dm.tipTangent(:).',Rev.tangent(:).'),'G2Chain:ReviewMeshContent', ...
+ 'Saved mesh geometry is not the reviewed crack path.');
+Ca=g2_kinked_mesh_auditor(Dm,jsonFile,p0Mat,size(Rev.polyline_mm,1));
+gs=Rev.geometrySummary;
+assert(Ca.pass&&Ca.gatesPassed==v.numerics.independentAuditKinkGates&&Ca.gatesTotal==Ca.gatesPassed&& ...
+ isfield(gs,'T3elements')&&isfield(gs,'minAngle_deg')&&isfield(gs,'maxNeighborRatio')&&isfield(gs,'qActive')&& ...
+ Ca.summary.T3elements==gs.T3elements&&Ca.summary.minAngle_deg==gs.minAngle_deg&& ...
+ Ca.summary.maxNeighborRatio==gs.maxNeighborRatio&&Ca.summary.qActive==gs.qActive, ...
+ 'G2Chain:ReviewReaudit','Independent re-audit of the saved review mesh failed or differs from the review.');
 end
 
-function local_verify_child(S,Rev,Parent,parentHash,reviewHash,policyHash,stepDir,src)
-local_verify_review(Rev,Parent,parentHash,policyHash,stepDir,src);
+function local_verify_child(S,Rev,Parent,parentHash,reviewHash,policyHash,stepDir,src,G,p0Mat,jsonFile)
+local_verify_review(Rev,Parent,parentHash,policyHash,stepDir,src,G,p0Mat,jsonFile);
 assert(S.stateIndex==Rev.stateIndex&& ...
  strcmpi(S.parentStateSHA256,parentHash)&& ...
  strcmpi(S.reviewSHA256,reviewHash)&& ...
@@ -451,7 +496,8 @@ names={'g2_trajectory_run.m','g2_trajectory_record.m', ...
  'g2_sif_interaction.m','g2_sif_cod_banks.m', ...
  'g2_t6_elasticity.m','g2_plane_D.m', ...
  'g2_independent_t6_jacobian.m','g2_wp3_state_io.m', ...
- 'g2_sha256_file.m'};
+ 'g2_sha256_file.m', ...
+ 'g2_williams_field.m','g2_pde_toolbox_preflight.m'}; % WP3.4 D1
 H=repmat(struct('file','','sha256',''),numel(names)+6,1);
 for j=1:numel(names)
  file=fullfile(here,names{j});assert(isfile(file), ...
@@ -468,6 +514,30 @@ for j=1:numel(vn)
  H(numel(names)+j).file=['vendor_p010_a14d8872/',vn{j}];
  H(numel(names)+j).sha256=g2_sha256_file(file);
 end
+end
+
+function p=local_abs(p)
+% canonical absolute path (works for paths that do not exist yet); relative paths
+% are taken against MATLAB's pwd, not the JVM start folder
+p=char(p);if ~java.io.File(p).isAbsolute(),p=fullfile(pwd,p);end
+p=char(java.io.File(p).getCanonicalPath());
+end
+
+function tf=local_inside(a,b)
+% true when a equals b or lies below b (case-insensitive, Windows paths)
+a=lower(strrep(a,'/','\'));b=lower(strrep(b,'/','\'));
+if ~endsWith(b,'\'),b=[b,'\'];end
+tf=strcmp([a,'\'],b)||startsWith([a,'\'],b);
+end
+
+function [head,dirty]=local_git_state(repo)
+% HEAD and the porcelain status of the kernel and Cornell JSON folders (untracked
+% files included, since an untracked .m in matlab/g2 can shadow a kernel function).
+head='';dirty='git unavailable';
+[s1,h]=system(sprintf('git -C "%s" rev-parse HEAD',repo));
+[s2,d]=system(sprintf(['git -C "%s" status --porcelain --untracked-files=all -- ', ...
+ 'matlab/g2 docs/research/crack-growth-gaps-2026'],repo));
+if s1==0&&s2==0,head=strtrim(h);dirty=strtrim(d);end
 end
 
 function reason=local_classify(id)
