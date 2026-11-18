@@ -24,6 +24,7 @@ here=fileparts(mfilename('fullpath'));root=fileparts(fileparts(here));
 source=fullfile(root,'docs','research','crack-growth-gaps-2026','G2_SPECIMEN1_1990_GEOMETRY.json');
 addParameter(ip,'JsonPath',source,@(s)ischar(s)||isstring(s));
 addParameter(ip,'DeltaA_mm',4,@(v)isnumeric(v)&&isscalar(v)&&v>0);
+addParameter(ip,'ExpectedVertices',3,@(v)isnumeric(v)&&isscalar(v)&&v>=3&&v==round(v));
 addParameter(ip,'ExpectedTangent',[],@(v)isempty(v)||(isnumeric(v)&&numel(v)==2));
 addParameter(ip,'ChannelHalfWidth_mm',.020,@(v)isnumeric(v)&&isscalar(v)&&v>0);
 addParameter(ip,'RimRadius_mm',3.3,@(v)isnumeric(v)&&isscalar(v)&&v>0);
@@ -46,7 +47,7 @@ J=jsondecode(fileread(char(o.JsonPath)));
 assert(strcmp(J.schema,'NewMetacomp.G2.IngraffeaGrigoriu1990.Specimen1.nominal.v1'),'G2KExt:Schema','Wrong JSON.');
 G=J.nominal_geometry_mm;assert(numel(G.holes)==3,'G2KExt:ThreeHoles','Three holes expected.');
 w=o.ChannelHalfWidth_mm;ro=o.RimRadius_mm;Rg=o.TipGuideRadius_mm;tg=~isempty(Rg);
-A=g2_kink_admissibility(P,G,'DeltaA_mm',o.DeltaA_mm,'ExpectedTangent',o.ExpectedTangent,'ChannelHalfWidth_mm',w, ...
+A=g2_kink_admissibility(P,G,'DeltaA_mm',o.DeltaA_mm,'ExpectedVertices',o.ExpectedVertices,'ExpectedTangent',o.ExpectedTangent,'ChannelHalfWidth_mm',w, ...
  'RimRadius_mm',ro,'Hmin_mm',o.Hmin_mm,'GuideHface_mm',o.GuideHface_mm,'TipGuideRadius_mm',Rg);
 R.admissibility=A;
 if ~A.pass,R.stage='HOLD_KINK_ADMISSIBILITY';R.message=strjoin(A.failedGates,', ');return,end

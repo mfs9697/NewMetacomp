@@ -1,0 +1,123 @@
+{
+  "schema": "NewMetacomp.G2.CornellTrajectoryPolicy.v1",
+  "scope": "bounded numerical path-direction continuation only; not physical fracture growth",
+  "upstreamReference": {
+    "repository": "mfs9697/EdgeCrackHoleLEFM",
+    "commit": "a14d8872ab588ac551e41b4531bffee2dcd0ce2c",
+    "driver": "verification/main_pencil_full_trajectory_run.m",
+    "checkpoint": "src/trajectory/edge_pencil_numerical_checkpoint.m",
+    "contract": "docs/PRE_CONSECUTIVE_TRAJECTORY_RESTART_CONTRACT_2026-10-30.md"
+  },
+  "base": {
+    "repo": "mfs9697/NewMetacomp",
+    "wp3PR": 27,
+    "wp3Head": "ebe6235e93bd8abc008c351032aa01b4acfe8178",
+    "sourceStateIndex": 1,
+    "sourceType": "independently qualified idealized numerical state; physical_onset=false",
+    "cornellJSON_SHA256": "45A88FA0926472DDBE5E70E4C80A97B88196DD45D8A266FA04273F89790B47BF",
+    "trustedP0SHA256": "15201996b4165aa9980f61f370a75749b1ce28ec0accaa061902641524c37c58",
+    "allowedWP3State1": [
+      {
+        "label": "WP3_R1_original_step1_a",
+        "stateSHA256": "cb05bd619280069bd601e7a9131b8532f39698f3a406adacff537eac09a5d441",
+        "meshSHA256": "ecd6a7b873bc2cd758a0f88391e564dfb6c90249024bc1a8768f9f5d93732461"
+      },
+      {
+        "label": "WP3_R1_original_step1_b",
+        "stateSHA256": "ca70f324ea910cbd398a1aed616f67a83c7f45a723f0923dfc054c1004a88c49",
+        "meshSHA256": "118e6b0e05ee1bb904db05404754b671c385d15c35a23a899f45f832f5d922eb"
+      }
+    ],
+    "evidenceSHAFile": "matlab/g2/evidence/wp3_20261118/SHA256SUMS_original_outputs.txt"
+  },
+  "scopeLimits": {
+    "maxStateIndex": 2,
+    "increment_mm": 4,
+    "initialCrackArc_mm": 25.4,
+    "maxArcLength_mm": 33.4,
+    "requireDistinctStepAuthorization": true,
+    "allowPhysicalOnset": false,
+    "allowExperimentalMatch": false,
+    "noRetryOnMeshHold": true,
+    "freePhysicalRAM_GiB_min": 5
+  },
+  "numerics": {
+    "T3minAngle_deg": 20,
+    "T3maxNeighborLongestEdgeRatio": 1.8,
+    "primaryT3Budget": 40000,
+    "requiredTrueHoles": 3,
+    "requiredBoundaryComponents": 4,
+    "requiredEuler": -2,
+    "coreT3": 2788,
+    "collarT3": 128,
+    "coreRadius_mm": 3,
+    "collarOuterRadius_mm": 3.3,
+    "protectedSectors": 64,
+    "qInner_mm": 0.4,
+    "qOuter_mm": 2.6,
+    "requiredQActiveParents": 2443,
+    "independentAuditKinkGates": 34,
+    "minLastSegment_mm": 3.3
+  },
+  "verification": {
+    "elasticRelativeResidualMax": 1e-8,
+    "COD_EDI_maxFractionOfKref": 0.03,
+    "pathSpread_maxFraction": 0.005,
+    "JEnergyIdentityMaxFraction": 0.005,
+    "quadratureDriftMaxFraction": 0.001,
+    "minWholeCrackNormalOpening_mm": -1e-9,
+    "highMixitySignGateAbsKIIoverKI": 0.01,
+    "modeIIAlwaysReportSigned": true,
+    "recomputeCODBeforeEDI": true,
+    "staleSourceReject": true,
+    "fullSHA256OnEveryReuse": true
+  },
+  "bvp": {
+    "model": "idealized pin/roller vertical point load",
+    "P_N": 1,
+    "thickness_mm": 12.7,
+    "E_MPa": 3268.115,
+    "nu": 0.35,
+    "plane": "stress",
+    "pin_mm": [
+      25.4,
+      0
+    ],
+    "roller_mm": [
+      482.6,
+      0
+    ],
+    "load_mm": [
+      254,
+      203.2
+    ]
+  },
+  "mandatoryStopReasons": [
+    "POLICY",
+    "SOURCE",
+    "INTEGRITY",
+    "RAM",
+    "STEP_CAP",
+    "ARC_CAP",
+    "MTS",
+    "GEOMETRY",
+    "T3_QUALITY",
+    "TOPOLOGY",
+    "BANKS",
+    "FEM",
+    "CLOSURE",
+    "COD",
+    "EDI",
+    "SIF_COMPARE",
+    "RESTART"
+  ],
+  "reviewContract": {
+    "noOverwrite": true,
+    "commitBeforeRun": true,
+    "immutableRoot": true,
+    "reviewThenState": true,
+    "failedStepNoState": true,
+    "reuseVerifiedReviewWithoutSolve": true,
+    "reuseVerifiedStateWithoutSolve": true
+  }
+}

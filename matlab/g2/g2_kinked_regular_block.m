@@ -19,6 +19,7 @@ jsonFile=fullfile(root,'docs','research','crack-growth-gaps-2026','G2_SPECIMEN1_
 ip=inputParser;
 addParameter(ip,'JsonPath',jsonFile,@(v)ischar(v)||isstring(v));
 addParameter(ip,'ExpectedTangent',[],@(v)isempty(v)||(isnumeric(v)&&numel(v)==2));
+addParameter(ip,'ExpectedVertices',3,@(v)isnumeric(v)&&isscalar(v)&&v>=3&&v==round(v));
 addParameter(ip,'TipGuideRadius_mm',15,@(v)isempty(v)||(isnumeric(v)&&isscalar(v)));
 parse(ip,varargin{:});o=ip.Results;
 R=struct('pass',false,'stage','HOLD_NOT_STARTED','geometryOnly',true,'approvedForLEFM',false, ...
@@ -26,7 +27,7 @@ R=struct('pass',false,'stage','HOLD_NOT_STARTED','geometryOnly',true,'approvedFo
 J=jsondecode(fileread(char(o.JsonPath)));
 assert(strcmp(J.schema,'NewMetacomp.G2.IngraffeaGrigoriu1990.Specimen1.nominal.v1'),'G2KB:Schema','Wrong JSON.');
 G=J.nominal_geometry_mm;
-A=g2_kink_admissibility(P,G,'DeltaA_mm',4,'ExpectedTangent',o.ExpectedTangent,'TipGuideRadius_mm',o.TipGuideRadius_mm);
+A=g2_kink_admissibility(P,G,'DeltaA_mm',4,'ExpectedVertices',o.ExpectedVertices,'ExpectedTangent',o.ExpectedTangent,'TipGuideRadius_mm',o.TipGuideRadius_mm);
 R.admissibility=A;
 if ~A.pass
  R.stage='HOLD_KINK_ADMISSIBILITY';R.message=strjoin(A.failedGates,', ');return

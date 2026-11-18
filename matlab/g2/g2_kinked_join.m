@@ -15,14 +15,15 @@ ip=inputParser;
 addParameter(ip,'ExteriorOptions',{},@iscell);
 addParameter(ip,'MaxT3Elements',40000,@(v)isnumeric(v)&&isscalar(v)&&v>0);
 addParameter(ip,'ExpectedTangent',[],@(v)isempty(v)||(isnumeric(v)&&numel(v)==2));
+addParameter(ip,'ExpectedVertices',3,@(v)isnumeric(v)&&isscalar(v)&&v>=3&&v==round(v));
 parse(ip,varargin{:});o=ip.Results;
 R=struct('pass',false,'stage','HOLD_NOT_STARTED','message','','geometryOnly',true,'approvedForLEFM',false, ...
  'gates',struct(),'failedGates',{{}},'summary',struct());
 xo=o.ExteriorOptions;kg=find(strcmpi(xo(1:2:end),'TipGuideRadius_mm'));Rg=[];if ~isempty(kg),Rg=xo{2*kg(end)};end
-B=g2_kinked_regular_block(P,'ExpectedTangent',o.ExpectedTangent,'TipGuideRadius_mm',Rg);
+B=g2_kinked_regular_block(P,'ExpectedTangent',o.ExpectedTangent,'ExpectedVertices',o.ExpectedVertices,'TipGuideRadius_mm',Rg);
 R.block=rmfield(B,intersect(fieldnames(B),{'coord3','connect3','coord6','connect6','sourceP010','nodalQ'}));
 if ~B.pass,R.stage='HOLD_KINKED_P010_BLOCK';R.message=[B.stage,' ',B.message];return,end
-E=g2_kinked_exterior_mesh(P,'ExpectedTangent',o.ExpectedTangent,xo{:});
+E=g2_kinked_exterior_mesh(P,'ExpectedTangent',o.ExpectedTangent,'ExpectedVertices',o.ExpectedVertices,xo{:});
 R.exterior=rmfield(E,intersect(fieldnames(E),{'coord3','connect3'}));
 if ~E.pass,R.stage='HOLD_KINKED_EXTERIOR';R.message=[E.stage,' ',E.message];return,end
 XB=B.coord3;TB=B.connect3;nB=size(XB,1);nU=B.kernelNodes;outerIDs=B.collarOuterIDs;
@@ -66,11 +67,22 @@ bU=bnd(onCrack&side>0);bL=bnd(onCrack&side<0);
 upT3=unique(edges(bU,:));loT3=unique(edges(bL,:));
 upT6=unique([upT3;midsides(T3,T6,edges(bU,:))]);loT6=unique([loT3;midsides(T3,T6,edges(bL,:))]);
 upT6=sortStation(upT6,X6,P);loT6=sortStation(loT6,X6,P);upT3=sortStation(upT3,X3,P);loT3=sortStation(loT3,X3,P);
-kinkIDs=find(vecnorm(X3-P(2,:),2,2)<1e-12);
+kinkIDs=zeros(size(P,1)-2,2);
+kinksOK=true;
+for kp=2:size(P,1)-1
+ ids=find(vecnorm(X3-P(kp,:),2,2)<1e-12);
+ if numel(ids)~=2
+  kinksOK=false;
+ else
+  kinkIDs(kp-1,:)=ids(:).';
+  kinksOK=kinksOK && nnz(ismember(ids,upT3))==1 && ...
+    nnz(ismember(ids,loT3))==1;
+ end
+end
 banksOK=nnz(onCrack)==numel(bU)+numel(bL)&&numel(bU)==numel(bL)&&numel(bU)>3&&isequal(intersect(upT6,loT6),tipNode)&& ...
  ismember(outerIDs(33),upT3)&&ismember(outerIDs(65),loT3)&&upT3(end)==tipNode&&loT3(end)==tipNode&& ...
  norm(X3(upT3(1),:)-P(1,:))<1e-9&&norm(X3(loT3(1),:)-P(1,:))<1e-9&& ...
- numel(kinkIDs)==2&&numel(intersect(kinkIDs,upT3))==1&&numel(intersect(kinkIDs,loT3))==1;
+ kinksOK && size(kinkIDs,1)==size(P,1)-2;
 % ---- FE-nodal q about the new tip
 r6=vecnorm(X6-tip,2,2);q=ones(size(r6));q(r6>=2.6)=0;tr=r6>.4&r6<2.6;q(tr)=(2.6-r6(tr))/2.2;
 qActive=find(max(q(T6),[],2)-min(q(T6),[],2)>1e-14);
@@ -86,7 +98,7 @@ R.summary=struct('T3elements',size(T3,1),'T3nodes',size(X3,1),'T6nodes',size(X6,
  'exteriorT3',numel(rows.exterior),'minAngle_deg',angMin,'minAngleAt_mm',cenT(iAng,:),'maxNeighborRatio',ratMax, ...
  'maxRatioAt_mm',.5*(cenT(lo(inE(iRat)),:)+cenT(hi(inE(iRat)),:)),'rimSeamEdges',numel(rimEdge),'coreSeamEdges',numel(coreEdge), ...
  'crackBankEdgesPerSide',[numel(bU),numel(bL)],'bankT6NodesPerSide',[numel(upT6),numel(loT6)],'qActiveT6',numel(qActive), ...
- 'tip_mm',tip,'tangent',F.t,'normal',F.n,'tipNode',tipNode,'kinkNodeIDs',kinkIDs.','rimCoordinateMismatch_mm',coordDiff, ...
+ 'tip_mm',tip,'tangent',F.t,'normal',F.n,'tipNode',tipNode,'kinkNodeIDs',reshape(kinkIDs.',1,[]),'rimCoordinateMismatch_mm',coordDiff, ...
  'polyline_mm',P,'turn_deg',F.turns_deg.','exterior',E.summary,'block',B.summary);
 fprintf('G2_KJOIN_GATES=%d/%d\n',nnz(v),numel(v));
 fprintf('G2_KJOIN_T3=%d T6_NODES=%d MIN_ANGLE=%.6f MAX_RATIO=%.6f\n',size(T3,1),size(X6,1),angMin,ratMax);
@@ -96,7 +108,8 @@ else,R.stage='HOLD_KINKED_PROTECTED_MESH_JOIN';R.message=strjoin(R.failedGates,'
 R.X3=X3;R.T3=T3;R.X6=X6;R.T6=T6;R.upperBankT6=upT6;R.lowerBankT6=loT6;R.physicalTipNode=tipNode;
 R.nodalQ=q;R.qActiveT6Rows=qActive;R.elementRows=rows;R.collarOuterIDs=outerIDs;
 R.extraVertexXY=E.extraVertexXY;R.extraVertexNodes=map(E.extraVertexNodes);R.includeHoles=true;R.plateXRange=E.plateXRange;
-R.crackPolyline=P;R.tipTangent=F.t;R.tipNormal=F.n;R.kinkNodeIDs=kinkIDs;
+R.crackPolyline=P;R.tipTangent=F.t;R.tipNormal=F.n;
+R.kinkNodeIDs=reshape(kinkIDs.',[],1);
 end
 
 function [d,k]=polydist(X,P)

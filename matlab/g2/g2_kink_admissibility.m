@@ -28,7 +28,7 @@ for k=1:nh,C(k,:)=G.holes(k).center(:).';Rh(k)=G.holes(k).radius;end
 g=struct();
 % K1 polyline identity
 k1=N==o.ExpectedVertices&&N>=3&&norm(P(1,:)-mouth)<=1e-12&&norm(P(2,:)-tip0)<=1e-12&& ...
-   abs(F.segmentLengths(end)-o.DeltaA_mm)<=1e-12;
+   all(abs(F.segmentLengths(2:end)-o.DeltaA_mm)<=1e-12);
 if ~isempty(o.ExpectedTangent),k1=k1&&norm(t-o.ExpectedTangent(:).')<=1e-12;end
 g.K1_polylineIdentity=k1;
 % K2 non-singular miter (inherited geometric rule 1 + t.t' > 1.8)
