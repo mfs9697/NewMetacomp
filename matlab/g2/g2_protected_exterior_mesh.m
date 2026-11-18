@@ -34,6 +34,15 @@ addParameter(ip,'Hedge_mm',.45,@(v)isnumeric(v)&&isscalar(v)&&v>0);
 addParameter(ip,'GuideHface_mm',1.5,@(v)isnumeric(v)&&isscalar(v)&&v>0);
 addParameter(ip,'PairStationTolerance_mm',.15,@(v)isnumeric(v)&&isscalar(v)&&v>0);
 addParameter(ip,'MaxT3Elements',40000,@(v)isnumeric(v)&&isscalar(v)&&v>0);
+% WP2 options; the defaults reproduce the WP1 qualified construction exactly.
+addParameter(ip,'IncludeHoles',true,@(v)islogical(v)&&isscalar(v));   % false: holeless benchmark only
+addParameter(ip,'PlateXRange_mm',[],@(v)isempty(v)||(isnumeric(v)&&numel(v)==2));
+addParameter(ip,'BottomVertices_mm',[],@(v)isempty(v)||isnumeric(v)); % extra CAD vertices on y = ymin (x values)
+addParameter(ip,'TopVertices_mm',[],@(v)isempty(v)||isnumeric(v));    % extra CAD vertices on y = ymax (x values)
+% nonphysical tip guide face (same CSG device as the 3R hole guides): an internal
+% material face of radius TipGuideRadius_mm around the tip with its own Hface
+addParameter(ip,'TipGuideRadius_mm',[],@(v)isempty(v)||(isnumeric(v)&&isscalar(v)&&v>0));
+addParameter(ip,'TipGuideHface_mm',1.5,@(v)isnumeric(v)&&isscalar(v)&&v>0);
 parse(ip,varargin{:});o=ip.Results;
 R=struct('pass',false,'stage','HOLD_NOT_STARTED','message','', ...
     'geometryOnly',true,'approvedForLEFM',false,'summary',struct());
@@ -48,6 +57,7 @@ G=J.nominal_geometry_mm;
 assert(numel(G.holes)==3,'G2Ext:ThreeHoles','Cornell specimen #1 has exactly three holes.');
 w=o.ChannelHalfWidth_mm;ro=o.RimRadius_mm;
 xmin=G.plate.x_range(1);xmax=G.plate.x_range(2);
+if ~isempty(o.PlateXRange_mm),xmin=o.PlateXRange_mm(1);xmax=o.PlateXRange_mm(2);end
 ymin=G.plate.y_range(1);ymax=G.plate.y_range(2);
 mouth=G.initial_crack.mouth(:).';tip=G.initial_crack.tip(:).';
 assert(abs(mouth(2)-ymin)<1e-10&&abs(tip(1)-mouth(1))<1e-10, ...
@@ -56,7 +66,8 @@ cx=tip(1);yt=tip(2);
 hx=zeros(3,1);hy=hx;hr=hx;
 for k=1:3,hx(k)=G.holes(k).center(1);hy(k)=G.holes(k).center(2);hr(k)=G.holes(k).radius;end
 gr=3*hr; % nonphysical guide radii (3R)
-for k=1:3
+nH=3*o.IncludeHoles;
+for k=1:nH
  assert(hx(k)-gr(k)>xmin&&hx(k)+gr(k)<xmax&&hy(k)-gr(k)>ymin&&hy(k)+gr(k)<ymax, ...
   'G2Ext:GuideOutsidePlate','Guide circle %d leaves the plate.',k);
  assert(hx(k)-gr(k)>cx+ro,'G2Ext:GuideCrossesTipRegion','Guide circle %d reaches the channel or rim.',k);
@@ -74,29 +85,49 @@ EL=segX(P(33,:),P(32,:),cx-w);      % left native entry on chord P33-P32
 ER=segX(P(33,:),P(34,:),cx+w);      % right native entry on chord P33-P34
 assert(EL(1)<cx&&ER(1)>cx&&abs(EL(2)-ER(2))<1e-12,'G2Ext:EntrySplit','Entry split is not symmetric.');
 rimOrder=[32:-1:1,64:-1:34]';       % native polygon order after EL, before ER
-outer=[cx+w,ymin;xmax,ymin;xmax,ymax;xmin,ymax;xmin,ymin;cx-w,ymin;EL;P(rimOrder,:);ER];
+bv=sort(o.BottomVertices_mm(:));tv=sort(o.TopVertices_mm(:),'descend');
+assert(all(bv>xmin&bv<xmax&abs(bv-cx)>w+1)&&all(tv>xmin&tv<xmax),'G2Ext:ExtraVertex','Extra vertex outside its edge or on the channel.');
+bR=bv(bv>cx);bL=bv(bv<cx);
+outer=[cx+w,ymin;[bR,ymin+0*bR];xmax,ymin;xmax,ymax;[tv,ymax+0*tv];xmin,ymax;xmin,ymin;[bL,ymin+0*bL];cx-w,ymin;EL;P(rimOrder,:);ER];
 Np=size(outer,1);
-cols=cell(7,1);
-cols{1}=[2;Np;outer(:,1);outer(:,2)];
-for k=1:3,cols{1+k}=[1;hx(k);hy(k);hr(k)];cols{4+k}=[1;hx(k);hy(k);gr(k)];end
-names={'MAT','C1','C2','C3','G1','G2','G3'};
-solid='MAT-C1-C2-C3';
-sf=['((',solid,')-G1-G2-G3)+((',solid,')*G1)+((',solid,')*G2)+((',solid,')*G3)'];
-gd=zeros(max(cellfun(@numel,cols)),7);
-for k=1:7,gd(1:numel(cols{k}),k)=cols{k};end
+tg=~isempty(o.TipGuideRadius_mm);Rg=o.TipGuideRadius_mm;
+if tg
+ assert(Rg>ro+2&&yt-Rg>ymin&&cx-Rg>xmin,'G2Ext:TipGuide','Tip guide circle must lie inside the plate and well outside the rim.');
+ for k=1:nH,assert(norm([hx(k)-cx,hy(k)-yt])>Rg+gr(k),'G2Ext:TipGuideOverlap','Tip guide overlaps hole guide %d.',k);end
+end
+cols={[2;Np;outer(:,1);outer(:,2)]};names={'MAT'};solid='MAT';guides={};
+if o.IncludeHoles
+ for k=1:3,cols{end+1}=[1;hx(k);hy(k);hr(k)];names{end+1}=sprintf('C%d',k);end %#ok<AGROW>
+ solid='MAT-C1-C2-C3';
+ for k=1:3,cols{end+1}=[1;hx(k);hy(k);gr(k)];names{end+1}=sprintf('G%d',k);guides{end+1}=sprintf('G%d',k);end %#ok<AGROW>
+end
+if tg,cols{end+1}=[1;cx;yt;Rg];names{end+1}='GT';guides{end+1}='GT';end
+if isempty(guides)
+ sf=solid;
+else
+ sf=['((',solid,')',sprintf('-%s',guides{:}),')'];
+ for k=1:numel(guides),sf=[sf,'+((',solid,')*',guides{k},')'];end %#ok<AGROW>
+end
+nc=numel(cols);gd=zeros(max(cellfun(@numel,cols)),nc);
+for k=1:nc,gd(1:numel(cols{k}),k)=cols{k};end
 [dl,~]=decsg(gd,sf,char(names{:}).');
 model=createpde(1);
 geometryFromEdges(model,dl);
 geom=model.Geometry;
-sample=[hx+2*hr,hy;xmax-25,(ymin+ymax)/2];
-fIDs=nearestFace(geom,sample);
 R.summary.cadFaces=geom.NumFaces;
-if geom.NumFaces~=4||numel(unique(fIDs))~=4
+sample=zeros(0,2);
+if o.IncludeHoles,sample=[hx+2*hr,hy];end
+if tg,sample=[sample;cx+.5*(ro+Rg),yt+.5*(ro+Rg)];end   % inside the tip guide annulus, off the crack line
+sample=[sample;xmax-25,(ymin+ymax)/2];
+fIDs=nearestFace(geom,sample);
+nExp=size(sample,1);
+if geom.NumFaces~=nExp||numel(unique(fIDs))~=nExp
  R.stage='HOLD_CAD_FACES';
- R.message=sprintf('Expected 4 material faces (bulk + 3 guide annuli), got %d / probes %s.',geom.NumFaces,mat2str(fIDs));
+ R.message=sprintf('Expected %d material faces, got %d / probes %s.',nExp,geom.NumFaces,mat2str(fIDs));
  return
 end
-annulusFaces=fIDs(1:3);
+annulusFaces=fIDs(1:3*o.IncludeHoles);
+tipFace=[];if tg,tipFace=fIDs(3*o.IncludeHoles+1);end
 % ---- CAD edge identification by geometry
 yEntry=EL(2);
 lipL=unique(nearestEdge(geom,[cx-w,yEntry*.25;cx-w,yEntry*.75]));
@@ -109,17 +140,23 @@ if numel(unique(rimCAD))~=64||~isempty(intersect(rimCAD,[lipL(:);lipR(:)]))||~is
  R.message=sprintf('Rim CAD edges %d (need 64 distinct); lips L=%s R=%s.',numel(unique(rimCAD)),mat2str(lipL),mat2str(lipR));
  return
 end
-holeCAD=cell(3,1);
-for k=1:3
+holeCAD=cell(nH,1);
+for k=1:nH
  ps=(0:47)'*2*pi/48;
  holeCAD{k}=unique(nearestEdge(geom,[hx(k)+hr(k)*cos(ps),hy(k)+hr(k)*sin(ps)]));
 end
 chord=2*ro*sin(pi/64);
 hedge={lipL(:)',o.Hedge_mm,lipR(:)',o.Hedge_mm,rimCAD(:)',chord};
-for k=1:3,hedge=[hedge,{holeCAD{k}(:)',.70*2*hr(k)*sin(pi/120)}];end %#ok<AGROW>
+for k=1:nH,hedge=[hedge,{holeCAD{k}(:)',.70*2*hr(k)*sin(pi/120)}];end %#ok<AGROW>
 tm=tic;
-m=generateMesh(model,'GeometricOrder','linear','Hmin',o.Hmin_mm,'Hmax',o.Hmax_mm, ...
-    'Hgrad',o.Hgrad,'Hedge',hedge,'Hface',{annulusFaces(:)',o.GuideHface_mm});
+hface={};
+if o.IncludeHoles,hface=[hface,{annulusFaces(:)',o.GuideHface_mm}];end
+if tg,hface=[hface,{tipFace,o.TipGuideHface_mm}];end
+if isempty(hface)
+m=generateMesh(model,'GeometricOrder','linear','Hmin',o.Hmin_mm,'Hmax',o.Hmax_mm,'Hgrad',o.Hgrad,'Hedge',hedge);
+else
+m=generateMesh(model,'GeometricOrder','linear','Hmin',o.Hmin_mm,'Hmax',o.Hmax_mm,'Hgrad',o.Hgrad,'Hedge',hedge,'Hface',hface);
+end
 R.summary.nativeMeshingSeconds=toc(tm);
 X0=m.Nodes.';T=m.Elements.';
 R.summary.nativeT3=size(T,1);R.summary.nativeNodes=size(X0,1);
@@ -176,10 +213,18 @@ R.message='Exterior with 64-chord rim cavity built and collapsed; NOT yet joined
 R.coord3=X;R.connect3=T;
 R.rimNodeAtP=idP;R.rimEntryLeft=idEL;R.rimEntryRight=idER;
 R.leftLipNodes=ln;R.rightLipNodes=rn;
-R.holeCenters=[hx,hy];R.holeRadii=hr;R.guideRadii=gr;
+R.holeCenters=[hx,hy];R.holeRadii=hr;R.guideRadii=gr;R.includeHoles=o.IncludeHoles;
+% node IDs at the extra CAD vertices (exact coordinates), for supports and point loads
+xv=[bv,ymin+0*bv;tv,ymax+0*tv];R.extraVertexXY=xv;R.extraVertexNodes=zeros(size(xv,1),1);
+for k=1:size(xv,1)
+ id=find(vecnorm(X-xv(k,:),2,2)<1e-9);
+ assert(isscalar(id),'G2Ext:ExtraVertexNode','No unique mesh node at extra vertex %d.',k);R.extraVertexNodes(k)=id;
+end
+R.plateXRange=[xmin,xmax];
 R.summary.channelHalfWidth_mm=w;R.summary.rimRadius_mm=ro;R.summary.rimChord_mm=chord;
 R.summary.controls=struct('Hmin_mm',o.Hmin_mm,'Hmax_mm',o.Hmax_mm,'Hgrad',o.Hgrad, ...
-    'lipHedge_mm',o.Hedge_mm,'guideHface_mm',o.GuideHface_mm,'rimHedge_mm',chord);
+    'lipHedge_mm',o.Hedge_mm,'guideHface_mm',o.GuideHface_mm,'rimHedge_mm',chord, ...
+    'tipGuideRadius_mm',o.TipGuideRadius_mm,'tipGuideHface_mm',o.TipGuideHface_mm);
 R.summary.annulusFaceIDs=annulusFaces(:).';
 R.summary.PDEToolboxVersion=D.PDEToolboxVersion;
 end

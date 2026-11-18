@@ -138,6 +138,7 @@ R.upperBankT6=leftT6;R.lowerBankT6=rightT6;   % convention as the candidate: upp
 R.physicalTipNode=tipNode;R.nodalQ=q;R.qActiveT6Rows=qActive;
 R.elementRows=rows;R.collarOuterIDs=outerIDs;
 R.p010BlockSummary=B.summary;R.p010BlockGates=B.gates;
+R.extraVertexXY=E.extraVertexXY;R.extraVertexNodes=map(E.extraVertexNodes);R.includeHoles=E.includeHoles;R.plateXRange=E.plateXRange;
 end
 
 function m=T6midsides(T3,T6,e)

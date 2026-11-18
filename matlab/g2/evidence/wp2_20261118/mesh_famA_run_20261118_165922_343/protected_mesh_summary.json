@@ -1,0 +1,96 @@
+{
+  "pass": true,
+  "stage": "FULL_PROTECTED_MESH_JOIN_PASS",
+  "date": "2026-11-18 16:59:22",
+  "outputDirectory": "<repo>\\outputs\\g2_protected_mesh\\run_20261118_165922_343_famA",
+  "MATLABRelease": "2023a",
+  "approvedForLEFM": false,
+  "gates": {
+    "p010BlockPass": true,
+    "exteriorRimCavityPass": true,
+    "rimCoordinatesCoincide": true,
+    "blockRowsAndNodesUnchanged": true,
+    "allT3AreasPositive": true,
+    "globalMinAngleAtLeast20": true,
+    "globalNeighborRatioAtMost1p8": true,
+    "noNonmanifoldEdges": true,
+    "coreCollarSeam64TwoOwners": true,
+    "collarExteriorSeam64TwoOwners": true,
+    "distinctBanksMeetOnlyAtTip": true,
+    "qSupport2443InsideCore": true,
+    "T3BudgetRespected": true
+  },
+  "failedGates": [],
+  "summary": {
+    "T3elements": 28151,
+    "T3nodes": 14513,
+    "T6nodes": 57179,
+    "coreT3": 2788,
+    "collarT3": 128,
+    "exteriorT3": 25235,
+    "minAngle_deg": 30.1268473212245,
+    "maxNeighborRatio": 1.5918285508612136,
+    "rimSeamEdges": 64,
+    "coreSeamEdges": 64,
+    "rimSeamMaxRatio": 1.2908691948069049,
+    "crackBankEdgesPerSide": [
+      75,
+      75
+    ],
+    "bankT6NodesPerSide": [
+      151,
+      151
+    ],
+    "qActiveT6": 2443,
+    "tip_mm": [
+      101.6,
+      25.4
+    ],
+    "tipNode": 1114,
+    "rimCoordinateMismatch_mm": 0,
+    "exterior": {
+      "cadFaces": 5,
+      "nativeMeshingSeconds": 0.5504655,
+      "nativeT3": 25235,
+      "nativeNodes": 13059,
+      "rimNodeCount": 65,
+      "rimVertexMaxDeviation_mm": 0,
+      "lipPairs": 48,
+      "lipStationMismatch_mm": 0.067259938963232457,
+      "channelHalfWidth_mm": 0.02,
+      "rimRadius_mm": 3.3,
+      "rimChord_mm": 0.3238466505609589,
+      "controls": {
+        "Hmin_mm": 0.12,
+        "Hmax_mm": 6,
+        "Hgrad": 1.12,
+        "lipHedge_mm": 0.45,
+        "guideHface_mm": 1.5,
+        "rimHedge_mm": 0.3238466505609589,
+        "tipGuideRadius_mm": 15,
+        "tipGuideHface_mm": 1.5
+      },
+      "annulusFaceIDs": [
+        1,
+        2,
+        5
+      ],
+      "PDEToolboxVersion": "3.10"
+    }
+  },
+  "exception": "",
+  "familyTag": "famA",
+  "exteriorOptions": [
+    "BottomVertices_mm",
+    [
+      25.4,
+      482.6
+    ],
+    "TopVertices_mm",
+    254,
+    "TipGuideRadius_mm",
+    15,
+    "TipGuideHface_mm",
+    1.5
+  ]
+}
