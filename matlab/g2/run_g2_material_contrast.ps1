@@ -8,7 +8,8 @@ param(
   [string]$ChainDir = '.\outputs\g2_trajectory_chain_v1_attempt2',
   [string]$MatlabExe = 'C:\Program Files\Polyspace\R2023a\bin\matlab.exe',
   [double]$MinFreeGiB = 5.0,
-  [string]$Batch = 'run_g2_material_contrast_batch'
+  [string]$Batch = 'run_g2_material_contrast_batch',
+  [string]$RunDir = ''   # report batch only: a saved outputs/g2_material_contrast_v1/run_<time>
 )
 $ErrorActionPreference='Stop'
 if ($MinFreeGiB -lt 5.0) { throw 'HOLD_RAM_POLICY: the 5 GiB guard cannot be reduced.' }
@@ -32,7 +33,9 @@ Write-Host ("Free RAM: {0:N2} GiB (guard {1:N2} GiB)" -f $free,$MinFreeGiB)
 if($free -lt $MinFreeGiB) { throw 'HOLD_RAM: free physical RAM below guard; no MATLAB launched.' }
 Write-Host ("Material policy SHA-256: {0}" -f (Get-FileHash -LiteralPath $policy -Algorithm SHA256).Hash)
 $g2=$PSScriptRoot.Replace("'","''");$vendor=(Join-Path $PSScriptRoot 'vendor_p010_a14d8872').Replace("'","''")
-$chainLiteral=$chain.Replace("'","''")
+$arg=$chain
+if ($Batch -eq 'run_g2_material_report_batch') { $arg=(Resolve-Path -LiteralPath $RunDir -ErrorAction Stop).Path }
+$chainLiteral=$arg.Replace("'","''")
 $expr="restoredefaultpath;addpath('$g2','-begin');addpath('$vendor','-begin');L=$Batch('$chainLiteral');"
 & $MatlabExe -batch $expr
 exit $LASTEXITCODE
