@@ -95,6 +95,23 @@ if ~strcmp(M.status,'OK')||~R.forecast.admissibility.pass
  return
 end
 if ~o.Run
+ if isfolder(char(o.ChainDir))
+  [chainState,status]=local_verify_chain_readonly(char(o.ChainDir), ...
+   S1,rootHash,S1.meshSHA256,p0Hash,shaP,source,policy);
+  R.lastStateIndex=chainState.stateIndex;
+  if strcmp(status,'HOLD_PARTIAL_STEP')
+   R.pass=false;R.stage='HOLD_PARTIAL_STEP';R.stopReason='INTEGRITY';
+   R.message='Existing unreviewed/partial step cannot be silently retried.';
+   return
+  end
+  if chainState.stateIndex>=o.MaxStateIndex
+   R.pass=true;R.stage='DRY_PREFLIGHT_STEP_CAP';R.stopReason='STEP_CAP';
+   fprintf('G2_TRAJECTORY_DRY_STEP_CAP=1; STATES_VERIFIED_THROUGH=%d\n', ...
+    chainState.stateIndex);
+   fprintf('G2_TRAJECTORY_DRY_NO_MESH_NO_FEM_NO_FILES=1\n');
+   return
+  end
+ end
  R.pass=true;R.stage='DRY_PREFLIGHT_PASS';R.stopReason='PREFLIGHT_ONLY';
  fprintf('G2_TRAJECTORY_PREFLIGHT_PASS=1\n');
  fprintf('G2_TRAJECTORY_NEXT_TURN_DEG=%.12f, TRIAL_TIP_MM=(%.12f,%.12f)\n', ...
@@ -282,6 +299,42 @@ if ~isstruct(a)||~isfield(a,'point')||~strcmp(a.point,point),return,end
 if isfield(a,'step')&&a.step==k
  error('G2Chain:SimulatedInterrupt', ...
   'Simulated interruption AFTER immutable %s of numerical step %d.',point,k);
+end
+end
+
+function [last,status]=local_verify_chain_readonly(chain,S0,rootHash,rootMeshHash,p0Hash,policySHA,source,policy)
+% Read-only full ancestry audit. No meshing, FEM, file or folder write.
+rootFile=fullfile(chain,'ROOT.mat');
+[Root,~,ok,why]=g2_trajectory_record('read',rootFile);
+assert(ok,'G2Chain:RootRecordIntegrity','Preflight chain root failed: %s.',why);
+assert(strcmpi(Root.rootHash,rootHash)&& ...
+ strcmpi(Root.rootMeshHash,rootMeshHash)&& ...
+ strcmpi(Root.p0SHA256,p0Hash)&& ...
+ strcmpi(Root.policySHA256,policySHA)&& ...
+ isequal(Root.sourceHashes,source), ...
+ 'G2Chain:SourceDrift','Read-only chain preflight detected source drift.');
+last=S0;parentHash=rootHash;status='CHAIN_VALID';
+for k=S0.stateIndex+1:policy.scopeLimits.maxStateIndex
+ stepDir=fullfile(chain,sprintf('STEP_%03d',k));
+ revFile=fullfile(stepDir,'REVIEW.mat');
+ stateDir=fullfile(stepDir,'state');
+ if isfolder(stateDir)
+  [child,ch,valid,why]=g2_wp3_state_io('load',stateDir);
+  assert(valid,'G2Chain:ChildIntegrity','Read-only State %d: %s.',k,why);
+  [rev,rh,valid,why]=g2_trajectory_record('read',revFile);
+  assert(valid,'G2Chain:ReviewIntegrity','Read-only Review %d: %s.',k,why);
+  local_verify_child(child,rev,last,parentHash,rh,policySHA,stepDir,source);
+  last=child;parentHash=ch;
+ elseif isfile(revFile)
+  [rev,~,valid,why]=g2_trajectory_record('read',revFile);
+  assert(valid,'G2Chain:ReviewIntegrity','Pending review %d: %s.',k,why);
+  local_verify_review(rev,last,parentHash,policySHA,stepDir,source);
+  status='VERIFIED_REVIEW_NEEDS_STATE';return
+ elseif isfolder(stepDir)
+  status='HOLD_PARTIAL_STEP';return
+ else
+  return
+ end
 end
 end
 
