@@ -1,0 +1,38 @@
+STAGE=G2_WP2_VERIFICATION_S_M
+DATE=2026-11-18 17:01:40
+MATLAB_RELEASE=2023a
+OUTDIR=<repo>\outputs\g2_wp2_verification\run_20261118_170139_962
+G2_P010_UPSTREAM_LOCAL_GATES=15/15
+G2_P010_CORNELL_MIN_HOLE_WALL_MARGIN_MM=57.85142591
+G2_P010_CORNELL_MIN_GUIDE_MARGIN_MM=45.15142591
+G2_P010_CORNELL_MIN_PLATE_MARGIN_MM=22.10000000
+G2_P010_CORNELL_CONSTRUCTION_SEGMENT_MM=4.00000000
+G2_P010_REGULAR_GATES=13/13
+G2_P010_REGULAR_MIN_ANGLE_DEG=30.12684732
+G2_P010_REGULAR_MAX_NEIGHBOR_RATIO=1.59182855
+G2_P010_REGULAR_CORE_T3=2788
+G2_P010_REGULAR_COLLAR_T3=128
+G2_P010_REGULAR_Q_ACTIVE_T6=2443
+G2_P010_REGULAR_INNER_SEAM=64
+G2_P010_REGULAR_OUTER_RIM=64
+G2_P010_ISOLATED_PASS=1
+G2_P010_GLOBAL_JOINED=0; NO_LEFM=1; NO_CRACK_GROWTH=1
+S1 patch: stress err 4.801e-12, u err 1.216e-14, rigid 2.311e-18 -> 1
+S2 Williams: Hooke 7.544e-16, FD 2.171e-10 -> 1
+M case (1.0,0.0,T=0.0): EDI (1.001032,0.000000) err 1.032e-03 | COD (0.992249,0.000000) err 7.751e-03 | spread 1.646e-06 | J 4.107e-07 | quad 3.524e-13 -> 1
+M case (0.0,1.0,T=0.0): EDI (0.000010,1.000410) err 4.096e-04 | COD (0.000008,0.986910) err 1.309e-02 | spread 2.572e-06 | J 2.686e-06 | quad 3.555e-13 -> 1
+M case (0.6,-0.8,T=0.0): EDI (0.600611,-0.800328) err 6.109e-04 | COD (0.595343,-0.789528) err 1.047e-02 | spread 2.058e-06 | J 1.901e-06 | quad 3.000e-13 -> 1
+M case (1.0,0.0,T=0.2): EDI (1.001166,-0.000005) err 1.166e-03 | COD (0.992362,-0.000004) err 7.638e-03 | spread 1.642e-06 | J 6.655e-07 | quad 3.531e-13 -> 1
+M case (0.0,1.0,T=0.2): EDI (0.000144,1.000404) err 4.044e-04 | COD (0.000121,0.986906) err 1.309e-02 | spread 2.572e-06 | J 2.707e-06 | quad 3.255e-13 -> 1
+M case (0.6,-0.8,T=-0.2): EDI (0.600477,-0.800322) err 4.766e-04 | COD (0.595230,-0.789524) err 1.048e-02 | spread 2.058e-06 | J 2.565e-06 | quad 2.702e-13 -> 1
+    KI     KII      T        KI_EDI       KII_EDI        KI_COD        KII_COD        errEDI       errCOD      pathSpread    energyErr      quadErr      signOK    pass 
+    ___    ____    ____    __________    __________    __________    ___________    __________    _________    __________    __________    __________    ______    _____
+
+      1       0       0         1.001    2.5838e-07       0.99225     2.3836e-07     0.0010315     0.007751    1.6456e-06    4.1069e-07    3.5238e-13    true      true 
+      0       1       0    1.0074e-05        1.0004    8.2766e-06        0.98691    0.00040957      0.01309    2.5719e-06    2.6865e-06    3.5549e-13    true      true 
+    0.6    -0.8       0       0.60061      -0.80033       0.59534       -0.78953    0.00061086     0.010472    2.0575e-06    1.9012e-06    2.9998e-13    true      true 
+      1       0     0.2        1.0012    -4.905e-06       0.99236    -4.3146e-06     0.0011658    0.0076378    1.6419e-06    6.6553e-07    3.5305e-13    true      true 
+      0       1     0.2    0.00014437        1.0004    0.00012146        0.98691    0.00040441     0.013094    2.5724e-06    2.7069e-06    3.2552e-13    true      true 
+    0.6    -0.8    -0.2       0.60048      -0.80032       0.59523       -0.78952    0.00047656     0.010476     2.058e-06    2.5646e-06    2.7023e-13    true      true 
+
+G2_WP2_VERIFICATION_S_M_PASS=1
