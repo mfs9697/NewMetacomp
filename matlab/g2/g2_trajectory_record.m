@@ -39,8 +39,9 @@ switch lower(action)
    try
     M=jsondecode(fileread(manifest));
     h=g2_sha256_file(file);
+    info=dir(file);
     if strcmp(M.schema,'NewMetacomp.G2.TrajectoryRecordManifest.v1')&& ...
-       strcmpi(M.SHA256,h)&&dir(file).bytes==M.bytes
+       strcmpi(M.SHA256,h)&&info.bytes==M.bytes
      D=load(file,'record');record=D.record;
      pass=isstruct(record)&&isscalar(record)&& ...
         strcmp(record.schema,M.recordSchema)&& ...
