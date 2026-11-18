@@ -29,6 +29,7 @@ addParameter(ip,'ChainDir',fullfile(repo,'outputs','g2_trajectory_chain_v1'), ..
 addParameter(ip,'MaxStateIndex',2,@(x)isnumeric(x)&&isscalar(x)&&isfinite(x)&&x==round(x));
 addParameter(ip,'ForbidNewComputation',false,@(x)islogical(x)&&isscalar(x));
 addParameter(ip,'AuthorizeNumericalMarch',struct(),@isstruct);
+addParameter(ip,'SimulateInterrupt',struct(),@isstruct);
 parse(ip,varargin{:});o=ip.Results;
 R=struct('pass',false,'stage','HOLD_NOT_STARTED', ...
  'runRequested',o.Run,'physicalFractureGrowthProven',false, ...
@@ -245,8 +246,10 @@ for k=S1.stateIndex+1:o.MaxStateIndex
    'numericallyQualified',true,'physicalFractureGrowthProven',false, ...
    'tipAccepted',false,'eligibleForAutomaticPhysicalAcceptance',false);
   reviewHash=g2_trajectory_record('write',reviewFile,review);
+  local_interrupt(o,'review',k);
   child=local_child_state(parent,review,parentHash,reviewHash,shaP);
   childHash=g2_wp3_state_io('save',stateDir,child);
+  local_interrupt(o,'state',k);
   R.newStatesCreated=R.newStatesCreated+1;
   R.steps=[R.steps;local_step_summary(child,review,'NEW_NUMERICAL_STATE')]; %#ok<AGROW>
   R.lastStateIndex=k;
@@ -255,6 +258,7 @@ for k=S1.stateIndex+1:o.MaxStateIndex
    child.KI_MPa_sqrt_m_per_kN,child.KII_MPa_sqrt_m_per_kN);
   parent=child;parentHash=childHash;
  catch ME
+  if strcmp(ME.identifier,'G2Chain:SimulatedInterrupt'),rethrow(ME);end
   R.pass=false;R.stage='HOLD_NUMERICAL_STEP';
   R.stopReason=local_classify(ME.identifier);
   R.message=getReport(ME,'extended','hyperlinks','off');
@@ -272,6 +276,15 @@ fprintf('G2_TRAJECTORY_STOP_STEP_CAP=%d; PHYSICAL_GROWTH_PROVEN=0\n',o.MaxStateI
 end
 
 % ======================================================================
+function local_interrupt(o,point,k)
+a=o.SimulateInterrupt;
+if ~isstruct(a)||~isfield(a,'point')||~strcmp(a.point,point),return,end
+if isfield(a,'step')&&a.step==k
+ error('G2Chain:SimulatedInterrupt', ...
+  'Simulated interruption AFTER immutable %s of numerical step %d.',point,k);
+end
+end
+
 function F=local_forecast(S,M,G)
 F=struct('status',M.status,'tip_mm',[], ...
  'tangent',[],'polyline_mm',[],'admissibility',struct());
