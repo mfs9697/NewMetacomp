@@ -94,7 +94,7 @@ try
  Em=pol.materials.E_matrix_MPa;nu=pol.materials.nu_matrix;mk=@(E,n)struct('E',E,'nu',n,'plane',pol.materials.plane);
  matM=mk(Em,nu);
  E0=g2_sif_interaction(D.X6,D.T6,zeros(2*size(D.X6,1),1),matM,tip,D.tipTangent(:).',.4,2.6,4);
- pq=phase;pq(E0.activeRows(1))=2;
+ pq=ones(size(phase));pq(E0.activeRows(1))=2;   % all matrix except one q element: no contrast result before M0
  Kq=g2_material_sif_on_mesh(D,pq,[matM,mk(2*Em,pol.materials.nu_reinforcement)],polT,PM);
  assert(~Kq.criteria.qSupportMatrixPhaseOnly&&~Kq.pass,'G2Material:QPhaseNegative','SIF q-phase gate accepted a reinforcement element.');
  L=stage(L,'S2_BENCHMARK','PASS',struct('checks',Bm.checks,'dispRelErr',Bm.values.dispRelErr,'energyRelErr',Bm.values.energyRelErr, ...

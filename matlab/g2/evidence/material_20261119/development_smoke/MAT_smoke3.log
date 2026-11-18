@@ -1,0 +1,20 @@
+G2_MATERIAL_SIF_PASS=1 KI=0.195982362 KII=+0.00314997025 MPa sqrt(m)/kN, COD 0.194259931 / +0.00310165837, C=0.000221801656 mm/N
+Elapsed time is 2.281298 seconds.
+                   elasticEquilibrium: 1
+                    blindCODversusEDI: 1
+                  contourIndependence: 1
+                      JenergyIdentity: 1
+                        EDIquadrature: 1
+                   qSupportInsideCore: 1
+                    wholeCrackOpening: 1
+                           KIpositive: 1
+    conditionalHighMixityKIIagreement: 1
+              qSupportMatrixPhaseOnly: 1
+          heterogeneousEnergyIdentity: 1
+           interfaceNodalForceBalance: 1
+                     annulusResultant: 1
+            stiffnessPositiveDefinite: 1
+
+balance 1.85e-12 resultant 3.89e-13 sideL2 [0.00023 0.00027 0.000172] energyId 6.72e-12 PD 1
+G2_MATERIAL_SIF_PASS=0 KI=0.195985404 KII=+0.0031476344 MPa sqrt(m)/kN, COD 0.194239423 / +0.00310056771, C=0.000221801597 mm/N
+q-negative: qSupportMatrixPhaseOnly=0 pass=0
