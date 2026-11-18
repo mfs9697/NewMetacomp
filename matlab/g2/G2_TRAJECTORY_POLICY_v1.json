@@ -14,7 +14,21 @@
     "wp3Head": "ebe6235e93bd8abc008c351032aa01b4acfe8178",
     "sourceStateIndex": 1,
     "sourceType": "independently qualified idealized numerical state; physical_onset=false",
-    "cornellJSON_SHA256": "45A88FA0926472DDBE5E70E4C80A97B88196DD45D8A266FA04273F89790B47BF"
+    "cornellJSON_SHA256": "45A88FA0926472DDBE5E70E4C80A97B88196DD45D8A266FA04273F89790B47BF",
+    "trustedP0SHA256": "15201996b4165aa9980f61f370a75749b1ce28ec0accaa061902641524c37c58",
+    "allowedWP3State1": [
+      {
+        "label": "WP3_R1_original_step1_a",
+        "stateSHA256": "cb05bd619280069bd601e7a9131b8532f39698f3a406adacff537eac09a5d441",
+        "meshSHA256": "ecd6a7b873bc2cd758a0f88391e564dfb6c90249024bc1a8768f9f5d93732461"
+      },
+      {
+        "label": "WP3_R1_original_step1_b",
+        "stateSHA256": "ca70f324ea910cbd398a1aed616f67a83c7f45a723f0923dfc054c1004a88c49",
+        "meshSHA256": "118e6b0e05ee1bb904db05404754b671c385d15c35a23a899f45f832f5d922eb"
+      }
+    ],
+    "evidenceSHAFile": "matlab/g2/evidence/wp3_20261118/SHA256SUMS_original_outputs.txt"
   },
   "scopeLimits": {
     "maxStateIndex": 2,
