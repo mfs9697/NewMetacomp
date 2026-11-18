@@ -1,4 +1,4 @@
-function R=run_g2_protected_mesh_batch()
+function R=run_g2_protected_mesh_batch(familyTag,varargin)
 %RUN_G2_PROTECTED_MESH_BATCH  WP1: build and save the full protected Cornell #1 mesh.
 % Geometry only. Writes a NEW outputs/g2_protected_mesh/run_* folder with the
 % console log, JSON summary, figures and (only on a join PASS) the saved arrays
@@ -11,9 +11,11 @@ addpath(vendor,'-begin');
 assert(strcmpi(which('main_m1i_increment_ring_geometry_only'),fullfile(vendor,'main_m1i_increment_ring_geometry_only.m'))&& ...
        strcmpi(which('T3toT6_fast'),fullfile(vendor,'T3toT6_fast.m')),'G2Prot:VendorShadowed', ...
        'MATLAB must resolve the pinned vendor sources.');
+if nargin<1||isempty(familyTag),familyTag='';end
+assert(isempty(familyTag)||~isempty(regexp(familyTag,'^[A-Za-z0-9_]+$','once')),'G2Prot:Tag','Bad family tag.');
 outRoot=fullfile(repo,'outputs','g2_protected_mesh');
 if ~exist(outRoot,'dir'),mkdir(outRoot);end
-folder=fullfile(outRoot,['run_',datestr(now,'yyyymmdd_HHMMSS_FFF')]);
+folder=fullfile(outRoot,['run_',datestr(now,'yyyymmdd_HHMMSS_FFF'),regexprep(['_',familyTag],'^_$','')]);
 assert(~exist(folder,'dir'),'G2Prot:Collision','Refusing to overwrite %s',folder);
 mkdir(folder);diary(fullfile(folder,'batch_console.log'));c=onCleanup(@()diary('off')); %#ok<NASGU>
 fprintf('STAGE=G2_WP1_FULL_PROTECTED_MESH\nDATE=%s\nMATLAB_RELEASE=%s\nOUTDIR=%s\n',datestr(now,31),version('-release'),folder);
@@ -23,7 +25,10 @@ report=struct('pass',false,'stage','HOLD_NOT_RUN','date',datestr(now,31),'output
  'summary',struct(),'exception','');
 R=struct('pass',false);
 try
- R=g2_join_protected_mesh();
+ fprintf('FAMILY=%s\n',familyTag);
+ jb=40000;kx=find(strcmpi(varargin(1:2:end),'MaxT3Elements'));if ~isempty(kx),jb=varargin{2*kx(end)};end
+ R=g2_join_protected_mesh('ExteriorOptions',varargin,'MaxT3Elements',jb);
+ report.familyTag=familyTag;report.exteriorOptions=varargin;
  report.pass=R.pass;report.stage=R.stage;report.gates=R.gates;
  report.failedGates=R.failedGates;report.summary=R.summary;
  if isfield(R,'X3')
@@ -34,10 +39,12 @@ try
   upperBankT6=R.upperBankT6;lowerBankT6=R.lowerBankT6;physicalTipNode=R.physicalTipNode; %#ok<NASGU>
   nodalQ=R.nodalQ;qActiveT6Rows=R.qActiveT6Rows;elementRows=R.elementRows; %#ok<NASGU>
   collarOuterIDs=R.collarOuterIDs;summary=R.summary;gates=R.gates; %#ok<NASGU>
+  extraVertexXY=R.extraVertexXY;extraVertexNodes=R.extraVertexNodes;includeHoles=R.includeHoles;plateXRange=R.plateXRange; %#ok<NASGU>
   geometryOnly=true;approvedForLEFM=false;p010GlobalProtectedMeshQualified=false; %#ok<NASGU>
   save(fullfile(folder,'GEOMETRY_ONLY_candidate.mat'),'X3','T3','X6','T6','upperBankT6','lowerBankT6', ...
    'physicalTipNode','nodalQ','qActiveT6Rows','elementRows','collarOuterIDs','summary','gates', ...
-   'geometryOnly','approvedForLEFM','p010GlobalProtectedMeshQualified','-v7.3');
+   'geometryOnly','approvedForLEFM','p010GlobalProtectedMeshQualified', ...
+   'extraVertexXY','extraVertexNodes','includeHoles','plateXRange','familyTag','-v7.3');
   fprintf('G2_PROTECTED_MESH_MAT=%s\n',fullfile(folder,'GEOMETRY_ONLY_candidate.mat'));
  end
 catch ME
@@ -64,7 +71,7 @@ ax=axes(f,'Position',[.05 .1 .92 .82]);
 triplot(T(rows.exterior,:),X(:,1),X(:,2),'Color',[.62 .74 .82],'Parent',ax);hold(ax,'on');
 triplot(T([rows.core;rows.collar],:),X(:,1),X(:,2),'Color',[.85 .2 .1],'Parent',ax);
 plot(ax,[tip(1) tip(1)],[0 tip(2)],'k-','LineWidth',1.5);
-axis(ax,'equal');xlim(ax,[0 508]);ylim(ax,[0 203.2]);xlabel(ax,'x (mm)');ylabel(ax,'y (mm)');
+axis(ax,'equal');xlim(ax,R.plateXRange);ylim(ax,[0 203.2]);xlabel(ax,'x (mm)');ylabel(ax,'y (mm)');
 title(ax,sprintf('Cornell #1 protected mesh: %d T3 (p010 kernel + collar in red) - %s',size(T,1),R.stage),'Interpreter','none');
 print(f,fullfile(folder,'protected_full_mesh.png'),'-dpng','-r200');close(f);
 % tip region with seams and q support

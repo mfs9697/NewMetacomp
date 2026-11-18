@@ -50,3 +50,18 @@ Units: mm, N, MPa (N/mm²). K is computed in MPa·√mm and reported also in MPa
 | C4 | Cornell: exterior refinement (qualified family Hmax 6 / Hface 1.5 / Hedge 0.45 vs refined family Hmax 4 / Hface 1.0 / Hedge 0.30, each passing the WP1 38-gate and protected-tip audits) | abs(ΔK) ≤ 1.0 % K_ref |
 
 A Cornell SIF is reported as **verified** only if S1, S2, M1–M4, B1 and C1–C4 all pass. Any failure is a HOLD for WP3. All Cornell numbers are for the idealized unit-load model of §1 and are **not** experimental values.
+
+## 5. Amendment 1 (2026-11-18, recorded before any Cornell SIF was computed)
+
+**Finding.** The point supports and the point load need mesh nodes at (25.4, 0), (482.6, 0) and (254, 203.2). Inserting these three CAD vertices into the otherwise unchanged WP1 construction (Hmax 6, Hface 1.5, Hedge 0.45) re-seeded the mesher, and the joined mesh **failed one gate**: max adjacent longest-edge ratio 1.8307 > 1.8 on a single edge at (95.8, 36.4) mm, 12 mm above the collar rim and far from the vertices (79 mm) and the holes (59 mm). The gate is not relaxed; that mesh is discarded.
+
+**Device.** The grading outside the protected region is now controlled like the hole neighbourhoods are: a **nonphysical tip guide face** (internal material face, no material removed) of radius 15 mm around the tip, with its own Hface. The CSG is the same as for the 3R hole guides.
+
+**Families for C1–C4 (each must pass the join gates, the unchanged 38-gate checker and the protected-tip checker before any solve):**
+
+| Family | Hmax | hole-guide Hface | tip-guide R / Hface | lip Hedge | T3 budget |
+|---|---|---|---|---|---|
+| A (qualified controls + tip guide) | 6 mm | 1.5 mm | 15 mm / 1.5 mm | 0.45 mm | 40,000 |
+| B (refined) | 4 mm | 1.0 mm | 15 mm / 1.0 mm | 0.30 mm | 80,000 (disclosed deviation from the 40k resource budget, refinement study only) |
+
+The C4 criterion (abs(ΔK) ≤ 1.0 % K_ref between A and B) is unchanged. S1, S2, M1–M4 (isolated block) and B1 (holeless beam, no tip guide, 18,721 T3) were run before this amendment and are unaffected by it.
