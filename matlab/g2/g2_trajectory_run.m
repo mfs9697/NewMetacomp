@@ -41,8 +41,8 @@ assert(isfile(policyFile)&&isfile(original),'G2Chain:MissingSource', ...
 policy=jsondecode(fileread(policyFile));
 assert(strcmp(policy.schema,'NewMetacomp.G2.CornellTrajectoryPolicy.v1'), ...
  'G2Chain:PolicySchema','Incorrect policy schema.');
-assert(o.MaxStateIndex==2 && o.MaxStateIndex<=policy.scopeLimits.maxStateIndex, ...
- 'G2Chain:StepCap','V1 authorizes only state index 2. Do not mutate V1.');
+assert(o.MaxStateIndex>=2 && o.MaxStateIndex<=policy.scopeLimits.maxStateIndex, ...
+ 'G2Chain:StepCap','Requested steps exceed the immutable versioned policy.');
 shaP=g2_sha256_file(policyFile);shaJ=g2_sha256_file(original);
 assert(strcmpi(shaJ,policy.base.cornellJSON_SHA256), ...
  'G2Chain:SourceJSONChanged','Original Cornell source geometry hash changed.');
@@ -95,7 +95,7 @@ A=o.AuthorizeNumericalMarch;
 assert(isscalar(A)&&all(isfield(A,{'token','policySHA256','maxStateIndex'}))&& ...
  strcmp(char(A.token),'CORNELL_G2_BOUNDED_NUMERICAL_V1')&& ...
  strcmpi(char(A.policySHA256),shaP)&& ...
- A.maxStateIndex==2, ...
+ o.MaxStateIndex<=A.maxStateIndex&&A.maxStateIndex<=policy.scopeLimits.maxStateIndex, ...
  'G2Chain:AuthorizationRequired', ...
  'A SHA-bound explicit numerical-march authorization for state 2 is required.');
 assert(~o.ForbidNewComputation||isfolder(char(o.ChainDir)), ...
@@ -119,117 +119,146 @@ else
   'numericalOnly',true,'physicalFractureGrowthProven',false);
  g2_trajectory_record('write',rootFile,Root);
 end
-% Chain v1 is intentionally bounded to a single NEW step, but the transition
-% architecture supports review/state replay and future *separate* policies.
-k=2;stepDir=fullfile(chain,sprintf('STEP_%03d',k));
-reviewFile=fullfile(stepDir,'REVIEW.mat');stateDir=fullfile(stepDir,'state');
-if isfolder(stateDir)
- [S2,~,ok,why]=g2_wp3_state_io('load',stateDir);
- assert(ok,'G2Chain:ChildStateIntegrity','Saved child State: %s.',why);
- [Review,reviewHash,v,why]=g2_trajectory_record('read',reviewFile);
- assert(v,'G2Chain:ChildReviewIntegrity','Saved review: %s.',why);
- local_verify_child(S2,Review,S1,rootHash,reviewHash,shaP,stepDir,source);
- R.pass=true;R.stage='STEP_CAP';R.stopReason='STEP_CAP';
- R.lastStateIndex=k;R.statesReused=1;
- R.steps=local_step_summary(S2,Review,'REUSED_VERIFIED_STATE');
- fprintf('G2_TRAJECTORY_REUSED_STATE_002=1; NO_FEM_NO_REMESH=1\n');
- return
-end
-if isfile(reviewFile)
- [Review,reviewHash,v,why]=g2_trajectory_record('read',reviewFile);
- assert(v,'G2Chain:ReviewIntegrity','Saved interrupted review: %s.',why);
- local_verify_review(Review,S1,rootHash,shaP,stepDir,source);
- S2=local_child_state(S1,Review,rootHash,reviewHash,shaP);
- g2_wp3_state_io('save',stateDir,S2);
- R.reviewsReused=1;R.pass=true;R.stage='STEP_CAP';R.stopReason='STEP_CAP';
- R.lastStateIndex=k;R.steps=local_step_summary(S2,Review,'RESUMED_VERIFIED_REVIEW');
- fprintf('G2_TRAJECTORY_REUSED_REVIEW_002=1; NO_FEM_NO_REMESH=1\n');
- return
-end
-if o.ForbidNewComputation
- R.stage='HOLD_NEW_COMPUTATION_FORBIDDEN';R.stopReason='POLICY';return
-end
-assert(~isfolder(stepDir),'G2Chain:PartialStep', ...
- 'An unreviewed step directory already exists; preserve and investigate it.');
-mkdir(stepDir);
-% No automatic retries, changes in Hgrad or alteration of SIF criterion.
-try
- F=R.forecast;Pnew=F.polyline_mm;
- opts={'BottomVertices_mm',[25.4 482.6], ...
+% Reusable review -> numerical state controller. The INITIAL frozen policy
+% permits only state 2, but the loop itself uses policy-controlled caps.
+% Future campaigns must have a separately committed versioned policy and
+% separately authorized chain, not a mutation of the existing V1 manifest.
+parent=S1;parentHash=rootHash;
+runLog=fullfile(chain,['RUN_',datestr(now,'yyyymmdd_HHMMSS_FFF'),'.log']);
+assert(~isfile(runLog),'G2Chain:RunLogExists','Refusing to overwrite run log.');
+diary(runLog);diaryCleanup=onCleanup(@()diary('off')); %#ok<NASGU>
+for k=S1.stateIndex+1:o.MaxStateIndex
+ M=g2_mts_direction(parent.KI_MPa_sqrt_m_per_kN, ...
+                    parent.KII_MPa_sqrt_m_per_kN);
+ F=local_forecast(parent,M,G);
+ R.forecast=F;
+ if ~strcmp(M.status,'OK')||~F.admissibility.pass
+  R.pass=false;R.stage='HOLD_DIRECTION_OR_GEOMETRY';
+  R.stopReason='GEOMETRY';R.message='Independent MTS/K1-K10 admission failed.';
+  fprintf(2,'G2_TRAJECTORY_HOLD_DIRECTION_AT_STATE=%d\n',k);
+  return
+ end
+ arc=sum(vecnorm(diff(F.polyline_mm,1,1),2,2));
+ if arc>policy.scopeLimits.maxArcLength_mm+1e-9
+  R.pass=true;R.stage='ARC_CAP';R.stopReason='ARC_CAP';
+  fprintf('G2_TRAJECTORY_ARC_CAP=1 NEXT_ARC_MM=%.9f\n',arc);
+  return
+ end
+ stepDir=fullfile(chain,sprintf('STEP_%03d',k));
+ reviewFile=fullfile(stepDir,'REVIEW.mat');stateDir=fullfile(stepDir,'state');
+ if isfolder(stateDir)
+  [child,childHash,ok,why]=g2_wp3_state_io('load',stateDir);
+  assert(ok,'G2Chain:ChildStateIntegrity','Saved child State: %s.',why);
+  [review,reviewHash,v,why]=g2_trajectory_record('read',reviewFile);
+  assert(v,'G2Chain:ChildReviewIntegrity','Saved review: %s.',why);
+  local_verify_child(child,review,parent,parentHash,reviewHash,shaP,stepDir,source);
+  assert(isequal(review.polyline_mm,F.polyline_mm), ...
+   'G2Chain:ForecastDrift','Saved review path differs from current MTS forecast.');
+  R.statesReused=R.statesReused+1;
+  R.steps=[R.steps;local_step_summary(child,review,'REUSED_VERIFIED_STATE')]; %#ok<AGROW>
+  fprintf('G2_TRAJECTORY_REUSED_STATE_%03d=1; NO_FEM_NO_REMESH=1\n',k);
+  parent=child;parentHash=childHash;R.lastStateIndex=k;
+  continue
+ end
+ if isfile(reviewFile)
+  [review,reviewHash,v,why]=g2_trajectory_record('read',reviewFile);
+  assert(v,'G2Chain:ReviewIntegrity','Saved interrupted review: %s.',why);
+  local_verify_review(review,parent,parentHash,shaP,stepDir,source);
+  assert(isequal(review.polyline_mm,F.polyline_mm), ...
+   'G2Chain:ForecastDrift','Saved review no longer matches MTS recurrence.');
+  child=local_child_state(parent,review,parentHash,reviewHash,shaP);
+  childHash=g2_wp3_state_io('save',stateDir,child);
+  R.reviewsReused=R.reviewsReused+1;
+  R.steps=[R.steps;local_step_summary(child,review,'RESUMED_VERIFIED_REVIEW')]; %#ok<AGROW>
+  fprintf('G2_TRAJECTORY_REUSED_REVIEW_%03d=1; NO_FEM_NO_REMESH=1\n',k);
+  parent=child;parentHash=childHash;R.lastStateIndex=k;
+  continue
+ end
+ if o.ForbidNewComputation
+  R.stage='HOLD_NEW_COMPUTATION_FORBIDDEN';R.stopReason='POLICY';
+  return
+ end
+ assert(~isfolder(stepDir),'G2Chain:PartialStep', ...
+  'An unreviewed step directory already exists; preserve and investigate it.');
+ mkdir(stepDir);
+ try
+  % No automatic Hgrad retries, rotation fallback or threshold relaxation.
+  Pnew=F.polyline_mm;
+  opts={'BottomVertices_mm',[25.4 482.6], ...
        'TopVertices_mm',254,'TipGuideRadius_mm',15, ...
        'TipGuideHface_mm',1.5};
- B=g2_kinked_join(Pnew,'ExteriorOptions',opts, ...
-  'ExpectedVertices',size(Pnew,1),'MaxT3Elements', ...
-  policy.numerics.primaryT3Budget,'ExpectedTangent',F.tangent);
- assert(B.pass,'G2Chain:MeshHOLD','%s %s',B.stage,B.message);
- X3=B.X3;T3=B.T3;X6=B.X6;T6=B.T6; %#ok<NASGU>
- upperBankT6=B.upperBankT6;lowerBankT6=B.lowerBankT6; %#ok<NASGU>
- physicalTipNode=B.physicalTipNode;nodalQ=B.nodalQ; %#ok<NASGU>
- qActiveT6Rows=B.qActiveT6Rows;elementRows=B.elementRows; %#ok<NASGU>
- collarOuterIDs=B.collarOuterIDs;extraVertexXY=B.extraVertexXY; %#ok<NASGU>
- extraVertexNodes=B.extraVertexNodes;crackPolyline=Pnew; %#ok<NASGU>
- tipTangent=F.tangent;tipNormal=[-tipTangent(2),tipTangent(1)]; %#ok<NASGU>
- kinkNodeIDs=B.kinkNodeIDs;geometryOnly=true;approvedForLEFM=false; %#ok<NASGU>
- plateXRange=B.plateXRange;includeHoles=true;mirrorControl=false; %#ok<NASGU>
- meshFile=fullfile(stepDir,'KINKED_GEOMETRY_ONLY_candidate.mat');
- save(meshFile,'X3','T3','X6','T6','upperBankT6','lowerBankT6', ...
-  'physicalTipNode','nodalQ','qActiveT6Rows','elementRows', ...
-  'collarOuterIDs','extraVertexXY','extraVertexNodes', ...
-  'crackPolyline','tipTangent','tipNormal','kinkNodeIDs', ...
-  'geometryOnly','approvedForLEFM','plateXRange', ...
-  'includeHoles','mirrorControl','-v7.3');
- meshHash=g2_sha256_file(meshFile);
- D=load(meshFile);
- C=g2_kinked_mesh_auditor(D,original,char(o.P0Mat),size(Pnew,1));
- assert(C.pass&&C.gatesPassed==C.gatesTotal, ...
- 'G2Chain:AuditHOLD','Independent multi-kink audit failed: %s', ...
- strjoin(C.failedGates,', '));
- mat=struct('E',S1.bvp.E_MPa,'nu',S1.bvp.nu, ...
-  'plane',S1.bvp.plane);
- K=g2_trajectory_sif_on_mesh(D,mat,policy);
- assert(K.pass,'G2Chain:SIFHOLD', ...
-   'Whole-crack opening/EDI/COD/SIF gates failed: %s', ...
-   strjoin(K.failedCriteria,', '));
- % Detect any source mutation occurring while the run was executing.
- assert(isequal(source,local_source_hashes(here)), ...
-  'G2Chain:SourceChangedDuringRun','Numerical kernel source changed during run.');
- Review=struct('schema','NewMetacomp.G2.TrajectoryReview.v1', ...
-  'stateIndex',k,'parentStateSHA256',rootHash, ...
-  'policySHA256',shaP,'sourceHashes',source, ...
-  'p0SHA256',p0Hash,'meshFile', ...
-  'KINKED_GEOMETRY_ONLY_candidate.mat','meshSHA256',meshHash, ...
-  'polyline_mm',Pnew,'tip_mm',F.tip_mm,'tangent',F.tangent, ...
-  'localTurn_deg',M.theta_deg,'forecast',F, ...
-  'geometryGateCount',C.gatesTotal,'geometryGatesPassed',C.gatesPassed, ...
-  'geometryPass',C.pass,'geometrySummary',C.summary, ...
-  'meshJoinPass',B.pass,'meshSummary',B.summary, ...
-  'sif',K,'sifPass',K.pass, ...
-  'numericallyQualified',true,'physicalFractureGrowthProven',false, ...
-  'tipAccepted',false,'eligibleForAutomaticPhysicalAcceptance',false);
- reviewHash=g2_trajectory_record('write',reviewFile,Review);
- % ONLY a fully verified review is promoted into a NUMERICAL State.
- S2=local_child_state(S1,Review,rootHash,reviewHash,shaP);
- g2_wp3_state_io('save',stateDir,S2);
- R.pass=true;R.stage='STEP_CAP';R.stopReason='STEP_CAP';
- R.lastStateIndex=k;R.newStatesCreated=1;
- R.steps=local_step_summary(S2,Review,'NEW_NUMERICAL_STATE');
- fprintf('G2_TRAJECTORY_STEP_002_ACCEPTED_NUMERICALLY=1\n');
- fprintf('G2_TRAJECTORY_KI=%.9f KII=%+.9f MPa sqrt(m)/kN\n', ...
-  S2.KI_MPa_sqrt_m_per_kN,S2.KII_MPa_sqrt_m_per_kN);
- fprintf('G2_TRAJECTORY_PHYSICAL_FRACTURE_GROWTH_PROVEN=0\n');
-catch ME
- R.pass=false;R.stage='HOLD_NUMERICAL_STEP';
- R.stopReason=local_classify(ME.identifier);
- R.message=getReport(ME,'extended','hyperlinks','off');
- fprintf(2,'G2_TRAJECTORY_HOLD=%s: %s\n',R.stopReason,ME.message);
- % A HOLD record is retained, but NO numerical State is created. Never
- % overwrite: even after correcting code, use a new chain version/folder.
- H=struct('schema','NewMetacomp.G2.TrajectoryHold.v1', ...
-  'stateIndex',k,'identifier',ME.identifier,'message',R.message, ...
-  'reason',R.stopReason,'policySHA256',shaP,'rootSHA256',rootHash, ...
-  'physicalFractureGrowthProven',false);
- g2_trajectory_record('write',fullfile(stepDir,'HOLD.mat'),H);
+  B=g2_kinked_join(Pnew,'ExteriorOptions',opts, ...
+   'ExpectedVertices',size(Pnew,1),'MaxT3Elements', ...
+   policy.numerics.primaryT3Budget,'ExpectedTangent',F.tangent);
+  assert(B.pass,'G2Chain:MeshHOLD','%s %s',B.stage,B.message);
+  X3=B.X3;T3=B.T3;X6=B.X6;T6=B.T6; %#ok<NASGU>
+  upperBankT6=B.upperBankT6;lowerBankT6=B.lowerBankT6; %#ok<NASGU>
+  physicalTipNode=B.physicalTipNode;nodalQ=B.nodalQ; %#ok<NASGU>
+  qActiveT6Rows=B.qActiveT6Rows;elementRows=B.elementRows; %#ok<NASGU>
+  collarOuterIDs=B.collarOuterIDs;extraVertexXY=B.extraVertexXY; %#ok<NASGU>
+  extraVertexNodes=B.extraVertexNodes;crackPolyline=Pnew; %#ok<NASGU>
+  tipTangent=F.tangent;tipNormal=[-tipTangent(2),tipTangent(1)]; %#ok<NASGU>
+  kinkNodeIDs=B.kinkNodeIDs;geometryOnly=true;approvedForLEFM=false; %#ok<NASGU>
+  plateXRange=B.plateXRange;includeHoles=true;mirrorControl=false; %#ok<NASGU>
+  meshFile=fullfile(stepDir,'KINKED_GEOMETRY_ONLY_candidate.mat');
+  save(meshFile,'X3','T3','X6','T6','upperBankT6','lowerBankT6', ...
+   'physicalTipNode','nodalQ','qActiveT6Rows','elementRows', ...
+   'collarOuterIDs','extraVertexXY','extraVertexNodes', ...
+   'crackPolyline','tipTangent','tipNormal','kinkNodeIDs', ...
+   'geometryOnly','approvedForLEFM','plateXRange', ...
+   'includeHoles','mirrorControl','-v7.3');
+  meshHash=g2_sha256_file(meshFile);
+  D=load(meshFile);
+  C=g2_kinked_mesh_auditor(D,original,char(o.P0Mat),size(Pnew,1));
+  assert(C.pass&&C.gatesPassed==C.gatesTotal, ...
+   'G2Chain:AuditHOLD','Independent multi-kink audit failed: %s', ...
+   strjoin(C.failedGates,', '));
+  mat=struct('E',parent.bvp.E_MPa,'nu',parent.bvp.nu, ...
+   'plane',parent.bvp.plane);
+  K=g2_trajectory_sif_on_mesh(D,mat,policy);
+  assert(K.pass,'G2Chain:SIFHOLD', ...
+    'Whole-crack opening/EDI/COD/SIF gates failed: %s', ...
+    strjoin(K.failedCriteria,', '));
+  assert(isequal(source,local_source_hashes(here)), ...
+   'G2Chain:SourceChangedDuringRun','Numerical kernel changed during run.');
+  review=struct('schema','NewMetacomp.G2.TrajectoryReview.v1', ...
+   'stateIndex',k,'parentStateSHA256',parentHash, ...
+   'policySHA256',shaP,'sourceHashes',source, ...
+   'p0SHA256',p0Hash,'meshFile', ...
+   'KINKED_GEOMETRY_ONLY_candidate.mat','meshSHA256',meshHash, ...
+   'polyline_mm',Pnew,'tip_mm',F.tip_mm,'tangent',F.tangent, ...
+   'localTurn_deg',M.theta_deg,'forecast',F, ...
+   'geometryGateCount',C.gatesTotal,'geometryGatesPassed',C.gatesPassed, ...
+   'geometryPass',C.pass,'geometrySummary',C.summary, ...
+   'meshJoinPass',B.pass,'meshSummary',B.summary, ...
+   'sif',K,'sifPass',K.pass, ...
+   'numericallyQualified',true,'physicalFractureGrowthProven',false, ...
+   'tipAccepted',false,'eligibleForAutomaticPhysicalAcceptance',false);
+  reviewHash=g2_trajectory_record('write',reviewFile,review);
+  child=local_child_state(parent,review,parentHash,reviewHash,shaP);
+  childHash=g2_wp3_state_io('save',stateDir,child);
+  R.newStatesCreated=R.newStatesCreated+1;
+  R.steps=[R.steps;local_step_summary(child,review,'NEW_NUMERICAL_STATE')]; %#ok<AGROW>
+  R.lastStateIndex=k;
+  fprintf('G2_TRAJECTORY_STEP_%03d_NUMERICALLY_QUALIFIED=1\n',k);
+  fprintf('G2_TRAJECTORY_KI=%.9f KII=%+.9f MPa sqrt(m)/kN\n', ...
+   child.KI_MPa_sqrt_m_per_kN,child.KII_MPa_sqrt_m_per_kN);
+  parent=child;parentHash=childHash;
+ catch ME
+  R.pass=false;R.stage='HOLD_NUMERICAL_STEP';
+  R.stopReason=local_classify(ME.identifier);
+  R.message=getReport(ME,'extended','hyperlinks','off');
+  fprintf(2,'G2_TRAJECTORY_HOLD_STATE_%03d=%s: %s\n',k,R.stopReason,ME.message);
+  H=struct('schema','NewMetacomp.G2.TrajectoryHold.v1', ...
+   'stateIndex',k,'identifier',ME.identifier,'message',R.message, ...
+   'reason',R.stopReason,'policySHA256',shaP, ...
+   'parentSHA256',parentHash,'physicalFractureGrowthProven',false);
+  g2_trajectory_record('write',fullfile(stepDir,'HOLD.mat'),H);
+  return
+ end
 end
+R.pass=true;R.stage='STEP_CAP';R.stopReason='STEP_CAP';
+fprintf('G2_TRAJECTORY_STOP_STEP_CAP=%d; PHYSICAL_GROWTH_PROVEN=0\n',o.MaxStateIndex);
 end
 
 % ======================================================================
