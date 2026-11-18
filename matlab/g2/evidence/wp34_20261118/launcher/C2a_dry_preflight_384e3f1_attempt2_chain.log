@@ -1,0 +1,38 @@
+START=2026-11-18T22:40:59 EXIT=0
+Free RAM: 5,68 GiB (guard 5,00 GiB)
+Source WP3 state: <repo>\outputs\g2_wp3_state\run_20261118_185808_963\step1_a\state\state.mat
+Source SHA256: CB05BD619280069BD601E7A9131B8532F39698F3A406ADACFF537EAC09A5D441
+P0 source SHA256: 15201996B4165AA9980F61F370A75749B1CE28EC0ACCAA061902641524C37C58
+Frozen policy SHA256: 1D6AF7F6F3E8AF389AB02330D9A1EAEBDBC00BEDB52AAD54DB902B4DE36B39DC
+Original Cornell JSON SHA256: 45A88FA0926472DDBE5E70E4C80A97B88196DD45D8A266FA04273F89790B47BF
+Chain folder: <repo>\outputs\g2_trajectory_chain_v1_attempt2
+Run requested: False; max new state=2; physical onset=false
+G2_TRAJECTORY_PREFLIGHT_PASS=1
+G2_TRAJECTORY_NEXT_TURN_DEG=-0.949827756717, TRIAL_TIP_MM=(103.409150916458,33.192469183868)
+G2_TRAJECTORY_K1_K10=10/10 SOURCE_FILES_HASHED=25 MATLAB=R2023a PDE=3.10
+G2_TRAJECTORY_DRY_NO_MESH_NO_FEM_NO_FILES=1
+                            pass: 1
+                           stage: 'DRY_PREFLIGHT_PASS'
+                    runRequested: 0
+    physicalFractureGrowthProven: 0
+     experimentalAgreementProven: 0
+                   candidateOnly: 1
+                newStatesCreated: 0
+                   reviewsReused: 0
+                    statesReused: 0
+                  lastStateIndex: 1
+                           steps: [0x0 struct]
+                        forecast: [1x1 struct]
+                    policySHA256: '1D6AF7F6F3E8AF389AB02330D9A1EAEBDBC00BEDB52AAD54DB902B4DE36B39DC'
+                      stopReason: 'PREFLIGHT_ONLY'
+                         message: ''
+                        chainDir: '<repo>\outputs\g2_trajectory_chain_v1_attempt2'
+                   matlabRelease: '2023a'
+               pdeToolboxVersion: '3.10'
+                    sourceHashes: [25x1 struct]
+                 rootStateSHA256: 'CB05BD619280069BD601E7A9131B8532F39698F3A406ADACFF537EAC09A5D441'
+                  rootMeshSHA256: 'ECD6A7B873BC2CD758A0F88391E564DFB6C90249024BC1A8768F9F5D93732461'
+                    P0MAT_SHA256: '15201996B4165AA9980F61F370A75749B1CE28EC0ACCAA061902641524C37C58'
+
+Trajectory controller exited 0. This is NUMERICAL direction only, NOT physical fracture propagation.
+

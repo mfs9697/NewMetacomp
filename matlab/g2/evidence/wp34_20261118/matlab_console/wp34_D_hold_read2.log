@@ -1,0 +1,15 @@
+   1
+
+491D8FC0B52AB262AC7B063A4FD00204CB2F81AF58DB3E8955ED1141FB15D859
+MATLAB:sizeDimensionsMustMatch
+SOURCE
+Arrays have incompatible sizes for this operation.
+
+Error in g2_trajectory_sif_on_mesh>@(xy)D.extraVertexNodes(vecnorm(D.extraVertexXY-xy,2,2)<1e-9) (line 17)
+nodeAt=@(xy)D.extraVertexNodes(vecnorm(D.extraVertexXY-xy,2,2)<1e-9);
+
+Error in g2_trajectory_sif_on_mesh (line 18)
+pin=nodeAt(policy.bvp.pin_mm);
+
+Error in g2_trajectory_run (line 265)
+  K=g2_trajectory_sif_on_mesh(D,mat,policy);

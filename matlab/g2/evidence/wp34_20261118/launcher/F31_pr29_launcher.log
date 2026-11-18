@@ -1,0 +1,15 @@
+exit=1
+powershell.exe : HOLD_RAM_POLICY: the 5 GiB source guard cannot be reduced.
+At line:8 char:8
++   $out=& powershell.exe @a 2>&1 | Out-String
++        ~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (HOLD_RAM_POLICY...not be reduced.:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+At <repo>\matlab\g2\run_g2_trajectory.ps1:17 char:28
++ ...  -lt 5.0) { throw 'HOLD_RAM_POLICY: the 5 GiB source guard cannot be  ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (HOLD_RAM_POLICY...not be reduced.:String) [], RuntimeException
+    + FullyQualifiedErrorId : HOLD_RAM_POLICY: the 5 GiB source guard cannot be reduced.
+ 
+

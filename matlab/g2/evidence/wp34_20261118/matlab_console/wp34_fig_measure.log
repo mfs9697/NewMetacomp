@@ -1,0 +1,11 @@
+size 1575x1345 px/mm x 8.067 y 9.000
+matlab.exe : {Undefined function 'range' for input arguments of type 'double'.
+At <local-path>
+run1.ps1:13 char:1
++ & $m -batch "restoredefaultpath;addpath('$w\matlab\g2','-begin');addp ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: ({Undefined fun... type 'double'.:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+} 
+ERROR: MATLAB error Exit Status: 0x00000001

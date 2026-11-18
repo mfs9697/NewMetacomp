@@ -1,0 +1,585 @@
+{
+  "tag": "pr29_prefix",
+  "gitHead": "fbc130a4f78f802ed8db225551d09aa12893b2c6",
+  "matlabRelease": "2023a",
+  "pass": false,
+  "synthetic": {
+    "pass": true,
+    "algebraFirst_deg": -12.595693701643276,
+    "algebraSecond6digit_deg": -0.95004405975394013,
+    "algebraSecondFull_deg": -0.94982775671665831,
+    "independentSecond_deg": -0.94982775671665831,
+    "secondTurnRouteDifference_deg": 0,
+    "state1SHA256": "CB05BD619280069BD601E7A9131B8532F39698F3A406ADACFF537EAC09A5D441",
+    "state1KI": 0.18258487868761783,
+    "state1KII": 0.0015136541810014932,
+    "analyticalSecondTip_mm": [
+      103.40915091645832,
+      33.192469183867637
+    ],
+    "analyticalSecondTangent": [
+      0.23421783734486504,
+      0.97218414133820064
+    ],
+    "P3K1toK10": {
+      "K1_polylineIdentity": true,
+      "K2_nonsingularMiter": true,
+      "K3_collarEntryOnLastSegment": true,
+      "K4_rimBandClearOfEarlierCrack": true,
+      "K5_coreAndQClearOfEarlierCrack": true,
+      "K6_segmentsClearOfHoleWalls": true,
+      "K7_segmentsClearOfGuideFaces": true,
+      "K8_collarInsideMaterial": true,
+      "K9_tipGuideAdmissible": true,
+      "K10_noSelfIntersectionInsidePlate": true
+    },
+    "P4K1toK10": {
+      "K1_polylineIdentity": true,
+      "K2_nonsingularMiter": true,
+      "K3_collarEntryOnLastSegment": true,
+      "K4_rimBandClearOfEarlierCrack": true,
+      "K5_coreAndQClearOfEarlierCrack": true,
+      "K6_segmentsClearOfHoleWalls": true,
+      "K7_segmentsClearOfGuideFaces": true,
+      "K8_collarInsideMaterial": true,
+      "K9_tipGuideAdmissible": true,
+      "K10_noSelfIntersectionInsidePlate": true
+    },
+    "P4inheritedGuardWouldReject": true,
+    "negativeControls": {
+      "wrongCount": [
+        "K1_polylineIdentity"
+      ],
+      "wrongLength": [
+        "K1_polylineIdentity"
+      ],
+      "tipInHole": [
+        "K1_polylineIdentity",
+        "K2_nonsingularMiter",
+        "K6_segmentsClearOfHoleWalls",
+        "K7_segmentsClearOfGuideFaces",
+        "K8_collarInsideMaterial",
+        "K9_tipGuideAdmissible"
+      ],
+      "wrongTangent": [
+        "K1_polylineIdentity"
+      ],
+      "fold": [
+        "K2_nonsingularMiter"
+      ]
+    },
+    "immutableRecordPass": true,
+    "physicalSolverExecuted": false,
+    "tip2MeshQualified": false
+  },
+  "syntheticException": "",
+  "faults": {
+    "pass": false,
+    "originalsUnchanged": true,
+    "nCases": 33,
+    "nPass": 25,
+    "sourceListFrom": "replica of the PR #29 list (controller exposes none)",
+    "failedCases": [
+      "F01: every g2_* file statically reached from g2_trajectory_run is hashed -> MISSING",
+      "F20: forged review citing the State 1 mesh (dry) -> DRY_PREFLIGHT_PASS",
+      "F20: forged review citing the State 1 mesh (Run) -> STEP_CAP",
+      "F21: review tip shifted 1e-6 mm (dry) -> DRY_PREFLIGHT_PASS",
+      "F22: uncommitted kernel change (Run) -> HOLD_NEW_COMPUTATION_FORBIDDEN",
+      "F23: chain equal to the seed folder (Run) -> G2Chain:PartialChain",
+      "F23: chain inside the seed folder (Run) -> G2Chain:NewWorkForbidden",
+      "F23: chain inside the P0 folder (Run) -> G2Chain:NewWorkForbidden"
+    ],
+    "cases": [
+      {
+        "id": "F02",
+        "description": "dry preflight, true inputs, absent chain",
+        "expected": [
+          "DRY_PREFLIGHT_PASS"
+        ],
+        "outcome": "DRY_PREFLIGHT_PASS",
+        "message": "",
+        "pass": true,
+        "forbiddenPathsCreated": [],
+        "newStatesCreated": 0,
+        "reviewsReused": 0,
+        "statesReused": 0
+      },
+      {
+        "id": "F01",
+        "description": "every g2_* file statically reached from g2_trajectory_run is hashed",
+        "expected": [
+          "CLOSED"
+        ],
+        "outcome": "MISSING",
+        "message": "g2_pde_toolbox_preflight.m, g2_williams_field.m",
+        "pass": false,
+        "forbiddenPathsCreated": [],
+        "closure": [
+          "g2_independent_t6_jacobian.m",
+          "g2_kink_admissibility.m",
+          "g2_kinked_exterior_mesh.m",
+          "g2_kinked_join.m",
+          "g2_kinked_mesh_auditor.m",
+          "g2_kinked_regular_block.m",
+          "g2_mts_direction.m",
+          "g2_pde_toolbox_preflight.m",
+          "g2_plane_D.m",
+          "g2_polyline_frame.m",
+          "g2_sha256_file.m",
+          "g2_sif_cod_banks.m",
+          "g2_sif_interaction.m",
+          "g2_t6_elasticity.m",
+          "g2_trajectory_record.m",
+          "g2_trajectory_run.m",
+          "g2_trajectory_sif_on_mesh.m",
+          "g2_williams_field.m",
+          "g2_wp3_state_io.m",
+          "vendor_p010_a14d8872/T3toT6_fast.m"
+        ],
+        "missing": [
+          "g2_pde_toolbox_preflight.m",
+          "g2_williams_field.m"
+        ]
+      },
+      {
+        "id": "F03",
+        "description": "authorization variant 2",
+        "expected": [
+          "G2Chain:AuthorizationRequired"
+        ],
+        "outcome": "G2Chain:AuthorizationRequired",
+        "message": "A SHA-bound explicit numerical-march authorization for state 2 is required.",
+        "pass": true,
+        "forbiddenPathsCreated": [],
+        "newStatesCreated": null,
+        "reviewsReused": null,
+        "statesReused": null
+      },
+      {
+        "id": "F03",
+        "description": "authorization variant 3",
+        "expected": [
+          "G2Chain:AuthorizationRequired"
+        ],
+        "outcome": "G2Chain:AuthorizationRequired",
+        "message": "A SHA-bound explicit numerical-march authorization for state 2 is required.",
+        "pass": true,
+        "forbiddenPathsCreated": [],
+        "newStatesCreated": null,
+        "reviewsReused": null,
+        "statesReused": null
+      },
+      {
+        "id": "F03",
+        "description": "authorization variant 4",
+        "expected": [
+          "G2Chain:AuthorizationRequired"
+        ],
+        "outcome": "G2Chain:AuthorizationRequired",
+        "message": "A SHA-bound explicit numerical-march authorization for state 2 is required.",
+        "pass": true,
+        "forbiddenPathsCreated": [],
+        "newStatesCreated": null,
+        "reviewsReused": null,
+        "statesReused": null
+      },
+      {
+        "id": "F03",
+        "description": "authorization variant 5",
+        "expected": [
+          "G2Chain:AuthorizationRequired"
+        ],
+        "outcome": "G2Chain:AuthorizationRequired",
+        "message": "A SHA-bound explicit numerical-march authorization for state 2 is required.",
+        "pass": true,
+        "forbiddenPathsCreated": [],
+        "newStatesCreated": null,
+        "reviewsReused": null,
+        "statesReused": null
+      },
+      {
+        "id": "F04",
+        "description": "MaxStateIndex 3",
+        "expected": [
+          "G2Chain:StepCap"
+        ],
+        "outcome": "G2Chain:StepCap",
+        "message": "Requested steps exceed the immutable versioned policy.",
+        "pass": true,
+        "forbiddenPathsCreated": [],
+        "newStatesCreated": null,
+        "reviewsReused": null,
+        "statesReused": null
+      },
+      {
+        "id": "F05",
+        "description": "seed state byte flip",
+        "expected": [
+          "G2Chain:RootIntegrity"
+        ],
+        "outcome": "G2Chain:RootIntegrity",
+        "message": "WP3 state 1 hash or schema HOLD: HOLD_STATE_INTEGRITY.",
+        "pass": true,
+        "forbiddenPathsCreated": [],
+        "newStatesCreated": null,
+        "reviewsReused": null,
+        "statesReused": null
+      },
+      {
+        "id": "F06",
+        "description": "seed mesh byte flip",
+        "expected": [
+          "G2Chain:RootMeshIntegrity"
+        ],
+        "outcome": "G2Chain:RootMeshIntegrity",
+        "message": "Saved WP3 mesh SHA-256 mismatch.",
+        "pass": true,
+        "forbiddenPathsCreated": [],
+        "newStatesCreated": null,
+        "reviewsReused": null,
+        "statesReused": null
+      },
+      {
+        "id": "F07",
+        "description": "re-hashed forged State 1",
+        "expected": [
+          "G2Chain:TrustedWP3Root"
+        ],
+        "outcome": "G2Chain:TrustedWP3Root",
+        "message": "WP3 source State/mesh hash pair is not in the committed verified evidence manifest.",
+        "pass": true,
+        "forbiddenPathsCreated": [],
+        "newStatesCreated": null,
+        "reviewsReused": null,
+        "statesReused": null
+      },
+      {
+        "id": "F08",
+        "description": "step1_a state with step1_b mesh",
+        "expected": [
+          "G2Chain:RootMeshIntegrity"
+        ],
+        "outcome": "G2Chain:RootMeshIntegrity",
+        "message": "Saved WP3 mesh SHA-256 mismatch.",
+        "pass": true,
+        "forbiddenPathsCreated": [],
+        "newStatesCreated": null,
+        "reviewsReused": null,
+        "statesReused": null
+      },
+      {
+        "id": "F09",
+        "description": "P0 byte flip",
+        "expected": [
+          "G2Chain:TrustedP0"
+        ],
+        "outcome": "G2Chain:TrustedP0",
+        "message": "P0 MAT differs from the independently audited 2443-q-parent source.",
+        "pass": true,
+        "forbiddenPathsCreated": [],
+        "newStatesCreated": null,
+        "reviewsReused": null,
+        "statesReused": null
+      },
+      {
+        "id": "F10",
+        "description": "shadowing T3toT6_fast first on path",
+        "expected": [
+          "G2Chain:VendorShadowed"
+        ],
+        "outcome": "G2Chain:VendorShadowed",
+        "message": "Use pinned six vendor functions, not startup paths.",
+        "pass": true,
+        "forbiddenPathsCreated": [],
+        "newStatesCreated": null,
+        "reviewsReused": null,
+        "statesReused": null
+      },
+      {
+        "id": "F11",
+        "description": "missing vendor file in a code copy",
+        "expected": [
+          "G2Chain:MissingVendor"
+        ],
+        "outcome": "G2Chain:MissingVendor",
+        "message": "Missing pinned p010 source.",
+        "pass": true,
+        "forbiddenPathsCreated": [],
+        "newStatesCreated": null,
+        "reviewsReused": null,
+        "statesReused": null
+      },
+      {
+        "id": "F16",
+        "description": "State 0 used as the seed",
+        "expected": [
+          "G2Chain:RootIdentity"
+        ],
+        "outcome": "G2Chain:RootIdentity",
+        "message": "Root must be the verified numerical WP3 state 1.",
+        "pass": true,
+        "forbiddenPathsCreated": [],
+        "newStatesCreated": null,
+        "reviewsReused": null,
+        "statesReused": null
+      },
+      {
+        "id": "F12",
+        "description": "stale source hash in ROOT (dry)",
+        "expected": [
+          "G2Chain:SourceDrift"
+        ],
+        "outcome": "G2Chain:SourceDrift",
+        "message": "Read-only chain preflight detected source drift.",
+        "pass": true,
+        "forbiddenPathsCreated": [],
+        "newStatesCreated": null,
+        "reviewsReused": null,
+        "statesReused": null
+      },
+      {
+        "id": "F12",
+        "description": "stale source hash in ROOT (Run)",
+        "expected": [
+          "G2Chain:SourceDrift"
+        ],
+        "outcome": "G2Chain:SourceDrift",
+        "message": "Saved chain sources differ from current files.",
+        "pass": true,
+        "forbiddenPathsCreated": [],
+        "newStatesCreated": null,
+        "reviewsReused": null,
+        "statesReused": null
+      },
+      {
+        "id": "F13",
+        "description": "ROOT byte flip (dry)",
+        "expected": [
+          "G2Chain:RootRecordIntegrity"
+        ],
+        "outcome": "G2Chain:RootRecordIntegrity",
+        "message": "Preflight chain root failed: HOLD_RECORD_INTEGRITY.",
+        "pass": true,
+        "forbiddenPathsCreated": [],
+        "newStatesCreated": null,
+        "reviewsReused": null,
+        "statesReused": null
+      },
+      {
+        "id": "F13",
+        "description": "ROOT byte flip (Run)",
+        "expected": [
+          "G2Chain:RootRecordIntegrity"
+        ],
+        "outcome": "G2Chain:RootRecordIntegrity",
+        "message": "Root manifest failed: HOLD_RECORD_INTEGRITY.",
+        "pass": true,
+        "forbiddenPathsCreated": [],
+        "newStatesCreated": null,
+        "reviewsReused": null,
+        "statesReused": null
+      },
+      {
+        "id": "F14",
+        "description": "chain without ROOT manifest (Run)",
+        "expected": [
+          "G2Chain:PartialChain"
+        ],
+        "outcome": "G2Chain:PartialChain",
+        "message": "A chain folder exists without its complete root manifest.",
+        "pass": true,
+        "forbiddenPathsCreated": [],
+        "newStatesCreated": null,
+        "reviewsReused": null,
+        "statesReused": null
+      },
+      {
+        "id": "F15",
+        "description": "partial STEP_002 (dry)",
+        "expected": [
+          "HOLD_PARTIAL_STEP"
+        ],
+        "outcome": "HOLD_PARTIAL_STEP",
+        "message": "Existing unreviewed/partial step cannot be silently retried.",
+        "pass": true,
+        "forbiddenPathsCreated": [],
+        "newStatesCreated": 0,
+        "reviewsReused": 0,
+        "statesReused": 0
+      },
+      {
+        "id": "F15",
+        "description": "partial STEP_002 (Run, no ForbidNewComputation)",
+        "expected": [
+          "G2Chain:PartialStep"
+        ],
+        "outcome": "G2Chain:PartialStep",
+        "message": "An unreviewed step directory already exists; preserve and investigate it.",
+        "pass": true,
+        "forbiddenPathsCreated": [],
+        "newStatesCreated": null,
+        "reviewsReused": null,
+        "statesReused": null
+      },
+      {
+        "id": "F18",
+        "description": "valid ROOT, Run with ForbidNewComputation",
+        "expected": [
+          "HOLD_NEW_COMPUTATION_FORBIDDEN"
+        ],
+        "outcome": "HOLD_NEW_COMPUTATION_FORBIDDEN",
+        "message": "",
+        "pass": true,
+        "forbiddenPathsCreated": [],
+        "newStatesCreated": 0,
+        "reviewsReused": 0,
+        "statesReused": 0
+      },
+      {
+        "id": "F19",
+        "description": "review with fabricated pass but COD/EDI 10% apart (Run)",
+        "expected": [
+          "G2Chain:ReviewNumericScreens"
+        ],
+        "outcome": "G2Chain:ReviewNumericScreens",
+        "message": "A saved review does not satisfy the versioned mandatory numerical criteria.",
+        "pass": true,
+        "forbiddenPathsCreated": [],
+        "newStatesCreated": null,
+        "reviewsReused": null,
+        "statesReused": null
+      },
+      {
+        "id": "F20",
+        "description": "forged review citing the State 1 mesh (dry)",
+        "expected": [
+          "G2Chain:ReviewMeshContent"
+        ],
+        "outcome": "DRY_PREFLIGHT_PASS",
+        "message": "",
+        "pass": false,
+        "forbiddenPathsCreated": [],
+        "newStatesCreated": 0,
+        "reviewsReused": 0,
+        "statesReused": 0
+      },
+      {
+        "id": "F20",
+        "description": "forged review citing the State 1 mesh (Run)",
+        "expected": [
+          "G2Chain:ReviewMeshContent"
+        ],
+        "outcome": "STEP_CAP",
+        "message": "",
+        "pass": false,
+        "forbiddenPathsCreated": [
+          "<repo>\\outputs\\g2_wp34_controller\\run_20261118_223453_434_pr29_prefix\\faults\\work\\F20_chain\\STEP_002\\state"
+        ],
+        "newStatesCreated": 0,
+        "reviewsReused": 1,
+        "statesReused": 0
+      },
+      {
+        "id": "F21",
+        "description": "review tip shifted 1e-6 mm (dry)",
+        "expected": [
+          "G2Chain:ForecastDrift"
+        ],
+        "outcome": "DRY_PREFLIGHT_PASS",
+        "message": "",
+        "pass": false,
+        "forbiddenPathsCreated": [],
+        "newStatesCreated": 0,
+        "reviewsReused": 0,
+        "statesReused": 0
+      },
+      {
+        "id": "F21",
+        "description": "review tip shifted 1e-6 mm (Run)",
+        "expected": [
+          "G2Chain:ForecastDrift"
+        ],
+        "outcome": "G2Chain:ForecastDrift",
+        "message": "Saved review no longer matches MTS recurrence.",
+        "pass": true,
+        "forbiddenPathsCreated": [],
+        "newStatesCreated": null,
+        "reviewsReused": null,
+        "statesReused": null
+      },
+      {
+        "id": "F17",
+        "description": "arc cap 33.0 mm in a code copy (Run)",
+        "expected": [
+          "ARC_CAP"
+        ],
+        "outcome": "ARC_CAP",
+        "message": "",
+        "pass": true,
+        "forbiddenPathsCreated": [],
+        "newStatesCreated": 0,
+        "reviewsReused": 0,
+        "statesReused": 0
+      },
+      {
+        "id": "F22",
+        "description": "uncommitted kernel change (Run)",
+        "expected": [
+          "G2Chain:DirtySource"
+        ],
+        "outcome": "HOLD_NEW_COMPUTATION_FORBIDDEN",
+        "message": "",
+        "pass": false,
+        "forbiddenPathsCreated": [
+          "<repo>\\outputs\\g2_wp34_controller\\run_20261118_223453_434_pr29_prefix\\faults\\work\\F22_chain\\RUN_*.log"
+        ],
+        "newStatesCreated": 0,
+        "reviewsReused": 0,
+        "statesReused": 0
+      },
+      {
+        "id": "F23",
+        "description": "chain equal to the seed folder (Run)",
+        "expected": [
+          "G2Chain:SelfReference"
+        ],
+        "outcome": "G2Chain:PartialChain",
+        "message": "A chain folder exists without its complete root manifest.",
+        "pass": false,
+        "forbiddenPathsCreated": [],
+        "newStatesCreated": null,
+        "reviewsReused": null,
+        "statesReused": null
+      },
+      {
+        "id": "F23",
+        "description": "chain inside the seed folder (Run)",
+        "expected": [
+          "G2Chain:SelfReference"
+        ],
+        "outcome": "G2Chain:NewWorkForbidden",
+        "message": "No established chain; no new computation allowed.",
+        "pass": false,
+        "forbiddenPathsCreated": [],
+        "newStatesCreated": null,
+        "reviewsReused": null,
+        "statesReused": null
+      },
+      {
+        "id": "F23",
+        "description": "chain inside the P0 folder (Run)",
+        "expected": [
+          "G2Chain:SelfReference"
+        ],
+        "outcome": "G2Chain:NewWorkForbidden",
+        "message": "No established chain; no new computation allowed.",
+        "pass": false,
+        "forbiddenPathsCreated": [],
+        "newStatesCreated": null,
+        "reviewsReused": null,
+        "statesReused": null
+      }
+    ]
+  },
+  "faultsException": ""
+}

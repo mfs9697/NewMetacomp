@@ -1,0 +1,9 @@
+{
+  "schema": "NewMetacomp.G2.TrajectoryRecordManifest.v1",
+  "file": "HOLD.mat",
+  "SHA256": "491D8FC0B52AB262AC7B063A4FD00204CB2F81AF58DB3E8955ED1141FB15D859",
+  "bytes": 12160,
+  "recordSchema": "NewMetacomp.G2.TrajectoryHold.v1",
+  "stateIndex": 2,
+  "physicalFractureGrowthProven": false
+}

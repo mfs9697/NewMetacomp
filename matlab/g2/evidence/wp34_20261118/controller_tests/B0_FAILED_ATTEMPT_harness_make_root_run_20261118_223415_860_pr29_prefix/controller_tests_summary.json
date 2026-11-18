@@ -1,0 +1,78 @@
+{
+  "tag": "pr29_prefix",
+  "gitHead": "fabee17ad86695c653f2d95ce77c67d3b63235b7",
+  "matlabRelease": "2023a",
+  "pass": false,
+  "synthetic": {
+    "pass": true,
+    "algebraFirst_deg": -12.595693701643276,
+    "algebraSecond6digit_deg": -0.95004405975394013,
+    "algebraSecondFull_deg": -0.94982775671665831,
+    "independentSecond_deg": -0.94982775671665831,
+    "secondTurnRouteDifference_deg": 0,
+    "state1SHA256": "CB05BD619280069BD601E7A9131B8532F39698F3A406ADACFF537EAC09A5D441",
+    "state1KI": 0.18258487868761783,
+    "state1KII": 0.0015136541810014932,
+    "analyticalSecondTip_mm": [
+      103.40915091645832,
+      33.192469183867637
+    ],
+    "analyticalSecondTangent": [
+      0.23421783734486504,
+      0.97218414133820064
+    ],
+    "P3K1toK10": {
+      "K1_polylineIdentity": true,
+      "K2_nonsingularMiter": true,
+      "K3_collarEntryOnLastSegment": true,
+      "K4_rimBandClearOfEarlierCrack": true,
+      "K5_coreAndQClearOfEarlierCrack": true,
+      "K6_segmentsClearOfHoleWalls": true,
+      "K7_segmentsClearOfGuideFaces": true,
+      "K8_collarInsideMaterial": true,
+      "K9_tipGuideAdmissible": true,
+      "K10_noSelfIntersectionInsidePlate": true
+    },
+    "P4K1toK10": {
+      "K1_polylineIdentity": true,
+      "K2_nonsingularMiter": true,
+      "K3_collarEntryOnLastSegment": true,
+      "K4_rimBandClearOfEarlierCrack": true,
+      "K5_coreAndQClearOfEarlierCrack": true,
+      "K6_segmentsClearOfHoleWalls": true,
+      "K7_segmentsClearOfGuideFaces": true,
+      "K8_collarInsideMaterial": true,
+      "K9_tipGuideAdmissible": true,
+      "K10_noSelfIntersectionInsidePlate": true
+    },
+    "P4inheritedGuardWouldReject": true,
+    "negativeControls": {
+      "wrongCount": [
+        "K1_polylineIdentity"
+      ],
+      "wrongLength": [
+        "K1_polylineIdentity"
+      ],
+      "tipInHole": [
+        "K1_polylineIdentity",
+        "K2_nonsingularMiter",
+        "K6_segmentsClearOfHoleWalls",
+        "K7_segmentsClearOfGuideFaces",
+        "K8_collarInsideMaterial",
+        "K9_tipGuideAdmissible"
+      ],
+      "wrongTangent": [
+        "K1_polylineIdentity"
+      ],
+      "fold": [
+        "K2_nonsingularMiter"
+      ]
+    },
+    "immutableRecordPass": true,
+    "physicalSolverExecuted": false,
+    "tip2MeshQualified": false
+  },
+  "syntheticException": "",
+  "faults": {},
+  "faultsException": "Error using check_g2_trajectory_faults>make_root\nToo many output arguments.\n\nError in check_g2_trajectory_faults>@(name)make_root(fullfile(work,name),rootHash,S1.meshSHA256,p0Hash,shaP,src) (line 101)\nmk=@(name)make_root(fullfile(work,name),rootHash,S1.meshSHA256,p0Hash,shaP,src);\n\nError in check_g2_trajectory_faults (line 107)\nch=mk('F13_chain');flip(fullfile(ch,'ROOT.mat'),-150);\n\nError in run_g2_wp34_controller_tests_batch (line 26)\n W.faults=check_g2_trajectory_faults(fullfile(folder,'faults'));"
+}

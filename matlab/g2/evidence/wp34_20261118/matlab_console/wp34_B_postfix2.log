@@ -1,0 +1,105 @@
+STAGE=G2_WP34_B_CONTROLLER_TESTS
+DATE=2026-11-18 22:39:52
+MATLAB_RELEASE=2023a
+MATLAB_VERSION=9.14.0.2206163 (R2023a)
+PDE_TOOLBOX=3.10
+GIT_HEAD=21f91d60a75fa846fa807c3cfc6fdf3f6ebc8da9
+G2_TREE_DIRTY=0
+B1 first turn -12.595693701643 deg
+B2 second turn full precision -0.949827756717 deg; independent root -0.949827756717 deg; |diff| 0.000e+00 deg
+B3 analytic tip 2 (103.409150916458, 33.192469183868) mm
+B4 P4 K1-K10 10/10; inherited 0.98 guard would reject: 1
+B5 negatives rejected: count, length, hole, tangent, fold
+B6 record round trip, no overwrite, 3 tamper modes rejected
+G2_TRAJECTORY_SYNTHETIC_CONTROLLER_PASS=1
+G2_TRAJECTORY_ANALYTIC_TIP2_MM=(103.409150916458,33.192469183868)
+G2_TRAJECTORY_NO_NEW_MESH_NO_SIF=1
+G2_TRAJECTORY_PREFLIGHT_PASS=1
+G2_TRAJECTORY_NEXT_TURN_DEG=-0.949827756717, TRIAL_TIP_MM=(103.409150916458,33.192469183868)
+G2_TRAJECTORY_K1_K10=10/10 SOURCE_FILES_HASHED=25 MATLAB=R2023a PDE=3.10
+G2_TRAJECTORY_DRY_NO_MESH_NO_FEM_NO_FILES=1
+F02 dry preflight, true inputs, absent chain: outcome=DRY_PREFLIGHT_PASS | expected=DRY_PREFLIGHT_PASS | forbidden created=0 -> 1
+G2_TRAJECTORY_PREFLIGHT_PASS=1
+G2_TRAJECTORY_NEXT_TURN_DEG=-0.949827756717, TRIAL_TIP_MM=(103.409150916458,33.192469183868)
+G2_TRAJECTORY_K1_K10=10/10 SOURCE_FILES_HASHED=25 MATLAB=R2023a PDE=3.10
+G2_TRAJECTORY_DRY_NO_MESH_NO_FEM_NO_FILES=1
+Source list for synthetic chains: controller R.sourceHashes (25 files)
+F01 closure: CLOSED  -> 1
+F03 authorization variant 2: outcome=G2Chain:AuthorizationRequired | expected=G2Chain:AuthorizationRequired | forbidden created=0 -> 1
+F03 authorization variant 3: outcome=G2Chain:AuthorizationRequired | expected=G2Chain:AuthorizationRequired | forbidden created=0 -> 1
+F03 authorization variant 4: outcome=G2Chain:AuthorizationRequired | expected=G2Chain:AuthorizationRequired | forbidden created=0 -> 1
+F03 authorization variant 5: outcome=G2Chain:AuthorizationRequired | expected=G2Chain:AuthorizationRequired | forbidden created=0 -> 1
+F04 MaxStateIndex 3: outcome=G2Chain:StepCap | expected=G2Chain:StepCap | forbidden created=0 -> 1
+F05 seed state byte flip: outcome=G2Chain:RootIntegrity | expected=G2Chain:RootIntegrity | forbidden created=0 -> 1
+F06 seed mesh byte flip: outcome=G2Chain:RootMeshIntegrity | expected=G2Chain:RootMeshIntegrity | forbidden created=0 -> 1
+F07 re-hashed forged State 1: outcome=G2Chain:TrustedWP3Root | expected=G2Chain:TrustedWP3Root | forbidden created=0 -> 1
+F08 step1_a state with step1_b mesh: outcome=G2Chain:RootMeshIntegrity | expected=G2Chain:RootMeshIntegrity | forbidden created=0 -> 1
+F09 P0 byte flip: outcome=G2Chain:TrustedP0 | expected=G2Chain:TrustedP0 | forbidden created=0 -> 1
+F10 shadowing T3toT6_fast first on path: outcome=G2Chain:VendorShadowed | expected=G2Chain:VendorShadowed | forbidden created=0 -> 1
+F11 missing vendor file in a code copy: outcome=G2Chain:MissingVendor | expected=G2Chain:MissingVendor | forbidden created=0 -> 1
+F16 State 0 used as the seed: outcome=G2Chain:RootIdentity | expected=G2Chain:RootIdentity | forbidden created=0 -> 1
+F12 stale source hash in ROOT (dry): outcome=G2Chain:SourceDrift | expected=G2Chain:SourceDrift | forbidden created=0 -> 1
+F12 stale source hash in ROOT (Run): outcome=G2Chain:SourceDrift | expected=G2Chain:SourceDrift | forbidden created=0 -> 1
+F13 ROOT byte flip (dry): outcome=G2Chain:RootRecordIntegrity | expected=G2Chain:RootRecordIntegrity | forbidden created=0 -> 1
+F13 ROOT byte flip (Run): outcome=G2Chain:RootRecordIntegrity | expected=G2Chain:RootRecordIntegrity | forbidden created=0 -> 1
+F14 chain without ROOT manifest (Run): outcome=G2Chain:PartialChain | expected=G2Chain:PartialChain | forbidden created=0 -> 1
+F15 partial STEP_002 (dry): outcome=HOLD_PARTIAL_STEP | expected=HOLD_PARTIAL_STEP | forbidden created=0 -> 1
+F15 partial STEP_002 (Run, no ForbidNewComputation): outcome=G2Chain:PartialStep | expected=G2Chain:PartialStep | forbidden created=0 -> 1
+F18 valid ROOT, Run with ForbidNewComputation: outcome=HOLD_NEW_COMPUTATION_FORBIDDEN | expected=HOLD_NEW_COMPUTATION_FORBIDDEN | forbidden created=0 -> 1
+F19 review with fabricated pass but COD/EDI 10% apart (Run): outcome=G2Chain:ReviewNumericScreens | expected=G2Chain:ReviewNumericScreens | forbidden created=0 -> 1
+F20 forged review citing the State 1 mesh (dry): outcome=G2Chain:ReviewMeshContent | expected=G2Chain:ReviewMeshContent | forbidden created=0 -> 1
+F20 forged review citing the State 1 mesh (Run): outcome=G2Chain:ReviewMeshContent | expected=G2Chain:ReviewMeshContent | forbidden created=0 -> 1
+F21 review tip shifted 1e-6 mm (dry): outcome=G2Chain:ForecastDrift | expected=G2Chain:ForecastDrift | forbidden created=0 -> 1
+F21 review tip shifted 1e-6 mm (Run): outcome=G2Chain:ForecastDrift | expected=G2Chain:ForecastDrift | forbidden created=0 -> 1
+G2_TRAJECTORY_ARC_CAP=1 NEXT_ARC_MM=33.400000000
+F17 arc cap 33.0 mm in a code copy (Run): outcome=ARC_CAP | expected=ARC_CAP | forbidden created=0 -> 1
+G2_TRAJECTORY_PREFLIGHT_PASS=1
+G2_TRAJECTORY_NEXT_TURN_DEG=-0.949827756717, TRIAL_TIP_MM=(103.409150916458,33.192469183868)
+G2_TRAJECTORY_K1_K10=10/10 SOURCE_FILES_HASHED=25 MATLAB=R2023a PDE=3.10
+G2_TRAJECTORY_DRY_NO_MESH_NO_FEM_NO_FILES=1
+F22 uncommitted kernel change (Run): outcome=G2Chain:DirtySource | expected=G2Chain:DirtySource | forbidden created=0 -> 1
+F23 chain equal to the seed folder (Run): outcome=G2Chain:SelfReference | expected=G2Chain:SelfReference | forbidden created=0 -> 1
+F23 chain inside the seed folder (Run): outcome=G2Chain:SelfReference | expected=G2Chain:SelfReference | forbidden created=0 -> 1
+F23 chain inside the P0 folder (Run): outcome=G2Chain:SelfReference | expected=G2Chain:SelfReference | forbidden created=0 -> 1
+G2_KINKED_AUDIT_GATES=34/34
+G2_KINKED_AUDIT_PASS=1
+G2_KINKED_AUDIT_GATES=34/34
+G2_KINKED_AUDIT_PASS=1
+G2_TRAJECTORY_REUSED_REVIEW_002=1; NO_FEM_NO_REMESH=1
+G2_TRAJECTORY_STOP_STEP_CAP=2; PHYSICAL_GROWTH_PROVEN=0
+F24 synthetic positive promotion on the genuine 4-vertex mesh copy (Run): outcome=STEP_CAP | expected=STEP_CAP | forbidden created=0 -> 1
+F24 promotion: reviewsReused 1, State 2 fields OK 1, hold-mesh audit 34/34 -> 1
+G2_KINKED_AUDIT_GATES=34/34
+G2_KINKED_AUDIT_PASS=1
+G2_TRAJECTORY_REUSED_STATE_002=1; NO_FEM_NO_REMESH=1
+G2_TRAJECTORY_STOP_STEP_CAP=2; PHYSICAL_GROWTH_PROVEN=0
+F24 rerun of the synthetic chain reuses State 2 (Run): outcome=STEP_CAP | expected=STEP_CAP | forbidden created=0 -> 1
+G2_KINKED_AUDIT_GATES=34/34
+G2_KINKED_AUDIT_PASS=1
+G2_TRAJECTORY_DRY_STEP_CAP=1; STATES_VERIFIED_THROUGH=2
+G2_TRAJECTORY_DRY_NO_MESH_NO_FEM_NO_FILES=1
+F24 dry preflight of the synthetic chain: outcome=DRY_PREFLIGHT_STEP_CAP | expected=DRY_PREFLIGHT_STEP_CAP | forbidden created=0 -> 1
+G2_TRAJECTORY_FAULTS_CASES=36 PASSED=36 ORIGINALS_UNCHANGED=1
+G2_TRAJECTORY_FAULTS_PASS=1
+G2_TRAJECTORY_SIF_PASS=1, KI=0.182584879 KII=+0.00151365418 MPa sqrt(m)/kN
+G2_TRAJECTORY_COD_EDI_REL=0.008793253 WHOLE_CRACK_OPENING_MIN_MM=0
+SIFREG State 1: KI 0.182584879 (recorded 0.182584879) KII +0.001513654 (recorded +0.001513654); dEDI 0.000e+00 dCOD 0.000e+00; criteria pass 1; min opening 0 mm
+G2_TRAJECTORY_SIF_REGRESSION_PASS=1
+G2_WP34_CONTROLLER_TESTS_PASS=1
+OUTDIR=<repo>\outputs\g2_wp34_controller\run_20261118_223951_893_postfix_hold1
+
+ans = 
+
+  struct with fields:
+
+                       tag: 'postfix_hold1'
+                   gitHead: '21f91d60a75fa846fa807c3cfc6fdf3f6ebc8da9'
+             matlabRelease: '2023a'
+                      pass: 1
+                 synthetic: [1x1 struct]
+        syntheticException: ''
+                    faults: [1x1 struct]
+           faultsException: ''
+             sifRegression: [1x1 struct]
+    sifRegressionException: ''
+

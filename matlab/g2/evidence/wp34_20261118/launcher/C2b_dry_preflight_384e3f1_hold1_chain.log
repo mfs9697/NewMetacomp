@@ -1,0 +1,34 @@
+EXIT=1
+Free RAM: 5,67 GiB (guard 5,00 GiB)
+Source WP3 state: <repo>\outputs\g2_wp3_state\run_20261118_185808_963\step1_a\state\state.mat
+Source SHA256: CB05BD619280069BD601E7A9131B8532F39698F3A406ADACFF537EAC09A5D441
+P0 source SHA256: 15201996B4165AA9980F61F370A75749B1CE28EC0ACCAA061902641524C37C58
+Frozen policy SHA256: 1D6AF7F6F3E8AF389AB02330D9A1EAEBDBC00BEDB52AAD54DB902B4DE36B39DC
+Original Cornell JSON SHA256: 45A88FA0926472DDBE5E70E4C80A97B88196DD45D8A266FA04273F89790B47BF
+Chain folder: <repo>\outputs\g2_trajectory_chain_v1
+Run requested: False; max new state=2; physical onset=false
+powershell.exe : {Error using assert
+At line:15 char:5
++ $o2=& powershell.exe @common 2>&1 | Out-String; $r2=$LASTEXITCODE
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: ({Error using assert:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+Read-only chain preflight detected source drift.
+
+Error in g2_trajectory_run>local_verify_chain_readonly (line 329)
+assert(strcmpi(Root.rootHash,rootHash)&& ...
+
+Error in g2_trajectory_run (line 110)
+  [chainState,status]=local_verify_chain_readonly(char(o.ChainDir), ...
+} 
+ERROR: MATLAB error Exit Status: 0x00000001
+<repo>\matlab\g2\run_g2_trajectory.ps1 : G2 bounded trajectory HOLD (MAT
+LAB exit=1). Check its diagnostic and the immutable chain folder; do not retry by overwriting a partial step.
+At <repo>\matlab\g2\run_g2_trajectory.ps1:97 char:3
++   Write-Error "G2 bounded trajectory HOLD (MATLAB exit=$exit). Check  ...
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [Write-Error], WriteErrorException
+    + FullyQualifiedErrorId : Microsoft.PowerShell.Commands.WriteErrorException,run_g2_trajectory.ps1
+ 
+

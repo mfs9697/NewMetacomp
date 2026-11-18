@@ -1,0 +1,33 @@
+STAGE=G2_WP34_E_RESTART
+DATE=2026-11-18 22:43:32
+MATLAB_RELEASE=2023a
+GIT_HEAD=cec69db5ddaadc3540f628444803c090dfd20626
+ACCEPTED_CHAIN=<repo>\outputs\g2_trajectory_chain_v1_attempt2
+E1 fresh chain, SimulateInterrupt review@2: outcome=G2Chain:SimulatedInterrupt | expected=G2Chain:SimulatedInterrupt | reused review/state NaN/NaN new NaN -> 1
+E2 resume E1 with ForbidNewComputation: outcome=STEP_CAP | expected=STEP_CAP | reused review/state 1/0 new 0 -> 1
+E3a fresh chain, SimulateInterrupt state@2: outcome=G2Chain:SimulatedInterrupt | expected=G2Chain:SimulatedInterrupt | reused review/state NaN/NaN new NaN -> 1
+E3b rerun E3 with ForbidNewComputation: outcome=STEP_CAP | expected=STEP_CAP | reused review/state 0/1 new 0 -> 1
+E4 replay: E1 identical 1, E3 identical 1
+E5 rerun accepted-chain copy: outcome=STEP_CAP | expected=STEP_CAP | reused review/state 0/1 new 0 -> 1
+E5b accepted-chain copy, MaxStateIndex 3: outcome=G2Chain:StepCap | expected=G2Chain:StepCap | reused review/state NaN/NaN new NaN -> 1
+E6a State 2 byte flip (Run): outcome=G2Chain:ChildStateIntegrity | expected=G2Chain:ChildStateIntegrity | reused review/state NaN/NaN new NaN -> 1
+E6b State 2 byte flip (dry): outcome=G2Chain:ChildIntegrity | expected=G2Chain:ChildIntegrity | reused review/state NaN/NaN new NaN -> 1
+E6c wrong state.sha256 (Run): outcome=G2Chain:ChildStateIntegrity | expected=G2Chain:ChildStateIntegrity | reused review/state NaN/NaN new NaN -> 1
+E7a review missing, State kept (Run): outcome=G2Chain:ChildReviewIntegrity | expected=G2Chain:ChildReviewIntegrity | reused review/state NaN/NaN new NaN -> 1
+E7b review missing, State kept (dry): outcome=G2Chain:ReviewIntegrity | expected=G2Chain:ReviewIntegrity | reused review/state NaN/NaN new NaN -> 1
+E8 review byte flip (Run): outcome=G2Chain:ChildReviewIntegrity | expected=G2Chain:ChildReviewIntegrity | reused review/state NaN/NaN new NaN -> 1
+E9 State 2 mesh byte flip (Run): outcome=G2Chain:ReviewMeshSHA | expected=G2Chain:ReviewMeshSHA | reused review/state NaN/NaN new NaN -> 1
+E10 State 2 with a forged parent hash (Run): outcome=G2Chain:ChildMismatch | expected=G2Chain:ChildMismatch | reused review/state NaN/NaN new NaN -> 1
+E11a ROOT source hash drift (Run): outcome=G2Chain:SourceDrift | expected=G2Chain:SourceDrift | reused review/state NaN/NaN new NaN -> 1
+E11b ROOT source hash drift (dry): outcome=G2Chain:SourceDrift | expected=G2Chain:SourceDrift | reused review/state NaN/NaN new NaN -> 1
+E11c ROOT policy hash drift (Run): outcome=G2Chain:SourceDrift | expected=G2Chain:SourceDrift | reused review/state NaN/NaN new NaN -> 1
+E13 State folder without state.sha256 (Run): outcome=G2Chain:ChildStateIntegrity | expected=G2Chain:ChildStateIntegrity | reused review/state NaN/NaN new NaN -> 1
+G2_KINKED_AUDIT_GATES=34/34
+G2_KINKED_AUDIT_PASS=1
+G2_TRAJECTORY_DRY_STEP_CAP=1; STATES_VERIFIED_THROUGH=2
+G2_TRAJECTORY_DRY_NO_MESH_NO_FEM_NO_FILES=1
+E12 dry preflight on the accepted chain: outcome=DRY_PREFLIGHT_STEP_CAP | expected=DRY_PREFLIGHT_STEP_CAP | reused review/state 0/0 new 0 -> 1
+ACCEPTED_CHAIN_UNCHANGED=1 SEED_UNCHANGED=1
+G2_WP34_RESTART_CASES=20 PASSED=20
+G2_WP34_RESTART_PASS=1
+OUTDIR=<repo>\outputs\g2_wp34_restart\run_20261118_224332_226

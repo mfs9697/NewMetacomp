@@ -1,0 +1,12 @@
+   0
+
+matlab.exe : {Dot indexing is not supported for variables of this type.
+At <local-path>
+run1.ps1:13 char:1
++ & $m -batch "restoredefaultpath;addpath('$w\matlab\g2','-begin');addp ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: ({Dot indexing ...s of this type.:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+} 
+ERROR: MATLAB error Exit Status: 0x00000001

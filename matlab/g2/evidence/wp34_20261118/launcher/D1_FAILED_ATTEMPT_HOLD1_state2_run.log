@@ -1,0 +1,61 @@
+START=2026-11-18T22:37:01 END=2026-11-18T22:37:17 EXIT=1
+Free RAM: 5,77 GiB (guard 5,00 GiB)
+Source WP3 state: <repo>\outputs\g2_wp3_state\run_20261118_185808_963\step1_a\state\state.mat
+Source SHA256: CB05BD619280069BD601E7A9131B8532F39698F3A406ADACFF537EAC09A5D441
+P0 source SHA256: 15201996B4165AA9980F61F370A75749B1CE28EC0ACCAA061902641524C37C58
+Frozen policy SHA256: 1D6AF7F6F3E8AF389AB02330D9A1EAEBDBC00BEDB52AAD54DB902B4DE36B39DC
+Original Cornell JSON SHA256: 45A88FA0926472DDBE5E70E4C80A97B88196DD45D8A266FA04273F89790B47BF
+Chain folder: <repo>\outputs\g2_trajectory_chain_v1
+Run requested: True; max new state=2; physical onset=false
+G2_KB_VENDOR_LOCAL_GATES=15/15
+G2_KB_GATES=12/12 TURN=-0.9498277567 MIN_ANGLE=30.126847 RATIO=1.591829 Q=2443
+G2_KEXT_NATIVE_T3=25709
+G2_KEXT_RIM_NODES=65
+G2_KJOIN_GATES=13/13
+G2_KJOIN_T3=28625 T6_NODES=58161 MIN_ANGLE=30.126847 MAX_RATIO=1.591829
+G2_KINKED_AUDIT_GATES=34/34
+G2_KINKED_AUDIT_PASS=1
+powershell.exe : G2_TRAJECTORY_HOLD_STATE_002=SOURCE: Arrays have incompatible sizes for this operation.
+At line:6 char:8
++ $out = & powershell -NoProfile -ExecutionPolicy Bypass -File .\matlab ...
++        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (G2_TRAJECTORY_H...this operation.:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+                            pass: 0
+                           stage: 'HOLD_NUMERICAL_STEP'
+                    runRequested: 1
+    physicalFractureGrowthProven: 0
+     experimentalAgreementProven: 0
+                   candidateOnly: 1
+                newStatesCreated: 0
+                   reviewsReused: 0
+                    statesReused: 0
+                  lastStateIndex: 1
+                           steps: [0x0 struct]
+                        forecast: [1x1 struct]
+                    policySHA256: '1D6AF7F6F3E8AF389AB02330D9A1EAEBDBC00BEDB52AAD54DB902B4DE36B39DC'
+                      stopReason: 'SOURCE'
+                         message: 'Arrays have incompatible sizes for this operation....'
+                        chainDir: '<repo>\outputs\g2_trajectory_chain_v1'
+                   matlabRelease: '2023a'
+               pdeToolboxVersion: '3.10'
+                    sourceHashes: [25x1 struct]
+                 rootStateSHA256: 'CB05BD619280069BD601E7A9131B8532F39698F3A406ADACFF537EAC09A5D441'
+                  rootMeshSHA256: 'ECD6A7B873BC2CD758A0F88391E564DFB6C90249024BC1A8768F9F5D93732461'
+                    P0MAT_SHA256: '15201996B4165AA9980F61F370A75749B1CE28EC0ACCAA061902641524C37C58'
+                         gitHead: 'e48267325c80bbc60debb0dd90d7252153bdd3a4'
+
+{Error using assert
+Numerical trajectory HOLD: HOLD_NUMERICAL_STEP
+} 
+ERROR: MATLAB error Exit Status: 0x00000001
+<repo>\matlab\g2\run_g2_trajectory.ps1 : G2 bounded trajectory HOLD (MAT
+LAB exit=1). Check its diagnostic and the immutable chain folder; do not retry by overwriting a partial step.
+At <repo>\matlab\g2\run_g2_trajectory.ps1:97 char:3
++   Write-Error "G2 bounded trajectory HOLD (MATLAB exit=$exit). Check  ...
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [Write-Error], WriteErrorException
+    + FullyQualifiedErrorId : Microsoft.PowerShell.Commands.WriteErrorException,run_g2_trajectory.ps1
+ 
+

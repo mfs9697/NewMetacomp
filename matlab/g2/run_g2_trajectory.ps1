@@ -10,6 +10,9 @@ param(
   [string]$ChainDir = '.\outputs\g2_trajectory_chain_v1',
   [string]$MatlabExe = 'C:\Program Files\Polyspace\R2023a\bin\matlab.exe',
   [double]$MinFreeGiB = 5.0,
+  # WP3.4 D6 test hook: the guard uses min(measured, this value). It can only LOWER the
+  # free-RAM figure, so it can only cause HOLD_RAM; it can never bypass the guard.
+  [double]$SimulateFreePhysicalGiB = [double]::PositiveInfinity,
   [switch]$Run,
   [switch]$ForbidNewComputation
 )
@@ -53,6 +56,10 @@ foreach($it in $pinned){
   }
 }
 $free=[double](Get-CimInstance -ClassName Win32_OperatingSystem).FreePhysicalMemory/1024/1024
+if ($SimulateFreePhysicalGiB -lt $free) {
+  Write-Host ("Simulated free RAM {0:N2} GiB replaces measured {1:N2} GiB (test hook, can only lower)" -f $SimulateFreePhysicalGiB,$free)
+  $free=$SimulateFreePhysicalGiB
+}
 Write-Host ("Free RAM: {0:N2} GiB (guard {1:N2} GiB)" -f $free,$MinFreeGiB)
 if($free -lt $MinFreeGiB) { throw "HOLD_RAM: free physical RAM below guard; no MATLAB launched." }
 $shaPolicy=(Get-FileHash -LiteralPath $policy -Algorithm SHA256).Hash

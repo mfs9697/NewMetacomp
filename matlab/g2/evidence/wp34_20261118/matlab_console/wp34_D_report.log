@@ -1,0 +1,98 @@
+    rIn_mm    rOut_mm    KI_MPa_sqrt_m_per_kN    KII_MPa_sqrt_m_per_kN    J_N_per_mm_per_N
+    ______    _______    ____________________    _____________________    ________________
+
+     0.4        2.6            0.19598                  0.00315              1.1756e-08   
+     0.2          1            0.19598                  0.00315              1.1756e-08   
+     0.4        1.6            0.19598                  0.00315              1.1756e-08   
+     0.8        2.6            0.19598                  0.00315              1.1756e-08   
+     1.2        2.4            0.19598                  0.00315              1.1756e-08   
+
+TIP2=(103.4091509165, 33.1924691839) mm, turn -0.9498277567 deg, arc 33.400000 mm
+KI=0.195982 KII=+0.003150 (EDI) | KI=0.194260 KII=+0.003102 (COD) MPa sqrt(m)/kN
+G2_WP34_STATE2_REPORT_DONE=1 CHAIN_UNCHANGED=1
+OUTDIR=<repo>\outputs\g2_wp34_state2\run_20261118_224233_197
+    rIn_mm    rOut_mm    KI_MPa_sqrt_m_per_kN    KII_MPa_sqrt_m_per_kN    J_N_per_mm_per_N
+    ______    _______    ____________________    _____________________    ________________
+
+     0.4        2.6            0.19598                  0.00315              1.1756e-08   
+     0.2          1            0.19598                  0.00315              1.1756e-08   
+     0.4        1.6            0.19598                  0.00315              1.1756e-08   
+     0.8        2.6            0.19598                  0.00315              1.1756e-08   
+     1.2        2.4            0.19598                  0.00315              1.1756e-08   
+
+               relativeResidual: 1.0085e-12
+                     staticsMax: 2.7348e-13
+           CODvsEDI_fractionOfK: 0.0088
+         pathSpread_fractionOfK: 1.6441e-06
+                JenergyIdentity: 1.5096e-05
+           qSupportMaxRadius_mm: 2.7692
+        wholeCrackOpeningMin_mm: 0
+                      KIIoverKI: 0.0161
+      KII_sign_edi_vs_cod_match: 1
+                    codFitPairs: 32
+    quadratureDrift_fractionOfK: 3.6929e-13
+                        statics: [2.7348e-13 6.2744e-14 6.4837e-14 6.8334e-14 1.3123e-13]
+
+                   elasticEquilibrium: 1
+                    blindCODversusEDI: 1
+                  contourIndependence: 1
+                      JenergyIdentity: 1
+                        EDIquadrature: 1
+                   qSupportInsideCore: 1
+                    wholeCrackOpening: 1
+                           KIpositive: 1
+    conditionalHighMixityKIIagreement: 1
+
+                  T3elements: 28625
+                     T3nodes: 14767
+                     T6nodes: 58161
+                      coreT3: 2788
+                    collarT3: 128
+                  exteriorT3: 25709
+                minAngle_deg: 30.1268
+               minAngleAt_mm: [103.1776 32.2946]
+            maxNeighborRatio: 1.5918
+               maxRatioAt_mm: [103.4206 33.1536]
+                rimSeamEdges: 64
+               coreSeamEdges: 64
+       crackBankEdgesPerSide: [92 92]
+          bankT6NodesPerSide: [185 185]
+                   qActiveT6: 2443
+                      tip_mm: [103.4092 33.1925]
+                     tangent: [0.2342 0.9722]
+                      normal: [-0.9722 0.2342]
+                     tipNode: 1114
+                 kinkNodeIDs: [1522 1525 1523 1524]
+    rimCoordinateMismatch_mm: 0
+                 polyline_mm: [4x2 double]
+                    turn_deg: [-12.5957 -0.9498]
+                    exterior: [1x1 struct]
+                       block: [1x1 struct]
+
+                                  T3nodes: 14767
+                               T3elements: 28625
+                                  T6nodes: 58161
+                              uniqueEdges: 43394
+                                    Euler: -2
+                       boundaryComponents: 4
+                        holeBoundaryEdges: [152 152 152]
+                       crackBoundaryEdges: 184
+                        crackEdgesPerSide: [92 92]
+                         bankNodesPerSide: [185 185]
+                             minAngle_deg: 30.1268
+                         maxNeighborRatio: 1.5918
+                          minJacobian_mm2: 0.0015
+                       maxMidsideError_mm: 0
+                         materialArea_mm2: 1.0285e+05
+                         analyticArea_mm2: 1.0285e+05
+            kernelLocalCoordinateError_mm: 2.5751e-14
+                                  qActive: 2443
+                     qSupportMaxRadius_mm: 2.7692
+                qSupportDistanceToKink_mm: 1.2341
+                                   tip_mm: [103.4092 33.1925]
+                                  tangent: [0.2342 0.9722]
+                                 turn_deg: -13.5455
+    minDistanceProtectedNodeToHoleWall_mm: 51.5373
+
+turns -12.5956937016 -0.9498277567; next -1.840689
+HOLD1_VS_ATTEMPT2_MESH_FIELDS_IDENTICAL=22/22 differing: 

@@ -1,0 +1,14 @@
+exit=1
+powershell.exe : <repo>\matlab\g2\run_g2_trajectory.ps1 : A parameter ca
+nnot be found tha
+At line:8 char:8
++   $out=& powershell.exe @a 2>&1 | Out-String
++        ~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (C:\Users\Mikhai...ot be found tha:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+t matches parameter name 'SimulateFreePhysicalGiB'.
+    + CategoryInfo          : InvalidArgument: (:) [run_g2_trajectory.ps1], ParentContainsErrorRecordException
+    + FullyQualifiedErrorId : NamedParameterNotFound,run_g2_trajectory.ps1
+ 
+
