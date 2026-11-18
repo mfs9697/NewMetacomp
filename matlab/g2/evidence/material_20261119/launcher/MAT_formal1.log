@@ -1,0 +1,11 @@
+Free RAM: 6,15 GiB (guard 5,00 GiB)
+Material policy SHA-256: E60156F60DC8BAE05F2AB1B1A25BC93BD84CEDB7485591B01ADA2413D946A971
+G2_MATERIAL_CONTRAST run <repo>\outputs\g2_material_contrast_v1\run_20261119_003303_004, MATLAB 2023a, policy E60156F60DC8BAE05F2AB1B1A25BC93BD84CEDB7485591B01ADA2413D946A971
+powershell : HOLD G2Material:Release: MATLAB 2023a is not R2023a.
+At line:3 char:1
++ powershell -NoProfile -ExecutionPolicy Bypass -File .\matlab\g2\run_g ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (HOLD G2Material... is not R2023a.:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+G2_MATERIAL_CONTRAST_STATUS=HOLD

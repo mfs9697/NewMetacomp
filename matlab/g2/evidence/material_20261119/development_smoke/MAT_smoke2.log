@@ -1,0 +1,16 @@
+ratio=1 holeDirichlet=0 h=4.80 e_max=0.01525 at r=6.136 (vertex=0) e_rms=0.001993 e_U=0.001041 holeChords=12
+ratio=1 holeDirichlet=0 h=2.40 e_max=0.007698 at r=6.228 (vertex=0) e_rms=0.0008317 e_U=0.0008051 holeChords=16
+ratio=1 holeDirichlet=0 h=1.20 e_max=0.001666 at r=6.319 (vertex=0) e_rms=0.0001947 e_U=0.0001857 holeChords=32
+ratio=1 holeDirichlet=0 h=0.60 e_max=0.0003331 at r=6.343 (vertex=0) e_rms=4.201e-05 e_U=3.797e-05 holeChords=68
+ratio=1 holeDirichlet=1 h=4.80 e_max=0.002195 at r=7.535 (vertex=0) e_rms=0.0002297 e_U=0.001355 holeChords=12
+ratio=1 holeDirichlet=1 h=2.40 e_max=0.0008949 at r=7.423 (vertex=0) e_rms=4.779e-05 e_U=0.0008852 holeChords=16
+ratio=1 holeDirichlet=1 h=1.20 e_max=0.000101 at r=7.349 (vertex=1) e_rms=3.736e-06 e_U=0.0001894 holeChords=32
+ratio=1 holeDirichlet=1 h=0.60 e_max=9.549e-06 at r=7.881 (vertex=1) e_rms=2.762e-07 e_U=3.811e-05 holeChords=68
+ratio=2 holeDirichlet=0 h=4.80 e_max=0.01151 at r=6.136 (vertex=0) e_rms=0.001662 e_U=0.0002523 holeChords=12
+ratio=2 holeDirichlet=0 h=2.40 e_max=0.005849 at r=6.228 (vertex=0) e_rms=0.0007292 e_U=0.0003685 holeChords=16
+ratio=2 holeDirichlet=0 h=1.20 e_max=0.001269 at r=6.319 (vertex=0) e_rms=0.0001712 e_U=8.368e-05 holeChords=32
+ratio=2 holeDirichlet=0 h=0.60 e_max=0.000255 at r=6.343 (vertex=0) e_rms=3.66e-05 e_U=1.407e-05 holeChords=68
+ratio=2 holeDirichlet=1 h=4.80 e_max=0.001531 at r=7.535 (vertex=0) e_rms=0.0003946 e_U=1.092e-05 holeChords=12
+ratio=2 holeDirichlet=1 h=2.40 e_max=0.000622 at r=7.423 (vertex=0) e_rms=9.856e-05 e_U=0.0004358 holeChords=16
+ratio=2 holeDirichlet=1 h=1.20 e_max=8.812e-05 at r=19.543 (vertex=0) e_rms=2.021e-05 e_U=8.68e-05 holeChords=32
+ratio=2 holeDirichlet=1 h=0.60 e_max=2.242e-05 at r=19.294 (vertex=0) e_rms=5.06e-06 e_U=1.419e-05 holeChords=68

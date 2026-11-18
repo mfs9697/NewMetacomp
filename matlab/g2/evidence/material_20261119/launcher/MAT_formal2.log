@@ -1,0 +1,15 @@
+Free RAM: 8,12 GiB (guard 5,00 GiB)
+Material policy SHA-256: E60156F60DC8BAE05F2AB1B1A25BC93BD84CEDB7485591B01ADA2413D946A971
+powershell : {Unrecognized field name "policySHA256".
+At line:3 char:1
++ powershell -NoProfile -ExecutionPolicy Bypass -File .\matlab\g2\run_g ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: ({Unrecognized ..."policySHA256".:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+
+Error in run_g2_material_contrast_batch (line 26)
+fprintf('G2_MATERIAL_CONTRAST run %s, MATLAB %s, policy %s\n',strrep(folder,repo,'<repo>'),L.matlabRelease,L.policySHA2
+56);
+} 
+ERROR: MATLAB error Exit Status: 0x00000001

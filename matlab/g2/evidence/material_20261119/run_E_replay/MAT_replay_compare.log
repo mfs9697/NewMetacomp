@@ -1,0 +1,7 @@
+REPLAY PHASE_MAP.mat    integrity 1/1 arrays bit-identical=1
+REPLAY CASE_H1.mat      integrity 1/1 arrays bit-identical=1
+REPLAY CASE_M0.mat      integrity 1/1 arrays bit-identical=1
+REPLAY CASE_Msoft.mat   integrity 1/1 arrays bit-identical=1
+REPLAY CASE_Mstiff.mat  integrity 1/1 arrays bit-identical=1
+REPLAY BENCHMARK.mat    integrity 1/1 arrays bit-identical=1
+REPLAY ratios table identical=1, status GO/GO

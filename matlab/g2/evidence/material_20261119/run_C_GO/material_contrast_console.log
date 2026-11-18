@@ -1,0 +1,81 @@
+G2_MATERIAL_CONTRAST run <repo>\outputs\g2_material_contrast_v1\run_20261119_003430_660, MATLAB R2023a, policy E60156F60DC8BAE05F2AB1B1A25BC93BD84CEDB7485591B01ADA2413D946A971
+G2_KINKED_AUDIT_GATES=34/34
+G2_KINKED_AUDIT_PASS=1
+STAGE S0_SOURCE PASS
+PHASE_MAP pass=1 PHASE_MAP_TOPOLOGICAL_OK: 16347 matrix + 12278 reinforcement elements; chords per circle [76 76 76].
+                            noStraddle: 1
+                   labelsMatchGeometry: 1
+         interfaceChordsTwoOwnersMixed: 1
+                interfaceMidsideShared: 1
+                     noOtherMixedEdges: 1
+                     noVoidPenetration: 1
+                   annulusAreaIdentity: 1
+                    domainAreaIdentity: 1
+                       matrixConnected: 1
+                        bandsConnected: 1
+    coincidentNodesOnlyRegisteredTwins: 1
+                    tipGuideMatrixOnly: 1
+                    qSupportMatrixOnly: 1
+
+                      straddlingElements: 0
+                         labelMismatches: 0
+                              mixedEdges: 228
+                         interfaceChords: 228
+                        nodesInsideVoids: 0
+                         annulusArea_mm2: [3x1 double]
+                  annulusPolygonArea_mm2: [3x1 double]
+                  annulusNominalArea_mm2: [3x1 double]
+                       annulusAreaRelErr: 3.3697e-16
+                     polygonVsNominalRel: [3x1 double]
+                        domainAreaRelErr: 1.4149e-16
+                          bandComponents: 3
+                         coincidentPairs: 184
+             unregisteredCoincidentPairs: 0
+    reinforcementNodeMinDistanceToTip_mm: 42.1416
+                           qClearance_mm: 39.5416
+                                  counts: [16347 12278]
+                         chordsPerCircle: [76 76 76]
+                   holeVerticesPerCircle: [152 152 152]
+
+PHASE_NEG N1_swapped_labels                    mapper=1 (PHASE_MAP_TOPOLOGICAL_OK) verifier=0 [labelsMatchGeometry,annulusAreaIdentity,matrixConnected,bandsConnected,tipGuideMatrixOnly,qSupportMatrixOnly] -> rejected=1
+PHASE_NEG N2_band_element_relabelled_matrix    mapper=1 (PHASE_MAP_TOPOLOGICAL_OK) verifier=0 [labelsMatchGeometry,interfaceChordsTwoOwnersMixed,noOtherMixedEdges,annulusAreaIdentity] -> rejected=1
+PHASE_NEG N3_matrix_element_relabelled_band    mapper=1 (PHASE_MAP_TOPOLOGICAL_OK) verifier=0 [labelsMatchGeometry,interfaceChordsTwoOwnersMixed,noOtherMixedEdges,annulusAreaIdentity] -> rejected=1
+PHASE_NEG N4_detached_interface                mapper=0 (HOLD_INTERFACE_DUPLICATE_ANGLE) verifier=0 [interfaceChordsTwoOwnersMixed,noOtherMixedEdges,coincidentNodesOnlyRegisteredTwins] -> rejected=1
+PHASE_NEG N5_nonconforming_interface           mapper=0 (HOLD_INTERFACE_NONCONFORMING) verifier=0 [noStraddle,labelsMatchGeometry,interfaceChordsTwoOwnersMixed,noOtherMixedEdges,annulusAreaIdentity] -> rejected=1
+PHASE_NEG N6_filled_void                       mapper=1 (PHASE_MAP_TOPOLOGICAL_OK) verifier=0 [noVoidPenetration,annulusAreaIdentity,domainAreaIdentity,coincidentNodesOnlyRegisteredTwins] -> rejected=1
+PHASE_NEG N7_q_domain_crossing_band            mapper=1 (PHASE_MAP_TOPOLOGICAL_OK) verifier=0 [qSupportMatrixOnly] -> rejected=1
+PHASE_NEG N9_band_label_in_tip_guide           mapper=1 (PHASE_MAP_TOPOLOGICAL_OK) verifier=0 [labelsMatchGeometry,noOtherMixedEdges,annulusAreaIdentity,bandsConnected,tipGuideMatrixOnly] -> rejected=1
+G2_MATERIAL_PHASE_NEGATIVES_PASS=1 (8 cases)
+STAGE S1_PHASE PASS
+BENCH_EXACT_SELFCHECK max 6.08e-10, residual max 2.65e-12
+BENCH_MESH Hmax=2.40 T6=4218 nodes=8600 matrix/band=3830/388 chords=48
+BENCH ratio=0.5 Hmax=2.40 e_u=0.00932 e_U=0.001147 e_T=0.02316 sides=0.03397 res=2.2e-15 PD=1 balance=6.5e-14
+BENCH ratio=2 Hmax=2.40 e_u=0.005849 e_U=0.0003685 e_T=0.02785 sides=0.01109 res=2.1e-15 PD=1 balance=2.2e-14
+BENCH ratio=10 Hmax=2.40 e_u=0.002157 e_U=0.0004204 e_T=0.02119 sides=0.01436 res=2.1e-15 PD=1 balance=1.7e-14
+BENCH_MESH Hmax=1.20 T6=16568 nodes=33468 matrix/band=14868/1700 chords=100
+BENCH ratio=0.5 Hmax=1.20 e_u=0.002014 e_U=0.0002641 e_T=0.005686 sides=0.008881 res=3.1e-15 PD=1 balance=1.2e-13
+BENCH ratio=2 Hmax=1.20 e_u=0.001269 e_U=8.368e-05 e_T=0.006281 sides=0.002942 res=3.1e-15 PD=1 balance=6.5e-14
+BENCH ratio=10 Hmax=1.20 e_u=0.0004712 e_U=0.0001024 e_T=0.006366 sides=0.003588 res=3.1e-15 PD=1 balance=7.2e-14
+BENCH_MESH Hmax=0.60 T6=66694 nodes=134056 matrix/band=59984/6710 chords=200
+BENCH ratio=0.5 Hmax=0.60 e_u=0.0004016 e_U=5.725e-05 e_T=0.001485 sides=0.002272 res=4.6e-15 PD=1 balance=2.1e-13
+BENCH ratio=2 Hmax=0.60 e_u=0.000255 e_U=1.407e-05 e_T=0.001209 sides=0.0006895 res=4.6e-15 PD=1 balance=1.4e-13
+BENCH ratio=10 Hmax=0.60 e_u=9.555e-05 e_U=2.828e-05 e_T=0.002235 sides=0.001095 res=4.6e-15 PD=1 balance=7.1e-14
+BENCH_IDENTITY u=0 K=0  REFERENCE_ASSEMBLY=5.03e-15
+BENCH_NEG swapped e_u=0.239 e_U=0.73 e_T=0.178 | detached e_u=0.335 e_U=0.0941 jump=0.00855 mapper=HOLD_INTERFACE_DUPLICATE_ANGLE verifier=0
+G2_MATERIAL_BENCHMARK_PASS=1 (14/14 checks)
+G2_MATERIAL_SIF_PASS=0 KI=0.195985404 KII=+0.0031476344 MPa sqrt(m)/kN, COD 0.194239423 / +0.00310056771, C=0.000221801597 mm/N
+STAGE S2_BENCHMARK PASS
+G2_TRAJECTORY_SIF_PASS=1, KI=0.195982362 KII=+0.00314997025 MPa sqrt(m)/kN
+G2_TRAJECTORY_COD_EDI_REL=0.008787565 WHOLE_CRACK_OPENING_MIN_MM=0
+G2_MATERIAL_SIF_PASS=1 KI=0.195982362 KII=+0.00314997025 MPa sqrt(m)/kN, COD 0.194259931 / +0.00310165837, C=0.000221801656 mm/N
+IDENTITY H1 vs M0: K 0 u 0 SIF 0 energy 0 reactions 0 compliance 0 MTS 0 deg bitwise=1
+STAGE S3_IDENTITY PASS
+G2_MATERIAL_SIF_PASS=1 KI=0.198124002 KII=+0.00198250221 MPa sqrt(m)/kN, COD 0.19638245 / +0.00194905341, C=0.000225017465 mm/N
+STAGE S4_Msoft PASS
+G2_MATERIAL_SIF_PASS=1 KI=0.193074852 KII=+0.00386589271 MPa sqrt(m)/kN, COD 0.191378118 / +0.00380867702, C=0.000219449514 mm/N
+STAGE S4_Mstiff PASS
+RATIO M0     r=1    R_EDI=1.000000 R_COD=1.000000 R_J=1.000000 U_R=0 resolved=0 (cons U=0.035 resolved=0) KI/KI_H1=1.000000 KII/KII_H1=1.000000 KII_res=1 psi=0.9208 deg MTS=-1.84069 dMTS=+0.00000(U 0) C/C_H1=1.000000 CMOD/CMOD_H1=1.000000
+RATIO Msoft  r=0.5  R_EDI=1.021813 R_COD=1.021812 R_J=1.021806 U_R=1.3e-06 resolved=1 (cons U=0.0358 resolved=0) KI/KI_H1=1.010928 KII/KII_H1=0.629372 KII_res=1 psi=0.5733 deg MTS=-1.14638 dMTS=+0.69431(U 0.0028) C/C_H1=1.014499 CMOD/CMOD_H1=0.997192
+RATIO Mstiff r=2    R_EDI=0.970687 R_COD=0.970687 R_J=0.970692 U_R=4.97e-08 resolved=1 (cons U=0.034 resolved=0) KI/KI_H1=0.985164 KII/KII_H1=1.227279 KII_res=1 psi=1.1471 deg MTS=-2.29230 dMTS=-0.45161(U 0.0017) C/C_H1=0.989395 CMOD/CMOD_H1=0.994473
+H1: KI=0.195982362 KII=+0.003149970 per kN, G_1N=1.175571e-08 N/mm, MTS=-1.84069 deg, C=2.218017e-04 mm/N, CMOD=3.739591e-05 mm, KII_res=1
+STAGE S5_RATIOS PASS

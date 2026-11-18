@@ -1,0 +1,41 @@
+# G2 material contrast: run log and HOLD investigations (Issue #33)
+
+Every formal run writes a new `outputs/g2_material_contrast_v1/run_<time>/`. Failed runs are kept unchanged.
+
+## Pre-run checks
+
+**Checkpoint integrity test (PR #32 controller, dry):**
+- Command: `run_g2_trajectory.ps1 … -ChainDir .\outputs\g2_trajectory_chain_v1_attempt2`
+- Result: `DRY_PREFLIGHT_STEP_CAP`, States verified through 2, re-audit 34/34, `G2_TRAJECTORY_DRY_NO_MESH_NO_FEM_NO_FILES=1`.
+- The 8 chain files are byte-identical before and after.
+
+## Run A: `run_20261119_003303_004`, HEAD `66f25d3`, HOLD (harness)
+
+- **Stage:** S0 SOURCE, the first statement after the folder was created. Nothing was computed; only the console log, `LEDGER.json` and `SHA256SUMS.txt` were written.
+- **Message:** `G2Material:Release: MATLAB 2023a is not R2023a.`
+- **Cause:** `version('-release')` returns `'2023a'`, but the policy stores `"R2023a"`. The check compared the two strings literally. MATLAB itself was R2023a (launcher path `R2023a\bin\matlab.exe`).
+- **Fix:** record and compare `['R',version('-release')]`. No gate, tolerance, policy value or numerical code changed.
+- **Retry:** the next run goes to a new folder after this note is committed.
+
+## Run B: `run_20261119_003336_987`, HEAD `f1f1fdf`, crash (harness, my edit)
+
+- **Stage:** before S0. It crashed at the first `fprintf`, outside the `try` block, so only the console log was written and there is no ledger.
+- **Message:** `Unrecognized field name "policySHA256"`.
+- **Cause:** the run A fix appended a `%` comment to a line that also carried the `L.policySHA256=…` assignment, so the comment swallowed that assignment.
+- **Fix:** the assignment is restored on its own line. No numerical code, gate or policy changed.
+
+## Run C: `run_20261119_003430_660`, HEAD `e50e92f`, **GO** (accepted)
+
+- All stages S0–S5 PASS. This is the accepted evidence.
+- Reported in `G2_MATERIAL_CONTRAST_RESULTS.md`; figures come from the read-only report batch.
+
+## Run D: `run_20261119_004048_245`, HEAD `048877e`, HOLD (dirty source, guard working)
+
+- **Purpose:** deterministic replay of run C.
+- **What happened:** it was launched while sanitized evidence copies were still untracked under `matlab/g2/evidence/`. The S0 `G2Material:DirtySource` guard refused the run before any computation.
+- **Response:** commit the evidence, then replay from a clean tree (run E). No code changed.
+
+## Run E: `run_20261119_004115_174`, HEAD `08eacf7`, **GO** (replay)
+
+- All stages PASS.
+- `replay_compare.m` checks run E against run C record by record, with manifests verified. The phase map, all four cases (u, EDI, COD, compliance, CMOD), the benchmark errors and checks, and the ratio table are **bit-identical**.

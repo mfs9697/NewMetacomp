@@ -1,0 +1,40 @@
+  Columns 1 through 10
+
+    {'T3'}    {'T6'}    {'X3'}    {'X6'}    {'approvedForLEFM'}    {'collarOuterIDs'}    {'crackPolyline'}    {'elementRows'}    {'extraVertexNodes'}    {'extraVertexXY'}
+
+  Columns 11 through 19
+
+    {'geometryOnly'}    {'includeHoles'}    {'kinkNodeIDs'}    {'lowerBankT6'}    {'mirrorControl'}    {'nodalQ'}    {'physicalTipNode'}    {'plateXRange'}    {'qActiveT6Rows'}
+
+  Columns 20 through 22
+
+    {'tipNormal'}    {'tipTangent'}    {'upperBankT6'}
+
+  Columns 1 through 10
+
+    {'T3'}    {'T6'}    {'X3'}    {'X6'}    {'approvedForLEFM'}    {'collarOuterIDs'}    {'crackPolyline'}    {'elementRows'}    {'extraVertexNodes'}    {'extraVertexXY'}
+
+  Columns 11 through 19
+
+    {'geometryOnly'}    {'includeHoles'}    {'kinkNodeIDs'}    {'lowerBankT6'}    {'mirrorControl'}    {'nodalQ'}    {'physicalTipNode'}    {'plateXRange'}    {'qActiveT6Rows'}
+
+  Columns 20 through 22
+
+    {'tipNormal'}    {'tipTangent'}    {'upperBankT6'}
+
+X6 58161 nodes, T6 28625 elements
+hole 1: nodes |r-19.05|<1e-6: 76 (maxdev 1.78e-14); next nearest 0.01576 mm
+  T3 vertices on circle 76 (maxdev 1.78e-14), next 1.309; T6 midside on circle 0
+  hole-rim nodes 152 maxdev 1.6e-14, min r 6.34843
+hole 2: nodes |r-19.05|<1e-6: 76 (maxdev 2.13e-14); next nearest 0.01576 mm
+  T3 vertices on circle 76 (maxdev 2.13e-14), next 1.303; T6 midside on circle 0
+  hole-rim nodes 152 maxdev 1.6e-14, min r 6.34843
+hole 3: nodes |r-19.05|<1e-6: 76 (maxdev 2.13e-14); next nearest 0.01576 mm
+  T3 vertices on circle 76 (maxdev 2.13e-14), next 1.303; T6 midside on circle 0
+  hole-rim nodes 152 maxdev 1.69e-14, min r 6.34843
+  101.6000         0
+  101.6000   25.4000
+  102.4723   29.3037
+  103.4092   33.1925
+
+tip guide? fields with guide: 

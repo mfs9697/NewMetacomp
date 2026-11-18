@@ -1,0 +1,16 @@
+{
+  "schema": "NewMetacomp.G2.MaterialContrastLedger.v1",
+  "issue": 33,
+  "started": "2026-11-19 00:40:48",
+  "status": "HOLD",
+  "stages": [],
+  "physicalFractureGrowthProven": false,
+  "matlabRelease": "R2023a",
+  "policySHA256": "E60156F60DC8BAE05F2AB1B1A25BC93BD84CEDB7485591B01ADA2413D946A971",
+  "gitHead": "048877ee8a45b7c647611d0f4dfa8f50d5281c9b",
+  "hold": {
+    "identifier": "G2Material:DirtySource",
+    "message": "Uncommitted or untracked sources:\n?? matlab/g2/evidence/material_20261119/SHA256SUMS_original_outputs.txt\n?? matlab/g2/evidence/material_20261119/launcher/MAT_dry_preflight.log\n?? matlab/g2/evidence/material_20261119/launcher/MAT_formal1.log\n?? matlab/g2/evidence/material_20261119/launcher/MAT_formal2.log\n?? matlab/g2/evidence/material_20261119/launcher/MAT_formal3.log\n?? matlab/g2/evidence/material_20261119/launcher/MAT_report1.log\n?? matlab/g2/evidence/material_20261119/launcher/MAT_report2.log\n?? matlab/g2/evidence/material_20261119/report/material_EDI_vs_COD.png\n?? matlab/g2/evidence/material_20261119/report/material_annulus_zoom.png\n?? matlab/g2/evidence/material_20261119/report/material_benchmark_convergence.png\n?? matlab/g2/evidence/material_20261119/report/material_interface_tractions.png\n?? matlab/g2/evidence/material_20261119/report/material_phase_map.pdf\n?? matlab/g2/evidence/material_20261119/report/material_phase_map.png\n?? matlab/g2/evidence/material_20261119/report/material_ratios.pdf\n?? matlab/g2/evidence/material_20261119/report/material_ratios.png\n?? matlab/g2/evidence/material_20261119/report/material_report_console.log\n?? matlab/g2/evidence/material_20261119/report/material_results.csv\n?? matlab/g2/evidence/material_20261119/report/material_summary.json\n?? matlab/g2/evidence/material_20261119/run_A_HOLD_release_string/LEDGER.json\n?? matlab/g2/evidence/material_20261119/run_A_HOLD_release_string/SHA256SUMS.txt\n?? matlab/g2/evidence/material_20261119/run_A_HOLD_release_string/material_contrast_console.log\n?? matlab/g2/evidence/material_20261119/run_B_crash_policy_hash_line/material_contrast_console.log\n?? matlab/g2/evidence/material_20261119/run_C_GO/BENCHMARK.mat.manifest.json\n?? matlab/g2/evidence/material_20261119/run_C_GO/CASE_H1.mat.manifest.json\n?? matlab/g2/evidence/material_20261119/run_C_GO/CASE_M0.mat.manifest.json\n?? matlab/g2/evidence/material_20261119/run_C_GO/CASE_Msoft.mat.manifest.json\n?? matlab/g2/evidence/material_20261119/run_C_GO/CASE_Mstiff.mat.manifest.json\n?? matlab/g2/evidence/material_20261119/run_C_GO/LEDGER.json\n?? matlab/g2/evidence/material_20261119/run_C_GO/PHASE_MAP.mat.manifest.json\n?? matlab/g2/evidence/material_20261119/run_C_GO/SHA256SUMS.txt\n?? matlab/g2/evidence/material_20261119/run_C_GO/material_contrast_console.log\n"
+  },
+  "finished": "2026-11-19 00:40:48"
+}

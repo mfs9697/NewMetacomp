@@ -1,0 +1,90 @@
+     4     2
+
+     3     2
+
+     5     2
+
+     2     1
+
+Elapsed time is 0.389476 seconds.
+PHASE_MAP_TOPOLOGICAL_OK
+16347 matrix + 12278 reinforcement elements; chords per circle [76 76 76].
+Elapsed time is 0.416590 seconds.
+   1
+
+                            noStraddle: 1
+                   labelsMatchGeometry: 1
+         interfaceChordsTwoOwnersMixed: 1
+                interfaceMidsideShared: 1
+                     noOtherMixedEdges: 1
+                     noVoidPenetration: 1
+                   annulusAreaIdentity: 1
+                    domainAreaIdentity: 1
+                       matrixConnected: 1
+                        bandsConnected: 1
+    coincidentNodesOnlyRegisteredTwins: 1
+                    tipGuideMatrixOnly: 1
+                    qSupportMatrixOnly: 1
+
+                      straddlingElements: 0
+                         labelMismatches: 0
+                              mixedEdges: 228
+                         interfaceChords: 228
+                        nodesInsideVoids: 0
+                         annulusArea_mm2: [3x1 double]
+                  annulusPolygonArea_mm2: [3x1 double]
+                  annulusNominalArea_mm2: [3x1 double]
+                       annulusAreaRelErr: 3.3697e-16
+                     polygonVsNominalRel: [3x1 double]
+                        domainAreaRelErr: 1.4149e-16
+                          bandComponents: 3
+                         coincidentPairs: 184
+             unregisteredCoincidentPairs: 0
+    reinforcementNodeMinDistanceToTip_mm: 42.1416
+                           qClearance_mm: 39.5416
+                                  counts: [16347 12278]
+                         chordsPerCircle: [76 76 76]
+                   holeVerticesPerCircle: [152 152 152]
+
+PHASE_NEG N1_swapped_labels                    mapper=1 (PHASE_MAP_TOPOLOGICAL_OK) verifier=0 [labelsMatchGeometry,annulusAreaIdentity,matrixConnected,bandsConnected,tipGuideMatrixOnly,qSupportMatrixOnly] -> rejected=1
+PHASE_NEG N2_band_element_relabelled_matrix    mapper=1 (PHASE_MAP_TOPOLOGICAL_OK) verifier=0 [labelsMatchGeometry,interfaceChordsTwoOwnersMixed,noOtherMixedEdges,annulusAreaIdentity] -> rejected=1
+PHASE_NEG N3_matrix_element_relabelled_band    mapper=1 (PHASE_MAP_TOPOLOGICAL_OK) verifier=0 [labelsMatchGeometry,interfaceChordsTwoOwnersMixed,noOtherMixedEdges,annulusAreaIdentity] -> rejected=1
+PHASE_NEG N4_detached_interface                mapper=0 (HOLD_INTERFACE_DUPLICATE_ANGLE) verifier=0 [interfaceChordsTwoOwnersMixed,noOtherMixedEdges,coincidentNodesOnlyRegisteredTwins] -> rejected=1
+PHASE_NEG N5_nonconforming_interface           mapper=0 (HOLD_INTERFACE_NONCONFORMING) verifier=0 [noStraddle,labelsMatchGeometry,interfaceChordsTwoOwnersMixed,noOtherMixedEdges,annulusAreaIdentity] -> rejected=1
+PHASE_NEG N6_filled_void                       mapper=1 (PHASE_MAP_TOPOLOGICAL_OK) verifier=0 [noVoidPenetration,annulusAreaIdentity,domainAreaIdentity,coincidentNodesOnlyRegisteredTwins] -> rejected=1
+PHASE_NEG N7_q_domain_crossing_band            mapper=1 (PHASE_MAP_TOPOLOGICAL_OK) verifier=0 [qSupportMatrixOnly] -> rejected=1
+PHASE_NEG N9_band_label_in_tip_guide           mapper=1 (PHASE_MAP_TOPOLOGICAL_OK) verifier=0 [labelsMatchGeometry,noOtherMixedEdges,annulusAreaIdentity,bandsConnected,tipGuideMatrixOnly] -> rejected=1
+G2_MATERIAL_PHASE_NEGATIVES_PASS=1 (8 cases)
+Elapsed time is 1.765705 seconds.
+BENCH_EXACT_SELFCHECK max 6.08e-10, residual max 2.65e-12
+BENCH_MESH Hmax=4.80 T6=1046 nodes=2180 matrix/band=922/124 chords=24
+BENCH ratio=0.5 Hmax=4.80 e_u=0.01861 e_U=0.002353 e_T=0.05789 sides=0.0973 res=1.5e-15 PD=1 balance=2.7e-14
+BENCH ratio=2 Hmax=4.80 e_u=0.01151 e_U=0.0002523 e_T=0.0669 sides=0.03578 res=1.5e-15 PD=1 balance=7.2e-15
+BENCH ratio=10 Hmax=4.80 e_u=0.00421 e_U=0.002192 e_T=0.06507 sides=0.04576 res=1.5e-15 PD=1 balance=1e-14
+BENCH_MESH Hmax=2.40 T6=4218 nodes=8600 matrix/band=3830/388 chords=48
+BENCH ratio=0.5 Hmax=2.40 e_u=0.00932 e_U=0.001147 e_T=0.02316 sides=0.03397 res=2.2e-15 PD=1 balance=6.5e-14
+BENCH ratio=2 Hmax=2.40 e_u=0.005849 e_U=0.0003685 e_T=0.02785 sides=0.01109 res=2.1e-15 PD=1 balance=2.2e-14
+BENCH ratio=10 Hmax=2.40 e_u=0.002157 e_U=0.0004204 e_T=0.02119 sides=0.01436 res=2.1e-15 PD=1 balance=1.7e-14
+BENCH_IDENTITY u=0 K=0  REFERENCE_ASSEMBLY=2.49e-15
+BENCH_NEG swapped e_u=0.237 e_U=0.731 e_T=0.187 | detached e_u=0.333 e_U=0.0924 jump=0.00849 mapper=HOLD_INTERFACE_DUPLICATE_ANGLE verifier=0
+G2_MATERIAL_BENCHMARK_PASS=0 (11/14 checks)
+Elapsed time is 3.449405 seconds.
+       exactFieldSelfConsistent: 1
+             finestDisplacement: 0
+                   finestEnergy: 1
+        finestInterfaceTraction: 0
+                  observedOrder: 0
+               monotoneDecrease: 1
+                 finestResidual: 1
+         finestPositiveDefinite: 1
+    finestInterfaceNodalBalance: 1
+           finestEnergyIdentity: 1
+                 identityRatio1: 1
+              referenceAssembly: 1
+           negativeSwappedFails: 1
+          negativeDetachedFails: 1
+
+    {'finestDisplacement'     }
+    {'finestInterfaceTraction'}
+    {'observedOrder'          }
+
