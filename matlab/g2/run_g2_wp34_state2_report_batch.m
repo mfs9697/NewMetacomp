@@ -74,7 +74,7 @@ exportgraphics(f2,fullfile(folder,'state2_two_kink_zoom.png'),'Resolution',220);
 f3=figure('Visible','off','Position',[0 0 900 900],'Color','w');
 plot(P(:,1),P(:,2),'-o','Color',crackC,'LineWidth',1.6,'MarkerSize',5,'MarkerFaceColor',crackC);hold on;
 for k=1:3,plot(hx(k)+hr(k)*cos(ph),hy(k)+hr(k)*sin(ph),'Color',ink,'LineWidth',1);end
-yline(0,'Color',ink);axis equal;xlim([40 220]);ylim([-5 130]);grid on;xlabel('x (mm)');ylabel('y (mm)');
+yline(0,'Color',ink);xlim([40 220]);ylim([-5 130]);daspect([1 1 1]);grid on;xlabel('x (mm)');ylabel('y (mm)');
 text(P(2,1)+1,P(2,2),'tip 0','FontSize',9);text(P(3,1)+1,P(3,2),'State 1','FontSize',9);text(P(4,1)+1,P(4,2),'State 2','FontSize',9);
 title('Idealized numerical crack path, States 0-2 (not an experimental path)');
 exportgraphics(f3,fullfile(folder,'state2_trajectory.png'),'Resolution',200);close(f3);
