@@ -12,7 +12,10 @@
 
 The WP3.1 runs used the working tree that was then committed unchanged. Replay from committed code is part of WP3.3 (R1).
 
-**Scope.** This file covers WP3.0 and WP3.1 only. WP3.2 (kinked-tip SIF) and WP3.3 (one-step restart) are reported in the stacked PR.
+**Scope.**
+- WP3.0 and WP3.1 are in PR #26.
+- WP3.2 (kinked-tip SIF) and WP3.3 (one-step restart) are in the stacked PR on branch `research/g2-wp3-kinked-sif-restart-20261118`, sections below.
+- The WP3.2–3 code was committed at `b2335b7` before the WP3.3 run. WP3.3's replay rebuilt the WP3.1 mesh from that committed code (R1).
 
 **Nature of the result.**
 - This is a **numerical geometry trial** for the declared idealized BVP: a provisional 4 mm increment in the MTS direction of the WP2 idealized SIFs.
@@ -27,7 +30,14 @@ The WP3.1 runs used the working tree that was then committed unchanged. Replay f
 | WP3.1 negative controls N1–N9 (10 corruptions) | **all detected**; baseline passes | `g2_wp3_auditor_controls_run_20261118_183957_058` |
 | WP3.1 mirrored geometry-only control, +12.5957° | join 13/13, audit 34/34 (no sign dependence) | `g2_wp3_kinked_mesh_run_20261118_184040_732_famA_mirror`, `g2_wp3_kinked_audit_run_20261118_184125_271` |
 
+| WP3.1 family B, exterior refinement (for C4 only) | join 13/13, audit 34/34 | `g2_wp3_kinked_mesh_run_20261118_184957_278_famB`, `g2_wp3_kinked_audit_run_20261118_185041_395` |
+| WP3.2 MK rotated manufactured fields | **GO** | `g2_wp3_kinked_verification_run_20261118_185347_889` |
+| WP3.2 kinked-tip Cornell SIF (C1–C4, M2–M4, QK) | **GO** | `g2_wp3_kinked_sif_run_20261118_185423_469` |
+| WP3.3 one-step transaction, replay, restart, controls (R1–R5) | **GO** | `g2_wp3_state_run_20261118_185808_963` |
+
 No attempt failed in WP3.0–3.1, and no gate, threshold, Δa or θ was changed.
+
+**One failed attempt, in WP3.2.** The first MK run (`FAILED_ATTEMPT_MK_rim_count_assert_run_20261118_185303_922`) stopped before computing any number. My new setup assertion expected 129 Dirichlet rim nodes. The two crack-entry corners lie on the crack line and are free face nodes, exactly as in WP2 M1, so the correct count is 127. I fixed the assertion to require 127 and to check that the only excluded rim-radius nodes are those two entries. This was a defect in the test code; no tolerance or method was changed.
 
 ## WP3.0 analytic MTS
 
@@ -122,9 +132,75 @@ This confirms that their earlier PASS verdicts cannot certify a kinked mesh.
 | N8b | 100° fold | G10 (+ many) |
 | N9 | straight WP2 family-A mesh with the kinked polyline | G5, G6, G8, G9 |
 
+## WP3.2 kinked-tip signed SIF (idealized BVP, numerical)
+
+**Setup.**
+- **BVP:** identical to WP2: pin (25.4, 0), roller (482.6, 0), P = 1 N downward at (254, 203.2), t = 12.7 mm, E = 3268.115 MPa.
+- **Frame:** t1 = (0.21806989, 0.97593315), n1 = R(+90°)t1, upper face on +n1.
+- **EDI:** `g2_sif_interaction` with tdir = t1 and the five WP2 annuli about tip1.
+- **COD:** the new `g2_sif_cod_banks`. It uses the saved bank IDs, takes only final-segment twins (32 pairs in 0.1–1.5 mm) and combines nothing across the kink.
+- **Binding:** the batch refuses a mesh whose MAT SHA-256 does not match a passing kink-aware audit.
+
+**MK, manufactured rotated Williams fields** (rotated block, exact rim displacements in the t1/n1 frame). WP2 thresholds, unchanged:
+
+| Case (K_I, K_II, T) | EDI error | COD error | Path spread | J identity | 4×4 vs 6×6 | K_II sign |
+|---|---|---|---|---|---|---|
+| (1, 0, 0) | 1.03e−3 | 7.75e−3 | 1.6e−6 | 4.1e−7 | 3.5e−13 | — |
+| (0, 1, 0) | 4.10e−4 | 1.31e−2 | 2.6e−6 | 2.7e−6 | 3.6e−13 | ✓ |
+| (0, −1, 0) | 4.10e−4 | 1.31e−2 | 2.6e−6 | 2.7e−6 | 3.6e−13 | ✓ |
+| (0.6, −0.8, 0) | 6.11e−4 | 1.05e−2 | 2.1e−6 | 1.9e−6 | 3.0e−13 | ✓ |
+| (1, 0, 0.2) | 1.17e−3 | 7.64e−3 | 1.6e−6 | 6.7e−7 | 3.5e−13 | — |
+| (0.6, −0.8, −0.2) | 4.77e−4 | 1.05e−2 | 2.1e−6 | 2.6e−6 | 2.7e−13 | ✓ |
+| criterion | ≤ 1 % | ≤ 3 % | ≤ 0.5 % | ≤ 0.5 % | ≤ 0.1 % | correct |
+
+The errors match the unrotated WP2 M1 values, so the rotation is handled without loss.
+
+**Cornell kinked tip:**
+
+| ID | Result | Criterion |
+|---|---|---|
+| C1 equilibrium | residual ≤ 1.4e−12; statics ≤ 1.1e−12 | 1e−8 |
+| C2 EDI versus COD | 0.898 % K_ref | 3 % |
+| M2 path spread (5 annuli) | 2.2e−6 | 0.5 % |
+| M3 J identity | 1.16e−5 | 0.5 % |
+| M4 quadrature | 3.8e−13 | 0.1 % |
+| C3 plane stress / plane strain / ν 0.30 | 1.0e−5 (A), 3.2e−6 (B) | 0.5 % |
+| C4 family A (28,421 T3) versus family B (41,082 T3) | 1.21e−5 | 1 % |
+| QK maximum q-support radius about tip1 | 2.7692 mm (kink at 4 mm) | < 2.99639 mm |
+
+**Signed SIF at the kinked tip** (P = 1 kN on 12.7 mm, plane stress, idealized supports, frame t1/n1; numerical, not experimental):
+
+| | K_I (MPa·√m per kN) | K_II (MPa·√m per kN) | K_II/K_I |
+|---|---|---|---|
+| EDI, family A | **0.182585** | **+0.001514** | 0.00829 |
+| EDI, family B | 0.182587 | +0.001511 | 0.00828 |
+| COD, family A | 0.180979 | +0.001483 | — |
+| straight starter tip (WP2, for comparison) | 0.166436 | +0.018827 | 0.1131 |
+
+- After the 4 mm MTS kink, K_II/K_I falls from 0.113 to 0.0083, with the same sign.
+- This agrees with the local-symmetry expectation, but it was not a criterion and is not used as a check.
+- COD is about 0.9 % below EDI, as in WP2: the apparent K(r) of non-singular T6 elements falls for r < 0.3 mm (`kinked_cod_extrapolation.png`). The window was not changed.
+
+## WP3.3 one-step transaction and restart
+
+- **Transaction.** `g2_wp3_one_step` runs: parent hash → MTS forecast → K1–K10 → family-A mesh → save → independent audit of the saved MAT → solve, EDI/COD and the WP3.2 criteria → child state in a new folder.
+- **States.** `state.mat` plus a recorded `state.sha256`, via `g2_wp3_state_io`.
+- **State 0** is the WP2 accepted straight crack with the preregistered six-digit K. The full-precision WP2 evidence values (0.16643588, 0.01882709) round to them; this is checked. State 0 SHA-256: `9AA632BD…AA6D`.
+- **Restart.** `g2_wp3_restart` re-verifies the state and mesh hashes and re-solves.
+
+| ID | Result |
+|---|---|
+| R1 replay | the second transaction from state 0 is accepted. Mesh arrays and banks are isequal, and K differs by 0. The transaction mesh is also **isequal to the audited WP3.1 family-A mesh**, so the committed code (`b2335b7`) reproduces the WP3.1 evidence. |
+| R2 restart | `RESTART_VERIFIED`; re-solved K differs from the recorded value by 0. Next forecast θ₂ = **−0.9498°** (status OK), **recorded only, not executed** |
+| R3 integrity | a one-byte flip in `state.mat` and a wrong recorded hash both give `HOLD_STATE_INTEGRITY` for restart and for the transaction; nothing is written |
+| R4 frame | abs(t − t1) = 0 and abs(tip − tip1) = 0; K_I = 0.182585 > 0 |
+| R5 | a transaction from state 1 gives `HOLD_SECOND_STEP_NOT_AUTHORIZED`, and one without the token gives `HOLD_NOT_AUTHORIZED`; neither writes a folder |
+
+State 1 is tagged `idealized_propagation_demo = true` and `physical_onset = false`. State 0 was verified unchanged after the transaction, by hashing every file in its folder before and after.
+
 ## Not established here
 
-- No SIF on the kinked mesh (WP3.2) and no restart (WP3.3) in this PR.
+- No second step and no multi-step campaign: they need separate authorization.
 - Tip-size convergence is not run, because the frozen p010 scale is fixed.
 - The angular envelope beyond ±12.60° is not qualified.
 - No physical onset, toughness or experimental path.
@@ -142,5 +218,11 @@ The individual MATLAB calls (path: `matlab/g2` and `matlab/g2/vendor_p010_a14d88
 - `run_g2_wp3_kinked_audit_batch('<mesh dir>','<P0 dir>')`
 - `check_g2_kinked_auditor_controls('<mesh dir>','<P0 dir>','<straight mesh dir>')`
 - the mirror: as above with `'famA_mirror',true`
+
+WP3.2–3.3 (same path setup):
+- family B: `run_g2_wp3_kinked_mesh_batch('<manifest.mat>','famB',false,'BottomVertices_mm',[25.4 482.6],'TopVertices_mm',254,'TipGuideRadius_mm',15,'TipGuideHface_mm',1.0,'Hmax_mm',4,'GuideHface_mm',1.0,'Hedge_mm',0.30,'MaxT3Elements',80000)`, then its audit
+- `run_g2_wp3_kinked_verification_batch('<manifest.mat>')`
+- `run_g2_wp3_kinked_sif_batch('<famA mesh>','<famA audit>','<famB mesh>','<famB audit>')`
+- `run_g2_wp3_one_step_restart_batch('<P0 dir>','<manifest.mat>','<famA mesh>')`
 
 MAT files stay in the gitignored `outputs/`. Their SHA-256 values are in `evidence/wp3_20261118/SHA256SUMS_original_outputs.txt`. Committed logs and JSON have local paths replaced by `<repo>`.

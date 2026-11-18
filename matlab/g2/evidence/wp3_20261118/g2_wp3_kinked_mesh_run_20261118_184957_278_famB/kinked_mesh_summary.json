@@ -1,0 +1,253 @@
+{
+  "pass": true,
+  "stage": "KINKED_PROTECTED_MESH_JOIN_PASS",
+  "familyTag": "famB",
+  "mirror": false,
+  "manifestMAT": "<repo>\\outputs\\g2_wp3_mts\\run_20261118_182426_677\\WP3_REFERENCE_MANIFEST.mat",
+  "manifestSHA256": "4E941447D71481B4D77DE867F1CC8FD855B1FC9E2C7F598154C05926504BD05E",
+  "exteriorOptions": [
+    "BottomVertices_mm",
+    [
+      25.4,
+      482.6
+    ],
+    "TopVertices_mm",
+    254,
+    "TipGuideRadius_mm",
+    15,
+    "TipGuideHface_mm",
+    1,
+    "Hmax_mm",
+    4,
+    "GuideHface_mm",
+    1,
+    "Hedge_mm",
+    0.3,
+    "MaxT3Elements",
+    80000
+  ],
+  "gates": {
+    "kinkedP010BlockPass": true,
+    "kinkedExteriorPass": true,
+    "rimCoordinatesCoincide": true,
+    "blockRowsAndNodesUnchanged": true,
+    "allT3AreasPositive": true,
+    "globalMinAngleAtLeast20": true,
+    "globalNeighborRatioAtMost1p8": true,
+    "noNonmanifoldEdges": true,
+    "coreCollarSeam64TwoOwners": true,
+    "collarExteriorSeam64TwoOwners": true,
+    "distinctBanksOnPolylineMeetOnlyAtTip": true,
+    "qSupport2443InsideCore": true,
+    "T3BudgetRespected": true
+  },
+  "failedGates": [],
+  "summary": {
+    "T3elements": 41082,
+    "T3nodes": 21070,
+    "T6nodes": 83224,
+    "coreT3": 2788,
+    "collarT3": 128,
+    "exteriorT3": 38166,
+    "minAngle_deg": 29.898809222532677,
+    "minAngleAt_mm": [
+      101.83780238194117,
+      14.243639209702772
+    ],
+    "maxNeighborRatio": 1.5918285508617163,
+    "maxRatioAt_mm": [
+      102.44482419304086,
+      29.273870619264116
+    ],
+    "rimSeamEdges": 64,
+    "coreSeamEdges": 64,
+    "crackBankEdgesPerSide": [
+      108,
+      108
+    ],
+    "bankT6NodesPerSide": [
+      217,
+      217
+    ],
+    "qActiveT6": 2443,
+    "tip_mm": [
+      102.47227956707886,
+      29.303732618514836
+    ],
+    "tangent": [
+      0.21806989176971572,
+      0.97593315462870944
+    ],
+    "normal": [
+      -0.97593315462870944,
+      0.21806989176971572
+    ],
+    "tipNode": 1114,
+    "kinkNodeIDs": [
+      1522,
+      1523
+    ],
+    "rimCoordinateMismatch_mm": 0,
+    "polyline_mm": [
+      [
+        101.6,
+        0
+      ],
+      [
+        101.6,
+        25.4
+      ],
+      [
+        102.47227956707886,
+        29.303732618514836
+      ]
+    ],
+    "turn_deg": -12.595693701643361,
+    "exterior": {
+      "cadPolygonSimple": true,
+      "cadPolygonSignedArea": 103190.39896728724,
+      "cadFaces": 5,
+      "nativeMeshingSeconds": 1.8540554,
+      "nativeT3": 38166,
+      "nativeNodes": 19616,
+      "rimNodeCount": 65,
+      "rimVertexMaxDeviation_mm": 0,
+      "lipOffsetMaxDistance_mm": 3.5527136788005009E-15,
+      "lipInteriorNodesPerSegment": [
+        [
+          77,
+          77
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "lipMaxStationGap_mm": [
+        0.35091674676907303,
+        0.35000000000000142
+      ],
+      "lipPairs": 81,
+      "lipStationMismatch_mm": 0.000916746769071608,
+      "channelHalfWidth_mm": 0.02,
+      "rimRadius_mm": 3.3,
+      "rimChord_mm": 0.3238466505609589,
+      "lipCADEdges": [
+        3,
+        3
+      ],
+      "controls": {
+        "Hmin_mm": 0.12,
+        "Hmax_mm": 4,
+        "Hgrad": 1.12,
+        "lipHedge_mm": 0.3,
+        "guideHface_mm": 1,
+        "rimHedge_mm": 0.3238466505609589,
+        "tipGuideRadius_mm": 15,
+        "tipGuideHface_mm": 1
+      },
+      "PDEToolboxVersion": "3.10"
+    },
+    "block": {
+      "tip_mm": [
+        102.47227956707886,
+        29.303732618514836
+      ],
+      "tangent": [
+        0.21806989176971572,
+        0.97593315462870944
+      ],
+      "normal": [
+        -0.97593315462870944,
+        0.21806989176971572
+      ],
+      "turn_deg": -12.595693701643361,
+      "polyline_mm": [
+        [
+          101.6,
+          0
+        ],
+        [
+          101.6,
+          25.4
+        ],
+        [
+          102.47227956707886,
+          29.303732618514836
+        ]
+      ],
+      "vendorTipError_mm": 0,
+      "innerRingAgreement_mm": 1.464821375527116E-14,
+      "entryAgreement_mm": 0,
+      "ringT3Elements": 2788,
+      "collarT3Elements": 128,
+      "regularBlockT3Nodes": 1519,
+      "regularBlockT6Nodes": 5953,
+      "minAngle_deg": 30.126847321223462,
+      "maxNeighborLongestEdgeRatio": 1.5918285508617163,
+      "qActiveT6Parents": 2443,
+      "qSupportMaxRadius_mm": 2.7691874098746756,
+      "p010CoreRadius_mm": 3,
+      "outerRimRadius_mm": 3.3,
+      "admissibility": {
+        "vertices": 3,
+        "segmentLengths_mm": [
+          25.4,
+          3.9999999999999996
+        ],
+        "turns_deg": -12.595693701643361,
+        "tangentDots": 0.97593315462870944,
+        "miterDenominators": 1.9759331546287093,
+        "miterFactors": 1.0060715628867578,
+        "tip_mm": [
+          102.47227956707886,
+          29.303732618514836
+        ],
+        "t": [
+          0.21806989176971572,
+          0.97593315462870944
+        ],
+        "n": [
+          -0.97593315462870944,
+          0.21806989176971572
+        ],
+        "distTipToEarlierSegments_mm": 4,
+        "rimBandMargin_mm": 0.68000000000000016,
+        "rimChord_mm": 0.3238466505609589,
+        "minSegmentHoleWallClearance_mm": 57.967781881831236,
+        "minSegmentGuideClearance_mm": 45.26778188183124,
+        "collarMargins_mm": [
+          54.667781881831239,
+          41.967781881831243,
+          26.003732618514835
+        ],
+        "tipGuideMargins_mm": [
+          14.303732618514836,
+          30.26778188183124
+        ],
+        "nonadjacentSeparation_mm": null,
+        "inheritedGuardMinKinkTangentDot": 0.98,
+        "inheritedGuardWouldReject": true
+      }
+    }
+  },
+  "exception": "",
+  "message": "Joined; the independent kink-aware audit is still required.",
+  "blockStage": "KINKED_P010_BLOCK_PASS",
+  "blockGates": {
+    "vendorLocal15of15": true,
+    "rotated2788T3And64SectorsMatchFrame": true,
+    "kinkAdmissibleK1toK10": true,
+    "analyticCollar128T3And65OuterNodes": true,
+    "allRegularT3AreasPositive": true,
+    "regularT3MinAngleAtLeast20": true,
+    "regularT3NeighborRatioAtMost1p8": true,
+    "exact64TwoOwnerInnerSeamEdges": true,
+    "exact64OneOwnerOuterRimEdges": true,
+    "T6HasEveryUniqueMidsideOnce": true,
+    "singlePhysicalTipCorrect": true,
+    "FEqSupport2443InsideKernel": true
+  },
+  "exteriorStage": "KINKED_EXTERIOR_RIM_CAVITY_READY",
+  "exteriorMessage": "Kinked exterior built and collapsed; NOT yet joined to the p010 block."
+}
