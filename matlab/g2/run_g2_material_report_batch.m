@@ -113,7 +113,7 @@ for m=1:2
  xlabel(a,'q annulus (mm) / blind COD');
  if m==1,ylabel(a,'K_I (MPa\surdm per kN)');title(a,'K_I: five EDI contours and blind COD','FontWeight','normal');
  else,ylabel(a,'K_{II} (MPa\surdm per kN)');title(a,'K_{II}: five EDI contours and blind COD','FontWeight','normal');end
- if m==1,legend(a,flatten_legend(ids),'Location','east','Box','off');end
+ if m==1,legend(a,flatten_legend(ids),'Location','westoutside','Box','off');end
 end
 exportgraphics(f,fullfile(folder,'material_EDI_vs_COD.png'),'Resolution',180);close(f);
 % ---------- figure 5: interface tractions from both sides (hole 1), Msoft and Mstiff
