@@ -165,12 +165,14 @@ end
 function c=run_case(id,desc,fn,expected,mustNotExist)
 c=struct('id',id,'description',desc,'expected',{expected},'outcome','','message','','pass',false, ...
  'forbiddenPathsCreated',{{}},'newStatesCreated',NaN,'reviewsReused',NaN,'statesReused',NaN);
+L=get(0,'DiaryFile');on=strcmp(get(0,'Diary'),'on');
 try
  R=fn();c.outcome=R.stage;c.message=R.message;
  c.newStatesCreated=R.newStatesCreated;c.reviewsReused=R.reviewsReused;c.statesReused=R.statesReused;
 catch ME
  c.outcome=ME.identifier;c.message=ME.message;
 end
+if on,diary(L);end % the controller's run-log diary switches the caller's diary off
 made={};
 for k=1:numel(mustNotExist)
  if ~isempty(dir(mustNotExist{k})),made{end+1}=mustNotExist{k};end %#ok<AGROW>
