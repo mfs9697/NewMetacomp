@@ -14,6 +14,7 @@ param(
   [switch]$ForbidNewComputation
 )
 $ErrorActionPreference='Stop'
+if ($MinFreeGiB -lt 5.0) { throw 'HOLD_RAM_POLICY: the 5 GiB source guard cannot be reduced.' }
 $root=(Resolve-Path (Join-Path $PSScriptRoot '..\..')).Path
 $source=(Resolve-Path -LiteralPath $SeedStepDir -ErrorAction Stop).Path
 $p0=(Resolve-Path -LiteralPath $P0RunDir -ErrorAction Stop).Path
