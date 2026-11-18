@@ -16,7 +16,9 @@ p0=fullfile(p0dir,'P010_ISOLATED_REGULAR_ONLY.mat');
 outDir=char(outDir);
 assert(~exist(outDir,'dir'),'G2Faults:Exists','outDir must be new: %s',outDir);mkdir(outDir);
 work=fullfile(outDir,'work');mkdir(work);
-originals={seed,seedB,state0,p0dir};before=hash_tree(originals);
+originals={seed,seedB,state0,p0dir};
+if isfolder(fullfile(repo,'outputs','g2_trajectory_chain_v1')),originals{end+1}=fullfile(repo,'outputs','g2_trajectory_chain_v1');end
+before=hash_tree(originals);
 policyFile=fullfile(here,'G2_TRAJECTORY_POLICY_v1.json');shaP=g2_sha256_file(policyFile);
 auth=struct('token','CORNELL_G2_BOUNDED_NUMERICAL_V1','policySHA256',shaP,'maxStateIndex',2);
 saved=path;restorePath=onCleanup(@()path(saved)); %#ok<NASGU>
@@ -150,6 +152,36 @@ s23=copy_seed(seed,fullfile(work,'F23_seed'));p23=fullfile(work,'F23_p0');mkdir(
 C{end+1}=run_case('F23','chain equal to the seed folder (Run)',@()runF(s23,p0,s23,auth),{'G2Chain:SelfReference'},{fullfile(s23,'ROOT.mat')});
 C{end+1}=run_case('F23','chain inside the seed folder (Run)',@()runF(s23,p0,fullfile(s23,'chain'),auth),{'G2Chain:SelfReference'},{fullfile(s23,'chain')});
 C{end+1}=run_case('F23','chain inside the P0 folder (Run)',@()runF(seed,p23m,fullfile(p23,'chain'),auth),{'G2Chain:SelfReference'},{fullfile(p23,'chain')});
+
+% ---- F24 POSITIVE promotion path (SYNTHETIC K, NOT A RESULT). Uses a COPY of the genuine
+% four-vertex mesh saved by the first State 2 attempt (HOLD-1, 34/34 audited) so that the
+% review re-audit, local_child_state (D7), State save and State reuse code paths run in
+% MATLAB before any new numerical attempt. All K values in this review are fabricated.
+hm=fullfile(repo,'outputs','g2_trajectory_chain_v1','STEP_002','KINKED_GEOMETRY_ONLY_candidate.mat');
+if isfile(hm)
+ Dh=load(hm);Ch=g2_kinked_mesh_auditor(Dh,fullfile(repo,'docs','research','crack-growth-gaps-2026','G2_SPECIMEN1_1990_GEOMETRY.json'),p0,4);
+ ch=mk('F24_chain');forge_review(fullfile(ch,'STEP_002'),hm,S1,rootHash,shaP,src,p0Hash,Pf,tnew,M.theta_deg,'consistent');
+ rf=fullfile(ch,'STEP_002','REVIEW.mat');[rv,~,okr]=g2_trajectory_record('read',rf);assert(okr);
+ delete(rf);delete([rf,'.manifest.json']);
+ rv.geometrySummary=Ch.summary;rv.meshSummary=struct('T3elements',Ch.summary.T3elements,'minAngle_deg',Ch.summary.minAngle_deg, ...
+  'maxNeighborRatio',Ch.summary.maxNeighborRatio);rv.note='SYNTHETIC K - WP3.4 F24 code-path test only, not a result';
+ g2_trajectory_record('write',rf,rv);
+ c=run_case('F24','synthetic positive promotion on the genuine 4-vertex mesh copy (Run)',@()runF(seed,p0,ch,auth),{'STEP_CAP'},{fullfile(ch,'STEP_003')});
+ st=fullfile(ch,'STEP_002','state');okState=false;
+ if isfolder(st)
+  [S2,~,oks]=g2_wp3_state_io('load',st);
+  okState=oks&&S2.stateIndex==2&&~isfield(S2,'KI_fullPrecisionWP2')&&startsWith(S2.Ksource,'g2_trajectory_sif_on_mesh')&& ...
+   ~S2.physicalFractureGrowthProven&&~S2.tipAccepted&&isequal(S2.crackPolyline_mm,Pf);
+  c.state2Fields=fieldnames(S2);
+ end
+ c.auditOfHoldMesh=sprintf('%d/%d',Ch.gatesPassed,Ch.gatesTotal);c.holdMeshSHA256=g2_sha256_file(hm);
+ c.pass=c.pass&&c.reviewsReused==1&&c.newStatesCreated==0&&okState&&Ch.pass;
+ fprintf('F24 promotion: reviewsReused %g, State 2 fields OK %d, hold-mesh audit %s -> %d\n',c.reviewsReused,okState,c.auditOfHoldMesh,c.pass);
+ C{end+1}=c;
+ C{end+1}=run_case('F24','rerun of the synthetic chain reuses State 2 (Run)',@()runF(seed,p0,ch,auth),{'STEP_CAP'},{fullfile(ch,'STEP_003')});
+ C{end}.pass=C{end}.pass&&C{end}.statesReused==1&&C{end}.newStatesCreated==0;
+ C{end+1}=run_case('F24','dry preflight of the synthetic chain',@()dry(seed,p0,ch),{'DRY_PREFLIGHT_STEP_CAP'},{fullfile(ch,'STEP_003')});
+end
 
 after=hash_tree(originals);
 origOK=isequal(before,after);

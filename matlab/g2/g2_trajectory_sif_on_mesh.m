@@ -14,7 +14,8 @@ assert(abs(norm(t)-1)<1e-10,'G2Trajectory:Tangent', ...
 thick=policy.bvp.thickness_mm;
 f=policy.bvp.P_N/thick;
 N=size(D.X6,1);
-nodeAt=@(xy)D.extraVertexNodes(vecnorm(D.extraVertexXY-xy,2,2)<1e-9);
+% WP3.4 HOLD-1 fix: jsondecode returns policy arrays as 2x1 columns; compare as rows.
+nodeAt=@(xy)D.extraVertexNodes(vecnorm(D.extraVertexXY-reshape(xy,1,2),2,2)<1e-9);
 pin=nodeAt(policy.bvp.pin_mm);
 roller=nodeAt(policy.bvp.roller_mm);
 loadNode=nodeAt(policy.bvp.load_mm);

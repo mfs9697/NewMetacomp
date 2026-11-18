@@ -27,7 +27,14 @@ try
 catch ME
  W.faultsException=getReport(ME,'extended','hyperlinks','off');fprintf(2,'FAULTS_EXCEPTION=%s\n',W.faultsException);
 end
-W.pass=isfield(W.synthetic,'pass')&&W.synthetic.pass&&isfield(W.faults,'pass')&&W.faults.pass;
+W.sifRegression=struct();W.sifRegressionException='';
+try
+ W.sifRegression=check_g2_trajectory_sif_regression();
+catch ME
+ W.sifRegressionException=getReport(ME,'extended','hyperlinks','off');fprintf(2,'SIFREG_EXCEPTION=%s\n',W.sifRegressionException);
+end
+W.pass=isfield(W.synthetic,'pass')&&W.synthetic.pass&&isfield(W.faults,'pass')&&W.faults.pass&& ...
+ isfield(W.sifRegression,'pass')&&W.sifRegression.pass;
 f=fopen(fullfile(folder,'controller_tests_summary.json'),'w');fwrite(f,jsonencode(W,'PrettyPrint',true),'char');fclose(f);
 fprintf('G2_WP34_CONTROLLER_TESTS_PASS=%d\nOUTDIR=%s\n',W.pass,folder);
 if ~W.pass,error('G2WP34:ControllerTestsHOLD','WP3.4 stage B HOLD (see %s).',folder);end
