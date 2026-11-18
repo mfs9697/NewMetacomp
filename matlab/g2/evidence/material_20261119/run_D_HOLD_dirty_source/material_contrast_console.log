@@ -1,0 +1,34 @@
+G2_MATERIAL_CONTRAST run <repo>\outputs\g2_material_contrast_v1\run_20261119_004048_245, MATLAB R2023a, policy E60156F60DC8BAE05F2AB1B1A25BC93BD84CEDB7485591B01ADA2413D946A971
+HOLD G2Material:DirtySource: Uncommitted or untracked sources:
+?? matlab/g2/evidence/material_20261119/SHA256SUMS_original_outputs.txt
+?? matlab/g2/evidence/material_20261119/launcher/MAT_dry_preflight.log
+?? matlab/g2/evidence/material_20261119/launcher/MAT_formal1.log
+?? matlab/g2/evidence/material_20261119/launcher/MAT_formal2.log
+?? matlab/g2/evidence/material_20261119/launcher/MAT_formal3.log
+?? matlab/g2/evidence/material_20261119/launcher/MAT_report1.log
+?? matlab/g2/evidence/material_20261119/launcher/MAT_report2.log
+?? matlab/g2/evidence/material_20261119/report/material_EDI_vs_COD.png
+?? matlab/g2/evidence/material_20261119/report/material_annulus_zoom.png
+?? matlab/g2/evidence/material_20261119/report/material_benchmark_convergence.png
+?? matlab/g2/evidence/material_20261119/report/material_interface_tractions.png
+?? matlab/g2/evidence/material_20261119/report/material_phase_map.pdf
+?? matlab/g2/evidence/material_20261119/report/material_phase_map.png
+?? matlab/g2/evidence/material_20261119/report/material_ratios.pdf
+?? matlab/g2/evidence/material_20261119/report/material_ratios.png
+?? matlab/g2/evidence/material_20261119/report/material_report_console.log
+?? matlab/g2/evidence/material_20261119/report/material_results.csv
+?? matlab/g2/evidence/material_20261119/report/material_summary.json
+?? matlab/g2/evidence/material_20261119/run_A_HOLD_release_string/LEDGER.json
+?? matlab/g2/evidence/material_20261119/run_A_HOLD_release_string/SHA256SUMS.txt
+?? matlab/g2/evidence/material_20261119/run_A_HOLD_release_string/material_contrast_console.log
+?? matlab/g2/evidence/material_20261119/run_B_crash_policy_hash_line/material_contrast_console.log
+?? matlab/g2/evidence/material_20261119/run_C_GO/BENCHMARK.mat.manifest.json
+?? matlab/g2/evidence/material_20261119/run_C_GO/CASE_H1.mat.manifest.json
+?? matlab/g2/evidence/material_20261119/run_C_GO/CASE_M0.mat.manifest.json
+?? matlab/g2/evidence/material_20261119/run_C_GO/CASE_Msoft.mat.manifest.json
+?? matlab/g2/evidence/material_20261119/run_C_GO/CASE_Mstiff.mat.manifest.json
+?? matlab/g2/evidence/material_20261119/run_C_GO/LEDGER.json
+?? matlab/g2/evidence/material_20261119/run_C_GO/PHASE_MAP.mat.manifest.json
+?? matlab/g2/evidence/material_20261119/run_C_GO/SHA256SUMS.txt
+?? matlab/g2/evidence/material_20261119/run_C_GO/material_contrast_console.log
+

@@ -34,3 +34,8 @@ Every formal run writes a new `outputs/g2_material_contrast_v1/run_<time>/`. Fai
 - **Purpose:** deterministic replay of run C.
 - **What happened:** it was launched while sanitized evidence copies were still untracked under `matlab/g2/evidence/`. The S0 `G2Material:DirtySource` guard refused the run before any computation.
 - **Response:** commit the evidence, then replay from a clean tree (run E). No code changed.
+
+## Run E: `run_20261119_004115_174`, HEAD `08eacf7`, **GO** (replay)
+
+- All stages PASS.
+- `replay_compare.m` checks run E against run C record by record, with manifests verified. The phase map, all four cases (u, EDI, COD, compliance, CMOD), the benchmark errors and checks, and the ratio table are **bit-identical**.
