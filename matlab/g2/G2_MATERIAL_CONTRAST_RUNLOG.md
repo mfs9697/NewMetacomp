@@ -16,3 +16,10 @@ Every formal run writes a new `outputs/g2_material_contrast_v1/run_<time>/`. Fai
 - **Cause:** `version('-release')` returns `'2023a'`, but the policy stores `"R2023a"`. The check compared the two strings literally. MATLAB itself was R2023a (launcher path `R2023a\bin\matlab.exe`).
 - **Fix:** record and compare `['R',version('-release')]`. No gate, tolerance, policy value or numerical code changed.
 - **Retry:** the next run goes to a new folder after this note is committed.
+
+## Run B: `run_20261119_003336_987`, HEAD `f1f1fdf`, crash (harness, my edit)
+
+- **Stage:** before S0. It crashed at the first `fprintf`, outside the `try` block, so only the console log was written and there is no ledger.
+- **Message:** `Unrecognized field name "policySHA256"`.
+- **Cause:** the run A fix appended a `%` comment to a line that also carried the `L.policySHA256=…` assignment, so the comment swallowed that assignment.
+- **Fix:** the assignment is restored on its own line. No numerical code, gate or policy changed.
