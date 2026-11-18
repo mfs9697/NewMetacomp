@@ -1,0 +1,82 @@
+{
+  "pass": true,
+  "stage": "P010_ISOLATED_CORNELL_REGULAR_BLOCK_PASS",
+  "date": "2026-11-18 16:36:57",
+  "outputDirectory": "<repo>\\outputs\\g2_p010_isolated\\run_20261118_163657_790",
+  "MATLABRelease": "2023a",
+  "pinnedUpstreamCommit": "a14d8872ab588ac551e41b4531bffee2dcd0ce2c",
+  "approvedForLEFM": false,
+  "globalMeshQualified": false,
+  "physicalSolvePerformed": false,
+  "gates": {
+    "source15of15": true,
+    "source2788T3And64Sectors": true,
+    "CornellThreeHolePlateClearances": true,
+    "analyticCollar128T3And65OuterEntryNodes": true,
+    "allRegularT3AreasPositive": true,
+    "regularT3MinAngleAtLeast20": true,
+    "regularT3NeighborRatioAtMost1p8": true,
+    "exact64TwoOwnerInnerSeamEdges": true,
+    "exact64OneOwnerOuterRimEdges": true,
+    "T6HasEveryUniqueMidsideOnce": true,
+    "singlePhysicalTipCorrect": true,
+    "FEqSupportParentsInsideP010": true,
+    "physicalSourceAndNoLEFM": true
+  },
+  "failedGates": [],
+  "summary": {
+    "upstreamSourceRef": "a14d8872ab588ac551e41b4531bffee2dcd0ce2c",
+    "upstreamSourceLocalGates": 15,
+    "upstreamSourceLocalGatesTotal": 15,
+    "tip_mm": [
+      101.6,
+      25.4
+    ],
+    "mouth_mm": [
+      101.6,
+      0
+    ],
+    "deltaOnlyConstruction_mm": 4,
+    "tangent": [
+      0,
+      1
+    ],
+    "p010CoreRadius_mm": 3,
+    "collarThickness_mm": 0.3,
+    "outerRimRadius_mm": 3.3,
+    "ringT3Elements": 2788,
+    "collarT3Elements": 128,
+    "regularBlockT3Elements": 2916,
+    "regularBlockT3Nodes": 1519,
+    "regularBlockT6Nodes": 5953,
+    "coreOuterAngularSectors": 64,
+    "minAngle_deg": 30.1268473212245,
+    "maxNeighborLongestEdgeRatio": 1.5918285508612136,
+    "innerSeamTwoOwnerCount": 64,
+    "outerRimOneOwnerCount": 64,
+    "qActiveT6Parents": 2443,
+    "qSupportMaxRadius_mm": 2.7691874098746712,
+    "qSupportCoreInradius_mm": 2.996386368615517,
+    "threeHoleWallClearance_mm": [
+      61.151425910865036,
+      101.60000000000001,
+      148.28260490595119
+    ],
+    "threeGuideClearance_mm": [
+      48.451425910865041,
+      88.9,
+      135.5826049059512
+    ],
+    "plateSideClearance_mm": [
+      101.6,
+      406.4,
+      25.4,
+      177.79999999999998
+    ],
+    "collarMarginToHoleWall_mm": 57.851425910865039,
+    "collarMarginToGuideContour_mm": 45.151425910865044,
+    "collarMarginToPlateSide_mm": 22.099999999999998,
+    "sourceJSON": "<repo>\\docs\\research\\crack-growth-gaps-2026\\G2_SPECIMEN1_1990_GEOMETRY.json"
+  },
+  "exception": ""
+}

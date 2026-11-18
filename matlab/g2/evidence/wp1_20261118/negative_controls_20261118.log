@@ -1,0 +1,62 @@
+[Warning: Name is nonexistent or not a directory: <local-path> Drive\Projects\8 - CohZonFEM\czm_project\CrackPath\CrackFromHoleLEFM\cfh] 
+[Warning: Name is nonexistent or not a directory: <local-path> Drive\Projects\8 - CohZonFEM\Asphalt\remmers2003] 
+G2_PROTECTED_TIP_GATES=24/24
+G2_PROTECTED_TIP_PASS=1
+G2_INDEPENDENT_T6_GATES=38/38
+G2_INDEPENDENT_T6_PASS=1
+G2_INDEPENDENT_T6_BOUNDARY_LOOPS=4
+G2_INDEPENDENT_T6_EULER=-2
+G2_INDEPENDENT_T6_TIP=1114
+G2_INDEPENDENT_T6_MAX_RATIO=1.68619164
+G2_INDEPENDENT_T6_MIN_ANGLE_DEG=30.12684732
+G2_INDEPENDENT_T6_NO_LEFM=1
+G2_PROTECTED_TIP_GATES=21/24
+G2_PROTECTED_TIP_PASS=0
+G2_PROTECTED_TIP_HOLD=noExteriorNodeInsideRim,protectedSlitPositionsHaveTwoNodeIDs,protectedSlitNodesSplitBetweenBanks
+G2_PROTECTED_TIP_GATES=23/24
+G2_PROTECTED_TIP_PASS=0
+G2_PROTECTED_TIP_HOLD=kernelAndCollarArraysIdenticalToP0Evidence
+G2_INDEPENDENT_T6_GATES=36/38
+G2_INDEPENDENT_T6_PASS=0
+G2_INDEPENDENT_T6_BOUNDARY_LOOPS=4
+G2_INDEPENDENT_T6_EULER=-2
+G2_INDEPENDENT_T6_TIP=1114
+G2_INDEPENDENT_T6_MAX_RATIO=1.68619164
+G2_INDEPENDENT_T6_MIN_ANGLE_DEG=30.12684732
+G2_INDEPENDENT_T6_HOLD=allT6NodesUsed,savedBanksExactlyCoverCrackBoundaryT6Nodes
+G2_INDEPENDENT_T6_NO_LEFM=1
+G2_PROTECTED_TIP_GATES=23/24
+G2_PROTECTED_TIP_PASS=0
+G2_PROTECTED_TIP_HOLD=nodalQEqualsIndependentRecomputation
+G2_PROTECTED_TIP_GATES=23/24
+G2_PROTECTED_TIP_PASS=0
+G2_PROTECTED_TIP_HOLD=kernelAndCollarArraysIdenticalToP0Evidence
+G2_PROTECTED_TIP_GATES=9/24
+G2_PROTECTED_TIP_PASS=0
+G2_PROTECTED_TIP_HOLD=kernelAndCollarArraysIdenticalToP0Evidence,tipFanSixTrianglesSevenNeighbours,firstTipEdgeIsScaledP010Pitch,exactly2916ElementsInsideCollarRim,blockElementsWithinRim,noExteriorNodeInsideRim,coreRimSeam64EdgesTwoOwnersOppositeSides,collarRimSeam64EdgesTwoOwnersOppositeSides,rim65NodeIdentitiesAt3p3,ring65NodeIdentitiesAt3p0,rimSeamEdgesAreSingleChords,nodalQEqualsIndependentRecomputation,qActive2443ParentsAllInKernel,qSupportStrictlyInsideCoreInradius,qZeroOnCollarAndExterior
+                      control                       expectedOutcome              expectation           
+    ____________________________________________    _______________    ________________________________
+
+    {'unmodified joined mesh'                  }         true          {'both PASS'                   }
+    {'exterior node pulled to r = 3.25 mm'     }         true          {'noExteriorNodeInsideRim FAIL'}
+    {'banks welded inside the protected region'}         true          {'both HOLD'                   }
+    {'one nodal q value changed'               }         true          {'nodalQ gate FAIL'            }
+    {'kernel node moved by 1e-6 mm'            }         true          {'kernel identity FAIL'        }
+    {'original UNPROTECTED candidate'          }         true          {'HOLD (9/24 gates)'           }
+
+G2_WP1_NEGATIVE_CONTROLS=6/6
+
+ans =
+
+  6x3 table
+
+                      control                       expectedOutcome              expectation           
+    ____________________________________________    _______________    ________________________________
+
+    {'unmodified joined mesh'                  }         true          {'both PASS'                   }
+    {'exterior node pulled to r = 3.25 mm'     }         true          {'noExteriorNodeInsideRim FAIL'}
+    {'banks welded inside the protected region'}         true          {'both HOLD'                   }
+    {'one nodal q value changed'               }         true          {'nodalQ gate FAIL'            }
+    {'kernel node moved by 1e-6 mm'            }         true          {'kernel identity FAIL'        }
+    {'original UNPROTECTED candidate'          }         true          {'HOLD (9/24 gates)'           }
+
