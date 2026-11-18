@@ -30,6 +30,27 @@ if (-not (Test-Path -LiteralPath $MatlabExe -PathType Leaf)) {
   if ($null -eq $found) {throw "MATLAB R2023a not found: $MatlabExe"}
   $MatlabExe=$found.Source
 }
+# Six unchanged p010 vendor files must still be the actual pinned upstream
+# Git objects and must be clean in the local working tree.
+$pinned=@(
+ @{Name='build_m1i_trial_tip_annulus_p010.m';Sha='9440ceda09609b4bcbb4bc7da2874f9fffde62b1'}
+ @{Name='build_m1i_trial_tip_disk_p010.m';Sha='877aa59c8d6cadc0987c791e1d13204f98125d7e'}
+ @{Name='build_twohole_literal_annulus.m';Sha='16b2045836f548bbc38eea944663a9eb09a5eec3'}
+ @{Name='cut_twohole_literal_annulus.m';Sha='bfdd4418193da5792e28e07562fffa46bfab8196'}
+ @{Name='T3toT6_fast.m';Sha='29bf9d8e233b24d70cdc81e392f8b24e239c1afa'}
+ @{Name='main_m1i_increment_ring_geometry_only.m';Sha='40fbc6b2e4f35299f773fc14736961d4136a7bf7'}
+)
+foreach($it in $pinned){
+  $rel="matlab/g2/vendor_p010_a14d8872/$($it.Name)"
+  $sha=(& git -C $root rev-parse "HEAD:$rel" 2>$null)
+  if($LASTEXITCODE -ne 0 -or $sha.Trim() -ne $it.Sha){
+    throw "HOLD_PINNED_VENDOR: $rel HEAD SHA mismatch"
+  }
+  $dirty=@(& git -C $root status --porcelain -- $rel)
+  if($LASTEXITCODE -ne 0 -or $dirty.Count -gt 0){
+    throw "HOLD_VENDOR_DIRTY: $rel has uncommitted changes"
+  }
+}
 $free=[double](Get-CimInstance -ClassName Win32_OperatingSystem).FreePhysicalMemory/1024/1024
 Write-Host ("Free RAM: {0:N2} GiB (guard {1:N2} GiB)" -f $free,$MinFreeGiB)
 if($free -lt $MinFreeGiB) { throw "HOLD_RAM: free physical RAM below guard; no MATLAB launched." }
