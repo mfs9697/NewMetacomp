@@ -1,0 +1,13 @@
+STAGE=G2_WP3_2_MK_ROTATED_MANUFACTURED
+DATE=2026-11-18 18:53:48
+MATLAB_RELEASE=2023a
+OUTDIR=<repo>\outputs\g2_wp3_kinked_verification\run_20261118_185347_889
+G2_KB_VENDOR_LOCAL_GATES=15/15
+G2_KB_GATES=12/12 TURN=-12.5956937016 MIN_ANGLE=30.126847 RATIO=1.591829 Q=2443
+MK (1.0,0.0,T=0.0): EDI (1.001032,0.000000) err 1.032e-03 | COD (0.992249,0.000000) err 7.751e-03 | spread 1.646e-06 | J 4.107e-07 | quad 3.528e-13 | sign 1 -> 1
+MK (0.0,1.0,T=0.0): EDI (0.000010,1.000410) err 4.096e-04 | COD (0.000008,0.986910) err 1.309e-02 | spread 2.572e-06 | J 2.686e-06 | quad 3.555e-13 | sign 1 -> 1
+MK (0.0,-1.0,T=0.0): EDI (-0.000010,-1.000410) err 4.096e-04 | COD (-0.000008,-0.986910) err 1.309e-02 | spread 2.572e-06 | J 2.686e-06 | quad 3.555e-13 | sign 1 -> 1
+MK (0.6,-0.8,T=0.0): EDI (0.600611,-0.800328) err 6.109e-04 | COD (0.595343,-0.789528) err 1.047e-02 | spread 2.058e-06 | J 1.901e-06 | quad 3.003e-13 | sign 1 -> 1
+MK (1.0,0.0,T=0.2): EDI (1.001166,-0.000005) err 1.166e-03 | COD (0.992362,-0.000004) err 7.638e-03 | spread 1.642e-06 | J 6.655e-07 | quad 3.531e-13 | sign 1 -> 1
+MK (0.6,-0.8,T=-0.2): EDI (0.600477,-0.800322) err 4.766e-04 | COD (0.595230,-0.789524) err 1.048e-02 | spread 2.058e-06 | J 2.565e-06 | quad 2.698e-13 | sign 1 -> 1
+G2_WP3_2_MK_PASS=1

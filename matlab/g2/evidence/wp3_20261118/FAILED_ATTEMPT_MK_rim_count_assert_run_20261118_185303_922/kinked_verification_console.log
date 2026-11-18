@@ -1,0 +1,12 @@
+STAGE=G2_WP3_2_MK_ROTATED_MANUFACTURED
+DATE=2026-11-18 18:53:04
+MATLAB_RELEASE=2023a
+OUTDIR=<repo>\outputs\g2_wp3_kinked_verification\run_20261118_185303_922
+G2_KB_VENDOR_LOCAL_GATES=15/15
+G2_KB_GATES=12/12 TURN=-12.5956937016 MIN_ANGLE=30.126847 RATIO=1.591829 Q=2443
+G2_WP3_MK_EXCEPTION=Error using assert
+Unexpected Dirichlet node set (127).
+
+Error in run_g2_wp3_kinked_verification_batch (line 31)
+ assert(numel(rimN)==129&&all(rr>=3.3*cos(pi/64)-1e-9&rr<=3.3+1e-9),'G2KV:Rim','Unexpected Dirichlet node set (%d).',numel(rimN));
+G2_WP3_2_MK_PASS=0

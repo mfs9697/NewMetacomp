@@ -1,0 +1,13 @@
+{
+  "pass": false,
+  "tolerances": {
+    "edi": 0.01,
+    "cod": 0.03,
+    "path": 0.005,
+    "energy": 0.005,
+    "quad": 0.001
+  },
+  "manifestSHA256": "4E941447D71481B4D77DE867F1CC8FD855B1FC9E2C7F598154C05926504BD05E",
+  "cases": [],
+  "exception": "Error using assert\nUnexpected Dirichlet node set (127).\n\nError in run_g2_wp3_kinked_verification_batch (line 31)\n assert(numel(rimN)==129&&all(rr>=3.3*cos(pi/64)-1e-9&rr<=3.3+1e-9),'G2KV:Rim','Unexpected Dirichlet node set (%d).',numel(rimN));"
+}

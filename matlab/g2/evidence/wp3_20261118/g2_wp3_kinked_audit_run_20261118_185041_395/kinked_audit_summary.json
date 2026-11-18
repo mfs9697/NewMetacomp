@@ -1,0 +1,140 @@
+{
+  "pass": true,
+  "stage": "WP3_1_KINKED_MESH_INDEPENDENT_PASS",
+  "meshMAT": "<repo>\\outputs\\g2_wp3_kinked_mesh\\run_20261118_184957_278_famB\\KINKED_GEOMETRY_ONLY_candidate.mat",
+  "meshSHA256": "DDAD08671EF647E9DBCECD054D4FDCEADE3DDE1880893452707F9C70B83C6584",
+  "p0MAT": "<repo>\\outputs\\g2_p010_isolated\\run_20261118_163657_790\\P010_ISOLATED_REGULAR_ONLY.mat",
+  "p0SHA256": "15201996B4165AA9980F61F370A75749B1CE28EC0ACCAA061902641524C37C58",
+  "jsonSHA256": "45A88FA0926472DDBE5E70E4C80A97B88196DD45D8A266FA04273F89790B47BF",
+  "kinked": {
+    "pass": true,
+    "stage": "KINKED_MESH_INDEPENDENT_AUDIT_PASS",
+    "gates": {
+      "G1_arrayShapesAndIndices": true,
+      "G1_T6CornersEqualT3AndAllNodesUsed": true,
+      "G1_uniqueMidsidesAtGeometricMidpoints": true,
+      "G1_noNonmanifoldEdges": true,
+      "G2_allT3AreasAndT6JacobiansPositive": true,
+      "G2_minAngleAtLeast20": true,
+      "G2_neighborRatioAtMost1p8": true,
+      "G3_everyBoundaryEdgeExactlyOneClass": true,
+      "G3_fourComponentsThreePureHoleLoops": true,
+      "G4_platePerimeterAndDoubleCrackLength": true,
+      "G4_connectedEulerMinusTwo": true,
+      "G4_materialAreaMatchesAnalytic": true,
+      "G5_bankSetsValidEqualSizeShareOnlyTip": true,
+      "G5_allBankNodesOnPolyline": true,
+      "G5_upperOnPlusNLowerOnMinusN": true,
+      "G5_twinsCoincideWithDistinctIDs": true,
+      "G5_banksReachMouthAndTip": true,
+      "G5_everySegmentHasTwinEdgesOnBothBanks": true,
+      "G5_eachKinkVertexHasOneNodePerBank": true,
+      "G5_coincidentNodesOnlyBankTwins": true,
+      "G6_rotatedKernelAndCollarMatchP0LocalCoordinates": true,
+      "G6_kernelAndCollarConnectivityIdenticalToP0": true,
+      "G6_exactly2916ElementsInsideRimNoExteriorNodeInside": true,
+      "G7_seams64Plus64TwoOwnersOppositeSides": true,
+      "G7_65IdentitiesOnEachSeamCircle": true,
+      "G7_rimSeamEdgesSingleChords": true,
+      "G8_tipFanSixTrianglesSevenNeighboursPitch": true,
+      "G8_lastSegmentLengthAndSavedTangent": true,
+      "G9_nodalQEqualsRecomputation": true,
+      "G9_qActive2443EqualsP0AllInKernel": true,
+      "G9_qSupportInsideInradiusZeroOutsideClearOfKink": true,
+      "G10_kinkAdmissibilityK1toK10": true,
+      "G10_protectedRegionClearOfHolesGuidesPlate": true,
+      "G11_geometryOnlyNoLEFMApproval": true
+    },
+    "gatesPassed": 34,
+    "gatesTotal": 34,
+    "failedGates": [],
+    "kGates": {
+      "K1": true,
+      "K2": true,
+      "K3": true,
+      "K4": true,
+      "K5": true,
+      "K6": true,
+      "K7": true,
+      "K8": true,
+      "K9": true,
+      "K10": true
+    },
+    "approvedForLEFM": false,
+    "summary": {
+      "T3nodes": 21070,
+      "T3elements": 41082,
+      "T6nodes": 83224,
+      "uniqueEdges": 62154,
+      "Euler": -2,
+      "boundaryComponents": 4,
+      "holeBoundaryEdges": [
+        152,
+        152,
+        152
+      ],
+      "crackBoundaryEdges": 216,
+      "crackEdgesPerSide": [
+        108,
+        108
+      ],
+      "bankNodesPerSide": [
+        217,
+        217
+      ],
+      "minAngle_deg": 29.898809222532677,
+      "maxNeighborRatio": 1.5918285508617163,
+      "minJacobian_mm2": 0.0015035163260117904,
+      "maxMidsideError_mm": 0,
+      "materialArea_mm2": 102845.67828213223,
+      "analyticArea_mm2": 102845.56939067687,
+      "kernelLocalCoordinateError_mm": 2.727179868823463E-14,
+      "qActive": 2443,
+      "qSupportMaxRadius_mm": 2.7691874098746756,
+      "qSupportDistanceToKink_mm": 1.2341481976366175,
+      "tip_mm": [
+        102.47227956707886,
+        29.303732618514836
+      ],
+      "tangent": [
+        0.21806989176971572,
+        0.97593315462870944
+      ],
+      "turn_deg": -12.595693701643361,
+      "minDistanceProtectedNodeToHoleWall_mm": 54.668366771642937
+    }
+  },
+  "informationOnlyStraight38": {
+    "gatesPassed": 33,
+    "gatesTotal": 38,
+    "failedGates": [
+      "everyBoundaryEdgeExactlyOnePhysicalClass",
+      "onePhysicalTipNodeAtSourceCoordinate",
+      "bankReachesCrackMouthAndTip",
+      "savedBanksExactlyCoverCrackBoundaryT6Nodes",
+      "allCoincidentDistinctNodesAreCrackBankTwins"
+    ]
+  },
+  "informationOnlyStraight24": {
+    "gatesPassed": 9,
+    "gatesTotal": 24,
+    "failedGates": [
+      "kernelAndCollarArraysIdenticalToP0Evidence",
+      "singleTipNodeAtNominalTip",
+      "firstTipEdgeIsScaledP010Pitch",
+      "exactly2916ElementsInsideCollarRim",
+      "blockElementsWithinRim",
+      "noExteriorNodeInsideRim",
+      "coreRimSeam64EdgesTwoOwnersOppositeSides",
+      "collarRimSeam64EdgesTwoOwnersOppositeSides",
+      "rim65NodeIdentitiesAt3p3",
+      "ring65NodeIdentitiesAt3p0",
+      "rimSeamEdgesAreSingleChords",
+      "nodalQEqualsIndependentRecomputation",
+      "qActive2443ParentsAllInKernel",
+      "qSupportStrictlyInsideCoreInradius",
+      "qZeroOnCollarAndExterior"
+    ]
+  },
+  "exception": ""
+}

@@ -1,0 +1,60 @@
+{
+  "pass": true,
+  "tests": {
+    "R1": {
+      "status": "ACCEPTED_ONE_IDEALIZED_DEMO_STEP",
+      "meshArraysAndBanksIdentical": true,
+      "K_relDiff": 0,
+      "identicalToWP31AuditedMesh": true,
+      "pass": true
+    },
+    "R2": {
+      "status": "RESTART_VERIFIED",
+      "KI_relDiff": 0,
+      "KII_relDiff": 0,
+      "nextForecast": {
+        "theta_deg": -0.94982775671665831,
+        "status": "OK",
+        "executed": false
+      },
+      "pass": true
+    },
+    "R3": {
+      "byteFlipRestart": "HOLD_STATE_INTEGRITY",
+      "wrongHashRestart": "HOLD_STATE_INTEGRITY",
+      "wrongHashTransaction": "HOLD_STATE_INTEGRITY",
+      "pass": true
+    },
+    "R4": {
+      "tError": 0,
+      "tipError": 0,
+      "KI": 0.18258487868761783,
+      "pass": true
+    },
+    "R5": {
+      "secondStep": "HOLD_SECOND_STEP_NOT_AUTHORIZED",
+      "noToken": "HOLD_NOT_AUTHORIZED",
+      "pass": true
+    }
+  },
+  "exception": "",
+  "accepted": {
+    "state1SHA256": "CB05BD619280069BD601E7A9131B8532F39698F3A406ADACFF537EAC09A5D441",
+    "state0SHA256": "9AA632BDBE0FB5D3D24BEAAF4E6E9155BBA113137676C6018681874E74DCAA6D",
+    "meshSHA256": "ECD6A7B873BC2CD758A0F88391E564DFB6C90249024BC1A8768F9F5D93732461",
+    "KI_MPa_sqrt_m_per_kN": 0.18258487868761783,
+    "KII_MPa_sqrt_m_per_kN": 0.0015136541810014932,
+    "KI_COD": 0.18097930851791616,
+    "KII_COD": 0.0014830021350103258,
+    "tip_mm": [
+      102.47227956707886,
+      29.303732618514836
+    ],
+    "t": [
+      0.21806989176971425,
+      0.97593315462870978
+    ],
+    "idealized_propagation_demo": true,
+    "physical_onset": false
+  }
+}
