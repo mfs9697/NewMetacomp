@@ -70,6 +70,16 @@ assert(abs(S1.KI_MPa_sqrt_m_per_kN-.182585)<1e-4&& ...
        abs(S1.KII_MPa_sqrt_m_per_kN-.001514)<1e-4, ...
  'G2Chain:RootSIF','Root does not match the independently qualified first kink.');
 p0Hash=g2_sha256_file(char(o.P0Mat));
+assert(strcmpi(p0Hash,policy.base.trustedP0SHA256), ...
+ 'G2Chain:TrustedP0','P0 MAT differs from the independently audited 2443-q-parent source.');
+roots=policy.base.allowedWP3State1;
+trusted=false;
+for j=1:numel(roots)
+ trusted=trusted||(strcmpi(rootHash,roots(j).stateSHA256)&& ...
+  strcmpi(S1.meshSHA256,roots(j).meshSHA256));
+end
+assert(trusted,'G2Chain:TrustedWP3Root', ...
+ 'WP3 source State/mesh hash pair is not in the committed verified evidence manifest.');
 J=jsondecode(fileread(original));G=J.nominal_geometry_mm;
 R.rootStateSHA256=rootHash;R.rootMeshSHA256=S1.meshSHA256;
 R.P0MAT_SHA256=p0Hash;R.lastStateIndex=1;
