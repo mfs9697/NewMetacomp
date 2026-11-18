@@ -90,4 +90,15 @@ The PowerShell launcher computes the actual SHA of the checked-out versioned pol
 
 All new MATLAB runs (including the synthetic test) are **RUN PENDING**, not PASS. The source code was built via GitHub and verified by static analysis, with no MATLAB runtime in the execution environment. The first trial may expose new limitations of the native PDE mesher, the hole guide partition, new normal-opening gate, or multiple-kink lip pairing. **Preserve actual failures; do not weaken K1–K10, the 20°/1.8 quality limits, p010 identity, q containment or SIF criteria.**
 
+> **WP3.4 update (Issue #30, `WP34_STATE2_RESULTS.md`).** The paragraph above
+> describes PR #29 as committed. The controller has since been qualified in genuine
+> R2023a runs, after fixes D1–D8 and HOLD-1. Usage changes:
+> - `-Run` now requires a clean, committed `matlab/g2` + Cornell JSON tree (`G2Chain:DirtySource`).
+> - The chain folder may not overlap the seed or P0 folders.
+> - A preserved HOLD chain is never reused, so a later attempt needs its own `-ChainDir`.
+> - `-SimulateFreePhysicalGiB` can only lower the RAM figure, for HOLD tests.
+>
+> The qualified State 2 chain is `outputs/g2_trajectory_chain_v1_attempt2`. The first
+> attempt (`outputs/g2_trajectory_chain_v1`, HOLD-1) is preserved.
+
 After actual State 2 and independent restart tests pass, start a **separate policy version** for a longer multi-step Cornell numerical campaign, with explicit max-step/arc caps and new SHA identity. Before a paper or physical crack-growth claim, independently study tip-size convergence, `\Delta a`/mesh sensitivity, real Cornell loading/contact/toughness and digitized experimental path. A geometric intersection with a true hole is an event/stop, not automatically an energetic arrest.

@@ -1,0 +1,48 @@
+START=2026-11-18T22:41:59 END=2026-11-18T22:42:14 EXIT=0
+Free RAM: 5,78 GiB (guard 5,00 GiB)
+Source WP3 state: <repo>\outputs\g2_wp3_state\run_20261118_185808_963\step1_a\state\state.mat
+Source SHA256: CB05BD619280069BD601E7A9131B8532F39698F3A406ADACFF537EAC09A5D441
+P0 source SHA256: 15201996B4165AA9980F61F370A75749B1CE28EC0ACCAA061902641524C37C58
+Frozen policy SHA256: 1D6AF7F6F3E8AF389AB02330D9A1EAEBDBC00BEDB52AAD54DB902B4DE36B39DC
+Original Cornell JSON SHA256: 45A88FA0926472DDBE5E70E4C80A97B88196DD45D8A266FA04273F89790B47BF
+Chain folder: <repo>\outputs\g2_trajectory_chain_v1_attempt2
+Run requested: True; max new state=2; physical onset=false
+G2_KB_VENDOR_LOCAL_GATES=15/15
+G2_KB_GATES=12/12 TURN=-0.9498277567 MIN_ANGLE=30.126847 RATIO=1.591829 Q=2443
+G2_KEXT_NATIVE_T3=25709
+G2_KEXT_RIM_NODES=65
+G2_KJOIN_GATES=13/13
+G2_KJOIN_T3=28625 T6_NODES=58161 MIN_ANGLE=30.126847 MAX_RATIO=1.591829
+G2_KINKED_AUDIT_GATES=34/34
+G2_KINKED_AUDIT_PASS=1
+G2_TRAJECTORY_SIF_PASS=1, KI=0.195982362 KII=+0.00314997025 MPa sqrt(m)/kN
+G2_TRAJECTORY_COD_EDI_REL=0.008787565 WHOLE_CRACK_OPENING_MIN_MM=0
+G2_TRAJECTORY_STEP_002_NUMERICALLY_QUALIFIED=1
+G2_TRAJECTORY_KI=0.195982362 KII=+0.003149970 MPa sqrt(m)/kN
+G2_TRAJECTORY_STOP_STEP_CAP=2; PHYSICAL_GROWTH_PROVEN=0
+                            pass: 1
+                           stage: 'STEP_CAP'
+                    runRequested: 1
+    physicalFractureGrowthProven: 0
+     experimentalAgreementProven: 0
+                   candidateOnly: 1
+                newStatesCreated: 1
+                   reviewsReused: 0
+                    statesReused: 0
+                  lastStateIndex: 2
+                           steps: [1x1 struct]
+                        forecast: [1x1 struct]
+                    policySHA256: '1D6AF7F6F3E8AF389AB02330D9A1EAEBDBC00BEDB52AAD54DB902B4DE36B39DC'
+                      stopReason: 'STEP_CAP'
+                         message: ''
+                        chainDir: '<repo>\outputs\g2_trajectory_chain_v1_attempt2'
+                   matlabRelease: '2023a'
+               pdeToolboxVersion: '3.10'
+                    sourceHashes: [25x1 struct]
+                 rootStateSHA256: 'CB05BD619280069BD601E7A9131B8532F39698F3A406ADACFF537EAC09A5D441'
+                  rootMeshSHA256: 'ECD6A7B873BC2CD758A0F88391E564DFB6C90249024BC1A8768F9F5D93732461'
+                    P0MAT_SHA256: '15201996B4165AA9980F61F370A75749B1CE28EC0ACCAA061902641524C37C58'
+                         gitHead: '384e3f13f7c3988c5fe8231fca9315fcc93248a3'
+
+Trajectory controller exited 0. This is NUMERICAL direction only, NOT physical fracture propagation.
+

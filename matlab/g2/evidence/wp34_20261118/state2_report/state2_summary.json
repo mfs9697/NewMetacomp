@@ -1,0 +1,422 @@
+{
+  "chain": "<repo>/outputs/g2_trajectory_chain_v1",
+  "rootRecordSHA256": "FA24BC438B8D2F0AAD1F6AA8536FAA587CD2D0F8216A367558DD1C1D7CD14EDB",
+  "reviewSHA256": "E5AD2C170B47374BC6EB90A7B5D3D82DEDBF0D2BDF7276D9A6751A4CA7F78055",
+  "state2SHA256": "4603095BBB1AD3A61D9433FEBC6638500D9B6810A5C29C6DA3B45C117C1EE2E6",
+  "meshSHA256": "9269BE43141014EFF1E9F7EF6EF0CDC82B2772C62A12CCF3D847549C7485C412",
+  "parentStateSHA256": "CB05BD619280069BD601E7A9131B8532F39698F3A406ADACFF537EAC09A5D441",
+  "policySHA256": "1D6AF7F6F3E8AF389AB02330D9A1EAEBDBC00BEDB52AAD54DB902B4DE36B39DC",
+  "gitHead": "384e3f13f7c3988c5fe8231fca9315fcc93248a3",
+  "polyline_mm": [
+    [
+      101.6,
+      0
+    ],
+    [
+      101.6,
+      25.4
+    ],
+    [
+      102.47227956707886,
+      29.303732618514836
+    ],
+    [
+      103.40915091645832,
+      33.192469183867637
+    ]
+  ],
+  "tip2_mm": [
+    103.40915091645832,
+    33.192469183867637
+  ],
+  "tangent2": [
+    0.23421783734486504,
+    0.97218414133820064
+  ],
+  "localTurn2_deg": -0.94982775671665831,
+  "turns_deg": [
+    -12.595693701643361,
+    -0.94982775671655806
+  ],
+  "arcLength_mm": 33.4,
+  "mesh": {
+    "T3elements": 28625,
+    "T3nodes": 14767,
+    "T6nodes": 58161,
+    "coreT3": 2788,
+    "collarT3": 128,
+    "exteriorT3": 25709,
+    "minAngle_deg": 30.126847321223057,
+    "minAngleAt_mm": [
+      103.17764070312023,
+      32.294567496189359
+    ],
+    "maxNeighborRatio": 1.5918285508615106,
+    "maxRatioAt_mm": [
+      103.42064115414348,
+      33.153565315155717
+    ],
+    "rimSeamEdges": 64,
+    "coreSeamEdges": 64,
+    "crackBankEdgesPerSide": [
+      92,
+      92
+    ],
+    "bankT6NodesPerSide": [
+      185,
+      185
+    ],
+    "qActiveT6": 2443,
+    "tip_mm": [
+      103.40915091645832,
+      33.192469183867637
+    ],
+    "tangent": [
+      0.23421783734486479,
+      0.97218414133820064
+    ],
+    "normal": [
+      -0.97218414133820064,
+      0.23421783734486479
+    ],
+    "tipNode": 1114,
+    "kinkNodeIDs": [
+      1522,
+      1525,
+      1523,
+      1524
+    ],
+    "rimCoordinateMismatch_mm": 0,
+    "polyline_mm": [
+      [
+        101.6,
+        0
+      ],
+      [
+        101.6,
+        25.4
+      ],
+      [
+        102.47227956707886,
+        29.303732618514836
+      ],
+      [
+        103.40915091645832,
+        33.192469183867637
+      ]
+    ],
+    "turn_deg": [
+      -12.595693701643361,
+      -0.94982775671655806
+    ],
+    "exterior": {
+      "cadPolygonSimple": true,
+      "cadPolygonSignedArea": 103190.23896728721,
+      "cadFaces": 5,
+      "nativeMeshingSeconds": 0.5531894,
+      "nativeT3": 25709,
+      "nativeNodes": 13313,
+      "rimNodeCount": 65,
+      "rimVertexMaxDeviation_mm": 3.5527136788005009E-15,
+      "lipOffsetMaxDistance_mm": 1.464821375527116E-14,
+      "lipInteriorNodesPerSegment": [
+        [
+          52,
+          52
+        ],
+        [
+          8,
+          8
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "lipMaxStationGap_mm": [
+        0.495100843963332,
+        0.49505214528078745
+      ],
+      "lipPairs": 65,
+      "lipStationMismatch_mm": 0.0016789997781252453,
+      "channelHalfWidth_mm": 0.02,
+      "rimRadius_mm": 3.3,
+      "rimChord_mm": 0.3238466505609589,
+      "lipCADEdges": [
+        4,
+        4
+      ],
+      "controls": {
+        "Hmin_mm": 0.12,
+        "Hmax_mm": 6,
+        "Hgrad": 1.12,
+        "lipHedge_mm": 0.45,
+        "guideHface_mm": 1.5,
+        "rimHedge_mm": 0.3238466505609589,
+        "tipGuideRadius_mm": 15,
+        "tipGuideHface_mm": 1.5
+      },
+      "PDEToolboxVersion": "3.10"
+    },
+    "block": {
+      "tip_mm": [
+        103.40915091645832,
+        33.192469183867637
+      ],
+      "tangent": [
+        0.23421783734486479,
+        0.97218414133820064
+      ],
+      "normal": [
+        -0.97218414133820064,
+        0.23421783734486479
+      ],
+      "turn_deg": -0.94982775671655806,
+      "polyline_mm": [
+        [
+          101.6,
+          0
+        ],
+        [
+          101.6,
+          25.4
+        ],
+        [
+          102.47227956707886,
+          29.303732618514836
+        ],
+        [
+          103.40915091645832,
+          33.192469183867637
+        ]
+      ],
+      "vendorTipError_mm": 0,
+      "innerRingAgreement_mm": 1.5888218580782548E-14,
+      "entryAgreement_mm": 1.4210854715202004E-14,
+      "ringT3Elements": 2788,
+      "collarT3Elements": 128,
+      "regularBlockT3Nodes": 1519,
+      "regularBlockT6Nodes": 5953,
+      "minAngle_deg": 30.126847321223057,
+      "maxNeighborLongestEdgeRatio": 1.5918285508615106,
+      "qActiveT6Parents": 2443,
+      "qSupportMaxRadius_mm": 2.7691874098746712,
+      "p010CoreRadius_mm": 3,
+      "outerRimRadius_mm": 3.3,
+      "admissibility": {
+        "vertices": 4,
+        "segmentLengths_mm": [
+          25.4,
+          3.9999999999999996,
+          3.9999999999999982
+        ],
+        "turns_deg": [
+          -12.595693701643361,
+          -0.94982775671655806
+        ],
+        "tangentDots": [
+          0.97593315462870944,
+          0.9998625943765248
+        ],
+        "miterDenominators": [
+          1.9759331546287093,
+          1.9998625943765247
+        ],
+        "miterFactors": [
+          1.0060715628867578,
+          1.0000343531759988
+        ],
+        "tip_mm": [
+          103.40915091645832,
+          33.192469183867637
+        ],
+        "t": [
+          0.23421783734486479,
+          0.97218414133820064
+        ],
+        "n": [
+          -0.97218414133820064,
+          0.23421783734486479
+        ],
+        "distTipToEarlierSegments_mm": [
+          7.9997251840328083,
+          3.9999999999999982
+        ],
+        "rimBandMargin_mm": 0.67999999999999838,
+        "rimChord_mm": 0.3238466505609589,
+        "minSegmentHoleWallClearance_mm": 54.837236082879663,
+        "minSegmentGuideClearance_mm": 42.137236082879667,
+        "collarMargins_mm": [
+          51.537236082879666,
+          38.83723608287967,
+          29.892469183867636
+        ],
+        "tipGuideMargins_mm": [
+          18.192469183867637,
+          27.137236082879667
+        ],
+        "nonadjacentSeparation_mm": 4,
+        "inheritedGuardMinKinkTangentDot": 0.98,
+        "inheritedGuardWouldReject": true
+      }
+    }
+  },
+  "audit": {
+    "gates": "34/34",
+    "summary": {
+      "T3nodes": 14767,
+      "T3elements": 28625,
+      "T6nodes": 58161,
+      "uniqueEdges": 43394,
+      "Euler": -2,
+      "boundaryComponents": 4,
+      "holeBoundaryEdges": [
+        152,
+        152,
+        152
+      ],
+      "crackBoundaryEdges": 184,
+      "crackEdgesPerSide": [
+        92,
+        92
+      ],
+      "bankNodesPerSide": [
+        185,
+        185
+      ],
+      "minAngle_deg": 30.126847321223057,
+      "maxNeighborRatio": 1.5918285508615106,
+      "minJacobian_mm2": 0.0015035163260112036,
+      "maxMidsideError_mm": 0,
+      "materialArea_mm2": 102845.6782821325,
+      "analyticArea_mm2": 102845.56939067687,
+      "kernelLocalCoordinateError_mm": 2.5751430998129269E-14,
+      "qActive": 2443,
+      "qSupportMaxRadius_mm": 2.7691874098746712,
+      "qSupportDistanceToKink_mm": 1.234148197636616,
+      "tip_mm": [
+        103.40915091645832,
+        33.192469183867637
+      ],
+      "tangent": [
+        0.23421783734486479,
+        0.97218414133820064
+      ],
+      "turn_deg": -13.545521458359921,
+      "minDistanceProtectedNodeToHoleWall_mm": 51.537275884199282
+    }
+  },
+  "KI_EDI": 0.1959823615811298,
+  "KII_EDI": 0.0031499702509886259,
+  "KI_COD": 0.19425993149644818,
+  "KII_COD": 0.0031016583732570322,
+  "criteria": {
+    "elasticEquilibrium": true,
+    "blindCODversusEDI": true,
+    "contourIndependence": true,
+    "JenergyIdentity": true,
+    "EDIquadrature": true,
+    "qSupportInsideCore": true,
+    "wholeCrackOpening": true,
+    "KIpositive": true,
+    "conditionalHighMixityKIIagreement": true
+  },
+  "criterionValues": {
+    "relativeResidual": 1.0085131075333379E-12,
+    "staticsMax": 2.7348011525100307E-13,
+    "CODvsEDI_fractionOfK": 0.0087875645242135175,
+    "pathSpread_fractionOfK": 1.6441213541357834E-6,
+    "JenergyIdentity": 1.5096344466281053E-5,
+    "qSupportMaxRadius_mm": 2.7691874098746712,
+    "wholeCrackOpeningMin_mm": 0,
+    "KIIoverKI": 0.016072723206188372,
+    "KII_sign_edi_vs_cod_match": true,
+    "codFitPairs": 32,
+    "quadratureDrift_fractionOfK": 3.692891728918395E-13,
+    "statics": [
+      2.7348011525100307E-13,
+      6.2744254236690719E-14,
+      6.4837024638109142E-14,
+      6.8334227165678385E-14,
+      1.312283615106935E-13
+    ]
+  },
+  "annuli": [
+    {
+      "rIn_mm": 0.4,
+      "rOut_mm": 2.6,
+      "KI_MPa_sqrt_m_per_kN": 0.1959823615811298,
+      "KII_MPa_sqrt_m_per_kN": 0.0031499702509886259,
+      "J_N_per_mm_per_N": 1.1755886298396211E-8
+    },
+    {
+      "rIn_mm": 0.2,
+      "rOut_mm": 1,
+      "KI_MPa_sqrt_m_per_kN": 0.19598268384153261,
+      "KII_MPa_sqrt_m_per_kN": 0.0031499782703820157,
+      "J_N_per_mm_per_N": 1.1755958772104018E-8
+    },
+    {
+      "rIn_mm": 0.4,
+      "rOut_mm": 1.6,
+      "KI_MPa_sqrt_m_per_kN": 0.195982362405387,
+      "KII_MPa_sqrt_m_per_kN": 0.0031499701961517426,
+      "J_N_per_mm_per_N": 1.1755888400654687E-8
+    },
+    {
+      "rIn_mm": 0.8,
+      "rOut_mm": 2.6,
+      "KI_MPa_sqrt_m_per_kN": 0.195982363400051,
+      "KII_MPa_sqrt_m_per_kN": 0.00314997039579918,
+      "J_N_per_mm_per_N": 1.1755884055937353E-8
+    },
+    {
+      "rIn_mm": 1.2,
+      "rOut_mm": 2.4,
+      "KI_MPa_sqrt_m_per_kN": 0.19598236960761953,
+      "KII_MPa_sqrt_m_per_kN": 0.0031499704344460588,
+      "J_N_per_mm_per_N": 1.1755884777782285E-8
+    }
+  ],
+  "nextForecast_NOT_EXECUTED": -1.8406894707193153,
+  "physicalFractureGrowthProven": false,
+  "tipAccepted": false,
+  "physical_onset": false,
+  "stateFields": [
+    "schema",
+    "stateIndex",
+    "parentStateSHA256",
+    "crackPolyline_mm",
+    "tip_mm",
+    "t",
+    "n",
+    "DeltaA_mm",
+    "KI_MPa_sqrt_m_per_kN",
+    "KII_MPa_sqrt_m_per_kN",
+    "Ksource",
+    "bvp",
+    "idealized_propagation_demo",
+    "physical_onset",
+    "created",
+    "KI_COD_MPa_sqrt_m_per_kN",
+    "KII_COD_MPa_sqrt_m_per_kN",
+    "KI_raw",
+    "KII_raw",
+    "sifCriteria",
+    "appliedTheta_rad",
+    "meshFile",
+    "meshSHA256",
+    "auditGates",
+    "note",
+    "reviewSHA256",
+    "policySHA256",
+    "sourceHashes",
+    "numericallyQualified",
+    "tipAccepted",
+    "physicalFractureGrowthProven",
+    "eligibleForAutomaticPhysicalAcceptance",
+    "gitHead"
+  ],
+  "Ksource": "g2_trajectory_sif_on_mesh on the state-2 protected mesh 9269BE43141014EFF1E9F7EF6EF0CDC82B2772C62A12CCF3D847549C7485C412: 6x6 EDI annulus 0.4-2.6 mm (signed); blind bank COD +0.194259931/+0.00310165837; review E5AD2C170B47374BC6EB90A7B5D3D82DEDBF0D2BDF7276D9A6751A4CA7F78055",
+  "chainUnchangedByReport": true
+}

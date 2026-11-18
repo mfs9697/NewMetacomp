@@ -1,0 +1,17 @@
+exit=1 newMATLAB=0
+Simulated free RAM 4,25 GiB replaces measured 5,58 GiB (test hook, can only lower)
+Free RAM: 4,25 GiB (guard 5,00 GiB)
+powershell.exe : HOLD_RAM: free physical RAM below guard; no MATLAB launched.
+At line:5 char:22
++   $t0=Get-Date; $out=& powershell.exe @a 2>&1 | Out-String; $rc=$LAST ...
++                      ~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (HOLD_RAM: free ...ATLAB launched.:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+At <repo>\matlab\g2\run_g2_trajectory.ps1:64 char:29
++ ... nFreeGiB) { throw "HOLD_RAM: free physical RAM below guard; no MATLAB ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (HOLD_RAM: free ...ATLAB launched.:String) [], RuntimeException
+    + FullyQualifiedErrorId : HOLD_RAM: free physical RAM below guard; no MATLAB launched.
+ 
+

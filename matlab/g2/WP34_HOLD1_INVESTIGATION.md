@@ -38,9 +38,13 @@ The failed chain `outputs/g2_trajectory_chain_v1` is preserved unchanged:
 - `STEP_002/HOLD.mat` + manifest;
 - `STEP_002/KINKED_GEOMETRY_ONLY_candidate.mat` (1,644,155 bytes).
 
-The controller refuses to reuse that chain: a dry preflight reports
-`HOLD_PARTIAL_STEP`, and `-Run` raises `G2Chain:PartialStep` (fault F15). It is
-never overwritten.
+The controller refuses to reuse that chain, and it is never overwritten. The
+preregistered expectation was `HOLD_PARTIAL_STEP` (dry) and `G2Chain:PartialStep`
+(`-Run`), as in fault F15. In the event, the dry preflight on commit `384e3f1`
+stopped one check earlier with `G2Chain:SourceDrift`: the chain ROOT pins the
+`e482673` kernel hashes and `g2_trajectory_sif_on_mesh.m` has since changed.
+That refusal is stricter, and nothing was written (log
+`evidence/wp34_20261118/launcher/C2b_dry_preflight_384e3f1_hold1_chain.log`).
 
 ## Root cause
 

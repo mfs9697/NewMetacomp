@@ -1,0 +1,340 @@
+{
+  "pass": true,
+  "cases": [
+    {
+      "id": "E1",
+      "description": "fresh chain, SimulateInterrupt review@2",
+      "expected": [
+        "G2Chain:SimulatedInterrupt"
+      ],
+      "outcome": "G2Chain:SimulatedInterrupt",
+      "message": "Simulated interruption AFTER immutable review of numerical step 2.",
+      "pass": true,
+      "forbiddenPathsCreated": [],
+      "newStatesCreated": null,
+      "reviewsReused": null,
+      "statesReused": null,
+      "requiredPathsMissing": [],
+      "seconds": 4.9735245
+    },
+    {
+      "id": "E2",
+      "description": "resume E1 with ForbidNewComputation",
+      "expected": [
+        "STEP_CAP"
+      ],
+      "outcome": "STEP_CAP",
+      "message": "",
+      "pass": true,
+      "forbiddenPathsCreated": [],
+      "newStatesCreated": 0,
+      "reviewsReused": 1,
+      "statesReused": 0,
+      "requiredPathsMissing": [],
+      "seconds": 0.5195976
+    },
+    {
+      "id": "E3a",
+      "description": "fresh chain, SimulateInterrupt state@2",
+      "expected": [
+        "G2Chain:SimulatedInterrupt"
+      ],
+      "outcome": "G2Chain:SimulatedInterrupt",
+      "message": "Simulated interruption AFTER immutable state of numerical step 2.",
+      "pass": true,
+      "forbiddenPathsCreated": [],
+      "newStatesCreated": null,
+      "reviewsReused": null,
+      "statesReused": null,
+      "requiredPathsMissing": [],
+      "seconds": 2.8204029
+    },
+    {
+      "id": "E3b",
+      "description": "rerun E3 with ForbidNewComputation",
+      "expected": [
+        "STEP_CAP"
+      ],
+      "outcome": "STEP_CAP",
+      "message": "",
+      "pass": true,
+      "forbiddenPathsCreated": [],
+      "newStatesCreated": 0,
+      "reviewsReused": 0,
+      "statesReused": 1,
+      "requiredPathsMissing": [],
+      "seconds": 0.3673482
+    },
+    {
+      "id": "E4",
+      "description": "E1/E3 mesh arrays, banks and K bit-identical to the accepted chain",
+      "expected": [
+        "IDENTICAL"
+      ],
+      "outcome": "IDENTICAL",
+      "message": "",
+      "pass": true,
+      "forbiddenPathsCreated": [],
+      "newStatesCreated": null,
+      "reviewsReused": null,
+      "statesReused": null
+    },
+    {
+      "id": "E5",
+      "description": "rerun accepted-chain copy",
+      "expected": [
+        "STEP_CAP"
+      ],
+      "outcome": "STEP_CAP",
+      "message": "",
+      "pass": true,
+      "forbiddenPathsCreated": [],
+      "newStatesCreated": 0,
+      "reviewsReused": 0,
+      "statesReused": 1,
+      "requiredPathsMissing": [],
+      "addedFiles": [
+        "<E5>\\RUN_20261118_224341_666.log"
+      ],
+      "oldFilesUnchanged": true
+    },
+    {
+      "id": "E5b",
+      "description": "accepted-chain copy, MaxStateIndex 3",
+      "expected": [
+        "G2Chain:StepCap"
+      ],
+      "outcome": "G2Chain:StepCap",
+      "message": "Requested steps exceed the immutable versioned policy.",
+      "pass": true,
+      "forbiddenPathsCreated": [],
+      "newStatesCreated": null,
+      "reviewsReused": null,
+      "statesReused": null,
+      "requiredPathsMissing": []
+    },
+    {
+      "id": "E6a",
+      "description": "State 2 byte flip (Run)",
+      "expected": [
+        "G2Chain:ChildStateIntegrity"
+      ],
+      "outcome": "G2Chain:ChildStateIntegrity",
+      "message": "Saved child State: HOLD_STATE_INTEGRITY.",
+      "pass": true,
+      "forbiddenPathsCreated": [],
+      "newStatesCreated": null,
+      "reviewsReused": null,
+      "statesReused": null,
+      "requiredPathsMissing": []
+    },
+    {
+      "id": "E6b",
+      "description": "State 2 byte flip (dry)",
+      "expected": [
+        "G2Chain:ChildIntegrity"
+      ],
+      "outcome": "G2Chain:ChildIntegrity",
+      "message": "Read-only State 2: HOLD_STATE_INTEGRITY.",
+      "pass": true,
+      "forbiddenPathsCreated": [],
+      "newStatesCreated": null,
+      "reviewsReused": null,
+      "statesReused": null,
+      "requiredPathsMissing": []
+    },
+    {
+      "id": "E6c",
+      "description": "wrong state.sha256 (Run)",
+      "expected": [
+        "G2Chain:ChildStateIntegrity"
+      ],
+      "outcome": "G2Chain:ChildStateIntegrity",
+      "message": "Saved child State: HOLD_STATE_INTEGRITY.",
+      "pass": true,
+      "forbiddenPathsCreated": [],
+      "newStatesCreated": null,
+      "reviewsReused": null,
+      "statesReused": null,
+      "requiredPathsMissing": []
+    },
+    {
+      "id": "E7a",
+      "description": "review missing, State kept (Run)",
+      "expected": [
+        "G2Chain:ChildReviewIntegrity"
+      ],
+      "outcome": "G2Chain:ChildReviewIntegrity",
+      "message": "Saved review: HOLD_RECORD_INTEGRITY.",
+      "pass": true,
+      "forbiddenPathsCreated": [],
+      "newStatesCreated": null,
+      "reviewsReused": null,
+      "statesReused": null,
+      "requiredPathsMissing": []
+    },
+    {
+      "id": "E7b",
+      "description": "review missing, State kept (dry)",
+      "expected": [
+        "G2Chain:ReviewIntegrity"
+      ],
+      "outcome": "G2Chain:ReviewIntegrity",
+      "message": "Read-only Review 2: HOLD_RECORD_INTEGRITY.",
+      "pass": true,
+      "forbiddenPathsCreated": [],
+      "newStatesCreated": null,
+      "reviewsReused": null,
+      "statesReused": null,
+      "requiredPathsMissing": []
+    },
+    {
+      "id": "E8",
+      "description": "review byte flip (Run)",
+      "expected": [
+        "G2Chain:ChildReviewIntegrity"
+      ],
+      "outcome": "G2Chain:ChildReviewIntegrity",
+      "message": "Saved review: HOLD_RECORD_INTEGRITY.",
+      "pass": true,
+      "forbiddenPathsCreated": [],
+      "newStatesCreated": null,
+      "reviewsReused": null,
+      "statesReused": null,
+      "requiredPathsMissing": []
+    },
+    {
+      "id": "E9",
+      "description": "State 2 mesh byte flip (Run)",
+      "expected": [
+        "G2Chain:ReviewMeshSHA"
+      ],
+      "outcome": "G2Chain:ReviewMeshSHA",
+      "message": "Audited mesh bytes differ from review manifest.",
+      "pass": true,
+      "forbiddenPathsCreated": [],
+      "newStatesCreated": null,
+      "reviewsReused": null,
+      "statesReused": null,
+      "requiredPathsMissing": []
+    },
+    {
+      "id": "E10",
+      "description": "State 2 with a forged parent hash (Run)",
+      "expected": [
+        "G2Chain:ChildMismatch"
+      ],
+      "outcome": "G2Chain:ChildMismatch",
+      "message": "Numerical child State no longer matches its review.",
+      "pass": true,
+      "forbiddenPathsCreated": [],
+      "newStatesCreated": null,
+      "reviewsReused": null,
+      "statesReused": null,
+      "requiredPathsMissing": []
+    },
+    {
+      "id": "E11a",
+      "description": "ROOT source hash drift (Run)",
+      "expected": [
+        "G2Chain:SourceDrift"
+      ],
+      "outcome": "G2Chain:SourceDrift",
+      "message": "Saved chain sources differ from current files.",
+      "pass": true,
+      "forbiddenPathsCreated": [],
+      "newStatesCreated": null,
+      "reviewsReused": null,
+      "statesReused": null,
+      "requiredPathsMissing": []
+    },
+    {
+      "id": "E11b",
+      "description": "ROOT source hash drift (dry)",
+      "expected": [
+        "G2Chain:SourceDrift"
+      ],
+      "outcome": "G2Chain:SourceDrift",
+      "message": "Read-only chain preflight detected source drift.",
+      "pass": true,
+      "forbiddenPathsCreated": [],
+      "newStatesCreated": null,
+      "reviewsReused": null,
+      "statesReused": null,
+      "requiredPathsMissing": []
+    },
+    {
+      "id": "E11c",
+      "description": "ROOT policy hash drift (Run)",
+      "expected": [
+        "G2Chain:SourceDrift"
+      ],
+      "outcome": "G2Chain:SourceDrift",
+      "message": "Saved chain sources differ from current files.",
+      "pass": true,
+      "forbiddenPathsCreated": [],
+      "newStatesCreated": null,
+      "reviewsReused": null,
+      "statesReused": null,
+      "requiredPathsMissing": []
+    },
+    {
+      "id": "E13",
+      "description": "State folder without state.sha256 (Run)",
+      "expected": [
+        "G2Chain:ChildStateIntegrity"
+      ],
+      "outcome": "G2Chain:ChildStateIntegrity",
+      "message": "Saved child State: HOLD_STATE_INTEGRITY.",
+      "pass": true,
+      "forbiddenPathsCreated": [],
+      "newStatesCreated": null,
+      "reviewsReused": null,
+      "statesReused": null,
+      "requiredPathsMissing": []
+    },
+    {
+      "id": "E12",
+      "description": "dry preflight on the accepted chain",
+      "expected": [
+        "DRY_PREFLIGHT_STEP_CAP"
+      ],
+      "outcome": "DRY_PREFLIGHT_STEP_CAP",
+      "message": "",
+      "pass": true,
+      "forbiddenPathsCreated": [],
+      "newStatesCreated": 0,
+      "reviewsReused": 0,
+      "statesReused": 0,
+      "requiredPathsMissing": []
+    }
+  ],
+  "replay": {
+    "E1": {
+      "meshFieldsIdentical": true,
+      "differingMeshFields": [],
+      "KfieldsIdentical": true,
+      "differingKFields": [],
+      "EDIallIdentical": true,
+      "meshFileBytesIdentical": false,
+      "createdA": "2026-11-18 22:42:09",
+      "createdB": "2026-11-18 22:43:37",
+      "identical": true
+    },
+    "E3": {
+      "meshFieldsIdentical": true,
+      "differingMeshFields": [],
+      "KfieldsIdentical": true,
+      "differingKFields": [],
+      "EDIallIdentical": true,
+      "meshFileBytesIdentical": false,
+      "createdA": "2026-11-18 22:42:09",
+      "createdB": "2026-11-18 22:43:40",
+      "identical": true
+    }
+  },
+  "exception": "",
+  "acceptedChainUnchanged": true,
+  "seedUnchanged": true,
+  "failedCases": []
+}
