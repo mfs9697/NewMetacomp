@@ -1,0 +1,80 @@
+{
+  "schema": "NewMetacomp.G2.M3MaterialTrajectoryPolicy.v1",
+  "issue": 39,
+  "scope": "two independently evolved two-phase numerical crack paths (soft, stiff), two 4-mm increments each from the WP2 straight crack; direct-versus-path decomposition of G; conditional on assumed crack advance; no onset, toughness, arrest, CZM, State 3",
+  "base": {
+    "parentPR": 38,
+    "parentHead": "49ec4fc6867c5be70e18f9c6b79db708190e3aa9",
+    "m2Run": "outputs/g2_material_evolution_v1/run_20261121_132226_301",
+    "m2Ledger": "matlab/g2/evidence/m2_20261121/SHA256SUMS_original_outputs.txt",
+    "m2PolicySHA256": "1782eebc5db6ef8dacdb8a5325996b3d9a4e774a388c0990e884ffec40dd834c",
+    "materialPolicyV1SHA256": "e60156f60dc8bae05f2ab1b1a25bc93bd84cedb7485591b01ada2413d946a971",
+    "trajectoryPolicyV1SHA256": "1d6af7f6f3e8af389ab02330d9a1eaebdbc00bedb52aad54db902b4de36b39dc",
+    "cornellJSON_SHA256": "45a88fa0926472ddbe5e70e4c80a97b88196dd45d8a266fa04273f89790b47bf",
+    "trustedP0SHA256": "15201996b4165aa9980f61f370a75749b1ce28ec0accaa061902641524c37c58",
+    "s0Mesh": "outputs/g2_protected_mesh/run_20261118_165922_343_famA/GEOMETRY_ONLY_candidate.mat",
+    "s0MeshSHA256": "05d5c3fcf5152c30bb0e5c288dc109bfce42b8d677077c4631254ab5887657dc",
+    "m2CaseSHA256": {
+      "S0_H1": "50b6ad8396f5ab41893875ced5a4c0ac429812630b1921dfb33653be8cd5173b",
+      "S0_Msoft": "cd506779d6b4c94f1777b3c05618637fa4af8855922bf444e3121af4b02f2b45",
+      "S0_Mstiff": "052bcee474d931153ecf6532f436bfe18939ca679c3640eb599a96ec57035d79",
+      "S1_H1": "3cb59be7c456dfe71436d563b4c96bbd9402a305f4783ae3b191452a66467d92",
+      "S1_Msoft": "da5b04c620375225839ff15c9e490f46688432882c9a23b16f603c93deb2db11",
+      "S1_Mstiff": "a2af08a081100c8cb1e16397ad585c9c2caac576737f7d386753aad7ded7416f",
+      "S2_H1": "a2901f4c617ef2fc72cedf22b62e59db1bf0c8d09ccb038ebfa808cc30c9ce2d",
+      "S2_Msoft": "20ea1f17e2e62ac8cb70b687b27d9e363d20132f81604ca796d49bbec8400f46",
+      "S2_Mstiff": "452365f9c1bde1fb43bdc52c7964d74613c5dc3b7caa0f7b28d55b8058645eec",
+      "S2alt_H1": "6e5b4790ae5e471c14f0faf27c124492b92719a8c18dc78743099a1baf074b70",
+      "S2alt_Msoft": "bc1b0b0b4a8f41e67f4ce3ad4c04ca695fcf0ccf4f6af0f84c728fccd557f6c7",
+      "S2alt_Mstiff": "e57ab317aff7b1fa5fd8a3f287c7cb7a55a5857555272e34931fe3cfbf86d360"
+    },
+    "homogeneousPolylines_mm": {
+      "S1": [[101.6, 0], [101.6, 25.4], [102.4722795671, 29.3037326185]],
+      "S2": [[101.6, 0], [101.6, 25.4], [102.4722795671, 29.3037326185], [103.4091509165, 33.1924691839]]
+    }
+  },
+  "materials": [
+    {"id": "soft", "ratio": 0.5, "m2Case": "Msoft"},
+    {"id": "stiff", "ratio": 2, "m2Case": "Mstiff"}
+  ],
+  "model": {"plane": "stress", "E_matrix_MPa": 3268.115, "nu_matrix": 0.35, "nu_reinforcement": 0.35, "thickness_mm": 12.7, "P_N": 1, "pin_mm": [25.4, 0], "roller_mm": [482.6, 0], "load_mm": [254, 203.2], "illustrativeOnly": true},
+  "start": {"polyline_mm": [[101.6, 0], [101.6, 25.4]], "tangent": [0, 1], "parentK": "full-precision KI_perkN/KII_perkN of the PR #38 S0 material record, recomputed bitwise at ROOT creation"},
+  "recurrence": "theta = g2_mts_direction(KI_perkN, KII_perkN); t_new = cos(theta) t + sin(theta) n, n = R(+90) t; tip_new = tip + 4 t_new (identical to g2_trajectory_run local_forecast)",
+  "scopeLimits": {"increment_mm": 4, "maxStateIndex": 2, "maxArcLength_mm": 33.4, "noThirdStep": true, "noRetryAfterHoldWithoutCommittedInvestigation": true, "holdChainNeverReused": true},
+  "authorization": {"default": "dry, read-only, writes nothing", "runToken": "G2M3RUN|<policy SHA-256 upper case>|<material id>|maxState=2", "chainRoot": "outputs/g2_material_trajectories_v1", "chainDirMustContainMaterialId": true},
+  "mesh": {
+    "builder": "g2_kinked_join(P,'ExteriorOptions',{'BottomVertices_mm',[25.4 482.6],'TopVertices_mm',254,'TipGuideRadius_mm',15,'TipGuideHface_mm',1.5},'ExpectedVertices',N,'MaxT3Elements',40000,'ExpectedTangent',t_new)",
+    "admissibility": "g2_kink_admissibility K1-K10 before meshing",
+    "audit": "g2_kinked_mesh_auditor on the SAVED arrays, 34/34",
+    "T3max": 40000, "minAngle_deg": 20, "maxNeighborRatio": 1.8, "coreT3": 2788, "collarT3": 128, "seams": "64+64", "qActiveParents": 2443
+  },
+  "phase": "g2_material_phase_stage (copy of the PR #38 phase stage): g2_material_phase_map + g2_material_phase_verify + check_g2_m2_phase_controls, G2_MATERIAL_POLICY_v1 tolerances; no reuse of labels from any other mesh",
+  "sif": "g2_material_sif_on_mesh, unchanged, with G2_TRAJECTORY_POLICY_v1 BVP and verification thresholds (read only): blind COD first, five-annulus EDI, matrix E and nu, q support matrix only, residual, statics, energy, interface balance, annulus resultant, opening, K_II sign gate, 4x4 vs 6x6",
+  "records": "ROOT, then per step: mesh MAT, PHASE_MAP record, SOLUTION record, REVIEW record, STATE record (g2_trajectory_record manifests); HOLD record on failure; review and state reuse re-verify forecast, mesh hash and content, 34/34 re-audit, phase re-map and verifier, parent and source hashes, without FEM",
+  "decomposition": {
+    "G": "(KI_raw^2 + KII_raw^2)/E_m at P = 1 N (EDI 6x6 annulus 0.4-2.6 mm); COD and J as secondary estimators",
+    "R_direct": "G_M[Gamma_H]/G_H[Gamma_H] (PR #38 records)",
+    "R_path": "G_M[Gamma_M]/G_M[Gamma_H]",
+    "R_total": "G_M[Gamma_M]/G_H[Gamma_H]",
+    "identityTolerance": 1e-12,
+    "S0": "R_path = 1 exactly (same record)"
+  },
+  "uncertainty": {
+    "ratioPrimary": "U = max(contour spread of the ratio, |ratio_4x4 - ratio|, |ratio_COD - ratio|, U_mesh for cross-mesh ratios); resolved iff |R-1| > 2U and the COD ratio has the same sign",
+    "U_mesh": "cross-mesh floor at identical geometry from PR #38: |G_H1(S2alt)/G_H1(S2) - 1|",
+    "ratioConservative": "R*(dG_a + dG_b), dG = |G_EDI - G_COD|/G_EDI of the two terms; reported and classified",
+    "pathSeparation": "at s = 29.4 and 33.4 mm: tip separation |tip_M - tip_H| and signed lateral offset (tip_M - tip_H).n_H; U_sep(29.4) = 4 U_dTheta0, U_sep(33.4) = 8 U_dTheta0 + 4 U_dTheta1 (radians x mm), U_dTheta = max(|dTheta_COD - dTheta|, |dTheta_4x4 - dTheta|, contour spread of dTheta) of theta_M - theta_H at the matched parents; resolved iff separation > 2 U_sep; conservative variant uses |theta_EDI - theta_COD|_M + |theta_EDI - theta_COD|_H",
+    "steering": "local MTS angles are compared only within one state's own frame; global terminal tangents reported separately"
+  },
+  "robustness": {
+    "altMesh": "at each material's M2 geometry, one alternative mesh with ExteriorOptions plus 'GuideHface_mm',1.0,'Hmax_mm',5 (as PR #38 S2alt), all gates; R_path_alt = G_M,alt[Gamma_M2]/G_M,S2alt[Gamma_H S2] (PR #38 S2alt record)",
+    "ROBUST": "same sign of R_path - 1 and |dRpath_alt - dRpath| <= 0.25 |dRpath| + 2 U_mesh",
+    "SENSITIVE": "same sign, larger difference",
+    "NOT_ROBUST": "different sign",
+    "pathSeparationRobustness": "not measured (no alternative full path); path separation reported as a single-mesh-family numerical observation"
+  },
+  "comparability": "chord counts and band polygon areas of every new mesh recorded; geometry-equivalent iff 3x76 chords and band area within 1e-4 relative of S2; otherwise flagged",
+  "faults": ["forged review with another step's or material's mesh", "phase labels inconsistent with the saved polygons", "switched material id", "q domain reaching a band (phase controls)", "policy or source drift", "wrong parent hash or parent K", "swapped bank sign", "bad 4-mm segment", "step 3 request", "interrupt after review and after state", "tampered child state", "dirty source", "dry mode writes nothing", "deterministic replay"],
+  "resources": {"freePhysicalRAM_GiB_min": 5, "matlabRelease": "R2023a", "oneMatlabProcess": true, "cleanCommittedTree": true},
+  "forbidden": ["State 3 or a third increment", "changing the 4-mm step", "seeding material paths from homogeneous K", "reusing labels, U or K across meshes", "relaxing any threshold", "automatic retries", "onset, toughness, arrest, CZM, experimental claims"]
+}
