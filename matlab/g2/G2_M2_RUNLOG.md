@@ -56,3 +56,9 @@ No tolerance, gate, policy value or numerical code changed. The batch now calls 
 **Fix.** The batch now uses the saved S2 `crackPolyline`, after asserting it equals the preregistered polyline to 1e−9 mm. Mesh options are unchanged (GuideHface 1.0, Hmax 5, everything else as for S2).
 
 **On the one-attempt rule.** This is not a second mesh attempt in the sense of the preregistration. No mesh existed, no gate on a mesh failed, and no mesh parameter is changed. The rule against tuning after a mesh HOLD still applies to the retry.
+
+## Run D: `run_20261121_132226_301`, HEAD `9be3a05`, **GO** (accepted)
+
+- **States:** G, S0, S1, S2, S2alt and the summary all PASS.
+- **S2alt:** 35,125 T3, 34/34, 112 chords per circle; both contrasts **ROBUST**.
+- **Reporting:** results are in `G2_M2_SHIELDING_STEERING_RESULTS.md`.
