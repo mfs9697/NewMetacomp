@@ -29,7 +29,7 @@ end
 P=F.Po.homogeneous{3};plot(ax,P(:,1),P(:,2),'-','Color',cH,'LineWidth',1.6,'HandleVisibility','off');
 xlim(ax,[60 200]);ylim(ax,[0 203.2]);xlabel(ax,T.x);ylabel(ax,T.y);title(ax,T.f1a,'FontWeight','normal','FontSize',8.5);
 text(ax,105,12,T.crack,'FontSize',7.5);text(ax,152.4,95.2,T.band,'FontSize',7,'HorizontalAlignment','center');
-text(ax,152.4,69.85,T.hole,'FontSize',6,'HorizontalAlignment','center');box(ax,'on');comma(ax);
+box(ax,'on');comma(ax);
 ax=nexttile(tl);hold(ax,'on');grid(ax,'on');
 csvP=fopen(fullfile(out,'fig1_lateral_offsets.csv'),'w');fprintf(csvP,'material,family,s_mm,delta_mm,U_sep_mm\n');
 for m={'soft','stiff'}
@@ -50,7 +50,7 @@ csvD=fopen(fullfile(out,'fig1_crossfamily_drift.csv'),'w');fprintf(csvD,'path,s_
 for m={'homogeneous','soft','stiff'}
  x=F.cross.(m{1});d=[x.tipDrift_mm];
  plot(ax,s,1000*d,'-o','Color',col.(m{1}),'MarkerFaceColor',col.(m{1}),'LineWidth',1.2,'HandleVisibility','off');
- text(ax,s(3)+.15,1000*d(3),lab(m{1}),'FontSize',6.5,'Color',col.(m{1}));
+ dy=struct('homogeneous',.008,'soft',0,'stiff',-.008);text(ax,s(3)+.15,1000*d(3)+dy.(m{1}),lab(m{1}),'FontSize',6.5,'Color',col.(m{1}));
  for k=1:3,fprintf(csvD,'%s,%.1f,%.4e\n',m{1},s(k),d(k));end
 end
 fclose(csvD);
