@@ -12,6 +12,8 @@ All runs used genuine MATLAB R2023a with the PDE Toolbox, one MATLAB process at 
 | 5 | `de9d015` | `outputs/g2_m4b_faults_v1/fault_20261121_195051_593` | **38/38** | Includes an interrupt and resume (no FEM on reuse) and a bit-identical replay of all 15 records and both legacy controls. The accepted run was unchanged (80 files). |
 | 6 | uncommitted at run time | `outputs/g2_m4b_report/run_20261121_195318_815` | superseded | In figures 2 and 3 the uncertainty note overlapped the legend. The note was moved into the legend title. |
 | 7 | committed as `e2aba21` | `outputs/g2_m4b_report/run_20261121_195428_941` | final figures | All five figures were inspected visually. |
+| 8 | Python (no MATLAB) | `scripts/report/build_g2_report_v0_4.py`, Word render 1 | superseded | v0.4 from verified v0.3 (38 pages). The page review found: table headers stranded at page feet, non-bold table captions, some indices without subscripts, new sources out of order. |
+| 9 | Python (no MATLAB) | Word render 2 | final | v0.4 DOCX SHA-256 `c275d3fe…78f6`. All 38 pages inspected; renders in `reports/G2/render_check_v0_4/`. |
 
 ## Corrections and traps recorded during M4.B
 
