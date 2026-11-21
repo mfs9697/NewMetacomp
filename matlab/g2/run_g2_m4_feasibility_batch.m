@@ -54,7 +54,7 @@ try
  chainOK=true;
  for k=1:numel(src)
   if startsWith(src(k).file,'outputs/g2_material_trajectories_v1/')
-   chainOK=chainOK&&contains(led3,[src(k).sha256,' *',erase(src(k).file,'outputs/')]);
+   chainOK=chainOK&&contains(led3,lower([src(k).sha256,' *',erase(src(k).file,'outputs/')]));
   end
  end
  assert(chainOK,'G2M4F:ChainLedger','A PR #41 chain record is not in the M3 SHA ledger.');
