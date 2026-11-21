@@ -8,8 +8,9 @@ function C = check_g2_m2_phase_controls(D,PM,geo,vopts)
 % cross a band there and the verifier correctly accepts it (M2 run A HOLD, see
 % G2_M2_RUNLOG.md). This wrapper:
 %  - requires every other PR #35 case to be rejected, as before;
-%  - requires the PR #35 N7 verdict to match geometry: rejected iff 45 mm > tip-to-band
-%    distance (the verifier must neither miss a real crossing nor invent one);
+%  - requires the PR #35 N7 verdict to match geometry: rejected iff 45 mm + the preregistered
+%    1 mm q clearance > tip-to-band distance (the verifier must neither miss a real crossing
+%    or clearance violation nor invent one);
 %  - adds N7s: a q radius of (tip-to-band distance + 1 mm), which always reaches a band,
 %    and must be rejected.
 NC=check_g2_material_phase_controls(D,PM,geo,vopts);
@@ -18,7 +19,8 @@ band=unique(D.T6(PM.phase==2,:));dBand=min(rN(band));
 names={NC.cases.name};i7=find(strcmp(names,'N7_q_domain_crossing_band'));
 others=setdiff(1:numel(NC.cases),i7);
 okOthers=all([NC.cases(others).rejected]);
-n7Expected=45>dBand;n7Observed=NC.cases(i7).rejected;
+n7Expected=45+vopts.minQClearance_mm>dBand;   % the verifier also enforces the >= 1 mm q clearance (M2 run B)
+n7Observed=NC.cases(i7).rejected;
 o=vopts;o.qOuterRadii_mm=[vopts.qOuterRadii_mm(:);dBand+1];
 V=g2_material_phase_verify(D.X6,D.T6,PM.phase,geo.centers,geo.holeR,geo.interfaceR,o);
 n7s=~V.pass&&any(strcmp(V.failed,'qSupportMatrixOnly'));

@@ -24,3 +24,17 @@ Every formal run writes a new `outputs/g2_material_evolution_v1/run_<time>/`. Fa
 No tolerance, gate, policy value or numerical code changed. The batch now calls the wrapper, and the wrapper is added to the source-hash list.
 
 **Retry:** a new folder, after this note is committed.
+
+## Run B: `run_20261121_132003_358`, HEAD `3ebc971`, HOLD at S1 (my wrapper's expectation)
+
+**S0: complete PASS** (kept in the run folder):
+- auditors 38/38 and 24/24;
+- adapter;
+- phase map, verifier and negatives; tip-to-band distance 48.46 mm, so N7 at 45 mm was correctly not rejected, and N7s was rejected;
+- WP2 regressions with zero difference;
+- bitwise identity;
+- Msoft and Mstiff pass every gate.
+
+**Stopped at:** S1 negatives. The nearest band node is 45.27 mm from the tip. The PR #35 N7 domain (45 mm) does not reach a band, but the verifier also enforces the preregistered q clearance of at least 1 mm (45.27 − 45 = 0.27 mm < 1 mm). It therefore correctly rejected the domain. My wrapper expected no rejection because it compared 45 mm with the distance and left out the clearance term.
+
+**Fix:** the expectation becomes "rejected iff 45 mm + `minQClearance_mm` > tip-to-band distance". No verifier, tolerance or policy change. S0 is recomputed in the retry; the formal run is deterministic.
