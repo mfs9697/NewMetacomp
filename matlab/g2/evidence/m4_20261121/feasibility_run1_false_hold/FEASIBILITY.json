@@ -1,0 +1,13 @@
+{
+  "schema": "NewMetacomp.G2.M4.Feasibility.v1",
+  "issue": 44,
+  "status": "HOLD_ALT_S0",
+  "stages": [],
+  "gitHead": "a06fc5b2074af3962193c056dbfb9c8b4def8b67",
+  "dirty": "",
+  "hold": {
+    "identifier": "G2M4F:ChainLedger",
+    "message": "A PR #41 chain record is not in the M3 SHA ledger."
+  },
+  "finished": "2026-11-21 17:27:08"
+}

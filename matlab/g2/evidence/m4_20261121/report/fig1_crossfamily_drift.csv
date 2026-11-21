@@ -1,0 +1,10 @@
+path,s_mm,tipDrift_mm
+homogeneous,25.4,0.0000e+00
+homogeneous,29.4,6.8302e-05
+homogeneous,33.4,1.2016e-04
+soft,25.4,0.0000e+00
+soft,29.4,8.9909e-05
+soft,33.4,1.5534e-04
+stiff,25.4,0.0000e+00
+stiff,29.4,6.8730e-05
+stiff,33.4,1.1675e-04

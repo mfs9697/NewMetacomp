@@ -1,0 +1,157 @@
+{
+ "schema": "NewMetacomp.G2.M4A.Provenance.v1",
+ "chainRunCommit": "70d07695cc695d333d5ede59fe59dc88f746633b",
+ "analysisCommit": "a66cdca340d594152d19054ebbad68afbf586fb6",
+ "reportCommit": "edfcaba4bd011fa9874bd96e4cd988553d0574e4",
+ "s0RecordSHA256": "b02e72028d0ed34c62efacc5fd0ad072b52af48bff9aa6a87558b4447f03f95f",
+ "s0MeshSHA256": "ce2f5eaec79b604e3cd1dc91b53d8c4295a5a961177d11d8f54fdfdf8025ecf5",
+ "runs": [
+  {
+   "mode": "M4.0 feasibility (mesh only)",
+   "head": "a06fc5b",
+   "outcome": "HOLD (false): the ledger lookup compared a lower-cased ledger with a mixed-case path; no mesh built"
+  },
+  {
+   "mode": "diagnostic expression",
+   "head": "a06fc5b",
+   "outcome": "ledger lookup reproduced (hash present, mixed-case key absent); no files"
+  },
+  {
+   "mode": "M4.0 feasibility (mesh only)",
+   "head": "b84dea3",
+   "outcome": "FEASIBLE: F0 source lock, F1 famA bitwise, F2 alt S0 13/13, 38/38, 24/24, phase OK"
+  },
+  {
+   "mode": "S0ALT dry",
+   "head": "70d0769",
+   "outcome": "PASS, no files"
+  },
+  {
+   "mode": "S0ALT -Run",
+   "head": "70d0769",
+   "outcome": "S0ALT written (34 641 T3, 3×112 chords)"
+  },
+  {
+   "mode": "dry: homogeneous, soft, stiff",
+   "head": "70d0769",
+   "outcome": "PASS, own alt-S0 K and step-1 forecasts, no files"
+  },
+  {
+   "mode": "-Run: homogeneous, soft, stiff",
+   "head": "70d0769",
+   "outcome": "STEP_CAP at state 2 for all three chains"
+  },
+  {
+   "mode": "analysis",
+   "head": "a66cdca",
+   "outcome": "GO; original regression 0; verdict FULL_PATH_ROBUST"
+  },
+  {
+   "mode": "faults",
+   "head": "a66cdca",
+   "outcome": "24/24; accepted chains unchanged"
+  },
+  {
+   "mode": "report (figures)",
+   "head": "a66cdca",
+   "outcome": "superseded: overlapping legends/titles, missing glyph, decimal points"
+  },
+  {
+   "mode": "report (figures)",
+   "head": "c55a0b2",
+   "outcome": "superseded: overlapping end labels in Fig. 1c"
+  },
+  {
+   "mode": "report (figures)",
+   "head": "edfcaba",
+   "outcome": "final figures, all pages inspected"
+  }
+ ],
+ "steps": [
+  {
+   "material": "однорідна",
+   "step": 1,
+   "tip": [
+    102.4722129091,
+    29.3037475125
+   ],
+   "turn": -12.5947153527,
+   "T3": 34929,
+   "audit": "34/34",
+   "chords": "3×112",
+   "KI": 0.182586074,
+   "KII": 0.00151404
+  },
+  {
+   "material": "однорідна",
+   "step": 2,
+   "tip": [
+    103.40903384,
+    33.1924962243
+   ],
+   "turn": -0.9500632524,
+   "T3": 35121,
+   "audit": "34/34",
+   "chords": "3×112",
+   "KI": 0.195983191,
+   "KII": 0.003150314
+  },
+  {
+   "material": "м’які",
+   "step": 1,
+   "tip": [
+    102.4280663601,
+    29.3133497292
+   ],
+   "turn": -11.9475738446,
+   "T3": 34879,
+   "audit": "34/34",
+   "chords": "3×112",
+   "KI": 0.183106707,
+   "KII": 0.001514005
+  },
+  {
+   "material": "м’які",
+   "step": 2,
+   "tip": [
+    103.3207208035,
+    33.2124737391
+   ],
+   "turn": -0.9473414944,
+   "T3": 35121,
+   "audit": "34/34",
+   "chords": "3×112",
+   "KI": 0.197992253,
+   "KII": 0.003303722
+  },
+  {
+   "material": "жорсткі",
+   "step": 1,
+   "tip": [
+    102.5011188603,
+    29.2971765164
+   ],
+   "turn": -13.0193269546,
+   "T3": 34929,
+   "audit": "34/34",
+   "chords": "3×112",
+   "KI": 0.180957649,
+   "KII": 0.001521873
+  },
+  {
+   "material": "жорсткі",
+   "step": 2,
+   "tip": [
+    103.467647737,
+    33.1786481355
+   ],
+   "turn": -0.9635683437,
+   "T3": 35119,
+   "audit": "34/34",
+   "chords": "3×112",
+   "KI": 0.193167373,
+   "KII": 0.003013422
+  }
+ ],
+ "note": "Dry S0ALT and dry chain preflights printed to the console only (no files by design); their key lines are in the session report."
+}

@@ -1,0 +1,320 @@
+{
+  "schema": "NewMetacomp.G2.M4.Feasibility.v1",
+  "issue": 44,
+  "status": "FEASIBLE",
+  "stages": [
+    {
+      "name": "F0_SOURCE_LOCK",
+      "status": "PASS",
+      "info": {
+        "files": 32,
+        "pr41ChainRecordsInLedger": true
+      }
+    },
+    {
+      "name": "F1_BUILDER_IDENTITY",
+      "status": "PASS",
+      "info": {
+        "famA_T3": 28151,
+        "bitwise": true,
+        "options": [
+          "BottomVertices_mm",
+          [
+            25.4,
+            482.6
+          ],
+          "TopVertices_mm",
+          254,
+          "TipGuideRadius_mm",
+          15,
+          "TipGuideHface_mm",
+          1.5
+        ]
+      }
+    },
+    {
+      "name": "F2_ALT_S0",
+      "status": "PASS",
+      "info": {
+        "options": [
+          "BottomVertices_mm",
+          [
+            25.4,
+            482.6
+          ],
+          "TopVertices_mm",
+          254,
+          "TipGuideRadius_mm",
+          15,
+          "TipGuideHface_mm",
+          1.5,
+          "GuideHface_mm",
+          1,
+          "Hmax_mm",
+          5
+        ],
+        "audits": {
+          "join": "13/13",
+          "independent38": "38/38",
+          "protectedTip": "24/24"
+        },
+        "adapter": {
+          "schema": true,
+          "tipMatchesPolyline": true,
+          "polylineMatchesPreregistered": true,
+          "banksTwinned": true,
+          "banksOnPolyline": true,
+          "upperBankOnPlusNSide": true,
+          "anchorsPresent": true
+        },
+        "phase": {
+          "map": true,
+          "verifier": true,
+          "negatives": true
+        },
+        "independence": {
+          "exteriorNodesAlt": 16262,
+          "exteriorNodesCoincidingWithFamA": 1555,
+          "coreCollarT3Shared": 2916,
+          "famA_T3": 28151,
+          "alt_T3": 34641,
+          "alt_minAngle_deg": 30.1268473212245,
+          "alt_maxNeighborRatio": 1.5918285508612136
+        },
+        "geometry": {
+          "chords_famA": [
+            76,
+            76,
+            76
+          ],
+          "chords_alt": [
+            112,
+            112,
+            112
+          ],
+          "bandArea_famA_mm2": [
+            1012.1525285981618,
+            1012.1525285981609,
+            1012.1525285981605
+          ],
+          "bandArea_alt_mm2": [
+            1012.8529641014202,
+            1012.8529641014208,
+            1012.8529641014194
+          ],
+          "bandArea_nominal_mm2": 1013.4149581949956,
+          "polyVsNominal_famA": [
+            -0.0012457183374146828,
+            -0.0012457183374150194,
+            -0.0012457183374152436
+          ],
+          "polyVsNominal_alt": [
+            -0.00055455476459182807,
+            -0.00055455476459171586,
+            -0.00055455476459104279
+          ],
+          "altVsFamA_bandAreaRel": [
+            0.0006920256418550991,
+            0.00069202564185655985,
+            0.00069202564185554926
+          ],
+          "bandVolumeFraction_famA": 0.029524406241599098,
+          "bandVolumeFraction_alt": 0.029544837887778924,
+          "qClearance_famA_mm": 45.859506017812251,
+          "qClearance_alt_mm": 45.852641910569247,
+          "tipToBand_alt_mm": 48.452641910569248
+        },
+        "joinSummary": {
+          "T3elements": 34641,
+          "T3nodes": 17781,
+          "T6nodes": 70205,
+          "coreT3": 2788,
+          "collarT3": 128,
+          "exteriorT3": 31725,
+          "minAngle_deg": 30.1268473212245,
+          "maxNeighborRatio": 1.5918285508612136,
+          "rimSeamEdges": 64,
+          "coreSeamEdges": 64,
+          "rimSeamMaxRatio": 1.2908691948069049,
+          "crackBankEdgesPerSide": [
+            75,
+            75
+          ],
+          "bankT6NodesPerSide": [
+            151,
+            151
+          ],
+          "qActiveT6": 2443,
+          "tip_mm": [
+            101.6,
+            25.4
+          ],
+          "tipNode": 1114,
+          "rimCoordinateMismatch_mm": 0,
+          "exterior": {
+            "cadFaces": 5,
+            "nativeMeshingSeconds": 0.5835836,
+            "nativeT3": 31725,
+            "nativeNodes": 16327,
+            "rimNodeCount": 65,
+            "rimVertexMaxDeviation_mm": 0,
+            "lipPairs": 48,
+            "lipStationMismatch_mm": 0.067259938963232457,
+            "channelHalfWidth_mm": 0.02,
+            "rimRadius_mm": 3.3,
+            "rimChord_mm": 0.3238466505609589,
+            "controls": {
+              "Hmin_mm": 0.12,
+              "Hmax_mm": 5,
+              "Hgrad": 1.12,
+              "lipHedge_mm": 0.45,
+              "guideHface_mm": 1,
+              "rimHedge_mm": 0.3238466505609589,
+              "tipGuideRadius_mm": 15,
+              "tipGuideHface_mm": 1.5
+            },
+            "annulusFaceIDs": [
+              1,
+              2,
+              5
+            ],
+            "PDEToolboxVersion": "3.10"
+          }
+        }
+      }
+    }
+  ],
+  "gitHead": "b84dea30d1c97a1755caeb44e0a3971c829350ea",
+  "dirty": "",
+  "sources": [
+    {
+      "file": "matlab/g2/G2_M3_TRAJECTORY_POLICY_v1.json",
+      "sha256": "cf3023b55e99efa0eb4f862edb7f2d1afabce7f80a3444b0375c1eeb546da9a8"
+    },
+    {
+      "file": "matlab/g2/G2_MATERIAL_POLICY_v1.json",
+      "sha256": "e60156f60dc8bae05f2ab1b1a25bc93bd84cedb7485591b01ada2413d946a971"
+    },
+    {
+      "file": "matlab/g2/G2_TRAJECTORY_POLICY_v1.json",
+      "sha256": "1d6af7f6f3e8af389ab02330d9a1eaebdbc00bedb52aad54db902b4de36b39dc"
+    },
+    {
+      "file": "matlab/g2/G2_M2_POLICY_v1.json",
+      "sha256": "1782eebc5db6ef8dacdb8a5325996b3d9a4e774a388c0990e884ffec40dd834c"
+    },
+    {
+      "file": "matlab/g2/g2_m3_trajectory_run.m",
+      "sha256": "396ab051341d5110b5dd2a7422353136bf2bf7fa81b7ffe13ad69186546305a6"
+    },
+    {
+      "file": "matlab/g2/g2_material_phase_map.m",
+      "sha256": "2af6a511ba1e438c94d656d4776bf7ef005812afe58609d71cfc61a5e7f2c734"
+    },
+    {
+      "file": "matlab/g2/g2_material_phase_verify.m",
+      "sha256": "b5d62fd8b5ae9f181fe0515e08a7429c63d529a905656264a468c3599d7c2909"
+    },
+    {
+      "file": "matlab/g2/g2_material_phase_stage.m",
+      "sha256": "4522acb900c25a49454e31a0bdc0860f4b511f4f80b7655500d116e60ac71a2f"
+    },
+    {
+      "file": "matlab/g2/g2_t6_elasticity_phase.m",
+      "sha256": "c11cf9b0fbfc7e35ada3b274620058275f336787615e718732eeb88cb3747e5f"
+    },
+    {
+      "file": "matlab/g2/g2_material_sif_on_mesh.m",
+      "sha256": "a385f2d4859817adb2d5bc5939c481f76e68ae7690d288fe711fed78972cc2e8"
+    },
+    {
+      "file": "matlab/g2/g2_trajectory_sif_on_mesh.m",
+      "sha256": "d2f6e96b8f5fe019239def351d3b38cdec4bd523628b77904a5343ea21cd0228"
+    },
+    {
+      "file": "matlab/g2/g2_join_protected_mesh.m",
+      "sha256": "5c687cb67d12b940bd5ea00eaeedc4e353084402df2af6fa202ca887d974148d"
+    },
+    {
+      "file": "matlab/g2/g2_protected_exterior_mesh.m",
+      "sha256": "6363d14acb47ece0d0cedade7ebca1faf652df5b20ca5eb528f30a26af088b5f"
+    },
+    {
+      "file": "matlab/g2/g2_p010_cornell_regular_block.m",
+      "sha256": "b143ede0b1f0303c68af79b82af49aa3edc523223f3276032dcf9d4af6924c30"
+    },
+    {
+      "file": "matlab/g2/g2_independent_t6_checker.m",
+      "sha256": "9475b582b76c0c870bf5ab96d054925ac316b0767e139416dc00709ec7a83503"
+    },
+    {
+      "file": "matlab/g2/g2_protected_tip_checker.m",
+      "sha256": "c813413a5a070a35aaa71299e1d3b3fba898def1cee252420861918cc8432274"
+    },
+    {
+      "file": "matlab/g2/g2_kinked_join.m",
+      "sha256": "7d3d2c2e606542fb61b9b267f3c1877a7773b5cf2f348062659fa45c3f9aa514"
+    },
+    {
+      "file": "matlab/g2/g2_kinked_exterior_mesh.m",
+      "sha256": "ce6bd5fe3b672f78edf4e4272e797f507636b30bfb94876c4d1f466f8874406c"
+    },
+    {
+      "file": "matlab/g2/g2_kinked_mesh_auditor.m",
+      "sha256": "2935e5e6dff62f224c9770387708cbfd1de143dc59dcf3c4afca6d552b772467"
+    },
+    {
+      "file": "matlab/g2/g2_m2_state_adapter.m",
+      "sha256": "63a3226c55b927d3c0c8024e51be8a66abb68975d6ec47ee704a9fce250943c5"
+    },
+    {
+      "file": "matlab/g2/run_g2_protected_mesh_batch.m",
+      "sha256": "b7cbca6def57e2cab4de65410e413abb5ac657f5f26cde1b52c101d3e90bdb20"
+    },
+    {
+      "file": "matlab/g2/evidence/m2_20261121/SHA256SUMS_original_outputs.txt",
+      "sha256": "ae188b9587cf309840bee50ccc947a42008b82eb99b3874f146415970574ad14"
+    },
+    {
+      "file": "matlab/g2/evidence/m3_20261121/SHA256SUMS_original_outputs.txt",
+      "sha256": "66feef2fd84a4d11f8ea6ef49e8bc6dbf1336a98ba85ea59f3841cbe80780133"
+    },
+    {
+      "file": "docs/research/crack-growth-gaps-2026/G2_SPECIMEN1_1990_GEOMETRY.json",
+      "sha256": "45a88fa0926472ddbe5e70e4c80a97b88196dd45d8a266fa04273f89790b47bf"
+    },
+    {
+      "file": "outputs/g2_protected_mesh/run_20261118_165922_343_famA/GEOMETRY_ONLY_candidate.mat",
+      "sha256": "05d5c3fcf5152c30bb0e5c288dc109bfce42b8d677077c4631254ab5887657dc"
+    },
+    {
+      "file": "outputs/g2_p010_isolated/run_20261118_163657_790/P010_ISOLATED_REGULAR_ONLY.mat",
+      "sha256": "15201996b4165aa9980f61f370a75749b1ce28ec0accaa061902641524c37c58"
+    },
+    {
+      "file": "outputs/g2_material_trajectories_v1/chain_soft_v1/ROOT.mat",
+      "sha256": "4d902643c631ceab3125a4db988571294bf7fa67f0a00b481224c1ca8edccd8c"
+    },
+    {
+      "file": "outputs/g2_material_trajectories_v1/chain_soft_v1/STEP_001/STATE.mat",
+      "sha256": "242d05baa2b077107c9f95656c31cfd9f17e4a80fb1568b09de29f6d3fce463b"
+    },
+    {
+      "file": "outputs/g2_material_trajectories_v1/chain_soft_v1/STEP_002/STATE.mat",
+      "sha256": "25e64310f34ec59e4081a3b773607d88318cc7d397201e5501ef3b1c0efa02a6"
+    },
+    {
+      "file": "outputs/g2_material_trajectories_v1/chain_stiff_v1/ROOT.mat",
+      "sha256": "059c072cd865818cbe5db9368bc99ba01efce122a1464def5e93bef9c3926c00"
+    },
+    {
+      "file": "outputs/g2_material_trajectories_v1/chain_stiff_v1/STEP_001/STATE.mat",
+      "sha256": "ae75cd272e7dcdfd5ba30bae80dccf8c6f22def81a93060fe961ef36bb91590b"
+    },
+    {
+      "file": "outputs/g2_material_trajectories_v1/chain_stiff_v1/STEP_002/STATE.mat",
+      "sha256": "b88a46ea100a86c46b8de3f11312b490552f60f72efb1bd8176f42df85b00da6"
+    }
+  ],
+  "finished": "2026-11-21 17:28:29"
+}

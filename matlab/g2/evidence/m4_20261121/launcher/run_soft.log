@@ -1,0 +1,93 @@
+﻿Free RAM: 6,42 GiB (guard 5,00 GiB)
+M4 policy SHA-256: 2548F373CD46EDDE595EEFA562D4AFBE8EE2C929C51B9D427557CDE3E279618E
+RUN authorized for soft (max 2 steps)
+G2_M2_ADAPTER S0 pass=1 added=[crackPolyline,tipTangent] banks=151 side-checked U/L 295/295
+G2_INDEPENDENT_T6_GATES=38/38
+G2_INDEPENDENT_T6_PASS=1
+G2_INDEPENDENT_T6_BOUNDARY_LOOPS=4
+G2_INDEPENDENT_T6_EULER=-2
+G2_INDEPENDENT_T6_TIP=1114
+G2_INDEPENDENT_T6_MAX_RATIO=1.59182855
+G2_INDEPENDENT_T6_MIN_ANGLE_DEG=30.12684732
+G2_INDEPENDENT_T6_NO_LEFM=1
+G2_PROTECTED_TIP_GATES=24/24
+G2_PROTECTED_TIP_PASS=1
+PHASE_MAP pass=1 PHASE_MAP_TOPOLOGICAL_OK: 20589 matrix + 14052 reinforcement elements; chords per circle [112 112 112].
+PHASE_VERIFY pass=1 failed=[]
+PHASE_NEG N1_swapped_labels                    mapper=1 (PHASE_MAP_TOPOLOGICAL_OK) verifier=0 [labelsMatchGeometry,annulusAreaIdentity,matrixConnected,bandsConnected,tipGuideMatrixOnly,qSupportMatrixOnly] -> rejected=1
+PHASE_NEG N2_band_element_relabelled_matrix    mapper=1 (PHASE_MAP_TOPOLOGICAL_OK) verifier=0 [labelsMatchGeometry,interfaceChordsTwoOwnersMixed,noOtherMixedEdges,annulusAreaIdentity] -> rejected=1
+PHASE_NEG N3_matrix_element_relabelled_band    mapper=1 (PHASE_MAP_TOPOLOGICAL_OK) verifier=0 [labelsMatchGeometry,interfaceChordsTwoOwnersMixed,noOtherMixedEdges,annulusAreaIdentity] -> rejected=1
+PHASE_NEG N4_detached_interface                mapper=0 (HOLD_INTERFACE_DUPLICATE_ANGLE) verifier=0 [interfaceChordsTwoOwnersMixed,noOtherMixedEdges,coincidentNodesOnlyRegisteredTwins] -> rejected=1
+PHASE_NEG N5_nonconforming_interface           mapper=0 (HOLD_INTERFACE_NONCONFORMING) verifier=0 [noStraddle,labelsMatchGeometry,interfaceChordsTwoOwnersMixed,noOtherMixedEdges,annulusAreaIdentity] -> rejected=1
+PHASE_NEG N6_filled_void                       mapper=1 (PHASE_MAP_TOPOLOGICAL_OK) verifier=0 [noVoidPenetration,annulusAreaIdentity,domainAreaIdentity,coincidentNodesOnlyRegisteredTwins] -> rejected=1
+PHASE_NEG N7_q_domain_crossing_band            mapper=1 (PHASE_MAP_TOPOLOGICAL_OK) verifier=1 [] -> rejected=0
+PHASE_NEG N9_band_label_in_tip_guide           mapper=1 (PHASE_MAP_TOPOLOGICAL_OK) verifier=0 [labelsMatchGeometry,noOtherMixedEdges,annulusAreaIdentity,bandsConnected,tipGuideMatrixOnly] -> rejected=1
+G2_MATERIAL_PHASE_NEGATIVES_PASS=0 (8 cases)
+M2_PHASE_NEG tip-to-band 48.453 mm: PR35 N7(45 mm) expected rejected=0 observed=0; N7s(49.453 mm) rejected=1; others rejected=1 -> pass=1
+G2_MATERIAL_SIF_PASS=1 KI=0.16604022 KII=+0.0177637529 MPa sqrt(m)/kN, COD 0.164584226 / +0.0175188554, C=0.000227293687 mm/N
+G2_M4A_S0 soft: KI 0.166040220427 KII +0.017763752868 per kN (own alternative-S0 solve)
+G2_KB_VENDOR_LOCAL_GATES=15/15
+G2_KB_GATES=12/12 TURN=-11.9475738446 MIN_ANGLE=30.126847 RATIO=1.591829 Q=2443
+G2_KEXT_NATIVE_T3=31963
+G2_KEXT_RIM_NODES=65
+G2_KJOIN_GATES=13/13
+G2_KJOIN_T3=34879 T6_NODES=70699 MIN_ANGLE=30.126847 MAX_RATIO=1.591829
+G2_KINKED_AUDIT_GATES=34/34
+G2_KINKED_AUDIT_PASS=1
+G2_M2_ADAPTER A1 pass=1 added=[] banks=169 side-checked U/L 328/329
+PHASE_MAP pass=1 PHASE_MAP_TOPOLOGICAL_OK: 20825 matrix + 14054 reinforcement elements; chords per circle [112 112 112].
+PHASE_VERIFY pass=1 failed=[]
+PHASE_NEG N1_swapped_labels                    mapper=1 (PHASE_MAP_TOPOLOGICAL_OK) verifier=0 [labelsMatchGeometry,annulusAreaIdentity,matrixConnected,bandsConnected,tipGuideMatrixOnly,qSupportMatrixOnly] -> rejected=1
+PHASE_NEG N2_band_element_relabelled_matrix    mapper=1 (PHASE_MAP_TOPOLOGICAL_OK) verifier=0 [labelsMatchGeometry,interfaceChordsTwoOwnersMixed,noOtherMixedEdges,annulusAreaIdentity] -> rejected=1
+PHASE_NEG N3_matrix_element_relabelled_band    mapper=1 (PHASE_MAP_TOPOLOGICAL_OK) verifier=0 [labelsMatchGeometry,interfaceChordsTwoOwnersMixed,noOtherMixedEdges,annulusAreaIdentity] -> rejected=1
+PHASE_NEG N4_detached_interface                mapper=0 (HOLD_INTERFACE_DUPLICATE_ANGLE) verifier=0 [interfaceChordsTwoOwnersMixed,noOtherMixedEdges,coincidentNodesOnlyRegisteredTwins] -> rejected=1
+PHASE_NEG N5_nonconforming_interface           mapper=0 (HOLD_INTERFACE_NONCONFORMING) verifier=0 [noStraddle,labelsMatchGeometry,interfaceChordsTwoOwnersMixed,noOtherMixedEdges,annulusAreaIdentity] -> rejected=1
+PHASE_NEG N6_filled_void                       mapper=1 (PHASE_MAP_TOPOLOGICAL_OK) verifier=0 [noVoidPenetration,annulusAreaIdentity,domainAreaIdentity,coincidentNodesOnlyRegisteredTwins] -> rejected=1
+PHASE_NEG N7_q_domain_crossing_band            mapper=1 (PHASE_MAP_TOPOLOGICAL_OK) verifier=0 [qSupportMatrixOnly] -> rejected=1
+PHASE_NEG N9_band_label_in_tip_guide           mapper=1 (PHASE_MAP_TOPOLOGICAL_OK) verifier=0 [labelsMatchGeometry,noOtherMixedEdges,annulusAreaIdentity,bandsConnected,tipGuideMatrixOnly] -> rejected=1
+G2_MATERIAL_PHASE_NEGATIVES_PASS=1 (8 cases)
+M2_PHASE_NEG tip-to-band 45.297 mm: PR35 N7(45 mm) expected rejected=1 observed=1; N7s(46.297 mm) rejected=1; others rejected=1 -> pass=1
+G2_MATERIAL_SIF_PASS=1 KI=0.183106707 KII=+0.00151400548 MPa sqrt(m)/kN, COD 0.181496329 / +0.00148270028, C=0.000228255721 mm/N
+G2_M4A_REVIEW_soft_001: tip (102.4280663601, 29.3133497292) turn -11.9475738446 deg T3 34879 audit 34/34 chords [112 112 112] KI 0.183106707 KII +0.001514005 per kN
+G2_KB_VENDOR_LOCAL_GATES=15/15
+G2_KB_GATES=12/12 TURN=-0.9473414944 MIN_ANGLE=30.126847 RATIO=1.591829 Q=2443
+G2_KEXT_NATIVE_T3=32205
+G2_KEXT_RIM_NODES=65
+G2_KJOIN_GATES=13/13
+G2_KJOIN_T3=35121 T6_NODES=71199 MIN_ANGLE=30.126847 MAX_RATIO=1.591829
+G2_KINKED_AUDIT_GATES=34/34
+G2_KINKED_AUDIT_PASS=1
+G2_M2_ADAPTER A2 pass=1 added=[] banks=185 side-checked U/L 357/358
+PHASE_MAP pass=1 PHASE_MAP_TOPOLOGICAL_OK: 21049 matrix + 14072 reinforcement elements; chords per circle [112 112 112].
+PHASE_VERIFY pass=1 failed=[]
+PHASE_NEG N1_swapped_labels                    mapper=1 (PHASE_MAP_TOPOLOGICAL_OK) verifier=0 [labelsMatchGeometry,annulusAreaIdentity,matrixConnected,bandsConnected,tipGuideMatrixOnly,qSupportMatrixOnly] -> rejected=1
+PHASE_NEG N2_band_element_relabelled_matrix    mapper=1 (PHASE_MAP_TOPOLOGICAL_OK) verifier=0 [labelsMatchGeometry,interfaceChordsTwoOwnersMixed,noOtherMixedEdges,annulusAreaIdentity] -> rejected=1
+PHASE_NEG N3_matrix_element_relabelled_band    mapper=1 (PHASE_MAP_TOPOLOGICAL_OK) verifier=0 [labelsMatchGeometry,interfaceChordsTwoOwnersMixed,noOtherMixedEdges,annulusAreaIdentity] -> rejected=1
+PHASE_NEG N4_detached_interface                mapper=0 (HOLD_INTERFACE_DUPLICATE_ANGLE) verifier=0 [interfaceChordsTwoOwnersMixed,noOtherMixedEdges,coincidentNodesOnlyRegisteredTwins] -> rejected=1
+PHASE_NEG N5_nonconforming_interface           mapper=0 (HOLD_INTERFACE_NONCONFORMING) verifier=0 [noStraddle,labelsMatchGeometry,interfaceChordsTwoOwnersMixed,noOtherMixedEdges,annulusAreaIdentity] -> rejected=1
+PHASE_NEG N6_filled_void                       mapper=1 (PHASE_MAP_TOPOLOGICAL_OK) verifier=0 [noVoidPenetration,annulusAreaIdentity,domainAreaIdentity,coincidentNodesOnlyRegisteredTwins] -> rejected=1
+PHASE_NEG N7_q_domain_crossing_band            mapper=1 (PHASE_MAP_TOPOLOGICAL_OK) verifier=0 [qSupportMatrixOnly] -> rejected=1
+PHASE_NEG N9_band_label_in_tip_guide           mapper=1 (PHASE_MAP_TOPOLOGICAL_OK) verifier=0 [labelsMatchGeometry,noOtherMixedEdges,annulusAreaIdentity,bandsConnected,tipGuideMatrixOnly] -> rejected=1
+G2_MATERIAL_PHASE_NEGATIVES_PASS=1 (8 cases)
+M2_PHASE_NEG tip-to-band 42.204 mm: PR35 N7(45 mm) expected rejected=1 observed=1; N7s(43.204 mm) rejected=1; others rejected=1 -> pass=1
+G2_MATERIAL_SIF_PASS=1 KI=0.197992253 KII=+0.00330372238 MPa sqrt(m)/kN, COD 0.196252083 / +0.0032524649, C=0.000229385409 mm/N
+G2_M4A_REVIEW_soft_002: tip (103.3207208035, 33.2124737391) turn -0.9473414944 deg T3 35121 audit 34/34 chords [112 112 112] KI 0.197992253 KII +0.003303722 per kN
+G2_M4A_SOFT_STATES_THROUGH=2 STAGE=STEP_CAP
+               pass: 1
+              stage: 'STEP_CAP'
+           material: 'soft'
+       policySHA256: '2548F373CD46EDDE595EEFA562D4AFBE8EE2C929C51B9D427557CDE3E279618E'
+                run: 1
+     lastStateIndex: 2
+       statesReused: 0
+    reviewsPromoted: 0
+     statesComputed: 2
+          forecasts: [1x2 struct]
+            message: 'States verified through 2 (policy cap 2).'
+       sourceHashes: [47x1 struct]
+            gitHead: '70d07695cc695d333d5ede59fe59dc88f746633b'
+        dirtySource: ''
+           chainDir: '<repo>\outputs\g2_m4_alt_family_v1\chain_soft_alt_v1'
+     s0RecordSHA256: 'B02E72028D0ED34C62EFACC5FD0AD072B52AF48BFF9AA6A87558B4447F03F95F'
+         rootSHA256: 'B7029FA3AEF62A3FFF43A3F73B99E436732E3294C711D7FB04D6668D068EB4A8'
+

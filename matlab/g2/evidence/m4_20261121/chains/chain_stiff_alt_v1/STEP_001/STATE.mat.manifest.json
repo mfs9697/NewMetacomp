@@ -1,0 +1,9 @@
+{
+  "schema": "NewMetacomp.G2.TrajectoryRecordManifest.v1",
+  "file": "STATE.mat",
+  "SHA256": "25F1A4307891E09ECF8EEEFCAA7B114F4FA18BA5A6BD7FB819922A27FCEEC751",
+  "bytes": 69448,
+  "recordSchema": "NewMetacomp.G2.M4A.State.v1",
+  "stateIndex": 1,
+  "physicalFractureGrowthProven": false
+}
