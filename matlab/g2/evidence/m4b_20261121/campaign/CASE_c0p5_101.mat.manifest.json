@@ -1,0 +1,9 @@
+{
+  "schema": "NewMetacomp.G2.TrajectoryRecordManifest.v1",
+  "file": "CASE_c0p5_101.mat",
+  "SHA256": "95FB81065DBC3E28054FDFCC39A31FCE4C136C7C9735A6EA910BA70AC10ABE3D",
+  "bytes": 1.14224E+6,
+  "recordSchema": "NewMetacomp.G2.M4B.CaseRecord.v1",
+  "stateIndex": -1,
+  "physicalFractureGrowthProven": false
+}

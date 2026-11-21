@@ -1,0 +1,55 @@
+{
+  "schema": "NewMetacomp.G2.M4B.Baselines.v1",
+  "pass": true,
+  "checks": {
+    "none_u": true,
+    "none_EDI_all": true,
+    "none_EDI4x4": true,
+    "none_COD": true,
+    "none_CMOD": true,
+    "none_compliance": true,
+    "none_noLabel2": true,
+    "c0p5_111_u": true,
+    "c0p5_111_EDI_all": true,
+    "c0p5_111_EDI4x4": true,
+    "c0p5_111_COD": true,
+    "c0p5_111_J": true,
+    "c0p5_111_compliance": true,
+    "c0p5_111_CMOD": true,
+    "c0p5_111_reactions": true,
+    "c0p5_111_strainEnergy": true,
+    "c0p5_111_phaseEnergy": true,
+    "c0p5_111_legacyPass": true,
+    "c0p5_111_legacyEqualsNew": true,
+    "c0p5_111_labelsEqualPMphase": true,
+    "c2p0_111_u": true,
+    "c2p0_111_EDI_all": true,
+    "c2p0_111_EDI4x4": true,
+    "c2p0_111_COD": true,
+    "c2p0_111_J": true,
+    "c2p0_111_compliance": true,
+    "c2p0_111_CMOD": true,
+    "c2p0_111_reactions": true,
+    "c2p0_111_strainEnergy": true,
+    "c2p0_111_phaseEnergy": true,
+    "c2p0_111_legacyPass": true,
+    "c2p0_111_legacyEqualsNew": true,
+    "c2p0_111_labelsEqualPMphase": true
+  },
+  "failed": [],
+  "deviations": {
+    "c0p5_111": {
+      "maxAbs_u": 0,
+      "maxAbs_EDI": 0
+    },
+    "c2p0_111": {
+      "maxAbs_u": 0,
+      "maxAbs_EDI": 0
+    },
+    "none": {
+      "maxAbs_u": 0,
+      "maxAbs_EDI": 0
+    }
+  },
+  "rule": "bitwise (isequal) for none vs CASE_S2_H1 and for 111 vs CASE_S2_Msoft/Mstiff; legacy g2_material_sif_on_mesh PASS and equal"
+}

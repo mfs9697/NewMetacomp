@@ -1,0 +1,9 @@
+{
+  "schema": "NewMetacomp.G2.TrajectoryRecordManifest.v1",
+  "file": "CONTROL_LEGACY_c2p0_111.mat",
+  "SHA256": "CA75C7EA628969FBB495C914C94AF15F2BF6FD1389100CD665DDECC82BC0E053",
+  "bytes": 886733,
+  "recordSchema": "NewMetacomp.G2.M4B.LegacyControl.v1",
+  "stateIndex": -1,
+  "physicalFractureGrowthProven": false
+}

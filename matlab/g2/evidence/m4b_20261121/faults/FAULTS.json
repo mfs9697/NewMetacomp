@@ -1,0 +1,277 @@
+{
+  "schema": "NewMetacomp.G2.M4B.Faults.v1",
+  "issue": 47,
+  "tests": [
+    {
+      "name": "F01_dry_writes_nothing",
+      "expected": "DRY_OK + no new files",
+      "observed": "DRY_OK, new files 0",
+      "pass": true,
+      "note": ""
+    },
+    {
+      "name": "F02_tampered_mesh",
+      "expected": "HOLD_SOURCE",
+      "observed": "HOLD_SOURCE",
+      "pass": true,
+      "note": ""
+    },
+    {
+      "name": "F03_N1_wrong_mask",
+      "expected": "rejected by phaseFromMask",
+      "observed": "phaseFromMask,inactiveAndMatrixLabelOne,activeChordsCarryJump,passiveChordsNoJump",
+      "pass": true,
+      "note": ""
+    },
+    {
+      "name": "F03_N2_swapped_ring_ids",
+      "expected": "rejected by oracleAgreement",
+      "observed": "oracleAgreement,interfaceIdsOneToOne,activeChordsCarryJump,passiveChordsNoJump",
+      "pass": true,
+      "note": ""
+    },
+    {
+      "name": "F03_N3_swapped_centre_order",
+      "expected": "rejected by centresAscendingY",
+      "observed": "oracleAgreement,centresAscendingY,interfaceIdsOneToOne,activeChordsCarryJump,passiveChordsNoJump",
+      "pass": true,
+      "note": ""
+    },
+    {
+      "name": "F03_N4_off_band_E",
+      "expected": "rejected by phaseFromMask",
+      "observed": "phaseFromMask,inactiveAndMatrixLabelOne,activeAreaIdentity,activeChordsCarryJump,jumpEdgeCount",
+      "pass": true,
+      "note": ""
+    },
+    {
+      "name": "F03_N5_ring_element_dropped",
+      "expected": "rejected by oracleAgreement",
+      "observed": "oracleAgreement,ringAreaIdentity,jumpEdgeCount,ringsAndMatrixConnected",
+      "pass": true,
+      "note": ""
+    },
+    {
+      "name": "F03_N6_detached_midside",
+      "expected": "rejected by chordsConforming",
+      "observed": "chordsConforming,coincidentOnlyTwins",
+      "pass": true,
+      "note": ""
+    },
+    {
+      "name": "F03_N7_q_reaches_ring",
+      "expected": "rejected by qSupportOwnerFree",
+      "observed": "qSupportOwnerFree,qClearance",
+      "pass": true,
+      "note": ""
+    },
+    {
+      "name": "F03_N8_node_in_hole",
+      "expected": "rejected by noVoidFilling",
+      "observed": "oraclePass,noVoidFilling",
+      "pass": true,
+      "note": ""
+    },
+    {
+      "name": "F03_N9_wrong_modulus",
+      "expected": "rejected by materialsAdmissible",
+      "observed": "materialsAdmissible",
+      "pass": true,
+      "note": ""
+    },
+    {
+      "name": "F03_N10_inactive_ring_jump",
+      "expected": "rejected by passiveChordsNoJump",
+      "observed": "phaseFromMask,inactiveAndMatrixLabelOne,activeAreaIdentity,passiveChordsNoJump,jumpEdgeCount",
+      "pass": true,
+      "note": ""
+    },
+    {
+      "name": "F04_interface_traction_imbalance",
+      "expected": "clean <= 1e-8, perturbed > 1e-8",
+      "observed": "clean 2.26e-12, perturbed 0.223",
+      "pass": true,
+      "note": ""
+    },
+    {
+      "name": "F05a_wrong_load",
+      "expected": "loadThicknessModulus fails",
+      "observed": "loadThicknessModulus",
+      "pass": true,
+      "note": ""
+    },
+    {
+      "name": "F05b_wrong_thickness",
+      "expected": "loadThicknessModulus fails",
+      "observed": "loadThicknessModulus",
+      "pass": true,
+      "note": ""
+    },
+    {
+      "name": "F06_bad_token_policy",
+      "expected": "HOLD_AUTH_TOKEN",
+      "observed": "HOLD_AUTH_TOKEN",
+      "pass": true,
+      "note": ""
+    },
+    {
+      "name": "F06_bad_token_source_set",
+      "expected": "HOLD_AUTH_TOKEN",
+      "observed": "HOLD_AUTH_TOKEN",
+      "pass": true,
+      "note": ""
+    },
+    {
+      "name": "F06_bad_token_mesh",
+      "expected": "HOLD_AUTH_TOKEN",
+      "observed": "HOLD_AUTH_TOKEN",
+      "pass": true,
+      "note": ""
+    },
+    {
+      "name": "F06_bad_token_case_cap",
+      "expected": "HOLD_AUTH_TOKEN",
+      "observed": "HOLD_AUTH_TOKEN",
+      "pass": true,
+      "note": ""
+    },
+    {
+      "name": "F06_bad_token_empty",
+      "expected": "HOLD_AUTH_TOKEN",
+      "observed": "HOLD_AUTH_TOKEN",
+      "pass": true,
+      "note": ""
+    },
+    {
+      "name": "F07_policy_drift",
+      "expected": "HOLD_POLICY_DRIFT",
+      "observed": "HOLD_POLICY_DRIFT",
+      "pass": true,
+      "note": ""
+    },
+    {
+      "name": "F08_source_drift_dirty_tree",
+      "expected": "HOLD_DIRTY_SOURCE",
+      "observed": "HOLD_DIRTY_SOURCE",
+      "pass": true,
+      "note": ""
+    },
+    {
+      "name": "F09a_low_ram_guard",
+      "expected": "HOLD_MEMORY",
+      "observed": "HOLD_MEMORY",
+      "pass": true,
+      "note": ""
+    },
+    {
+      "name": "F09b_launcher_guard_not_lowerable",
+      "expected": "nonzero exit, HOLD_RAM_POLICY",
+      "observed": "exit 1",
+      "pass": true,
+      "note": ""
+    },
+    {
+      "name": "F10_outside_design_c1p0_100",
+      "expected": "HOLD_CASE_OUTSIDE_DESIGN",
+      "observed": "HOLD_CASE_OUTSIDE_DESIGN",
+      "pass": true,
+      "note": ""
+    },
+    {
+      "name": "F10_outside_design_c0p5_000",
+      "expected": "HOLD_CASE_OUTSIDE_DESIGN",
+      "observed": "HOLD_CASE_OUTSIDE_DESIGN",
+      "pass": true,
+      "note": ""
+    },
+    {
+      "name": "F10_outside_design_c0p5_1101",
+      "expected": "HOLD_CASE_OUTSIDE_DESIGN",
+      "observed": "HOLD_CASE_OUTSIDE_DESIGN",
+      "pass": true,
+      "note": ""
+    },
+    {
+      "name": "F10_outside_design_none+none",
+      "expected": "HOLD_CASE_OUTSIDE_DESIGN",
+      "observed": "HOLD_CASE_OUTSIDE_DESIGN",
+      "pass": true,
+      "note": ""
+    },
+    {
+      "name": "F11a_record_bytes_tampered",
+      "expected": "HOLD_RECORD_INTEGRITY, no FEM",
+      "observed": "HOLD_RECORD_INTEGRITY solves 0",
+      "pass": true,
+      "note": ""
+    },
+    {
+      "name": "F11b_KII_sign_reversed_resigned",
+      "expected": "HOLD_RECORD_INTEGRITY (EDI-from-u), no FEM",
+      "observed": "HOLD_RECORD_INTEGRITY solves 0",
+      "pass": true,
+      "note": ""
+    },
+    {
+      "name": "F11c_resigned_without_ledger",
+      "expected": "HOLD_RECORD_INTEGRITY, no FEM",
+      "observed": "HOLD_RECORD_INTEGRITY solves 0",
+      "pass": true,
+      "note": ""
+    },
+    {
+      "name": "F11d_forged_case_record",
+      "expected": "HOLD_RECORD_INTEGRITY, no FEM",
+      "observed": "HOLD_RECORD_INTEGRITY solves 0",
+      "pass": true,
+      "note": ""
+    },
+    {
+      "name": "F11e_clean_copy_resumes_without_FEM",
+      "expected": "GO, 0 solves, 17 reused",
+      "observed": "GO solves 0 reused 17",
+      "pass": true,
+      "note": ""
+    },
+    {
+      "name": "F12a_interrupt_after_case",
+      "expected": "INTERRUPTED after 2 solves",
+      "observed": "INTERRUPTED solves 2",
+      "pass": true,
+      "note": ""
+    },
+    {
+      "name": "F12b_resume_reuses_without_FEM",
+      "expected": "INTERRUPTED, 0 solves, 2 reused",
+      "observed": "INTERRUPTED solves 0 reused 2",
+      "pass": true,
+      "note": ""
+    },
+    {
+      "name": "F12c_resume_completes",
+      "expected": "GO with 15 new solves, 2 reused",
+      "observed": "GO solves 15 reused 2",
+      "pass": true,
+      "note": ""
+    },
+    {
+      "name": "F12d_bit_identical_replay",
+      "expected": "all 15 records + 2 legacy controls bitwise equal",
+      "observed": "15 records x 14 fields + 2 legacy controls bitwise equal",
+      "pass": true,
+      "note": ""
+    },
+    {
+      "name": "F13_accepted_run_unchanged",
+      "expected": "identical file hashes before/after",
+      "observed": "80 files",
+      "pass": true,
+      "note": ""
+    }
+  ],
+  "passed": 38,
+  "total": 38,
+  "pass": true,
+  "root": "<repo>\\outputs\\g2_m4b_faults_v1\\fault_20261121_195051_593",
+  "finished": "2026-11-21 19:52:51"
+}

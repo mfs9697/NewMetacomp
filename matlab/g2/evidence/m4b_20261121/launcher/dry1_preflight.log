@@ -1,0 +1,48 @@
+STAGE B0_INVENTORY PASS
+G2_KINKED_AUDIT_GATES=34/34
+G2_KINKED_AUDIT_PASS=1
+G2_M2_ADAPTER S2 pass=1 added=[] banks=185 side-checked U/L 357/358
+LEGACY_PHASE_MAP pass=1 PHASE_MAP_TOPOLOGICAL_OK: 16347 matrix + 12278 reinforcement elements; chords per circle [76 76 76].
+LEGACY_PHASE_VERIFY pass=1 failed=[]
+PHASE_NEG N1_swapped_labels                    mapper=1 (PHASE_MAP_TOPOLOGICAL_OK) verifier=0 [labelsMatchGeometry,annulusAreaIdentity,matrixConnected,bandsConnected,tipGuideMatrixOnly,qSupportMatrixOnly] -> rejected=1
+PHASE_NEG N2_band_element_relabelled_matrix    mapper=1 (PHASE_MAP_TOPOLOGICAL_OK) verifier=0 [labelsMatchGeometry,interfaceChordsTwoOwnersMixed,noOtherMixedEdges,annulusAreaIdentity] -> rejected=1
+PHASE_NEG N3_matrix_element_relabelled_band    mapper=1 (PHASE_MAP_TOPOLOGICAL_OK) verifier=0 [labelsMatchGeometry,interfaceChordsTwoOwnersMixed,noOtherMixedEdges,annulusAreaIdentity] -> rejected=1
+PHASE_NEG N4_detached_interface                mapper=0 (HOLD_INTERFACE_DUPLICATE_ANGLE) verifier=0 [interfaceChordsTwoOwnersMixed,noOtherMixedEdges,coincidentNodesOnlyRegisteredTwins] -> rejected=1
+PHASE_NEG N5_nonconforming_interface           mapper=0 (HOLD_INTERFACE_NONCONFORMING) verifier=0 [noStraddle,labelsMatchGeometry,interfaceChordsTwoOwnersMixed,noOtherMixedEdges,annulusAreaIdentity] -> rejected=1
+PHASE_NEG N6_filled_void                       mapper=1 (PHASE_MAP_TOPOLOGICAL_OK) verifier=0 [noVoidPenetration,annulusAreaIdentity,domainAreaIdentity,coincidentNodesOnlyRegisteredTwins] -> rejected=1
+PHASE_NEG N7_q_domain_crossing_band            mapper=1 (PHASE_MAP_TOPOLOGICAL_OK) verifier=0 [qSupportMatrixOnly] -> rejected=1
+PHASE_NEG N9_band_label_in_tip_guide           mapper=1 (PHASE_MAP_TOPOLOGICAL_OK) verifier=0 [labelsMatchGeometry,noOtherMixedEdges,annulusAreaIdentity,bandsConnected,tipGuideMatrixOnly] -> rejected=1
+G2_MATERIAL_PHASE_NEGATIVES_PASS=1 (8 cases)
+M2_PHASE_NEG tip-to-band 42.142 mm: PR35 N7(45 mm) expected rejected=1 observed=1; N7s(43.142 mm) rejected=1; others rejected=1 -> pass=1
+M4B_ACTIVATION none      bits=000 pass=1 active=0 area=0.000000000 failed=[]
+M4B_ACTIVATION c0p5_100  bits=100 pass=1 active=4088 area=1012.152528598 failed=[]
+M4B_ACTIVATION c0p5_010  bits=010 pass=1 active=4102 area=1012.152528598 failed=[]
+M4B_ACTIVATION c0p5_001  bits=001 pass=1 active=4088 area=1012.152528598 failed=[]
+M4B_ACTIVATION c0p5_110  bits=110 pass=1 active=8190 area=2024.305057196 failed=[]
+M4B_ACTIVATION c0p5_101  bits=101 pass=1 active=8176 area=2024.305057196 failed=[]
+M4B_ACTIVATION c0p5_011  bits=011 pass=1 active=8190 area=2024.305057196 failed=[]
+M4B_ACTIVATION c0p5_111  bits=111 pass=1 active=12278 area=3036.457585794 failed=[]
+M4B_ACTIVATION c2p0_100  bits=100 pass=1 active=4088 area=1012.152528598 failed=[]
+M4B_ACTIVATION c2p0_010  bits=010 pass=1 active=4102 area=1012.152528598 failed=[]
+M4B_ACTIVATION c2p0_001  bits=001 pass=1 active=4088 area=1012.152528598 failed=[]
+M4B_ACTIVATION c2p0_110  bits=110 pass=1 active=8190 area=2024.305057196 failed=[]
+M4B_ACTIVATION c2p0_101  bits=101 pass=1 active=8176 area=2024.305057196 failed=[]
+M4B_ACTIVATION c2p0_011  bits=011 pass=1 active=8190 area=2024.305057196 failed=[]
+M4B_ACTIVATION c2p0_111  bits=111 pass=1 active=12278 area=3036.457585794 failed=[]
+  N1_wrong_mask              expect phaseFromMask            rejected=1 failed=[phaseFromMask,inactiveAndMatrixLabelOne,activeChordsCarryJump,passiveChordsNoJump]
+  N2_swapped_ring_ids        expect oracleAgreement          rejected=1 failed=[oracleAgreement,interfaceIdsOneToOne,activeChordsCarryJump,passiveChordsNoJump]
+  N3_swapped_centre_order    expect centresAscendingY        rejected=1 failed=[oracleAgreement,centresAscendingY,interfaceIdsOneToOne,activeChordsCarryJump,passiveChordsNoJump]
+  N4_off_band_E              expect phaseFromMask            rejected=1 failed=[phaseFromMask,inactiveAndMatrixLabelOne,activeAreaIdentity,activeChordsCarryJump,jumpEdgeCount]
+  N5_ring_element_dropped    expect oracleAgreement          rejected=1 failed=[oracleAgreement,ringAreaIdentity,jumpEdgeCount,ringsAndMatrixConnected]
+  N6_detached_midside        expect chordsConforming         rejected=1 failed=[chordsConforming,coincidentOnlyTwins]
+  N7_q_reaches_ring          expect qSupportOwnerFree        rejected=1 failed=[qSupportOwnerFree,qClearance]
+  N8_node_in_hole            expect noVoidFilling            rejected=1 failed=[oraclePass,noVoidFilling]
+  N9_wrong_modulus           expect materialsAdmissible      rejected=1 failed=[materialsAdmissible]
+  N10_inactive_ring_jump     expect passiveChordsNoJump      rejected=1 failed=[phaseFromMask,inactiveAndMatrixLabelOne,activeAreaIdentity,passiveChordsNoJump,jumpEdgeCount]
+M4B_ACTIVATION_NEGATIVES positive=1, rejected 10/10 -> pass=1
+STAGE B1_ACTIVATION PASS
+G2_M4B_CAMPAIGN DRY_OK (nothing written)
+DRY_OK
+    identifier: ''
+       message: ''
+

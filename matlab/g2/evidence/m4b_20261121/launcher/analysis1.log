@@ -1,0 +1,3 @@
+M4B_SELFTESTS {"additiveZeroInteractions":true,"additiveRecovery":true,"randomIdentities":true,"conservativeEqualsInherited":true,"primaryEqualsInherited":true,"pass":true} -> pass=1
+G2_M4B_ANALYSIS_STATUS=GO folder <repo>\outputs\g2_m4b_ring_factorial_v1\analysis_run_20261121_194953_501
+GO

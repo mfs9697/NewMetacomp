@@ -1,0 +1,21 @@
+{
+  "schema": "NewMetacomp.G2.M4B.Provenance.v1",
+  "issue": 47,
+  "evidenceCollectedAtHead": "e2aba210e1b15582d12cda3ccebf75693cfdce59",
+  "policyV2SHA256": "758f4394ad9f4115e45340af68378f0a3ae3ebc1da2b17f331928e1e8a85b37b",
+  "sourceSetSHA256": "bc860312b8347b3b8976882f7c3dc6a17e5a06f39ea8279b2faa0107749ca03e",
+  "meshSHA256": "9269be43141014eff1e9f7ef6ef0cdc82b2772c62a12ccf3d847549c7485c412",
+  "campaignRunHead": "c11656a2780f9411c0932568480d45cb868581fd",
+  "token": "G2M4BRUN|758f4394ad9f4115e45340af68378f0a3ae3ebc1da2b17f331928e1e8a85b37b|src=bc860312b8347b3b8976882f7c3dc6a17e5a06f39ea8279b2faa0107749ca03e|mesh=9269be43141014eff1e9f7ef6ef0cdc82b2772c62a12ccf3d847549c7485c412|cases=16|solves=15",
+  "runs": {
+    "campaign": "outputs/g2_m4b_ring_factorial_v1/run_20261121_194814_009 (GO, 17 solves)",
+    "analysis": "outputs/g2_m4b_ring_factorial_v1/analysis_run_20261121_194953_501 (GO)",
+    "faults": "outputs/g2_m4b_faults_v1/fault_20261121_195051_593 (38/38)",
+    "report": "outputs/g2_m4b_report/run_20261121_195428_941 (final figures)",
+    "reportSuperseded": "outputs/g2_m4b_report/run_20261121_195318_815 (legend/note overlap in figs 2-3; superseded)"
+  },
+  "originalOutputFiles": 323,
+  "matlabRelease": "R2023a",
+  "sanitization": "absolute paths replaced by <repo>/<scratch>/<home>; MATLAB path warnings removed; MAT records not copied",
+  "physicalFractureGrowthProven": false
+}
