@@ -1,0 +1,2 @@
+R1_SELFTEST reproduce M4.B decomposition: pass=1 maxdev=0
+R1_VERDICT R1_PLACEMENT_STABLE  single-ring classes {"stable":12,"sensitive":0,"unresolved":0,"notRobust":0,"total":12}  rankings RANKING_STABLE,RANKING_STABLE,RANKING_STABLE,RANKING_STABLE  stiff13 G STABLE theta STABLE

@@ -1,0 +1,72 @@
+{
+  "schema": "NewMetacomp.G2.M4B.R1.CampaignManifest.v1",
+  "token": "G2M4BR1RUN|515780497f5c4e165f45c88d41012b6de9f689ce625845f0cb44d4fd5989d629|src=9915a958ee42cdde33689022009b1f7bf93f890faa1756a526e84f3cc95ea774|mesh=0627dd3a9db88190b412036b370286efae02c8ac305cf568ff9d609835e13080|cases=10",
+  "cases": [
+    {
+      "physicalCase": "none",
+      "role": "anchor",
+      "recordSHA256": "0b7492120a912ba40488140c82c597ff401dd25a4258ec725be9b6886f896872",
+      "pass": true
+    },
+    {
+      "physicalCase": "c0p5_111",
+      "role": "anchor",
+      "recordSHA256": "5aaacaf27b6b4d2914af32292cd8e257d634b08de77870b0031e53e1bd79a448",
+      "pass": true
+    },
+    {
+      "physicalCase": "c2p0_111",
+      "role": "anchor",
+      "recordSHA256": "919aa94175b082dc59a3c79364f9744308f302d609b0fd16cd874c44c8b8dd7f",
+      "pass": true
+    },
+    {
+      "physicalCase": "c0p5_100",
+      "role": "target",
+      "recordSHA256": "927c54ee55bd8acec693a21585792f314871b2ccb2647a7a46261baee3b23a5f",
+      "pass": true
+    },
+    {
+      "physicalCase": "c0p5_010",
+      "role": "target",
+      "recordSHA256": "058b91017d964179bad7b5330e33778e66266460ef8393dcbb52b919b1615383",
+      "pass": true
+    },
+    {
+      "physicalCase": "c0p5_001",
+      "role": "target",
+      "recordSHA256": "683c284b51c0d0cd9c8e95d96a6c01601708aa3405ac2e523afe68cda624c7a6",
+      "pass": true
+    },
+    {
+      "physicalCase": "c2p0_100",
+      "role": "target",
+      "recordSHA256": "3791ecc9d392fa380001fa95858b831563bfa760bd67c4b3031f3d19a297adc0",
+      "pass": true
+    },
+    {
+      "physicalCase": "c2p0_010",
+      "role": "target",
+      "recordSHA256": "0e2a4a7f7a645a87553045c63fdc9511df4374d921fed7d839a7a517853f71ce",
+      "pass": true
+    },
+    {
+      "physicalCase": "c2p0_001",
+      "role": "target",
+      "recordSHA256": "e5f7cdca145d5bb1038cb8b00486a3097518a382dcf76d50cd23af38dc7f4f61",
+      "pass": true
+    },
+    {
+      "physicalCase": "c2p0_101",
+      "role": "target",
+      "recordSHA256": "9c90cd21cae505d5de700fb6588aa8c5f560963af101e637d16956216f0c78a0",
+      "pass": true
+    }
+  ],
+  "physicalSolves": 10,
+  "allPass": true,
+  "B2": true,
+  "matchedGeometry": true,
+  "reviewStop": "REVIEW_STOP_R1",
+  "physicalFractureGrowthProven": false
+}

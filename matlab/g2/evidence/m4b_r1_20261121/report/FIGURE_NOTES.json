@@ -1,0 +1,51 @@
+{
+  "g1": {
+    "data": "R1 analysis LEDGER comparison (both families)",
+    "scale": "linear; F_G in percent, F_theta in degrees",
+    "limits": "automatic, same axis for both families",
+    "greyscale": "original = black filled circles; S2alt = open squares, grey; whiskers = each family's own conservative U"
+  },
+  "g2": {
+    "data": "R1 analysis LEDGER",
+    "scale": "logarithmic magnitudes (F_G as a fraction, F_theta in degrees)",
+    "limits": "automatic",
+    "greyscale": "marker shapes distinguish |Q|, cross-family drift, primary U and conservative U"
+  },
+  "g3": {
+    "data": "R1 analysis LEDGER single-ring targets",
+    "scale": "linear",
+    "limits": "automatic per panel",
+    "greyscale": "solid black (original) vs dashed grey with open squares (S2alt)"
+  },
+  "g4": {
+    "data": "R1 S2alt case records none, c0p5_100, c0p5_010, c2p0_101 (u, labels, materials); g2_t6_point_stress at element centroids; plane-stress von Mises",
+    "scale": "panel a: lg(sigma_eq) in [-5, -2] (1st-99.5th percentile, rounded to 0.5); panels b-d: relative change clipped to +/-0.5",
+    "limits": "GLOBAL common limits in r1_g4_stress_global_grey; LOCAL per-panel limits (99th percentile of |change|) in r1_g4b_stress_local_grey",
+    "localLimits": [
+      0.31749163767593241,
+      0.31093933445147193,
+      0.30499753080184022
+    ],
+    "greyscale": "monotonic grey; signed maps on grey range 0.20-0.97; black contours (solid +, dashed -, bold zero) from a 0.5 mm grid interpolation of centroid values (holes masked)"
+  },
+  "g5": {
+    "data": "accepted M4.B original-family records none, c0p5_100, c0p5_010, c0p5_111 (element strain energy / element area)",
+    "scale": "relative change clipped to +/-0.5",
+    "limits": "GLOBAL common",
+    "greyscale": "as g4 signed maps; greyscale replacement of M4.B fig. Ж.5"
+  },
+  "g6": {
+    "data": "committed M4.B analysis LEDGER (original family)",
+    "scale": "linear",
+    "limits": "automatic",
+    "greyscale": "filled circles = soft, open triangles = stiff; greyscale replacement of M4.B fig. Ж.2"
+  },
+  "g7": {
+    "data": "committed M4.B analysis LEDGER (original family)",
+    "scale": "linear",
+    "limits": "automatic per panel",
+    "greyscale": "dark grey = resolved by both rules, light grey = primary only; greyscale replacement of M4.B fig. Ж.3"
+  },
+  "colormap": "monotonic greyscale (MATLAB gray), unsigned: dark = high; signed: dark = negative, light = positive, range 0.20-0.97",
+  "font": "Arial (all text Ukrainian; decimal comma; true minus sign)"
+}
