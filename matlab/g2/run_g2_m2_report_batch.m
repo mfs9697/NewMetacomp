@@ -46,8 +46,8 @@ for m={'Msoft','Mstiff'}
  fill(ax,[s fliplr(s)],[Rv-Uc fliplr(Rv+Uc)],c,'FaceAlpha',.10,'EdgeColor','none','HandleVisibility','off');
  errorbar(ax,s,Rv,2*Up,'-o','Color',c,'MarkerFaceColor',c,'MarkerSize',7,'LineWidth',1.5,'CapSize',8);
  plot(ax,s,Rc,'s','Color',c,'MarkerSize',11,'LineWidth',1,'HandleVisibility','off');
- plot(ax,33.4+.35,get('S2alt',m{1},'R_EDI'),'d','Color',c,'MarkerFaceColor','w','MarkerSize',9,'LineWidth',1.5,'HandleVisibility','off');
- for i=1:3,text(ax,s(i)+.25,Rv(i),sprintf('%.4f',Rv(i)),'Color',c,'FontSize',9,'VerticalAlignment','bottom');end
+ plot(ax,33.4+.6,get('S2alt',m{1},'R_EDI'),'d','Color',c,'MarkerFaceColor','w','MarkerSize',9,'LineWidth',1.5,'HandleVisibility','off');
+ for i=1:3,text(ax,s(i)-.3,Rv(i),sprintf('%.4f',Rv(i)),'Color',c,'FontSize',9,'HorizontalAlignment','right','VerticalAlignment','middle');end
 end
 yline(ax,1,':','Color',ink,'HandleVisibility','off');
 set(ax,'XTick',s,'XTickLabel',{'S0  25.4','S1  29.4','S2  33.4'});xlim(ax,[24 35]);
@@ -87,7 +87,7 @@ for m={'Msoft','Mstiff'}
  plot(a,s,arrayfun(@(i)get(ids{i},m{1},'CMODratio'),1:3),'--s','Color',c,'LineWidth',1.1);
 end
 yline(a,1,':','Color',ink);set(a,'XTick',s);xlim(a,[24 35]);xlabel(a,'s (mm)');ylabel(a,'ratio to H1');
-legend(a,{'soft compliance','soft CMOD','stiff compliance','stiff CMOD'},'Box','off','Location','east');
+legend(a,{'soft compliance','soft CMOD','stiff compliance','stiff CMOD'},'Box','off','Location','eastoutside');
 title(a,'Structural response','FontWeight','normal');
 title(tl,'Bonded bands around the voids along the frozen reference crack (idealized 1 N BVP, illustrative moduli)','FontSize',12);
 exportgraphics(f,fullfile(folder,'m2_steering_mixity_G_compliance.png'),'Resolution',180);exportgraphics(f,fullfile(folder,'m2_steering_mixity_G_compliance.pdf'),'ContentType','vector');close(f);
@@ -123,7 +123,7 @@ for i=1:3
  d=R.(ids{i}).geometry.tipToBand_mm;plot(ax,Pp(end,1)+d*cos(th),Pp(end,2)+d*sin(th),':','Color',[.5 .5 .5]);
 end
 axis(ax,'equal');xlim(ax,[60 200]);ylim(ax,[0 120]);box(ax,'on');xlabel(ax,'x (mm)');ylabel(ax,'y (mm)');
-title(ax,sprintf('Frozen tips S0/S1/S2 (o/s/^); dotted: distance to nearest band node %.1f / %.1f / %.1f mm', ...
+title(ax,sprintf('Frozen tips S0/S1/S2 (circle/square/triangle); dotted: distance to nearest band node %.1f / %.1f / %.1f mm', ...
  R.S0.geometry.tipToBand_mm,R.S1.geometry.tipToBand_mm,R.S2.geometry.tipToBand_mm),'FontWeight','normal');
 ax2=axes(f,'Units','pixels','Position',[880 70 480 480]);hold(ax2,'on');
 v=P2.interfaces(1).vertexNodes;va=PA.interfaces(1).vertexNodes;c1=cen(1,:);
