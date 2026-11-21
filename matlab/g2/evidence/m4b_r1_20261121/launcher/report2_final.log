@@ -1,0 +1,9 @@
+FIGURE r1_g1_crossfamily_grey.png
+FIGURE r1_g2_three_questions_grey.png
+FIGURE r1_g3_equal_area_grey.png
+FIGURE r1_g4_stress_global_grey.png
+FIGURE r1_g4b_stress_local_grey.png
+FIGURE r1_g5_energy_density_grey.png
+FIGURE r1_g6_m4b_masks_grey.png
+FIGURE r1_g7_m4b_decomposition_grey.png
+G2_M4B_R1_REPORT_DONE FOLDER=<repo>\outputs\g2_m4b_r1_report\run_20261121_233703_904

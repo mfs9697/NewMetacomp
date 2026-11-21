@@ -1,0 +1,113 @@
+{
+  "schema": "NewMetacomp.G2.M4B.R1.MatchedS2altPolicy.v1",
+  "issue": 50,
+  "parentIssue": 47,
+  "authorization": {
+    "scientistReview": "https://github.com/mfs9697/NewMetacomp/issues/47#issuecomment-7068731805 (decision 3: GO one focused frozen-S2 alternative-family subset check)",
+    "assignment": "https://github.com/mfs9697/NewMetacomp/issues/50",
+    "basePR": "draft PR #49, reviewed head ece74694b1c09be95fdcab2afac9d6fef7322602 (verified unchanged before work)",
+    "historicalPolicies": "G2_M4_POLICY_v1.json and G2_M4B_POLICY_v2.json stay byte-identical; this file is the prospective record for R1 only"
+  },
+  "scope": "cross-family verification of single-ring placement effects (and stiff {1,3}) on the MATCHED frozen S2alt mesh: exactly the original saved S2 crack polyline and terminal tangent, independently regenerated 112-chord ring polygons and finer exterior; NO crack segment, NO trajectory, NO State 3, NO M4.C, NO full factorial, NO I_ij/I_123 re-computation, NO interface fracture, NO CZM, NO optimization, NO physical onset/arrest claim",
+  "base": {
+    "pr49Head": "ece74694b1c09be95fdcab2afac9d6fef7322602",
+    "pr46Head": "97c9562442e0abea8d77a42ab0f285d90eb3f370",
+    "m4bPolicyV2SHA256": "758f4394ad9f4115e45340af68378f0a3ae3ebc1da2b17f331928e1e8a85b37b",
+    "m4PolicyV1SHA256": "2548f373cd46edde595eefa562d4afbe8ee2c929c51b9d427557cde3e279618e",
+    "m2PolicyV1SHA256": "1782eebc5db6ef8dacdb8a5325996b3d9a4e774a388c0990e884ffec40dd834c",
+    "materialPolicyV1SHA256": "e60156f60dc8bae05f2ab1b1a25bc93bd84cedb7485591b01ada2413d946a971",
+    "trajectoryPolicyV1SHA256": "1d6af7f6f3e8af389ab02330d9a1eaebdbc00bedb52aad54db902b4de36b39dc",
+    "cornellJSON": "docs/research/crack-growth-gaps-2026/G2_SPECIMEN1_1990_GEOMETRY.json",
+    "cornellJSON_SHA256": "45a88fa0926472ddbe5e70e4c80a97b88196dd45d8a266fa04273f89790b47bf",
+    "trustedP0": "outputs/g2_p010_isolated/run_20261118_163657_790/P010_ISOLATED_REGULAR_ONLY.mat",
+    "trustedP0SHA256": "15201996b4165aa9980f61f370a75749b1ce28ec0accaa061902641524c37c58",
+    "legacyModulesByteIdenticalToPR46Head": ["g2_t6_elasticity_phase.m", "g2_material_phase_map.m", "g2_material_phase_verify.m", "g2_material_sif_on_mesh.m", "g2_t6_point_stress.m", "check_g2_material_phase_controls.m", "check_g2_m2_phase_controls.m", "g2_t6_elasticity.m", "g2_trajectory_sif_on_mesh.m", "g2_sif_interaction.m", "g2_sif_cod_banks.m", "g2_sif_cod.m", "g2_williams_field.m", "g2_plane_D.m", "g2_mts_direction.m", "g2_kinked_mesh_auditor.m", "g2_m2_state_adapter.m", "g2_material_case_summary.m", "g2_material_ratio_table.m", "g2_trajectory_record.m", "g2_sha256_file.m"],
+    "m4bModulesByteIdenticalToPR49Head": ["g2_m4b_ring_owner_oracle.m", "g2_m4b_ring_activation.m", "g2_m4b_activation_verify.m", "g2_m4b_interface_balance.m", "g2_m4b_sif_partial.m", "check_g2_m4b_activation_negatives.m", "g2_m4b_attribution.m", "G2_M4B_POLICY_v2.json"]
+  },
+  "reference": {
+    "state": "S2alt of PR #38 run D (M2): g2_kinked_join on the SAVED full-precision S2 polyline with GuideHface 1.0 mm, Hmax 5 mm",
+    "mesh": "outputs/g2_material_evolution_v1/run_20261121_132226_301/S2ALT_KINKED_GEOMETRY_ONLY_candidate.mat",
+    "meshSHA256": "0627dd3a9db88190b412036b370286efae02c8ac305cf568ff9d609835e13080",
+    "meshLedger": "matlab/g2/evidence/m2_20261121/SHA256SUMS_original_outputs.txt",
+    "expectedT3": 35125,
+    "expectedT6Nodes": 71207,
+    "chordsPerRing": 112,
+    "polyline_mm": [[101.6, 0], [101.6, 25.4], [102.4722795671, 29.3037326185], [103.4091509165, 33.1924691839]],
+    "matchedOriginal": {
+      "mesh": "outputs/g2_trajectory_chain_v1_attempt2/STEP_002/KINKED_GEOMETRY_ONLY_candidate.mat",
+      "meshSHA256": "9269be43141014eff1e9f7ef6ef0cdc82b2772c62a12ccf3d847549c7485c412",
+      "rule": "crackPolyline, tipTangent and the physical tip coordinates of S2alt must be BITWISE equal (isequal) to the original S2; p010 core / collar / q-active row counts equal (2788 / 128 / 2443); otherwise HOLD_MATCHED_S2ALT before any solve",
+      "forbiddenSubstitute": "the M4.A alternative homogeneous S2 (outputs/g2_m4_alt_family_v1/chain_homogeneous_alt_v1/STEP_002), whose crack shape differs"
+    },
+    "acceptedS2altBaselines": {
+      "run": "outputs/g2_material_evolution_v1/run_20261121_132226_301",
+      "ledger": "matlab/g2/evidence/m2_20261121/SHA256SUMS_original_outputs.txt",
+      "CASE_S2alt_H1": "6e5b4790ae5e471c14f0faf27c124492b92719a8c18dc78743099a1baf074b70",
+      "CASE_S2alt_M0": "79bbd44eec650786fe116ec07a77e6cb7cdd440c275d73bb1c6b8cea0cd63859",
+      "CASE_S2alt_Msoft": "bc1b0b0b4a8f41e67f4ce3ad4c04ca695fcf0ccf4f6af0f84c728fccd557f6c7",
+      "CASE_S2alt_Mstiff": "e57ab317aff7b1fa5fd8a3f287c7cb7a55a5857555272e34931fe3cfbf86d360",
+      "PHASE_MAP_S2alt": "eb2f00763c2604c6e61988b5a9359d49ff57de3eef0e55e7a5ba469960377a06"
+    },
+    "originalFamilyResults": {
+      "run": "outputs/g2_m4b_ring_factorial_v1/run_20261121_194814_009",
+      "ledger": "matlab/g2/evidence/m4b_20261121/SHA256SUMS_original_outputs.txt",
+      "rule": "every original-family case record used in the comparison must match its row in the committed M4.B ledger; the M4.B records are read only"
+    },
+    "areaNote": "112-gon ring polygon area 1012.852964 mm2 vs 76-gon 1012.152529 mm2 (+0.0692 %); R1 tests exterior + polygon-boundary family sensitivity, not element-size convergence and not near-tip (p010) sensitivity"
+  },
+  "rings": "unchanged from G2_M4B_POLICY_v2.json rings block (IDs by ascending y; inactive ring = matrix modulus; holes void; ownerRing from PM.annulusOf cross-checked by g2_m4b_ring_owner_oracle)",
+  "materials": {"plane": "stress", "E_matrix_MPa": 3268.115, "nu": 0.35, "thickness_mm": 12.7, "contrasts": [0.5, 2.0], "illustrativeOnly": true},
+  "bvp": {"P_N": 1, "pin_mm": [25.4, 0], "roller_mm": [482.6, 0], "load_mm": [254, 203.2], "source": "G2_TRAJECTORY_POLICY_v1.json bvp block (unchanged)"},
+  "design": {
+    "targets": ["c0p5_100", "c0p5_010", "c0p5_001", "c2p0_100", "c2p0_010", "c2p0_001", "c2p0_101"],
+    "anchors": ["none", "c0p5_111", "c2p0_111"],
+    "physicalCaseIds": ["none", "c0p5_111", "c2p0_111", "c0p5_100", "c0p5_010", "c0p5_001", "c2p0_100", "c2p0_010", "c2p0_001", "c2p0_101"],
+    "physicalSolves": 10,
+    "legacyControls": "g2_material_sif_on_mesh (unchanged) on c0p5_111 and c2p0_111, as in M4.B",
+    "anchorReuse": "anchors are re-solved and must equal the accepted M2 S2alt records bitwise; no saved anchor is used as a substitute for a solve",
+    "caseOutsideDesign": "any other id (including the other M4.B masks) is refused before any solve: HOLD_CASE_OUTSIDE_DESIGN"
+  },
+  "authorization_token": {
+    "campaign": "G2M4BR1RUN|<R1 policy SHA-256>|src=<g2_m4b_r1_sources set SHA-256>|mesh=<S2alt mesh SHA-256>|cases=10",
+    "perCaseRecord": "G2M4BR1CASE|<R1 policy SHA-256>|src=<source-set SHA-256>|mesh=<S2alt mesh SHA-256>|c=<0.5|2|none>|mask=<bits>",
+    "dryDefault": "dry run reads and checks only, writes nothing",
+    "cleanTreeRequired": true
+  },
+  "gates": {
+    "B0": "release R2023a, PDE Toolbox, >= 5 GiB free RAM (cannot be lowered), one MATLAB, clean tree for Run, policy/module pins, S2alt mesh / baseline / phase-map SHAs + ledger rows, matched-geometry rule",
+    "B1": "g2_kinked_mesh_auditor 34/34 on S2alt; g2_m2_state_adapter('S2alt'); legacy phase map = saved PHASE_MAP_S2alt; legacy verifier + check_g2_m2_phase_controls PASS; owner oracle = annulusOf on the 112-chord geometry; g2_m4b_activation_verify PASS for all 10 cases with expectedChords 112; check_g2_m4b_activation_negatives 10/10 on S2alt",
+    "B2": "none = CASE_S2alt_H1 bitwise (u, EDI_all, EDI4x4, COD, CMOD, compliance); c0p5_111 / c2p0_111 = CASE_S2alt_Msoft / Mstiff bitwise (u, EDI, 4x4, COD, J, compliance, CMOD, reactions, total and phase energy); legacy g2_material_sif_on_mesh PASS and equal; labels of 111 = PM.phase. Failure = HOLD_BASELINE_REGRESSION",
+    "B3": "the seven targets pass all inherited SIF gates and the partial-activation gates of g2_m4b_sif_partial (unchanged)"
+  },
+  "comparison": {
+    "observables": "per case: signed K_I, K_II (EDI 6x6 primary, four other annuli, 4x4, COD), J, G, theta_MTS (S2 tip frame, identical in both families), compliance, CMOD, total and per-ring strain energy; per target: F_G = G(S)/G(none) - 1 and F_theta = theta(S) - theta(none), each with its OWN family's none",
+    "uncertaintyPerFamily": "primary (paired estimator variants, |Q| > 2U and COD sign) and conservative (uncorrelated, |Q| > U_cons and COD sign for G; |Q| > U_cons for theta) exactly as G2_M4B_POLICY_v2.json, computed separately on each family; reported side by side with the cross-family drift (three different questions)",
+    "classPerTarget": {
+      "UNRESOLVED": "Q is not resolved under the primary rule in at least one family (no sign statement)",
+      "NOT_ROBUST": "both resolved under the primary rule and sign(Q_alt) ~= sign(Q_orig)",
+      "STABLE": "same sign and |Q_alt - Q_orig| <= 0.10 |Q_orig|",
+      "SENSITIVE": "same sign and |Q_alt - Q_orig| > 0.10 |Q_orig|",
+      "thresholdOrigin": "0.10 relative is the robustness threshold of the G2_M2_POLICY_v1 S2alt classification for the same mesh pair; fixed here before any R1 result"
+    },
+    "rankingEqualArea": "for each contrast and observable: the signed order of (f_1, f_2, f_3) in each family; each difference d_ij = f_i - f_j classified with the same four classes; RANKING_STABLE iff the permutation is identical and no d_ij is NOT_ROBUST; RANKING_UNRESOLVED if any d_ij is UNRESOLVED and no sign flip; otherwise RANKING_CHANGED",
+    "stiff13": "classes of F_G and F_theta for c2p0_101; its F_G position among the alternative-family stiff cases evaluated here ({1}, {2}, {3}, {1,3}, {1,2,3}) is reported as UNEQUAL-AREA CONTEXT only; no other two-ring set is computed on S2alt, so no equal-area two-ring statement is made",
+    "anchors": "cross-family drift of none and 111 reported (K, G, theta, compliance); the 111 F_G must reproduce the M2 S2alt classification (ROBUST)",
+    "verdict": {
+      "R1_PLACEMENT_STABLE": "all 12 single-ring classes (3 rings x 2 contrasts x {F_G, F_theta}) STABLE and all four rankings RANKING_STABLE",
+      "R1_PLACEMENT_SENSITIVE": "no NOT_ROBUST and no RANKING_CHANGED, but at least one SENSITIVE or UNRESOLVED",
+      "R1_NOT_ROBUST": "any single-ring NOT_ROBUST or any RANKING_CHANGED",
+      "HOLD": "any gate failure; no comparison is made"
+    },
+    "notClaimed": "no I_ij / I_123, no Shapley values, no equal-cost two-ring ranking, no mesh-convergence statement"
+  },
+  "faultTests": ["dry writes nothing", "tampered S2alt bytes", "matched-geometry rule rejects the M4.A alternative S2 and a perturbed polyline", "owner / mask / midside / q / void / modulus mutations on the 112-gon", "bad tokens", "policy drift", "dirty tree", "low-RAM guard", "case outside the R1 design (e.g. c0p5_110)", "byte-tampered, KII-reversed re-signed, unledgered and forged records", "interrupt and resume without FEM", "bit-identical replay of all 10 records", "accepted M2, M4.B and R1 runs unchanged"],
+  "figures": {
+    "greyscale": "monotonic greyscale colormap (black to white) for print; signed fields with a bold zero contour, solid positive and dashed negative contour lines; common limits for cross-case comparison, separately labelled local-limit versions where useful",
+    "language": "Ukrainian for every title, axis, legend, colour bar and annotation",
+    "data": "only accepted records of R1, M4.B and M2 (stresses post-processed from saved displacements with the unchanged g2_t6_point_stress); no extra solves for figures"
+  },
+  "word": "per the owner's Issue #50 prompt: a small native Ukrainian Word proposal package (R1 section, greyscale figures, captions, the G2-REV-M4B review decisions as insertion-ready text) for the next consolidated revision; v0.4 candidate and v0.3 untouched; every produced page rendered and inspected",
+  "stopCodes": ["HOLD_MATCHED_S2ALT", "HOLD_RELEASE", "HOLD_TOOLBOX", "HOLD_MEMORY", "HOLD_AUTH_TOKEN", "HOLD_DIRTY_SOURCE", "HOLD_POLICY_DRIFT", "HOLD_SOURCE", "HOLD_AUDIT", "HOLD_PHASE_MAP", "HOLD_LEGACY_VERIFIER", "HOLD_OWNER_ORACLE", "HOLD_ACTIVATION", "HOLD_NEGATIVE_CONTROL", "HOLD_BASELINE_REGRESSION", "HOLD_SIF", "HOLD_CASE_OUTSIDE_DESIGN", "HOLD_RECORD_INTEGRITY", "HOLD_RUN_EXISTS"],
+  "reviewStop": "REVIEW_STOP_R1 after one consolidated packet; long matrix-only paths, M4.C, 27 mixed layouts, State 3, CZM, interface penetration/delamination and arrest claims are NOT authorized",
+  "resources": {"matlabRelease": "R2023a", "pdeToolboxRequired": true, "freePhysicalRAM_GiB_min": 5, "oneMatlabProcess": true}
+}

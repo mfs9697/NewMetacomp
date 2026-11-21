@@ -1,0 +1,14 @@
+poly_equal=1 tan_equal=1 tipnode_equal=1 sizeA=35125 nodesA=71207
+  Columns 1 through 10
+
+    {'T3'}    {'T6'}    {'X3'}    {'X6'}    {'approvedForLEFM'}    {'collarOuterIDs'}    {'crackPolyline'}    {'elementRows'}    {'extraVertexNodes'}    {'extraVertexXY'}
+
+  Columns 11 through 19
+
+    {'geometryOnly'}    {'includeHoles'}    {'kinkNodeIDs'}    {'lowerBankT6'}    {'mirrorControl'}    {'nodalQ'}    {'physicalTipNode'}    {'plateXRange'}    {'qActiveT6Rows'}
+
+  Columns 20 through 22
+
+    {'tipNormal'}    {'tipTangent'}    {'upperBankT6'}
+
+core/collar/q: 2788 128 2443 vs 2788 128 2443

@@ -1,0 +1,19 @@
+{
+  "schema": "NewMetacomp.G2.M4B.R1.Provenance.v1",
+  "issue": 50,
+  "evidenceCollectedAtHead": "4c464a615e79116adbd907e761ab9d65accfa6e1",
+  "policySHA256": "515780497f5c4e165f45c88d41012b6de9f689ce625845f0cb44d4fd5989d629",
+  "sourceSetSHA256": "9915a958ee42cdde33689022009b1f7bf93f890faa1756a526e84f3cc95ea774",
+  "meshSHA256": "0627dd3a9db88190b412036b370286efae02c8ac305cf568ff9d609835e13080",
+  "campaignRunHead": "44a6b75ebfc120dd6063cf6edc8ac297367e75af",
+  "token": "G2M4BR1RUN|515780497f5c4e165f45c88d41012b6de9f689ce625845f0cb44d4fd5989d629|src=9915a958ee42cdde33689022009b1f7bf93f890faa1756a526e84f3cc95ea774|mesh=0627dd3a9db88190b412036b370286efae02c8ac305cf568ff9d609835e13080|cases=10",
+  "runs": {
+    "campaign": "outputs/g2_m4b_r1_s2alt_v1/run_20261121_232938_287",
+    "analysis": "outputs/g2_m4b_r1_s2alt_v1/analysis_run_20261121_233100_443",
+    "faults": "outputs/g2_m4b_r1_faults_v1/fault_20261121_233135_765",
+    "report": "outputs/g2_m4b_r1_report/run_20261121_233703_904"
+  },
+  "originalOutputFiles": 264,
+  "sanitization": "absolute paths -> <repo>/<scratch>/<home>; MATLAB path warnings removed; MAT records not copied",
+  "physicalFractureGrowthProven": false
+}

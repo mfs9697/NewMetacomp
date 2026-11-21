@@ -1,0 +1,141 @@
+{
+  "schema": "NewMetacomp.G2.M4B.R1.Run.v1",
+  "issue": 50,
+  "token": "G2M4BR1RUN|515780497f5c4e165f45c88d41012b6de9f689ce625845f0cb44d4fd5989d629|src=9915a958ee42cdde33689022009b1f7bf93f890faa1756a526e84f3cc95ea774|mesh=0627dd3a9db88190b412036b370286efae02c8ac305cf568ff9d609835e13080|cases=10",
+  "policySHA256": "515780497f5c4e165f45c88d41012b6de9f689ce625845f0cb44d4fd5989d629",
+  "sourceSetSHA256": "9915a958ee42cdde33689022009b1f7bf93f890faa1756a526e84f3cc95ea774",
+  "meshSHA256": "0627dd3a9db88190b412036b370286efae02c8ac305cf568ff9d609835e13080",
+  "gitHead": "44a6b75ebfc120dd6063cf6edc8ac297367e75af",
+  "created": "2026-11-21 23:29:38",
+  "sources": [
+    {
+      "file": "g2_m4b_r1_campaign.m",
+      "sha256": "622bc2ab2ec92007167fa21bee94de435cd30cd2cdc1bd0bad91a4952d1e80f6"
+    },
+    {
+      "file": "g2_m4b_r1_sources.m",
+      "sha256": "b9966efff027e8183d53cd8fd38b8e849537563f38d3fe805b3b3da775b83ac0"
+    },
+    {
+      "file": "g2_m4b_r1_matched_check.m",
+      "sha256": "f54ea5db54e64994381befe7a8c66bae2719b0f7d7d6f9dbd9fb576b9d5ded83"
+    },
+    {
+      "file": "G2_M4B_R1_POLICY_v1.json",
+      "sha256": "515780497f5c4e165f45c88d41012b6de9f689ce625845f0cb44d4fd5989d629"
+    },
+    {
+      "file": "g2_m4b_ring_owner_oracle.m",
+      "sha256": "68cf7e80bb510ba0222ce41bce6ad1041d4c02a78ec7b975181a4069cf7df0ff"
+    },
+    {
+      "file": "g2_m4b_ring_activation.m",
+      "sha256": "76f7271bf4b0e265d28fdaacf98ddf7399a70419dcae1a4c10120649a92c9ead"
+    },
+    {
+      "file": "g2_m4b_activation_verify.m",
+      "sha256": "4e5615c60ce3316520dd7f6d5cac19126b91ea8b391c3353b4e4284aa32f1813"
+    },
+    {
+      "file": "g2_m4b_interface_balance.m",
+      "sha256": "7658f4ff3b1cf0f8257a494f8d369b8196d36d3b94d5f80d332788f190ed38bc"
+    },
+    {
+      "file": "g2_m4b_sif_partial.m",
+      "sha256": "2685ad178343f713a9e85850bb40cb5f6b17f54e33127ab43599f4a2d4941794"
+    },
+    {
+      "file": "check_g2_m4b_activation_negatives.m",
+      "sha256": "478eedf24aeb95bfc9829c3762dc8d91754baa044732b11c7d12ca3bbb6a7375"
+    },
+    {
+      "file": "G2_M4B_POLICY_v2.json",
+      "sha256": "758f4394ad9f4115e45340af68378f0a3ae3ebc1da2b17f331928e1e8a85b37b"
+    },
+    {
+      "file": "g2_t6_elasticity_phase.m",
+      "sha256": "c11cf9b0fbfc7e35ada3b274620058275f336787615e718732eeb88cb3747e5f"
+    },
+    {
+      "file": "g2_material_phase_map.m",
+      "sha256": "2af6a511ba1e438c94d656d4776bf7ef005812afe58609d71cfc61a5e7f2c734"
+    },
+    {
+      "file": "g2_material_phase_verify.m",
+      "sha256": "b5d62fd8b5ae9f181fe0515e08a7429c63d529a905656264a468c3599d7c2909"
+    },
+    {
+      "file": "g2_material_sif_on_mesh.m",
+      "sha256": "a385f2d4859817adb2d5bc5939c481f76e68ae7690d288fe711fed78972cc2e8"
+    },
+    {
+      "file": "g2_t6_point_stress.m",
+      "sha256": "688510b31c93c3f9d5939b34cf340e3186fddbe1754465c1f3d9ee21a7aa411f"
+    },
+    {
+      "file": "check_g2_material_phase_controls.m",
+      "sha256": "b7092b68d3a3595630415f62e07d2037b1bb2631c3c247d652c55219a80a44bb"
+    },
+    {
+      "file": "check_g2_m2_phase_controls.m",
+      "sha256": "51509d882e7662021264680787dc4c43e016b200f62fe8be6f18da505bbb1155"
+    },
+    {
+      "file": "g2_t6_elasticity.m",
+      "sha256": "00e45b77918fcc2075c9b36c52bdb8bbbd1638f57c188ff92a9d45c63776d4bd"
+    },
+    {
+      "file": "g2_trajectory_sif_on_mesh.m",
+      "sha256": "d2f6e96b8f5fe019239def351d3b38cdec4bd523628b77904a5343ea21cd0228"
+    },
+    {
+      "file": "g2_sif_interaction.m",
+      "sha256": "28d22962193f2cdca96ef027cfaa7c33fa5f279b828866c13e4682a1e9fc78a8"
+    },
+    {
+      "file": "g2_sif_cod_banks.m",
+      "sha256": "147c697cbcea9aa2dfe680ed22d57827fa8ff86bbce6e1f2d4b3a17cbc7635f0"
+    },
+    {
+      "file": "g2_sif_cod.m",
+      "sha256": "24fb676dab82f59385c4e63b73f8218a22598ed3b6cb009680ac517ac659e5bf"
+    },
+    {
+      "file": "g2_williams_field.m",
+      "sha256": "dde057c6b217010232c3bf9e1faccb5a5322e2ed291997f2314cf9d5f9d9a5ee"
+    },
+    {
+      "file": "g2_plane_D.m",
+      "sha256": "13840eb5799971d45a0fa9e1a429104eb3e9199821e3de3755be2b2b95163496"
+    },
+    {
+      "file": "g2_mts_direction.m",
+      "sha256": "4015e76ea0fbc7737d4c891035715079a9de3bbd0d2e08c05d948eeb64c1f90c"
+    },
+    {
+      "file": "g2_kinked_mesh_auditor.m",
+      "sha256": "2935e5e6dff62f224c9770387708cbfd1de143dc59dcf3c4afca6d552b772467"
+    },
+    {
+      "file": "g2_m2_state_adapter.m",
+      "sha256": "63a3226c55b927d3c0c8024e51be8a66abb68975d6ec47ee704a9fce250943c5"
+    },
+    {
+      "file": "g2_material_case_summary.m",
+      "sha256": "11d762d5ae1b85b47cfe47d662d316824efcb26a3c63d7526a8dd4c35e9895f9"
+    },
+    {
+      "file": "g2_material_ratio_table.m",
+      "sha256": "bf2c4532f1704b0bd9279140dc3ca9b3eff0b67f833a152287dae6665904d4bf"
+    },
+    {
+      "file": "g2_trajectory_record.m",
+      "sha256": "d885b7af55cb9efcc505c029b4d91da14c5c1a84080a23fc03c09847f44c2656"
+    },
+    {
+      "file": "g2_sha256_file.m",
+      "sha256": "a9bef735cfd5771e335e4acd14132cf405bb51fe388092ff231fb20e0ad1a7f5"
+    }
+  ],
+  "matlabRelease": "R2023a"
+}

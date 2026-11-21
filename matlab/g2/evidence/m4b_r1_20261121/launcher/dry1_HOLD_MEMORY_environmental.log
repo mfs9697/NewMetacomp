@@ -1,0 +1,12 @@
+matlab.exe : G2_M4B_R1_CAMPAIGN HOLD_MEMORY: Free physical RAM 4.90 GiB below 5 GiB.
+At <scratch>\nm_wp3\
+run1.ps1:13 char:1
++ & $m -batch "restoredefaultpath;addpath('$w\matlab\g2','-begin');addp ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (G2_M4B_R1_CAMPA...iB below 5 GiB.:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+HOLD_MEMORY
+    identifier: 'G2M4B:HOLD_MEMORY'
+       message: 'Free physical RAM 4.90 GiB below 5 GiB.'
+

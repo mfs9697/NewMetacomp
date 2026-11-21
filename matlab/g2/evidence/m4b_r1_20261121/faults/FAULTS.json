@@ -1,0 +1,269 @@
+{
+  "schema": "NewMetacomp.G2.M4B.R1.Faults.v1",
+  "issue": 50,
+  "tests": [
+    {
+      "name": "F01_dry_writes_nothing",
+      "expected": "DRY_OK + no new files",
+      "observed": "DRY_OK, new files 0",
+      "pass": true
+    },
+    {
+      "name": "F02_tampered_S2alt",
+      "expected": "HOLD_SOURCE",
+      "observed": "HOLD_SOURCE",
+      "pass": true
+    },
+    {
+      "name": "F03a_matched_S2alt_accepted",
+      "expected": "pass",
+      "observed": "pass=1",
+      "pass": true
+    },
+    {
+      "name": "F03b_M4A_alternative_S2_rejected",
+      "expected": "fail on polyline/tip",
+      "observed": "polylineBitwise,tipTangentBitwise,tipCoordinatesBitwise",
+      "pass": true
+    },
+    {
+      "name": "F03c_polyline_perturbed_1e-12_rejected",
+      "expected": "fail on polyline",
+      "observed": "polylineBitwise",
+      "pass": true
+    },
+    {
+      "name": "F03d_tangent_perturbed_rejected",
+      "expected": "fail on tangent",
+      "observed": "tipTangentBitwise",
+      "pass": true
+    },
+    {
+      "name": "F04_N1_wrong_mask",
+      "expected": "rejected by phaseFromMask",
+      "observed": "phaseFromMask,inactiveAndMatrixLabelOne,activeChordsCarryJump,passiveChordsNoJump",
+      "pass": true
+    },
+    {
+      "name": "F04_N2_swapped_ring_ids",
+      "expected": "rejected by oracleAgreement",
+      "observed": "oracleAgreement,interfaceIdsOneToOne,activeChordsCarryJump,passiveChordsNoJump",
+      "pass": true
+    },
+    {
+      "name": "F04_N3_swapped_centre_order",
+      "expected": "rejected by centresAscendingY",
+      "observed": "oracleAgreement,centresAscendingY,interfaceIdsOneToOne,activeChordsCarryJump,passiveChordsNoJump",
+      "pass": true
+    },
+    {
+      "name": "F04_N4_off_band_E",
+      "expected": "rejected by phaseFromMask",
+      "observed": "phaseFromMask,inactiveAndMatrixLabelOne,activeAreaIdentity,activeChordsCarryJump,jumpEdgeCount",
+      "pass": true
+    },
+    {
+      "name": "F04_N5_ring_element_dropped",
+      "expected": "rejected by oracleAgreement",
+      "observed": "oracleAgreement,ringAreaIdentity,jumpEdgeCount,ringsAndMatrixConnected",
+      "pass": true
+    },
+    {
+      "name": "F04_N6_detached_midside",
+      "expected": "rejected by chordsConforming",
+      "observed": "chordsConforming,coincidentOnlyTwins",
+      "pass": true
+    },
+    {
+      "name": "F04_N7_q_reaches_ring",
+      "expected": "rejected by qSupportOwnerFree",
+      "observed": "qSupportOwnerFree,qClearance",
+      "pass": true
+    },
+    {
+      "name": "F04_N8_node_in_hole",
+      "expected": "rejected by noVoidFilling",
+      "observed": "oraclePass,noVoidFilling",
+      "pass": true
+    },
+    {
+      "name": "F04_N9_wrong_modulus",
+      "expected": "rejected by materialsAdmissible",
+      "observed": "materialsAdmissible",
+      "pass": true
+    },
+    {
+      "name": "F04_N10_inactive_ring_jump",
+      "expected": "rejected by passiveChordsNoJump",
+      "observed": "phaseFromMask,inactiveAndMatrixLabelOne,activeAreaIdentity,passiveChordsNoJump,jumpEdgeCount",
+      "pass": true
+    },
+    {
+      "name": "F05_interface_traction_imbalance",
+      "expected": "clean <= 1e-8, perturbed > 1e-8",
+      "observed": "clean 4.83e-12, perturbed 0.322",
+      "pass": true
+    },
+    {
+      "name": "F06a_wrong_load",
+      "expected": "loadThicknessModulus fails",
+      "observed": "loadThicknessModulus",
+      "pass": true
+    },
+    {
+      "name": "F06b_wrong_thickness",
+      "expected": "loadThicknessModulus fails",
+      "observed": "loadThicknessModulus",
+      "pass": true
+    },
+    {
+      "name": "F07_bad_token_policy",
+      "expected": "HOLD_AUTH_TOKEN, no solve",
+      "observed": "HOLD_AUTH_TOKEN solves 0",
+      "pass": true
+    },
+    {
+      "name": "F07_bad_token_source_set",
+      "expected": "HOLD_AUTH_TOKEN, no solve",
+      "observed": "HOLD_AUTH_TOKEN solves 0",
+      "pass": true
+    },
+    {
+      "name": "F07_bad_token_mesh",
+      "expected": "HOLD_AUTH_TOKEN, no solve",
+      "observed": "HOLD_AUTH_TOKEN solves 0",
+      "pass": true
+    },
+    {
+      "name": "F07_bad_token_case_cap",
+      "expected": "HOLD_AUTH_TOKEN, no solve",
+      "observed": "HOLD_AUTH_TOKEN solves 0",
+      "pass": true
+    },
+    {
+      "name": "F07_bad_token_empty",
+      "expected": "HOLD_AUTH_TOKEN, no solve",
+      "observed": "HOLD_AUTH_TOKEN solves 0",
+      "pass": true
+    },
+    {
+      "name": "F08_policy_drift",
+      "expected": "HOLD_POLICY_DRIFT",
+      "observed": "HOLD_POLICY_DRIFT",
+      "pass": true
+    },
+    {
+      "name": "F09_source_drift_dirty_tree",
+      "expected": "HOLD_DIRTY_SOURCE",
+      "observed": "HOLD_DIRTY_SOURCE",
+      "pass": true
+    },
+    {
+      "name": "F10a_low_ram_guard",
+      "expected": "HOLD_MEMORY",
+      "observed": "HOLD_MEMORY",
+      "pass": true
+    },
+    {
+      "name": "F10b_launcher_guard_not_lowerable",
+      "expected": "nonzero exit, HOLD_RAM_POLICY",
+      "observed": "exit 1",
+      "pass": true
+    },
+    {
+      "name": "F11_outside_design_c0p5_110",
+      "expected": "HOLD_CASE_OUTSIDE_DESIGN, no solve",
+      "observed": "HOLD_CASE_OUTSIDE_DESIGN solves 0",
+      "pass": true
+    },
+    {
+      "name": "F11_outside_design_c2p0_011",
+      "expected": "HOLD_CASE_OUTSIDE_DESIGN, no solve",
+      "observed": "HOLD_CASE_OUTSIDE_DESIGN solves 0",
+      "pass": true
+    },
+    {
+      "name": "F11_outside_design_c0p5_101",
+      "expected": "HOLD_CASE_OUTSIDE_DESIGN, no solve",
+      "observed": "HOLD_CASE_OUTSIDE_DESIGN solves 0",
+      "pass": true
+    },
+    {
+      "name": "F11_outside_design_c0p5_1101",
+      "expected": "HOLD_CASE_OUTSIDE_DESIGN, no solve",
+      "observed": "HOLD_CASE_OUTSIDE_DESIGN solves 0",
+      "pass": true
+    },
+    {
+      "name": "F11_outside_design_none+none",
+      "expected": "HOLD_CASE_OUTSIDE_DESIGN, no solve",
+      "observed": "HOLD_CASE_OUTSIDE_DESIGN solves 0",
+      "pass": true
+    },
+    {
+      "name": "F12a_record_bytes_tampered",
+      "expected": "HOLD_RECORD_INTEGRITY, no FEM",
+      "observed": "HOLD_RECORD_INTEGRITY solves 0",
+      "pass": true
+    },
+    {
+      "name": "F12b_KII_sign_reversed_resigned",
+      "expected": "HOLD_RECORD_INTEGRITY (EDI-from-u), no FEM",
+      "observed": "HOLD_RECORD_INTEGRITY solves 0",
+      "pass": true
+    },
+    {
+      "name": "F12c_resigned_without_ledger",
+      "expected": "HOLD_RECORD_INTEGRITY, no FEM",
+      "observed": "HOLD_RECORD_INTEGRITY solves 0",
+      "pass": true
+    },
+    {
+      "name": "F12d_forged_case_record",
+      "expected": "HOLD_RECORD_INTEGRITY, no FEM",
+      "observed": "HOLD_RECORD_INTEGRITY solves 0",
+      "pass": true
+    },
+    {
+      "name": "F12e_clean_copy_resumes_without_FEM",
+      "expected": "GO, 0 solves, 12 reused",
+      "observed": "GO solves 0 reused 12",
+      "pass": true
+    },
+    {
+      "name": "F13a_interrupt_after_case",
+      "expected": "INTERRUPTED after 2 solves",
+      "observed": "INTERRUPTED solves 2",
+      "pass": true
+    },
+    {
+      "name": "F13b_resume_reuses_without_FEM",
+      "expected": "INTERRUPTED, 0 solves, 2 reused",
+      "observed": "INTERRUPTED solves 0 reused 2",
+      "pass": true
+    },
+    {
+      "name": "F13c_resume_completes",
+      "expected": "GO with 10 new solves, 2 reused",
+      "observed": "GO solves 10 reused 2",
+      "pass": true
+    },
+    {
+      "name": "F13d_bit_identical_replay",
+      "expected": "all 10 records + 2 legacy controls bitwise equal",
+      "observed": "10 records x 14 fields + 2 legacy controls bitwise equal",
+      "pass": true
+    },
+    {
+      "name": "F14_accepted_runs_unchanged",
+      "expected": "R1 run, M4.B run and M2 S2alt files unchanged",
+      "observed": "30 + 40 files, 5 M2 files",
+      "pass": true
+    }
+  ],
+  "passed": 43,
+  "total": 43,
+  "pass": true,
+  "root": "<repo>\\outputs\\g2_m4b_r1_faults_v1\\fault_20261121_233135_765",
+  "finished": "2026-11-21 23:34:22"
+}

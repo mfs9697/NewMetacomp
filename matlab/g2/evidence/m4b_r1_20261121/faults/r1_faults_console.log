@@ -1,0 +1,145 @@
+M4B_R1_MATCHED pass=1 polyline=1 tangent=1 tip=1 core/collar/q=1 (T3 alt 35125, orig 28625)
+STAGE B0_INVENTORY PASS
+G2_KINKED_AUDIT_GATES=34/34
+G2_KINKED_AUDIT_PASS=1
+G2_M2_ADAPTER S2alt pass=1 added=[] banks=185 side-checked U/L 357/358
+LEGACY_PHASE_MAP pass=1 PHASE_MAP_TOPOLOGICAL_OK: 21031 matrix + 14094 reinforcement elements; chords per circle [112 112 112].
+LEGACY_PHASE_VERIFY pass=1 failed=[]
+PHASE_NEG N1_swapped_labels                    mapper=1 (PHASE_MAP_TOPOLOGICAL_OK) verifier=0 [labelsMatchGeometry,annulusAreaIdentity,matrixConnected,bandsConnected,tipGuideMatrixOnly,qSupportMatrixOnly] -> rejected=1
+PHASE_NEG N2_band_element_relabelled_matrix    mapper=1 (PHASE_MAP_TOPOLOGICAL_OK) verifier=0 [labelsMatchGeometry,interfaceChordsTwoOwnersMixed,noOtherMixedEdges,annulusAreaIdentity] -> rejected=1
+PHASE_NEG N3_matrix_element_relabelled_band    mapper=1 (PHASE_MAP_TOPOLOGICAL_OK) verifier=0 [labelsMatchGeometry,interfaceChordsTwoOwnersMixed,noOtherMixedEdges,annulusAreaIdentity] -> rejected=1
+PHASE_NEG N4_detached_interface                mapper=0 (HOLD_INTERFACE_DUPLICATE_ANGLE) verifier=0 [interfaceChordsTwoOwnersMixed,noOtherMixedEdges,coincidentNodesOnlyRegisteredTwins] -> rejected=1
+PHASE_NEG N5_nonconforming_interface           mapper=0 (HOLD_INTERFACE_NONCONFORMING) verifier=0 [noStraddle,labelsMatchGeometry,interfaceChordsTwoOwnersMixed,noOtherMixedEdges,annulusAreaIdentity] -> rejected=1
+PHASE_NEG N6_filled_void                       mapper=1 (PHASE_MAP_TOPOLOGICAL_OK) verifier=0 [noVoidPenetration,annulusAreaIdentity,domainAreaIdentity,coincidentNodesOnlyRegisteredTwins] -> rejected=1
+PHASE_NEG N7_q_domain_crossing_band            mapper=1 (PHASE_MAP_TOPOLOGICAL_OK) verifier=0 [qSupportMatrixOnly] -> rejected=1
+PHASE_NEG N9_band_label_in_tip_guide           mapper=1 (PHASE_MAP_TOPOLOGICAL_OK) verifier=0 [labelsMatchGeometry,noOtherMixedEdges,annulusAreaIdentity,bandsConnected,tipGuideMatrixOnly] -> rejected=1
+G2_MATERIAL_PHASE_NEGATIVES_PASS=1 (8 cases)
+M2_PHASE_NEG tip-to-band 42.145 mm: PR35 N7(45 mm) expected rejected=1 observed=1; N7s(43.145 mm) rejected=1; others rejected=1 -> pass=1
+M4B_ACTIVATION none      bits=000 pass=1 active=0 area=0.000000000 failed=[]
+M4B_ACTIVATION c0p5_111  bits=111 pass=1 active=14094 area=3038.558892304 failed=[]
+M4B_ACTIVATION c2p0_111  bits=111 pass=1 active=14094 area=3038.558892304 failed=[]
+M4B_ACTIVATION c0p5_100  bits=100 pass=1 active=4704 area=1012.852964101 failed=[]
+M4B_ACTIVATION c0p5_010  bits=010 pass=1 active=4694 area=1012.852964101 failed=[]
+M4B_ACTIVATION c0p5_001  bits=001 pass=1 active=4696 area=1012.852964101 failed=[]
+M4B_ACTIVATION c2p0_100  bits=100 pass=1 active=4704 area=1012.852964101 failed=[]
+M4B_ACTIVATION c2p0_010  bits=010 pass=1 active=4694 area=1012.852964101 failed=[]
+M4B_ACTIVATION c2p0_001  bits=001 pass=1 active=4696 area=1012.852964101 failed=[]
+M4B_ACTIVATION c2p0_101  bits=101 pass=1 active=9400 area=2025.705928203 failed=[]
+  N1_wrong_mask              expect phaseFromMask            rejected=1 failed=[phaseFromMask,inactiveAndMatrixLabelOne,activeChordsCarryJump,passiveChordsNoJump]
+  N2_swapped_ring_ids        expect oracleAgreement          rejected=1 failed=[oracleAgreement,interfaceIdsOneToOne,activeChordsCarryJump,passiveChordsNoJump]
+  N3_swapped_centre_order    expect centresAscendingY        rejected=1 failed=[oracleAgreement,centresAscendingY,interfaceIdsOneToOne,activeChordsCarryJump,passiveChordsNoJump]
+  N4_off_band_E              expect phaseFromMask            rejected=1 failed=[phaseFromMask,inactiveAndMatrixLabelOne,activeAreaIdentity,activeChordsCarryJump,jumpEdgeCount]
+  N5_ring_element_dropped    expect oracleAgreement          rejected=1 failed=[oracleAgreement,ringAreaIdentity,jumpEdgeCount,ringsAndMatrixConnected]
+  N6_detached_midside        expect chordsConforming         rejected=1 failed=[chordsConforming,coincidentOnlyTwins]
+  N7_q_reaches_ring          expect qSupportOwnerFree        rejected=1 failed=[qSupportOwnerFree,qClearance]
+  N8_node_in_hole            expect noVoidFilling            rejected=1 failed=[oraclePass,noVoidFilling]
+  N9_wrong_modulus           expect materialsAdmissible      rejected=1 failed=[materialsAdmissible]
+  N10_inactive_ring_jump     expect passiveChordsNoJump      rejected=1 failed=[phaseFromMask,inactiveAndMatrixLabelOne,activeAreaIdentity,passiveChordsNoJump,jumpEdgeCount]
+M4B_ACTIVATION_NEGATIVES positive=1, rejected 10/10 -> pass=1
+STAGE B1_ACTIVATION PASS
+G2_M4B_R1_CAMPAIGN DRY_OK (nothing written)
+FAULT F01_dry_writes_nothing                       expected [DRY_OK + no new files] observed [DRY_OK, new files 0] -> 1
+G2_M4B_R1_CAMPAIGN HOLD_SOURCE: Frozen S2alt mesh bytes differ from 0627dd3a9db88190b412036b370286efae02c8ac305cf568ff9d609835e13080.
+FAULT F02_tampered_S2alt                           expected [HOLD_SOURCE] observed [HOLD_SOURCE] -> 1
+M4B_R1_MATCHED pass=1 polyline=1 tangent=1 tip=1 core/collar/q=1 (T3 alt 35125, orig 28625)
+FAULT F03a_matched_S2alt_accepted                  expected [pass] observed [pass=1] -> 1
+M4B_R1_MATCHED pass=0 polyline=0 tangent=0 tip=0 core/collar/q=1 (T3 alt 35121, orig 28625)
+FAULT F03b_M4A_alternative_S2_rejected             expected [fail on polyline/tip] observed [polylineBitwise,tipTangentBitwise,tipCoordinatesBitwise] -> 1
+M4B_R1_MATCHED pass=0 polyline=0 tangent=1 tip=1 core/collar/q=1 (T3 alt 35125, orig 28625)
+FAULT F03c_polyline_perturbed_1e-12_rejected       expected [fail on polyline] observed [polylineBitwise] -> 1
+M4B_R1_MATCHED pass=0 polyline=1 tangent=0 tip=1 core/collar/q=1 (T3 alt 35125, orig 28625)
+FAULT F03d_tangent_perturbed_rejected              expected [fail on tangent] observed [tipTangentBitwise] -> 1
+G2_M2_ADAPTER S2alt pass=1 added=[] banks=185 side-checked U/L 357/358
+  N1_wrong_mask              expect phaseFromMask            rejected=1 failed=[phaseFromMask,inactiveAndMatrixLabelOne,activeChordsCarryJump,passiveChordsNoJump]
+  N2_swapped_ring_ids        expect oracleAgreement          rejected=1 failed=[oracleAgreement,interfaceIdsOneToOne,activeChordsCarryJump,passiveChordsNoJump]
+  N3_swapped_centre_order    expect centresAscendingY        rejected=1 failed=[oracleAgreement,centresAscendingY,interfaceIdsOneToOne,activeChordsCarryJump,passiveChordsNoJump]
+  N4_off_band_E              expect phaseFromMask            rejected=1 failed=[phaseFromMask,inactiveAndMatrixLabelOne,activeAreaIdentity,activeChordsCarryJump,jumpEdgeCount]
+  N5_ring_element_dropped    expect oracleAgreement          rejected=1 failed=[oracleAgreement,ringAreaIdentity,jumpEdgeCount,ringsAndMatrixConnected]
+  N6_detached_midside        expect chordsConforming         rejected=1 failed=[chordsConforming,coincidentOnlyTwins]
+  N7_q_reaches_ring          expect qSupportOwnerFree        rejected=1 failed=[qSupportOwnerFree,qClearance]
+  N8_node_in_hole            expect noVoidFilling            rejected=1 failed=[oraclePass,noVoidFilling]
+  N9_wrong_modulus           expect materialsAdmissible      rejected=1 failed=[materialsAdmissible]
+  N10_inactive_ring_jump     expect passiveChordsNoJump      rejected=1 failed=[phaseFromMask,inactiveAndMatrixLabelOne,activeAreaIdentity,passiveChordsNoJump,jumpEdgeCount]
+M4B_ACTIVATION_NEGATIVES positive=1, rejected 10/10 -> pass=1
+FAULT F04_N1_wrong_mask                            expected [rejected by phaseFromMask] observed [phaseFromMask,inactiveAndMatrixLabelOne,activeChordsCarryJump,passiveChordsNoJump] -> 1
+FAULT F04_N2_swapped_ring_ids                      expected [rejected by oracleAgreement] observed [oracleAgreement,interfaceIdsOneToOne,activeChordsCarryJump,passiveChordsNoJump] -> 1
+FAULT F04_N3_swapped_centre_order                  expected [rejected by centresAscendingY] observed [oracleAgreement,centresAscendingY,interfaceIdsOneToOne,activeChordsCarryJump,passiveChordsNoJump] -> 1
+FAULT F04_N4_off_band_E                            expected [rejected by phaseFromMask] observed [phaseFromMask,inactiveAndMatrixLabelOne,activeAreaIdentity,activeChordsCarryJump,jumpEdgeCount] -> 1
+FAULT F04_N5_ring_element_dropped                  expected [rejected by oracleAgreement] observed [oracleAgreement,ringAreaIdentity,jumpEdgeCount,ringsAndMatrixConnected] -> 1
+FAULT F04_N6_detached_midside                      expected [rejected by chordsConforming] observed [chordsConforming,coincidentOnlyTwins] -> 1
+FAULT F04_N7_q_reaches_ring                        expected [rejected by qSupportOwnerFree] observed [qSupportOwnerFree,qClearance] -> 1
+FAULT F04_N8_node_in_hole                          expected [rejected by noVoidFilling] observed [oraclePass,noVoidFilling] -> 1
+FAULT F04_N9_wrong_modulus                         expected [rejected by materialsAdmissible] observed [materialsAdmissible] -> 1
+FAULT F04_N10_inactive_ring_jump                   expected [rejected by passiveChordsNoJump] observed [phaseFromMask,inactiveAndMatrixLabelOne,activeAreaIdentity,passiveChordsNoJump,jumpEdgeCount] -> 1
+FAULT F05_interface_traction_imbalance             expected [clean <= 1e-8, perturbed > 1e-8] observed [clean 4.83e-12, perturbed 0.322] -> 1
+G2_M4B_SIF bits=100 pass=0 KI=0.400607548 KII=+0.00184880334 MPa sqrt(m)/kN, COD 0.39708608 / +0.00181061698, C=0.000227074169 mm/N
+FAULT F06a_wrong_load                              expected [loadThicknessModulus fails] observed [loadThicknessModulus] -> 1
+G2_M4B_SIF bits=100 pass=0 KI=0.200303774 KII=+0.000924401671 MPa sqrt(m)/kN, COD 0.19854304 / +0.000905308488, C=0.000227074169 mm/N
+FAULT F06b_wrong_thickness                         expected [loadThicknessModulus fails] observed [loadThicknessModulus] -> 1
+G2_M4B_R1_CAMPAIGN HOLD_AUTH_TOKEN: Run token does not bind this policy, source set, mesh and case cap.
+FAULT F07_bad_token_policy                         expected [HOLD_AUTH_TOKEN, no solve] observed [HOLD_AUTH_TOKEN solves 0] -> 1
+G2_M4B_R1_CAMPAIGN HOLD_AUTH_TOKEN: Run token does not bind this policy, source set, mesh and case cap.
+FAULT F07_bad_token_source_set                     expected [HOLD_AUTH_TOKEN, no solve] observed [HOLD_AUTH_TOKEN solves 0] -> 1
+G2_M4B_R1_CAMPAIGN HOLD_AUTH_TOKEN: Run token does not bind this policy, source set, mesh and case cap.
+FAULT F07_bad_token_mesh                           expected [HOLD_AUTH_TOKEN, no solve] observed [HOLD_AUTH_TOKEN solves 0] -> 1
+G2_M4B_R1_CAMPAIGN HOLD_AUTH_TOKEN: Run token does not bind this policy, source set, mesh and case cap.
+FAULT F07_bad_token_case_cap                       expected [HOLD_AUTH_TOKEN, no solve] observed [HOLD_AUTH_TOKEN solves 0] -> 1
+G2_M4B_R1_CAMPAIGN HOLD_AUTH_TOKEN: Run token does not bind this policy, source set, mesh and case cap.
+FAULT F07_bad_token_empty                          expected [HOLD_AUTH_TOKEN, no solve] observed [HOLD_AUTH_TOKEN solves 0] -> 1
+G2_M4B_R1_CAMPAIGN HOLD_POLICY_DRIFT: Policy file <repo>\outputs\g2_m4b_r1_faults_v1\fault_20261121_233135_765\G2_M4B_R1_POLICY_v1.json is not the canonical R1 policy.
+FAULT F08_policy_drift                             expected [HOLD_POLICY_DRIFT] observed [HOLD_POLICY_DRIFT] -> 1
+G2_M4B_R1_CAMPAIGN HOLD_DIRTY_SOURCE: Uncommitted or untracked sources:
+?? matlab/g2/zz_m4b_r1_fault_untracked_tmp.m
+FAULT F09_source_drift_dirty_tree                  expected [HOLD_DIRTY_SOURCE] observed [HOLD_DIRTY_SOURCE] -> 1
+G2_M4B_R1_CAMPAIGN HOLD_MEMORY: Free physical RAM 4.90 GiB below 5 GiB.
+FAULT F10a_low_ram_guard                           expected [HOLD_MEMORY] observed [HOLD_MEMORY] -> 1
+FAULT F10b_launcher_guard_not_lowerable            expected [nonzero exit, HOLD_RAM_POLICY] observed [exit 1] -> 1
+G2_M4B_R1_CAMPAIGN HOLD_CASE_OUTSIDE_DESIGN: Refused case(s) outside the preregistered 10 R1 physical ids: c0p5_110
+FAULT F11_outside_design_c0p5_110                  expected [HOLD_CASE_OUTSIDE_DESIGN, no solve] observed [HOLD_CASE_OUTSIDE_DESIGN solves 0] -> 1
+G2_M4B_R1_CAMPAIGN HOLD_CASE_OUTSIDE_DESIGN: Refused case(s) outside the preregistered 10 R1 physical ids: c2p0_011
+FAULT F11_outside_design_c2p0_011                  expected [HOLD_CASE_OUTSIDE_DESIGN, no solve] observed [HOLD_CASE_OUTSIDE_DESIGN solves 0] -> 1
+G2_M4B_R1_CAMPAIGN HOLD_CASE_OUTSIDE_DESIGN: Refused case(s) outside the preregistered 10 R1 physical ids: c0p5_101
+FAULT F11_outside_design_c0p5_101                  expected [HOLD_CASE_OUTSIDE_DESIGN, no solve] observed [HOLD_CASE_OUTSIDE_DESIGN solves 0] -> 1
+G2_M4B_R1_CAMPAIGN HOLD_CASE_OUTSIDE_DESIGN: Refused case(s) outside the preregistered 10 R1 physical ids: c0p5_1101
+FAULT F11_outside_design_c0p5_1101                 expected [HOLD_CASE_OUTSIDE_DESIGN, no solve] observed [HOLD_CASE_OUTSIDE_DESIGN solves 0] -> 1
+G2_M4B_R1_CAMPAIGN HOLD_CASE_OUTSIDE_DESIGN: Refused case(s) outside the preregistered 10 R1 physical ids: 
+FAULT F11_outside_design_none+none                 expected [HOLD_CASE_OUTSIDE_DESIGN, no solve] observed [HOLD_CASE_OUTSIDE_DESIGN solves 0] -> 1
+M4B_R1_MATCHED pass=1 polyline=1 tangent=1 tip=1 core/collar/q=1 (T3 alt 35125, orig 28625)
+STAGE B0_INVENTORY PASS
+G2_KINKED_AUDIT_GATES=34/34
+G2_KINKED_AUDIT_PASS=1
+G2_M2_ADAPTER S2alt pass=1 added=[] banks=185 side-checked U/L 357/358
+LEGACY_PHASE_MAP pass=1 PHASE_MAP_TOPOLOGICAL_OK: 21031 matrix + 14094 reinforcement elements; chords per circle [112 112 112].
+LEGACY_PHASE_VERIFY pass=1 failed=[]
+PHASE_NEG N1_swapped_labels                    mapper=1 (PHASE_MAP_TOPOLOGICAL_OK) verifier=0 [labelsMatchGeometry,annulusAreaIdentity,matrixConnected,bandsConnected,tipGuideMatrixOnly,qSupportMatrixOnly] -> rejected=1
+PHASE_NEG N2_band_element_relabelled_matrix    mapper=1 (PHASE_MAP_TOPOLOGICAL_OK) verifier=0 [labelsMatchGeometry,interfaceChordsTwoOwnersMixed,noOtherMixedEdges,annulusAreaIdentity] -> rejected=1
+PHASE_NEG N3_matrix_element_relabelled_band    mapper=1 (PHASE_MAP_TOPOLOGICAL_OK) verifier=0 [labelsMatchGeometry,interfaceChordsTwoOwnersMixed,noOtherMixedEdges,annulusAreaIdentity] -> rejected=1
+PHASE_NEG N4_detached_interface                mapper=0 (HOLD_INTERFACE_DUPLICATE_ANGLE) verifier=0 [interfaceChordsTwoOwnersMixed,noOtherMixedEdges,coincidentNodesOnlyRegisteredTwins] -> rejected=1
+PHASE_NEG N5_nonconforming_interface           mapper=0 (HOLD_INTERFACE_NONCONFORMING) verifier=0 [noStraddle,labelsMatchGeometry,interfaceChordsTwoOwnersMixed,noOtherMixedEdges,annulusAreaIdentity] -> rejected=1
+PHASE_NEG N6_filled_void                       mapper=1 (PHASE_MAP_TOPOLOGICAL_OK) verifier=0 [noVoidPenetration,annulusAreaIdentity,domainAreaIdentity,coincidentNodesOnlyRegisteredTwins] -> rejected=1
+PHASE_NEG N7_q_domain_crossing_band            mapper=1 (PHASE_MAP_TOPOLOGICAL_OK) verifier=0 [qSupportMatrixOnly] -> rejected=1
+PHASE_NEG N9_band_label_in_tip_guide           mapper=1 (PHASE_MAP_TOPOLOGICAL_OK) verifier=0 [labelsMatchGeometry,noOtherMixedEdges,annulusAreaIdentity,bandsConnected,tipGuideMatrixOnly] -> rejected=1
+G2_MATERIAL_PHASE_NEGATIVES_PASS=1 (8 cases)
+M2_PHASE_NEG tip-to-band 42.145 mm: PR35 N7(45 mm) expected rejected=1 observed=1; N7s(43.145 mm) rejected=1; others rejected=1 -> pass=1
+M4B_ACTIVATION none      bits=000 pass=1 active=0 area=0.000000000 failed=[]
+M4B_ACTIVATION c0p5_111  bits=111 pass=1 active=14094 area=3038.558892304 failed=[]
+M4B_ACTIVATION c2p0_111  bits=111 pass=1 active=14094 area=3038.558892304 failed=[]
+M4B_ACTIVATION c0p5_100  bits=100 pass=1 active=4704 area=1012.852964101 failed=[]
+M4B_ACTIVATION c0p5_010  bits=010 pass=1 active=4694 area=1012.852964101 failed=[]
+M4B_ACTIVATION c0p5_001  bits=001 pass=1 active=4696 area=1012.852964101 failed=[]
+M4B_ACTIVATION c2p0_100  bits=100 pass=1 active=4704 area=1012.852964101 failed=[]
+M4B_ACTIVATION c2p0_010  bits=010 pass=1 active=4694 area=1012.852964101 failed=[]
+M4B_ACTIVATION c2p0_001  bits=001 pass=1 active=4696 area=1012.852964101 failed=[]
+M4B_ACTIVATION c2p0_101  bits=101 pass=1 active=9400 area=2025.705928203 failed=[]
+  N1_wrong_mask              expect phaseFromMask            rejected=1 failed=[phaseFromMask,inactiveAndMatrixLabelOne,activeChordsCarryJump,passiveChordsNoJump]
+  N2_swapped_ring_ids        expect oracleAgreement          rejected=1 failed=[oracleAgreement,interfaceIdsOneToOne,activeChordsCarryJump,passiveChordsNoJump]
+  N3_swapped_centre_order    expect centresAscendingY        rejected=1 failed=[oracleAgreement,centresAscendingY,interfaceIdsOneToOne,activeChordsCarryJump,passiveChordsNoJump]
+  N4_off_band_E              expect phaseFromMask            rejected=1 failed=[phaseFromMask,inactiveAndMatrixLabelOne,activeAreaIdentity,activeChordsCarryJump,jumpEdgeCount]
+  N5_ring_element_dropped    expect oracleAgreement          rejected=1 failed=[oracleAgreement,ringAreaIdentity,jumpEdgeCount,ringsAndMatrixConnected]
+  N6_detached_midside        expect chordsConforming         rejected=1 failed=[chordsConforming,coincidentOnlyTwins]
+  N7_q_reaches_ring          expect qSupportOwnerFree        rejected=1 failed=[qSupportOwnerFree,qClearance]
+  N8_node_in_hole            expect noVoidFilling            rejected=1 failed=[oraclePass,noVoidFilling]
+  N9_wrong_modulus           expect materialsAdmissible      rejected=1 failed=[materialsAdmissible]
+  N10_inactive_ring_jump     expect passiveChordsNoJump      rejected=1 failed=[phaseFromMask,inactiveAndMatrixLabelOne,activeAreaIdentity,passiveChordsNoJump,jumpEdgeCount]
+M4B_ACTIVATION_NEGATIVES positive=1, rejected 10/10 -> pass=1
+STAGE B1_ACTIVATION PASS

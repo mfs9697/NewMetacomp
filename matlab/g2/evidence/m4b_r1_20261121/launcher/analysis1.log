@@ -1,0 +1,4 @@
+R1_SELFTEST reproduce M4.B decomposition: pass=1 maxdev=0
+R1_VERDICT R1_PLACEMENT_STABLE  single-ring classes {"stable":12,"sensitive":0,"unresolved":0,"notRobust":0,"total":12}  rankings RANKING_STABLE,RANKING_STABLE,RANKING_STABLE,RANKING_STABLE  stiff13 G STABLE theta STABLE
+G2_M4B_R1_ANALYSIS_STATUS=GO folder <repo>\outputs\g2_m4b_r1_s2alt_v1\analysis_run_20261121_233100_443
+GO
