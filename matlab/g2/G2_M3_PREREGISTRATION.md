@@ -95,3 +95,21 @@ This guards against the historical forged-review defect D2.
   A deterministic replay of a full chain must equal the accepted chain in all arrays.
 - **Outputs.** Under `outputs/g2_material_trajectories_v1/` (gitignored), with sanitized logs, CSV/JSON/PNG and SHA-256 ledgers committed. Results go in `G2_M3_RESULTS.md`.
 - **Excluded:** a third increment, State 3, CZM, debonding, onset, toughness, arrest, experimental match, any threshold relaxation, and automatic retries.
+
+## Amendment A1 (before any increment; the dry preflight wrote nothing)
+
+**What the first dry preflight showed.** H-REC did not reproduce the homogeneous S1 tip from the PR #38 full-precision S0 H1 record: the tip differed by 4.41e−6 mm. It did reproduce S2 exactly from the S1 record.
+
+**Cause.** WP3 seeded the homogeneous first kink from the **preregistered six-digit** State 0 K, 0.166436 / +0.018827 (`WP3_PREREGISTRATION.md` A9; `WP3_FIRST_KINK_RESULTS.md`), not from the full-precision WP2 values.
+
+**H-REC, as amended:**
+- S1 is reproduced from the six-digit K it was actually generated from;
+- S2 is reproduced from the full-precision S1 record;
+- the same tolerances apply (1e−12 mm against the saved polylines, 1e−9 mm against the preregistered ones);
+- the full-precision offset of the homogeneous S1 tip (4.41e−6 mm) is recorded as a known property of Γ_H.
+
+**Unchanged.** The material chains use the full-precision S0 material K, as preregistered. No threshold or policy value changes.
+
+**Wording correction.** §2 said "exactly against the saved polylines". The code uses 1e−12 mm, a round-off-level bound; the observed deviations are reported.
+
+**Consequence.** The 4.41e−6 mm offset enters the s = 29.4 mm tip separation between M and H, about 1e−4 of the expected separation. It is reported alongside it.
