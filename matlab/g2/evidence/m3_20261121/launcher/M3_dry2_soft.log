@@ -1,0 +1,17 @@
+Free RAM: 6,73 GiB (guard 5,00 GiB)
+M3 policy SHA-256: CF3023B55E99EFA0EB4F862EDB7F2D1AFABCE7F80A3444B0375C1EEB546DA9A8
+DRY preflight (no files written)
+G2_M3_HREC S1 dev saved 4.41e-06 / prereg 4.41e-06 mm; S2 dev saved 0 / prereg 4.17e-11 mm -> pass=0
+powershell : {Error using assert
+At line:4 char:1
++ powershell -NoProfile -ExecutionPolicy Bypass -File .\matlab\g2\run_g ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: ({Error using assert:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+The recurrence does not reproduce the homogeneous S1/S2 polylines.
+
+Error in g2_m3_trajectory_run (line 71)
+assert(R.hrec.pass,'G2M3:HREC','The recurrence does not reproduce the homogeneous S1/S2 polylines.');
+} 
+ERROR: MATLAB error Exit Status: 0x00000001
