@@ -43,6 +43,7 @@ for i=1:2
  a=nexttile(tl);hold(a,'on');rows=L.results.(mats{i}).rows;
  Rd=arrayfun(@(r)r.R_direct.R,rows);Rp=arrayfun(@(r)r.R_path.R,rows);Rt=arrayfun(@(r)r.R_total.R,rows);
  Ud=arrayfun(@(r)r.R_direct.U,rows);Up=arrayfun(@(r)r.R_path.U,rows);Ut=arrayfun(@(r)r.R_total.U,rows);Utc=arrayfun(@(r)r.R_total.U_cons,rows);
+ Rd=Rd(:).';Rp=Rp(:).';Rt=Rt(:).';Ud=Ud(:).';Up=Up(:).';Ut=Ut(:).';Utc=Utc(:).';   % jsondecode returns column struct arrays
  fill(a,[s fliplr(s)],[Rt-Utc fliplr(Rt+Utc)],cc{i},'FaceAlpha',.08,'EdgeColor','none','HandleVisibility','off');
  errorbar(a,s,Rd,2*Ud,'--o','Color',hC,'MarkerFaceColor','w','LineWidth',1.2);
  errorbar(a,s,Rp,2*Up,':d','Color',cc{i},'MarkerFaceColor','w','LineWidth',1.4);
