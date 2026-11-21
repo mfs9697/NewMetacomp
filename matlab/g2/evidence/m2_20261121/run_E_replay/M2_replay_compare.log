@@ -1,0 +1,23 @@
+REPLAY PHASE_MAP_S0     1
+REPLAY CASE_S0_H1.mat         1
+REPLAY CASE_S0_M0.mat         1
+REPLAY CASE_S0_Msoft.mat      1
+REPLAY CASE_S0_Mstiff.mat     1
+REPLAY PHASE_MAP_S1     1
+REPLAY CASE_S1_H1.mat         1
+REPLAY CASE_S1_M0.mat         1
+REPLAY CASE_S1_Msoft.mat      1
+REPLAY CASE_S1_Mstiff.mat     1
+REPLAY PHASE_MAP_S2     1
+REPLAY CASE_S2_H1.mat         1
+REPLAY CASE_S2_M0.mat         1
+REPLAY CASE_S2_Msoft.mat      1
+REPLAY CASE_S2_Mstiff.mat     1
+REPLAY PHASE_MAP_S2alt  1
+REPLAY CASE_S2alt_H1.mat      1
+REPLAY CASE_S2alt_M0.mat      1
+REPLAY CASE_S2alt_Msoft.mat   1
+REPLAY CASE_S2alt_Mstiff.mat  1
+REPLAY S2ALT mesh arrays 1
+REPLAY summary identical 1, status GO/GO
+REPLAY_ALL_IDENTICAL=1

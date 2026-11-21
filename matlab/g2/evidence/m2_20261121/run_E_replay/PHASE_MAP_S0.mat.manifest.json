@@ -1,0 +1,9 @@
+{
+  "schema": "NewMetacomp.G2.TrajectoryRecordManifest.v1",
+  "file": "PHASE_MAP_S0.mat",
+  "SHA256": "3950E855900FD92F4B82249668C7A5809F165279E504E7C1EA7CF0E88B0A43D5",
+  "bytes": 129624,
+  "recordSchema": "NewMetacomp.G2.MaterialPhaseMap.v1",
+  "stateIndex": -1,
+  "physicalFractureGrowthProven": false
+}

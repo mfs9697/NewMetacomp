@@ -62,3 +62,8 @@ No tolerance, gate, policy value or numerical code changed. The batch now calls 
 - **States:** G, S0, S1, S2, S2alt and the summary all PASS.
 - **S2alt:** 35,125 T3, 34/34, 112 chords per circle; both contrasts **ROBUST**.
 - **Reporting:** results are in `G2_M2_SHIELDING_STEERING_RESULTS.md`.
+
+## Run E: `run_20261121_132427_797`, HEAD `48c8864`, **GO** (replay)
+
+- `replay_compare_m2.m` checks run E against run D record by record, with manifests verified.
+- **Bit-identical:** all 4 phase maps, all 16 cases (u, EDI, COD, compliance, CMOD), the regenerated S2alt mesh arrays, and the summary.
