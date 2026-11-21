@@ -1,0 +1,79 @@
+{
+  "run": "<repo>/outputs/g2_material_evolution_v1/run_20261121_132226_301",
+  "gitHeadOfRun": "9be3a055b86553060fc557ef976666d5c42b5fc8",
+  "policySHA256": "1782EEBC5DB6EF8DACDB8A5325996B3D9A4E774A388C0990E884FFEC40DD834C",
+  "summary": {
+    "crossStateGeometry": "GEOMETRY-EQUIVALENT",
+    "Msoft": {
+      "R": [
+        0.99390694623031739,
+        1.0061988163124764,
+        1.0218132193893585
+      ],
+      "resolvedPrimary": [
+        true,
+        true,
+        true
+      ],
+      "resolvedConservative": [
+        false,
+        false,
+        false
+      ],
+      "evolution": "SIGN_CHANGE_BETWEEN_RESOLVED_STATES",
+      "magnitudeTrend": "MAGNITUDE_INCREASES_WITH_S",
+      "dMTS_deg": [
+        0.646896795080055,
+        0.74259264671263914,
+        0.69431162978431016
+      ],
+      "dMTSresolved": [
+        true,
+        true,
+        true
+      ],
+      "steeringSameSignAllStates": true
+    },
+    "Mstiff": {
+      "R": [
+        0.99095998100854954,
+        0.981870125691002,
+        0.97068729864442171
+      ],
+      "resolvedPrimary": [
+        true,
+        true,
+        true
+      ],
+      "resolvedConservative": [
+        false,
+        false,
+        false
+      ],
+      "evolution": "PERSISTS_SAME_SIGN_ALL_RESOLVED",
+      "magnitudeTrend": "MAGNITUDE_INCREASES_WITH_S",
+      "dMTS_deg": [
+        -0.42455295315566133,
+        -0.49260589031176483,
+        -0.45160797970592492
+      ],
+      "dMTSresolved": [
+        true,
+        true,
+        true
+      ],
+      "steeringSameSignAllStates": true
+    },
+    "G_H1_1N_N_per_mm": [
+      8.584569785604545E-9,
+      1.0201455295897415E-8,
+      1.1755708830166265E-8
+    ]
+  },
+  "s_mm": [
+    25.4,
+    29.4,
+    33.4
+  ],
+  "physicalFractureGrowthProven": false
+}

@@ -1,0 +1,34 @@
+Free RAM: 6,10 GiB (guard 5,00 GiB)
+M2 policy SHA-256: 1782EEBC5DB6EF8DACDB8A5325996B3D9A4E774A388C0990E884FFEC40DD834C
+G2_M2_EVOLUTION run <repo>\outputs\g2_material_evolution_v1\run_20261121_131852_300, MATLAB R2023a, policy 1782EEBC5DB6EF8DACDB8A5325996B3D9A4E774A388C0990E884FFEC40DD834C
+STAGE G_GLOBAL PASS
+G2_INDEPENDENT_T6_GATES=38/38
+G2_INDEPENDENT_T6_PASS=1
+G2_INDEPENDENT_T6_BOUNDARY_LOOPS=4
+G2_INDEPENDENT_T6_EULER=-2
+G2_INDEPENDENT_T6_TIP=1114
+G2_INDEPENDENT_T6_MAX_RATIO=1.59182855
+G2_INDEPENDENT_T6_MIN_ANGLE_DEG=30.12684732
+G2_INDEPENDENT_T6_NO_LEFM=1
+G2_PROTECTED_TIP_GATES=24/24
+G2_PROTECTED_TIP_PASS=1
+G2_M2_ADAPTER S0 pass=1 added=[crackPolyline,tipTangent] banks=151 side-checked U/L 295/295
+PHASE_MAP pass=1 PHASE_MAP_TOPOLOGICAL_OK: 15909 matrix + 12242 reinforcement elements; chords per circle [76 76 76].
+PHASE_VERIFY pass=1 failed=[]
+PHASE_NEG N1_swapped_labels                    mapper=1 (PHASE_MAP_TOPOLOGICAL_OK) verifier=0 [labelsMatchGeometry,annulusAreaIdentity,matrixConnected,bandsConnected,tipGuideMatrixOnly,qSupportMatrixOnly] -> rejected=1
+PHASE_NEG N2_band_element_relabelled_matrix    mapper=1 (PHASE_MAP_TOPOLOGICAL_OK) verifier=0 [labelsMatchGeometry,interfaceChordsTwoOwnersMixed,noOtherMixedEdges,annulusAreaIdentity] -> rejected=1
+PHASE_NEG N3_matrix_element_relabelled_band    mapper=1 (PHASE_MAP_TOPOLOGICAL_OK) verifier=0 [labelsMatchGeometry,interfaceChordsTwoOwnersMixed,noOtherMixedEdges,annulusAreaIdentity] -> rejected=1
+PHASE_NEG N4_detached_interface                mapper=0 (HOLD_INTERFACE_DUPLICATE_ANGLE) verifier=0 [interfaceChordsTwoOwnersMixed,noOtherMixedEdges,coincidentNodesOnlyRegisteredTwins] -> rejected=1
+PHASE_NEG N5_nonconforming_interface           mapper=0 (HOLD_INTERFACE_NONCONFORMING) verifier=0 [noStraddle,labelsMatchGeometry,interfaceChordsTwoOwnersMixed,noOtherMixedEdges,annulusAreaIdentity] -> rejected=1
+PHASE_NEG N6_filled_void                       mapper=1 (PHASE_MAP_TOPOLOGICAL_OK) verifier=0 [noVoidPenetration,annulusAreaIdentity,domainAreaIdentity,coincidentNodesOnlyRegisteredTwins] -> rejected=1
+PHASE_NEG N7_q_domain_crossing_band            mapper=1 (PHASE_MAP_TOPOLOGICAL_OK) verifier=1 [] -> rejected=0
+PHASE_NEG N9_band_label_in_tip_guide           mapper=1 (PHASE_MAP_TOPOLOGICAL_OK) verifier=0 [labelsMatchGeometry,noOtherMixedEdges,annulusAreaIdentity,bandsConnected,tipGuideMatrixOnly] -> rejected=1
+G2_MATERIAL_PHASE_NEGATIVES_PASS=0 (8 cases)
+powershell : HOLD G2M2:PhaseNegatives: S0: a phase negative control was accepted.
+At line:3 char:1
++ powershell -NoProfile -ExecutionPolicy Bypass -File .\matlab\g2\run_g ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (HOLD G2M2:Phase...l was accepted.:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+G2_M2_EVOLUTION_STATUS=HOLD

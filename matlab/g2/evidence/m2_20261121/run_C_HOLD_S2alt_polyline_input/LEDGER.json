@@ -1,0 +1,1931 @@
+{
+  "schema": "NewMetacomp.G2.M2EvolutionLedger.v1",
+  "issue": 36,
+  "started": "2026-11-21 13:21:04",
+  "status": "HOLD",
+  "stages": [
+    {
+      "name": "G_GLOBAL",
+      "status": "PASS",
+      "info": {
+        "gitHead": "a9d32987f87a841f8eca532b84c398a32a45e750",
+        "pr35ModulesPinned": true,
+        "benchmarkRecordSHA256": "8419ed11fa094eaa9cfea3c08c15cc84ec656a25102776af0a876c54c058056e",
+        "benchmarkRerun": false,
+        "benchmarkChecks": "14/14"
+      }
+    },
+    {
+      "name": "STATE_S0",
+      "status": "PASS",
+      "info": {
+        "audit": "38/38 + 24/24",
+        "chords": [
+          76,
+          76,
+          76
+        ],
+        "bandArea_mm2": [
+          1012.1525285981618,
+          1012.1525285981609,
+          1012.1525285981605
+        ],
+        "qClearance_mm": 45.859506017812251,
+        "R_soft": 0.99390694623031739,
+        "R_stiff": 0.99095998100854954,
+        "extra": {}
+      }
+    },
+    {
+      "name": "STATE_S1",
+      "status": "PASS",
+      "info": {
+        "audit": "34/34",
+        "chords": [
+          76,
+          76,
+          76
+        ],
+        "bandArea_mm2": [
+          1012.1525285981612,
+          1012.1525285981606,
+          1012.1525285981618
+        ],
+        "qClearance_mm": 42.67425071758354,
+        "R_soft": 1.0061988163124764,
+        "R_stiff": 0.981870125691002,
+        "extra": {}
+      }
+    },
+    {
+      "name": "STATE_S2",
+      "status": "PASS",
+      "info": {
+        "audit": "34/34",
+        "chords": [
+          76,
+          76,
+          76
+        ],
+        "bandArea_mm2": [
+          1012.152528598162,
+          1012.1525285981618,
+          1012.1525285981609
+        ],
+        "qClearance_mm": 39.541632352798679,
+        "R_soft": 1.0218132193893585,
+        "R_stiff": 0.97068729864442171,
+        "extra": {
+          "caseArraysEqualPR35": {
+            "H1": true,
+            "M0": true,
+            "Msoft": true,
+            "Mstiff": true
+          },
+          "ratioTableMaxRelDevVsPR35Ledger": 0,
+          "pass": true
+        }
+      }
+    }
+  ],
+  "states": {},
+  "physicalFractureGrowthProven": false,
+  "matlabRelease": "R2023a",
+  "policySHA256": "1782EEBC5DB6EF8DACDB8A5325996B3D9A4E774A388C0990E884FFEC40DD834C",
+  "gitHead": "a9d32987f87a841f8eca532b84c398a32a45e750",
+  "sourceHashes": {
+    "g2_t6_elasticity_phase_m": "C11CF9B0FBFC7E35ADA3B274620058275F336787615E718732EEB88CB3747E5F",
+    "g2_material_phase_map_m": "2AF6A511BA1E438C94D656D4776BF7EF005812AFE58609D71CFC61A5E7F2C734",
+    "g2_material_phase_verify_m": "B5D62FD8B5AE9F181FE0515E08A7429C63D529A905656264A468C3599D7C2909",
+    "g2_material_sif_on_mesh_m": "A385F2D4859817ADB2D5BC5939C481F76E68AE7690D288FE711FED78972CC2E8",
+    "g2_t6_point_stress_m": "688510B31C93C3F9D5939B34CF340E3186FDDBE1754465C1F3D9EE21A7AA411F",
+    "g2_coated_hole_exact_m": "8AF37CDA325B6AE8B015E9A8B95B729F03901529CB38C608C969B6F5F591BA09",
+    "check_g2_material_benchmark_m": "9FDDB1A229749E9AA1237D3C17983ABA654B94579D9080FC7E11372674F16C5D",
+    "check_g2_material_phase_controls_m": "B7092B68D3A3595630415F62E07D2037B1BB2631C3C247D652C55219A80A44BB",
+    "g2_t6_elasticity_m": "00E45B77918FCC2075C9B36C52BDB8BBBD1638F57C188FF92A9D45C63776D4BD",
+    "g2_trajectory_sif_on_mesh_m": "D2F6E96B8F5FE019239DEF351D3B38CDEC4BD523628B77904A5343EA21CD0228",
+    "g2_sif_interaction_m": "28D22962193F2CDCA96EF027CFAA7C33FA5F279B828866C13E4682A1E9FC78A8",
+    "g2_sif_cod_banks_m": "147C697CBCEA9AA2DFE680ED22D57827FA8FF86BBCE6E1F2D4B3A17CBC7635F0",
+    "g2_sif_cod_m": "24FB676DAB82F59385C4E63B73F8218A22598ED3B6CB009680AC517AC659E5BF",
+    "g2_williams_field_m": "DDE057C6B217010232C3BF9E1FACCB5A5322E2ED291997F2314CF9D5F9D9A5EE",
+    "g2_plane_D_m": "13840EB5799971D45A0FA9E1A429104EB3E9199821E3DE3755BE2B2B95163496",
+    "g2_mts_direction_m": "4015E76EA0FBC7737D4C891035715079A9DE3BBD0D2E08C05D948EEB64C1F90C",
+    "g2_kinked_mesh_auditor_m": "2935E5E6DFF62F224C9770387708CBFD1DE143DC59DCF3C4AFCA6D552B772467",
+    "g2_independent_t6_checker_m": "9475B582B76C0C870BF5AB96D054925AC316B0767E139416DC00709EC7A83503",
+    "g2_protected_tip_checker_m": "C813413A5A070A35AAA71299E1D3B3FBA898DEF1CEE252420861918CC8432274",
+    "g2_kinked_join_m": "7D3D2C2E606542FB61B9B267F3C1877A7773B5CF2F348062659FA45C3F9AA514",
+    "g2_kinked_exterior_mesh_m": "CE6BD5FE3B672F78EDF4E4272E797F507636B30BFB94876C4D1F466F8874406C",
+    "g2_kinked_regular_block_m": "EEF0E0307AFF96937A90503E0BAA16CF81F52D96B8A7A95DA958553FC6066E71",
+    "G2_M2_POLICY_v1_json": "1782EEBC5DB6EF8DACDB8A5325996B3D9A4E774A388C0990E884FFEC40DD834C",
+    "g2_m2_state_adapter_m": "63A3226C55B927D3C0C8024E51BE8A66ABB68975D6EC47EE704A9FCE250943C5",
+    "g2_material_case_summary_m": "11D762D5AE1B85B47CFE47D662D316824EFCB26A3C63D7526A8DD4C35E9895F9",
+    "g2_material_ratio_table_m": "BF2C4532F1704B0BD9279140DC3CA9B3EFF0B67F833A152287DAE6665904D4BF",
+    "check_g2_m2_phase_controls_m": "51509D882E7662021264680787DC4C43E016B200F62FE8BE6F18DA505BBB1155",
+    "run_g2_m2_evolution_batch_m": "F1B8EC8131AE3EB780ED35C5A2FBD1C8E2CA638013FA844DE6B85B79C3B257C3"
+  },
+  "hold": {
+    "identifier": "G2M2:AltJoin",
+    "message": "S2alt join HOLD: HOLD_KINKED_P010_BLOCK HOLD_KINK_ADMISSIBILITY K1_polylineIdentity",
+    "stack": "alt_stage",
+    "line": 255
+  },
+  "results": {
+    "S0": {
+      "arc_mm": 25.4,
+      "meshSHA256": "05D5C3FCF5152C30BB0E5C288DC109BFCE42B8D677077C4631254AB5887657DC",
+      "audit": "38/38 + 24/24",
+      "adapter": {
+        "pass": true,
+        "checks": {
+          "schema": true,
+          "tipMatchesPolyline": true,
+          "polylineMatchesPreregistered": true,
+          "banksTwinned": true,
+          "banksOnPolyline": true,
+          "upperBankOnPlusNSide": true,
+          "anchorsPresent": true
+        },
+        "failed": [],
+        "added": [
+          "crackPolyline",
+          "tipTangent"
+        ],
+        "bankPairs": 151,
+        "sideElementsChecked": [
+          295,
+          295
+        ],
+        "maxBankOffPolyline_mm": 0
+      },
+      "geometry": {
+        "counts": [
+          15909,
+          12242
+        ],
+        "chordsPerCircle": [
+          76,
+          76,
+          76
+        ],
+        "holeVerticesPerCircle": [
+          152,
+          152,
+          152
+        ],
+        "annulusArea_mm2": [
+          1012.1525285981618,
+          1012.1525285981609,
+          1012.1525285981605
+        ],
+        "annulusNominalArea_mm2": [
+          1013.4149581949956,
+          1013.4149581949956,
+          1013.4149581949956
+        ],
+        "polygonVsNominalRel": [
+          -0.0012457183374146828,
+          -0.0012457183374150194,
+          -0.0012457183374152436
+        ],
+        "bandVolumeFraction": 0.029524406241599098,
+        "tipToBand_mm": 48.459506017812252,
+        "qClearance_mm": 45.859506017812251,
+        "mixedEdges": 228,
+        "coincidentPairs": 150,
+        "domainAreaRelErr": 1.4149272455034185E-16,
+        "annulusAreaRelErr": 6.7393105985165983E-16
+      },
+      "regression": {
+        "id": "S0",
+        "sifPass": true,
+        "wp2EDI_rel": 0,
+        "wp2J_rel": 0,
+        "wp2COD_rel": 0,
+        "pipelineEDI_vs_wp2_rel": 0,
+        "adapterBankCOD_vs_wp2COD_rel": 0,
+        "pass": true
+      },
+      "identity": {
+        "checks": {
+          "stiffness": true,
+          "displacement": true,
+          "K": true,
+          "energy": true,
+          "reactions": true,
+          "compliance": true,
+          "MTS": true,
+          "M0gates": true
+        },
+        "stiffness": 0,
+        "displacement": 0,
+        "K": 0,
+        "energy": 0,
+        "reactions": 0,
+        "compliance": 0,
+        "MTS_deg": 0,
+        "bitwiseUandEDI": true
+      },
+      "cases": {
+        "H1": {
+          "id": "H1",
+          "ratio": 1,
+          "pass": true,
+          "KI_raw": 0.0052631646382454017,
+          "KII_raw": 0.00059536482563562945,
+          "KI_COD_raw": 0.0052170193694587455,
+          "KII_COD_raw": 0.00058718470144729774,
+          "EDI_all": [
+            [
+              0.0052631646382454017,
+              0.00059536482563562945,
+              8.58470274066292E-9
+            ],
+            [
+              0.0052631732928442258,
+              0.00059536634608984651,
+              8.58475532780934E-9
+            ],
+            [
+              0.005263164661061622,
+              0.0005953648161685013,
+              8.5847042443966649E-9
+            ],
+            [
+              0.0052631646867974183,
+              0.00059536485444780355,
+              8.5847011431855111E-9
+            ],
+            [
+              0.0052631648535391073,
+              0.00059536486111036436,
+              8.5847016686578384E-9
+            ]
+          ],
+          "EDI4x4": [
+            0.0052631646382434432,
+            0.00059536482563553067
+          ],
+          "J": 8.58470274066292E-9,
+          "KI_perkN": 0.16643587957311623,
+          "KII_perkN": 0.018827088877575934,
+          "KI_COD_perkN": 0.16497663804705115,
+          "KII_COD_perkN": 0.01856841063779429,
+          "criteria": {
+            "elasticEquilibrium": true,
+            "blindCODversusEDI": true,
+            "contourIndependence": true,
+            "JenergyIdentity": true,
+            "EDIquadrature": true,
+            "qSupportInsideCore": true,
+            "wholeCrackOpening": true,
+            "KIpositive": true,
+            "conditionalHighMixityKIIagreement": true
+          },
+          "relativeResidual": 9.5778141280718975E-13,
+          "staticsMax": 4.1858877475320355E-13,
+          "fullPolyOpeningMin_mm": 0,
+          "strainEnergy_per_thickness": 8.6503380259962321E-6,
+          "compliance_mm_per_N": 0.00021971858585883683,
+          "reactions": [
+            -3.2494602122920925E-14,
+            0.039370078740173432,
+            0.039370078740174487
+          ],
+          "phaseStrainEnergy_per_thickness": 8.6503380259962321E-6,
+          "CMOD_mm": 2.7369620464153426E-5,
+          "interfaceBalanceRel": null,
+          "annulusResultantRel": null,
+          "interfaceSideL2Rel": [
+            null,
+            null,
+            null
+          ],
+          "Ep_matrix": 3268.115,
+          "thickness_mm": 12.7
+        },
+        "M0": {
+          "id": "M0",
+          "ratio": 1,
+          "pass": true,
+          "KI_raw": 0.0052631646382454017,
+          "KII_raw": 0.00059536482563562945,
+          "KI_COD_raw": 0.0052170193694587455,
+          "KII_COD_raw": 0.00058718470144729774,
+          "EDI_all": [
+            [
+              0.0052631646382454017,
+              0.00059536482563562945,
+              8.58470274066292E-9
+            ],
+            [
+              0.0052631732928442258,
+              0.00059536634608984651,
+              8.58475532780934E-9
+            ],
+            [
+              0.005263164661061622,
+              0.0005953648161685013,
+              8.5847042443966649E-9
+            ],
+            [
+              0.0052631646867974183,
+              0.00059536485444780355,
+              8.5847011431855111E-9
+            ],
+            [
+              0.0052631648535391073,
+              0.00059536486111036436,
+              8.5847016686578384E-9
+            ]
+          ],
+          "EDI4x4": [
+            0.0052631646382434432,
+            0.00059536482563553067
+          ],
+          "J": 8.58470274066292E-9,
+          "KI_perkN": 0.16643587957311623,
+          "KII_perkN": 0.018827088877575934,
+          "KI_COD_perkN": 0.16497663804705115,
+          "KII_COD_perkN": 0.01856841063779429,
+          "criteria": {
+            "elasticEquilibrium": true,
+            "blindCODversusEDI": true,
+            "contourIndependence": true,
+            "JenergyIdentity": true,
+            "EDIquadrature": true,
+            "qSupportInsideCore": true,
+            "wholeCrackOpening": true,
+            "KIpositive": true,
+            "conditionalHighMixityKIIagreement": true,
+            "qSupportMatrixPhaseOnly": true,
+            "heterogeneousEnergyIdentity": true,
+            "interfaceNodalForceBalance": true,
+            "annulusResultant": true,
+            "stiffnessPositiveDefinite": true
+          },
+          "relativeResidual": 9.5778141280718975E-13,
+          "staticsMax": 4.1858877475320355E-13,
+          "fullPolyOpeningMin_mm": 0,
+          "strainEnergy_per_thickness": 8.6503380259962321E-6,
+          "compliance_mm_per_N": 0.00021971858585883683,
+          "reactions": [
+            -3.2494602122920925E-14,
+            0.039370078740173432,
+            0.039370078740174487
+          ],
+          "phaseStrainEnergy_per_thickness": [
+            8.4926605812007079E-6,
+            1.5767744473014675E-7
+          ],
+          "CMOD_mm": 2.7369620464153426E-5,
+          "interfaceBalanceRel": 2.2093955391502739E-12,
+          "annulusResultantRel": 4.4435418022556772E-13,
+          "interfaceSideL2Rel": [
+            0.00024267333283740572,
+            0.00025850534713422194,
+            0.000181657622534303
+          ],
+          "Ep_matrix": 3268.115,
+          "thickness_mm": 12.7
+        },
+        "Msoft": {
+          "id": "Msoft",
+          "ratio": 0.5,
+          "pass": true,
+          "KI_raw": 0.0052506001821993791,
+          "KII_raw": 0.00056179728259594681,
+          "KI_COD_raw": 0.0052045580607407637,
+          "KII_COD_raw": 0.00055405218743746949,
+          "EDI_all": [
+            [
+              0.0052506001821993791,
+              0.00056179728259594681,
+              8.53233093943086E-9
+            ],
+            [
+              0.0052506088152176793,
+              0.0005617987172062864,
+              8.5323833291580451E-9
+            ],
+            [
+              0.0052506002038660926,
+              0.00056179727365258383,
+              8.5323324496149565E-9
+            ],
+            [
+              0.0052506002309622548,
+              0.000561797309745017,
+              8.532329349317058E-9
+            ],
+            [
+              0.0052506003973970443,
+              0.00056179731606046356,
+              8.5323298677062642E-9
+            ]
+          ],
+          "EDI4x4": [
+            0.005250600182197411,
+            0.00056179728259586159
+          ],
+          "J": 8.53233093943086E-9,
+          "KI_perkN": 0.16603855658645117,
+          "KII_perkN": 0.017765589962964644,
+          "KI_COD_perkN": 0.16458257686529779,
+          "KII_COD_perkN": 0.017520668549009334,
+          "criteria": {
+            "elasticEquilibrium": true,
+            "blindCODversusEDI": true,
+            "contourIndependence": true,
+            "JenergyIdentity": true,
+            "EDIquadrature": true,
+            "qSupportInsideCore": true,
+            "wholeCrackOpening": true,
+            "KIpositive": true,
+            "conditionalHighMixityKIIagreement": true,
+            "qSupportMatrixPhaseOnly": true,
+            "heterogeneousEnergyIdentity": true,
+            "interfaceNodalForceBalance": true,
+            "annulusResultant": true,
+            "stiffnessPositiveDefinite": true
+          },
+          "relativeResidual": 7.6245065116289833E-13,
+          "staticsMax": 9.8716451679692337E-13,
+          "fullPolyOpeningMin_mm": 0,
+          "strainEnergy_per_thickness": 8.7763744596796679E-6,
+          "compliance_mm_per_N": 0.000222919911274795,
+          "reactions": [
+            -3.2610433877344294E-15,
+            0.039370078740214247,
+            0.039370078740178442
+          ],
+          "phaseStrainEnergy_per_thickness": [
+            8.5735515018977343E-6,
+            2.028229577352959E-7
+          ],
+          "CMOD_mm": 2.6958349934484549E-5,
+          "interfaceBalanceRel": 1.450659504692832E-12,
+          "annulusResultantRel": 5.6498861184948213E-13,
+          "interfaceSideL2Rel": [
+            0.0089458984069532323,
+            0.0084979527907693541,
+            0.008242498976940911
+          ],
+          "Ep_matrix": 3268.115,
+          "thickness_mm": 12.7
+        },
+        "Mstiff": {
+          "id": "Mstiff",
+          "ratio": 2,
+          "pass": true,
+          "KI_raw": 0.0052369118219804381,
+          "KII_raw": 0.00061359176563509474,
+          "KI_COD_raw": 0.0051910002172864565,
+          "KII_COD_raw": 0.000605180573990392,
+          "EDI_all": [
+            [
+              0.0052369118219804381,
+              0.00061359176563509474,
+              8.5071407842512751E-9
+            ],
+            [
+              0.00523692043403275,
+              0.00061359333272743811,
+              8.5071928124321887E-9
+            ],
+            [
+              0.0052369118454213886,
+              0.00061359175588791479,
+              8.5071422638108651E-9
+            ],
+            [
+              0.005236911870071039,
+              0.00061359179535715451,
+              8.5071392028625969E-9
+            ],
+            [
+              0.0052369120359186862,
+              0.00061359180220203367,
+              8.5071397262072816E-9
+            ]
+          ],
+          "EDI4x4": [
+            0.00523691182197848,
+            0.00061359176563499282
+          ],
+          "J": 8.5071407842512751E-9,
+          "KI_perkN": 0.16560569262920424,
+          "KII_perkN": 0.019403475329311318,
+          "KI_COD_perkN": 0.16415384021054163,
+          "KII_COD_perkN": 0.019137490094976936,
+          "criteria": {
+            "elasticEquilibrium": true,
+            "blindCODversusEDI": true,
+            "contourIndependence": true,
+            "JenergyIdentity": true,
+            "EDIquadrature": true,
+            "qSupportInsideCore": true,
+            "wholeCrackOpening": true,
+            "KIpositive": true,
+            "conditionalHighMixityKIIagreement": true,
+            "qSupportMatrixPhaseOnly": true,
+            "heterogeneousEnergyIdentity": true,
+            "interfaceNodalForceBalance": true,
+            "annulusResultant": true,
+            "stiffnessPositiveDefinite": true
+          },
+          "relativeResidual": 1.5208262891466086E-12,
+          "staticsMax": 2.3590782105564756E-12,
+          "fullPolyOpeningMin_mm": 0,
+          "strainEnergy_per_thickness": 8.5592610242522468E-6,
+          "compliance_mm_per_N": 0.00021740523001350328,
+          "reactions": [
+            -4.1470060107897259E-14,
+            0.039370078740282109,
+            0.039370078740218604
+          ],
+          "phaseStrainEnergy_per_thickness": [
+            8.4534352592460041E-6,
+            1.058257649043311E-7
+          ],
+          "CMOD_mm": 2.7465579537064875E-5,
+          "interfaceBalanceRel": 2.6462795106400776E-12,
+          "annulusResultantRel": 1.8639858068707896E-12,
+          "interfaceSideL2Rel": [
+            0.0039246450966537293,
+            0.0038668848810934362,
+            0.00359371635266051
+          ],
+          "Ep_matrix": 3268.115,
+          "thickness_mm": 12.7
+        }
+      },
+      "table": [
+        {
+          "id": "M0",
+          "ratio": 1,
+          "KI_perkN": 0.16643587957311623,
+          "KII_perkN": 0.018827088877575934,
+          "KI_COD_perkN": 0.16497663804705115,
+          "KII_COD_perkN": 0.01856841063779429,
+          "KI_phys_1N_MPa_sqrt_m": 0.00016643587957311623,
+          "KII_phys_1N_MPa_sqrt_m": 1.8827088877575934E-5,
+          "G_1N_N_per_mm": 8.584569785604545E-9,
+          "G_1N_J_per_m2": 8.5845697856045451E-6,
+          "J_1N_N_per_mm": 8.58470274066292E-9,
+          "G_COD_1N_N_per_mm": 8.4336313057898751E-9,
+          "R_EDI": 1,
+          "R_COD": 1,
+          "R_J": 1,
+          "R_EDI4x4": 1,
+          "R_contours": [
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "U_R": 0,
+          "coverage": 2,
+          "resolved": false,
+          "U_R_conservative": 0.035165065596596,
+          "resolvedConservative": false,
+          "KI_ratio": 1,
+          "KII_ratio": 1,
+          "KII_uncertainty_raw": 8.1801241883317031E-6,
+          "KII_signResolved": true,
+          "mixity_deg": 6.4538168741361392,
+          "mixity_COD_deg": 6.4217151639940759,
+          "MTS_deg": -12.595758490243139,
+          "MTS_COD_deg": -12.536041376998732,
+          "dMTS_deg": 0,
+          "U_dMTS_deg": 0,
+          "dMTSresolved": false,
+          "compliance_mm_per_N": 0.00021971858585883683,
+          "complianceRatio": 1,
+          "CMOD_mm": 2.7369620464153426E-5,
+          "CMODratio": 1,
+          "strainEnergy_N_mm": 0.00010985929293015215,
+          "energyRatio": 1,
+          "reinforcementEnergyFraction": 0.018227894014948537,
+          "tangentGlobal_deg": 90,
+          "MTSglobal_deg": 77.404241509756858,
+          "MTSglobal_H1_deg": 77.404241509756858,
+          "MTSrootCheck_rad": 2.7755575615628914E-17,
+          "G_H1_1N_N_per_mm": 8.584569785604545E-9,
+          "mixity_H1_deg": 6.4538168741361392,
+          "MTS_H1_deg": -12.595758490243139
+        },
+        {
+          "id": "Msoft",
+          "ratio": 0.5,
+          "KI_perkN": 0.16603855658645117,
+          "KII_perkN": 0.017765589962964644,
+          "KI_COD_perkN": 0.16458257686529779,
+          "KII_COD_perkN": 0.017520668549009334,
+          "KI_phys_1N_MPa_sqrt_m": 0.00016603855658645119,
+          "KII_phys_1N_MPa_sqrt_m": 1.7765589962964644E-5,
+          "G_1N_N_per_mm": 8.5322635403112636E-9,
+          "G_1N_J_per_m2": 8.5322635403112633E-6,
+          "J_1N_N_per_mm": 8.53233093943086E-9,
+          "G_COD_1N_N_per_mm": 8.3823238882431935E-9,
+          "R_EDI": 0.99390694623031739,
+          "R_COD": 0.993916331448891,
+          "R_J": 0.9938994042293402,
+          "R_EDI4x4": 0.993906946230312,
+          "R_contours": [
+            0.99390694623031739,
+            0.99390694350299247,
+            0.99390694587296047,
+            0.99390694624864862,
+            0.99390694633749366
+          ],
+          "U_R": 9.38521857363206E-6,
+          "coverage": 2,
+          "resolved": true,
+          "U_R_conservative": 0.034941582758441211,
+          "resolvedConservative": false,
+          "KI_ratio": 0.99761275640995128,
+          "KII_ratio": 0.94361853170642906,
+          "KII_uncertainty_raw": 7.7450951584773177E-6,
+          "KII_signResolved": true,
+          "mixity_deg": 6.1072285004291382,
+          "mixity_COD_deg": 6.07654715291442,
+          "MTS_deg": -11.948861695163083,
+          "MTS_COD_deg": -11.891369787518748,
+          "dMTS_deg": 0.646896795080055,
+          "U_dMTS_deg": 0.0022252056000713338,
+          "dMTSresolved": true,
+          "compliance_mm_per_N": 0.000222919911274795,
+          "complianceRatio": 1.0145701166036765,
+          "CMOD_mm": 2.6958349934484549E-5,
+          "CMODratio": 0.98497346610240621,
+          "strainEnergy_N_mm": 0.00011145995563793178,
+          "energyRatio": 1.0145701166017638,
+          "reinforcementEnergyFraction": 0.023110107558443515,
+          "tangentGlobal_deg": 90,
+          "MTSglobal_deg": 78.051138304836911,
+          "MTSglobal_H1_deg": 77.404241509756858,
+          "MTSrootCheck_rad": 2.7755575615628914E-17,
+          "G_H1_1N_N_per_mm": 8.584569785604545E-9,
+          "mixity_H1_deg": 6.4538168741361392,
+          "MTS_H1_deg": -12.595758490243139
+        },
+        {
+          "id": "Mstiff",
+          "ratio": 2,
+          "KI_perkN": 0.16560569262920424,
+          "KII_perkN": 0.019403475329311318,
+          "KI_COD_perkN": 0.16415384021054163,
+          "KII_COD_perkN": 0.019137490094976936,
+          "KI_phys_1N_MPa_sqrt_m": 0.00016560569262920425,
+          "KII_phys_1N_MPa_sqrt_m": 1.9403475329311319E-5,
+          "G_1N_N_per_mm": 8.5069651117092479E-9,
+          "G_1N_J_per_m2": 8.5069651117092472E-6,
+          "J_1N_N_per_mm": 8.5071407842512751E-9,
+          "G_COD_1N_N_per_mm": 8.3573334423676587E-9,
+          "R_EDI": 0.99095998100854954,
+          "R_COD": 0.99095314216903974,
+          "R_J": 0.9909650970156183,
+          "R_EDI4x4": 0.99095998100854654,
+          "R_contours": [
+            0.99095998100854954,
+            0.9909599828813741,
+            0.99095998124828233,
+            0.99095998099839566,
+            0.99095998093731141
+          ],
+          "U_R": 6.8388395098040178E-6,
+          "coverage": 2,
+          "resolved": true,
+          "U_R_conservative": 0.034853891331156926,
+          "resolvedConservative": false,
+          "KI_ratio": 0.99501197130065155,
+          "KII_ratio": 1.03061474110434,
+          "KII_uncertainty_raw": 8.4111916447027636E-6,
+          "KII_signResolved": true,
+          "mixity_deg": 6.6826894608843928,
+          "mixity_COD_deg": 6.6496759772264484,
+          "MTS_deg": -13.0203114433988,
+          "MTS_COD_deg": -12.959203907890553,
+          "dMTS_deg": -0.42455295315566133,
+          "U_dMTS_deg": 0.0013904222638405628,
+          "dMTSresolved": true,
+          "compliance_mm_per_N": 0.00021740523001350328,
+          "complianceRatio": 0.989471278288584,
+          "CMOD_mm": 2.7465579537064875E-5,
+          "CMODratio": 1.0035060432437173,
+          "strainEnergy_N_mm": 0.00010870261500800353,
+          "energyRatio": 0.989471278293371,
+          "reinforcementEnergyFraction": 0.01236389036456991,
+          "tangentGlobal_deg": 90,
+          "MTSglobal_deg": 76.9796885566012,
+          "MTSglobal_H1_deg": 77.404241509756858,
+          "MTSrootCheck_rad": 2.7755575615628914E-17,
+          "G_H1_1N_N_per_mm": 8.584569785604545E-9,
+          "mixity_H1_deg": 6.4538168741361392,
+          "MTS_H1_deg": -12.595758490243139
+        }
+      ],
+      "phaseRecordSHA256": "7B1D371E4EAFE615E7C8E0837A9F112F6E661CDF4879038CFEFBFC4B2707F905",
+      "extra": {},
+      "tangentGlobal_deg": 90
+    },
+    "S1": {
+      "arc_mm": 29.4,
+      "meshSHA256": "ECD6A7B873BC2CD758A0F88391E564DFB6C90249024BC1A8768F9F5D93732461",
+      "audit": "34/34",
+      "adapter": {
+        "pass": true,
+        "checks": {
+          "schema": true,
+          "tipMatchesPolyline": true,
+          "polylineMatchesPreregistered": true,
+          "banksTwinned": true,
+          "banksOnPolyline": true,
+          "upperBankOnPlusNSide": true,
+          "anchorsPresent": true
+        },
+        "failed": [],
+        "added": [],
+        "bankPairs": 169,
+        "sideElementsChecked": [
+          328,
+          329
+        ],
+        "maxBankOffPolyline_mm": 1.464821375527116E-14
+      },
+      "geometry": {
+        "counts": [
+          16169,
+          12252
+        ],
+        "chordsPerCircle": [
+          76,
+          76,
+          76
+        ],
+        "holeVerticesPerCircle": [
+          152,
+          152,
+          152
+        ],
+        "annulusArea_mm2": [
+          1012.1525285981612,
+          1012.1525285981606,
+          1012.1525285981618
+        ],
+        "annulusNominalArea_mm2": [
+          1013.4149581949956,
+          1013.4149581949956,
+          1013.4149581949956
+        ],
+        "polygonVsNominalRel": [
+          -0.0012457183374146828,
+          -0.0012457183374150194,
+          -0.0012457183374152436
+        ],
+        "bandVolumeFraction": 0.029524406241599077,
+        "tipToBand_mm": 45.274250717583541,
+        "qClearance_mm": 42.67425071758354,
+        "mixedEdges": 228,
+        "coincidentPairs": 168,
+        "domainAreaRelErr": 8.4895634730205109E-16,
+        "annulusAreaRelErr": 7.8625290316026955E-16
+      },
+      "regression": {
+        "id": "S1",
+        "sifPass": true,
+        "EDI_rel": 0,
+        "COD_rel": 0,
+        "pass": true
+      },
+      "identity": {
+        "checks": {
+          "stiffness": true,
+          "displacement": true,
+          "K": true,
+          "energy": true,
+          "reactions": true,
+          "compliance": true,
+          "MTS": true,
+          "M0gates": true
+        },
+        "stiffness": 0,
+        "displacement": 0,
+        "K": 0,
+        "energy": 0,
+        "reactions": 0,
+        "compliance": 0,
+        "MTS_deg": 0,
+        "bitwiseUandEDI": true
+      },
+      "cases": {
+        "H1": {
+          "id": "H1",
+          "ratio": 1,
+          "pass": true,
+          "KI_raw": 0.0057738408295840747,
+          "KII_raw": 4.7865948018014869E-5,
+          "KI_COD_raw": 0.0057230682427892718,
+          "KII_COD_raw": 4.6896645215251642E-5,
+          "EDI_all": [
+            [
+              0.0057738408295840747,
+              4.7865948018014869E-5,
+              1.0201571931835801E-8
+            ],
+            [
+              0.0057738503238051533,
+              4.7866067548625139E-5,
+              1.0201634880944257E-8
+            ],
+            [
+              0.005773840853716271,
+              4.7865945614497014E-5,
+              1.020157376333725E-8
+            ],
+            [
+              0.0057738408832462536,
+              4.7865950192135589E-5,
+              1.0201569986604011E-8
+            ],
+            [
+              0.0057738410661442871,
+              4.7865951200018704E-5,
+              1.0201570610324279E-8
+            ]
+          ],
+          "EDI4x4": [
+            0.005773840829581935,
+            4.7865948018092092E-5
+          ],
+          "J": 1.0201571931835801E-8,
+          "KI_perkN": 0.18258487868761783,
+          "KII_perkN": 0.0015136541810014932,
+          "KI_COD_perkN": 0.18097930851791616,
+          "KII_COD_perkN": 0.0014830021350103258,
+          "criteria": {
+            "elasticEquilibrium": true,
+            "blindCODversusEDI": true,
+            "contourIndependence": true,
+            "JenergyIdentity": true,
+            "EDIquadrature": true,
+            "qSupportInsideCore": true,
+            "wholeCrackOpening": true,
+            "KIpositive": true,
+            "conditionalHighMixityKIIagreement": true
+          },
+          "relativeResidual": 9.8504068638674738E-13,
+          "staticsMax": 6.2236511243061579E-13,
+          "fullPolyOpeningMin_mm": 0,
+          "strainEnergy_per_thickness": 8.6874132925308122E-6,
+          "compliance_mm_per_N": 0.00022066029762880611,
+          "reactions": [
+            4.9005126963040615E-14,
+            0.03937007874014363,
+            0.039370078740148862
+          ],
+          "phaseStrainEnergy_per_thickness": 8.6874132925308122E-6,
+          "CMOD_mm": 3.2221831953602609E-5,
+          "interfaceBalanceRel": null,
+          "annulusResultantRel": null,
+          "interfaceSideL2Rel": [
+            null,
+            null,
+            null
+          ],
+          "Ep_matrix": 3268.115,
+          "thickness_mm": 12.7
+        },
+        "M0": {
+          "id": "M0",
+          "ratio": 1,
+          "pass": true,
+          "KI_raw": 0.0057738408295840747,
+          "KII_raw": 4.7865948018014869E-5,
+          "KI_COD_raw": 0.0057230682427892718,
+          "KII_COD_raw": 4.6896645215251642E-5,
+          "EDI_all": [
+            [
+              0.0057738408295840747,
+              4.7865948018014869E-5,
+              1.0201571931835801E-8
+            ],
+            [
+              0.0057738503238051533,
+              4.7866067548625139E-5,
+              1.0201634880944257E-8
+            ],
+            [
+              0.005773840853716271,
+              4.7865945614497014E-5,
+              1.020157376333725E-8
+            ],
+            [
+              0.0057738408832462536,
+              4.7865950192135589E-5,
+              1.0201569986604011E-8
+            ],
+            [
+              0.0057738410661442871,
+              4.7865951200018704E-5,
+              1.0201570610324279E-8
+            ]
+          ],
+          "EDI4x4": [
+            0.005773840829581935,
+            4.7865948018092092E-5
+          ],
+          "J": 1.0201571931835801E-8,
+          "KI_perkN": 0.18258487868761783,
+          "KII_perkN": 0.0015136541810014932,
+          "KI_COD_perkN": 0.18097930851791616,
+          "KII_COD_perkN": 0.0014830021350103258,
+          "criteria": {
+            "elasticEquilibrium": true,
+            "blindCODversusEDI": true,
+            "contourIndependence": true,
+            "JenergyIdentity": true,
+            "EDIquadrature": true,
+            "qSupportInsideCore": true,
+            "wholeCrackOpening": true,
+            "KIpositive": true,
+            "conditionalHighMixityKIIagreement": true,
+            "qSupportMatrixPhaseOnly": true,
+            "heterogeneousEnergyIdentity": true,
+            "interfaceNodalForceBalance": true,
+            "annulusResultant": true,
+            "stiffnessPositiveDefinite": true
+          },
+          "relativeResidual": 9.8504068638674738E-13,
+          "staticsMax": 6.2236511243061579E-13,
+          "fullPolyOpeningMin_mm": 0,
+          "strainEnergy_per_thickness": 8.6874132925308122E-6,
+          "compliance_mm_per_N": 0.00022066029762880611,
+          "reactions": [
+            4.9005126963040615E-14,
+            0.03937007874014363,
+            0.039370078740148862
+          ],
+          "phaseStrainEnergy_per_thickness": [
+            8.52927427688277E-6,
+            1.5813901557584602E-7
+          ],
+          "CMOD_mm": 3.2221831953602609E-5,
+          "interfaceBalanceRel": 1.957820808018923E-12,
+          "annulusResultantRel": 1.0849804901783345E-12,
+          "interfaceSideL2Rel": [
+            0.00023746945979250976,
+            0.00026424627927980565,
+            0.00015298511807708407
+          ],
+          "Ep_matrix": 3268.115,
+          "thickness_mm": 12.7
+        },
+        "Msoft": {
+          "id": "Msoft",
+          "ratio": 0.5,
+          "pass": true,
+          "KI_raw": 0.0057918982186367929,
+          "KII_raw": 1.0474539612480989E-5,
+          "KI_COD_raw": 0.0057409496186159705,
+          "KII_COD_raw": 9.9800940314667283E-6,
+          "EDI_all": [
+            [
+              0.0057918982186367929,
+              1.0474539612480989E-5,
+              1.02647316079691E-8
+            ],
+            [
+              0.0057919077419423736,
+              1.0474563365830628E-5,
+              1.0264795057678256E-8
+            ],
+            [
+              0.0057918982419748952,
+              1.0474537659585106E-5,
+              1.0264733465953324E-8
+            ],
+            [
+              0.0057918982727476033,
+              1.0474539949927834E-5,
+              1.0264729653029592E-8
+            ],
+            [
+              0.0057918984563237724,
+              1.0474540598282627E-5,
+              1.0264730275363778E-8
+            ]
+          ],
+          "EDI4x4": [
+            0.0057918982186346566,
+            1.0474539612579963E-5
+          ],
+          "J": 1.02647316079691E-8,
+          "KI_perkN": 0.1831559034676416,
+          "KII_perkN": 0.00033123402617097383,
+          "KI_COD_perkN": 0.1815447672710146,
+          "KII_COD_perkN": 0.00031559828402087013,
+          "criteria": {
+            "elasticEquilibrium": true,
+            "blindCODversusEDI": true,
+            "contourIndependence": true,
+            "JenergyIdentity": true,
+            "EDIquadrature": true,
+            "qSupportInsideCore": true,
+            "wholeCrackOpening": true,
+            "KIpositive": true,
+            "conditionalHighMixityKIIagreement": true,
+            "qSupportMatrixPhaseOnly": true,
+            "heterogeneousEnergyIdentity": true,
+            "interfaceNodalForceBalance": true,
+            "annulusResultant": true,
+            "stiffnessPositiveDefinite": true
+          },
+          "relativeResidual": 7.923699755646713E-13,
+          "staticsMax": 4.7710307926607245E-13,
+          "fullPolyOpeningMin_mm": 0,
+          "strainEnergy_per_thickness": 8.8134050306377625E-6,
+          "compliance_mm_per_N": 0.00022386048777707536,
+          "reactions": [
+            2.6276777872183249E-14,
+            0.039370078740183626,
+            0.0393700787401689
+          ],
+          "phaseStrainEnergy_per_thickness": [
+            8.611307209895558E-6,
+            2.020978206914841E-7
+          ],
+          "CMOD_mm": 3.1927821989441141E-5,
+          "interfaceBalanceRel": 2.5124113047839237E-12,
+          "annulusResultantRel": 3.8091448708717655E-13,
+          "interfaceSideL2Rel": [
+            0.00893513849599236,
+            0.0085873256820891072,
+            0.0083027642136666788
+          ],
+          "Ep_matrix": 3268.115,
+          "thickness_mm": 12.7
+        },
+        "Mstiff": {
+          "id": "Mstiff",
+          "ratio": 2,
+          "pass": true,
+          "KI_raw": 0.0057210049626663191,
+          "KII_raw": 7.204040435718987E-5,
+          "KI_COD_raw": 0.00567070795985093,
+          "KII_COD_raw": 7.0770322111418378E-5,
+          "EDI_all": [
+            [
+              0.0057210049626663191,
+              7.204040435718987E-5,
+              1.0016671097820156E-8
+            ],
+            [
+              0.0057210143704245747,
+              7.204058586326496E-5,
+              1.0016732830335564E-8
+            ],
+            [
+              0.0057210049871713915,
+              7.2040401693447353E-5,
+              1.0016672885896689E-8
+            ],
+            [
+              0.0057210050156466848,
+              7.2040407720918464E-5,
+              1.0016669186433072E-8
+            ],
+            [
+              0.0057210051967985015,
+              7.2040408951099921E-5,
+              1.0016669802360555E-8
+            ]
+          ],
+          "EDI4x4": [
+            0.0057210049626642079,
+            7.2040404357259029E-5
+          ],
+          "J": 1.0016671097820156E-8,
+          "KI_perkN": 0.18091406187152134,
+          "KII_perkN": 0.0022781176132823829,
+          "KI_COD_perkN": 0.17932353098775602,
+          "KII_COD_perkN": 0.0022379540861585862,
+          "criteria": {
+            "elasticEquilibrium": true,
+            "blindCODversusEDI": true,
+            "contourIndependence": true,
+            "JenergyIdentity": true,
+            "EDIquadrature": true,
+            "qSupportInsideCore": true,
+            "wholeCrackOpening": true,
+            "KIpositive": true,
+            "conditionalHighMixityKIIagreement": true,
+            "qSupportMatrixPhaseOnly": true,
+            "heterogeneousEnergyIdentity": true,
+            "interfaceNodalForceBalance": true,
+            "annulusResultant": true,
+            "stiffnessPositiveDefinite": true
+          },
+          "relativeResidual": 1.5530751454149656E-12,
+          "staticsMax": 7.3908531422649391E-13,
+          "fullPolyOpeningMin_mm": 0,
+          "strainEnergy_per_thickness": 8.5958513788168538E-6,
+          "compliance_mm_per_N": 0.00021833462501948434,
+          "reactions": [
+            5.81956940335822E-14,
+            0.039370078740187504,
+            0.039370078740166535
+          ],
+          "phaseStrainEnergy_per_thickness": [
+            8.4892101548541423E-6,
+            1.0664122385100987E-7
+          ],
+          "CMOD_mm": 3.2193764293262618E-5,
+          "interfaceBalanceRel": 2.2451040143762416E-12,
+          "annulusResultantRel": 1.2014725302875957E-12,
+          "interfaceSideL2Rel": [
+            0.0039180479147532636,
+            0.00392611834884101,
+            0.0036594810443008443
+          ],
+          "Ep_matrix": 3268.115,
+          "thickness_mm": 12.7
+        }
+      },
+      "table": [
+        {
+          "id": "M0",
+          "ratio": 1,
+          "KI_perkN": 0.18258487868761783,
+          "KII_perkN": 0.0015136541810014932,
+          "KI_COD_perkN": 0.18097930851791616,
+          "KII_COD_perkN": 0.0014830021350103258,
+          "KI_phys_1N_MPa_sqrt_m": 0.00018258487868761782,
+          "KII_phys_1N_MPa_sqrt_m": 1.5136541810014935E-6,
+          "G_1N_N_per_mm": 1.0201455295897415E-8,
+          "G_1N_J_per_m2": 1.0201455295897415E-5,
+          "J_1N_N_per_mm": 1.0201571931835801E-8,
+          "G_COD_1N_N_per_mm": 1.0022814193183388E-8,
+          "R_EDI": 1,
+          "R_COD": 1,
+          "R_J": 1,
+          "R_EDI4x4": 1,
+          "R_contours": [
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "U_R": 0,
+          "coverage": 2,
+          "resolved": false,
+          "U_R_conservative": 0.035022670301926143,
+          "resolvedConservative": false,
+          "KI_ratio": 1,
+          "KII_ratio": 1,
+          "KII_uncertainty_raw": 9.6930280276322748E-7,
+          "KII_signResolved": true,
+          "mixity_deg": 0.47497914465833385,
+          "mixity_COD_deg": 0.4694893703586473,
+          "MTS_deg": -0.94982775671665831,
+          "MTS_COD_deg": -0.9388526812696778,
+          "dMTS_deg": 0,
+          "U_dMTS_deg": 0,
+          "dMTSresolved": false,
+          "compliance_mm_per_N": 0.00022066029762880611,
+          "complianceRatio": 1,
+          "CMOD_mm": 3.2221831953602609E-5,
+          "CMODratio": 1,
+          "strainEnergy_N_mm": 0.0001103301488151413,
+          "energyRatio": 1,
+          "reinforcementEnergyFraction": 0.0182032338340716,
+          "tangentGlobal_deg": 77.40430629835673,
+          "MTSglobal_deg": 76.454478541640071,
+          "MTSglobal_H1_deg": 76.454478541640071,
+          "MTSrootCheck_rad": 3.4694469519536142E-18,
+          "G_H1_1N_N_per_mm": 1.0201455295897415E-8,
+          "mixity_H1_deg": 0.47497914465833385,
+          "MTS_H1_deg": -0.94982775671665831
+        },
+        {
+          "id": "Msoft",
+          "ratio": 0.5,
+          "KI_perkN": 0.1831559034676416,
+          "KII_perkN": 0.00033123402617097383,
+          "KI_COD_perkN": 0.1815447672710146,
+          "KII_COD_perkN": 0.00031559828402087013,
+          "KI_phys_1N_MPa_sqrt_m": 0.00018315590346764163,
+          "KII_phys_1N_MPa_sqrt_m": 3.3123402617097384E-7,
+          "G_1N_N_per_mm": 1.0264692243396622E-8,
+          "G_1N_J_per_m2": 1.0264692243396622E-5,
+          "J_1N_N_per_mm": 1.02647316079691E-8,
+          "G_COD_1N_N_per_mm": 1.0084896683795931E-8,
+          "R_EDI": 1.0061988163124764,
+          "R_COD": 1.0061941176815157,
+          "R_J": 1.0061911709837772,
+          "R_EDI4x4": 1.0061988163124795,
+          "R_contours": [
+            1.0061988163124764,
+            1.0061988159873221,
+            1.006198816016614,
+            1.0061988164051969,
+            1.0061988164437394
+          ],
+          "U_R": 4.6986309607532917E-6,
+          "coverage": 2,
+          "resolved": true,
+          "U_R_conservative": 0.035244385753559412,
+          "resolvedConservative": false,
+          "KI_ratio": 1.0031274483633486,
+          "KII_ratio": 0.21883071465624754,
+          "KII_uncertainty_raw": 4.9444558101426059E-7,
+          "KII_signResolved": true,
+          "mixity_deg": 0.10361823278020399,
+          "mixity_COD_deg": 0.099603154375934436,
+          "MTS_deg": -0.2072351100040192,
+          "MTS_COD_deg": -0.19920510474558317,
+          "dMTS_deg": 0.74259264671263914,
+          "U_dMTS_deg": 0.0029450701885445074,
+          "dMTSresolved": true,
+          "compliance_mm_per_N": 0.00022386048777707536,
+          "complianceRatio": 1.0145027908629607,
+          "CMOD_mm": 3.1927821989441141E-5,
+          "CMODratio": 0.99087544232168967,
+          "strainEnergy_N_mm": 0.00011193024388909958,
+          "energyRatio": 1.0145027908612652,
+          "reinforcementEnergyFraction": 0.022930731084081675,
+          "tangentGlobal_deg": 77.40430629835673,
+          "MTSglobal_deg": 77.197071188352709,
+          "MTSglobal_H1_deg": 76.454478541640071,
+          "MTSrootCheck_rad": 4.3368086899420177E-19,
+          "G_H1_1N_N_per_mm": 1.0201455295897415E-8,
+          "mixity_H1_deg": 0.47497914465833385,
+          "MTS_H1_deg": -0.94982775671665831
+        },
+        {
+          "id": "Mstiff",
+          "ratio": 2,
+          "KI_perkN": 0.18091406187152134,
+          "KII_perkN": 0.0022781176132823829,
+          "KI_COD_perkN": 0.17932353098775602,
+          "KII_COD_perkN": 0.0022379540861585862,
+          "KI_phys_1N_MPa_sqrt_m": 0.00018091406187152134,
+          "KII_phys_1N_MPa_sqrt_m": 2.2781176132823831E-6,
+          "G_1N_N_per_mm": 1.0016504193613933E-8,
+          "G_1N_J_per_m2": 1.0016504193613933E-5,
+          "J_1N_N_per_mm": 1.0016671097820156E-8,
+          "G_COD_1N_N_per_mm": 9.8411277462416276E-9,
+          "R_EDI": 0.981870125691002,
+          "R_COD": 0.98187271125256148,
+          "R_J": 0.98187526047445406,
+          "R_EDI4x4": 0.98187012569100507,
+          "R_contours": [
+            0.981870125691002,
+            0.98187012599178924,
+            0.98187012588928813,
+            0.98187012563230314,
+            0.98187012560429709
+          ],
+          "U_R": 2.5855615595204995E-6,
+          "coverage": 2,
+          "resolved": true,
+          "U_R_conservative": 0.034385173406462313,
+          "resolvedConservative": false,
+          "KI_ratio": 0.99084909534619747,
+          "KII_ratio": 1.505044971219972,
+          "KII_uncertainty_raw": 1.2700822457714926E-6,
+          "KII_signResolved": true,
+          "mixity_deg": 0.72144544651379827,
+          "mixity_COD_deg": 0.71501306476356907,
+          "MTS_deg": -1.4424336470284231,
+          "MTS_COD_deg": -1.429581000166402,
+          "dMTS_deg": -0.49260589031176483,
+          "U_dMTS_deg": 0.0018775714150406353,
+          "dMTSresolved": true,
+          "compliance_mm_per_N": 0.00021833462501948434,
+          "complianceRatio": 0.9894603939434814,
+          "CMOD_mm": 3.2193764293262618E-5,
+          "CMODratio": 0.99912892412882026,
+          "strainEnergy_N_mm": 0.00010916731251097404,
+          "energyRatio": 0.98946039394802587,
+          "reinforcementEnergyFraction": 0.012406126996936738,
+          "tangentGlobal_deg": 77.40430629835673,
+          "MTSglobal_deg": 75.9618726513283,
+          "MTSglobal_H1_deg": 76.454478541640071,
+          "MTSrootCheck_rad": 2.0816681711721685E-17,
+          "G_H1_1N_N_per_mm": 1.0201455295897415E-8,
+          "mixity_H1_deg": 0.47497914465833385,
+          "MTS_H1_deg": -0.94982775671665831
+        }
+      ],
+      "phaseRecordSHA256": "5A980DB49A1B9175F2A4C4A883A320F0CF6008F98B31123F0DE8CF8B0CEB13BA",
+      "extra": {},
+      "tangentGlobal_deg": 77.40430629835673
+    },
+    "S2": {
+      "arc_mm": 33.4,
+      "meshSHA256": "9269BE43141014EFF1E9F7EF6EF0CDC82B2772C62A12CCF3D847549C7485C412",
+      "audit": "34/34",
+      "adapter": {
+        "pass": true,
+        "checks": {
+          "schema": true,
+          "tipMatchesPolyline": true,
+          "polylineMatchesPreregistered": true,
+          "banksTwinned": true,
+          "banksOnPolyline": true,
+          "upperBankOnPlusNSide": true,
+          "anchorsPresent": true
+        },
+        "failed": [],
+        "added": [],
+        "bankPairs": 185,
+        "sideElementsChecked": [
+          357,
+          358
+        ],
+        "maxBankOffPolyline_mm": 1.464821375527116E-14
+      },
+      "geometry": {
+        "counts": [
+          16347,
+          12278
+        ],
+        "chordsPerCircle": [
+          76,
+          76,
+          76
+        ],
+        "holeVerticesPerCircle": [
+          152,
+          152,
+          152
+        ],
+        "annulusArea_mm2": [
+          1012.152528598162,
+          1012.1525285981618,
+          1012.1525285981609
+        ],
+        "annulusNominalArea_mm2": [
+          1013.4149581949956,
+          1013.4149581949956,
+          1013.4149581949956
+        ],
+        "polygonVsNominalRel": [
+          -0.0012457183374146828,
+          -0.0012457183374150194,
+          -0.0012457183374152436
+        ],
+        "bandVolumeFraction": 0.02952440624159907,
+        "tipToBand_mm": 42.14163235279868,
+        "qClearance_mm": 39.541632352798679,
+        "mixedEdges": 228,
+        "coincidentPairs": 184,
+        "domainAreaRelErr": 1.4149272455034185E-16,
+        "annulusAreaRelErr": 3.3696552992582991E-16
+      },
+      "regression": {
+        "id": "S2",
+        "sifPass": true,
+        "EDI_COD_rel": 0,
+        "pass": true
+      },
+      "identity": {
+        "checks": {
+          "stiffness": true,
+          "displacement": true,
+          "K": true,
+          "energy": true,
+          "reactions": true,
+          "compliance": true,
+          "MTS": true,
+          "M0gates": true
+        },
+        "stiffness": 0,
+        "displacement": 0,
+        "K": 0,
+        "energy": 0,
+        "reactions": 0,
+        "compliance": 0,
+        "MTS_deg": 0,
+        "bitwiseUandEDI": true
+      },
+      "cases": {
+        "H1": {
+          "id": "H1",
+          "ratio": 1,
+          "pass": true,
+          "KI_raw": 0.0061975064381504848,
+          "KII_raw": 9.961080554896315E-5,
+          "KI_COD_raw": 0.0061430384163705786,
+          "KII_COD_raw": 9.80830498322491E-5,
+          "EDI_all": [
+            [
+              0.0061975064381504848,
+              9.961080554896315E-5,
+              1.1755886298396211E-8
+            ],
+            [
+              0.00619751662891921,
+              9.96110591444488E-5,
+              1.1755958772104018E-8
+            ],
+            [
+              0.0061975064642157858,
+              9.9610803814868633E-5,
+              1.1755888400654687E-8
+            ],
+            [
+              0.006197506495669824,
+              9.9610810128274946E-5,
+              1.1755884055937353E-8
+            ],
+            [
+              0.0061975066919703762,
+              9.9610811350396566E-5,
+              1.1755884777782285E-8
+            ]
+          ],
+          "EDI4x4": [
+            0.0061975064381481959,
+            9.9610805549060877E-5
+          ],
+          "J": 1.1755886298396211E-8,
+          "KI_perkN": 0.1959823615811298,
+          "KII_perkN": 0.0031499702509886259,
+          "KI_COD_perkN": 0.19425993149644818,
+          "KII_COD_perkN": 0.0031016583732570322,
+          "criteria": {
+            "elasticEquilibrium": true,
+            "blindCODversusEDI": true,
+            "contourIndependence": true,
+            "JenergyIdentity": true,
+            "EDIquadrature": true,
+            "qSupportInsideCore": true,
+            "wholeCrackOpening": true,
+            "KIpositive": true,
+            "conditionalHighMixityKIIagreement": true
+          },
+          "relativeResidual": 1.0085131075333379E-12,
+          "staticsMax": 2.7348011525100307E-13,
+          "fullPolyOpeningMin_mm": 0,
+          "strainEnergy_per_thickness": 8.732348679319308E-6,
+          "compliance_mm_per_N": 0.0002218016564532206,
+          "reactions": [
+            2.1533867342598667E-14,
+            0.039370078740147155,
+            0.039370078740162857
+          ],
+          "phaseStrainEnergy_per_thickness": 8.732348679319308E-6,
+          "CMOD_mm": 3.7395910386344175E-5,
+          "interfaceBalanceRel": null,
+          "annulusResultantRel": null,
+          "interfaceSideL2Rel": [
+            null,
+            null,
+            null
+          ],
+          "Ep_matrix": 3268.115,
+          "thickness_mm": 12.7
+        },
+        "M0": {
+          "id": "M0",
+          "ratio": 1,
+          "pass": true,
+          "KI_raw": 0.0061975064381504848,
+          "KII_raw": 9.961080554896315E-5,
+          "KI_COD_raw": 0.0061430384163705786,
+          "KII_COD_raw": 9.80830498322491E-5,
+          "EDI_all": [
+            [
+              0.0061975064381504848,
+              9.961080554896315E-5,
+              1.1755886298396211E-8
+            ],
+            [
+              0.00619751662891921,
+              9.96110591444488E-5,
+              1.1755958772104018E-8
+            ],
+            [
+              0.0061975064642157858,
+              9.9610803814868633E-5,
+              1.1755888400654687E-8
+            ],
+            [
+              0.006197506495669824,
+              9.9610810128274946E-5,
+              1.1755884055937353E-8
+            ],
+            [
+              0.0061975066919703762,
+              9.9610811350396566E-5,
+              1.1755884777782285E-8
+            ]
+          ],
+          "EDI4x4": [
+            0.0061975064381481959,
+            9.9610805549060877E-5
+          ],
+          "J": 1.1755886298396211E-8,
+          "KI_perkN": 0.1959823615811298,
+          "KII_perkN": 0.0031499702509886259,
+          "KI_COD_perkN": 0.19425993149644818,
+          "KII_COD_perkN": 0.0031016583732570322,
+          "criteria": {
+            "elasticEquilibrium": true,
+            "blindCODversusEDI": true,
+            "contourIndependence": true,
+            "JenergyIdentity": true,
+            "EDIquadrature": true,
+            "qSupportInsideCore": true,
+            "wholeCrackOpening": true,
+            "KIpositive": true,
+            "conditionalHighMixityKIIagreement": true,
+            "qSupportMatrixPhaseOnly": true,
+            "heterogeneousEnergyIdentity": true,
+            "interfaceNodalForceBalance": true,
+            "annulusResultant": true,
+            "stiffnessPositiveDefinite": true
+          },
+          "relativeResidual": 1.0085131075333379E-12,
+          "staticsMax": 2.7348011525100307E-13,
+          "fullPolyOpeningMin_mm": 0,
+          "strainEnergy_per_thickness": 8.732348679319308E-6,
+          "compliance_mm_per_N": 0.0002218016564532206,
+          "reactions": [
+            2.1533867342598667E-14,
+            0.039370078740147155,
+            0.039370078740162857
+          ],
+          "phaseStrainEnergy_per_thickness": [
+            8.5728394243771882E-6,
+            1.595092548723582E-7
+          ],
+          "CMOD_mm": 3.7395910386344175E-5,
+          "interfaceBalanceRel": 1.8537131427100338E-12,
+          "annulusResultantRel": 3.889728509926971E-13,
+          "interfaceSideL2Rel": [
+            0.00022978130123079571,
+            0.00026964604506783256,
+            0.00017206641025679348
+          ],
+          "Ep_matrix": 3268.115,
+          "thickness_mm": 12.7
+        },
+        "Msoft": {
+          "id": "Msoft",
+          "ratio": 0.5,
+          "pass": true,
+          "KI_raw": 0.0062652310657034275,
+          "KII_raw": 6.2692224383173719E-5,
+          "KI_COD_raw": 0.0062101583593553566,
+          "KII_COD_raw": 6.1634480500020374E-5,
+          "EDI_all": [
+            [
+              0.0062652310657034275,
+              6.2692224383173719E-5,
+              1.2012231340138524E-8
+            ],
+            [
+              0.0062652413668337677,
+              6.2692383500268E-5,
+              1.2012305523648043E-8
+            ],
+            [
+              0.0062652310908450576,
+              6.2692223190759076E-5,
+              1.2012233505659391E-8
+            ],
+            [
+              0.006265231124214502,
+              6.2692227129202926E-5,
+              1.2012229050966348E-8
+            ],
+            [
+              0.0062652313227643877,
+              6.2692227982231986E-5,
+              1.2012229782653904E-8
+            ]
+          ],
+          "EDI4x4": [
+            0.0062652310657011117,
+            6.2692224383264887E-5
+          ],
+          "J": 1.2012231340138524E-8,
+          "KI_perkN": 0.19812400234866875,
+          "KII_perkN": 0.0019825022063317361,
+          "KI_COD_perkN": 0.19638245045897357,
+          "KII_COD_perkN": 0.0019490534078129803,
+          "criteria": {
+            "elasticEquilibrium": true,
+            "blindCODversusEDI": true,
+            "contourIndependence": true,
+            "JenergyIdentity": true,
+            "EDIquadrature": true,
+            "qSupportInsideCore": true,
+            "wholeCrackOpening": true,
+            "KIpositive": true,
+            "conditionalHighMixityKIIagreement": true,
+            "qSupportMatrixPhaseOnly": true,
+            "heterogeneousEnergyIdentity": true,
+            "interfaceNodalForceBalance": true,
+            "annulusResultant": true,
+            "stiffnessPositiveDefinite": true
+          },
+          "relativeResidual": 8.0718862851674619E-13,
+          "staticsMax": 1.5237194222411036E-13,
+          "fullPolyOpeningMin_mm": 0,
+          "strainEnergy_per_thickness": 8.858955331319046E-6,
+          "compliance_mm_per_N": 0.00022501746541438641,
+          "reactions": [
+            8.4991564373589683E-15,
+            0.0393700787401467,
+            0.039370078740169415
+          ],
+          "phaseStrainEnergy_per_thickness": [
+            8.65663238319533E-6,
+            2.0232294806963244E-7
+          ],
+          "CMOD_mm": 3.7290914715888853E-5,
+          "interfaceBalanceRel": 1.6953147077878502E-12,
+          "annulusResultantRel": 4.4771427645348767E-13,
+          "interfaceSideL2Rel": [
+            0.0088458159680562254,
+            0.0085369703787407727,
+            0.008165607779058455
+          ],
+          "Ep_matrix": 3268.115,
+          "thickness_mm": 12.7
+        },
+        "Mstiff": {
+          "id": "Mstiff",
+          "ratio": 2,
+          "pass": true,
+          "KI_raw": 0.0061055628993992531,
+          "KII_raw": 0.00012225026151914823,
+          "KI_COD_raw": 0.0060519074706004714,
+          "KII_COD_raw": 0.00012044094255371138,
+          "EDI_all": [
+            [
+              0.0061055628993992531,
+              0.00012225026151914823,
+              1.141134802950996E-8
+            ],
+            [
+              0.00610557293966511,
+              0.00012225057309205855,
+              1.1411418292805803E-8
+            ],
+            [
+              0.0061055629258969157,
+              0.00012225025946734414,
+              1.1411350058607635E-8
+            ],
+            [
+              0.0061055629558209546,
+              0.00012225026722902706,
+              1.1411345851464507E-8
+            ],
+            [
+              0.0061055631491373288,
+              0.00012225026866899275,
+              1.141134655603248E-8
+            ]
+          ],
+          "EDI4x4": [
+            0.0061055628993969989,
+            0.0001222502615192135
+          ],
+          "J": 1.141134802950996E-8,
+          "KI_perkN": 0.19307485159523136,
+          "KII_perkN": 0.0038658927095174453,
+          "KI_COD_perkN": 0.19137811795685994,
+          "KII_COD_perkN": 0.0038086770200722463,
+          "criteria": {
+            "elasticEquilibrium": true,
+            "blindCODversusEDI": true,
+            "contourIndependence": true,
+            "JenergyIdentity": true,
+            "EDIquadrature": true,
+            "qSupportInsideCore": true,
+            "wholeCrackOpening": true,
+            "KIpositive": true,
+            "conditionalHighMixityKIIagreement": true,
+            "qSupportMatrixPhaseOnly": true,
+            "heterogeneousEnergyIdentity": true,
+            "interfaceNodalForceBalance": true,
+            "annulusResultant": true,
+            "stiffnessPositiveDefinite": true
+          },
+          "relativeResidual": 1.5886045430791623E-12,
+          "staticsMax": 1.8799776550319317E-13,
+          "fullPolyOpeningMin_mm": 0,
+          "strainEnergy_per_thickness": 8.63974464135671E-6,
+          "compliance_mm_per_N": 0.0002194495138881654,
+          "reactions": [
+            1.4279252494928863E-14,
+            0.039370078740153747,
+            0.039370078740171705
+          ],
+          "phaseStrainEnergy_per_thickness": [
+            8.5316041476141316E-6,
+            1.0814049363638443E-7
+          ],
+          "CMOD_mm": 3.7189219680741913E-5,
+          "interfaceBalanceRel": 2.573976229842931E-12,
+          "annulusResultantRel": 9.8682495707082233E-13,
+          "interfaceSideL2Rel": [
+            0.0038698069956494235,
+            0.0039058859795020029,
+            0.0035765338075422651
+          ],
+          "Ep_matrix": 3268.115,
+          "thickness_mm": 12.7
+        }
+      },
+      "table": [
+        {
+          "id": "M0",
+          "ratio": 1,
+          "KI_perkN": 0.1959823615811298,
+          "KII_perkN": 0.0031499702509886259,
+          "KI_COD_perkN": 0.19425993149644818,
+          "KII_COD_perkN": 0.0031016583732570322,
+          "KI_phys_1N_MPa_sqrt_m": 0.00019598236158112982,
+          "KII_phys_1N_MPa_sqrt_m": 3.1499702509886261E-6,
+          "G_1N_N_per_mm": 1.1755708830166265E-8,
+          "G_1N_J_per_m2": 1.1755708830166265E-5,
+          "J_1N_N_per_mm": 1.1755886298396211E-8,
+          "G_COD_1N_N_per_mm": 1.1549942786489809E-8,
+          "R_EDI": 1,
+          "R_COD": 1,
+          "R_J": 1,
+          "R_EDI4x4": 1,
+          "R_contours": [
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "U_R": 0,
+          "coverage": 2,
+          "resolved": false,
+          "U_R_conservative": 0.035006999007740222,
+          "resolvedConservative": false,
+          "KI_ratio": 1,
+          "KII_ratio": 1,
+          "KII_uncertainty_raw": 1.5277557167140478E-6,
+          "KII_signResolved": true,
+          "mixity_deg": 0.92081991790880513,
+          "mixity_COD_deg": 0.91473745426527164,
+          "MTS_deg": -1.8406894707193153,
+          "MTS_COD_deg": -1.8285432395219821,
+          "dMTS_deg": 0,
+          "U_dMTS_deg": 0,
+          "dMTSresolved": false,
+          "compliance_mm_per_N": 0.0002218016564532206,
+          "complianceRatio": 1,
+          "CMOD_mm": 3.7395910386344175E-5,
+          "CMODratio": 1,
+          "strainEnergy_N_mm": 0.0001109008282273552,
+          "energyRatio": 1,
+          "reinforcementEnergyFraction": 0.018266477981049464,
+          "tangentGlobal_deg": 76.454478541640071,
+          "MTSglobal_deg": 74.61378907092076,
+          "MTSglobal_H1_deg": 74.61378907092076,
+          "MTSrootCheck_rad": 2.5673907444456745E-16,
+          "G_H1_1N_N_per_mm": 1.1755708830166265E-8,
+          "mixity_H1_deg": 0.92081991790880513,
+          "MTS_H1_deg": -1.8406894707193153
+        },
+        {
+          "id": "Msoft",
+          "ratio": 0.5,
+          "KI_perkN": 0.19812400234866875,
+          "KII_perkN": 0.0019825022063317361,
+          "KI_COD_perkN": 0.19638245045897357,
+          "KII_COD_perkN": 0.0019490534078129803,
+          "KI_phys_1N_MPa_sqrt_m": 0.00019812400234866877,
+          "KII_phys_1N_MPa_sqrt_m": 1.982502206331736E-6,
+          "G_1N_N_per_mm": 1.2012138685956101E-8,
+          "G_1N_J_per_m2": 1.20121386859561E-5,
+          "J_1N_N_per_mm": 1.2012231340138524E-8,
+          "G_COD_1N_N_per_mm": 1.1801869168452678E-8,
+          "R_EDI": 1.0218132193893585,
+          "R_COD": 1.0218119160085843,
+          "R_J": 1.0218056754918841,
+          "R_EDI4x4": 1.0218132193893574,
+          "R_contours": [
+            1.0218132193893585,
+            1.0218132187701516,
+            1.021813219001857,
+            1.0218132194955081,
+            1.0218132195360439
+          ],
+          "U_R": 1.3033807741980041E-6,
+          "coverage": 2,
+          "resolved": true,
+          "U_R_conservative": 0.0357718949243086,
+          "resolvedConservative": false,
+          "KI_ratio": 1.0109277220167203,
+          "KII_ratio": 0.62937172365660365,
+          "KII_uncertainty_raw": 1.0577438831533453E-6,
+          "KII_signResolved": true,
+          "mixity_deg": 0.57330367372616031,
+          "mixity_COD_deg": 0.568629567650389,
+          "MTS_deg": -1.1463778409350052,
+          "MTS_COD_deg": -1.1370351951394821,
+          "dMTS_deg": 0.69431162978431016,
+          "U_dMTS_deg": 0.0028035854018102491,
+          "dMTSresolved": true,
+          "compliance_mm_per_N": 0.00022501746541438641,
+          "complianceRatio": 1.0144985795534132,
+          "CMOD_mm": 3.7290914715888853E-5,
+          "CMODratio": 0.99719232211836561,
+          "strainEnergy_N_mm": 0.00011250873270775188,
+          "energyRatio": 1.0144985795516364,
+          "reinforcementEnergyFraction": 0.022838240007328595,
+          "tangentGlobal_deg": 76.454478541640071,
+          "MTSglobal_deg": 75.308100700705069,
+          "MTSglobal_H1_deg": 74.61378907092076,
+          "MTSrootCheck_rad": 6.9388939039072284E-18,
+          "G_H1_1N_N_per_mm": 1.1755708830166265E-8,
+          "mixity_H1_deg": 0.92081991790880513,
+          "MTS_H1_deg": -1.8406894707193153
+        },
+        {
+          "id": "Mstiff",
+          "ratio": 2,
+          "KI_perkN": 0.19307485159523136,
+          "KII_perkN": 0.0038658927095174453,
+          "KI_COD_perkN": 0.19137811795685994,
+          "KII_COD_perkN": 0.0038086770200722463,
+          "KI_phys_1N_MPa_sqrt_m": 0.00019307485159523137,
+          "KII_phys_1N_MPa_sqrt_m": 3.8658927095174451E-6,
+          "G_1N_N_per_mm": 1.1411117248004467E-8,
+          "G_1N_J_per_m2": 1.1411117248004467E-5,
+          "J_1N_N_per_mm": 1.141134802950996E-8,
+          "G_COD_1N_N_per_mm": 1.1211383336679715E-8,
+          "R_EDI": 0.97068729864442171,
+          "R_COD": 0.97068734832123038,
+          "R_J": 0.97069227618055021,
+          "R_EDI4x4": 0.97068729864442194,
+          "R_contours": [
+            0.97068729864442171,
+            0.97068729911304774,
+            0.97068729889925809,
+            0.97068729857749225,
+            0.97068729854887525
+          ],
+          "U_R": 4.9676808666632155E-8,
+          "coverage": 2,
+          "resolved": true,
+          "U_R_conservative": 0.033980800493180675,
+          "resolvedConservative": false,
+          "KI_ratio": 0.98516443029647416,
+          "KII_ratio": 1.2272791174151962,
+          "KII_uncertainty_raw": 1.8093189654368495E-6,
+          "KII_signResolved": true,
+          "mixity_deg": 1.1470667519545295,
+          "mixity_COD_deg": 1.1401110963879453,
+          "MTS_deg": -2.2922974504252402,
+          "MTS_COD_deg": -2.2784193030255704,
+          "dMTS_deg": -0.45160797970592492,
+          "U_dMTS_deg": 0.0017319162023365919,
+          "dMTSresolved": true,
+          "compliance_mm_per_N": 0.0002194495138881654,
+          "complianceRatio": 0.989395288553441,
+          "CMOD_mm": 3.7189219680741913E-5,
+          "CMODratio": 0.994472906168966,
+          "strainEnergy_N_mm": 0.00010972475694523022,
+          "energyRatio": 0.98939528855714265,
+          "reinforcementEnergyFraction": 0.012516630771709033,
+          "tangentGlobal_deg": 76.454478541640071,
+          "MTSglobal_deg": 74.162181091214833,
+          "MTSglobal_H1_deg": 74.61378907092076,
+          "MTSrootCheck_rad": 2.42861286636753E-16,
+          "G_H1_1N_N_per_mm": 1.1755708830166265E-8,
+          "mixity_H1_deg": 0.92081991790880513,
+          "MTS_H1_deg": -1.8406894707193153
+        }
+      ],
+      "phaseRecordSHA256": "A45A61DFEDBDA09D4D7CCFC5D0F3D8DD9EFDB68E875AFE7D34EE1E1F28582DD9",
+      "extra": {
+        "caseArraysEqualPR35": {
+          "H1": true,
+          "M0": true,
+          "Msoft": true,
+          "Mstiff": true
+        },
+        "ratioTableMaxRelDevVsPR35Ledger": 0,
+        "pass": true
+      },
+      "tangentGlobal_deg": 76.454478541640071
+    }
+  },
+  "finished": "2026-11-21 13:21:42"
+}

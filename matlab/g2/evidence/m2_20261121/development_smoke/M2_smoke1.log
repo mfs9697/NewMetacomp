@@ -1,0 +1,64 @@
+checkcode run_g2_m2_evolution_batch.m: 18 messages
+   L20 'datestr' is not recommended. With appropriate code changes, use 'datetime' instead.
+   L20 'now' is not recommended. With appropriate code changes, use 'datetime("now")' instead.
+   L22 A Code Analyzer message was once suppressed here, but the message is no longer generated.
+   L23 'datestr' is not recommended. With appropriate code changes, use 'datetime' instead.
+   L23 'now' is not recommended. With appropriate code changes, use 'datetime("now")' instead.
+   L102 Value assigned to variable might be unused. Consider replacing the variable with ~ instead.
+   L127 'datestr' is not recommended. With appropriate code changes, use 'datetime' instead.
+   L127 'now' is not recommended. With appropriate code changes, use 'datetime("now")' instead.
+   L197 Input argument might be unused. Consider replacing the argument with ~ instead.
+   L229 Input argument might be unused. Consider replacing the argument with ~ instead.
+   L249 Value assigned to variable might be unused.
+   L256 A Code Analyzer message was once suppressed here, but the message is no longer generated.
+   L257 A Code Analyzer message was once suppressed here, but the message is no longer generated.
+   L258 A Code Analyzer message was once suppressed here, but the message is no longer generated.
+   L259 A Code Analyzer message was once suppressed here, but the message is no longer generated.
+   L260 A Code Analyzer message was once suppressed here, but the message is no longer generated.
+   L293 Input argument might be unused. Consider replacing the argument with ~ instead.
+   L307 This keyword might not be aligned with its matching END on line 309.
+checkcode g2_m2_state_adapter.m: 0 messages
+checkcode g2_material_case_summary.m: 0 messages
+checkcode g2_material_ratio_table.m: 0 messages
+cell
+G2_M2_ADAPTER S0 pass=1 added=[crackPolyline,tipTangent] banks=151 side-checked U/L 295/295
+                          schema: 1
+              tipMatchesPolyline: 1
+    polylineMatchesPreregistered: 1
+                    banksTwinned: 1
+                 banksOnPolyline: 1
+            upperBankOnPlusNSide: 1
+                  anchorsPresent: 1
+
+G2_TRAJECTORY_SIF_PASS=1, KI=0.16643588 KII=+0.0188270889 MPa sqrt(m)/kN
+G2_TRAJECTORY_COD_EDI_REL=0.008712028 WHOLE_CRACK_OPENING_MIN_MM=0
+S0 pipeline: pass 1 KI 0.166435880 KII +0.018827089 (WP2 EDI 0.166435880 +0.018827089) COD 0.164976638 +0.018568411 (WP2 COD 0.164976638 +0.018568411)
+                   elasticEquilibrium: 1
+                    blindCODversusEDI: 1
+                  contourIndependence: 1
+                      JenergyIdentity: 1
+                        EDIquadrature: 1
+                   qSupportInsideCore: 1
+                    wholeCrackOpening: 1
+                           KIpositive: 1
+    conditionalHighMixityKIIagreement: 1
+
+G2_M2_ADAPTER S1 pass=1 added=[] banks=169 side-checked U/L 328/329
+                          schema: 1
+              tipMatchesPolyline: 1
+    polylineMatchesPreregistered: 1
+                    banksTwinned: 1
+                 banksOnPolyline: 1
+            upperBankOnPlusNSide: 1
+                  anchorsPresent: 1
+
+G2_M2_ADAPTER S2 pass=1 added=[] banks=185 side-checked U/L 357/358
+                          schema: 1
+              tipMatchesPolyline: 1
+    polylineMatchesPreregistered: 1
+                    banksTwinned: 1
+                 banksOnPolyline: 1
+            upperBankOnPlusNSide: 1
+                  anchorsPresent: 1
+
+ratio-table copy vs PR35 ledger: max rel dev 0; MTS root checks [2.57e-16 6.94e-18 2.43e-16] rad; tangent 76.454479 deg
