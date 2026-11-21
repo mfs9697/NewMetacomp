@@ -1,0 +1,86 @@
+STAGE=G2_M4_0_FEASIBILITY
+DATE=2026-11-21 17:28:17
+MATLAB_RELEASE=2023a
+NO_FEM=1; NO_SIF=1; NO_STATE=1; NO_MAT_WRITTEN=1
+STAGE F0_SOURCE_LOCK PASS
+G2_P010_UPSTREAM_LOCAL_GATES=15/15
+G2_P010_CORNELL_MIN_HOLE_WALL_MARGIN_MM=57.85142591
+G2_P010_CORNELL_MIN_GUIDE_MARGIN_MM=45.15142591
+G2_P010_CORNELL_MIN_PLATE_MARGIN_MM=22.10000000
+G2_P010_CORNELL_CONSTRUCTION_SEGMENT_MM=4.00000000
+G2_P010_REGULAR_GATES=13/13
+G2_P010_REGULAR_MIN_ANGLE_DEG=30.12684732
+G2_P010_REGULAR_MAX_NEIGHBOR_RATIO=1.59182855
+G2_P010_REGULAR_CORE_T3=2788
+G2_P010_REGULAR_COLLAR_T3=128
+G2_P010_REGULAR_Q_ACTIVE_T6=2443
+G2_P010_REGULAR_INNER_SEAM=64
+G2_P010_REGULAR_OUTER_RIM=64
+G2_P010_ISOLATED_PASS=1
+G2_P010_GLOBAL_JOINED=0; NO_LEFM=1; NO_CRACK_GROWTH=1
+G2_EXT_NATIVE_T3=25235
+G2_EXT_RIM_NODES=65
+G2_JOIN_GATES=13/13
+G2_JOIN_T3=28151 T6_NODES=57179 MIN_ANGLE=30.126847 MAX_RATIO=1.591829
+F1 famA rebuild bitwise=1 (T3 28151)
+STAGE F1_BUILDER_IDENTITY PASS
+G2_P010_UPSTREAM_LOCAL_GATES=15/15
+G2_P010_CORNELL_MIN_HOLE_WALL_MARGIN_MM=57.85142591
+G2_P010_CORNELL_MIN_GUIDE_MARGIN_MM=45.15142591
+G2_P010_CORNELL_MIN_PLATE_MARGIN_MM=22.10000000
+G2_P010_CORNELL_CONSTRUCTION_SEGMENT_MM=4.00000000
+G2_P010_REGULAR_GATES=13/13
+G2_P010_REGULAR_MIN_ANGLE_DEG=30.12684732
+G2_P010_REGULAR_MAX_NEIGHBOR_RATIO=1.59182855
+G2_P010_REGULAR_CORE_T3=2788
+G2_P010_REGULAR_COLLAR_T3=128
+G2_P010_REGULAR_Q_ACTIVE_T6=2443
+G2_P010_REGULAR_INNER_SEAM=64
+G2_P010_REGULAR_OUTER_RIM=64
+G2_P010_ISOLATED_PASS=1
+G2_P010_GLOBAL_JOINED=0; NO_LEFM=1; NO_CRACK_GROWTH=1
+G2_EXT_NATIVE_T3=31725
+G2_EXT_RIM_NODES=65
+G2_JOIN_GATES=13/13
+G2_JOIN_T3=34641 T6_NODES=70205 MIN_ANGLE=30.126847 MAX_RATIO=1.591829
+F2 alt join pass=1 stage=FULL_PROTECTED_MESH_JOIN_PASS failed=[]
+G2_INDEPENDENT_T6_GATES=38/38
+G2_INDEPENDENT_T6_PASS=1
+G2_INDEPENDENT_T6_BOUNDARY_LOOPS=4
+G2_INDEPENDENT_T6_EULER=-2
+G2_INDEPENDENT_T6_TIP=1114
+G2_INDEPENDENT_T6_MAX_RATIO=1.59182855
+G2_INDEPENDENT_T6_MIN_ANGLE_DEG=30.12684732
+G2_INDEPENDENT_T6_NO_LEFM=1
+G2_PROTECTED_TIP_GATES=24/24
+G2_PROTECTED_TIP_PASS=1
+F2 alt audits 38-gate 38/38, protected-tip 24/24
+G2_M2_ADAPTER S0 pass=1 added=[crackPolyline,tipTangent] banks=151 side-checked U/L 295/295
+PHASE_MAP pass=1 PHASE_MAP_TOPOLOGICAL_OK: 20589 matrix + 14052 reinforcement elements; chords per circle [112 112 112].
+PHASE_VERIFY pass=1 failed=[]
+PHASE_NEG N1_swapped_labels                    mapper=1 (PHASE_MAP_TOPOLOGICAL_OK) verifier=0 [labelsMatchGeometry,annulusAreaIdentity,matrixConnected,bandsConnected,tipGuideMatrixOnly,qSupportMatrixOnly] -> rejected=1
+PHASE_NEG N2_band_element_relabelled_matrix    mapper=1 (PHASE_MAP_TOPOLOGICAL_OK) verifier=0 [labelsMatchGeometry,interfaceChordsTwoOwnersMixed,noOtherMixedEdges,annulusAreaIdentity] -> rejected=1
+PHASE_NEG N3_matrix_element_relabelled_band    mapper=1 (PHASE_MAP_TOPOLOGICAL_OK) verifier=0 [labelsMatchGeometry,interfaceChordsTwoOwnersMixed,noOtherMixedEdges,annulusAreaIdentity] -> rejected=1
+PHASE_NEG N4_detached_interface                mapper=0 (HOLD_INTERFACE_DUPLICATE_ANGLE) verifier=0 [interfaceChordsTwoOwnersMixed,noOtherMixedEdges,coincidentNodesOnlyRegisteredTwins] -> rejected=1
+PHASE_NEG N5_nonconforming_interface           mapper=0 (HOLD_INTERFACE_NONCONFORMING) verifier=0 [noStraddle,labelsMatchGeometry,interfaceChordsTwoOwnersMixed,noOtherMixedEdges,annulusAreaIdentity] -> rejected=1
+PHASE_NEG N6_filled_void                       mapper=1 (PHASE_MAP_TOPOLOGICAL_OK) verifier=0 [noVoidPenetration,annulusAreaIdentity,domainAreaIdentity,coincidentNodesOnlyRegisteredTwins] -> rejected=1
+PHASE_NEG N7_q_domain_crossing_band            mapper=1 (PHASE_MAP_TOPOLOGICAL_OK) verifier=1 [] -> rejected=0
+PHASE_NEG N9_band_label_in_tip_guide           mapper=1 (PHASE_MAP_TOPOLOGICAL_OK) verifier=0 [labelsMatchGeometry,noOtherMixedEdges,annulusAreaIdentity,bandsConnected,tipGuideMatrixOnly] -> rejected=1
+G2_MATERIAL_PHASE_NEGATIVES_PASS=0 (8 cases)
+M2_PHASE_NEG tip-to-band 48.453 mm: PR35 N7(45 mm) expected rejected=0 observed=0; N7s(49.453 mm) rejected=1; others rejected=1 -> pass=1
+G2_M2_ADAPTER S0 pass=1 added=[crackPolyline,tipTangent] banks=151 side-checked U/L 295/295
+PHASE_MAP pass=1 PHASE_MAP_TOPOLOGICAL_OK: 15909 matrix + 12242 reinforcement elements; chords per circle [76 76 76].
+PHASE_VERIFY pass=1 failed=[]
+PHASE_NEG N1_swapped_labels                    mapper=1 (PHASE_MAP_TOPOLOGICAL_OK) verifier=0 [labelsMatchGeometry,annulusAreaIdentity,matrixConnected,bandsConnected,tipGuideMatrixOnly,qSupportMatrixOnly] -> rejected=1
+PHASE_NEG N2_band_element_relabelled_matrix    mapper=1 (PHASE_MAP_TOPOLOGICAL_OK) verifier=0 [labelsMatchGeometry,interfaceChordsTwoOwnersMixed,noOtherMixedEdges,annulusAreaIdentity] -> rejected=1
+PHASE_NEG N3_matrix_element_relabelled_band    mapper=1 (PHASE_MAP_TOPOLOGICAL_OK) verifier=0 [labelsMatchGeometry,interfaceChordsTwoOwnersMixed,noOtherMixedEdges,annulusAreaIdentity] -> rejected=1
+PHASE_NEG N4_detached_interface                mapper=0 (HOLD_INTERFACE_DUPLICATE_ANGLE) verifier=0 [interfaceChordsTwoOwnersMixed,noOtherMixedEdges,coincidentNodesOnlyRegisteredTwins] -> rejected=1
+PHASE_NEG N5_nonconforming_interface           mapper=0 (HOLD_INTERFACE_NONCONFORMING) verifier=0 [noStraddle,labelsMatchGeometry,interfaceChordsTwoOwnersMixed,noOtherMixedEdges,annulusAreaIdentity] -> rejected=1
+PHASE_NEG N6_filled_void                       mapper=1 (PHASE_MAP_TOPOLOGICAL_OK) verifier=0 [noVoidPenetration,annulusAreaIdentity,domainAreaIdentity,coincidentNodesOnlyRegisteredTwins] -> rejected=1
+PHASE_NEG N7_q_domain_crossing_band            mapper=1 (PHASE_MAP_TOPOLOGICAL_OK) verifier=1 [] -> rejected=0
+PHASE_NEG N9_band_label_in_tip_guide           mapper=1 (PHASE_MAP_TOPOLOGICAL_OK) verifier=0 [labelsMatchGeometry,noOtherMixedEdges,annulusAreaIdentity,bandsConnected,tipGuideMatrixOnly] -> rejected=1
+G2_MATERIAL_PHASE_NEGATIVES_PASS=0 (8 cases)
+M2_PHASE_NEG tip-to-band 48.460 mm: PR35 N7(45 mm) expected rejected=0 observed=0; N7s(49.460 mm) rejected=1; others rejected=1 -> pass=1
+F2 alt T3 34641 (famA 28151); chords alt [112 112 112] famA [76 76 76]; band area rel alt-famA [0.000692 0.000692 0.000692]; exterior nodes coinciding 1555/16262
+STAGE F2_ALT_S0 PASS
+G2_M4_FEASIBILITY_STATUS=FEASIBLE FOLDER=<repo>\outputs\g2_m4_feasibility\run_20261121_172817_429

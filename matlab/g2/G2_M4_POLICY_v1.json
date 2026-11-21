@@ -1,0 +1,167 @@
+{
+  "schema": "NewMetacomp.G2.M4Policy.v1",
+  "issue": 44,
+  "title": "G2-M4 mechanism attribution: A = independent full-path alternative-mesh-family robustness; B = fixed-S2 ring factorial (NOT AUTHORIZED)",
+  "stages": {
+    "M4_0": "source lock, this preregistration, zero-state feasibility of an alternative S0 (mesh only, no FEM); evidence outputs/g2_m4_feasibility/run_20261121_172817_429 (FEASIBLE)",
+    "M4_A": "AUTHORIZED by Issue #44 after this policy is committed: three new two-step numerical paths (homogeneous, soft, stiff) on the alternative mesh family, then ONE consolidated scientific review packet and STOP",
+    "M4_B": "NOT AUTHORIZED. Requires explicit researcher authorization after the M4.A review; must be preregistered as G2_M4_POLICY_v2 (or an amendment) before any ring-subset solve",
+    "M4_C": "NOT AUTHORIZED (design decision after a second review gate)"
+  },
+  "base": {
+    "briefBranchHead": "bbb7c25",
+    "pr41Head": "92636e583e34f76e1eaafeda36de530c0c2f8655",
+    "pr43Head": "9eb5c8832a10faf34766b842ea3f7b71017ebd34",
+    "m3PolicySHA256": "cf3023b55e99efa0eb4f862edb7f2d1afabce7f80a3444b0375c1eeb546da9a8",
+    "materialPolicyV1SHA256": "e60156f60dc8bae05f2ab1b1a25bc93bd84cedb7485591b01ada2413d946a971",
+    "trajectoryPolicyV1SHA256": "1d6af7f6f3e8af389ab02330d9a1eaebdbc00bedb52aad54db902b4de36b39dc",
+    "m2PolicySHA256": "1782eebc5db6ef8dacdb8a5325996b3d9a4e774a388c0990e884ffec40dd834c",
+    "cornellJSON_SHA256": "45a88fa0926472ddbe5e70e4c80a97b88196dd45d8a266fa04273f89790b47bf",
+    "trustedP0SHA256": "15201996b4165aa9980f61f370a75749b1ce28ec0accaa061902641524c37c58",
+    "famA_S0Mesh": "outputs/g2_protected_mesh/run_20261118_165922_343_famA/GEOMETRY_ONLY_candidate.mat",
+    "famA_S0MeshSHA256": "05d5c3fcf5152c30bb0e5c288dc109bfce42b8d677077c4631254ab5887657dc",
+    "m2Run": "outputs/g2_material_evolution_v1/run_20261121_132226_301",
+    "m2LedgerSHA256": "ae188b9587cf309840bee50ccc947a42008b82eb99b3874f146415970574ad14",
+    "m3LedgerSHA256": "66feef2fd84a4d11f8ea6ef49e8bc6dbf1336a98ba85ea59f3841cbe80780133",
+    "m3AnalysisLedger": "outputs/g2_material_trajectories_v1/analysis_run_20261121_142837_725/LEDGER.json",
+    "m3AnalysisLedgerSHA256": "598131f97383ffdfe0bbc57d7188faf905b99d38019cc043ade61dddba34759f",
+    "originalH_S1Mesh": "outputs/g2_wp3_state/run_20261118_185808_963/step1_a/KINKED_GEOMETRY_ONLY_candidate.mat",
+    "originalH_S1MeshSHA256": "ecd6a7b873bc2cd758a0f88391e564dfb6c90249024bc1a8768f9f5d93732461",
+    "originalH_S2Mesh": "outputs/g2_trajectory_chain_v1_attempt2/STEP_002/KINKED_GEOMETRY_ONLY_candidate.mat",
+    "originalH_S2MeshSHA256": "9269be43141014eff1e9f7ef6ef0cdc82b2772c62a12ccf3d847549c7485c412",
+    "originalMaterialChains": "outputs/g2_material_trajectories_v1/chain_{soft,stiff}_v1 (every file read must appear in the M3 ledger with the same SHA-256)",
+    "m2CaseSHA256": {
+      "S0_H1": "50b6ad8396f5ab41893875ced5a4c0ac429812630b1921dfb33653be8cd5173b",
+      "S0_Msoft": "cd506779d6b4c94f1777b3c05618637fa4af8855922bf444e3121af4b02f2b45",
+      "S0_Mstiff": "052bcee474d931153ecf6532f436bfe18939ca679c3640eb599a96ec57035d79",
+      "S1_H1": "3cb59be7c456dfe71436d563b4c96bbd9402a305f4783ae3b191452a66467d92",
+      "S1_Msoft": "da5b04c620375225839ff15c9e490f46688432882c9a23b16f603c93deb2db11",
+      "S1_Mstiff": "a2af08a081100c8cb1e16397ad585c9c2caac576737f7d386753aad7ded7416f",
+      "S2_H1": "a2901f4c617ef2fc72cedf22b62e59db1bf0c8d09ccb038ebfa808cc30c9ce2d",
+      "S2_Msoft": "20ea1f17e2e62ac8cb70b687b27d9e363d20132f81604ca796d49bbec8400f46",
+      "S2_Mstiff": "452365f9c1bde1fb43bdc52c7964d74613c5dc3b7caa0f7b28d55b8058645eec",
+      "S2alt_H1": "6e5b4790ae5e471c14f0faf27c124492b92719a8c18dc78743099a1baf074b70"
+    }
+  },
+  "model": {
+    "plane": "stress",
+    "E_matrix_MPa": 3268.115,
+    "nu_matrix": 0.35,
+    "nu_reinforcement": 0.35,
+    "thickness_mm": 12.7,
+    "P_N": 1,
+    "pin_mm": [25.4, 0],
+    "roller_mm": [482.6, 0],
+    "load_mm": [254, 203.2],
+    "holeCenters_mm": [[152.4, 69.85], [152.4, 120.65], [152.4, 171.45]],
+    "holeRadius_mm": 6.35,
+    "bandOuterRadius_mm": 19.05,
+    "illustrativeOnly": true,
+    "perfectBonding": true
+  },
+  "materials": [
+    {"id": "homogeneous", "ratio": 1, "role": "alternative-family reference path Gamma_H^a; driving K from g2_trajectory_sif_on_mesh (homogeneous pipeline); every state also solves M0 (two-phase solver at ratio 1, identity to H1 under the inherited G2_MATERIAL_POLICY_v1 identityM0 tolerances; bitwise equality of u and EDI recorded as information) and Msoft, Mstiff on Gamma_H^a (frozen-path direct effect within the family)"},
+    {"id": "soft", "ratio": 0.5, "role": "Gamma_soft^a, driving K from g2_material_sif_on_mesh"},
+    {"id": "stiff", "ratio": 2, "role": "Gamma_stiff^a, driving K from g2_material_sif_on_mesh"}
+  ],
+  "altFamily": {
+    "id": "famB_m4alt",
+    "exteriorOptions": ["BottomVertices_mm", [25.4, 482.6], "TopVertices_mm", 254, "TipGuideRadius_mm", 15, "TipGuideHface_mm", 1.5, "GuideHface_mm", 1.0, "Hmax_mm", 5],
+    "originalFamilyExteriorOptions": ["BottomVertices_mm", [25.4, 482.6], "TopVertices_mm", 254, "TipGuideRadius_mm", 15, "TipGuideHface_mm", 1.5],
+    "S0builder": "g2_join_protected_mesh('ExteriorOptions',exteriorOptions,'MaxT3Elements',40000) - the exact WP2 routine (F1 proved it reproduces famA bitwise with originalFamilyExteriorOptions)",
+    "stepBuilder": "g2_kinked_join(P,'ExteriorOptions',exteriorOptions,'ExpectedVertices',N,'MaxT3Elements',40000,'ExpectedTangent',t_new)",
+    "sharedWithOriginalFamily": "frozen p010 kernel (2788 core T3) and analytic collar (128 T3) by construction, the 15-mm tip guide with Hface 1.5, the physical holes, crack, band radii, BVP anchors; everything else (exterior T3, band interface chords 112 vs 76, plate) is regenerated",
+    "independenceDisclosure": "the near-tip core/collar is identical in both families by policy (it carries the qualified q support); the families differ in exterior and band discretization. The test therefore measures exterior/band-discretization and band-polygon sensitivity of the full paths, not near-tip discretization sensitivity",
+    "feasibility": {"T3": 34641, "chordsPerCircle": [112, 112, 112], "bandAreaRelVsFamA": 0.000692, "join": "13/13", "independent38": "38/38", "protectedTip": "24/24", "exteriorNodesCoincidingWithFamA": "1555/16262"},
+    "S0record": "outputs/g2_m4_alt_family_v1/S0ALT (GEOMETRY_ONLY_candidate.mat + S0ALT.mat record), built once, shared by the three chains by SHA-256"
+  },
+  "start": {
+    "polyline_mm": [[101.6, 0], [101.6, 25.4]],
+    "tangent": [0, 1],
+    "parentK": "full-precision K of the chain's OWN solve on the alternative S0 (never the original-family K, never rounded)"
+  },
+  "recurrence": "theta = g2_mts_direction(KI_perkN, KII_perkN); t_new = cos(theta) t + sin(theta) n, n = R(+90) t; tip_new = tip + 4 t_new (identical to G2-M3)",
+  "scopeLimits": {
+    "increment_mm": 4,
+    "maxStateIndex": 2,
+    "maxArcLength_mm": 33.4,
+    "noThirdStep": true,
+    "holdChainNeverReused": true,
+    "noRetryAfterHoldWithoutCommittedInvestigation": true
+  },
+  "authorization": {
+    "default": "dry, writes nothing",
+    "s0Token": "G2M4AS0|<policy SHA-256 upper case>|family=famB_m4alt",
+    "runToken": "G2M4ARUN|<policy SHA-256 upper case>|<material id>|family=famB_m4alt|maxState=2",
+    "chainRoot": "outputs/g2_m4_alt_family_v1",
+    "chainDirMustContainMaterialId": true,
+    "cleanCommittedTree": true
+  },
+  "mesh": {
+    "S0audits": "join 13/13 (g2_join_protected_mesh), g2_independent_t6_checker 38/38 and g2_protected_tip_checker 24/24 on the SAVED arrays",
+    "stepAudit": "g2_kink_admissibility K1-K10 before meshing; g2_kinked_mesh_auditor 34/34 on the SAVED arrays",
+    "T3max": 40000,
+    "minAngle_deg": 20,
+    "maxNeighborRatio": 1.8,
+    "coreT3": 2788,
+    "collarT3": 128,
+    "seams": "64+64",
+    "qActiveParents": 2443
+  },
+  "phase": "g2_material_phase_stage (PR #38 phase stage, unchanged): mapper + independent verifier + state-aware negatives on every new mesh, including S0ALT and the homogeneous chain; no labels reused across meshes",
+  "sif": "unchanged qualified routines and thresholds: g2_material_sif_on_mesh (soft, stiff, M0, and Msoft/Mstiff on Gamma_H^a), g2_trajectory_sif_on_mesh + g2_t6_elasticity (H1); blind bank COD first, five-annulus EDI (6x6 and 4x4), J, matrix-only q, residual/statics/energy/interface gates, K_II sign gate",
+  "records": "S0ALT record; per chain ROOT (S0 solution records in ROOT_S0/), then per step mesh MAT, PHASE_MAP, SOLUTION(s), REVIEW, STATE (g2_trajectory_record manifests, never overwritten); HOLD on failure; reuse re-verifies forecast, mesh hash and content, 34/34 re-audit, phase re-map and verifier, solution hashes, parent and source hashes without FEM",
+  "decomposition": {
+    "G": "(KI_raw^2 + KII_raw^2)/E_m at P = 1 N (EDI 6x6, annulus 0.4-2.6 mm); COD and J secondary",
+    "withinFamily": "R_direct = G_M[Gamma_H]/G_H[Gamma_H]; R_path = G_M[Gamma_M]/G_M[Gamma_H]; R_total = G_M[Gamma_M]/G_H[Gamma_H], each computed with BOTH G values from the same family",
+    "originalFamily": "recomputed exactly as the M3 analysis from PR #38 records and PR #41 chains; must equal the M3 analysis ledger values to 1e-12 relative (regression)",
+    "S0": "R_path = 1 exactly in each family; the soft/stiff chain S0 solve must equal the homogeneous chain's S0 Msoft/Mstiff solve bitwise",
+    "identityTolerance": 1e-12
+  },
+  "uncertainty": {
+    "ratioPrimary": "inherited: U = max(contour spread, |R_4x4 - R|, |R_COD - R|, U_mesh for cross-mesh ratios); resolved iff |R-1| > 2U and COD sign agrees",
+    "U_mesh": "inherited PR #38 value |G_H1(S2alt)/G_H1(S2) - 1| (read from the PR #38 records; not re-estimated)",
+    "ratioConservative": "inherited: R (dG_a + dG_b), dG = |G_EDI - G_COD|/G_EDI",
+    "pathSeparationWithinFamily": "inherited M3 definition: tip separation and signed lateral offset (tip_M - tip_H).n_H with n_H the normal of the family's own homogeneous tangent; U_sep(29.4) = 4 U_dTheta0, U_sep(33.4) = 8 U_dTheta0 + 4 U_dTheta1; conservative variant from |theta_EDI - theta_COD|",
+    "S0Kprecision": "the original homogeneous S1 was seeded from the six-digit K (amendment A1, 4.41e-6 mm tip offset); the alternative family uses full precision; the A1 offset is reported next to every original-H comparison"
+  },
+  "crossFamilyCriteria": {
+    "lateralSeparation": {
+      "definition": "delta^f(s) = signed lateral offset of Gamma_M^f relative to Gamma_H^f in family f in {o, a}; Delta = delta^a - delta^o; d_H = |tip_H^a - tip_H^o| (cross-family drift of the reference path)",
+      "STABLE": "sign(delta^a) = sign(delta^o) AND |Delta| <= 0.25 |delta^o| (relative) AND |Delta| <= 0.010 mm (absolute) AND |delta^a| > 2 max(d_H, U_sep^a) (distinct from cross-family drift and resolved in family a)",
+      "MARGINAL": "same sign and |delta^a| > 2 U_sep^a, but at least one other STABLE condition fails",
+      "NONROBUST": "different sign, or |delta^a| <= 2 U_sep^a"
+    },
+    "ratios": {
+      "rule": "inherited M3 robustness rule applied to R_direct, R_path, R_total at s = 29.4 and 33.4 (R_direct and R_total also at 25.4): ROBUST iff sign(R^a - 1) = sign(R^o - 1) and |R^a - R^o| <= 0.25 |R^o - 1| + 2 U_mesh; SENSITIVE if same sign and larger; NOT_ROBUST if different sign",
+      "conservativeNote": "the conservative (about +-3.5 %) rule is reported for both families; under it no ratio was resolved in M3 and no stronger claim is made here"
+    },
+    "steering": "local MTS turns compared per state within each family (dTheta_own = theta_M - theta_H at matched parents); global headings compared across families",
+    "bandAreaAccounting": "band polygon areas (76-gon vs 112-gon chords) are recorded per mesh; the cross-family ratio change is NOT attributed to FEM discretization alone; an indicative area-proportional magnitude |R^o - 1| x |A^a/A^o - 1| is reported as a heuristic only, not as a separation",
+    "verdict": "M4.A FULL_PATH_ROBUST iff every material separation at 29.4 and 33.4 is STABLE and every R_path and R_direct classification is ROBUST; PARTIAL if all signs agree but any MARGINAL/SENSITIVE; NOT_ROBUST otherwise; HOLD_FULL_PATH_ROBUSTNESS if any chain fails a gate"
+  },
+  "faults": [
+    "dry mode writes nothing (S0ALT and chains)",
+    "wrong token: other material, other family, other policy SHA",
+    "chain outside outputs/g2_m4_alt_family_v1 or under the M3 chain root",
+    "switched material on a chain",
+    "forged S0ALT record with the famA S0 mesh",
+    "forged review re-pointed to the ORIGINAL-family (PR #41) mesh of the same material and step",
+    "ROOT parent K replaced by the original-family S0 K",
+    "phase labels inconsistent with the saved polygons",
+    "policy and source drift",
+    "step 3 request",
+    "partial step folder",
+    "HOLD chain refused",
+    "tampered state bytes",
+    "dirty source",
+    "interrupt after review (promoted without FEM) and after state (reused without FEM)",
+    "deterministic replay of one complete chain (mesh, phase, u, EDI, COD identical)",
+    "accepted PR #41 chains and new alternative chains unchanged before/after"
+  ],
+  "stopCodes": ["HOLD_ALT_S0", "HOLD_FULL_PATH_ROBUSTNESS", "HOLD_DIRECTION_OR_GEOMETRY", "HOLD_STEP", "HOLD_PARTIAL_STEP", "HOLD_CHAIN_HAS_HOLD", "HOLD_ARC_CAP", "HOLD_WORD_INPUT", "HOLD_MEMORY", "HOLD_MATLAB_ALREADY_RUNNING", "HOLD_INTERFACE_APPROACH (not reachable within two steps; reserved)", "HOLD_EXTERNAL_BOUNDARY (not reachable; reserved)"],
+  "reviewGates": ["REVIEW_STOP_A after M4.A: one consolidated packet, no M4.B", "REVIEW_STOP_B after a future authorized M4.B"],
+  "futureM4BIdentityTests": "if later authorized: F(empty) bitwise equal to H1 on the frozen S2 mesh; F({1,2,3}) equal to PR #38 S2 Msoft/Mstiff u, K, energy, compliance within the PR #38 identity criteria; new ring-activation mask verifier; legacy verifiers unchanged",
+  "resources": {"freePhysicalRAM_GiB_min": 5, "matlabRelease": "R2023a", "oneMatlabProcess": true},
+  "forbidden": ["State 3 or a third increment", "changing the 4-mm step", "seeding alternative paths from original-family K", "reusing labels, U or K across meshes", "relaxing any threshold", "automatic retries", "starting M4.B or M4.C", "onset, toughness, arrest, debonding, CZM, experimental claims"]
+}

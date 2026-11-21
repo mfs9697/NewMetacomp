@@ -1,0 +1,6 @@
+﻿рисунок,файл,зміст,джерело даних,одиниці,SHA-256 PNG,мова тексту,тип
+Е.1,m4a_fig3_interface_meshes.png,"Сітки С0 біля нижнього кільця: 76- і 112-кутний інтерфейс","outputs/g2_protected_mesh/run_20261118_165922_343_famA; outputs/g2_m4_alt_family_v1/S0ALT","мм",f9dc71c5ef3f23bc0e8ff857d45c50be2f19e6d793bda75a209acebca53b59b4,українська,"побудовано за даними MATLAB"
+Е.2,m4a_fig4_tip_q_support.png,"Зона q, ядро p010 і комір; альтернативна сітка, м’які кільця, s = 33,4 мм","outputs/g2_m4_alt_family_v1/chain_soft_alt_v1/STEP_002","мм",4c9372fb2dc0ddeccdd40f5455b02fcfa488b4be181a0b79105343520de0cf92,українська,"побудовано за даними MATLAB"
+Е.3,m4a_fig2_ratios.png,"R_прям, R_шлях, R_заг в обох сімействах","evidence/m4_20261121/report/fig2_ratios.csv","безрозмірні",b2f5efab22edea2f8be8afac4ac79287260c6e86f1f7cb702e5419982a39c5cf,українська,"побудовано за даними MATLAB"
+Е.4,m4a_fig1_paths.png,"Схема; бічне відхилення δ; розбіжність вершин між сімействами","evidence/m4_20261121/report/fig1_*.csv","мм; мкм",9b926b885910f04f6d3c401e07a985a43c4f00e84fe33da5a91ced5afd1d0543,українська,"схематично (панель а) + за даними MATLAB"
+Е.5,m4a_fig5_K.png,"K_I, K_II на 1 кН і відносна зміна між сімействами","evidence/m4_20261121/report/fig5_K.csv","МПа·√м; ×10⁻⁴",17af885f2b5a9e411a6f0cf7f8fed686710e5943b4a03db1d5d8d2ca62188de8,українська,"побудовано за даними MATLAB"

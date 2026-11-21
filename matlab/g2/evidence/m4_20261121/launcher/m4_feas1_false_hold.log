@@ -1,0 +1,13 @@
+STAGE=G2_M4_0_FEASIBILITY
+DATE=2026-11-21 17:27:07
+MATLAB_RELEASE=2023a
+NO_FEM=1; NO_SIF=1; NO_STATE=1; NO_MAT_WRITTEN=1
+matlab.exe : HOLD G2M4F:ChainLedger: A PR #41 chain record is not in the M3 SHA ledger.
+At <local>
+run1.ps1:13 char:1
++ & $m -batch "restoredefaultpath;addpath('$w\matlab\g2','-begin');addp ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (HOLD G2M4F:Chai... M3 SHA ledger.:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+G2_M4_FEASIBILITY_STATUS=HOLD_ALT_S0 FOLDER=<repo>\outputs\g2_m4_feasibility\run_20261121_172707_829

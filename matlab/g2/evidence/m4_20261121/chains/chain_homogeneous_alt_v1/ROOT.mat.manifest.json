@@ -1,0 +1,9 @@
+{
+  "schema": "NewMetacomp.G2.TrajectoryRecordManifest.v1",
+  "file": "ROOT.mat",
+  "SHA256": "4EA67E67E0680E15800075B7E270D04EDD9BC35B286845B7C34622AD06E76EFA",
+  "bytes": 81752,
+  "recordSchema": "NewMetacomp.G2.M4A.Root.v1",
+  "stateIndex": -1,
+  "physicalFractureGrowthProven": false
+}

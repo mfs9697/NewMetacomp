@@ -1,0 +1,174 @@
+{
+  "cases": [
+    {
+      "id": "F01_dry_no_writes",
+      "expect": "STEP_CAP, tree identical",
+      "observed": "STEP_CAP, same 1",
+      "pass": true,
+      "note": ""
+    },
+    {
+      "id": "F02_run_reuses_states_no_FEM",
+      "expect": "reused 2, computed 0, tree identical",
+      "observed": "reused 2 computed 0 same 1",
+      "pass": true,
+      "note": ""
+    },
+    {
+      "id": "F03a_S0ALT_dry_no_writes",
+      "expect": "DRY_S0ALT_NO_FILES, root listing unchanged",
+      "observed": "DRY_S0ALT_NO_FILES, same 1",
+      "pass": true,
+      "note": ""
+    },
+    {
+      "id": "F03b_S0ALT_never_overwritten",
+      "expect": "G2M4S0:Exists",
+      "observed": "G2M4S0:Exists",
+      "pass": true,
+      "note": ""
+    },
+    {
+      "id": "F04a_wrong_token_material",
+      "expect": "G2M4:Authorization",
+      "observed": "G2M4:Authorization",
+      "pass": true,
+      "note": ""
+    },
+    {
+      "id": "F04b_wrong_token_family",
+      "expect": "G2M4:Authorization",
+      "observed": "G2M4:Authorization",
+      "pass": true,
+      "note": ""
+    },
+    {
+      "id": "F04c_token_other_policy",
+      "expect": "G2M4:Authorization",
+      "observed": "G2M4:Authorization",
+      "pass": true,
+      "note": ""
+    },
+    {
+      "id": "F05_step3_request",
+      "expect": "G2M4:StepCap",
+      "observed": "G2M4:StepCap",
+      "pass": true,
+      "note": ""
+    },
+    {
+      "id": "F06a_chain_under_M3_root",
+      "expect": "G2M4:ChainLocation",
+      "observed": "G2M4:ChainLocation",
+      "pass": true,
+      "note": ""
+    },
+    {
+      "id": "F06b_switched_material_on_chain",
+      "expect": "G2M4:ChainName",
+      "observed": "G2M4:ChainName",
+      "pass": true,
+      "note": ""
+    },
+    {
+      "id": "F07_forged_S0ALT_famA_mesh",
+      "expect": "G2M4S0:MeshContent",
+      "observed": "G2M4S0:MeshContent",
+      "pass": true,
+      "note": ""
+    },
+    {
+      "id": "F08_forged_review_original_family_mesh",
+      "expect": "G2M4:ReviewMeshContent",
+      "observed": "G2M4:ReviewMeshContent",
+      "pass": true,
+      "note": ""
+    },
+    {
+      "id": "F09_root_seeded_with_original_K",
+      "expect": "G2M4:RootParent",
+      "observed": "G2M4:RootParent",
+      "pass": true,
+      "note": ""
+    },
+    {
+      "id": "F10_phase_labels_inconsistent",
+      "expect": "G2M4:ReviewPhase",
+      "observed": "G2M4:ReviewPhase",
+      "pass": true,
+      "note": ""
+    },
+    {
+      "id": "F11a_policy_drift",
+      "expect": "G2M4:RootDrift",
+      "observed": "G2M4:RootDrift",
+      "pass": true,
+      "note": ""
+    },
+    {
+      "id": "F11b_source_drift",
+      "expect": "G2M4:RootDrift",
+      "observed": "G2M4:RootDrift",
+      "pass": true,
+      "note": ""
+    },
+    {
+      "id": "F12_tampered_state_bytes",
+      "expect": "G2M4:StateIntegrity",
+      "observed": "G2M4:StateIntegrity",
+      "pass": true,
+      "note": ""
+    },
+    {
+      "id": "F13_changed_parent_K",
+      "expect": "G2M4:StateMismatch",
+      "observed": "G2M4:StateMismatch",
+      "pass": true,
+      "note": ""
+    },
+    {
+      "id": "F14_dirty_source",
+      "expect": "G2M4:DirtySource",
+      "observed": "G2M4:DirtySource",
+      "pass": true,
+      "note": ""
+    },
+    {
+      "id": "F15_hold_chain_refused",
+      "expect": "G2M4:HoldChain",
+      "observed": "G2M4:HoldChain",
+      "pass": true,
+      "note": ""
+    },
+    {
+      "id": "F16_partial_step",
+      "expect": "G2M4:PartialStep",
+      "observed": "G2M4:PartialStep",
+      "pass": true,
+      "note": ""
+    },
+    {
+      "id": "F17_interrupt_after_review_promoted_without_FEM",
+      "expect": "promoted 1, computed 0, state equals accepted",
+      "observed": "SIMULATED_INTERRUPT_AFTER_REVIEW; promoted 1 computed 0",
+      "pass": true,
+      "note": ""
+    },
+    {
+      "id": "F18_interrupt_after_state_reused",
+      "expect": "reused 1, computed 0, tree identical",
+      "observed": "SIMULATED_INTERRUPT_AFTER_STATE; reused 1 computed 0 same 1",
+      "pass": true,
+      "note": ""
+    },
+    {
+      "id": "F19_deterministic_replay_homogeneous",
+      "expect": "2 steps computed; mesh, phase, u, EDI, COD identical (4 solves per state)",
+      "observed": "computed 2, identical 1",
+      "pass": true,
+      "note": ""
+    }
+  ],
+  "acceptedUnchanged": true,
+  "pass": true
+}
