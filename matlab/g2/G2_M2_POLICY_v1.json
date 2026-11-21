@@ -1,0 +1,103 @@
+{
+  "schema": "NewMetacomp.G2.M2ShieldingSteeringPolicy.v1",
+  "issue": 36,
+  "scope": "three separate same-mesh two-phase contrasts on frozen homogeneous-reference crack states S0, S1, S2, plus one alternative S2 band mesh; direct phase effect only; no crack advance, no State 3, no CZM, no onset, no toughness",
+  "base": {
+    "parentPR": 35,
+    "parentHead": "75a4bce9d72968ae22bac17719d233cfa62e880e",
+    "materialPolicyV1SHA256": "e60156f60dc8bae05f2ab1b1a25bc93bd84cedb7485591b01ada2413d946a971",
+    "trajectoryPolicyV1SHA256": "1d6af7f6f3e8af389ab02330d9a1eaebdbc00bedb52aad54db902b4de36b39dc",
+    "cornellJSON_SHA256": "45a88fa0926472ddbe5e70e4c80a97b88196dd45d8a266fa04273f89790b47bf",
+    "trustedP0SHA256": "15201996b4165aa9980f61f370a75749b1ce28ec0accaa061902641524c37c58",
+    "pr35AcceptedRun": "outputs/g2_material_contrast_v1/run_20261119_003430_660",
+    "pr35BenchmarkSHA256": "8419ed11fa094eaa9cfea3c08c15cc84ec656a25102776af0a876c54c058056e",
+    "pr35CaseSHA256": {
+      "H1": "3d6abbc213067a6f7bf208a9365d964490d5e8a2e59dfc0864cff20c42c325e4",
+      "M0": "e5a29bfc479d427de771780479313c3f764081d31aeb3eafea31eed872c84eaf",
+      "Msoft": "a68bd9343044c7498424dac8f4005c1c1b2d3942e6715b7a149f5d1b347f67dd",
+      "Mstiff": "ed66fbeb7083228968f9087bcd5bad17442b8ba866e46070abc7639bbe20b333"
+    },
+    "pr35QualifiedModulesMustBeByteIdenticalToParent": ["g2_t6_elasticity_phase.m", "g2_material_phase_map.m", "g2_material_phase_verify.m", "g2_material_sif_on_mesh.m", "g2_t6_point_stress.m", "g2_coated_hole_exact.m", "check_g2_material_benchmark.m", "check_g2_material_phase_controls.m", "g2_t6_elasticity.m", "g2_trajectory_sif_on_mesh.m", "g2_sif_interaction.m", "g2_sif_cod_banks.m", "g2_sif_cod.m", "g2_williams_field.m", "g2_plane_D.m", "g2_mts_direction.m", "g2_kinked_mesh_auditor.m", "g2_independent_t6_checker.m", "g2_protected_tip_checker.m", "g2_kinked_join.m", "g2_kinked_exterior_mesh.m", "g2_kinked_regular_block.m"]
+  },
+  "states": [
+    {
+      "id": "S0", "arc_mm": 25.4, "kind": "WP2 straight, family A",
+      "mesh": "outputs/g2_protected_mesh/run_20261118_165922_343_famA/GEOMETRY_ONLY_candidate.mat",
+      "meshSHA256": "05d5c3fcf5152c30bb0e5c288dc109bfce42b8d677077c4631254ab5887657dc",
+      "ledger": "matlab/g2/evidence/wp2_20261118/SHA256SUMS_original_outputs.txt",
+      "recordedK": "outputs/g2_wp2_cornell/run_20261118_170047_650/familyA_primary_fields.mat",
+      "recordedKSHA256": "cc1831266b344ef9da37fcad2c2137b8ad05c8a710720619f1fc45146e1df577",
+      "auditor": "g2_independent_t6_checker 38/38 + g2_protected_tip_checker 24/24",
+      "expectedT3": 28151,
+      "polyline_mm": [[101.6, 0], [101.6, 25.4]],
+      "adapter": "crackPolyline = [mouth; X3(physicalTipNode)], tipTangent = (0,1); saved upperBankT6/lowerBankT6 used as is and verified"
+    },
+    {
+      "id": "S1", "arc_mm": 29.4, "kind": "WP3 first kink",
+      "mesh": "outputs/g2_wp3_state/run_20261118_185808_963/step1_a/KINKED_GEOMETRY_ONLY_candidate.mat",
+      "meshSHA256": "ecd6a7b873bc2cd758a0f88391e564dfb6c90249024bc1a8768f9f5d93732461",
+      "state": "outputs/g2_wp3_state/run_20261118_185808_963/step1_a/state",
+      "stateSHA256": "cb05bd619280069bd601e7a9131b8532f39698f3a406adacff537eac09a5d441",
+      "ledger": "matlab/g2/evidence/wp3_20261118/SHA256SUMS_original_outputs.txt",
+      "auditor": "g2_kinked_mesh_auditor, 3 vertices, 34/34",
+      "expectedT3": 28421,
+      "polyline_mm": [[101.6, 0], [101.6, 25.4], [102.4722795671, 29.3037326185]],
+      "adapter": "none (saved schema already carries crackPolyline, tipTangent, banks, anchors)"
+    },
+    {
+      "id": "S2", "arc_mm": 33.4, "kind": "WP3.4 second kink",
+      "mesh": "outputs/g2_trajectory_chain_v1_attempt2/STEP_002/KINKED_GEOMETRY_ONLY_candidate.mat",
+      "meshSHA256": "9269be43141014eff1e9f7ef6ef0cdc82b2772c62a12ccf3d847549c7485c412",
+      "reviewSHA256": "e5ad2c170b47374bc6eb90a7b5d3d82dedbf0d2bdf7276d9a6751a4ca7f78055",
+      "ledger": "matlab/g2/evidence/wp34_20261118/SHA256SUMS_original_outputs.txt",
+      "auditor": "g2_kinked_mesh_auditor, 4 vertices, 34/34",
+      "expectedT3": 28625,
+      "polyline_mm": [[101.6, 0], [101.6, 25.4], [102.4722795671, 29.3037326185], [103.4091509165, 33.1924691839]],
+      "adapter": "none",
+      "pr35Regression": "H1, M0, Msoft, Mstiff u, EDI, COD, compliance, CMOD and the ratio table must equal PR #35 run C exactly"
+    }
+  ],
+  "alternativeMeshS2": {
+    "id": "S2alt",
+    "build": "g2_kinked_join(P_S2,'ExteriorOptions',{'BottomVertices_mm',[25.4 482.6],'TopVertices_mm',254,'TipGuideRadius_mm',15,'TipGuideHface_mm',1.5,'GuideHface_mm',1.0,'Hmax_mm',5},'ExpectedVertices',4,'MaxT3Elements',40000,'ExpectedTangent',t_S2)",
+    "changesVersusOriginal": "band and guide-face size 1.5 -> 1.0 mm (76 -> about 112 interface chords), exterior Hmax 6 -> 5 mm; crack, p010 kernel, collar, rim, hole edges, tip guide unchanged",
+    "gates": "join pass, independent 34/34, T3 <= 40000, min angle >= 20 deg, ratio <= 1.8, full phase map + verifier + negatives, H1 = M0 identity, all SIF gates",
+    "noSecondAttempt": true,
+    "robustnessClassification": {
+      "ROBUST": "same sign of R-1 and |dR_alt - dR_orig| <= 0.10 |dR_orig| for that contrast",
+      "SENSITIVE": "same sign but larger difference",
+      "NOT_ROBUST": "sign of R-1 differs",
+      "HOLD": "alternative mesh or any gate fails; then no refinement-qualified statement"
+    }
+  },
+  "materials": {"plane": "stress", "E_matrix_MPa": 3268.115, "nu_matrix": 0.35, "nu_reinforcement": 0.35, "ratios": [1, 0.5, 2], "thickness_mm": 12.7, "illustrativeOnly": true},
+  "bvp": {"P_N": 1, "pin_mm": [25.4, 0], "roller_mm": [482.6, 0], "load_mm": [254, 203.2]},
+  "phaseMap": "unchanged from G2_MATERIAL_POLICY_v1.json phaseMap block (tolerances 1e-9 mm, gap 1e-3 mm, area 1e-12, plate area 1e-9, q clearance >= 1 mm, tip guide 15 mm matrix only)",
+  "crossStateComparability": {
+    "geometryEquivalentIf": "equal chord count per circle and per-band polygon area within 1e-4 relative of the S2 value",
+    "otherwise": "label the cross-state trend GEOMETRY-CONFOUNDED; per-state results stay valid as same-mesh contrasts"
+  },
+  "identity": "unchanged from G2_MATERIAL_POLICY_v1.json identityM0 block",
+  "regressions": {
+    "S0_original": "g2_t6_elasticity + g2_sif_interaction (five annuli, 6x6) + g2_sif_cod (geometric faces) must reproduce familyA_primary_fields.mat ed and Cod to 1e-12 of |K|",
+    "S0_adapter": "bank COD (g2_sif_cod_banks via adapter) must equal the original g2_sif_cod to 1e-10 of |K|; the upper bank must lie on the +n = (-1,0) side",
+    "S1": "g2_trajectory_sif_on_mesh must reproduce the State 1 record (KI_raw, KII_raw, COD) to 1e-12",
+    "S2": "g2_trajectory_sif_on_mesh must reproduce REVIEW.sif to 1e-12, and the PR #35 case arrays exactly"
+  },
+  "sifGates": "unchanged from G2_MATERIAL_POLICY_v1.json sifGates block",
+  "uncertainty": "unchanged from G2_MATERIAL_POLICY_v1.json uncertainty block (primary U_R with coverage 2 and COD sign; conservative R*(dG_M + dG_H1)); both verdicts reported for every state",
+  "steering": {
+    "frame": "theta_MTS in each state's own last-segment frame; the global terminal tangent angle is reported separately",
+    "dThetaResolvedIf": "|dTheta| > 2*max(|dTheta_COD - dTheta|, |dTheta_4x4 - dTheta|, contour spread of dTheta)",
+    "independentRootCheck": "bracketed fzero of KI sin(th) + KII (3 cos(th) - 1) = 0 on [-pi/2, pi/2] must agree with g2_mts_direction to 1e-10 rad"
+  },
+  "evolutionReading": {
+    "noPassCriterionOnTrend": true,
+    "transitionOnlyIf": "R-1 changes sign across states with both signs resolved under the primary rule; reported with the conservative verdict alongside",
+    "baselineSeparation": "G_H1(s) reported separately; differences of absolute G across states are not attributed to the material"
+  },
+  "resources": {"freePhysicalRAM_GiB_min": 5, "oneMatlabProcess": true, "matlabRelease": "R2023a", "maxT3": 40000},
+  "stopRules": ["SOURCE", "AUDIT", "ADAPTER", "PHASE", "BENCHMARK_PIN", "REGRESSION", "IDENTITY", "SIF", "QPHASE", "INTERFACE", "RAM"],
+  "stopScope": "a HOLD in one state stops that state and all later stages; earlier PASS states are kept and reported",
+  "forbidden": ["State 3", "crack advance", "material-specific trajectory", "CZM", "physical onset", "toughness", "experimental match", "post-hoc tolerance changes", "post-hoc extra meshes"]
+}

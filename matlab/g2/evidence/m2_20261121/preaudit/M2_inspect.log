@@ -1,0 +1,88 @@
+==== S0  SHA 05D5C3FCF5152C30BB0E5C288DC109BFCE42B8D677077C4631254AB5887657DC
+fields: T3 T6 X3 X6 approvedForLEFM collarOuterIDs elementRows extraVertexNodes extraVertexXY familyTag gates geometryOnly includeHoles lowerBankT6 nodalQ p010GlobalProtectedMeshQualified physicalTipNode plateXRange qActiveT6Rows summary upperBankT6
+T3 28151, X6 57179 nodes
+  circle 1: 76 T3 vertices on r=19.05 (max dev 1.8e-14), next vertex 1.303 mm; hole rim vertices 152
+  circle 2: 76 T3 vertices on r=19.05 (max dev 2.1e-14), next vertex 1.309 mm; hole rim vertices 152
+  circle 3: 76 T3 vertices on r=19.05 (max dev 2.1e-14), next vertex 1.303 mm; hole rim vertices 152
+tip node at [101.6 25.4]
+   25.4000         0
+  482.6000         0
+  254.0000  203.2000
+
+upperBankT6: [151 1]
+lowerBankT6: [151 1]
+famA
+nodalQ: [57179 1]
+qActiveT6Rows: [2443 1]
+S0 nodes on crack line: 301, coordinate groups 151, pairs 150, singles 1 (y of singles: 25.4)
+==== S1  SHA ECD6A7B873BC2CD758A0F88391E564DFB6C90249024BC1A8768F9F5D93732461
+fields: T3 T6 X3 X6 approvedForLEFM collarOuterIDs crackPolyline elementRows extraVertexNodes extraVertexXY geometryOnly includeHoles kinkNodeIDs lowerBankT6 mirrorControl nodalQ physicalTipNode plateXRange qActiveT6Rows tipNormal tipTangent upperBankT6
+T3 28421, X6 57737 nodes
+  circle 1: 76 T3 vertices on r=19.05 (max dev 1.8e-14), next vertex 1.303 mm; hole rim vertices 152
+  circle 2: 76 T3 vertices on r=19.05 (max dev 2.1e-14), next vertex 1.303 mm; hole rim vertices 152
+  circle 3: 76 T3 vertices on r=19.05 (max dev 2.1e-14), next vertex 1.309 mm; hole rim vertices 152
+  101.6000         0
+  101.6000   25.4000
+  102.4723   29.3037
+
+tip node at [102.472279567 29.3037326185]
+   25.4000         0
+  482.6000         0
+  254.0000  203.2000
+
+upperBankT6: [169 1]
+lowerBankT6: [169 1]
+kinkNodeIDs: [2 1]
+nodalQ: [57737 1]
+qActiveT6Rows: [2443 1]
+tipTangent: [1 2]
+==== S2  SHA 9269BE43141014EFF1E9F7EF6EF0CDC82B2772C62A12CCF3D847549C7485C412
+fields: T3 T6 X3 X6 approvedForLEFM collarOuterIDs crackPolyline elementRows extraVertexNodes extraVertexXY geometryOnly includeHoles kinkNodeIDs lowerBankT6 mirrorControl nodalQ physicalTipNode plateXRange qActiveT6Rows tipNormal tipTangent upperBankT6
+T3 28625, X6 58161 nodes
+  circle 1: 76 T3 vertices on r=19.05 (max dev 1.8e-14), next vertex 1.309 mm; hole rim vertices 152
+  circle 2: 76 T3 vertices on r=19.05 (max dev 2.1e-14), next vertex 1.303 mm; hole rim vertices 152
+  circle 3: 76 T3 vertices on r=19.05 (max dev 2.1e-14), next vertex 1.303 mm; hole rim vertices 152
+  101.6000         0
+  101.6000   25.4000
+  102.4723   29.3037
+  103.4092   33.1925
+
+tip node at [103.409150916 33.1924691839]
+   25.4000         0
+  482.6000         0
+  254.0000  203.2000
+
+upperBankT6: [185 1]
+lowerBankT6: [185 1]
+kinkNodeIDs: [4 1]
+nodalQ: [58161 1]
+qActiveT6Rows: [2443 1]
+tipTangent: [1 2]
+==== candidate 1: GuideHface_mm 1
+G2_KB_VENDOR_LOCAL_GATES=15/15
+G2_KB_GATES=12/12 TURN=-0.9498277567 MIN_ANGLE=30.126847 RATIO=1.591829 Q=2443
+G2_KEXT_NATIVE_T3=29741
+G2_KEXT_RIM_NODES=65
+G2_KJOIN_GATES=13/13
+G2_KJOIN_T3=32657 T6_NODES=66229 MIN_ANGLE=30.126847 MAX_RATIO=1.605572
+join pass=1 stage=KINKED_PROTECTED_MESH_JOIN_PASS Joined; the independent kink-aware audit is still required.
+G2_KINKED_AUDIT_GATES=34/34
+G2_KINKED_AUDIT_PASS=1
+audit 34/34 pass=1 T3=32657 minAngle=30.1268 ratio=1.6056 qActive=2443
+  circle 1: 112 T3 vertices on r=19.05 (max dev 1.8e-14), next vertex 0.8839 mm; hole rim vertices 152
+  circle 2: 112 T3 vertices on r=19.05 (max dev 1.8e-14), next vertex 0.8839 mm; hole rim vertices 152
+  circle 3: 112 T3 vertices on r=19.05 (max dev 1.8e-14), next vertex 0.8839 mm; hole rim vertices 152
+==== candidate 2: GuideHface_mm 1 Hmax_mm 5
+G2_KB_VENDOR_LOCAL_GATES=15/15
+G2_KB_GATES=12/12 TURN=-0.9498277567 MIN_ANGLE=30.126847 RATIO=1.591829 Q=2443
+G2_KEXT_NATIVE_T3=32209
+G2_KEXT_RIM_NODES=65
+G2_KJOIN_GATES=13/13
+G2_KJOIN_T3=35125 T6_NODES=71207 MIN_ANGLE=30.126847 MAX_RATIO=1.591829
+join pass=1 stage=KINKED_PROTECTED_MESH_JOIN_PASS Joined; the independent kink-aware audit is still required.
+G2_KINKED_AUDIT_GATES=34/34
+G2_KINKED_AUDIT_PASS=1
+audit 34/34 pass=1 T3=35125 minAngle=30.1268 ratio=1.5918 qActive=2443
+  circle 1: 112 T3 vertices on r=19.05 (max dev 1.8e-14), next vertex 0.8839 mm; hole rim vertices 152
+  circle 2: 112 T3 vertices on r=19.05 (max dev 1.8e-14), next vertex 0.8839 mm; hole rim vertices 152
+  circle 3: 112 T3 vertices on r=19.05 (max dev 1.8e-14), next vertex 0.8903 mm; hole rim vertices 152
