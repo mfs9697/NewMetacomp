@@ -1,0 +1,15 @@
+Free RAM: 7,07 GiB (guard 5,00 GiB)
+M3 policy SHA-256: CF3023B55E99EFA0EB4F862EDB7F2D1AFABCE7F80A3444B0375C1EEB546DA9A8
+powershell : {Error using fill
+At line:5 char:1
++ powershell -NoProfile -ExecutionPolicy Bypass -File .\matlab\g2\run_g ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: ({Error using fill:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+Vectors must be the same length.
+
+Error in run_g2_m3_report_batch (line 46)
+ fill(a,[s fliplr(s)],[Rt-Utc fliplr(Rt+Utc)],cc{i},'FaceAlpha',.08,'EdgeColor','none','HandleVisibility','off');
+} 
+ERROR: MATLAB error Exit Status: 0x00000001

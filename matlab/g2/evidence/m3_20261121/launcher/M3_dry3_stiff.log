@@ -1,0 +1,38 @@
+Free RAM: 6,76 GiB (guard 5,00 GiB)
+M3 policy SHA-256: CF3023B55E99EFA0EB4F862EDB7F2D1AFABCE7F80A3444B0375C1EEB546DA9A8
+DRY preflight (no files written)
+G2_M3_HREC S1(six-digit K) dev saved 0 / prereg 2.11e-11 mm; S2(full-precision S1 K) dev saved 0 / prereg 4.17e-11 mm; S1 full-precision offset 4.52e-06 mm -> pass=1
+G2_M2_ADAPTER S0 pass=1 added=[crackPolyline,tipTangent] banks=151 side-checked U/L 295/295
+PHASE_MAP pass=1 PHASE_MAP_TOPOLOGICAL_OK: 15909 matrix + 12242 reinforcement elements; chords per circle [76 76 76].
+PHASE_VERIFY pass=1 failed=[]
+PHASE_NEG N1_swapped_labels                    mapper=1 (PHASE_MAP_TOPOLOGICAL_OK) verifier=0 [labelsMatchGeometry,annulusAreaIdentity,matrixConnected,bandsConnected,tipGuideMatrixOnly,qSupportMatrixOnly] -> rejected=1
+PHASE_NEG N2_band_element_relabelled_matrix    mapper=1 (PHASE_MAP_TOPOLOGICAL_OK) verifier=0 [labelsMatchGeometry,interfaceChordsTwoOwnersMixed,noOtherMixedEdges,annulusAreaIdentity] -> rejected=1
+PHASE_NEG N3_matrix_element_relabelled_band    mapper=1 (PHASE_MAP_TOPOLOGICAL_OK) verifier=0 [labelsMatchGeometry,interfaceChordsTwoOwnersMixed,noOtherMixedEdges,annulusAreaIdentity] -> rejected=1
+PHASE_NEG N4_detached_interface                mapper=0 (HOLD_INTERFACE_DUPLICATE_ANGLE) verifier=0 [interfaceChordsTwoOwnersMixed,noOtherMixedEdges,coincidentNodesOnlyRegisteredTwins] -> rejected=1
+PHASE_NEG N5_nonconforming_interface           mapper=0 (HOLD_INTERFACE_NONCONFORMING) verifier=0 [noStraddle,labelsMatchGeometry,interfaceChordsTwoOwnersMixed,noOtherMixedEdges,annulusAreaIdentity] -> rejected=1
+PHASE_NEG N6_filled_void                       mapper=1 (PHASE_MAP_TOPOLOGICAL_OK) verifier=0 [noVoidPenetration,annulusAreaIdentity,domainAreaIdentity,coincidentNodesOnlyRegisteredTwins] -> rejected=1
+PHASE_NEG N7_q_domain_crossing_band            mapper=1 (PHASE_MAP_TOPOLOGICAL_OK) verifier=1 [] -> rejected=0
+PHASE_NEG N9_band_label_in_tip_guide           mapper=1 (PHASE_MAP_TOPOLOGICAL_OK) verifier=0 [labelsMatchGeometry,noOtherMixedEdges,annulusAreaIdentity,bandsConnected,tipGuideMatrixOnly] -> rejected=1
+G2_MATERIAL_PHASE_NEGATIVES_PASS=0 (8 cases)
+M2_PHASE_NEG tip-to-band 48.460 mm: PR35 N7(45 mm) expected rejected=0 observed=0; N7s(49.460 mm) rejected=1; others rejected=1 -> pass=1
+G2_MATERIAL_SIF_PASS=1 KI=0.165605693 KII=+0.0194034753 MPa sqrt(m)/kN, COD 0.16415384 / +0.0191374901, C=0.00021740523 mm/N
+G2_M3_S0_RECOMPUTE stiff pass=1 bitwise=1
+G2_M3_DRY stiff: S0 recompute bitwise=1; step-1 turn -13.0203114434 deg, tip (102.5011858237, 29.2971610322), K1-K10 1; NO_FILES=1
+               pass: 1
+              stage: 'DRY_PREFLIGHT_NO_CHAIN'
+           material: 'stiff'
+       policySHA256: 'CF3023B55E99EFA0EB4F862EDB7F2D1AFABCE7F80A3444B0375C1EEB546DA9A8'
+                run: 0
+     lastStateIndex: 0
+       statesReused: 0
+    reviewsPromoted: 0
+     statesComputed: 0
+          forecasts: [1x1 struct]
+            message: 'Dry: no files written. First step forecast only.'
+       sourceHashes: [36x1 struct]
+            gitHead: '923b6b8fe76370268fa20a85a27c8a52d0b6e1eb'
+        dirtySource: ''
+           chainDir: '<repo>\outputs\g2_material_trajectories_v1\chain_stiff_v1'
+               hrec: [1x1 struct]
+        s0Recompute: [1x1 struct]
+
