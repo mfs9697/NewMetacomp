@@ -1,0 +1,151 @@
+{
+  "schema": "NewMetacomp.G2.M4B.FrozenS2RingAttributionPolicy.v2",
+  "issue": 47,
+  "parentIssue": 44,
+  "authorization": {
+    "scientistReview": "https://github.com/mfs9697/NewMetacomp/issues/44#issuecomment-7066297598 (decision C: GO G2-M4.B, strictly bounded)",
+    "assignment": "https://github.com/mfs9697/NewMetacomp/issues/47",
+    "brief": "draft PR #48, head 9467e211995e3a99d0a58c843145f9ffaba4762c",
+    "historicalPolicyV1": "G2_M4_POLICY_v1.json stays byte-identical (its M4_B = NOT AUTHORIZED is the historical snapshot at M4.A); this v2 is the prospective authorization record for M4.B only"
+  },
+  "scope": "direct linear-elastic material attribution of three perfectly bonded annuli on the frozen homogeneous S2 crack (s = 33.4 mm), original 76-chord ring boundaries, unchanged mesh, loads and boundary conditions; NO crack advance, NO trajectories, NO State 3, NO mixed per-ring moduli, NO interface fracture, NO CZM, NO physical onset/arrest claim",
+  "base": {
+    "repo": "mfs9697/NewMetacomp",
+    "briefHead": "9467e211995e3a99d0a58c843145f9ffaba4762c",
+    "pr46Head": "97c9562442e0abea8d77a42ab0f285d90eb3f370",
+    "m4PolicyV1SHA256": "2548f373cd46edde595eefa562d4afbe8ee2c929c51b9d427557cde3e279618e",
+    "m2PolicyV1SHA256": "1782eebc5db6ef8dacdb8a5325996b3d9a4e774a388c0990e884ffec40dd834c",
+    "materialPolicyV1SHA256": "e60156f60dc8bae05f2ab1b1a25bc93bd84cedb7485591b01ada2413d946a971",
+    "trajectoryPolicyV1SHA256": "1d6af7f6f3e8af389ab02330d9a1eaebdbc00bedb52aad54db902b4de36b39dc",
+    "cornellJSON": "docs/research/crack-growth-gaps-2026/G2_SPECIMEN1_1990_GEOMETRY.json",
+    "cornellJSON_SHA256": "45a88fa0926472ddbe5e70e4c80a97b88196dd45d8a266fa04273f89790b47bf",
+    "trustedP0": "outputs/g2_p010_isolated/run_20261118_163657_790/P010_ISOLATED_REGULAR_ONLY.mat",
+    "trustedP0SHA256": "15201996b4165aa9980f61f370a75749b1ce28ec0accaa061902641524c37c58",
+    "legacyModulesByteIdenticalToPR46Head": ["g2_t6_elasticity_phase.m", "g2_material_phase_map.m", "g2_material_phase_verify.m", "g2_material_sif_on_mesh.m", "g2_t6_point_stress.m", "check_g2_material_phase_controls.m", "check_g2_m2_phase_controls.m", "g2_t6_elasticity.m", "g2_trajectory_sif_on_mesh.m", "g2_sif_interaction.m", "g2_sif_cod_banks.m", "g2_sif_cod.m", "g2_williams_field.m", "g2_plane_D.m", "g2_mts_direction.m", "g2_kinked_mesh_auditor.m", "g2_m2_state_adapter.m", "g2_material_case_summary.m", "g2_material_ratio_table.m", "g2_trajectory_record.m", "g2_sha256_file.m"]
+  },
+  "reference": {
+    "state": "S2 (original homogeneous WP3.4 chain, attempt 2, STEP_002)",
+    "arc_mm": 33.4,
+    "mesh": "outputs/g2_trajectory_chain_v1_attempt2/STEP_002/KINKED_GEOMETRY_ONLY_candidate.mat",
+    "meshSHA256": "9269be43141014eff1e9f7ef6ef0cdc82b2772c62a12ccf3d847549c7485c412",
+    "review": "outputs/g2_trajectory_chain_v1_attempt2/STEP_002/REVIEW.mat",
+    "reviewSHA256": "e5ad2c170b47374bc6eb90a7b5d3d82dedbf0d2bdf7276d9a6751a4ca7f78055",
+    "meshLedger": "matlab/g2/evidence/wp34_20261118/SHA256SUMS_original_outputs.txt",
+    "expectedT3": 28625,
+    "expectedT6Nodes": 58161,
+    "polyline_mm": [[101.6, 0], [101.6, 25.4], [102.4722795671, 29.3037326185], [103.4091509165, 33.1924691839]],
+    "chordsPerRing": 76,
+    "forbiddenReferences": ["M4.A alternative family (famB_m4alt, 112 chords)", "S2alt of PR #38", "material-specific S2 crack geometries of PR #41"],
+    "acceptedBaselines": {
+      "run": "outputs/g2_material_evolution_v1/run_20261121_132226_301",
+      "ledger": "matlab/g2/evidence/m2_20261121/SHA256SUMS_original_outputs.txt",
+      "CASE_S2_H1": "a2901f4c617ef2fc72cedf22b62e59db1bf0c8d09ccb038ebfa808cc30c9ce2d",
+      "CASE_S2_M0": "870fbc972bea1b35c21702f48d6180f2903099b226f4288a5ebbe27c5d5a3f88",
+      "CASE_S2_Msoft": "20ea1f17e2e62ac8cb70b687b27d9e363d20132f81604ca796d49bbec8400f46",
+      "CASE_S2_Mstiff": "452365f9c1bde1fb43bdc52c7964d74613c5dc3b7caa0f7b28d55b8058645eec",
+      "PHASE_MAP_S2": "bfd58ada8bc839ffd4dcaba851bdb8d47a8d6e10dac6150540360dc822017a44",
+      "note": "run D of PR #38 (Issue #36), itself bitwise equal to PR #35 run C (outputs/g2_material_contrast_v1/run_20261119_003430_660)"
+    }
+  },
+  "rings": {
+    "ordering": "ascending y of the hole centre; ID 1 lower (nearest the initial crack), 2 middle, 3 upper",
+    "centres_mm": [[152.4, 69.85], [152.4, 120.65], [152.4, 171.45]],
+    "holeRadius_mm": 6.35,
+    "outerRadius_mm": 19.05,
+    "holes": "voids (no elements) in every case",
+    "inactiveRing": "E = E_matrix, nu = nu_matrix; geometric boundary stays in the mesh; NOT a hole, NOT a debonded layer",
+    "activeRing": "E = c * E_matrix, nu = nu_matrix",
+    "identitySource": "PM.annulusOf of the qualified topological mapper g2_material_phase_map (ownerRing), cross-checked element by element by the independent chord half-plane oracle g2_m4b_ring_owner_oracle; no centroid-only selector",
+    "assemblyLabel": "phaseForAssembly(e) = 1 + (ownerRing(e) > 0 && mask(ownerRing(e))); mats(1) = matrix, mats(2) = active material; ownerRing is always retained as a separate field",
+    "perfectBond": "phases share T6 nodal DOFs (no duplication, no interface elements)"
+  },
+  "materials": {"plane": "stress", "E_matrix_MPa": 3268.115, "nu": 0.35, "thickness_mm": 12.7, "contrasts": [0.5, 2.0], "illustrativeOnly": true},
+  "bvp": {"P_N": 1, "pin_mm": [25.4, 0], "roller_mm": [482.6, 0], "load_mm": [254, 203.2], "loadDirection": "downward", "source": "G2_TRAJECTORY_POLICY_v1.json bvp block (unchanged)"},
+  "design": {
+    "masks": [
+      {"name": "none", "bits": "000", "set": []},
+      {"name": "ring1", "bits": "100", "set": [1]},
+      {"name": "ring2", "bits": "010", "set": [2]},
+      {"name": "ring3", "bits": "001", "set": [3]},
+      {"name": "rings12", "bits": "110", "set": [1, 2]},
+      {"name": "rings13", "bits": "101", "set": [1, 3]},
+      {"name": "rings23", "bits": "011", "set": [2, 3]},
+      {"name": "all", "bits": "111", "set": [1, 2, 3]}
+    ],
+    "logicalCases": 16,
+    "physicalSolves": 15,
+    "physicalCaseIds": ["none", "c0p5_100", "c0p5_010", "c0p5_001", "c0p5_110", "c0p5_101", "c0p5_011", "c0p5_111", "c2p0_100", "c2p0_010", "c2p0_001", "c2p0_110", "c2p0_101", "c2p0_011", "c2p0_111"],
+    "noneShared": "the contrast-independent none solve (no element carries label 2; mats(2) = matrix) is computed once and serves both logical (0.5, none) and (2.0, none) cases",
+    "executionOrder": "B2 baselines first (none, c0p5_111, c2p0_111 and two legacy reference solves of the full-band states); the remaining 12 subset cases only after every B2 gate passed",
+    "caseOutsideDesign": "any other case id, contrast or mask is refused before any solve (HOLD_CASE_OUTSIDE_DESIGN); no retries, no 17th case, no 3^3 mixed assignment"
+  },
+  "authorization_token": {
+    "campaign": "G2M4BRUN|<policy v2 SHA-256>|src=<source-set SHA-256 of g2_m4b_sources>|mesh=<S2 mesh SHA-256>|cases=16|solves=15",
+    "perCaseRecord": "G2M4BCASE|<policy v2 SHA-256>|src=<source-set SHA-256>|mesh=<S2 mesh SHA-256>|c=<0.5|2|none>|mask=<bits>",
+    "dryDefault": "without Run and a matching token the controller reads and checks only, and writes nothing",
+    "cleanTreeRequired": "Run refuses uncommitted or untracked files under matlab/g2 and docs/research/crack-growth-gaps-2026"
+  },
+  "gates": {
+    "B0_inventory": ["R2023a release", "PDE Toolbox installed and licensed", ">= 5 GiB free physical RAM (cannot be lowered)", "one MATLAB process", "policy v2 SHA = token", "policy v1 files byte-identical to pinned SHA", "legacy modules byte-identical to PR #46 head", "reference mesh / review / baseline / phase-map SHAs and ledger rows", "clean tree for Run"],
+    "B1_activation": {
+      "legacy": "g2_kinked_mesh_auditor 34/34; g2_m2_state_adapter; g2_material_phase_map + g2_material_phase_verify + check_g2_m2_phase_controls on the full-band topology, all PASS, and phase/annulusOf identical to the saved PHASE_MAP_S2",
+      "ownerOracle": "independent chord half-plane classification of all six T6 nodes of every element against each ring polygon and hole polygon; must equal annulusOf exactly; no straddling element; no node strictly inside a hole",
+      "activationVerifier": ["oracleAgreement", "ringIdsAscendingY and one-to-one with interface polygons", "maskCanonical", "phaseFromMask on every element", "inactive and matrix elements phaseForAssembly == 1", "per-ring element count and area equal polygon annulus area (rel 1e-12)", "active area = sum of active ring areas", "chord owners: inner owner ownerRing == h, outer owner ownerRing == 0, shared midside on chord (1e-9 mm)", "active ring chords carry the material jump (2|1); passive ring chords carry none (1|1)", "number of material-jump T3 edges == 76 x number of active rings", "no void filling (domain area identity 1e-9)", "materials: mats(1) = matrix, mats(2) = c * matrix, same nu, SPD plane-stress D", "q support and 15 mm tip guide free of ANY ring-owned element (stronger than phase-only), q clearance to the nearest ring node >= 1 mm", "each ring connected, matrix connected, coincident nodes only registered crack twins"],
+      "negativeControlsMustFail": ["wrong binary mask", "swapped ring IDs", "swapped centre order", "off-band E (matrix element given label 2)", "ring element dropped from owner", "detached interface midside", "q domain reaching a ring", "node moved into a hole (void filling)", "wrong active modulus", "inactive ring given a material jump"]
+    },
+    "B2_baselines": {
+      "none_vs_H1": "BITWISE equality with CASE_S2_H1 of u, EDI_all (5 annuli x [KI KII J]), EDI4x4, KI_COD, KII_COD, CMOD and compliance (the same assembly order as the qualified M0 identity, which was exactly zero); no fallback threshold; any difference = HOLD_BASELINE_REGRESSION",
+      "all_vs_full_band": "c = 0.5 and 2.0 with mask 111 must equal CASE_S2_Msoft / CASE_S2_Mstiff BITWISE in u, EDI_all, EDI4x4, KI_COD, KII_COD, J, compliance, CMOD, reactions, total and phase strain energy (the historical PR #35 / M2 regression used exact equality); the legacy g2_material_sif_on_mesh must PASS on both full-band states and equal the new routine bitwise",
+      "phaseLabel": "for mask 111 phaseForAssembly must equal PM.phase exactly"
+    },
+    "inheritedSIFGates": "G2_TRAJECTORY_POLICY_v1.json verification block, unchanged (equilibrium 1e-8, COD-EDI 0.03, contour spread 0.005, J identity 0.005, quadrature 0.001, whole-crack opening >= -1e-9 mm, KI > 0, conditional KII sign gate at |KII/KI| > 0.01, q support inside the core)",
+    "partialActivationGates": {
+      "qSupportOwnerFree": "every element with a node inside any q outer radius is matrix-owned (ownerRing == 0)",
+      "heterogeneousEnergyIdentityRelTol": 1e-9,
+      "activeInterfaceNodalForceBalanceRelTol": 1e-8,
+      "activeAnnulusResultantRelTol": 1e-8,
+      "passiveRings": "geometric conformity only (oracle, chords, midsides); their side-traction difference is reported as information and is NOT a gate; no two-material balance diagnostic is run on them",
+      "stiffnessPositiveDefinite": true,
+      "loadAndThickness": "applied nodal force sum = -P / thickness at the load vertex only, thickness 12.7 mm, P = 1 N"
+    }
+  },
+  "observables": {
+    "G": "G = (K_I^2 + K_II^2) / E_matrix (plane stress), K from EDI 6x6 on q annulus 0.4-2.6 mm (primary), matrix material at the tip",
+    "theta": "theta_MTS = 2 atan2(-2 K_II, K_I + sqrt(K_I^2 + 8 K_II^2)) in the S2 terminal-segment frame, signed degrees; the global tangent angle is reported separately",
+    "F_G": "F_G(S;c) = G(S;c)/G(none) - 1",
+    "F_theta": "F_theta(S;c) = theta(S;c) - theta(none)",
+    "decomposition": "f_i = F({i}); I_ij = F({i,j}) - f_i - f_j; I_123 = F({1,2,3}) - sum f_i - sum I_ij; reconstruction F({1,2,3}) = sum f_i + sum I_ij + I_123 must hold to 1e-12 (F_G) and 1e-10 deg (F_theta)",
+    "shapley": "three-player Shapley values (average marginal contribution over all six insertion orders), exact sum identity to F({1,2,3}); bookkeeping only, not evidence of independent action",
+    "equalArea": "1-ring vs 1-ring and 2-ring vs 2-ring differences only; never 1 vs 3 as equal cost",
+    "alsoReported": ["signed K_I, K_II (EDI, COD, 4x4, five contours)", "J", "compliance and CMOD", "total and per-ring strain energy", "reactions", "active area / volume", "active-interface resultant and balance", "ring centre positions in the S2 tip frame"],
+    "notReported": "R_total or R_path (no new paths); F_G is a direct material effect at fixed crack geometry"
+  },
+  "uncertainty": {
+    "estimatorVariants": "e in {EDI 6x6 on each of the four other registered q annuli, EDI 4x4 on 0.4-2.6 mm, blind bank COD 0.1-1.5 mm}",
+    "primaryPaired": "for any quantity Q that is a fixed linear combination of the eight case values of F (or theta), Q_e is the same combination computed with variant e in EVERY case (so the common none baseline is correlated, as in U_R); U_Q = max_e |Q_e - Q|; resolved iff |Q| > 2 U_Q and sign(Q_COD) == sign(Q). For F_G(S) this is exactly the inherited U_R rule",
+    "conservativeUncorrelated_G": "d_k = |G_EDI,k - G_COD,k| / G_EDI,k for every case k; for Q = sum_k a_k G_k / G_none + const: U_cons = sum_{k != none} |a_k| (G_k / G_none) d_k + |sum_{k != none} a_k G_k / G_none| d_none; for F_G(S) this equals the inherited R (d_S + d_none); resolved iff |Q| > U_cons and sign(Q_COD) == sign(Q)",
+    "conservativeUncorrelated_theta": "e_k = |theta_COD,k - theta_EDI,k|; U_cons = sum_k |a_k| e_k over all case coefficients including none; resolved iff |Q| > U_cons",
+    "classes": ["RESOLVED_BOTH", "RESOLVED_PRIMARY_ONLY", "UNRESOLVED"],
+    "statement": "about +/-3.5 % conservative uncertainty on G ratios is retained; numerically robust within the chosen verification criteria is NOT a physically established effect",
+    "meshRefinement": "not studied in M4.B (frozen mesh by design); M4.A cross-family drift of R_direct (0.07-0.10 % of the effect) is cited, not re-measured"
+  },
+  "readings": {
+    "noPassCriterionOnPhysics": true,
+    "additivity": "ADDITIVE_WITHIN_PRIMARY if no I_ij and no I_123 is resolved under the primary rule, otherwise NONADDITIVE_PRIMARY with the resolved terms listed; the conservative verdict is reported alongside",
+    "ranking": "rings ordered by f_i only where the pairwise 1-ring differences are resolved; otherwise reported as unresolved ties",
+    "hypotheses": "H1 (unequal ring influence), H2 (G order differs from theta order), H3 (nonzero I_ij or I_123) of the Ukrainian design document; null outcomes are admissible"
+  },
+  "resources": {"matlabRelease": "R2023a", "pdeToolboxRequired": true, "freePhysicalRAM_GiB_min": 5, "oneMatlabProcess": true, "solverOrder": "fixed T6 assembly of g2_t6_elasticity_phase (unchanged), backslash on K(free,free)"},
+  "outputs": {"root": "outputs/g2_m4b_ring_factorial_v1/run_<yyyymmdd_HHMMSS_FFF>/", "evidence": "matlab/g2/evidence/m4b_20261121/", "neverOverwrite": true, "resumeReusesOnlyVerifiedRecords": "a case record is reused only after manifest, SHA, schema, case token, mesh SHA, source-set SHA and the stored activation verdict re-verify; no FEM on reuse"},
+  "faultTests": ["dry writes nothing", "tampered frozen mesh bytes", "misidentified ring (owner swap)", "swapped physical order of centres", "off-band E", "broken midside / DOF", "q support reaching a ring", "KII sign reversal in a saved record", "bad token (policy, source set, mesh, cases)", "policy drift", "source drift (dirty tree)", "forged case record", "interrupt after a case and resume without FEM", "bit-identical replay of all 15 solves", "low-RAM guard", "case outside the 16"],
+  "stopCodes": ["HOLD_RELEASE", "HOLD_TOOLBOX", "HOLD_MEMORY", "HOLD_AUTH_TOKEN", "HOLD_DIRTY_SOURCE", "HOLD_POLICY_DRIFT", "HOLD_SOURCE", "HOLD_AUDIT", "HOLD_PHASE_MAP", "HOLD_LEGACY_VERIFIER", "HOLD_OWNER_ORACLE", "HOLD_ACTIVATION", "HOLD_NEGATIVE_CONTROL", "HOLD_BASELINE_REGRESSION", "HOLD_SIF", "HOLD_QPHASE", "HOLD_INTERFACE", "HOLD_CASE_OUTSIDE_DESIGN", "HOLD_RECORD_INTEGRITY", "HOLD_RUN_EXISTS"],
+  "stopScope": "any HOLD stops the campaign; B3 never starts unless B0-B2 passed; no retry after a HOLD without a documented investigation and a new runlog entry",
+  "word": {
+    "canonicalInput": "reports/G2/Metakompozyt_G2_Naukovyi_zvit_UA_v0_3_Naskrizne_ruinuvannia_bez_interfeisu.docx",
+    "canonicalInputSHA256": "49daba7ef064d2dccd679abfc77a79e122f67e9cbd22c30da9ddb924c03b0b40",
+    "output": "new version v0.4 (candidate, 'очікує наукової перевірки'); v0.3 archived byte-for-byte; reviewed M4.A Appendix E integrated; new M4.B section; G2-REV ledger; all-page Word render inspected",
+    "language": "Ukrainian throughout, including every figure title, axis, legend, annotation and table"
+  },
+  "reviewStop": "REVIEW_STOP_B after one consolidated package; G2-M4.C, full or subset trajectories, a third increment, 3^3 mixed designs, interface approach/penetration, cohesive debonding, toughness and arrest are NOT authorized",
+  "forbidden": ["crack advance", "new trajectories", "State 3", "remeshing", "112-chord or alternative meshes", "mixed per-ring moduli", "post-hoc tolerance changes", "retries after HOLD without investigation", "CZM", "interface fracture", "physical onset or arrest claims", "experimental fit"]
+}

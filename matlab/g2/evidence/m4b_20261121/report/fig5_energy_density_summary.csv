@@ -1,0 +1,4 @@
+case,median_rel_change_ring1,median_rel_change_ring2,median_rel_change_ring3,median_rel_change_matrix
+c0p5_100,0.00774038,0.0895773,0.022194,0.0156235
+c0p5_010,0.10004,0.0119178,0.0692926,-0.00904305
+c0p5_111,0.182539,0.278842,0.227278,0.0186686
