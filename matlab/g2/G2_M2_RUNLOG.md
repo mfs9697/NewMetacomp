@@ -38,3 +38,21 @@ No tolerance, gate, policy value or numerical code changed. The batch now calls 
 **Stopped at:** S1 negatives. The nearest band node is 45.27 mm from the tip. The PR #35 N7 domain (45 mm) does not reach a band, but the verifier also enforces the preregistered q clearance of at least 1 mm (45.27 − 45 = 0.27 mm < 1 mm). It therefore correctly rejected the domain. My wrapper expected no rejection because it compared 45 mm with the distance and left out the clearance term.
 
 **Fix:** the expectation becomes "rejected iff 45 mm + `minQClearance_mm` > tip-to-band distance". No verifier, tolerance or policy change. S0 is recomputed in the retry; the formal run is deterministic.
+
+## Run C: `run_20261121_132104_197`, HEAD `a9d3298`, S0–S2 PASS, HOLD at S2alt (harness input)
+
+**S0, S1 and S2 PASS** (kept):
+- original auditors and adapters;
+- phase stages and negatives (tip-to-band distances 48.46 / 45.27 / 42.14 mm);
+- historic regressions with zero difference;
+- bitwise H1 = M0;
+- Msoft and Mstiff pass every gate;
+- S2 equals PR #35 run C exactly (arrays and ratio table).
+
+**Stopped at:** the S2alt join, `HOLD_KINKED_P010_BLOCK / HOLD_KINK_ADMISSIBILITY K1_polylineIdentity`. No alternative mesh was produced.
+
+**Cause.** The batch passed the policy's 10-decimal polyline to `g2_kinked_join`. K1 requires every appended segment to be exactly 4 mm, and the rounded coordinates miss that within K1's tolerance. The preregistered build means "the S2 polyline". The geometry-only feasibility build used the saved full-precision `crackPolyline` from the S2 mesh, and it passed.
+
+**Fix.** The batch now uses the saved S2 `crackPolyline`, after asserting it equals the preregistered polyline to 1e−9 mm. Mesh options are unchanged (GuideHface 1.0, Hmax 5, everything else as for S2).
+
+**On the one-attempt rule.** This is not a second mesh attempt in the sense of the preregistration. No mesh existed, no gate on a mesh failed, and no mesh parameter is changed. The rule against tuning after a mesh HOLD still applies to the retry.

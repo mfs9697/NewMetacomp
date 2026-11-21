@@ -248,8 +248,10 @@ end
 function alt=alt_stage(pol,polM,polT,mk,matM,json,p0,folder,S2)
 A=pol.alternativeMeshS2;alt=struct('status','HOLD','T3',NaN,'audit','not run','classification',struct());
 st=pol.states;if ~iscell(st),st=num2cell(st);end
-P=st{3}.polyline_mm;
-D2=load(fullfile(fileparts(fileparts(fileparts(mfilename('fullpath')))),st{3}.mesh));t=D2.tipTangent(:).';clear D2
+D2=load(fullfile(fileparts(fileparts(fileparts(mfilename('fullpath')))),st{3}.mesh));t=D2.tipTangent(:).';
+% M2 run C: build from the SAVED full-precision S2 polyline (K1 needs exact 4 mm segments);
+% it must equal the preregistered 10-decimal polyline to 1e-9 mm.
+P=D2.crackPolyline;assert(max(abs(P-st{3}.polyline_mm),[],'all')<=1e-9,'G2M2:AltPolyline','Saved S2 polyline differs from the preregistered one.');clear D2
 opts={'BottomVertices_mm',[25.4 482.6],'TopVertices_mm',254,'TipGuideRadius_mm',15,'TipGuideHface_mm',1.5,'GuideHface_mm',1.0,'Hmax_mm',5};
 B=g2_kinked_join(P,'ExteriorOptions',opts,'ExpectedVertices',size(P,1),'MaxT3Elements',pol.resources.maxT3,'ExpectedTangent',t);
 assert(B.pass,'G2M2:AltJoin','S2alt join HOLD: %s %s',B.stage,B.message);
