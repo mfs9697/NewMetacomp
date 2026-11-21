@@ -299,8 +299,12 @@ function H=local_hrec(repo,b,pol,json)
 % read-only control: the recurrence on the homogeneous records must reproduce S1 and S2
 J=jsondecode(fileread(json));G=J.nominal_geometry_mm;
 r0=local_m2_record(repo,b,'S0_H1');r1=local_m2_record(repo,b,'S1_H1');
-S0=struct('crackPolyline_mm',pol.start.polyline_mm,'tip_mm',pol.start.polyline_mm(end,:),'t',reshape(pol.start.tangent,1,2),'KI_perkN',r0.KI_perkN,'KII_perkN',r0.KII_perkN);
-F1=local_forecast(S0,G,pol);
+% Amendment A1: WP3 seeded the homogeneous S1 from the PREREGISTERED SIX-DIGIT State 0 K
+% (WP3_PREREGISTRATION.md A9: 0.166436 / +0.018827), not from the full-precision record.
+S0six=struct('crackPolyline_mm',pol.start.polyline_mm,'tip_mm',pol.start.polyline_mm(end,:),'t',reshape(pol.start.tangent,1,2),'KI_perkN',.166436,'KII_perkN',.018827);
+F1=local_forecast(S0six,G,pol);
+S0full=S0six;S0full.KI_perkN=r0.KI_perkN;S0full.KII_perkN=r0.KII_perkN;
+F1full=local_forecast(S0full,G,pol);
 m1=load(fullfile(repo,'outputs','g2_wp3_state','run_20261118_185808_963','step1_a','KINKED_GEOMETRY_ONLY_candidate.mat'),'crackPolyline','tipTangent');
 m2=load(fullfile(repo,'outputs','g2_trajectory_chain_v1_attempt2','STEP_002','KINKED_GEOMETRY_ONLY_candidate.mat'),'crackPolyline','tipTangent');
 S1=struct('crackPolyline_mm',m1.crackPolyline,'tip_mm',m1.crackPolyline(end,:),'t',m1.tipTangent(:).','KI_perkN',r1.KI_perkN,'KII_perkN',r1.KII_perkN);
@@ -308,10 +312,11 @@ F2=local_forecast(S1,G,pol);
 hp=pol.base.homogeneousPolylines_mm;
 H=struct('S1_vsSaved_max_mm',max(abs(F1.polyline_mm-m1.crackPolyline),[],'all'),'S1_vsPreregistered_max_mm',max(abs(F1.polyline_mm-hp.S1),[],'all'), ...
  'S2_vsSaved_max_mm',max(abs(F2.polyline_mm-m2.crackPolyline),[],'all'),'S2_vsPreregistered_max_mm',max(abs(F2.polyline_mm-hp.S2),[],'all'), ...
- 'S1_turn_deg',F1.localTurn_deg,'S2_turn_deg',F2.localTurn_deg);
+ 'S1_turn_deg',F1.localTurn_deg,'S2_turn_deg',F2.localTurn_deg, ...
+ 'S1_fullPrecisionTipOffset_mm',norm(F1full.tip_mm-m1.crackPolyline(end,:)),'S1_fullPrecisionTurn_deg',F1full.localTurn_deg);
 H.pass=H.S1_vsSaved_max_mm<=1e-12&&H.S2_vsSaved_max_mm<=1e-12&&H.S1_vsPreregistered_max_mm<=1e-9&&H.S2_vsPreregistered_max_mm<=1e-9;
-fprintf('G2_M3_HREC S1 dev saved %.3g / prereg %.3g mm; S2 dev saved %.3g / prereg %.3g mm -> pass=%d\n', ...
- H.S1_vsSaved_max_mm,H.S1_vsPreregistered_max_mm,H.S2_vsSaved_max_mm,H.S2_vsPreregistered_max_mm,H.pass);
+fprintf('G2_M3_HREC S1(six-digit K) dev saved %.3g / prereg %.3g mm; S2(full-precision S1 K) dev saved %.3g / prereg %.3g mm; S1 full-precision offset %.3g mm -> pass=%d\n', ...
+ H.S1_vsSaved_max_mm,H.S1_vsPreregistered_max_mm,H.S2_vsSaved_max_mm,H.S2_vsPreregistered_max_mm,H.S1_fullPrecisionTipOffset_mm,H.pass);
 end
 
 function S0=local_s0_recompute(repo,b,s0Mesh,rec,mat,polM,polT,pol)
