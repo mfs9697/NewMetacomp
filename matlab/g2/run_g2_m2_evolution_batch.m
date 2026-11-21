@@ -50,7 +50,7 @@ try
  benchOK=strcmpi(g2_sha256_file(fullfile(runC,'BENCHMARK.mat')),b.pr35BenchmarkSHA256);
  [Bm,~,okB]=g2_trajectory_record('read',fullfile(runC,'BENCHMARK.mat'));
  assert(pinOK&&benchOK&&okB&&Bm.benchmark.pass,'G2M2:BenchmarkPin','PR #35 modules or benchmark not pinned: %s',jsonencode(pinInfo));
- src=[mods(:).',{'G2_M2_POLICY_v1.json','g2_m2_state_adapter.m','g2_material_case_summary.m','g2_material_ratio_table.m','run_g2_m2_evolution_batch.m'}];
+ src=[mods(:).',{'G2_M2_POLICY_v1.json','g2_m2_state_adapter.m','g2_material_case_summary.m','g2_material_ratio_table.m','check_g2_m2_phase_controls.m','run_g2_m2_evolution_batch.m'}];
  L.sourceHashes=cell2struct(cellfun(@(f)g2_sha256_file(fullfile(here,f)),src,'UniformOutput',false),matlab.lang.makeValidName(src),2);
  L=stage(L,'G_GLOBAL','PASS',struct('gitHead',L.gitHead,'pr35ModulesPinned',true,'benchmarkRecordSHA256',b.pr35BenchmarkSHA256, ...
   'benchmarkRerun',false,'benchmarkChecks',sprintf('%d/%d',nnz(cell2mat(struct2cell(Bm.benchmark.checks))),numel(fieldnames(Bm.benchmark.checks)))));
@@ -151,7 +151,7 @@ vopts=struct('onCircleTol_mm',pm.onCircleTolerance_mm,'minGap_mm',pm.minGapToNex
 V=g2_material_phase_verify(Dm.X6,Dm.T6,PM.phase,geo.centers,geo.holeR,geo.interfaceR,vopts);
 fprintf('PHASE_VERIFY pass=%d failed=[%s]\n',V.pass,strjoin(V.failed,','));
 if ~V.pass,return,end
-NC=check_g2_material_phase_controls(Dm,PM,geo,vopts);
+NC=check_g2_m2_phase_controls(Dm,PM,geo,vopts);   % M2 run A: state-aware N7 (PR #35 module run unchanged inside)
 v=V.values;
 x=Dm.X6(:,1);y=Dm.X6(:,2);T3=Dm.T6(:,1:3);
 Ael=.5*((x(T3(:,2))-x(T3(:,1))).*(y(T3(:,3))-y(T3(:,1)))-(x(T3(:,3))-x(T3(:,1))).*(y(T3(:,2))-y(T3(:,1))));
