@@ -1,0 +1,40 @@
+[Warning: Name is nonexistent or not a directory: C:\Users\Mikhailo\Google Drive\Projects\8 - CohZonFEM\czm_project\CrackPath\CrackFromHoleLEFM\cfh] 
+[Warning: Name is nonexistent or not a directory: C:\Users\Mikhailo\Google Drive\Projects\8 - CohZonFEM\Asphalt\remmers2003] 
+admissible_increment 1 MATRIX_ADVANCE
+ring_and_hole_tunnel 1 HOLD_CRACK_SELF_INTERSECTION
+nominal_ring_tangent 1 HOLD_CRACK_SELF_INTERSECTION
+guide_overlap_only 1 HOLD_CRACK_SELF_INTERSECTION
+q_buffer_overlap 1 HOLD_CRACK_SELF_INTERSECTION
+endpoint_in_annulus 1 HOLD_CRACK_SELF_INTERSECTION
+top_boundary_cross 1 HOLD_EXTERNAL_BOUNDARY
+boundary_grazing 1 HOLD_EXTERNAL_BOUNDARY
+guide_before_boundary 1 HOLD_TIP_GUIDE
+prior_segment_cross 1 HOLD_CRACK_SELF_INTERSECTION
+adjacent_retrace 1 HOLD_CRACK_SELF_INTERSECTION
+wrong_ring_id 1 HOLD_OWNER_MASK
+geometry_drift 1 HOLD_OWNER_MASK
+unordered_polygon 1 HOLD_OWNER_MASK
+missing_chord 1 HOLD_OWNER_MASK
+passive_boundary_stays_obstacle_H 1 HOLD_CRACK_SELF_INTERSECTION
+passive_boundary_stays_obstacle_stiff13 1 HOLD_CRACK_SELF_INTERSECTION
+passive_boundary_stays_obstacle_soft2 1 HOLD_CRACK_SELF_INTERSECTION
+passive_boundary_stays_obstacle_soft1 1 HOLD_CRACK_SELF_INTERSECTION
+nan_rejected 1 HOLD_INPUT
+zero_length_rejected 1 HOLD_INPUT
+synthetic_N5_geometric_only 1 MATRIX_ADVANCE
+synthetic_N6_geometric_only 1 MATRIX_ADVANCE
+G2_LP0_CLEARANCE_TESTS=23/23; NO_MESH=1; NO_FEM=1
+                   pass: 0
+                 status: 'HOLD_LP0_FEASIBILITY'
+                  cause: 'HOLD_SOURCE'
+         physicalSolves: 0
+             meshBuilds: 0
+           policySHA256: '1cf5a76ded840b0758343a1b935b299041e779ec6332c3b7cb0b6dfba1e2af43'
+                release: 'R2023a'
+           pdeAvailable: 1
+    freePhysicalRAM_GiB: 5.8133
+        matlabProcesses: 2
+           sourceCommit: '8a19166528aad9be3d41f32bbfe3516719d436a6'
+            dirtySource: ''
+                 probes: [1x1 struct]
+

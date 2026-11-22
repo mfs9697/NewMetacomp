@@ -6,7 +6,16 @@ R=struct('pass',false,'status','HOLD_LP0_FEASIBILITY','cause','','physicalSolves
 R.policySHA256=lower(g2_sha256_file(pfile));R.release=['R',version('-release')];
 R.pdeAvailable=~isempty(ver('pde'))&&exist('createpde','file')~=0;
 [~,sys]=memory;R.freePhysicalRAM_GiB=sys.PhysicalMemory.Available/2^30;
-try,pp=System.Diagnostics.Process.GetProcessesByName('MATLAB');R.matlabProcesses=pp.Length;
+try
+ pp=System.Diagnostics.Process.GetProcessesByName('MATLAB');
+ R.matlabProcessInfo=struct('pid',{},'executable',{},'launcher',{});engines=0;
+ launcher=fullfile(matlabroot,'bin','matlab.exe');
+ for k=1:pp.Length
+  path='UNKNOWN';try,path=char(pp(k).MainModule.FileName);catch,end
+  isLauncher=strcmpi(path,launcher);engines=engines+~isLauncher;
+  R.matlabProcessInfo(end+1)=struct('pid',double(pp(k).Id),'executable',path,'launcher',isLauncher);
+ end
+ R.matlabProcesses=engines;R.currentPID=feature('getpid');
 catch,R.matlabProcesses=NaN;end
 [s,h]=system(sprintf('git -C "%s" rev-parse HEAD',repo));R.sourceCommit=strtrim(h);
 [sd,d]=system(sprintf('git -C "%s" status --porcelain --untracked-files=all',repo));R.dirtySource=strtrim(d);
