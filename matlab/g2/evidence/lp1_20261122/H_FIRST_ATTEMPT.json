@@ -1,0 +1,10 @@
+{
+  "status": "INTERRUPTED_AFTER_REVIEW",
+  "computed": 1,
+  "reused": 0,
+  "promoted": 0,
+  "caseId": "H",
+  "lastState": -1,
+  "token": "G2LP1|policy=074d7edc981920537726314f781f24b41ac7224c18d594d6a1b15343084e5091|source=2e5756969e456043e48f048ecc12ebf0c76980b113296eb3903c79ac172cab00|LP0=b4240d7ed9b534dbe188a35bac13587db45f8cd1a86a5c7a79c2e1dfa4a233f5|cases=H,stiff13,soft2,soft1|maxState=4",
+  "states": []
+}

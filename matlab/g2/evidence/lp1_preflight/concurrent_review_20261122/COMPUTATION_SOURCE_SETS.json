@@ -1,0 +1,43 @@
+{
+  "physicalCampaign": {
+    "sourceCommit": "3dadf0d43aba0c5b2b3e8c69b90c2d42e89866f8",
+    "sha256": "2e5756969e456043e48f048ecc12ebf0c76980b113296eb3903c79ac172cab00",
+    "lines": [
+      "legacy-lock 6e19e222379eda36e0850e439c85181efae105a9347bcc1740e73114c0616b82",
+      "check_g2_lp0_clearance.m 3ba87976cc5c0ed1a3a06fa570f0c6674606e786f65755c930d04848b930fc94",
+      "check_g2_lp1_contract.m 2713209218b83009fe36642bf19e7286909fb53cca380a7617641ee7f0235675",
+      "g2_lp0_clearance.m 59115a39dc5facef444bf82d89a2ab56e0d6c791dc9f79b19277088f6435ee09",
+      "g2_lp0_phase_audit.m 552b38c0aa9b59446c0e3a63696f9546b870e0139dfbcc52d68cf6607a45d6eb",
+      "g2_lp0_preflight.m 2f375c2a6313197c6ef03b8f9b198a1d478abdd53d9171e7149396eda442066d",
+      "g2_lp0_qualify.m 0557bdc505679ac269d4192247cb55ce911a29deb305e9580620528efa97018a",
+      "g2_lp1_audit.m 84eb0d1f2e790cefa380d2fe5622b3dde87ee69c93bbabcfbcabc845cb88c147",
+      "g2_lp1_context.m 75bad168199041c76d9c07448c10aa15b04954e0b9f4421c3a6903adac6946a5",
+      "g2_lp1_digest.m 98371cd06b85b6e66a297b33bf06d1cea25ca47ba03a5f19b588379977dc050d",
+      "g2_lp1_forecast.m 3a5d6fed3e63da0c50970eb77cc11663dd8a75bdc5e7c085b164a5dadb5f7fbb",
+      "g2_lp1_run.m 9eecb89f9f1bdb30d58019c559d2ca5b6a6724f0009d58b280d64d73cf39b4b0",
+      "g2_lp1_validate_links.m 2c283a73e8189714b97659503bd41af8bc2842d615d90e5c4c53c033d9603ab0"
+    ]
+  },
+  "currentGuardedCode": {
+    "sourceCommit": "b276b7131934ae25dceee750630d504373ad5033",
+    "sha256": "da8b95916823034c1afc9baeff02ec2c52949b697f81f2e43cedad15ae5de444",
+    "lines": [
+      "legacy-lock 6e19e222379eda36e0850e439c85181efae105a9347bcc1740e73114c0616b82",
+      "check_g2_lp0_clearance.m 3ba87976cc5c0ed1a3a06fa570f0c6674606e786f65755c930d04848b930fc94",
+      "check_g2_lp1_contract.m 793e2982831e8cde6c409b80402c7962b513ed45b89450f506a6cd1daf31c5cb",
+      "g2_lp0_clearance.m 59115a39dc5facef444bf82d89a2ab56e0d6c791dc9f79b19277088f6435ee09",
+      "g2_lp0_phase_audit.m 552b38c0aa9b59446c0e3a63696f9546b870e0139dfbcc52d68cf6607a45d6eb",
+      "g2_lp0_preflight.m 2f375c2a6313197c6ef03b8f9b198a1d478abdd53d9171e7149396eda442066d",
+      "g2_lp0_qualify.m 0557bdc505679ac269d4192247cb55ce911a29deb305e9580620528efa97018a",
+      "g2_lp1_audit.m 84eb0d1f2e790cefa380d2fe5622b3dde87ee69c93bbabcfbcabc845cb88c147",
+      "g2_lp1_context.m 75bad168199041c76d9c07448c10aa15b04954e0b9f4421c3a6903adac6946a5",
+      "g2_lp1_digest.m 98371cd06b85b6e66a297b33bf06d1cea25ca47ba03a5f19b588379977dc050d",
+      "g2_lp1_forecast.m 3a5d6fed3e63da0c50970eb77cc11663dd8a75bdc5e7c085b164a5dadb5f7fbb",
+      "g2_lp1_run.m beacad311e6e99674f3238cd5463f3bcfc6794f1449ad37d157113edd511337c",
+      "g2_lp1_scientific_gate.m 41012fe48aa1d0c32efef2d463761b5dd8725510b6ba098e414ef1f333032a19",
+      "g2_lp1_validate_links.m 2c283a73e8189714b97659503bd41af8bc2842d615d90e5c4c53c033d9603ab0"
+    ]
+  },
+  "scientificGOExists": false,
+  "currentPhysicalExecution": "HOLD_LP1_PHYSICAL_AUTHORIZATION"
+}

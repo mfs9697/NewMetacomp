@@ -1,0 +1,12 @@
+{
+  "pass": true,
+  "legacyFiles": 689,
+  "acceptedHistoricalInputs": 654,
+  "campaignFilesByteIdenticalAfterReplay": 182,
+  "rawArchiveVerified": true,
+  "rawArchiveSHA256": "5b333b03e37f08a0c6de839cb646f8c72ea474ba547ba04022ed213059f3c533",
+  "rawArchiveBytes": 52837630,
+  "physicalSolves": 20,
+  "newLP1Meshes": 16,
+  "sourceSetSHA256": "2e5756969e456043e48f048ecc12ebf0c76980b113296eb3903c79ac172cab00"
+}

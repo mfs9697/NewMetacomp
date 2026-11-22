@@ -1,0 +1,148 @@
+{
+  "pass": true,
+  "lowMemoryRejected": true,
+  "dirtySourceRejectedFromCleanBaseline": true,
+  "memoryObservationInjected_GiB": 2,
+  "guard_GiB": 5,
+  "before": {
+    "pass": true,
+    "status": "PREFLIGHT_READY_NOT_LP0_QUALIFIED",
+    "cause": "",
+    "physicalSolves": 0,
+    "meshBuilds": 0,
+    "policySHA256": "1cf5a76ded840b0758343a1b935b299041e779ec6332c3b7cb0b6dfba1e2af43",
+    "release": "R2023a",
+    "pdeAvailable": true,
+    "freePhysicalRAM_GiB": 5.9790496826171875,
+    "matlabProcessInfo": [
+      {
+        "pid": 8264,
+        "executable": "C:\\Program Files\\Polyspace\\R2023a\\bin\\matlab.exe",
+        "launcher": true
+      },
+      {
+        "pid": 15156,
+        "executable": "C:\\Program Files\\Polyspace\\R2023a\\bin\\win64\\MATLAB.exe",
+        "launcher": false
+      }
+    ],
+    "matlabProcesses": 1,
+    "currentPID": 15156,
+    "sourceCommit": "b22df42d52f3386121ca79fa4c08c9d17240d8ff",
+    "dirtySource": "",
+    "token": "G2LP0|policy=1cf5a76ded840b0758343a1b935b299041e779ec6332c3b7cb0b6dfba1e2af43|source=b22df42d52f3386121ca79fa4c08c9d17240d8ff|geometry=179b777f4a26caf1482ad470d78f5f802bc24456b9a1b6fc6b641eccf2b66008|cases=H,stiff13,soft2,soft1|maxState=4"
+  },
+  "low": {
+    "pass": false,
+    "status": "HOLD_LP0_FEASIBILITY",
+    "cause": "HOLD_MEMORY",
+    "physicalSolves": 0,
+    "meshBuilds": 0,
+    "policySHA256": "1cf5a76ded840b0758343a1b935b299041e779ec6332c3b7cb0b6dfba1e2af43",
+    "release": "R2023a",
+    "pdeAvailable": true,
+    "freePhysicalRAM_GiB": 2,
+    "matlabProcessInfo": [
+      {
+        "pid": 8264,
+        "executable": "C:\\Program Files\\Polyspace\\R2023a\\bin\\matlab.exe",
+        "launcher": true
+      },
+      {
+        "pid": 15156,
+        "executable": "C:\\Program Files\\Polyspace\\R2023a\\bin\\win64\\MATLAB.exe",
+        "launcher": false
+      }
+    ],
+    "matlabProcesses": 1,
+    "currentPID": 15156,
+    "sourceCommit": "b22df42d52f3386121ca79fa4c08c9d17240d8ff",
+    "dirtySource": ""
+  },
+  "after": {
+    "pass": true,
+    "status": "PREFLIGHT_READY_NOT_LP0_QUALIFIED",
+    "cause": "",
+    "physicalSolves": 0,
+    "meshBuilds": 0,
+    "policySHA256": "1cf5a76ded840b0758343a1b935b299041e779ec6332c3b7cb0b6dfba1e2af43",
+    "release": "R2023a",
+    "pdeAvailable": true,
+    "freePhysicalRAM_GiB": 5.794219970703125,
+    "matlabProcessInfo": [
+      {
+        "pid": 8264,
+        "executable": "C:\\Program Files\\Polyspace\\R2023a\\bin\\matlab.exe",
+        "launcher": true
+      },
+      {
+        "pid": 15156,
+        "executable": "C:\\Program Files\\Polyspace\\R2023a\\bin\\win64\\MATLAB.exe",
+        "launcher": false
+      }
+    ],
+    "matlabProcesses": 1,
+    "currentPID": 15156,
+    "sourceCommit": "b22df42d52f3386121ca79fa4c08c9d17240d8ff",
+    "dirtySource": "",
+    "token": "G2LP0|policy=1cf5a76ded840b0758343a1b935b299041e779ec6332c3b7cb0b6dfba1e2af43|source=b22df42d52f3386121ca79fa4c08c9d17240d8ff|geometry=179b777f4a26caf1482ad470d78f5f802bc24456b9a1b6fc6b641eccf2b66008|cases=H,stiff13,soft2,soft1|maxState=4"
+  },
+  "dirty": {
+    "pass": false,
+    "status": "HOLD_LP0_FEASIBILITY",
+    "cause": "HOLD_SOURCE",
+    "physicalSolves": 0,
+    "meshBuilds": 0,
+    "policySHA256": "1cf5a76ded840b0758343a1b935b299041e779ec6332c3b7cb0b6dfba1e2af43",
+    "release": "R2023a",
+    "pdeAvailable": true,
+    "freePhysicalRAM_GiB": 5.8844795227050781,
+    "matlabProcessInfo": [
+      {
+        "pid": 8264,
+        "executable": "C:\\Program Files\\Polyspace\\R2023a\\bin\\matlab.exe",
+        "launcher": true
+      },
+      {
+        "pid": 15156,
+        "executable": "C:\\Program Files\\Polyspace\\R2023a\\bin\\win64\\MATLAB.exe",
+        "launcher": false
+      }
+    ],
+    "matlabProcesses": 1,
+    "currentPID": 15156,
+    "sourceCommit": "b22df42d52f3386121ca79fa4c08c9d17240d8ff",
+    "dirtySource": "?? matlab/g2/LP1_DIRTY_SENTINEL.txt"
+  },
+  "final": {
+    "pass": true,
+    "status": "PREFLIGHT_READY_NOT_LP0_QUALIFIED",
+    "cause": "",
+    "physicalSolves": 0,
+    "meshBuilds": 0,
+    "policySHA256": "1cf5a76ded840b0758343a1b935b299041e779ec6332c3b7cb0b6dfba1e2af43",
+    "release": "R2023a",
+    "pdeAvailable": true,
+    "freePhysicalRAM_GiB": 5.8791046142578125,
+    "matlabProcessInfo": [
+      {
+        "pid": 8264,
+        "executable": "C:\\Program Files\\Polyspace\\R2023a\\bin\\matlab.exe",
+        "launcher": true
+      },
+      {
+        "pid": 15156,
+        "executable": "C:\\Program Files\\Polyspace\\R2023a\\bin\\win64\\MATLAB.exe",
+        "launcher": false
+      }
+    ],
+    "matlabProcesses": 1,
+    "currentPID": 15156,
+    "sourceCommit": "b22df42d52f3386121ca79fa4c08c9d17240d8ff",
+    "dirtySource": "",
+    "token": "G2LP0|policy=1cf5a76ded840b0758343a1b935b299041e779ec6332c3b7cb0b6dfba1e2af43|source=b22df42d52f3386121ca79fa4c08c9d17240d8ff|geometry=179b777f4a26caf1482ad470d78f5f802bc24456b9a1b6fc6b641eccf2b66008|cases=H,stiff13,soft2,soft1|maxState=4"
+  },
+  "physicalSolves": 0,
+  "meshBuilds": 0,
+  "largeAllocations": 0
+}

@@ -1,0 +1,113 @@
+{
+  "pass": true,
+  "tests": [
+    {
+      "name": "positive_links",
+      "pass": true
+    },
+    {
+      "name": "mutate_KI",
+      "pass": true
+    },
+    {
+      "name": "mutate_KII",
+      "pass": true
+    },
+    {
+      "name": "mutate_caseId",
+      "pass": true
+    },
+    {
+      "name": "mutate_mask",
+      "pass": true
+    },
+    {
+      "name": "mutate_ratio",
+      "pass": true
+    },
+    {
+      "name": "mutate_stateIndex",
+      "pass": true
+    },
+    {
+      "name": "mutate_policySHA256",
+      "pass": true
+    },
+    {
+      "name": "mutate_sourceSHA256",
+      "pass": true
+    },
+    {
+      "name": "mutate_parentSHA256",
+      "pass": true
+    },
+    {
+      "name": "mutate_polyline_mm",
+      "pass": true
+    },
+    {
+      "name": "mutate_meshSHA256",
+      "pass": true
+    },
+    {
+      "name": "mutate_phaseSHA256",
+      "pass": true
+    },
+    {
+      "name": "wrong_units",
+      "pass": true
+    },
+    {
+      "name": "forged_pass_flag",
+      "pass": true
+    },
+    {
+      "name": "own_signed_MTS",
+      "pass": true
+    },
+    {
+      "name": "signed_KII_changes_path",
+      "pass": true
+    },
+    {
+      "name": "S5_forecast",
+      "pass": true
+    },
+    {
+      "name": "S5_controller",
+      "pass": true
+    },
+    {
+      "name": "scientific_go_missing_or_wrong_token",
+      "pass": true
+    },
+    {
+      "name": "compressive_parent",
+      "pass": true
+    },
+    {
+      "name": "nonfinite_parent",
+      "pass": true
+    },
+    {
+      "name": "record_roundtrip",
+      "pass": true
+    },
+    {
+      "name": "overwrite_refused",
+      "pass": true
+    },
+    {
+      "name": "byte_tamper",
+      "pass": true
+    }
+  ],
+  "passed": 25,
+  "total": 25,
+  "physicalSolves": 0,
+  "meshBuilds": 0,
+  "negativeTestsPassed": true,
+  "recordIntegrityPassed": true,
+  "sourceCommit": "b276b7131934ae25dceee750630d504373ad5033",
+  "evidenceRole": "PURE_CONTRACT_ONLY_NOT_SCIENTIFIC_GO"
+}
