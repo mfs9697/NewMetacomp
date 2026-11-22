@@ -1,0 +1,682 @@
+{
+ "H_S0": {
+  "boundaryEdges": 879,
+  "crackPolyline": [
+   [
+    101.6,
+    0
+   ],
+   [
+    101.6,
+    25.4
+   ]
+  ],
+  "maxAngle_deg": 98.03039647936448,
+  "maxNeighbourLongestEdgeRatio": 1.5918285508612136,
+  "minAbsArea_mm2": 0.0007517581630074635,
+  "minAngle_deg": 30.126847321224474,
+  "nNegativeArea": 0,
+  "nNodes": 14513,
+  "nPositiveArea": 28151,
+  "nT3": 28151,
+  "tipTangent": [
+   0,
+   1
+  ],
+  "totalArea_mm2": 102845.6782821325
+ },
+ "H_S1": {
+  "boundaryEdges": 897,
+  "crackPolyline": [
+   [
+    101.6,
+    0
+   ],
+   [
+    101.6,
+    25.4
+   ],
+   [
+    102.47228398131915,
+    29.30373163216095
+   ]
+  ],
+  "maxAngle_deg": 100.27530811211065,
+  "maxNeighbourLongestEdgeRatio": 1.591828550861711,
+  "minAbsArea_mm2": 0.000751758163006967,
+  "minAngle_deg": 30.126847321222055,
+  "nNegativeArea": 0,
+  "nNodes": 14665,
+  "nPositiveArea": 28437,
+  "nT3": 28437,
+  "tipTangent": [
+   0.21807099532978788,
+   0.975932908040238
+  ],
+  "totalArea_mm2": 102845.67828213262
+ },
+ "H_S2": {
+  "boundaryEdges": 913,
+  "crackPolyline": [
+   [
+    101.6,
+    0
+   ],
+   [
+    101.6,
+    25.4
+   ],
+   [
+    102.47228398131915,
+    29.30373163216095
+   ],
+   [
+    103.4091548344762,
+    33.19246831706323
+   ]
+  ],
+  "maxAngle_deg": 98.54498331338245,
+  "maxNeighbourLongestEdgeRatio": 1.5918285508618994,
+  "minAbsArea_mm2": 0.0007517581630071803,
+  "minAngle_deg": 30.126847321227,
+  "nNegativeArea": 0,
+  "nNodes": 14770,
+  "nPositiveArea": 28631,
+  "nT3": 28631,
+  "tipTangent": [
+   0.23421771328926275,
+   0.9721841712255702
+  ],
+  "totalArea_mm2": 102845.67828213253
+ },
+ "H_S3": {
+  "boundaryEdges": 929,
+  "crackPolyline": [
+   [
+    101.6,
+    0
+   ],
+   [
+    101.6,
+    25.4
+   ],
+   [
+    102.47228398131915,
+    29.30373163216095
+   ],
+   [
+    103.4091548344762,
+    33.19246831706323
+   ],
+   [
+    104.47045098146482,
+    37.04910551653988
+   ]
+  ],
+  "maxAngle_deg": 100.11906496458198,
+  "maxNeighbourLongestEdgeRatio": 1.729507649168198,
+  "minAbsArea_mm2": 0.000751758163007251,
+  "minAngle_deg": 30.12684732122539,
+  "nNegativeArea": 0,
+  "nNodes": 14870,
+  "nPositiveArea": 28815,
+  "nT3": 28815,
+  "tipTangent": [
+   0.26532403674715777,
+   0.9641592998691622
+  ],
+  "totalArea_mm2": 102845.67828213255
+ },
+ "H_S4": {
+  "boundaryEdges": 945,
+  "crackPolyline": [
+   [
+    101.6,
+    0
+   ],
+   [
+    101.6,
+    25.4
+   ],
+   [
+    102.47228398131915,
+    29.30373163216095
+   ],
+   [
+    103.4091548344762,
+    33.19246831706323
+   ],
+   [
+    104.47045098146482,
+    37.04910551653988
+   ],
+   [
+    105.64746005474672,
+    40.872016664004875
+   ]
+  ],
+  "maxAngle_deg": 98.12907397185585,
+  "maxNeighbourLongestEdgeRatio": 1.5940275556216488,
+  "minAbsArea_mm2": 0.0007517581630071667,
+  "minAngle_deg": 30.12684732122454,
+  "nNegativeArea": 0,
+  "nNodes": 15002,
+  "nPositiveArea": 29063,
+  "nT3": 29063,
+  "tipTangent": [
+   0.29425226832047197,
+   0.9557277868662484
+  ],
+  "totalArea_mm2": 102845.67828213258
+ },
+ "soft1_S0": {
+  "boundaryEdges": 879,
+  "crackPolyline": [
+   [
+    101.6,
+    0
+   ],
+   [
+    101.6,
+    25.4
+   ]
+  ],
+  "maxAngle_deg": 98.03039647936448,
+  "maxNeighbourLongestEdgeRatio": 1.5918285508612136,
+  "minAbsArea_mm2": 0.0007517581630074635,
+  "minAngle_deg": 30.126847321224474,
+  "nNegativeArea": 0,
+  "nNodes": 14513,
+  "nPositiveArea": 28151,
+  "nT3": 28151,
+  "tipTangent": [
+   0,
+   1
+  ],
+  "totalArea_mm2": 102845.6782821325
+ },
+ "soft1_S1": {
+  "boundaryEdges": 897,
+  "crackPolyline": [
+   [
+    101.6,
+    0
+   ],
+   [
+    101.6,
+    25.4
+   ],
+   [
+    102.39826203613242,
+    29.319537947471577
+   ]
+  ],
+  "maxAngle_deg": 100.19795881282305,
+  "maxNeighbourLongestEdgeRatio": 1.5918285508620917,
+  "minAbsArea_mm2": 0.0007517581630071469,
+  "minAngle_deg": 30.126847321227178,
+  "nNegativeArea": 0,
+  "nNodes": 14646,
+  "nPositiveArea": 28399,
+  "nT3": 28399,
+  "tipTangent": [
+   0.19956550903310571,
+   0.9798844868678948
+  ],
+  "totalArea_mm2": 102845.67828213255
+ },
+ "soft1_S2": {
+  "boundaryEdges": 913,
+  "crackPolyline": [
+   [
+    101.6,
+    0
+   ],
+   [
+    101.6,
+    25.4
+   ],
+   [
+    102.39826203613242,
+    29.319537947471577
+   ],
+   [
+    103.25866686020588,
+    33.225904998672874
+   ]
+  ],
+  "maxAngle_deg": 98.60514271927842,
+  "maxNeighbourLongestEdgeRatio": 1.59182855086191,
+  "minAbsArea_mm2": 0.0007517581630070891,
+  "minAngle_deg": 30.12684732122649,
+  "nNegativeArea": 0,
+  "nNodes": 14755,
+  "nPositiveArea": 28601,
+  "nT3": 28601,
+  "tipTangent": [
+   0.21510120601836302,
+   0.9765917628003248
+  ],
+  "totalArea_mm2": 102845.6782821324
+ },
+ "soft1_S3": {
+  "boundaryEdges": 929,
+  "crackPolyline": [
+   [
+    101.6,
+    0
+   ],
+   [
+    101.6,
+    25.4
+   ],
+   [
+    102.39826203613242,
+    29.319537947471577
+   ],
+   [
+    103.25866686020588,
+    33.225904998672874
+   ],
+   [
+    104.24504715803435,
+    37.102379415982476
+   ]
+  ],
+  "maxAngle_deg": 97.88883089253227,
+  "maxNeighbourLongestEdgeRatio": 1.591828550861762,
+  "minAbsArea_mm2": 0.0007517581630072432,
+  "minAngle_deg": 30.12684732122378,
+  "nNegativeArea": 0,
+  "nNodes": 14869,
+  "nPositiveArea": 28813,
+  "nT3": 28813,
+  "tipTangent": [
+   0.24659507445711754,
+   0.9691186043274005
+  ],
+  "totalArea_mm2": 102845.67828213266
+ },
+ "soft1_S4": {
+  "boundaryEdges": 945,
+  "crackPolyline": [
+   [
+    101.6,
+    0
+   ],
+   [
+    101.6,
+    25.4
+   ],
+   [
+    102.39826203613242,
+    29.319537947471577
+   ],
+   [
+    103.25866686020588,
+    33.225904998672874
+   ],
+   [
+    104.24504715803435,
+    37.102379415982476
+   ],
+   [
+    105.35058232560786,
+    40.946568796496685
+   ]
+  ],
+  "maxAngle_deg": 98.12421115167028,
+  "maxNeighbourLongestEdgeRatio": 1.5918285508616403,
+  "minAbsArea_mm2": 0.000751758163007226,
+  "minAngle_deg": 30.126847321225213,
+  "nNegativeArea": 0,
+  "nNodes": 14988,
+  "nPositiveArea": 29035,
+  "nT3": 29035,
+  "tipTangent": [
+   0.2763837918933777,
+   0.9610473451285518
+  ],
+  "totalArea_mm2": 102845.67828213234
+ },
+ "soft2_S0": {
+  "boundaryEdges": 879,
+  "crackPolyline": [
+   [
+    101.6,
+    0
+   ],
+   [
+    101.6,
+    25.4
+   ]
+  ],
+  "maxAngle_deg": 98.03039647936448,
+  "maxNeighbourLongestEdgeRatio": 1.5918285508612136,
+  "minAbsArea_mm2": 0.0007517581630074635,
+  "minAngle_deg": 30.126847321224474,
+  "nNegativeArea": 0,
+  "nNodes": 14513,
+  "nPositiveArea": 28151,
+  "nT3": 28151,
+  "tipTangent": [
+   0,
+   1
+  ],
+  "totalArea_mm2": 102845.6782821325
+ },
+ "soft2_S1": {
+  "boundaryEdges": 897,
+  "crackPolyline": [
+   [
+    101.6,
+    0
+   ],
+   [
+    101.6,
+    25.4
+   ],
+   [
+    102.48885131468673,
+    29.299992735939345
+   ]
+  ],
+  "maxAngle_deg": 100.29269934891815,
+  "maxNeighbourLongestEdgeRatio": 1.5918285508616583,
+  "minAbsArea_mm2": 0.0007517581630072573,
+  "minAngle_deg": 30.126847321224933,
+  "nNegativeArea": 0,
+  "nNodes": 14675,
+  "nPositiveArea": 28457,
+  "nT3": 28457,
+  "tipTangent": [
+   0.222212828671684,
+   0.9749981839848364
+  ],
+  "totalArea_mm2": 102845.6782821326
+ },
+ "soft2_S2": {
+  "boundaryEdges": 913,
+  "crackPolyline": [
+   [
+    101.6,
+    0
+   ],
+   [
+    101.6,
+    25.4
+   ],
+   [
+    102.48885131468673,
+    29.299992735939345
+   ],
+   [
+    103.4449885170134,
+    33.18403723237948
+   ]
+  ],
+  "maxAngle_deg": 98.53888310612268,
+  "maxNeighbourLongestEdgeRatio": 1.5918285508618741,
+  "minAbsArea_mm2": 0.0007517581630071132,
+  "minAngle_deg": 30.126847321227984,
+  "nNegativeArea": 0,
+  "nNodes": 14752,
+  "nPositiveArea": 28595,
+  "nT3": 28595,
+  "tipTangent": [
+   0.23903430058166905,
+   0.9710111241100343
+  ],
+  "totalArea_mm2": 102845.67828213269
+ },
+ "soft2_S3": {
+  "boundaryEdges": 929,
+  "crackPolyline": [
+   [
+    101.6,
+    0
+   ],
+   [
+    101.6,
+    25.4
+   ],
+   [
+    102.48885131468673,
+    29.299992735939345
+   ],
+   [
+    103.4449885170134,
+    33.18403723237948
+   ],
+   [
+    104.528277910323,
+    37.034554611945886
+   ]
+  ],
+  "maxAngle_deg": 97.89004052230712,
+  "maxNeighbourLongestEdgeRatio": 1.5918285508616612,
+  "minAbsArea_mm2": 0.0007517581630072152,
+  "minAngle_deg": 30.12684732122483,
+  "nNegativeArea": 0,
+  "nNodes": 14874,
+  "nPositiveArea": 28823,
+  "nT3": 28823,
+  "tipTangent": [
+   0.2708223483273993,
+   0.9626293448916011
+  ],
+  "totalArea_mm2": 102845.67828213255
+ },
+ "soft2_S4": {
+  "boundaryEdges": 945,
+  "crackPolyline": [
+   [
+    101.6,
+    0
+   ],
+   [
+    101.6,
+    25.4
+   ],
+   [
+    102.48885131468673,
+    29.299992735939345
+   ],
+   [
+    103.4449885170134,
+    33.18403723237948
+   ],
+   [
+    104.528277910323,
+    37.034554611945886
+   ],
+   [
+    105.72974312219405,
+    40.84985032062479
+   ]
+  ],
+  "maxAngle_deg": 98.1235050157473,
+  "maxNeighbourLongestEdgeRatio": 1.5918285508616665,
+  "minAbsArea_mm2": 0.0007517581630072118,
+  "minAngle_deg": 30.126847321216708,
+  "nNegativeArea": 0,
+  "nNodes": 14973,
+  "nPositiveArea": 29005,
+  "nT3": 29005,
+  "tipTangent": [
+   0.3003663029677637,
+   0.9538239271697256
+  ],
+  "totalArea_mm2": 102845.67828213256
+ },
+ "stiff13_S0": {
+  "boundaryEdges": 879,
+  "crackPolyline": [
+   [
+    101.6,
+    0
+   ],
+   [
+    101.6,
+    25.4
+   ]
+  ],
+  "maxAngle_deg": 98.03039647936448,
+  "maxNeighbourLongestEdgeRatio": 1.5918285508612136,
+  "minAbsArea_mm2": 0.0007517581630074635,
+  "minAngle_deg": 30.126847321224474,
+  "nNegativeArea": 0,
+  "nNodes": 14513,
+  "nPositiveArea": 28151,
+  "nT3": 28151,
+  "tipTangent": [
+   0,
+   1
+  ],
+  "totalArea_mm2": 102845.6782821325
+ },
+ "stiff13_S1": {
+  "boundaryEdges": 897,
+  "crackPolyline": [
+   [
+    101.6,
+    0
+   ],
+   [
+    101.6,
+    25.4
+   ],
+   [
+    102.51737532716155,
+    29.293381885856462
+   ]
+  ],
+  "maxAngle_deg": 100.34079921283326,
+  "maxNeighbourLongestEdgeRatio": 1.591828550861854,
+  "minAbsArea_mm2": 0.0007517581630072873,
+  "minAngle_deg": 30.126847321226133,
+  "nNegativeArea": 0,
+  "nNodes": 14657,
+  "nPositiveArea": 28421,
+  "nT3": 28421,
+  "tipTangent": [
+   0.2293438317903869,
+   0.9733454714641162
+  ],
+  "totalArea_mm2": 102845.67828213259
+ },
+ "stiff13_S2": {
+  "boundaryEdges": 913,
+  "crackPolyline": [
+   [
+    101.6,
+    0
+   ],
+   [
+    101.6,
+    25.4
+   ],
+   [
+    102.51737532716155,
+    29.293381885856462
+   ],
+   [
+    103.50270915027406,
+    33.170122431344446
+   ]
+  ],
+  "maxAngle_deg": 98.52405177350796,
+  "maxNeighbourLongestEdgeRatio": 1.5918285508619519,
+  "minAbsArea_mm2": 0.0007517581630070888,
+  "minAngle_deg": 30.126847321227153,
+  "nNegativeArea": 0,
+  "nNodes": 14778,
+  "nPositiveArea": 28647,
+  "nT3": 28647,
+  "tipTangent": [
+   0.24633345577812785,
+   0.9691851363719962
+  ],
+  "totalArea_mm2": 102845.67828213252
+ },
+ "stiff13_S3": {
+  "boundaryEdges": 929,
+  "crackPolyline": [
+   [
+    101.6,
+    0
+   ],
+   [
+    101.6,
+    25.4
+   ],
+   [
+    102.51737532716155,
+    29.293381885856462
+   ],
+   [
+    103.50270915027406,
+    33.170122431344446
+   ],
+   [
+    104.61095410120757,
+    37.013531481748835
+   ]
+  ],
+  "maxAngle_deg": 97.85700292767183,
+  "maxNeighbourLongestEdgeRatio": 1.591828550861475,
+  "minAbsArea_mm2": 0.0007517581630073437,
+  "minAngle_deg": 30.126847321225664,
+  "nNegativeArea": 0,
+  "nNodes": 14862,
+  "nPositiveArea": 28799,
+  "nT3": 28799,
+  "tipTangent": [
+   0.2770612377333778,
+   0.9608522626010976
+  ],
+  "totalArea_mm2": 102845.67828213258
+ },
+ "stiff13_S4": {
+  "boundaryEdges": 945,
+  "crackPolyline": [
+   [
+    101.6,
+    0
+   ],
+   [
+    101.6,
+    25.4
+   ],
+   [
+    102.51737532716155,
+    29.293381885856462
+   ],
+   [
+    103.50270915027406,
+    33.170122431344446
+   ],
+   [
+    104.61095410120757,
+    37.013531481748835
+   ],
+   [
+    105.83199310467963,
+    40.822607977699
+   ]
+  ],
+  "maxAngle_deg": 98.12179527715182,
+  "maxNeighbourLongestEdgeRatio": 1.6050279937936018,
+  "minAbsArea_mm2": 0.0007517581630073363,
+  "minAngle_deg": 30.12684732122763,
+  "nNegativeArea": 0,
+  "nNodes": 14994,
+  "nPositiveArea": 29047,
+  "nT3": 29047,
+  "tipTangent": [
+   0.30525975086801266,
+   0.9522691239875409
+  ],
+  "totalArea_mm2": 102845.67828213236
+ }
+}

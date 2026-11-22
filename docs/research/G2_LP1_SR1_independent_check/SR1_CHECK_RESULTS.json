@@ -1,0 +1,776 @@
+{
+ "schema": "NewMetacomp.G2.LP1.SR1.IndependentCheck.v1",
+ "issue": 56,
+ "inputs": {
+  "csv_sha256": "574f3f51b31cc81d0470a84e9b0b9a429aff81bb73681d3fe1042417028f5912",
+  "ledger_sha256": "7a7cb717512e5ae0e0642a915ec59ff4579c6e1cf3acbad67ea7b9926d245df4",
+  "reduced_records_sha256": "d74da614c59cf1e8875815129041c95f879ba4ec300634c9cf21bd6733402bef",
+  "mesh_quality_sha256": "1dfb1734a2c2e6e8dde3ca7160343ba54d167cd93c799658837698196885a169",
+  "policy_blob_sha256": "074d7edc981920537726314f781f24b41ac7224c18d594d6a1b15343084e5091"
+ },
+ "summary": {
+  "total": 21,
+  "passed": 21
+ },
+ "checks": [
+  {
+   "id": "P0",
+   "description": "Policy v2 Git blob SHA-256 equals the pinned physical policy SHA",
+   "pass": true,
+   "value": "074d7edc981920537726314f781f24b41ac7224c18d594d6a1b15343084e5091",
+   "limit": "074d7edc981920537726314f781f24b41ac7224c18d594d6a1b15343084e5091",
+   "status": "VERIFIED"
+  },
+  {
+   "id": "P1",
+   "description": "RUN token binds policy v2, computation source set and LP0 evidence",
+   "pass": true,
+   "value": "G2LP1|policy=074d7edc981920537726314f781f24b41ac7224c18d594d6a1b15343084e5091|source=2e5756969e456043e48f048ecc12ebf0c76980b113296eb3903c79ac172cab00|LP0=b4240d7ed9b534dbe188a35bac13587db45f8cd1a86a5c7a79c2e1dfa4a233f5|cases=H,stiff13,soft2,soft1|maxState=4",
+   "limit": null,
+   "status": "VERIFIED"
+  },
+  {
+   "id": "P2",
+   "description": "All 20 states: source/policy/commit pins, ledger hashes of MESH/PHASE/SOLUTION/REVIEW/STATE, parent-state hash chain S1..S4, CSV state hash, record identity",
+   "pass": true,
+   "value": [],
+   "limit": null,
+   "status": "VERIFIED"
+  },
+  {
+   "id": "P3",
+   "description": "Mask and modulus ratio of every state equal the preregistered architecture",
+   "pass": true,
+   "value": [],
+   "limit": null,
+   "status": "VERIFIED"
+  },
+  {
+   "id": "N0",
+   "description": "STATE K equals SOLUTION K (all 20)",
+   "pass": true,
+   "value": [],
+   "limit": null,
+   "status": "VERIFIED"
+  },
+  {
+   "id": "N1",
+   "description": "Unit conversion K[N mm^-1.5 at 1 N] x 1000/sqrt(1000) = CSV MPa m^0.5 per kN (max rel. error)",
+   "pass": true,
+   "value": 2.4518509952031826e-15,
+   "limit": 1e-12,
+   "status": "VERIFIED"
+  },
+  {
+   "id": "N2",
+   "description": "Plane-stress G=(KI^2+KII^2)/E_m reproduces record and CSV G (max rel. error)",
+   "pass": true,
+   "value": 4.187482803792865e-15,
+   "limit": 1e-12,
+   "status": "VERIFIED"
+  },
+  {
+   "id": "N3",
+   "description": "Interaction-integral J agrees with G from K (max rel.; policy J/energy gate 0.005)",
+   "pass": true,
+   "value": 2.251193800081725e-05,
+   "limit": 0.005,
+   "status": "VERIFIED"
+  },
+  {
+   "id": "N4",
+   "description": "Independent MTS root reproduces recorded/CSV local angle (max abs deg) and stationarity residual",
+   "pass": true,
+   "value": {
+    "maxAbsDeg": 2.8377300509419e-13,
+    "maxResidualOverK": 4.183918800280916e-17
+   },
+   "limit": {
+    "deg": 1e-09,
+    "res": 1e-12
+   },
+   "status": "VERIFIED"
+  },
+  {
+   "id": "N5",
+   "description": "Geometry: k+2 vertices, common S0, exact 4-mm segments, arc 25.4+4k, prefix extension, tangent/left-normal, CSV tip and heading",
+   "pass": true,
+   "value": {
+    "failures": [],
+    "maxSegmentError_mm": 3.552713678800501e-15
+   },
+   "limit": null,
+   "status": "VERIFIED"
+  },
+  {
+   "id": "N6",
+   "description": "Heading recurrence: heading(S_k+1) - heading(S_k) = own MTS(S_k) (max abs deg)",
+   "pass": true,
+   "value": 2.0472512574087887e-13,
+   "limit": 1e-09,
+   "status": "VERIFIED"
+  },
+  {
+   "id": "N7",
+   "description": "Independent T3 quality from saved MESH arrays: no inverted elements, T3 count = CSV, mesh crack polyline = state polyline; min angle >= 20 deg and neighbour longest-edge ratio <= 1.8 (policy)",
+   "pass": true,
+   "value": {
+    "failures": [],
+    "worstMinAngle_deg": 30.126847321216708,
+    "worstNeighbourRatio": 1.729507649168198
+   },
+   "limit": null,
+   "status": "VERIFIED"
+  },
+  {
+   "id": "N8",
+   "description": "Independent F_G, signed lateral offset (projection on H left normal), tip separation, F_theta, paired primary spread (EDI annuli, 4x4, COD) and conservative COD-vs-EDI U reproduce the CSV",
+   "pass": true,
+   "value": [],
+   "limit": null,
+   "status": "VERIFIED"
+  },
+  {
+   "id": "N9",
+   "description": "Offset uncertainty U_d = 4 sum_j (n-j) U_dtheta_j [rad] reproduces CSV (primary and conservative)",
+   "pass": true,
+   "value": [],
+   "limit": null,
+   "status": "VERIFIED"
+  },
+  {
+   "id": "N10",
+   "description": "S4 classification reproduced: stiff13 and soft1 resolved (primary, conservative, cautious offset); soft2 resolved only by the primary rule",
+   "pass": true,
+   "value": {
+    "stiff13": {
+     "F_G_pp": -7.1731695978936365,
+     "FG_primary_resolved": true,
+     "FG_conservative_resolved": true,
+     "FG_over_Ucons": 2.2075614651108086,
+     "offset_mm": -0.1909019814362965,
+     "offset_primary_resolved": true,
+     "offset_cautious_resolved": true,
+     "offset_over_2Ucons": 2.197538473103618,
+     "F_G_COD_minus_EDI_pp": -0.00035517336318680037,
+     "paired_offset_diag_mm": 0.0007570636523214367
+    },
+    "soft2": {
+     "F_G_pp": -2.9318154347938497,
+     "FG_primary_resolved": true,
+     "FG_conservative_resolved": false,
+     "FG_over_Ucons": 0.8629221798637666,
+     "offset_mm": -0.08516271076796855,
+     "offset_primary_resolved": true,
+     "offset_cautious_resolved": false,
+     "offset_over_2Ucons": 0.9838420849329604,
+     "F_G_COD_minus_EDI_pp": -7.928335801210551e-05,
+     "paired_offset_diag_mm": 0.000396332821684804
+    },
+    "soft1": {
+     "F_G_pp": 6.328936089276849,
+     "FG_primary_resolved": true,
+     "FG_conservative_resolved": true,
+     "FG_over_Ucons": 1.7008647135452666,
+     "offset_mm": 0.3056714291336001,
+     "offset_primary_resolved": true,
+     "offset_cautious_resolved": true,
+     "offset_over_2Ucons": 3.6508089270606967,
+     "F_G_COD_minus_EDI_pp": 0.0005988018872971068,
+     "paired_offset_diag_mm": 0.001247944639446109
+    }
+   },
+   "limit": null,
+   "status": "VERIFIED"
+  },
+  {
+   "id": "N11",
+   "description": "Global energy diagnostic: (P^2/2t) dC/da from successive point-load compliances vs mean EDI G on the 12 smooth steps (S1-S4); point-load compliance is remeshing-sensitive, so this is corroboration, not a gate",
+   "pass": true,
+   "value": {
+    "within1pct": "11/12",
+    "median_abs_rel": 0.0037559514280918194,
+    "max_abs_rel": 0.023251413239554042
+   },
+   "limit": "diagnostic",
+   "status": "CORROBORATING_DIAGNOSTIC"
+  },
+  {
+   "id": "N12",
+   "description": "Saved SOLUTION/PHASE fields: verified SIF status, energy = external work, compliance = 2U/P^2, reactions sum to P/t, non-negative whole-crack opening, signed KII EDI/COD agreement, phase/owner/34-gate audits, active area = active rings x annulus polygon area",
+   "pass": true,
+   "value": [],
+   "limit": null,
+   "status": "VERIFIED_SAVED_FIELDS"
+  },
+  {
+   "id": "N13",
+   "description": "Independent clearances (nominal circles, saved 76-gon ring polygons, holes, plate, non-adjacent segments) reproduce CSV/record metrics; every state stays in the admissible matrix region",
+   "pass": true,
+   "value": [],
+   "limit": null,
+   "status": "VERIFIED"
+  },
+  {
+   "id": "X1",
+   "description": "LP1 H S2 reproduces the accepted M4.B/R1 homogeneous frozen-S2 G (rel.)",
+   "pass": true,
+   "value": 7.997386197722278e-08,
+   "limit": 2e-05,
+   "status": "VERIFIED"
+  },
+  {
+   "id": "X2",
+   "description": "LP1 own-path S2 total effect vs accepted frozen-S2 direct effect: path contribution opposes the direct effect for all three architectures (consistent with M3)",
+   "pass": true,
+   "value": [
+    {
+     "case": "stiff13",
+     "F_G_LP1_ownpath_S2": -0.05347845313462685,
+     "F_G_M4B_frozen_S2_direct": -0.0547795556205,
+     "path_contribution": 0.0013011024858731526,
+     "opposes_direct": true,
+     "R1_crossfamily_drift_FG": -3.09201e-05,
+     "F_theta_M4B_frozen_S2_deg": -0.805908911293,
+     "F_theta_LP1_ownpath_S2_deg": 0.01645615310519255,
+     "heading_diff_LP1_S2_deg": -0.7151363684212555
+    },
+    {
+     "case": "soft2",
+     "F_G_LP1_ownpath_S2": -0.035768158657430216,
+     "F_G_M4B_frozen_S2_direct": -0.0362783946958,
+     "path_contribution": 0.0005102360383697838,
+     "opposes_direct": true,
+     "R1_crossfamily_drift_FG": -2.14822e-05,
+     "F_theta_M4B_frozen_S2_deg": -0.371440108697,
+     "F_theta_LP1_ownpath_S2_deg": -0.042962347260169675,
+     "heading_diff_LP1_S2_deg": -0.28403687369535646
+    },
+    {
+     "case": "soft1",
+     "F_G_LP1_ownpath_S2": 0.04239471266845096,
+     "F_G_M4B_frozen_S2_direct": 0.0442980511184,
+     "path_contribution": -0.0019033384499490408,
+     "opposes_direct": true,
+     "R1_crossfamily_drift_FG": 3.0199e-05,
+     "F_theta_M4B_frozen_S2_deg": 1.31062742802,
+     "F_theta_LP1_ownpath_S2_deg": -0.01395852682957388,
+     "heading_diff_LP1_S2_deg": 1.124049241918442
+    }
+   ],
+   "limit": null,
+   "status": "VERIFIED_CONSISTENCY"
+  },
+  {
+   "id": "F1",
+   "description": "Pure-geometry feasibility analysis computed (no K/angle forecast)",
+   "pass": true,
+   "value": null,
+   "limit": null,
+   "status": "GEOMETRY_ONLY"
+  }
+ ],
+ "classesS4": {
+  "stiff13": {
+   "F_G_pp": -7.1731695978936365,
+   "FG_primary_resolved": true,
+   "FG_conservative_resolved": true,
+   "FG_over_Ucons": 2.2075614651108086,
+   "offset_mm": -0.1909019814362965,
+   "offset_primary_resolved": true,
+   "offset_cautious_resolved": true,
+   "offset_over_2Ucons": 2.197538473103618,
+   "F_G_COD_minus_EDI_pp": -0.00035517336318680037,
+   "paired_offset_diag_mm": 0.0007570636523214367
+  },
+  "soft2": {
+   "F_G_pp": -2.9318154347938497,
+   "FG_primary_resolved": true,
+   "FG_conservative_resolved": false,
+   "FG_over_Ucons": 0.8629221798637666,
+   "offset_mm": -0.08516271076796855,
+   "offset_primary_resolved": true,
+   "offset_cautious_resolved": false,
+   "offset_over_2Ucons": 0.9838420849329604,
+   "F_G_COD_minus_EDI_pp": -7.928335801210551e-05,
+   "paired_offset_diag_mm": 0.000396332821684804
+  },
+  "soft1": {
+   "F_G_pp": 6.328936089276849,
+   "FG_primary_resolved": true,
+   "FG_conservative_resolved": true,
+   "FG_over_Ucons": 1.7008647135452666,
+   "offset_mm": 0.3056714291336001,
+   "offset_primary_resolved": true,
+   "offset_cautious_resolved": true,
+   "offset_over_2Ucons": 3.6508089270606967,
+   "F_G_COD_minus_EDI_pp": 0.0005988018872971068,
+   "paired_offset_diag_mm": 0.001247944639446109
+  }
+ },
+ "feasibility": {
+  "guideEnvelopeRadius_mm": 34.05,
+  "qEnvelopeRadius_mm": 22.650000000000002,
+  "segmentEnvelopeRadius_mm": 20.57,
+  "tipBox_mm": {
+   "x": [
+    15,
+    493
+   ],
+   "y": [
+    15,
+    188.2
+   ]
+  },
+  "interRingGap_mm": 12.70000000000001,
+  "ring3ToTopGap_mm": 12.699999999999989,
+  "guideEnvelopeTopOfRing3_mm": 205.5,
+  "envelopeWaistHalfWidth_mm": 22.676915575095297,
+  "envelopeLeftmostX_mm": 118.35000000000001,
+  "straightContinuationFromS4": [
+   {
+    "case": "H",
+    "tip": [
+     105.64746005474672,
+     40.872016664004875
+    ],
+    "heading_deg": 72.88729446795583,
+    "numericalStop": "GUIDE_ENVELOPE",
+    "numericalStop_ds_mm": 63.36999999999596,
+    "numericalStop_s_total_mm": 104.76999999999596,
+    "numericalStopPoint": [
+     124.29422629821394,
+     101.43648651771514
+    ],
+    "physicalEvent": "NOMINAL_INTERFACE",
+    "physicalEvent_ds_mm": 120.57000000002478,
+    "physicalEventPoint": [
+     141.1254560461535,
+     156.10411592649206
+    ],
+    "tangentLineClosestApproach": [
+     {
+      "ring": 1,
+      "along_mm": 41.452104810191955,
+      "centreDistance_mm": 36.155864204283326,
+      "interfaceClearance_mm": 17.105864204283325
+     },
+     {
+      "ring": 2,
+      "along_mm": 90.00307638299735,
+      "centreDistance_mm": 21.207848973603266,
+      "interfaceClearance_mm": 2.157848973603265
+     },
+     {
+      "ring": 3,
+      "along_mm": 138.55404795580273,
+      "centreDistance_mm": 6.25983374292322,
+      "interfaceClearance_mm": -12.79016625707678
+     }
+    ],
+    "minHeading_reach_top_guide_numerical_deg": 84.6,
+    "minHeading_reach_top_edge_nominal_deg": 78.2
+   },
+   {
+    "case": "stiff13",
+    "tip": [
+     105.83199310467963,
+     40.822607977699
+    ],
+    "heading_deg": 72.22620818147468,
+    "numericalStop": "GUIDE_ENVELOPE",
+    "numericalStop_ds_mm": 62.6599999999961,
+    "numericalStop_s_total_mm": 104.05999999999611,
+    "numericalStopPoint": [
+     124.95956909406819,
+     100.49179128675459
+    ],
+    "physicalEvent": "NOMINAL_INTERFACE",
+    "physicalEvent_ds_mm": 120.09000000002453,
+    "physicalEventPoint": [
+     142.4906365864269,
+     155.18060707738613
+    ],
+    "tangentLineClosestApproach": [
+     {
+      "ring": 1,
+      "along_mm": 41.85722735600494,
+      "centreDistance_mm": 35.48438067497672,
+      "interfaceClearance_mm": 16.43438067497672
+     },
+     {
+      "ring": 2,
+      "along_mm": 90.23249885457203,
+      "centreDistance_mm": 19.97718533088161,
+      "interfaceClearance_mm": 0.9271853308816098
+     },
+     {
+      "ring": 3,
+      "along_mm": 138.60777035313907,
+      "centreDistance_mm": 4.469989986786516,
+      "interfaceClearance_mm": -14.580010013213485
+     }
+    ],
+    "minHeading_reach_top_guide_numerical_deg": 84.6,
+    "minHeading_reach_top_edge_nominal_deg": 78.3
+   },
+   {
+    "case": "soft2",
+    "tip": [
+     105.72974312219405,
+     40.84985032062479
+    ],
+    "heading_deg": 72.5203945495702,
+    "numericalStop": "GUIDE_ENVELOPE",
+    "numericalStop_ds_mm": 62.98999999999604,
+    "numericalStop_s_total_mm": 104.38999999999604,
+    "numericalStopPoint": [
+     124.64981654613227,
+     100.93121949304202
+    ],
+    "physicalEvent": "NOMINAL_INTERFACE",
+    "physicalEvent_ds_mm": 120.29000000002463,
+    "physicalEventPoint": [
+     141.8608057061937,
+     155.58533051989457
+    ],
+    "tangentLineClosestApproach": [
+     {
+      "ring": 1,
+      "along_mm": 41.67920917263392,
+      "centreDistance_mm": 35.80453995250307,
+      "interfaceClearance_mm": 16.75453995250307
+     },
+     {
+      "ring": 2,
+      "along_mm": 90.13346467285598,
+      "centreDistance_mm": 20.545931761740693,
+      "interfaceClearance_mm": 1.4959317617406924
+     },
+     {
+      "ring": 3,
+      "along_mm": 138.58772017307803,
+      "centreDistance_mm": 5.287323570978323,
+      "interfaceClearance_mm": -13.762676429021678
+     }
+    ],
+    "minHeading_reach_top_guide_numerical_deg": 84.6,
+    "minHeading_reach_top_edge_nominal_deg": 78.3
+   },
+   {
+    "case": "soft1",
+    "tip": [
+     105.35058232560786,
+     40.946568796496685
+    ],
+    "heading_deg": 73.95550389267324,
+    "numericalStop": "GUIDE_ENVELOPE",
+    "numericalStop_ds_mm": 64.66999999999618,
+    "numericalStop_s_total_mm": 106.06999999999618,
+    "numericalStopPoint": [
+     123.22432214735147,
+     103.0975006059565
+    ],
+    "physicalEvent": "NOMINAL_INTERFACE",
+    "physicalEvent_ds_mm": 121.72000000002537,
+    "physicalEventPoint": [
+     138.9920174748767,
+     157.92525164556844
+    ],
+    "tangentLineClosestApproach": [
+     {
+      "ring": 1,
+      "along_mm": 40.78126228645637,
+      "centreDistance_mm": 37.228278031065365,
+      "interfaceClearance_mm": 18.178278031065364
+     },
+     {
+      "ring": 2,
+      "along_mm": 89.60246741898685,
+      "centreDistance_mm": 23.187981402881825,
+      "interfaceClearance_mm": 4.137981402881824
+     },
+     {
+      "ring": 3,
+      "along_mm": 138.42367255151729,
+      "centreDistance_mm": 9.147684774698298,
+      "interfaceClearance_mm": -9.902315225301702
+     }
+    ],
+    "minHeading_reach_top_guide_numerical_deg": 84.4,
+    "minHeading_reach_top_edge_nominal_deg": 78.1
+   }
+  ],
+  "constantTurnFamily_from_H_S4": [
+   {
+    "fromCase": "H",
+    "perStepTurn_deg": -3.0,
+    "mode": "numerical",
+    "event": "GUIDE_ENVELOPE",
+    "steps": 7,
+    "arc_at_event_mm": 69.4
+   },
+   {
+    "fromCase": "H",
+    "perStepTurn_deg": -3.0,
+    "mode": "physical",
+    "event": "NOMINAL_INTERFACE",
+    "steps": 13,
+    "arc_at_event_mm": 93.4
+   },
+   {
+    "fromCase": "H",
+    "perStepTurn_deg": -2.0,
+    "mode": "numerical",
+    "event": "GUIDE_ENVELOPE",
+    "steps": 8,
+    "arc_at_event_mm": 73.4
+   },
+   {
+    "fromCase": "H",
+    "perStepTurn_deg": -2.0,
+    "mode": "physical",
+    "event": "NOMINAL_INTERFACE",
+    "steps": 20,
+    "arc_at_event_mm": 121.4
+   },
+   {
+    "fromCase": "H",
+    "perStepTurn_deg": -1.5,
+    "mode": "numerical",
+    "event": "GUIDE_ENVELOPE",
+    "steps": 8,
+    "arc_at_event_mm": 73.4
+   },
+   {
+    "fromCase": "H",
+    "perStepTurn_deg": -1.5,
+    "mode": "physical",
+    "event": "NOMINAL_INTERFACE",
+    "steps": 19,
+    "arc_at_event_mm": 117.4
+   },
+   {
+    "fromCase": "H",
+    "perStepTurn_deg": -1.0,
+    "mode": "numerical",
+    "event": "GUIDE_ENVELOPE",
+    "steps": 9,
+    "arc_at_event_mm": 77.4
+   },
+   {
+    "fromCase": "H",
+    "perStepTurn_deg": -1.0,
+    "mode": "physical",
+    "event": "NOMINAL_INTERFACE",
+    "steps": 19,
+    "arc_at_event_mm": 117.4
+   },
+   {
+    "fromCase": "H",
+    "perStepTurn_deg": -0.5,
+    "mode": "numerical",
+    "event": "GUIDE_ENVELOPE",
+    "steps": 11,
+    "arc_at_event_mm": 85.4
+   },
+   {
+    "fromCase": "H",
+    "perStepTurn_deg": -0.5,
+    "mode": "physical",
+    "event": "NOMINAL_INTERFACE",
+    "steps": 20,
+    "arc_at_event_mm": 121.4
+   },
+   {
+    "fromCase": "H",
+    "perStepTurn_deg": 0.0,
+    "mode": "numerical",
+    "event": "GUIDE_ENVELOPE",
+    "steps": 16,
+    "arc_at_event_mm": 105.4
+   },
+   {
+    "fromCase": "H",
+    "perStepTurn_deg": 0.0,
+    "mode": "physical",
+    "event": "NOMINAL_INTERFACE",
+    "steps": 31,
+    "arc_at_event_mm": 165.4
+   },
+   {
+    "fromCase": "H",
+    "perStepTurn_deg": 0.5,
+    "mode": "numerical",
+    "event": "GUIDE_ENVELOPE",
+    "steps": 18,
+    "arc_at_event_mm": 113.4
+   },
+   {
+    "fromCase": "H",
+    "perStepTurn_deg": 0.5,
+    "mode": "physical",
+    "event": "TOP_EDGE",
+    "steps": 42,
+    "arc_at_event_mm": 209.4
+   },
+   {
+    "fromCase": "H",
+    "perStepTurn_deg": 1.0,
+    "mode": "numerical",
+    "event": "TOP_GUIDE_LIMIT",
+    "steps": 38,
+    "arc_at_event_mm": 193.4
+   },
+   {
+    "fromCase": "H",
+    "perStepTurn_deg": 1.0,
+    "mode": "physical",
+    "event": "TOP_EDGE",
+    "steps": 42,
+    "arc_at_event_mm": 209.4
+   },
+   {
+    "fromCase": "H",
+    "perStepTurn_deg": 1.5,
+    "mode": "numerical",
+    "event": "TOP_GUIDE_LIMIT",
+    "steps": 40,
+    "arc_at_event_mm": 201.4
+   },
+   {
+    "fromCase": "H",
+    "perStepTurn_deg": 1.5,
+    "mode": "physical",
+    "event": "TOP_EDGE",
+    "steps": 46,
+    "arc_at_event_mm": 225.4
+   },
+   {
+    "fromCase": "H",
+    "perStepTurn_deg": 2.0,
+    "mode": "numerical",
+    "event": "GUIDE_PLATE",
+    "steps": 49,
+    "arc_at_event_mm": 237.4
+   },
+   {
+    "fromCase": "H",
+    "perStepTurn_deg": 2.0,
+    "mode": "physical",
+    "event": null,
+    "steps": 200,
+    "arc_at_event_mm": 841.4
+   },
+   {
+    "fromCase": "H",
+    "perStepTurn_deg": 3.0,
+    "mode": "numerical",
+    "event": "GUIDE_PLATE",
+    "steps": 40,
+    "arc_at_event_mm": 201.4
+   },
+   {
+    "fromCase": "H",
+    "perStepTurn_deg": 3.0,
+    "mode": "physical",
+    "event": null,
+    "steps": 200,
+    "arc_at_event_mm": 841.4
+   }
+  ],
+  "meshBudget": [
+   {
+    "case": "H",
+    "T3_S1_S4": [
+     28437,
+     28631,
+     28815,
+     29063
+    ],
+    "T3_per_step_fit": 206.2,
+    "T3_per_step_min": 184,
+    "T3_per_step_max": 248,
+    "steps_to_budget_at_fit": 53.040737148399614
+   },
+   {
+    "case": "stiff13",
+    "T3_S1_S4": [
+     28421,
+     28647,
+     28799,
+     29047
+    ],
+    "T3_per_step_fit": 203.0,
+    "T3_per_step_min": 152,
+    "T3_per_step_max": 248,
+    "steps_to_budget_at_fit": 53.95566502463054
+   },
+   {
+    "case": "soft2",
+    "T3_S1_S4": [
+     28457,
+     28595,
+     28823,
+     29005
+    ],
+    "T3_per_step_fit": 187.2,
+    "T3_per_step_min": 138,
+    "T3_per_step_max": 228,
+    "steps_to_budget_at_fit": 58.733974358974365
+   },
+   {
+    "case": "soft1",
+    "T3_S1_S4": [
+     28399,
+     28601,
+     28813,
+     29035
+    ],
+    "T3_per_step_fit": 212.0,
+    "T3_per_step_min": 202,
+    "T3_per_step_max": 222,
+    "steps_to_budget_at_fit": 51.721698113207545
+   }
+  ],
+  "minArcToTopGuideLine_mm": 188.65343120350332
+ },
+ "crossCheckFrozenS2": [
+  {
+   "case": "stiff13",
+   "F_G_LP1_ownpath_S2": -0.05347845313462685,
+   "F_G_M4B_frozen_S2_direct": -0.0547795556205,
+   "path_contribution": 0.0013011024858731526,
+   "opposes_direct": true,
+   "R1_crossfamily_drift_FG": -3.09201e-05,
+   "F_theta_M4B_frozen_S2_deg": -0.805908911293,
+   "F_theta_LP1_ownpath_S2_deg": 0.01645615310519255,
+   "heading_diff_LP1_S2_deg": -0.7151363684212555
+  },
+  {
+   "case": "soft2",
+   "F_G_LP1_ownpath_S2": -0.035768158657430216,
+   "F_G_M4B_frozen_S2_direct": -0.0362783946958,
+   "path_contribution": 0.0005102360383697838,
+   "opposes_direct": true,
+   "R1_crossfamily_drift_FG": -2.14822e-05,
+   "F_theta_M4B_frozen_S2_deg": -0.371440108697,
+   "F_theta_LP1_ownpath_S2_deg": -0.042962347260169675,
+   "heading_diff_LP1_S2_deg": -0.28403687369535646
+  },
+  {
+   "case": "soft1",
+   "F_G_LP1_ownpath_S2": 0.04239471266845096,
+   "F_G_M4B_frozen_S2_direct": 0.0442980511184,
+   "path_contribution": -0.0019033384499490408,
+   "opposes_direct": true,
+   "R1_crossfamily_drift_FG": 3.0199e-05,
+   "F_theta_M4B_frozen_S2_deg": 1.31062742802,
+   "F_theta_LP1_ownpath_S2_deg": -0.01395852682957388,
+   "heading_diff_LP1_S2_deg": 1.124049241918442
+  }
+ ],
+ "noFEM": true,
+ "noMesh": true,
+ "noRecordWritten": true
+}
