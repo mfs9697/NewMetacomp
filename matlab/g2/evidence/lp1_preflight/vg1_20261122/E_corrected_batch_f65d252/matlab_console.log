@@ -1,0 +1,119 @@
+[Warning: Name is nonexistent or not a directory: <user>\Google Drive\Projects\8 - CohZonFEM\czm_project\CrackPath\CrackFromHoleLEFM\cfh] 
+[Warning: Name is nonexistent or not a directory: <user>\Google Drive\Projects\8 - CohZonFEM\Asphalt\remmers2003] 
+RAM_OBSERVATION start 7.343067 GiB
+LP0_PREFLIGHT_PASS f65d2523fe2e5e333f0c6a675deacbf217e1c5ea RAM_GiB=7.265
+admissible_increment 1 MATRIX_ADVANCE
+ring_and_hole_tunnel 1 HOLD_CRACK_SELF_INTERSECTION
+nominal_ring_tangent 1 HOLD_CRACK_SELF_INTERSECTION
+guide_overlap_only 1 HOLD_CRACK_SELF_INTERSECTION
+q_buffer_overlap 1 HOLD_CRACK_SELF_INTERSECTION
+endpoint_in_annulus 1 HOLD_CRACK_SELF_INTERSECTION
+top_boundary_cross 1 HOLD_EXTERNAL_BOUNDARY
+boundary_grazing 1 HOLD_EXTERNAL_BOUNDARY
+guide_before_boundary 1 HOLD_TIP_GUIDE
+prior_segment_cross 1 HOLD_CRACK_SELF_INTERSECTION
+adjacent_retrace 1 HOLD_CRACK_SELF_INTERSECTION
+wrong_ring_id 1 HOLD_OWNER_MASK
+geometry_drift 1 HOLD_OWNER_MASK
+unordered_polygon 1 HOLD_OWNER_MASK
+missing_chord 1 HOLD_OWNER_MASK
+passive_boundary_stays_obstacle_H 1 HOLD_CRACK_SELF_INTERSECTION
+passive_boundary_stays_obstacle_stiff13 1 HOLD_CRACK_SELF_INTERSECTION
+passive_boundary_stays_obstacle_soft2 1 HOLD_CRACK_SELF_INTERSECTION
+passive_boundary_stays_obstacle_soft1 1 HOLD_CRACK_SELF_INTERSECTION
+nan_rejected 1 HOLD_INPUT
+zero_length_rejected 1 HOLD_INPUT
+synthetic_N5_geometric_only 1 MATRIX_ADVANCE
+synthetic_N6_geometric_only 1 MATRIX_ADVANCE
+G2_LP0_CLEARANCE_TESTS=23/23; NO_MESH=1; NO_FEM=1
+RAM_OBSERVATION dry_H 7.031418 GiB
+LP1_DRY H PASS
+RAM_OBSERVATION dry_stiff13 6.997780 GiB
+LP1_DRY stiff13 PASS
+RAM_OBSERVATION dry_soft2 6.957127 GiB
+LP1_DRY soft2 PASS
+RAM_OBSERVATION dry_soft1 6.967148 GiB
+LP1_DRY soft1 PASS
+LP1_CURRENT_TOKEN G2LP1|policy=074d7edc981920537726314f781f24b41ac7224c18d594d6a1b15343084e5091|source=6f7fb3ea51a0ae64e30a5c63f8cc765af5308c511da315c989ae10235fbed030|LP0=b4240d7ed9b534dbe188a35bac13587db45f8cd1a86a5c7a79c2e1dfa4a233f5|cases=H,stiff13,soft2,soft1|maxState=4
+RAM_OBSERVATION contract 6.966354 GiB
+positive_links 1 [positive] expected=true observed=true
+mutate_KI 1 [negative] expected=G2LP1:HOLD_RECORD_INTEGRITY | Signed K or solution observed=G2LP1:HOLD_RECORD_INTEGRITY
+mutate_KII 1 [negative] expected=G2LP1:HOLD_RECORD_INTEGRITY | Signed K or solution observed=G2LP1:HOLD_RECORD_INTEGRITY
+mutate_caseId 1 [negative] expected=G2LP1:HOLD_RECORD_INTEGRITY | Case, mask, ratio or index changed. observed=G2LP1:HOLD_RECORD_INTEGRITY
+mutate_mask 1 [negative] expected=G2LP1:HOLD_RECORD_INTEGRITY | Case, mask, ratio or index changed. observed=G2LP1:HOLD_RECORD_INTEGRITY
+mutate_ratio 1 [negative] expected=G2LP1:HOLD_RECORD_INTEGRITY | Case, mask, ratio or index changed. observed=G2LP1:HOLD_RECORD_INTEGRITY
+mutate_stateIndex 1 [negative] expected=G2LP1:HOLD_RECORD_INTEGRITY | Case, mask, ratio or index changed. observed=G2LP1:HOLD_RECORD_INTEGRITY
+mutate_policySHA256 1 [negative] expected=G2LP1:HOLD_SOURCE | Parent/source/policy link differs. observed=G2LP1:HOLD_SOURCE
+mutate_sourceSHA256 1 [negative] expected=G2LP1:HOLD_SOURCE | Parent/source/policy link differs. observed=G2LP1:HOLD_SOURCE
+mutate_parentSHA256 1 [negative] expected=G2LP1:HOLD_SOURCE | Parent/source/policy link differs. observed=G2LP1:HOLD_SOURCE
+mutate_polyline_mm 1 [negative] expected=G2LP1:HOLD_RECORD_INTEGRITY | Saved geometry differs observed=G2LP1:HOLD_RECORD_INTEGRITY
+mutate_meshSHA256 1 [negative] expected=G2LP1:HOLD_RECORD_INTEGRITY | Signed K or solution observed=G2LP1:HOLD_RECORD_INTEGRITY
+mutate_phaseSHA256 1 [negative] expected=G2LP1:HOLD_RECORD_INTEGRITY | Signed K or solution observed=G2LP1:HOLD_RECORD_INTEGRITY
+wrong_units 1 [negative] expected=G2LP1:HOLD_RECORD_INTEGRITY | Unit conversion changed. observed=G2LP1:HOLD_RECORD_INTEGRITY
+forged_pass_flag 1 [negative] expected=G2LP1:HOLD_RECORD_INTEGRITY | Signed K or solution observed=G2LP1:HOLD_RECORD_INTEGRITY
+solution_case_link 1 [negative] expected=G2LP1:HOLD_RECORD_INTEGRITY | Signed K or solution observed=G2LP1:HOLD_RECORD_INTEGRITY
+solution_source_drift 1 [negative] expected=G2LP1:HOLD_RECORD_INTEGRITY | Signed K or solution observed=G2LP1:HOLD_RECORD_INTEGRITY
+own_signed_MTS 1 [positive] expected=true observed=true
+signed_KII_changes_path 1 [positive] expected=true observed=true
+S5_forecast 1 [negative] expected=G2LP1:HOLD_UNAUTHORIZED_STATE | S5 and later observed=G2LP1:HOLD_UNAUTHORIZED_STATE
+S5_controller 1 [negative] expected=G2LP1:HOLD_UNAUTHORIZED_STATE | Only S0-S4 observed=G2LP1:HOLD_UNAUTHORIZED_STATE
+negative_state_controller 1 [negative] expected=G2LP1:HOLD_UNAUTHORIZED_STATE | Only S0-S4 observed=G2LP1:HOLD_UNAUTHORIZED_STATE
+fractional_state_controller 1 [negative] expected=G2LP1:HOLD_UNAUTHORIZED_STATE | Only S0-S4 observed=G2LP1:HOLD_UNAUTHORIZED_STATE
+compressive_parent 1 [negative] expected=G2LP1:HOLD_K_EXTRACTION | Invalid tensile MTS root observed=G2LP1:HOLD_K_EXTRACTION
+nonfinite_parent 1 [negative] expected=G2LP1:HOLD_K_EXTRACTION | Invalid tensile MTS root observed=G2LP1:HOLD_K_EXTRACTION
+zero_K_parent 1 [negative] expected=G2LP1:HOLD_K_EXTRACTION | Invalid tensile MTS root observed=G2LP1:HOLD_K_EXTRACTION
+controller_rejects_go_path_argument 1 [negative] expected=MATLAB:InputParser:UnmatchedParameter observed=MATLAB:InputParser:UnmatchedParameter
+gate_takes_context_only 1 [interface] expected=true observed=true
+gate_go_path_hardcoded 1 [interface] expected=true observed=true
+controller_calls_gate_before_run_folder 1 [interface] expected=true observed=true
+validator_opens_no_file 1 [interface] expected=true observed=true
+go_absent_production_gate 1 [go] expected=G2LP1:HOLD_UNAUTHORIZED_STATE | no separate GO record observed=G2LP1:HOLD_UNAUTHORIZED_STATE
+go_absent_left_no_file 1 [go] expected=true observed=true
+go_fixture_positive_control 1 [go] expected=true observed=true
+go_not_struct 1 [go] expected=G2LP1:HOLD_UNAUTHORIZED_STATE | Incomplete scientific GO record observed=G2LP1:HOLD_UNAUTHORIZED_STATE
+go_missing_field 1 [go] expected=G2LP1:HOLD_UNAUTHORIZED_STATE | Incomplete scientific GO record observed=G2LP1:HOLD_UNAUTHORIZED_STATE
+go_wrong_decision 1 [go] expected=G2LP1:HOLD_UNAUTHORIZED_STATE | absent or invalid observed=G2LP1:HOLD_UNAUTHORIZED_STATE
+go_wrong_review_status 1 [go] expected=G2LP1:HOLD_UNAUTHORIZED_STATE | absent or invalid observed=G2LP1:HOLD_UNAUTHORIZED_STATE
+go_empty_reviewer 1 [go] expected=G2LP1:HOLD_UNAUTHORIZED_STATE | absent or invalid observed=G2LP1:HOLD_UNAUTHORIZED_STATE
+go_foreign_review_url 1 [go] expected=G2LP1:HOLD_UNAUTHORIZED_STATE | absent or invalid observed=G2LP1:HOLD_UNAUTHORIZED_STATE
+go_policy_mismatch 1 [go] expected=G2LP1:HOLD_SOURCE | does not bind observed=G2LP1:HOLD_SOURCE
+go_source_mismatch 1 [go] expected=G2LP1:HOLD_SOURCE | does not bind observed=G2LP1:HOLD_SOURCE
+go_lp0_mismatch 1 [go] expected=G2LP1:HOLD_SOURCE | does not bind observed=G2LP1:HOLD_SOURCE
+go_token_mismatch 1 [go] expected=G2LP1:HOLD_SOURCE | does not bind observed=G2LP1:HOLD_SOURCE
+go_contract_path_outside 1 [go] expected=G2LP1:HOLD_SOURCE | not pinned observed=G2LP1:HOLD_SOURCE
+go_contract_path_traversal 1 [go] expected=G2LP1:HOLD_SOURCE | not pinned observed=G2LP1:HOLD_SOURCE
+go_contract_missing 1 [go] expected=G2LP1:HOLD_SOURCE | absent or changed observed=G2LP1:HOLD_SOURCE
+go_contract_sha_mismatch 1 [go] expected=G2LP1:HOLD_SOURCE | absent or changed observed=G2LP1:HOLD_SOURCE
+go_contract_lacks_fields 1 [go] expected=G2LP1:HOLD_UNAUTHORIZED_STATE | lacks negative observed=G2LP1:HOLD_UNAUTHORIZED_STATE
+go_contract_not_pass 1 [go] expected=G2LP1:HOLD_UNAUTHORIZED_STATE | has not passed observed=G2LP1:HOLD_UNAUTHORIZED_STATE
+go_contract_incomplete_count 1 [go] expected=G2LP1:HOLD_UNAUTHORIZED_STATE | has not passed observed=G2LP1:HOLD_UNAUTHORIZED_STATE
+go_contract_too_few_tests 1 [go] expected=G2LP1:HOLD_UNAUTHORIZED_STATE | has not passed observed=G2LP1:HOLD_UNAUTHORIZED_STATE
+go_contract_physical_solve 1 [go] expected=G2LP1:HOLD_UNAUTHORIZED_STATE | has not passed observed=G2LP1:HOLD_UNAUTHORIZED_STATE
+go_contract_mesh_build 1 [go] expected=G2LP1:HOLD_UNAUTHORIZED_STATE | has not passed observed=G2LP1:HOLD_UNAUTHORIZED_STATE
+go_contract_negatives_false 1 [go] expected=G2LP1:HOLD_UNAUTHORIZED_STATE | has not passed observed=G2LP1:HOLD_UNAUTHORIZED_STATE
+go_contract_integrity_false 1 [go] expected=G2LP1:HOLD_UNAUTHORIZED_STATE | has not passed observed=G2LP1:HOLD_UNAUTHORIZED_STATE
+record_roundtrip 1 [record] expected=true observed=true
+overwrite_refused 1 [record] expected=G2Chain:RecordExists | overwrite observed=G2Chain:RecordExists
+byte_tamper 1 [record] expected=true observed=true
+manifest_tamper 1 [record] expected=true observed=true
+mat_without_manifest 1 [record] expected=true observed=true
+missing_record 1 [record] expected=true observed=true
+record_without_schema 1 [record] expected=G2Chain:RecordSchema | schema-tagged observed=G2Chain:RecordSchema
+record_missing_folder 1 [record] expected=G2Chain:RecordFolder | Parent record folder observed=G2Chain:RecordFolder
+admit_partial_state_refused 1 [admission] expected=G2LP1:HOLD_RECORD_INTEGRITY | Partial unreviewed state observed=G2LP1:HOLD_RECORD_INTEGRITY
+admit_partial_state_untouched 1 [admission] expected=true observed=true
+admit_low_memory_refused 1 [admission] expected=G2LP1:HOLD_MEMORY | 5 GiB observed=G2LP1:HOLD_MEMORY
+admit_low_memory_no_folder 1 [admission] expected=true observed=true
+admit_boundary_below_refused 1 [admission] expected=G2LP1:HOLD_MEMORY | 5 GiB observed=G2LP1:HOLD_MEMORY
+admit_nonfinite_memory_refused 1 [admission] expected=G2LP1:HOLD_MEMORY | 5 GiB observed=G2LP1:HOLD_MEMORY
+admit_nonfinite_no_folder 1 [admission] expected=true observed=true
+admit_at_threshold_creates_folder 1 [admission] expected=true observed=true
+admit_threshold_equals_policy 1 [admission] expected=true observed=true
+source_digest_detects_one_byte_drift 1 [positive] expected=true observed=true
+G2_LP1_CONTRACT_TESTS=74/74 NEG=24 REC=8 GO=25 ADM=9 IFC=4
+RAM_OBSERVATION probe_1 6.959984 GiB
+SCIENTIFIC_GO_REFUSAL probe=1 token=invalid id=G2LP1:HOLD_UNAUTHORIZED_STATE
+RAM_OBSERVATION probe_2 6.948910 GiB
+SCIENTIFIC_GO_REFUSAL probe=2 token=current id=G2LP1:HOLD_UNAUTHORIZED_STATE
+RAM_OBSERVATION end 6.955105 GiB
+G2_LP1_PREFLIGHT_PASS NO_MESH=1 NO_FEM=1 SCIENTIFIC_HOLD=1

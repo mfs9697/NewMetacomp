@@ -1,0 +1,18 @@
+{
+ "schema": "NewMetacomp.G2.LP1.VG1.Sanitization.v1",
+ "source": "stC",
+ "files": [
+  {
+   "file": "orig_sens.log",
+   "originalSHA256": "4fe9fc7cd8b675c902d5de0bf78d50b2366f5b0e58872160195d272144451f30",
+   "sanitizedSHA256": "fb5b562fd06b58f4a415ad3760244ba39e9dadd31fc72349d38015d05e469d78",
+   "copied": true
+  },
+  {
+   "file": "orig_sens.m",
+   "originalSHA256": "b3627a3771cb7c6359f9796e17a31816b78ce0e2dfabf6add2dc69f86b60b918",
+   "sanitizedSHA256": "15ccb30c310a57c4daf0bceff51e9169e116bb39ab3bf670f3aeada66ceb8cda",
+   "copied": true
+  }
+ ]
+}

@@ -1,0 +1,25 @@
+{
+  "schema": "NewMetacomp.G2.LP1.PrephysicalBatch.v1",
+  "status": "TESTS_PASS_SCIENTIFIC_HOLD",
+  "sourceCommit": "70bf6f4baf9f4963380120964f6aaec04e65a349",
+  "release": "R2023a",
+  "policySHA256": "1cf5a76ded840b0758343a1b935b299041e779ec6332c3b7cb0b6dfba1e2af43",
+  "freePhysicalRAM_GiB": 6.1453590393066406,
+  "clearanceTestsPassed": 23,
+  "clearanceTestsTotal": 23,
+  "contractTestsPassed": 25,
+  "contractTestsTotal": 25,
+  "negativeTestsPassed": true,
+  "recordIntegrityPassed": true,
+  "goRefusedBeforeWrites": true,
+  "dryCases": [
+    "H",
+    "stiff13",
+    "soft2",
+    "soft1"
+  ],
+  "scientificGO": false,
+  "physicalSolves": 0,
+  "meshBuilds": 0,
+  "evidenceRole": "UNREVIEWED_CANDIDATE_NOT_AUTHORIZATION"
+}
