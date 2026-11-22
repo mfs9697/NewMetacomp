@@ -105,7 +105,7 @@ def main():
                                                 for q in ['g2_lp0*.m', 'g2_lp1*.m', 'check_g2_lp*.m']))
     lines = ['legacy-lock ' + pol['sourceLockSHA256']] + [f'{n} {sha(blob(c, "matlab/g2/" + n))}' for n in names]
     src = sha('\n'.join(lines).encode('utf-8'))
-    chk('S1', 'Source-set digest at commit equals the qualified VG1 source set', src == EXP['sourceSet'], src)
+    chk('S1', 'Source-set digest at commit equals the qualified source set of the profile', src == EXP['sourceSet'], src)
     chk('S2', 'Policy v2 blob SHA-256', sha(pol2b) == EXP['policyV2'], sha(pol2b))
     chk('S3', 'Policy v1 blob equals v2.previousPolicySHA256',
         sha(blob(c, 'matlab/g2/G2_LP1_POLICY_v1.json')) == pol['previousPolicySHA256'] == EXP['policyV1'],
@@ -122,7 +122,7 @@ def main():
     tok = f"G2LP1|policy={sha(pol2b)}|source={src}|LP0={pol['lp0Evidence']['sha256']}|cases=H,stiff13,soft2,soft1|maxState=4"
     chk('S6', 'Context token rebuilt from pins equals the expected full token', tok == TOKEN, tok)
     res = json.loads(blob(c, EDIR + 'PREPHYSICAL_RESULT.json'))
-    chk('S7', 'Corrected batch result: TESTS_PASS_SCIENTIFIC_HOLD at the qualified source commit, printed token equal, '
+    chk('S7', 'Qualification batch result: TESTS_PASS_SCIENTIFIC_HOLD at the qualified source commit, printed token equal, '
         'no GO, zero solves/meshes, both refusals HOLD_UNAUTHORIZED_STATE',
         res['status'] == 'TESTS_PASS_SCIENTIFIC_HOLD' and res['sourceCommit'] == EXP['qualifiedSourceCommit']
         and res['currentToken'] == TOKEN and res['scientificGO'] is False and res['physicalSolves'] == 0
@@ -153,7 +153,7 @@ def main():
     chk('C5', 'Committed contract bytes equal the original batch bytes listed in BATCH_MANIFEST (unchanged by sanitization)',
         mf.get('CONTRACT_TESTS.json') == sf['CONTRACT_TESTS.json']['originalSHA256'] == sha(cb),
         {'committed': sha(cb), 'manifest': mf.get('CONTRACT_TESTS.json')})
-    chk('C6', 'Batch manifest: exit 0, no GO, commit = qualified source commit, branch VG1',
+    chk('C6', 'Batch manifest: exit 0, no GO, commit = qualified source commit, profile branch',
         man['exitCode'] == 0 and man['scientificGO'] is False and man['sourceCommit'] == EXP['qualifiedSourceCommit']
         and man['branch'] == PROF['branch'],
         {k: man[k] for k in ['exitCode', 'sourceCommit', 'branch']})
