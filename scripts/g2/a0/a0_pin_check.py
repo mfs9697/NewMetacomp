@@ -26,19 +26,39 @@ import zipfile
 from pathlib import Path
 
 REPO = Path(__file__).resolve().parents[3]
-EXP = {
-    'sourceSet': '6f7fb3ea51a0ae64e30a5c63f8cc765af5308c511da315c989ae10235fbed030',
+COMMON = {
     'policyV2': '074d7edc981920537726314f781f24b41ac7224c18d594d6a1b15343084e5091',
     'policyV1': '1cf5a76ded840b0758343a1b935b299041e779ec6332c3b7cb0b6dfba1e2af43',
     'lock': '6e19e222379eda36e0850e439c85181efae105a9347bcc1740e73114c0616b82',
     'lp0': 'b4240d7ed9b534dbe188a35bac13587db45f8cd1a86a5c7a79c2e1dfa4a233f5',
     'archive': '5b333b03e37f08a0c6de839cb646f8c72ea474ba547ba04022ed213059f3c533',
-    'archiveBytes': 52837630,
-    'qualifiedSourceCommit': 'f65d2523fe2e5e333f0c6a675deacbf217e1c5ea'}
-TOKEN = ('G2LP1|policy={p}|source={s}|LP0={l}|cases=H,stiff13,soft2,soft1|maxState=4'
-         .format(p=EXP['policyV2'], s=EXP['sourceSet'], l=EXP['lp0']))
-CONTRACT = 'matlab/g2/evidence/lp1_preflight/vg1_20261122/E_corrected_batch_f65d252/CONTRACT_TESTS.json'
-EDIR = 'matlab/g2/evidence/lp1_preflight/vg1_20261122/E_corrected_batch_f65d252/'
+    'archiveBytes': 52837630}
+# 'a0p0' = historical A0-P0 preregistration pins (PR #61); 'vg2' = current campaign-bound source (Issue #62).
+PROFILES = {
+    'a0p0': {'sourceSet': '6f7fb3ea51a0ae64e30a5c63f8cc765af5308c511da315c989ae10235fbed030',
+             'qualifiedSourceCommit': 'f65d2523fe2e5e333f0c6a675deacbf217e1c5ea',
+             'edir': 'matlab/g2/evidence/lp1_preflight/vg1_20261122/E_corrected_batch_f65d252/',
+             'branch': 'research/g2-lp1-vg1-guard-negatives-20261122',
+             'contractTotal': 74, 'contractSchema': 'NewMetacomp.G2.LP1.ContractTests.v2',
+             'flags': ['goFixturesPassed', 'admissionPassed', 'interfacePassed', 'exactIdentifierNegatives']},
+    'vg2': {'sourceSet': '9b634df22d2c44ba9f6465fa9c88f54274afa3a17aa5d43df1e2b2ac58b5c2b5',
+            'qualifiedSourceCommit': 'adbc8a6ab6cfb609a052626889ca7d22e7d0c1c5',
+            'edir': 'matlab/g2/evidence/lp1_preflight/vg2_20261122/E_batch_adbc8a6/',
+            'branch': 'research/g2-lp1-vg2-campaign-go-20261122',
+            'contractTotal': 138, 'contractSchema': 'NewMetacomp.G2.LP1.ContractTests.v3',
+            'flags': ['goFixturesPassed', 'admissionPassed', 'interfacePassed', 'exactIdentifierNegatives',
+                      'campaignPassed', 'ledgerPassed']}}
+EXP = TOKEN = CONTRACT = EDIR = PROF = None
+
+
+def select(profile):
+    global EXP, TOKEN, CONTRACT, EDIR, PROF
+    PROF = PROFILES[profile]
+    EXP = dict(COMMON, sourceSet=PROF['sourceSet'], qualifiedSourceCommit=PROF['qualifiedSourceCommit'])
+    TOKEN = ('G2LP1|policy={p}|source={s}|LP0={l}|cases=H,stiff13,soft2,soft1|maxState=4'
+             .format(p=EXP['policyV2'], s=EXP['sourceSet'], l=EXP['lp0']))
+    EDIR = PROF['edir']
+    CONTRACT = EDIR + 'CONTRACT_TESTS.json'
 GO_PATH = 'matlab/g2/G2_LP1_SCIENTIFIC_GO_v1.json'
 RUN_NAME = 'run_a0_lp1_repro_v1'
 HIST_RUN = 'outputs/g2_lp1_matrix_paths_v1/run_20261122_lp1_v1'
@@ -72,7 +92,9 @@ def main():
     ap.add_argument('--clone')
     ap.add_argument('--archive')
     ap.add_argument('--out', required=True)
+    ap.add_argument('--profile', choices=sorted(PROFILES), default='vg2')
     a = ap.parse_args()
+    select(a.profile)
     c = git(REPO, 'rev-parse', a.commit).decode().strip()
 
     # source set exactly as g2_lp1_context
@@ -120,9 +142,9 @@ def main():
     chk('C3', 'Contract content satisfies every g2_lp1_go_validate predicate', pred,
         {k: T.get(k) for k in ['pass', 'passed', 'total', 'physicalSolves', 'meshBuilds',
                                'negativeTestsPassed', 'recordIntegrityPassed']})
-    chk('C4', 'Contract is the amended v2 suite: 74/74 and all VG1 class flags',
-        T.get('total') == 74 and T.get('passed') == 74 and T.get('schema') == 'NewMetacomp.G2.LP1.ContractTests.v2'
-        and all(T.get(f) is True for f in ['goFixturesPassed', 'admissionPassed', 'interfacePassed', 'exactIdentifierNegatives'])
+    chk('C4', 'Contract is the expected suite for the profile (count, schema, all class flags, every test passed)',
+        T.get('total') == PROF['contractTotal'] and T.get('passed') == PROF['contractTotal']
+        and T.get('schema') == PROF['contractSchema'] and all(T.get(f) is True for f in PROF['flags'])
         and all(t['pass'] for t in T['tests']), {'total': T.get('total'), 'schema': T.get('schema')})
     man = json.loads(blob(c, EDIR + 'BATCH_MANIFEST.json'))
     san = json.loads(blob(c, EDIR + 'SANITIZATION.json'))
@@ -133,7 +155,7 @@ def main():
         {'committed': sha(cb), 'manifest': mf.get('CONTRACT_TESTS.json')})
     chk('C6', 'Batch manifest: exit 0, no GO, commit = qualified source commit, branch VG1',
         man['exitCode'] == 0 and man['scientificGO'] is False and man['sourceCommit'] == EXP['qualifiedSourceCommit']
-        and man['branch'] == 'research/g2-lp1-vg1-guard-negatives-20261122',
+        and man['branch'] == PROF['branch'],
         {k: man[k] for k in ['exitCode', 'sourceCommit', 'branch']})
     chk('G1', 'No scientific GO file exists in the tree at the commit', GO_PATH not in tree(c, 'matlab/g2'), GO_PATH)
     chk('R1', 'Proposed A0 run name satisfies the controller parser and differs from the historical run',
@@ -163,7 +185,7 @@ def main():
         chk('H1', 'Raw archive SHA, size and 182/182 members',
             sha(data) == EXP['archive'] and len(data) == EXP['archiveBytes'] and ok == 182, {'members': ok})
 
-    out = {'schema': 'NewMetacomp.G2.LP1.A0P0.PinCheck.v1', 'commit': c, 'expectedToken': TOKEN,
+    out = {'schema': 'NewMetacomp.G2.LP1.A0P0.PinCheck.v2', 'profile': a.profile, 'commit': c, 'expectedToken': TOKEN,
            'contractEvidence': {'path': CONTRACT, 'sha256': sha(cb)}, 'proposedRunName': RUN_NAME,
            'checks': checks, 'passed': sum(x['pass'] for x in checks), 'total': len(checks),
            'noMATLAB': True, 'noFEM': True, 'noGO': True}

@@ -1,0 +1,324 @@
+{
+ "schema": "NewMetacomp.G2.LP1.VG1.SourceIntegrity.v1",
+ "sets": {
+  "ORIGINAL": {
+   "commit": "3dadf0d43aba0c5b2b3e8c69b90c2d42e89866f8",
+   "tree": "1cfe8f2dd175dd7051becb45aa90d35a6395e490",
+   "sourceSetSHA256": "2e5756969e456043e48f048ecc12ebf0c76980b113296eb3903c79ac172cab00",
+   "files": {
+    "check_g2_lp0_clearance.m": "3ba87976cc5c0ed1a3a06fa570f0c6674606e786f65755c930d04848b930fc94",
+    "check_g2_lp1_contract.m": "2713209218b83009fe36642bf19e7286909fb53cca380a7617641ee7f0235675",
+    "g2_lp0_clearance.m": "59115a39dc5facef444bf82d89a2ab56e0d6c791dc9f79b19277088f6435ee09",
+    "g2_lp0_phase_audit.m": "552b38c0aa9b59446c0e3a63696f9546b870e0139dfbcc52d68cf6607a45d6eb",
+    "g2_lp0_preflight.m": "2f375c2a6313197c6ef03b8f9b198a1d478abdd53d9171e7149396eda442066d",
+    "g2_lp0_qualify.m": "0557bdc505679ac269d4192247cb55ce911a29deb305e9580620528efa97018a",
+    "g2_lp1_audit.m": "84eb0d1f2e790cefa380d2fe5622b3dde87ee69c93bbabcfbcabc845cb88c147",
+    "g2_lp1_context.m": "75bad168199041c76d9c07448c10aa15b04954e0b9f4421c3a6903adac6946a5",
+    "g2_lp1_digest.m": "98371cd06b85b6e66a297b33bf06d1cea25ca47ba03a5f19b588379977dc050d",
+    "g2_lp1_forecast.m": "3a5d6fed3e63da0c50970eb77cc11663dd8a75bdc5e7c085b164a5dadb5f7fbb",
+    "g2_lp1_run.m": "9eecb89f9f1bdb30d58019c559d2ca5b6a6724f0009d58b280d64d73cf39b4b0",
+    "g2_lp1_validate_links.m": "2c283a73e8189714b97659503bd41af8bc2842d615d90e5c4c53c033d9603ab0"
+   }
+  },
+  "PR55": {
+   "commit": "70bf6f4baf9f4963380120964f6aaec04e65a349",
+   "tree": "5ea0ddbe054105e0c93651f113c5579896473110",
+   "sourceSetSHA256": "da8b95916823034c1afc9baeff02ec2c52949b697f81f2e43cedad15ae5de444",
+   "files": {
+    "check_g2_lp0_clearance.m": "3ba87976cc5c0ed1a3a06fa570f0c6674606e786f65755c930d04848b930fc94",
+    "check_g2_lp1_contract.m": "793e2982831e8cde6c409b80402c7962b513ed45b89450f506a6cd1daf31c5cb",
+    "g2_lp0_clearance.m": "59115a39dc5facef444bf82d89a2ab56e0d6c791dc9f79b19277088f6435ee09",
+    "g2_lp0_phase_audit.m": "552b38c0aa9b59446c0e3a63696f9546b870e0139dfbcc52d68cf6607a45d6eb",
+    "g2_lp0_preflight.m": "2f375c2a6313197c6ef03b8f9b198a1d478abdd53d9171e7149396eda442066d",
+    "g2_lp0_qualify.m": "0557bdc505679ac269d4192247cb55ce911a29deb305e9580620528efa97018a",
+    "g2_lp1_audit.m": "84eb0d1f2e790cefa380d2fe5622b3dde87ee69c93bbabcfbcabc845cb88c147",
+    "g2_lp1_context.m": "75bad168199041c76d9c07448c10aa15b04954e0b9f4421c3a6903adac6946a5",
+    "g2_lp1_digest.m": "98371cd06b85b6e66a297b33bf06d1cea25ca47ba03a5f19b588379977dc050d",
+    "g2_lp1_forecast.m": "3a5d6fed3e63da0c50970eb77cc11663dd8a75bdc5e7c085b164a5dadb5f7fbb",
+    "g2_lp1_run.m": "beacad311e6e99674f3238cd5463f3bcfc6794f1449ad37d157113edd511337c",
+    "g2_lp1_scientific_gate.m": "41012fe48aa1d0c32efef2d463761b5dd8725510b6ba098e414ef1f333032a19",
+    "g2_lp1_validate_links.m": "2c283a73e8189714b97659503bd41af8bc2842d615d90e5c4c53c033d9603ab0"
+   }
+  },
+  "VG1": {
+   "commit": "f65d2523fe2e5e333f0c6a675deacbf217e1c5ea",
+   "tree": "a57b58b7a2f99de6b64dc863b3c4b55bf478b482",
+   "sourceSetSHA256": "6f7fb3ea51a0ae64e30a5c63f8cc765af5308c511da315c989ae10235fbed030",
+   "files": {
+    "check_g2_lp0_clearance.m": "3ba87976cc5c0ed1a3a06fa570f0c6674606e786f65755c930d04848b930fc94",
+    "check_g2_lp1_contract.m": "6576e4f9fe264162efb362708f556c9775bdcbc0fd5f22077affbc23ca29a741",
+    "check_g2_lp1_contract_sensitivity.m": "91fc89094aaf238e0ee4a2c778a53581b4099fbc757b4704aff08cc48b89620e",
+    "g2_lp0_clearance.m": "59115a39dc5facef444bf82d89a2ab56e0d6c791dc9f79b19277088f6435ee09",
+    "g2_lp0_phase_audit.m": "552b38c0aa9b59446c0e3a63696f9546b870e0139dfbcc52d68cf6607a45d6eb",
+    "g2_lp0_preflight.m": "2f375c2a6313197c6ef03b8f9b198a1d478abdd53d9171e7149396eda442066d",
+    "g2_lp0_qualify.m": "0557bdc505679ac269d4192247cb55ce911a29deb305e9580620528efa97018a",
+    "g2_lp1_admit_state.m": "57d9f2a2334613386a34e669654a91e341ee057abdcdb4329d8ef05dac310858",
+    "g2_lp1_audit.m": "84eb0d1f2e790cefa380d2fe5622b3dde87ee69c93bbabcfbcabc845cb88c147",
+    "g2_lp1_context.m": "75bad168199041c76d9c07448c10aa15b04954e0b9f4421c3a6903adac6946a5",
+    "g2_lp1_digest.m": "98371cd06b85b6e66a297b33bf06d1cea25ca47ba03a5f19b588379977dc050d",
+    "g2_lp1_forecast.m": "3a5d6fed3e63da0c50970eb77cc11663dd8a75bdc5e7c085b164a5dadb5f7fbb",
+    "g2_lp1_go_validate.m": "be8f920fc9b60dcfb64e47f94467343705d8f836a51393640bd641f57bc3fb01",
+    "g2_lp1_run.m": "568a8d9ca2eb80fbc819021aed4dbddbb65df92956ce3cdf3053b79bc04149e5",
+    "g2_lp1_scientific_gate.m": "307a1a2fbb2552a2ee502a5366fb82396c384c5c5e8772a3875b1e3e40fddaba",
+    "g2_lp1_validate_links.m": "2c283a73e8189714b97659503bd41af8bc2842d615d90e5c4c53c033d9603ab0"
+   }
+  },
+  "A0P0": {
+   "commit": "d3acb94716f267474f9ed9f95e80004348cac41e",
+   "tree": "ad65151adbc9f54af4c73716d97b010a62bdd239",
+   "sourceSetSHA256": "6f7fb3ea51a0ae64e30a5c63f8cc765af5308c511da315c989ae10235fbed030",
+   "files": {
+    "check_g2_lp0_clearance.m": "3ba87976cc5c0ed1a3a06fa570f0c6674606e786f65755c930d04848b930fc94",
+    "check_g2_lp1_contract.m": "6576e4f9fe264162efb362708f556c9775bdcbc0fd5f22077affbc23ca29a741",
+    "check_g2_lp1_contract_sensitivity.m": "91fc89094aaf238e0ee4a2c778a53581b4099fbc757b4704aff08cc48b89620e",
+    "g2_lp0_clearance.m": "59115a39dc5facef444bf82d89a2ab56e0d6c791dc9f79b19277088f6435ee09",
+    "g2_lp0_phase_audit.m": "552b38c0aa9b59446c0e3a63696f9546b870e0139dfbcc52d68cf6607a45d6eb",
+    "g2_lp0_preflight.m": "2f375c2a6313197c6ef03b8f9b198a1d478abdd53d9171e7149396eda442066d",
+    "g2_lp0_qualify.m": "0557bdc505679ac269d4192247cb55ce911a29deb305e9580620528efa97018a",
+    "g2_lp1_admit_state.m": "57d9f2a2334613386a34e669654a91e341ee057abdcdb4329d8ef05dac310858",
+    "g2_lp1_audit.m": "84eb0d1f2e790cefa380d2fe5622b3dde87ee69c93bbabcfbcabc845cb88c147",
+    "g2_lp1_context.m": "75bad168199041c76d9c07448c10aa15b04954e0b9f4421c3a6903adac6946a5",
+    "g2_lp1_digest.m": "98371cd06b85b6e66a297b33bf06d1cea25ca47ba03a5f19b588379977dc050d",
+    "g2_lp1_forecast.m": "3a5d6fed3e63da0c50970eb77cc11663dd8a75bdc5e7c085b164a5dadb5f7fbb",
+    "g2_lp1_go_validate.m": "be8f920fc9b60dcfb64e47f94467343705d8f836a51393640bd641f57bc3fb01",
+    "g2_lp1_run.m": "568a8d9ca2eb80fbc819021aed4dbddbb65df92956ce3cdf3053b79bc04149e5",
+    "g2_lp1_scientific_gate.m": "307a1a2fbb2552a2ee502a5366fb82396c384c5c5e8772a3875b1e3e40fddaba",
+    "g2_lp1_validate_links.m": "2c283a73e8189714b97659503bd41af8bc2842d615d90e5c4c53c033d9603ab0"
+   }
+  },
+  "VG2": {
+   "commit": "adbc8a6ab6cfb609a052626889ca7d22e7d0c1c5",
+   "tree": "88ede5edcc31bf0501567d8b1df1d074ff53515f",
+   "sourceSetSHA256": "9b634df22d2c44ba9f6465fa9c88f54274afa3a17aa5d43df1e2b2ac58b5c2b5",
+   "files": {
+    "check_g2_lp0_clearance.m": "3ba87976cc5c0ed1a3a06fa570f0c6674606e786f65755c930d04848b930fc94",
+    "check_g2_lp1_contract.m": "8bc0296cc76f5898abf27442f8a639a978c0ac4e8c3e5aa07c662b3892c50cde",
+    "check_g2_lp1_contract_sensitivity.m": "f330a466dd374588a30bfcd0b82cbb768dbbd55ba7c1fbe20a051e2b6b6284bf",
+    "g2_lp0_clearance.m": "59115a39dc5facef444bf82d89a2ab56e0d6c791dc9f79b19277088f6435ee09",
+    "g2_lp0_phase_audit.m": "552b38c0aa9b59446c0e3a63696f9546b870e0139dfbcc52d68cf6607a45d6eb",
+    "g2_lp0_preflight.m": "2f375c2a6313197c6ef03b8f9b198a1d478abdd53d9171e7149396eda442066d",
+    "g2_lp0_qualify.m": "0557bdc505679ac269d4192247cb55ce911a29deb305e9580620528efa97018a",
+    "g2_lp1_admit_state.m": "3813e095662f388249e0443aa15f848d1dd407f82e4c5615105c60b3006a0c69",
+    "g2_lp1_audit.m": "84eb0d1f2e790cefa380d2fe5622b3dde87ee69c93bbabcfbcabc845cb88c147",
+    "g2_lp1_campaign_ledger.m": "0997513e29a2a62d7105e1ec19ce8c1736388b7d25735c5d4c0ff40a994783ab",
+    "g2_lp1_campaign_validate.m": "216a4791148c9c676e13eb189fbef62467de72466895891fce1aac634bc8ba74",
+    "g2_lp1_context.m": "75bad168199041c76d9c07448c10aa15b04954e0b9f4421c3a6903adac6946a5",
+    "g2_lp1_digest.m": "98371cd06b85b6e66a297b33bf06d1cea25ca47ba03a5f19b588379977dc050d",
+    "g2_lp1_forecast.m": "3a5d6fed3e63da0c50970eb77cc11663dd8a75bdc5e7c085b164a5dadb5f7fbb",
+    "g2_lp1_go_validate.m": "ddc1c3ab1a9df5b66c20de14d721b09a4b1c6f938edc0f1311c655c102e0dcb7",
+    "g2_lp1_run.m": "3f9703767a36fbdad9e2a67d7596e2975edfe63e39fcf9138739cf9adadd28d6",
+    "g2_lp1_scientific_gate.m": "7610caabf03fd43ab45c3b594d422d923b211fb117cc89ead77794286f4ccac2",
+    "g2_lp1_validate_links.m": "2c283a73e8189714b97659503bd41af8bc2842d615d90e5c4c53c033d9603ab0"
+   }
+  }
+ },
+ "pinnedFiles": {
+  "ORIGINAL": {
+   "matlab/g2/G2_LP1_POLICY_v1.json": "1cf5a76ded840b0758343a1b935b299041e779ec6332c3b7cb0b6dfba1e2af43",
+   "matlab/g2/G2_LP1_POLICY_v2.json": "074d7edc981920537726314f781f24b41ac7224c18d594d6a1b15343084e5091",
+   "matlab/g2/G2_LP0_SOURCE_LOCK_v1.json": "6e19e222379eda36e0850e439c85181efae105a9347bcc1740e73114c0616b82",
+   "matlab/g2/evidence/lp0_20261122/QUALIFICATION_ATTEMPT2.json": "b4240d7ed9b534dbe188a35bac13587db45f8cd1a86a5c7a79c2e1dfa4a233f5",
+   "matlab/g2/evidence/lp1_20261122/RAW_RECORDS_SHA256.json": null,
+   "matlab/g2/evidence/lp1_20261122/FINAL_PRESERVATION_CHECK.json": null
+  },
+  "PR55": {
+   "matlab/g2/G2_LP1_POLICY_v1.json": "1cf5a76ded840b0758343a1b935b299041e779ec6332c3b7cb0b6dfba1e2af43",
+   "matlab/g2/G2_LP1_POLICY_v2.json": "074d7edc981920537726314f781f24b41ac7224c18d594d6a1b15343084e5091",
+   "matlab/g2/G2_LP0_SOURCE_LOCK_v1.json": "6e19e222379eda36e0850e439c85181efae105a9347bcc1740e73114c0616b82",
+   "matlab/g2/evidence/lp0_20261122/QUALIFICATION_ATTEMPT2.json": "b4240d7ed9b534dbe188a35bac13587db45f8cd1a86a5c7a79c2e1dfa4a233f5",
+   "matlab/g2/evidence/lp1_20261122/RAW_RECORDS_SHA256.json": "0c0e7b6246131314c9636cc33094bcea7f0d0bd912b7da58e57b6a3d6b3e5424",
+   "matlab/g2/evidence/lp1_20261122/FINAL_PRESERVATION_CHECK.json": "8f762846fc77c11a269e14753e735af3ea7b66b64379f73bdbe4585878a18efa"
+  },
+  "VG1": {
+   "matlab/g2/G2_LP1_POLICY_v1.json": "1cf5a76ded840b0758343a1b935b299041e779ec6332c3b7cb0b6dfba1e2af43",
+   "matlab/g2/G2_LP1_POLICY_v2.json": "074d7edc981920537726314f781f24b41ac7224c18d594d6a1b15343084e5091",
+   "matlab/g2/G2_LP0_SOURCE_LOCK_v1.json": "6e19e222379eda36e0850e439c85181efae105a9347bcc1740e73114c0616b82",
+   "matlab/g2/evidence/lp0_20261122/QUALIFICATION_ATTEMPT2.json": "b4240d7ed9b534dbe188a35bac13587db45f8cd1a86a5c7a79c2e1dfa4a233f5",
+   "matlab/g2/evidence/lp1_20261122/RAW_RECORDS_SHA256.json": "0c0e7b6246131314c9636cc33094bcea7f0d0bd912b7da58e57b6a3d6b3e5424",
+   "matlab/g2/evidence/lp1_20261122/FINAL_PRESERVATION_CHECK.json": "8f762846fc77c11a269e14753e735af3ea7b66b64379f73bdbe4585878a18efa"
+  },
+  "A0P0": {
+   "matlab/g2/G2_LP1_POLICY_v1.json": "1cf5a76ded840b0758343a1b935b299041e779ec6332c3b7cb0b6dfba1e2af43",
+   "matlab/g2/G2_LP1_POLICY_v2.json": "074d7edc981920537726314f781f24b41ac7224c18d594d6a1b15343084e5091",
+   "matlab/g2/G2_LP0_SOURCE_LOCK_v1.json": "6e19e222379eda36e0850e439c85181efae105a9347bcc1740e73114c0616b82",
+   "matlab/g2/evidence/lp0_20261122/QUALIFICATION_ATTEMPT2.json": "b4240d7ed9b534dbe188a35bac13587db45f8cd1a86a5c7a79c2e1dfa4a233f5",
+   "matlab/g2/evidence/lp1_20261122/RAW_RECORDS_SHA256.json": "0c0e7b6246131314c9636cc33094bcea7f0d0bd912b7da58e57b6a3d6b3e5424",
+   "matlab/g2/evidence/lp1_20261122/FINAL_PRESERVATION_CHECK.json": "8f762846fc77c11a269e14753e735af3ea7b66b64379f73bdbe4585878a18efa"
+  },
+  "VG2": {
+   "matlab/g2/G2_LP1_POLICY_v1.json": "1cf5a76ded840b0758343a1b935b299041e779ec6332c3b7cb0b6dfba1e2af43",
+   "matlab/g2/G2_LP1_POLICY_v2.json": "074d7edc981920537726314f781f24b41ac7224c18d594d6a1b15343084e5091",
+   "matlab/g2/G2_LP0_SOURCE_LOCK_v1.json": "6e19e222379eda36e0850e439c85181efae105a9347bcc1740e73114c0616b82",
+   "matlab/g2/evidence/lp0_20261122/QUALIFICATION_ATTEMPT2.json": "b4240d7ed9b534dbe188a35bac13587db45f8cd1a86a5c7a79c2e1dfa4a233f5",
+   "matlab/g2/evidence/lp1_20261122/RAW_RECORDS_SHA256.json": "0c0e7b6246131314c9636cc33094bcea7f0d0bd912b7da58e57b6a3d6b3e5424",
+   "matlab/g2/evidence/lp1_20261122/FINAL_PRESERVATION_CHECK.json": "8f762846fc77c11a269e14753e735af3ea7b66b64379f73bdbe4585878a18efa"
+  }
+ },
+ "diffs": {
+  "ORIGINAL->PR55": {
+   "sourceSetFilesChanged": [
+    "check_g2_lp1_contract.m",
+    "g2_lp1_run.m"
+   ],
+   "sourceSetFilesAdded": [
+    "g2_lp1_scientific_gate.m"
+   ],
+   "sourceSetFilesRemoved": [],
+   "allBlobsChanged_matlab_g2_scripts_g2": [
+    "matlab/g2/check_g2_lp1_contract.m",
+    "matlab/g2/g2_lp1_run.m"
+   ],
+   "allBlobsAdded": [
+    "matlab/g2/G2_LP1_CONCURRENT_REVIEW_RECONCILIATION.md",
+    "matlab/g2/G2_LP1_PREPHYSICAL_REVIEW_20261122.md",
+    "matlab/g2/G2_LP1_REPRODUCE.md",
+    "matlab/g2/G2_LP1_RESULTS.md",
+    "matlab/g2/G2_LP1_RUNLOG.md",
+    "matlab/g2/evidence/lp1_20261122/FINAL_PRESERVATION_CHECK.json",
+    "matlab/g2/evidence/lp1_20261122/H_FINAL.json",
+    "matlab/g2/evidence/lp1_20261122/H_FIRST_ATTEMPT.json",
+    "matlab/g2/evidence/lp1_20261122/H_PREFIX.json",
+    "matlab/g2/evidence/lp1_20261122/H_prefix.log",
+    "matlab/g2/evidence/lp1_20261122/INDEPENDENT_EVIDENCE_AUDIT.json",
+    "matlab/g2/evidence/lp1_20261122/LP1_CONTRACT.json",
+    "matlab/g2/evidence/lp1_20261122/PACKAGE_SHA256.json",
+    "matlab/g2/evidence/lp1_20261122/PREFLIGHT_FAULTS.json",
+    "matlab/g2/evidence/lp1_20261122/RAW_RECORDS_SHA256.json",
+    "matlab/g2/evidence/lp1_20261122/REPLAY.json",
+    "matlab/g2/evidence/lp1_20261122/bounded_S3_S4.log",
+    "matlab/g2/evidence/lp1_20261122/candidate_prefixes.log",
+    "matlab/g2/evidence/lp1_20261122/evidence_audit_report2.log",
+    "matlab/g2/evidence/lp1_20261122/evidence_audit_report3.log",
+    "matlab/g2/evidence/lp1_20261122/final_report_and_preflight.log",
+    "matlab/g2/evidence/lp1_20261122/initial_environment_probe.log",
+    "matlab/g2/evidence/lp1_20261122/lp1_contract_and_H0.log",
+    "matlab/g2/evidence/lp1_20261122/replay_and_report.log",
+    "matlab/g2/evidence/lp1_20261122/soft1_FINAL.json",
+    "matlab/g2/evidence/lp1_20261122/soft1_PREFIX.json",
+    "matlab/g2/evidence/lp1_20261122/soft2_FINAL.json",
+    "matlab/g2/evidence/lp1_20261122/soft2_PREFIX.json",
+    "matlab/g2/evidence/lp1_20261122/stiff13_FINAL.json",
+    "matlab/g2/evidence/lp1_20261122/stiff13_PREFIX.json",
+    "matlab/g2/evidence/lp1_preflight/concurrent_review_20261122/BATCH_MANIFEST.json",
+    "matlab/g2/evidence/lp1_preflight/concurrent_review_20261122/COMPUTATION_SOURCE_SETS.json",
+    "matlab/g2/evidence/lp1_preflight/concurrent_review_20261122/CURRENT_CONTRACT.json",
+    "matlab/g2/evidence/lp1_preflight/concurrent_review_20261122/PREPHYSICAL_RESULT.json",
+    "matlab/g2/evidence/lp1_preflight/concurrent_review_20261122/SHA256.json",
+    "matlab/g2/evidence/lp1_preflight/concurrent_review_20261122/current_guarded_contract.log",
+    "matlab/g2/evidence/lp1_preflight/concurrent_review_20261122/matlab_console.log",
+    "matlab/g2/evidence/lp1_preflight/concurrent_review_20261122/run_prephysical_tests.m",
+    "matlab/g2/g2_lp1_scientific_gate.m",
+    "matlab/g2/run_g2_lp1_evidence_audit.m",
+    "matlab/g2/run_g2_lp1_preflight_faults.m",
+    "matlab/g2/run_g2_lp1_report_batch.m",
+    "scripts/g2/Invoke-G2LP1-PrephysicalBatch.ps1",
+    "scripts/g2/restore_lp1_evidence.py"
+   ],
+   "allBlobsRemoved": [],
+   "pinnedFilesIdentical": false
+  },
+  "PR55->VG1": {
+   "sourceSetFilesChanged": [
+    "check_g2_lp1_contract.m",
+    "g2_lp1_run.m",
+    "g2_lp1_scientific_gate.m"
+   ],
+   "sourceSetFilesAdded": [
+    "check_g2_lp1_contract_sensitivity.m",
+    "g2_lp1_admit_state.m",
+    "g2_lp1_go_validate.m"
+   ],
+   "sourceSetFilesRemoved": [],
+   "allBlobsChanged_matlab_g2_scripts_g2": [
+    "matlab/g2/check_g2_lp1_contract.m",
+    "matlab/g2/g2_lp1_run.m",
+    "matlab/g2/g2_lp1_scientific_gate.m",
+    "scripts/g2/Invoke-G2LP1-PrephysicalBatch.ps1"
+   ],
+   "allBlobsAdded": [
+    "matlab/g2/check_g2_lp1_contract_sensitivity.m",
+    "matlab/g2/g2_lp1_admit_state.m",
+    "matlab/g2/g2_lp1_go_validate.m",
+    "scripts/g2/sr1/sr1_extract_records.m",
+    "scripts/g2/sr1/sr1_independent_check.py",
+    "scripts/g2/sr1/sr1_mesh_quality.m",
+    "scripts/g2/sr1/sr1_verify_archive.py"
+   ],
+   "allBlobsRemoved": [],
+   "pinnedFilesIdentical": true
+  },
+  "VG1->A0P0": {
+   "sourceSetFilesChanged": [],
+   "sourceSetFilesAdded": [],
+   "sourceSetFilesRemoved": [],
+   "allBlobsChanged_matlab_g2_scripts_g2": [],
+   "allBlobsAdded": [
+    "matlab/g2/G2_LP1_VG1_REPRODUCE.md",
+    "matlab/g2/evidence/lp1_preflight/vg1_20261122/A_original_batch_70bf6f4/BATCH_MANIFEST.json",
+    "matlab/g2/evidence/lp1_preflight/vg1_20261122/A_original_batch_70bf6f4/PREPHYSICAL_RESULT.json",
+    "matlab/g2/evidence/lp1_preflight/vg1_20261122/A_original_batch_70bf6f4/SANITIZATION.json",
+    "matlab/g2/evidence/lp1_preflight/vg1_20261122/A_original_batch_70bf6f4/matlab_console.log",
+    "matlab/g2/evidence/lp1_preflight/vg1_20261122/A_original_batch_70bf6f4/run_prephysical_tests.m",
+    "matlab/g2/evidence/lp1_preflight/vg1_20261122/B_amended_pure_suite_f65d252/CONTRACT_SENSITIVITY.json",
+    "matlab/g2/evidence/lp1_preflight/vg1_20261122/B_amended_pure_suite_f65d252/CONTRACT_TESTS_PURE.json",
+    "matlab/g2/evidence/lp1_preflight/vg1_20261122/B_amended_pure_suite_f65d252/SANITIZATION.json",
+    "matlab/g2/evidence/lp1_preflight/vg1_20261122/B_amended_pure_suite_f65d252/qual_pure.log",
+    "matlab/g2/evidence/lp1_preflight/vg1_20261122/B_amended_pure_suite_f65d252/qual_pure.m",
+    "matlab/g2/evidence/lp1_preflight/vg1_20261122/C_original_suite_mutation_comparison/SANITIZATION.json",
+    "matlab/g2/evidence/lp1_preflight/vg1_20261122/C_original_suite_mutation_comparison/orig_sens.log",
+    "matlab/g2/evidence/lp1_preflight/vg1_20261122/C_original_suite_mutation_comparison/orig_sens.m",
+    "matlab/g2/evidence/lp1_preflight/vg1_20261122/D_development_runs_uncommitted_worktree/SANITIZATION.json",
+    "matlab/g2/evidence/lp1_preflight/vg1_20261122/D_development_runs_uncommitted_worktree/dev_contract.m",
+    "matlab/g2/evidence/lp1_preflight/vg1_20261122/D_development_runs_uncommitted_worktree/dev_contract1.log",
+    "matlab/g2/evidence/lp1_preflight/vg1_20261122/D_development_runs_uncommitted_worktree/dev_sens.m",
+    "matlab/g2/evidence/lp1_preflight/vg1_20261122/D_development_runs_uncommitted_worktree/dev_sens1.log",
+    "matlab/g2/evidence/lp1_preflight/vg1_20261122/E_corrected_batch_f65d252/BATCH_MANIFEST.json",
+    "matlab/g2/evidence/lp1_preflight/vg1_20261122/E_corrected_batch_f65d252/CONTRACT_TESTS.json",
+    "matlab/g2/evidence/lp1_preflight/vg1_20261122/E_corrected_batch_f65d252/PREPHYSICAL_RESULT.json",
+    "matlab/g2/evidence/lp1_preflight/vg1_20261122/E_corrected_batch_f65d252/SANITIZATION.json",
+    "matlab/g2/evidence/lp1_preflight/vg1_20261122/E_corrected_batch_f65d252/matlab_console.log",
+    "matlab/g2/evidence/lp1_preflight/vg1_20261122/E_corrected_batch_f65d252/run_prephysical_tests.m",
+    "matlab/g2/evidence/lp1_preflight/vg1_20261122/RAM_WAIT_BEFORE_E.log",
+    "matlab/g2/evidence/lp1_preflight/vg1_20261122/README.md",
+    "matlab/g2/evidence/lp1_preflight/vg1_20261122/SOURCE_INTEGRITY.json",
+    "matlab/g2/evidence/lp1_preflight/vg1_20261122/TEST_TABLE.md",
+    "scripts/g2/a0/a0_compare_records.m",
+    "scripts/g2/a0/a0_pin_check.py",
+    "scripts/g2/vg1/vg1_source_integrity.py",
+    "scripts/g2/vg1/vg1_stage_evidence.py"
+   ],
+   "allBlobsRemoved": [],
+   "pinnedFilesIdentical": true
+  },
+  "A0P0->VG2": {
+   "sourceSetFilesChanged": [
+    "check_g2_lp1_contract.m",
+    "check_g2_lp1_contract_sensitivity.m",
+    "g2_lp1_admit_state.m",
+    "g2_lp1_go_validate.m",
+    "g2_lp1_run.m",
+    "g2_lp1_scientific_gate.m"
+   ],
+   "sourceSetFilesAdded": [
+    "g2_lp1_campaign_ledger.m",
+    "g2_lp1_campaign_validate.m"
+   ],
+   "sourceSetFilesRemoved": [],
+   "allBlobsChanged_matlab_g2_scripts_g2": [
+    "matlab/g2/check_g2_lp1_contract.m",
+    "matlab/g2/check_g2_lp1_contract_sensitivity.m",
+    "matlab/g2/g2_lp1_admit_state.m",
+    "matlab/g2/g2_lp1_go_validate.m",
+    "matlab/g2/g2_lp1_run.m",
+    "matlab/g2/g2_lp1_scientific_gate.m",
+    "scripts/g2/Invoke-G2LP1-PrephysicalBatch.ps1"
+   ],
+   "allBlobsAdded": [
+    "matlab/g2/g2_lp1_campaign_ledger.m",
+    "matlab/g2/g2_lp1_campaign_validate.m"
+   ],
+   "allBlobsRemoved": [],
+   "pinnedFilesIdentical": true
+  }
+ }
+}

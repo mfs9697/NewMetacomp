@@ -1,0 +1,142 @@
+[Warning: Name is nonexistent or not a directory: <user>\Google Drive\Projects\8 - CohZonFEM\czm_project\CrackPath\CrackFromHoleLEFM\cfh] 
+[Warning: Name is nonexistent or not a directory: <user>\Google Drive\Projects\8 - CohZonFEM\Asphalt\remmers2003] 
+positive_links 1 [positive] expected=true observed=true
+mutate_KI 1 [negative] expected=G2LP1:HOLD_RECORD_INTEGRITY | Signed K or solution observed=G2LP1:HOLD_RECORD_INTEGRITY
+mutate_KII 1 [negative] expected=G2LP1:HOLD_RECORD_INTEGRITY | Signed K or solution observed=G2LP1:HOLD_RECORD_INTEGRITY
+mutate_caseId 1 [negative] expected=G2LP1:HOLD_RECORD_INTEGRITY | Case, mask, ratio or index changed. observed=G2LP1:HOLD_RECORD_INTEGRITY
+mutate_mask 1 [negative] expected=G2LP1:HOLD_RECORD_INTEGRITY | Case, mask, ratio or index changed. observed=G2LP1:HOLD_RECORD_INTEGRITY
+mutate_ratio 1 [negative] expected=G2LP1:HOLD_RECORD_INTEGRITY | Case, mask, ratio or index changed. observed=G2LP1:HOLD_RECORD_INTEGRITY
+mutate_stateIndex 1 [negative] expected=G2LP1:HOLD_RECORD_INTEGRITY | Case, mask, ratio or index changed. observed=G2LP1:HOLD_RECORD_INTEGRITY
+mutate_policySHA256 1 [negative] expected=G2LP1:HOLD_SOURCE | Parent/source/policy link differs. observed=G2LP1:HOLD_SOURCE
+mutate_sourceSHA256 1 [negative] expected=G2LP1:HOLD_SOURCE | Parent/source/policy link differs. observed=G2LP1:HOLD_SOURCE
+mutate_parentSHA256 1 [negative] expected=G2LP1:HOLD_SOURCE | Parent/source/policy link differs. observed=G2LP1:HOLD_SOURCE
+mutate_polyline_mm 1 [negative] expected=G2LP1:HOLD_RECORD_INTEGRITY | Saved geometry differs observed=G2LP1:HOLD_RECORD_INTEGRITY
+mutate_meshSHA256 1 [negative] expected=G2LP1:HOLD_RECORD_INTEGRITY | Signed K or solution observed=G2LP1:HOLD_RECORD_INTEGRITY
+mutate_phaseSHA256 1 [negative] expected=G2LP1:HOLD_RECORD_INTEGRITY | Signed K or solution observed=G2LP1:HOLD_RECORD_INTEGRITY
+wrong_units 1 [negative] expected=G2LP1:HOLD_RECORD_INTEGRITY | Unit conversion changed. observed=G2LP1:HOLD_RECORD_INTEGRITY
+forged_pass_flag 1 [negative] expected=G2LP1:HOLD_RECORD_INTEGRITY | Signed K or solution observed=G2LP1:HOLD_RECORD_INTEGRITY
+solution_case_link 1 [negative] expected=G2LP1:HOLD_RECORD_INTEGRITY | Signed K or solution observed=G2LP1:HOLD_RECORD_INTEGRITY
+solution_source_drift 1 [negative] expected=G2LP1:HOLD_RECORD_INTEGRITY | Signed K or solution observed=G2LP1:HOLD_RECORD_INTEGRITY
+own_signed_MTS 1 [positive] expected=true observed=true
+signed_KII_changes_path 1 [positive] expected=true observed=true
+S5_forecast 1 [negative] expected=G2LP1:HOLD_UNAUTHORIZED_STATE | S5 and later observed=G2LP1:HOLD_UNAUTHORIZED_STATE
+S5_controller 1 [negative] expected=G2LP1:HOLD_UNAUTHORIZED_STATE | Only S0-S4 observed=G2LP1:HOLD_UNAUTHORIZED_STATE
+negative_state_controller 1 [negative] expected=G2LP1:HOLD_UNAUTHORIZED_STATE | Only S0-S4 observed=G2LP1:HOLD_UNAUTHORIZED_STATE
+fractional_state_controller 1 [negative] expected=G2LP1:HOLD_UNAUTHORIZED_STATE | Only S0-S4 observed=G2LP1:HOLD_UNAUTHORIZED_STATE
+compressive_parent 1 [negative] expected=G2LP1:HOLD_K_EXTRACTION | Invalid tensile MTS root observed=G2LP1:HOLD_K_EXTRACTION
+nonfinite_parent 1 [negative] expected=G2LP1:HOLD_K_EXTRACTION | Invalid tensile MTS root observed=G2LP1:HOLD_K_EXTRACTION
+zero_K_parent 1 [negative] expected=G2LP1:HOLD_K_EXTRACTION | Invalid tensile MTS root observed=G2LP1:HOLD_K_EXTRACTION
+controller_rejects_go_path_argument 1 [negative] expected=MATLAB:InputParser:UnmatchedParameter observed=MATLAB:InputParser:UnmatchedParameter
+gate_takes_context_only 1 [interface] expected=true observed=true
+gate_go_path_hardcoded 1 [interface] expected=true observed=true
+controller_calls_gate_before_run_folder 1 [interface] expected=true observed=true
+validator_opens_no_file 1 [interface] expected=true observed=true
+go_absent_production_gate 1 [go] expected=G2LP1:HOLD_UNAUTHORIZED_STATE | no separate GO record observed=G2LP1:HOLD_UNAUTHORIZED_STATE
+go_absent_left_no_file 1 [go] expected=true observed=true
+go_fixture_positive_control 1 [go] expected=true observed=true
+go_not_struct 1 [go] expected=G2LP1:HOLD_UNAUTHORIZED_STATE | Incomplete scientific GO record observed=G2LP1:HOLD_UNAUTHORIZED_STATE
+go_missing_field 1 [go] expected=G2LP1:HOLD_UNAUTHORIZED_STATE | Incomplete scientific GO record observed=G2LP1:HOLD_UNAUTHORIZED_STATE
+go_wrong_decision 1 [go] expected=G2LP1:HOLD_UNAUTHORIZED_STATE | absent or invalid observed=G2LP1:HOLD_UNAUTHORIZED_STATE
+go_wrong_review_status 1 [go] expected=G2LP1:HOLD_UNAUTHORIZED_STATE | absent or invalid observed=G2LP1:HOLD_UNAUTHORIZED_STATE
+go_empty_reviewer 1 [go] expected=G2LP1:HOLD_UNAUTHORIZED_STATE | absent or invalid observed=G2LP1:HOLD_UNAUTHORIZED_STATE
+go_foreign_review_url 1 [go] expected=G2LP1:HOLD_UNAUTHORIZED_STATE | absent or invalid observed=G2LP1:HOLD_UNAUTHORIZED_STATE
+go_policy_mismatch 1 [go] expected=G2LP1:HOLD_SOURCE | does not bind observed=G2LP1:HOLD_SOURCE
+go_source_mismatch 1 [go] expected=G2LP1:HOLD_SOURCE | does not bind observed=G2LP1:HOLD_SOURCE
+go_lp0_mismatch 1 [go] expected=G2LP1:HOLD_SOURCE | does not bind observed=G2LP1:HOLD_SOURCE
+go_token_mismatch 1 [go] expected=G2LP1:HOLD_SOURCE | does not bind observed=G2LP1:HOLD_SOURCE
+go_contract_path_outside 1 [go] expected=G2LP1:HOLD_SOURCE | not pinned observed=G2LP1:HOLD_SOURCE
+go_contract_path_traversal 1 [go] expected=G2LP1:HOLD_SOURCE | not pinned observed=G2LP1:HOLD_SOURCE
+go_contract_missing 1 [go] expected=G2LP1:HOLD_SOURCE | absent or changed observed=G2LP1:HOLD_SOURCE
+go_contract_sha_mismatch 1 [go] expected=G2LP1:HOLD_SOURCE | absent or changed observed=G2LP1:HOLD_SOURCE
+go_contract_lacks_fields 1 [go] expected=G2LP1:HOLD_UNAUTHORIZED_STATE | lacks negative observed=G2LP1:HOLD_UNAUTHORIZED_STATE
+go_contract_not_pass 1 [go] expected=G2LP1:HOLD_UNAUTHORIZED_STATE | has not passed observed=G2LP1:HOLD_UNAUTHORIZED_STATE
+go_contract_incomplete_count 1 [go] expected=G2LP1:HOLD_UNAUTHORIZED_STATE | has not passed observed=G2LP1:HOLD_UNAUTHORIZED_STATE
+go_contract_too_few_tests 1 [go] expected=G2LP1:HOLD_UNAUTHORIZED_STATE | has not passed observed=G2LP1:HOLD_UNAUTHORIZED_STATE
+go_contract_physical_solve 1 [go] expected=G2LP1:HOLD_UNAUTHORIZED_STATE | has not passed observed=G2LP1:HOLD_UNAUTHORIZED_STATE
+go_contract_mesh_build 1 [go] expected=G2LP1:HOLD_UNAUTHORIZED_STATE | has not passed observed=G2LP1:HOLD_UNAUTHORIZED_STATE
+go_contract_negatives_false 1 [go] expected=G2LP1:HOLD_UNAUTHORIZED_STATE | has not passed observed=G2LP1:HOLD_UNAUTHORIZED_STATE
+go_contract_integrity_false 1 [go] expected=G2LP1:HOLD_UNAUTHORIZED_STATE | has not passed observed=G2LP1:HOLD_UNAUTHORIZED_STATE
+record_roundtrip 1 [record] expected=true observed=true
+overwrite_refused 1 [record] expected=G2Chain:RecordExists | overwrite observed=G2Chain:RecordExists
+byte_tamper 1 [record] expected=true observed=true
+manifest_tamper 1 [record] expected=true observed=true
+mat_without_manifest 1 [record] expected=true observed=true
+missing_record 1 [record] expected=true observed=true
+record_without_schema 1 [record] expected=G2Chain:RecordSchema | schema-tagged observed=G2Chain:RecordSchema
+record_missing_folder 1 [record] expected=G2Chain:RecordFolder | Parent record folder observed=G2Chain:RecordFolder
+admit_partial_state_refused 1 [admission] expected=G2LP1:HOLD_RECORD_INTEGRITY | Partial unreviewed state observed=G2LP1:HOLD_RECORD_INTEGRITY
+admit_partial_state_untouched 1 [admission] expected=true observed=true
+admit_low_memory_refused 1 [admission] expected=G2LP1:HOLD_MEMORY | 5 GiB observed=G2LP1:HOLD_MEMORY
+admit_low_memory_no_folder 1 [admission] expected=true observed=true
+admit_boundary_below_refused 1 [admission] expected=G2LP1:HOLD_MEMORY | 5 GiB observed=G2LP1:HOLD_MEMORY
+admit_nonfinite_memory_refused 1 [admission] expected=G2LP1:HOLD_MEMORY | 5 GiB observed=G2LP1:HOLD_MEMORY
+admit_nonfinite_no_folder 1 [admission] expected=true observed=true
+admit_at_threshold_creates_folder 1 [admission] expected=true observed=true
+admit_threshold_equals_policy 1 [admission] expected=true observed=true
+source_digest_detects_one_byte_drift 1 [positive] expected=true observed=true
+go_missing_campaign_id 1 [go] expected=G2LP1:HOLD_UNAUTHORIZED_STATE | Incomplete scientific GO record observed=G2LP1:HOLD_UNAUTHORIZED_STATE
+go_missing_run_name 1 [go] expected=G2LP1:HOLD_UNAUTHORIZED_STATE | Incomplete scientific GO record observed=G2LP1:HOLD_UNAUTHORIZED_STATE
+go_wrong_campaign_scope 1 [go] expected=G2LP1:HOLD_UNAUTHORIZED_STATE | Campaign scope, run name or campaign ID is invalid observed=G2LP1:HOLD_UNAUTHORIZED_STATE
+go_historical_run_name 1 [go] expected=G2LP1:HOLD_UNAUTHORIZED_STATE | Campaign scope, run name or campaign ID is invalid observed=G2LP1:HOLD_UNAUTHORIZED_STATE
+go_run_name_syntax 1 [go] expected=G2LP1:HOLD_UNAUTHORIZED_STATE | Campaign scope, run name or campaign ID is invalid observed=G2LP1:HOLD_UNAUTHORIZED_STATE
+go_campaign_id_syntax 1 [go] expected=G2LP1:HOLD_UNAUTHORIZED_STATE | Campaign scope, run name or campaign ID is invalid observed=G2LP1:HOLD_UNAUTHORIZED_STATE
+camp_open_new_positive 1 [campaign] expected=true observed=true
+camp_wrong_run_name 1 [campaign] expected=G2LP1:HOLD_CAMPAIGN_SCOPE | not the run approved observed=G2LP1:HOLD_CAMPAIGN_SCOPE
+camp_missing_run_name 1 [campaign] expected=G2LP1:HOLD_CAMPAIGN_SCOPE | not the run approved observed=G2LP1:HOLD_CAMPAIGN_SCOPE
+camp_historical_run_name 1 [campaign] expected=G2LP1:HOLD_CAMPAIGN_SCOPE | not the run approved observed=G2LP1:HOLD_CAMPAIGN_SCOPE
+camp_duplicate_campaign_new_run 1 [campaign] expected=G2LP1:HOLD_CAMPAIGN_SCOPE | not the run approved observed=G2LP1:HOLD_CAMPAIGN_SCOPE
+camp_ledger_integrity_fail 1 [campaign] expected=G2LP1:HOLD_CAMPAIGN_INTEGRITY | ledger record failed observed=G2LP1:HOLD_CAMPAIGN_INTEGRITY
+camp_run_folder_without_receipt 1 [campaign] expected=G2LP1:HOLD_CAMPAIGN_INTEGRITY | Run folder exists without observed=G2LP1:HOLD_CAMPAIGN_INTEGRITY
+camp_entries_without_receipt 1 [campaign] expected=G2LP1:HOLD_CAMPAIGN_INTEGRITY | Ledger entries exist without observed=G2LP1:HOLD_CAMPAIGN_INTEGRITY
+camp_closure_without_receipt 1 [campaign] expected=G2LP1:HOLD_CAMPAIGN_INTEGRITY | Ledger entries exist without observed=G2LP1:HOLD_CAMPAIGN_INTEGRITY
+camp_continue_positive 1 [campaign] expected=true observed=true
+camp_repeated_staged_calls_continue 1 [campaign] expected=true observed=true
+camp_receipt_other_go 1 [campaign] expected=G2LP1:HOLD_CAMPAIGN_INTEGRITY | does not bind observed=G2LP1:HOLD_CAMPAIGN_INTEGRITY
+camp_receipt_other_campaign 1 [campaign] expected=G2LP1:HOLD_CAMPAIGN_INTEGRITY | does not bind observed=G2LP1:HOLD_CAMPAIGN_INTEGRITY
+camp_receipt_other_run 1 [campaign] expected=G2LP1:HOLD_CAMPAIGN_INTEGRITY | does not bind observed=G2LP1:HOLD_CAMPAIGN_INTEGRITY
+camp_receipt_other_token 1 [campaign] expected=G2LP1:HOLD_CAMPAIGN_INTEGRITY | does not bind observed=G2LP1:HOLD_CAMPAIGN_INTEGRITY
+camp_receipt_spoofed_fields 1 [campaign] expected=G2LP1:HOLD_CAMPAIGN_INTEGRITY | does not bind observed=G2LP1:HOLD_CAMPAIGN_INTEGRITY
+camp_interrupted_opening_continue 1 [campaign] expected=true observed=true
+camp_deleted_run_folder 1 [campaign] expected=G2LP1:HOLD_CAMPAIGN_INTEGRITY | Admitted states are missing observed=G2LP1:HOLD_CAMPAIGN_INTEGRITY
+camp_run_token_mismatch 1 [campaign] expected=G2LP1:HOLD_CAMPAIGN_INTEGRITY | Run record token differs observed=G2LP1:HOLD_CAMPAIGN_INTEGRITY
+camp_closed_verify_only 1 [campaign] expected=true observed=true
+camp_closed_overrides_resume 1 [campaign] expected=true observed=true
+camp_hold_without_review 1 [campaign] expected=G2LP1:HOLD_CAMPAIGN_REVIEW_REQUIRED | Unreviewed pre-admission observed=G2LP1:HOLD_CAMPAIGN_REVIEW_REQUIRED
+camp_hold_reviewed_resume_positive 1 [campaign] expected=true observed=true
+camp_resume_wrong_hold 1 [campaign] expected=G2LP1:HOLD_CAMPAIGN_REVIEW_REQUIRED | does not bind this campaign and HOLD observed=G2LP1:HOLD_CAMPAIGN_REVIEW_REQUIRED
+camp_resume_wrong_campaign 1 [campaign] expected=G2LP1:HOLD_CAMPAIGN_REVIEW_REQUIRED | does not bind this campaign and HOLD observed=G2LP1:HOLD_CAMPAIGN_REVIEW_REQUIRED
+camp_resume_wrong_decision 1 [campaign] expected=G2LP1:HOLD_CAMPAIGN_REVIEW_REQUIRED | does not bind this campaign and HOLD observed=G2LP1:HOLD_CAMPAIGN_REVIEW_REQUIRED
+camp_resume_foreign_url 1 [campaign] expected=G2LP1:HOLD_CAMPAIGN_REVIEW_REQUIRED | does not bind this campaign and HOLD observed=G2LP1:HOLD_CAMPAIGN_REVIEW_REQUIRED
+camp_resume_empty_reviewer 1 [campaign] expected=G2LP1:HOLD_CAMPAIGN_REVIEW_REQUIRED | does not bind this campaign and HOLD observed=G2LP1:HOLD_CAMPAIGN_REVIEW_REQUIRED
+camp_resume_allowance_exhausted 1 [campaign] expected=G2LP1:HOLD_CAMPAIGN_REVIEW_REQUIRED | allowance exhausted observed=G2LP1:HOLD_CAMPAIGN_REVIEW_REQUIRED
+camp_two_unreviewed_holds 1 [campaign] expected=G2LP1:HOLD_CAMPAIGN_REVIEW_REQUIRED | More than one observed=G2LP1:HOLD_CAMPAIGN_REVIEW_REQUIRED
+camp_resolved_hold_continue_without_resume_file 1 [campaign] expected=true observed=true
+ledger_absent_snapshot 1 [ledger] expected=true observed=true
+ledger_roundtrip_positive 1 [ledger] expected=true observed=true
+ledger_duplicate_receipt_refused 1 [ledger] expected=G2Chain:RecordExists | overwrite observed=G2Chain:RecordExists
+ledger_duplicate_admit_refused 1 [ledger] expected=G2Chain:RecordExists | overwrite observed=G2Chain:RecordExists
+ledger_invalid_entry_name 1 [ledger] expected=G2LP1:HOLD_CAMPAIGN_INTEGRITY | Invalid ledger entry name observed=G2LP1:HOLD_CAMPAIGN_INTEGRITY
+ledger_path_traversal_name 1 [ledger] expected=G2LP1:HOLD_CAMPAIGN_INTEGRITY | Invalid ledger entry name observed=G2LP1:HOLD_CAMPAIGN_INTEGRITY
+ledger_closed_positive 1 [ledger] expected=true observed=true
+ledger_tampered_entry_detected 1 [ledger] expected=true observed=true
+ledger_unexpected_file_detected 1 [ledger] expected=true observed=true
+ledger_foreign_entry_detected 1 [ledger] expected=true observed=true
+ledger_kind_spoof_detected 1 [ledger] expected=true observed=true
+ledger_orphan_manifest_detected 1 [ledger] expected=true observed=true
+admit_hook_not_called_on_low_memory 1 [admission] expected=G2LP1:HOLD_MEMORY | 5 GiB observed=G2LP1:HOLD_MEMORY
+admit_hook_low_memory_no_call_no_folder 1 [admission] expected=true observed=true
+admit_hook_refusal_leaves_no_folder 1 [admission] expected=G2LP1:HOLD_CAMPAIGN_CLOSED | Campaign is closed observed=G2LP1:HOLD_CAMPAIGN_CLOSED
+admit_hook_refusal_no_folder 1 [admission] expected=true observed=true
+admit_hook_positive_then_folder 1 [admission] expected=true observed=true
+controller_campaign_decided_before_writes 1 [interface] expected=true observed=true
+controller_receipt_only_on_open_new 1 [interface] expected=true observed=true
+controller_admission_uses_campaign_hook 1 [interface] expected=true observed=true
+controller_verify_only_checked_before_loop 1 [interface] expected=true observed=true
+controller_campaign_refusal_writes_no_state 1 [interface] expected=true observed=true
+gate_returns_validated_go_sha 1 [interface] expected=true observed=true
+campaign_validator_opens_no_file 1 [interface] expected=true observed=true
+resume_path_hardcoded 1 [interface] expected=true observed=true
+controller_rejects_resume_path_argument 1 [negative] expected=MATLAB:InputParser:UnmatchedParameter observed=MATLAB:InputParser:UnmatchedParameter
+controller_rejects_campaign_argument 1 [negative] expected=MATLAB:InputParser:UnmatchedParameter observed=MATLAB:InputParser:UnmatchedParameter
+G2_LP1_CONTRACT_TESTS=138/138 NEG=26 REC=8 GO=31 ADM=14 IFC=12 CAMP=31 LEDGER=12
+DEV pass=1 138/138

@@ -1,0 +1,199 @@
+{
+  "schema": "NewMetacomp.G2.LP1.ContractSensitivity.v1",
+  "mutations": [
+    {
+      "mutation": "token_binding_removed",
+      "file": "g2_lp1_go_validate.m",
+      "applied": true,
+      "suiteFailed": true,
+      "detectedBy": [
+        "go_token_mismatch"
+      ],
+      "missed": [],
+      "pass": true
+    },
+    {
+      "mutation": "binding_identifier_wrong",
+      "file": "g2_lp1_go_validate.m",
+      "applied": true,
+      "suiteFailed": true,
+      "detectedBy": [
+        "go_lp0_mismatch",
+        "go_policy_mismatch",
+        "go_source_mismatch",
+        "go_token_mismatch"
+      ],
+      "missed": [],
+      "pass": true
+    },
+    {
+      "mutation": "unrelated_same_identifier",
+      "file": "g2_lp1_go_validate.m",
+      "applied": true,
+      "suiteFailed": true,
+      "detectedBy": [
+        "go_contract_missing",
+        "go_fixture_positive_control",
+        "go_policy_mismatch",
+        "go_wrong_decision"
+      ],
+      "missed": [],
+      "pass": true
+    },
+    {
+      "mutation": "links_identifier_collapsed",
+      "file": "g2_lp1_validate_links.m",
+      "applied": true,
+      "suiteFailed": true,
+      "detectedBy": [
+        "mutate_parentSHA256",
+        "mutate_policySHA256",
+        "mutate_sourceSHA256"
+      ],
+      "missed": [],
+      "pass": true
+    },
+    {
+      "mutation": "folder_before_memory_guard",
+      "file": "g2_lp1_admit_state.m",
+      "applied": true,
+      "suiteFailed": true,
+      "detectedBy": [
+        "admit_low_memory_no_folder",
+        "admit_nonfinite_no_folder"
+      ],
+      "missed": [],
+      "pass": true
+    },
+    {
+      "mutation": "S5_cap_removed",
+      "file": "g2_lp1_forecast.m",
+      "applied": true,
+      "suiteFailed": true,
+      "detectedBy": [
+        "S5_forecast"
+      ],
+      "missed": [],
+      "pass": true
+    },
+    {
+      "mutation": "overwrite_allowed",
+      "file": "g2_trajectory_record.m",
+      "applied": true,
+      "suiteFailed": true,
+      "detectedBy": [
+        "overwrite_refused"
+      ],
+      "missed": [],
+      "pass": true
+    },
+    {
+      "mutation": "absent_go_not_checked",
+      "file": "g2_lp1_scientific_gate.m",
+      "applied": true,
+      "suiteFailed": true,
+      "detectedBy": [
+        "go_absent_production_gate"
+      ],
+      "missed": [],
+      "pass": true
+    },
+    {
+      "mutation": "campaign_run_name_unchecked",
+      "file": "g2_lp1_campaign_validate.m",
+      "applied": true,
+      "suiteFailed": true,
+      "detectedBy": [
+        "camp_duplicate_campaign_new_run",
+        "camp_historical_run_name",
+        "camp_wrong_run_name"
+      ],
+      "missed": [],
+      "pass": true
+    },
+    {
+      "mutation": "receipt_go_sha_unbound",
+      "file": "g2_lp1_campaign_validate.m",
+      "applied": true,
+      "suiteFailed": true,
+      "detectedBy": [
+        "camp_receipt_other_go"
+      ],
+      "missed": [],
+      "pass": true
+    },
+    {
+      "mutation": "closed_campaign_reopened",
+      "file": "g2_lp1_campaign_validate.m",
+      "applied": true,
+      "suiteFailed": true,
+      "detectedBy": [
+        "camp_closed_overrides_resume",
+        "camp_closed_verify_only"
+      ],
+      "missed": [],
+      "pass": true
+    },
+    {
+      "mutation": "resume_allowance_raised",
+      "file": "g2_lp1_campaign_validate.m",
+      "applied": true,
+      "suiteFailed": true,
+      "detectedBy": [
+        "camp_resume_allowance_exhausted"
+      ],
+      "missed": [],
+      "pass": true
+    },
+    {
+      "mutation": "deleted_run_folder_accepted",
+      "file": "g2_lp1_campaign_validate.m",
+      "applied": true,
+      "suiteFailed": true,
+      "detectedBy": [
+        "camp_deleted_run_folder"
+      ],
+      "missed": [],
+      "pass": true
+    },
+    {
+      "mutation": "ledger_tamper_ignored",
+      "file": "g2_lp1_campaign_ledger.m",
+      "applied": true,
+      "suiteFailed": true,
+      "detectedBy": [
+        "ledger_tampered_entry_detected"
+      ],
+      "missed": [],
+      "pass": true
+    },
+    {
+      "mutation": "campaign_hook_before_memory_guard",
+      "file": "g2_lp1_admit_state.m",
+      "applied": true,
+      "suiteFailed": true,
+      "detectedBy": [
+        "admit_hook_low_memory_no_call_no_folder"
+      ],
+      "missed": [],
+      "pass": true
+    },
+    {
+      "mutation": "go_campaign_scope_unchecked",
+      "file": "g2_lp1_go_validate.m",
+      "applied": true,
+      "suiteFailed": true,
+      "detectedBy": [
+        "go_wrong_campaign_scope"
+      ],
+      "missed": [],
+      "pass": true
+    }
+  ],
+  "detected": 16,
+  "total": 16,
+  "cleanSuiteAfter": true,
+  "pass": true,
+  "physicalSolves": 0,
+  "meshBuilds": 0
+}
