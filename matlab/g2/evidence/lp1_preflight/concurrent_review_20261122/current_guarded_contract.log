@@ -1,0 +1,27 @@
+[Warning: Name is nonexistent or not a directory: C:\Users\Mikhailo\Google Drive\Projects\8 - CohZonFEM\czm_project\CrackPath\CrackFromHoleLEFM\cfh] 
+[Warning: Name is nonexistent or not a directory: C:\Users\Mikhailo\Google Drive\Projects\8 - CohZonFEM\Asphalt\remmers2003] 
+mutate_KI 1
+mutate_KII 1
+mutate_caseId 1
+mutate_mask 1
+mutate_ratio 1
+mutate_stateIndex 1
+mutate_policySHA256 1
+mutate_sourceSHA256 1
+mutate_parentSHA256 1
+mutate_polyline_mm 1
+mutate_meshSHA256 1
+mutate_phaseSHA256 1
+wrong_units 1
+forged_pass_flag 1
+own_signed_MTS 1
+signed_KII_changes_path 1
+S5_forecast 1
+S5_controller 1
+scientific_go_missing_or_wrong_token 1
+compressive_parent 1
+nonfinite_parent 1
+record_roundtrip 1
+overwrite_refused 1
+byte_tamper 1
+G2_LP1_CONTRACT_TESTS=25/25

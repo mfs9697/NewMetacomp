@@ -1,0 +1,8 @@
+[Warning: Name is nonexistent or not a directory: C:\Users\Mikhailo\Google Drive\Projects\8 - CohZonFEM\czm_project\CrackPath\CrackFromHoleLEFM\cfh] 
+[Warning: Name is nonexistent or not a directory: C:\Users\Mikhailo\Google Drive\Projects\8 - CohZonFEM\Asphalt\remmers2003] 
+[Warning: Function memory has the same name as a MATLAB built-in. We suggest you rename the function to avoid a potential name conflict.] 
+[> In path (line 109)
+In addpath (line 86)
+In run_g2_lp1_preflight_faults (line 8)] 
+LP1_PREFLIGHT_FAULTS low_RAM=1 dirty_source=1 cleanup=1 NO_FEM=1
+G2_LP1_REPORT states=20 output=C:\Users\Mikhailo\Documents\Codex\2026-11-22\new-chat\NewMetacomp\reports\G2\LP1_20261122_v3

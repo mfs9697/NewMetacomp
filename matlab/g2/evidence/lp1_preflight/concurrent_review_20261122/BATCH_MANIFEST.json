@@ -1,0 +1,26 @@
+{
+    "schema":  "NewMetacomp.G2.LP1.PrephysicalBatchManifest.v1",
+    "sourceCommit":  "b276b7131934ae25dceee750630d504373ad5033",
+    "branch":  "research/g2-lp0-lp1-implementation-20261122",
+    "matlabExecutable":  "C:\\Program Files\\Polyspace\\R2023a\\bin\\matlab.exe",
+    "generatedUTC":  "2026-11-22T14:33:17.7005803Z",
+    "exitCode":  1,
+    "scientificGO":  false,
+    "files":  [
+                  {
+                      "name":  "run_prephysical_tests.m",
+                      "sha256":  "0ee658f044a4ad194b9766d0efee8e389de9fea1f376ea6cfdbfc81851d83667",
+                      "bytes":  3652
+                  },
+                  {
+                      "name":  "PREPHYSICAL_RESULT.json",
+                      "sha256":  "44d35398437b58fd89437e9dc00223c9a4cd021ff5ae592b8afea0e0c55fb653",
+                      "bytes":  252
+                  },
+                  {
+                      "name":  "matlab_console.log",
+                      "sha256":  "dc3370eb01216a5f1897f291cb9b6a8d7b85263940a8726819e9e136fe3719da",
+                      "bytes":  5188
+                  }
+              ]
+}

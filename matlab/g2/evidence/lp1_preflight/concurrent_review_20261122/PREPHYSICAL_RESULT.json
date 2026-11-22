@@ -1,0 +1,8 @@
+{
+  "schema": "NewMetacomp.G2.LP1.PrephysicalBatch.v1",
+  "status": "FAILED",
+  "errorIdentifier": "G2LP1:Preflight",
+  "message": "HOLD_LP0_FEASIBILITY: HOLD_MEMORY (RAM 4.958122 GiB)",
+  "scientificGO": false,
+  "evidenceRole": "UNREVIEWED_FAILURE"
+}

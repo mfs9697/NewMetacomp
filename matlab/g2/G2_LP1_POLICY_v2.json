@@ -1,0 +1,298 @@
+{
+  "schema": "NewMetacomp.G2.LP1.Policy.v2",
+  "issue": 52,
+  "baseCommit": "6bffd949e89d6f44fa46e0e606492f061886e461",
+  "baseBranch": "research/g2-lp0-lp1-guarded-paths-brief-20261122",
+  "sourceLockSHA256": "6e19e222379eda36e0850e439c85181efae105a9347bcc1740e73114c0616b82",
+  "scope": "LP0 qualification first; LP1 unavailable until verified LP0 and implemented physical controller; no automatic continuation",
+  "cases": [
+    {
+      "id": "H",
+      "mask": [
+        0,
+        0,
+        0
+      ],
+      "ratio": 1
+    },
+    {
+      "id": "stiff13",
+      "mask": [
+        1,
+        0,
+        1
+      ],
+      "ratio": 2
+    },
+    {
+      "id": "soft2",
+      "mask": [
+        0,
+        1,
+        0
+      ],
+      "ratio": 0.5
+    },
+    {
+      "id": "soft1",
+      "mask": [
+        1,
+        0,
+        0
+      ],
+      "ratio": 0.5
+    }
+  ],
+  "caps": {
+    "numberOfPaths": 4,
+    "maxStateIndex": 4,
+    "initialArc_mm": 25.4,
+    "increment_mm": 4,
+    "maxArcLength_mm": 41.4,
+    "adaptiveStep": false
+  },
+  "startPolyline_mm": [
+    [
+      101.6,
+      0
+    ],
+    [
+      101.6,
+      25.4
+    ]
+  ],
+  "bvp": {
+    "model": "idealized pin/roller vertical point load",
+    "P_N": 1,
+    "thickness_mm": 12.7,
+    "E_MPa": 3268.115,
+    "nu": 0.35,
+    "plane": "stress",
+    "pin_mm": [
+      25.4,
+      0
+    ],
+    "roller_mm": [
+      482.6,
+      0
+    ],
+    "load_mm": [
+      254,
+      203.2
+    ]
+  },
+  "numerics": {
+    "T3minAngle_deg": 20,
+    "T3maxNeighborLongestEdgeRatio": 1.8,
+    "primaryT3Budget": 40000,
+    "requiredTrueHoles": 3,
+    "requiredBoundaryComponents": 4,
+    "requiredEuler": -2,
+    "coreT3": 2788,
+    "collarT3": 128,
+    "coreRadius_mm": 3,
+    "collarOuterRadius_mm": 3.3,
+    "protectedSectors": 64,
+    "qInner_mm": 0.4,
+    "qOuter_mm": 2.6,
+    "requiredQActiveParents": 2443,
+    "independentAuditKinkGates": 34,
+    "minLastSegment_mm": 3.3
+  },
+  "verification": {
+    "elasticRelativeResidualMax": 1e-08,
+    "COD_EDI_maxFractionOfKref": 0.03,
+    "pathSpread_maxFraction": 0.005,
+    "JEnergyIdentityMaxFraction": 0.005,
+    "quadratureDriftMaxFraction": 0.001,
+    "minWholeCrackNormalOpening_mm": -1e-09,
+    "highMixitySignGateAbsKIIoverKI": 0.01,
+    "modeIIAlwaysReportSigned": true,
+    "recomputeCODBeforeEDI": true,
+    "staleSourceReject": true,
+    "fullSHA256OnEveryReuse": true
+  },
+  "phaseMap": {
+    "labels": {
+      "matrix": 1,
+      "reinforcement": 2
+    },
+    "interfaceDefinition": "closed polygon through the saved T3 vertices lying on the nominal 19.05 mm circle, in angular order (inscribed polygon of the nominal circle)",
+    "onCircleTolerance_mm": 1e-09,
+    "minGapToNextT3Vertex_mm": 0.001,
+    "midsideOnChordTolerance_mm": 1e-09,
+    "areaIdentityRelTol": 1e-12,
+    "plateAreaIdentityRelTol": 1e-09,
+    "voidPenetrationTolerance_mm": 1e-09,
+    "classification": "mapper = T3 edge-adjacency flood fill blocked at interface chords; verifier = independent point-in-polygon of all six T6 nodes; both must agree element by element",
+    "centroidOnlyClassification": "forbidden"
+  },
+  "qAnnuli_mm": [
+    [
+      0.4,
+      2.6
+    ],
+    [
+      0.2,
+      1
+    ],
+    [
+      0.4,
+      1.6
+    ],
+    [
+      0.8,
+      2.6
+    ],
+    [
+      1.2,
+      2.4
+    ]
+  ],
+  "geometry": {
+    "centres_mm": [
+      [
+        152.4,
+        69.85
+      ],
+      [
+        152.4,
+        120.65
+      ],
+      [
+        152.4,
+        171.45
+      ]
+    ],
+    "holeR_mm": 6.35,
+    "ringR_mm": 19.05,
+    "plate_mm": [
+      508,
+      203.2
+    ],
+    "expectedChords": 76,
+    "tipGuideRadius_mm": 15,
+    "collarRadius_mm": 3.3,
+    "channelHalfWidth_mm": 0.02,
+    "minSegmentRingClearance_mm": 1.52,
+    "minQClearance_mm": 1,
+    "minNonadjacentClearance_mm": 0.16,
+    "distanceTolerance_mm": 1e-09,
+    "nominalCircleEnvelopeRequired": true
+  },
+  "syntheticProbes": {
+    "label": "MESH_ONLY_SYNTHETIC",
+    "anglesFromVertical_deg": [
+      12,
+      13,
+      14,
+      15
+    ],
+    "vertexCounts": [
+      5,
+      6
+    ],
+    "order": [
+      "S0",
+      "N5",
+      "N6"
+    ],
+    "abortOnFirstFailure": true,
+    "allFourMasksOnEveryMesh": true,
+    "neverUseSyntheticAsTrajectory": true
+  },
+  "homogeneousRegression": {
+    "coordinateAbs_mm": 1e-05,
+    "KRelativeToHypot": 1e-05,
+    "GRelative": 2e-05,
+    "MTSAbs_deg": 0.001,
+    "reason": "Historical H S1 used six-digit seed; M4 preregistration records 4.41e-6 mm offset. Full-precision own-S0 recurrence is mandatory; compare saved full-precision references, not rounded policy coordinates. No post-result tolerance changes."
+  },
+  "MTS": {
+    "function": "g2_mts_direction",
+    "requireStatus": "OK",
+    "stationarityResidualMax": 1e-12,
+    "KIpositive": true,
+    "signedFullPrecision": true
+  },
+  "resources": {
+    "matlabRelease": "R2023a",
+    "pdeRequired": true,
+    "freePhysicalRAM_GiB_min": 5,
+    "oneMatlabProcess": true,
+    "cleanCommittedTree": true
+  },
+  "authorization": {
+    "dry": "read-only preflight, no mesh, no FEM, no writes",
+    "meshToken": "G2LP0|policy=<sha256>|source=<git HEAD>|geometry=<Cornell JSON sha256>|cases=H,stiff13,soft2,soft1|maxState=4",
+    "physicalEnabled": true,
+    "resumeAfterHold": "requires documented investigation; never automatically retry",
+    "physicalToken": "G2LP1|policy=<v2 SHA256>|source=<computation source-set SHA256>|LP0=<qualified record SHA256>|cases=H,stiff13,soft2,soft1|maxState=4"
+  },
+  "stopCodes": [
+    "MATRIX_ADVANCE",
+    "HOLD_LP0_FEASIBILITY",
+    "HOLD_INPUT",
+    "HOLD_INTERFACE_APPROACH",
+    "HOLD_Q_PHASE",
+    "HOLD_TIP_GUIDE",
+    "HOLD_CRACK_SELF_INTERSECTION",
+    "HOLD_EXTERNAL_BOUNDARY",
+    "HOLD_MESH_QUALITY",
+    "HOLD_K_EXTRACTION",
+    "HOLD_OWNER_MASK",
+    "HOLD_POLICY_DRIFT",
+    "HOLD_SOURCE",
+    "HOLD_MEMORY",
+    "HOLD_RECORD_INTEGRITY",
+    "HOLD_UNAUTHORIZED_STATE"
+  ],
+  "outputFields": [
+    "case",
+    "stateIndex",
+    "polyline_mm",
+    "arc_mm",
+    "tangent",
+    "normal",
+    "KI_signed_perkN",
+    "KII_signed_perkN",
+    "J_1N",
+    "G_1N",
+    "MTS_local_deg",
+    "heading_deg",
+    "COD_EDI",
+    "EDI_quadrature",
+    "q_spread",
+    "tip_ring_mm",
+    "segment_ring_mm",
+    "guide_margin_mm",
+    "q_margin_mm",
+    "plate_margins_mm",
+    "phase_counts",
+    "per_ring_energy",
+    "compliance_point_load_sensitive",
+    "U_primary",
+    "U_cons",
+    "observed_family_drift",
+    "parentSHA256",
+    "meshSHA256",
+    "policySHA256",
+    "sourceSHA256",
+    "status"
+  ],
+  "uncertainty": "Inherit M3 primary and conservative estimator rules; report R1 family drift separately, not a bound on future path errors. Raw point-load compliance is not a convergence proof.",
+  "terminal": "REVIEW_STOP_LP1 if LP1 completes, otherwise documented HOLD_LP0_FEASIBILITY; no LP2/S5/interface/CZM/optimization/arrest/Word consolidation",
+  "previousPolicySHA256": "1cf5a76ded840b0758343a1b935b299041e779ec6332c3b7cb0b6dfba1e2af43",
+  "lp0Evidence": {
+    "file": "matlab/g2/evidence/lp0_20261122/QUALIFICATION_ATTEMPT2.json",
+    "sha256": "b4240d7ed9b534dbe188a35bac13587db45f8cd1a86a5c7a79c2e1dfa4a233f5",
+    "requiredStatus": "LP0_GEOMETRY_QUALIFIED_REVIEW_REQUIRED",
+    "sourceCommit": "932cdc923d0b6c7703499d2c0106c556467c7c73",
+    "S0_T3": 28151,
+    "N5_T3": 28817,
+    "N6_T3": 29063
+  },
+  "runRoot": "outputs/g2_lp1_matrix_paths_v1",
+  "order": "H S0-S2 first; all candidates S0-S2; only then S3-S4 independently, subject to per-case HOLD and H regression",
+  "recordContract": "immutable mesh/phase/solution/review/state; hashes and semantic links reverified on replay; parent signed K must match parent solution; partial unreviewed work and HOLD never silently retried"
+}

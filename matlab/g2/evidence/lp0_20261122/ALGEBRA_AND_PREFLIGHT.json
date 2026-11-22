@@ -1,0 +1,141 @@
+{
+  "tests": {
+    "pass": true,
+    "passed": 23,
+    "total": 23,
+    "tests": [
+      {
+        "name": "admissible_increment",
+        "pass": true,
+        "status": "MATRIX_ADVANCE"
+      },
+      {
+        "name": "ring_and_hole_tunnel",
+        "pass": true,
+        "status": "HOLD_CRACK_SELF_INTERSECTION"
+      },
+      {
+        "name": "nominal_ring_tangent",
+        "pass": true,
+        "status": "HOLD_CRACK_SELF_INTERSECTION"
+      },
+      {
+        "name": "guide_overlap_only",
+        "pass": true,
+        "status": "HOLD_CRACK_SELF_INTERSECTION"
+      },
+      {
+        "name": "q_buffer_overlap",
+        "pass": true,
+        "status": "HOLD_CRACK_SELF_INTERSECTION"
+      },
+      {
+        "name": "endpoint_in_annulus",
+        "pass": true,
+        "status": "HOLD_CRACK_SELF_INTERSECTION"
+      },
+      {
+        "name": "top_boundary_cross",
+        "pass": true,
+        "status": "HOLD_EXTERNAL_BOUNDARY"
+      },
+      {
+        "name": "boundary_grazing",
+        "pass": true,
+        "status": "HOLD_EXTERNAL_BOUNDARY"
+      },
+      {
+        "name": "guide_before_boundary",
+        "pass": true,
+        "status": "HOLD_TIP_GUIDE"
+      },
+      {
+        "name": "prior_segment_cross",
+        "pass": true,
+        "status": "HOLD_CRACK_SELF_INTERSECTION"
+      },
+      {
+        "name": "adjacent_retrace",
+        "pass": true,
+        "status": "HOLD_CRACK_SELF_INTERSECTION"
+      },
+      {
+        "name": "wrong_ring_id",
+        "pass": true,
+        "status": "HOLD_OWNER_MASK"
+      },
+      {
+        "name": "geometry_drift",
+        "pass": true,
+        "status": "HOLD_OWNER_MASK"
+      },
+      {
+        "name": "unordered_polygon",
+        "pass": true,
+        "status": "HOLD_OWNER_MASK"
+      },
+      {
+        "name": "missing_chord",
+        "pass": true,
+        "status": "HOLD_OWNER_MASK"
+      },
+      {
+        "name": "passive_boundary_stays_obstacle_H",
+        "pass": true,
+        "status": "HOLD_CRACK_SELF_INTERSECTION"
+      },
+      {
+        "name": "passive_boundary_stays_obstacle_stiff13",
+        "pass": true,
+        "status": "HOLD_CRACK_SELF_INTERSECTION"
+      },
+      {
+        "name": "passive_boundary_stays_obstacle_soft2",
+        "pass": true,
+        "status": "HOLD_CRACK_SELF_INTERSECTION"
+      },
+      {
+        "name": "passive_boundary_stays_obstacle_soft1",
+        "pass": true,
+        "status": "HOLD_CRACK_SELF_INTERSECTION"
+      },
+      {
+        "name": "nan_rejected",
+        "pass": true,
+        "status": "HOLD_INPUT"
+      },
+      {
+        "name": "zero_length_rejected",
+        "pass": true,
+        "status": "HOLD_INPUT"
+      },
+      {
+        "name": "synthetic_N5_geometric_only",
+        "pass": true,
+        "status": "MATRIX_ADVANCE"
+      },
+      {
+        "name": "synthetic_N6_geometric_only",
+        "pass": true,
+        "status": "MATRIX_ADVANCE"
+      }
+    ],
+    "meshQualification": false,
+    "physicalSolves": 0
+  },
+  "preflight": {
+    "pass": false,
+    "status": "HOLD_LP0_FEASIBILITY",
+    "cause": "HOLD_SOURCE",
+    "physicalSolves": 0,
+    "meshBuilds": 0,
+    "policySHA256": "1cf5a76ded840b0758343a1b935b299041e779ec6332c3b7cb0b6dfba1e2af43",
+    "release": "R2023a",
+    "pdeAvailable": true,
+    "freePhysicalRAM_GiB": 5.8132514953613281,
+    "matlabProcesses": 2,
+    "sourceCommit": "8a19166528aad9be3d41f32bbfe3516719d436a6",
+    "dirtySource": "",
+    "probes": {}
+  }
+}
