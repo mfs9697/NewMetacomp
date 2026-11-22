@@ -21,7 +21,14 @@ if ([string]::IsNullOrWhiteSpace($RepositoryRoot)) {
     if ([string]::IsNullOrWhiteSpace($PSCommandPath)) {
         throw 'Cannot determine script path. Pass -RepositoryRoot explicitly.'
     }
-    $RepositoryRoot = Join-Path -Path (Split-Path -LiteralPath $PSCommandPath -Parent) -ChildPath '..\..'
+    # Avoid Split-Path -LiteralPath/-Parent: ambiguous parameter set in Windows PowerShell 5.1.
+    $scriptDirectory = [System.IO.Path]::GetDirectoryName($PSCommandPath)
+    if ([string]::IsNullOrWhiteSpace($scriptDirectory)) {
+        throw 'Cannot resolve script directory. Pass -RepositoryRoot explicitly.'
+    }
+    $RepositoryRoot = [System.IO.Path]::GetFullPath(
+        [System.IO.Path]::Combine($scriptDirectory, '..', '..')
+    )
 }
 
 function Require([bool]$Condition, [string]$Message) {
