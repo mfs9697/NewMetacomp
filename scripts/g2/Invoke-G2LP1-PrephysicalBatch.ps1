@@ -9,11 +9,20 @@
 #>
 [CmdletBinding()]
 param(
-    [string]$RepositoryRoot = (Join-Path $PSScriptRoot '..\..'),
+    [string]$RepositoryRoot = '',
     [string]$MatlabExe = ''
 )
 Set-StrictMode -Version Latest
 $ErrorActionPreference = 'Stop'
+
+# Resolve the script location only after parameter binding. On Windows PowerShell
+# 5.1, $PSScriptRoot may be empty while default parameters are evaluated.
+if ([string]::IsNullOrWhiteSpace($RepositoryRoot)) {
+    if ([string]::IsNullOrWhiteSpace($PSCommandPath)) {
+        throw 'Cannot determine script path. Pass -RepositoryRoot explicitly.'
+    }
+    $RepositoryRoot = Join-Path -Path (Split-Path -LiteralPath $PSCommandPath -Parent) -ChildPath '..\..'
+}
 
 function Require([bool]$Condition, [string]$Message) {
     if (-not $Condition) { throw $Message }
@@ -27,13 +36,13 @@ function GitText([string[]]$GitArguments) {
 
 $root = (Resolve-Path -LiteralPath $RepositoryRoot).Path
 $branch = 'research/g2-lp0-lp1-implementation-20261122'
-$top = GitText @('-C',$root,'rev-parse','--show-toplevel')
+$top = GitText -GitArguments @('-C',$root,'rev-parse','--show-toplevel')
 Require ([IO.Path]::GetFullPath($top).TrimEnd('\') -ieq $root.TrimEnd('\')) 'Use the NewMetacomp repository.'
-$current = GitText @('-C',$root,'branch','--show-current')
+$current = GitText -GitArguments @('-C',$root,'branch','--show-current')
 Require ($current -ceq $branch) ('Wrong branch: ' + $current)
-$dirty = GitText @('-C',$root,'status','--porcelain','--untracked-files=all')
+$dirty = GitText -GitArguments @('-C',$root,'status','--porcelain','--untracked-files=all')
 Require ([string]::IsNullOrWhiteSpace($dirty)) ('Working tree is not clean: ' + $dirty)
-$head = GitText @('-C',$root,'rev-parse','HEAD')
+$head = GitText -GitArguments @('-C',$root,'rev-parse','HEAD')
 $goFile = Join-Path $root 'matlab\g2\G2_LP1_SCIENTIFIC_GO_v1.json'
 Require (-not (Test-Path -LiteralPath $goFile)) 'Scientific GO exists. This script is PRE-AUTHORIZATION only.'
 Require (Test-Path -LiteralPath (Join-Path $root 'matlab\g2\g2_lp1_scientific_gate.m')) 'Missing scientific gate.'
