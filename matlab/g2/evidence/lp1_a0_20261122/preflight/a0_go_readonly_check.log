@@ -1,0 +1,9 @@
+[Warning: Name is nonexistent or not a directory: <user>\Google Drive\Projects\8 - CohZonFEM\czm_project\CrackPath\CrackFromHoleLEFM\cfh] 
+[Warning: Name is nonexistent or not a directory: <user>\Google Drive\Projects\8 - CohZonFEM\Asphalt\remmers2003] 
+RAM_INSIDE 8.348 GiB
+CONTEXT_TOKEN G2LP1|policy=074d7edc981920537726314f781f24b41ac7224c18d594d6a1b15343084e5091|source=9b634df22d2c44ba9f6465fa9c88f54274afa3a17aa5d43df1e2b2ac58b5c2b5|LP0=b4240d7ed9b534dbe188a35bac13587db45f8cd1a86a5c7a79c2e1dfa4a233f5|cases=H,stiff13,soft2,soft1|maxState=4
+SOURCE_SET 9b634df22d2c44ba9f6465fa9c88f54274afa3a17aa5d43df1e2b2ac58b5c2b5
+GO_VALID decision=GO_LP1_PHYSICAL campaign=G2-LP1-A0-001 run=run_a0_lp1_repro_v1 scope=A0_LP1_S0_S4_REPRODUCTION goSHA=0f7de6073def97403047666d5e3b5cc8f52b548d155440e1289e7a6771b6dcde
+CAMPAIGN_DECISION mode=OPEN_NEW ledgerExists=0 runExists=0
+WRONG_RUN_REFUSED G2LP1:HOLD_CAMPAIGN_SCOPE
+A0_READONLY_PRECHECK_PASS NO_WRITE=1

@@ -1,0 +1,36 @@
+{
+ "schema": "NewMetacomp.G2.LP1.VG1.Sanitization.v1",
+ "source": "audit",
+ "files": [
+  {
+   "file": "a0_compare_run.log",
+   "originalSHA256": "58af2bc22a9e848a096cfe954f17a853612753b19c2c0c0492bd42f9a0447251",
+   "sanitizedSHA256": "8625e43e4fd137093db8710f31ffac88f3624960b2220cbeb98d3369ed0c34e9",
+   "copied": true
+  },
+  {
+   "file": "a0_compare_run.m",
+   "originalSHA256": "9f3fc308c1739685133d181d3ab2af62860c129bc113bfde5eb899567032cce2",
+   "sanitizedSHA256": "ef1677610c0ab2d96dd62de3374cf7559cddc6fe11eb279493823a728b757a49",
+   "copied": true
+  },
+  {
+   "file": "A0_COMPARISON.json",
+   "originalSHA256": "e8ca5aa91939fbfc3cb9f359f920a72fd0ff2b6e163a3d9b5071bcc64e1d11eb",
+   "sanitizedSHA256": "132701fea8ec43cc55cbf84fe2b39e06650681d08cc5b088b7b4a35d6c569433",
+   "copied": true
+  },
+  {
+   "file": "A0_INDEPENDENT_CROSSCHECK.json",
+   "originalSHA256": "d45907b0a73f5aa8bbb45939dde84845bb45dda6383477cb673dfca9184feefc",
+   "sanitizedSHA256": "d45907b0a73f5aa8bbb45939dde84845bb45dda6383477cb673dfca9184feefc",
+   "copied": true
+  },
+  {
+   "file": "A0_NEW_mesh_quality.json",
+   "originalSHA256": "98c1fc3329f764305a5e11a91f8a7108c866aaf932dfc1be31a92b89153ccf44",
+   "sanitizedSHA256": "98c1fc3329f764305a5e11a91f8a7108c866aaf932dfc1be31a92b89153ccf44",
+   "copied": true
+  }
+ ]
+}

@@ -1,0 +1,174 @@
+{
+ "schema": "NewMetacomp.G2.LP1.A0P0.PinCheck.v2",
+ "profile": "vg2",
+ "commit": "135a5f6d410cf425cb659f3dcb2305985e3897f4",
+ "expectedToken": "G2LP1|policy=074d7edc981920537726314f781f24b41ac7224c18d594d6a1b15343084e5091|source=9b634df22d2c44ba9f6465fa9c88f54274afa3a17aa5d43df1e2b2ac58b5c2b5|LP0=b4240d7ed9b534dbe188a35bac13587db45f8cd1a86a5c7a79c2e1dfa4a233f5|cases=H,stiff13,soft2,soft1|maxState=4",
+ "contractEvidence": {
+  "path": "matlab/g2/evidence/lp1_preflight/vg2_20261122/E_batch_adbc8a6/CONTRACT_TESTS.json",
+  "sha256": "1332a4fb9b2a5a1f29f0c42024021b35b633f138b887d043fbcda599b5fc314f"
+ },
+ "proposedRunName": "run_a0_lp1_repro_v1",
+ "checks": [
+  {
+   "id": "S1",
+   "description": "Source-set digest at commit equals the qualified source set of the profile",
+   "pass": true,
+   "value": "9b634df22d2c44ba9f6465fa9c88f54274afa3a17aa5d43df1e2b2ac58b5c2b5"
+  },
+  {
+   "id": "S2",
+   "description": "Policy v2 blob SHA-256",
+   "pass": true,
+   "value": "074d7edc981920537726314f781f24b41ac7224c18d594d6a1b15343084e5091"
+  },
+  {
+   "id": "S3",
+   "description": "Policy v1 blob equals v2.previousPolicySHA256",
+   "pass": true,
+   "value": "1cf5a76ded840b0758343a1b935b299041e779ec6332c3b7cb0b6dfba1e2af43"
+  },
+  {
+   "id": "S4",
+   "description": "Source lock blob equals v2.sourceLockSHA256",
+   "pass": true,
+   "value": "6e19e222379eda36e0850e439c85181efae105a9347bcc1740e73114c0616b82"
+  },
+  {
+   "id": "S5",
+   "description": "LP0 evidence blob equals v2.lp0Evidence.sha256 and carries the required status",
+   "pass": true,
+   "value": {
+    "sha": "b4240d7ed9b534dbe188a35bac13587db45f8cd1a86a5c7a79c2e1dfa4a233f5",
+    "status": "LP0_GEOMETRY_QUALIFIED_REVIEW_REQUIRED"
+   }
+  },
+  {
+   "id": "S6",
+   "description": "Context token rebuilt from pins equals the expected full token",
+   "pass": true,
+   "value": "G2LP1|policy=074d7edc981920537726314f781f24b41ac7224c18d594d6a1b15343084e5091|source=9b634df22d2c44ba9f6465fa9c88f54274afa3a17aa5d43df1e2b2ac58b5c2b5|LP0=b4240d7ed9b534dbe188a35bac13587db45f8cd1a86a5c7a79c2e1dfa4a233f5|cases=H,stiff13,soft2,soft1|maxState=4"
+  },
+  {
+   "id": "S7",
+   "description": "Qualification batch result: TESTS_PASS_SCIENTIFIC_HOLD at the qualified source commit, printed token equal, no GO, zero solves/meshes, both refusals HOLD_UNAUTHORIZED_STATE",
+   "pass": true,
+   "value": {
+    "status": "TESTS_PASS_SCIENTIFIC_HOLD",
+    "sourceCommit": "adbc8a6ab6cfb609a052626889ca7d22e7d0c1c5",
+    "refusalProbeIdentifiers": [
+     "G2LP1:HOLD_UNAUTHORIZED_STATE",
+     "G2LP1:HOLD_UNAUTHORIZED_STATE"
+    ]
+   }
+  },
+  {
+   "id": "C1",
+   "description": "Contract evidence path satisfies the validator path rules",
+   "pass": true,
+   "value": "matlab/g2/evidence/lp1_preflight/vg2_20261122/E_batch_adbc8a6/CONTRACT_TESTS.json"
+  },
+  {
+   "id": "C2",
+   "description": "Contract evidence bytes are LF-only (an autocrlf checkout would change the SHA)",
+   "pass": true,
+   "value": 27512
+  },
+  {
+   "id": "C3",
+   "description": "Contract content satisfies every g2_lp1_go_validate predicate",
+   "pass": true,
+   "value": {
+    "pass": true,
+    "passed": 138,
+    "total": 138,
+    "physicalSolves": 0,
+    "meshBuilds": 0,
+    "negativeTestsPassed": true,
+    "recordIntegrityPassed": true
+   }
+  },
+  {
+   "id": "C4",
+   "description": "Contract is the expected suite for the profile (count, schema, all class flags, every test passed)",
+   "pass": true,
+   "value": {
+    "total": 138,
+    "schema": "NewMetacomp.G2.LP1.ContractTests.v3"
+   }
+  },
+  {
+   "id": "C5",
+   "description": "Committed contract bytes equal the original batch bytes listed in BATCH_MANIFEST (unchanged by sanitization)",
+   "pass": true,
+   "value": {
+    "committed": "1332a4fb9b2a5a1f29f0c42024021b35b633f138b887d043fbcda599b5fc314f",
+    "manifest": "1332a4fb9b2a5a1f29f0c42024021b35b633f138b887d043fbcda599b5fc314f"
+   }
+  },
+  {
+   "id": "C6",
+   "description": "Batch manifest: exit 0, no GO, commit = qualified source commit, profile branch",
+   "pass": true,
+   "value": {
+    "exitCode": 0,
+    "sourceCommit": "adbc8a6ab6cfb609a052626889ca7d22e7d0c1c5",
+    "branch": "research/g2-lp1-vg2-campaign-go-20261122"
+   }
+  },
+  {
+   "id": "G1",
+   "description": "No scientific GO file exists in the tree at the commit",
+   "pass": false,
+   "value": "matlab/g2/G2_LP1_SCIENTIFIC_GO_v1.json"
+  },
+  {
+   "id": "R1",
+   "description": "Proposed A0 run name satisfies the controller parser and differs from the historical run",
+   "pass": true,
+   "value": "run_a0_lp1_repro_v1"
+  },
+  {
+   "id": "K1",
+   "description": "Execution clone: core.autocrlf=false",
+   "pass": true,
+   "value": null
+  },
+  {
+   "id": "K2",
+   "description": "Execution clone: clean tree",
+   "pass": true,
+   "value": null
+  },
+  {
+   "id": "K3",
+   "description": "Execution clone: proposed A0 run folder does not exist",
+   "pass": true,
+   "value": null
+  },
+  {
+   "id": "K4",
+   "description": "Execution clone: all 182 historical records present and hash-equal",
+   "pass": true,
+   "value": []
+  },
+  {
+   "id": "K5",
+   "description": "Execution clone: all 654 accepted historical MAT inputs present and hash-equal",
+   "pass": true,
+   "value": []
+  },
+  {
+   "id": "H1",
+   "description": "Raw archive SHA, size and 182/182 members",
+   "pass": true,
+   "value": {
+    "members": 182
+   }
+  }
+ ],
+ "passed": 20,
+ "total": 21,
+ "noMATLAB": true,
+ "noFEM": true,
+ "noGO": true
+}
