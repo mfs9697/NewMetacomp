@@ -1,0 +1,9 @@
+[Warning: Name is nonexistent or not a directory: <user>\Google Drive\Projects\8 - CohZonFEM\czm_project\CrackPath\CrackFromHoleLEFM\cfh] 
+[Warning: Name is nonexistent or not a directory: <user>\Google Drive\Projects\8 - CohZonFEM\Asphalt\remmers2003] 
+M2_FIELDS id,ratio,pass,KI_raw,KII_raw,KI_COD_raw,KII_COD_raw,EDI_all,EDI4x4,J,KI_perkN,KII_perkN,KI_COD_perkN,KII_COD_perkN,criteria,relativeResidual,staticsMax,fullPolyOpeningMin_mm,strainEnergy_per_thickness,compliance_mm_per_N,reactions,phaseStrainEnergy_per_thickness,CMOD_mm,interfaceBalanceRel,annulusResultantRel,interfaceSideL2Rel,chordTractions,Ep_matrix,thickness_mm,schema,state,u
+DET KI m2=0.0052631646382454017 lp1=0.0052631646382454017 equal=1
+DET KII m2=0.00059536482563562945 lp1=0.00059536482563562945 equal=1
+DET J equal=1
+DET EDI_all equal=1
+DET u equal=1
+M2_FILE_DATE 22--2026 18:34:09

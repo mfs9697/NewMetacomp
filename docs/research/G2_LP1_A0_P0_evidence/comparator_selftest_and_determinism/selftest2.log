@@ -1,0 +1,29 @@
+[Warning: Name is nonexistent or not a directory: <user>\Google Drive\Projects\8 - CohZonFEM\czm_project\CrackPath\CrackFromHoleLEFM\cfh] 
+[Warning: Name is nonexistent or not a directory: <user>\Google Drive\Projects\8 - CohZonFEM\Asphalt\remmers2003] 
+A0_COMPARE mode=selftest worstTier=A verdict=A0_REPRODUCED_EXACT classesUnchanged=1
+A0_COMPARE_SELFTEST pass=1 perturbations=12/12
+PERTURB K_relative_1e-12 expected=B observed=B pass=1
+PERTURB K_relative_1e-7 expected=C observed=C pass=1
+PERTURB K_relative_1e-3 expected=D observed=D pass=1
+PERTURB coordinate_1e-9_mm expected=B observed=B pass=1
+PERTURB coordinate_1e-3_mm expected=D observed=D pass=1
+PERTURB mesh_topology_changed expected=C observed=C pass=1
+PERTURB policy_changed expected=D observed=D pass=1
+PERTURB mask_changed expected=D observed=D pass=1
+PERTURB SIF_gate_failed expected=D observed=D pass=1
+PERTURB missing_state expected=D observed=D pass=1
+PERTURB broken_parent_chain expected=PROVENANCE_FAIL observed=true pass=1
+PERTURB historical_records_as_A0 expected=PROVENANCE_FAIL observed=true pass=1
+         FG_primary: 1
+    FG_conservative: 0
+    offset_cautious: 0
+
+                F_G: -0.0293
+          U_primary: 1.0000e-05
+             U_cons: 0.0340
+               d_mm: -0.0852
+        U_d_cons_mm: 0.0433
+         FG_primary: 1
+    FG_conservative: 0
+    offset_cautious: 0
+
