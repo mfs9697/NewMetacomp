@@ -8,15 +8,31 @@ assert(isscalar(o.MaxStateIndex)&&isfinite(o.MaxStateIndex)&&o.MaxStateIndex>=0&
  'G2LP1:HOLD_UNAUTHORIZED_STATE','Only S0-S4 permitted.');
 C=g2_lp1_context();pol=C.policy;ids={pol.cases.id};ix=find(strcmp(ids,o.Case));
 assert(isscalar(ix),'G2LP1:HOLD_INPUT','Exactly H, stiff13, soft2, soft1 permitted.');c=pol.cases(ix);
-O=struct('status','DRY_READY_NO_FEM','computed',0,'reused',0,'promoted',0,'caseId',c.id,'lastState',-1,'token',C.token,'states',{{}});
+O=struct('status','DRY_READY_NO_FEM','computed',0,'reused',0,'promoted',0,'caseId',c.id,'lastState',-1,'token',C.token,'states',{{}},'campaignComplete',false);
 if ~o.Run,return,end
+% A self-generated token and LP0 geometry pass cannot authorize FEM.
+g2_lp1_scientific_gate(C);
 assert(strcmp(o.AuthToken,C.token),'G2LP1:HOLD_SOURCE','Token does not bind policy, source, geometry qualification and case caps.');
 rd=fullfile(C.repo,pol.runRoot,o.RunName);chain=fullfile(rd,c.id);
+% H S0-S2 must be completed before any material-contrast case begins.
+if ~strcmp(c.id,'H')
+ hf=fullfile(rd,'H','S2','STATE.mat');
+ assert(isfile(hf),'G2LP1:HOLD_UNAUTHORIZED_STATE', ...
+  'Homogeneous H S0-S2 must be accepted first.');
+ [hs,~,hok]=g2_trajectory_record('read',hf);
+ assert(hok&&strcmp(hs.caseId,'H')&&hs.stateIndex==2&& ...
+  isempty(dir(fullfile(rd,'H','**','HOLD.mat'))), ...
+  'G2LP1:HOLD_RECORD_INTEGRITY','Homogeneous reference is incomplete or held.');
+end
 if isfolder(chain)&&~isempty(dir(fullfile(chain,'**','HOLD.mat'))),error('G2LP1:HOLD_RECORD_INTEGRITY','HOLD chain cannot be reused.');end
 if o.MaxStateIndex>2
  for z=1:4
-  assert(isfile(fullfile(rd,ids{z},'S2','STATE.mat'))&&isempty(dir(fullfile(rd,ids{z},'**','HOLD.mat'))), ...
-   'G2LP1:HOLD_UNAUTHORIZED_STATE','All four independent S0-S2 chains must qualify before any S3.');
+  sf=fullfile(rd,ids{z},'S2','STATE.mat');
+  assert(isfile(sf)&&isempty(dir(fullfile(rd,ids{z},'**','HOLD.mat'))), ...
+   'G2LP1:HOLD_UNAUTHORIZED_STATE','All four S0-S2 chains must qualify before any S3.');
+  [ss,~,sok]=g2_trajectory_record('read',sf);
+  assert(sok&&strcmp(ss.caseId,ids{z})&&ss.stateIndex==2, ...
+   'G2LP1:HOLD_RECORD_INTEGRITY','Missing or altered S2 state record.');
  end
 end
 if ~isfolder(rd),mkdir(rd);end
@@ -33,11 +49,12 @@ polT=jsondecode(fileread(fullfile(C.here,'G2_TRAJECTORY_POLICY_v1.json')));
 P=pol.startPolyline_mm;t=[0 1];parentHash=g2_lp1_digest([C.token,'|',c.id,'|S0']);parent=[];geom=[];
 for k=0:o.MaxStateIndex
  sd=fullfile(chain,sprintf('S%d',k));
+ clearance=struct('pass',false,'status','NOT_EVALUATED','reasons',{{}},'metrics',struct());
  try
   if k>0
    F=g2_lp1_forecast(parent,pol);P=F.polyline_mm;t=F.tangent;
    clearance=g2_lp0_clearance(P(1:end-1,:),P(end,:),geom,pol);
-   assert(clearance.pass,'G2LP1:HOLD_GEOMETRY','%s: %s',clearance.status,strjoin(clearance.reasons,','));
+   assert(clearance.pass,['G2LP1:',clearance.status],'%s',strjoin(clearance.reasons,','));
   else,clearance=struct('pass',true,'status','INITIAL_S0','metrics',struct());end
   revfile=fullfile(sd,'REVIEW.mat');statefile=fullfile(sd,'STATE.mat');meshfile=fullfile(sd,'MESH.mat');
   if isfile(revfile)
@@ -54,7 +71,7 @@ for k=0:o.MaxStateIndex
    assert(ok&&strcmpi(sh,R.solutionSHA256),'G2LP1:HOLD_RECORD_INTEGRITY','Solution bytes changed.');
    g2_lp1_validate_links(R,S,c,k,P,t,C.policySHA256,C.sourceSHA256,parentHash);
    if k>0
-    again=g2_lp0_clearance(P(1:end-1,:),P(end,:),geom,pol);assert(again.pass,'G2LP1:HOLD_GEOMETRY','Actual polygon clearance.');
+    again=g2_lp0_clearance(P(1:end-1,:),P(end,:),geom,pol);assert(again.pass,['G2LP1:',again.status],'Actual polygon clearance.');
    end
    wanted=R;wanted.schema='NewMetacomp.G2.LP1.State.v1';wanted.reviewSHA256=rh;
    if isfile(statefile)
@@ -82,7 +99,7 @@ for k=0:o.MaxStateIndex
    [A,PM]=g2_lp1_audit(D,k,C);geom=A.clearanceGeometry;
    if k>0
     clearance=g2_lp0_clearance(P(1:end-1,:),P(end,:),geom,pol);
-    assert(clearance.pass,'G2LP1:HOLD_GEOMETRY','%s',clearance.status);
+    assert(clearance.pass,['G2LP1:',clearance.status],'%s',strjoin(clearance.reasons,','));
    end
    act=g2_m4b_ring_activation(PM.annulusOf,reshape(c.mask,1,3));
    Ph=struct('schema','NewMetacomp.G2.LP1.Phase.v1','stateIndex',k,'caseId',c.id,'mask',reshape(c.mask,1,3), ...
@@ -114,12 +131,20 @@ for k=0:o.MaxStateIndex
   clear D A PM Ph S K R
  catch ME
   if ~isfolder(sd),mkdir(sd);end
-  hold=struct('schema','NewMetacomp.G2.LP1.Hold.v1','stateIndex',k,'caseId',c.id,'identifier',ME.identifier,'message',ME.message,'parentSHA256',parentHash,'physicalArrest',false);
+  stopCode='HOLD_RECORD_INTEGRITY';
+  if startsWith(ME.identifier,'G2LP1:HOLD_'),stopCode=extractAfter(ME.identifier,'G2LP1:');end
+  if ~clearance.pass&&startsWith(clearance.status,'HOLD_'),stopCode=clearance.status;end
+  hold=struct('schema','NewMetacomp.G2.LP1.Hold.v1','stateIndex',k,'caseId',c.id, ...
+   'identifier',ME.identifier,'stopCode',char(stopCode),'geometryReasons',{clearance.reasons}, ...
+   'geometryMetrics',clearance.metrics,'message',ME.message, ...
+   'parentSHA256',parentHash,'physicalArrest',false);
   hf=fullfile(sd,'HOLD.mat');if ~isfile(hf),g2_trajectory_record('write',hf,hold);end
   O.status='HOLD';O.hold=hold;fprintf(2,'G2_LP1_HOLD %s S%d %s: %s\n',c.id,k,ME.identifier,ME.message);return
  end
 end
-O.status='REVIEW_STOP_LP1';if o.MaxStateIndex<4,O.status='BOUNDED_PREFIX_COMPLETE';end
+% Only a separate four-case campaign audit can issue REVIEW_STOP_LP1.
+O.status='CASE_S4_COMPLETE_AWAIT_CAMPAIGN_REVIEW';
+if o.MaxStateIndex<4,O.status='BOUNDED_PREFIX_COMPLETE';end
 end
 
 function resource()
