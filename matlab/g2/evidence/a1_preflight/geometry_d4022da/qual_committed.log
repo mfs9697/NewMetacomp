@@ -1,0 +1,43 @@
+[Warning: Name is nonexistent or not a directory: <user>\Google Drive\Projects\8 - CohZonFEM\czm_project\CrackPath\CrackFromHoleLEFM\cfh] 
+[Warning: Name is nonexistent or not a directory: <user>\Google Drive\Projects\8 - CohZonFEM\Asphalt\remmers2003] 
+BASELINE H historicalContent=530954c687c00cdf3654f8c04398a9fafd4b6817d0b5fee46442fc45895aa3cb a0Content=530954c687c00cdf3654f8c04398a9fafd4b6817d0b5fee46442fc45895aa3cb equal=1
+BASELINE stiff13 historicalContent=ba6b6a74d2057e629757dac3f5abf4d357b605bfcb5a4d9bd1ee73381c0ce2a3 a0Content=ba6b6a74d2057e629757dac3f5abf4d357b605bfcb5a4d9bd1ee73381c0ce2a3 equal=1
+BASELINE soft2 historicalContent=fdfaf6324af772a87fccde27d1bdfe51cad354518ddab6e5da1f2e1c6c32b4f9 a0Content=fdfaf6324af772a87fccde27d1bdfe51cad354518ddab6e5da1f2e1c6c32b4f9 equal=1
+BASELINE soft1 historicalContent=8617912bb6aee8a675a0691849e69066e4f8fa3aca7c92cc7be52414922a0332 a0Content=8617912bb6aee8a675a0691849e69066e4f8fa3aca7c92cc7be52414922a0332 equal=1
+A1_GEOM H B0 pass=1 gates=19/19 adapter=1 phase=1 qFree=1 exact=1 T3=29063 DOF=118138 h1=0.041666667 q=2443
+A1_GEOM H B3 pass=1 gates=19/19 adapter=1 phase=1 qFree=1 exact=NaN T3=29837 DOF=121258 h1=0.025773614 q=3049
+A1_GEOM H B6 pass=1 gates=19/19 adapter=1 phase=1 qFree=1 exact=NaN T3=30611 DOF=124378 h1=0.015942700 q=3225
+A1_GEOM H B9 pass=1 gates=19/19 adapter=1 phase=1 qFree=1 exact=NaN T3=31385 DOF=127498 h1=0.009861624 q=3225
+A1_GEOM stiff13 B0 pass=1 gates=19/19 adapter=1 phase=1 qFree=1 exact=1 T3=29047 DOF=118074 h1=0.041666667 q=2443
+A1_GEOM stiff13 B3 pass=1 gates=19/19 adapter=1 phase=1 qFree=1 exact=NaN T3=29821 DOF=121194 h1=0.025773614 q=3049
+A1_GEOM stiff13 B6 pass=1 gates=19/19 adapter=1 phase=1 qFree=1 exact=NaN T3=30595 DOF=124314 h1=0.015942700 q=3225
+A1_GEOM stiff13 B9 pass=1 gates=19/19 adapter=1 phase=1 qFree=1 exact=NaN T3=31369 DOF=127434 h1=0.009861624 q=3225
+A1_GEOM soft2 B0 pass=1 gates=19/19 adapter=1 phase=1 qFree=1 exact=1 T3=29005 DOF=117906 h1=0.041666667 q=2443
+A1_GEOM soft2 B3 pass=1 gates=19/19 adapter=1 phase=1 qFree=1 exact=NaN T3=29779 DOF=121026 h1=0.025773614 q=3049
+A1_GEOM soft2 B6 pass=1 gates=19/19 adapter=1 phase=1 qFree=1 exact=NaN T3=30553 DOF=124146 h1=0.015942700 q=3225
+A1_GEOM soft2 B9 pass=1 gates=19/19 adapter=1 phase=1 qFree=1 exact=NaN T3=31327 DOF=127266 h1=0.009861624 q=3225
+A1_GEOM soft1 B0 pass=1 gates=19/19 adapter=1 phase=1 qFree=1 exact=1 T3=29035 DOF=118026 h1=0.041666667 q=2443
+A1_GEOM soft1 B3 pass=1 gates=19/19 adapter=1 phase=1 qFree=1 exact=NaN T3=29809 DOF=121146 h1=0.025773614 q=3049
+A1_GEOM soft1 B6 pass=1 gates=19/19 adapter=1 phase=1 qFree=1 exact=NaN T3=30583 DOF=124266 h1=0.015942700 q=3225
+A1_GEOM soft1 B9 pass=1 gates=19/19 adapter=1 phase=1 qFree=1 exact=NaN T3=31357 DOF=127386 h1=0.009861624 q=3225
+A1_QCOMMON H B6=3225 B9=3225 matched=3225 maxdiff=1.42e-14 same=1
+A1_QCOMMON stiff13 B6=3225 B9=3225 matched=3225 maxdiff=1.42e-14 same=1
+A1_QCOMMON soft2 B6=3225 B9=3225 matched=3225 maxdiff=1.42e-14 same=1
+A1_QCOMMON soft1 B6=3225 B9=3225 matched=3225 maxdiff=1.42e-14 same=1
+A1_GEOMETRY_QUALIFICATION pass=1 rows=16/16
+MESHSHA H_B0 content=530954c687c00cdf3654f8c04398a9fafd4b6817d0b5fee46442fc45895aa3cb file=
+MESHSHA H_B3 content=85606cd76fced3ee26e574f80c38dcfff081bc0bcd7682d33bc431b5632d9fc3 file=46de9c792553393b884fed9c5999a126c7d9c61f544ed55327bd5013fe556ed1
+MESHSHA H_B6 content=c81423d13b8c2369fa915a1d04a01526d409e6abb2e5c4b851ab221efc4e3c69 file=ccb6e825aa11d7392a1c51a5633c6d43b88c033af44a6a8655d6cc3d9f7c390e
+MESHSHA H_B9 content=9df5f874cbbc28e185214d2fe65c07109fc7145a4827d18ff51d0961e3b708ae file=8ece9aea394a73fb169f6a1703f7ad8014ed3b8c4808b6e61a5a93817238fd09
+MESHSHA stiff13_B0 content=ba6b6a74d2057e629757dac3f5abf4d357b605bfcb5a4d9bd1ee73381c0ce2a3 file=
+MESHSHA stiff13_B3 content=138b4f60869a69ffb4304382174f930f30cd042e9488e8b7a55484dbdc7831ad file=f69086738f734cb4d9c7cee247f5a4ed2aeeb9ce2e81a3554433007087e7ae84
+MESHSHA stiff13_B6 content=9b21fa8fba3826e6d431c855931002669feeaa39fc3a8d9fa0e357595b07c280 file=ce2aec9647ce6f8a5a9da02149cf640f542c45950fe3f74c2312217ec3cb0dc8
+MESHSHA stiff13_B9 content=2b173786a997d2a383e09c2e1d32ee3196951d8f5fbf832114bb5b27832ee693 file=d0a1c9f7cdba33433f3cb722d806d8083e7419b54b326172e6ac53fefc7bd567
+MESHSHA soft2_B0 content=fdfaf6324af772a87fccde27d1bdfe51cad354518ddab6e5da1f2e1c6c32b4f9 file=
+MESHSHA soft2_B3 content=a026041cebbd440f87c5538577a8a5caa82e69f6b7ef0b9a524356eff8fc5db7 file=1c13784a7bb401f527640a76cb3ae8f82e1205bd5731697c47a4c6f0cfe12fe0
+MESHSHA soft2_B6 content=8c1b74414511ce1ec34dbe9cfcc47281741f4cc79ab24b126bbb2d9d38e51043 file=c40b8ea5cd63ea8af0f0539076b0c233f8bd791d6dd9747f268d7abad804ae37
+MESHSHA soft2_B9 content=c7da6c008bad66c192a72795ba556e86611b0f99b650a1d13d08d1002aa7ad78 file=43690cfc29226d86018fb36886412eff141a51510de3f489657fb18a1dfd60fd
+MESHSHA soft1_B0 content=8617912bb6aee8a675a0691849e69066e4f8fa3aca7c92cc7be52414922a0332 file=
+MESHSHA soft1_B3 content=52825b9daebe71a2170303dbda43aaa363c58ed083e60d53e83a31ea26320aec file=b9eba013008faa926802a3a5c3bd0f13510d40ec91ed689a15df733519df5753
+MESHSHA soft1_B6 content=32a874408c3fb1b27aef44d83c077ea919f903a271fcf9b4d354d68503a7d7b1 file=a81c7720984024bfa25a72e04fbd26f63685719b98ecf489cea0802d0277b0b1
+MESHSHA soft1_B9 content=a6d31fd9ea12c8845e2d0253f7e8bce7e4ed4247ddf29653c77b12332feb1407 file=d5b10abfdddf16a3753741977502e6215c67f4d8f90403a018904558beaa1038

@@ -1,0 +1,384 @@
+{
+ "schema": "NewMetacomp.G2.A1.Policy.v1",
+ "issue": 66,
+ "scope": "A1 transfer and bounded demonstration of the EdgeCrackHoleLEFM PR-H Family B near-tip refinement on the four frozen A0 S4 paths; at most 12 fixed-geometry FEM solves after a separate GO_A1",
+ "baseCommit": "e4f2aba0a89285e36bbf2602885fd971dfef02fb",
+ "sourceCommitQualified": "d4022da32a613b40e7cbe67cd96bc966b3b29eb5",
+ "lp1PolicySHA256": "074d7edc981920537726314f781f24b41ac7224c18d594d6a1b15343084e5091",
+ "transfer": {
+  "origin": "mfs9697/EdgeCrackHoleLEFM PR #428 (merged head c69b234), src/geometry/build_prh_near_tip_patch.m",
+  "originFileSHA256": "d42024e7117c103584e9efab8f26cf9045c59a10372d74c0fa1c864e8f4b4881",
+  "family": "B (2m inward geometric bands of the 64-sector annulus; disk similarity lambda=q^(-2m)); Family A not transferred",
+  "vendorBuildersByteIdenticalToEdge": [
+   "build_twohole_literal_annulus.m",
+   "cut_twohole_literal_annulus.m",
+   "main_m1i_increment_ring_geometry_only.m",
+   "build_m1i_trial_tip_annulus_p010.m",
+   "build_m1i_trial_tip_disk_p010.m",
+   "T3toT6_fast.m"
+  ],
+  "edgeEvidenceStatus": "Edge PR-H consolidated report (commit 0195266, on main): L0, BM3, BM6 and BM9 were all FEM-solved on the Edge H5 two-hole plane-strain BVP; BM6/BM9 SIFs replayed from saved U. No Edge numerical value transfers to NewMetacomp."
+ },
+ "bvp": "unchanged LP1 policy v2: Cornell #1 three holes, plane stress, E_m=3268.115 MPa, nu=0.35, t=12.7 mm, P=1 N at (254,203.2) mm, pin (25.4,0), roller (482.6,0)",
+ "cases": [
+  {
+   "id": "H",
+   "mask": [
+    0,
+    0,
+    0
+   ],
+   "ratio": 1
+  },
+  {
+   "id": "stiff13",
+   "mask": [
+    1,
+    0,
+    1
+   ],
+   "ratio": 2
+  },
+  {
+   "id": "soft2",
+   "mask": [
+    0,
+    1,
+    0
+   ],
+   "ratio": 0.5
+  },
+  {
+   "id": "soft1",
+   "mask": [
+    1,
+    0,
+    0
+   ],
+   "ratio": 0.5
+  }
+ ],
+ "levels": [
+  3,
+  6,
+  9
+ ],
+ "maxSolves": 12,
+ "baselineLevel": "m=0 = archived A0 S4 solution (no new solve)",
+ "meshRoot": "outputs/g2_a1_geometry_v1",
+ "meshes": {
+  "H_B3": {
+   "contentSHA256": "85606cd76fced3ee26e574f80c38dcfff081bc0bcd7682d33bc431b5632d9fc3",
+   "T3": 29837,
+   "T6nodes": 60629,
+   "DOF": 121258,
+   "coreT3": 3562,
+   "tipFirstEdge_mm": 0.025773614030007864,
+   "diskRadius_mm": 0.5154722806003204,
+   "qActivePrimary": 3049,
+   "qActivePerAnnulus": [
+    3049,
+    1735,
+    2275,
+    2064,
+    1290
+   ],
+   "minAngle_deg": 30.126847321222446,
+   "maxNeighborRatio": 1.5940275556216488
+  },
+  "H_B6": {
+   "contentSHA256": "c81423d13b8c2369fa915a1d04a01526d409e6abb2e5c4b851ab221efc4e3c69",
+   "T3": 30611,
+   "T6nodes": 62189,
+   "DOF": 124378,
+   "coreT3": 4336,
+   "tipFirstEdge_mm": 0.015942700324032225,
+   "diskRadius_mm": 0.31885400648075435,
+   "qActivePrimary": 3225,
+   "qActivePerAnnulus": [
+    3225,
+    2365,
+    2451,
+    2064,
+    1290
+   ],
+   "minAngle_deg": 30.126847321206057,
+   "maxNeighborRatio": 1.5940275556216488
+  },
+  "H_B9": {
+   "contentSHA256": "9df5f874cbbc28e185214d2fe65c07109fc7145a4827d18ff51d0961e3b708ae",
+   "T3": 31385,
+   "T6nodes": 63749,
+   "DOF": 127498,
+   "coreT3": 5110,
+   "tipFirstEdge_mm": 0.009861624113946973,
+   "diskRadius_mm": 0.19723248227902046,
+   "qActivePrimary": 3225,
+   "qActivePerAnnulus": [
+    3225,
+    2709,
+    2451,
+    2064,
+    1290
+   ],
+   "minAngle_deg": 30.126847321206057,
+   "maxNeighborRatio": 1.5940275556216488
+  },
+  "stiff13_B3": {
+   "contentSHA256": "138b4f60869a69ffb4304382174f930f30cd042e9488e8b7a55484dbdc7831ad",
+   "T3": 29821,
+   "T6nodes": 60597,
+   "DOF": 121194,
+   "coreT3": 3562,
+   "tipFirstEdge_mm": 0.025773614030015074,
+   "diskRadius_mm": 0.5154722806003204,
+   "qActivePrimary": 3049,
+   "qActivePerAnnulus": [
+    3049,
+    1735,
+    2275,
+    2064,
+    1290
+   ],
+   "minAngle_deg": 30.126847321221955,
+   "maxNeighborRatio": 1.6050279937936018
+  },
+  "stiff13_B6": {
+   "contentSHA256": "9b21fa8fba3826e6d431c855931002669feeaa39fc3a8d9fa0e357595b07c280",
+   "T3": 30595,
+   "T6nodes": 62157,
+   "DOF": 124314,
+   "coreT3": 4336,
+   "tipFirstEdge_mm": 0.015942700324037398,
+   "diskRadius_mm": 0.31885400648075435,
+   "qActivePrimary": 3225,
+   "qActivePerAnnulus": [
+    3225,
+    2365,
+    2451,
+    2064,
+    1290
+   ],
+   "minAngle_deg": 30.12684732121238,
+   "maxNeighborRatio": 1.6050279937936018
+  },
+  "stiff13_B9": {
+   "contentSHA256": "2b173786a997d2a383e09c2e1d32ee3196951d8f5fbf832114bb5b27832ee693",
+   "T3": 31369,
+   "T6nodes": 63717,
+   "DOF": 127434,
+   "coreT3": 5110,
+   "tipFirstEdge_mm": 0.009861624113942596,
+   "diskRadius_mm": 0.19723248227902046,
+   "qActivePrimary": 3225,
+   "qActivePerAnnulus": [
+    3225,
+    2709,
+    2451,
+    2064,
+    1290
+   ],
+   "minAngle_deg": 30.126847321209304,
+   "maxNeighborRatio": 1.6050279937936018
+  },
+  "soft2_B3": {
+   "contentSHA256": "a026041cebbd440f87c5538577a8a5caa82e69f6b7ef0b9a524356eff8fc5db7",
+   "T3": 29779,
+   "T6nodes": 60513,
+   "DOF": 121026,
+   "coreT3": 3562,
+   "tipFirstEdge_mm": 0.025773614030009155,
+   "diskRadius_mm": 0.5154722806003204,
+   "qActivePrimary": 3049,
+   "qActivePerAnnulus": [
+    3049,
+    1735,
+    2275,
+    2064,
+    1290
+   ],
+   "minAngle_deg": 30.126847321216694,
+   "maxNeighborRatio": 1.5918285508620391
+  },
+  "soft2_B6": {
+   "contentSHA256": "8c1b74414511ce1ec34dbe9cfcc47281741f4cc79ab24b126bbb2d9d38e51043",
+   "T3": 30553,
+   "T6nodes": 62073,
+   "DOF": 124146,
+   "coreT3": 4336,
+   "tipFirstEdge_mm": 0.015942700324027944,
+   "diskRadius_mm": 0.31885400648075435,
+   "qActivePrimary": 3225,
+   "qActivePerAnnulus": [
+    3225,
+    2365,
+    2451,
+    2064,
+    1290
+   ],
+   "minAngle_deg": 30.12684732120723,
+   "maxNeighborRatio": 1.5918285508622623
+  },
+  "soft2_B9": {
+   "contentSHA256": "c7da6c008bad66c192a72795ba556e86611b0f99b650a1d13d08d1002aa7ad78",
+   "T3": 31327,
+   "T6nodes": 63633,
+   "DOF": 127266,
+   "coreT3": 5110,
+   "tipFirstEdge_mm": 0.00986162411393579,
+   "diskRadius_mm": 0.19723248227902046,
+   "qActivePrimary": 3225,
+   "qActivePerAnnulus": [
+    3225,
+    2709,
+    2451,
+    2064,
+    1290
+   ],
+   "minAngle_deg": 30.12684732120238,
+   "maxNeighborRatio": 1.5918285508637817
+  },
+  "soft1_B3": {
+   "contentSHA256": "52825b9daebe71a2170303dbda43aaa363c58ed083e60d53e83a31ea26320aec",
+   "T3": 29809,
+   "T6nodes": 60573,
+   "DOF": 121146,
+   "coreT3": 3562,
+   "tipFirstEdge_mm": 0.025773614030013374,
+   "diskRadius_mm": 0.5154722806003204,
+   "qActivePrimary": 3049,
+   "qActivePerAnnulus": [
+    3049,
+    1735,
+    2275,
+    2064,
+    1290
+   ],
+   "minAngle_deg": 30.126847321217795,
+   "maxNeighborRatio": 1.591828550861745
+  },
+  "soft1_B6": {
+   "contentSHA256": "32a874408c3fb1b27aef44d83c077ea919f903a271fcf9b4d354d68503a7d7b1",
+   "T3": 30583,
+   "T6nodes": 62133,
+   "DOF": 124266,
+   "coreT3": 4336,
+   "tipFirstEdge_mm": 0.015942700324031164,
+   "diskRadius_mm": 0.31885400648075435,
+   "qActivePrimary": 3225,
+   "qActivePerAnnulus": [
+    3225,
+    2365,
+    2451,
+    2064,
+    1290
+   ],
+   "minAngle_deg": 30.126847321217063,
+   "maxNeighborRatio": 1.5918285508619225
+  },
+  "soft1_B9": {
+   "contentSHA256": "a6d31fd9ea12c8845e2d0253f7e8bce7e4ed4247ddf29653c77b12332feb1407",
+   "T3": 31357,
+   "T6nodes": 63693,
+   "DOF": 127386,
+   "coreT3": 5110,
+   "tipFirstEdge_mm": 0.009861624113947748,
+   "diskRadius_mm": 0.19723248227902046,
+   "qActivePrimary": 3225,
+   "qActivePerAnnulus": [
+    3225,
+    2709,
+    2451,
+    2064,
+    1290
+   ],
+   "minAngle_deg": 30.12684732120064,
+   "maxNeighborRatio": 1.591828550862493
+  }
+ },
+ "baselineS4": {
+  "H": {
+   "path": "outputs/g2_lp1_matrix_paths_v1/run_20261122_lp1_v1/H/S4/MESH.mat",
+   "contentSHA256": "530954c687c00cdf3654f8c04398a9fafd4b6817d0b5fee46442fc45895aa3cb",
+   "equalsA0S4ContentSHA256": true,
+   "T3": 29063,
+   "DOF": 118138,
+   "tipFirstEdge_mm": 0.04166666666665719,
+   "qActivePrimary": 2443,
+   "a0Run": "run_a0_lp1_repro_v1 (A0_REPRODUCED_EXACT, PR #65)"
+  },
+  "stiff13": {
+   "path": "outputs/g2_lp1_matrix_paths_v1/run_20261122_lp1_v1/stiff13/S4/MESH.mat",
+   "contentSHA256": "ba6b6a74d2057e629757dac3f5abf4d357b605bfcb5a4d9bd1ee73381c0ce2a3",
+   "equalsA0S4ContentSHA256": true,
+   "T3": 29047,
+   "DOF": 118074,
+   "tipFirstEdge_mm": 0.0416666666666646,
+   "qActivePrimary": 2443,
+   "a0Run": "run_a0_lp1_repro_v1 (A0_REPRODUCED_EXACT, PR #65)"
+  },
+  "soft2": {
+   "path": "outputs/g2_lp1_matrix_paths_v1/run_20261122_lp1_v1/soft2/S4/MESH.mat",
+   "contentSHA256": "fdfaf6324af772a87fccde27d1bdfe51cad354518ddab6e5da1f2e1c6c32b4f9",
+   "equalsA0S4ContentSHA256": true,
+   "T3": 29005,
+   "DOF": 117906,
+   "tipFirstEdge_mm": 0.04166666666666201,
+   "qActivePrimary": 2443,
+   "a0Run": "run_a0_lp1_repro_v1 (A0_REPRODUCED_EXACT, PR #65)"
+  },
+  "soft1": {
+   "path": "outputs/g2_lp1_matrix_paths_v1/run_20261122_lp1_v1/soft1/S4/MESH.mat",
+   "contentSHA256": "8617912bb6aee8a675a0691849e69066e4f8fa3aca7c92cc7be52414922a0332",
+   "equalsA0S4ContentSHA256": true,
+   "T3": 29035,
+   "DOF": 118026,
+   "tipFirstEdge_mm": 0.04166666666666601,
+   "qActivePrimary": 2443,
+   "a0Run": "run_a0_lp1_repro_v1 (A0_REPRODUCED_EXACT, PR #65)"
+  }
+ },
+ "qActiveCommonB6B9": "verified in this geometry: 3,225/3,225 q-variable elements matched for every case, max node difference 1.42e-14 mm",
+ "physics": "g2_material_phase_map -> g2_m4b_ring_activation -> g2_m4b_sif_partial (g2_t6_elasticity_phase, blind COD, signed 5-annulus EDI + 4x4) with G2_TRAJECTORY_POLICY_v1 BVP; unchanged",
+ "reportedPerSolve": [
+  "tip first edge h",
+  "T3/T6/DOF",
+  "q-active per annulus",
+  "elapsed seconds",
+  "MATLAB memory before/after",
+  "available RAM before/after",
+  "signed K_I, K_II, K_II/K_I",
+  "J, G",
+  "local MTS angle",
+  "five EDI estimates, 4x4, COD",
+  "equilibrium/energy and interface-balance gates"
+ ],
+ "analysis": {
+  "interLevelChanges": "signed Delta K_I, Delta K_II, Delta G, Delta theta between consecutive levels and versus m=0; m=9 is the finest tested level, a reference not an exact solution",
+  "architectureSignal": "F_G^case(m) = G_case,S4(m)/G_H,S4(m) - 1 at each level; path-mediated (different crack geometries), not a same-geometry material contrast",
+  "soft2": "not reclassified; remains INCONCLUSIVE under its preregistered conservative criterion unless a separately reviewed uncertainty assessment is made",
+  "noAsymptoticClaim": "Family B is tip-centred, non-nested and has fixed h/r ~0.096 outside the shrinking disk; no Richardson extrapolation or convergence-order claim",
+  "commonFunctional": "the B6->B9 change is evaluated on a common q-active discretization; the m0->3->6 changes mix solution and extraction-mesh changes"
+ },
+ "stopRules": [
+  "any HOLD (memory, mesh quality, K extraction, phase/owner, record integrity, source) stops the campaign; no automatic retry; no resumption mechanism for A1",
+  "no S5, propagation, refinement beyond m=9, other cases, A0 records modification, or reuse of the A0 GO/run/ledger"
+ ],
+ "authorization": {
+  "goPath": "matlab/g2/G2_A1_SCIENTIFIC_GO_v1.json",
+  "decision": "GO_A1_PHYSICAL",
+  "campaignScope": "A1_S4_FAMILY_B_FIXED_PATH_MAX12",
+  "proposedRunName": "run_a1_family_b_s4_v1",
+  "proposedCampaignId": "G2-A1-FB-001",
+  "ledger": "outputs/g2_a1_campaign_ledger/<campaignId>",
+  "runRoot": "outputs/g2_a1_fixed_path_v1/<runName>"
+ },
+ "resources": {
+  "matlabRelease": "R2023a",
+  "pdeRequired": true,
+  "freePhysicalRAM_GiB_min": 5,
+  "operationalTarget_GiB": 7,
+  "oneMatlabProcess": true,
+  "T3Budget": 40000
+ }
+}
