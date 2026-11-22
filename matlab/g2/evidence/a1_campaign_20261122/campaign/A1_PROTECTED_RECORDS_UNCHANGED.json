@@ -1,0 +1,16 @@
+{
+ "protectedTrees": [
+  "outputs/g2_lp1_matrix_paths_v1/run_20261122_lp1_v1",
+  "outputs/g2_lp1_matrix_paths_v1/run_a0_lp1_repro_v1",
+  "outputs/g2_lp1_campaign_ledger",
+  "outputs/g2_a1_geometry_v1"
+ ],
+ "filesBefore": 421,
+ "filesAfter": 421,
+ "changedFiles": [],
+ "a0ManifestEntries": 182,
+ "a0ManifestMismatchesBefore": [],
+ "a0ManifestMismatchesAfter": [],
+ "combinedDigestBefore": "77fe4eabac95e264b2078e4b03a2c92ecdee8009f3727246fae202166a2d59cb",
+ "combinedDigestAfter": "77fe4eabac95e264b2078e4b03a2c92ecdee8009f3727246fae202166a2d59cb"
+}

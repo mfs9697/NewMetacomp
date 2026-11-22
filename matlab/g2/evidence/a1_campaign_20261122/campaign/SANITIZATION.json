@@ -1,0 +1,66 @@
+{
+ "schema": "NewMetacomp.G2.LP1.VG1.Sanitization.v1",
+ "source": "stage_campaign",
+ "files": [
+  {
+   "file": "A1_ANALYSIS.json",
+   "originalSHA256": "4b24dfe68f1bd9fdee1eeab564d26e3d1e84bbb9d23574dec105ff7b89f14a19",
+   "sanitizedSHA256": "4b24dfe68f1bd9fdee1eeab564d26e3d1e84bbb9d23574dec105ff7b89f14a19",
+   "copied": true
+  },
+  {
+   "file": "A1_CALLS.json",
+   "originalSHA256": "5af4cec09751920652d9ce2f551c2b0993c6db41ed2b5a174f6176bfd4dc1746",
+   "sanitizedSHA256": "5af4cec09751920652d9ce2f551c2b0993c6db41ed2b5a174f6176bfd4dc1746",
+   "copied": true
+  },
+  {
+   "file": "a1_campaign.log",
+   "originalSHA256": "130b2c8231f9348c7845bf4e3854f35f6a06f9597f67ea497ec50a4c3360ec26",
+   "sanitizedSHA256": "c5ac0bf57f125872ab62fb1dd2a52cd8322903586ef5a291019843115f5d59ef",
+   "copied": true
+  },
+  {
+   "file": "a1_campaign.m",
+   "originalSHA256": "4e2366e89d5b72267598083fbc62abd7af7c661e31f290bbe7f6d411d6c4d58e",
+   "sanitizedSHA256": "42a4d8cf03d6f41984b7f48f957fb3aa67551569b90650e06d90881772beaa7f",
+   "copied": true
+  },
+  {
+   "file": "A1_CAMPAIGN_LEDGER_SHA256.json",
+   "originalSHA256": "6a9c1b08cb5ca0980dd006c022f9be2305c92224b6c2be01bb0e1dc2cc76af47",
+   "sanitizedSHA256": "bdc49c2cefbf649f78e00e42664de5b7896a49bde1cf6aa802140c580b4de50d",
+   "copied": true
+  },
+  {
+   "file": "A1_PROTECTED_RECORDS_UNCHANGED.json",
+   "originalSHA256": "6ea19bd150b1648233220615993b85ca24d13be856d0bd14818e20002c7c773c",
+   "sanitizedSHA256": "9e255cf0d4a8123ad9fffd406f3890f46c53284254ae0ce7bec549f66068c2b4",
+   "copied": true
+  },
+  {
+   "file": "A1_RUN_RECORDS_SHA256.json",
+   "originalSHA256": "5a7375726a22f53abbbf6fbe18af2f9eedd24b8476c2949fec4b449feb14fdf8",
+   "sanitizedSHA256": "64d43ce6bb4755296e624975222ee5fd8fc54951c6e3af054cb09c4b175969e3",
+   "copied": true
+  },
+  {
+   "file": "a1_verify.log",
+   "originalSHA256": "1445660ddd55aeea346ea078c8d142ac1a3595d7c8cbf0941086e3fe79089802",
+   "sanitizedSHA256": "2749a94f1f242f6a4d29b3c1a84e88cbf85a0d35f483decec176e498e407017a",
+   "copied": true
+  },
+  {
+   "file": "a1_verify.m",
+   "originalSHA256": "c66979a47f2bed61e02248dc05952797924f63fc3be12799a1e9f80225649dd4",
+   "sanitizedSHA256": "5f641daa1b016cbc36cc187b91d0ecb8ff199e16e491b57101ee75d749a9b449",
+   "copied": true
+  },
+  {
+   "file": "A1_VERIFY_ONLY.json",
+   "originalSHA256": "3fdf05744ac8b5288a8920e0ebf684faa856e701a2051383aa6852d7ac01183a",
+   "sanitizedSHA256": "3fdf05744ac8b5288a8920e0ebf684faa856e701a2051383aa6852d7ac01183a",
+   "copied": true
+  }
+ ]
+}
