@@ -1,0 +1,12 @@
+{
+ "archiveBytes": 52837630,
+ "archiveSHA256": "5b333b03e37f08a0c6de839cb646f8c72ea474ba547ba04022ed213059f3c533",
+ "archiveMatchesCommitted": true,
+ "members": 182,
+ "ledgerEntries": 182,
+ "membersMatching": 182,
+ "duplicateNames": 0,
+ "missingFromArchive": [],
+ "notInLedger": [],
+ "pass": true
+}
