@@ -1,0 +1,31 @@
+{
+    "schema":  "NewMetacomp.G2.LP1.PrephysicalBatchManifest.v2",
+    "sourceCommit":  "f65d2523fe2e5e333f0c6a675deacbf217e1c5ea",
+    "branch":  "research/g2-lp1-vg1-guard-negatives-20261122",
+    "matlabExecutable":  "C:\\Program Files\\Polyspace\\R2023a\\bin\\matlab.exe",
+    "generatedUTC":  "2026-11-22T16:46:29.8888556Z",
+    "exitCode":  0,
+    "scientificGO":  false,
+    "files":  [
+                  {
+                      "name":  "run_prephysical_tests.m",
+                      "sha256":  "de84b71c28ddc22d8ec799cabb5eed03bef85c4b452a7cc0bc55536c1c71bf26",
+                      "bytes":  6156
+                  },
+                  {
+                      "name":  "PREPHYSICAL_RESULT.json",
+                      "sha256":  "d098166898f10e47308a9196e27c7a663bde3804bf997fcfe4fa95aebf977880",
+                      "bytes":  2302
+                  },
+                  {
+                      "name":  "CONTRACT_TESTS.json",
+                      "sha256":  "78b6897f52639e06fafb5aeee03007ac961a9cbb2304762b9096a969cff715be",
+                      "bytes":  14643
+                  },
+                  {
+                      "name":  "matlab_console.log",
+                      "sha256":  "849d36637b480e0910afd40954a1e7a312cd33d27ed4eaee40c4c8464b3fc168",
+                      "bytes":  20836
+                  }
+              ]
+}

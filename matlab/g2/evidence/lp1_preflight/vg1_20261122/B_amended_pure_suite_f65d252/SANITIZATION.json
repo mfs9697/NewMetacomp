@@ -1,0 +1,30 @@
+{
+ "schema": "NewMetacomp.G2.LP1.VG1.Sanitization.v1",
+ "source": "stB",
+ "files": [
+  {
+   "file": "CONTRACT_SENSITIVITY.json",
+   "originalSHA256": "34f9875037f102cc0d0e2a31a6ebc9b39d912b8f558272d8d37ee0636fcf12a1",
+   "sanitizedSHA256": "34f9875037f102cc0d0e2a31a6ebc9b39d912b8f558272d8d37ee0636fcf12a1",
+   "copied": true
+  },
+  {
+   "file": "CONTRACT_TESTS_PURE.json",
+   "originalSHA256": "e79f8e5f41ddd30e57f409d64a5b9adabd8299b04182c70861ad8f76557125fd",
+   "sanitizedSHA256": "e79f8e5f41ddd30e57f409d64a5b9adabd8299b04182c70861ad8f76557125fd",
+   "copied": true
+  },
+  {
+   "file": "qual_pure.log",
+   "originalSHA256": "aeb957dff55df1b5e7b1917cc31b89be7d25c1f4a2c5bc50afb869dfee9989e5",
+   "sanitizedSHA256": "e8d4e55714a052347549e284fe4ea16708bf45f1e46dc90ddcad5c14e6fdbc77",
+   "copied": true
+  },
+  {
+   "file": "qual_pure.m",
+   "originalSHA256": "107ff3aff932eb1bfd19335bb27b6d7b0f7dd368616b13621528e73b0ab427b9",
+   "sanitizedSHA256": "b8a7b52418ba65e6c24e6451df7b0bd97612a14e53768ff5c09e9da925072153",
+   "copied": true
+  }
+ ]
+}

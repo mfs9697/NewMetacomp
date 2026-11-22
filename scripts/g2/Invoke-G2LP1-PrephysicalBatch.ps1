@@ -42,11 +42,13 @@ function GitText([string[]]$GitArguments) {
 }
 
 $root = (Resolve-Path -LiteralPath $RepositoryRoot).Path
-$branch = 'research/g2-lp0-lp1-implementation-20261122'
+# VG1 (Issue #58): the reviewed implementation branch and the VG1 hardening branch
+# stacked on it are accepted; the exact commit is recorded in the manifest.
+$allowedBranches = @('research/g2-lp0-lp1-implementation-20261122','research/g2-lp1-vg1-guard-negatives-20261122')
 $top = GitText -GitArguments @('-C',$root,'rev-parse','--show-toplevel')
 Require ([IO.Path]::GetFullPath($top).TrimEnd('\') -ieq $root.TrimEnd('\')) 'Use the NewMetacomp repository.'
 $current = GitText -GitArguments @('-C',$root,'branch','--show-current')
-Require ($current -ceq $branch) ('Wrong branch: ' + $current)
+Require ($allowedBranches -ccontains $current) ('Wrong branch: ' + $current)
 $dirty = GitText -GitArguments @('-C',$root,'status','--porcelain','--untracked-files=all')
 Require ([string]::IsNullOrWhiteSpace($dirty)) ('Working tree is not clean: ' + $dirty)
 $head = GitText -GitArguments @('-C',$root,'rev-parse','HEAD')
@@ -69,6 +71,7 @@ $out = Join-Path $root ('outputs\g2_lp1_prephysical_batch\run_' + $stamp)
 New-Item -ItemType Directory -Path $out | Out-Null
 $runner = Join-Path $out 'run_prephysical_tests.m'
 $resultFile = Join-Path $out 'PREPHYSICAL_RESULT.json'
+$contractFile = Join-Path $out 'CONTRACT_TESTS.json'
 $log = Join-Path $out 'matlab_console.log'
 $manifestFile = Join-Path $out 'BATCH_MANIFEST.json'
 $probe = 'run_prephysical_guard_' + $stamp
@@ -78,11 +81,14 @@ $matlabSource = @'
 try
     repo = '%%REPO%%';
     resultFile = '%%RESULT%%';
+    contractFile = '%%CONTRACT%%';
     probe = '%%PROBE%%';
     cd(repo);
     addpath(fullfile(repo,'matlab','g2'),'-begin');
+    ram = struct('stage',{},'utc',{},'freeGiB',{});
     assert(~isfile(fullfile(repo,'matlab','g2','G2_LP1_SCIENTIFIC_GO_v1.json')), ...
         'G2Batch:UnexpectedGO','Scientific GO must be absent.');
+    ram = observe(ram,'start');
     p = g2_lp0_preflight();
     assert(p.pass && strcmp(p.status,'PREFLIGHT_READY_NOT_LP0_QUALIFIED') && ...
         p.physicalSolves==0 && p.meshBuilds==0, ...
@@ -91,35 +97,61 @@ try
     g = check_g2_lp0_clearance();
     assert(g.pass && g.passed==23 && g.total==23,'G2Batch:Clearance','Expected 23/23 geometry tests.');
     ids = {'H','stiff13','soft2','soft1'};
+    tokens = cell(1,numel(ids));
     for i=1:numel(ids)
+        ram = observe(ram,['dry_' ids{i}]);
         d = g2_lp1_run('Case',ids{i},'Run',false,'MaxStateIndex',2);
         assert(strcmp(d.status,'DRY_READY_NO_FEM') && d.computed==0 && d.lastState==-1, ...
             'G2Batch:Dry','Dry controller failed for %s',ids{i});
+        tokens{i} = d.token;
         fprintf('LP1_DRY %s PASS\n',ids{i});
     end
+    assert(all(strcmp(tokens,tokens{1})),'G2Batch:Dry','Dry tokens differ between cases.');
+    fprintf('LP1_CURRENT_TOKEN %s\n',tokens{1});
+    ram = observe(ram,'contract');
     t = check_g2_lp1_contract();
     assert(t.pass && t.passed==t.total && t.total>=20 && ...
         t.negativeTestsPassed && t.recordIntegrityPassed && ...
+        isfield(t,'goFixturesPassed') && t.goFixturesPassed && t.admissionPassed && ...
+        t.interfacePassed && t.exactIdentifierNegatives && ...
         t.physicalSolves==0 && t.meshBuilds==0,'G2Batch:Contract','LP1 contract failed.');
-    probeFolder=fullfile(repo,'outputs','g2_lp1_matrix_paths_v1',probe);
-    assert(~isfolder(probeFolder),'G2Batch:Probe','Guard probe path exists.');
-    refused=false;
-    try
-        g2_lp1_run('Case','H','Run',true,'MaxStateIndex',0, ...
-            'AuthToken','INVALID_NOT_AUTHORIZED','RunName',probe);
-    catch ME
-        refused=strcmp(ME.identifier,'G2LP1:HOLD_UNAUTHORIZED_STATE');
-        fprintf('SCIENTIFIC_GO_REFUSAL %s\n',ME.identifier);
+    fid=fopen(contractFile,'w');assert(fid>=0,'G2Batch:File','Cannot open contract report.');
+    fwrite(fid,jsonencode(t,'PrettyPrint',true),'char');fclose(fid);
+    % Two refusal probes: an invalid token and the CORRECT current token. Both must be
+    % refused by the absent GO (exact identifier and message) before any folder exists.
+    runRoot=fullfile(repo,'outputs','g2_lp1_matrix_paths_v1');
+    before=listing(runRoot);
+    probes={'INVALID_NOT_AUTHORIZED',tokens{1}};probeIds=cell(1,2);
+    for j=1:2
+        pf=fullfile(runRoot,[probe '_' num2str(j)]);
+        assert(~isfolder(pf),'G2Batch:Probe','Guard probe path exists.');
+        ram = observe(ram,sprintf('probe_%d',j));
+        refused=false;probeIds{j}='<no error>';
+        try
+            g2_lp1_run('Case','H','Run',true,'MaxStateIndex',0, ...
+                'AuthToken',probes{j},'RunName',[probe '_' num2str(j)]);
+        catch ME
+            probeIds{j}=ME.identifier;
+            refused=strcmp(ME.identifier,'G2LP1:HOLD_UNAUTHORIZED_STATE') && ...
+                contains(ME.message,'no separate GO record');
+        end
+        fprintf('SCIENTIFIC_GO_REFUSAL probe=%d token=%s id=%s\n',j, ...
+            ternary(j==1,'invalid','current'),probeIds{j});
+        assert(refused && ~isfolder(pf),'G2Batch:Guard','No-GO refusal failed for probe %d.',j);
     end
-    assert(refused && ~isfolder(probeFolder),'G2Batch:Guard','No-GO refusal failed.');
-    r=struct('schema','NewMetacomp.G2.LP1.PrephysicalBatch.v1', ...
+    assert(isequal(before,listing(runRoot)),'G2Batch:Guard','Run root changed during refusal probes.');
+    ram = observe(ram,'end');
+    r=struct('schema','NewMetacomp.G2.LP1.PrephysicalBatch.v2', ...
         'status','TESTS_PASS_SCIENTIFIC_HOLD','sourceCommit',p.sourceCommit, ...
         'release',p.release,'policySHA256',p.policySHA256, ...
-        'freePhysicalRAM_GiB',p.freePhysicalRAM_GiB, ...
+        'freePhysicalRAM_GiB',p.freePhysicalRAM_GiB,'ramObservations',ram, ...
         'clearanceTestsPassed',g.passed,'clearanceTestsTotal',g.total, ...
         'contractTestsPassed',t.passed,'contractTestsTotal',t.total, ...
         'negativeTestsPassed',t.negativeTestsPassed, ...
         'recordIntegrityPassed',t.recordIntegrityPassed, ...
+        'goFixturesPassed',t.goFixturesPassed,'admissionPassed',t.admissionPassed, ...
+        'interfacePassed',t.interfacePassed,'exactIdentifierNegatives',t.exactIdentifierNegatives, ...
+        'currentToken',tokens{1},'refusalProbeIdentifiers',{probeIds}, ...
         'goRefusedBeforeWrites',true,'dryCases',{ids}, ...
         'scientificGO',false,'physicalSolves',0,'meshBuilds',0, ...
         'evidenceRole','UNREVIEWED_CANDIDATE_NOT_AUTHORIZATION');
@@ -131,18 +163,35 @@ catch ME
     fprintf(2,'G2_LP1_PREFLIGHT_FAIL %s %s\n',ME.identifier,ME.message);
     fprintf(2,'%s\n',getReport(ME,'extended','hyperlinks','off'));
     if exist('resultFile','var')
-        r=struct('schema','NewMetacomp.G2.LP1.PrephysicalBatch.v1', ...
+        if ~exist('ram','var'),ram=struct('stage',{},'utc',{},'freeGiB',{});end
+        try,ram=observe(ram,'failure');catch,end
+        r=struct('schema','NewMetacomp.G2.LP1.PrephysicalBatch.v2', ...
             'status','FAILED','errorIdentifier',ME.identifier,'message',ME.message, ...
-            'scientificGO',false,'evidenceRole','UNREVIEWED_FAILURE');
+            'ramObservations',ram,'scientificGO',false,'evidenceRole','UNREVIEWED_FAILURE');
         fid=fopen(resultFile,'w');
         if fid>=0,fwrite(fid,jsonencode(r,'PrettyPrint',true),'char');fclose(fid);end
     end
     exit(1);
 end
 exit(0);
+
+function ram=observe(ram,stage)
+[~,s]=memory;
+ram(end+1)=struct('stage',stage,'utc',char(datetime('now','TimeZone','UTC','Format','yyyy-MM-dd''T''HH:mm:ss.SSS''Z''')), ...
+    'freeGiB',s.PhysicalMemory.Available/2^30);
+fprintf('RAM_OBSERVATION %s %.6f GiB\n',stage,ram(end).freeGiB);
+end
+function L=listing(folder)
+if ~isfolder(folder),L={};return,end
+d=dir(fullfile(folder,'**','*'));L=sort(strcat({d.folder},filesep,{d.name}));
+end
+function y=ternary(c,a,b)
+if c,y=a;else,y=b;end
+end
 '@
 $matlabSource = $matlabSource.Replace('%%REPO%%',(MatlabQuote $root))
 $matlabSource = $matlabSource.Replace('%%RESULT%%',(MatlabQuote $resultFile))
+$matlabSource = $matlabSource.Replace('%%CONTRACT%%',(MatlabQuote $contractFile))
 $matlabSource = $matlabSource.Replace('%%PROBE%%',(MatlabQuote $probe))
 [IO.File]::WriteAllText($runner,$matlabSource,(New-Object Text.UTF8Encoding($false)))
 
@@ -162,7 +211,7 @@ try {
 }
 
 $files=@()
-foreach ($file in @($runner,$resultFile,$log)) {
+foreach ($file in @($runner,$resultFile,$contractFile,$log)) {
     if (Test-Path -LiteralPath $file -PathType Leaf) {
         $files += [pscustomobject]@{
             name = (Split-Path -Path $file -Leaf)
@@ -172,7 +221,7 @@ foreach ($file in @($runner,$resultFile,$log)) {
     }
 }
 $manifest=[ordered]@{
-    schema='NewMetacomp.G2.LP1.PrephysicalBatchManifest.v1'
+    schema='NewMetacomp.G2.LP1.PrephysicalBatchManifest.v2'
     sourceCommit=$head
     branch=$current
     matlabExecutable=$MatlabExe

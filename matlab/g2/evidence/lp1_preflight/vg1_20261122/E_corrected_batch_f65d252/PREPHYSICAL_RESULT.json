@@ -1,0 +1,81 @@
+{
+  "schema": "NewMetacomp.G2.LP1.PrephysicalBatch.v2",
+  "status": "TESTS_PASS_SCIENTIFIC_HOLD",
+  "sourceCommit": "f65d2523fe2e5e333f0c6a675deacbf217e1c5ea",
+  "release": "R2023a",
+  "policySHA256": "1cf5a76ded840b0758343a1b935b299041e779ec6332c3b7cb0b6dfba1e2af43",
+  "freePhysicalRAM_GiB": 7.2647361755371094,
+  "ramObservations": [
+    {
+      "stage": "start",
+      "utc": "2026-11-22T16:45:56.892Z",
+      "freeGiB": 7.3430671691894531
+    },
+    {
+      "stage": "dry_H",
+      "utc": "2026-11-22T16:46:01.707Z",
+      "freeGiB": 7.0314178466796875
+    },
+    {
+      "stage": "dry_stiff13",
+      "utc": "2026-11-22T16:46:05.635Z",
+      "freeGiB": 6.9977798461914062
+    },
+    {
+      "stage": "dry_soft2",
+      "utc": "2026-11-22T16:46:09.488Z",
+      "freeGiB": 6.9571266174316406
+    },
+    {
+      "stage": "dry_soft1",
+      "utc": "2026-11-22T16:46:13.297Z",
+      "freeGiB": 6.9671478271484375
+    },
+    {
+      "stage": "contract",
+      "utc": "2026-11-22T16:46:17.116Z",
+      "freeGiB": 6.9663543701171875
+    },
+    {
+      "stage": "probe_1",
+      "utc": "2026-11-22T16:46:17.525Z",
+      "freeGiB": 6.9599838256835938
+    },
+    {
+      "stage": "probe_2",
+      "utc": "2026-11-22T16:46:21.322Z",
+      "freeGiB": 6.9489097595214844
+    },
+    {
+      "stage": "end",
+      "utc": "2026-11-22T16:46:25.129Z",
+      "freeGiB": 6.9551048278808594
+    }
+  ],
+  "clearanceTestsPassed": 23,
+  "clearanceTestsTotal": 23,
+  "contractTestsPassed": 74,
+  "contractTestsTotal": 74,
+  "negativeTestsPassed": true,
+  "recordIntegrityPassed": true,
+  "goFixturesPassed": true,
+  "admissionPassed": true,
+  "interfacePassed": true,
+  "exactIdentifierNegatives": true,
+  "currentToken": "G2LP1|policy=074d7edc981920537726314f781f24b41ac7224c18d594d6a1b15343084e5091|source=6f7fb3ea51a0ae64e30a5c63f8cc765af5308c511da315c989ae10235fbed030|LP0=b4240d7ed9b534dbe188a35bac13587db45f8cd1a86a5c7a79c2e1dfa4a233f5|cases=H,stiff13,soft2,soft1|maxState=4",
+  "refusalProbeIdentifiers": [
+    "G2LP1:HOLD_UNAUTHORIZED_STATE",
+    "G2LP1:HOLD_UNAUTHORIZED_STATE"
+  ],
+  "goRefusedBeforeWrites": true,
+  "dryCases": [
+    "H",
+    "stiff13",
+    "soft2",
+    "soft1"
+  ],
+  "scientificGO": false,
+  "physicalSolves": 0,
+  "meshBuilds": 0,
+  "evidenceRole": "UNREVIEWED_CANDIDATE_NOT_AUTHORIZATION"
+}

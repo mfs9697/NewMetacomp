@@ -81,8 +81,8 @@ for k=0:o.MaxStateIndex
     St=wanted;sth=g2_trajectory_record('write',statefile,St);O.promoted=O.promoted+1;
    end
   else
-   assert(~isfolder(sd),'G2LP1:HOLD_RECORD_INTEGRITY','Partial unreviewed state is preserved, never retried.');
-   mkdir(sd);resource();
+   % VG1: integrity check, then the unchanged 5-GiB guard, then folder creation.
+   g2_lp1_admit_state(sd,freeRAM());
    if k==0
     src=fullfile(C.repo,'outputs/g2_protected_mesh/run_20261118_165922_343_famA/GEOMETRY_ONLY_candidate.mat');
     D=load(src);[D,Ad]=g2_m2_state_adapter(D,'S0',P);assert(Ad.pass,'G2LP1:HOLD_OWNER_MASK','S0 adapter.');
@@ -130,7 +130,12 @@ for k=0:o.MaxStateIndex
   fprintf('G2_LP1_ACCEPTED %s S%d s=%.10f KI=%.12g KII=%+.12g\n',c.id,k,St.arc_mm,St.KI,St.KII);
   clear D A PM Ph S K R
  catch ME
-  if ~isfolder(sd),mkdir(sd);end
+  % VG1: a memory refusal raised before this state's folder exists wrote nothing for
+  % the state. It is recorded immutably beside the chain, without creating a partial
+  % state folder and without a chain-blocking HOLD.mat. The controller never retries;
+  % a new invocation is a separate human action. Every other HOLD is unchanged.
+  preAdmissionMemory=strcmp(ME.identifier,'G2LP1:HOLD_MEMORY')&&~isfolder(sd);
+  if ~preAdmissionMemory&&~isfolder(sd),mkdir(sd);end
   stopCode='HOLD_RECORD_INTEGRITY';
   if startsWith(ME.identifier,'G2LP1:HOLD_'),stopCode=extractAfter(ME.identifier,'G2LP1:');end
   if ~clearance.pass&&startsWith(clearance.status,'HOLD_'),stopCode=clearance.status;end
@@ -138,7 +143,12 @@ for k=0:o.MaxStateIndex
    'identifier',ME.identifier,'stopCode',char(stopCode),'geometryReasons',{clearance.reasons}, ...
    'geometryMetrics',clearance.metrics,'message',ME.message, ...
    'parentSHA256',parentHash,'physicalArrest',false);
-  hf=fullfile(sd,'HOLD.mat');if ~isfile(hf),g2_trajectory_record('write',hf,hold);end
+  if preAdmissionMemory
+   g2_trajectory_record('write',fullfile(chain,sprintf('PREADMISSION_HOLD_MEMORY_S%d_%s.mat',k, ...
+    datestr(now,'yyyymmddTHHMMSSFFF'))),hold);
+  else
+   hf=fullfile(sd,'HOLD.mat');if ~isfile(hf),g2_trajectory_record('write',hf,hold);end
+  end
   O.status='HOLD';O.hold=hold;fprintf(2,'G2_LP1_HOLD %s S%d %s: %s\n',c.id,k,ME.identifier,ME.message);return
  end
 end
@@ -148,7 +158,10 @@ if o.MaxStateIndex<4,O.status='BOUNDED_PREFIX_COMPLETE';end
 end
 
 function resource()
-[~,s]=memory;assert(s.PhysicalMemory.Available/2^30>=5,'G2LP1:HOLD_MEMORY','Less than 5 GiB free physical RAM; no automatic retry.');
+assert(freeRAM()>=5,'G2LP1:HOLD_MEMORY','Less than 5 GiB free physical RAM; no automatic retry.');
+end
+function g=freeRAM()
+[~,s]=memory;g=s.PhysicalMemory.Available/2^30;
 end
 function R=regressH(id,k,P,K,C)
 R=struct('applicable',strcmp(id,'H')&&k<=2,'pass',true);if ~R.applicable,return,end

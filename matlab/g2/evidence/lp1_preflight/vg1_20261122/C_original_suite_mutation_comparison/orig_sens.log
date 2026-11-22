@@ -1,0 +1,10 @@
+[Warning: Name is nonexistent or not a directory: <user>\Google Drive\Projects\8 - CohZonFEM\czm_project\CrackPath\CrackFromHoleLEFM\cfh] 
+[Warning: Name is nonexistent or not a directory: <user>\Google Drive\Projects\8 - CohZonFEM\Asphalt\remmers2003] 
+ORIGINAL_SUITE_MUTATION token_binding_removed applied=1 detected=0
+ORIGINAL_SUITE_MUTATION binding_identifier_wrong applied=1 detected=0
+ORIGINAL_SUITE_MUTATION unrelated_same_identifier applied=1 detected=0
+ORIGINAL_SUITE_MUTATION links_identifier_collapsed applied=1 detected=0
+ORIGINAL_SUITE_MUTATION S5_cap_removed applied=1 detected=0
+ORIGINAL_SUITE_MUTATION overwrite_allowed applied=1 detected=0
+ORIGINAL_SUITE_MUTATION absent_go_not_checked applied=1 detected=0
+ORIGINAL_SUITE_MUTATION folder_before_memory_guard applied=0 detected=0 (no admission function or test exists at 70bf6f4)

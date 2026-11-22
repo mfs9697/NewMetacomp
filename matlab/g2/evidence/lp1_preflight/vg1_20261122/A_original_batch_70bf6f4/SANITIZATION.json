@@ -1,0 +1,30 @@
+{
+ "schema": "NewMetacomp.G2.LP1.VG1.Sanitization.v1",
+ "source": "run_20261122_162256_489",
+ "files": [
+  {
+   "file": "BATCH_MANIFEST.json",
+   "originalSHA256": "22fe9b433238ccf7a22ba2617ad977e2ac2a3681bd3114160f4490dea3de8bb4",
+   "sanitizedSHA256": "434042ff16c509e9d028085a7d4fb8b20ba45582055ef10eab0e4db23a975176",
+   "copied": true
+  },
+  {
+   "file": "matlab_console.log",
+   "originalSHA256": "3f1e800eb1c985a14ddf83684468a61096449856db78a723f48e153034e13534",
+   "sanitizedSHA256": "c8e5b0136f963541157ec885d275e1c014f3e3be329b42ac237fdaf40a22206e",
+   "copied": true
+  },
+  {
+   "file": "PREPHYSICAL_RESULT.json",
+   "originalSHA256": "7034f39cf1ce97ca3bc20bc73f638075c91b0459e5d2e5c78a14fa83ed3e4d84",
+   "sanitizedSHA256": "7034f39cf1ce97ca3bc20bc73f638075c91b0459e5d2e5c78a14fa83ed3e4d84",
+   "copied": true
+  },
+  {
+   "file": "run_prephysical_tests.m",
+   "originalSHA256": "7d9e2f0e2947f7dc2535001702423f678b84578cd2026b667ff8bf70a5fac8fe",
+   "sanitizedSHA256": "1bea393ef2b609c51899b9477e995ca2fafe0c7074da77ae5f2f09cd0e468e0b",
+   "copied": true
+  }
+ ]
+}
