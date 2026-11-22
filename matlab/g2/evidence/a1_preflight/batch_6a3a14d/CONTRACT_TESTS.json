@@ -1,0 +1,341 @@
+{
+  "schema": "NewMetacomp.G2.A1.ContractTests.v1",
+  "pass": true,
+  "tests": [
+    {
+      "name": "patch_band_pairs_zero",
+      "kind": "transfer",
+      "expected": "PRH:PatchBands | positive integer",
+      "observed": "PRH:PatchBands",
+      "pass": true
+    },
+    {
+      "name": "patch_band_pairs_fractional",
+      "kind": "transfer",
+      "expected": "PRH:PatchBands | positive integer",
+      "observed": "PRH:PatchBands",
+      "pass": true
+    },
+    {
+      "name": "patch_family_a_not_transferred",
+      "kind": "transfer",
+      "expected": "PRH:PatchFamily | Unknown patch family",
+      "observed": "PRH:PatchFamily",
+      "pass": true
+    },
+    {
+      "name": "patch_unqualified_ring",
+      "kind": "transfer",
+      "expected": "PRH:PatchParentRing | 15/15",
+      "observed": "PRH:PatchParentRing",
+      "pass": true
+    },
+    {
+      "name": "patch_first_pitch_equals_edge_prh",
+      "kind": "transfer",
+      "expected": "true",
+      "observed": "true",
+      "pass": true
+    },
+    {
+      "name": "swap_m0_reproduces_saved_mesh_exactly",
+      "kind": "transfer",
+      "expected": "true",
+      "observed": "true",
+      "pass": true
+    },
+    {
+      "name": "swap_missing_field",
+      "kind": "transfer",
+      "expected": "G2A1:BaselineSchema | lacks required",
+      "observed": "G2A1:BaselineSchema",
+      "pass": true
+    },
+    {
+      "name": "swap_tampered_kernel",
+      "kind": "transfer",
+      "expected": "G2A1:BaselineIdentity | differ from the saved",
+      "observed": "G2A1:BaselineIdentity",
+      "pass": true
+    },
+    {
+      "name": "validator_B3_positive",
+      "kind": "validator",
+      "expected": "true",
+      "observed": "true",
+      "pass": true
+    },
+    {
+      "name": "validator_flipped_element",
+      "kind": "validator",
+      "expected": "allT3AreasPositive=0",
+      "observed": "allT3AreasPositive=0",
+      "pass": true
+    },
+    {
+      "name": "validator_moved_exterior_node",
+      "kind": "validator",
+      "expected": "exteriorNodesBitIdentical=0",
+      "observed": "exteriorNodesBitIdentical=0",
+      "pass": true
+    },
+    {
+      "name": "validator_q_nonzero_beyond_support",
+      "kind": "validator",
+      "expected": "qSupportInsideCoreAndZeroOnRim=0",
+      "observed": "qSupportInsideCoreAndZeroOnRim=0",
+      "pass": true
+    },
+    {
+      "name": "validator_missing_core_cell",
+      "kind": "validator",
+      "expected": "boundaryEdgesOnlyPlateHolesOrCrack=0",
+      "observed": "boundaryEdgesOnlyPlateHolesOrCrack=0",
+      "pass": true
+    },
+    {
+      "name": "validator_corrupted_bank",
+      "kind": "validator",
+      "expected": "distinctMatchedBanks=0",
+      "observed": "distinctMatchedBanks=0",
+      "pass": true
+    },
+    {
+      "name": "validator_wrong_tip",
+      "kind": "validator",
+      "expected": "singleTipAtPolylineEnd=0",
+      "observed": "singleTipAtPolylineEnd=0",
+      "pass": true
+    },
+    {
+      "name": "content_sha_detects_one_ulp",
+      "kind": "validator",
+      "expected": "true",
+      "observed": "true",
+      "pass": true
+    },
+    {
+      "name": "go_fixture_positive_control",
+      "kind": "go",
+      "expected": "true",
+      "observed": "true",
+      "pass": true
+    },
+    {
+      "name": "go_not_struct",
+      "kind": "go",
+      "expected": "G2A1:HOLD_UNAUTHORIZED_STATE | Incomplete A1",
+      "observed": "G2A1:HOLD_UNAUTHORIZED_STATE",
+      "pass": true
+    },
+    {
+      "name": "go_missing_mesh_manifest",
+      "kind": "go",
+      "expected": "G2A1:HOLD_UNAUTHORIZED_STATE | Incomplete A1",
+      "observed": "G2A1:HOLD_UNAUTHORIZED_STATE",
+      "pass": true
+    },
+    {
+      "name": "go_lp1_decision_rejected",
+      "kind": "go",
+      "expected": "G2A1:HOLD_UNAUTHORIZED_STATE | decision or review",
+      "observed": "G2A1:HOLD_UNAUTHORIZED_STATE",
+      "pass": true
+    },
+    {
+      "name": "go_foreign_url",
+      "kind": "go",
+      "expected": "G2A1:HOLD_UNAUTHORIZED_STATE | decision or review",
+      "observed": "G2A1:HOLD_UNAUTHORIZED_STATE",
+      "pass": true
+    },
+    {
+      "name": "go_a0_scope_rejected",
+      "kind": "go",
+      "expected": "G2A1:HOLD_UNAUTHORIZED_STATE | scope, run name or campaign ID",
+      "observed": "G2A1:HOLD_UNAUTHORIZED_STATE",
+      "pass": true
+    },
+    {
+      "name": "go_a0_run_name_rejected",
+      "kind": "go",
+      "expected": "G2A1:HOLD_UNAUTHORIZED_STATE | scope, run name or campaign ID",
+      "observed": "G2A1:HOLD_UNAUTHORIZED_STATE",
+      "pass": true
+    },
+    {
+      "name": "go_lp1_run_name_rejected",
+      "kind": "go",
+      "expected": "G2A1:HOLD_UNAUTHORIZED_STATE | scope, run name or campaign ID",
+      "observed": "G2A1:HOLD_UNAUTHORIZED_STATE",
+      "pass": true
+    },
+    {
+      "name": "go_a0_campaign_rejected",
+      "kind": "go",
+      "expected": "G2A1:HOLD_UNAUTHORIZED_STATE | scope, run name or campaign ID",
+      "observed": "G2A1:HOLD_UNAUTHORIZED_STATE",
+      "pass": true
+    },
+    {
+      "name": "go_campaign_id_syntax",
+      "kind": "go",
+      "expected": "G2A1:HOLD_UNAUTHORIZED_STATE | scope, run name or campaign ID",
+      "observed": "G2A1:HOLD_UNAUTHORIZED_STATE",
+      "pass": true
+    },
+    {
+      "name": "go_policy_mismatch",
+      "kind": "go",
+      "expected": "G2A1:HOLD_SOURCE | does not bind",
+      "observed": "G2A1:HOLD_SOURCE",
+      "pass": true
+    },
+    {
+      "name": "go_source_mismatch",
+      "kind": "go",
+      "expected": "G2A1:HOLD_SOURCE | does not bind",
+      "observed": "G2A1:HOLD_SOURCE",
+      "pass": true
+    },
+    {
+      "name": "go_mesh_manifest_mismatch",
+      "kind": "go",
+      "expected": "G2A1:HOLD_SOURCE | does not bind",
+      "observed": "G2A1:HOLD_SOURCE",
+      "pass": true
+    },
+    {
+      "name": "go_token_mismatch",
+      "kind": "go",
+      "expected": "G2A1:HOLD_SOURCE | does not bind",
+      "observed": "G2A1:HOLD_SOURCE",
+      "pass": true
+    },
+    {
+      "name": "go_contract_path_outside",
+      "kind": "go",
+      "expected": "G2A1:HOLD_SOURCE | not pinned",
+      "observed": "G2A1:HOLD_SOURCE",
+      "pass": true
+    },
+    {
+      "name": "go_contract_traversal",
+      "kind": "go",
+      "expected": "G2A1:HOLD_SOURCE | not pinned",
+      "observed": "G2A1:HOLD_SOURCE",
+      "pass": true
+    },
+    {
+      "name": "go_contract_missing",
+      "kind": "go",
+      "expected": "G2A1:HOLD_SOURCE | absent or changed",
+      "observed": "G2A1:HOLD_SOURCE",
+      "pass": true
+    },
+    {
+      "name": "go_contract_sha_mismatch",
+      "kind": "go",
+      "expected": "G2A1:HOLD_SOURCE | absent or changed",
+      "observed": "G2A1:HOLD_SOURCE",
+      "pass": true
+    },
+    {
+      "name": "go_contract_lacks_fields",
+      "kind": "go",
+      "expected": "G2A1:HOLD_UNAUTHORIZED_STATE | lacks required",
+      "observed": "G2A1:HOLD_UNAUTHORIZED_STATE",
+      "pass": true
+    },
+    {
+      "name": "go_contract_not_passed",
+      "kind": "go",
+      "expected": "G2A1:HOLD_UNAUTHORIZED_STATE | has not passed",
+      "observed": "G2A1:HOLD_UNAUTHORIZED_STATE",
+      "pass": true
+    },
+    {
+      "name": "go_contract_with_solves",
+      "kind": "go",
+      "expected": "G2A1:HOLD_UNAUTHORIZED_STATE | has not passed",
+      "observed": "G2A1:HOLD_UNAUTHORIZED_STATE",
+      "pass": true
+    },
+    {
+      "name": "gate_absent_go",
+      "kind": "go",
+      "expected": "G2A1:HOLD_UNAUTHORIZED_STATE | no separate A1 GO",
+      "observed": "G2A1:HOLD_UNAUTHORIZED_STATE",
+      "pass": true
+    },
+    {
+      "name": "runner_level_zero",
+      "kind": "runner",
+      "expected": "G2A1:HOLD_UNAUTHORIZED_STATE | Only Family B levels",
+      "observed": "G2A1:HOLD_UNAUTHORIZED_STATE",
+      "pass": true
+    },
+    {
+      "name": "runner_level_twelve",
+      "kind": "runner",
+      "expected": "G2A1:HOLD_UNAUTHORIZED_STATE | Only Family B levels",
+      "observed": "G2A1:HOLD_UNAUTHORIZED_STATE",
+      "pass": true
+    },
+    {
+      "name": "runner_level_fraction",
+      "kind": "runner",
+      "expected": "G2A1:HOLD_UNAUTHORIZED_STATE | Only Family B levels",
+      "observed": "G2A1:HOLD_UNAUTHORIZED_STATE",
+      "pass": true
+    },
+    {
+      "name": "runner_rejects_go_path",
+      "kind": "runner",
+      "expected": "MATLAB:InputParser:UnmatchedParameter",
+      "observed": "MATLAB:InputParser:UnmatchedParameter",
+      "pass": true
+    },
+    {
+      "name": "runner_rejects_resume_path",
+      "kind": "runner",
+      "expected": "MATLAB:InputParser:UnmatchedParameter",
+      "observed": "MATLAB:InputParser:UnmatchedParameter",
+      "pass": true
+    },
+    {
+      "name": "gate_path_hardcoded_and_a0_go_never_read",
+      "kind": "interface",
+      "expected": "true",
+      "observed": "true",
+      "pass": true
+    },
+    {
+      "name": "runner_authorizes_before_writes",
+      "kind": "interface",
+      "expected": "true",
+      "observed": "true",
+      "pass": true
+    },
+    {
+      "name": "validator_opens_no_file",
+      "kind": "interface",
+      "expected": "true",
+      "observed": "true",
+      "pass": true
+    }
+  ],
+  "passed": 46,
+  "total": 46,
+  "physicalSolves": 0,
+  "negativeTestsPassed": true,
+  "exactIdentifierNegatives": true,
+  "counts": {
+    "transfer": 8,
+    "validator": 8,
+    "go": 22,
+    "runner": 5,
+    "interface": 3
+  },
+  "testFolder": "<repo>\\outputs\\g2_a1_contract_20261122_221128_091"
+}

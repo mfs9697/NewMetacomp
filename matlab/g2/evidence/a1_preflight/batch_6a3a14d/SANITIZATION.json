@@ -1,0 +1,30 @@
+{
+ "schema": "NewMetacomp.G2.LP1.VG1.Sanitization.v1",
+ "source": "stB",
+ "files": [
+  {
+   "file": "a1_batch.log",
+   "originalSHA256": "c012f477bb1a1da87446295bb925538b3f7f5039d87a0f4c6de3323e356144e5",
+   "sanitizedSHA256": "da685e6130a13c0b7a481a061ed7b3648dcaa68672405015fe605a06d166a8be",
+   "copied": true
+  },
+  {
+   "file": "a1_batch.m",
+   "originalSHA256": "ac7219672348c36988744e937aed665fc994f462f1221ab99d15e8154245355f",
+   "sanitizedSHA256": "5b92e51f6cf637308cabbe0665dace1769591bcafc36a31b358cea3954c18516",
+   "copied": true
+  },
+  {
+   "file": "CONTRACT_TESTS.json",
+   "originalSHA256": "06ef678ed387d1c3ecfbb105a8a8609aa0248f16d68c8067faed69877f82f3de",
+   "sanitizedSHA256": "06ef678ed387d1c3ecfbb105a8a8609aa0248f16d68c8067faed69877f82f3de",
+   "copied": true
+  },
+  {
+   "file": "PREPHYSICAL_RESULT.json",
+   "originalSHA256": "2747907bacc23d94037ee565fed25d4012873f7a7e98a236d7a908078381f567",
+   "sanitizedSHA256": "2747907bacc23d94037ee565fed25d4012873f7a7e98a236d7a908078381f567",
+   "copied": true
+  }
+ ]
+}
