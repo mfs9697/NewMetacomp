@@ -1,0 +1,52 @@
+{
+  "schema": "NewMetacomp.G2.LP1.A0.VerifyOnly.v1",
+  "calls": [
+    {
+      "caseId": "H",
+      "status": "CASE_S4_COMPLETE_AWAIT_CAMPAIGN_REVIEW",
+      "computed": 0,
+      "reused": 5,
+      "promoted": 0,
+      "mode": "VERIFY_ONLY",
+      "error": "",
+      "ok": true,
+      "ramBefore_GiB": 8.4296417236328125
+    },
+    {
+      "caseId": "stiff13",
+      "status": "CASE_S4_COMPLETE_AWAIT_CAMPAIGN_REVIEW",
+      "computed": 0,
+      "reused": 5,
+      "promoted": 0,
+      "mode": "VERIFY_ONLY",
+      "error": "",
+      "ok": true,
+      "ramBefore_GiB": 8.2041015625
+    },
+    {
+      "caseId": "soft2",
+      "status": "CASE_S4_COMPLETE_AWAIT_CAMPAIGN_REVIEW",
+      "computed": 0,
+      "reused": 5,
+      "promoted": 0,
+      "mode": "VERIFY_ONLY",
+      "error": "",
+      "ok": true,
+      "ramBefore_GiB": 8.1583709716796875
+    },
+    {
+      "caseId": "soft1",
+      "status": "CASE_S4_COMPLETE_AWAIT_CAMPAIGN_REVIEW",
+      "computed": 0,
+      "reused": 5,
+      "promoted": 0,
+      "mode": "VERIFY_ONLY",
+      "error": "",
+      "ok": true,
+      "ramBefore_GiB": 8.166595458984375
+    }
+  ],
+  "filesHashed": 226,
+  "bytesUnchanged": true,
+  "pass": true
+}

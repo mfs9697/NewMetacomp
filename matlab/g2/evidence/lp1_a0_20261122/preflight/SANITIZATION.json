@@ -1,0 +1,30 @@
+{
+ "schema": "NewMetacomp.G2.LP1.VG1.Sanitization.v1",
+ "source": "preflight",
+ "files": [
+  {
+   "file": "a0_go_readonly_check.log",
+   "originalSHA256": "e2c9e9bd096ba1b68a15be46d3d2401d6d9aa6478604b2d47150b3bccae740f3",
+   "sanitizedSHA256": "7b6c5232542184f6294b991f7f6c030fce0a8b71b00f844a6025c500ff491158",
+   "copied": true
+  },
+  {
+   "file": "a0_go_readonly_check.m",
+   "originalSHA256": "a709d455252195ad811f6feb22bfda23d5ca77de5822e6a593b0b4ef2e1fca51",
+   "sanitizedSHA256": "c43e0b2e866b7df8e9ae1c794f9ca4ce10af387bc7d416b3ba4ec47f154f18a4",
+   "copied": true
+  },
+  {
+   "file": "PIN_CHECK_EXEC.json",
+   "originalSHA256": "47b28f7d10858f60102b1bb0f891146603194922aa269503d7765717b662cf41",
+   "sanitizedSHA256": "47b28f7d10858f60102b1bb0f891146603194922aa269503d7765717b662cf41",
+   "copied": true
+  },
+  {
+   "file": "pin_go.json",
+   "originalSHA256": "8bbae982d4de77706c0f7028ee6e9c65df10f24d4f401b2bf1b1e78f4f31c3ba",
+   "sanitizedSHA256": "8bbae982d4de77706c0f7028ee6e9c65df10f24d4f401b2bf1b1e78f4f31c3ba",
+   "copied": true
+  }
+ ]
+}

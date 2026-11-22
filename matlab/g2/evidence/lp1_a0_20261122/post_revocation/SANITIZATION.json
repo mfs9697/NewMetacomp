@@ -1,0 +1,18 @@
+{
+ "schema": "NewMetacomp.G2.LP1.VG1.Sanitization.v1",
+ "source": "post",
+ "files": [
+  {
+   "file": "a0_post_revocation_probe.log",
+   "originalSHA256": "a13cb9e8241c2bf63fc01a0a8eba3825bd8c98557db637179f8f522e4ffe6884",
+   "sanitizedSHA256": "4458ef8741aa70a647b8635afd9f745c77a7be583f1192ac9e2aa9950302d7c1",
+   "copied": true
+  },
+  {
+   "file": "a0_post_revocation_probe.m",
+   "originalSHA256": "a200bf1e863b5c82e290d11af698bbae5134942e350594632ad7d44f305bc4e7",
+   "sanitizedSHA256": "e125406f0b2346c1565f02c4583d99358dada67bee3e888f5c6bc61178eebb7b",
+   "copied": true
+  }
+ ]
+}

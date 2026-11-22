@@ -1,0 +1,28 @@
+[Warning: Name is nonexistent or not a directory: <user>\Google Drive\Projects\8 - CohZonFEM\czm_project\CrackPath\CrackFromHoleLEFM\cfh] 
+[Warning: Name is nonexistent or not a directory: <user>\Google Drive\Projects\8 - CohZonFEM\Asphalt\remmers2003] 
+A0_COMPARE mode=compare worstTier=A verdict=A0_REPRODUCED_EXACT classesUnchanged=1
+STATE H_S0 tier=A int=1 coord=0 K=0 G=0 MTS=0 EDI=0 COD=0 J=0 u=0 comp=0 clear=0
+STATE H_S1 tier=A int=1 coord=0 K=0 G=0 MTS=0 EDI=0 COD=0 J=0 u=0 comp=0 clear=0
+STATE H_S2 tier=A int=1 coord=0 K=0 G=0 MTS=0 EDI=0 COD=0 J=0 u=0 comp=0 clear=0
+STATE H_S3 tier=A int=1 coord=0 K=0 G=0 MTS=0 EDI=0 COD=0 J=0 u=0 comp=0 clear=0
+STATE H_S4 tier=A int=1 coord=0 K=0 G=0 MTS=0 EDI=0 COD=0 J=0 u=0 comp=0 clear=0
+STATE stiff13_S0 tier=A int=1 coord=0 K=0 G=0 MTS=0 EDI=0 COD=0 J=0 u=0 comp=0 clear=0
+STATE stiff13_S1 tier=A int=1 coord=0 K=0 G=0 MTS=0 EDI=0 COD=0 J=0 u=0 comp=0 clear=0
+STATE stiff13_S2 tier=A int=1 coord=0 K=0 G=0 MTS=0 EDI=0 COD=0 J=0 u=0 comp=0 clear=0
+STATE stiff13_S3 tier=A int=1 coord=0 K=0 G=0 MTS=0 EDI=0 COD=0 J=0 u=0 comp=0 clear=0
+STATE stiff13_S4 tier=A int=1 coord=0 K=0 G=0 MTS=0 EDI=0 COD=0 J=0 u=0 comp=0 clear=0
+STATE soft2_S0 tier=A int=1 coord=0 K=0 G=0 MTS=0 EDI=0 COD=0 J=0 u=0 comp=0 clear=0
+STATE soft2_S1 tier=A int=1 coord=0 K=0 G=0 MTS=0 EDI=0 COD=0 J=0 u=0 comp=0 clear=0
+STATE soft2_S2 tier=A int=1 coord=0 K=0 G=0 MTS=0 EDI=0 COD=0 J=0 u=0 comp=0 clear=0
+STATE soft2_S3 tier=A int=1 coord=0 K=0 G=0 MTS=0 EDI=0 COD=0 J=0 u=0 comp=0 clear=0
+STATE soft2_S4 tier=A int=1 coord=0 K=0 G=0 MTS=0 EDI=0 COD=0 J=0 u=0 comp=0 clear=0
+STATE soft1_S0 tier=A int=1 coord=0 K=0 G=0 MTS=0 EDI=0 COD=0 J=0 u=0 comp=0 clear=0
+STATE soft1_S1 tier=A int=1 coord=0 K=0 G=0 MTS=0 EDI=0 COD=0 J=0 u=0 comp=0 clear=0
+STATE soft1_S2 tier=A int=1 coord=0 K=0 G=0 MTS=0 EDI=0 COD=0 J=0 u=0 comp=0 clear=0
+STATE soft1_S3 tier=A int=1 coord=0 K=0 G=0 MTS=0 EDI=0 COD=0 J=0 u=0 comp=0 clear=0
+STATE soft1_S4 tier=A int=1 coord=0 K=0 G=0 MTS=0 EDI=0 COD=0 J=0 u=0 comp=0 clear=0
+PROVENANCE pass=1 notes=
+A0_VERDICT A0_REPRODUCED_EXACT worstTier=A classesUnchanged=1 dFG=0 dOff=0
+SR1_EXTRACT free physical RAM inside MATLAB: 8.328 GiB
+SR1_EXTRACT_OK states=20 NO_FEM=1 NO_MESH=1
+SR1_MESH_QUALITY_OK states=20 NO_FEM=1 NO_MESH=1

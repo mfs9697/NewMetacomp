@@ -1,0 +1,559 @@
+{
+  "schema": "NewMetacomp.G2.LP1.A0.Comparison.v1",
+  "mode": "compare",
+  "states": [
+    {
+      "state": "H_S0",
+      "tier": "A",
+      "invariantFailures": [],
+      "maxDiff": {
+        "coord_mm": 0,
+        "K_rel": 0,
+        "G_rel": 0,
+        "MTS_deg": 0,
+        "tangent": 0,
+        "EDI_rel": 0,
+        "COD_rel": 0,
+        "J_rel": 0,
+        "compliance_rel": 0,
+        "energy_rel": 0,
+        "reactions_rel": 0,
+        "u_rel": 0,
+        "clearance_mm": 0
+      },
+      "reasons": [],
+      "integerArraysEqual": true
+    },
+    {
+      "state": "H_S1",
+      "tier": "A",
+      "invariantFailures": [],
+      "maxDiff": {
+        "coord_mm": 0,
+        "K_rel": 0,
+        "G_rel": 0,
+        "MTS_deg": 0,
+        "tangent": 0,
+        "EDI_rel": 0,
+        "COD_rel": 0,
+        "J_rel": 0,
+        "compliance_rel": 0,
+        "energy_rel": 0,
+        "reactions_rel": 0,
+        "u_rel": 0,
+        "clearance_mm": 0
+      },
+      "reasons": [],
+      "integerArraysEqual": true
+    },
+    {
+      "state": "H_S2",
+      "tier": "A",
+      "invariantFailures": [],
+      "maxDiff": {
+        "coord_mm": 0,
+        "K_rel": 0,
+        "G_rel": 0,
+        "MTS_deg": 0,
+        "tangent": 0,
+        "EDI_rel": 0,
+        "COD_rel": 0,
+        "J_rel": 0,
+        "compliance_rel": 0,
+        "energy_rel": 0,
+        "reactions_rel": 0,
+        "u_rel": 0,
+        "clearance_mm": 0
+      },
+      "reasons": [],
+      "integerArraysEqual": true
+    },
+    {
+      "state": "H_S3",
+      "tier": "A",
+      "invariantFailures": [],
+      "maxDiff": {
+        "coord_mm": 0,
+        "K_rel": 0,
+        "G_rel": 0,
+        "MTS_deg": 0,
+        "tangent": 0,
+        "EDI_rel": 0,
+        "COD_rel": 0,
+        "J_rel": 0,
+        "compliance_rel": 0,
+        "energy_rel": 0,
+        "reactions_rel": 0,
+        "u_rel": 0,
+        "clearance_mm": 0
+      },
+      "reasons": [],
+      "integerArraysEqual": true
+    },
+    {
+      "state": "H_S4",
+      "tier": "A",
+      "invariantFailures": [],
+      "maxDiff": {
+        "coord_mm": 0,
+        "K_rel": 0,
+        "G_rel": 0,
+        "MTS_deg": 0,
+        "tangent": 0,
+        "EDI_rel": 0,
+        "COD_rel": 0,
+        "J_rel": 0,
+        "compliance_rel": 0,
+        "energy_rel": 0,
+        "reactions_rel": 0,
+        "u_rel": 0,
+        "clearance_mm": 0
+      },
+      "reasons": [],
+      "integerArraysEqual": true
+    },
+    {
+      "state": "stiff13_S0",
+      "tier": "A",
+      "invariantFailures": [],
+      "maxDiff": {
+        "coord_mm": 0,
+        "K_rel": 0,
+        "G_rel": 0,
+        "MTS_deg": 0,
+        "tangent": 0,
+        "EDI_rel": 0,
+        "COD_rel": 0,
+        "J_rel": 0,
+        "compliance_rel": 0,
+        "energy_rel": 0,
+        "reactions_rel": 0,
+        "u_rel": 0,
+        "clearance_mm": 0
+      },
+      "reasons": [],
+      "integerArraysEqual": true
+    },
+    {
+      "state": "stiff13_S1",
+      "tier": "A",
+      "invariantFailures": [],
+      "maxDiff": {
+        "coord_mm": 0,
+        "K_rel": 0,
+        "G_rel": 0,
+        "MTS_deg": 0,
+        "tangent": 0,
+        "EDI_rel": 0,
+        "COD_rel": 0,
+        "J_rel": 0,
+        "compliance_rel": 0,
+        "energy_rel": 0,
+        "reactions_rel": 0,
+        "u_rel": 0,
+        "clearance_mm": 0
+      },
+      "reasons": [],
+      "integerArraysEqual": true
+    },
+    {
+      "state": "stiff13_S2",
+      "tier": "A",
+      "invariantFailures": [],
+      "maxDiff": {
+        "coord_mm": 0,
+        "K_rel": 0,
+        "G_rel": 0,
+        "MTS_deg": 0,
+        "tangent": 0,
+        "EDI_rel": 0,
+        "COD_rel": 0,
+        "J_rel": 0,
+        "compliance_rel": 0,
+        "energy_rel": 0,
+        "reactions_rel": 0,
+        "u_rel": 0,
+        "clearance_mm": 0
+      },
+      "reasons": [],
+      "integerArraysEqual": true
+    },
+    {
+      "state": "stiff13_S3",
+      "tier": "A",
+      "invariantFailures": [],
+      "maxDiff": {
+        "coord_mm": 0,
+        "K_rel": 0,
+        "G_rel": 0,
+        "MTS_deg": 0,
+        "tangent": 0,
+        "EDI_rel": 0,
+        "COD_rel": 0,
+        "J_rel": 0,
+        "compliance_rel": 0,
+        "energy_rel": 0,
+        "reactions_rel": 0,
+        "u_rel": 0,
+        "clearance_mm": 0
+      },
+      "reasons": [],
+      "integerArraysEqual": true
+    },
+    {
+      "state": "stiff13_S4",
+      "tier": "A",
+      "invariantFailures": [],
+      "maxDiff": {
+        "coord_mm": 0,
+        "K_rel": 0,
+        "G_rel": 0,
+        "MTS_deg": 0,
+        "tangent": 0,
+        "EDI_rel": 0,
+        "COD_rel": 0,
+        "J_rel": 0,
+        "compliance_rel": 0,
+        "energy_rel": 0,
+        "reactions_rel": 0,
+        "u_rel": 0,
+        "clearance_mm": 0
+      },
+      "reasons": [],
+      "integerArraysEqual": true
+    },
+    {
+      "state": "soft2_S0",
+      "tier": "A",
+      "invariantFailures": [],
+      "maxDiff": {
+        "coord_mm": 0,
+        "K_rel": 0,
+        "G_rel": 0,
+        "MTS_deg": 0,
+        "tangent": 0,
+        "EDI_rel": 0,
+        "COD_rel": 0,
+        "J_rel": 0,
+        "compliance_rel": 0,
+        "energy_rel": 0,
+        "reactions_rel": 0,
+        "u_rel": 0,
+        "clearance_mm": 0
+      },
+      "reasons": [],
+      "integerArraysEqual": true
+    },
+    {
+      "state": "soft2_S1",
+      "tier": "A",
+      "invariantFailures": [],
+      "maxDiff": {
+        "coord_mm": 0,
+        "K_rel": 0,
+        "G_rel": 0,
+        "MTS_deg": 0,
+        "tangent": 0,
+        "EDI_rel": 0,
+        "COD_rel": 0,
+        "J_rel": 0,
+        "compliance_rel": 0,
+        "energy_rel": 0,
+        "reactions_rel": 0,
+        "u_rel": 0,
+        "clearance_mm": 0
+      },
+      "reasons": [],
+      "integerArraysEqual": true
+    },
+    {
+      "state": "soft2_S2",
+      "tier": "A",
+      "invariantFailures": [],
+      "maxDiff": {
+        "coord_mm": 0,
+        "K_rel": 0,
+        "G_rel": 0,
+        "MTS_deg": 0,
+        "tangent": 0,
+        "EDI_rel": 0,
+        "COD_rel": 0,
+        "J_rel": 0,
+        "compliance_rel": 0,
+        "energy_rel": 0,
+        "reactions_rel": 0,
+        "u_rel": 0,
+        "clearance_mm": 0
+      },
+      "reasons": [],
+      "integerArraysEqual": true
+    },
+    {
+      "state": "soft2_S3",
+      "tier": "A",
+      "invariantFailures": [],
+      "maxDiff": {
+        "coord_mm": 0,
+        "K_rel": 0,
+        "G_rel": 0,
+        "MTS_deg": 0,
+        "tangent": 0,
+        "EDI_rel": 0,
+        "COD_rel": 0,
+        "J_rel": 0,
+        "compliance_rel": 0,
+        "energy_rel": 0,
+        "reactions_rel": 0,
+        "u_rel": 0,
+        "clearance_mm": 0
+      },
+      "reasons": [],
+      "integerArraysEqual": true
+    },
+    {
+      "state": "soft2_S4",
+      "tier": "A",
+      "invariantFailures": [],
+      "maxDiff": {
+        "coord_mm": 0,
+        "K_rel": 0,
+        "G_rel": 0,
+        "MTS_deg": 0,
+        "tangent": 0,
+        "EDI_rel": 0,
+        "COD_rel": 0,
+        "J_rel": 0,
+        "compliance_rel": 0,
+        "energy_rel": 0,
+        "reactions_rel": 0,
+        "u_rel": 0,
+        "clearance_mm": 0
+      },
+      "reasons": [],
+      "integerArraysEqual": true
+    },
+    {
+      "state": "soft1_S0",
+      "tier": "A",
+      "invariantFailures": [],
+      "maxDiff": {
+        "coord_mm": 0,
+        "K_rel": 0,
+        "G_rel": 0,
+        "MTS_deg": 0,
+        "tangent": 0,
+        "EDI_rel": 0,
+        "COD_rel": 0,
+        "J_rel": 0,
+        "compliance_rel": 0,
+        "energy_rel": 0,
+        "reactions_rel": 0,
+        "u_rel": 0,
+        "clearance_mm": 0
+      },
+      "reasons": [],
+      "integerArraysEqual": true
+    },
+    {
+      "state": "soft1_S1",
+      "tier": "A",
+      "invariantFailures": [],
+      "maxDiff": {
+        "coord_mm": 0,
+        "K_rel": 0,
+        "G_rel": 0,
+        "MTS_deg": 0,
+        "tangent": 0,
+        "EDI_rel": 0,
+        "COD_rel": 0,
+        "J_rel": 0,
+        "compliance_rel": 0,
+        "energy_rel": 0,
+        "reactions_rel": 0,
+        "u_rel": 0,
+        "clearance_mm": 0
+      },
+      "reasons": [],
+      "integerArraysEqual": true
+    },
+    {
+      "state": "soft1_S2",
+      "tier": "A",
+      "invariantFailures": [],
+      "maxDiff": {
+        "coord_mm": 0,
+        "K_rel": 0,
+        "G_rel": 0,
+        "MTS_deg": 0,
+        "tangent": 0,
+        "EDI_rel": 0,
+        "COD_rel": 0,
+        "J_rel": 0,
+        "compliance_rel": 0,
+        "energy_rel": 0,
+        "reactions_rel": 0,
+        "u_rel": 0,
+        "clearance_mm": 0
+      },
+      "reasons": [],
+      "integerArraysEqual": true
+    },
+    {
+      "state": "soft1_S3",
+      "tier": "A",
+      "invariantFailures": [],
+      "maxDiff": {
+        "coord_mm": 0,
+        "K_rel": 0,
+        "G_rel": 0,
+        "MTS_deg": 0,
+        "tangent": 0,
+        "EDI_rel": 0,
+        "COD_rel": 0,
+        "J_rel": 0,
+        "compliance_rel": 0,
+        "energy_rel": 0,
+        "reactions_rel": 0,
+        "u_rel": 0,
+        "clearance_mm": 0
+      },
+      "reasons": [],
+      "integerArraysEqual": true
+    },
+    {
+      "state": "soft1_S4",
+      "tier": "A",
+      "invariantFailures": [],
+      "maxDiff": {
+        "coord_mm": 0,
+        "K_rel": 0,
+        "G_rel": 0,
+        "MTS_deg": 0,
+        "tangent": 0,
+        "EDI_rel": 0,
+        "COD_rel": 0,
+        "J_rel": 0,
+        "compliance_rel": 0,
+        "energy_rel": 0,
+        "reactions_rel": 0,
+        "u_rel": 0,
+        "clearance_mm": 0
+      },
+      "reasons": [],
+      "integerArraysEqual": true
+    }
+  ],
+  "noFEM": true,
+  "noMesh": true,
+  "noRecordWritten": true,
+  "worstTier": "A",
+  "classesHistorical": {
+    "stiff13": {
+      "FG_primary": true,
+      "FG_conservative": true,
+      "offset_cautious": true
+    },
+    "soft2": {
+      "FG_primary": true,
+      "FG_conservative": false,
+      "offset_cautious": false
+    },
+    "soft1": {
+      "FG_primary": true,
+      "FG_conservative": true,
+      "offset_cautious": true
+    },
+    "numbers": {
+      "stiff13": {
+        "F_G": -0.071731695978936361,
+        "U_primary": 1E-5,
+        "U_cons": 0.032493634769682748,
+        "d_mm": -0.1909019814362965,
+        "U_d_cons_mm": 0.043435412797654636,
+        "FG_primary": true,
+        "FG_conservative": true,
+        "offset_cautious": true
+      },
+      "soft2": {
+        "F_G": -0.029318154347938497,
+        "U_primary": 1E-5,
+        "U_cons": 0.033975432584856129,
+        "d_mm": -0.085162710767968552,
+        "U_d_cons_mm": 0.04328068095081395,
+        "FG_primary": true,
+        "FG_conservative": false,
+        "offset_cautious": false
+      },
+      "soft1": {
+        "F_G": 0.063289360892768487,
+        "U_primary": 1E-5,
+        "U_cons": 0.037210108710438665,
+        "d_mm": 0.30567142913360013,
+        "U_d_cons_mm": 0.041863520556880668,
+        "FG_primary": true,
+        "FG_conservative": true,
+        "offset_cautious": true
+      }
+    },
+    "maxAbsDeltaFG": 0,
+    "maxAbsDeltaOffset_mm": 0
+  },
+  "classesNew": {
+    "stiff13": {
+      "FG_primary": true,
+      "FG_conservative": true,
+      "offset_cautious": true
+    },
+    "soft2": {
+      "FG_primary": true,
+      "FG_conservative": false,
+      "offset_cautious": false
+    },
+    "soft1": {
+      "FG_primary": true,
+      "FG_conservative": true,
+      "offset_cautious": true
+    },
+    "numbers": {
+      "stiff13": {
+        "F_G": -0.071731695978936361,
+        "U_primary": 1E-5,
+        "U_cons": 0.032493634769682748,
+        "d_mm": -0.1909019814362965,
+        "U_d_cons_mm": 0.043435412797654636,
+        "FG_primary": true,
+        "FG_conservative": true,
+        "offset_cautious": true
+      },
+      "soft2": {
+        "F_G": -0.029318154347938497,
+        "U_primary": 1E-5,
+        "U_cons": 0.033975432584856129,
+        "d_mm": -0.085162710767968552,
+        "U_d_cons_mm": 0.04328068095081395,
+        "FG_primary": true,
+        "FG_conservative": false,
+        "offset_cautious": false
+      },
+      "soft1": {
+        "F_G": 0.063289360892768487,
+        "U_primary": 1E-5,
+        "U_cons": 0.037210108710438665,
+        "d_mm": 0.30567142913360013,
+        "U_d_cons_mm": 0.041863520556880668,
+        "FG_primary": true,
+        "FG_conservative": true,
+        "offset_cautious": true
+      }
+    },
+    "maxAbsDeltaFG": 0,
+    "maxAbsDeltaOffset_mm": 0
+  },
+  "classesUnchanged": true,
+  "provenance": {
+    "pass": true,
+    "notes": [],
+    "root": "<repo>/outputs/g2_lp1_matrix_paths_v1/run_a0_lp1_repro_v1"
+  },
+  "verdict": "A0_REPRODUCED_EXACT"
+}
