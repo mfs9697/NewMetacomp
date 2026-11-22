@@ -1,0 +1,3355 @@
+{
+  "schema": "NewMetacomp.G2.A1.GeometryQualification.v1",
+  "rows": [
+    {
+      "caseId": "H",
+      "m": 0,
+      "pass": true,
+      "validator": {
+        "pass": true,
+        "gates": {
+          "allT3AreasPositive": true,
+          "globalMinAngleAtLeast20": true,
+          "globalNeighborRatioAtMost1p8": true,
+          "patchDiskMinAngle30AndQualityAbove0p85": true,
+          "patchWholeMinAngle20AndQualityAtLeast0p75": true,
+          "noNonmanifoldEdges": true,
+          "noOrphanNodes": true,
+          "boundaryEdgesOnlyPlateHolesOrCrack": true,
+          "T6MidsidesExactAndUnique": true,
+          "coreCollarSeam64TwoOwners": true,
+          "collarExteriorSeam64TwoOwners": true,
+          "coreRowsExactlyInsideCoreRadius": true,
+          "singleTipAtPolylineEnd": true,
+          "distinctMatchedBanks": true,
+          "sixCellTipFan": true,
+          "qSupportInsideCoreAndZeroOnRim": true,
+          "T3BudgetRespected": true,
+          "exteriorNodesBitIdentical": true,
+          "collarExteriorConnectivityPreserved": true
+        },
+        "failedGates": [],
+        "gatesPassed": 19,
+        "gatesTotal": 19
+      },
+      "adapterPass": true,
+      "phaseAuditPass": true,
+      "qOwnerFree": true,
+      "baselineExact": true,
+      "summary": {
+        "T3": 29063,
+        "T3nodes": 15002,
+        "T6nodes": 59069,
+        "DOF": 118138,
+        "coreT3": 2788,
+        "collarT3": 128,
+        "exteriorT3": 26147,
+        "tipFirstEdgeRadial_mm": 0.041666666666657193,
+        "tipFanEdges_mm": [
+          0.04166666666666359,
+          0.041666666666666047,
+          0.041666666666657193,
+          0.04166666666666359,
+          0.041666666666672625,
+          0.041666666666670509,
+          0.04166666666666359,
+          0.041666666666657193,
+          0.041666666666670509,
+          0.04166666666666359,
+          0.041666666666666047,
+          0.04166666666666359,
+          0.041666666666672625
+        ],
+        "firstPitchSpec_mm": 0.041666666666666671,
+        "diskRadius_mm": 0.83333333333333337,
+        "minAngle_deg": 30.126847321224538,
+        "maxNeighborRatio": 1.5940275556216488,
+        "minShapeQualityCore": 0.75190993828294694,
+        "minAngleDisk_deg": 36.613484744600292,
+        "minShapeQualityDisk": 0.852991329670268,
+        "qActivePrimary": 2443,
+        "qActivePerAnnulus": [
+          2443,
+          1057,
+          1669,
+          2059,
+          1290
+        ],
+        "qAnnuli_mm": [
+          [
+            0.4,
+            2.6
+          ],
+          [
+            0.2,
+            1
+          ],
+          [
+            0.4,
+            1.6
+          ],
+          [
+            0.8,
+            2.6
+          ],
+          [
+            1.2,
+            2.4
+          ]
+        ],
+        "qSupportMaxRadius_mm": 2.7691874098746787,
+        "radialBands_mm": [
+          [
+            0,
+            0.05
+          ],
+          [
+            0.05,
+            0.1
+          ],
+          [
+            0.1,
+            0.2
+          ],
+          [
+            0.2,
+            0.4
+          ],
+          [
+            0.4,
+            0.6
+          ],
+          [
+            0.6,
+            0.833
+          ],
+          [
+            0.833,
+            1
+          ],
+          [
+            1,
+            1.5
+          ],
+          [
+            1.5,
+            2
+          ],
+          [
+            2,
+            2.6
+          ],
+          [
+            2.6,
+            3
+          ]
+        ],
+        "bandCellsMedianHMedianHoverR": [
+          [
+            6,
+            0.041666666666669336,
+            1.7320508075689665
+          ],
+          [
+            18,
+            0.066326189619234852,
+            0.85820289617594114
+          ],
+          [
+            48,
+            0.07894474520117381,
+            0.52565575851021229
+          ],
+          [
+            144,
+            0.090499834069901947,
+            0.30131420869185455
+          ],
+          [
+            216,
+            0.10105506149255983,
+            0.20301503502933738
+          ],
+          [
+            292,
+            0.10786730447906284,
+            0.15136969491124719
+          ],
+          [
+            258,
+            0.088595799172795,
+            0.095557177516617672
+          ],
+          [
+            710,
+            0.12203622226199204,
+            0.095557177516607125
+          ],
+          [
+            451,
+            0.16809870990534159,
+            0.1008014329059958
+          ],
+          [
+            387,
+            0.21373276261808269,
+            0.095557177516608541
+          ],
+          [
+            258,
+            0.27175517195863125,
+            0.095557177516607111
+          ]
+        ],
+        "bankT6NodesPerSide": 217
+      },
+      "fileSHA256": "",
+      "contentSHA256": "530954c687c00cdf3654f8c04398a9fafd4b6817d0b5fee46442fc45895aa3cb",
+      "meshFile": "",
+      "seconds": 4.2001767
+    },
+    {
+      "caseId": "H",
+      "m": 3,
+      "pass": true,
+      "validator": {
+        "pass": true,
+        "gates": {
+          "allT3AreasPositive": true,
+          "globalMinAngleAtLeast20": true,
+          "globalNeighborRatioAtMost1p8": true,
+          "patchDiskMinAngle30AndQualityAbove0p85": true,
+          "patchWholeMinAngle20AndQualityAtLeast0p75": true,
+          "noNonmanifoldEdges": true,
+          "noOrphanNodes": true,
+          "boundaryEdgesOnlyPlateHolesOrCrack": true,
+          "T6MidsidesExactAndUnique": true,
+          "coreCollarSeam64TwoOwners": true,
+          "collarExteriorSeam64TwoOwners": true,
+          "coreRowsExactlyInsideCoreRadius": true,
+          "singleTipAtPolylineEnd": true,
+          "distinctMatchedBanks": true,
+          "sixCellTipFan": true,
+          "qSupportInsideCoreAndZeroOnRim": true,
+          "T3BudgetRespected": true,
+          "exteriorNodesBitIdentical": true,
+          "collarExteriorConnectivityPreserved": true
+        },
+        "failedGates": [],
+        "gatesPassed": 19,
+        "gatesTotal": 19
+      },
+      "adapterPass": true,
+      "phaseAuditPass": true,
+      "qOwnerFree": true,
+      "baselineExact": null,
+      "summary": {
+        "T3": 29837,
+        "T3nodes": 15395,
+        "T6nodes": 60629,
+        "DOF": 121258,
+        "coreT3": 3562,
+        "collarT3": 128,
+        "exteriorT3": 26147,
+        "tipFirstEdgeRadial_mm": 0.025773614030007864,
+        "tipFanEdges_mm": [
+          0.025773614030019661,
+          0.02577361403001251,
+          0.025773614030007864,
+          0.025773614030015483,
+          0.025773614030021715,
+          0.02577361403001251,
+          0.025773614030015483,
+          0.025773614030021715,
+          0.02577361403001251,
+          0.025773614030015483,
+          0.02577361403001251,
+          0.025773614030019661,
+          0.025773614030007864
+        ],
+        "firstPitchSpec_mm": 0.025773614030016018,
+        "diskRadius_mm": 0.51547228060032035,
+        "minAngle_deg": 30.126847321222446,
+        "maxNeighborRatio": 1.5940275556216488,
+        "minShapeQualityCore": 0.75190993828291219,
+        "minAngleDisk_deg": 36.61348474459259,
+        "minShapeQualityDisk": 0.85299132967030367,
+        "qActivePrimary": 3049,
+        "qActivePerAnnulus": [
+          3049,
+          1735,
+          2275,
+          2064,
+          1290
+        ],
+        "qAnnuli_mm": [
+          [
+            0.4,
+            2.6
+          ],
+          [
+            0.2,
+            1
+          ],
+          [
+            0.4,
+            1.6
+          ],
+          [
+            0.8,
+            2.6
+          ],
+          [
+            1.2,
+            2.4
+          ]
+        ],
+        "qSupportMaxRadius_mm": 2.7691874098746787,
+        "radialBands_mm": [
+          [
+            0,
+            0.05
+          ],
+          [
+            0.05,
+            0.1
+          ],
+          [
+            0.1,
+            0.2
+          ],
+          [
+            0.2,
+            0.4
+          ],
+          [
+            0.4,
+            0.6
+          ],
+          [
+            0.6,
+            0.833
+          ],
+          [
+            0.833,
+            1
+          ],
+          [
+            1,
+            1.5
+          ],
+          [
+            1.5,
+            2
+          ],
+          [
+            2,
+            2.6
+          ],
+          [
+            2.6,
+            3
+          ]
+        ],
+        "bandCellsMedianHMedianHoverR": [
+          [
+            24,
+            0.041027174671864827,
+            1.0101540857855944
+          ],
+          [
+            30,
+            0.048832593420308476,
+            0.56164859121742339
+          ],
+          [
+            96,
+            0.053975336001229425,
+            0.36469841997759
+          ],
+          [
+            336,
+            0.0615865161993737,
+            0.20610370760832297
+          ],
+          [
+            496,
+            0.059370211838357327,
+            0.10080143290601595
+          ],
+          [
+            516,
+            0.0696797222922379,
+            0.095557177516619532
+          ],
+          [
+            258,
+            0.088595799172795,
+            0.095557177516617672
+          ],
+          [
+            710,
+            0.12203622226199204,
+            0.095557177516607236
+          ],
+          [
+            451,
+            0.16809870990534159,
+            0.1008014329059958
+          ],
+          [
+            387,
+            0.21373276261808269,
+            0.095557177516608527
+          ],
+          [
+            258,
+            0.27175517195863125,
+            0.095557177516607111
+          ]
+        ],
+        "bankT6NodesPerSide": 229
+      },
+      "fileSHA256": "46de9c792553393b884fed9c5999a126c7d9c61f544ed55327bd5013fe556ed1",
+      "contentSHA256": "85606cd76fced3ee26e574f80c38dcfff081bc0bcd7682d33bc431b5632d9fc3",
+      "meshFile": "<outRoot>\\H\\B3\\MESH.mat",
+      "seconds": 3.8078357
+    },
+    {
+      "caseId": "H",
+      "m": 6,
+      "pass": true,
+      "validator": {
+        "pass": true,
+        "gates": {
+          "allT3AreasPositive": true,
+          "globalMinAngleAtLeast20": true,
+          "globalNeighborRatioAtMost1p8": true,
+          "patchDiskMinAngle30AndQualityAbove0p85": true,
+          "patchWholeMinAngle20AndQualityAtLeast0p75": true,
+          "noNonmanifoldEdges": true,
+          "noOrphanNodes": true,
+          "boundaryEdgesOnlyPlateHolesOrCrack": true,
+          "T6MidsidesExactAndUnique": true,
+          "coreCollarSeam64TwoOwners": true,
+          "collarExteriorSeam64TwoOwners": true,
+          "coreRowsExactlyInsideCoreRadius": true,
+          "singleTipAtPolylineEnd": true,
+          "distinctMatchedBanks": true,
+          "sixCellTipFan": true,
+          "qSupportInsideCoreAndZeroOnRim": true,
+          "T3BudgetRespected": true,
+          "exteriorNodesBitIdentical": true,
+          "collarExteriorConnectivityPreserved": true
+        },
+        "failedGates": [],
+        "gatesPassed": 19,
+        "gatesTotal": 19
+      },
+      "adapterPass": true,
+      "phaseAuditPass": true,
+      "qOwnerFree": true,
+      "baselineExact": null,
+      "summary": {
+        "T3": 30611,
+        "T3nodes": 15788,
+        "T6nodes": 62189,
+        "DOF": 124378,
+        "coreT3": 4336,
+        "collarT3": 128,
+        "exteriorT3": 26147,
+        "tipFirstEdgeRadial_mm": 0.015942700324032225,
+        "tipFanEdges_mm": [
+          0.015942700324034463,
+          0.015942700324032225,
+          0.015942700324038821,
+          0.015942700324034463,
+          0.015942700324052674,
+          0.015942700324041898,
+          0.015942700324034463,
+          0.015942700324024971,
+          0.015942700324051567,
+          0.015942700324038644,
+          0.015942700324041898,
+          0.015942700324038644,
+          0.015942700324038821
+        ],
+        "firstPitchSpec_mm": 0.015942700324037717,
+        "diskRadius_mm": 0.31885400648075435,
+        "minAngle_deg": 30.126847321206057,
+        "maxNeighborRatio": 1.5940275556216488,
+        "minShapeQualityCore": 0.75190993828264918,
+        "minAngleDisk_deg": 36.613484744569277,
+        "minShapeQualityDisk": 0.85299132967017632,
+        "qActivePrimary": 3225,
+        "qActivePerAnnulus": [
+          3225,
+          2365,
+          2451,
+          2064,
+          1290
+        ],
+        "qAnnuli_mm": [
+          [
+            0.4,
+            2.6
+          ],
+          [
+            0.2,
+            1
+          ],
+          [
+            0.4,
+            1.6
+          ],
+          [
+            0.8,
+            2.6
+          ],
+          [
+            1.2,
+            2.4
+          ]
+        ],
+        "qSupportMaxRadius_mm": 2.7691874098746787,
+        "radialBands_mm": [
+          [
+            0,
+            0.05
+          ],
+          [
+            0.05,
+            0.1
+          ],
+          [
+            0.1,
+            0.2
+          ],
+          [
+            0.2,
+            0.4
+          ],
+          [
+            0.4,
+            0.6
+          ],
+          [
+            0.6,
+            0.833
+          ],
+          [
+            0.833,
+            1
+          ],
+          [
+            1,
+            1.5
+          ],
+          [
+            1.5,
+            2
+          ],
+          [
+            2,
+            2.6
+          ],
+          [
+            2.6,
+            3
+          ]
+        ],
+        "bandCellsMedianHMedianHoverR": [
+          [
+            36,
+            0.025378045553637884,
+            0.85820289617597689
+          ],
+          [
+            84,
+            0.033216387339340223,
+            0.4174634709364875
+          ],
+          [
+            216,
+            0.036940433273274439,
+            0.23889671265845616
+          ],
+          [
+            775,
+            0.038163373493873512,
+            0.12748955957432956
+          ],
+          [
+            645,
+            0.046694086084834809,
+            0.095557177516635367
+          ],
+          [
+            516,
+            0.069679722292237886,
+            0.095557177516619532
+          ],
+          [
+            258,
+            0.088595799172795073,
+            0.095557177516617256
+          ],
+          [
+            710,
+            0.12203622226199204,
+            0.095557177516607125
+          ],
+          [
+            451,
+            0.16809870990534159,
+            0.10080143290599575
+          ],
+          [
+            387,
+            0.21373276261808269,
+            0.095557177516608527
+          ],
+          [
+            258,
+            0.27175517195863097,
+            0.095557177516607222
+          ]
+        ],
+        "bankT6NodesPerSide": 241
+      },
+      "fileSHA256": "ccb6e825aa11d7392a1c51a5633c6d43b88c033af44a6a8655d6cc3d9f7c390e",
+      "contentSHA256": "c81423d13b8c2369fa915a1d04a01526d409e6abb2e5c4b851ab221efc4e3c69",
+      "meshFile": "<outRoot>\\H\\B6\\MESH.mat",
+      "seconds": 3.7463662
+    },
+    {
+      "caseId": "H",
+      "m": 9,
+      "pass": true,
+      "validator": {
+        "pass": true,
+        "gates": {
+          "allT3AreasPositive": true,
+          "globalMinAngleAtLeast20": true,
+          "globalNeighborRatioAtMost1p8": true,
+          "patchDiskMinAngle30AndQualityAbove0p85": true,
+          "patchWholeMinAngle20AndQualityAtLeast0p75": true,
+          "noNonmanifoldEdges": true,
+          "noOrphanNodes": true,
+          "boundaryEdgesOnlyPlateHolesOrCrack": true,
+          "T6MidsidesExactAndUnique": true,
+          "coreCollarSeam64TwoOwners": true,
+          "collarExteriorSeam64TwoOwners": true,
+          "coreRowsExactlyInsideCoreRadius": true,
+          "singleTipAtPolylineEnd": true,
+          "distinctMatchedBanks": true,
+          "sixCellTipFan": true,
+          "qSupportInsideCoreAndZeroOnRim": true,
+          "T3BudgetRespected": true,
+          "exteriorNodesBitIdentical": true,
+          "collarExteriorConnectivityPreserved": true
+        },
+        "failedGates": [],
+        "gatesPassed": 19,
+        "gatesTotal": 19
+      },
+      "adapterPass": true,
+      "phaseAuditPass": true,
+      "qOwnerFree": true,
+      "baselineExact": null,
+      "summary": {
+        "T3": 31385,
+        "T3nodes": 16181,
+        "T6nodes": 63749,
+        "DOF": 127498,
+        "coreT3": 5110,
+        "collarT3": 128,
+        "exteriorT3": 26147,
+        "tipFirstEdgeRadial_mm": 0.0098616241139469728,
+        "tipFanEdges_mm": [
+          0.0098616241139519254,
+          0.0098616241139502358,
+          0.0098616241139469728,
+          0.0098616241139519254,
+          0.0098616241139485566,
+          0.0098616241139547,
+          0.0098616241139519254,
+          0.0098616241139469728,
+          0.0098616241139450281,
+          0.0098616241139519254,
+          0.0098616241139502358,
+          0.0098616241139477447,
+          0.0098616241139624118
+        ],
+        "firstPitchSpec_mm": 0.0098616241139510234,
+        "diskRadius_mm": 0.19723248227902046,
+        "minAngle_deg": 30.126847321206057,
+        "maxNeighborRatio": 1.5940275556216488,
+        "minShapeQualityCore": 0.75190993828264918,
+        "minAngleDisk_deg": 36.613484744562719,
+        "minShapeQualityDisk": 0.85299132966990121,
+        "qActivePrimary": 3225,
+        "qActivePerAnnulus": [
+          3225,
+          2709,
+          2451,
+          2064,
+          1290
+        ],
+        "qAnnuli_mm": [
+          [
+            0.4,
+            2.6
+          ],
+          [
+            0.2,
+            1
+          ],
+          [
+            0.4,
+            1.6
+          ],
+          [
+            0.8,
+            2.6
+          ],
+          [
+            1.2,
+            2.4
+          ]
+        ],
+        "qSupportMaxRadius_mm": 2.7691874098746787,
+        "radialBands_mm": [
+          [
+            0,
+            0.05
+          ],
+          [
+            0.05,
+            0.1
+          ],
+          [
+            0.1,
+            0.2
+          ],
+          [
+            0.2,
+            0.4
+          ],
+          [
+            0.4,
+            0.6
+          ],
+          [
+            0.6,
+            0.833
+          ],
+          [
+            0.833,
+            1
+          ],
+          [
+            1,
+            1.5
+          ],
+          [
+            1.5,
+            2
+          ],
+          [
+            2,
+            2.6
+          ],
+          [
+            2.6,
+            3
+          ]
+        ],
+        "bandCellsMedianHMedianHoverR": [
+          [
+            96,
+            0.018683186945286749,
+            0.52565575851042634
+          ],
+          [
+            156,
+            0.022111939444386719,
+            0.2765745567465962
+          ],
+          [
+            472,
+            0.025260408752213324,
+            0.16473113512021165
+          ],
+          [
+            1161,
+            0.026661190348028108,
+            0.0955571775166507
+          ],
+          [
+            645,
+            0.046694086084834809,
+            0.095557177516635367
+          ],
+          [
+            516,
+            0.069679722292237886,
+            0.095557177516619532
+          ],
+          [
+            258,
+            0.088595799172795,
+            0.095557177516617672
+          ],
+          [
+            710,
+            0.12203622226199204,
+            0.095557177516607084
+          ],
+          [
+            451,
+            0.16809870990534159,
+            0.1008014329059958
+          ],
+          [
+            387,
+            0.21373276261808269,
+            0.095557177516608527
+          ],
+          [
+            258,
+            0.27175517195863097,
+            0.095557177516607222
+          ]
+        ],
+        "bankT6NodesPerSide": 253
+      },
+      "fileSHA256": "8ece9aea394a73fb169f6a1703f7ad8014ed3b8c4808b6e61a5a93817238fd09",
+      "contentSHA256": "9df5f874cbbc28e185214d2fe65c07109fc7145a4827d18ff51d0961e3b708ae",
+      "meshFile": "<outRoot>\\H\\B9\\MESH.mat",
+      "seconds": 3.8494568
+    },
+    {
+      "caseId": "stiff13",
+      "m": 0,
+      "pass": true,
+      "validator": {
+        "pass": true,
+        "gates": {
+          "allT3AreasPositive": true,
+          "globalMinAngleAtLeast20": true,
+          "globalNeighborRatioAtMost1p8": true,
+          "patchDiskMinAngle30AndQualityAbove0p85": true,
+          "patchWholeMinAngle20AndQualityAtLeast0p75": true,
+          "noNonmanifoldEdges": true,
+          "noOrphanNodes": true,
+          "boundaryEdgesOnlyPlateHolesOrCrack": true,
+          "T6MidsidesExactAndUnique": true,
+          "coreCollarSeam64TwoOwners": true,
+          "collarExteriorSeam64TwoOwners": true,
+          "coreRowsExactlyInsideCoreRadius": true,
+          "singleTipAtPolylineEnd": true,
+          "distinctMatchedBanks": true,
+          "sixCellTipFan": true,
+          "qSupportInsideCoreAndZeroOnRim": true,
+          "T3BudgetRespected": true,
+          "exteriorNodesBitIdentical": true,
+          "collarExteriorConnectivityPreserved": true
+        },
+        "failedGates": [],
+        "gatesPassed": 19,
+        "gatesTotal": 19
+      },
+      "adapterPass": true,
+      "phaseAuditPass": true,
+      "qOwnerFree": true,
+      "baselineExact": true,
+      "summary": {
+        "T3": 29047,
+        "T3nodes": 14994,
+        "T6nodes": 59037,
+        "DOF": 118074,
+        "coreT3": 2788,
+        "collarT3": 128,
+        "exteriorT3": 26131,
+        "tipFirstEdgeRadial_mm": 0.0416666666666646,
+        "tipFanEdges_mm": [
+          0.041666666666671362,
+          0.041666666666668281,
+          0.041666666666668045,
+          0.0416666666666646,
+          0.041666666666669544,
+          0.041666666666668281,
+          0.0416666666666646,
+          0.041666666666669544,
+          0.041666666666668281,
+          0.0416666666666646,
+          0.041666666666668281,
+          0.041666666666671362,
+          0.041666666666668045
+        ],
+        "firstPitchSpec_mm": 0.041666666666666671,
+        "diskRadius_mm": 0.83333333333333337,
+        "minAngle_deg": 30.126847321227629,
+        "maxNeighborRatio": 1.6050279937936018,
+        "minShapeQualityCore": 0.75190993828297825,
+        "minAngleDisk_deg": 36.613484744606446,
+        "minShapeQualityDisk": 0.85299132967028235,
+        "qActivePrimary": 2443,
+        "qActivePerAnnulus": [
+          2443,
+          1057,
+          1669,
+          2059,
+          1290
+        ],
+        "qAnnuli_mm": [
+          [
+            0.4,
+            2.6
+          ],
+          [
+            0.2,
+            1
+          ],
+          [
+            0.4,
+            1.6
+          ],
+          [
+            0.8,
+            2.6
+          ],
+          [
+            1.2,
+            2.4
+          ]
+        ],
+        "qSupportMaxRadius_mm": 2.7691874098746849,
+        "radialBands_mm": [
+          [
+            0,
+            0.05
+          ],
+          [
+            0.05,
+            0.1
+          ],
+          [
+            0.1,
+            0.2
+          ],
+          [
+            0.2,
+            0.4
+          ],
+          [
+            0.4,
+            0.6
+          ],
+          [
+            0.6,
+            0.833
+          ],
+          [
+            0.833,
+            1
+          ],
+          [
+            1,
+            1.5
+          ],
+          [
+            1.5,
+            2
+          ],
+          [
+            2,
+            2.6
+          ],
+          [
+            2.6,
+            3
+          ]
+        ],
+        "bandCellsMedianHMedianHoverR": [
+          [
+            6,
+            0.041666666666669822,
+            1.732050807569125
+          ],
+          [
+            18,
+            0.066326189619231327,
+            0.85820289617598411
+          ],
+          [
+            48,
+            0.078944745201172756,
+            0.52565575851027169
+          ],
+          [
+            144,
+            0.090499834069902682,
+            0.30131420869183889
+          ],
+          [
+            216,
+            0.1010550614925568,
+            0.20301503502933607
+          ],
+          [
+            292,
+            0.10786730447906137,
+            0.1513696949112539
+          ],
+          [
+            258,
+            0.0885957991727954,
+            0.095557177516616049
+          ],
+          [
+            710,
+            0.12203622226199229,
+            0.095557177516607708
+          ],
+          [
+            451,
+            0.16809870990534073,
+            0.10080143290599698
+          ],
+          [
+            387,
+            0.21373276261807952,
+            0.095557177516606709
+          ],
+          [
+            258,
+            0.27175517195863164,
+            0.095557177516605724
+          ]
+        ],
+        "bankT6NodesPerSide": 217
+      },
+      "fileSHA256": "",
+      "contentSHA256": "ba6b6a74d2057e629757dac3f5abf4d357b605bfcb5a4d9bd1ee73381c0ce2a3",
+      "meshFile": "",
+      "seconds": 3.6874533
+    },
+    {
+      "caseId": "stiff13",
+      "m": 3,
+      "pass": true,
+      "validator": {
+        "pass": true,
+        "gates": {
+          "allT3AreasPositive": true,
+          "globalMinAngleAtLeast20": true,
+          "globalNeighborRatioAtMost1p8": true,
+          "patchDiskMinAngle30AndQualityAbove0p85": true,
+          "patchWholeMinAngle20AndQualityAtLeast0p75": true,
+          "noNonmanifoldEdges": true,
+          "noOrphanNodes": true,
+          "boundaryEdgesOnlyPlateHolesOrCrack": true,
+          "T6MidsidesExactAndUnique": true,
+          "coreCollarSeam64TwoOwners": true,
+          "collarExteriorSeam64TwoOwners": true,
+          "coreRowsExactlyInsideCoreRadius": true,
+          "singleTipAtPolylineEnd": true,
+          "distinctMatchedBanks": true,
+          "sixCellTipFan": true,
+          "qSupportInsideCoreAndZeroOnRim": true,
+          "T3BudgetRespected": true,
+          "exteriorNodesBitIdentical": true,
+          "collarExteriorConnectivityPreserved": true
+        },
+        "failedGates": [],
+        "gatesPassed": 19,
+        "gatesTotal": 19
+      },
+      "adapterPass": true,
+      "phaseAuditPass": true,
+      "qOwnerFree": true,
+      "baselineExact": null,
+      "summary": {
+        "T3": 29821,
+        "T3nodes": 15387,
+        "T6nodes": 60597,
+        "DOF": 121194,
+        "coreT3": 3562,
+        "collarT3": 128,
+        "exteriorT3": 26131,
+        "tipFirstEdgeRadial_mm": 0.025773614030015074,
+        "tipFanEdges_mm": [
+          0.025773614030015074,
+          0.02577361403002008,
+          0.025773614030016975,
+          0.025773614030015074,
+          0.025773614030016975,
+          0.02577361403002008,
+          0.025773614030015074,
+          0.025773614030016975,
+          0.02577361403002008,
+          0.025773614030015074,
+          0.02577361403002008,
+          0.025773614030015074,
+          0.025773614030016975
+        ],
+        "firstPitchSpec_mm": 0.025773614030016018,
+        "diskRadius_mm": 0.51547228060032035,
+        "minAngle_deg": 30.126847321221955,
+        "maxNeighborRatio": 1.6050279937936018,
+        "minShapeQualityCore": 0.75190993828290364,
+        "minAngleDisk_deg": 36.613484744607121,
+        "minShapeQualityDisk": 0.85299132967025137,
+        "qActivePrimary": 3049,
+        "qActivePerAnnulus": [
+          3049,
+          1735,
+          2275,
+          2064,
+          1290
+        ],
+        "qAnnuli_mm": [
+          [
+            0.4,
+            2.6
+          ],
+          [
+            0.2,
+            1
+          ],
+          [
+            0.4,
+            1.6
+          ],
+          [
+            0.8,
+            2.6
+          ],
+          [
+            1.2,
+            2.4
+          ]
+        ],
+        "qSupportMaxRadius_mm": 2.7691874098746849,
+        "radialBands_mm": [
+          [
+            0,
+            0.05
+          ],
+          [
+            0.05,
+            0.1
+          ],
+          [
+            0.1,
+            0.2
+          ],
+          [
+            0.2,
+            0.4
+          ],
+          [
+            0.4,
+            0.6
+          ],
+          [
+            0.6,
+            0.833
+          ],
+          [
+            0.833,
+            1
+          ],
+          [
+            1,
+            1.5
+          ],
+          [
+            1.5,
+            2
+          ],
+          [
+            2,
+            2.6
+          ],
+          [
+            2.6,
+            3
+          ]
+        ],
+        "bandCellsMedianHMedianHoverR": [
+          [
+            24,
+            0.041027174671862468,
+            1.0101540857853486
+          ],
+          [
+            30,
+            0.04883259342030935,
+            0.56164859121741206
+          ],
+          [
+            96,
+            0.053975336001230854,
+            0.36469841997760405
+          ],
+          [
+            336,
+            0.061586516199365719,
+            0.2061037076083117
+          ],
+          [
+            496,
+            0.059370211838354919,
+            0.10080143290601694
+          ],
+          [
+            516,
+            0.069679722292237484,
+            0.095557177516621142
+          ],
+          [
+            258,
+            0.0885957991727954,
+            0.095557177516616049
+          ],
+          [
+            710,
+            0.12203622226199229,
+            0.0955571775166077
+          ],
+          [
+            451,
+            0.16809870990534073,
+            0.10080143290599698
+          ],
+          [
+            387,
+            0.21373276261807952,
+            0.095557177516606709
+          ],
+          [
+            258,
+            0.27175517195863164,
+            0.095557177516605724
+          ]
+        ],
+        "bankT6NodesPerSide": 229
+      },
+      "fileSHA256": "f69086738f734cb4d9c7cee247f5a4ed2aeeb9ce2e81a3554433007087e7ae84",
+      "contentSHA256": "138b4f60869a69ffb4304382174f930f30cd042e9488e8b7a55484dbdc7831ad",
+      "meshFile": "<outRoot>\\stiff13\\B3\\MESH.mat",
+      "seconds": 3.7679711
+    },
+    {
+      "caseId": "stiff13",
+      "m": 6,
+      "pass": true,
+      "validator": {
+        "pass": true,
+        "gates": {
+          "allT3AreasPositive": true,
+          "globalMinAngleAtLeast20": true,
+          "globalNeighborRatioAtMost1p8": true,
+          "patchDiskMinAngle30AndQualityAbove0p85": true,
+          "patchWholeMinAngle20AndQualityAtLeast0p75": true,
+          "noNonmanifoldEdges": true,
+          "noOrphanNodes": true,
+          "boundaryEdgesOnlyPlateHolesOrCrack": true,
+          "T6MidsidesExactAndUnique": true,
+          "coreCollarSeam64TwoOwners": true,
+          "collarExteriorSeam64TwoOwners": true,
+          "coreRowsExactlyInsideCoreRadius": true,
+          "singleTipAtPolylineEnd": true,
+          "distinctMatchedBanks": true,
+          "sixCellTipFan": true,
+          "qSupportInsideCoreAndZeroOnRim": true,
+          "T3BudgetRespected": true,
+          "exteriorNodesBitIdentical": true,
+          "collarExteriorConnectivityPreserved": true
+        },
+        "failedGates": [],
+        "gatesPassed": 19,
+        "gatesTotal": 19
+      },
+      "adapterPass": true,
+      "phaseAuditPass": true,
+      "qOwnerFree": true,
+      "baselineExact": null,
+      "summary": {
+        "T3": 30595,
+        "T3nodes": 15780,
+        "T6nodes": 62157,
+        "DOF": 124314,
+        "coreT3": 4336,
+        "collarT3": 128,
+        "exteriorT3": 26131,
+        "tipFirstEdgeRadial_mm": 0.015942700324037398,
+        "tipFanEdges_mm": [
+          0.015942700324038918,
+          0.015942700324042661,
+          0.015942700324044577,
+          0.015942700324038918,
+          0.015942700324044577,
+          0.015942700324037398,
+          0.015942700324038918,
+          0.015942700324046082,
+          0.015942700324047921,
+          0.015942700324032152,
+          0.015942700324047921,
+          0.015942700324025387,
+          0.015942700324047588
+        ],
+        "firstPitchSpec_mm": 0.015942700324037717,
+        "diskRadius_mm": 0.31885400648075435,
+        "minAngle_deg": 30.126847321212381,
+        "maxNeighborRatio": 1.6050279937936018,
+        "minShapeQualityCore": 0.75190993828273478,
+        "minAngleDisk_deg": 36.613484744589812,
+        "minShapeQualityDisk": 0.85299132967019187,
+        "qActivePrimary": 3225,
+        "qActivePerAnnulus": [
+          3225,
+          2365,
+          2451,
+          2064,
+          1290
+        ],
+        "qAnnuli_mm": [
+          [
+            0.4,
+            2.6
+          ],
+          [
+            0.2,
+            1
+          ],
+          [
+            0.4,
+            1.6
+          ],
+          [
+            0.8,
+            2.6
+          ],
+          [
+            1.2,
+            2.4
+          ]
+        ],
+        "qSupportMaxRadius_mm": 2.7691874098746849,
+        "radialBands_mm": [
+          [
+            0,
+            0.05
+          ],
+          [
+            0.05,
+            0.1
+          ],
+          [
+            0.1,
+            0.2
+          ],
+          [
+            0.2,
+            0.4
+          ],
+          [
+            0.4,
+            0.6
+          ],
+          [
+            0.6,
+            0.833
+          ],
+          [
+            0.833,
+            1
+          ],
+          [
+            1,
+            1.5
+          ],
+          [
+            1.5,
+            2
+          ],
+          [
+            2,
+            2.6
+          ],
+          [
+            2.6,
+            3
+          ]
+        ],
+        "bandCellsMedianHMedianHoverR": [
+          [
+            36,
+            0.025378045553636652,
+            0.858202896175646
+          ],
+          [
+            84,
+            0.033216387339340042,
+            0.41746347093655428
+          ],
+          [
+            216,
+            0.036940433273278388,
+            0.2388967126584623
+          ],
+          [
+            775,
+            0.038163373493873796,
+            0.12748955957435876
+          ],
+          [
+            645,
+            0.046694086084829674,
+            0.095557177516626984
+          ],
+          [
+            516,
+            0.069679722292238039,
+            0.095557177516621142
+          ],
+          [
+            258,
+            0.0885957991727954,
+            0.095557177516616049
+          ],
+          [
+            710,
+            0.12203622226199229,
+            0.0955571775166077
+          ],
+          [
+            451,
+            0.16809870990534073,
+            0.10080143290599694
+          ],
+          [
+            387,
+            0.21373276261807952,
+            0.095557177516606542
+          ],
+          [
+            258,
+            0.27175517195863164,
+            0.095557177516605724
+          ]
+        ],
+        "bankT6NodesPerSide": 241
+      },
+      "fileSHA256": "ce2aec9647ce6f8a5a9da02149cf640f542c45950fe3f74c2312217ec3cb0dc8",
+      "contentSHA256": "9b21fa8fba3826e6d431c855931002669feeaa39fc3a8d9fa0e357595b07c280",
+      "meshFile": "<outRoot>\\stiff13\\B6\\MESH.mat",
+      "seconds": 3.8347814
+    },
+    {
+      "caseId": "stiff13",
+      "m": 9,
+      "pass": true,
+      "validator": {
+        "pass": true,
+        "gates": {
+          "allT3AreasPositive": true,
+          "globalMinAngleAtLeast20": true,
+          "globalNeighborRatioAtMost1p8": true,
+          "patchDiskMinAngle30AndQualityAbove0p85": true,
+          "patchWholeMinAngle20AndQualityAtLeast0p75": true,
+          "noNonmanifoldEdges": true,
+          "noOrphanNodes": true,
+          "boundaryEdgesOnlyPlateHolesOrCrack": true,
+          "T6MidsidesExactAndUnique": true,
+          "coreCollarSeam64TwoOwners": true,
+          "collarExteriorSeam64TwoOwners": true,
+          "coreRowsExactlyInsideCoreRadius": true,
+          "singleTipAtPolylineEnd": true,
+          "distinctMatchedBanks": true,
+          "sixCellTipFan": true,
+          "qSupportInsideCoreAndZeroOnRim": true,
+          "T3BudgetRespected": true,
+          "exteriorNodesBitIdentical": true,
+          "collarExteriorConnectivityPreserved": true
+        },
+        "failedGates": [],
+        "gatesPassed": 19,
+        "gatesTotal": 19
+      },
+      "adapterPass": true,
+      "phaseAuditPass": true,
+      "qOwnerFree": true,
+      "baselineExact": null,
+      "summary": {
+        "T3": 31369,
+        "T3nodes": 16173,
+        "T6nodes": 63717,
+        "DOF": 127434,
+        "coreT3": 5110,
+        "collarT3": 128,
+        "exteriorT3": 26131,
+        "tipFirstEdgeRadial_mm": 0.0098616241139425961,
+        "tipFanEdges_mm": [
+          0.00986162411395282,
+          0.00986162411394786,
+          0.0098616241139518491,
+          0.00986162411395282,
+          0.0098616241139518491,
+          0.0098616241139425961,
+          0.00986162411395282,
+          0.0098616241139518491,
+          0.00986162411394786,
+          0.00986162411395282,
+          0.00986162411394786,
+          0.0098616241139460534,
+          0.0098616241139533548
+        ],
+        "firstPitchSpec_mm": 0.0098616241139510234,
+        "diskRadius_mm": 0.19723248227902046,
+        "minAngle_deg": 30.126847321209304,
+        "maxNeighborRatio": 1.6050279937936018,
+        "minShapeQualityCore": 0.751909938282713,
+        "minAngleDisk_deg": 36.613484744588163,
+        "minShapeQualityDisk": 0.85299132967008684,
+        "qActivePrimary": 3225,
+        "qActivePerAnnulus": [
+          3225,
+          2709,
+          2451,
+          2064,
+          1290
+        ],
+        "qAnnuli_mm": [
+          [
+            0.4,
+            2.6
+          ],
+          [
+            0.2,
+            1
+          ],
+          [
+            0.4,
+            1.6
+          ],
+          [
+            0.8,
+            2.6
+          ],
+          [
+            1.2,
+            2.4
+          ]
+        ],
+        "qSupportMaxRadius_mm": 2.7691874098746849,
+        "radialBands_mm": [
+          [
+            0,
+            0.05
+          ],
+          [
+            0.05,
+            0.1
+          ],
+          [
+            0.1,
+            0.2
+          ],
+          [
+            0.2,
+            0.4
+          ],
+          [
+            0.4,
+            0.6
+          ],
+          [
+            0.6,
+            0.833
+          ],
+          [
+            0.833,
+            1
+          ],
+          [
+            1,
+            1.5
+          ],
+          [
+            1.5,
+            2
+          ],
+          [
+            2,
+            2.6
+          ],
+          [
+            2.6,
+            3
+          ]
+        ],
+        "bandCellsMedianHMedianHoverR": [
+          [
+            96,
+            0.018683186945284293,
+            0.52565575851034319
+          ],
+          [
+            156,
+            0.022111939444387975,
+            0.27657455674658193
+          ],
+          [
+            472,
+            0.025260408752216947,
+            0.16473113512020146
+          ],
+          [
+            1161,
+            0.026661190348024735,
+            0.095557177516655017
+          ],
+          [
+            645,
+            0.046694086084829674,
+            0.095557177516626984
+          ],
+          [
+            516,
+            0.069679722292238039,
+            0.095557177516621142
+          ],
+          [
+            258,
+            0.0885957991727954,
+            0.095557177516616049
+          ],
+          [
+            710,
+            0.12203622226199229,
+            0.095557177516607708
+          ],
+          [
+            451,
+            0.16809870990534073,
+            0.10080143290599694
+          ],
+          [
+            387,
+            0.21373276261807952,
+            0.095557177516606542
+          ],
+          [
+            258,
+            0.27175517195863164,
+            0.095557177516605724
+          ]
+        ],
+        "bankT6NodesPerSide": 253
+      },
+      "fileSHA256": "d0a1c9f7cdba33433f3cb722d806d8083e7419b54b326172e6ac53fefc7bd567",
+      "contentSHA256": "2b173786a997d2a383e09c2e1d32ee3196951d8f5fbf832114bb5b27832ee693",
+      "meshFile": "<outRoot>\\stiff13\\B9\\MESH.mat",
+      "seconds": 3.8683057
+    },
+    {
+      "caseId": "soft2",
+      "m": 0,
+      "pass": true,
+      "validator": {
+        "pass": true,
+        "gates": {
+          "allT3AreasPositive": true,
+          "globalMinAngleAtLeast20": true,
+          "globalNeighborRatioAtMost1p8": true,
+          "patchDiskMinAngle30AndQualityAbove0p85": true,
+          "patchWholeMinAngle20AndQualityAtLeast0p75": true,
+          "noNonmanifoldEdges": true,
+          "noOrphanNodes": true,
+          "boundaryEdgesOnlyPlateHolesOrCrack": true,
+          "T6MidsidesExactAndUnique": true,
+          "coreCollarSeam64TwoOwners": true,
+          "collarExteriorSeam64TwoOwners": true,
+          "coreRowsExactlyInsideCoreRadius": true,
+          "singleTipAtPolylineEnd": true,
+          "distinctMatchedBanks": true,
+          "sixCellTipFan": true,
+          "qSupportInsideCoreAndZeroOnRim": true,
+          "T3BudgetRespected": true,
+          "exteriorNodesBitIdentical": true,
+          "collarExteriorConnectivityPreserved": true
+        },
+        "failedGates": [],
+        "gatesPassed": 19,
+        "gatesTotal": 19
+      },
+      "adapterPass": true,
+      "phaseAuditPass": true,
+      "qOwnerFree": true,
+      "baselineExact": true,
+      "summary": {
+        "T3": 29005,
+        "T3nodes": 14973,
+        "T6nodes": 58953,
+        "DOF": 117906,
+        "coreT3": 2788,
+        "collarT3": 128,
+        "exteriorT3": 26089,
+        "tipFirstEdgeRadial_mm": 0.041666666666662008,
+        "tipFanEdges_mm": [
+          0.041666666666673111,
+          0.041666666666666505,
+          0.041666666666662008,
+          0.041666666666673111,
+          0.041666666666662008,
+          0.041666666666666505,
+          0.041666666666673111,
+          0.041666666666677413,
+          0.04166666666666214,
+          0.041666666666662064,
+          0.04166666666666214,
+          0.041666666666662064,
+          0.041666666666677413
+        ],
+        "firstPitchSpec_mm": 0.041666666666666671,
+        "diskRadius_mm": 0.83333333333333337,
+        "minAngle_deg": 30.126847321216694,
+        "maxNeighborRatio": 1.5918285508616665,
+        "minShapeQualityCore": 0.7519099382828166,
+        "minAngleDisk_deg": 36.613484744601159,
+        "minShapeQualityDisk": 0.85299132967031821,
+        "qActivePrimary": 2443,
+        "qActivePerAnnulus": [
+          2443,
+          1057,
+          1669,
+          2059,
+          1290
+        ],
+        "qAnnuli_mm": [
+          [
+            0.4,
+            2.6
+          ],
+          [
+            0.2,
+            1
+          ],
+          [
+            0.4,
+            1.6
+          ],
+          [
+            0.8,
+            2.6
+          ],
+          [
+            1.2,
+            2.4
+          ]
+        ],
+        "qSupportMaxRadius_mm": 2.7691874098746752,
+        "radialBands_mm": [
+          [
+            0,
+            0.05
+          ],
+          [
+            0.05,
+            0.1
+          ],
+          [
+            0.1,
+            0.2
+          ],
+          [
+            0.2,
+            0.4
+          ],
+          [
+            0.4,
+            0.6
+          ],
+          [
+            0.6,
+            0.833
+          ],
+          [
+            0.833,
+            1
+          ],
+          [
+            1,
+            1.5
+          ],
+          [
+            1.5,
+            2
+          ],
+          [
+            2,
+            2.6
+          ],
+          [
+            2.6,
+            3
+          ]
+        ],
+        "bandCellsMedianHMedianHoverR": [
+          [
+            6,
+            0.041666666666673111,
+            1.7320508075690344
+          ],
+          [
+            18,
+            0.066326189619232853,
+            0.85820289617595447
+          ],
+          [
+            48,
+            0.078944745201171965,
+            0.52565575851026614
+          ],
+          [
+            144,
+            0.090499834069902141,
+            0.301314208691833
+          ],
+          [
+            216,
+            0.10105506149256427,
+            0.20301503502934271
+          ],
+          [
+            292,
+            0.10786730447906583,
+            0.15136969491124375
+          ],
+          [
+            258,
+            0.088595799172796807,
+            0.095557177516615813
+          ],
+          [
+            710,
+            0.12203622226199147,
+            0.09555717751660725
+          ],
+          [
+            451,
+            0.168098709905341,
+            0.10080143290599625
+          ],
+          [
+            387,
+            0.21373276261808175,
+            0.095557177516607292
+          ],
+          [
+            258,
+            0.27175517195863086,
+            0.095557177516606959
+          ]
+        ],
+        "bankT6NodesPerSide": 217
+      },
+      "fileSHA256": "",
+      "contentSHA256": "fdfaf6324af772a87fccde27d1bdfe51cad354518ddab6e5da1f2e1c6c32b4f9",
+      "meshFile": "",
+      "seconds": 3.4672584
+    },
+    {
+      "caseId": "soft2",
+      "m": 3,
+      "pass": true,
+      "validator": {
+        "pass": true,
+        "gates": {
+          "allT3AreasPositive": true,
+          "globalMinAngleAtLeast20": true,
+          "globalNeighborRatioAtMost1p8": true,
+          "patchDiskMinAngle30AndQualityAbove0p85": true,
+          "patchWholeMinAngle20AndQualityAtLeast0p75": true,
+          "noNonmanifoldEdges": true,
+          "noOrphanNodes": true,
+          "boundaryEdgesOnlyPlateHolesOrCrack": true,
+          "T6MidsidesExactAndUnique": true,
+          "coreCollarSeam64TwoOwners": true,
+          "collarExteriorSeam64TwoOwners": true,
+          "coreRowsExactlyInsideCoreRadius": true,
+          "singleTipAtPolylineEnd": true,
+          "distinctMatchedBanks": true,
+          "sixCellTipFan": true,
+          "qSupportInsideCoreAndZeroOnRim": true,
+          "T3BudgetRespected": true,
+          "exteriorNodesBitIdentical": true,
+          "collarExteriorConnectivityPreserved": true
+        },
+        "failedGates": [],
+        "gatesPassed": 19,
+        "gatesTotal": 19
+      },
+      "adapterPass": true,
+      "phaseAuditPass": true,
+      "qOwnerFree": true,
+      "baselineExact": null,
+      "summary": {
+        "T3": 29779,
+        "T3nodes": 15366,
+        "T6nodes": 60513,
+        "DOF": 121026,
+        "coreT3": 3562,
+        "collarT3": 128,
+        "exteriorT3": 26089,
+        "tipFirstEdgeRadial_mm": 0.025773614030009155,
+        "tipFanEdges_mm": [
+          0.025773614030013235,
+          0.025773614030026107,
+          0.025773614030009155,
+          0.025773614030013235,
+          0.025773614030010696,
+          0.025773614030011265,
+          0.025773614030013235,
+          0.025773614030021489,
+          0.025773614030006029,
+          0.025773614030015744,
+          0.025773614030011265,
+          0.025773614030020014,
+          0.025773614030009155
+        ],
+        "firstPitchSpec_mm": 0.025773614030016018,
+        "diskRadius_mm": 0.51547228060032035,
+        "minAngle_deg": 30.126847321216694,
+        "maxNeighborRatio": 1.5918285508620391,
+        "minShapeQualityCore": 0.7519099382828166,
+        "minAngleDisk_deg": 36.613484744588611,
+        "minShapeQualityDisk": 0.85299132967026059,
+        "qActivePrimary": 3049,
+        "qActivePerAnnulus": [
+          3049,
+          1735,
+          2275,
+          2064,
+          1290
+        ],
+        "qAnnuli_mm": [
+          [
+            0.4,
+            2.6
+          ],
+          [
+            0.2,
+            1
+          ],
+          [
+            0.4,
+            1.6
+          ],
+          [
+            0.8,
+            2.6
+          ],
+          [
+            1.2,
+            2.4
+          ]
+        ],
+        "qSupportMaxRadius_mm": 2.7691874098746752,
+        "radialBands_mm": [
+          [
+            0,
+            0.05
+          ],
+          [
+            0.05,
+            0.1
+          ],
+          [
+            0.1,
+            0.2
+          ],
+          [
+            0.2,
+            0.4
+          ],
+          [
+            0.4,
+            0.6
+          ],
+          [
+            0.6,
+            0.833
+          ],
+          [
+            0.833,
+            1
+          ],
+          [
+            1,
+            1.5
+          ],
+          [
+            1.5,
+            2
+          ],
+          [
+            2,
+            2.6
+          ],
+          [
+            2.6,
+            3
+          ]
+        ],
+        "bandCellsMedianHMedianHoverR": [
+          [
+            24,
+            0.041027174671865604,
+            1.0101540857857143
+          ],
+          [
+            30,
+            0.048832593420310454,
+            0.56164859121742916
+          ],
+          [
+            96,
+            0.053975336001235136,
+            0.36469841997760788
+          ],
+          [
+            336,
+            0.061586516199374122,
+            0.2061037076083122
+          ],
+          [
+            496,
+            0.059370211838357778,
+            0.10080143290601548
+          ],
+          [
+            516,
+            0.069679722292236637,
+            0.095557177516619463
+          ],
+          [
+            258,
+            0.088595799172796807,
+            0.095557177516615813
+          ],
+          [
+            710,
+            0.12203622226199147,
+            0.095557177516607139
+          ],
+          [
+            451,
+            0.168098709905341,
+            0.10080143290599625
+          ],
+          [
+            387,
+            0.21373276261808175,
+            0.095557177516607292
+          ],
+          [
+            258,
+            0.27175517195863086,
+            0.095557177516606959
+          ]
+        ],
+        "bankT6NodesPerSide": 229
+      },
+      "fileSHA256": "1c13784a7bb401f527640a76cb3ae8f82e1205bd5731697c47a4c6f0cfe12fe0",
+      "contentSHA256": "a026041cebbd440f87c5538577a8a5caa82e69f6b7ef0b9a524356eff8fc5db7",
+      "meshFile": "<outRoot>\\soft2\\B3\\MESH.mat",
+      "seconds": 3.6852849
+    },
+    {
+      "caseId": "soft2",
+      "m": 6,
+      "pass": true,
+      "validator": {
+        "pass": true,
+        "gates": {
+          "allT3AreasPositive": true,
+          "globalMinAngleAtLeast20": true,
+          "globalNeighborRatioAtMost1p8": true,
+          "patchDiskMinAngle30AndQualityAbove0p85": true,
+          "patchWholeMinAngle20AndQualityAtLeast0p75": true,
+          "noNonmanifoldEdges": true,
+          "noOrphanNodes": true,
+          "boundaryEdgesOnlyPlateHolesOrCrack": true,
+          "T6MidsidesExactAndUnique": true,
+          "coreCollarSeam64TwoOwners": true,
+          "collarExteriorSeam64TwoOwners": true,
+          "coreRowsExactlyInsideCoreRadius": true,
+          "singleTipAtPolylineEnd": true,
+          "distinctMatchedBanks": true,
+          "sixCellTipFan": true,
+          "qSupportInsideCoreAndZeroOnRim": true,
+          "T3BudgetRespected": true,
+          "exteriorNodesBitIdentical": true,
+          "collarExteriorConnectivityPreserved": true
+        },
+        "failedGates": [],
+        "gatesPassed": 19,
+        "gatesTotal": 19
+      },
+      "adapterPass": true,
+      "phaseAuditPass": true,
+      "qOwnerFree": true,
+      "baselineExact": null,
+      "summary": {
+        "T3": 30553,
+        "T3nodes": 15759,
+        "T6nodes": 62073,
+        "DOF": 124146,
+        "coreT3": 4336,
+        "collarT3": 128,
+        "exteriorT3": 26089,
+        "tipFirstEdgeRadial_mm": 0.015942700324027944,
+        "tipFanEdges_mm": [
+          0.015942700324037374,
+          0.015942700324037547,
+          0.015942700324028124,
+          0.015942700324041641,
+          0.015942700324028124,
+          0.015942700324027944,
+          0.015942700324041641,
+          0.015942700324029661,
+          0.015942700324042786,
+          0.0159427003240306,
+          0.015942700324033179,
+          0.015942700324034869,
+          0.015942700324029661
+        ],
+        "firstPitchSpec_mm": 0.015942700324037717,
+        "diskRadius_mm": 0.31885400648075435,
+        "minAngle_deg": 30.126847321207229,
+        "maxNeighborRatio": 1.5918285508622623,
+        "minShapeQualityCore": 0.75190993828265551,
+        "minAngleDisk_deg": 36.613484744579523,
+        "minShapeQualityDisk": 0.85299132967016311,
+        "qActivePrimary": 3225,
+        "qActivePerAnnulus": [
+          3225,
+          2365,
+          2451,
+          2064,
+          1290
+        ],
+        "qAnnuli_mm": [
+          [
+            0.4,
+            2.6
+          ],
+          [
+            0.2,
+            1
+          ],
+          [
+            0.4,
+            1.6
+          ],
+          [
+            0.8,
+            2.6
+          ],
+          [
+            1.2,
+            2.4
+          ]
+        ],
+        "qSupportMaxRadius_mm": 2.7691874098746752,
+        "radialBands_mm": [
+          [
+            0,
+            0.05
+          ],
+          [
+            0.05,
+            0.1
+          ],
+          [
+            0.1,
+            0.2
+          ],
+          [
+            0.2,
+            0.4
+          ],
+          [
+            0.4,
+            0.6
+          ],
+          [
+            0.6,
+            0.833
+          ],
+          [
+            0.833,
+            1
+          ],
+          [
+            1,
+            1.5
+          ],
+          [
+            1.5,
+            2
+          ],
+          [
+            2,
+            2.6
+          ],
+          [
+            2.6,
+            3
+          ]
+        ],
+        "bandCellsMedianHMedianHoverR": [
+          [
+            36,
+            0.025378045553641169,
+            0.85820289617594359
+          ],
+          [
+            84,
+            0.033216387339338682,
+            0.41746347093651603
+          ],
+          [
+            216,
+            0.036940433273285327,
+            0.23889671265844031
+          ],
+          [
+            775,
+            0.038163373493870251,
+            0.12748955957434671
+          ],
+          [
+            645,
+            0.046694086084831526,
+            0.095557177516631411
+          ],
+          [
+            516,
+            0.069679722292236762,
+            0.095557177516619463
+          ],
+          [
+            258,
+            0.088595799172796807,
+            0.095557177516615813
+          ],
+          [
+            710,
+            0.12203622226199147,
+            0.09555717751660725
+          ],
+          [
+            451,
+            0.168098709905341,
+            0.10080143290599605
+          ],
+          [
+            387,
+            0.21373276261808175,
+            0.095557177516608041
+          ],
+          [
+            258,
+            0.27175517195863086,
+            0.095557177516606959
+          ]
+        ],
+        "bankT6NodesPerSide": 241
+      },
+      "fileSHA256": "c40b8ea5cd63ea8af0f0539076b0c233f8bd791d6dd9747f268d7abad804ae37",
+      "contentSHA256": "8c1b74414511ce1ec34dbe9cfcc47281741f4cc79ab24b126bbb2d9d38e51043",
+      "meshFile": "<outRoot>\\soft2\\B6\\MESH.mat",
+      "seconds": 3.7117455
+    },
+    {
+      "caseId": "soft2",
+      "m": 9,
+      "pass": true,
+      "validator": {
+        "pass": true,
+        "gates": {
+          "allT3AreasPositive": true,
+          "globalMinAngleAtLeast20": true,
+          "globalNeighborRatioAtMost1p8": true,
+          "patchDiskMinAngle30AndQualityAbove0p85": true,
+          "patchWholeMinAngle20AndQualityAtLeast0p75": true,
+          "noNonmanifoldEdges": true,
+          "noOrphanNodes": true,
+          "boundaryEdgesOnlyPlateHolesOrCrack": true,
+          "T6MidsidesExactAndUnique": true,
+          "coreCollarSeam64TwoOwners": true,
+          "collarExteriorSeam64TwoOwners": true,
+          "coreRowsExactlyInsideCoreRadius": true,
+          "singleTipAtPolylineEnd": true,
+          "distinctMatchedBanks": true,
+          "sixCellTipFan": true,
+          "qSupportInsideCoreAndZeroOnRim": true,
+          "T3BudgetRespected": true,
+          "exteriorNodesBitIdentical": true,
+          "collarExteriorConnectivityPreserved": true
+        },
+        "failedGates": [],
+        "gatesPassed": 19,
+        "gatesTotal": 19
+      },
+      "adapterPass": true,
+      "phaseAuditPass": true,
+      "qOwnerFree": true,
+      "baselineExact": null,
+      "summary": {
+        "T3": 31327,
+        "T3nodes": 16152,
+        "T6nodes": 63633,
+        "DOF": 127266,
+        "coreT3": 5110,
+        "collarT3": 128,
+        "exteriorT3": 26089,
+        "tipFirstEdgeRadial_mm": 0.00986162411393579,
+        "tipFanEdges_mm": [
+          0.0098616241139550375,
+          0.00986162411396297,
+          0.0098616241139496651,
+          0.0098616241139525291,
+          0.00986162411393579,
+          0.00986162411394813,
+          0.0098616241139525291,
+          0.0098616241139635376,
+          0.0098616241139437618,
+          0.0098616241139507683,
+          0.0098616241139385264,
+          0.00986162411394399,
+          0.0098616241139635376
+        ],
+        "firstPitchSpec_mm": 0.0098616241139510234,
+        "diskRadius_mm": 0.19723248227902046,
+        "minAngle_deg": 30.12684732120238,
+        "maxNeighborRatio": 1.5918285508637817,
+        "minShapeQualityCore": 0.751909938282506,
+        "minAngleDisk_deg": 36.613484744547648,
+        "minShapeQualityDisk": 0.85299132967004077,
+        "qActivePrimary": 3225,
+        "qActivePerAnnulus": [
+          3225,
+          2709,
+          2451,
+          2064,
+          1290
+        ],
+        "qAnnuli_mm": [
+          [
+            0.4,
+            2.6
+          ],
+          [
+            0.2,
+            1
+          ],
+          [
+            0.4,
+            1.6
+          ],
+          [
+            0.8,
+            2.6
+          ],
+          [
+            1.2,
+            2.4
+          ]
+        ],
+        "qSupportMaxRadius_mm": 2.7691874098746752,
+        "radialBands_mm": [
+          [
+            0,
+            0.05
+          ],
+          [
+            0.05,
+            0.1
+          ],
+          [
+            0.1,
+            0.2
+          ],
+          [
+            0.2,
+            0.4
+          ],
+          [
+            0.4,
+            0.6
+          ],
+          [
+            0.6,
+            0.833
+          ],
+          [
+            0.833,
+            1
+          ],
+          [
+            1,
+            1.5
+          ],
+          [
+            1.5,
+            2
+          ],
+          [
+            2,
+            2.6
+          ],
+          [
+            2.6,
+            3
+          ]
+        ],
+        "bandCellsMedianHMedianHoverR": [
+          [
+            96,
+            0.018683186945281826,
+            0.52565575851021418
+          ],
+          [
+            156,
+            0.022111939444379204,
+            0.27657455674668141
+          ],
+          [
+            472,
+            0.025260408752211146,
+            0.16473113512019527
+          ],
+          [
+            1161,
+            0.026661190348036486,
+            0.095557177516655753
+          ],
+          [
+            645,
+            0.046694086084831526,
+            0.095557177516631411
+          ],
+          [
+            516,
+            0.069679722292236762,
+            0.095557177516619463
+          ],
+          [
+            258,
+            0.088595799172796807,
+            0.095557177516615813
+          ],
+          [
+            710,
+            0.12203622226199147,
+            0.09555717751660725
+          ],
+          [
+            451,
+            0.168098709905341,
+            0.10080143290599598
+          ],
+          [
+            387,
+            0.21373276261808175,
+            0.095557177516608041
+          ],
+          [
+            258,
+            0.27175517195863086,
+            0.095557177516606959
+          ]
+        ],
+        "bankT6NodesPerSide": 253
+      },
+      "fileSHA256": "43690cfc29226d86018fb36886412eff141a51510de3f489657fb18a1dfd60fd",
+      "contentSHA256": "c7da6c008bad66c192a72795ba556e86611b0f99b650a1d13d08d1002aa7ad78",
+      "meshFile": "<outRoot>\\soft2\\B9\\MESH.mat",
+      "seconds": 3.8026295
+    },
+    {
+      "caseId": "soft1",
+      "m": 0,
+      "pass": true,
+      "validator": {
+        "pass": true,
+        "gates": {
+          "allT3AreasPositive": true,
+          "globalMinAngleAtLeast20": true,
+          "globalNeighborRatioAtMost1p8": true,
+          "patchDiskMinAngle30AndQualityAbove0p85": true,
+          "patchWholeMinAngle20AndQualityAtLeast0p75": true,
+          "noNonmanifoldEdges": true,
+          "noOrphanNodes": true,
+          "boundaryEdgesOnlyPlateHolesOrCrack": true,
+          "T6MidsidesExactAndUnique": true,
+          "coreCollarSeam64TwoOwners": true,
+          "collarExteriorSeam64TwoOwners": true,
+          "coreRowsExactlyInsideCoreRadius": true,
+          "singleTipAtPolylineEnd": true,
+          "distinctMatchedBanks": true,
+          "sixCellTipFan": true,
+          "qSupportInsideCoreAndZeroOnRim": true,
+          "T3BudgetRespected": true,
+          "exteriorNodesBitIdentical": true,
+          "collarExteriorConnectivityPreserved": true
+        },
+        "failedGates": [],
+        "gatesPassed": 19,
+        "gatesTotal": 19
+      },
+      "adapterPass": true,
+      "phaseAuditPass": true,
+      "qOwnerFree": true,
+      "baselineExact": true,
+      "summary": {
+        "T3": 29035,
+        "T3nodes": 14988,
+        "T6nodes": 59013,
+        "DOF": 118026,
+        "coreT3": 2788,
+        "collarT3": 128,
+        "exteriorT3": 26119,
+        "tipFirstEdgeRadial_mm": 0.041666666666666012,
+        "tipFanEdges_mm": [
+          0.041666666666668031,
+          0.041666666666671806,
+          0.041666666666667726,
+          0.041666666666671952,
+          0.041666666666666012,
+          0.041666666666667053,
+          0.041666666666671952,
+          0.041666666666681521,
+          0.041666666666667053,
+          0.0416666666666641,
+          0.041666666666652079,
+          0.041666666666668031,
+          0.041666666666679807
+        ],
+        "firstPitchSpec_mm": 0.041666666666666671,
+        "diskRadius_mm": 0.83333333333333337,
+        "minAngle_deg": 30.1268473212252,
+        "maxNeighborRatio": 1.5918285508616403,
+        "minShapeQualityCore": 0.751909938282938,
+        "minAngleDisk_deg": 36.61348474459826,
+        "minShapeQualityDisk": 0.85299132967024471,
+        "qActivePrimary": 2443,
+        "qActivePerAnnulus": [
+          2443,
+          1057,
+          1669,
+          2059,
+          1290
+        ],
+        "qAnnuli_mm": [
+          [
+            0.4,
+            2.6
+          ],
+          [
+            0.2,
+            1
+          ],
+          [
+            0.4,
+            1.6
+          ],
+          [
+            0.8,
+            2.6
+          ],
+          [
+            1.2,
+            2.4
+          ]
+        ],
+        "qSupportMaxRadius_mm": 2.7691874098746831,
+        "radialBands_mm": [
+          [
+            0,
+            0.05
+          ],
+          [
+            0.05,
+            0.1
+          ],
+          [
+            0.1,
+            0.2
+          ],
+          [
+            0.2,
+            0.4
+          ],
+          [
+            0.4,
+            0.6
+          ],
+          [
+            0.6,
+            0.833
+          ],
+          [
+            0.833,
+            1
+          ],
+          [
+            1,
+            1.5
+          ],
+          [
+            1.5,
+            2
+          ],
+          [
+            2,
+            2.6
+          ],
+          [
+            2.6,
+            3
+          ]
+        ],
+        "bandCellsMedianHMedianHoverR": [
+          [
+            6,
+            0.041666666666671875,
+            1.7320508075693055
+          ],
+          [
+            18,
+            0.06632618961923481,
+            0.858202896175985
+          ],
+          [
+            48,
+            0.078944745201173477,
+            0.52565575851023638
+          ],
+          [
+            144,
+            0.0904998340699005,
+            0.30131420869182812
+          ],
+          [
+            216,
+            0.10105506149255783,
+            0.20301503502934082
+          ],
+          [
+            292,
+            0.10786730447906728,
+            0.15136969491124946
+          ],
+          [
+            258,
+            0.088595799172796669,
+            0.095557177516613412
+          ],
+          [
+            710,
+            0.12203622226199255,
+            0.095557177516607514
+          ],
+          [
+            451,
+            0.16809870990534181,
+            0.10080143290599612
+          ],
+          [
+            387,
+            0.21373276261808261,
+            0.095557177516608416
+          ],
+          [
+            258,
+            0.271755171958632,
+            0.095557177516605474
+          ]
+        ],
+        "bankT6NodesPerSide": 217
+      },
+      "fileSHA256": "",
+      "contentSHA256": "8617912bb6aee8a675a0691849e69066e4f8fa3aca7c92cc7be52414922a0332",
+      "meshFile": "",
+      "seconds": 3.4220393
+    },
+    {
+      "caseId": "soft1",
+      "m": 3,
+      "pass": true,
+      "validator": {
+        "pass": true,
+        "gates": {
+          "allT3AreasPositive": true,
+          "globalMinAngleAtLeast20": true,
+          "globalNeighborRatioAtMost1p8": true,
+          "patchDiskMinAngle30AndQualityAbove0p85": true,
+          "patchWholeMinAngle20AndQualityAtLeast0p75": true,
+          "noNonmanifoldEdges": true,
+          "noOrphanNodes": true,
+          "boundaryEdgesOnlyPlateHolesOrCrack": true,
+          "T6MidsidesExactAndUnique": true,
+          "coreCollarSeam64TwoOwners": true,
+          "collarExteriorSeam64TwoOwners": true,
+          "coreRowsExactlyInsideCoreRadius": true,
+          "singleTipAtPolylineEnd": true,
+          "distinctMatchedBanks": true,
+          "sixCellTipFan": true,
+          "qSupportInsideCoreAndZeroOnRim": true,
+          "T3BudgetRespected": true,
+          "exteriorNodesBitIdentical": true,
+          "collarExteriorConnectivityPreserved": true
+        },
+        "failedGates": [],
+        "gatesPassed": 19,
+        "gatesTotal": 19
+      },
+      "adapterPass": true,
+      "phaseAuditPass": true,
+      "qOwnerFree": true,
+      "baselineExact": null,
+      "summary": {
+        "T3": 29809,
+        "T3nodes": 15381,
+        "T6nodes": 60573,
+        "DOF": 121146,
+        "coreT3": 3562,
+        "collarT3": 128,
+        "exteriorT3": 26119,
+        "tipFirstEdgeRadial_mm": 0.025773614030013374,
+        "tipFanEdges_mm": [
+          0.025773614030015598,
+          0.025773614030020323,
+          0.025773614030015084,
+          0.025773614030015598,
+          0.025773614030013374,
+          0.025773614030015577,
+          0.025773614030015598,
+          0.025773614030027162,
+          0.02577361403001046,
+          0.0257736140300185,
+          0.025773614030005349,
+          0.025773614030022426,
+          0.025773614030011657
+        ],
+        "firstPitchSpec_mm": 0.025773614030016018,
+        "diskRadius_mm": 0.51547228060032035,
+        "minAngle_deg": 30.126847321217795,
+        "maxNeighborRatio": 1.5918285508617449,
+        "minShapeQualityCore": 0.75190993828285735,
+        "minAngleDisk_deg": 36.613484744592782,
+        "minShapeQualityDisk": 0.852991329670223,
+        "qActivePrimary": 3049,
+        "qActivePerAnnulus": [
+          3049,
+          1735,
+          2275,
+          2064,
+          1290
+        ],
+        "qAnnuli_mm": [
+          [
+            0.4,
+            2.6
+          ],
+          [
+            0.2,
+            1
+          ],
+          [
+            0.4,
+            1.6
+          ],
+          [
+            0.8,
+            2.6
+          ],
+          [
+            1.2,
+            2.4
+          ]
+        ],
+        "qSupportMaxRadius_mm": 2.7691874098746831,
+        "radialBands_mm": [
+          [
+            0,
+            0.05
+          ],
+          [
+            0.05,
+            0.1
+          ],
+          [
+            0.1,
+            0.2
+          ],
+          [
+            0.2,
+            0.4
+          ],
+          [
+            0.4,
+            0.6
+          ],
+          [
+            0.6,
+            0.833
+          ],
+          [
+            0.833,
+            1
+          ],
+          [
+            1,
+            1.5
+          ],
+          [
+            1.5,
+            2
+          ],
+          [
+            2,
+            2.6
+          ],
+          [
+            2.6,
+            3
+          ]
+        ],
+        "bandCellsMedianHMedianHoverR": [
+          [
+            24,
+            0.041027174671865688,
+            1.0101540857855804
+          ],
+          [
+            30,
+            0.048832593420306818,
+            0.56164859121743227
+          ],
+          [
+            96,
+            0.0539753360012358,
+            0.36469841997758079
+          ],
+          [
+            336,
+            0.061586516199372728,
+            0.20610370760832264
+          ],
+          [
+            496,
+            0.059370211838356252,
+            0.1008014329060164
+          ],
+          [
+            516,
+            0.069679722292236915,
+            0.095557177516620767
+          ],
+          [
+            258,
+            0.088595799172796669,
+            0.095557177516613412
+          ],
+          [
+            710,
+            0.1220362222619928,
+            0.095557177516607444
+          ],
+          [
+            451,
+            0.16809870990534181,
+            0.10080143290599612
+          ],
+          [
+            387,
+            0.21373276261808261,
+            0.095557177516608416
+          ],
+          [
+            258,
+            0.271755171958632,
+            0.095557177516605474
+          ]
+        ],
+        "bankT6NodesPerSide": 229
+      },
+      "fileSHA256": "b9eba013008faa926802a3a5c3bd0f13510d40ec91ed689a15df733519df5753",
+      "contentSHA256": "52825b9daebe71a2170303dbda43aaa363c58ed083e60d53e83a31ea26320aec",
+      "meshFile": "<outRoot>\\soft1\\B3\\MESH.mat",
+      "seconds": 3.63444
+    },
+    {
+      "caseId": "soft1",
+      "m": 6,
+      "pass": true,
+      "validator": {
+        "pass": true,
+        "gates": {
+          "allT3AreasPositive": true,
+          "globalMinAngleAtLeast20": true,
+          "globalNeighborRatioAtMost1p8": true,
+          "patchDiskMinAngle30AndQualityAbove0p85": true,
+          "patchWholeMinAngle20AndQualityAtLeast0p75": true,
+          "noNonmanifoldEdges": true,
+          "noOrphanNodes": true,
+          "boundaryEdgesOnlyPlateHolesOrCrack": true,
+          "T6MidsidesExactAndUnique": true,
+          "coreCollarSeam64TwoOwners": true,
+          "collarExteriorSeam64TwoOwners": true,
+          "coreRowsExactlyInsideCoreRadius": true,
+          "singleTipAtPolylineEnd": true,
+          "distinctMatchedBanks": true,
+          "sixCellTipFan": true,
+          "qSupportInsideCoreAndZeroOnRim": true,
+          "T3BudgetRespected": true,
+          "exteriorNodesBitIdentical": true,
+          "collarExteriorConnectivityPreserved": true
+        },
+        "failedGates": [],
+        "gatesPassed": 19,
+        "gatesTotal": 19
+      },
+      "adapterPass": true,
+      "phaseAuditPass": true,
+      "qOwnerFree": true,
+      "baselineExact": null,
+      "summary": {
+        "T3": 30583,
+        "T3nodes": 15774,
+        "T6nodes": 62133,
+        "DOF": 124266,
+        "coreT3": 4336,
+        "collarT3": 128,
+        "exteriorT3": 26119,
+        "tipFirstEdgeRadial_mm": 0.015942700324031164,
+        "tipFanEdges_mm": [
+          0.015942700324033346,
+          0.015942700324041027,
+          0.015942700324041086,
+          0.015942700324037273,
+          0.015942700324041086,
+          0.015942700324031164,
+          0.015942700324037273,
+          0.015942700324027295,
+          0.015942700324050891,
+          0.015942700324037273,
+          0.015942700324041027,
+          0.0159427003240412,
+          0.015942700324027295
+        ],
+        "firstPitchSpec_mm": 0.015942700324037717,
+        "diskRadius_mm": 0.31885400648075435,
+        "minAngle_deg": 30.126847321217063,
+        "maxNeighborRatio": 1.5918285508619225,
+        "minShapeQualityCore": 0.75190993828281261,
+        "minAngleDisk_deg": 36.613484744581122,
+        "minShapeQualityDisk": 0.85299132967008906,
+        "qActivePrimary": 3225,
+        "qActivePerAnnulus": [
+          3225,
+          2365,
+          2451,
+          2064,
+          1290
+        ],
+        "qAnnuli_mm": [
+          [
+            0.4,
+            2.6
+          ],
+          [
+            0.2,
+            1
+          ],
+          [
+            0.4,
+            1.6
+          ],
+          [
+            0.8,
+            2.6
+          ],
+          [
+            1.2,
+            2.4
+          ]
+        ],
+        "qSupportMaxRadius_mm": 2.76918740987468,
+        "radialBands_mm": [
+          [
+            0,
+            0.05
+          ],
+          [
+            0.05,
+            0.1
+          ],
+          [
+            0.1,
+            0.2
+          ],
+          [
+            0.2,
+            0.4
+          ],
+          [
+            0.4,
+            0.6
+          ],
+          [
+            0.6,
+            0.833
+          ],
+          [
+            0.833,
+            1
+          ],
+          [
+            1,
+            1.5
+          ],
+          [
+            1.5,
+            2
+          ],
+          [
+            2,
+            2.6
+          ],
+          [
+            2.6,
+            3
+          ]
+        ],
+        "bandCellsMedianHMedianHoverR": [
+          [
+            36,
+            0.0253780455536408,
+            0.85820289617600287
+          ],
+          [
+            84,
+            0.033216387339338682,
+            0.41746347093653724
+          ],
+          [
+            216,
+            0.0369404332732776,
+            0.23889671265853668
+          ],
+          [
+            775,
+            0.038163373493871257,
+            0.12748955957434815
+          ],
+          [
+            645,
+            0.046694086084830069,
+            0.095557177516626332
+          ],
+          [
+            516,
+            0.069679722292236915,
+            0.095557177516620767
+          ],
+          [
+            258,
+            0.088595799172796558,
+            0.095557177516613412
+          ],
+          [
+            710,
+            0.12203622226199255,
+            0.095557177516607514
+          ],
+          [
+            451,
+            0.16809870990534181,
+            0.10080143290599612
+          ],
+          [
+            387,
+            0.21373276261808261,
+            0.095557177516608416
+          ],
+          [
+            258,
+            0.2717551719586323,
+            0.095557177516605363
+          ]
+        ],
+        "bankT6NodesPerSide": 241
+      },
+      "fileSHA256": "a81c7720984024bfa25a72e04fbd26f63685719b98ecf489cea0802d0277b0b1",
+      "contentSHA256": "32a874408c3fb1b27aef44d83c077ea919f903a271fcf9b4d354d68503a7d7b1",
+      "meshFile": "<outRoot>\\soft1\\B6\\MESH.mat",
+      "seconds": 3.7047031
+    },
+    {
+      "caseId": "soft1",
+      "m": 9,
+      "pass": true,
+      "validator": {
+        "pass": true,
+        "gates": {
+          "allT3AreasPositive": true,
+          "globalMinAngleAtLeast20": true,
+          "globalNeighborRatioAtMost1p8": true,
+          "patchDiskMinAngle30AndQualityAbove0p85": true,
+          "patchWholeMinAngle20AndQualityAtLeast0p75": true,
+          "noNonmanifoldEdges": true,
+          "noOrphanNodes": true,
+          "boundaryEdgesOnlyPlateHolesOrCrack": true,
+          "T6MidsidesExactAndUnique": true,
+          "coreCollarSeam64TwoOwners": true,
+          "collarExteriorSeam64TwoOwners": true,
+          "coreRowsExactlyInsideCoreRadius": true,
+          "singleTipAtPolylineEnd": true,
+          "distinctMatchedBanks": true,
+          "sixCellTipFan": true,
+          "qSupportInsideCoreAndZeroOnRim": true,
+          "T3BudgetRespected": true,
+          "exteriorNodesBitIdentical": true,
+          "collarExteriorConnectivityPreserved": true
+        },
+        "failedGates": [],
+        "gatesPassed": 19,
+        "gatesTotal": 19
+      },
+      "adapterPass": true,
+      "phaseAuditPass": true,
+      "qOwnerFree": true,
+      "baselineExact": null,
+      "summary": {
+        "T3": 31357,
+        "T3nodes": 16167,
+        "T6nodes": 63693,
+        "DOF": 127386,
+        "coreT3": 5110,
+        "collarT3": 128,
+        "exteriorT3": 26119,
+        "tipFirstEdgeRadial_mm": 0.0098616241139477482,
+        "tipFanEdges_mm": [
+          0.0098616241139482235,
+          0.009861624113951778,
+          0.0098616241139494621,
+          0.0098616241139482235,
+          0.0098616241139477482,
+          0.009861624113951778,
+          0.0098616241139482235,
+          0.009861624113946036,
+          0.009861624113946664,
+          0.00986162411396188,
+          0.00986162411394155,
+          0.0098616241139550514,
+          0.009861624113946036
+        ],
+        "firstPitchSpec_mm": 0.0098616241139510234,
+        "diskRadius_mm": 0.19723248227902046,
+        "minAngle_deg": 30.126847321200639,
+        "maxNeighborRatio": 1.591828550862493,
+        "minShapeQualityCore": 0.75190993828253716,
+        "minAngleDisk_deg": 36.613484744559855,
+        "minShapeQualityDisk": 0.85299132967007618,
+        "qActivePrimary": 3225,
+        "qActivePerAnnulus": [
+          3225,
+          2709,
+          2451,
+          2064,
+          1290
+        ],
+        "qAnnuli_mm": [
+          [
+            0.4,
+            2.6
+          ],
+          [
+            0.2,
+            1
+          ],
+          [
+            0.4,
+            1.6
+          ],
+          [
+            0.8,
+            2.6
+          ],
+          [
+            1.2,
+            2.4
+          ]
+        ],
+        "qSupportMaxRadius_mm": 2.76918740987468,
+        "radialBands_mm": [
+          [
+            0,
+            0.05
+          ],
+          [
+            0.05,
+            0.1
+          ],
+          [
+            0.1,
+            0.2
+          ],
+          [
+            0.2,
+            0.4
+          ],
+          [
+            0.4,
+            0.6
+          ],
+          [
+            0.6,
+            0.833
+          ],
+          [
+            0.833,
+            1
+          ],
+          [
+            1,
+            1.5
+          ],
+          [
+            1.5,
+            2
+          ],
+          [
+            2,
+            2.6
+          ],
+          [
+            2.6,
+            3
+          ]
+        ],
+        "bandCellsMedianHMedianHoverR": [
+          [
+            96,
+            0.018683186945283623,
+            0.525655758510208
+          ],
+          [
+            156,
+            0.02211193944438164,
+            0.27657455674657544
+          ],
+          [
+            472,
+            0.025260408752207624,
+            0.16473113512020704
+          ],
+          [
+            1161,
+            0.026661190348028177,
+            0.095557177516659625
+          ],
+          [
+            645,
+            0.046694086084828938,
+            0.095557177516626263
+          ],
+          [
+            516,
+            0.069679722292236915,
+            0.095557177516620767
+          ],
+          [
+            258,
+            0.088595799172796669,
+            0.095557177516613412
+          ],
+          [
+            710,
+            0.12203622226199255,
+            0.095557177516607514
+          ],
+          [
+            451,
+            0.16809870990534181,
+            0.10080143290599612
+          ],
+          [
+            387,
+            0.21373276261808261,
+            0.095557177516608416
+          ],
+          [
+            258,
+            0.2717551719586323,
+            0.095557177516605363
+          ]
+        ],
+        "bankT6NodesPerSide": 253
+      },
+      "fileSHA256": "d5b10abfdddf16a3753741977502e6215c67f4d8f90403a018904558beaa1038",
+      "contentSHA256": "a6d31fd9ea12c8845e2d0253f7e8bce7e4ed4247ddf29653c77b12332feb1407",
+      "meshFile": "<outRoot>\\soft1\\B9\\MESH.mat",
+      "seconds": 3.7902823
+    }
+  ],
+  "commonQActiveB6B9": [
+    {
+      "caseId": "H",
+      "nB6": 3225,
+      "nB9": 3225,
+      "matched": 3225,
+      "maxNodeDiff_mm": 1.4210854715202004E-14,
+      "sameFunctional": true
+    },
+    {
+      "caseId": "stiff13",
+      "nB6": 3225,
+      "nB9": 3225,
+      "matched": 3225,
+      "maxNodeDiff_mm": 1.4210854715202004E-14,
+      "sameFunctional": true
+    },
+    {
+      "caseId": "soft2",
+      "nB6": 3225,
+      "nB9": 3225,
+      "matched": 3225,
+      "maxNodeDiff_mm": 1.4210854715202004E-14,
+      "sameFunctional": true
+    },
+    {
+      "caseId": "soft1",
+      "nB6": 3225,
+      "nB9": 3225,
+      "matched": 3225,
+      "maxNodeDiff_mm": 1.4210854715202004E-14,
+      "sameFunctional": true
+    }
+  ],
+  "pass": true,
+  "physicalSolves": 0,
+  "generateMeshCalled": false,
+  "source": "g2_a1_patch_swap"
+}

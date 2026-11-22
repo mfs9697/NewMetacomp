@@ -1,0 +1,15 @@
+{
+ "archive": "NewMetacomp_G2_A1_FamilyB_Records_20261122.zip",
+ "bytes": 33306354,
+ "sha256": "da0a1580c711bb873e0b93248fca8e6e0bcb684b39e2c656902820ea400674bf",
+ "members": 95,
+ "runFiles": 50,
+ "ledgerFiles": 28,
+ "logFiles": 3,
+ "meshFiles": 13,
+ "manifestSHA256": "830b3c2f5f5b63121e54ce199b6d36fb26dea79d65cb64c4ce9ebda77bb513b4",
+ "localCopyVerified": true,
+ "offDeviceCopyVerified": true,
+ "localLocation": "<user>/Documents/NewMetacomp_LP1_archive_backup/",
+ "offDeviceLocation": "removable NTFS drive D:\\ (physically separate from C:)"
+}

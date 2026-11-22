@@ -1,0 +1,54 @@
+{
+ "schema": "NewMetacomp.G2.LP1.VG1.Sanitization.v1",
+ "source": "stage_postrev",
+ "files": [
+  {
+   "file": "a1_post_revocation.log",
+   "originalSHA256": "b5989765078203c561898153732357fc81203d8df6b7ef9de33ef2e89527ff4a",
+   "sanitizedSHA256": "1e1647b9c15540d73ff683aa0b9e35e137b61c6b2c52f31c51e489c9e4b3346f",
+   "copied": true
+  },
+  {
+   "file": "a1_post_revocation.m",
+   "originalSHA256": "635eff2c17d2bd23c5eb2985ddce9b154f7fb99bd5eb69d286e79ee1dfcb98f3",
+   "sanitizedSHA256": "f89068bfcf3408ec1885dc66efca266ba1fa46926b8b1f47e2a88ff7783316e6",
+   "copied": true
+  },
+  {
+   "file": "archive_a1.py",
+   "originalSHA256": "73d4496d5280d142889a02b5cec0415b1d2fc6d9b9b8e06ced69328522bcc565",
+   "sanitizedSHA256": "73d4496d5280d142889a02b5cec0415b1d2fc6d9b9b8e06ced69328522bcc565",
+   "copied": true
+  },
+  {
+   "file": "figs3.log",
+   "originalSHA256": "c7abce2a60ed55c13ddf6d8501ec6f3ac6626e80e2e7b183e7f560e9a2d02fef",
+   "sanitizedSHA256": "74e3df8a60203d803cc0394af8b0a0d4b0d67e12d80641c8e73f61e9cb295fb2",
+   "copied": true
+  },
+  {
+   "file": "figs3.m",
+   "originalSHA256": "ed8f155d2106b2cffe4641fba539113034fe8e2acb072463da3bd9b893acb3f5",
+   "sanitizedSHA256": "9d34af51390286ac9bb9c64c10cb2ce4d9f0b11890b47ba945c536250b88cf85",
+   "copied": true
+  },
+  {
+   "file": "make_go.py",
+   "originalSHA256": "fa55cd6a783b63aa7c5b92e02d7f8279df611c1e39a5dde58d68adbd55751036",
+   "sanitizedSHA256": "fa55cd6a783b63aa7c5b92e02d7f8279df611c1e39a5dde58d68adbd55751036",
+   "copied": true
+  },
+  {
+   "file": "recheck_pins.py",
+   "originalSHA256": "0a86c81867c49f61b4130003178fc9ff99ad0e11dc5c1ff8a8f1d6ad1251eebe",
+   "sanitizedSHA256": "0a86c81867c49f61b4130003178fc9ff99ad0e11dc5c1ff8a8f1d6ad1251eebe",
+   "copied": true
+  },
+  {
+   "file": "snapshot.py",
+   "originalSHA256": "9eddef09eec48af94a1368c7c11fe222a01043c1a1c9cb3eda7aea6a923c71bf",
+   "sanitizedSHA256": "9eddef09eec48af94a1368c7c11fe222a01043c1a1c9cb3eda7aea6a923c71bf",
+   "copied": true
+  }
+ ]
+}

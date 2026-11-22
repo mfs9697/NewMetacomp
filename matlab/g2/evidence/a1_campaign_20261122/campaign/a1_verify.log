@@ -1,0 +1,16 @@
+[Warning: Name is nonexistent or not a directory: <user>\Google Drive\Projects\8 - CohZonFEM\czm_project\CrackPath\CrackFromHoleLEFM\cfh] 
+[Warning: Name is nonexistent or not a directory: <user>\Google Drive\Projects\8 - CohZonFEM\Asphalt\remmers2003] 
+VERIFY H_B3 REUSED_ZERO_SOLVE computed=0 mode=VERIFY_ONLY
+VERIFY H_B6 REUSED_ZERO_SOLVE computed=0 mode=VERIFY_ONLY
+VERIFY H_B9 REUSED_ZERO_SOLVE computed=0 mode=VERIFY_ONLY
+VERIFY stiff13_B3 REUSED_ZERO_SOLVE computed=0 mode=VERIFY_ONLY
+VERIFY stiff13_B6 REUSED_ZERO_SOLVE computed=0 mode=VERIFY_ONLY
+VERIFY stiff13_B9 REUSED_ZERO_SOLVE computed=0 mode=VERIFY_ONLY
+VERIFY soft2_B3 REUSED_ZERO_SOLVE computed=0 mode=VERIFY_ONLY
+VERIFY soft2_B6 REUSED_ZERO_SOLVE computed=0 mode=VERIFY_ONLY
+VERIFY soft2_B9 REUSED_ZERO_SOLVE computed=0 mode=VERIFY_ONLY
+VERIFY soft1_B3 REUSED_ZERO_SOLVE computed=0 mode=VERIFY_ONLY
+VERIFY soft1_B6 REUSED_ZERO_SOLVE computed=0 mode=VERIFY_ONLY
+VERIFY soft1_B9 REUSED_ZERO_SOLVE computed=0 mode=VERIFY_ONLY
+LEDGER admits=12 files=28
+A1_ANALYSIS records=12 allChecksPass=1

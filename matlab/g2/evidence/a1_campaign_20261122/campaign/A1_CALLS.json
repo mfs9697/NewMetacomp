@@ -1,0 +1,241 @@
+{
+  "startedUTC": "2026-11-22T20:42:56Z",
+  "calls": [
+    {
+      "key": "H_B3",
+      "status": "A1_STATE_COMPLETE",
+      "computed": 1,
+      "reused": 0,
+      "campaignMode": "OPEN_NEW",
+      "KI": 0.0070913688528921048,
+      "KII": 0.00010091080154013877,
+      "G": 1.5390430017804076E-8,
+      "J": 1.5390612120580081E-8,
+      "MTS_deg": -1.6298781659913364,
+      "resources": {
+        "seconds": 2.5653708,
+        "availableBefore_GiB": 6.5284423828125,
+        "availableAfter_GiB": 6.5092277526855469,
+        "matlabUsedBefore_GiB": 1.78472900390625,
+        "matlabUsedAfter_GiB": 1.7980613708496094
+      }
+    },
+    {
+      "key": "H_B6",
+      "status": "A1_STATE_COMPLETE",
+      "computed": 1,
+      "reused": 0,
+      "campaignMode": "CONTINUE",
+      "KI": 0.0070914883522231967,
+      "KII": 0.00010091547138541591,
+      "G": 1.5390948905433932E-8,
+      "J": 1.5391062952141949E-8,
+      "MTS_deg": -1.6299260800368152,
+      "resources": {
+        "seconds": 2.2848583,
+        "availableBefore_GiB": 6.4046974182128906,
+        "availableAfter_GiB": 6.4767837524414062,
+        "matlabUsedBefore_GiB": 1.8216934204101562,
+        "matlabUsedAfter_GiB": 1.8270645141601562
+      }
+    },
+    {
+      "key": "H_B9",
+      "status": "A1_STATE_COMPLETE",
+      "computed": 1,
+      "reused": 0,
+      "campaignMode": "CONTINUE",
+      "KI": 0.0070915622696787646,
+      "KII": 0.0001009183597941766,
+      "G": 1.5391269872717145E-8,
+      "J": 1.539134197194813E-8,
+      "MTS_deg": -1.6299557141951186,
+      "resources": {
+        "seconds": 2.3255073,
+        "availableBefore_GiB": 6.4599647521972656,
+        "availableAfter_GiB": 6.4241371154785156,
+        "matlabUsedBefore_GiB": 1.8382492065429688,
+        "matlabUsedAfter_GiB": 1.8497123718261719
+      }
+    },
+    {
+      "key": "stiff13_B3",
+      "status": "A1_STATE_COMPLETE",
+      "computed": 1,
+      "reused": 0,
+      "campaignMode": "CONTINUE",
+      "KI": 0.0068323548221383363,
+      "KII": 9.2580439306486843E-5,
+      "G": 1.4286413897105565E-8,
+      "J": 1.4286612636420051E-8,
+      "MTS_deg": -1.552084993558086,
+      "resources": {
+        "seconds": 2.1661171,
+        "availableBefore_GiB": 6.4332389831542969,
+        "availableAfter_GiB": 6.4508018493652344,
+        "matlabUsedBefore_GiB": 1.8442955017089844,
+        "matlabUsedAfter_GiB": 1.8444290161132812
+      }
+    },
+    {
+      "key": "stiff13_B6",
+      "status": "A1_STATE_COMPLETE",
+      "computed": 1,
+      "reused": 0,
+      "campaignMode": "CONTINUE",
+      "KI": 0.0068324648538826832,
+      "KII": 9.2585186216947931E-5,
+      "G": 1.428687423675389E-8,
+      "J": 1.4286998486031006E-8,
+      "MTS_deg": -1.5521395310059123,
+      "resources": {
+        "seconds": 2.1820789,
+        "availableBefore_GiB": 6.5781021118164062,
+        "availableAfter_GiB": 6.561492919921875,
+        "matlabUsedBefore_GiB": 1.8527946472167969,
+        "matlabUsedAfter_GiB": 1.8572845458984375
+      }
+    },
+    {
+      "key": "stiff13_B9",
+      "status": "A1_STATE_COMPLETE",
+      "computed": 1,
+      "reused": 0,
+      "campaignMode": "CONTINUE",
+      "KI": 0.0068325329148740946,
+      "KII": 9.2588122322126863E-5,
+      "G": 1.4287158987132653E-8,
+      "J": 1.4287237298425575E-8,
+      "MTS_deg": -1.5521732624554319,
+      "resources": {
+        "seconds": 2.2577992,
+        "availableBefore_GiB": 6.4942779541015625,
+        "availableAfter_GiB": 6.6146774291992188,
+        "matlabUsedBefore_GiB": 1.844757080078125,
+        "matlabUsedAfter_GiB": 1.8515396118164062
+      }
+    },
+    {
+      "key": "soft2_B3",
+      "status": "A1_STATE_COMPLETE",
+      "computed": 1,
+      "reused": 0,
+      "campaignMode": "CONTINUE",
+      "KI": 0.0069866134385101926,
+      "KII": 0.00010159671157318627,
+      "G": 1.493922007976271E-8,
+      "J": 1.4939381690582737E-8,
+      "MTS_deg": -1.6655260386479196,
+      "resources": {
+        "seconds": 2.0389836,
+        "availableBefore_GiB": 6.6608009338378906,
+        "availableAfter_GiB": 6.6490669250488281,
+        "matlabUsedBefore_GiB": 1.8428497314453125,
+        "matlabUsedAfter_GiB": 1.8448448181152344
+      }
+    },
+    {
+      "key": "soft2_B6",
+      "status": "A1_STATE_COMPLETE",
+      "computed": 1,
+      "reused": 0,
+      "campaignMode": "CONTINUE",
+      "KI": 0.0069867324806913208,
+      "KII": 0.00010160151892160957,
+      "G": 1.4939729362459483E-8,
+      "J": 1.493983068600077E-8,
+      "MTS_deg": -1.66557641912317,
+      "resources": {
+        "seconds": 2.2208342,
+        "availableBefore_GiB": 6.5953140258789062,
+        "availableAfter_GiB": 6.4781875610351562,
+        "matlabUsedBefore_GiB": 1.8362236022949219,
+        "matlabUsedAfter_GiB": 1.8382797241210938
+      }
+    },
+    {
+      "key": "soft2_B9",
+      "status": "A1_STATE_COMPLETE",
+      "computed": 1,
+      "reused": 0,
+      "campaignMode": "CONTINUE",
+      "KI": 0.0069868061154392744,
+      "KII": 0.00010160449239130458,
+      "G": 1.4940044388772652E-8,
+      "J": 1.494010856587175E-8,
+      "MTS_deg": -1.6656075789227336,
+      "resources": {
+        "seconds": 2.2278079,
+        "availableBefore_GiB": 6.3239669799804688,
+        "availableAfter_GiB": 6.4151496887207031,
+        "matlabUsedBefore_GiB": 1.8306427001953125,
+        "matlabUsedAfter_GiB": 1.8314590454101562
+      }
+    },
+    {
+      "key": "soft1_B3",
+      "status": "A1_STATE_COMPLETE",
+      "computed": 1,
+      "reused": 0,
+      "campaignMode": "CONTINUE",
+      "KI": 0.0073122562506684691,
+      "KII": 0.00010972903426917092,
+      "G": 1.6364519588937889E-8,
+      "J": 1.63646781474096E-8,
+      "MTS_deg": -1.7186789371924551,
+      "resources": {
+        "seconds": 2.0769121,
+        "availableBefore_GiB": 6.3481369018554688,
+        "availableAfter_GiB": 6.4146270751953125,
+        "matlabUsedBefore_GiB": 1.8243560791015625,
+        "matlabUsedAfter_GiB": 1.8261337280273438
+      }
+    },
+    {
+      "key": "soft1_B6",
+      "status": "A1_STATE_COMPLETE",
+      "computed": 1,
+      "reused": 0,
+      "campaignMode": "CONTINUE",
+      "KI": 0.0073123848833328061,
+      "KII": 0.00010973331353403463,
+      "G": 1.6365095500645876E-8,
+      "J": 1.6365195057490886E-8,
+      "MTS_deg": -1.718715689861493,
+      "resources": {
+        "seconds": 2.0979244,
+        "availableBefore_GiB": 6.2663116455078125,
+        "availableAfter_GiB": 6.7304000854492188,
+        "matlabUsedBefore_GiB": 1.8249855041503906,
+        "matlabUsedAfter_GiB": 1.8296279907226562
+      }
+    },
+    {
+      "key": "soft1_B9",
+      "status": "A1_STATE_COMPLETE",
+      "computed": 1,
+      "reused": 0,
+      "campaignMode": "CONTINUE",
+      "KI": 0.0073124644505492171,
+      "KII": 0.00010973596031348716,
+      "G": 1.636545174252803E-8,
+      "J": 1.6365514962100705E-8,
+      "MTS_deg": -1.7187384197277971,
+      "resources": {
+        "seconds": 2.1596464,
+        "availableBefore_GiB": 6.6757011413574219,
+        "availableAfter_GiB": 6.7159690856933594,
+        "matlabUsedBefore_GiB": 1.8195648193359375,
+        "matlabUsedAfter_GiB": 1.82196044921875
+      },
+      "campaignClosed": true
+    }
+  ],
+  "preflight": {
+    "sourceCommit": "ffe5ba9b5136c6fd99d78635f0db3257c3745597",
+    "goFileSHA256": "b8693fdfdcdab6c378ef0299103a1add66c4ace10015c21a55eaa9897aee1531",
+    "token": "G2A1|policy=312e1e005b9ca85d743b672115609d7b02bb2f6ebbbae09658c0cdf1d9a8a013|source=7e5683703bd104547ef5d013aa0253ad2819b59dc58693957e2d04b4707f0947|meshes=ffee15fd508b5b13e78850cefd88e7d0b04308f70c468c0c1e85f7f78a0ecbc5|cases=H,stiff13,soft2,soft1|levels=3,6,9|maxSolves=12",
+    "freeRAM_GiB": 7.0565452575683594
+  },
+  "finishedUTC": "2026-11-22T20:44:24Z"
+}

@@ -1,0 +1,24 @@
+{
+ "schema": "NewMetacomp.G2.LP1.VG1.Sanitization.v1",
+ "source": "stG",
+ "files": [
+  {
+   "file": "A1_GEOMETRY_QUALIFICATION.json",
+   "originalSHA256": "57839abf3a7acf82a5fe6aeef871fd90f661f6a1ec3c86e3d42392deba8b474a",
+   "sanitizedSHA256": "57839abf3a7acf82a5fe6aeef871fd90f661f6a1ec3c86e3d42392deba8b474a",
+   "copied": true
+  },
+  {
+   "file": "qual_committed.log",
+   "originalSHA256": "e54fa7949932cb747c5ffb71383c962eaa327fba0c8c2f35243c83528e82ea11",
+   "sanitizedSHA256": "49ee612f0c4f7c9de5e96e15b1fda3ff1d8983c806e43464634ac3855d46be53",
+   "copied": true
+  },
+  {
+   "file": "qual_committed.m",
+   "originalSHA256": "59d72deac876374dd3fdd71376f85ae6ac1f66a098d8d17522b3c93adaf0c58f",
+   "sanitizedSHA256": "d8e5281a98ccd90e142c2bbc635cd95ca2ace544af43858a9f3eaf0500f021b7",
+   "copied": true
+  }
+ ]
+}
