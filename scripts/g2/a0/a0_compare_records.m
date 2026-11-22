@@ -141,7 +141,9 @@ end
 % ------------------------------------------------------------------ provenance
 function P=provenance(N,root,selftest)
 P=struct('pass',true,'notes',{{}});
-expSrc='6f7fb3ea51a0ae64e30a5c63f8cc765af5308c511da315c989ae10235fbed030';
+% VG2 (Issue #62): A0 must run under the campaign-bound VG2 source set. The A0-P0 pin
+% 6f7fb3ea... is historical; no physical campaign ever ran under it.
+expSrc='9b634df22d2c44ba9f6465fa9c88f54274afa3a17aa5d43df1e2b2ac58b5c2b5';
 expTok=['G2LP1|policy=074d7edc981920537726314f781f24b41ac7224c18d594d6a1b15343084e5091|source=',expSrc, ...
  '|LP0=b4240d7ed9b534dbe188a35bac13587db45f8cd1a86a5c7a79c2e1dfa4a233f5|cases=H,stiff13,soft2,soft1|maxState=4'];
 if selftest

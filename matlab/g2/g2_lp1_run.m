@@ -11,9 +11,22 @@ assert(isscalar(ix),'G2LP1:HOLD_INPUT','Exactly H, stiff13, soft2, soft1 permitt
 O=struct('status','DRY_READY_NO_FEM','computed',0,'reused',0,'promoted',0,'caseId',c.id,'lastState',-1,'token',C.token,'states',{{}},'campaignComplete',false);
 if ~o.Run,return,end
 % A self-generated token and LP0 geometry pass cannot authorize FEM.
-g2_lp1_scientific_gate(C);
+goRec=g2_lp1_scientific_gate(C);
 assert(strcmp(o.AuthToken,C.token),'G2LP1:HOLD_SOURCE','Token does not bind policy, source, geometry qualification and case caps.');
 rd=fullfile(C.repo,pol.runRoot,o.RunName);chain=fullfile(rd,c.id);
+% VG2 (Issue #62): one GO authorizes one named campaign. Decided by the pure validator
+% from read-only facts, BEFORE any run-root folder, ledger entry, mesh, state or solve.
+lroot=fullfile(C.repo,'outputs','g2_lp1_campaign_ledger',goRec.campaignId);
+Rs=readResume(C.here);
+Camp=g2_lp1_campaign_validate(goRec,o.RunName,goRec.goFileSHA256,C.token, ...
+ g2_lp1_campaign_ledger('snapshot',lroot),runFolderFacts(rd,C.token),Rs);
+O.campaignMode=Camp.mode;O.campaignId=goRec.campaignId;
+if strcmp(Camp.mode,'VERIFY_ONLY')
+ for z=0:o.MaxStateIndex
+  assert(isfile(fullfile(chain,sprintf('S%d',z),'STATE.mat')),'G2LP1:HOLD_CAMPAIGN_CLOSED', ...
+   'Campaign is closed: no new state may be computed.');
+ end
+end
 % H S0-S2 must be completed before any material-contrast case begins.
 if ~strcmp(c.id,'H')
  hf=fullfile(rd,'H','S2','STATE.mat');
@@ -34,6 +47,16 @@ if o.MaxStateIndex>2
   assert(sok&&strcmp(ss.caseId,ids{z})&&ss.stateIndex==2, ...
    'G2LP1:HOLD_RECORD_INTEGRITY','Missing or altered S2 state record.');
  end
+end
+if strcmp(Camp.mode,'OPEN_NEW')
+ g2_lp1_campaign_ledger('write',lroot,'RECEIPT','RECEIPT.mat',struct('campaignId',goRec.campaignId, ...
+  'runName',o.RunName,'goSHA256',goRec.goFileSHA256,'token',C.token, ...
+  'sourceCommit',C.preflight.sourceCommit,'openedUTC',utcNow()));
+end
+if ~isempty(Camp.consumeResume)
+ g2_lp1_campaign_ledger('write',lroot,'RESUME',['RESUME_',Camp.consumeResume(1:16),'.mat'], ...
+  struct('campaignId',goRec.campaignId,'holdRecordSHA256',Camp.consumeResume, ...
+  'resumeRecordSHA256',Rs.sha256,'consumedUTC',utcNow()));
 end
 if ~isfolder(rd),mkdir(rd);end
 rf=fullfile(rd,'RUN.mat');
@@ -82,7 +105,7 @@ for k=0:o.MaxStateIndex
    end
   else
    % VG1: integrity check, then the unchanged 5-GiB guard, then folder creation.
-   g2_lp1_admit_state(sd,freeRAM());
+   g2_lp1_admit_state(sd,freeRAM(),@()admitHook(lroot,Camp,goRec.campaignId,c.id,k));
    if k==0
     src=fullfile(C.repo,'outputs/g2_protected_mesh/run_20261118_165922_343_famA/GEOMETRY_ONLY_candidate.mat');
     D=load(src);[D,Ad]=g2_m2_state_adapter(D,'S0',P);assert(Ad.pass,'G2LP1:HOLD_OWNER_MASK','S0 adapter.');
@@ -135,7 +158,9 @@ for k=0:o.MaxStateIndex
   % state folder and without a chain-blocking HOLD.mat. The controller never retries;
   % a new invocation is a separate human action. Every other HOLD is unchanged.
   preAdmissionMemory=strcmp(ME.identifier,'G2LP1:HOLD_MEMORY')&&~isfolder(sd);
-  if ~preAdmissionMemory&&~isfolder(sd),mkdir(sd);end
+  % VG2: a campaign refusal raised before the state folder exists writes no state record.
+  campaignRefusal=startsWith(ME.identifier,'G2LP1:HOLD_CAMPAIGN_')&&~isfolder(sd);
+  if ~preAdmissionMemory&&~campaignRefusal&&~isfolder(sd),mkdir(sd);end
   stopCode='HOLD_RECORD_INTEGRITY';
   if startsWith(ME.identifier,'G2LP1:HOLD_'),stopCode=extractAfter(ME.identifier,'G2LP1:');end
   if ~clearance.pass&&startsWith(clearance.status,'HOLD_'),stopCode=clearance.status;end
@@ -144,12 +169,29 @@ for k=0:o.MaxStateIndex
    'geometryMetrics',clearance.metrics,'message',ME.message, ...
    'parentSHA256',parentHash,'physicalArrest',false);
   if preAdmissionMemory
-   g2_trajectory_record('write',fullfile(chain,sprintf('PREADMISSION_HOLD_MEMORY_S%d_%s.mat',k, ...
-    datestr(now,'yyyymmddTHHMMSSFFF'))),hold);
+   hstamp=datestr(now,'yyyymmddTHHMMSSFFF');
+   g2_trajectory_record('write',fullfile(chain,sprintf('PREADMISSION_HOLD_MEMORY_S%d_%s.mat',k,hstamp)),hold);
+   % VG2: the same refusal enters the campaign ledger; resumption needs a reviewed resume record.
+   g2_lp1_campaign_ledger('write',lroot,'HOLD',sprintf('HOLD_PREADMISSION_MEMORY_%s_S%d_%s.mat',c.id,k,hstamp), ...
+    struct('campaignId',goRec.campaignId,'caseId',c.id,'stateIndex',k,'hold',hold,'recordedUTC',utcNow()));
+  elseif campaignRefusal
+   % nothing is written for a campaign refusal
   else
    hf=fullfile(sd,'HOLD.mat');if ~isfile(hf),g2_trajectory_record('write',hf,hold);end
   end
   O.status='HOLD';O.hold=hold;fprintf(2,'G2_LP1_HOLD %s S%d %s: %s\n',c.id,k,ME.identifier,ME.message);return
+ end
+end
+% VG2: the campaign closes once all four S4 states exist; afterwards only zero-solve
+% verification calls are admitted (VERIFY_ONLY).
+if o.MaxStateIndex==4&&~strcmp(Camp.mode,'VERIFY_ONLY')&&~isfile(fullfile(lroot,'CLOSED.mat'))
+ s4=cellfun(@(id)fullfile(rd,id,'S4','STATE.mat'),ids,'UniformOutput',false);
+ if all(cellfun(@isfile,s4))
+  sh=cell(1,4);
+  for z=1:4,[~,sh{z},okz]=g2_trajectory_record('read',s4{z});assert(okz,'G2LP1:HOLD_RECORD_INTEGRITY','S4 record failed verification.');end
+  g2_lp1_campaign_ledger('write',lroot,'CLOSED','CLOSED.mat',struct('campaignId',goRec.campaignId, ...
+   'runName',o.RunName,'cases',{ids},'stateSHA256',{lower(sh)},'closedUTC',utcNow()));
+  O.campaignClosed=true;
  end
 end
 % Only a separate four-case campaign audit can issue REVIEW_STOP_LP1.
@@ -157,6 +199,29 @@ O.status='CASE_S4_COMPLETE_AWAIT_CAMPAIGN_REVIEW';
 if o.MaxStateIndex<4,O.status='BOUNDED_PREFIX_COMPLETE';end
 end
 
+function admitHook(lroot,Camp,cid,caseId,k)
+% VG2: runs after the integrity and memory checks and before mkdir of the state folder.
+assert(~strcmp(Camp.mode,'VERIFY_ONLY'),'G2LP1:HOLD_CAMPAIGN_CLOSED','Campaign is closed: no new state may be computed.');
+name=sprintf('ADMIT_%s_S%d.mat',caseId,k);
+assert(~isfile(fullfile(lroot,name)),'G2LP1:HOLD_CAMPAIGN_INTEGRITY','Admitted state folder is missing; review required.');
+g2_lp1_campaign_ledger('write',lroot,'ADMIT',name,struct('campaignId',cid,'stateKey',sprintf('%s_S%d',caseId,k), ...
+ 'caseId',caseId,'stateIndex',k,'admittedUTC',utcNow()));
+end
+function F=runFolderFacts(rd,token)
+F=struct('exists',isfolder(rd),'hasRunRecord',isfile(fullfile(rd,'RUN.mat')),'runTokenMatches',false);
+if F.hasRunRecord,[r,~,ok]=g2_trajectory_record('read',fullfile(rd,'RUN.mat'));F.runTokenMatches=ok&&strcmp(r.token,token);end
+end
+function Rs=readResume(here)
+% Hard-coded reviewed-resumption record; absent in normal operation.
+p=fullfile(here,'G2_LP1_CAMPAIGN_RESUME_v1.json');Rs=[];if ~isfile(p),return,end
+fid=fopen(p,'r');raw=fread(fid,inf,'*uint8');fclose(fid);
+md=java.security.MessageDigest.getInstance('SHA-256');md.update(raw);
+Rs=struct('record',jsondecode(native2unicode(raw.','UTF-8')), ...
+ 'sha256',lower(reshape(dec2hex(typecast(md.digest(),'uint8'),2).',1,[])));
+end
+function s=utcNow()
+s=char(datetime('now','TimeZone','UTC','Format','yyyy-MM-dd''T''HH:mm:ss.SSS''Z'''));
+end
 function resource()
 assert(freeRAM()>=5,'G2LP1:HOLD_MEMORY','Less than 5 GiB free physical RAM; no automatic retry.');
 end

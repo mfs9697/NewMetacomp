@@ -144,21 +144,137 @@ lines={'legacy-lock X','g2_lp1_run.m 0123'};d0=g2_lp1_digest(strjoin(lines,newli
 lines2=lines;lines2{2}(end)='4';
 ok('source_digest_detects_one_byte_drift','positive',@()~strcmp(d0,g2_lp1_digest(strjoin(lines2,newline))));
 
+% ---------------------------------------------------------------- VG2: GO campaign fields (pure validator)
+mScope='Campaign scope, run name or campaign ID is invalid';
+expect('go_missing_campaign_id','go',@()g2_lp1_go_validate(rmfield(G0,'campaignId'),Cs,L0),UN,mInc);
+expect('go_missing_run_name','go',@()g2_lp1_go_validate(rmfield(G0,'approvedRunName'),Cs,L0),UN,mInc);
+g=G0;g.campaignScope='LP2_FULL_PATH';expect('go_wrong_campaign_scope','go',@()g2_lp1_go_validate(g,Cs,L0),UN,mScope);
+g=G0;g.approvedRunName='run_20261122_lp1_v1';expect('go_historical_run_name','go',@()g2_lp1_go_validate(g,Cs,L0),UN,mScope);
+g=G0;g.approvedRunName='run_../x';expect('go_run_name_syntax','go',@()g2_lp1_go_validate(g,Cs,L0),UN,mScope);
+g=G0;g.campaignId='a';expect('go_campaign_id_syntax','go',@()g2_lp1_go_validate(g,Cs,L0),UN,mScope);
+
+% ---------------------------------------------------------------- VG2: campaign decision (pure, in-memory facts)
+CS='G2LP1:HOLD_CAMPAIGN_SCOPE';CI='G2LP1:HOLD_CAMPAIGN_INTEGRITY';CR='G2LP1:HOLD_CAMPAIGN_REVIEW_REQUIRED';
+Gc=G0;goSha=repmat('9',1,64);tok=Cs.token;rn=Gc.approvedRunName;
+L_=struct('integrityOK',true,'receipt',[],'admits',{{}},'holds',struct('file',{},'sha256',{},'caseId',{},'stateIndex',{}), ...
+ 'resumes',{{}},'closed',false);
+F0=struct('exists',false,'hasRunRecord',false,'runTokenMatches',false);
+F1=struct('exists',true,'hasRunRecord',true,'runTokenMatches',true);
+rcp=struct('campaignId',Gc.campaignId,'runName',rn,'goSHA256',goSha,'token',tok);
+Lr=L_;Lr.receipt=rcp;Lr.admits={'H_S0','H_S1'};
+hs=repmat('7',1,64);Lh=Lr;Lh.holds=struct('file','HOLD_x.mat','sha256',hs,'caseId','H','stateIndex',2);
+R1=struct('record',struct('decision','RESUME_AFTER_PREADMISSION_MEMORY_HOLD','campaignId',Gc.campaignId, ...
+ 'holdRecordSHA256',hs,'scientificReviewer','SYNTHETIC_TEST_REVIEW','reviewURL','https://github.com/mfs9697/NewMetacomp/issues/62'),'sha256',repmat('6',1,64));
+cv=@(G,r,s,k,L,F,R)g2_lp1_campaign_validate(G,r,s,k,L,F,R);
+ok('camp_open_new_positive','campaign',@()modeIs(cv(Gc,rn,goSha,tok,L_,F0,[]),'OPEN_NEW'));
+expect('camp_wrong_run_name','campaign',@()cv(Gc,'run_other_campaign',goSha,tok,L_,F0,[]),CS,'not the run approved');
+expect('camp_missing_run_name','campaign',@()cv(Gc,'',goSha,tok,L_,F0,[]),CS,'not the run approved');
+expect('camp_historical_run_name','campaign',@()cv(Gc,'run_20261122_lp1_v1',goSha,tok,Lr,F1,[]),CS,'not the run approved');
+expect('camp_duplicate_campaign_new_run','campaign',@()cv(Gc,'run_second_campaign',goSha,tok,Lr,F1,[]),CS,'not the run approved');
+Lb=L_;Lb.integrityOK=false;expect('camp_ledger_integrity_fail','campaign',@()cv(Gc,rn,goSha,tok,Lb,F0,[]),CI,'ledger record failed');
+expect('camp_run_folder_without_receipt','campaign',@()cv(Gc,rn,goSha,tok,L_,F1,[]),CI,'Run folder exists without');
+Le=L_;Le.admits={'H_S0'};expect('camp_entries_without_receipt','campaign',@()cv(Gc,rn,goSha,tok,Le,F0,[]),CI,'Ledger entries exist without');
+Le=L_;Le.closed=true;expect('camp_closure_without_receipt','campaign',@()cv(Gc,rn,goSha,tok,Le,F0,[]),CI,'Ledger entries exist without');
+ok('camp_continue_positive','campaign',@()modeIs(cv(Gc,rn,goSha,tok,Lr,F1,[]),'CONTINUE'));
+ok('camp_repeated_staged_calls_continue','campaign',@()stagedContinue(cv,Gc,rn,goSha,tok,Lr,F1));
+x=Lr;x.receipt.goSHA256=repmat('8',1,64);expect('camp_receipt_other_go','campaign',@()cv(Gc,rn,goSha,tok,x,F1,[]),CI,'does not bind');
+x=Lr;x.receipt.campaignId='OTHER-CAMPAIGN';expect('camp_receipt_other_campaign','campaign',@()cv(Gc,rn,goSha,tok,x,F1,[]),CI,'does not bind');
+x=Lr;x.receipt.runName='run_other_campaign';expect('camp_receipt_other_run','campaign',@()cv(Gc,rn,goSha,tok,x,F1,[]),CI,'does not bind');
+x=Lr;x.receipt.token=[tok,'|x'];expect('camp_receipt_other_token','campaign',@()cv(Gc,rn,goSha,tok,x,F1,[]),CI,'does not bind');
+x=Lr;x.receipt=rmfield(x.receipt,'goSHA256');expect('camp_receipt_spoofed_fields','campaign',@()cv(Gc,rn,goSha,tok,x,F1,[]),CI,'does not bind');
+x=Lr;x.admits={};ok('camp_interrupted_opening_continue','campaign',@()modeIs(cv(Gc,rn,goSha,tok,x,F0,[]),'CONTINUE'));
+expect('camp_deleted_run_folder','campaign',@()cv(Gc,rn,goSha,tok,Lr,F0,[]),CI,'Admitted states are missing');
+F2=F1;F2.runTokenMatches=false;expect('camp_run_token_mismatch','campaign',@()cv(Gc,rn,goSha,tok,Lr,F2,[]),CI,'Run record token differs');
+x=Lr;x.closed=true;ok('camp_closed_verify_only','campaign',@()modeIs(cv(Gc,rn,goSha,tok,x,F1,[]),'VERIFY_ONLY'));
+x=Lh;x.closed=true;ok('camp_closed_overrides_resume','campaign',@()modeIs(cv(Gc,rn,goSha,tok,x,F1,R1),'VERIFY_ONLY'));
+expect('camp_hold_without_review','campaign',@()cv(Gc,rn,goSha,tok,Lh,F1,[]),CR,'Unreviewed pre-admission');
+ok('camp_hold_reviewed_resume_positive','campaign',@()resumeOK(cv(Gc,rn,goSha,tok,Lh,F1,R1),hs));
+mRes='does not bind this campaign and HOLD';
+x=R1;x.record.holdRecordSHA256=repmat('5',1,64);expect('camp_resume_wrong_hold','campaign',@()cv(Gc,rn,goSha,tok,Lh,F1,x),CR,mRes);
+x=R1;x.record.campaignId='OTHER-CAMPAIGN';expect('camp_resume_wrong_campaign','campaign',@()cv(Gc,rn,goSha,tok,Lh,F1,x),CR,mRes);
+x=R1;x.record.decision='GO_LP1_PHYSICAL';expect('camp_resume_wrong_decision','campaign',@()cv(Gc,rn,goSha,tok,Lh,F1,x),CR,mRes);
+x=R1;x.record.reviewURL='https://example.org/r';expect('camp_resume_foreign_url','campaign',@()cv(Gc,rn,goSha,tok,Lh,F1,x),CR,mRes);
+x=R1;x.record.scientificReviewer=' ';expect('camp_resume_empty_reviewer','campaign',@()cv(Gc,rn,goSha,tok,Lh,F1,x),CR,mRes);
+x=Lh;x.resumes={hs};x.holds(2)=struct('file','HOLD_y.mat','sha256',repmat('4',1,64),'caseId','H','stateIndex',2);
+y=R1;y.record.holdRecordSHA256=repmat('4',1,64);
+expect('camp_resume_allowance_exhausted','campaign',@()cv(Gc,rn,goSha,tok,x,F1,y),CR,'allowance exhausted');
+x=Lh;x.holds(2)=struct('file','HOLD_y.mat','sha256',repmat('4',1,64),'caseId','H','stateIndex',2);
+expect('camp_two_unreviewed_holds','campaign',@()cv(Gc,rn,goSha,tok,x,F1,R1),CR,'More than one');
+x=Lh;x.resumes={hs};ok('camp_resolved_hold_continue_without_resume_file','campaign',@()modeIs(cv(Gc,rn,goSha,tok,x,F1,[]),'CONTINUE'));
+
+% ---------------------------------------------------------------- VG2: immutable campaign ledger (temporary folder)
+lr=fullfile(folder,'ledger_test');
+ok('ledger_absent_snapshot','ledger',@()emptyLedger(g2_lp1_campaign_ledger('snapshot',lr)));
+cid=Gc.campaignId;
+g2_lp1_campaign_ledger('write',lr,'RECEIPT','RECEIPT.mat',struct('campaignId',cid,'runName',rn,'goSHA256',goSha,'token',tok));
+g2_lp1_campaign_ledger('write',lr,'ADMIT','ADMIT_H_S0.mat',struct('campaignId',cid,'stateKey','H_S0','caseId','H','stateIndex',0));
+hsh=g2_lp1_campaign_ledger('write',lr,'HOLD','HOLD_PREADMISSION_MEMORY_H_S1_X.mat',struct('campaignId',cid,'caseId','H','stateIndex',1));
+g2_lp1_campaign_ledger('write',lr,'RESUME',['RESUME_',hsh(1:16),'.mat'],struct('campaignId',cid,'holdRecordSHA256',hsh));
+Ls=g2_lp1_campaign_ledger('snapshot',lr);
+ok('ledger_roundtrip_positive','ledger',@()Ls.integrityOK&&strcmp(Ls.receipt.runName,rn)&&isequal(Ls.admits,{'H_S0'})&& ...
+ strcmp(Ls.holds(1).sha256,hsh)&&isequal(Ls.resumes,{hsh})&&~Ls.closed);
+expect('ledger_duplicate_receipt_refused','ledger',@()g2_lp1_campaign_ledger('write',lr,'RECEIPT','RECEIPT.mat',struct('campaignId',cid)), ...
+ 'G2Chain:RecordExists','overwrite');
+expect('ledger_duplicate_admit_refused','ledger',@()g2_lp1_campaign_ledger('write',lr,'ADMIT','ADMIT_H_S0.mat',struct('campaignId',cid,'stateKey','H_S0','stateIndex',0)), ...
+ 'G2Chain:RecordExists','overwrite');
+expect('ledger_invalid_entry_name','ledger',@()g2_lp1_campaign_ledger('write',lr,'ADMIT','RECEIPT.mat',struct('campaignId',cid)),CI,'Invalid ledger entry name');
+expect('ledger_path_traversal_name','ledger',@()g2_lp1_campaign_ledger('write',lr,'ADMIT',['ADMIT_..',filesep,'x.mat'],struct('campaignId',cid)),CI,'Invalid ledger entry name');
+g2_lp1_campaign_ledger('write',lr,'CLOSED','CLOSED.mat',struct('campaignId',cid));
+ok('ledger_closed_positive','ledger',@()snapField(lr,'closed'));
+l2=fullfile(folder,'ledger_tamper');copyfile(lr,l2);
+fid=fopen(fullfile(l2,'ADMIT_H_S0.mat'),'a');fwrite(fid,uint8(1));fclose(fid);
+ok('ledger_tampered_entry_detected','ledger',@()~snapField(l2,'integrityOK'));
+l3=fullfile(folder,'ledger_unexpected');copyfile(lr,l3);fid=fopen(fullfile(l3,'notes.txt'),'w');fwrite(fid,'x');fclose(fid);
+ok('ledger_unexpected_file_detected','ledger',@()~snapField(l3,'integrityOK'));
+l4=fullfile(folder,'ledger_foreign');copyfile(lr,l4);
+g2_lp1_campaign_ledger('write',l4,'ADMIT','ADMIT_H_S1.mat',struct('campaignId','OTHER-CAMPAIGN','stateKey','H_S1','stateIndex',1));
+ok('ledger_foreign_entry_detected','ledger',@()~snapField(l4,'integrityOK'));
+l5=fullfile(folder,'ledger_kind');copyfile(lr,l5);
+g2_trajectory_record('write',fullfile(l5,'HOLD_SPOOF.mat'),struct('schema','x','ledgerKind','ADMIT','campaignId',cid,'stateKey','H_S2','stateIndex',2));
+ok('ledger_kind_spoof_detected','ledger',@()~snapField(l5,'integrityOK'));
+l6=fullfile(folder,'ledger_orphan');copyfile(lr,l6);delete(fullfile(l6,'CLOSED.mat'));
+ok('ledger_orphan_manifest_detected','ledger',@()~snapField(l6,'integrityOK'));
+
+% ---------------------------------------------------------------- VG2: admission hook order
+hk=fullfile(folder,'hook');mkdir(hk);hookCalls=0;
+expect('admit_hook_not_called_on_low_memory','admission',@()g2_lp1_admit_state(fullfile(hk,'S1'),4.9,@()countHook()),MEM,'5 GiB');
+ok('admit_hook_low_memory_no_call_no_folder','admission',@()hookCalls==0&&~isfolder(fullfile(hk,'S1')));
+expect('admit_hook_refusal_leaves_no_folder','admission',@()g2_lp1_admit_state(fullfile(hk,'S2'),64,@()closedHook()), ...
+ 'G2LP1:HOLD_CAMPAIGN_CLOSED','Campaign is closed');
+ok('admit_hook_refusal_no_folder','admission',@()~isfolder(fullfile(hk,'S2')));
+ok('admit_hook_positive_then_folder','admission',@()hookThenFolder(fullfile(hk,'S3')));
+
+% ---------------------------------------------------------------- VG2: controller wiring (static) and interface
+ok('controller_campaign_decided_before_writes','interface',@()campaignBeforeWrites(rs));
+ok('controller_receipt_only_on_open_new','interface',@()contains(rs,sprintf('if strcmp(Camp.mode,''OPEN_NEW'')\n g2_lp1_campaign_ledger(''write'',lroot,''RECEIPT'',''RECEIPT.mat''')));
+ok('controller_admission_uses_campaign_hook','interface',@()contains(rs,'g2_lp1_admit_state(sd,freeRAM(),@()admitHook(lroot,Camp,goRec.campaignId,c.id,k));'));
+ok('controller_verify_only_checked_before_loop','interface',@()verifyBeforeLoop(rs));
+ok('controller_campaign_refusal_writes_no_state','interface',@()contains(rs,'if ~preAdmissionMemory&&~campaignRefusal&&~isfolder(sd),mkdir(sd);end'));
+ok('gate_returns_validated_go_sha','interface',@()contains(gs,'G.goFileSHA256=goSHA;'));
+ok('campaign_validator_opens_no_file','interface',@()~any(contains(fileread(fullfile(here,'g2_lp1_campaign_validate.m')), ...
+ {'fileread(','fopen(','load(','isfile(','dir(','mkdir('})));
+ok('resume_path_hardcoded','interface',@()contains(rs,'p=fullfile(here,''G2_LP1_CAMPAIGN_RESUME_v1.json'');'));
+expect('controller_rejects_resume_path_argument','negative',@()g2_lp1_run('ResumeFile','x.json'),'MATLAB:InputParser:UnmatchedParameter','');
+expect('controller_rejects_campaign_argument','negative',@()g2_lp1_run('CampaignId','X'),'MATLAB:InputParser:UnmatchedParameter','');
+
 % ---------------------------------------------------------------- summary
 kinds={rows.kind};pass=[rows.pass];
 neg=strcmp(kinds,'negative');rec=strcmp(kinds,'record');gok=strcmp(kinds,'go');adk=strcmp(kinds,'admission');itf=strcmp(kinds,'interface');
+cmp=strcmp(kinds,'campaign');led=strcmp(kinds,'ledger');
 T=struct('pass',all(pass),'tests',rows,'passed',nnz(pass),'total',numel(rows), ...
  'physicalSolves',0,'meshBuilds',0, ...
  'negativeTestsPassed',nnz(neg)>=19&&all(pass(neg)), ...
  'recordIntegrityPassed',nnz(rec)>=8&&all(pass(rec)), ...
- 'goFixturesPassed',nnz(gok)>=24&&all(pass(gok)), ...
- 'admissionPassed',nnz(adk)>=9&&all(pass(adk)), ...
- 'interfacePassed',nnz(itf)>=4&&all(pass(itf)), ...
+ 'goFixturesPassed',nnz(gok)>=30&&all(pass(gok)), ...
+ 'admissionPassed',nnz(adk)>=14&&all(pass(adk)), ...
+ 'interfacePassed',nnz(itf)>=12&&all(pass(itf)), ...
+ 'campaignPassed',nnz(cmp)>=30&&all(pass(cmp)),'ledgerPassed',nnz(led)>=12&&all(pass(led)), ...
  'exactIdentifierNegatives',true,'testFolder',strrep(folder,repo,'<repo>'), ...
- 'schema','NewMetacomp.G2.LP1.ContractTests.v2');
-T.pass=T.pass&&T.negativeTestsPassed&&T.recordIntegrityPassed&&T.goFixturesPassed&&T.admissionPassed&&T.interfacePassed;
-fprintf('G2_LP1_CONTRACT_TESTS=%d/%d NEG=%d REC=%d GO=%d ADM=%d IFC=%d\n',T.passed,T.total, ...
- nnz(neg),nnz(rec),nnz(gok),nnz(adk),nnz(itf));
+ 'schema','NewMetacomp.G2.LP1.ContractTests.v3');
+T.pass=T.pass&&T.negativeTestsPassed&&T.recordIntegrityPassed&&T.goFixturesPassed&&T.admissionPassed&&T.interfacePassed&& ...
+ T.campaignPassed&&T.ledgerPassed;
+fprintf('G2_LP1_CONTRACT_TESTS=%d/%d NEG=%d REC=%d GO=%d ADM=%d IFC=%d CAMP=%d LEDGER=%d\n',T.passed,T.total, ...
+ nnz(neg),nnz(rec),nnz(gok),nnz(adk),nnz(itf),nnz(cmp),nnz(led));
 if assertPass,assert(T.pass,'G2LP1:ContractTests','A contract test failed.');end
 
  function expect(name,kind,fn,id,frag)
@@ -191,9 +307,12 @@ if assertPass,assert(T.pass,'G2LP1:ContractTests','A contract test failed.');end
    'approvedPolicySHA256',Cs.policySHA256,'approvedSourceSHA256',Cs.sourceSHA256, ...
    'approvedLP0SHA256',Cs.policy.lp0Evidence.sha256,'approvedToken',Cs.token, ...
    'contractEvidenceFile','matlab/g2/evidence/lp1_preflight/SYNTHETIC_FIXTURE.json', ...
-   'contractEvidenceSHA256',g2_lp1_digest(txt));
+   'contractEvidenceSHA256',g2_lp1_digest(txt), ...
+   'approvedRunName','run_synthetic_test_campaign','campaignId','SYNTHETIC-TEST-CAMPAIGN', ...
+   'campaignScope','A0_LP1_S0_S4_REPRODUCTION');
   L=@(p)loadFixture(p,G.contractEvidenceFile,txt);
  end
+ function countHook(),hookCalls=hookCalls+1;end
 end
 
 function E=loadFixture(p,name,txt)
@@ -211,4 +330,31 @@ function y=gateBeforeMkdir(src)
 iRun=strfind(src,'if ~o.Run,return,end');iGate=strfind(src,'g2_lp1_scientific_gate(C);');
 iMk=strfind(src,'mkdir(');iW=strfind(src,'g2_trajectory_record(''write''');
 y=isscalar(iRun)&&isscalar(iGate)&&iRun<iGate&&all(iMk>iGate)&&all(iW>iGate);
+end
+function y=modeIs(D,m),y=strcmp(D.mode,m);end
+function y=resumeOK(D,hs),y=strcmp(D.mode,'CONTINUE')&&strcmp(D.consumeResume,hs);end
+function y=emptyLedger(L),y=L.integrityOK&&isempty(L.receipt)&&isempty(L.admits)&&isempty(L.holds)&&~L.closed;end
+function y=snapField(root,f),L=g2_lp1_campaign_ledger('snapshot',root);y=L.(f);end
+function closedHook(),error('G2LP1:HOLD_CAMPAIGN_CLOSED','Campaign is closed: no new state may be computed.');end
+function y=stagedContinue(cv,Gc,rn,goSha,tok,Lr,F1)
+% Repeated staged calls of the same campaign (H prefix, candidate prefixes, S3/S4) keep CONTINUE.
+sets={{'H_S0'},{'H_S0','H_S1','H_S2'},{'H_S0','H_S1','H_S2','stiff13_S0','soft2_S2','soft1_S2'}};y=true;
+for i=1:numel(sets),L=Lr;L.admits=sets{i};y=y&&strcmp(cv(Gc,rn,goSha,tok,L,F1,[]).mode,'CONTINUE');end
+end
+function y=hookThenFolder(sd)
+% The hook is called before the folder exists, and the folder exists afterwards.
+seen=struct('folderBefore',true);
+g2_lp1_admit_state(sd,64,@()noteFolder());
+y=~seen.folderBefore&&isfolder(sd);
+ function noteFolder(),seen.folderBefore=isfolder(sd);end
+end
+function y=campaignBeforeWrites(src)
+% The campaign decision follows the gate and precedes every mkdir, ledger write and record write.
+iG=strfind(src,'goRec=g2_lp1_scientific_gate(C);');iC=strfind(src,'Camp=g2_lp1_campaign_validate(');
+iMk=strfind(src,'mkdir(');iLw=strfind(src,'g2_lp1_campaign_ledger(''write''');iW=strfind(src,'g2_trajectory_record(''write''');
+y=isscalar(iG)&&isscalar(iC)&&iG<iC&&all(iMk>iC)&&all(iLw>iC)&&all(iW>iC);
+end
+function y=verifyBeforeLoop(src)
+iV=strfind(src,'if strcmp(Camp.mode,''VERIFY_ONLY'')');iL=strfind(src,'for k=0:o.MaxStateIndex');iR=strfind(src,'if ~isfolder(rd),mkdir(rd);end');
+y=isscalar(iV)&&isscalar(iL)&&isscalar(iR)&&iV<iR&&iR<iL;
 end

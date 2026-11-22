@@ -1,0 +1,24 @@
+{
+ "schema": "NewMetacomp.G2.LP1.VG1.Sanitization.v1",
+ "source": "stF",
+ "files": [
+  {
+   "file": "A0_COMPARATOR_SELFTEST_VG2.json",
+   "originalSHA256": "c03533274e18a86ab0d70fccd56d97a2d51dfba75c7b7856fda744ae9d86033b",
+   "sanitizedSHA256": "0930b4502d639b90e5965e5b08b017575cf554333b83319ff1bd3f3d194b6d66",
+   "copied": true
+  },
+  {
+   "file": "selftest.m",
+   "originalSHA256": "876520fe7f95ef320d5a2fb29c60ab4c76fc48a248540d0eaa0481416d6bdbaf",
+   "sanitizedSHA256": "68761f48fa09379d06ea0ca056fe28877685d014ab71516042866556626739a3",
+   "copied": true
+  },
+  {
+   "file": "selftest2.log",
+   "originalSHA256": "8fc8755019e6fa5e123efe82943b754073e66a86ffbd2a13cc07949772b768c2",
+   "sanitizedSHA256": "e9a4fc355a8ee352567f93bc52c746f52095767db15614dab6b019b7e12b7d35",
+   "copied": true
+  }
+ ]
+}

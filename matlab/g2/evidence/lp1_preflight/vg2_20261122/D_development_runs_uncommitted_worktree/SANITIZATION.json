@@ -1,0 +1,30 @@
+{
+ "schema": "NewMetacomp.G2.LP1.VG1.Sanitization.v1",
+ "source": "stD",
+ "files": [
+  {
+   "file": "dev1.log",
+   "originalSHA256": "fb892dd53b0f26f21bb91d070ac02029722d7df67b090236d81f21326e1fbe9b",
+   "sanitizedSHA256": "1c82918f871700879be93feed82c3a3ca88c4fda0e0c3528ae7bdaee2ba6d31d",
+   "copied": true
+  },
+  {
+   "file": "dev1.m",
+   "originalSHA256": "cca794d446538223cc7ed50bfeed50a0f02b3579a9e6c82e726ac35eb6b8a601",
+   "sanitizedSHA256": "1222a21dc74b5d0804d8025f7a35597026d92b91629be13134a02fee84850212",
+   "copied": true
+  },
+  {
+   "file": "dev2.log",
+   "originalSHA256": "2388dbb8d96ec103d44f0852c0a03fb52bbb99712ea62871a2679d4d41d49932",
+   "sanitizedSHA256": "42adfc08ca27767483e6ce1d036fcc372a6730240056763a63cf07e28a926120",
+   "copied": true
+  },
+  {
+   "file": "dev2.m",
+   "originalSHA256": "a700a1e3aa2116ff25339f402c9d2c872facd4f4d4e0732d09cd1839b0ad79b8",
+   "sanitizedSHA256": "08e3b6447bc36ac94ae27be5da788a8e798a75c9f0d62664bcda3ea14edba394",
+   "copied": true
+  }
+ ]
+}

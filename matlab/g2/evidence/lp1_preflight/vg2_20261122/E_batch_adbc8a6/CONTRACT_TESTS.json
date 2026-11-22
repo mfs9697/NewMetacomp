@@ -1,0 +1,985 @@
+{
+  "pass": true,
+  "tests": [
+    {
+      "name": "positive_links",
+      "kind": "positive",
+      "expected": "true",
+      "observed": "true",
+      "pass": true
+    },
+    {
+      "name": "mutate_KI",
+      "kind": "negative",
+      "expected": "G2LP1:HOLD_RECORD_INTEGRITY | Signed K or solution",
+      "observed": "G2LP1:HOLD_RECORD_INTEGRITY",
+      "pass": true
+    },
+    {
+      "name": "mutate_KII",
+      "kind": "negative",
+      "expected": "G2LP1:HOLD_RECORD_INTEGRITY | Signed K or solution",
+      "observed": "G2LP1:HOLD_RECORD_INTEGRITY",
+      "pass": true
+    },
+    {
+      "name": "mutate_caseId",
+      "kind": "negative",
+      "expected": "G2LP1:HOLD_RECORD_INTEGRITY | Case, mask, ratio or index changed.",
+      "observed": "G2LP1:HOLD_RECORD_INTEGRITY",
+      "pass": true
+    },
+    {
+      "name": "mutate_mask",
+      "kind": "negative",
+      "expected": "G2LP1:HOLD_RECORD_INTEGRITY | Case, mask, ratio or index changed.",
+      "observed": "G2LP1:HOLD_RECORD_INTEGRITY",
+      "pass": true
+    },
+    {
+      "name": "mutate_ratio",
+      "kind": "negative",
+      "expected": "G2LP1:HOLD_RECORD_INTEGRITY | Case, mask, ratio or index changed.",
+      "observed": "G2LP1:HOLD_RECORD_INTEGRITY",
+      "pass": true
+    },
+    {
+      "name": "mutate_stateIndex",
+      "kind": "negative",
+      "expected": "G2LP1:HOLD_RECORD_INTEGRITY | Case, mask, ratio or index changed.",
+      "observed": "G2LP1:HOLD_RECORD_INTEGRITY",
+      "pass": true
+    },
+    {
+      "name": "mutate_policySHA256",
+      "kind": "negative",
+      "expected": "G2LP1:HOLD_SOURCE | Parent/source/policy link differs.",
+      "observed": "G2LP1:HOLD_SOURCE",
+      "pass": true
+    },
+    {
+      "name": "mutate_sourceSHA256",
+      "kind": "negative",
+      "expected": "G2LP1:HOLD_SOURCE | Parent/source/policy link differs.",
+      "observed": "G2LP1:HOLD_SOURCE",
+      "pass": true
+    },
+    {
+      "name": "mutate_parentSHA256",
+      "kind": "negative",
+      "expected": "G2LP1:HOLD_SOURCE | Parent/source/policy link differs.",
+      "observed": "G2LP1:HOLD_SOURCE",
+      "pass": true
+    },
+    {
+      "name": "mutate_polyline_mm",
+      "kind": "negative",
+      "expected": "G2LP1:HOLD_RECORD_INTEGRITY | Saved geometry differs",
+      "observed": "G2LP1:HOLD_RECORD_INTEGRITY",
+      "pass": true
+    },
+    {
+      "name": "mutate_meshSHA256",
+      "kind": "negative",
+      "expected": "G2LP1:HOLD_RECORD_INTEGRITY | Signed K or solution",
+      "observed": "G2LP1:HOLD_RECORD_INTEGRITY",
+      "pass": true
+    },
+    {
+      "name": "mutate_phaseSHA256",
+      "kind": "negative",
+      "expected": "G2LP1:HOLD_RECORD_INTEGRITY | Signed K or solution",
+      "observed": "G2LP1:HOLD_RECORD_INTEGRITY",
+      "pass": true
+    },
+    {
+      "name": "wrong_units",
+      "kind": "negative",
+      "expected": "G2LP1:HOLD_RECORD_INTEGRITY | Unit conversion changed.",
+      "observed": "G2LP1:HOLD_RECORD_INTEGRITY",
+      "pass": true
+    },
+    {
+      "name": "forged_pass_flag",
+      "kind": "negative",
+      "expected": "G2LP1:HOLD_RECORD_INTEGRITY | Signed K or solution",
+      "observed": "G2LP1:HOLD_RECORD_INTEGRITY",
+      "pass": true
+    },
+    {
+      "name": "solution_case_link",
+      "kind": "negative",
+      "expected": "G2LP1:HOLD_RECORD_INTEGRITY | Signed K or solution",
+      "observed": "G2LP1:HOLD_RECORD_INTEGRITY",
+      "pass": true
+    },
+    {
+      "name": "solution_source_drift",
+      "kind": "negative",
+      "expected": "G2LP1:HOLD_RECORD_INTEGRITY | Signed K or solution",
+      "observed": "G2LP1:HOLD_RECORD_INTEGRITY",
+      "pass": true
+    },
+    {
+      "name": "own_signed_MTS",
+      "kind": "positive",
+      "expected": "true",
+      "observed": "true",
+      "pass": true
+    },
+    {
+      "name": "signed_KII_changes_path",
+      "kind": "positive",
+      "expected": "true",
+      "observed": "true",
+      "pass": true
+    },
+    {
+      "name": "S5_forecast",
+      "kind": "negative",
+      "expected": "G2LP1:HOLD_UNAUTHORIZED_STATE | S5 and later",
+      "observed": "G2LP1:HOLD_UNAUTHORIZED_STATE",
+      "pass": true
+    },
+    {
+      "name": "S5_controller",
+      "kind": "negative",
+      "expected": "G2LP1:HOLD_UNAUTHORIZED_STATE | Only S0-S4",
+      "observed": "G2LP1:HOLD_UNAUTHORIZED_STATE",
+      "pass": true
+    },
+    {
+      "name": "negative_state_controller",
+      "kind": "negative",
+      "expected": "G2LP1:HOLD_UNAUTHORIZED_STATE | Only S0-S4",
+      "observed": "G2LP1:HOLD_UNAUTHORIZED_STATE",
+      "pass": true
+    },
+    {
+      "name": "fractional_state_controller",
+      "kind": "negative",
+      "expected": "G2LP1:HOLD_UNAUTHORIZED_STATE | Only S0-S4",
+      "observed": "G2LP1:HOLD_UNAUTHORIZED_STATE",
+      "pass": true
+    },
+    {
+      "name": "compressive_parent",
+      "kind": "negative",
+      "expected": "G2LP1:HOLD_K_EXTRACTION | Invalid tensile MTS root",
+      "observed": "G2LP1:HOLD_K_EXTRACTION",
+      "pass": true
+    },
+    {
+      "name": "nonfinite_parent",
+      "kind": "negative",
+      "expected": "G2LP1:HOLD_K_EXTRACTION | Invalid tensile MTS root",
+      "observed": "G2LP1:HOLD_K_EXTRACTION",
+      "pass": true
+    },
+    {
+      "name": "zero_K_parent",
+      "kind": "negative",
+      "expected": "G2LP1:HOLD_K_EXTRACTION | Invalid tensile MTS root",
+      "observed": "G2LP1:HOLD_K_EXTRACTION",
+      "pass": true
+    },
+    {
+      "name": "controller_rejects_go_path_argument",
+      "kind": "negative",
+      "expected": "MATLAB:InputParser:UnmatchedParameter",
+      "observed": "MATLAB:InputParser:UnmatchedParameter",
+      "pass": true
+    },
+    {
+      "name": "gate_takes_context_only",
+      "kind": "interface",
+      "expected": "true",
+      "observed": "true",
+      "pass": true
+    },
+    {
+      "name": "gate_go_path_hardcoded",
+      "kind": "interface",
+      "expected": "true",
+      "observed": "true",
+      "pass": true
+    },
+    {
+      "name": "controller_calls_gate_before_run_folder",
+      "kind": "interface",
+      "expected": "true",
+      "observed": "true",
+      "pass": true
+    },
+    {
+      "name": "validator_opens_no_file",
+      "kind": "interface",
+      "expected": "true",
+      "observed": "true",
+      "pass": true
+    },
+    {
+      "name": "go_absent_production_gate",
+      "kind": "go",
+      "expected": "G2LP1:HOLD_UNAUTHORIZED_STATE | no separate GO record",
+      "observed": "G2LP1:HOLD_UNAUTHORIZED_STATE",
+      "pass": true
+    },
+    {
+      "name": "go_absent_left_no_file",
+      "kind": "go",
+      "expected": "true",
+      "observed": "true",
+      "pass": true
+    },
+    {
+      "name": "go_fixture_positive_control",
+      "kind": "go",
+      "expected": "true",
+      "observed": "true",
+      "pass": true
+    },
+    {
+      "name": "go_not_struct",
+      "kind": "go",
+      "expected": "G2LP1:HOLD_UNAUTHORIZED_STATE | Incomplete scientific GO record",
+      "observed": "G2LP1:HOLD_UNAUTHORIZED_STATE",
+      "pass": true
+    },
+    {
+      "name": "go_missing_field",
+      "kind": "go",
+      "expected": "G2LP1:HOLD_UNAUTHORIZED_STATE | Incomplete scientific GO record",
+      "observed": "G2LP1:HOLD_UNAUTHORIZED_STATE",
+      "pass": true
+    },
+    {
+      "name": "go_wrong_decision",
+      "kind": "go",
+      "expected": "G2LP1:HOLD_UNAUTHORIZED_STATE | absent or invalid",
+      "observed": "G2LP1:HOLD_UNAUTHORIZED_STATE",
+      "pass": true
+    },
+    {
+      "name": "go_wrong_review_status",
+      "kind": "go",
+      "expected": "G2LP1:HOLD_UNAUTHORIZED_STATE | absent or invalid",
+      "observed": "G2LP1:HOLD_UNAUTHORIZED_STATE",
+      "pass": true
+    },
+    {
+      "name": "go_empty_reviewer",
+      "kind": "go",
+      "expected": "G2LP1:HOLD_UNAUTHORIZED_STATE | absent or invalid",
+      "observed": "G2LP1:HOLD_UNAUTHORIZED_STATE",
+      "pass": true
+    },
+    {
+      "name": "go_foreign_review_url",
+      "kind": "go",
+      "expected": "G2LP1:HOLD_UNAUTHORIZED_STATE | absent or invalid",
+      "observed": "G2LP1:HOLD_UNAUTHORIZED_STATE",
+      "pass": true
+    },
+    {
+      "name": "go_policy_mismatch",
+      "kind": "go",
+      "expected": "G2LP1:HOLD_SOURCE | does not bind",
+      "observed": "G2LP1:HOLD_SOURCE",
+      "pass": true
+    },
+    {
+      "name": "go_source_mismatch",
+      "kind": "go",
+      "expected": "G2LP1:HOLD_SOURCE | does not bind",
+      "observed": "G2LP1:HOLD_SOURCE",
+      "pass": true
+    },
+    {
+      "name": "go_lp0_mismatch",
+      "kind": "go",
+      "expected": "G2LP1:HOLD_SOURCE | does not bind",
+      "observed": "G2LP1:HOLD_SOURCE",
+      "pass": true
+    },
+    {
+      "name": "go_token_mismatch",
+      "kind": "go",
+      "expected": "G2LP1:HOLD_SOURCE | does not bind",
+      "observed": "G2LP1:HOLD_SOURCE",
+      "pass": true
+    },
+    {
+      "name": "go_contract_path_outside",
+      "kind": "go",
+      "expected": "G2LP1:HOLD_SOURCE | not pinned",
+      "observed": "G2LP1:HOLD_SOURCE",
+      "pass": true
+    },
+    {
+      "name": "go_contract_path_traversal",
+      "kind": "go",
+      "expected": "G2LP1:HOLD_SOURCE | not pinned",
+      "observed": "G2LP1:HOLD_SOURCE",
+      "pass": true
+    },
+    {
+      "name": "go_contract_missing",
+      "kind": "go",
+      "expected": "G2LP1:HOLD_SOURCE | absent or changed",
+      "observed": "G2LP1:HOLD_SOURCE",
+      "pass": true
+    },
+    {
+      "name": "go_contract_sha_mismatch",
+      "kind": "go",
+      "expected": "G2LP1:HOLD_SOURCE | absent or changed",
+      "observed": "G2LP1:HOLD_SOURCE",
+      "pass": true
+    },
+    {
+      "name": "go_contract_lacks_fields",
+      "kind": "go",
+      "expected": "G2LP1:HOLD_UNAUTHORIZED_STATE | lacks negative",
+      "observed": "G2LP1:HOLD_UNAUTHORIZED_STATE",
+      "pass": true
+    },
+    {
+      "name": "go_contract_not_pass",
+      "kind": "go",
+      "expected": "G2LP1:HOLD_UNAUTHORIZED_STATE | has not passed",
+      "observed": "G2LP1:HOLD_UNAUTHORIZED_STATE",
+      "pass": true
+    },
+    {
+      "name": "go_contract_incomplete_count",
+      "kind": "go",
+      "expected": "G2LP1:HOLD_UNAUTHORIZED_STATE | has not passed",
+      "observed": "G2LP1:HOLD_UNAUTHORIZED_STATE",
+      "pass": true
+    },
+    {
+      "name": "go_contract_too_few_tests",
+      "kind": "go",
+      "expected": "G2LP1:HOLD_UNAUTHORIZED_STATE | has not passed",
+      "observed": "G2LP1:HOLD_UNAUTHORIZED_STATE",
+      "pass": true
+    },
+    {
+      "name": "go_contract_physical_solve",
+      "kind": "go",
+      "expected": "G2LP1:HOLD_UNAUTHORIZED_STATE | has not passed",
+      "observed": "G2LP1:HOLD_UNAUTHORIZED_STATE",
+      "pass": true
+    },
+    {
+      "name": "go_contract_mesh_build",
+      "kind": "go",
+      "expected": "G2LP1:HOLD_UNAUTHORIZED_STATE | has not passed",
+      "observed": "G2LP1:HOLD_UNAUTHORIZED_STATE",
+      "pass": true
+    },
+    {
+      "name": "go_contract_negatives_false",
+      "kind": "go",
+      "expected": "G2LP1:HOLD_UNAUTHORIZED_STATE | has not passed",
+      "observed": "G2LP1:HOLD_UNAUTHORIZED_STATE",
+      "pass": true
+    },
+    {
+      "name": "go_contract_integrity_false",
+      "kind": "go",
+      "expected": "G2LP1:HOLD_UNAUTHORIZED_STATE | has not passed",
+      "observed": "G2LP1:HOLD_UNAUTHORIZED_STATE",
+      "pass": true
+    },
+    {
+      "name": "record_roundtrip",
+      "kind": "record",
+      "expected": "true",
+      "observed": "true",
+      "pass": true
+    },
+    {
+      "name": "overwrite_refused",
+      "kind": "record",
+      "expected": "G2Chain:RecordExists | overwrite",
+      "observed": "G2Chain:RecordExists",
+      "pass": true
+    },
+    {
+      "name": "byte_tamper",
+      "kind": "record",
+      "expected": "true",
+      "observed": "true",
+      "pass": true
+    },
+    {
+      "name": "manifest_tamper",
+      "kind": "record",
+      "expected": "true",
+      "observed": "true",
+      "pass": true
+    },
+    {
+      "name": "mat_without_manifest",
+      "kind": "record",
+      "expected": "true",
+      "observed": "true",
+      "pass": true
+    },
+    {
+      "name": "missing_record",
+      "kind": "record",
+      "expected": "true",
+      "observed": "true",
+      "pass": true
+    },
+    {
+      "name": "record_without_schema",
+      "kind": "record",
+      "expected": "G2Chain:RecordSchema | schema-tagged",
+      "observed": "G2Chain:RecordSchema",
+      "pass": true
+    },
+    {
+      "name": "record_missing_folder",
+      "kind": "record",
+      "expected": "G2Chain:RecordFolder | Parent record folder",
+      "observed": "G2Chain:RecordFolder",
+      "pass": true
+    },
+    {
+      "name": "admit_partial_state_refused",
+      "kind": "admission",
+      "expected": "G2LP1:HOLD_RECORD_INTEGRITY | Partial unreviewed state",
+      "observed": "G2LP1:HOLD_RECORD_INTEGRITY",
+      "pass": true
+    },
+    {
+      "name": "admit_partial_state_untouched",
+      "kind": "admission",
+      "expected": "true",
+      "observed": "true",
+      "pass": true
+    },
+    {
+      "name": "admit_low_memory_refused",
+      "kind": "admission",
+      "expected": "G2LP1:HOLD_MEMORY | 5 GiB",
+      "observed": "G2LP1:HOLD_MEMORY",
+      "pass": true
+    },
+    {
+      "name": "admit_low_memory_no_folder",
+      "kind": "admission",
+      "expected": "true",
+      "observed": "true",
+      "pass": true
+    },
+    {
+      "name": "admit_boundary_below_refused",
+      "kind": "admission",
+      "expected": "G2LP1:HOLD_MEMORY | 5 GiB",
+      "observed": "G2LP1:HOLD_MEMORY",
+      "pass": true
+    },
+    {
+      "name": "admit_nonfinite_memory_refused",
+      "kind": "admission",
+      "expected": "G2LP1:HOLD_MEMORY | 5 GiB",
+      "observed": "G2LP1:HOLD_MEMORY",
+      "pass": true
+    },
+    {
+      "name": "admit_nonfinite_no_folder",
+      "kind": "admission",
+      "expected": "true",
+      "observed": "true",
+      "pass": true
+    },
+    {
+      "name": "admit_at_threshold_creates_folder",
+      "kind": "admission",
+      "expected": "true",
+      "observed": "true",
+      "pass": true
+    },
+    {
+      "name": "admit_threshold_equals_policy",
+      "kind": "admission",
+      "expected": "true",
+      "observed": "true",
+      "pass": true
+    },
+    {
+      "name": "source_digest_detects_one_byte_drift",
+      "kind": "positive",
+      "expected": "true",
+      "observed": "true",
+      "pass": true
+    },
+    {
+      "name": "go_missing_campaign_id",
+      "kind": "go",
+      "expected": "G2LP1:HOLD_UNAUTHORIZED_STATE | Incomplete scientific GO record",
+      "observed": "G2LP1:HOLD_UNAUTHORIZED_STATE",
+      "pass": true
+    },
+    {
+      "name": "go_missing_run_name",
+      "kind": "go",
+      "expected": "G2LP1:HOLD_UNAUTHORIZED_STATE | Incomplete scientific GO record",
+      "observed": "G2LP1:HOLD_UNAUTHORIZED_STATE",
+      "pass": true
+    },
+    {
+      "name": "go_wrong_campaign_scope",
+      "kind": "go",
+      "expected": "G2LP1:HOLD_UNAUTHORIZED_STATE | Campaign scope, run name or campaign ID is invalid",
+      "observed": "G2LP1:HOLD_UNAUTHORIZED_STATE",
+      "pass": true
+    },
+    {
+      "name": "go_historical_run_name",
+      "kind": "go",
+      "expected": "G2LP1:HOLD_UNAUTHORIZED_STATE | Campaign scope, run name or campaign ID is invalid",
+      "observed": "G2LP1:HOLD_UNAUTHORIZED_STATE",
+      "pass": true
+    },
+    {
+      "name": "go_run_name_syntax",
+      "kind": "go",
+      "expected": "G2LP1:HOLD_UNAUTHORIZED_STATE | Campaign scope, run name or campaign ID is invalid",
+      "observed": "G2LP1:HOLD_UNAUTHORIZED_STATE",
+      "pass": true
+    },
+    {
+      "name": "go_campaign_id_syntax",
+      "kind": "go",
+      "expected": "G2LP1:HOLD_UNAUTHORIZED_STATE | Campaign scope, run name or campaign ID is invalid",
+      "observed": "G2LP1:HOLD_UNAUTHORIZED_STATE",
+      "pass": true
+    },
+    {
+      "name": "camp_open_new_positive",
+      "kind": "campaign",
+      "expected": "true",
+      "observed": "true",
+      "pass": true
+    },
+    {
+      "name": "camp_wrong_run_name",
+      "kind": "campaign",
+      "expected": "G2LP1:HOLD_CAMPAIGN_SCOPE | not the run approved",
+      "observed": "G2LP1:HOLD_CAMPAIGN_SCOPE",
+      "pass": true
+    },
+    {
+      "name": "camp_missing_run_name",
+      "kind": "campaign",
+      "expected": "G2LP1:HOLD_CAMPAIGN_SCOPE | not the run approved",
+      "observed": "G2LP1:HOLD_CAMPAIGN_SCOPE",
+      "pass": true
+    },
+    {
+      "name": "camp_historical_run_name",
+      "kind": "campaign",
+      "expected": "G2LP1:HOLD_CAMPAIGN_SCOPE | not the run approved",
+      "observed": "G2LP1:HOLD_CAMPAIGN_SCOPE",
+      "pass": true
+    },
+    {
+      "name": "camp_duplicate_campaign_new_run",
+      "kind": "campaign",
+      "expected": "G2LP1:HOLD_CAMPAIGN_SCOPE | not the run approved",
+      "observed": "G2LP1:HOLD_CAMPAIGN_SCOPE",
+      "pass": true
+    },
+    {
+      "name": "camp_ledger_integrity_fail",
+      "kind": "campaign",
+      "expected": "G2LP1:HOLD_CAMPAIGN_INTEGRITY | ledger record failed",
+      "observed": "G2LP1:HOLD_CAMPAIGN_INTEGRITY",
+      "pass": true
+    },
+    {
+      "name": "camp_run_folder_without_receipt",
+      "kind": "campaign",
+      "expected": "G2LP1:HOLD_CAMPAIGN_INTEGRITY | Run folder exists without",
+      "observed": "G2LP1:HOLD_CAMPAIGN_INTEGRITY",
+      "pass": true
+    },
+    {
+      "name": "camp_entries_without_receipt",
+      "kind": "campaign",
+      "expected": "G2LP1:HOLD_CAMPAIGN_INTEGRITY | Ledger entries exist without",
+      "observed": "G2LP1:HOLD_CAMPAIGN_INTEGRITY",
+      "pass": true
+    },
+    {
+      "name": "camp_closure_without_receipt",
+      "kind": "campaign",
+      "expected": "G2LP1:HOLD_CAMPAIGN_INTEGRITY | Ledger entries exist without",
+      "observed": "G2LP1:HOLD_CAMPAIGN_INTEGRITY",
+      "pass": true
+    },
+    {
+      "name": "camp_continue_positive",
+      "kind": "campaign",
+      "expected": "true",
+      "observed": "true",
+      "pass": true
+    },
+    {
+      "name": "camp_repeated_staged_calls_continue",
+      "kind": "campaign",
+      "expected": "true",
+      "observed": "true",
+      "pass": true
+    },
+    {
+      "name": "camp_receipt_other_go",
+      "kind": "campaign",
+      "expected": "G2LP1:HOLD_CAMPAIGN_INTEGRITY | does not bind",
+      "observed": "G2LP1:HOLD_CAMPAIGN_INTEGRITY",
+      "pass": true
+    },
+    {
+      "name": "camp_receipt_other_campaign",
+      "kind": "campaign",
+      "expected": "G2LP1:HOLD_CAMPAIGN_INTEGRITY | does not bind",
+      "observed": "G2LP1:HOLD_CAMPAIGN_INTEGRITY",
+      "pass": true
+    },
+    {
+      "name": "camp_receipt_other_run",
+      "kind": "campaign",
+      "expected": "G2LP1:HOLD_CAMPAIGN_INTEGRITY | does not bind",
+      "observed": "G2LP1:HOLD_CAMPAIGN_INTEGRITY",
+      "pass": true
+    },
+    {
+      "name": "camp_receipt_other_token",
+      "kind": "campaign",
+      "expected": "G2LP1:HOLD_CAMPAIGN_INTEGRITY | does not bind",
+      "observed": "G2LP1:HOLD_CAMPAIGN_INTEGRITY",
+      "pass": true
+    },
+    {
+      "name": "camp_receipt_spoofed_fields",
+      "kind": "campaign",
+      "expected": "G2LP1:HOLD_CAMPAIGN_INTEGRITY | does not bind",
+      "observed": "G2LP1:HOLD_CAMPAIGN_INTEGRITY",
+      "pass": true
+    },
+    {
+      "name": "camp_interrupted_opening_continue",
+      "kind": "campaign",
+      "expected": "true",
+      "observed": "true",
+      "pass": true
+    },
+    {
+      "name": "camp_deleted_run_folder",
+      "kind": "campaign",
+      "expected": "G2LP1:HOLD_CAMPAIGN_INTEGRITY | Admitted states are missing",
+      "observed": "G2LP1:HOLD_CAMPAIGN_INTEGRITY",
+      "pass": true
+    },
+    {
+      "name": "camp_run_token_mismatch",
+      "kind": "campaign",
+      "expected": "G2LP1:HOLD_CAMPAIGN_INTEGRITY | Run record token differs",
+      "observed": "G2LP1:HOLD_CAMPAIGN_INTEGRITY",
+      "pass": true
+    },
+    {
+      "name": "camp_closed_verify_only",
+      "kind": "campaign",
+      "expected": "true",
+      "observed": "true",
+      "pass": true
+    },
+    {
+      "name": "camp_closed_overrides_resume",
+      "kind": "campaign",
+      "expected": "true",
+      "observed": "true",
+      "pass": true
+    },
+    {
+      "name": "camp_hold_without_review",
+      "kind": "campaign",
+      "expected": "G2LP1:HOLD_CAMPAIGN_REVIEW_REQUIRED | Unreviewed pre-admission",
+      "observed": "G2LP1:HOLD_CAMPAIGN_REVIEW_REQUIRED",
+      "pass": true
+    },
+    {
+      "name": "camp_hold_reviewed_resume_positive",
+      "kind": "campaign",
+      "expected": "true",
+      "observed": "true",
+      "pass": true
+    },
+    {
+      "name": "camp_resume_wrong_hold",
+      "kind": "campaign",
+      "expected": "G2LP1:HOLD_CAMPAIGN_REVIEW_REQUIRED | does not bind this campaign and HOLD",
+      "observed": "G2LP1:HOLD_CAMPAIGN_REVIEW_REQUIRED",
+      "pass": true
+    },
+    {
+      "name": "camp_resume_wrong_campaign",
+      "kind": "campaign",
+      "expected": "G2LP1:HOLD_CAMPAIGN_REVIEW_REQUIRED | does not bind this campaign and HOLD",
+      "observed": "G2LP1:HOLD_CAMPAIGN_REVIEW_REQUIRED",
+      "pass": true
+    },
+    {
+      "name": "camp_resume_wrong_decision",
+      "kind": "campaign",
+      "expected": "G2LP1:HOLD_CAMPAIGN_REVIEW_REQUIRED | does not bind this campaign and HOLD",
+      "observed": "G2LP1:HOLD_CAMPAIGN_REVIEW_REQUIRED",
+      "pass": true
+    },
+    {
+      "name": "camp_resume_foreign_url",
+      "kind": "campaign",
+      "expected": "G2LP1:HOLD_CAMPAIGN_REVIEW_REQUIRED | does not bind this campaign and HOLD",
+      "observed": "G2LP1:HOLD_CAMPAIGN_REVIEW_REQUIRED",
+      "pass": true
+    },
+    {
+      "name": "camp_resume_empty_reviewer",
+      "kind": "campaign",
+      "expected": "G2LP1:HOLD_CAMPAIGN_REVIEW_REQUIRED | does not bind this campaign and HOLD",
+      "observed": "G2LP1:HOLD_CAMPAIGN_REVIEW_REQUIRED",
+      "pass": true
+    },
+    {
+      "name": "camp_resume_allowance_exhausted",
+      "kind": "campaign",
+      "expected": "G2LP1:HOLD_CAMPAIGN_REVIEW_REQUIRED | allowance exhausted",
+      "observed": "G2LP1:HOLD_CAMPAIGN_REVIEW_REQUIRED",
+      "pass": true
+    },
+    {
+      "name": "camp_two_unreviewed_holds",
+      "kind": "campaign",
+      "expected": "G2LP1:HOLD_CAMPAIGN_REVIEW_REQUIRED | More than one",
+      "observed": "G2LP1:HOLD_CAMPAIGN_REVIEW_REQUIRED",
+      "pass": true
+    },
+    {
+      "name": "camp_resolved_hold_continue_without_resume_file",
+      "kind": "campaign",
+      "expected": "true",
+      "observed": "true",
+      "pass": true
+    },
+    {
+      "name": "ledger_absent_snapshot",
+      "kind": "ledger",
+      "expected": "true",
+      "observed": "true",
+      "pass": true
+    },
+    {
+      "name": "ledger_roundtrip_positive",
+      "kind": "ledger",
+      "expected": "true",
+      "observed": "true",
+      "pass": true
+    },
+    {
+      "name": "ledger_duplicate_receipt_refused",
+      "kind": "ledger",
+      "expected": "G2Chain:RecordExists | overwrite",
+      "observed": "G2Chain:RecordExists",
+      "pass": true
+    },
+    {
+      "name": "ledger_duplicate_admit_refused",
+      "kind": "ledger",
+      "expected": "G2Chain:RecordExists | overwrite",
+      "observed": "G2Chain:RecordExists",
+      "pass": true
+    },
+    {
+      "name": "ledger_invalid_entry_name",
+      "kind": "ledger",
+      "expected": "G2LP1:HOLD_CAMPAIGN_INTEGRITY | Invalid ledger entry name",
+      "observed": "G2LP1:HOLD_CAMPAIGN_INTEGRITY",
+      "pass": true
+    },
+    {
+      "name": "ledger_path_traversal_name",
+      "kind": "ledger",
+      "expected": "G2LP1:HOLD_CAMPAIGN_INTEGRITY | Invalid ledger entry name",
+      "observed": "G2LP1:HOLD_CAMPAIGN_INTEGRITY",
+      "pass": true
+    },
+    {
+      "name": "ledger_closed_positive",
+      "kind": "ledger",
+      "expected": "true",
+      "observed": "true",
+      "pass": true
+    },
+    {
+      "name": "ledger_tampered_entry_detected",
+      "kind": "ledger",
+      "expected": "true",
+      "observed": "true",
+      "pass": true
+    },
+    {
+      "name": "ledger_unexpected_file_detected",
+      "kind": "ledger",
+      "expected": "true",
+      "observed": "true",
+      "pass": true
+    },
+    {
+      "name": "ledger_foreign_entry_detected",
+      "kind": "ledger",
+      "expected": "true",
+      "observed": "true",
+      "pass": true
+    },
+    {
+      "name": "ledger_kind_spoof_detected",
+      "kind": "ledger",
+      "expected": "true",
+      "observed": "true",
+      "pass": true
+    },
+    {
+      "name": "ledger_orphan_manifest_detected",
+      "kind": "ledger",
+      "expected": "true",
+      "observed": "true",
+      "pass": true
+    },
+    {
+      "name": "admit_hook_not_called_on_low_memory",
+      "kind": "admission",
+      "expected": "G2LP1:HOLD_MEMORY | 5 GiB",
+      "observed": "G2LP1:HOLD_MEMORY",
+      "pass": true
+    },
+    {
+      "name": "admit_hook_low_memory_no_call_no_folder",
+      "kind": "admission",
+      "expected": "true",
+      "observed": "true",
+      "pass": true
+    },
+    {
+      "name": "admit_hook_refusal_leaves_no_folder",
+      "kind": "admission",
+      "expected": "G2LP1:HOLD_CAMPAIGN_CLOSED | Campaign is closed",
+      "observed": "G2LP1:HOLD_CAMPAIGN_CLOSED",
+      "pass": true
+    },
+    {
+      "name": "admit_hook_refusal_no_folder",
+      "kind": "admission",
+      "expected": "true",
+      "observed": "true",
+      "pass": true
+    },
+    {
+      "name": "admit_hook_positive_then_folder",
+      "kind": "admission",
+      "expected": "true",
+      "observed": "true",
+      "pass": true
+    },
+    {
+      "name": "controller_campaign_decided_before_writes",
+      "kind": "interface",
+      "expected": "true",
+      "observed": "true",
+      "pass": true
+    },
+    {
+      "name": "controller_receipt_only_on_open_new",
+      "kind": "interface",
+      "expected": "true",
+      "observed": "true",
+      "pass": true
+    },
+    {
+      "name": "controller_admission_uses_campaign_hook",
+      "kind": "interface",
+      "expected": "true",
+      "observed": "true",
+      "pass": true
+    },
+    {
+      "name": "controller_verify_only_checked_before_loop",
+      "kind": "interface",
+      "expected": "true",
+      "observed": "true",
+      "pass": true
+    },
+    {
+      "name": "controller_campaign_refusal_writes_no_state",
+      "kind": "interface",
+      "expected": "true",
+      "observed": "true",
+      "pass": true
+    },
+    {
+      "name": "gate_returns_validated_go_sha",
+      "kind": "interface",
+      "expected": "true",
+      "observed": "true",
+      "pass": true
+    },
+    {
+      "name": "campaign_validator_opens_no_file",
+      "kind": "interface",
+      "expected": "true",
+      "observed": "true",
+      "pass": true
+    },
+    {
+      "name": "resume_path_hardcoded",
+      "kind": "interface",
+      "expected": "true",
+      "observed": "true",
+      "pass": true
+    },
+    {
+      "name": "controller_rejects_resume_path_argument",
+      "kind": "negative",
+      "expected": "MATLAB:InputParser:UnmatchedParameter",
+      "observed": "MATLAB:InputParser:UnmatchedParameter",
+      "pass": true
+    },
+    {
+      "name": "controller_rejects_campaign_argument",
+      "kind": "negative",
+      "expected": "MATLAB:InputParser:UnmatchedParameter",
+      "observed": "MATLAB:InputParser:UnmatchedParameter",
+      "pass": true
+    }
+  ],
+  "passed": 138,
+  "total": 138,
+  "physicalSolves": 0,
+  "meshBuilds": 0,
+  "negativeTestsPassed": true,
+  "recordIntegrityPassed": true,
+  "goFixturesPassed": true,
+  "admissionPassed": true,
+  "interfacePassed": true,
+  "campaignPassed": true,
+  "ledgerPassed": true,
+  "exactIdentifierNegatives": true,
+  "testFolder": "<repo>\\outputs\\g2_lp1_contract_20261122_200832_681",
+  "schema": "NewMetacomp.G2.LP1.ContractTests.v3"
+}
