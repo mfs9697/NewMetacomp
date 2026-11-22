@@ -1,0 +1,36 @@
+{
+ "schema": "NewMetacomp.G2.LP1.VG1.Sanitization.v1",
+ "source": "st",
+ "files": [
+  {
+   "file": "A0_COMPARATOR_SELFTEST.json",
+   "originalSHA256": "8886afadbb72385dd58facffd3f763d6a9071be61d84e075e63efe65b026270c",
+   "sanitizedSHA256": "0930b4502d639b90e5965e5b08b017575cf554333b83319ff1bd3f3d194b6d66",
+   "copied": true
+  },
+  {
+   "file": "determinism.log",
+   "originalSHA256": "7497341ae878032d392a0d10548c107465079d8708bf60e958eabfed9e620ba1",
+   "sanitizedSHA256": "416dfbcc348067be8f1dbb9707c487a702f8038890ba6214c99f709ea9885b0f",
+   "copied": true
+  },
+  {
+   "file": "determinism.m",
+   "originalSHA256": "e7fab75f748309a4015cb7068ab48978499d9e9d549c38f285b5221fa6f69e54",
+   "sanitizedSHA256": "69cf92912ef1662ff3e25b1018f6ac41cf91889e5053df2821212a2a44b85190",
+   "copied": true
+  },
+  {
+   "file": "selftest.m",
+   "originalSHA256": "b11facb1c6aae69044e90172d876348fe6334912fec347684778236b1eb6b77b",
+   "sanitizedSHA256": "5baa17ba0ce3b96d4af2cd6898ab7cdc24e2cc4e5cfd89549cb4b4dbd950ee44",
+   "copied": true
+  },
+  {
+   "file": "selftest2.log",
+   "originalSHA256": "09b735c3713621a70e564ae1b17d71212c9492b0440bf686d9582b2a76659b8a",
+   "sanitizedSHA256": "3fda32cdee3d6e208159e506bd3df8dff630aed06a5e7d07a6f6aaf0f46321df",
+   "copied": true
+  }
+ ]
+}
