@@ -1,0 +1,9 @@
+﻿[Warning: Name is nonexistent or not a directory: <user>\Google Drive\Projects\8 - CohZonFEM\czm_project\CrackPath\CrackFromHoleLEFM\cfh] 
+[Warning: Name is nonexistent or not a directory: <user>\Google Drive\Projects\8 - CohZonFEM\Asphalt\remmers2003] 
+FIELDS T3,T6,X3,X6,approvedForLEFM,collarOuterIDs,crackPolyline,elementRows,extraVertexNodes,extraVertexXY,familyTag,gates,geometryOnly,includeHoles,lowerBankT6,nodalQ,p010GlobalProtectedMeshQualified,physicalTipNode,plateXRange,qActiveT6Rows,summary,tipTangent,upperBankT6
+S0 stiff13 vs H: differing fields = {}
+S0 stiff13 contentSHA equal = 1
+S0 soft2 vs H: differing fields = {}
+S0 soft2 contentSHA equal = 1
+S0 soft1 vs H: differing fields = {}
+S0 soft1 contentSHA equal = 1

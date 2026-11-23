@@ -1,0 +1,25 @@
+{
+ "schema": "NewMetacomp.G2.M5.Sanitization.v1",
+ "files": [
+  {
+   "file": "s0_mesh_check.m",
+   "originalSHA256": "e31c1e1acf4daabb1f0e6b4df4d44bf39b0cf66c081dfecb818d10c245ed6d13",
+   "sanitizedSHA256": "e309469b8dd4083da25ae20bbf3150eb63dc2dfc0663e760fc69f03a644d8298"
+  },
+  {
+   "file": "s0_mesh_check.log",
+   "originalSHA256": "c5db304cd490b2bface479b8ea3e28f40fc6060830849e76eb39f6b880a1f127",
+   "sanitizedSHA256": "51644269872dd79e6cce9cf7d2f31a9d7290123b7e8639d5e1e77adce9e12564"
+  },
+  {
+   "file": "s0_mesh_check_v2.log",
+   "originalSHA256": "3e23d81bb4573f1c082140a22bc8adfd4f0e24231a814541cf3d67dcdf58c0ba",
+   "sanitizedSHA256": "89c6de1ae1bc54bfd9cf72253d46df004f67fe7833389cf936925d1c76701941"
+  },
+  {
+   "file": "S0_MESH_CONTENT_CHECK.json",
+   "originalSHA256": "e051be1a2f0a56d964713c87b293aab777b6d087350feb11f31f3a6a6e7bccd6",
+   "sanitizedSHA256": "e051be1a2f0a56d964713c87b293aab777b6d087350feb11f31f3a6a6e7bccd6"
+  }
+ ]
+}

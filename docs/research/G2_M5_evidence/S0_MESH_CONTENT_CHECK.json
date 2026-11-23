@@ -1,0 +1,67 @@
+{
+  "schema": "NewMetacomp.G2.M5.S0MeshContentCheck.v1",
+  "noFEM": true,
+  "fieldNames": [
+    "T3",
+    "T6",
+    "X3",
+    "X6",
+    "approvedForLEFM",
+    "collarOuterIDs",
+    "crackPolyline",
+    "elementRows",
+    "extraVertexNodes",
+    "extraVertexXY",
+    "familyTag",
+    "gates",
+    "geometryOnly",
+    "includeHoles",
+    "lowerBankT6",
+    "nodalQ",
+    "p010GlobalProtectedMeshQualified",
+    "physicalTipNode",
+    "plateXRange",
+    "qActiveT6Rows",
+    "summary",
+    "tipTangent",
+    "upperBankT6"
+  ],
+  "cases": [
+    {
+      "case": "H",
+      "meshFile": "outputs/g2_lp1_matrix_paths_v1/run_20261122_lp1_v1/H/S0/MESH.mat",
+      "rawMatFileSHA256": "a1fbedfbd2f13cf1dc5c1ebfb85967d069e51b0c9ddc2219465066d4cc935d15",
+      "meshContentSHA256": "0b133fb3a3dedb4c2ec5f02109f47637d956ab6bce96bac1e67615a0d22322de",
+      "fieldsCompared": 23,
+      "differingFieldsVsH": [],
+      "arraysIdenticalToH": true
+    },
+    {
+      "case": "stiff13",
+      "meshFile": "outputs/g2_lp1_matrix_paths_v1/run_20261122_lp1_v1/stiff13/S0/MESH.mat",
+      "rawMatFileSHA256": "bae4d858a3726494337402d8d17b8b936c6a0547cd560072b7928130f092b35c",
+      "meshContentSHA256": "0b133fb3a3dedb4c2ec5f02109f47637d956ab6bce96bac1e67615a0d22322de",
+      "fieldsCompared": 23,
+      "differingFieldsVsH": [],
+      "arraysIdenticalToH": true
+    },
+    {
+      "case": "soft2",
+      "meshFile": "outputs/g2_lp1_matrix_paths_v1/run_20261122_lp1_v1/soft2/S0/MESH.mat",
+      "rawMatFileSHA256": "b84b65ee04b03fa73ff6095680211fdf365816b37f8b1ba6286e29e52c23fb6e",
+      "meshContentSHA256": "0b133fb3a3dedb4c2ec5f02109f47637d956ab6bce96bac1e67615a0d22322de",
+      "fieldsCompared": 23,
+      "differingFieldsVsH": [],
+      "arraysIdenticalToH": true
+    },
+    {
+      "case": "soft1",
+      "meshFile": "outputs/g2_lp1_matrix_paths_v1/run_20261122_lp1_v1/soft1/S0/MESH.mat",
+      "rawMatFileSHA256": "c6928cc46089782589de273dd221af43dad42b36fabd20749e1bc916e1df0d7b",
+      "meshContentSHA256": "0b133fb3a3dedb4c2ec5f02109f47637d956ab6bce96bac1e67615a0d22322de",
+      "fieldsCompared": 23,
+      "differingFieldsVsH": [],
+      "arraysIdenticalToH": true
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+﻿[Warning: Name is nonexistent or not a directory: <user>\Google Drive\Projects\8 - CohZonFEM\czm_project\CrackPath\CrackFromHoleLEFM\cfh] 
+[Warning: Name is nonexistent or not a directory: <user>\Google Drive\Projects\8 - CohZonFEM\Asphalt\remmers2003] 
+S0 H        raw=a1fbedfbd2f13cf1 content=0b133fb3a3dedb4c differing={}
+S0 stiff13  raw=bae4d858a3726494 content=0b133fb3a3dedb4c differing={}
+S0 soft2    raw=b84b65ee04b03fa7 content=0b133fb3a3dedb4c differing={}
+S0 soft1    raw=c6928cc460897825 content=0b133fb3a3dedb4c differing={}
+S0_CHECK_V2_DONE
