@@ -784,13 +784,30 @@
   }
  ],
  "S0_commonGeometry": {
-  "meshSHA256": {
+  "rawMatFileSHA256": {
    "H": "a1fbedfbd2f13cf1dc5c1ebfb85967d069e51b0c9ddc2219465066d4cc935d15",
    "stiff13": "bae4d858a3726494337402d8d17b8b936c6a0547cd560072b7928130f092b35c",
    "soft2": "b84b65ee04b03fa73ff6095680211fdf365816b37f8b1ba6286e29e52c23fb6e",
    "soft1": "c6928cc46089782589de273dd221af43dad42b36fabd20749e1bc916e1df0d7b"
   },
-  "identicalMesh": false,
+  "rawMatFileSHA256_source": "docs/research/G2_LP1_SR1_independent_check/LP1_records_reduced.json (STATE.meshSHA256)",
+  "rawMatFileSHAEqual": false,
+  "rawSHA_matches_MATLABcheck": true,
+  "meshContentSHA256": {
+   "H": "0b133fb3a3dedb4c2ec5f02109f47637d956ab6bce96bac1e67615a0d22322de",
+   "stiff13": "0b133fb3a3dedb4c2ec5f02109f47637d956ab6bce96bac1e67615a0d22322de",
+   "soft2": "0b133fb3a3dedb4c2ec5f02109f47637d956ab6bce96bac1e67615a0d22322de",
+   "soft1": "0b133fb3a3dedb4c2ec5f02109f47637d956ab6bce96bac1e67615a0d22322de"
+  },
+  "fieldsCompared": 23,
+  "differingFieldsVsH": {
+   "H": [],
+   "stiff13": [],
+   "soft2": [],
+   "soft1": []
+  },
+  "meshArrayContentIdentical": true,
+  "meshArrayContentIdentical_source": "docs/research/G2_M5_evidence/S0_MESH_CONTENT_CHECK.json (s0_mesh_check_v2.m, plain MATLAB load, no FEM)",
   "polylinesEqual": true
  },
  "decompositionExisting": {
@@ -1034,7 +1051,8 @@
   "stiff13": {
    "dTheta_S0_deg": -0.662684980169832,
    "d_S4_mm": -0.1909019814362965,
-   "firstKinkShare_4n_sin": -0.9693583566891533,
+   "firstKinkShare_4n_sin": 0.9693583566891533,
+   "firstKinkShare_note": "linearized geometric estimate 16 sin(dTheta_S0)/d(S4); not a proof that the first kink alone causes later differences",
    "localMTSdiff_S1toS4_deg": [
     -0.0524513882513421,
     0.01645615310519255,
@@ -1046,7 +1064,8 @@
   "soft2": {
    "dTheta_S0_deg": -0.24327790394936422,
    "d_S4_mm": -0.08516271076796855,
-   "firstKinkShare_4n_sin": -0.7977177099800455,
+   "firstKinkShare_4n_sin": 0.7977177099800455,
+   "firstKinkShare_note": "linearized geometric estimate 16 sin(dTheta_S0)/d(S4); not a proof that the first kink alone causes later differences",
    "localMTSdiff_S1toS4_deg": [
     -0.040758969745978146,
     -0.042962347260169675,
@@ -1058,7 +1077,8 @@
   "soft1": {
    "dTheta_S0_deg": 1.0842061496976498,
    "d_S4_mm": 0.3056714291336001,
-   "firstKinkShare_4n_sin": -0.9904406355764884,
+   "firstKinkShare_4n_sin": 0.9904406355764884,
+   "firstKinkShare_note": "linearized geometric estimate 16 sin(dTheta_S0)/d(S4); not a proof that the first kink alone causes later differences",
    "localMTSdiff_S1toS4_deg": [
     0.03984309222091964,
     -0.01395852682957388,
@@ -1156,12 +1176,13 @@
     0.047489722853491956,
     0.05793704696565072
    ]
-  }
- },
- "S0_meshArraysIdentical_MATLABcheck": {
-  "result": true,
-  "evidence": "docs/research/G2_M5_evidence/s0_mesh_check.log",
-  "note": "MESH.mat file SHA differ only by MAT metadata; all 23 fields isequaln and content SHA equal"
+  },
+  "caveats": [
+   "C_X and C_H are evaluated along different, architecture-specific crack trajectories",
+   "finite differences over 4-mm steps approximate dC/da; they do not isolate a unique local physical mechanism",
+   "the first increment (S0-S1) is sensitive to the concentrated point load (SR1 B10)",
+   "energetic interpretation consistent with the computed results; it does not independently prove why soft ring 2 shields"
+  ]
  },
  "lateralOffset_d_mm": {
   "stiff13": [

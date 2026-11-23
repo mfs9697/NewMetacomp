@@ -30,7 +30,7 @@ for i=1:3
  else,text(ax,c(1)-g.ringR_mm-3,c(2),sprintf('кільце %d',i),'FontSize',8,'HorizontalAlignment','right');end
 end
 plot(ax,[b.pin_mm(1) b.load_mm(1)],[b.pin_mm(2) b.load_mm(2)],'k--','LineWidth',.8);
-text(ax,300,150,{'лінія «опора – сила»','(через отвір 2)'},'FontSize',8);
+text(ax,290,150,{'геометрична пряма «опора – сила»','(перетинає отвір 2; не траєкторія','головних напружень)'},'FontSize',8);
 plot(ax,b.pin_mm(1),b.pin_mm(2),'k^','MarkerFaceColor','k','MarkerSize',6);plot(ax,b.roller_mm(1),b.roller_mm(2),'k^','MarkerSize',6);
 quiver(ax,b.load_mm(1),b.load_mm(2)+22,0,-18,0,'k','LineWidth',1.2,'MaxHeadSize',2);text(ax,b.load_mm(1)+4,b.load_mm(2)+14,'P','FontSize',9);
 k4=find(strcmp({st.case},'H')&[st.state]==4);
@@ -49,6 +49,7 @@ for c=1:3
 end
 yline(ax,0,'k-','HandleVisibility','off');grid(ax,'on');box(ax,'on');xlim(ax,[24 43]);ax.XTick=25.4:4:41.4;
 xlabel(ax,'довжина тріщини s, мм');ylabel(ax,'зміщення вершини d, мм');legend(ax,'Location','northwest','FontSize',7);
+text(ax,33.8,0.355,{'d > 0 — від колони кілець','d < 0 — до колони кілець'},'FontSize',7,'HorizontalAlignment','left');
 title(ax,'(b)','FontWeight','normal');dec(ax);
 save2(f,outDir,'M5_1_geometriia_UA');
 % ---------------- M5-2

@@ -57,9 +57,24 @@ for r in rows:
         r[f'ring{i}EnergyShare'] = r[f'U_ring{i}'] / r['U_total']
         r[f'dU_ring{i}_rel'] = r[f'U_ring{i}'] / h[f'U_ring{i}'] - 1
 out['ownPathStates'] = rows
+# C1: raw MAT-file identity and mesh-array identity are different properties. Raw SHA from the reduced records
+# (provenance: STATE.meshSHA256); array/content identity from the read-only MATLAB check (S0_MESH_CONTENT_CHECK.json).
 s0sha = {c: byk[(c, 0)]['meshSHA256'] for c in CASES}
-out['S0_commonGeometry'] = {'meshSHA256': s0sha, 'identicalMesh': len(set(s0sha.values())) == 1,
-                            'polylinesEqual': len({json.dumps(st(c, 0)['STATE']['polyline_mm']) for c in CASES}) == 1}
+S0C = json.load(open(os.path.join(EV, 'S0_MESH_CONTENT_CHECK.json'), encoding='utf-8'))
+s0c = {x['case']: x for x in (S0C['cases'] if isinstance(S0C['cases'], list) else [S0C['cases']])}
+assert set(s0c) == set(CASES), 'S0 content check must cover all four cases'
+out['S0_commonGeometry'] = {
+    'rawMatFileSHA256': s0sha,
+    'rawMatFileSHA256_source': 'docs/research/G2_LP1_SR1_independent_check/LP1_records_reduced.json (STATE.meshSHA256)',
+    'rawMatFileSHAEqual': len(set(s0sha.values())) == 1,
+    'rawSHA_matches_MATLABcheck': all(s0c[c]['rawMatFileSHA256'] == s0sha[c] for c in CASES),
+    'meshContentSHA256': {c: s0c[c]['meshContentSHA256'] for c in CASES},
+    'fieldsCompared': s0c['H']['fieldsCompared'],
+    'differingFieldsVsH': {c: s0c[c]['differingFieldsVsH'] for c in CASES},
+    'meshArrayContentIdentical': all(s0c[c]['arraysIdenticalToH'] for c in CASES)
+                                 and len({s0c[c]['meshContentSHA256'] for c in CASES}) == 1,
+    'meshArrayContentIdentical_source': 'docs/research/G2_M5_evidence/S0_MESH_CONTENT_CHECK.json (s0_mesh_check_v2.m, plain MATLAB load, no FEM)',
+    'polylinesEqual': len({json.dumps(st(c, 0)['STATE']['polyline_mm']) for c in CASES}) == 1}
 
 # ---------- 2. direct (material-only) effect at fixed homogeneous geometry: S0 (common) and S2 (M4.B frozen = H S2)
 GH2 = float(M4B['none']['G_1N_J_per_m2']) * 1e-9 if float(M4B['none']['G_1N_J_per_m2']) > 1e-3 else float(M4B['none']['G_1N_J_per_m2'])
@@ -111,8 +126,11 @@ out['stability'] = stab
 steer = {}
 for c in CASES[1:]:
     d4 = byk[(c, 4)]['d_mm']; dth0 = byk[(c, 0)]['dMTS_deg']
+    # C2: d = (x_X - x_H).n_H with n_H the LEFT normal of H; a positive (counter-clockwise) S0 kink difference moves
+    # the tip toward +n_H, so the linearized offset after n = 4 segments of 4 mm is +4n sin(dTheta_S0) (no sign flip).
     steer[c] = {'dTheta_S0_deg': dth0, 'd_S4_mm': d4,
-                'firstKinkShare_4n_sin': 4 * 4 * math.sin(math.radians(dth0)) * -1 / d4 if d4 else None,
+                'firstKinkShare_4n_sin': 4 * 4 * math.sin(math.radians(dth0)) / d4 if d4 else None,
+                'firstKinkShare_note': 'linearized geometric estimate 16 sin(dTheta_S0)/d(S4); not a proof that the first kink alone causes later differences',
                 'localMTSdiff_S1toS4_deg': [byk[(c, k)]['dMTS_deg'] for k in range(1, 5)],
                 'frozenS2_F_theta_deg': dec[c]['S2_direct_M4B']['dMTS_deg']}
 out['steering'] = steer
@@ -127,9 +145,11 @@ for c in CASES[1:]:
               'd_deltaC_da_sign': ['+' if (CX[k + 1] - CH[k + 1]) - (CX[k] - CH[k]) > 0 else '-' for k in range(4)],
               'F_G_fd_compliance_per_step': [dCX[k] / dCH[k] - 1 for k in range(4)],
               'F_G_EDI_midstep_mean': [0.5 * (byk[(c, k)]['F_G'] + byk[(c, k + 1)]['F_G']) for k in range(4)]}
+irk['caveats'] = ['C_X and C_H are evaluated along different, architecture-specific crack trajectories',
+                  'finite differences over 4-mm steps approximate dC/da; they do not isolate a unique local physical mechanism',
+                  'the first increment (S0-S1) is sensitive to the concentrated point load (SR1 B10)',
+                  'energetic interpretation consistent with the computed results; it does not independently prove why soft ring 2 shields']
 out['irwinKies'] = irk
-out['S0_meshArraysIdentical_MATLABcheck'] = {'result': True, 'evidence': 'docs/research/G2_M5_evidence/s0_mesh_check.log',
-                                             'note': 'MESH.mat file SHA differ only by MAT metadata; all 23 fields isequaln and content SHA equal'}
 out['lateralOffset_d_mm'] = {c: [byk[(c, k)]['d_mm'] for k in range(5)] for c in CASES[1:]}
 
 json.dump(out, open(os.path.join(EV, 'M5_EXISTING_EVIDENCE.json'), 'w', encoding='utf-8', newline='\n'), indent=1)
@@ -139,7 +159,7 @@ cols = ['case', 'state', 'arc_mm', 'tip_x', 'tip_y', 'heading_deg', 'KI', 'KII',
 with open(os.path.join(EV, 'M5_OWN_PATH_STATES.csv'), 'w', encoding='utf-8', newline='') as f:
     w = csv.writer(f, lineterminator='\n'); w.writerow(cols + ['tipToRing1Interface_mm'])
     for r in rows: w.writerow([r[k] for k in cols] + [r['tipToRingInterface_mm'][0]])
-print(json.dumps({'S0': out['S0_commonGeometry']['identicalMesh'], 'line': out['loadPathLine']['ringCentreDistance_mm']}, indent=0))
+print(json.dumps({'S0_rawEqual': out['S0_commonGeometry']['rawMatFileSHAEqual'], 'S0_contentIdentical': out['S0_commonGeometry']['meshArrayContentIdentical'], 'line': out['loadPathLine']['ringCentreDistance_mm']}, indent=0))
 for c in CASES[1:]:
     x = dec[c]
     print(c, 'S0', round(100 * x['S0_direct_equals_total']['F_G'], 4), 'S2dir', round(100 * x['S2_direct_M4B']['F_G'], 4),
