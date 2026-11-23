@@ -1,0 +1,18 @@
+RAM_OBSERVATION context 5.277500 GiB
+RAM_OBSERVATION protected_before 5.254063 GiB
+M5X6_DIAGONAL H_B9     pass=1 files=1/1 edi=1 verifier=1 material=1 mesh=19/19
+M5X6_DIAGONAL stiff13_B9 pass=1 files=1/1 edi=1 verifier=1 material=1 mesh=19/19
+M5X6_DIAGONAL soft2_B9 pass=1 files=1/1 edi=1 verifier=1 material=1 mesh=19/19
+M5X6_DIAGONAL soft1_B9 pass=1 files=1/1 edi=1 verifier=1 material=1 mesh=19/19
+RAM_OBSERVATION diagonal_audit 5.190224 GiB
+M5X6_DRY X6-01 DRY_READY_NO_FEM path=H material=stiff13 mask=101 ratio=2 active=8180 jump=152 qClear=33.362 mesh=19/19
+M5X6_DRY X6-02 DRY_READY_NO_FEM path=stiff13 material=H mask=000 ratio=1 active=0 jump=0 qClear=33.230 mesh=19/19
+M5X6_DRY X6-03 DRY_READY_NO_FEM path=H material=soft2 mask=010 ratio=0.5 active=4102 jump=76 qClear=33.362 mesh=19/19
+M5X6_DRY X6-04 DRY_READY_NO_FEM path=soft2 material=H mask=000 ratio=1 active=0 jump=0 qClear=33.303 mesh=19/19
+M5X6_DRY X6-05 DRY_READY_NO_FEM path=H material=soft1 mask=100 ratio=0.5 active=4090 jump=76 qClear=33.362 mesh=19/19
+M5X6_DRY X6-06 DRY_READY_NO_FEM path=soft1 material=H mask=000 ratio=1 active=0 jump=0 qClear=33.579 mesh=19/19
+RAM_OBSERVATION dry 5.073277 GiB
+M5X6_CONTRACT 61/61 (negatives 42)
+RAM_OBSERVATION contract 5.090103 GiB
+RAM_OBSERVATION protected_after 5.059525 GiB
+M5X6_QUALIFY M5X6_PREFLIGHT_PASS_SCIENTIFIC_HOLD audit=1 dry=6 contract=74/74 protected=910 files unchanged=1 token=G2M5X6|plan=e6153735e76b09382a24376002110f7f07485d27db12aaca09108419e43fea52|a1policy=312e1e005b9ca85d743b672115609d7b02bb2f6ebbbae09658c0cdf1d9a8a013|a1source=7e5683703bd104547ef5d013aa0253ad2819b59dc58693957e2d04b4707f0947|x6source=f21d7d44a2de33922dd766c226320cec0695252f24d5516908f500c3a8d8e6bb|meshes=9c3d0f4560da34216c674cf8af5a9f6782d28ab80ec86076f284e55278904ad8|configs=X6-01,X6-02,X6-03,X6-04,X6-05,X6-06|maxSolves=6

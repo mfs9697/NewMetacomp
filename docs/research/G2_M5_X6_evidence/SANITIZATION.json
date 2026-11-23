@@ -1,0 +1,30 @@
+{
+ "rule": "absolute local paths replaced by <repo> (execution clone), <worktree>, <scratch>, <user>; MATLAB startup path warnings removed; CRLF to LF",
+ "files": [
+  {
+   "file": "M5X6_CONTRACT.json",
+   "originalSHA256": "0d163d9af4b8c97308ae548fe75f3a1214bd193de302ed8b9ae3bc67dc16ae8f",
+   "sanitizedSHA256": "0d163d9af4b8c97308ae548fe75f3a1214bd193de302ed8b9ae3bc67dc16ae8f"
+  },
+  {
+   "file": "M5X6_DIAGONAL_AUDIT.json",
+   "originalSHA256": "4b272884b6b89a738bfcfe07d9e55fba86343d4a83d2be5053094d10d5d3aec5",
+   "sanitizedSHA256": "4b272884b6b89a738bfcfe07d9e55fba86343d4a83d2be5053094d10d5d3aec5"
+  },
+  {
+   "file": "M5X6_QUALIFICATION.json",
+   "originalSHA256": "cb4043ff621da91678dae17bfb3246d1b6db109b61161f90e87e034754cd42e2",
+   "sanitizedSHA256": "cb4043ff621da91678dae17bfb3246d1b6db109b61161f90e87e034754cd42e2"
+  },
+  {
+   "file": "qual1.log",
+   "originalSHA256": "e6c90f2847158c4a6b6a8db16c6ef1fa152a875e651ee544b90048ba9fcc3a3f",
+   "sanitizedSHA256": "c1a1a990fa0c6acee126f7ded647e906a522b0c0523d35ba0e2057efd386688f"
+  },
+  {
+   "file": "qual1.m",
+   "originalSHA256": "fb2d818f02439cbc947a464c7bd203e0956d6c74ad8e6aefa0141e7e89c36083",
+   "sanitizedSHA256": "49dc19cb4f6b4a0fca085e0794ad229a35f6b0f487df6c3af363c8c69622f41a"
+  }
+ ]
+}

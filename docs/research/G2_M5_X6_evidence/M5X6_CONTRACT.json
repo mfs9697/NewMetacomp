@@ -1,0 +1,535 @@
+{
+  "schema": "NewMetacomp.G2.M5X6.ContractEvidence.v1",
+  "pass": true,
+  "passed": 74,
+  "total": 74,
+  "negativeTests": 42,
+  "negativeTestsPassed": true,
+  "physicalSolves": 0,
+  "token": "G2M5X6|plan=e6153735e76b09382a24376002110f7f07485d27db12aaca09108419e43fea52|a1policy=312e1e005b9ca85d743b672115609d7b02bb2f6ebbbae09658c0cdf1d9a8a013|a1source=7e5683703bd104547ef5d013aa0253ad2819b59dc58693957e2d04b4707f0947|x6source=f21d7d44a2de33922dd766c226320cec0695252f24d5516908f500c3a8d8e6bb|meshes=9c3d0f4560da34216c674cf8af5a9f6782d28ab80ec86076f284e55278904ad8|configs=X6-01,X6-02,X6-03,X6-04,X6-05,X6-06|maxSolves=6",
+  "planSHA256": "e6153735e76b09382a24376002110f7f07485d27db12aaca09108419e43fea52",
+  "a1SourceSHA256": "7e5683703bd104547ef5d013aa0253ad2819b59dc58693957e2d04b4707f0947",
+  "x6SourceSHA256": "f21d7d44a2de33922dd766c226320cec0695252f24d5516908f500c3a8d8e6bb",
+  "meshManifestSHA256": "9c3d0f4560da34216c674cf8af5a9f6782d28ab80ec86076f284e55278904ad8",
+  "sourceCommit": "2a5127e1339f7c24294e0ff3d8ce800cf3754ef3",
+  "rows": [
+    {
+      "name": "go_valid_fixture_accepted",
+      "kind": "go",
+      "expected": "true",
+      "observed": "true",
+      "pass": true
+    },
+    {
+      "name": "go_missing_field",
+      "kind": "go",
+      "expected": "error",
+      "observed": "G2M5X6:HOLD_UNAUTHORIZED_STATE: Incomplete GO_M5_X6 record.",
+      "pass": true
+    },
+    {
+      "name": "go_a1_decision_refused",
+      "kind": "go",
+      "expected": "error",
+      "observed": "G2M5X6:HOLD_UNAUTHORIZED_STATE: GO_M5_X6 decision or review proof is absent or invalid.",
+      "pass": true
+    },
+    {
+      "name": "go_not_reviewed",
+      "kind": "go",
+      "expected": "error",
+      "observed": "G2M5X6:HOLD_UNAUTHORIZED_STATE: GO_M5_X6 decision or review proof is absent or invalid.",
+      "pass": true
+    },
+    {
+      "name": "go_empty_reviewer",
+      "kind": "go",
+      "expected": "error",
+      "observed": "G2M5X6:HOLD_UNAUTHORIZED_STATE: GO_M5_X6 decision or review proof is absent or invalid.",
+      "pass": true
+    },
+    {
+      "name": "go_foreign_review_url",
+      "kind": "go",
+      "expected": "error",
+      "observed": "G2M5X6:HOLD_UNAUTHORIZED_STATE: GO_M5_X6 decision or review proof is absent or invalid.",
+      "pass": true
+    },
+    {
+      "name": "go_wrong_scope",
+      "kind": "go",
+      "expected": "error",
+      "observed": "G2M5X6:HOLD_UNAUTHORIZED_STATE: M5-X6 campaign scope, run name or campaign ID is invalid.",
+      "pass": true
+    },
+    {
+      "name": "go_bad_run_name",
+      "kind": "go",
+      "expected": "error",
+      "observed": "G2M5X6:HOLD_UNAUTHORIZED_STATE: M5-X6 campaign scope, run name or campaign ID is invalid.",
+      "pass": true
+    },
+    {
+      "name": "go_a1_run_name_refused",
+      "kind": "go",
+      "expected": "error",
+      "observed": "G2M5X6:HOLD_UNAUTHORIZED_STATE: M5-X6 campaign scope, run name or campaign ID is invalid.",
+      "pass": true
+    },
+    {
+      "name": "go_a0_run_name_refused",
+      "kind": "go",
+      "expected": "error",
+      "observed": "G2M5X6:HOLD_UNAUTHORIZED_STATE: M5-X6 campaign scope, run name or campaign ID is invalid.",
+      "pass": true
+    },
+    {
+      "name": "go_lp1_run_name_refused",
+      "kind": "go",
+      "expected": "error",
+      "observed": "G2M5X6:HOLD_UNAUTHORIZED_STATE: M5-X6 campaign scope, run name or campaign ID is invalid.",
+      "pass": true
+    },
+    {
+      "name": "go_a1_campaign_refused",
+      "kind": "go",
+      "expected": "error",
+      "observed": "G2M5X6:HOLD_UNAUTHORIZED_STATE: M5-X6 campaign scope, run name or campaign ID is invalid.",
+      "pass": true
+    },
+    {
+      "name": "go_a0_campaign_refused",
+      "kind": "go",
+      "expected": "error",
+      "observed": "G2M5X6:HOLD_UNAUTHORIZED_STATE: M5-X6 campaign scope, run name or campaign ID is invalid.",
+      "pass": true
+    },
+    {
+      "name": "go_five_configurations",
+      "kind": "go",
+      "expected": "error",
+      "observed": "G2M5X6:HOLD_UNAUTHORIZED_STATE: GO_M5_X6 must list exactly the six configurations, a six-solve ceiling and revocation.",
+      "pass": true
+    },
+    {
+      "name": "go_reordered_configurations",
+      "kind": "go",
+      "expected": "error",
+      "observed": "G2M5X6:HOLD_UNAUTHORIZED_STATE: GO_M5_X6 must list exactly the six configurations, a six-solve ceiling and revocation.",
+      "pass": true
+    },
+    {
+      "name": "go_extra_configuration",
+      "kind": "go",
+      "expected": "error",
+      "observed": "G2M5X6:HOLD_UNAUTHORIZED_STATE: GO_M5_X6 must list exactly the six configurations, a six-solve ceiling and revocation.",
+      "pass": true
+    },
+    {
+      "name": "go_ceiling_seven",
+      "kind": "go",
+      "expected": "error",
+      "observed": "G2M5X6:HOLD_UNAUTHORIZED_STATE: GO_M5_X6 must list exactly the six configurations, a six-solve ceiling and revocation.",
+      "pass": true
+    },
+    {
+      "name": "go_no_revocation",
+      "kind": "go",
+      "expected": "error",
+      "observed": "G2M5X6:HOLD_UNAUTHORIZED_STATE: GO_M5_X6 must list exactly the six configurations, a six-solve ceiling and revocation.",
+      "pass": true
+    },
+    {
+      "name": "go_plan_mismatch",
+      "kind": "go",
+      "expected": "error",
+      "observed": "G2M5X6:HOLD_SOURCE: GO_M5_X6 does not bind the exact plan, sources, mesh manifest and token.",
+      "pass": true
+    },
+    {
+      "name": "go_a1_source_mismatch",
+      "kind": "go",
+      "expected": "error",
+      "observed": "G2M5X6:HOLD_SOURCE: GO_M5_X6 does not bind the exact plan, sources, mesh manifest and token.",
+      "pass": true
+    },
+    {
+      "name": "go_x6_source_mismatch",
+      "kind": "go",
+      "expected": "error",
+      "observed": "G2M5X6:HOLD_SOURCE: GO_M5_X6 does not bind the exact plan, sources, mesh manifest and token.",
+      "pass": true
+    },
+    {
+      "name": "go_mesh_manifest_mismatch",
+      "kind": "go",
+      "expected": "error",
+      "observed": "G2M5X6:HOLD_SOURCE: GO_M5_X6 does not bind the exact plan, sources, mesh manifest and token.",
+      "pass": true
+    },
+    {
+      "name": "go_token_mismatch",
+      "kind": "go",
+      "expected": "error",
+      "observed": "G2M5X6:HOLD_SOURCE: GO_M5_X6 does not bind the exact plan, sources, mesh manifest and token.",
+      "pass": true
+    },
+    {
+      "name": "go_contract_outside_dir",
+      "kind": "go",
+      "expected": "error",
+      "observed": "G2M5X6:HOLD_SOURCE: M5-X6 contract evidence path is not pinned.",
+      "pass": true
+    },
+    {
+      "name": "go_contract_dotdot",
+      "kind": "go",
+      "expected": "error",
+      "observed": "G2M5X6:HOLD_SOURCE: M5-X6 contract evidence path is not pinned.",
+      "pass": true
+    },
+    {
+      "name": "go_contract_absent",
+      "kind": "go",
+      "expected": "error",
+      "observed": "G2M5X6:HOLD_SOURCE: M5-X6 contract evidence bytes are absent or changed.",
+      "pass": true
+    },
+    {
+      "name": "go_contract_changed",
+      "kind": "go",
+      "expected": "error",
+      "observed": "G2M5X6:HOLD_SOURCE: M5-X6 contract evidence bytes are absent or changed.",
+      "pass": true
+    },
+    {
+      "name": "go_contract_not_passed",
+      "kind": "go",
+      "expected": "error",
+      "observed": "G2M5X6:HOLD_UNAUTHORIZED_STATE: M5-X6 contract qualification has not passed.",
+      "pass": true
+    },
+    {
+      "name": "go_contract_with_solves",
+      "kind": "go",
+      "expected": "error",
+      "observed": "G2M5X6:HOLD_UNAUTHORIZED_STATE: M5-X6 contract qualification has not passed.",
+      "pass": true
+    },
+    {
+      "name": "go_contract_missing_field",
+      "kind": "go",
+      "expected": "error",
+      "observed": "G2M5X6:HOLD_UNAUTHORIZED_STATE: M5-X6 contract evidence lacks required fields.",
+      "pass": true
+    },
+    {
+      "name": "go_contract_other_token",
+      "kind": "go",
+      "expected": "error",
+      "observed": "G2M5X6:HOLD_SOURCE: M5-X6 contract evidence was produced for another token.",
+      "pass": true
+    },
+    {
+      "name": "gate_go_file_absent",
+      "kind": "gate",
+      "expected": "true",
+      "observed": "true",
+      "pass": true
+    },
+    {
+      "name": "gate_refuses_without_go",
+      "kind": "gate",
+      "expected": "error",
+      "observed": "G2M5X6:HOLD_UNAUTHORIZED_STATE: M5-X6 is on scientific HOLD: no GO_M5_X6 record.",
+      "pass": true
+    },
+    {
+      "name": "hook_six_admissions_recorded",
+      "kind": "ledger",
+      "expected": "true",
+      "observed": "true",
+      "pass": true
+    },
+    {
+      "name": "hook_seventh_admission_refused",
+      "kind": "ledger",
+      "expected": "error",
+      "observed": "G2M5X6:HOLD_UNAUTHORIZED_STATE: The six-solve ceiling is reached.",
+      "pass": true
+    },
+    {
+      "name": "hook_duplicate_key_refused",
+      "kind": "ledger",
+      "expected": "error",
+      "observed": "G2LP1:HOLD_CAMPAIGN_INTEGRITY: State X6_01 was already admitted; review required.",
+      "pass": true
+    },
+    {
+      "name": "hook_closed_campaign_refused",
+      "kind": "ledger",
+      "expected": "error",
+      "observed": "G2LP1:HOLD_CAMPAIGN_CLOSED: Campaign is closed: no new state may be computed.",
+      "pass": true
+    },
+    {
+      "name": "admit_existing_state_never_retried",
+      "kind": "ledger",
+      "expected": "error",
+      "observed": "G2LP1:HOLD_RECORD_INTEGRITY: Partial unreviewed state is preserved, never retried.",
+      "pass": true
+    },
+    {
+      "name": "admit_memory_guard_5GiB",
+      "kind": "ledger",
+      "expected": "error",
+      "observed": "G2LP1:HOLD_MEMORY: Less than 5 GiB free physical RAM; no automatic retry.",
+      "pass": true
+    },
+    {
+      "name": "admit_memory_guard_left_no_folder",
+      "kind": "ledger",
+      "expected": "true",
+      "observed": "true",
+      "pass": true
+    },
+    {
+      "name": "driver_unknown_configuration",
+      "kind": "driver",
+      "expected": "error",
+      "observed": "G2M5X6:HOLD_INPUT: Only the six preregistered configurations X6-01 ... X6-06 are permitted.",
+      "pass": true
+    },
+    {
+      "name": "driver_diagonal_not_a_configuration",
+      "kind": "driver",
+      "expected": "error",
+      "observed": "G2M5X6:HOLD_INPUT: Only the six preregistered configurations X6-01 ... X6-06 are permitted.",
+      "pass": true
+    },
+    {
+      "name": "driver_gate_precedes_folders_ledger_solve",
+      "kind": "driver",
+      "expected": "true",
+      "observed": "true",
+      "pass": true
+    },
+    {
+      "name": "driver_dry_branch_has_no_solve_or_write",
+      "kind": "driver",
+      "expected": "true",
+      "observed": "true",
+      "pass": true
+    },
+    {
+      "name": "driver_never_reads_a0_a1_go",
+      "kind": "driver",
+      "expected": "true",
+      "observed": "true",
+      "pass": true
+    },
+    {
+      "name": "driver_no_resume_record",
+      "kind": "driver",
+      "expected": "true",
+      "observed": "true",
+      "pass": true
+    },
+    {
+      "name": "driver_admission_ceiling_six",
+      "kind": "driver",
+      "expected": "true",
+      "observed": "true",
+      "pass": true
+    },
+    {
+      "name": "x601_static_check_passes",
+      "kind": "activation",
+      "expected": "true",
+      "observed": "true",
+      "pass": true
+    },
+    {
+      "name": "swap_detected_x601_vs_h_labels",
+      "kind": "activation",
+      "expected": "true",
+      "observed": "true",
+      "pass": true
+    },
+    {
+      "name": "config_mesh_pin_mismatch",
+      "kind": "activation",
+      "expected": "error",
+      "observed": "G2M5X6:HOLD_SOURCE: Mesh content of H_B9 differs from the preregistration.",
+      "pass": true
+    },
+    {
+      "name": "config_mask_not_policy",
+      "kind": "activation",
+      "expected": "error",
+      "observed": "G2M5X6:HOLD_INPUT: Configuration X6-01 is not a policy path x material pair.",
+      "pass": true
+    },
+    {
+      "name": "config_ratio_not_policy",
+      "kind": "activation",
+      "expected": "error",
+      "observed": "G2M5X6:HOLD_INPUT: Configuration X6-01 is not a policy path x material pair.",
+      "pass": true
+    },
+    {
+      "name": "verifier_rejects_labels_not_from_mask",
+      "kind": "activation",
+      "expected": "true",
+      "observed": "true",
+      "pass": true
+    },
+    {
+      "name": "verifier_rejects_wrong_ring_modulus",
+      "kind": "activation",
+      "expected": "true",
+      "observed": "true",
+      "pass": true
+    },
+    {
+      "name": "verifier_rejects_tampered_owner",
+      "kind": "activation",
+      "expected": "true",
+      "observed": "true",
+      "pass": true
+    },
+    {
+      "name": "decomposition_exact_identity",
+      "kind": "analysis",
+      "expected": "true",
+      "observed": "true",
+      "pass": true
+    },
+    {
+      "name": "decomposition_pure_material",
+      "kind": "analysis",
+      "expected": "true",
+      "observed": "true",
+      "pass": true
+    },
+    {
+      "name": "decomposition_pure_path",
+      "kind": "analysis",
+      "expected": "true",
+      "observed": "true",
+      "pass": true
+    },
+    {
+      "name": "decomposition_shapley_sum",
+      "kind": "analysis",
+      "expected": "true",
+      "observed": "true",
+      "pass": true
+    },
+    {
+      "name": "analysis_refuses_without_campaign",
+      "kind": "analysis",
+      "expected": "error",
+      "observed": "G2M5X6:HOLD_NOT_EXECUTED: M5-X6 has not been executed and closed: no analysis without six verified states.",
+      "pass": true
+    },
+    {
+      "name": "analysis_wrote_nothing",
+      "kind": "analysis",
+      "expected": "true",
+      "observed": "true",
+      "pass": true
+    },
+    {
+      "name": "diagonal_audit_H_B9",
+      "kind": "audit",
+      "expected": "true",
+      "observed": "true",
+      "pass": true
+    },
+    {
+      "name": "diagonal_audit_stiff13_B9",
+      "kind": "audit",
+      "expected": "true",
+      "observed": "true",
+      "pass": true
+    },
+    {
+      "name": "diagonal_audit_soft2_B9",
+      "kind": "audit",
+      "expected": "true",
+      "observed": "true",
+      "pass": true
+    },
+    {
+      "name": "diagonal_audit_soft1_B9",
+      "kind": "audit",
+      "expected": "true",
+      "observed": "true",
+      "pass": true
+    },
+    {
+      "name": "diagonal_ring_areas_equal_across_meshes",
+      "kind": "audit",
+      "expected": "true",
+      "observed": "1.12e-15",
+      "pass": true
+    },
+    {
+      "name": "dry_static_check_X6-01",
+      "kind": "dry",
+      "expected": "true",
+      "observed": "true",
+      "pass": true
+    },
+    {
+      "name": "dry_static_check_X6-02",
+      "kind": "dry",
+      "expected": "true",
+      "observed": "true",
+      "pass": true
+    },
+    {
+      "name": "dry_static_check_X6-03",
+      "kind": "dry",
+      "expected": "true",
+      "observed": "true",
+      "pass": true
+    },
+    {
+      "name": "dry_static_check_X6-04",
+      "kind": "dry",
+      "expected": "true",
+      "observed": "true",
+      "pass": true
+    },
+    {
+      "name": "dry_static_check_X6-05",
+      "kind": "dry",
+      "expected": "true",
+      "observed": "true",
+      "pass": true
+    },
+    {
+      "name": "dry_static_check_X6-06",
+      "kind": "dry",
+      "expected": "true",
+      "observed": "true",
+      "pass": true
+    },
+    {
+      "name": "protected_trees_unchanged",
+      "kind": "closure",
+      "expected": "true",
+      "observed": "910 files",
+      "pass": true
+    },
+    {
+      "name": "no_m5x6_run_or_ledger_folder_created",
+      "kind": "closure",
+      "expected": "true",
+      "observed": "true",
+      "pass": true
+    }
+  ]
+}

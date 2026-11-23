@@ -1,0 +1,87 @@
+{
+ "schema": "NewMetacomp.G2.M5X6.ArchiveCheck.v1",
+ "archive": "<archive>/NewMetacomp_G2_A1_FamilyB_Records_20261122.zip",
+ "archiveSHA256": "da0a1580c711bb873e0b93248fca8e6e0bcb684b39e2c656902820ea400674bf",
+ "expectedSHA256": "da0a1580c711bb873e0b93248fca8e6e0bcb684b39e2c656902820ea400674bf",
+ "planSHA256Pin": "da0a1580c711bb873e0b93248fca8e6e0bcb684b39e2c656902820ea400674bf",
+ "archiveSHA256Matches": true,
+ "members": 95,
+ "membersExpected": 95,
+ "b9Records": [
+  {
+   "record": "H_B9/STATE.mat",
+   "archiveMember": "outputs/g2_a1_fixed_path_v1/run_a1_family_b_s4_v1/H_B9/STATE.mat",
+   "archiveSHA256": "a0524c3abdcd43acaaa615fee201d1f7b592399204039821d6404c103863ffe0",
+   "execCloneSHA256": "a0524c3abdcd43acaaa615fee201d1f7b592399204039821d6404c103863ffe0",
+   "planPin": "a0524c3abdcd43acaaa615fee201d1f7b592399204039821d6404c103863ffe0",
+   "committedManifest": "a0524c3abdcd43acaaa615fee201d1f7b592399204039821d6404c103863ffe0",
+   "allEqual": true
+  },
+  {
+   "record": "H_B9/SOLUTION.mat",
+   "archiveMember": "outputs/g2_a1_fixed_path_v1/run_a1_family_b_s4_v1/H_B9/SOLUTION.mat",
+   "archiveSHA256": "6b4dd9fadac8dad3828671179be1f38ffadde0dd73c2f2da50ed7811562ccc05",
+   "execCloneSHA256": "6b4dd9fadac8dad3828671179be1f38ffadde0dd73c2f2da50ed7811562ccc05",
+   "planPin": "6b4dd9fadac8dad3828671179be1f38ffadde0dd73c2f2da50ed7811562ccc05",
+   "committedManifest": "6b4dd9fadac8dad3828671179be1f38ffadde0dd73c2f2da50ed7811562ccc05",
+   "allEqual": true
+  },
+  {
+   "record": "stiff13_B9/STATE.mat",
+   "archiveMember": "outputs/g2_a1_fixed_path_v1/run_a1_family_b_s4_v1/stiff13_B9/STATE.mat",
+   "archiveSHA256": "80fad8f840f86d535c80f0dd81db7cd2ff4b08135c2323dea04814947cc168ae",
+   "execCloneSHA256": "80fad8f840f86d535c80f0dd81db7cd2ff4b08135c2323dea04814947cc168ae",
+   "planPin": "80fad8f840f86d535c80f0dd81db7cd2ff4b08135c2323dea04814947cc168ae",
+   "committedManifest": "80fad8f840f86d535c80f0dd81db7cd2ff4b08135c2323dea04814947cc168ae",
+   "allEqual": true
+  },
+  {
+   "record": "stiff13_B9/SOLUTION.mat",
+   "archiveMember": "outputs/g2_a1_fixed_path_v1/run_a1_family_b_s4_v1/stiff13_B9/SOLUTION.mat",
+   "archiveSHA256": "1befa2eefb8716e43616d0ccbba8b54a9aad3ea78f6ab7b63b78f5ead72804b7",
+   "execCloneSHA256": "1befa2eefb8716e43616d0ccbba8b54a9aad3ea78f6ab7b63b78f5ead72804b7",
+   "planPin": "1befa2eefb8716e43616d0ccbba8b54a9aad3ea78f6ab7b63b78f5ead72804b7",
+   "committedManifest": "1befa2eefb8716e43616d0ccbba8b54a9aad3ea78f6ab7b63b78f5ead72804b7",
+   "allEqual": true
+  },
+  {
+   "record": "soft2_B9/STATE.mat",
+   "archiveMember": "outputs/g2_a1_fixed_path_v1/run_a1_family_b_s4_v1/soft2_B9/STATE.mat",
+   "archiveSHA256": "e9b42d01fda9a78af98770f17f6042e1cdf97b10cac898186728201c702497ca",
+   "execCloneSHA256": "e9b42d01fda9a78af98770f17f6042e1cdf97b10cac898186728201c702497ca",
+   "planPin": "e9b42d01fda9a78af98770f17f6042e1cdf97b10cac898186728201c702497ca",
+   "committedManifest": "e9b42d01fda9a78af98770f17f6042e1cdf97b10cac898186728201c702497ca",
+   "allEqual": true
+  },
+  {
+   "record": "soft2_B9/SOLUTION.mat",
+   "archiveMember": "outputs/g2_a1_fixed_path_v1/run_a1_family_b_s4_v1/soft2_B9/SOLUTION.mat",
+   "archiveSHA256": "dbd6368ef5e88f214bea038c176b13bc47032c1b56fcd8c39cef8fdc06f904f2",
+   "execCloneSHA256": "dbd6368ef5e88f214bea038c176b13bc47032c1b56fcd8c39cef8fdc06f904f2",
+   "planPin": "dbd6368ef5e88f214bea038c176b13bc47032c1b56fcd8c39cef8fdc06f904f2",
+   "committedManifest": "dbd6368ef5e88f214bea038c176b13bc47032c1b56fcd8c39cef8fdc06f904f2",
+   "allEqual": true
+  },
+  {
+   "record": "soft1_B9/STATE.mat",
+   "archiveMember": "outputs/g2_a1_fixed_path_v1/run_a1_family_b_s4_v1/soft1_B9/STATE.mat",
+   "archiveSHA256": "1371199a8b44924713ce686412da1836c5a1be04090a52d9b464257e46f69e78",
+   "execCloneSHA256": "1371199a8b44924713ce686412da1836c5a1be04090a52d9b464257e46f69e78",
+   "planPin": "1371199a8b44924713ce686412da1836c5a1be04090a52d9b464257e46f69e78",
+   "committedManifest": "1371199a8b44924713ce686412da1836c5a1be04090a52d9b464257e46f69e78",
+   "allEqual": true
+  },
+  {
+   "record": "soft1_B9/SOLUTION.mat",
+   "archiveMember": "outputs/g2_a1_fixed_path_v1/run_a1_family_b_s4_v1/soft1_B9/SOLUTION.mat",
+   "archiveSHA256": "848db030939c25db968aa2335edc1345b79fdcb3342743fbbe21d28b293b7be3",
+   "execCloneSHA256": "848db030939c25db968aa2335edc1345b79fdcb3342743fbbe21d28b293b7be3",
+   "planPin": "848db030939c25db968aa2335edc1345b79fdcb3342743fbbe21d28b293b7be3",
+   "committedManifest": "848db030939c25db968aa2335edc1345b79fdcb3342743fbbe21d28b293b7be3",
+   "allEqual": true
+  }
+ ],
+ "allB9RecordsEqual": true,
+ "offDeviceCopyRechecked": false,
+ "offDeviceNote": "removable drive D: not attached on 2026-11-23; the off-device copy was verified on 2026-11-22 (A1_ARCHIVE.json) and is not re-verified here"
+}

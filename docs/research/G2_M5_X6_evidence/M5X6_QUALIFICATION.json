@@ -1,0 +1,455 @@
+{
+  "schema": "NewMetacomp.G2.M5X6.Qualification.v1",
+  "status": "M5X6_PREFLIGHT_PASS_SCIENTIFIC_HOLD",
+  "sourceCommit": "2a5127e1339f7c24294e0ff3d8ce800cf3754ef3",
+  "planSHA256": "e6153735e76b09382a24376002110f7f07485d27db12aaca09108419e43fea52",
+  "a1PolicySHA256": "312e1e005b9ca85d743b672115609d7b02bb2f6ebbbae09658c0cdf1d9a8a013",
+  "a1SourceSHA256": "7e5683703bd104547ef5d013aa0253ad2819b59dc58693957e2d04b4707f0947",
+  "x6SourceSHA256": "f21d7d44a2de33922dd766c226320cec0695252f24d5516908f500c3a8d8e6bb",
+  "x6SourceLines": [
+    "check_m5x6_contract.m 3fd5211f2cbe16997874936086765f0b3dc6d996095f45af21b3c8c629167302",
+    "g2_m5x6_admit_hook.m 577b677edd944974665814e3879f6567710d712071ae806f6fc1f0ed9221c057",
+    "g2_m5x6_configuration_check.m 2834aeb37b526e652355cf66a6d5ebc95dd6adf404a6feef3c42a4127c6a053b",
+    "g2_m5x6_context.m a32fbac33a2dbdf131bf553d59f8c9ac45a910548164d1ba70d78d652af55dbd",
+    "g2_m5x6_go_validate.m b3b6eab658d8391cb281685f97703d8f2515fc058a791776583e19d645fb817b",
+    "g2_m5x6_run.m d550f0ad09f3c452a0e0948e36f4fa612e6609d611f5c71aa1744dfa59adeeed",
+    "g2_m5x6_scientific_gate.m 0667df5f928f2b94e7e7acaef5f92cd78411d8f9ab9221752f24fedbe090fdff",
+    "m5x6_analyze.m 59434801f876e2fe71cb6845b8724f3ddedc1dd4ec01a7ae4aee201b7c0e019a",
+    "m5x6_audit_diagonal.m f9debdb5e9fbb77472859ba22804406c57ed38298b8c9da85cb7815bc58715fa",
+    "m5x6_decompose.m 4c70ad15ab3504386e83e9acc975191ec193885e2f33dbaca636cd6f9c7aa0ce",
+    "m5x6_qualify.m 27ddbd915977c562c84e52ef3d5e49b236223a722dfcebdd356cdf71d90843bb"
+  ],
+  "meshManifestSHA256": "9c3d0f4560da34216c674cf8af5a9f6782d28ab80ec86076f284e55278904ad8",
+  "token": "G2M5X6|plan=e6153735e76b09382a24376002110f7f07485d27db12aaca09108419e43fea52|a1policy=312e1e005b9ca85d743b672115609d7b02bb2f6ebbbae09658c0cdf1d9a8a013|a1source=7e5683703bd104547ef5d013aa0253ad2819b59dc58693957e2d04b4707f0947|x6source=f21d7d44a2de33922dd766c226320cec0695252f24d5516908f500c3a8d8e6bb|meshes=9c3d0f4560da34216c674cf8af5a9f6782d28ab80ec86076f284e55278904ad8|configs=X6-01,X6-02,X6-03,X6-04,X6-05,X6-06|maxSolves=6",
+  "preflight": {
+    "pass": true,
+    "status": "PREFLIGHT_READY_NOT_LP0_QUALIFIED",
+    "cause": "",
+    "physicalSolves": 0,
+    "meshBuilds": 0,
+    "policySHA256": "1cf5a76ded840b0758343a1b935b299041e779ec6332c3b7cb0b6dfba1e2af43",
+    "release": "R2023a",
+    "pdeAvailable": true,
+    "freePhysicalRAM_GiB": 5.4252700805664062,
+    "matlabProcesses": 1,
+    "currentPID": 5560,
+    "sourceCommit": "2a5127e1339f7c24294e0ff3d8ce800cf3754ef3",
+    "dirtySource": "",
+    "token": "G2LP0|policy=1cf5a76ded840b0758343a1b935b299041e779ec6332c3b7cb0b6dfba1e2af43|source=2a5127e1339f7c24294e0ff3d8ce800cf3754ef3|geometry=179b777f4a26caf1482ad470d78f5f802bc24456b9a1b6fc6b641eccf2b66008|cases=H,stiff13,soft2,soft1|maxState=4"
+  },
+  "diagonalAuditAllPass": true,
+  "dryChecks": [
+    {
+      "pass": true,
+      "id": "X6-01",
+      "pathCase": "H",
+      "materialCase": "stiff13",
+      "meshKey": "H_B9",
+      "meshContentSHA256": "9df5f874cbbc28e185214d2fe65c07109fc7145a4827d18ff51d0961e3b708ae",
+      "baselineContentSHA256": "530954c687c00cdf3654f8c04398a9fafd4b6817d0b5fee46442fc45895aa3cb",
+      "meshGates": "19/19",
+      "T3": 31385,
+      "DOF": 127498,
+      "crackArclength_mm": 41.4,
+      "tip_mm": [
+        105.64746005474672,
+        40.872016664004875
+      ],
+      "tipNodeGap_mm": 1.5888218580782548E-14,
+      "polylineBitwiseEqualA0S4": true,
+      "mask": "101",
+      "ratio": 2,
+      "ringElements": [
+        4090,
+        4102,
+        4090
+      ],
+      "ringArea_mm2": [
+        1012.1525285981629,
+        1012.1525285981616,
+        1012.1525285981614
+      ],
+      "activeElements": 8180,
+      "activeArea_mm2": 2024.3050571963245,
+      "jumpEdges": 152,
+      "qClearance_mm": 33.362441761136445,
+      "oracleMismatches": 0,
+      "verifierChecks": {
+        "oraclePass": true,
+        "oracleAgreement": true,
+        "centresAscendingY": true,
+        "maskCanonical": true,
+        "phaseFromMask": true,
+        "inactiveAndMatrixLabelOne": true,
+        "ringAreaIdentity": true,
+        "activeAreaIdentity": true,
+        "interfaceIdsOneToOne": true,
+        "chordsConforming": true,
+        "activeChordsCarryJump": true,
+        "passiveChordsNoJump": true,
+        "jumpEdgeCount": true,
+        "noVoidFilling": true,
+        "materialsAdmissible": true,
+        "qSupportOwnerFree": true,
+        "qClearance": true,
+        "ringsAndMatrixConnected": true,
+        "coincidentOnlyTwins": true
+      },
+      "extraChecks": {
+        "activeCountEqualsOwnerCount": true,
+        "phaseOnlyOnActiveRings": true,
+        "ringMaterialRatio": true
+      },
+      "Em": 3268.115
+    },
+    {
+      "pass": true,
+      "id": "X6-02",
+      "pathCase": "stiff13",
+      "materialCase": "H",
+      "meshKey": "stiff13_B9",
+      "meshContentSHA256": "2b173786a997d2a383e09c2e1d32ee3196951d8f5fbf832114bb5b27832ee693",
+      "baselineContentSHA256": "ba6b6a74d2057e629757dac3f5abf4d357b605bfcb5a4d9bd1ee73381c0ce2a3",
+      "meshGates": "19/19",
+      "T3": 31369,
+      "DOF": 127434,
+      "crackArclength_mm": 41.400000000000006,
+      "tip_mm": [
+        105.83199310467963,
+        40.822607977699
+      ],
+      "tipNodeGap_mm": 1.4210854715202004E-14,
+      "polylineBitwiseEqualA0S4": true,
+      "mask": "000",
+      "ratio": 1,
+      "ringElements": [
+        4100,
+        4078,
+        4110
+      ],
+      "ringArea_mm2": [
+        1012.1525285981618,
+        1012.1525285981613,
+        1012.1525285981611
+      ],
+      "activeElements": 0,
+      "activeArea_mm2": 0,
+      "jumpEdges": 0,
+      "qClearance_mm": 33.230204211893557,
+      "oracleMismatches": 0,
+      "verifierChecks": {
+        "oraclePass": true,
+        "oracleAgreement": true,
+        "centresAscendingY": true,
+        "maskCanonical": true,
+        "phaseFromMask": true,
+        "inactiveAndMatrixLabelOne": true,
+        "ringAreaIdentity": true,
+        "activeAreaIdentity": true,
+        "interfaceIdsOneToOne": true,
+        "chordsConforming": true,
+        "activeChordsCarryJump": true,
+        "passiveChordsNoJump": true,
+        "jumpEdgeCount": true,
+        "noVoidFilling": true,
+        "materialsAdmissible": true,
+        "qSupportOwnerFree": true,
+        "qClearance": true,
+        "ringsAndMatrixConnected": true,
+        "coincidentOnlyTwins": true
+      },
+      "extraChecks": {
+        "activeCountEqualsOwnerCount": true,
+        "phaseOnlyOnActiveRings": true,
+        "ringMaterialRatio": true
+      },
+      "Em": 3268.115
+    },
+    {
+      "pass": true,
+      "id": "X6-03",
+      "pathCase": "H",
+      "materialCase": "soft2",
+      "meshKey": "H_B9",
+      "meshContentSHA256": "9df5f874cbbc28e185214d2fe65c07109fc7145a4827d18ff51d0961e3b708ae",
+      "baselineContentSHA256": "530954c687c00cdf3654f8c04398a9fafd4b6817d0b5fee46442fc45895aa3cb",
+      "meshGates": "19/19",
+      "T3": 31385,
+      "DOF": 127498,
+      "crackArclength_mm": 41.4,
+      "tip_mm": [
+        105.64746005474672,
+        40.872016664004875
+      ],
+      "tipNodeGap_mm": 1.5888218580782548E-14,
+      "polylineBitwiseEqualA0S4": true,
+      "mask": "010",
+      "ratio": 0.5,
+      "ringElements": [
+        4090,
+        4102,
+        4090
+      ],
+      "ringArea_mm2": [
+        1012.1525285981629,
+        1012.1525285981616,
+        1012.1525285981614
+      ],
+      "activeElements": 4102,
+      "activeArea_mm2": 1012.1525285981616,
+      "jumpEdges": 76,
+      "qClearance_mm": 33.362441761136445,
+      "oracleMismatches": 0,
+      "verifierChecks": {
+        "oraclePass": true,
+        "oracleAgreement": true,
+        "centresAscendingY": true,
+        "maskCanonical": true,
+        "phaseFromMask": true,
+        "inactiveAndMatrixLabelOne": true,
+        "ringAreaIdentity": true,
+        "activeAreaIdentity": true,
+        "interfaceIdsOneToOne": true,
+        "chordsConforming": true,
+        "activeChordsCarryJump": true,
+        "passiveChordsNoJump": true,
+        "jumpEdgeCount": true,
+        "noVoidFilling": true,
+        "materialsAdmissible": true,
+        "qSupportOwnerFree": true,
+        "qClearance": true,
+        "ringsAndMatrixConnected": true,
+        "coincidentOnlyTwins": true
+      },
+      "extraChecks": {
+        "activeCountEqualsOwnerCount": true,
+        "phaseOnlyOnActiveRings": true,
+        "ringMaterialRatio": true
+      },
+      "Em": 3268.115
+    },
+    {
+      "pass": true,
+      "id": "X6-04",
+      "pathCase": "soft2",
+      "materialCase": "H",
+      "meshKey": "soft2_B9",
+      "meshContentSHA256": "c7da6c008bad66c192a72795ba556e86611b0f99b650a1d13d08d1002aa7ad78",
+      "baselineContentSHA256": "fdfaf6324af772a87fccde27d1bdfe51cad354518ddab6e5da1f2e1c6c32b4f9",
+      "meshGates": "19/19",
+      "T3": 31327,
+      "DOF": 127266,
+      "crackArclength_mm": 41.4,
+      "tip_mm": [
+        105.72974312219405,
+        40.849850320624789
+      ],
+      "tipNodeGap_mm": 0,
+      "polylineBitwiseEqualA0S4": true,
+      "mask": "000",
+      "ratio": 1,
+      "ringElements": [
+        4086,
+        4076,
+        4082
+      ],
+      "ringArea_mm2": [
+        1012.152528598162,
+        1012.1525285981617,
+        1012.1525285981613
+      ],
+      "activeElements": 0,
+      "activeArea_mm2": 0,
+      "jumpEdges": 0,
+      "qClearance_mm": 33.303481750377166,
+      "oracleMismatches": 0,
+      "verifierChecks": {
+        "oraclePass": true,
+        "oracleAgreement": true,
+        "centresAscendingY": true,
+        "maskCanonical": true,
+        "phaseFromMask": true,
+        "inactiveAndMatrixLabelOne": true,
+        "ringAreaIdentity": true,
+        "activeAreaIdentity": true,
+        "interfaceIdsOneToOne": true,
+        "chordsConforming": true,
+        "activeChordsCarryJump": true,
+        "passiveChordsNoJump": true,
+        "jumpEdgeCount": true,
+        "noVoidFilling": true,
+        "materialsAdmissible": true,
+        "qSupportOwnerFree": true,
+        "qClearance": true,
+        "ringsAndMatrixConnected": true,
+        "coincidentOnlyTwins": true
+      },
+      "extraChecks": {
+        "activeCountEqualsOwnerCount": true,
+        "phaseOnlyOnActiveRings": true,
+        "ringMaterialRatio": true
+      },
+      "Em": 3268.115
+    },
+    {
+      "pass": true,
+      "id": "X6-05",
+      "pathCase": "H",
+      "materialCase": "soft1",
+      "meshKey": "H_B9",
+      "meshContentSHA256": "9df5f874cbbc28e185214d2fe65c07109fc7145a4827d18ff51d0961e3b708ae",
+      "baselineContentSHA256": "530954c687c00cdf3654f8c04398a9fafd4b6817d0b5fee46442fc45895aa3cb",
+      "meshGates": "19/19",
+      "T3": 31385,
+      "DOF": 127498,
+      "crackArclength_mm": 41.4,
+      "tip_mm": [
+        105.64746005474672,
+        40.872016664004875
+      ],
+      "tipNodeGap_mm": 1.5888218580782548E-14,
+      "polylineBitwiseEqualA0S4": true,
+      "mask": "100",
+      "ratio": 0.5,
+      "ringElements": [
+        4090,
+        4102,
+        4090
+      ],
+      "ringArea_mm2": [
+        1012.1525285981629,
+        1012.1525285981616,
+        1012.1525285981614
+      ],
+      "activeElements": 4090,
+      "activeArea_mm2": 1012.1525285981629,
+      "jumpEdges": 76,
+      "qClearance_mm": 33.362441761136445,
+      "oracleMismatches": 0,
+      "verifierChecks": {
+        "oraclePass": true,
+        "oracleAgreement": true,
+        "centresAscendingY": true,
+        "maskCanonical": true,
+        "phaseFromMask": true,
+        "inactiveAndMatrixLabelOne": true,
+        "ringAreaIdentity": true,
+        "activeAreaIdentity": true,
+        "interfaceIdsOneToOne": true,
+        "chordsConforming": true,
+        "activeChordsCarryJump": true,
+        "passiveChordsNoJump": true,
+        "jumpEdgeCount": true,
+        "noVoidFilling": true,
+        "materialsAdmissible": true,
+        "qSupportOwnerFree": true,
+        "qClearance": true,
+        "ringsAndMatrixConnected": true,
+        "coincidentOnlyTwins": true
+      },
+      "extraChecks": {
+        "activeCountEqualsOwnerCount": true,
+        "phaseOnlyOnActiveRings": true,
+        "ringMaterialRatio": true
+      },
+      "Em": 3268.115
+    },
+    {
+      "pass": true,
+      "id": "X6-06",
+      "pathCase": "soft1",
+      "materialCase": "H",
+      "meshKey": "soft1_B9",
+      "meshContentSHA256": "a6d31fd9ea12c8845e2d0253f7e8bce7e4ed4247ddf29653c77b12332feb1407",
+      "baselineContentSHA256": "8617912bb6aee8a675a0691849e69066e4f8fa3aca7c92cc7be52414922a0332",
+      "meshGates": "19/19",
+      "T3": 31357,
+      "DOF": 127386,
+      "crackArclength_mm": 41.4,
+      "tip_mm": [
+        105.35058232560786,
+        40.946568796496685
+      ],
+      "tipNodeGap_mm": 1.4210854715202004E-14,
+      "polylineBitwiseEqualA0S4": true,
+      "mask": "000",
+      "ratio": 1,
+      "ringElements": [
+        4090,
+        4078,
+        4094
+      ],
+      "ringArea_mm2": [
+        1012.1525285981618,
+        1012.1525285981618,
+        1012.152528598162
+      ],
+      "activeElements": 0,
+      "activeArea_mm2": 0,
+      "jumpEdges": 0,
+      "qClearance_mm": 33.578812741692211,
+      "oracleMismatches": 0,
+      "verifierChecks": {
+        "oraclePass": true,
+        "oracleAgreement": true,
+        "centresAscendingY": true,
+        "maskCanonical": true,
+        "phaseFromMask": true,
+        "inactiveAndMatrixLabelOne": true,
+        "ringAreaIdentity": true,
+        "activeAreaIdentity": true,
+        "interfaceIdsOneToOne": true,
+        "chordsConforming": true,
+        "activeChordsCarryJump": true,
+        "passiveChordsNoJump": true,
+        "jumpEdgeCount": true,
+        "noVoidFilling": true,
+        "materialsAdmissible": true,
+        "qSupportOwnerFree": true,
+        "qClearance": true,
+        "ringsAndMatrixConnected": true,
+        "coincidentOnlyTwins": true
+      },
+      "extraChecks": {
+        "activeCountEqualsOwnerCount": true,
+        "phaseOnlyOnActiveRings": true,
+        "ringMaterialRatio": true
+      },
+      "Em": 3268.115
+    }
+  ],
+  "contractPassed": 74,
+  "contractTotal": 74,
+  "protectedFilesHashed": 910,
+  "protectedUnchanged": true,
+  "noM5X6FolderCreated": true,
+  "goPresent": false,
+  "physicalSolves": 0,
+  "scientificGO": false,
+  "ramObservations": [
+    {
+      "stage": "context",
+      "freeGiB": 5.2775001525878906
+    },
+    {
+      "stage": "protected_before",
+      "freeGiB": 5.2540626525878906
+    },
+    {
+      "stage": "diagonal_audit",
+      "freeGiB": 5.1902236938476562
+    },
+    {
+      "stage": "dry",
+      "freeGiB": 5.0732765197753906
+    },
+    {
+      "stage": "contract",
+      "freeGiB": 5.0901031494140625
+    },
+    {
+      "stage": "protected_after",
+      "freeGiB": 5.0595245361328125
+    }
+  ]
+}
