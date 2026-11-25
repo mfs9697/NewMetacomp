@@ -41,6 +41,7 @@
   "labels": ["MATRIX_ADVANCE", "INTERFACE_APPROACH", "INTERFACE_ENCOUNTER", "HOLE_BOUNDARY_APPROACH", "EXTERNAL_BOUNDARY_APPROACH", "NUMERICAL_HOLD", "CAMPAIGN_LIMIT_REACHED"],
   "constraintTypes": ["PHYSICAL_INTERFACE (guard tied to an active ring)", "NUMERICAL_RING (guard tied to a passive ring contour)", "HOLE_BOUNDARY", "EXTERNAL_BOUNDARY", "NUMERICAL_OTHER"],
   "precedence": "INTERFACE_APPROACH > HOLE_BOUNDARY_APPROACH > EXTERNAL_BOUNDARY_APPROACH > NUMERICAL_HOLD",
+  "failureClasses": "g2_lp2_failure_class: LOCAL (mesh, kink geometry, audit/phase of this mesh, solver, SIF gates, MTS root, actual-polygon clearance, classification) ends only that case with TERMINAL(NUMERICAL_HOLD); PREADMISSION_MEMORY and GLOBAL (source, policy, authorization, record/ledger integrity, memory after admission, unexpected) write a ledger HOLD that blocks the campaign, with no terminal and no closure; CAMPAIGN_REFUSAL writes nothing",
   "encounter": "INTERFACE_ENCOUNTER is never assigned in LP2-A: a candidate segment that would violate an interface guard is an approach; the last accepted state and its remaining clearance are reported",
   "numericalHold": "mesh, audit, SIF-gate, MTS, record, memory or campaign failures, and passive-ring guards; never physical arrest"
  },
@@ -68,7 +69,8 @@
  ],
  "analysis": {
   "script": "matlab/g2/lp2/g2_lp2_analyze.m",
-  "matching": "all LP2-A states have identical arclengths s_k = 25.4 + 4k mm, so own-path contrasts F_G(s) = G_X(s)/G_H(s) - 1 are compared at equal s; with future adaptive steps, piecewise-linear interpolation in s over the overlapping valid interval of both chains, never by increment number",
+  "verifier": "matlab/g2/lp2/g2_lp2_verify.m (read-only; every accepted state, terminal record and the ledger; inconsistency = integrity HOLD, never recomputation)",
+  "matching": "all LP2-A1 states have identical arclengths s_k = 25.4 + 4k mm; own-path contrasts F_G(s) = G_X(s)/G_H(s) - 1 are compared ONLY at accepted arclengths common to both chains; inputs with unequal increments are rejected (G2LP2:ANALYSIS_UNSUPPORTED); interpolation in s belongs to a later work package and never matching by increment number",
   "steering": ["signed lateral tip offset d(s) from the H polyline (positive towards the left normal of H)", "global heading difference", "local MTS increments", "K_II/K_I", "minimum distance to each ring circle", "terminal classifications"],
   "distinction": "own-path contrasts F_G(s) are not the direct material contribution of M5-X6 (fixed S4 crossed solves)",
   "hypotheses": {
@@ -77,7 +79,12 @@
    "H3": "the local MTS compensation observed at S4 persists away from the rings but changes as the crack approaches them",
    "H4": "material contrast changes whether the crack meets an active interface before another boundary"
   },
-  "hypothesisStatus": "open research questions; each is reported as supported, contradicted or not testable within LP2-A1 without changing the numerics",
+  "hypothesisRules": {
+   "H1_H2": "apply only while F_G < 0 at every LP2 point (s >= 41.4 mm): H1 SUPPORTED if F_G strictly decreases, H2 SUPPORTED if F_G strictly increases towards zero; CONTRADICTED if the last value moved against the hypothesis relative to the first; MIXED otherwise; a change of sign is SIGN_TRANSITION (shielding-to-amplification or the reverse), never continued strengthening/weakening; F_G > 0 throughout is NO_SHIELDING; fewer than two points is INSUFFICIENT_EVIDENCE",
+   "H3": "DESCRIPTIVE_PROXY_ONLY: dMTS(s) = theta_X - theta_H reported with heading differences and lateral offsets; no material/path/interaction decomposition and no compensation claim from small local angle differences",
+   "H4": "NOT_TESTABLE_WITHIN_LP2_A1: a numerical interface approach is not an encounter and a passive ring contour is not a material discontinuity; terminal tip, approached object, ring mask, clearance, terminating guard and ceiling truncation are reported descriptively"
+  },
+  "hypothesisStatus": "open research questions; no tuning of the numerics or selection of architectures to confirm them; negative results preserved",
   "fractureCriterion": "conditional LEFM/MTS continuation at P = 1 N; no G_c, toughness or R-curve; no claim of physical propagation or arrest",
   "soft2": "INCONCLUSIVE classification unchanged"
  }

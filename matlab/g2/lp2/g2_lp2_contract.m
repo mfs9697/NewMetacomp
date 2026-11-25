@@ -107,17 +107,29 @@ ok('driver_dry_has_no_mesh_solve_write','driver',@()isempty(strfind(dry,'g2_kink
  isempty(strfind(dry,'mkdir'))&&isempty(strfind(dry,'''write'''))&&~isempty(strfind(dry,'return')));
 ok('driver_no_other_go','driver',@()isempty(strfind(src,'SCIENTIFIC_GO_v1'))&&isempty(strfind(src,'G2_A1_'))&&isempty(strfind(src,'G2_M5_X6')));
 ok('driver_no_resume','driver',@()~isempty(strfind(src,'runFolderFacts(rd,C.token),[])')));
-ok('driver_classification_before_admission','driver',@()fo('g2_lp2_classify(')<fo('g2_lp1_admit_state('));
+cs=fileread(fullfile(C.lp2,'g2_lp2_chain.m'));fc=@(x)min([strfind(cs,x),inf]);
+ok('chain_classification_before_admission_before_compute','driver',@()fc('ops.classify(')<fc('ops.admit(')&&fc('ops.admit(')<fc('ops.computeState('));
+ok('chain_closure_after_every_terminal_path','driver',@()isempty(strfind(cs,'writeTerminal(tf,env,''NUMERICAL_HOLD'',parent,parentHash,F,R,T,ME,''mesh/audit/solve'',''local numerical HOLD; accepted prefix preserved; never retried'');return')));
 ok('driver_unchanged_mesher_call','driver',@()~isempty(strfind(src,'''TipGuideRadius_mm'',15,''TipGuideHface_mm'',1.5},''MaxT3Elements'',40000')));
-dr=cell(1,4);for i=1:4,dr{i}=g2_lp2_run('Case',pol.cases(i).id);end
-ok('driver_dry_four_cases','driver',@()all(cellfun(@(d)strcmp(d.status,'DRY_READY_NO_FEM')&&d.computed==0&&strcmp(d.token,C.token)&& ...
- strcmp(d.S5.classification,'MATRIX_ADVANCE'),dr)));
+ok('driver_dry_four_cases','driver',@()dryAll());
 % ---------------------------------------------------------------- analysis regression on A0 S0-S4
 ch=struct();for i=1:4,id=pol.cases(i).id;ch.(id)=arrayfun(@(k)fullfile(A0,id,sprintf('S%d',k),'STATE.mat'),0:4,'UniformOutput',false);end
 An=g2_lp2_analyze(ch,'');M5=jsondecode(fileread(fullfile(C.repo,'docs','research','G2_M5_evidence','M5_EXISTING_EVIDENCE.json')));
 dd=0;fg=0;for c={'stiff13','soft2','soft1'},dd=max(dd,max(abs(An.(c{1}).d_mm-M5.lateralOffset_d_mm.(c{1}).')));fg=max(fg,abs(An.(c{1}).F_G(5)-M5.decompositionExisting.(c{1}).S4_total_B0));end
 ok('analysis_reproduces_M5_offsets_and_F_G','analysis',@()dd<=1e-12&&fg<=1e-12);
-ok('analysis_H1_H2_not_testable_on_S0_S4','analysis',@()strcmp(An.stiff13.H1.status,'NOT_TESTABLE')&&strcmp(An.soft2.H2.status,'NOT_TESTABLE')&&strcmp(An.H4.status,'NOT_TESTABLE'));
+ok('analysis_insufficient_evidence_on_S0_S4','analysis',@()strcmp(An.stiff13.H1.status,'INSUFFICIENT_EVIDENCE')&&strcmp(An.soft2.H2.status,'INSUFFICIENT_EVIDENCE')&& ...
+ strcmp(An.H4.status,'NOT_TESTABLE_WITHIN_LP2_A1')&&strcmp(An.stiff13.H3.status,'DESCRIPTIVE_PROXY_ONLY'));
+% synthetic chains (straight 4-mm increments) for the H1/H2 rules and the arclength rule
+ok('analysis_H1_supported_when_negative_strictly_decreasing','analysis',@()strcmp(synth([-.05 -.06 -.07 -.08],[0 0 0 0],4,'stiff13','H1'),'SUPPORTED'));
+ok('analysis_H1_sign_transition','analysis',@()strcmp(synth([-.02 -.01 .01 .02],[0 0 0 0],4,'stiff13','H1'),'SIGN_TRANSITION'));
+ok('analysis_H1_contradicted','analysis',@()strcmp(synth([-.08 -.07 -.06 -.05],[0 0 0 0],4,'stiff13','H1'),'CONTRADICTED'));
+ok('analysis_H1_mixed','analysis',@()strcmp(synth([-.05 -.07 -.06 -.08],[0 0 0 0],4,'stiff13','H1'),'MIXED'));
+ok('analysis_H2_supported_when_negative_towards_zero','analysis',@()strcmp(synth([-.04 -.03 -.02 -.01],[0 0 0 0],4,'soft2','H2'),'SUPPORTED'));
+ok('analysis_H2_transition_not_weakening','analysis',@()strcmp(synth([-.02 -.01 .005 .01],[0 0 0 0],4,'soft2','H2'),'SIGN_TRANSITION'));
+ok('analysis_H2_no_shielding','analysis',@()strcmp(synth([.01 .02 .03 .04],[0 0 0 0],4,'soft2','H2'),'NO_SHIELDING'));
+ex('analysis_unequal_arclength_rejected','analysis',@()synth([-.05 -.06 -.07 -.08],[0 0 -0.2 0],4,'stiff13','H1'),'G2LP2:ANALYSIS_UNSUPPORTED','unequal increments');
+rows=[rows,g2_lp2_campaign_tests(C)];
+
 neg=rows(strcmp({rows.expected},'error'));
 T=struct('schema','NewMetacomp.G2.LP2A.ContractTests.v1','pass',all([rows.pass]),'passed',nnz([rows.pass]),'total',numel(rows), ...
  'negativeTests',numel(neg),'negativeTestsPassed',all([neg.pass]),'physicalSolves',0,'token',C.token,'rows',rows, ...
@@ -133,6 +145,26 @@ for r=rows(~[rows.pass]),fprintf(2,'LP2A_CONTRACT_FAIL %s: %s\n',r.name,r.observ
   rows(end+1)=struct('name',name,'kind',kind,'expected','error','observed',o,'pass',v);
  end
  function gn(name,G,id,frag),ex(name,'go',@()g2_lp2_go_validate(G,Cs,ld(good)),id,frag);end
+ function v=dryAll()
+  dr=cell(1,4);for q=1:4,dr{q}=g2_lp2_run('Case',pol.cases(q).id);end
+  v=all(cellfun(@(d)strcmp(d.status,'DRY_READY_NO_FEM')&&d.computed==0&&strcmp(d.token,C.token)&&strcmp(d.S5.classification,'MATRIX_ADVANCE'),dr));
+ end
+ function st=synth(fg,dlen,nlp,c,hyp)
+  % chains S0..S(4+nlp-1) with G_H = 1e-8 and G_X = (1+F_G) G_H on the LP2 part; dlen shortens X increments
+  td=tempname;mkdir(td);cu=onCleanup(@()rmdir(td,'s'));ch=struct();
+  for cc={'H','stiff13','soft2','soft1'}
+   L={};y=25.4;P=[101.6 0;101.6 25.4];
+   for kk=0:(3+nlp)
+    if kk>0,dy=4;if strcmp(cc{1},c)&&kk>=4&&kk-3<=numel(dlen),dy=4+dlen(kk-3);end,y=y+dy;P=[P;101.6 y];end %#ok<AGROW>
+    Gv=1e-8;if strcmp(cc{1},c)&&kk>=4,Gv=1e-8*(1+fg(kk-3));end
+    f=fullfile(td,sprintf('%s_S%d.mat',cc{1},kk));
+    g2_trajectory_record('write',f,struct('schema','NewMetacomp.G2.LP2A.State.v1','stateIndex',kk,'polyline_mm',P,'tangent',[0 1],'G',Gv,'KI',1,'KII',0,'MTS_deg',0));
+    L{end+1}=f; %#ok<AGROW>
+   end
+   ch.(cc{1})=L;
+  end
+  Ax=g2_lp2_analyze(ch,'');st=Ax.(c).(hyp).status;
+ end
 end
 function s=setf(s,f,v)
 s.(f)=v;
