@@ -1,0 +1,779 @@
+{
+ "schema": "NewMetacomp.G2.LP2A2.EQ.IndependentAudit.v1",
+ "activationHead": "820efd48339f69a6d1adcfbca15c4995ff81a916",
+ "approvedHead": "a4561f88dfeda31752ae6c268d2d4d74e16b60a7",
+ "foldersOnDisk": [
+  "EQ-H",
+  "EQ-soft1",
+  "EQ-soft2",
+  "EQ-stiff13"
+ ],
+ "unexpectedFolders": [],
+ "solves": {
+  "EQ-H": {
+   "present": true,
+   "files": [
+    "COMPARISON.json",
+    "MESH.mat",
+    "PHASE.mat",
+    "PHASE.mat.manifest.json",
+    "SOLUTION.mat",
+    "SOLUTION.mat.manifest.json"
+   ],
+   "filesExactlyExpected": true,
+   "sha256": {
+    "COMPARISON.json": "a66a20572ba84ca07eabf1c3849b4b2ae8dde1d273a307369a4c420b004db6a0",
+    "MESH.mat": "33b2b8d3fa5d44e8866af22b2a2d28863aa38fc8fde6cb0d88d123b376933fbb",
+    "PHASE.mat": "60863c8d52b6a8c477170aa444cdf0293bc36c55f755aa00f1956920442f384e",
+    "PHASE.mat.manifest.json": "8b54f2e271e2582ca964f9df9e36de7f17a9cf8e467d6bd1cfcc896894e85778",
+    "SOLUTION.mat": "ae641f5f0ee3b554e391c177e97926947d1e28ed29e66e58ed7182c2ac6b0a7a",
+    "SOLUTION.mat.manifest.json": "acc80ac87a98af450b441cd653aef3d3c10cb57da655ce678012cc7b5e74ef82"
+   },
+   "manifestsMatchFiles": true,
+   "checks": {
+    "solutionMeshLink": true,
+    "solutionPhaseLink": true,
+    "phaseMeshLink": true,
+    "comparisonSolutionLink": true,
+    "comparisonMeshLink": true,
+    "comparisonArchivedSolution": true,
+    "archivedStateMeshPhaseTerminal": true,
+    "tokenEqualsStored": true,
+    "approvedHead": true,
+    "activationHead": true,
+    "solveIdCaseId": true,
+    "maskIsPolicy": true,
+    "ratioIsPolicy": true,
+    "archivedStateIndex8": true,
+    "polylineBitwiseEqualsArchived": true,
+    "polylineEqualsArchivedJSON": true,
+    "tipTangentEqualsArchived": true,
+    "seedRung1": true,
+    "phaseOwnerLabelCounts": true,
+    "phaseLabelsMatchMask": true,
+    "memoryGateAt7": true,
+    "newSolverGatesPass": true,
+    "archivedSolverGatesPass": true
+   },
+   "newMeshCounts": [
+    29973,
+    60973,
+    301,
+    301
+   ],
+   "archivedMeshCounts": [
+    29873,
+    60761,
+    289,
+    289
+   ],
+   "phaseCounts": {
+    "newOwner": [
+     17735,
+     4072,
+     4088,
+     4078
+    ],
+    "newLabels": [
+     29973,
+     0
+    ],
+    "archivedOwner": [
+     17593,
+     4092,
+     4094,
+     4094
+    ],
+    "archivedLabels": [
+     29873,
+     0
+    ]
+   },
+   "recomputedMetrics": {
+    "dKI_overKeq": -1.094547288053621e-07,
+    "dKII_overKeq": 4.2682042588397014e-10,
+    "dKIIoverKI": 1.65324384043819e-09,
+    "dG_rel": -2.1888614387677308e-07,
+    "dJ_rel": -2.1906789693382223e-07,
+    "newJoverGminus1": 2.759494277682073e-05,
+    "dMTS_deg": -1.892814751602856e-07,
+    "newCODminusEDI_rel": 0.00877728925542369,
+    "archivedCODminusEDI_rel": 0.008777282676625343,
+    "dCODminusEDI": 6.57879834636832e-09,
+    "newPathSpread_rel": 1.6444326005023987e-06,
+    "archivedPathSpread_rel": 1.644431905089075e-06,
+    "newQuad4x4_rel": 3.6088498662636063e-13,
+    "archivedQuad4x4_rel": 3.6088494712999695e-13,
+    "dCompliance_rel": 2.3189293258951693e-05,
+    "dActiveArea_rel": 0.0,
+    "S9tipDisplacement_mm": 1.321433787055086e-08
+   },
+   "metricsAgreeWithStored": {
+    "dKI_overKeq": true,
+    "dKII_overKeq": true,
+    "dKIIoverKI": true,
+    "dG_rel": true,
+    "dJ_rel": true,
+    "newJoverGminus1": true,
+    "dMTS_deg": true,
+    "newCODminusEDI_rel": true,
+    "archivedCODminusEDI_rel": true,
+    "dCODminusEDI": true,
+    "newPathSpread_rel": true,
+    "archivedPathSpread_rel": true,
+    "newQuad4x4_rel": true,
+    "archivedQuad4x4_rel": true,
+    "dCompliance_rel": true,
+    "dActiveArea_rel": true,
+    "S9tipDisplacement_mm": true
+   },
+   "recomputedCriteria": {
+    "C1_KI": true,
+    "C2_KII": true,
+    "C3_KIIoverKI": true,
+    "C4_G_J": true,
+    "C5_MTS": true,
+    "C6_COD_EDI": true,
+    "C7_EDI_spread_quadrature": true,
+    "C8_crackOpening": true,
+    "C9_phaseActivation_partial_noChords": true,
+    "C10_S9predictor": true,
+    "C11_compliance": true
+   },
+   "criteriaAgreeWithStored": {
+    "C1_KI": true,
+    "C2_KII": true,
+    "C3_KIIoverKI": true,
+    "C4_G_J": true,
+    "C5_MTS": true,
+    "C6_COD_EDI": true,
+    "C7_EDI_spread_quadrature": true,
+    "C8_crackOpening": true,
+    "C10_S9predictor": true,
+    "C11_compliance": true
+   },
+   "storedCriteriaPassed": {
+    "C1_KI": true,
+    "C2_KII": true,
+    "C3_KIIoverKI": true,
+    "C4_G_J": true,
+    "C5_MTS": true,
+    "C6_COD_EDI": true,
+    "C7_EDI_spread_quadrature": true,
+    "C8_crackOpening": true,
+    "C9_phaseActivation": true,
+    "C10_S9predictor": true,
+    "C11_compliance": true
+   },
+   "storedPass": true,
+   "storedFailed": [],
+   "signed": {
+    "new": {
+     "KI": 0.009146879816342242,
+     "KII": 0.00010248071224981809,
+     "G": 2.5603723452507738e-08,
+     "J": 2.5604429985791284e-08,
+     "MTS_deg": -1.2834963499477898
+    },
+    "archived": {
+     "KI": 0.009146880817574437,
+     "KII": 0.0001024807083454975,
+     "G": 2.560372905680926e-08,
+     "J": 2.560443559490114e-08,
+     "MTS_deg": -1.2834961606663147
+    }
+   },
+   "recordPass": true
+  },
+  "EQ-stiff13": {
+   "present": true,
+   "files": [
+    "COMPARISON.json",
+    "MESH.mat",
+    "PHASE.mat",
+    "PHASE.mat.manifest.json",
+    "SOLUTION.mat",
+    "SOLUTION.mat.manifest.json"
+   ],
+   "filesExactlyExpected": true,
+   "sha256": {
+    "COMPARISON.json": "486b8c6532e8474aa32c6e70a23c067918a6e34a2497a39129e1e6a39c9b5bca",
+    "MESH.mat": "1258a6f0e244f9888fb11d5368873a56e01b90999f09a0e7c40779ef7e7a803f",
+    "PHASE.mat": "4ebe44f8befec6d7daa67015b7637de0204062f03e2cfdb43424c4af8de4a88a",
+    "PHASE.mat.manifest.json": "07ef6325a0d7dba32c539222df488f31188dab20f1635d247270513448a22890",
+    "SOLUTION.mat": "42a93838816d8ed78416b15c04ec245679721fedf0f9e86900ae8a1475559a1e",
+    "SOLUTION.mat.manifest.json": "c005322a2bc348aab49c3eabc2c55c6675e408d9363ee8f4e2b7aba516a89f92"
+   },
+   "manifestsMatchFiles": true,
+   "checks": {
+    "solutionMeshLink": true,
+    "solutionPhaseLink": true,
+    "phaseMeshLink": true,
+    "comparisonSolutionLink": true,
+    "comparisonMeshLink": true,
+    "comparisonArchivedSolution": true,
+    "archivedStateMeshPhaseTerminal": true,
+    "tokenEqualsStored": true,
+    "approvedHead": true,
+    "activationHead": true,
+    "solveIdCaseId": true,
+    "maskIsPolicy": true,
+    "ratioIsPolicy": true,
+    "archivedStateIndex8": true,
+    "polylineBitwiseEqualsArchived": true,
+    "polylineEqualsArchivedJSON": true,
+    "tipTangentEqualsArchived": true,
+    "seedRung1": true,
+    "phaseOwnerLabelCounts": true,
+    "phaseLabelsMatchMask": true,
+    "memoryGateAt7": true,
+    "newSolverGatesPass": true,
+    "archivedSolverGatesPass": true
+   },
+   "newMeshCounts": [
+    29981,
+    60989,
+    301,
+    301
+   ],
+   "archivedMeshCounts": [
+    29871,
+    60757,
+    289,
+    289
+   ],
+   "phaseCounts": {
+    "newOwner": [
+     17729,
+     4088,
+     4074,
+     4090
+    ],
+    "newLabels": [
+     21803,
+     8178
+    ],
+    "archivedOwner": [
+     17591,
+     4092,
+     4094,
+     4094
+    ],
+    "archivedLabels": [
+     21685,
+     8186
+    ]
+   },
+   "recomputedMetrics": {
+    "dKI_overKeq": -1.1269752525127332e-07,
+    "dKII_overKeq": -2.880943670710911e-08,
+    "dKIIoverKI": -2.792444677053585e-08,
+    "dG_rel": -2.2584097192357433e-07,
+    "dJ_rel": -2.2599564042380393e-07,
+    "newJoverGminus1": 2.444865057871226e-05,
+    "dMTS_deg": 3.198522529612724e-06,
+    "newCODminusEDI_rel": 0.008795789766646285,
+    "archivedCODminusEDI_rel": 0.008795781772026444,
+    "dCODminusEDI": 7.994619841134032e-09,
+    "newPathSpread_rel": 1.644480063855227e-06,
+    "archivedPathSpread_rel": 1.6444810941706387e-06,
+    "newQuad4x4_rel": 3.62532462354818e-13,
+    "archivedQuad4x4_rel": 3.593170562607779e-13,
+    "dCompliance_rel": 1.8529748704088078e-05,
+    "dActiveArea_rel": 4.492873732344397e-16,
+    "S9tipDisplacement_mm": 2.2329900179635224e-07
+   },
+   "metricsAgreeWithStored": {
+    "dKI_overKeq": true,
+    "dKII_overKeq": true,
+    "dKIIoverKI": true,
+    "dG_rel": true,
+    "dJ_rel": true,
+    "newJoverGminus1": true,
+    "dMTS_deg": true,
+    "newCODminusEDI_rel": true,
+    "archivedCODminusEDI_rel": true,
+    "dCODminusEDI": true,
+    "newPathSpread_rel": true,
+    "archivedPathSpread_rel": true,
+    "newQuad4x4_rel": true,
+    "archivedQuad4x4_rel": true,
+    "dCompliance_rel": true,
+    "dActiveArea_rel": true,
+    "S9tipDisplacement_mm": true
+   },
+   "recomputedCriteria": {
+    "C1_KI": true,
+    "C2_KII": true,
+    "C3_KIIoverKI": true,
+    "C4_G_J": true,
+    "C5_MTS": true,
+    "C6_COD_EDI": true,
+    "C7_EDI_spread_quadrature": true,
+    "C8_crackOpening": true,
+    "C9_phaseActivation_partial_noChords": true,
+    "C10_S9predictor": true,
+    "C11_compliance": true
+   },
+   "criteriaAgreeWithStored": {
+    "C1_KI": true,
+    "C2_KII": true,
+    "C3_KIIoverKI": true,
+    "C4_G_J": true,
+    "C5_MTS": true,
+    "C6_COD_EDI": true,
+    "C7_EDI_spread_quadrature": true,
+    "C8_crackOpening": true,
+    "C10_S9predictor": true,
+    "C11_compliance": true
+   },
+   "storedCriteriaPassed": {
+    "C1_KI": true,
+    "C2_KII": true,
+    "C3_KIIoverKI": true,
+    "C4_G_J": true,
+    "C5_MTS": true,
+    "C6_COD_EDI": true,
+    "C7_EDI_spread_quadrature": true,
+    "C8_crackOpening": true,
+    "C9_phaseActivation": true,
+    "C10_S9predictor": true,
+    "C11_compliance": true
+   },
+   "storedPass": true,
+   "storedFailed": [],
+   "signed": {
+    "new": {
+     "KI": 0.008631901419485923,
+     "KII": 6.78505773431467e-05,
+     "G": 2.2800398950639397e-08,
+     "J": 2.2800956389626397e-08,
+     "MTS_deg": -0.9006107040621041
+    },
+    "archived": {
+     "KI": 0.008631902392310013,
+     "KII": 6.785082603107482e-05,
+     "G": 2.280040409990482e-08,
+     "J": 2.2800961542544304e-08,
+     "MTS_deg": -0.9006139025846337
+    }
+   },
+   "recordPass": true
+  },
+  "EQ-soft2": {
+   "present": true,
+   "files": [
+    "COMPARISON.json",
+    "MESH.mat",
+    "PHASE.mat",
+    "PHASE.mat.manifest.json",
+    "SOLUTION.mat",
+    "SOLUTION.mat.manifest.json"
+   ],
+   "filesExactlyExpected": true,
+   "sha256": {
+    "COMPARISON.json": "b89f207b8b28949790c871be9e151a9eef0ab60900387d04a492bddeca2afae8",
+    "MESH.mat": "b2f212cc7e45d1664ca353346258c15418a252ae47ba79a1f83e253938105343",
+    "PHASE.mat": "fca197e5b272b4bd65e235c2798f5f826c26627cd73ef31d5e42751337e0cecc",
+    "PHASE.mat.manifest.json": "ca6ba51da70703a60137d33ba3b241e34ea01208122dee3633ba193dfc45eac6",
+    "SOLUTION.mat": "7771dca68242c2ccb23e076501ef825da161c8ffc99cf7b38f19ec926989cb5c",
+    "SOLUTION.mat.manifest.json": "a77e54f8be81ac61d815a86f8a082619d8d9529b6fd86269ab4545f6cc41cb3f"
+   },
+   "manifestsMatchFiles": true,
+   "checks": {
+    "solutionMeshLink": true,
+    "solutionPhaseLink": true,
+    "phaseMeshLink": true,
+    "comparisonSolutionLink": true,
+    "comparisonMeshLink": true,
+    "comparisonArchivedSolution": true,
+    "archivedStateMeshPhaseTerminal": true,
+    "tokenEqualsStored": true,
+    "approvedHead": true,
+    "activationHead": true,
+    "solveIdCaseId": true,
+    "maskIsPolicy": true,
+    "ratioIsPolicy": true,
+    "archivedStateIndex8": true,
+    "polylineBitwiseEqualsArchived": true,
+    "polylineEqualsArchivedJSON": true,
+    "tipTangentEqualsArchived": true,
+    "seedRung1": true,
+    "phaseOwnerLabelCounts": true,
+    "phaseLabelsMatchMask": true,
+    "memoryGateAt7": true,
+    "newSolverGatesPass": true,
+    "archivedSolverGatesPass": true
+   },
+   "newMeshCounts": [
+    30001,
+    61029,
+    301,
+    301
+   ],
+   "archivedMeshCounts": [
+    29879,
+    60773,
+    289,
+    289
+   ],
+   "phaseCounts": {
+    "newOwner": [
+     17741,
+     4088,
+     4088,
+     4084
+    ],
+    "newLabels": [
+     25913,
+     4088
+    ],
+    "archivedOwner": [
+     17609,
+     4086,
+     4090,
+     4094
+    ],
+    "archivedLabels": [
+     25789,
+     4090
+    ]
+   },
+   "recomputedMetrics": {
+    "dKI_overKeq": 2.5065222858984716e-08,
+    "dKII_overKeq": -5.2179716043300903e-08,
+    "dKIIoverKI": -5.246869909381058e-08,
+    "dG_rel": 4.893825944485286e-08,
+    "dJ_rel": 4.8842388800096614e-08,
+    "newJoverGminus1": 2.58883995603032e-05,
+    "dMTS_deg": 6.007011841946408e-06,
+    "newCODminusEDI_rel": 0.008777689734739405,
+    "archivedCODminusEDI_rel": 0.008777690546137253,
+    "dCODminusEDI": -8.113978482160444e-10,
+    "newPathSpread_rel": 1.6443939828818776e-06,
+    "archivedPathSpread_rel": 1.6443932471947846e-06,
+    "newQuad4x4_rel": 3.628366426952124e-13,
+    "archivedQuad4x4_rel": 3.601617104876592e-13,
+    "dCompliance_rel": 2.569377095307246e-05,
+    "dActiveArea_rel": 8.985747464688796e-16,
+    "S9tipDisplacement_mm": 4.193685357419024e-07
+   },
+   "metricsAgreeWithStored": {
+    "dKI_overKeq": true,
+    "dKII_overKeq": true,
+    "dKIIoverKI": true,
+    "dG_rel": true,
+    "dJ_rel": true,
+    "newJoverGminus1": true,
+    "dMTS_deg": true,
+    "newCODminusEDI_rel": true,
+    "archivedCODminusEDI_rel": true,
+    "dCODminusEDI": true,
+    "newPathSpread_rel": true,
+    "archivedPathSpread_rel": true,
+    "newQuad4x4_rel": true,
+    "archivedQuad4x4_rel": true,
+    "dCompliance_rel": true,
+    "dActiveArea_rel": true,
+    "S9tipDisplacement_mm": true
+   },
+   "recomputedCriteria": {
+    "C1_KI": true,
+    "C2_KII": true,
+    "C3_KIIoverKI": true,
+    "C4_G_J": true,
+    "C5_MTS": true,
+    "C6_COD_EDI": true,
+    "C7_EDI_spread_quadrature": true,
+    "C8_crackOpening": true,
+    "C9_phaseActivation_partial_noChords": true,
+    "C10_S9predictor": true,
+    "C11_compliance": true
+   },
+   "criteriaAgreeWithStored": {
+    "C1_KI": true,
+    "C2_KII": true,
+    "C3_KIIoverKI": true,
+    "C4_G_J": true,
+    "C5_MTS": true,
+    "C6_COD_EDI": true,
+    "C7_EDI_spread_quadrature": true,
+    "C8_crackOpening": true,
+    "C10_S9predictor": true,
+    "C11_compliance": true
+   },
+   "storedCriteriaPassed": {
+    "C1_KI": true,
+    "C2_KII": true,
+    "C3_KIIoverKI": true,
+    "C4_G_J": true,
+    "C5_MTS": true,
+    "C6_COD_EDI": true,
+    "C7_EDI_spread_quadrature": true,
+    "C8_crackOpening": true,
+    "C9_phaseActivation": true,
+    "C10_S9predictor": true,
+    "C11_compliance": true
+   },
+   "storedPass": true,
+   "storedFailed": [],
+   "signed": {
+    "new": {
+     "KI": 0.00907853756346101,
+     "KII": 0.00010343532874708376,
+     "G": 2.522265683992319e-08,
+     "J": 2.5223309814141437e-08,
+     "MTS_deg": -1.305191221699779
+    },
+    "archived": {
+     "KI": 0.00907853733589068,
+     "KII": 0.00010343580249332967,
+     "G": 2.5222655605570327e-08,
+     "J": 2.5223308582174793e-08,
+     "MTS_deg": -1.305197228711621
+    }
+   },
+   "recordPass": true
+  },
+  "EQ-soft1": {
+   "present": true,
+   "files": [
+    "COMPARISON.json",
+    "MESH.mat",
+    "PHASE.mat",
+    "PHASE.mat.manifest.json",
+    "SOLUTION.mat",
+    "SOLUTION.mat.manifest.json"
+   ],
+   "filesExactlyExpected": true,
+   "sha256": {
+    "COMPARISON.json": "2c362242ec00a99f100e91d6ce07ee407721d639c46f72448938c3aa13b4858b",
+    "MESH.mat": "75a81c2cc578716e13ce1a5a2fb53136fa0f1ed998cb1c09ae9fc9a9dbe16f02",
+    "PHASE.mat": "d2be3beeee03e6868788b0ae5b62a51e3775564fcebf870d0a15930fb68802fc",
+    "PHASE.mat.manifest.json": "ba6103f0c6e5facd8798182fa1ba31956d9848848010ccab9f722cce8ab2402b",
+    "SOLUTION.mat": "15c5d613c1a868f050c7a5b4dcbe6f0cbedaa2f1d0463013f59b743ab77aaf37",
+    "SOLUTION.mat.manifest.json": "366d24ffa483202947b7fea071755cf22e0349f0e395a72231d74f51176efb37"
+   },
+   "manifestsMatchFiles": true,
+   "checks": {
+    "solutionMeshLink": true,
+    "solutionPhaseLink": true,
+    "phaseMeshLink": true,
+    "comparisonSolutionLink": true,
+    "comparisonMeshLink": true,
+    "comparisonArchivedSolution": true,
+    "archivedStateMeshPhaseTerminal": true,
+    "tokenEqualsStored": true,
+    "approvedHead": true,
+    "activationHead": true,
+    "solveIdCaseId": true,
+    "maskIsPolicy": true,
+    "ratioIsPolicy": true,
+    "archivedStateIndex8": true,
+    "polylineBitwiseEqualsArchived": true,
+    "polylineEqualsArchivedJSON": true,
+    "tipTangentEqualsArchived": true,
+    "seedRung1": true,
+    "phaseOwnerLabelCounts": true,
+    "phaseLabelsMatchMask": true,
+    "memoryGateAt7": true,
+    "newSolverGatesPass": true,
+    "archivedSolverGatesPass": true
+   },
+   "newMeshCounts": [
+    30021,
+    61069,
+    301,
+    301
+   ],
+   "archivedMeshCounts": [
+    29875,
+    60765,
+    289,
+    289
+   ],
+   "phaseCounts": {
+    "newOwner": [
+     17763,
+     4084,
+     4084,
+     4090
+    ],
+    "newLabels": [
+     25937,
+     4084
+    ],
+    "archivedOwner": [
+     17607,
+     4084,
+     4092,
+     4092
+    ],
+    "archivedLabels": [
+     25791,
+     4084
+    ]
+   },
+   "recomputedMetrics": {
+    "dKI_overKeq": -9.409739152947701e-08,
+    "dKII_overKeq": -2.5308542633267502e-08,
+    "dKIIoverKI": -2.3938673486198492e-08,
+    "dG_rel": -1.8891293518397134e-07,
+    "dJ_rel": -1.8902367382445107e-07,
+    "newJoverGminus1": 3.138904569643941e-05,
+    "dMTS_deg": 2.739091470971289e-06,
+    "newCODminusEDI_rel": 0.008757008449674144,
+    "archivedCODminusEDI_rel": 0.008757006838059916,
+    "dCODminusEDI": 1.6116142274869016e-09,
+    "newPathSpread_rel": 1.644377072925038e-06,
+    "archivedPathSpread_rel": 1.6443781553239447e-06,
+    "newQuad4x4_rel": 3.595302207711756e-13,
+    "archivedQuad4x4_rel": 3.600708337086798e-13,
+    "dCompliance_rel": 7.724274841081069e-06,
+    "dActiveArea_rel": -2.246436866172198e-16,
+    "S9tipDisplacement_mm": 1.9122465622767083e-07
+   },
+   "metricsAgreeWithStored": {
+    "dKI_overKeq": true,
+    "dKII_overKeq": true,
+    "dKIIoverKI": true,
+    "dG_rel": true,
+    "dJ_rel": true,
+    "newJoverGminus1": true,
+    "dMTS_deg": true,
+    "newCODminusEDI_rel": true,
+    "archivedCODminusEDI_rel": true,
+    "dCODminusEDI": true,
+    "newPathSpread_rel": true,
+    "archivedPathSpread_rel": true,
+    "newQuad4x4_rel": true,
+    "archivedQuad4x4_rel": true,
+    "dCompliance_rel": true,
+    "dActiveArea_rel": true,
+    "S9tipDisplacement_mm": true
+   },
+   "recomputedCriteria": {
+    "C1_KI": true,
+    "C2_KII": true,
+    "C3_KIIoverKI": true,
+    "C4_G_J": true,
+    "C5_MTS": true,
+    "C6_COD_EDI": true,
+    "C7_EDI_spread_quadrature": true,
+    "C8_crackOpening": true,
+    "C9_phaseActivation_partial_noChords": true,
+    "C10_S9predictor": true,
+    "C11_compliance": true
+   },
+   "criteriaAgreeWithStored": {
+    "C1_KI": true,
+    "C2_KII": true,
+    "C3_KIIoverKI": true,
+    "C4_G_J": true,
+    "C5_MTS": true,
+    "C6_COD_EDI": true,
+    "C7_EDI_spread_quadrature": true,
+    "C8_crackOpening": true,
+    "C10_S9predictor": true,
+    "C11_compliance": true
+   },
+   "storedCriteriaPassed": {
+    "C1_KI": true,
+    "C2_KII": true,
+    "C3_KIIoverKI": true,
+    "C4_G_J": true,
+    "C5_MTS": true,
+    "C6_COD_EDI": true,
+    "C7_EDI_spread_quadrature": true,
+    "C8_crackOpening": true,
+    "C9_phaseActivation": true,
+    "C10_S9predictor": true,
+    "C11_compliance": true
+   },
+   "storedPass": true,
+   "storedFailed": [],
+   "signed": {
+    "new": {
+     "KI": 0.009624796746645528,
+     "KII": 0.00014037811607429143,
+     "G": 2.8351639532180145e-08,
+     "J": 2.835252946308899e-08,
+     "MTS_deg": -1.6704945125471993
+    },
+    "archived": {
+     "KI": 0.009624797652410205,
+     "KII": 0.0001403783596898005,
+     "G": 2.83516448881726e-08,
+     "J": 2.8352534822389284e-08,
+     "MTS_deg": -1.6704972516386702
+    }
+   },
+   "recordPass": true
+  }
+ },
+ "problems": [],
+ "attemptedPrefix": [
+  "EQ-H",
+  "EQ-stiff13",
+  "EQ-soft2",
+  "EQ-soft1"
+ ],
+ "foldersAreContiguousPrefix": true,
+ "attempts": 4,
+ "completedRecordSets": 4,
+ "passingComparisons": 4,
+ "contrast": {
+  "cases": [
+   "stiff13",
+   "soft2",
+   "soft1"
+  ],
+  "FG_new": [
+   -0.10948893847678898,
+   -0.014883249824635292,
+   0.1073248617440159
+  ],
+  "FG_archived": [
+   -0.10948893228343648,
+   -0.014883513662928283,
+   0.10732482855393033
+  ],
+  "dFG": [
+   -6.193352497518845e-09,
+   2.6383829299092554e-07,
+   3.319008556879055e-08
+  ],
+  "dTheta_new_deg": [
+   0.38288564588568574,
+   -0.021694871751989142,
+   -0.38699816259940945
+  ],
+  "dTheta_archived_deg": [
+   0.38288225808168097,
+   -0.02170106804530625,
+   -0.3870010909723556
+  ],
+  "ddTheta_deg": [
+   3.3878040047730096e-06,
+   6.196293317106694e-06,
+   2.9283729461315744e-06
+  ],
+  "criteria": {
+   "FG_within": true,
+   "FG_signs": true,
+   "FG_order": true,
+   "MTS_contrast_within": true
+  },
+  "pass": true,
+  "agreesWithWrapper": true
+ },
+ "wrapper": {
+  "campaignId": "G2-LP2A2-EQ-001",
+  "outcome": "EQUIVALENT",
+  "stoppedAt": "",
+  "reason": "",
+  "solvesCalled": 4
+ },
+ "allRecordSetsAudited": true,
+ "verdictAudit": "EQUIVALENT_CONFIRMED"
+}

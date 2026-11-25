@@ -1,0 +1,199 @@
+{
+  "campaignId": "G2-LP2A2-EQ-001",
+  "token": "G2LP2A2EQ|policy=6f2c290b37d4f8291f428ec8b9e0a886fe6b31fc901bee5781f2518e67c94756|g2source=7e5683703bd104547ef5d013aa0253ad2819b59dc58693957e2d04b4707f0947|lp2source=357dfdcdb576d2866b9d1b41a14265300a14c30700d6475f995881041ba822ca|lp2a2source=f1d7e4d67b91968e16ebaead13be86667c7776ce48971ed5206c7f136fae7afd|archivedS8=da951c99c0d8c1d5dd731986d8f3b30e3db3f71854166a634d35b739757def8d|solves=EQ-H,EQ-stiff13,EQ-soft2,EQ-soft1|limit=4",
+  "outcome": "EQUIVALENT",
+  "stoppedAt": "",
+  "reason": "",
+  "solvesCalled": 4,
+  "results": [
+    {
+      "solveId": "EQ-H",
+      "caseId": "H",
+      "token": "G2LP2A2EQ|policy=6f2c290b37d4f8291f428ec8b9e0a886fe6b31fc901bee5781f2518e67c94756|g2source=7e5683703bd104547ef5d013aa0253ad2819b59dc58693957e2d04b4707f0947|lp2source=357dfdcdb576d2866b9d1b41a14265300a14c30700d6475f995881041ba822ca|lp2a2source=f1d7e4d67b91968e16ebaead13be86667c7776ce48971ed5206c7f136fae7afd|archivedS8=da951c99c0d8c1d5dd731986d8f3b30e3db3f71854166a634d35b739757def8d|solves=EQ-H,EQ-stiff13,EQ-soft2,EQ-soft1|limit=4",
+      "run": true,
+      "physicalSolves": 1,
+      "T3": 29973,
+      "archivedT3": 29873,
+      "auditGates": "34/34",
+      "phaseAuditPass": true,
+      "phaseMapPass": true,
+      "pairingAudit": 10,
+      "chordsPerCircle": [
+        76,
+        76,
+        76
+      ],
+      "archivedChordsPerCircle": [
+        76,
+        76,
+        76
+      ],
+      "bankPairsT6": 301,
+      "archivedBankNodesT6": 289,
+      "seedRung": 1,
+      "stage": "SOLVED_COMPARED",
+      "comparisonPass": true,
+      "failed": [],
+      "newK": {
+        "KI": 0.0091468798163422422,
+        "KII": 0.00010248071224981809
+      },
+      "solutionSHA256": "ae641f5f0ee3b554e391c177e97926947d1e28ed29e66e58ed7182c2ac6b0a7a",
+      "activationHead": "820efd48339f69a6d1adcfbca15c4995ff81a916"
+    },
+    {
+      "solveId": "EQ-stiff13",
+      "caseId": "stiff13",
+      "token": "G2LP2A2EQ|policy=6f2c290b37d4f8291f428ec8b9e0a886fe6b31fc901bee5781f2518e67c94756|g2source=7e5683703bd104547ef5d013aa0253ad2819b59dc58693957e2d04b4707f0947|lp2source=357dfdcdb576d2866b9d1b41a14265300a14c30700d6475f995881041ba822ca|lp2a2source=f1d7e4d67b91968e16ebaead13be86667c7776ce48971ed5206c7f136fae7afd|archivedS8=da951c99c0d8c1d5dd731986d8f3b30e3db3f71854166a634d35b739757def8d|solves=EQ-H,EQ-stiff13,EQ-soft2,EQ-soft1|limit=4",
+      "run": true,
+      "physicalSolves": 1,
+      "T3": 29981,
+      "archivedT3": 29871,
+      "auditGates": "34/34",
+      "phaseAuditPass": true,
+      "phaseMapPass": true,
+      "pairingAudit": 10,
+      "chordsPerCircle": [
+        76,
+        76,
+        76
+      ],
+      "archivedChordsPerCircle": [
+        76,
+        76,
+        76
+      ],
+      "bankPairsT6": 301,
+      "archivedBankNodesT6": 289,
+      "seedRung": 1,
+      "stage": "SOLVED_COMPARED",
+      "comparisonPass": true,
+      "failed": [],
+      "newK": {
+        "KI": 0.0086319014194859225,
+        "KII": 6.78505773431467E-5
+      },
+      "solutionSHA256": "42a93838816d8ed78416b15c04ec245679721fedf0f9e86900ae8a1475559a1e",
+      "activationHead": "820efd48339f69a6d1adcfbca15c4995ff81a916"
+    },
+    {
+      "solveId": "EQ-soft2",
+      "caseId": "soft2",
+      "token": "G2LP2A2EQ|policy=6f2c290b37d4f8291f428ec8b9e0a886fe6b31fc901bee5781f2518e67c94756|g2source=7e5683703bd104547ef5d013aa0253ad2819b59dc58693957e2d04b4707f0947|lp2source=357dfdcdb576d2866b9d1b41a14265300a14c30700d6475f995881041ba822ca|lp2a2source=f1d7e4d67b91968e16ebaead13be86667c7776ce48971ed5206c7f136fae7afd|archivedS8=da951c99c0d8c1d5dd731986d8f3b30e3db3f71854166a634d35b739757def8d|solves=EQ-H,EQ-stiff13,EQ-soft2,EQ-soft1|limit=4",
+      "run": true,
+      "physicalSolves": 1,
+      "T3": 30001,
+      "archivedT3": 29879,
+      "auditGates": "34/34",
+      "phaseAuditPass": true,
+      "phaseMapPass": true,
+      "pairingAudit": 10,
+      "chordsPerCircle": [
+        76,
+        76,
+        76
+      ],
+      "archivedChordsPerCircle": [
+        76,
+        76,
+        76
+      ],
+      "bankPairsT6": 301,
+      "archivedBankNodesT6": 289,
+      "seedRung": 1,
+      "stage": "SOLVED_COMPARED",
+      "comparisonPass": true,
+      "failed": [],
+      "newK": {
+        "KI": 0.00907853756346101,
+        "KII": 0.00010343532874708376
+      },
+      "solutionSHA256": "7771dca68242c2ccb23e076501ef825da161c8ffc99cf7b38f19ec926989cb5c",
+      "activationHead": "820efd48339f69a6d1adcfbca15c4995ff81a916"
+    },
+    {
+      "solveId": "EQ-soft1",
+      "caseId": "soft1",
+      "token": "G2LP2A2EQ|policy=6f2c290b37d4f8291f428ec8b9e0a886fe6b31fc901bee5781f2518e67c94756|g2source=7e5683703bd104547ef5d013aa0253ad2819b59dc58693957e2d04b4707f0947|lp2source=357dfdcdb576d2866b9d1b41a14265300a14c30700d6475f995881041ba822ca|lp2a2source=f1d7e4d67b91968e16ebaead13be86667c7776ce48971ed5206c7f136fae7afd|archivedS8=da951c99c0d8c1d5dd731986d8f3b30e3db3f71854166a634d35b739757def8d|solves=EQ-H,EQ-stiff13,EQ-soft2,EQ-soft1|limit=4",
+      "run": true,
+      "physicalSolves": 1,
+      "T3": 30021,
+      "archivedT3": 29875,
+      "auditGates": "34/34",
+      "phaseAuditPass": true,
+      "phaseMapPass": true,
+      "pairingAudit": 10,
+      "chordsPerCircle": [
+        76,
+        76,
+        76
+      ],
+      "archivedChordsPerCircle": [
+        76,
+        76,
+        76
+      ],
+      "bankPairsT6": 301,
+      "archivedBankNodesT6": 289,
+      "seedRung": 1,
+      "stage": "SOLVED_COMPARED",
+      "comparisonPass": true,
+      "failed": [],
+      "newK": {
+        "KI": 0.0096247967466455281,
+        "KII": 0.00014037811607429143
+      },
+      "solutionSHA256": "15c5d613c1a868f050c7a5b4dcbe6f0cbedaa2f1d0463013f59b743ab77aaf37",
+      "activationHead": "820efd48339f69a6d1adcfbca15c4995ff81a916"
+    }
+  ],
+  "contrast": {
+    "pass": true,
+    "criteria": {
+      "FG_within": true,
+      "FG_signs": true,
+      "FG_order": true,
+      "MTS_contrast_within": true
+    },
+    "failed": [],
+    "cases": [
+      "stiff13",
+      "soft2",
+      "soft1"
+    ],
+    "FG_new": [
+      -0.10948893847678898,
+      -0.014883249824635292,
+      0.1073248617440159
+    ],
+    "FG_archived": [
+      -0.10948893228343648,
+      -0.014883513662928283,
+      0.10732482855393033
+    ],
+    "dFG": [
+      -6.1933524975188448E-9,
+      2.6383829299092554E-7,
+      3.319008556879055E-8
+    ],
+    "dTheta_new_deg": [
+      0.38288564588568574,
+      -0.021694871751989142,
+      -0.38699816259940922
+    ],
+    "dTheta_archived_deg": [
+      0.38288225808168108,
+      -0.021701068045306471,
+      -0.38700109097235535
+    ],
+    "ddTheta_deg": [
+      3.3878040046619873E-6,
+      6.1962933173287382E-6,
+      2.9283729461315744E-6
+    ]
+  },
+  "next": "read-only replay (g2_lp2a2_eq_verify); archive on two physical devices; revoke the GO in a separate commit and verify refusal - also after any HOLD",
+  "activationLabel": "A2",
+  "wallSeconds": 60.0394986,
+  "wrapperCalled": true
+}

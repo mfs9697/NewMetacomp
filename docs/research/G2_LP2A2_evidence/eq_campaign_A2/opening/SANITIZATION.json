@@ -1,0 +1,25 @@
+{
+ "rule": "absolute local paths replaced by <repo> (execution clone), <worktree>, <scratch>, <user>; MATLAB startup path warnings removed; CRLF to LF",
+ "files": [
+  {
+   "file": "LP2A2_EQ_A2_OPENING_EQ-H.csv",
+   "originalSHA256": "fafd2479ed03893173e5df92c372e704704a385f7ed3b10dc8eb1cb9c1c5b891",
+   "sanitizedSHA256": "f57dcf57c6b36d19fe2ff8107554df18facc0f976d03ad9cd74bed7b1883629a"
+  },
+  {
+   "file": "LP2A2_EQ_A2_OPENING_EQ-soft1.csv",
+   "originalSHA256": "4d73121e144c3101629fe9bec4a8d57d1cc82e2b8f191010c56318437631940f",
+   "sanitizedSHA256": "d89f86e3b8eaa6be84c0f936bb6406e90aa235e122e64fbce01384e1e8a11249"
+  },
+  {
+   "file": "LP2A2_EQ_A2_OPENING_EQ-soft2.csv",
+   "originalSHA256": "0159426575e4bd3649ab51fdb575841d459a3818bf2a6c29ece3d760f242631f",
+   "sanitizedSHA256": "dec18daf3a80635645c12716eadb89cc55735a004dca760ff0697c05dc5ec715"
+  },
+  {
+   "file": "LP2A2_EQ_A2_OPENING_EQ-stiff13.csv",
+   "originalSHA256": "13b83aa4520b73fb6ce8aa33a0c2a20245e341e7bad219294c718a9e6195786f",
+   "sanitizedSHA256": "45cde1c6039aab7842000d37c3d2bfb78d8f5df7e59f23a15f3509889536d905"
+  }
+ ]
+}

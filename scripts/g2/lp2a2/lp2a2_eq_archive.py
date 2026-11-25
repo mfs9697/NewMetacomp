@@ -1,10 +1,12 @@
 """Build and verify the LP2-A2 equivalence campaign archive (deterministic ZIP + SHA-256 manifest); copy and verify on two devices.
 Members: every file under outputs/g2_lp2a2_eq_v1 (campaign records, also partial ones after a HOLD), the committed GO file, and every
 file in the scratch evidence folders pre/, campaign/, verify/ (logs, scripts, JSON results).
-usage: python -I lp2a2_eq_archive.py <execRepo> <runDir(scratch)> <localDir> <offDeviceDir> <out.json>"""
+usage: python -I lp2a2_eq_archive.py <execRepo> <runDir(scratch)> <localDir> <offDeviceDir> <out.json> [<archiveName> <sub1,sub2,...>]
+Without the optional arguments: the activation-A1 HOLD archive name and folders pre, campaign, verify (as used for A1)."""
 import hashlib, json, os, shutil, sys, zipfile
 ex, rdir, loc, off, out = sys.argv[1:6]
-name = 'NewMetacomp_G2_LP2A2_EQ_HoldEvidence_20261125.zip'
+name = sys.argv[6] if len(sys.argv) > 6 else 'NewMetacomp_G2_LP2A2_EQ_HoldEvidence_20261125.zip'
+subs = tuple(sys.argv[7].split(',')) if len(sys.argv) > 7 else ('pre', 'campaign', 'verify')
 sha = lambda b: hashlib.sha256(b).hexdigest()
 
 
@@ -26,7 +28,7 @@ nrec = len(members)
 go = os.path.join(ex, 'matlab', 'g2', 'lp2a2', 'G2_LP2A2_EQ_GO.json')
 if os.path.isfile(go):
     members.append(('matlab/g2/lp2a2/G2_LP2A2_EQ_GO.json', go))
-for sub in ('pre', 'campaign', 'verify'):
+for sub in subs:
     for d, _, fs in os.walk(os.path.join(rdir, sub)):
         for n in fs:
             p = os.path.join(d, n)

@@ -1,0 +1,5 @@
+OPEN EQ-H stations new 301 archived 289 max|dj|/max j 7.81e-06
+OPEN EQ-stiff13 stations new 301 archived 289 max|dj|/max j 7.57e-06
+OPEN EQ-soft2 stations new 301 archived 289 max|dj|/max j 7.76e-06
+OPEN EQ-soft1 stations new 301 archived 289 max|dj|/max j 7.78e-06
+EQFIG done <scratch>

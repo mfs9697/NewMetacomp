@@ -1,0 +1,1889 @@
+{
+  "head": "886c2304b2a3603c306ac21856a2b541107dc916",
+  "token": "G2LP2A2EQ|policy=6f2c290b37d4f8291f428ec8b9e0a886fe6b31fc901bee5781f2518e67c94756|g2source=7e5683703bd104547ef5d013aa0253ad2819b59dc58693957e2d04b4707f0947|lp2source=357dfdcdb576d2866b9d1b41a14265300a14c30700d6475f995881041ba822ca|lp2a2source=f1d7e4d67b91968e16ebaead13be86667c7776ce48971ed5206c7f136fae7afd|archivedS8=da951c99c0d8c1d5dd731986d8f3b30e3db3f71854166a634d35b739757def8d|solves=EQ-H,EQ-stiff13,EQ-soft2,EQ-soft1|limit=4",
+  "verify": {
+    "outcome": "VERIFY_HOLD",
+    "solves": [
+      {
+        "solveId": "EQ-H",
+        "pass": false,
+        "links": true,
+        "recomputedPass": true,
+        "storedPass": true,
+        "reproduced": false
+      },
+      {
+        "solveId": "EQ-stiff13",
+        "pass": false,
+        "links": true,
+        "recomputedPass": true,
+        "storedPass": true,
+        "reproduced": false
+      },
+      {
+        "solveId": "EQ-soft2",
+        "pass": false,
+        "links": true,
+        "recomputedPass": true,
+        "storedPass": true,
+        "reproduced": false
+      },
+      {
+        "solveId": "EQ-soft1",
+        "pass": false,
+        "links": true,
+        "recomputedPass": true,
+        "storedPass": true,
+        "reproduced": false
+      }
+    ],
+    "problems": [
+      "EQ-H: links or comparison not reproduced",
+      "EQ-stiff13: links or comparison not reproduced",
+      "EQ-soft2: links or comparison not reproduced",
+      "EQ-soft1: links or comparison not reproduced"
+    ],
+    "unchanged": true,
+    "physicalSolves": 0
+  },
+  "solves": {
+    "EQ_H": {
+      "present": true,
+      "files": [
+        "COMPARISON.json",
+        "MESH.mat",
+        "PHASE.mat",
+        "PHASE.mat.manifest.json",
+        "SOLUTION.mat",
+        "SOLUTION.mat.manifest.json"
+      ],
+      "sha256": {
+        "COMPARISON_json": "a66a20572ba84ca07eabf1c3849b4b2ae8dde1d273a307369a4c420b004db6a0",
+        "MESH_mat": "33b2b8d3fa5d44e8866af22b2a2d28863aa38fc8fde6cb0d88d123b376933fbb",
+        "PHASE_mat": "60863c8d52b6a8c477170aa444cdf0293bc36c55f755aa00f1956920442f384e",
+        "PHASE_mat_manifest_json": "8b54f2e271e2582ca964f9df9e36de7f17a9cf8e467d6bd1cfcc896894e85778",
+        "SOLUTION_mat": "ae641f5f0ee3b554e391c177e97926947d1e28ed29e66e58ed7182c2ac6b0a7a",
+        "SOLUTION_mat_manifest_json": "acc80ac87a98af450b441cd653aef3d3c10cb57da655ce678012cc7b5e74ef82"
+      },
+      "manifest": {
+        "PHASE_mat": {
+          "SHA256": "60863C8D52B6A8C477170AA444CDF0293BC36C55F755AA00F1956920442F384E",
+          "bytes": 21848,
+          "recordSchema": "NewMetacomp.G2.LP2A2.EQ.Phase.v1"
+        },
+        "SOLUTION_mat": {
+          "SHA256": "AE641F5F0EE3B554E391C177E97926947D1E28ED29E66E58ED7182C2AC6B0A7A",
+          "bytes": 1.148472E+6,
+          "recordSchema": "NewMetacomp.G2.LP2A2.EQ.Solution.v1"
+        }
+      },
+      "solution": {
+        "schema": "NewMetacomp.G2.LP2A2.EQ.Solution.v1",
+        "solveId": "EQ-H",
+        "caseId": "H",
+        "meshSHA256": "33b2b8d3fa5d44e8866af22b2a2d28863aa38fc8fde6cb0d88d123b376933fbb",
+        "phaseSHA256": "60863c8d52b6a8c477170aa444cdf0293bc36c55f755aa00f1956920442f384e",
+        "token": "G2LP2A2EQ|policy=6f2c290b37d4f8291f428ec8b9e0a886fe6b31fc901bee5781f2518e67c94756|g2source=7e5683703bd104547ef5d013aa0253ad2819b59dc58693957e2d04b4707f0947|lp2source=357dfdcdb576d2866b9d1b41a14265300a14c30700d6475f995881041ba822ca|lp2a2source=f1d7e4d67b91968e16ebaead13be86667c7776ce48971ed5206c7f136fae7afd|archivedS8=da951c99c0d8c1d5dd731986d8f3b30e3db3f71854166a634d35b739757def8d|solves=EQ-H,EQ-stiff13,EQ-soft2,EQ-soft1|limit=4",
+        "approvedHead": "a4561f88dfeda31752ae6c268d2d4d74e16b60a7",
+        "activationHead": "820efd48339f69a6d1adcfbca15c4995ff81a916",
+        "solveSeconds": 2.1386594,
+        "memoryGate": {
+          "pass": true,
+          "minGiB": 7,
+          "freeGiB": 7.3031349182128906,
+          "reason": "OK"
+        }
+      },
+      "phase": {
+        "schema": "NewMetacomp.G2.LP2A2.EQ.Phase.v1",
+        "solveId": "EQ-H",
+        "caseId": "H",
+        "mask": [
+          0,
+          0,
+          0
+        ],
+        "meshSHA256": "33b2b8d3fa5d44e8866af22b2a2d28863aa38fc8fde6cb0d88d123b376933fbb",
+        "ownerCounts": [
+          17735,
+          4072,
+          4088,
+          4078
+        ],
+        "labelCounts": [
+          29973,
+          0
+        ],
+        "nOwner": 29973
+      },
+      "phaseArchived": {
+        "schema": "NewMetacomp.G2.LP2A.Phase.v1",
+        "mask": [
+          0,
+          0,
+          0
+        ],
+        "meshSHA256": "5e1be8855a77610b569e3e0aa47e0bc0aedfb45a112e33e3b4c858c129bcda11",
+        "ownerCounts": [
+          17593,
+          4092,
+          4094,
+          4094
+        ],
+        "labelCounts": [
+          29873,
+          0
+        ],
+        "nOwner": 29873
+      },
+      "policyMask": [
+        0,
+        0,
+        0
+      ],
+      "policyRatio": 1,
+      "archivedState": {
+        "stateIndex": 8,
+        "caseId": "H",
+        "mask": [
+          0,
+          0,
+          0
+        ],
+        "ratio": 1,
+        "polyline_mm": [
+          [
+            101.6,
+            0
+          ],
+          [
+            101.6,
+            25.4
+          ],
+          [
+            102.47228398131915,
+            29.30373163216095
+          ],
+          [
+            103.4091548344762,
+            33.192468317063231
+          ],
+          [
+            104.47045098146482,
+            37.049105516539882
+          ],
+          [
+            105.64746005474672,
+            40.872016664004875
+          ],
+          [
+            106.93272250534098,
+            44.659905315099628
+          ],
+          [
+            108.31820718188585,
+            48.412295514833573
+          ],
+          [
+            109.79660566817732,
+            52.129059956620424
+          ],
+          [
+            111.36179591382988,
+            55.810116801456438
+          ]
+        ],
+        "tangent": [
+          0.39129756141314026,
+          0.9202642112090037
+        ],
+        "nVertices": 10
+      },
+      "newMesh": {
+        "crackPolyline": [
+          [
+            101.6,
+            0
+          ],
+          [
+            101.6,
+            25.4
+          ],
+          [
+            102.47228398131915,
+            29.30373163216095
+          ],
+          [
+            103.4091548344762,
+            33.192468317063231
+          ],
+          [
+            104.47045098146482,
+            37.049105516539882
+          ],
+          [
+            105.64746005474672,
+            40.872016664004875
+          ],
+          [
+            106.93272250534098,
+            44.659905315099628
+          ],
+          [
+            108.31820718188585,
+            48.412295514833573
+          ],
+          [
+            109.79660566817732,
+            52.129059956620424
+          ],
+          [
+            111.36179591382988,
+            55.810116801456438
+          ]
+        ],
+        "polylineBitwiseEqualsArchived": true,
+        "T3": 29973,
+        "X6": 60973,
+        "upperBankT6": 301,
+        "lowerBankT6": 301,
+        "fieldnames": [
+          "T3",
+          "T6",
+          "X3",
+          "X6",
+          "approvedForLEFM",
+          "block",
+          "collarOuterIDs",
+          "crackPolyline",
+          "elementRows",
+          "exterior",
+          "extraVertexNodes",
+          "extraVertexXY",
+          "failedGates",
+          "gates",
+          "geometryOnly",
+          "includeHoles",
+          "kinkNodeIDs",
+          "lowerBankT6",
+          "message",
+          "nodalQ",
+          "pass",
+          "physicalTipNode",
+          "plateXRange",
+          "qActiveT6Rows",
+          "seedRung",
+          "seedSpacing_mm",
+          "stage",
+          "summary",
+          "tipNormal",
+          "tipTangent",
+          "upperBankT6"
+        ],
+        "seedRung": 1,
+        "tipTangentEqualsArchived": true
+      },
+      "archivedMesh": {
+        "T3": 29873,
+        "X6": 60761,
+        "upperBankT6": 289,
+        "lowerBankT6": 289
+      },
+      "K_new": {
+        "pass": true,
+        "status": "M4B_SIF_VERIFIED",
+        "failedCriteria": [],
+        "criteria": {
+          "elasticEquilibrium": true,
+          "blindCODversusEDI": true,
+          "contourIndependence": true,
+          "JenergyIdentity": true,
+          "EDIquadrature": true,
+          "qSupportInsideCore": true,
+          "wholeCrackOpening": true,
+          "KIpositive": true,
+          "conditionalHighMixityKIIagreement": true,
+          "qSupportMatrixPhaseOnly": true,
+          "qSupportRingOwnerFree": true,
+          "heterogeneousEnergyIdentity": true,
+          "activeInterfaceNodalForceBalance": true,
+          "activeAnnulusResultant": true,
+          "stiffnessPositiveDefinite": true,
+          "loadThicknessModulus": true
+        },
+        "KI": 0.0091468798163422422,
+        "KII": 0.00010248071224981809,
+        "J": 2.5604429985791284E-8,
+        "KI_COD": 0.00906658996759843,
+        "KII_COD": 0.00010093769513736415,
+        "EDI_all": [
+          [
+            0.0091468798163422422,
+            0.00010248071224981809,
+            2.5604429985791284E-8
+          ],
+          [
+            0.00914689485871363,
+            0.0001024809736249259,
+            2.5604587413193049E-8
+          ],
+          [
+            0.00914687985735965,
+            0.0001024807108914469,
+            2.5604434510124492E-8
+          ],
+          [
+            0.0091468799003977773,
+            0.00010248071687034222,
+            2.5604425088883924E-8
+          ],
+          [
+            0.0091468801899379261,
+            0.00010248071800611026,
+            2.560442668217315E-8
+          ]
+        ],
+        "EDI4x4": [
+          0.009146879816338941,
+          0.00010248071224995699
+        ],
+        "compliance_mm_per_N": 0.00023272068744501886,
+        "activeArea_mm2": 0,
+        "Ep_matrix": 3268.115,
+        "relativeResidual": 1.2296388719394006E-12,
+        "staticsMax": 9.2424401465507348E-13,
+        "energyIdentityRel": 8.8829893896944665E-12,
+        "fullPolyOpeningMin_mm": 0,
+        "CMOD_mm": 7.7630892630989348E-5,
+        "activeInterfaceBalanceRel": 0,
+        "activeAnnulusResultantRel": 0,
+        "codFitPairs": 32,
+        "KII_sign_edi_vs_cod_match": true
+      },
+      "K_archived": {
+        "pass": true,
+        "status": "M4B_SIF_VERIFIED",
+        "failedCriteria": [],
+        "criteria": {
+          "elasticEquilibrium": true,
+          "blindCODversusEDI": true,
+          "contourIndependence": true,
+          "JenergyIdentity": true,
+          "EDIquadrature": true,
+          "qSupportInsideCore": true,
+          "wholeCrackOpening": true,
+          "KIpositive": true,
+          "conditionalHighMixityKIIagreement": true,
+          "qSupportMatrixPhaseOnly": true,
+          "qSupportRingOwnerFree": true,
+          "heterogeneousEnergyIdentity": true,
+          "activeInterfaceNodalForceBalance": true,
+          "activeAnnulusResultant": true,
+          "stiffnessPositiveDefinite": true,
+          "loadThicknessModulus": true
+        },
+        "KI": 0.0091468808175744366,
+        "KII": 0.0001024807083454975,
+        "J": 2.5604435594901142E-8,
+        "KI_COD": 0.0090665910202227164,
+        "KII_COD": 0.0001009377161727795,
+        "EDI_all": [
+          [
+            0.0091468808175744366,
+            0.0001024807083454975,
+            2.5604435594901142E-8
+          ],
+          [
+            0.00914689585994111,
+            0.0001024809697135806,
+            2.5604593022304984E-8
+          ],
+          [
+            0.0091468808585857056,
+            0.00010248070697921128,
+            2.5604440119206884E-8
+          ],
+          [
+            0.0091468809016313941,
+            0.00010248071296779092,
+            2.5604430697999029E-8
+          ],
+          [
+            0.0091468811911682869,
+            0.00010248071409339697,
+            2.5604432291272632E-8
+          ]
+        ],
+        "EDI4x4": [
+          0.0091468808175711354,
+          0.0001024807083456406
+        ],
+        "compliance_mm_per_N": 0.00023271529094189136,
+        "activeArea_mm2": 0,
+        "Ep_matrix": 3268.115,
+        "relativeResidual": 1.2282381591594383E-12,
+        "staticsMax": 1.0514922266224858E-12,
+        "energyIdentityRel": 9.2986677696442579E-12,
+        "fullPolyOpeningMin_mm": 0,
+        "CMOD_mm": 7.7630889484687051E-5,
+        "activeInterfaceBalanceRel": 0,
+        "activeAnnulusResultantRel": 0,
+        "codFitPairs": 32,
+        "KII_sign_edi_vs_cod_match": true
+      },
+      "archivedS9tip_mm": [
+        113.0090467767817,
+        59.455190819155462
+      ],
+      "archivedS8tip_mm": [
+        111.36179591382988,
+        55.810116801456438
+      ],
+      "comparison": {
+        "schema": "NewMetacomp.G2.LP2A2.EQ.Comparison.v1",
+        "solveId": "EQ-H",
+        "caseId": "H",
+        "solutionSHA256": "ae641f5f0ee3b554e391c177e97926947d1e28ed29e66e58ed7182c2ac6b0a7a",
+        "meshSHA256": "33b2b8d3fa5d44e8866af22b2a2d28863aa38fc8fde6cb0d88d123b376933fbb",
+        "archivedSolutionSHA256": "cfc00c993f00fae1ddbcd2dff1ff4c82d3c6d80a5f4055bf60eb82886fc427df",
+        "pass": true,
+        "criteria": {
+          "C1_KI": true,
+          "C2_KII": true,
+          "C3_KIIoverKI": true,
+          "C4_G_J": true,
+          "C5_MTS": true,
+          "C6_COD_EDI": true,
+          "C7_EDI_spread_quadrature": true,
+          "C8_crackOpening": true,
+          "C9_phaseActivation": true,
+          "C10_S9predictor": true,
+          "C11_compliance": true
+        },
+        "failed": [],
+        "metrics": {
+          "dKI_overKeq": -1.094547288053621E-7,
+          "dKII_overKeq": 4.2682042588397014E-10,
+          "dKIIoverKI": 1.65324384043819E-9,
+          "dG_rel": -2.1888614387677308E-7,
+          "dJ_rel": -2.1906789693382223E-7,
+          "newJoverGminus1": 2.759494277682073E-5,
+          "dMTS_deg": -1.8928147516028559E-7,
+          "newCODminusEDI_rel": 0.00877728925542369,
+          "archivedCODminusEDI_rel": 0.0087772826766253434,
+          "dCODminusEDI": 6.57879834636832E-9,
+          "newPathSpread_rel": 1.6444326005023987E-6,
+          "archivedPathSpread_rel": 1.6444319050890749E-6,
+          "newQuad4x4_rel": 3.6088498662636063E-13,
+          "archivedQuad4x4_rel": 3.6088494712999695E-13,
+          "dCompliance_rel": 2.3189293258951693E-5,
+          "dActiveArea_rel": 0,
+          "S9tipDisplacement_mm": 1.3214337870550862E-8,
+          "openingNearTipRel": 1.1030100299924343E-6,
+          "openingWholeCrackRel": 7.814311300269369E-6,
+          "signedOpeningNearTipRel": 1.1052160026889195E-6,
+          "signedOpeningWholeCrackRel": 8.0079955230904877E-5,
+          "newMinSignedOpening_mm": 0,
+          "archivedMinSignedOpening_mm": 0,
+          "newSolverGatesPass": true,
+          "archivedSolverGatesPass": true
+        },
+        "newKI": 0.0091468798163422422,
+        "newKII": 0.00010248071224981809,
+        "newJ": 2.5604429985791284E-8,
+        "archivedKI": 0.0091468808175744366,
+        "archivedKII": 0.0001024807083454975,
+        "archivedJ": 2.5604435594901142E-8,
+        "S9tipNew_mm": [
+          113.00904678882351,
+          59.455190813713628
+        ],
+        "S9tipArchived_mm": [
+          113.0090467767817,
+          59.455190819155462
+        ],
+        "interpretation": "numerical equivalence on this geometry only; not a certified discretization-error bound"
+      }
+    },
+    "EQ_stiff13": {
+      "present": true,
+      "files": [
+        "COMPARISON.json",
+        "MESH.mat",
+        "PHASE.mat",
+        "PHASE.mat.manifest.json",
+        "SOLUTION.mat",
+        "SOLUTION.mat.manifest.json"
+      ],
+      "sha256": {
+        "COMPARISON_json": "486b8c6532e8474aa32c6e70a23c067918a6e34a2497a39129e1e6a39c9b5bca",
+        "MESH_mat": "1258a6f0e244f9888fb11d5368873a56e01b90999f09a0e7c40779ef7e7a803f",
+        "PHASE_mat": "4ebe44f8befec6d7daa67015b7637de0204062f03e2cfdb43424c4af8de4a88a",
+        "PHASE_mat_manifest_json": "07ef6325a0d7dba32c539222df488f31188dab20f1635d247270513448a22890",
+        "SOLUTION_mat": "42a93838816d8ed78416b15c04ec245679721fedf0f9e86900ae8a1475559a1e",
+        "SOLUTION_mat_manifest_json": "c005322a2bc348aab49c3eabc2c55c6675e408d9363ee8f4e2b7aba516a89f92"
+      },
+      "manifest": {
+        "PHASE_mat": {
+          "SHA256": "4EBE44F8BEFEC6D7DAA67015B7637DE0204062F03E2CFDB43424C4AF8DE4A88A",
+          "bytes": 21872,
+          "recordSchema": "NewMetacomp.G2.LP2A2.EQ.Phase.v1"
+        },
+        "SOLUTION_mat": {
+          "SHA256": "42A93838816D8ED78416B15C04EC245679721FEDF0F9E86900AE8A1475559A1E",
+          "bytes": 1.145739E+6,
+          "recordSchema": "NewMetacomp.G2.LP2A2.EQ.Solution.v1"
+        }
+      },
+      "solution": {
+        "schema": "NewMetacomp.G2.LP2A2.EQ.Solution.v1",
+        "solveId": "EQ-stiff13",
+        "caseId": "stiff13",
+        "meshSHA256": "1258a6f0e244f9888fb11d5368873a56e01b90999f09a0e7c40779ef7e7a803f",
+        "phaseSHA256": "4ebe44f8befec6d7daa67015b7637de0204062f03e2cfdb43424c4af8de4a88a",
+        "token": "G2LP2A2EQ|policy=6f2c290b37d4f8291f428ec8b9e0a886fe6b31fc901bee5781f2518e67c94756|g2source=7e5683703bd104547ef5d013aa0253ad2819b59dc58693957e2d04b4707f0947|lp2source=357dfdcdb576d2866b9d1b41a14265300a14c30700d6475f995881041ba822ca|lp2a2source=f1d7e4d67b91968e16ebaead13be86667c7776ce48971ed5206c7f136fae7afd|archivedS8=da951c99c0d8c1d5dd731986d8f3b30e3db3f71854166a634d35b739757def8d|solves=EQ-H,EQ-stiff13,EQ-soft2,EQ-soft1|limit=4",
+        "approvedHead": "a4561f88dfeda31752ae6c268d2d4d74e16b60a7",
+        "activationHead": "820efd48339f69a6d1adcfbca15c4995ff81a916",
+        "solveSeconds": 1.8539288,
+        "memoryGate": {
+          "pass": true,
+          "minGiB": 7,
+          "freeGiB": 7.2527847290039062,
+          "reason": "OK"
+        }
+      },
+      "phase": {
+        "schema": "NewMetacomp.G2.LP2A2.EQ.Phase.v1",
+        "solveId": "EQ-stiff13",
+        "caseId": "stiff13",
+        "mask": [
+          1,
+          0,
+          1
+        ],
+        "meshSHA256": "1258a6f0e244f9888fb11d5368873a56e01b90999f09a0e7c40779ef7e7a803f",
+        "ownerCounts": [
+          17729,
+          4088,
+          4074,
+          4090
+        ],
+        "labelCounts": [
+          21803,
+          8178
+        ],
+        "nOwner": 29981
+      },
+      "phaseArchived": {
+        "schema": "NewMetacomp.G2.LP2A.Phase.v1",
+        "mask": [
+          1,
+          0,
+          1
+        ],
+        "meshSHA256": "ecef38f468eedeb231c10a2481a3ed3ee46bb1388a293b29e07ff6a07f66f899",
+        "ownerCounts": [
+          17591,
+          4092,
+          4094,
+          4094
+        ],
+        "labelCounts": [
+          21685,
+          8186
+        ],
+        "nOwner": 29871
+      },
+      "policyMask": [
+        1,
+        0,
+        1
+      ],
+      "policyRatio": 2,
+      "archivedState": {
+        "stateIndex": 8,
+        "caseId": "stiff13",
+        "mask": [
+          1,
+          0,
+          1
+        ],
+        "ratio": 2,
+        "polyline_mm": [
+          [
+            101.6,
+            0
+          ],
+          [
+            101.6,
+            25.4
+          ],
+          [
+            102.51737532716155,
+            29.293381885856462
+          ],
+          [
+            103.50270915027406,
+            33.170122431344446
+          ],
+          [
+            104.61095410120757,
+            37.013531481748835
+          ],
+          [
+            105.83199310467963,
+            40.822607977699
+          ],
+          [
+            107.1557497480221,
+            44.59721634800799
+          ],
+          [
+            108.57091380134817,
+            48.3385143449836
+          ],
+          [
+            110.06599655454902,
+            52.048598920984716
+          ],
+          [
+            111.62967944430136,
+            55.730296331187759
+          ]
+        ],
+        "tangent": [
+          0.39092072243808418,
+          0.92042435255076027
+        ],
+        "nVertices": 10
+      },
+      "newMesh": {
+        "crackPolyline": [
+          [
+            101.6,
+            0
+          ],
+          [
+            101.6,
+            25.4
+          ],
+          [
+            102.51737532716155,
+            29.293381885856462
+          ],
+          [
+            103.50270915027406,
+            33.170122431344446
+          ],
+          [
+            104.61095410120757,
+            37.013531481748835
+          ],
+          [
+            105.83199310467963,
+            40.822607977699
+          ],
+          [
+            107.1557497480221,
+            44.59721634800799
+          ],
+          [
+            108.57091380134817,
+            48.3385143449836
+          ],
+          [
+            110.06599655454902,
+            52.048598920984716
+          ],
+          [
+            111.62967944430136,
+            55.730296331187759
+          ]
+        ],
+        "polylineBitwiseEqualsArchived": true,
+        "T3": 29981,
+        "X6": 60989,
+        "upperBankT6": 301,
+        "lowerBankT6": 301,
+        "fieldnames": [
+          "T3",
+          "T6",
+          "X3",
+          "X6",
+          "approvedForLEFM",
+          "block",
+          "collarOuterIDs",
+          "crackPolyline",
+          "elementRows",
+          "exterior",
+          "extraVertexNodes",
+          "extraVertexXY",
+          "failedGates",
+          "gates",
+          "geometryOnly",
+          "includeHoles",
+          "kinkNodeIDs",
+          "lowerBankT6",
+          "message",
+          "nodalQ",
+          "pass",
+          "physicalTipNode",
+          "plateXRange",
+          "qActiveT6Rows",
+          "seedRung",
+          "seedSpacing_mm",
+          "stage",
+          "summary",
+          "tipNormal",
+          "tipTangent",
+          "upperBankT6"
+        ],
+        "seedRung": 1,
+        "tipTangentEqualsArchived": true
+      },
+      "archivedMesh": {
+        "T3": 29871,
+        "X6": 60757,
+        "upperBankT6": 289,
+        "lowerBankT6": 289
+      },
+      "K_new": {
+        "pass": true,
+        "status": "M4B_SIF_VERIFIED",
+        "failedCriteria": [],
+        "criteria": {
+          "elasticEquilibrium": true,
+          "blindCODversusEDI": true,
+          "contourIndependence": true,
+          "JenergyIdentity": true,
+          "EDIquadrature": true,
+          "qSupportInsideCore": true,
+          "wholeCrackOpening": true,
+          "KIpositive": true,
+          "conditionalHighMixityKIIagreement": true,
+          "qSupportMatrixPhaseOnly": true,
+          "qSupportRingOwnerFree": true,
+          "heterogeneousEnergyIdentity": true,
+          "activeInterfaceNodalForceBalance": true,
+          "activeAnnulusResultant": true,
+          "stiffnessPositiveDefinite": true,
+          "loadThicknessModulus": true
+        },
+        "KI": 0.0086319014194859225,
+        "KII": 6.78505773431467E-5,
+        "J": 2.2800956389626397E-8,
+        "KI_COD": 0.0085559746837957657,
+        "KII_COD": 6.687633591041331E-5,
+        "EDI_all": [
+          [
+            0.0086319014194859225,
+            6.78505773431467E-5,
+            2.2800956389626397E-8
+          ],
+          [
+            0.0086319156149142432,
+            6.7850750723795272E-5,
+            2.2801096670711662E-8
+          ],
+          [
+            0.00863190145770743,
+            6.7850576590302233E-5,
+            2.2800960425954705E-8
+          ],
+          [
+            0.0086319014990893939,
+            6.7850580430857914E-5,
+            2.280095203203939E-8
+          ],
+          [
+            0.0086319017722629489,
+            6.7850581043808834E-5,
+            2.2800953446513053E-8
+          ]
+        ],
+        "EDI4x4": [
+          0.0086319014194827931,
+          6.7850577343296552E-5
+        ],
+        "compliance_mm_per_N": 0.00023003219914127503,
+        "activeArea_mm2": 2024.305057196324,
+        "Ep_matrix": 3268.115,
+        "relativeResidual": 1.6784917184715736E-12,
+        "staticsMax": 2.6225688287695448E-12,
+        "energyIdentityRel": 1.0240843052177768E-11,
+        "fullPolyOpeningMin_mm": 0,
+        "CMOD_mm": 7.391646601722126E-5,
+        "activeInterfaceBalanceRel": 2.2079593861991986E-12,
+        "activeAnnulusResultantRel": 1.2065573158512909E-12,
+        "codFitPairs": 32,
+        "KII_sign_edi_vs_cod_match": true
+      },
+      "K_archived": {
+        "pass": true,
+        "status": "M4B_SIF_VERIFIED",
+        "failedCriteria": [],
+        "criteria": {
+          "elasticEquilibrium": true,
+          "blindCODversusEDI": true,
+          "contourIndependence": true,
+          "JenergyIdentity": true,
+          "EDIquadrature": true,
+          "qSupportInsideCore": true,
+          "wholeCrackOpening": true,
+          "KIpositive": true,
+          "conditionalHighMixityKIIagreement": true,
+          "qSupportMatrixPhaseOnly": true,
+          "qSupportRingOwnerFree": true,
+          "heterogeneousEnergyIdentity": true,
+          "activeInterfaceNodalForceBalance": true,
+          "activeAnnulusResultant": true,
+          "stiffnessPositiveDefinite": true,
+          "loadThicknessModulus": true
+        },
+        "KI": 0.0086319023923100129,
+        "KII": 6.7850826031074822E-5,
+        "J": 2.2800961542544304E-8,
+        "KI_COD": 0.00855597571705708,
+        "KII_COD": 6.6876573999263879E-5,
+        "EDI_all": [
+          [
+            0.0086319023923100129,
+            6.7850826031074822E-5,
+            2.2800961542544304E-8
+          ],
+          [
+            0.00863191658774883,
+            6.7850999422444972E-5,
+            2.2801101823702883E-8
+          ],
+          [
+            0.0086319024305407388,
+            6.7850825288443158E-5,
+            2.2800965578918636E-8
+          ],
+          [
+            0.00863190247191142,
+            6.7850829116499614E-5,
+            2.28009571849461E-8
+          ],
+          [
+            0.00863190274509156,
+            6.7850829739908179E-5,
+            2.2800958599452651E-8
+          ]
+        ],
+        "EDI4x4": [
+          0.0086319023923069112,
+          6.78508260312391E-5
+        ],
+        "compliance_mm_per_N": 0.00023002793678141156,
+        "activeArea_mm2": 2024.3050571963231,
+        "Ep_matrix": 3268.115,
+        "relativeResidual": 1.6935942488633715E-12,
+        "staticsMax": 1.2561188200699291E-12,
+        "energyIdentityRel": 1.1631457801811349E-11,
+        "fullPolyOpeningMin_mm": 0,
+        "CMOD_mm": 7.39164644939783E-5,
+        "activeInterfaceBalanceRel": 1.7256536999469075E-12,
+        "activeAnnulusResultantRel": 3.7638202336737687E-13,
+        "codFitPairs": 32,
+        "KII_sign_edi_vs_cod_match": true
+      },
+      "archivedS9tip_mm": [
+        113.2510381957138,
+        59.386960904158364
+      ],
+      "archivedS8tip_mm": [
+        111.62967944430136,
+        55.730296331187759
+      ],
+      "comparison": {
+        "schema": "NewMetacomp.G2.LP2A2.EQ.Comparison.v1",
+        "solveId": "EQ-stiff13",
+        "caseId": "stiff13",
+        "solutionSHA256": "42a93838816d8ed78416b15c04ec245679721fedf0f9e86900ae8a1475559a1e",
+        "meshSHA256": "1258a6f0e244f9888fb11d5368873a56e01b90999f09a0e7c40779ef7e7a803f",
+        "archivedSolutionSHA256": "b1c5e833163571830495d811328ed80162cb1713daa6a02e4fe20f5b3a2ccca7",
+        "pass": true,
+        "criteria": {
+          "C1_KI": true,
+          "C2_KII": true,
+          "C3_KIIoverKI": true,
+          "C4_G_J": true,
+          "C5_MTS": true,
+          "C6_COD_EDI": true,
+          "C7_EDI_spread_quadrature": true,
+          "C8_crackOpening": true,
+          "C9_phaseActivation": true,
+          "C10_S9predictor": true,
+          "C11_compliance": true
+        },
+        "failed": [],
+        "metrics": {
+          "dKI_overKeq": -1.1269752525127335E-7,
+          "dKII_overKeq": -2.8809436707109116E-8,
+          "dKIIoverKI": -2.7924446770535849E-8,
+          "dG_rel": -2.2584097192357433E-7,
+          "dJ_rel": -2.2599564042380393E-7,
+          "newJoverGminus1": 2.4448650578712261E-5,
+          "dMTS_deg": 3.1985225295017017E-6,
+          "newCODminusEDI_rel": 0.008795789766646283,
+          "archivedCODminusEDI_rel": 0.0087957817720264453,
+          "dCODminusEDI": 7.9946198376645849E-9,
+          "newPathSpread_rel": 1.6444800638552266E-6,
+          "archivedPathSpread_rel": 1.6444810941706391E-6,
+          "newQuad4x4_rel": 3.6253246235481797E-13,
+          "archivedQuad4x4_rel": 3.59317056260778E-13,
+          "dCompliance_rel": 1.8529748704088078E-5,
+          "dActiveArea_rel": 4.4928737323443969E-16,
+          "S9tipDisplacement_mm": 2.2329900179635224E-7,
+          "openingNearTipRel": 4.1517349598108163E-7,
+          "openingWholeCrackRel": 7.5728436712939207E-6,
+          "signedOpeningNearTipRel": 4.1340482985923761E-7,
+          "signedOpeningWholeCrackRel": 7.1392926839124882E-5,
+          "newMinSignedOpening_mm": 0,
+          "archivedMinSignedOpening_mm": 0,
+          "newSolverGatesPass": true,
+          "archivedSolverGatesPass": true
+        },
+        "newKI": 0.0086319014194859225,
+        "newKII": 6.78505773431467E-5,
+        "newJ": 2.2800956389626397E-8,
+        "archivedKI": 0.0086319023923100129,
+        "archivedKII": 6.7850826031074822E-5,
+        "archivedJ": 2.2800961542544304E-8,
+        "S9tipNew_mm": [
+          113.25103799158141,
+          59.386960994670304
+        ],
+        "S9tipArchived_mm": [
+          113.2510381957138,
+          59.386960904158364
+        ],
+        "interpretation": "numerical equivalence on this geometry only; not a certified discretization-error bound"
+      }
+    },
+    "EQ_soft2": {
+      "present": true,
+      "files": [
+        "COMPARISON.json",
+        "MESH.mat",
+        "PHASE.mat",
+        "PHASE.mat.manifest.json",
+        "SOLUTION.mat",
+        "SOLUTION.mat.manifest.json"
+      ],
+      "sha256": {
+        "COMPARISON_json": "b89f207b8b28949790c871be9e151a9eef0ab60900387d04a492bddeca2afae8",
+        "MESH_mat": "b2f212cc7e45d1664ca353346258c15418a252ae47ba79a1f83e253938105343",
+        "PHASE_mat": "fca197e5b272b4bd65e235c2798f5f826c26627cd73ef31d5e42751337e0cecc",
+        "PHASE_mat_manifest_json": "ca6ba51da70703a60137d33ba3b241e34ea01208122dee3633ba193dfc45eac6",
+        "SOLUTION_mat": "7771dca68242c2ccb23e076501ef825da161c8ffc99cf7b38f19ec926989cb5c",
+        "SOLUTION_mat_manifest_json": "a77e54f8be81ac61d815a86f8a082619d8d9529b6fd86269ab4545f6cc41cb3f"
+      },
+      "manifest": {
+        "PHASE_mat": {
+          "SHA256": "FCA197E5B272B4BD65E235C2798F5F826C26627CD73EF31D5E42751337E0CECC",
+          "bytes": 21864,
+          "recordSchema": "NewMetacomp.G2.LP2A2.EQ.Phase.v1"
+        },
+        "SOLUTION_mat": {
+          "SHA256": "7771DCA68242C2CCB23E076501EF825DA161C8FFC99CF7B38F19EC926989CB5C",
+          "bytes": 1.150294E+6,
+          "recordSchema": "NewMetacomp.G2.LP2A2.EQ.Solution.v1"
+        }
+      },
+      "solution": {
+        "schema": "NewMetacomp.G2.LP2A2.EQ.Solution.v1",
+        "solveId": "EQ-soft2",
+        "caseId": "soft2",
+        "meshSHA256": "b2f212cc7e45d1664ca353346258c15418a252ae47ba79a1f83e253938105343",
+        "phaseSHA256": "fca197e5b272b4bd65e235c2798f5f826c26627cd73ef31d5e42751337e0cecc",
+        "token": "G2LP2A2EQ|policy=6f2c290b37d4f8291f428ec8b9e0a886fe6b31fc901bee5781f2518e67c94756|g2source=7e5683703bd104547ef5d013aa0253ad2819b59dc58693957e2d04b4707f0947|lp2source=357dfdcdb576d2866b9d1b41a14265300a14c30700d6475f995881041ba822ca|lp2a2source=f1d7e4d67b91968e16ebaead13be86667c7776ce48971ed5206c7f136fae7afd|archivedS8=da951c99c0d8c1d5dd731986d8f3b30e3db3f71854166a634d35b739757def8d|solves=EQ-H,EQ-stiff13,EQ-soft2,EQ-soft1|limit=4",
+        "approvedHead": "a4561f88dfeda31752ae6c268d2d4d74e16b60a7",
+        "activationHead": "820efd48339f69a6d1adcfbca15c4995ff81a916",
+        "solveSeconds": 1.8449928,
+        "memoryGate": {
+          "pass": true,
+          "minGiB": 7,
+          "freeGiB": 7.2484703063964844,
+          "reason": "OK"
+        }
+      },
+      "phase": {
+        "schema": "NewMetacomp.G2.LP2A2.EQ.Phase.v1",
+        "solveId": "EQ-soft2",
+        "caseId": "soft2",
+        "mask": [
+          0,
+          1,
+          0
+        ],
+        "meshSHA256": "b2f212cc7e45d1664ca353346258c15418a252ae47ba79a1f83e253938105343",
+        "ownerCounts": [
+          17741,
+          4088,
+          4088,
+          4084
+        ],
+        "labelCounts": [
+          25913,
+          4088
+        ],
+        "nOwner": 30001
+      },
+      "phaseArchived": {
+        "schema": "NewMetacomp.G2.LP2A.Phase.v1",
+        "mask": [
+          0,
+          1,
+          0
+        ],
+        "meshSHA256": "6df72ec1a955a5d73cfc4561dc144b9f37d73dd35844d550b8c02d67f85b6ac1",
+        "ownerCounts": [
+          17609,
+          4086,
+          4090,
+          4094
+        ],
+        "labelCounts": [
+          25789,
+          4090
+        ],
+        "nOwner": 29879
+      },
+      "policyMask": [
+        0,
+        1,
+        0
+      ],
+      "policyRatio": 0.5,
+      "archivedState": {
+        "stateIndex": 8,
+        "caseId": "soft2",
+        "mask": [
+          0,
+          1,
+          0
+        ],
+        "ratio": 0.5,
+        "polyline_mm": [
+          [
+            101.6,
+            0
+          ],
+          [
+            101.6,
+            25.4
+          ],
+          [
+            102.48885131468673,
+            29.299992735939345
+          ],
+          [
+            103.4449885170134,
+            33.184037232379481
+          ],
+          [
+            104.528277910323,
+            37.034554611945886
+          ],
+          [
+            105.72974312219405,
+            40.849850320624789
+          ],
+          [
+            107.04158625847126,
+            44.628615672668019
+          ],
+          [
+            108.45543591025044,
+            48.370410584493605
+          ],
+          [
+            109.96367516396928,
+            52.075166224686576
+          ],
+          [
+            111.55993396965808,
+            55.742857300180944
+          ]
+        ],
+        "tangent": [
+          0.39906470142219708,
+          0.91692276887359125
+        ],
+        "nVertices": 10
+      },
+      "newMesh": {
+        "crackPolyline": [
+          [
+            101.6,
+            0
+          ],
+          [
+            101.6,
+            25.4
+          ],
+          [
+            102.48885131468673,
+            29.299992735939345
+          ],
+          [
+            103.4449885170134,
+            33.184037232379481
+          ],
+          [
+            104.528277910323,
+            37.034554611945886
+          ],
+          [
+            105.72974312219405,
+            40.849850320624789
+          ],
+          [
+            107.04158625847126,
+            44.628615672668019
+          ],
+          [
+            108.45543591025044,
+            48.370410584493605
+          ],
+          [
+            109.96367516396928,
+            52.075166224686576
+          ],
+          [
+            111.55993396965808,
+            55.742857300180944
+          ]
+        ],
+        "polylineBitwiseEqualsArchived": true,
+        "T3": 30001,
+        "X6": 61029,
+        "upperBankT6": 301,
+        "lowerBankT6": 301,
+        "fieldnames": [
+          "T3",
+          "T6",
+          "X3",
+          "X6",
+          "approvedForLEFM",
+          "block",
+          "collarOuterIDs",
+          "crackPolyline",
+          "elementRows",
+          "exterior",
+          "extraVertexNodes",
+          "extraVertexXY",
+          "failedGates",
+          "gates",
+          "geometryOnly",
+          "includeHoles",
+          "kinkNodeIDs",
+          "lowerBankT6",
+          "message",
+          "nodalQ",
+          "pass",
+          "physicalTipNode",
+          "plateXRange",
+          "qActiveT6Rows",
+          "seedRung",
+          "seedSpacing_mm",
+          "stage",
+          "summary",
+          "tipNormal",
+          "tipTangent",
+          "upperBankT6"
+        ],
+        "seedRung": 1,
+        "tipTangentEqualsArchived": true
+      },
+      "archivedMesh": {
+        "T3": 29879,
+        "X6": 60773,
+        "upperBankT6": 289,
+        "lowerBankT6": 289
+      },
+      "K_new": {
+        "pass": true,
+        "status": "M4B_SIF_VERIFIED",
+        "failedCriteria": [],
+        "criteria": {
+          "elasticEquilibrium": true,
+          "blindCODversusEDI": true,
+          "contourIndependence": true,
+          "JenergyIdentity": true,
+          "EDIquadrature": true,
+          "qSupportInsideCore": true,
+          "wholeCrackOpening": true,
+          "KIpositive": true,
+          "conditionalHighMixityKIIagreement": true,
+          "qSupportMatrixPhaseOnly": true,
+          "qSupportRingOwnerFree": true,
+          "heterogeneousEnergyIdentity": true,
+          "activeInterfaceNodalForceBalance": true,
+          "activeAnnulusResultant": true,
+          "stiffnessPositiveDefinite": true,
+          "loadThicknessModulus": true
+        },
+        "KI": 0.00907853756346101,
+        "KII": 0.00010343532874708376,
+        "J": 2.5223309814141437E-8,
+        "KI_COD": 0.00899884380548944,
+        "KII_COD": 0.00010187430927645134,
+        "EDI_all": [
+          [
+            0.00907853756346101,
+            0.00010343532874708376,
+            2.5223309814141437E-8
+          ],
+          [
+            0.0090785524931224632,
+            0.00010343559253053247,
+            2.5223464957665826E-8
+          ],
+          [
+            0.0090785376037858315,
+            0.00010343532736084465,
+            2.5223314279484349E-8
+          ],
+          [
+            0.0090785376470060956,
+            0.00010343533340989587,
+            2.5223304991428098E-8
+          ],
+          [
+            0.00907853793441553,
+            0.00010343533456467585,
+            2.5223306558219255E-8
+          ]
+        ],
+        "EDI4x4": [
+          0.0090785375634577156,
+          0.0001034353287472353
+        ],
+        "compliance_mm_per_N": 0.00023327662412301264,
+        "activeArea_mm2": 1012.1525285981622,
+        "Ep_matrix": 3268.115,
+        "relativeResidual": 1.1560937857937246E-12,
+        "staticsMax": 1.0504375147490919E-12,
+        "energyIdentityRel": 8.7017119498324612E-12,
+        "fullPolyOpeningMin_mm": 0,
+        "CMOD_mm": 7.6587256855671529E-5,
+        "activeInterfaceBalanceRel": 2.9231196121021616E-12,
+        "activeAnnulusResultantRel": 1.0709700834742752E-12,
+        "codFitPairs": 32,
+        "KII_sign_edi_vs_cod_match": true
+      },
+      "K_archived": {
+        "pass": true,
+        "status": "M4B_SIF_VERIFIED",
+        "failedCriteria": [],
+        "criteria": {
+          "elasticEquilibrium": true,
+          "blindCODversusEDI": true,
+          "contourIndependence": true,
+          "JenergyIdentity": true,
+          "EDIquadrature": true,
+          "qSupportInsideCore": true,
+          "wholeCrackOpening": true,
+          "KIpositive": true,
+          "conditionalHighMixityKIIagreement": true,
+          "qSupportMatrixPhaseOnly": true,
+          "qSupportRingOwnerFree": true,
+          "heterogeneousEnergyIdentity": true,
+          "activeInterfaceNodalForceBalance": true,
+          "activeAnnulusResultant": true,
+          "stiffnessPositiveDefinite": true,
+          "loadThicknessModulus": true
+        },
+        "KI": 0.00907853733589068,
+        "KII": 0.00010343580249332967,
+        "J": 2.5223308582174793E-8,
+        "KI_COD": 0.0089988435725023627,
+        "KII_COD": 0.00010187484683307454,
+        "EDI_all": [
+          [
+            0.00907853733589068,
+            0.00010343580249332967,
+            2.5223308582174793E-8
+          ],
+          [
+            0.0090785522655450878,
+            0.00010343606627522057,
+            2.5223463725659018E-8
+          ],
+          [
+            0.00907853737620768,
+            0.00010343580110358125,
+            2.5223313047480879E-8
+          ],
+          [
+            0.0090785374194372864,
+            0.00010343580715694297,
+            2.5223303759468293E-8
+          ],
+          [
+            0.0090785377068438276,
+            0.00010343580830680636,
+            2.5223305326245759E-8
+          ]
+        ],
+        "EDI4x4": [
+          0.00907853733588741,
+          0.00010343580249349141
+        ],
+        "compliance_mm_per_N": 0.00023327063052086194,
+        "activeArea_mm2": 1012.1525285981613,
+        "Ep_matrix": 3268.115,
+        "relativeResidual": 1.1455433316364431E-12,
+        "staticsMax": 7.8359818633799711E-13,
+        "energyIdentityRel": 7.22311375664243E-12,
+        "fullPolyOpeningMin_mm": 0,
+        "CMOD_mm": 7.6587262961125955E-5,
+        "activeInterfaceBalanceRel": 2.2555012964797542E-12,
+        "activeAnnulusResultantRel": 7.23438255979169E-13,
+        "codFitPairs": 32,
+        "KII_sign_edi_vs_cod_match": true
+      },
+      "archivedS9tip_mm": [
+        113.23932135822288,
+        59.373237169992024
+      ],
+      "archivedS8tip_mm": [
+        111.55993396965808,
+        55.742857300180944
+      ],
+      "comparison": {
+        "schema": "NewMetacomp.G2.LP2A2.EQ.Comparison.v1",
+        "solveId": "EQ-soft2",
+        "caseId": "soft2",
+        "solutionSHA256": "7771dca68242c2ccb23e076501ef825da161c8ffc99cf7b38f19ec926989cb5c",
+        "meshSHA256": "b2f212cc7e45d1664ca353346258c15418a252ae47ba79a1f83e253938105343",
+        "archivedSolutionSHA256": "803181602c39ad4b608f74f07438a67d16b211ddec68ebe6119747f3399dc365",
+        "pass": true,
+        "criteria": {
+          "C1_KI": true,
+          "C2_KII": true,
+          "C3_KIIoverKI": true,
+          "C4_G_J": true,
+          "C5_MTS": true,
+          "C6_COD_EDI": true,
+          "C7_EDI_spread_quadrature": true,
+          "C8_crackOpening": true,
+          "C9_phaseActivation": true,
+          "C10_S9predictor": true,
+          "C11_compliance": true
+        },
+        "failed": [],
+        "metrics": {
+          "dKI_overKeq": 2.5065222858984716E-8,
+          "dKII_overKeq": -5.2179716043300903E-8,
+          "dKIIoverKI": -5.2468699093810578E-8,
+          "dG_rel": 4.8938259444852861E-8,
+          "dJ_rel": 4.8842388800096614E-8,
+          "newJoverGminus1": 2.58883995603032E-5,
+          "dMTS_deg": 6.0070118421684526E-6,
+          "newCODminusEDI_rel": 0.0087776897347394047,
+          "archivedCODminusEDI_rel": 0.0087776905461372529,
+          "dCODminusEDI": -8.1139784821604444E-10,
+          "newPathSpread_rel": 1.6443939828818776E-6,
+          "archivedPathSpread_rel": 1.6443932471947846E-6,
+          "newQuad4x4_rel": 3.6283664269521242E-13,
+          "archivedQuad4x4_rel": 3.6016171048765918E-13,
+          "dCompliance_rel": 2.5693770953072459E-5,
+          "dActiveArea_rel": 8.9857474646887957E-16,
+          "S9tipDisplacement_mm": 4.193685357419024E-7,
+          "openingNearTipRel": 1.2869953819717079E-6,
+          "openingWholeCrackRel": 7.7558240671072188E-6,
+          "signedOpeningNearTipRel": 1.2909574643129851E-6,
+          "signedOpeningWholeCrackRel": 8.3913204563455416E-5,
+          "newMinSignedOpening_mm": 0,
+          "archivedMinSignedOpening_mm": 0,
+          "newSolverGatesPass": true,
+          "archivedSolverGatesPass": true
+        },
+        "newKI": 0.00907853756346101,
+        "newKII": 0.00010343532874708376,
+        "newJ": 2.5223309814141437E-8,
+        "archivedKI": 0.00907853733589068,
+        "archivedKII": 0.00010343580249332967,
+        "archivedJ": 2.5223308582174793E-8,
+        "S9tipNew_mm": [
+          113.2393209776061,
+          59.37323734606256
+        ],
+        "S9tipArchived_mm": [
+          113.23932135822288,
+          59.373237169992024
+        ],
+        "interpretation": "numerical equivalence on this geometry only; not a certified discretization-error bound"
+      }
+    },
+    "EQ_soft1": {
+      "present": true,
+      "files": [
+        "COMPARISON.json",
+        "MESH.mat",
+        "PHASE.mat",
+        "PHASE.mat.manifest.json",
+        "SOLUTION.mat",
+        "SOLUTION.mat.manifest.json"
+      ],
+      "sha256": {
+        "COMPARISON_json": "2c362242ec00a99f100e91d6ce07ee407721d639c46f72448938c3aa13b4858b",
+        "MESH_mat": "75a81c2cc578716e13ce1a5a2fb53136fa0f1ed998cb1c09ae9fc9a9dbe16f02",
+        "PHASE_mat": "d2be3beeee03e6868788b0ae5b62a51e3775564fcebf870d0a15930fb68802fc",
+        "PHASE_mat_manifest_json": "ba6103f0c6e5facd8798182fa1ba31956d9848848010ccab9f722cce8ab2402b",
+        "SOLUTION_mat": "15c5d613c1a868f050c7a5b4dcbe6f0cbedaa2f1d0463013f59b743ab77aaf37",
+        "SOLUTION_mat_manifest_json": "366d24ffa483202947b7fea071755cf22e0349f0e395a72231d74f51176efb37"
+      },
+      "manifest": {
+        "PHASE_mat": {
+          "SHA256": "D2BE3BEEEE03E6868788B0AE5B62A51E3775564FCEBF870D0A15930FB68802FC",
+          "bytes": 21864,
+          "recordSchema": "NewMetacomp.G2.LP2A2.EQ.Phase.v1"
+        },
+        "SOLUTION_mat": {
+          "SHA256": "15C5D613C1A868F050C7A5B4DCBE6F0CBEDAA2F1D0463013F59B743AB77AAF37",
+          "bytes": 1.152115E+6,
+          "recordSchema": "NewMetacomp.G2.LP2A2.EQ.Solution.v1"
+        }
+      },
+      "solution": {
+        "schema": "NewMetacomp.G2.LP2A2.EQ.Solution.v1",
+        "solveId": "EQ-soft1",
+        "caseId": "soft1",
+        "meshSHA256": "75a81c2cc578716e13ce1a5a2fb53136fa0f1ed998cb1c09ae9fc9a9dbe16f02",
+        "phaseSHA256": "d2be3beeee03e6868788b0ae5b62a51e3775564fcebf870d0a15930fb68802fc",
+        "token": "G2LP2A2EQ|policy=6f2c290b37d4f8291f428ec8b9e0a886fe6b31fc901bee5781f2518e67c94756|g2source=7e5683703bd104547ef5d013aa0253ad2819b59dc58693957e2d04b4707f0947|lp2source=357dfdcdb576d2866b9d1b41a14265300a14c30700d6475f995881041ba822ca|lp2a2source=f1d7e4d67b91968e16ebaead13be86667c7776ce48971ed5206c7f136fae7afd|archivedS8=da951c99c0d8c1d5dd731986d8f3b30e3db3f71854166a634d35b739757def8d|solves=EQ-H,EQ-stiff13,EQ-soft2,EQ-soft1|limit=4",
+        "approvedHead": "a4561f88dfeda31752ae6c268d2d4d74e16b60a7",
+        "activationHead": "820efd48339f69a6d1adcfbca15c4995ff81a916",
+        "solveSeconds": 1.8235874,
+        "memoryGate": {
+          "pass": true,
+          "minGiB": 7,
+          "freeGiB": 7.2425727844238281,
+          "reason": "OK"
+        }
+      },
+      "phase": {
+        "schema": "NewMetacomp.G2.LP2A2.EQ.Phase.v1",
+        "solveId": "EQ-soft1",
+        "caseId": "soft1",
+        "mask": [
+          1,
+          0,
+          0
+        ],
+        "meshSHA256": "75a81c2cc578716e13ce1a5a2fb53136fa0f1ed998cb1c09ae9fc9a9dbe16f02",
+        "ownerCounts": [
+          17763,
+          4084,
+          4084,
+          4090
+        ],
+        "labelCounts": [
+          25937,
+          4084
+        ],
+        "nOwner": 30021
+      },
+      "phaseArchived": {
+        "schema": "NewMetacomp.G2.LP2A.Phase.v1",
+        "mask": [
+          1,
+          0,
+          0
+        ],
+        "meshSHA256": "2123b50fa96a89bed6b177db8dc52bb8703dbcaaee36e8a71a09038783357efe",
+        "ownerCounts": [
+          17607,
+          4084,
+          4092,
+          4092
+        ],
+        "labelCounts": [
+          25791,
+          4084
+        ],
+        "nOwner": 29875
+      },
+      "policyMask": [
+        1,
+        0,
+        0
+      ],
+      "policyRatio": 0.5,
+      "archivedState": {
+        "stateIndex": 8,
+        "caseId": "soft1",
+        "mask": [
+          1,
+          0,
+          0
+        ],
+        "ratio": 0.5,
+        "polyline_mm": [
+          [
+            101.6,
+            0
+          ],
+          [
+            101.6,
+            25.4
+          ],
+          [
+            102.39826203613242,
+            29.319537947471577
+          ],
+          [
+            103.25866686020588,
+            33.225904998672874
+          ],
+          [
+            104.24504715803435,
+            37.102379415982476
+          ],
+          [
+            105.35058232560786,
+            40.946568796496685
+          ],
+          [
+            106.57091154428718,
+            44.75587274840673
+          ],
+          [
+            107.90161973099126,
+            48.528036016591017
+          ],
+          [
+            109.33966475408087,
+            52.260599011580808
+          ],
+          [
+            110.883847446255,
+            55.950517684558555
+          ]
+        ],
+        "tangent": [
+          0.3860456730435336,
+          0.92247966824443606
+        ],
+        "nVertices": 10
+      },
+      "newMesh": {
+        "crackPolyline": [
+          [
+            101.6,
+            0
+          ],
+          [
+            101.6,
+            25.4
+          ],
+          [
+            102.39826203613242,
+            29.319537947471577
+          ],
+          [
+            103.25866686020588,
+            33.225904998672874
+          ],
+          [
+            104.24504715803435,
+            37.102379415982476
+          ],
+          [
+            105.35058232560786,
+            40.946568796496685
+          ],
+          [
+            106.57091154428718,
+            44.75587274840673
+          ],
+          [
+            107.90161973099126,
+            48.528036016591017
+          ],
+          [
+            109.33966475408087,
+            52.260599011580808
+          ],
+          [
+            110.883847446255,
+            55.950517684558555
+          ]
+        ],
+        "polylineBitwiseEqualsArchived": true,
+        "T3": 30021,
+        "X6": 61069,
+        "upperBankT6": 301,
+        "lowerBankT6": 301,
+        "fieldnames": [
+          "T3",
+          "T6",
+          "X3",
+          "X6",
+          "approvedForLEFM",
+          "block",
+          "collarOuterIDs",
+          "crackPolyline",
+          "elementRows",
+          "exterior",
+          "extraVertexNodes",
+          "extraVertexXY",
+          "failedGates",
+          "gates",
+          "geometryOnly",
+          "includeHoles",
+          "kinkNodeIDs",
+          "lowerBankT6",
+          "message",
+          "nodalQ",
+          "pass",
+          "physicalTipNode",
+          "plateXRange",
+          "qActiveT6Rows",
+          "seedRung",
+          "seedSpacing_mm",
+          "stage",
+          "summary",
+          "tipNormal",
+          "tipTangent",
+          "upperBankT6"
+        ],
+        "seedRung": 1,
+        "tipTangentEqualsArchived": true
+      },
+      "archivedMesh": {
+        "T3": 29875,
+        "X6": 60765,
+        "upperBankT6": 289,
+        "lowerBankT6": 289
+      },
+      "K_new": {
+        "pass": true,
+        "status": "M4B_SIF_VERIFIED",
+        "failedCriteria": [],
+        "criteria": {
+          "elasticEquilibrium": true,
+          "blindCODversusEDI": true,
+          "contourIndependence": true,
+          "JenergyIdentity": true,
+          "EDIquadrature": true,
+          "qSupportInsideCore": true,
+          "wholeCrackOpening": true,
+          "KIpositive": true,
+          "conditionalHighMixityKIIagreement": true,
+          "qSupportMatrixPhaseOnly": true,
+          "qSupportRingOwnerFree": true,
+          "heterogeneousEnergyIdentity": true,
+          "activeInterfaceNodalForceBalance": true,
+          "activeAnnulusResultant": true,
+          "stiffnessPositiveDefinite": true,
+          "loadThicknessModulus": true
+        },
+        "KI": 0.0096247967466455281,
+        "KII": 0.00014037811607429143,
+        "J": 2.8352529463088991E-8,
+        "KI_COD": 0.0095405033560419118,
+        "KII_COD": 0.00013821175118440505,
+        "EDI_all": [
+          [
+            0.0096247967466455281,
+            0.00014037811607429143,
+            2.8352529463088991E-8
+          ],
+          [
+            0.0096248125751239068,
+            0.00014037847371687554,
+            2.8352703647541339E-8
+          ],
+          [
+            0.0096247967905192366,
+            0.00014037811402894371,
+            2.8352534460916511E-8
+          ],
+          [
+            0.00962479683471811,
+            0.00014037812237126295,
+            2.8352524036103896E-8
+          ],
+          [
+            0.0096247971394431541,
+            0.00014037812405530368,
+            2.8352525807022065E-8
+          ]
+        ],
+        "EDI4x4": [
+          0.0096247967466420673,
+          0.00014037811607444598
+        ],
+        "compliance_mm_per_N": 0.00023448641499775212,
+        "activeArea_mm2": 1012.1525285981616,
+        "Ep_matrix": 3268.115,
+        "relativeResidual": 1.1912545887025142E-12,
+        "staticsMax": 7.3354378127277189E-13,
+        "energyIdentityRel": 7.5123004783634837E-12,
+        "fullPolyOpeningMin_mm": 0,
+        "CMOD_mm": 8.101455759154983E-5,
+        "activeInterfaceBalanceRel": 1.4925277811802822E-12,
+        "activeAnnulusResultantRel": 1.7550851560494433E-13,
+        "codFitPairs": 32,
+        "KII_sign_edi_vs_cod_match": true
+      },
+      "K_archived": {
+        "pass": true,
+        "status": "M4B_SIF_VERIFIED",
+        "failedCriteria": [],
+        "criteria": {
+          "elasticEquilibrium": true,
+          "blindCODversusEDI": true,
+          "contourIndependence": true,
+          "JenergyIdentity": true,
+          "EDIquadrature": true,
+          "qSupportInsideCore": true,
+          "wholeCrackOpening": true,
+          "KIpositive": true,
+          "conditionalHighMixityKIIagreement": true,
+          "qSupportMatrixPhaseOnly": true,
+          "qSupportRingOwnerFree": true,
+          "heterogeneousEnergyIdentity": true,
+          "activeInterfaceNodalForceBalance": true,
+          "activeAnnulusResultant": true,
+          "stiffnessPositiveDefinite": true,
+          "loadThicknessModulus": true
+        },
+        "KI": 0.0096247976524102049,
+        "KII": 0.00014037835968980049,
+        "J": 2.8352534822389284E-8,
+        "KI_COD": 0.0095405042693576421,
+        "KII_COD": 0.00013821195657617042,
+        "EDI_all": [
+          [
+            0.0096247976524102049,
+            0.00014037835968980049,
+            2.8352534822389284E-8
+          ],
+          [
+            0.0096248134809004977,
+            0.00014037871730768951,
+            2.83527090069265E-8
+          ],
+          [
+            0.0096247976962939609,
+            0.00014037835761783707,
+            2.8352539820267141E-8
+          ],
+          [
+            0.00962479774048032,
+            0.00014037836599230442,
+            2.8352529395389604E-8
+          ],
+          [
+            0.0096247980452081,
+            0.00014037836764304974,
+            2.8352531166315222E-8
+          ]
+        ],
+        "EDI4x4": [
+          0.0096247976524067389,
+          0.00014037835968995046
+        ],
+        "compliance_mm_per_N": 0.00023448460377422655,
+        "activeArea_mm2": 1012.1525285981618,
+        "Ep_matrix": 3268.115,
+        "relativeResidual": 1.1787822617381707E-12,
+        "staticsMax": 1.3398365750205698E-12,
+        "energyIdentityRel": 8.6460570458198144E-12,
+        "fullPolyOpeningMin_mm": 0,
+        "CMOD_mm": 8.1014597655585267E-5,
+        "activeInterfaceBalanceRel": 3.383872613331132E-12,
+        "activeAnnulusResultantRel": 1.6690486587594618E-13,
+        "codFitPairs": 32,
+        "KII_sign_edi_vs_cod_match": true
+      },
+      "archivedS9tip_mm": [
+        112.53494070252768,
+        59.5938528405785
+      ],
+      "archivedS8tip_mm": [
+        110.883847446255,
+        55.950517684558555
+      ],
+      "comparison": {
+        "schema": "NewMetacomp.G2.LP2A2.EQ.Comparison.v1",
+        "solveId": "EQ-soft1",
+        "caseId": "soft1",
+        "solutionSHA256": "15c5d613c1a868f050c7a5b4dcbe6f0cbedaa2f1d0463013f59b743ab77aaf37",
+        "meshSHA256": "75a81c2cc578716e13ce1a5a2fb53136fa0f1ed998cb1c09ae9fc9a9dbe16f02",
+        "archivedSolutionSHA256": "aa52ac08687f75e926fe5218c217c0a2b40c50322f75ba38b1fe4c55f3c1caa9",
+        "pass": true,
+        "criteria": {
+          "C1_KI": true,
+          "C2_KII": true,
+          "C3_KIIoverKI": true,
+          "C4_G_J": true,
+          "C5_MTS": true,
+          "C6_COD_EDI": true,
+          "C7_EDI_spread_quadrature": true,
+          "C8_crackOpening": true,
+          "C9_phaseActivation": true,
+          "C10_S9predictor": true,
+          "C11_compliance": true
+        },
+        "failed": [],
+        "metrics": {
+          "dKI_overKeq": -9.4097391529477014E-8,
+          "dKII_overKeq": -2.5308542633267502E-8,
+          "dKIIoverKI": -2.3938673486198492E-8,
+          "dG_rel": -1.8891293518397134E-7,
+          "dJ_rel": -1.8902367382445107E-7,
+          "newJoverGminus1": 3.138904569643941E-5,
+          "dMTS_deg": 2.7390914709712888E-6,
+          "newCODminusEDI_rel": 0.0087570084496741436,
+          "archivedCODminusEDI_rel": 0.0087570068380599161,
+          "dCODminusEDI": 1.6116142274869016E-9,
+          "newPathSpread_rel": 1.644377072925038E-6,
+          "archivedPathSpread_rel": 1.6443781553239447E-6,
+          "newQuad4x4_rel": 3.595302207711756E-13,
+          "archivedQuad4x4_rel": 3.6007083370867979E-13,
+          "dCompliance_rel": 7.7242748410810691E-6,
+          "dActiveArea_rel": -2.2464368661721979E-16,
+          "S9tipDisplacement_mm": 1.9122465622767083E-7,
+          "openingNearTipRel": 1.7916981719932435E-6,
+          "openingWholeCrackRel": 7.7814989298566364E-6,
+          "signedOpeningNearTipRel": 1.78308444473979E-6,
+          "signedOpeningWholeCrackRel": 8.94285500355489E-5,
+          "newMinSignedOpening_mm": 0,
+          "archivedMinSignedOpening_mm": 0,
+          "newSolverGatesPass": true,
+          "archivedSolverGatesPass": true
+        },
+        "newKI": 0.0096247967466455281,
+        "newKII": 0.00014037811607429143,
+        "newJ": 2.8352529463088991E-8,
+        "archivedKI": 0.0096247976524102049,
+        "archivedKII": 0.00014037835968980049,
+        "archivedJ": 2.8352534822389284E-8,
+        "S9tipNew_mm": [
+          112.5349405283538,
+          59.593852919510937
+        ],
+        "S9tipArchived_mm": [
+          112.53494070252768,
+          59.5938528405785
+        ],
+        "interpretation": "numerical equivalence on this geometry only; not a certified discretization-error bound"
+      }
+    }
+  },
+  "folders": [
+    "EQ-H",
+    "EQ-soft1",
+    "EQ-soft2",
+    "EQ-stiff13"
+  ]
+}
