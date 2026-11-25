@@ -55,6 +55,7 @@ cen=lp.geometry.centres_mm;r.tip_mm=P(end,:);r.tipToRingCircle_mm=vecnorm(cen-P(
    end
    n.auditSeconds=toc(ta);
    PA=g2_lp2a2_pairing_audit(D);n.pairing=PA;
+   if strcmp(mesher,'ladder'),n.forcedPairs=g2_lp2a2_forced_pair_audit(D);end
    n.pass=n.auditPass&&PA.pass;
   end
  catch ME

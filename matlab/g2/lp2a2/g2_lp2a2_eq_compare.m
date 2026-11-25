@@ -20,7 +20,11 @@ m.newPathSpread_rel=spread(N.K);m.archivedPathSpread_rel=spread(A.K);m.newQuad4x
 m.dCompliance_rel=N.K.compliance_mm_per_N/A.K.compliance_mm_per_N-1;
 m.dActiveArea_rel=(N.activeArea_mm2-A.K.activeArea_mm2)/max(A.K.activeArea_mm2,1);
 m.S9tipDisplacement_mm=norm(N.S9tip_mm-A.S9tip_mm);
-[o1,o2]=openingDiff(N,A);m.openingNearTipRel=o1;m.openingWholeCrackRel=o2;
+[o1,o2,sg]=openingDiff(N,A);m.openingNearTipRel=o1;m.openingWholeCrackRel=o2;
+% reported only (NOT criteria): C8 compares the vector jump magnitude |u_U - u_L| as preregistered;
+% the signed normal opening (u_U - u_L).n and the solver's own gates are reported separately
+m.signedOpeningNearTipRel=sg.nearRel;m.signedOpeningWholeCrackRel=sg.wholeRel;m.newMinSignedOpening_mm=sg.newMin;m.archivedMinSignedOpening_mm=sg.archMin;
+m.newSolverGatesPass=logical(N.K.pass);m.archivedSolverGatesPass=logical(A.K.pass);
 c.C1_KI=abs(m.dKI_overKeq)<=tol.KI_overKeq;
 c.C2_KII=abs(m.dKII_overKeq)<=tol.KII_overKeq;
 c.C3_KIIoverKI=abs(m.dKIIoverKI)<=tol.KIIoverKI_abs;
@@ -37,26 +41,30 @@ v=cell2mat(struct2cell(c));f=fieldnames(c);
 R=struct('pass',all(v),'criteria',c,'criteriaPassed',nnz(v),'criteriaTotal',numel(v),'failed',{f(~v)},'metrics',m);
 end
 
-function [nearRel,wholeRel]=openingDiff(N,A)
+function [nearRel,wholeRel,sg]=openingDiff(N,A)
 % crack-face jump |u_upper - u_lower| along the crack. Near tip (<= 3.3 mm): identical node positions
 % in both families (protected kernel and collar) -> direct comparison. Whole crack: archived jump
-% interpolated linearly in arc length onto the new-family stations.
-[sN,jN,xN]=jumps(N.D,N.K.u);[sA,jA,xA]=jumps(A.D,A.K.u);P=N.D.crackPolyline;tip=P(end,:);
-nt=vecnorm(xN-tip,2,2)<=3.3+1e-9;scale=max(jN(nt));d=inf(nnz(nt),1);ix=find(nt);
-for i=1:numel(ix),[dd,k]=min(vecnorm(xA-xN(ix(i),:),2,2));if dd<=1e-9,d(i)=abs(jN(ix(i))-jA(k));end,end
-nearRel=max(d)/scale;
+% interpolated linearly in arc length onto the new-family stations. The same comparison is repeated
+% for the signed normal opening (u_upper - u_lower).n_segment (reported only).
+[sN,jN,xN,gN]=jumps(N.D,N.K.u);[sA,jA,xA,gA]=jumps(A.D,A.K.u);P=N.D.crackPolyline;tip=P(end,:);
+nt=vecnorm(xN-tip,2,2)<=3.3+1e-9;ix=find(nt);d=inf(numel(ix),1);e=d;
+for i=1:numel(ix),[dd,k]=min(vecnorm(xA-xN(ix(i),:),2,2));if dd<=1e-9,d(i)=abs(jN(ix(i))-jA(k));e(i)=abs(gN(ix(i))-gA(k));end,end
+nearRel=max(d)/max(jN(nt));
 ji=interp1(sA,jA,sN,'linear');wholeRel=max(abs(ji-jN))/max(jN);
+gi=interp1(sA,gA,sN,'linear');
+sg=struct('nearRel',max(e)/max(abs(gN(nt))),'wholeRel',max(abs(gi-gN))/max(abs(gN)),'newMin',min(gN),'archMin',min(gA));
 end
 
-function [s,j,x]=jumps(D,u)
+function [s,j,x,g]=jumps(D,u)
 U=reshape(u,2,[]).';up=D.upperBankT6(:);lo=D.lowerBankT6(:);P=D.crackPolyline;
-x=D.X6(up,:);s=station(x,P);[s,o]=sort(s);up=up(o);x=x(o,:);
+x=D.X6(up,:);[s,kq]=station(x,P);[s,o]=sort(s);up=up(o);x=x(o,:);kq=kq(o);
 sl=station(D.X6(lo,:),P);[~,o]=sort(sl);lo=lo(o);
 assert(numel(up)==numel(lo)&&max(vecnorm(D.X6(up,:)-D.X6(lo,:),2,2))<=1e-9,'G2LP2A2:EQ_BANKS','Banks do not pair by station.');
-j=vecnorm(U(up,:)-U(lo,:),2,2);
+J=U(up,:)-U(lo,:);j=vecnorm(J,2,2);
+tt=diff(P);tt=tt./vecnorm(tt,2,2);nn=[-tt(:,2),tt(:,1)];g=sum(J.*nn(kq,:),2);
 end
 
-function s=station(X,P)
+function [s,k]=station(X,P)
 tt=diff(P);L=vecnorm(tt,2,2);tt=tt./L;Sv=[0;cumsum(L)];M=size(X,1);dk=inf(M,numel(L));lk=dk;
 for q=1:numel(L),l=max(0,min(L(q),(X-P(q,:))*tt(q,:).'));dk(:,q)=vecnorm(X-(P(q,:)+l*tt(q,:)),2,2);lk(:,q)=l;end
 [~,k]=min(dk,[],2);s=Sv(k)+lk(sub2ind(size(lk),(1:M)',k));
