@@ -1,0 +1,11 @@
+{
+  "campaignId": "G2-LP2A2-EQ-001",
+  "outcome": "NOT_CALLED",
+  "stoppedAt": "",
+  "reason": "CAMP:Binding: HEAD^ is not the approved head.",
+  "solvesCalled": 0,
+  "results": [],
+  "contrast": [],
+  "wallSeconds": 0.2434556,
+  "wrapperCalled": false
+}

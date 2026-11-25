@@ -1,0 +1,19 @@
+CAMP head=91667cfb2b170de782af8ef9bcf8e66674e3caa4 parent=91667cfb2b170de782af8ef9bcf8e66674e3caa4
+matlab.exe : CAMP_EXTERNAL_EXCEPTION called=0 CAMP:Binding: HEAD^ is not the approved head.
+At <user>\AppData\Local\Temp\claude\61f3ac85b1644fe0\75739d96-b960-4e42-b123-4027d342405f\scratchpad\sr1\too
+ls\runml.ps1:12 char:3
++   & $exe -batch ("run('" + $Script.Replace("'", "''") + "')") *> $log
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (CAMP_EXTERNAL_E... approved head.:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+Error using assert
+HEAD^ is not the approved head.
+
+Error in lp2a2_eq_campaign_run (line 14)
+ assert(strcmp(R.headParent,'4d3701e1ccc91b7512db9052c927f32af52e2479'),'CAMP:Binding','HEAD^ is not the approved head.');
+
+Error in run (line 91)
+evalin('caller', strcat(script, ';'));
+CAMP_RESULT outcome=NOT_CALLED stoppedAt= reason=CAMP:Binding: HEAD^ is not the approved head. solvesCalled=0 wrapperCalled=0 wall=0.2s
+CAMP_FOLDERS 

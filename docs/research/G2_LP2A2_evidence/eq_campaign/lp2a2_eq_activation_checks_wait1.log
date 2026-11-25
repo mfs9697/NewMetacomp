@@ -1,0 +1,18 @@
+ACT head=4d3701e1ccc91b7512db9052c927f32af52e2479
+ACT ram0=7.188 ramAfterContext=7.010 memgate=1(7.010) margin7.3=0 release=2023a pde=1 engines=1 token=1
+matlab.exe : ACT_ERROR ACT:Margin: Available 7.010 GiB after context is below the 7.3 GiB activation margin.
+At <user>\AppData\Local\Temp\claude\61f3ac85b1644fe0\75739d96-b960-4e42-b123-4027d342405f\scratchpad\sr1\too
+ls\runml.ps1:12 char:3
++   & $exe -batch ("run('" + $Script.Replace("'", "''") + "')") *> $log
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (ACT_ERROR ACT:M...ivation margin.:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+Error using assert
+Available 7.010 GiB after context is below the 7.3 GiB activation margin.
+
+Error in lp2a2_eq_activation_checks (line 29)
+ assert(R.margin73,'ACT:Margin','Available %.3f GiB after context is below the 7.3 GiB activation margin.',R.ramAfterContext_GiB);
+
+Error in run (line 91)
+evalin('caller', strcat(script, ';'));
