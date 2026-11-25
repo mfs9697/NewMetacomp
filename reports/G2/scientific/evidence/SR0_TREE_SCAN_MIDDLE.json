@@ -1,0 +1,4628 @@
+[
+  {
+    "pr": 26,
+    "sha": "99c476f3e344a5db75edec7df90b78318beca824",
+    "status": "COMPLETE",
+    "tree_entries": 194,
+    "files": [
+      {
+        "path": "matlab/g2/evidence/p010_isolated_run_20261118_162823_323/p010_inner_tip_zoom.png",
+        "blob": "49f7ba02abb1ea9ac003c2425aa370651ebc649d",
+        "bytes": 304278
+      },
+      {
+        "path": "matlab/g2/evidence/p010_isolated_run_20261118_162823_323/p010_regular_core_and_collar.png",
+        "blob": "a4e87eab0636da637b412125c5d6f978f87abfc3",
+        "bytes": 294927
+      },
+      {
+        "path": "matlab/g2/evidence/wp1_20261118/mesh_run_20261118_163717_510/protected_full_mesh.png",
+        "blob": "4dcaec949bc6eb5fa28db34f6c31252fcd1eef0d",
+        "bytes": 736415
+      },
+      {
+        "path": "matlab/g2/evidence/wp1_20261118/mesh_run_20261118_163717_510/protected_tip_seams_q.png",
+        "blob": "053b8e23a2a3289783d13ceb371d5407dbce711c",
+        "bytes": 690556
+      },
+      {
+        "path": "matlab/g2/evidence/wp2_20261118/cornell_run_20261118_170047_650/cornell_K_vs_annulus.png",
+        "blob": "d1d133bc316fdd98a9e7952e1b0cdab0d8a351f7",
+        "bytes": 83738
+      },
+      {
+        "path": "matlab/g2/evidence/wp2_20261118/cornell_run_20261118_170047_650/cornell_cod_extrapolation.png",
+        "blob": "f0400350fd345291518624e5ccbdeb0c464a5e88",
+        "bytes": 82279
+      },
+      {
+        "path": "matlab/g2/evidence/wp2_20261118/mesh_famA_run_20261118_165922_343/protected_full_mesh.png",
+        "blob": "fb331e4c7471339cf16ec13175d4a3fcb766ca41",
+        "bytes": 780777
+      },
+      {
+        "path": "matlab/g2/evidence/wp2_20261118/mesh_famA_run_20261118_165922_343/protected_tip_seams_q.png",
+        "blob": "95d9c9fc535718db6d40110fdd13c69b44a12245",
+        "bytes": 701413
+      },
+      {
+        "path": "matlab/g2/evidence/wp2_20261118/mesh_famB_run_20261118_165941_636/protected_full_mesh.png",
+        "blob": "b4ef6f80d01eaa29244676aeb8ec88f4691836ed",
+        "bytes": 896693
+      },
+      {
+        "path": "matlab/g2/evidence/wp3_20261118/g2_wp3_kinked_mesh_run_20261118_183545_651_famA/kinked_full_mesh.png",
+        "blob": "d2b52d9b858226d0a10f93fd45f26c109fb4f086",
+        "bytes": 784685
+      },
+      {
+        "path": "matlab/g2/evidence/wp3_20261118/g2_wp3_kinked_mesh_run_20261118_183545_651_famA/kinked_kink_vertex_zoom.png",
+        "blob": "00b1f5ee31d2dff66863e5f9601ece63a35fcc21",
+        "bytes": 175241
+      },
+      {
+        "path": "matlab/g2/evidence/wp3_20261118/g2_wp3_kinked_mesh_run_20261118_183545_651_famA/kinked_rotated_core_seams_q.pdf",
+        "blob": "00929717770e325b12dab11ed2f556b7c60222fa",
+        "bytes": 170934
+      },
+      {
+        "path": "matlab/g2/evidence/wp3_20261118/g2_wp3_kinked_mesh_run_20261118_183545_651_famA/kinked_rotated_core_seams_q.png",
+        "blob": "bc16bf31af9978101da786030a866dd922569ac1",
+        "bytes": 705333
+      },
+      {
+        "path": "matlab/g2/evidence/wp3_20261118/g2_wp3_kinked_mesh_run_20261118_184040_732_famA_mirror/kinked_full_mesh.png",
+        "blob": "98e1ba7f28e4cc63bf7ad3dcc064a701b3192b8b",
+        "bytes": 782714
+      },
+      {
+        "path": "matlab/g2/evidence/wp3_20261118/g2_wp3_kinked_mesh_run_20261118_184040_732_famA_mirror/kinked_kink_vertex_zoom.png",
+        "blob": "b473454553f7fcb387a6fade50f94883e599b13b",
+        "bytes": 174703
+      },
+      {
+        "path": "matlab/g2/evidence/wp3_20261118/g2_wp3_kinked_mesh_run_20261118_184040_732_famA_mirror/kinked_rotated_core_seams_q.pdf",
+        "blob": "a7f2b1712584dafdea8e23e2e4da1b05f2aae4f9",
+        "bytes": 170403
+      },
+      {
+        "path": "matlab/g2/evidence/wp3_20261118/g2_wp3_kinked_mesh_run_20261118_184040_732_famA_mirror/kinked_rotated_core_seams_q.png",
+        "blob": "d1e22b127138c807b79bbba442b5155500e45c29",
+        "bytes": 709656
+      }
+    ]
+  },
+  {
+    "pr": 27,
+    "sha": "ebe6235e93bd8abc008c351032aa01b4acfe8178",
+    "status": "COMPLETE",
+    "tree_entries": 241,
+    "files": [
+      {
+        "path": "matlab/g2/evidence/p010_isolated_run_20261118_162823_323/p010_inner_tip_zoom.png",
+        "blob": "49f7ba02abb1ea9ac003c2425aa370651ebc649d",
+        "bytes": 304278
+      },
+      {
+        "path": "matlab/g2/evidence/p010_isolated_run_20261118_162823_323/p010_regular_core_and_collar.png",
+        "blob": "a4e87eab0636da637b412125c5d6f978f87abfc3",
+        "bytes": 294927
+      },
+      {
+        "path": "matlab/g2/evidence/wp1_20261118/mesh_run_20261118_163717_510/protected_full_mesh.png",
+        "blob": "4dcaec949bc6eb5fa28db34f6c31252fcd1eef0d",
+        "bytes": 736415
+      },
+      {
+        "path": "matlab/g2/evidence/wp1_20261118/mesh_run_20261118_163717_510/protected_tip_seams_q.png",
+        "blob": "053b8e23a2a3289783d13ceb371d5407dbce711c",
+        "bytes": 690556
+      },
+      {
+        "path": "matlab/g2/evidence/wp2_20261118/cornell_run_20261118_170047_650/cornell_K_vs_annulus.png",
+        "blob": "d1d133bc316fdd98a9e7952e1b0cdab0d8a351f7",
+        "bytes": 83738
+      },
+      {
+        "path": "matlab/g2/evidence/wp2_20261118/cornell_run_20261118_170047_650/cornell_cod_extrapolation.png",
+        "blob": "f0400350fd345291518624e5ccbdeb0c464a5e88",
+        "bytes": 82279
+      },
+      {
+        "path": "matlab/g2/evidence/wp2_20261118/mesh_famA_run_20261118_165922_343/protected_full_mesh.png",
+        "blob": "fb331e4c7471339cf16ec13175d4a3fcb766ca41",
+        "bytes": 780777
+      },
+      {
+        "path": "matlab/g2/evidence/wp2_20261118/mesh_famA_run_20261118_165922_343/protected_tip_seams_q.png",
+        "blob": "95d9c9fc535718db6d40110fdd13c69b44a12245",
+        "bytes": 701413
+      },
+      {
+        "path": "matlab/g2/evidence/wp2_20261118/mesh_famB_run_20261118_165941_636/protected_full_mesh.png",
+        "blob": "b4ef6f80d01eaa29244676aeb8ec88f4691836ed",
+        "bytes": 896693
+      },
+      {
+        "path": "matlab/g2/evidence/wp3_20261118/g2_wp3_kinked_mesh_run_20261118_183545_651_famA/kinked_full_mesh.png",
+        "blob": "d2b52d9b858226d0a10f93fd45f26c109fb4f086",
+        "bytes": 784685
+      },
+      {
+        "path": "matlab/g2/evidence/wp3_20261118/g2_wp3_kinked_mesh_run_20261118_183545_651_famA/kinked_kink_vertex_zoom.png",
+        "blob": "00b1f5ee31d2dff66863e5f9601ece63a35fcc21",
+        "bytes": 175241
+      },
+      {
+        "path": "matlab/g2/evidence/wp3_20261118/g2_wp3_kinked_mesh_run_20261118_183545_651_famA/kinked_rotated_core_seams_q.pdf",
+        "blob": "00929717770e325b12dab11ed2f556b7c60222fa",
+        "bytes": 170934
+      },
+      {
+        "path": "matlab/g2/evidence/wp3_20261118/g2_wp3_kinked_mesh_run_20261118_183545_651_famA/kinked_rotated_core_seams_q.png",
+        "blob": "bc16bf31af9978101da786030a866dd922569ac1",
+        "bytes": 705333
+      },
+      {
+        "path": "matlab/g2/evidence/wp3_20261118/g2_wp3_kinked_mesh_run_20261118_184040_732_famA_mirror/kinked_full_mesh.png",
+        "blob": "98e1ba7f28e4cc63bf7ad3dcc064a701b3192b8b",
+        "bytes": 782714
+      },
+      {
+        "path": "matlab/g2/evidence/wp3_20261118/g2_wp3_kinked_mesh_run_20261118_184040_732_famA_mirror/kinked_kink_vertex_zoom.png",
+        "blob": "b473454553f7fcb387a6fade50f94883e599b13b",
+        "bytes": 174703
+      },
+      {
+        "path": "matlab/g2/evidence/wp3_20261118/g2_wp3_kinked_mesh_run_20261118_184040_732_famA_mirror/kinked_rotated_core_seams_q.pdf",
+        "blob": "a7f2b1712584dafdea8e23e2e4da1b05f2aae4f9",
+        "bytes": 170403
+      },
+      {
+        "path": "matlab/g2/evidence/wp3_20261118/g2_wp3_kinked_mesh_run_20261118_184040_732_famA_mirror/kinked_rotated_core_seams_q.png",
+        "blob": "d1e22b127138c807b79bbba442b5155500e45c29",
+        "bytes": 709656
+      },
+      {
+        "path": "matlab/g2/evidence/wp3_20261118/g2_wp3_kinked_mesh_run_20261118_184957_278_famB/kinked_full_mesh.png",
+        "blob": "dcce2a216c6937e4cfac90dc6559c6a930e01b1e",
+        "bytes": 904176
+      },
+      {
+        "path": "matlab/g2/evidence/wp3_20261118/g2_wp3_kinked_mesh_run_20261118_184957_278_famB/kinked_kink_vertex_zoom.png",
+        "blob": "ce1cdb869884937661af05fba3df2e3385af430c",
+        "bytes": 186377
+      },
+      {
+        "path": "matlab/g2/evidence/wp3_20261118/g2_wp3_kinked_mesh_run_20261118_184957_278_famB/kinked_rotated_core_seams_q.pdf",
+        "blob": "c6e91cf9490493222e3905a20983e64676b024bd",
+        "bytes": 171409
+      },
+      {
+        "path": "matlab/g2/evidence/wp3_20261118/g2_wp3_kinked_mesh_run_20261118_184957_278_famB/kinked_rotated_core_seams_q.png",
+        "blob": "de056e497f89d8e2aa9ad53888f70989b1745478",
+        "bytes": 706598
+      },
+      {
+        "path": "matlab/g2/evidence/wp3_20261118/g2_wp3_kinked_sif_run_20261118_185423_469/kinked_K_vs_annulus.png",
+        "blob": "9674a415080fd377d3f40b406171a660937a8cf4",
+        "bytes": 78694
+      },
+      {
+        "path": "matlab/g2/evidence/wp3_20261118/g2_wp3_kinked_sif_run_20261118_185423_469/kinked_cod_extrapolation.png",
+        "blob": "4ffd9edba705b881e46543d979e5ad8c5740bc9b",
+        "bytes": 82167
+      }
+    ]
+  },
+  {
+    "pr": 32,
+    "sha": "f2c9790d9802e9ce40a55978ea0b6e13feafb7bf",
+    "status": "COMPLETE",
+    "tree_entries": 325,
+    "files": [
+      {
+        "path": "matlab/g2/evidence/p010_isolated_run_20261118_162823_323/p010_inner_tip_zoom.png",
+        "blob": "49f7ba02abb1ea9ac003c2425aa370651ebc649d",
+        "bytes": 304278
+      },
+      {
+        "path": "matlab/g2/evidence/p010_isolated_run_20261118_162823_323/p010_regular_core_and_collar.png",
+        "blob": "a4e87eab0636da637b412125c5d6f978f87abfc3",
+        "bytes": 294927
+      },
+      {
+        "path": "matlab/g2/evidence/wp1_20261118/mesh_run_20261118_163717_510/protected_full_mesh.png",
+        "blob": "4dcaec949bc6eb5fa28db34f6c31252fcd1eef0d",
+        "bytes": 736415
+      },
+      {
+        "path": "matlab/g2/evidence/wp1_20261118/mesh_run_20261118_163717_510/protected_tip_seams_q.png",
+        "blob": "053b8e23a2a3289783d13ceb371d5407dbce711c",
+        "bytes": 690556
+      },
+      {
+        "path": "matlab/g2/evidence/wp2_20261118/cornell_run_20261118_170047_650/cornell_K_vs_annulus.png",
+        "blob": "d1d133bc316fdd98a9e7952e1b0cdab0d8a351f7",
+        "bytes": 83738
+      },
+      {
+        "path": "matlab/g2/evidence/wp2_20261118/cornell_run_20261118_170047_650/cornell_cod_extrapolation.png",
+        "blob": "f0400350fd345291518624e5ccbdeb0c464a5e88",
+        "bytes": 82279
+      },
+      {
+        "path": "matlab/g2/evidence/wp2_20261118/mesh_famA_run_20261118_165922_343/protected_full_mesh.png",
+        "blob": "fb331e4c7471339cf16ec13175d4a3fcb766ca41",
+        "bytes": 780777
+      },
+      {
+        "path": "matlab/g2/evidence/wp2_20261118/mesh_famA_run_20261118_165922_343/protected_tip_seams_q.png",
+        "blob": "95d9c9fc535718db6d40110fdd13c69b44a12245",
+        "bytes": 701413
+      },
+      {
+        "path": "matlab/g2/evidence/wp2_20261118/mesh_famB_run_20261118_165941_636/protected_full_mesh.png",
+        "blob": "b4ef6f80d01eaa29244676aeb8ec88f4691836ed",
+        "bytes": 896693
+      },
+      {
+        "path": "matlab/g2/evidence/wp34_20261118/state2_report/state2_K_vs_annulus.png",
+        "blob": "31ae99d02eb1a94cabea2710be8116cca5bce45e",
+        "bytes": 83354
+      },
+      {
+        "path": "matlab/g2/evidence/wp34_20261118/state2_report/state2_full_mesh.png",
+        "blob": "1d7cca76ffb670f0e350a06e6da532c0cf08fb82",
+        "bytes": 829694
+      },
+      {
+        "path": "matlab/g2/evidence/wp34_20261118/state2_report/state2_trajectory.png",
+        "blob": "bef6ef8c508290b129c8b04fa3e53b8583614ce9",
+        "bytes": 46614
+      },
+      {
+        "path": "matlab/g2/evidence/wp34_20261118/state2_report/state2_two_kink_zoom.pdf",
+        "blob": "61c08a5b6e8cf7878406a7018de483a68ac5f1c1",
+        "bytes": 66075
+      },
+      {
+        "path": "matlab/g2/evidence/wp34_20261118/state2_report/state2_two_kink_zoom.png",
+        "blob": "c6b21ba1b7009e673019b6091c081c4d5af5f3d3",
+        "bytes": 678940
+      },
+      {
+        "path": "matlab/g2/evidence/wp3_20261118/g2_wp3_kinked_mesh_run_20261118_183545_651_famA/kinked_full_mesh.png",
+        "blob": "d2b52d9b858226d0a10f93fd45f26c109fb4f086",
+        "bytes": 784685
+      },
+      {
+        "path": "matlab/g2/evidence/wp3_20261118/g2_wp3_kinked_mesh_run_20261118_183545_651_famA/kinked_kink_vertex_zoom.png",
+        "blob": "00b1f5ee31d2dff66863e5f9601ece63a35fcc21",
+        "bytes": 175241
+      },
+      {
+        "path": "matlab/g2/evidence/wp3_20261118/g2_wp3_kinked_mesh_run_20261118_183545_651_famA/kinked_rotated_core_seams_q.pdf",
+        "blob": "00929717770e325b12dab11ed2f556b7c60222fa",
+        "bytes": 170934
+      },
+      {
+        "path": "matlab/g2/evidence/wp3_20261118/g2_wp3_kinked_mesh_run_20261118_183545_651_famA/kinked_rotated_core_seams_q.png",
+        "blob": "bc16bf31af9978101da786030a866dd922569ac1",
+        "bytes": 705333
+      },
+      {
+        "path": "matlab/g2/evidence/wp3_20261118/g2_wp3_kinked_mesh_run_20261118_184040_732_famA_mirror/kinked_full_mesh.png",
+        "blob": "98e1ba7f28e4cc63bf7ad3dcc064a701b3192b8b",
+        "bytes": 782714
+      },
+      {
+        "path": "matlab/g2/evidence/wp3_20261118/g2_wp3_kinked_mesh_run_20261118_184040_732_famA_mirror/kinked_kink_vertex_zoom.png",
+        "blob": "b473454553f7fcb387a6fade50f94883e599b13b",
+        "bytes": 174703
+      },
+      {
+        "path": "matlab/g2/evidence/wp3_20261118/g2_wp3_kinked_mesh_run_20261118_184040_732_famA_mirror/kinked_rotated_core_seams_q.pdf",
+        "blob": "a7f2b1712584dafdea8e23e2e4da1b05f2aae4f9",
+        "bytes": 170403
+      },
+      {
+        "path": "matlab/g2/evidence/wp3_20261118/g2_wp3_kinked_mesh_run_20261118_184040_732_famA_mirror/kinked_rotated_core_seams_q.png",
+        "blob": "d1e22b127138c807b79bbba442b5155500e45c29",
+        "bytes": 709656
+      },
+      {
+        "path": "matlab/g2/evidence/wp3_20261118/g2_wp3_kinked_mesh_run_20261118_184957_278_famB/kinked_full_mesh.png",
+        "blob": "dcce2a216c6937e4cfac90dc6559c6a930e01b1e",
+        "bytes": 904176
+      },
+      {
+        "path": "matlab/g2/evidence/wp3_20261118/g2_wp3_kinked_mesh_run_20261118_184957_278_famB/kinked_kink_vertex_zoom.png",
+        "blob": "ce1cdb869884937661af05fba3df2e3385af430c",
+        "bytes": 186377
+      },
+      {
+        "path": "matlab/g2/evidence/wp3_20261118/g2_wp3_kinked_mesh_run_20261118_184957_278_famB/kinked_rotated_core_seams_q.pdf",
+        "blob": "c6e91cf9490493222e3905a20983e64676b024bd",
+        "bytes": 171409
+      },
+      {
+        "path": "matlab/g2/evidence/wp3_20261118/g2_wp3_kinked_mesh_run_20261118_184957_278_famB/kinked_rotated_core_seams_q.png",
+        "blob": "de056e497f89d8e2aa9ad53888f70989b1745478",
+        "bytes": 706598
+      },
+      {
+        "path": "matlab/g2/evidence/wp3_20261118/g2_wp3_kinked_sif_run_20261118_185423_469/kinked_K_vs_annulus.png",
+        "blob": "9674a415080fd377d3f40b406171a660937a8cf4",
+        "bytes": 78694
+      },
+      {
+        "path": "matlab/g2/evidence/wp3_20261118/g2_wp3_kinked_sif_run_20261118_185423_469/kinked_cod_extrapolation.png",
+        "blob": "4ffd9edba705b881e46543d979e5ad8c5740bc9b",
+        "bytes": 82167
+      }
+    ]
+  },
+  {
+    "pr": 35,
+    "sha": "75a4bce9d72968ae22bac17719d233cfa62e880e",
+    "status": "COMPLETE",
+    "tree_entries": 400,
+    "files": [
+      {
+        "path": "matlab/g2/evidence/material_20261119/report/material_EDI_vs_COD.png",
+        "blob": "9d94749c05e732f175b65652535d71b98d39662b",
+        "bytes": 85059
+      },
+      {
+        "path": "matlab/g2/evidence/material_20261119/report/material_annulus_zoom.png",
+        "blob": "998d21092267937d5aec9bcf907788c696e5ab26",
+        "bytes": 429231
+      },
+      {
+        "path": "matlab/g2/evidence/material_20261119/report/material_benchmark_convergence.png",
+        "blob": "098012144d01ec6dce19fd14d980a2caed2b84ee",
+        "bytes": 87088
+      },
+      {
+        "path": "matlab/g2/evidence/material_20261119/report/material_interface_tractions.png",
+        "blob": "7fa2011e331bbdd661e889b38341188247652cb1",
+        "bytes": 204483
+      },
+      {
+        "path": "matlab/g2/evidence/material_20261119/report/material_phase_map.pdf",
+        "blob": "6f8612048b6b316d81bc71013ab66d6e4e7d3dbe",
+        "bytes": 887932
+      },
+      {
+        "path": "matlab/g2/evidence/material_20261119/report/material_phase_map.png",
+        "blob": "d424e19d575415b2a1218054c2c4f089218c1762",
+        "bytes": 948236
+      },
+      {
+        "path": "matlab/g2/evidence/material_20261119/report/material_ratios.pdf",
+        "blob": "1a139cab4cf9ddefbce6cd0445206f92900d4296",
+        "bytes": 11535
+      },
+      {
+        "path": "matlab/g2/evidence/material_20261119/report/material_ratios.png",
+        "blob": "934850f1ebd8ba01bad3762874351918449f37b1",
+        "bytes": 146875
+      },
+      {
+        "path": "matlab/g2/evidence/p010_isolated_run_20261118_162823_323/p010_inner_tip_zoom.png",
+        "blob": "49f7ba02abb1ea9ac003c2425aa370651ebc649d",
+        "bytes": 304278
+      },
+      {
+        "path": "matlab/g2/evidence/p010_isolated_run_20261118_162823_323/p010_regular_core_and_collar.png",
+        "blob": "a4e87eab0636da637b412125c5d6f978f87abfc3",
+        "bytes": 294927
+      },
+      {
+        "path": "matlab/g2/evidence/wp1_20261118/mesh_run_20261118_163717_510/protected_full_mesh.png",
+        "blob": "4dcaec949bc6eb5fa28db34f6c31252fcd1eef0d",
+        "bytes": 736415
+      },
+      {
+        "path": "matlab/g2/evidence/wp1_20261118/mesh_run_20261118_163717_510/protected_tip_seams_q.png",
+        "blob": "053b8e23a2a3289783d13ceb371d5407dbce711c",
+        "bytes": 690556
+      },
+      {
+        "path": "matlab/g2/evidence/wp2_20261118/cornell_run_20261118_170047_650/cornell_K_vs_annulus.png",
+        "blob": "d1d133bc316fdd98a9e7952e1b0cdab0d8a351f7",
+        "bytes": 83738
+      },
+      {
+        "path": "matlab/g2/evidence/wp2_20261118/cornell_run_20261118_170047_650/cornell_cod_extrapolation.png",
+        "blob": "f0400350fd345291518624e5ccbdeb0c464a5e88",
+        "bytes": 82279
+      },
+      {
+        "path": "matlab/g2/evidence/wp2_20261118/mesh_famA_run_20261118_165922_343/protected_full_mesh.png",
+        "blob": "fb331e4c7471339cf16ec13175d4a3fcb766ca41",
+        "bytes": 780777
+      },
+      {
+        "path": "matlab/g2/evidence/wp2_20261118/mesh_famA_run_20261118_165922_343/protected_tip_seams_q.png",
+        "blob": "95d9c9fc535718db6d40110fdd13c69b44a12245",
+        "bytes": 701413
+      },
+      {
+        "path": "matlab/g2/evidence/wp2_20261118/mesh_famB_run_20261118_165941_636/protected_full_mesh.png",
+        "blob": "b4ef6f80d01eaa29244676aeb8ec88f4691836ed",
+        "bytes": 896693
+      },
+      {
+        "path": "matlab/g2/evidence/wp34_20261118/state2_report/state2_K_vs_annulus.png",
+        "blob": "31ae99d02eb1a94cabea2710be8116cca5bce45e",
+        "bytes": 83354
+      },
+      {
+        "path": "matlab/g2/evidence/wp34_20261118/state2_report/state2_full_mesh.png",
+        "blob": "1d7cca76ffb670f0e350a06e6da532c0cf08fb82",
+        "bytes": 829694
+      },
+      {
+        "path": "matlab/g2/evidence/wp34_20261118/state2_report/state2_trajectory.png",
+        "blob": "bef6ef8c508290b129c8b04fa3e53b8583614ce9",
+        "bytes": 46614
+      },
+      {
+        "path": "matlab/g2/evidence/wp34_20261118/state2_report/state2_two_kink_zoom.pdf",
+        "blob": "61c08a5b6e8cf7878406a7018de483a68ac5f1c1",
+        "bytes": 66075
+      },
+      {
+        "path": "matlab/g2/evidence/wp34_20261118/state2_report/state2_two_kink_zoom.png",
+        "blob": "c6b21ba1b7009e673019b6091c081c4d5af5f3d3",
+        "bytes": 678940
+      },
+      {
+        "path": "matlab/g2/evidence/wp3_20261118/g2_wp3_kinked_mesh_run_20261118_183545_651_famA/kinked_full_mesh.png",
+        "blob": "d2b52d9b858226d0a10f93fd45f26c109fb4f086",
+        "bytes": 784685
+      },
+      {
+        "path": "matlab/g2/evidence/wp3_20261118/g2_wp3_kinked_mesh_run_20261118_183545_651_famA/kinked_kink_vertex_zoom.png",
+        "blob": "00b1f5ee31d2dff66863e5f9601ece63a35fcc21",
+        "bytes": 175241
+      },
+      {
+        "path": "matlab/g2/evidence/wp3_20261118/g2_wp3_kinked_mesh_run_20261118_183545_651_famA/kinked_rotated_core_seams_q.pdf",
+        "blob": "00929717770e325b12dab11ed2f556b7c60222fa",
+        "bytes": 170934
+      },
+      {
+        "path": "matlab/g2/evidence/wp3_20261118/g2_wp3_kinked_mesh_run_20261118_183545_651_famA/kinked_rotated_core_seams_q.png",
+        "blob": "bc16bf31af9978101da786030a866dd922569ac1",
+        "bytes": 705333
+      },
+      {
+        "path": "matlab/g2/evidence/wp3_20261118/g2_wp3_kinked_mesh_run_20261118_184040_732_famA_mirror/kinked_full_mesh.png",
+        "blob": "98e1ba7f28e4cc63bf7ad3dcc064a701b3192b8b",
+        "bytes": 782714
+      },
+      {
+        "path": "matlab/g2/evidence/wp3_20261118/g2_wp3_kinked_mesh_run_20261118_184040_732_famA_mirror/kinked_kink_vertex_zoom.png",
+        "blob": "b473454553f7fcb387a6fade50f94883e599b13b",
+        "bytes": 174703
+      },
+      {
+        "path": "matlab/g2/evidence/wp3_20261118/g2_wp3_kinked_mesh_run_20261118_184040_732_famA_mirror/kinked_rotated_core_seams_q.pdf",
+        "blob": "a7f2b1712584dafdea8e23e2e4da1b05f2aae4f9",
+        "bytes": 170403
+      },
+      {
+        "path": "matlab/g2/evidence/wp3_20261118/g2_wp3_kinked_mesh_run_20261118_184040_732_famA_mirror/kinked_rotated_core_seams_q.png",
+        "blob": "d1e22b127138c807b79bbba442b5155500e45c29",
+        "bytes": 709656
+      },
+      {
+        "path": "matlab/g2/evidence/wp3_20261118/g2_wp3_kinked_mesh_run_20261118_184957_278_famB/kinked_full_mesh.png",
+        "blob": "dcce2a216c6937e4cfac90dc6559c6a930e01b1e",
+        "bytes": 904176
+      },
+      {
+        "path": "matlab/g2/evidence/wp3_20261118/g2_wp3_kinked_mesh_run_20261118_184957_278_famB/kinked_kink_vertex_zoom.png",
+        "blob": "ce1cdb869884937661af05fba3df2e3385af430c",
+        "bytes": 186377
+      },
+      {
+        "path": "matlab/g2/evidence/wp3_20261118/g2_wp3_kinked_mesh_run_20261118_184957_278_famB/kinked_rotated_core_seams_q.pdf",
+        "blob": "c6e91cf9490493222e3905a20983e64676b024bd",
+        "bytes": 171409
+      },
+      {
+        "path": "matlab/g2/evidence/wp3_20261118/g2_wp3_kinked_mesh_run_20261118_184957_278_famB/kinked_rotated_core_seams_q.png",
+        "blob": "de056e497f89d8e2aa9ad53888f70989b1745478",
+        "bytes": 706598
+      },
+      {
+        "path": "matlab/g2/evidence/wp3_20261118/g2_wp3_kinked_sif_run_20261118_185423_469/kinked_K_vs_annulus.png",
+        "blob": "9674a415080fd377d3f40b406171a660937a8cf4",
+        "bytes": 78694
+      },
+      {
+        "path": "matlab/g2/evidence/wp3_20261118/g2_wp3_kinked_sif_run_20261118_185423_469/kinked_cod_extrapolation.png",
+        "blob": "4ffd9edba705b881e46543d979e5ad8c5740bc9b",
+        "bytes": 82167
+      }
+    ]
+  },
+  {
+    "pr": 38,
+    "sha": "49ec4fc6867c5be70e18f9c6b79db708190e3aa9",
+    "status": "COMPLETE",
+    "tree_entries": 520,
+    "files": [
+      {
+        "path": "matlab/g2/evidence/m2_20261121/report/m2_K_by_state.png",
+        "blob": "35660f221580a6b0b88bf6b3020e899b2c8be6bd",
+        "bytes": 76845
+      },
+      {
+        "path": "matlab/g2/evidence/m2_20261121/report/m2_R_vs_s.pdf",
+        "blob": "a4719b33f6dff2fda28893e46522bf6c6a69d09e",
+        "bytes": 4038
+      },
+      {
+        "path": "matlab/g2/evidence/m2_20261121/report/m2_R_vs_s.png",
+        "blob": "9d1abbf89b31bf9e0ef92586e569ddb1c4b9b5a0",
+        "bytes": 82841
+      },
+      {
+        "path": "matlab/g2/evidence/m2_20261121/report/m2_geometry_tips_bands.png",
+        "blob": "fb49bc96a3dcbf56520ce72b8222089d219acae7",
+        "bytes": 101178
+      },
+      {
+        "path": "matlab/g2/evidence/m2_20261121/report/m2_steering_mixity_G_compliance.pdf",
+        "blob": "09713199cbeacd188777379652da10710696105e",
+        "bytes": 12276
+      },
+      {
+        "path": "matlab/g2/evidence/m2_20261121/report/m2_steering_mixity_G_compliance.png",
+        "blob": "93ce181e5c8bfcad2e1a6a833a8e7bffef7419ba",
+        "bytes": 184870
+      },
+      {
+        "path": "matlab/g2/evidence/material_20261119/report/material_EDI_vs_COD.png",
+        "blob": "9d94749c05e732f175b65652535d71b98d39662b",
+        "bytes": 85059
+      },
+      {
+        "path": "matlab/g2/evidence/material_20261119/report/material_annulus_zoom.png",
+        "blob": "998d21092267937d5aec9bcf907788c696e5ab26",
+        "bytes": 429231
+      },
+      {
+        "path": "matlab/g2/evidence/material_20261119/report/material_benchmark_convergence.png",
+        "blob": "098012144d01ec6dce19fd14d980a2caed2b84ee",
+        "bytes": 87088
+      },
+      {
+        "path": "matlab/g2/evidence/material_20261119/report/material_interface_tractions.png",
+        "blob": "7fa2011e331bbdd661e889b38341188247652cb1",
+        "bytes": 204483
+      },
+      {
+        "path": "matlab/g2/evidence/material_20261119/report/material_phase_map.pdf",
+        "blob": "6f8612048b6b316d81bc71013ab66d6e4e7d3dbe",
+        "bytes": 887932
+      },
+      {
+        "path": "matlab/g2/evidence/material_20261119/report/material_phase_map.png",
+        "blob": "d424e19d575415b2a1218054c2c4f089218c1762",
+        "bytes": 948236
+      },
+      {
+        "path": "matlab/g2/evidence/material_20261119/report/material_ratios.pdf",
+        "blob": "1a139cab4cf9ddefbce6cd0445206f92900d4296",
+        "bytes": 11535
+      },
+      {
+        "path": "matlab/g2/evidence/material_20261119/report/material_ratios.png",
+        "blob": "934850f1ebd8ba01bad3762874351918449f37b1",
+        "bytes": 146875
+      },
+      {
+        "path": "matlab/g2/evidence/p010_isolated_run_20261118_162823_323/p010_inner_tip_zoom.png",
+        "blob": "49f7ba02abb1ea9ac003c2425aa370651ebc649d",
+        "bytes": 304278
+      },
+      {
+        "path": "matlab/g2/evidence/p010_isolated_run_20261118_162823_323/p010_regular_core_and_collar.png",
+        "blob": "a4e87eab0636da637b412125c5d6f978f87abfc3",
+        "bytes": 294927
+      },
+      {
+        "path": "matlab/g2/evidence/wp1_20261118/mesh_run_20261118_163717_510/protected_full_mesh.png",
+        "blob": "4dcaec949bc6eb5fa28db34f6c31252fcd1eef0d",
+        "bytes": 736415
+      },
+      {
+        "path": "matlab/g2/evidence/wp1_20261118/mesh_run_20261118_163717_510/protected_tip_seams_q.png",
+        "blob": "053b8e23a2a3289783d13ceb371d5407dbce711c",
+        "bytes": 690556
+      },
+      {
+        "path": "matlab/g2/evidence/wp2_20261118/cornell_run_20261118_170047_650/cornell_K_vs_annulus.png",
+        "blob": "d1d133bc316fdd98a9e7952e1b0cdab0d8a351f7",
+        "bytes": 83738
+      },
+      {
+        "path": "matlab/g2/evidence/wp2_20261118/cornell_run_20261118_170047_650/cornell_cod_extrapolation.png",
+        "blob": "f0400350fd345291518624e5ccbdeb0c464a5e88",
+        "bytes": 82279
+      },
+      {
+        "path": "matlab/g2/evidence/wp2_20261118/mesh_famA_run_20261118_165922_343/protected_full_mesh.png",
+        "blob": "fb331e4c7471339cf16ec13175d4a3fcb766ca41",
+        "bytes": 780777
+      },
+      {
+        "path": "matlab/g2/evidence/wp2_20261118/mesh_famA_run_20261118_165922_343/protected_tip_seams_q.png",
+        "blob": "95d9c9fc535718db6d40110fdd13c69b44a12245",
+        "bytes": 701413
+      },
+      {
+        "path": "matlab/g2/evidence/wp2_20261118/mesh_famB_run_20261118_165941_636/protected_full_mesh.png",
+        "blob": "b4ef6f80d01eaa29244676aeb8ec88f4691836ed",
+        "bytes": 896693
+      },
+      {
+        "path": "matlab/g2/evidence/wp34_20261118/state2_report/state2_K_vs_annulus.png",
+        "blob": "31ae99d02eb1a94cabea2710be8116cca5bce45e",
+        "bytes": 83354
+      },
+      {
+        "path": "matlab/g2/evidence/wp34_20261118/state2_report/state2_full_mesh.png",
+        "blob": "1d7cca76ffb670f0e350a06e6da532c0cf08fb82",
+        "bytes": 829694
+      },
+      {
+        "path": "matlab/g2/evidence/wp34_20261118/state2_report/state2_trajectory.png",
+        "blob": "bef6ef8c508290b129c8b04fa3e53b8583614ce9",
+        "bytes": 46614
+      },
+      {
+        "path": "matlab/g2/evidence/wp34_20261118/state2_report/state2_two_kink_zoom.pdf",
+        "blob": "61c08a5b6e8cf7878406a7018de483a68ac5f1c1",
+        "bytes": 66075
+      },
+      {
+        "path": "matlab/g2/evidence/wp34_20261118/state2_report/state2_two_kink_zoom.png",
+        "blob": "c6b21ba1b7009e673019b6091c081c4d5af5f3d3",
+        "bytes": 678940
+      },
+      {
+        "path": "matlab/g2/evidence/wp3_20261118/g2_wp3_kinked_mesh_run_20261118_183545_651_famA/kinked_full_mesh.png",
+        "blob": "d2b52d9b858226d0a10f93fd45f26c109fb4f086",
+        "bytes": 784685
+      },
+      {
+        "path": "matlab/g2/evidence/wp3_20261118/g2_wp3_kinked_mesh_run_20261118_183545_651_famA/kinked_kink_vertex_zoom.png",
+        "blob": "00b1f5ee31d2dff66863e5f9601ece63a35fcc21",
+        "bytes": 175241
+      },
+      {
+        "path": "matlab/g2/evidence/wp3_20261118/g2_wp3_kinked_mesh_run_20261118_183545_651_famA/kinked_rotated_core_seams_q.pdf",
+        "blob": "00929717770e325b12dab11ed2f556b7c60222fa",
+        "bytes": 170934
+      },
+      {
+        "path": "matlab/g2/evidence/wp3_20261118/g2_wp3_kinked_mesh_run_20261118_183545_651_famA/kinked_rotated_core_seams_q.png",
+        "blob": "bc16bf31af9978101da786030a866dd922569ac1",
+        "bytes": 705333
+      },
+      {
+        "path": "matlab/g2/evidence/wp3_20261118/g2_wp3_kinked_mesh_run_20261118_184040_732_famA_mirror/kinked_full_mesh.png",
+        "blob": "98e1ba7f28e4cc63bf7ad3dcc064a701b3192b8b",
+        "bytes": 782714
+      },
+      {
+        "path": "matlab/g2/evidence/wp3_20261118/g2_wp3_kinked_mesh_run_20261118_184040_732_famA_mirror/kinked_kink_vertex_zoom.png",
+        "blob": "b473454553f7fcb387a6fade50f94883e599b13b",
+        "bytes": 174703
+      },
+      {
+        "path": "matlab/g2/evidence/wp3_20261118/g2_wp3_kinked_mesh_run_20261118_184040_732_famA_mirror/kinked_rotated_core_seams_q.pdf",
+        "blob": "a7f2b1712584dafdea8e23e2e4da1b05f2aae4f9",
+        "bytes": 170403
+      },
+      {
+        "path": "matlab/g2/evidence/wp3_20261118/g2_wp3_kinked_mesh_run_20261118_184040_732_famA_mirror/kinked_rotated_core_seams_q.png",
+        "blob": "d1e22b127138c807b79bbba442b5155500e45c29",
+        "bytes": 709656
+      },
+      {
+        "path": "matlab/g2/evidence/wp3_20261118/g2_wp3_kinked_mesh_run_20261118_184957_278_famB/kinked_full_mesh.png",
+        "blob": "dcce2a216c6937e4cfac90dc6559c6a930e01b1e",
+        "bytes": 904176
+      },
+      {
+        "path": "matlab/g2/evidence/wp3_20261118/g2_wp3_kinked_mesh_run_20261118_184957_278_famB/kinked_kink_vertex_zoom.png",
+        "blob": "ce1cdb869884937661af05fba3df2e3385af430c",
+        "bytes": 186377
+      },
+      {
+        "path": "matlab/g2/evidence/wp3_20261118/g2_wp3_kinked_mesh_run_20261118_184957_278_famB/kinked_rotated_core_seams_q.pdf",
+        "blob": "c6e91cf9490493222e3905a20983e64676b024bd",
+        "bytes": 171409
+      },
+      {
+        "path": "matlab/g2/evidence/wp3_20261118/g2_wp3_kinked_mesh_run_20261118_184957_278_famB/kinked_rotated_core_seams_q.png",
+        "blob": "de056e497f89d8e2aa9ad53888f70989b1745478",
+        "bytes": 706598
+      },
+      {
+        "path": "matlab/g2/evidence/wp3_20261118/g2_wp3_kinked_sif_run_20261118_185423_469/kinked_K_vs_annulus.png",
+        "blob": "9674a415080fd377d3f40b406171a660937a8cf4",
+        "bytes": 78694
+      },
+      {
+        "path": "matlab/g2/evidence/wp3_20261118/g2_wp3_kinked_sif_run_20261118_185423_469/kinked_cod_extrapolation.png",
+        "blob": "4ffd9edba705b881e46543d979e5ad8c5740bc9b",
+        "bytes": 82167
+      }
+    ]
+  },
+  {
+    "pr": 41,
+    "sha": "92636e583e34f76e1eaafeda36de530c0c2f8655",
+    "status": "COMPLETE",
+    "tree_entries": 588,
+    "files": [
+      {
+        "path": "matlab/g2/evidence/m2_20261121/report/m2_K_by_state.png",
+        "blob": "35660f221580a6b0b88bf6b3020e899b2c8be6bd",
+        "bytes": 76845
+      },
+      {
+        "path": "matlab/g2/evidence/m2_20261121/report/m2_R_vs_s.pdf",
+        "blob": "a4719b33f6dff2fda28893e46522bf6c6a69d09e",
+        "bytes": 4038
+      },
+      {
+        "path": "matlab/g2/evidence/m2_20261121/report/m2_R_vs_s.png",
+        "blob": "9d1abbf89b31bf9e0ef92586e569ddb1c4b9b5a0",
+        "bytes": 82841
+      },
+      {
+        "path": "matlab/g2/evidence/m2_20261121/report/m2_geometry_tips_bands.png",
+        "blob": "fb49bc96a3dcbf56520ce72b8222089d219acae7",
+        "bytes": 101178
+      },
+      {
+        "path": "matlab/g2/evidence/m2_20261121/report/m2_steering_mixity_G_compliance.pdf",
+        "blob": "09713199cbeacd188777379652da10710696105e",
+        "bytes": 12276
+      },
+      {
+        "path": "matlab/g2/evidence/m2_20261121/report/m2_steering_mixity_G_compliance.png",
+        "blob": "93ce181e5c8bfcad2e1a6a833a8e7bffef7419ba",
+        "bytes": 184870
+      },
+      {
+        "path": "matlab/g2/evidence/m3_20261121/report/m3_G_theta.png",
+        "blob": "81f121a19b0dd8d291ac3881d5900210082a7ffc",
+        "bytes": 144679
+      },
+      {
+        "path": "matlab/g2/evidence/m3_20261121/report/m3_paths_offsets.pdf",
+        "blob": "97eca5853c6a94b5ecab32cea13cb0d8f6706353",
+        "bytes": 7710
+      },
+      {
+        "path": "matlab/g2/evidence/m3_20261121/report/m3_paths_offsets.png",
+        "blob": "71410aa7f95ec6eccd4ff1a6c94689dfcddc0750",
+        "bytes": 123699
+      },
+      {
+        "path": "matlab/g2/evidence/m3_20261121/report/m3_phase_snapshot.png",
+        "blob": "29f44869834cc0754b7a9689c62e1a9c6ccb8530",
+        "bytes": 752480
+      },
+      {
+        "path": "matlab/g2/evidence/m3_20261121/report/m3_ratios.pdf",
+        "blob": "cc8265cc43b4bfbdbb3cfe5b2b44cc300f8623fd",
+        "bytes": 8775
+      },
+      {
+        "path": "matlab/g2/evidence/m3_20261121/report/m3_ratios.png",
+        "blob": "db11f9633e67fee569534ca12a6b1eeeded30deb",
+        "bytes": 118773
+      },
+      {
+        "path": "matlab/g2/evidence/material_20261119/report/material_EDI_vs_COD.png",
+        "blob": "9d94749c05e732f175b65652535d71b98d39662b",
+        "bytes": 85059
+      },
+      {
+        "path": "matlab/g2/evidence/material_20261119/report/material_annulus_zoom.png",
+        "blob": "998d21092267937d5aec9bcf907788c696e5ab26",
+        "bytes": 429231
+      },
+      {
+        "path": "matlab/g2/evidence/material_20261119/report/material_benchmark_convergence.png",
+        "blob": "098012144d01ec6dce19fd14d980a2caed2b84ee",
+        "bytes": 87088
+      },
+      {
+        "path": "matlab/g2/evidence/material_20261119/report/material_interface_tractions.png",
+        "blob": "7fa2011e331bbdd661e889b38341188247652cb1",
+        "bytes": 204483
+      },
+      {
+        "path": "matlab/g2/evidence/material_20261119/report/material_phase_map.pdf",
+        "blob": "6f8612048b6b316d81bc71013ab66d6e4e7d3dbe",
+        "bytes": 887932
+      },
+      {
+        "path": "matlab/g2/evidence/material_20261119/report/material_phase_map.png",
+        "blob": "d424e19d575415b2a1218054c2c4f089218c1762",
+        "bytes": 948236
+      },
+      {
+        "path": "matlab/g2/evidence/material_20261119/report/material_ratios.pdf",
+        "blob": "1a139cab4cf9ddefbce6cd0445206f92900d4296",
+        "bytes": 11535
+      },
+      {
+        "path": "matlab/g2/evidence/material_20261119/report/material_ratios.png",
+        "blob": "934850f1ebd8ba01bad3762874351918449f37b1",
+        "bytes": 146875
+      },
+      {
+        "path": "matlab/g2/evidence/p010_isolated_run_20261118_162823_323/p010_inner_tip_zoom.png",
+        "blob": "49f7ba02abb1ea9ac003c2425aa370651ebc649d",
+        "bytes": 304278
+      },
+      {
+        "path": "matlab/g2/evidence/p010_isolated_run_20261118_162823_323/p010_regular_core_and_collar.png",
+        "blob": "a4e87eab0636da637b412125c5d6f978f87abfc3",
+        "bytes": 294927
+      },
+      {
+        "path": "matlab/g2/evidence/wp1_20261118/mesh_run_20261118_163717_510/protected_full_mesh.png",
+        "blob": "4dcaec949bc6eb5fa28db34f6c31252fcd1eef0d",
+        "bytes": 736415
+      },
+      {
+        "path": "matlab/g2/evidence/wp1_20261118/mesh_run_20261118_163717_510/protected_tip_seams_q.png",
+        "blob": "053b8e23a2a3289783d13ceb371d5407dbce711c",
+        "bytes": 690556
+      },
+      {
+        "path": "matlab/g2/evidence/wp2_20261118/cornell_run_20261118_170047_650/cornell_K_vs_annulus.png",
+        "blob": "d1d133bc316fdd98a9e7952e1b0cdab0d8a351f7",
+        "bytes": 83738
+      },
+      {
+        "path": "matlab/g2/evidence/wp2_20261118/cornell_run_20261118_170047_650/cornell_cod_extrapolation.png",
+        "blob": "f0400350fd345291518624e5ccbdeb0c464a5e88",
+        "bytes": 82279
+      },
+      {
+        "path": "matlab/g2/evidence/wp2_20261118/mesh_famA_run_20261118_165922_343/protected_full_mesh.png",
+        "blob": "fb331e4c7471339cf16ec13175d4a3fcb766ca41",
+        "bytes": 780777
+      },
+      {
+        "path": "matlab/g2/evidence/wp2_20261118/mesh_famA_run_20261118_165922_343/protected_tip_seams_q.png",
+        "blob": "95d9c9fc535718db6d40110fdd13c69b44a12245",
+        "bytes": 701413
+      },
+      {
+        "path": "matlab/g2/evidence/wp2_20261118/mesh_famB_run_20261118_165941_636/protected_full_mesh.png",
+        "blob": "b4ef6f80d01eaa29244676aeb8ec88f4691836ed",
+        "bytes": 896693
+      },
+      {
+        "path": "matlab/g2/evidence/wp34_20261118/state2_report/state2_K_vs_annulus.png",
+        "blob": "31ae99d02eb1a94cabea2710be8116cca5bce45e",
+        "bytes": 83354
+      },
+      {
+        "path": "matlab/g2/evidence/wp34_20261118/state2_report/state2_full_mesh.png",
+        "blob": "1d7cca76ffb670f0e350a06e6da532c0cf08fb82",
+        "bytes": 829694
+      },
+      {
+        "path": "matlab/g2/evidence/wp34_20261118/state2_report/state2_trajectory.png",
+        "blob": "bef6ef8c508290b129c8b04fa3e53b8583614ce9",
+        "bytes": 46614
+      },
+      {
+        "path": "matlab/g2/evidence/wp34_20261118/state2_report/state2_two_kink_zoom.pdf",
+        "blob": "61c08a5b6e8cf7878406a7018de483a68ac5f1c1",
+        "bytes": 66075
+      },
+      {
+        "path": "matlab/g2/evidence/wp34_20261118/state2_report/state2_two_kink_zoom.png",
+        "blob": "c6b21ba1b7009e673019b6091c081c4d5af5f3d3",
+        "bytes": 678940
+      },
+      {
+        "path": "matlab/g2/evidence/wp3_20261118/g2_wp3_kinked_mesh_run_20261118_183545_651_famA/kinked_full_mesh.png",
+        "blob": "d2b52d9b858226d0a10f93fd45f26c109fb4f086",
+        "bytes": 784685
+      },
+      {
+        "path": "matlab/g2/evidence/wp3_20261118/g2_wp3_kinked_mesh_run_20261118_183545_651_famA/kinked_kink_vertex_zoom.png",
+        "blob": "00b1f5ee31d2dff66863e5f9601ece63a35fcc21",
+        "bytes": 175241
+      },
+      {
+        "path": "matlab/g2/evidence/wp3_20261118/g2_wp3_kinked_mesh_run_20261118_183545_651_famA/kinked_rotated_core_seams_q.pdf",
+        "blob": "00929717770e325b12dab11ed2f556b7c60222fa",
+        "bytes": 170934
+      },
+      {
+        "path": "matlab/g2/evidence/wp3_20261118/g2_wp3_kinked_mesh_run_20261118_183545_651_famA/kinked_rotated_core_seams_q.png",
+        "blob": "bc16bf31af9978101da786030a866dd922569ac1",
+        "bytes": 705333
+      },
+      {
+        "path": "matlab/g2/evidence/wp3_20261118/g2_wp3_kinked_mesh_run_20261118_184040_732_famA_mirror/kinked_full_mesh.png",
+        "blob": "98e1ba7f28e4cc63bf7ad3dcc064a701b3192b8b",
+        "bytes": 782714
+      },
+      {
+        "path": "matlab/g2/evidence/wp3_20261118/g2_wp3_kinked_mesh_run_20261118_184040_732_famA_mirror/kinked_kink_vertex_zoom.png",
+        "blob": "b473454553f7fcb387a6fade50f94883e599b13b",
+        "bytes": 174703
+      },
+      {
+        "path": "matlab/g2/evidence/wp3_20261118/g2_wp3_kinked_mesh_run_20261118_184040_732_famA_mirror/kinked_rotated_core_seams_q.pdf",
+        "blob": "a7f2b1712584dafdea8e23e2e4da1b05f2aae4f9",
+        "bytes": 170403
+      },
+      {
+        "path": "matlab/g2/evidence/wp3_20261118/g2_wp3_kinked_mesh_run_20261118_184040_732_famA_mirror/kinked_rotated_core_seams_q.png",
+        "blob": "d1e22b127138c807b79bbba442b5155500e45c29",
+        "bytes": 709656
+      },
+      {
+        "path": "matlab/g2/evidence/wp3_20261118/g2_wp3_kinked_mesh_run_20261118_184957_278_famB/kinked_full_mesh.png",
+        "blob": "dcce2a216c6937e4cfac90dc6559c6a930e01b1e",
+        "bytes": 904176
+      },
+      {
+        "path": "matlab/g2/evidence/wp3_20261118/g2_wp3_kinked_mesh_run_20261118_184957_278_famB/kinked_kink_vertex_zoom.png",
+        "blob": "ce1cdb869884937661af05fba3df2e3385af430c",
+        "bytes": 186377
+      },
+      {
+        "path": "matlab/g2/evidence/wp3_20261118/g2_wp3_kinked_mesh_run_20261118_184957_278_famB/kinked_rotated_core_seams_q.pdf",
+        "blob": "c6e91cf9490493222e3905a20983e64676b024bd",
+        "bytes": 171409
+      },
+      {
+        "path": "matlab/g2/evidence/wp3_20261118/g2_wp3_kinked_mesh_run_20261118_184957_278_famB/kinked_rotated_core_seams_q.png",
+        "blob": "de056e497f89d8e2aa9ad53888f70989b1745478",
+        "bytes": 706598
+      },
+      {
+        "path": "matlab/g2/evidence/wp3_20261118/g2_wp3_kinked_sif_run_20261118_185423_469/kinked_K_vs_annulus.png",
+        "blob": "9674a415080fd377d3f40b406171a660937a8cf4",
+        "bytes": 78694
+      },
+      {
+        "path": "matlab/g2/evidence/wp3_20261118/g2_wp3_kinked_sif_run_20261118_185423_469/kinked_cod_extrapolation.png",
+        "blob": "4ffd9edba705b881e46543d979e5ad8c5740bc9b",
+        "bytes": 82167
+      }
+    ]
+  },
+  {
+    "pr": 46,
+    "sha": "97c9562442e0abea8d77a42ab0f285d90eb3f370",
+    "status": "COMPLETE",
+    "tree_entries": 726,
+    "files": [
+      {
+        "path": "matlab/g2/evidence/m2_20261121/report/m2_K_by_state.png",
+        "blob": "35660f221580a6b0b88bf6b3020e899b2c8be6bd",
+        "bytes": 76845
+      },
+      {
+        "path": "matlab/g2/evidence/m2_20261121/report/m2_R_vs_s.pdf",
+        "blob": "a4719b33f6dff2fda28893e46522bf6c6a69d09e",
+        "bytes": 4038
+      },
+      {
+        "path": "matlab/g2/evidence/m2_20261121/report/m2_R_vs_s.png",
+        "blob": "9d1abbf89b31bf9e0ef92586e569ddb1c4b9b5a0",
+        "bytes": 82841
+      },
+      {
+        "path": "matlab/g2/evidence/m2_20261121/report/m2_geometry_tips_bands.png",
+        "blob": "fb49bc96a3dcbf56520ce72b8222089d219acae7",
+        "bytes": 101178
+      },
+      {
+        "path": "matlab/g2/evidence/m2_20261121/report/m2_steering_mixity_G_compliance.pdf",
+        "blob": "09713199cbeacd188777379652da10710696105e",
+        "bytes": 12276
+      },
+      {
+        "path": "matlab/g2/evidence/m2_20261121/report/m2_steering_mixity_G_compliance.png",
+        "blob": "93ce181e5c8bfcad2e1a6a833a8e7bffef7419ba",
+        "bytes": 184870
+      },
+      {
+        "path": "matlab/g2/evidence/m3_20261121/report/m3_G_theta.png",
+        "blob": "81f121a19b0dd8d291ac3881d5900210082a7ffc",
+        "bytes": 144679
+      },
+      {
+        "path": "matlab/g2/evidence/m3_20261121/report/m3_paths_offsets.pdf",
+        "blob": "97eca5853c6a94b5ecab32cea13cb0d8f6706353",
+        "bytes": 7710
+      },
+      {
+        "path": "matlab/g2/evidence/m3_20261121/report/m3_paths_offsets.png",
+        "blob": "71410aa7f95ec6eccd4ff1a6c94689dfcddc0750",
+        "bytes": 123699
+      },
+      {
+        "path": "matlab/g2/evidence/m3_20261121/report/m3_phase_snapshot.png",
+        "blob": "29f44869834cc0754b7a9689c62e1a9c6ccb8530",
+        "bytes": 752480
+      },
+      {
+        "path": "matlab/g2/evidence/m3_20261121/report/m3_ratios.pdf",
+        "blob": "cc8265cc43b4bfbdbb3cfe5b2b44cc300f8623fd",
+        "bytes": 8775
+      },
+      {
+        "path": "matlab/g2/evidence/m3_20261121/report/m3_ratios.png",
+        "blob": "db11f9633e67fee569534ca12a6b1eeeded30deb",
+        "bytes": 118773
+      },
+      {
+        "path": "matlab/g2/evidence/m4_20261121/report/m4a_fig1_paths.png",
+        "blob": "18ac91166054680310a259d7bb6a9394d5858285",
+        "bytes": 147071
+      },
+      {
+        "path": "matlab/g2/evidence/m4_20261121/report/m4a_fig2_ratios.png",
+        "blob": "6c6f9ab67be4a3c2aed91250960cc8489b75e01e",
+        "bytes": 89860
+      },
+      {
+        "path": "matlab/g2/evidence/m4_20261121/report/m4a_fig3_interface_meshes.png",
+        "blob": "e315ebcee10ef6035968f140f91ae2296a0bc8f7",
+        "bytes": 395945
+      },
+      {
+        "path": "matlab/g2/evidence/m4_20261121/report/m4a_fig4_tip_q_support.png",
+        "blob": "21aaadc84d21e0e71d8b0ee2a2dcd0ccf0051c96",
+        "bytes": 539545
+      },
+      {
+        "path": "matlab/g2/evidence/m4_20261121/report/m4a_fig5_K.png",
+        "blob": "7eceef8606c9970a34fd8fb5e82d4954c7f8cfe7",
+        "bytes": 157239
+      },
+      {
+        "path": "matlab/g2/evidence/material_20261119/report/material_EDI_vs_COD.png",
+        "blob": "9d94749c05e732f175b65652535d71b98d39662b",
+        "bytes": 85059
+      },
+      {
+        "path": "matlab/g2/evidence/material_20261119/report/material_annulus_zoom.png",
+        "blob": "998d21092267937d5aec9bcf907788c696e5ab26",
+        "bytes": 429231
+      },
+      {
+        "path": "matlab/g2/evidence/material_20261119/report/material_benchmark_convergence.png",
+        "blob": "098012144d01ec6dce19fd14d980a2caed2b84ee",
+        "bytes": 87088
+      },
+      {
+        "path": "matlab/g2/evidence/material_20261119/report/material_interface_tractions.png",
+        "blob": "7fa2011e331bbdd661e889b38341188247652cb1",
+        "bytes": 204483
+      },
+      {
+        "path": "matlab/g2/evidence/material_20261119/report/material_phase_map.pdf",
+        "blob": "6f8612048b6b316d81bc71013ab66d6e4e7d3dbe",
+        "bytes": 887932
+      },
+      {
+        "path": "matlab/g2/evidence/material_20261119/report/material_phase_map.png",
+        "blob": "d424e19d575415b2a1218054c2c4f089218c1762",
+        "bytes": 948236
+      },
+      {
+        "path": "matlab/g2/evidence/material_20261119/report/material_ratios.pdf",
+        "blob": "1a139cab4cf9ddefbce6cd0445206f92900d4296",
+        "bytes": 11535
+      },
+      {
+        "path": "matlab/g2/evidence/material_20261119/report/material_ratios.png",
+        "blob": "934850f1ebd8ba01bad3762874351918449f37b1",
+        "bytes": 146875
+      },
+      {
+        "path": "matlab/g2/evidence/p010_isolated_run_20261118_162823_323/p010_inner_tip_zoom.png",
+        "blob": "49f7ba02abb1ea9ac003c2425aa370651ebc649d",
+        "bytes": 304278
+      },
+      {
+        "path": "matlab/g2/evidence/p010_isolated_run_20261118_162823_323/p010_regular_core_and_collar.png",
+        "blob": "a4e87eab0636da637b412125c5d6f978f87abfc3",
+        "bytes": 294927
+      },
+      {
+        "path": "matlab/g2/evidence/wp1_20261118/mesh_run_20261118_163717_510/protected_full_mesh.png",
+        "blob": "4dcaec949bc6eb5fa28db34f6c31252fcd1eef0d",
+        "bytes": 736415
+      },
+      {
+        "path": "matlab/g2/evidence/wp1_20261118/mesh_run_20261118_163717_510/protected_tip_seams_q.png",
+        "blob": "053b8e23a2a3289783d13ceb371d5407dbce711c",
+        "bytes": 690556
+      },
+      {
+        "path": "matlab/g2/evidence/wp2_20261118/cornell_run_20261118_170047_650/cornell_K_vs_annulus.png",
+        "blob": "d1d133bc316fdd98a9e7952e1b0cdab0d8a351f7",
+        "bytes": 83738
+      },
+      {
+        "path": "matlab/g2/evidence/wp2_20261118/cornell_run_20261118_170047_650/cornell_cod_extrapolation.png",
+        "blob": "f0400350fd345291518624e5ccbdeb0c464a5e88",
+        "bytes": 82279
+      },
+      {
+        "path": "matlab/g2/evidence/wp2_20261118/mesh_famA_run_20261118_165922_343/protected_full_mesh.png",
+        "blob": "fb331e4c7471339cf16ec13175d4a3fcb766ca41",
+        "bytes": 780777
+      },
+      {
+        "path": "matlab/g2/evidence/wp2_20261118/mesh_famA_run_20261118_165922_343/protected_tip_seams_q.png",
+        "blob": "95d9c9fc535718db6d40110fdd13c69b44a12245",
+        "bytes": 701413
+      },
+      {
+        "path": "matlab/g2/evidence/wp2_20261118/mesh_famB_run_20261118_165941_636/protected_full_mesh.png",
+        "blob": "b4ef6f80d01eaa29244676aeb8ec88f4691836ed",
+        "bytes": 896693
+      },
+      {
+        "path": "matlab/g2/evidence/wp34_20261118/state2_report/state2_K_vs_annulus.png",
+        "blob": "31ae99d02eb1a94cabea2710be8116cca5bce45e",
+        "bytes": 83354
+      },
+      {
+        "path": "matlab/g2/evidence/wp34_20261118/state2_report/state2_full_mesh.png",
+        "blob": "1d7cca76ffb670f0e350a06e6da532c0cf08fb82",
+        "bytes": 829694
+      },
+      {
+        "path": "matlab/g2/evidence/wp34_20261118/state2_report/state2_trajectory.png",
+        "blob": "bef6ef8c508290b129c8b04fa3e53b8583614ce9",
+        "bytes": 46614
+      },
+      {
+        "path": "matlab/g2/evidence/wp34_20261118/state2_report/state2_two_kink_zoom.pdf",
+        "blob": "61c08a5b6e8cf7878406a7018de483a68ac5f1c1",
+        "bytes": 66075
+      },
+      {
+        "path": "matlab/g2/evidence/wp34_20261118/state2_report/state2_two_kink_zoom.png",
+        "blob": "c6b21ba1b7009e673019b6091c081c4d5af5f3d3",
+        "bytes": 678940
+      },
+      {
+        "path": "matlab/g2/evidence/wp3_20261118/g2_wp3_kinked_mesh_run_20261118_183545_651_famA/kinked_full_mesh.png",
+        "blob": "d2b52d9b858226d0a10f93fd45f26c109fb4f086",
+        "bytes": 784685
+      },
+      {
+        "path": "matlab/g2/evidence/wp3_20261118/g2_wp3_kinked_mesh_run_20261118_183545_651_famA/kinked_kink_vertex_zoom.png",
+        "blob": "00b1f5ee31d2dff66863e5f9601ece63a35fcc21",
+        "bytes": 175241
+      },
+      {
+        "path": "matlab/g2/evidence/wp3_20261118/g2_wp3_kinked_mesh_run_20261118_183545_651_famA/kinked_rotated_core_seams_q.pdf",
+        "blob": "00929717770e325b12dab11ed2f556b7c60222fa",
+        "bytes": 170934
+      },
+      {
+        "path": "matlab/g2/evidence/wp3_20261118/g2_wp3_kinked_mesh_run_20261118_183545_651_famA/kinked_rotated_core_seams_q.png",
+        "blob": "bc16bf31af9978101da786030a866dd922569ac1",
+        "bytes": 705333
+      },
+      {
+        "path": "matlab/g2/evidence/wp3_20261118/g2_wp3_kinked_mesh_run_20261118_184040_732_famA_mirror/kinked_full_mesh.png",
+        "blob": "98e1ba7f28e4cc63bf7ad3dcc064a701b3192b8b",
+        "bytes": 782714
+      },
+      {
+        "path": "matlab/g2/evidence/wp3_20261118/g2_wp3_kinked_mesh_run_20261118_184040_732_famA_mirror/kinked_kink_vertex_zoom.png",
+        "blob": "b473454553f7fcb387a6fade50f94883e599b13b",
+        "bytes": 174703
+      },
+      {
+        "path": "matlab/g2/evidence/wp3_20261118/g2_wp3_kinked_mesh_run_20261118_184040_732_famA_mirror/kinked_rotated_core_seams_q.pdf",
+        "blob": "a7f2b1712584dafdea8e23e2e4da1b05f2aae4f9",
+        "bytes": 170403
+      },
+      {
+        "path": "matlab/g2/evidence/wp3_20261118/g2_wp3_kinked_mesh_run_20261118_184040_732_famA_mirror/kinked_rotated_core_seams_q.png",
+        "blob": "d1e22b127138c807b79bbba442b5155500e45c29",
+        "bytes": 709656
+      },
+      {
+        "path": "matlab/g2/evidence/wp3_20261118/g2_wp3_kinked_mesh_run_20261118_184957_278_famB/kinked_full_mesh.png",
+        "blob": "dcce2a216c6937e4cfac90dc6559c6a930e01b1e",
+        "bytes": 904176
+      },
+      {
+        "path": "matlab/g2/evidence/wp3_20261118/g2_wp3_kinked_mesh_run_20261118_184957_278_famB/kinked_kink_vertex_zoom.png",
+        "blob": "ce1cdb869884937661af05fba3df2e3385af430c",
+        "bytes": 186377
+      },
+      {
+        "path": "matlab/g2/evidence/wp3_20261118/g2_wp3_kinked_mesh_run_20261118_184957_278_famB/kinked_rotated_core_seams_q.pdf",
+        "blob": "c6e91cf9490493222e3905a20983e64676b024bd",
+        "bytes": 171409
+      },
+      {
+        "path": "matlab/g2/evidence/wp3_20261118/g2_wp3_kinked_mesh_run_20261118_184957_278_famB/kinked_rotated_core_seams_q.png",
+        "blob": "de056e497f89d8e2aa9ad53888f70989b1745478",
+        "bytes": 706598
+      },
+      {
+        "path": "matlab/g2/evidence/wp3_20261118/g2_wp3_kinked_sif_run_20261118_185423_469/kinked_K_vs_annulus.png",
+        "blob": "9674a415080fd377d3f40b406171a660937a8cf4",
+        "bytes": 78694
+      },
+      {
+        "path": "matlab/g2/evidence/wp3_20261118/g2_wp3_kinked_sif_run_20261118_185423_469/kinked_cod_extrapolation.png",
+        "blob": "4ffd9edba705b881e46543d979e5ad8c5740bc9b",
+        "bytes": 82167
+      },
+      {
+        "path": "reports/G2/proposals/render_check/Metakompozyt_G2_M4A_proponovani_dopovnennia_UA.pdf",
+        "blob": "698002434034e8d793a063611fd70cd3fb61cf68",
+        "bytes": 1626392
+      },
+      {
+        "path": "reports/G2/proposals/render_check/p01.png",
+        "blob": "cd3e71544126285647dc9eb0207fbfd2c4513d7d",
+        "bytes": 239733
+      },
+      {
+        "path": "reports/G2/proposals/render_check/p02.png",
+        "blob": "4d4d70a69447875f90a8b4c3270c3a3e476734fb",
+        "bytes": 220078
+      },
+      {
+        "path": "reports/G2/proposals/render_check/p03.png",
+        "blob": "bd2d44ee4fe8bc9ff4f14c4264fd4b80fac100d7",
+        "bytes": 354705
+      },
+      {
+        "path": "reports/G2/proposals/render_check/p04.png",
+        "blob": "6e13dd701ac858a7a320e75a62c04e4659237b40",
+        "bytes": 216697
+      },
+      {
+        "path": "reports/G2/proposals/render_check/p05.png",
+        "blob": "4d1edaae7b3238baf4791bd804929a01dce8d528",
+        "bytes": 357665
+      },
+      {
+        "path": "reports/G2/proposals/render_check/p06.png",
+        "blob": "e62c14e67f37abe4ff41f3a3a991e2f5ba9cbecf",
+        "bytes": 248005
+      },
+      {
+        "path": "reports/G2/proposals/render_check/p07.png",
+        "blob": "ad75f1e2ce4e922d88711cd74fbed18ad55f604d",
+        "bytes": 234216
+      },
+      {
+        "path": "reports/G2/proposals/render_check/p08.png",
+        "blob": "06b88611e543685583d9fe907e2a9b00f83c541a",
+        "bytes": 226629
+      }
+    ]
+  },
+  {
+    "pr": 49,
+    "sha": "ece74694b1c09be95fdcab2afac9d6fef7322602",
+    "status": "COMPLETE",
+    "tree_entries": 847,
+    "files": [
+      {
+        "path": "matlab/g2/evidence/m2_20261121/report/m2_K_by_state.png",
+        "blob": "35660f221580a6b0b88bf6b3020e899b2c8be6bd",
+        "bytes": 76845
+      },
+      {
+        "path": "matlab/g2/evidence/m2_20261121/report/m2_R_vs_s.pdf",
+        "blob": "a4719b33f6dff2fda28893e46522bf6c6a69d09e",
+        "bytes": 4038
+      },
+      {
+        "path": "matlab/g2/evidence/m2_20261121/report/m2_R_vs_s.png",
+        "blob": "9d1abbf89b31bf9e0ef92586e569ddb1c4b9b5a0",
+        "bytes": 82841
+      },
+      {
+        "path": "matlab/g2/evidence/m2_20261121/report/m2_geometry_tips_bands.png",
+        "blob": "fb49bc96a3dcbf56520ce72b8222089d219acae7",
+        "bytes": 101178
+      },
+      {
+        "path": "matlab/g2/evidence/m2_20261121/report/m2_steering_mixity_G_compliance.pdf",
+        "blob": "09713199cbeacd188777379652da10710696105e",
+        "bytes": 12276
+      },
+      {
+        "path": "matlab/g2/evidence/m2_20261121/report/m2_steering_mixity_G_compliance.png",
+        "blob": "93ce181e5c8bfcad2e1a6a833a8e7bffef7419ba",
+        "bytes": 184870
+      },
+      {
+        "path": "matlab/g2/evidence/m3_20261121/report/m3_G_theta.png",
+        "blob": "81f121a19b0dd8d291ac3881d5900210082a7ffc",
+        "bytes": 144679
+      },
+      {
+        "path": "matlab/g2/evidence/m3_20261121/report/m3_paths_offsets.pdf",
+        "blob": "97eca5853c6a94b5ecab32cea13cb0d8f6706353",
+        "bytes": 7710
+      },
+      {
+        "path": "matlab/g2/evidence/m3_20261121/report/m3_paths_offsets.png",
+        "blob": "71410aa7f95ec6eccd4ff1a6c94689dfcddc0750",
+        "bytes": 123699
+      },
+      {
+        "path": "matlab/g2/evidence/m3_20261121/report/m3_phase_snapshot.png",
+        "blob": "29f44869834cc0754b7a9689c62e1a9c6ccb8530",
+        "bytes": 752480
+      },
+      {
+        "path": "matlab/g2/evidence/m3_20261121/report/m3_ratios.pdf",
+        "blob": "cc8265cc43b4bfbdbb3cfe5b2b44cc300f8623fd",
+        "bytes": 8775
+      },
+      {
+        "path": "matlab/g2/evidence/m3_20261121/report/m3_ratios.png",
+        "blob": "db11f9633e67fee569534ca12a6b1eeeded30deb",
+        "bytes": 118773
+      },
+      {
+        "path": "matlab/g2/evidence/m4_20261121/report/m4a_fig1_paths.png",
+        "blob": "18ac91166054680310a259d7bb6a9394d5858285",
+        "bytes": 147071
+      },
+      {
+        "path": "matlab/g2/evidence/m4_20261121/report/m4a_fig2_ratios.png",
+        "blob": "6c6f9ab67be4a3c2aed91250960cc8489b75e01e",
+        "bytes": 89860
+      },
+      {
+        "path": "matlab/g2/evidence/m4_20261121/report/m4a_fig3_interface_meshes.png",
+        "blob": "e315ebcee10ef6035968f140f91ae2296a0bc8f7",
+        "bytes": 395945
+      },
+      {
+        "path": "matlab/g2/evidence/m4_20261121/report/m4a_fig4_tip_q_support.png",
+        "blob": "21aaadc84d21e0e71d8b0ee2a2dcd0ccf0051c96",
+        "bytes": 539545
+      },
+      {
+        "path": "matlab/g2/evidence/m4_20261121/report/m4a_fig5_K.png",
+        "blob": "7eceef8606c9970a34fd8fb5e82d4954c7f8cfe7",
+        "bytes": 157239
+      },
+      {
+        "path": "matlab/g2/evidence/m4b_20261121/report/m4b_fig1_schematic.png",
+        "blob": "bea473a36bba89c90d07b6c82121eb006445e62d",
+        "bytes": 122229
+      },
+      {
+        "path": "matlab/g2/evidence/m4b_20261121/report/m4b_fig2_FG_Ftheta.png",
+        "blob": "15bab95768d0d2d7340dc8adb15e02a44478a6b4",
+        "bytes": 71613
+      },
+      {
+        "path": "matlab/g2/evidence/m4b_20261121/report/m4b_fig3_decomposition.png",
+        "blob": "d83df0296d79b5d709fe351b6861ef434decc693",
+        "bytes": 77878
+      },
+      {
+        "path": "matlab/g2/evidence/m4b_20261121/report/m4b_fig4_equal_area.png",
+        "blob": "54065e1e75ea6f7bd7e030fc8fc83f89c855d6b9",
+        "bytes": 136716
+      },
+      {
+        "path": "matlab/g2/evidence/m4b_20261121/report/m4b_fig5_energy_density.png",
+        "blob": "15c2b317040acb9be8eab1985a108793661d38f2",
+        "bytes": 525333
+      },
+      {
+        "path": "matlab/g2/evidence/material_20261119/report/material_EDI_vs_COD.png",
+        "blob": "9d94749c05e732f175b65652535d71b98d39662b",
+        "bytes": 85059
+      },
+      {
+        "path": "matlab/g2/evidence/material_20261119/report/material_annulus_zoom.png",
+        "blob": "998d21092267937d5aec9bcf907788c696e5ab26",
+        "bytes": 429231
+      },
+      {
+        "path": "matlab/g2/evidence/material_20261119/report/material_benchmark_convergence.png",
+        "blob": "098012144d01ec6dce19fd14d980a2caed2b84ee",
+        "bytes": 87088
+      },
+      {
+        "path": "matlab/g2/evidence/material_20261119/report/material_interface_tractions.png",
+        "blob": "7fa2011e331bbdd661e889b38341188247652cb1",
+        "bytes": 204483
+      },
+      {
+        "path": "matlab/g2/evidence/material_20261119/report/material_phase_map.pdf",
+        "blob": "6f8612048b6b316d81bc71013ab66d6e4e7d3dbe",
+        "bytes": 887932
+      },
+      {
+        "path": "matlab/g2/evidence/material_20261119/report/material_phase_map.png",
+        "blob": "d424e19d575415b2a1218054c2c4f089218c1762",
+        "bytes": 948236
+      },
+      {
+        "path": "matlab/g2/evidence/material_20261119/report/material_ratios.pdf",
+        "blob": "1a139cab4cf9ddefbce6cd0445206f92900d4296",
+        "bytes": 11535
+      },
+      {
+        "path": "matlab/g2/evidence/material_20261119/report/material_ratios.png",
+        "blob": "934850f1ebd8ba01bad3762874351918449f37b1",
+        "bytes": 146875
+      },
+      {
+        "path": "matlab/g2/evidence/p010_isolated_run_20261118_162823_323/p010_inner_tip_zoom.png",
+        "blob": "49f7ba02abb1ea9ac003c2425aa370651ebc649d",
+        "bytes": 304278
+      },
+      {
+        "path": "matlab/g2/evidence/p010_isolated_run_20261118_162823_323/p010_regular_core_and_collar.png",
+        "blob": "a4e87eab0636da637b412125c5d6f978f87abfc3",
+        "bytes": 294927
+      },
+      {
+        "path": "matlab/g2/evidence/wp1_20261118/mesh_run_20261118_163717_510/protected_full_mesh.png",
+        "blob": "4dcaec949bc6eb5fa28db34f6c31252fcd1eef0d",
+        "bytes": 736415
+      },
+      {
+        "path": "matlab/g2/evidence/wp1_20261118/mesh_run_20261118_163717_510/protected_tip_seams_q.png",
+        "blob": "053b8e23a2a3289783d13ceb371d5407dbce711c",
+        "bytes": 690556
+      },
+      {
+        "path": "matlab/g2/evidence/wp2_20261118/cornell_run_20261118_170047_650/cornell_K_vs_annulus.png",
+        "blob": "d1d133bc316fdd98a9e7952e1b0cdab0d8a351f7",
+        "bytes": 83738
+      },
+      {
+        "path": "matlab/g2/evidence/wp2_20261118/cornell_run_20261118_170047_650/cornell_cod_extrapolation.png",
+        "blob": "f0400350fd345291518624e5ccbdeb0c464a5e88",
+        "bytes": 82279
+      },
+      {
+        "path": "matlab/g2/evidence/wp2_20261118/mesh_famA_run_20261118_165922_343/protected_full_mesh.png",
+        "blob": "fb331e4c7471339cf16ec13175d4a3fcb766ca41",
+        "bytes": 780777
+      },
+      {
+        "path": "matlab/g2/evidence/wp2_20261118/mesh_famA_run_20261118_165922_343/protected_tip_seams_q.png",
+        "blob": "95d9c9fc535718db6d40110fdd13c69b44a12245",
+        "bytes": 701413
+      },
+      {
+        "path": "matlab/g2/evidence/wp2_20261118/mesh_famB_run_20261118_165941_636/protected_full_mesh.png",
+        "blob": "b4ef6f80d01eaa29244676aeb8ec88f4691836ed",
+        "bytes": 896693
+      },
+      {
+        "path": "matlab/g2/evidence/wp34_20261118/state2_report/state2_K_vs_annulus.png",
+        "blob": "31ae99d02eb1a94cabea2710be8116cca5bce45e",
+        "bytes": 83354
+      },
+      {
+        "path": "matlab/g2/evidence/wp34_20261118/state2_report/state2_full_mesh.png",
+        "blob": "1d7cca76ffb670f0e350a06e6da532c0cf08fb82",
+        "bytes": 829694
+      },
+      {
+        "path": "matlab/g2/evidence/wp34_20261118/state2_report/state2_trajectory.png",
+        "blob": "bef6ef8c508290b129c8b04fa3e53b8583614ce9",
+        "bytes": 46614
+      },
+      {
+        "path": "matlab/g2/evidence/wp34_20261118/state2_report/state2_two_kink_zoom.pdf",
+        "blob": "61c08a5b6e8cf7878406a7018de483a68ac5f1c1",
+        "bytes": 66075
+      },
+      {
+        "path": "matlab/g2/evidence/wp34_20261118/state2_report/state2_two_kink_zoom.png",
+        "blob": "c6b21ba1b7009e673019b6091c081c4d5af5f3d3",
+        "bytes": 678940
+      },
+      {
+        "path": "matlab/g2/evidence/wp3_20261118/g2_wp3_kinked_mesh_run_20261118_183545_651_famA/kinked_full_mesh.png",
+        "blob": "d2b52d9b858226d0a10f93fd45f26c109fb4f086",
+        "bytes": 784685
+      },
+      {
+        "path": "matlab/g2/evidence/wp3_20261118/g2_wp3_kinked_mesh_run_20261118_183545_651_famA/kinked_kink_vertex_zoom.png",
+        "blob": "00b1f5ee31d2dff66863e5f9601ece63a35fcc21",
+        "bytes": 175241
+      },
+      {
+        "path": "matlab/g2/evidence/wp3_20261118/g2_wp3_kinked_mesh_run_20261118_183545_651_famA/kinked_rotated_core_seams_q.pdf",
+        "blob": "00929717770e325b12dab11ed2f556b7c60222fa",
+        "bytes": 170934
+      },
+      {
+        "path": "matlab/g2/evidence/wp3_20261118/g2_wp3_kinked_mesh_run_20261118_183545_651_famA/kinked_rotated_core_seams_q.png",
+        "blob": "bc16bf31af9978101da786030a866dd922569ac1",
+        "bytes": 705333
+      },
+      {
+        "path": "matlab/g2/evidence/wp3_20261118/g2_wp3_kinked_mesh_run_20261118_184040_732_famA_mirror/kinked_full_mesh.png",
+        "blob": "98e1ba7f28e4cc63bf7ad3dcc064a701b3192b8b",
+        "bytes": 782714
+      },
+      {
+        "path": "matlab/g2/evidence/wp3_20261118/g2_wp3_kinked_mesh_run_20261118_184040_732_famA_mirror/kinked_kink_vertex_zoom.png",
+        "blob": "b473454553f7fcb387a6fade50f94883e599b13b",
+        "bytes": 174703
+      },
+      {
+        "path": "matlab/g2/evidence/wp3_20261118/g2_wp3_kinked_mesh_run_20261118_184040_732_famA_mirror/kinked_rotated_core_seams_q.pdf",
+        "blob": "a7f2b1712584dafdea8e23e2e4da1b05f2aae4f9",
+        "bytes": 170403
+      },
+      {
+        "path": "matlab/g2/evidence/wp3_20261118/g2_wp3_kinked_mesh_run_20261118_184040_732_famA_mirror/kinked_rotated_core_seams_q.png",
+        "blob": "d1e22b127138c807b79bbba442b5155500e45c29",
+        "bytes": 709656
+      },
+      {
+        "path": "matlab/g2/evidence/wp3_20261118/g2_wp3_kinked_mesh_run_20261118_184957_278_famB/kinked_full_mesh.png",
+        "blob": "dcce2a216c6937e4cfac90dc6559c6a930e01b1e",
+        "bytes": 904176
+      },
+      {
+        "path": "matlab/g2/evidence/wp3_20261118/g2_wp3_kinked_mesh_run_20261118_184957_278_famB/kinked_kink_vertex_zoom.png",
+        "blob": "ce1cdb869884937661af05fba3df2e3385af430c",
+        "bytes": 186377
+      },
+      {
+        "path": "matlab/g2/evidence/wp3_20261118/g2_wp3_kinked_mesh_run_20261118_184957_278_famB/kinked_rotated_core_seams_q.pdf",
+        "blob": "c6e91cf9490493222e3905a20983e64676b024bd",
+        "bytes": 171409
+      },
+      {
+        "path": "matlab/g2/evidence/wp3_20261118/g2_wp3_kinked_mesh_run_20261118_184957_278_famB/kinked_rotated_core_seams_q.png",
+        "blob": "de056e497f89d8e2aa9ad53888f70989b1745478",
+        "bytes": 706598
+      },
+      {
+        "path": "matlab/g2/evidence/wp3_20261118/g2_wp3_kinked_sif_run_20261118_185423_469/kinked_K_vs_annulus.png",
+        "blob": "9674a415080fd377d3f40b406171a660937a8cf4",
+        "bytes": 78694
+      },
+      {
+        "path": "matlab/g2/evidence/wp3_20261118/g2_wp3_kinked_sif_run_20261118_185423_469/kinked_cod_extrapolation.png",
+        "blob": "4ffd9edba705b881e46543d979e5ad8c5740bc9b",
+        "bytes": 82167
+      },
+      {
+        "path": "reports/G2/proposals/render_check/Metakompozyt_G2_M4A_proponovani_dopovnennia_UA.pdf",
+        "blob": "698002434034e8d793a063611fd70cd3fb61cf68",
+        "bytes": 1626392
+      },
+      {
+        "path": "reports/G2/proposals/render_check/p01.png",
+        "blob": "cd3e71544126285647dc9eb0207fbfd2c4513d7d",
+        "bytes": 239733
+      },
+      {
+        "path": "reports/G2/proposals/render_check/p02.png",
+        "blob": "4d4d70a69447875f90a8b4c3270c3a3e476734fb",
+        "bytes": 220078
+      },
+      {
+        "path": "reports/G2/proposals/render_check/p03.png",
+        "blob": "bd2d44ee4fe8bc9ff4f14c4264fd4b80fac100d7",
+        "bytes": 354705
+      },
+      {
+        "path": "reports/G2/proposals/render_check/p04.png",
+        "blob": "6e13dd701ac858a7a320e75a62c04e4659237b40",
+        "bytes": 216697
+      },
+      {
+        "path": "reports/G2/proposals/render_check/p05.png",
+        "blob": "4d1edaae7b3238baf4791bd804929a01dce8d528",
+        "bytes": 357665
+      },
+      {
+        "path": "reports/G2/proposals/render_check/p06.png",
+        "blob": "e62c14e67f37abe4ff41f3a3a991e2f5ba9cbecf",
+        "bytes": 248005
+      },
+      {
+        "path": "reports/G2/proposals/render_check/p07.png",
+        "blob": "ad75f1e2ce4e922d88711cd74fbed18ad55f604d",
+        "bytes": 234216
+      },
+      {
+        "path": "reports/G2/proposals/render_check/p08.png",
+        "blob": "06b88611e543685583d9fe907e2a9b00f83c541a",
+        "bytes": 226629
+      },
+      {
+        "path": "reports/G2/render_check_v0_4/Metakompozyt_G2_Naukovyi_zvit_UA_v0_4_Atrybutsiia_kilets_kandydat.pdf",
+        "blob": "ce7bcd1984edd58f709a057f28ded464101142e5",
+        "bytes": 3443172
+      },
+      {
+        "path": "reports/G2/render_check_v0_4/Metakompozyt_G2_Naukovyi_zvit_UA_v0_4_Atrybutsiia_kilets_kandydat_p01.png",
+        "blob": "937feb1d3135d538b133b7dc6b127cb279e9e92e",
+        "bytes": 133297
+      },
+      {
+        "path": "reports/G2/render_check_v0_4/Metakompozyt_G2_Naukovyi_zvit_UA_v0_4_Atrybutsiia_kilets_kandydat_p02.png",
+        "blob": "e42eab5a77bb52c3a402a4fd7eeb689014a045c9",
+        "bytes": 239540
+      },
+      {
+        "path": "reports/G2/render_check_v0_4/Metakompozyt_G2_Naukovyi_zvit_UA_v0_4_Atrybutsiia_kilets_kandydat_p03.png",
+        "blob": "2333e89af65b95cf950b8523d218144640c35a2d",
+        "bytes": 209806
+      },
+      {
+        "path": "reports/G2/render_check_v0_4/Metakompozyt_G2_Naukovyi_zvit_UA_v0_4_Atrybutsiia_kilets_kandydat_p04.png",
+        "blob": "4af93bcae505e7bbca15e14ba40d88f93f27562b",
+        "bytes": 209771
+      },
+      {
+        "path": "reports/G2/render_check_v0_4/Metakompozyt_G2_Naukovyi_zvit_UA_v0_4_Atrybutsiia_kilets_kandydat_p05.png",
+        "blob": "dc63603bc6312ffe9b252f13cafc920816f02721",
+        "bytes": 234316
+      },
+      {
+        "path": "reports/G2/render_check_v0_4/Metakompozyt_G2_Naukovyi_zvit_UA_v0_4_Atrybutsiia_kilets_kandydat_p06.png",
+        "blob": "7f3c9c1acde35345eef821cd9de9ee1e5f831b56",
+        "bytes": 204897
+      },
+      {
+        "path": "reports/G2/render_check_v0_4/Metakompozyt_G2_Naukovyi_zvit_UA_v0_4_Atrybutsiia_kilets_kandydat_p07.png",
+        "blob": "883cc1df2d963bf855bab3d8a1e55f508029e5f1",
+        "bytes": 208908
+      },
+      {
+        "path": "reports/G2/render_check_v0_4/Metakompozyt_G2_Naukovyi_zvit_UA_v0_4_Atrybutsiia_kilets_kandydat_p08.png",
+        "blob": "b506abcc44b91be5ec8896393fe9cd913efc94e4",
+        "bytes": 158156
+      },
+      {
+        "path": "reports/G2/render_check_v0_4/Metakompozyt_G2_Naukovyi_zvit_UA_v0_4_Atrybutsiia_kilets_kandydat_p09.png",
+        "blob": "9ddc35f654ddf8ed7229c1efac1dc987a442db49",
+        "bytes": 173553
+      },
+      {
+        "path": "reports/G2/render_check_v0_4/Metakompozyt_G2_Naukovyi_zvit_UA_v0_4_Atrybutsiia_kilets_kandydat_p10.png",
+        "blob": "b05b5d25784e163a9025f403dadc5f3da50b2385",
+        "bytes": 175881
+      },
+      {
+        "path": "reports/G2/render_check_v0_4/Metakompozyt_G2_Naukovyi_zvit_UA_v0_4_Atrybutsiia_kilets_kandydat_p11.png",
+        "blob": "b5071d966fe38404a83717295f3bc1abb025afdc",
+        "bytes": 169456
+      },
+      {
+        "path": "reports/G2/render_check_v0_4/Metakompozyt_G2_Naukovyi_zvit_UA_v0_4_Atrybutsiia_kilets_kandydat_p12.png",
+        "blob": "225c07eda7328845b5e17d7dca6289a985699f76",
+        "bytes": 196173
+      },
+      {
+        "path": "reports/G2/render_check_v0_4/Metakompozyt_G2_Naukovyi_zvit_UA_v0_4_Atrybutsiia_kilets_kandydat_p13.png",
+        "blob": "b4fed530979e49e4de1988c08c361e500e671fa2",
+        "bytes": 240725
+      },
+      {
+        "path": "reports/G2/render_check_v0_4/Metakompozyt_G2_Naukovyi_zvit_UA_v0_4_Atrybutsiia_kilets_kandydat_p14.png",
+        "blob": "e6fbd5ef9f258b104da8447cd58bea1729a0a7cb",
+        "bytes": 224829
+      },
+      {
+        "path": "reports/G2/render_check_v0_4/Metakompozyt_G2_Naukovyi_zvit_UA_v0_4_Atrybutsiia_kilets_kandydat_p15.png",
+        "blob": "1cdf973cc55601fdc009c54ce4ed1e0e6523ba68",
+        "bytes": 205428
+      },
+      {
+        "path": "reports/G2/render_check_v0_4/Metakompozyt_G2_Naukovyi_zvit_UA_v0_4_Atrybutsiia_kilets_kandydat_p16.png",
+        "blob": "ced09befc841a44f464c54c1ed10a4d3d88a0443",
+        "bytes": 208186
+      },
+      {
+        "path": "reports/G2/render_check_v0_4/Metakompozyt_G2_Naukovyi_zvit_UA_v0_4_Atrybutsiia_kilets_kandydat_p17.png",
+        "blob": "6c40a54b201a08487c67a946196e9215b26b5c31",
+        "bytes": 100372
+      },
+      {
+        "path": "reports/G2/render_check_v0_4/Metakompozyt_G2_Naukovyi_zvit_UA_v0_4_Atrybutsiia_kilets_kandydat_p18.png",
+        "blob": "a9c1caf489bd8ff25cd0ee373391bd55bab8da99",
+        "bytes": 203326
+      },
+      {
+        "path": "reports/G2/render_check_v0_4/Metakompozyt_G2_Naukovyi_zvit_UA_v0_4_Atrybutsiia_kilets_kandydat_p19.png",
+        "blob": "93378b84e2257c1ea008229d4a5d93064b3ff5c5",
+        "bytes": 195797
+      },
+      {
+        "path": "reports/G2/render_check_v0_4/Metakompozyt_G2_Naukovyi_zvit_UA_v0_4_Atrybutsiia_kilets_kandydat_p20.png",
+        "blob": "7d80b8e626441af71a0a1cc07bba2990fc30785e",
+        "bytes": 159785
+      },
+      {
+        "path": "reports/G2/render_check_v0_4/Metakompozyt_G2_Naukovyi_zvit_UA_v0_4_Atrybutsiia_kilets_kandydat_p21.png",
+        "blob": "3951b521ceced7cf1e6b414b782179b953267c3c",
+        "bytes": 204262
+      },
+      {
+        "path": "reports/G2/render_check_v0_4/Metakompozyt_G2_Naukovyi_zvit_UA_v0_4_Atrybutsiia_kilets_kandydat_p22.png",
+        "blob": "11c83f15bc7d29d58161b036928758af3bb0d3bb",
+        "bytes": 242452
+      },
+      {
+        "path": "reports/G2/render_check_v0_4/Metakompozyt_G2_Naukovyi_zvit_UA_v0_4_Atrybutsiia_kilets_kandydat_p23.png",
+        "blob": "8d80b0782665c07064e27d98904217fadc607021",
+        "bytes": 230356
+      },
+      {
+        "path": "reports/G2/render_check_v0_4/Metakompozyt_G2_Naukovyi_zvit_UA_v0_4_Atrybutsiia_kilets_kandydat_p24.png",
+        "blob": "878a02e2a77846081be0f4ce4867d3abc18e0700",
+        "bytes": 202261
+      },
+      {
+        "path": "reports/G2/render_check_v0_4/Metakompozyt_G2_Naukovyi_zvit_UA_v0_4_Atrybutsiia_kilets_kandydat_p25.png",
+        "blob": "a8a5dd6205b41e739bb858b6061559df23378106",
+        "bytes": 319524
+      },
+      {
+        "path": "reports/G2/render_check_v0_4/Metakompozyt_G2_Naukovyi_zvit_UA_v0_4_Atrybutsiia_kilets_kandydat_p26.png",
+        "blob": "56a8d5a5b40cd0635c0695d8319bf4abc37ec324",
+        "bytes": 332283
+      },
+      {
+        "path": "reports/G2/render_check_v0_4/Metakompozyt_G2_Naukovyi_zvit_UA_v0_4_Atrybutsiia_kilets_kandydat_p27.png",
+        "blob": "1597929f73a5dd14b5a72be615806cbb52d98f1a",
+        "bytes": 205186
+      },
+      {
+        "path": "reports/G2/render_check_v0_4/Metakompozyt_G2_Naukovyi_zvit_UA_v0_4_Atrybutsiia_kilets_kandydat_p28.png",
+        "blob": "ac615d2e720981e105e77e9236e586b28b5e6bec",
+        "bytes": 226138
+      },
+      {
+        "path": "reports/G2/render_check_v0_4/Metakompozyt_G2_Naukovyi_zvit_UA_v0_4_Atrybutsiia_kilets_kandydat_p29.png",
+        "blob": "723c02070e9f50baa7906cd9cf451b16b2bc9f9d",
+        "bytes": 115631
+      },
+      {
+        "path": "reports/G2/render_check_v0_4/Metakompozyt_G2_Naukovyi_zvit_UA_v0_4_Atrybutsiia_kilets_kandydat_p30.png",
+        "blob": "b6296a53cbc244de92d0e4e959c7e8947adc97de",
+        "bytes": 205957
+      },
+      {
+        "path": "reports/G2/render_check_v0_4/Metakompozyt_G2_Naukovyi_zvit_UA_v0_4_Atrybutsiia_kilets_kandydat_p31.png",
+        "blob": "41cc8b8d9c3f0e6ed4cfadad3483de9188e5b97e",
+        "bytes": 210769
+      },
+      {
+        "path": "reports/G2/render_check_v0_4/Metakompozyt_G2_Naukovyi_zvit_UA_v0_4_Atrybutsiia_kilets_kandydat_p32.png",
+        "blob": "3eaf14610b61a142fcef1063330a99ce102e8a82",
+        "bytes": 138524
+      },
+      {
+        "path": "reports/G2/render_check_v0_4/Metakompozyt_G2_Naukovyi_zvit_UA_v0_4_Atrybutsiia_kilets_kandydat_p33.png",
+        "blob": "37e67046a65e8fd016017a4e09c08182c16c995a",
+        "bytes": 174844
+      },
+      {
+        "path": "reports/G2/render_check_v0_4/Metakompozyt_G2_Naukovyi_zvit_UA_v0_4_Atrybutsiia_kilets_kandydat_p34.png",
+        "blob": "e538592e11da4572d57ab20ba8d54be569fa2a03",
+        "bytes": 146176
+      },
+      {
+        "path": "reports/G2/render_check_v0_4/Metakompozyt_G2_Naukovyi_zvit_UA_v0_4_Atrybutsiia_kilets_kandydat_p35.png",
+        "blob": "0423c539005cbc987b9da8dba5f57a9518ceeb54",
+        "bytes": 159525
+      },
+      {
+        "path": "reports/G2/render_check_v0_4/Metakompozyt_G2_Naukovyi_zvit_UA_v0_4_Atrybutsiia_kilets_kandydat_p36.png",
+        "blob": "1bf534714bd2f08ce0ba2970c60843020fd9f98b",
+        "bytes": 369734
+      },
+      {
+        "path": "reports/G2/render_check_v0_4/Metakompozyt_G2_Naukovyi_zvit_UA_v0_4_Atrybutsiia_kilets_kandydat_p37.png",
+        "blob": "a8ebd174cce617fa223ddfd1ea0f32fd0e4732dc",
+        "bytes": 215199
+      },
+      {
+        "path": "reports/G2/render_check_v0_4/Metakompozyt_G2_Naukovyi_zvit_UA_v0_4_Atrybutsiia_kilets_kandydat_p38.png",
+        "blob": "6307dd980933afde9e62ec32372be4263841ba4d",
+        "bytes": 185167
+      }
+    ]
+  },
+  {
+    "pr": 51,
+    "sha": "6699c544bbdb99d26a89a647f79b868a5488a96a",
+    "status": "COMPLETE",
+    "tree_entries": 933,
+    "files": [
+      {
+        "path": "matlab/g2/evidence/m2_20261121/report/m2_K_by_state.png",
+        "blob": "35660f221580a6b0b88bf6b3020e899b2c8be6bd",
+        "bytes": 76845
+      },
+      {
+        "path": "matlab/g2/evidence/m2_20261121/report/m2_R_vs_s.pdf",
+        "blob": "a4719b33f6dff2fda28893e46522bf6c6a69d09e",
+        "bytes": 4038
+      },
+      {
+        "path": "matlab/g2/evidence/m2_20261121/report/m2_R_vs_s.png",
+        "blob": "9d1abbf89b31bf9e0ef92586e569ddb1c4b9b5a0",
+        "bytes": 82841
+      },
+      {
+        "path": "matlab/g2/evidence/m2_20261121/report/m2_geometry_tips_bands.png",
+        "blob": "fb49bc96a3dcbf56520ce72b8222089d219acae7",
+        "bytes": 101178
+      },
+      {
+        "path": "matlab/g2/evidence/m2_20261121/report/m2_steering_mixity_G_compliance.pdf",
+        "blob": "09713199cbeacd188777379652da10710696105e",
+        "bytes": 12276
+      },
+      {
+        "path": "matlab/g2/evidence/m2_20261121/report/m2_steering_mixity_G_compliance.png",
+        "blob": "93ce181e5c8bfcad2e1a6a833a8e7bffef7419ba",
+        "bytes": 184870
+      },
+      {
+        "path": "matlab/g2/evidence/m3_20261121/report/m3_G_theta.png",
+        "blob": "81f121a19b0dd8d291ac3881d5900210082a7ffc",
+        "bytes": 144679
+      },
+      {
+        "path": "matlab/g2/evidence/m3_20261121/report/m3_paths_offsets.pdf",
+        "blob": "97eca5853c6a94b5ecab32cea13cb0d8f6706353",
+        "bytes": 7710
+      },
+      {
+        "path": "matlab/g2/evidence/m3_20261121/report/m3_paths_offsets.png",
+        "blob": "71410aa7f95ec6eccd4ff1a6c94689dfcddc0750",
+        "bytes": 123699
+      },
+      {
+        "path": "matlab/g2/evidence/m3_20261121/report/m3_phase_snapshot.png",
+        "blob": "29f44869834cc0754b7a9689c62e1a9c6ccb8530",
+        "bytes": 752480
+      },
+      {
+        "path": "matlab/g2/evidence/m3_20261121/report/m3_ratios.pdf",
+        "blob": "cc8265cc43b4bfbdbb3cfe5b2b44cc300f8623fd",
+        "bytes": 8775
+      },
+      {
+        "path": "matlab/g2/evidence/m3_20261121/report/m3_ratios.png",
+        "blob": "db11f9633e67fee569534ca12a6b1eeeded30deb",
+        "bytes": 118773
+      },
+      {
+        "path": "matlab/g2/evidence/m4_20261121/report/m4a_fig1_paths.png",
+        "blob": "18ac91166054680310a259d7bb6a9394d5858285",
+        "bytes": 147071
+      },
+      {
+        "path": "matlab/g2/evidence/m4_20261121/report/m4a_fig2_ratios.png",
+        "blob": "6c6f9ab67be4a3c2aed91250960cc8489b75e01e",
+        "bytes": 89860
+      },
+      {
+        "path": "matlab/g2/evidence/m4_20261121/report/m4a_fig3_interface_meshes.png",
+        "blob": "e315ebcee10ef6035968f140f91ae2296a0bc8f7",
+        "bytes": 395945
+      },
+      {
+        "path": "matlab/g2/evidence/m4_20261121/report/m4a_fig4_tip_q_support.png",
+        "blob": "21aaadc84d21e0e71d8b0ee2a2dcd0ccf0051c96",
+        "bytes": 539545
+      },
+      {
+        "path": "matlab/g2/evidence/m4_20261121/report/m4a_fig5_K.png",
+        "blob": "7eceef8606c9970a34fd8fb5e82d4954c7f8cfe7",
+        "bytes": 157239
+      },
+      {
+        "path": "matlab/g2/evidence/m4b_20261121/report/m4b_fig1_schematic.png",
+        "blob": "bea473a36bba89c90d07b6c82121eb006445e62d",
+        "bytes": 122229
+      },
+      {
+        "path": "matlab/g2/evidence/m4b_20261121/report/m4b_fig2_FG_Ftheta.png",
+        "blob": "15bab95768d0d2d7340dc8adb15e02a44478a6b4",
+        "bytes": 71613
+      },
+      {
+        "path": "matlab/g2/evidence/m4b_20261121/report/m4b_fig3_decomposition.png",
+        "blob": "d83df0296d79b5d709fe351b6861ef434decc693",
+        "bytes": 77878
+      },
+      {
+        "path": "matlab/g2/evidence/m4b_20261121/report/m4b_fig4_equal_area.png",
+        "blob": "54065e1e75ea6f7bd7e030fc8fc83f89c855d6b9",
+        "bytes": 136716
+      },
+      {
+        "path": "matlab/g2/evidence/m4b_20261121/report/m4b_fig5_energy_density.png",
+        "blob": "15c2b317040acb9be8eab1985a108793661d38f2",
+        "bytes": 525333
+      },
+      {
+        "path": "matlab/g2/evidence/m4b_r1_20261121/report/r1_g1_crossfamily_grey.png",
+        "blob": "77a816e3a2db1b9df0bc9f687f3f51d9b4670cd2",
+        "bytes": 79008
+      },
+      {
+        "path": "matlab/g2/evidence/m4b_r1_20261121/report/r1_g2_three_questions_grey.png",
+        "blob": "5fd3903aa07284b2dd7598868741a0d6084576c6",
+        "bytes": 126184
+      },
+      {
+        "path": "matlab/g2/evidence/m4b_r1_20261121/report/r1_g3_equal_area_grey.png",
+        "blob": "39ae62de1d2f74b2c57c35fb9021852b2d62e992",
+        "bytes": 119328
+      },
+      {
+        "path": "matlab/g2/evidence/m4b_r1_20261121/report/r1_g4_stress_global_grey.png",
+        "blob": "40453ad00f71e74ae2cdb07031c37391ce512dc3",
+        "bytes": 568874
+      },
+      {
+        "path": "matlab/g2/evidence/m4b_r1_20261121/report/r1_g4b_stress_local_grey.png",
+        "blob": "6e55e19aa086439cf3a24e549069e8710af94aed",
+        "bytes": 372263
+      },
+      {
+        "path": "matlab/g2/evidence/m4b_r1_20261121/report/r1_g5_energy_density_grey.png",
+        "blob": "b9a699dd6b0570c3a21dfa5ea8e113e3ddb9af6a",
+        "bytes": 462422
+      },
+      {
+        "path": "matlab/g2/evidence/m4b_r1_20261121/report/r1_g6_m4b_masks_grey.png",
+        "blob": "7c241fabce3b68035cf5a3a0ba0797a516eab5d4",
+        "bytes": 61272
+      },
+      {
+        "path": "matlab/g2/evidence/m4b_r1_20261121/report/r1_g7_m4b_decomposition_grey.png",
+        "blob": "e720812de357700bf3c816f3aede9acc92b8c6fb",
+        "bytes": 72709
+      },
+      {
+        "path": "matlab/g2/evidence/material_20261119/report/material_EDI_vs_COD.png",
+        "blob": "9d94749c05e732f175b65652535d71b98d39662b",
+        "bytes": 85059
+      },
+      {
+        "path": "matlab/g2/evidence/material_20261119/report/material_annulus_zoom.png",
+        "blob": "998d21092267937d5aec9bcf907788c696e5ab26",
+        "bytes": 429231
+      },
+      {
+        "path": "matlab/g2/evidence/material_20261119/report/material_benchmark_convergence.png",
+        "blob": "098012144d01ec6dce19fd14d980a2caed2b84ee",
+        "bytes": 87088
+      },
+      {
+        "path": "matlab/g2/evidence/material_20261119/report/material_interface_tractions.png",
+        "blob": "7fa2011e331bbdd661e889b38341188247652cb1",
+        "bytes": 204483
+      },
+      {
+        "path": "matlab/g2/evidence/material_20261119/report/material_phase_map.pdf",
+        "blob": "6f8612048b6b316d81bc71013ab66d6e4e7d3dbe",
+        "bytes": 887932
+      },
+      {
+        "path": "matlab/g2/evidence/material_20261119/report/material_phase_map.png",
+        "blob": "d424e19d575415b2a1218054c2c4f089218c1762",
+        "bytes": 948236
+      },
+      {
+        "path": "matlab/g2/evidence/material_20261119/report/material_ratios.pdf",
+        "blob": "1a139cab4cf9ddefbce6cd0445206f92900d4296",
+        "bytes": 11535
+      },
+      {
+        "path": "matlab/g2/evidence/material_20261119/report/material_ratios.png",
+        "blob": "934850f1ebd8ba01bad3762874351918449f37b1",
+        "bytes": 146875
+      },
+      {
+        "path": "matlab/g2/evidence/p010_isolated_run_20261118_162823_323/p010_inner_tip_zoom.png",
+        "blob": "49f7ba02abb1ea9ac003c2425aa370651ebc649d",
+        "bytes": 304278
+      },
+      {
+        "path": "matlab/g2/evidence/p010_isolated_run_20261118_162823_323/p010_regular_core_and_collar.png",
+        "blob": "a4e87eab0636da637b412125c5d6f978f87abfc3",
+        "bytes": 294927
+      },
+      {
+        "path": "matlab/g2/evidence/wp1_20261118/mesh_run_20261118_163717_510/protected_full_mesh.png",
+        "blob": "4dcaec949bc6eb5fa28db34f6c31252fcd1eef0d",
+        "bytes": 736415
+      },
+      {
+        "path": "matlab/g2/evidence/wp1_20261118/mesh_run_20261118_163717_510/protected_tip_seams_q.png",
+        "blob": "053b8e23a2a3289783d13ceb371d5407dbce711c",
+        "bytes": 690556
+      },
+      {
+        "path": "matlab/g2/evidence/wp2_20261118/cornell_run_20261118_170047_650/cornell_K_vs_annulus.png",
+        "blob": "d1d133bc316fdd98a9e7952e1b0cdab0d8a351f7",
+        "bytes": 83738
+      },
+      {
+        "path": "matlab/g2/evidence/wp2_20261118/cornell_run_20261118_170047_650/cornell_cod_extrapolation.png",
+        "blob": "f0400350fd345291518624e5ccbdeb0c464a5e88",
+        "bytes": 82279
+      },
+      {
+        "path": "matlab/g2/evidence/wp2_20261118/mesh_famA_run_20261118_165922_343/protected_full_mesh.png",
+        "blob": "fb331e4c7471339cf16ec13175d4a3fcb766ca41",
+        "bytes": 780777
+      },
+      {
+        "path": "matlab/g2/evidence/wp2_20261118/mesh_famA_run_20261118_165922_343/protected_tip_seams_q.png",
+        "blob": "95d9c9fc535718db6d40110fdd13c69b44a12245",
+        "bytes": 701413
+      },
+      {
+        "path": "matlab/g2/evidence/wp2_20261118/mesh_famB_run_20261118_165941_636/protected_full_mesh.png",
+        "blob": "b4ef6f80d01eaa29244676aeb8ec88f4691836ed",
+        "bytes": 896693
+      },
+      {
+        "path": "matlab/g2/evidence/wp34_20261118/state2_report/state2_K_vs_annulus.png",
+        "blob": "31ae99d02eb1a94cabea2710be8116cca5bce45e",
+        "bytes": 83354
+      },
+      {
+        "path": "matlab/g2/evidence/wp34_20261118/state2_report/state2_full_mesh.png",
+        "blob": "1d7cca76ffb670f0e350a06e6da532c0cf08fb82",
+        "bytes": 829694
+      },
+      {
+        "path": "matlab/g2/evidence/wp34_20261118/state2_report/state2_trajectory.png",
+        "blob": "bef6ef8c508290b129c8b04fa3e53b8583614ce9",
+        "bytes": 46614
+      },
+      {
+        "path": "matlab/g2/evidence/wp34_20261118/state2_report/state2_two_kink_zoom.pdf",
+        "blob": "61c08a5b6e8cf7878406a7018de483a68ac5f1c1",
+        "bytes": 66075
+      },
+      {
+        "path": "matlab/g2/evidence/wp34_20261118/state2_report/state2_two_kink_zoom.png",
+        "blob": "c6b21ba1b7009e673019b6091c081c4d5af5f3d3",
+        "bytes": 678940
+      },
+      {
+        "path": "matlab/g2/evidence/wp3_20261118/g2_wp3_kinked_mesh_run_20261118_183545_651_famA/kinked_full_mesh.png",
+        "blob": "d2b52d9b858226d0a10f93fd45f26c109fb4f086",
+        "bytes": 784685
+      },
+      {
+        "path": "matlab/g2/evidence/wp3_20261118/g2_wp3_kinked_mesh_run_20261118_183545_651_famA/kinked_kink_vertex_zoom.png",
+        "blob": "00b1f5ee31d2dff66863e5f9601ece63a35fcc21",
+        "bytes": 175241
+      },
+      {
+        "path": "matlab/g2/evidence/wp3_20261118/g2_wp3_kinked_mesh_run_20261118_183545_651_famA/kinked_rotated_core_seams_q.pdf",
+        "blob": "00929717770e325b12dab11ed2f556b7c60222fa",
+        "bytes": 170934
+      },
+      {
+        "path": "matlab/g2/evidence/wp3_20261118/g2_wp3_kinked_mesh_run_20261118_183545_651_famA/kinked_rotated_core_seams_q.png",
+        "blob": "bc16bf31af9978101da786030a866dd922569ac1",
+        "bytes": 705333
+      },
+      {
+        "path": "matlab/g2/evidence/wp3_20261118/g2_wp3_kinked_mesh_run_20261118_184040_732_famA_mirror/kinked_full_mesh.png",
+        "blob": "98e1ba7f28e4cc63bf7ad3dcc064a701b3192b8b",
+        "bytes": 782714
+      },
+      {
+        "path": "matlab/g2/evidence/wp3_20261118/g2_wp3_kinked_mesh_run_20261118_184040_732_famA_mirror/kinked_kink_vertex_zoom.png",
+        "blob": "b473454553f7fcb387a6fade50f94883e599b13b",
+        "bytes": 174703
+      },
+      {
+        "path": "matlab/g2/evidence/wp3_20261118/g2_wp3_kinked_mesh_run_20261118_184040_732_famA_mirror/kinked_rotated_core_seams_q.pdf",
+        "blob": "a7f2b1712584dafdea8e23e2e4da1b05f2aae4f9",
+        "bytes": 170403
+      },
+      {
+        "path": "matlab/g2/evidence/wp3_20261118/g2_wp3_kinked_mesh_run_20261118_184040_732_famA_mirror/kinked_rotated_core_seams_q.png",
+        "blob": "d1e22b127138c807b79bbba442b5155500e45c29",
+        "bytes": 709656
+      },
+      {
+        "path": "matlab/g2/evidence/wp3_20261118/g2_wp3_kinked_mesh_run_20261118_184957_278_famB/kinked_full_mesh.png",
+        "blob": "dcce2a216c6937e4cfac90dc6559c6a930e01b1e",
+        "bytes": 904176
+      },
+      {
+        "path": "matlab/g2/evidence/wp3_20261118/g2_wp3_kinked_mesh_run_20261118_184957_278_famB/kinked_kink_vertex_zoom.png",
+        "blob": "ce1cdb869884937661af05fba3df2e3385af430c",
+        "bytes": 186377
+      },
+      {
+        "path": "matlab/g2/evidence/wp3_20261118/g2_wp3_kinked_mesh_run_20261118_184957_278_famB/kinked_rotated_core_seams_q.pdf",
+        "blob": "c6e91cf9490493222e3905a20983e64676b024bd",
+        "bytes": 171409
+      },
+      {
+        "path": "matlab/g2/evidence/wp3_20261118/g2_wp3_kinked_mesh_run_20261118_184957_278_famB/kinked_rotated_core_seams_q.png",
+        "blob": "de056e497f89d8e2aa9ad53888f70989b1745478",
+        "bytes": 706598
+      },
+      {
+        "path": "matlab/g2/evidence/wp3_20261118/g2_wp3_kinked_sif_run_20261118_185423_469/kinked_K_vs_annulus.png",
+        "blob": "9674a415080fd377d3f40b406171a660937a8cf4",
+        "bytes": 78694
+      },
+      {
+        "path": "matlab/g2/evidence/wp3_20261118/g2_wp3_kinked_sif_run_20261118_185423_469/kinked_cod_extrapolation.png",
+        "blob": "4ffd9edba705b881e46543d979e5ad8c5740bc9b",
+        "bytes": 82167
+      },
+      {
+        "path": "reports/G2/proposals/render_check/Metakompozyt_G2_M4A_proponovani_dopovnennia_UA.pdf",
+        "blob": "698002434034e8d793a063611fd70cd3fb61cf68",
+        "bytes": 1626392
+      },
+      {
+        "path": "reports/G2/proposals/render_check/p01.png",
+        "blob": "cd3e71544126285647dc9eb0207fbfd2c4513d7d",
+        "bytes": 239733
+      },
+      {
+        "path": "reports/G2/proposals/render_check/p02.png",
+        "blob": "4d4d70a69447875f90a8b4c3270c3a3e476734fb",
+        "bytes": 220078
+      },
+      {
+        "path": "reports/G2/proposals/render_check/p03.png",
+        "blob": "bd2d44ee4fe8bc9ff4f14c4264fd4b80fac100d7",
+        "bytes": 354705
+      },
+      {
+        "path": "reports/G2/proposals/render_check/p04.png",
+        "blob": "6e13dd701ac858a7a320e75a62c04e4659237b40",
+        "bytes": 216697
+      },
+      {
+        "path": "reports/G2/proposals/render_check/p05.png",
+        "blob": "4d1edaae7b3238baf4791bd804929a01dce8d528",
+        "bytes": 357665
+      },
+      {
+        "path": "reports/G2/proposals/render_check/p06.png",
+        "blob": "e62c14e67f37abe4ff41f3a3a991e2f5ba9cbecf",
+        "bytes": 248005
+      },
+      {
+        "path": "reports/G2/proposals/render_check/p07.png",
+        "blob": "ad75f1e2ce4e922d88711cd74fbed18ad55f604d",
+        "bytes": 234216
+      },
+      {
+        "path": "reports/G2/proposals/render_check/p08.png",
+        "blob": "06b88611e543685583d9fe907e2a9b00f83c541a",
+        "bytes": 226629
+      },
+      {
+        "path": "reports/G2/proposals/render_check_r1/Metakompozyt_G2_M4B_R1_proponovani_dopovnennia_UA.pdf",
+        "blob": "2f15251579c7a11ff2f1ec2f0ce87ff2e109a1f9",
+        "bytes": 1602233
+      },
+      {
+        "path": "reports/G2/proposals/render_check_r1/Metakompozyt_G2_M4B_R1_proponovani_dopovnennia_UA_p01.png",
+        "blob": "5dcb2ec0e33c27da383f762931dc59088a3fd609",
+        "bytes": 183736
+      },
+      {
+        "path": "reports/G2/proposals/render_check_r1/Metakompozyt_G2_M4B_R1_proponovani_dopovnennia_UA_p02.png",
+        "blob": "5fe488b414759a956f614cc26f85d72f3c872b44",
+        "bytes": 267709
+      },
+      {
+        "path": "reports/G2/proposals/render_check_r1/Metakompozyt_G2_M4B_R1_proponovani_dopovnennia_UA_p03.png",
+        "blob": "fafe4aa95dc86f4d45b0e9345fcaec52823f8ea4",
+        "bytes": 186991
+      },
+      {
+        "path": "reports/G2/proposals/render_check_r1/Metakompozyt_G2_M4B_R1_proponovani_dopovnennia_UA_p04.png",
+        "blob": "51107acab2d2f0df6eff7d8738aae26ce7501e3d",
+        "bytes": 186321
+      },
+      {
+        "path": "reports/G2/proposals/render_check_r1/Metakompozyt_G2_M4B_R1_proponovani_dopovnennia_UA_p05.png",
+        "blob": "ac4f03c775a3cfb11a2f1294cdcd7d48de5ee5d7",
+        "bytes": 98423
+      },
+      {
+        "path": "reports/G2/proposals/render_check_r1/Metakompozyt_G2_M4B_R1_proponovani_dopovnennia_UA_p06.png",
+        "blob": "6fedfe6d37388f47def5f019951694fdd5675610",
+        "bytes": 255011
+      },
+      {
+        "path": "reports/G2/proposals/render_check_r1/Metakompozyt_G2_M4B_R1_proponovani_dopovnennia_UA_p07.png",
+        "blob": "c9e8a89a5681f211c82688bd5abb696a73d350d8",
+        "bytes": 354149
+      },
+      {
+        "path": "reports/G2/proposals/render_check_r1/Metakompozyt_G2_M4B_R1_proponovani_dopovnennia_UA_p08.png",
+        "blob": "8d38f2077c51f64e16cd83a7e99a70869f78c939",
+        "bytes": 155840
+      },
+      {
+        "path": "reports/G2/proposals/render_check_r1/Metakompozyt_G2_M4B_R1_proponovani_dopovnennia_UA_p09.png",
+        "blob": "f9da4e731fe3f4a5690b64cdec6afda0b9827f2b",
+        "bytes": 102404
+      },
+      {
+        "path": "reports/G2/render_check_v0_4/Metakompozyt_G2_Naukovyi_zvit_UA_v0_4_Atrybutsiia_kilets_kandydat.pdf",
+        "blob": "ce7bcd1984edd58f709a057f28ded464101142e5",
+        "bytes": 3443172
+      },
+      {
+        "path": "reports/G2/render_check_v0_4/Metakompozyt_G2_Naukovyi_zvit_UA_v0_4_Atrybutsiia_kilets_kandydat_p01.png",
+        "blob": "937feb1d3135d538b133b7dc6b127cb279e9e92e",
+        "bytes": 133297
+      },
+      {
+        "path": "reports/G2/render_check_v0_4/Metakompozyt_G2_Naukovyi_zvit_UA_v0_4_Atrybutsiia_kilets_kandydat_p02.png",
+        "blob": "e42eab5a77bb52c3a402a4fd7eeb689014a045c9",
+        "bytes": 239540
+      },
+      {
+        "path": "reports/G2/render_check_v0_4/Metakompozyt_G2_Naukovyi_zvit_UA_v0_4_Atrybutsiia_kilets_kandydat_p03.png",
+        "blob": "2333e89af65b95cf950b8523d218144640c35a2d",
+        "bytes": 209806
+      },
+      {
+        "path": "reports/G2/render_check_v0_4/Metakompozyt_G2_Naukovyi_zvit_UA_v0_4_Atrybutsiia_kilets_kandydat_p04.png",
+        "blob": "4af93bcae505e7bbca15e14ba40d88f93f27562b",
+        "bytes": 209771
+      },
+      {
+        "path": "reports/G2/render_check_v0_4/Metakompozyt_G2_Naukovyi_zvit_UA_v0_4_Atrybutsiia_kilets_kandydat_p05.png",
+        "blob": "dc63603bc6312ffe9b252f13cafc920816f02721",
+        "bytes": 234316
+      },
+      {
+        "path": "reports/G2/render_check_v0_4/Metakompozyt_G2_Naukovyi_zvit_UA_v0_4_Atrybutsiia_kilets_kandydat_p06.png",
+        "blob": "7f3c9c1acde35345eef821cd9de9ee1e5f831b56",
+        "bytes": 204897
+      },
+      {
+        "path": "reports/G2/render_check_v0_4/Metakompozyt_G2_Naukovyi_zvit_UA_v0_4_Atrybutsiia_kilets_kandydat_p07.png",
+        "blob": "883cc1df2d963bf855bab3d8a1e55f508029e5f1",
+        "bytes": 208908
+      },
+      {
+        "path": "reports/G2/render_check_v0_4/Metakompozyt_G2_Naukovyi_zvit_UA_v0_4_Atrybutsiia_kilets_kandydat_p08.png",
+        "blob": "b506abcc44b91be5ec8896393fe9cd913efc94e4",
+        "bytes": 158156
+      },
+      {
+        "path": "reports/G2/render_check_v0_4/Metakompozyt_G2_Naukovyi_zvit_UA_v0_4_Atrybutsiia_kilets_kandydat_p09.png",
+        "blob": "9ddc35f654ddf8ed7229c1efac1dc987a442db49",
+        "bytes": 173553
+      },
+      {
+        "path": "reports/G2/render_check_v0_4/Metakompozyt_G2_Naukovyi_zvit_UA_v0_4_Atrybutsiia_kilets_kandydat_p10.png",
+        "blob": "b05b5d25784e163a9025f403dadc5f3da50b2385",
+        "bytes": 175881
+      },
+      {
+        "path": "reports/G2/render_check_v0_4/Metakompozyt_G2_Naukovyi_zvit_UA_v0_4_Atrybutsiia_kilets_kandydat_p11.png",
+        "blob": "b5071d966fe38404a83717295f3bc1abb025afdc",
+        "bytes": 169456
+      },
+      {
+        "path": "reports/G2/render_check_v0_4/Metakompozyt_G2_Naukovyi_zvit_UA_v0_4_Atrybutsiia_kilets_kandydat_p12.png",
+        "blob": "225c07eda7328845b5e17d7dca6289a985699f76",
+        "bytes": 196173
+      },
+      {
+        "path": "reports/G2/render_check_v0_4/Metakompozyt_G2_Naukovyi_zvit_UA_v0_4_Atrybutsiia_kilets_kandydat_p13.png",
+        "blob": "b4fed530979e49e4de1988c08c361e500e671fa2",
+        "bytes": 240725
+      },
+      {
+        "path": "reports/G2/render_check_v0_4/Metakompozyt_G2_Naukovyi_zvit_UA_v0_4_Atrybutsiia_kilets_kandydat_p14.png",
+        "blob": "e6fbd5ef9f258b104da8447cd58bea1729a0a7cb",
+        "bytes": 224829
+      },
+      {
+        "path": "reports/G2/render_check_v0_4/Metakompozyt_G2_Naukovyi_zvit_UA_v0_4_Atrybutsiia_kilets_kandydat_p15.png",
+        "blob": "1cdf973cc55601fdc009c54ce4ed1e0e6523ba68",
+        "bytes": 205428
+      },
+      {
+        "path": "reports/G2/render_check_v0_4/Metakompozyt_G2_Naukovyi_zvit_UA_v0_4_Atrybutsiia_kilets_kandydat_p16.png",
+        "blob": "ced09befc841a44f464c54c1ed10a4d3d88a0443",
+        "bytes": 208186
+      },
+      {
+        "path": "reports/G2/render_check_v0_4/Metakompozyt_G2_Naukovyi_zvit_UA_v0_4_Atrybutsiia_kilets_kandydat_p17.png",
+        "blob": "6c40a54b201a08487c67a946196e9215b26b5c31",
+        "bytes": 100372
+      },
+      {
+        "path": "reports/G2/render_check_v0_4/Metakompozyt_G2_Naukovyi_zvit_UA_v0_4_Atrybutsiia_kilets_kandydat_p18.png",
+        "blob": "a9c1caf489bd8ff25cd0ee373391bd55bab8da99",
+        "bytes": 203326
+      },
+      {
+        "path": "reports/G2/render_check_v0_4/Metakompozyt_G2_Naukovyi_zvit_UA_v0_4_Atrybutsiia_kilets_kandydat_p19.png",
+        "blob": "93378b84e2257c1ea008229d4a5d93064b3ff5c5",
+        "bytes": 195797
+      },
+      {
+        "path": "reports/G2/render_check_v0_4/Metakompozyt_G2_Naukovyi_zvit_UA_v0_4_Atrybutsiia_kilets_kandydat_p20.png",
+        "blob": "7d80b8e626441af71a0a1cc07bba2990fc30785e",
+        "bytes": 159785
+      },
+      {
+        "path": "reports/G2/render_check_v0_4/Metakompozyt_G2_Naukovyi_zvit_UA_v0_4_Atrybutsiia_kilets_kandydat_p21.png",
+        "blob": "3951b521ceced7cf1e6b414b782179b953267c3c",
+        "bytes": 204262
+      },
+      {
+        "path": "reports/G2/render_check_v0_4/Metakompozyt_G2_Naukovyi_zvit_UA_v0_4_Atrybutsiia_kilets_kandydat_p22.png",
+        "blob": "11c83f15bc7d29d58161b036928758af3bb0d3bb",
+        "bytes": 242452
+      },
+      {
+        "path": "reports/G2/render_check_v0_4/Metakompozyt_G2_Naukovyi_zvit_UA_v0_4_Atrybutsiia_kilets_kandydat_p23.png",
+        "blob": "8d80b0782665c07064e27d98904217fadc607021",
+        "bytes": 230356
+      },
+      {
+        "path": "reports/G2/render_check_v0_4/Metakompozyt_G2_Naukovyi_zvit_UA_v0_4_Atrybutsiia_kilets_kandydat_p24.png",
+        "blob": "878a02e2a77846081be0f4ce4867d3abc18e0700",
+        "bytes": 202261
+      },
+      {
+        "path": "reports/G2/render_check_v0_4/Metakompozyt_G2_Naukovyi_zvit_UA_v0_4_Atrybutsiia_kilets_kandydat_p25.png",
+        "blob": "a8a5dd6205b41e739bb858b6061559df23378106",
+        "bytes": 319524
+      },
+      {
+        "path": "reports/G2/render_check_v0_4/Metakompozyt_G2_Naukovyi_zvit_UA_v0_4_Atrybutsiia_kilets_kandydat_p26.png",
+        "blob": "56a8d5a5b40cd0635c0695d8319bf4abc37ec324",
+        "bytes": 332283
+      },
+      {
+        "path": "reports/G2/render_check_v0_4/Metakompozyt_G2_Naukovyi_zvit_UA_v0_4_Atrybutsiia_kilets_kandydat_p27.png",
+        "blob": "1597929f73a5dd14b5a72be615806cbb52d98f1a",
+        "bytes": 205186
+      },
+      {
+        "path": "reports/G2/render_check_v0_4/Metakompozyt_G2_Naukovyi_zvit_UA_v0_4_Atrybutsiia_kilets_kandydat_p28.png",
+        "blob": "ac615d2e720981e105e77e9236e586b28b5e6bec",
+        "bytes": 226138
+      },
+      {
+        "path": "reports/G2/render_check_v0_4/Metakompozyt_G2_Naukovyi_zvit_UA_v0_4_Atrybutsiia_kilets_kandydat_p29.png",
+        "blob": "723c02070e9f50baa7906cd9cf451b16b2bc9f9d",
+        "bytes": 115631
+      },
+      {
+        "path": "reports/G2/render_check_v0_4/Metakompozyt_G2_Naukovyi_zvit_UA_v0_4_Atrybutsiia_kilets_kandydat_p30.png",
+        "blob": "b6296a53cbc244de92d0e4e959c7e8947adc97de",
+        "bytes": 205957
+      },
+      {
+        "path": "reports/G2/render_check_v0_4/Metakompozyt_G2_Naukovyi_zvit_UA_v0_4_Atrybutsiia_kilets_kandydat_p31.png",
+        "blob": "41cc8b8d9c3f0e6ed4cfadad3483de9188e5b97e",
+        "bytes": 210769
+      },
+      {
+        "path": "reports/G2/render_check_v0_4/Metakompozyt_G2_Naukovyi_zvit_UA_v0_4_Atrybutsiia_kilets_kandydat_p32.png",
+        "blob": "3eaf14610b61a142fcef1063330a99ce102e8a82",
+        "bytes": 138524
+      },
+      {
+        "path": "reports/G2/render_check_v0_4/Metakompozyt_G2_Naukovyi_zvit_UA_v0_4_Atrybutsiia_kilets_kandydat_p33.png",
+        "blob": "37e67046a65e8fd016017a4e09c08182c16c995a",
+        "bytes": 174844
+      },
+      {
+        "path": "reports/G2/render_check_v0_4/Metakompozyt_G2_Naukovyi_zvit_UA_v0_4_Atrybutsiia_kilets_kandydat_p34.png",
+        "blob": "e538592e11da4572d57ab20ba8d54be569fa2a03",
+        "bytes": 146176
+      },
+      {
+        "path": "reports/G2/render_check_v0_4/Metakompozyt_G2_Naukovyi_zvit_UA_v0_4_Atrybutsiia_kilets_kandydat_p35.png",
+        "blob": "0423c539005cbc987b9da8dba5f57a9518ceeb54",
+        "bytes": 159525
+      },
+      {
+        "path": "reports/G2/render_check_v0_4/Metakompozyt_G2_Naukovyi_zvit_UA_v0_4_Atrybutsiia_kilets_kandydat_p36.png",
+        "blob": "1bf534714bd2f08ce0ba2970c60843020fd9f98b",
+        "bytes": 369734
+      },
+      {
+        "path": "reports/G2/render_check_v0_4/Metakompozyt_G2_Naukovyi_zvit_UA_v0_4_Atrybutsiia_kilets_kandydat_p37.png",
+        "blob": "a8ebd174cce617fa223ddfd1ea0f32fd0e4732dc",
+        "bytes": 215199
+      },
+      {
+        "path": "reports/G2/render_check_v0_4/Metakompozyt_G2_Naukovyi_zvit_UA_v0_4_Atrybutsiia_kilets_kandydat_p38.png",
+        "blob": "6307dd980933afde9e62ec32372be4263841ba4d",
+        "bytes": 185167
+      }
+    ]
+  },
+  {
+    "pr": 55,
+    "sha": "70bf6f4baf9f4963380120964f6aaec04e65a349",
+    "status": "COMPLETE",
+    "tree_entries": 1025,
+    "files": [
+      {
+        "path": "matlab/g2/evidence/m2_20261121/report/m2_K_by_state.png",
+        "blob": "35660f221580a6b0b88bf6b3020e899b2c8be6bd",
+        "bytes": 76845
+      },
+      {
+        "path": "matlab/g2/evidence/m2_20261121/report/m2_R_vs_s.pdf",
+        "blob": "a4719b33f6dff2fda28893e46522bf6c6a69d09e",
+        "bytes": 4038
+      },
+      {
+        "path": "matlab/g2/evidence/m2_20261121/report/m2_R_vs_s.png",
+        "blob": "9d1abbf89b31bf9e0ef92586e569ddb1c4b9b5a0",
+        "bytes": 82841
+      },
+      {
+        "path": "matlab/g2/evidence/m2_20261121/report/m2_geometry_tips_bands.png",
+        "blob": "fb49bc96a3dcbf56520ce72b8222089d219acae7",
+        "bytes": 101178
+      },
+      {
+        "path": "matlab/g2/evidence/m2_20261121/report/m2_steering_mixity_G_compliance.pdf",
+        "blob": "09713199cbeacd188777379652da10710696105e",
+        "bytes": 12276
+      },
+      {
+        "path": "matlab/g2/evidence/m2_20261121/report/m2_steering_mixity_G_compliance.png",
+        "blob": "93ce181e5c8bfcad2e1a6a833a8e7bffef7419ba",
+        "bytes": 184870
+      },
+      {
+        "path": "matlab/g2/evidence/m3_20261121/report/m3_G_theta.png",
+        "blob": "81f121a19b0dd8d291ac3881d5900210082a7ffc",
+        "bytes": 144679
+      },
+      {
+        "path": "matlab/g2/evidence/m3_20261121/report/m3_paths_offsets.pdf",
+        "blob": "97eca5853c6a94b5ecab32cea13cb0d8f6706353",
+        "bytes": 7710
+      },
+      {
+        "path": "matlab/g2/evidence/m3_20261121/report/m3_paths_offsets.png",
+        "blob": "71410aa7f95ec6eccd4ff1a6c94689dfcddc0750",
+        "bytes": 123699
+      },
+      {
+        "path": "matlab/g2/evidence/m3_20261121/report/m3_phase_snapshot.png",
+        "blob": "29f44869834cc0754b7a9689c62e1a9c6ccb8530",
+        "bytes": 752480
+      },
+      {
+        "path": "matlab/g2/evidence/m3_20261121/report/m3_ratios.pdf",
+        "blob": "cc8265cc43b4bfbdbb3cfe5b2b44cc300f8623fd",
+        "bytes": 8775
+      },
+      {
+        "path": "matlab/g2/evidence/m3_20261121/report/m3_ratios.png",
+        "blob": "db11f9633e67fee569534ca12a6b1eeeded30deb",
+        "bytes": 118773
+      },
+      {
+        "path": "matlab/g2/evidence/m4_20261121/report/m4a_fig1_paths.png",
+        "blob": "18ac91166054680310a259d7bb6a9394d5858285",
+        "bytes": 147071
+      },
+      {
+        "path": "matlab/g2/evidence/m4_20261121/report/m4a_fig2_ratios.png",
+        "blob": "6c6f9ab67be4a3c2aed91250960cc8489b75e01e",
+        "bytes": 89860
+      },
+      {
+        "path": "matlab/g2/evidence/m4_20261121/report/m4a_fig3_interface_meshes.png",
+        "blob": "e315ebcee10ef6035968f140f91ae2296a0bc8f7",
+        "bytes": 395945
+      },
+      {
+        "path": "matlab/g2/evidence/m4_20261121/report/m4a_fig4_tip_q_support.png",
+        "blob": "21aaadc84d21e0e71d8b0ee2a2dcd0ccf0051c96",
+        "bytes": 539545
+      },
+      {
+        "path": "matlab/g2/evidence/m4_20261121/report/m4a_fig5_K.png",
+        "blob": "7eceef8606c9970a34fd8fb5e82d4954c7f8cfe7",
+        "bytes": 157239
+      },
+      {
+        "path": "matlab/g2/evidence/m4b_20261121/report/m4b_fig1_schematic.png",
+        "blob": "bea473a36bba89c90d07b6c82121eb006445e62d",
+        "bytes": 122229
+      },
+      {
+        "path": "matlab/g2/evidence/m4b_20261121/report/m4b_fig2_FG_Ftheta.png",
+        "blob": "15bab95768d0d2d7340dc8adb15e02a44478a6b4",
+        "bytes": 71613
+      },
+      {
+        "path": "matlab/g2/evidence/m4b_20261121/report/m4b_fig3_decomposition.png",
+        "blob": "d83df0296d79b5d709fe351b6861ef434decc693",
+        "bytes": 77878
+      },
+      {
+        "path": "matlab/g2/evidence/m4b_20261121/report/m4b_fig4_equal_area.png",
+        "blob": "54065e1e75ea6f7bd7e030fc8fc83f89c855d6b9",
+        "bytes": 136716
+      },
+      {
+        "path": "matlab/g2/evidence/m4b_20261121/report/m4b_fig5_energy_density.png",
+        "blob": "15c2b317040acb9be8eab1985a108793661d38f2",
+        "bytes": 525333
+      },
+      {
+        "path": "matlab/g2/evidence/m4b_r1_20261121/report/r1_g1_crossfamily_grey.png",
+        "blob": "77a816e3a2db1b9df0bc9f687f3f51d9b4670cd2",
+        "bytes": 79008
+      },
+      {
+        "path": "matlab/g2/evidence/m4b_r1_20261121/report/r1_g2_three_questions_grey.png",
+        "blob": "5fd3903aa07284b2dd7598868741a0d6084576c6",
+        "bytes": 126184
+      },
+      {
+        "path": "matlab/g2/evidence/m4b_r1_20261121/report/r1_g3_equal_area_grey.png",
+        "blob": "39ae62de1d2f74b2c57c35fb9021852b2d62e992",
+        "bytes": 119328
+      },
+      {
+        "path": "matlab/g2/evidence/m4b_r1_20261121/report/r1_g4_stress_global_grey.png",
+        "blob": "40453ad00f71e74ae2cdb07031c37391ce512dc3",
+        "bytes": 568874
+      },
+      {
+        "path": "matlab/g2/evidence/m4b_r1_20261121/report/r1_g4b_stress_local_grey.png",
+        "blob": "6e55e19aa086439cf3a24e549069e8710af94aed",
+        "bytes": 372263
+      },
+      {
+        "path": "matlab/g2/evidence/m4b_r1_20261121/report/r1_g5_energy_density_grey.png",
+        "blob": "b9a699dd6b0570c3a21dfa5ea8e113e3ddb9af6a",
+        "bytes": 462422
+      },
+      {
+        "path": "matlab/g2/evidence/m4b_r1_20261121/report/r1_g6_m4b_masks_grey.png",
+        "blob": "7c241fabce3b68035cf5a3a0ba0797a516eab5d4",
+        "bytes": 61272
+      },
+      {
+        "path": "matlab/g2/evidence/m4b_r1_20261121/report/r1_g7_m4b_decomposition_grey.png",
+        "blob": "e720812de357700bf3c816f3aede9acc92b8c6fb",
+        "bytes": 72709
+      },
+      {
+        "path": "matlab/g2/evidence/material_20261119/report/material_EDI_vs_COD.png",
+        "blob": "9d94749c05e732f175b65652535d71b98d39662b",
+        "bytes": 85059
+      },
+      {
+        "path": "matlab/g2/evidence/material_20261119/report/material_annulus_zoom.png",
+        "blob": "998d21092267937d5aec9bcf907788c696e5ab26",
+        "bytes": 429231
+      },
+      {
+        "path": "matlab/g2/evidence/material_20261119/report/material_benchmark_convergence.png",
+        "blob": "098012144d01ec6dce19fd14d980a2caed2b84ee",
+        "bytes": 87088
+      },
+      {
+        "path": "matlab/g2/evidence/material_20261119/report/material_interface_tractions.png",
+        "blob": "7fa2011e331bbdd661e889b38341188247652cb1",
+        "bytes": 204483
+      },
+      {
+        "path": "matlab/g2/evidence/material_20261119/report/material_phase_map.pdf",
+        "blob": "6f8612048b6b316d81bc71013ab66d6e4e7d3dbe",
+        "bytes": 887932
+      },
+      {
+        "path": "matlab/g2/evidence/material_20261119/report/material_phase_map.png",
+        "blob": "d424e19d575415b2a1218054c2c4f089218c1762",
+        "bytes": 948236
+      },
+      {
+        "path": "matlab/g2/evidence/material_20261119/report/material_ratios.pdf",
+        "blob": "1a139cab4cf9ddefbce6cd0445206f92900d4296",
+        "bytes": 11535
+      },
+      {
+        "path": "matlab/g2/evidence/material_20261119/report/material_ratios.png",
+        "blob": "934850f1ebd8ba01bad3762874351918449f37b1",
+        "bytes": 146875
+      },
+      {
+        "path": "matlab/g2/evidence/p010_isolated_run_20261118_162823_323/p010_inner_tip_zoom.png",
+        "blob": "49f7ba02abb1ea9ac003c2425aa370651ebc649d",
+        "bytes": 304278
+      },
+      {
+        "path": "matlab/g2/evidence/p010_isolated_run_20261118_162823_323/p010_regular_core_and_collar.png",
+        "blob": "a4e87eab0636da637b412125c5d6f978f87abfc3",
+        "bytes": 294927
+      },
+      {
+        "path": "matlab/g2/evidence/wp1_20261118/mesh_run_20261118_163717_510/protected_full_mesh.png",
+        "blob": "4dcaec949bc6eb5fa28db34f6c31252fcd1eef0d",
+        "bytes": 736415
+      },
+      {
+        "path": "matlab/g2/evidence/wp1_20261118/mesh_run_20261118_163717_510/protected_tip_seams_q.png",
+        "blob": "053b8e23a2a3289783d13ceb371d5407dbce711c",
+        "bytes": 690556
+      },
+      {
+        "path": "matlab/g2/evidence/wp2_20261118/cornell_run_20261118_170047_650/cornell_K_vs_annulus.png",
+        "blob": "d1d133bc316fdd98a9e7952e1b0cdab0d8a351f7",
+        "bytes": 83738
+      },
+      {
+        "path": "matlab/g2/evidence/wp2_20261118/cornell_run_20261118_170047_650/cornell_cod_extrapolation.png",
+        "blob": "f0400350fd345291518624e5ccbdeb0c464a5e88",
+        "bytes": 82279
+      },
+      {
+        "path": "matlab/g2/evidence/wp2_20261118/mesh_famA_run_20261118_165922_343/protected_full_mesh.png",
+        "blob": "fb331e4c7471339cf16ec13175d4a3fcb766ca41",
+        "bytes": 780777
+      },
+      {
+        "path": "matlab/g2/evidence/wp2_20261118/mesh_famA_run_20261118_165922_343/protected_tip_seams_q.png",
+        "blob": "95d9c9fc535718db6d40110fdd13c69b44a12245",
+        "bytes": 701413
+      },
+      {
+        "path": "matlab/g2/evidence/wp2_20261118/mesh_famB_run_20261118_165941_636/protected_full_mesh.png",
+        "blob": "b4ef6f80d01eaa29244676aeb8ec88f4691836ed",
+        "bytes": 896693
+      },
+      {
+        "path": "matlab/g2/evidence/wp34_20261118/state2_report/state2_K_vs_annulus.png",
+        "blob": "31ae99d02eb1a94cabea2710be8116cca5bce45e",
+        "bytes": 83354
+      },
+      {
+        "path": "matlab/g2/evidence/wp34_20261118/state2_report/state2_full_mesh.png",
+        "blob": "1d7cca76ffb670f0e350a06e6da532c0cf08fb82",
+        "bytes": 829694
+      },
+      {
+        "path": "matlab/g2/evidence/wp34_20261118/state2_report/state2_trajectory.png",
+        "blob": "bef6ef8c508290b129c8b04fa3e53b8583614ce9",
+        "bytes": 46614
+      },
+      {
+        "path": "matlab/g2/evidence/wp34_20261118/state2_report/state2_two_kink_zoom.pdf",
+        "blob": "61c08a5b6e8cf7878406a7018de483a68ac5f1c1",
+        "bytes": 66075
+      },
+      {
+        "path": "matlab/g2/evidence/wp34_20261118/state2_report/state2_two_kink_zoom.png",
+        "blob": "c6b21ba1b7009e673019b6091c081c4d5af5f3d3",
+        "bytes": 678940
+      },
+      {
+        "path": "matlab/g2/evidence/wp3_20261118/g2_wp3_kinked_mesh_run_20261118_183545_651_famA/kinked_full_mesh.png",
+        "blob": "d2b52d9b858226d0a10f93fd45f26c109fb4f086",
+        "bytes": 784685
+      },
+      {
+        "path": "matlab/g2/evidence/wp3_20261118/g2_wp3_kinked_mesh_run_20261118_183545_651_famA/kinked_kink_vertex_zoom.png",
+        "blob": "00b1f5ee31d2dff66863e5f9601ece63a35fcc21",
+        "bytes": 175241
+      },
+      {
+        "path": "matlab/g2/evidence/wp3_20261118/g2_wp3_kinked_mesh_run_20261118_183545_651_famA/kinked_rotated_core_seams_q.pdf",
+        "blob": "00929717770e325b12dab11ed2f556b7c60222fa",
+        "bytes": 170934
+      },
+      {
+        "path": "matlab/g2/evidence/wp3_20261118/g2_wp3_kinked_mesh_run_20261118_183545_651_famA/kinked_rotated_core_seams_q.png",
+        "blob": "bc16bf31af9978101da786030a866dd922569ac1",
+        "bytes": 705333
+      },
+      {
+        "path": "matlab/g2/evidence/wp3_20261118/g2_wp3_kinked_mesh_run_20261118_184040_732_famA_mirror/kinked_full_mesh.png",
+        "blob": "98e1ba7f28e4cc63bf7ad3dcc064a701b3192b8b",
+        "bytes": 782714
+      },
+      {
+        "path": "matlab/g2/evidence/wp3_20261118/g2_wp3_kinked_mesh_run_20261118_184040_732_famA_mirror/kinked_kink_vertex_zoom.png",
+        "blob": "b473454553f7fcb387a6fade50f94883e599b13b",
+        "bytes": 174703
+      },
+      {
+        "path": "matlab/g2/evidence/wp3_20261118/g2_wp3_kinked_mesh_run_20261118_184040_732_famA_mirror/kinked_rotated_core_seams_q.pdf",
+        "blob": "a7f2b1712584dafdea8e23e2e4da1b05f2aae4f9",
+        "bytes": 170403
+      },
+      {
+        "path": "matlab/g2/evidence/wp3_20261118/g2_wp3_kinked_mesh_run_20261118_184040_732_famA_mirror/kinked_rotated_core_seams_q.png",
+        "blob": "d1e22b127138c807b79bbba442b5155500e45c29",
+        "bytes": 709656
+      },
+      {
+        "path": "matlab/g2/evidence/wp3_20261118/g2_wp3_kinked_mesh_run_20261118_184957_278_famB/kinked_full_mesh.png",
+        "blob": "dcce2a216c6937e4cfac90dc6559c6a930e01b1e",
+        "bytes": 904176
+      },
+      {
+        "path": "matlab/g2/evidence/wp3_20261118/g2_wp3_kinked_mesh_run_20261118_184957_278_famB/kinked_kink_vertex_zoom.png",
+        "blob": "ce1cdb869884937661af05fba3df2e3385af430c",
+        "bytes": 186377
+      },
+      {
+        "path": "matlab/g2/evidence/wp3_20261118/g2_wp3_kinked_mesh_run_20261118_184957_278_famB/kinked_rotated_core_seams_q.pdf",
+        "blob": "c6e91cf9490493222e3905a20983e64676b024bd",
+        "bytes": 171409
+      },
+      {
+        "path": "matlab/g2/evidence/wp3_20261118/g2_wp3_kinked_mesh_run_20261118_184957_278_famB/kinked_rotated_core_seams_q.png",
+        "blob": "de056e497f89d8e2aa9ad53888f70989b1745478",
+        "bytes": 706598
+      },
+      {
+        "path": "matlab/g2/evidence/wp3_20261118/g2_wp3_kinked_sif_run_20261118_185423_469/kinked_K_vs_annulus.png",
+        "blob": "9674a415080fd377d3f40b406171a660937a8cf4",
+        "bytes": 78694
+      },
+      {
+        "path": "matlab/g2/evidence/wp3_20261118/g2_wp3_kinked_sif_run_20261118_185423_469/kinked_cod_extrapolation.png",
+        "blob": "4ffd9edba705b881e46543d979e5ad8c5740bc9b",
+        "bytes": 82167
+      },
+      {
+        "path": "reports/G2/LP1_20261122_v3/LP1_clearances_UA.pdf",
+        "blob": "6074e58053b3658991615387dfb0333630273459",
+        "bytes": 49473
+      },
+      {
+        "path": "reports/G2/LP1_20261122_v3/LP1_clearances_UA.png",
+        "blob": "f4cb0060db83793dd4d55e4756a9ab34cf487a5a",
+        "bytes": 460667
+      },
+      {
+        "path": "reports/G2/LP1_20261122_v3/LP1_energy_UA.pdf",
+        "blob": "70b700cd246882fc5a738810be3b782bdeed54d6",
+        "bytes": 47827
+      },
+      {
+        "path": "reports/G2/LP1_20261122_v3/LP1_energy_UA.png",
+        "blob": "8ca3a5d6ef0383d1ac5b231ff33a08d63e4da5ff",
+        "bytes": 350864
+      },
+      {
+        "path": "reports/G2/LP1_20261122_v3/LP1_paths_UA.pdf",
+        "blob": "1cc66c2f3d8215dd29cdbb63a589026099932f12",
+        "bytes": 47968
+      },
+      {
+        "path": "reports/G2/LP1_20261122_v3/LP1_paths_UA.png",
+        "blob": "fd8db87522de66fa399fb784744933c62d042fc7",
+        "bytes": 274259
+      },
+      {
+        "path": "reports/G2/LP1_20261122_v3/LP1_signed_SIF_UA.pdf",
+        "blob": "42d7ac4162644a4951deb002900086683c1b5eaf",
+        "bytes": 45378
+      },
+      {
+        "path": "reports/G2/LP1_20261122_v3/LP1_signed_SIF_UA.png",
+        "blob": "02af22edf46e53a3e749c08fe9e985c8b6ce8e21",
+        "bytes": 347065
+      },
+      {
+        "path": "reports/G2/LP1_20261122_v3/LP1_turn_offset_UA.pdf",
+        "blob": "8c015c22b05aa80867c42d8c0c55034a952b4c68",
+        "bytes": 46435
+      },
+      {
+        "path": "reports/G2/LP1_20261122_v3/LP1_turn_offset_UA.png",
+        "blob": "2b2e4d69357d878a2390b9fada3e701590d80eae",
+        "bytes": 311249
+      },
+      {
+        "path": "reports/G2/LP1_20261122_v3/LP1_uncertainty_UA.pdf",
+        "blob": "acf33b4d99d95e6b95b6113012e81eedbdf6d9a7",
+        "bytes": 47772
+      },
+      {
+        "path": "reports/G2/LP1_20261122_v3/LP1_uncertainty_UA.png",
+        "blob": "16a4f6d8be3ac7efc5200dd0bb26d7cafd713be1",
+        "bytes": 221218
+      },
+      {
+        "path": "reports/G2/proposals/render_check/Metakompozyt_G2_M4A_proponovani_dopovnennia_UA.pdf",
+        "blob": "698002434034e8d793a063611fd70cd3fb61cf68",
+        "bytes": 1626392
+      },
+      {
+        "path": "reports/G2/proposals/render_check/p01.png",
+        "blob": "cd3e71544126285647dc9eb0207fbfd2c4513d7d",
+        "bytes": 239733
+      },
+      {
+        "path": "reports/G2/proposals/render_check/p02.png",
+        "blob": "4d4d70a69447875f90a8b4c3270c3a3e476734fb",
+        "bytes": 220078
+      },
+      {
+        "path": "reports/G2/proposals/render_check/p03.png",
+        "blob": "bd2d44ee4fe8bc9ff4f14c4264fd4b80fac100d7",
+        "bytes": 354705
+      },
+      {
+        "path": "reports/G2/proposals/render_check/p04.png",
+        "blob": "6e13dd701ac858a7a320e75a62c04e4659237b40",
+        "bytes": 216697
+      },
+      {
+        "path": "reports/G2/proposals/render_check/p05.png",
+        "blob": "4d1edaae7b3238baf4791bd804929a01dce8d528",
+        "bytes": 357665
+      },
+      {
+        "path": "reports/G2/proposals/render_check/p06.png",
+        "blob": "e62c14e67f37abe4ff41f3a3a991e2f5ba9cbecf",
+        "bytes": 248005
+      },
+      {
+        "path": "reports/G2/proposals/render_check/p07.png",
+        "blob": "ad75f1e2ce4e922d88711cd74fbed18ad55f604d",
+        "bytes": 234216
+      },
+      {
+        "path": "reports/G2/proposals/render_check/p08.png",
+        "blob": "06b88611e543685583d9fe907e2a9b00f83c541a",
+        "bytes": 226629
+      },
+      {
+        "path": "reports/G2/proposals/render_check_r1/Metakompozyt_G2_M4B_R1_proponovani_dopovnennia_UA.pdf",
+        "blob": "2f15251579c7a11ff2f1ec2f0ce87ff2e109a1f9",
+        "bytes": 1602233
+      },
+      {
+        "path": "reports/G2/proposals/render_check_r1/Metakompozyt_G2_M4B_R1_proponovani_dopovnennia_UA_p01.png",
+        "blob": "5dcb2ec0e33c27da383f762931dc59088a3fd609",
+        "bytes": 183736
+      },
+      {
+        "path": "reports/G2/proposals/render_check_r1/Metakompozyt_G2_M4B_R1_proponovani_dopovnennia_UA_p02.png",
+        "blob": "5fe488b414759a956f614cc26f85d72f3c872b44",
+        "bytes": 267709
+      },
+      {
+        "path": "reports/G2/proposals/render_check_r1/Metakompozyt_G2_M4B_R1_proponovani_dopovnennia_UA_p03.png",
+        "blob": "fafe4aa95dc86f4d45b0e9345fcaec52823f8ea4",
+        "bytes": 186991
+      },
+      {
+        "path": "reports/G2/proposals/render_check_r1/Metakompozyt_G2_M4B_R1_proponovani_dopovnennia_UA_p04.png",
+        "blob": "51107acab2d2f0df6eff7d8738aae26ce7501e3d",
+        "bytes": 186321
+      },
+      {
+        "path": "reports/G2/proposals/render_check_r1/Metakompozyt_G2_M4B_R1_proponovani_dopovnennia_UA_p05.png",
+        "blob": "ac4f03c775a3cfb11a2f1294cdcd7d48de5ee5d7",
+        "bytes": 98423
+      },
+      {
+        "path": "reports/G2/proposals/render_check_r1/Metakompozyt_G2_M4B_R1_proponovani_dopovnennia_UA_p06.png",
+        "blob": "6fedfe6d37388f47def5f019951694fdd5675610",
+        "bytes": 255011
+      },
+      {
+        "path": "reports/G2/proposals/render_check_r1/Metakompozyt_G2_M4B_R1_proponovani_dopovnennia_UA_p07.png",
+        "blob": "c9e8a89a5681f211c82688bd5abb696a73d350d8",
+        "bytes": 354149
+      },
+      {
+        "path": "reports/G2/proposals/render_check_r1/Metakompozyt_G2_M4B_R1_proponovani_dopovnennia_UA_p08.png",
+        "blob": "8d38f2077c51f64e16cd83a7e99a70869f78c939",
+        "bytes": 155840
+      },
+      {
+        "path": "reports/G2/proposals/render_check_r1/Metakompozyt_G2_M4B_R1_proponovani_dopovnennia_UA_p09.png",
+        "blob": "f9da4e731fe3f4a5690b64cdec6afda0b9827f2b",
+        "bytes": 102404
+      },
+      {
+        "path": "reports/G2/render_check_v0_4/Metakompozyt_G2_Naukovyi_zvit_UA_v0_4_Atrybutsiia_kilets_kandydat.pdf",
+        "blob": "ce7bcd1984edd58f709a057f28ded464101142e5",
+        "bytes": 3443172
+      },
+      {
+        "path": "reports/G2/render_check_v0_4/Metakompozyt_G2_Naukovyi_zvit_UA_v0_4_Atrybutsiia_kilets_kandydat_p01.png",
+        "blob": "937feb1d3135d538b133b7dc6b127cb279e9e92e",
+        "bytes": 133297
+      },
+      {
+        "path": "reports/G2/render_check_v0_4/Metakompozyt_G2_Naukovyi_zvit_UA_v0_4_Atrybutsiia_kilets_kandydat_p02.png",
+        "blob": "e42eab5a77bb52c3a402a4fd7eeb689014a045c9",
+        "bytes": 239540
+      },
+      {
+        "path": "reports/G2/render_check_v0_4/Metakompozyt_G2_Naukovyi_zvit_UA_v0_4_Atrybutsiia_kilets_kandydat_p03.png",
+        "blob": "2333e89af65b95cf950b8523d218144640c35a2d",
+        "bytes": 209806
+      },
+      {
+        "path": "reports/G2/render_check_v0_4/Metakompozyt_G2_Naukovyi_zvit_UA_v0_4_Atrybutsiia_kilets_kandydat_p04.png",
+        "blob": "4af93bcae505e7bbca15e14ba40d88f93f27562b",
+        "bytes": 209771
+      },
+      {
+        "path": "reports/G2/render_check_v0_4/Metakompozyt_G2_Naukovyi_zvit_UA_v0_4_Atrybutsiia_kilets_kandydat_p05.png",
+        "blob": "dc63603bc6312ffe9b252f13cafc920816f02721",
+        "bytes": 234316
+      },
+      {
+        "path": "reports/G2/render_check_v0_4/Metakompozyt_G2_Naukovyi_zvit_UA_v0_4_Atrybutsiia_kilets_kandydat_p06.png",
+        "blob": "7f3c9c1acde35345eef821cd9de9ee1e5f831b56",
+        "bytes": 204897
+      },
+      {
+        "path": "reports/G2/render_check_v0_4/Metakompozyt_G2_Naukovyi_zvit_UA_v0_4_Atrybutsiia_kilets_kandydat_p07.png",
+        "blob": "883cc1df2d963bf855bab3d8a1e55f508029e5f1",
+        "bytes": 208908
+      },
+      {
+        "path": "reports/G2/render_check_v0_4/Metakompozyt_G2_Naukovyi_zvit_UA_v0_4_Atrybutsiia_kilets_kandydat_p08.png",
+        "blob": "b506abcc44b91be5ec8896393fe9cd913efc94e4",
+        "bytes": 158156
+      },
+      {
+        "path": "reports/G2/render_check_v0_4/Metakompozyt_G2_Naukovyi_zvit_UA_v0_4_Atrybutsiia_kilets_kandydat_p09.png",
+        "blob": "9ddc35f654ddf8ed7229c1efac1dc987a442db49",
+        "bytes": 173553
+      },
+      {
+        "path": "reports/G2/render_check_v0_4/Metakompozyt_G2_Naukovyi_zvit_UA_v0_4_Atrybutsiia_kilets_kandydat_p10.png",
+        "blob": "b05b5d25784e163a9025f403dadc5f3da50b2385",
+        "bytes": 175881
+      },
+      {
+        "path": "reports/G2/render_check_v0_4/Metakompozyt_G2_Naukovyi_zvit_UA_v0_4_Atrybutsiia_kilets_kandydat_p11.png",
+        "blob": "b5071d966fe38404a83717295f3bc1abb025afdc",
+        "bytes": 169456
+      },
+      {
+        "path": "reports/G2/render_check_v0_4/Metakompozyt_G2_Naukovyi_zvit_UA_v0_4_Atrybutsiia_kilets_kandydat_p12.png",
+        "blob": "225c07eda7328845b5e17d7dca6289a985699f76",
+        "bytes": 196173
+      },
+      {
+        "path": "reports/G2/render_check_v0_4/Metakompozyt_G2_Naukovyi_zvit_UA_v0_4_Atrybutsiia_kilets_kandydat_p13.png",
+        "blob": "b4fed530979e49e4de1988c08c361e500e671fa2",
+        "bytes": 240725
+      },
+      {
+        "path": "reports/G2/render_check_v0_4/Metakompozyt_G2_Naukovyi_zvit_UA_v0_4_Atrybutsiia_kilets_kandydat_p14.png",
+        "blob": "e6fbd5ef9f258b104da8447cd58bea1729a0a7cb",
+        "bytes": 224829
+      },
+      {
+        "path": "reports/G2/render_check_v0_4/Metakompozyt_G2_Naukovyi_zvit_UA_v0_4_Atrybutsiia_kilets_kandydat_p15.png",
+        "blob": "1cdf973cc55601fdc009c54ce4ed1e0e6523ba68",
+        "bytes": 205428
+      },
+      {
+        "path": "reports/G2/render_check_v0_4/Metakompozyt_G2_Naukovyi_zvit_UA_v0_4_Atrybutsiia_kilets_kandydat_p16.png",
+        "blob": "ced09befc841a44f464c54c1ed10a4d3d88a0443",
+        "bytes": 208186
+      },
+      {
+        "path": "reports/G2/render_check_v0_4/Metakompozyt_G2_Naukovyi_zvit_UA_v0_4_Atrybutsiia_kilets_kandydat_p17.png",
+        "blob": "6c40a54b201a08487c67a946196e9215b26b5c31",
+        "bytes": 100372
+      },
+      {
+        "path": "reports/G2/render_check_v0_4/Metakompozyt_G2_Naukovyi_zvit_UA_v0_4_Atrybutsiia_kilets_kandydat_p18.png",
+        "blob": "a9c1caf489bd8ff25cd0ee373391bd55bab8da99",
+        "bytes": 203326
+      },
+      {
+        "path": "reports/G2/render_check_v0_4/Metakompozyt_G2_Naukovyi_zvit_UA_v0_4_Atrybutsiia_kilets_kandydat_p19.png",
+        "blob": "93378b84e2257c1ea008229d4a5d93064b3ff5c5",
+        "bytes": 195797
+      },
+      {
+        "path": "reports/G2/render_check_v0_4/Metakompozyt_G2_Naukovyi_zvit_UA_v0_4_Atrybutsiia_kilets_kandydat_p20.png",
+        "blob": "7d80b8e626441af71a0a1cc07bba2990fc30785e",
+        "bytes": 159785
+      },
+      {
+        "path": "reports/G2/render_check_v0_4/Metakompozyt_G2_Naukovyi_zvit_UA_v0_4_Atrybutsiia_kilets_kandydat_p21.png",
+        "blob": "3951b521ceced7cf1e6b414b782179b953267c3c",
+        "bytes": 204262
+      },
+      {
+        "path": "reports/G2/render_check_v0_4/Metakompozyt_G2_Naukovyi_zvit_UA_v0_4_Atrybutsiia_kilets_kandydat_p22.png",
+        "blob": "11c83f15bc7d29d58161b036928758af3bb0d3bb",
+        "bytes": 242452
+      },
+      {
+        "path": "reports/G2/render_check_v0_4/Metakompozyt_G2_Naukovyi_zvit_UA_v0_4_Atrybutsiia_kilets_kandydat_p23.png",
+        "blob": "8d80b0782665c07064e27d98904217fadc607021",
+        "bytes": 230356
+      },
+      {
+        "path": "reports/G2/render_check_v0_4/Metakompozyt_G2_Naukovyi_zvit_UA_v0_4_Atrybutsiia_kilets_kandydat_p24.png",
+        "blob": "878a02e2a77846081be0f4ce4867d3abc18e0700",
+        "bytes": 202261
+      },
+      {
+        "path": "reports/G2/render_check_v0_4/Metakompozyt_G2_Naukovyi_zvit_UA_v0_4_Atrybutsiia_kilets_kandydat_p25.png",
+        "blob": "a8a5dd6205b41e739bb858b6061559df23378106",
+        "bytes": 319524
+      },
+      {
+        "path": "reports/G2/render_check_v0_4/Metakompozyt_G2_Naukovyi_zvit_UA_v0_4_Atrybutsiia_kilets_kandydat_p26.png",
+        "blob": "56a8d5a5b40cd0635c0695d8319bf4abc37ec324",
+        "bytes": 332283
+      },
+      {
+        "path": "reports/G2/render_check_v0_4/Metakompozyt_G2_Naukovyi_zvit_UA_v0_4_Atrybutsiia_kilets_kandydat_p27.png",
+        "blob": "1597929f73a5dd14b5a72be615806cbb52d98f1a",
+        "bytes": 205186
+      },
+      {
+        "path": "reports/G2/render_check_v0_4/Metakompozyt_G2_Naukovyi_zvit_UA_v0_4_Atrybutsiia_kilets_kandydat_p28.png",
+        "blob": "ac615d2e720981e105e77e9236e586b28b5e6bec",
+        "bytes": 226138
+      },
+      {
+        "path": "reports/G2/render_check_v0_4/Metakompozyt_G2_Naukovyi_zvit_UA_v0_4_Atrybutsiia_kilets_kandydat_p29.png",
+        "blob": "723c02070e9f50baa7906cd9cf451b16b2bc9f9d",
+        "bytes": 115631
+      },
+      {
+        "path": "reports/G2/render_check_v0_4/Metakompozyt_G2_Naukovyi_zvit_UA_v0_4_Atrybutsiia_kilets_kandydat_p30.png",
+        "blob": "b6296a53cbc244de92d0e4e959c7e8947adc97de",
+        "bytes": 205957
+      },
+      {
+        "path": "reports/G2/render_check_v0_4/Metakompozyt_G2_Naukovyi_zvit_UA_v0_4_Atrybutsiia_kilets_kandydat_p31.png",
+        "blob": "41cc8b8d9c3f0e6ed4cfadad3483de9188e5b97e",
+        "bytes": 210769
+      },
+      {
+        "path": "reports/G2/render_check_v0_4/Metakompozyt_G2_Naukovyi_zvit_UA_v0_4_Atrybutsiia_kilets_kandydat_p32.png",
+        "blob": "3eaf14610b61a142fcef1063330a99ce102e8a82",
+        "bytes": 138524
+      },
+      {
+        "path": "reports/G2/render_check_v0_4/Metakompozyt_G2_Naukovyi_zvit_UA_v0_4_Atrybutsiia_kilets_kandydat_p33.png",
+        "blob": "37e67046a65e8fd016017a4e09c08182c16c995a",
+        "bytes": 174844
+      },
+      {
+        "path": "reports/G2/render_check_v0_4/Metakompozyt_G2_Naukovyi_zvit_UA_v0_4_Atrybutsiia_kilets_kandydat_p34.png",
+        "blob": "e538592e11da4572d57ab20ba8d54be569fa2a03",
+        "bytes": 146176
+      },
+      {
+        "path": "reports/G2/render_check_v0_4/Metakompozyt_G2_Naukovyi_zvit_UA_v0_4_Atrybutsiia_kilets_kandydat_p35.png",
+        "blob": "0423c539005cbc987b9da8dba5f57a9518ceeb54",
+        "bytes": 159525
+      },
+      {
+        "path": "reports/G2/render_check_v0_4/Metakompozyt_G2_Naukovyi_zvit_UA_v0_4_Atrybutsiia_kilets_kandydat_p36.png",
+        "blob": "1bf534714bd2f08ce0ba2970c60843020fd9f98b",
+        "bytes": 369734
+      },
+      {
+        "path": "reports/G2/render_check_v0_4/Metakompozyt_G2_Naukovyi_zvit_UA_v0_4_Atrybutsiia_kilets_kandydat_p37.png",
+        "blob": "a8ebd174cce617fa223ddfd1ea0f32fd0e4732dc",
+        "bytes": 215199
+      },
+      {
+        "path": "reports/G2/render_check_v0_4/Metakompozyt_G2_Naukovyi_zvit_UA_v0_4_Atrybutsiia_kilets_kandydat_p38.png",
+        "blob": "6307dd980933afde9e62ec32372be4263841ba4d",
+        "bytes": 185167
+      }
+    ]
+  },
+  {
+    "pr": 65,
+    "sha": "e4f2aba0a89285e36bbf2602885fd971dfef02fb",
+    "status": "COMPLETE",
+    "tree_entries": 1177,
+    "files": [
+      {
+        "path": "matlab/g2/evidence/m2_20261121/report/m2_K_by_state.png",
+        "blob": "35660f221580a6b0b88bf6b3020e899b2c8be6bd",
+        "bytes": 76845
+      },
+      {
+        "path": "matlab/g2/evidence/m2_20261121/report/m2_R_vs_s.pdf",
+        "blob": "a4719b33f6dff2fda28893e46522bf6c6a69d09e",
+        "bytes": 4038
+      },
+      {
+        "path": "matlab/g2/evidence/m2_20261121/report/m2_R_vs_s.png",
+        "blob": "9d1abbf89b31bf9e0ef92586e569ddb1c4b9b5a0",
+        "bytes": 82841
+      },
+      {
+        "path": "matlab/g2/evidence/m2_20261121/report/m2_geometry_tips_bands.png",
+        "blob": "fb49bc96a3dcbf56520ce72b8222089d219acae7",
+        "bytes": 101178
+      },
+      {
+        "path": "matlab/g2/evidence/m2_20261121/report/m2_steering_mixity_G_compliance.pdf",
+        "blob": "09713199cbeacd188777379652da10710696105e",
+        "bytes": 12276
+      },
+      {
+        "path": "matlab/g2/evidence/m2_20261121/report/m2_steering_mixity_G_compliance.png",
+        "blob": "93ce181e5c8bfcad2e1a6a833a8e7bffef7419ba",
+        "bytes": 184870
+      },
+      {
+        "path": "matlab/g2/evidence/m3_20261121/report/m3_G_theta.png",
+        "blob": "81f121a19b0dd8d291ac3881d5900210082a7ffc",
+        "bytes": 144679
+      },
+      {
+        "path": "matlab/g2/evidence/m3_20261121/report/m3_paths_offsets.pdf",
+        "blob": "97eca5853c6a94b5ecab32cea13cb0d8f6706353",
+        "bytes": 7710
+      },
+      {
+        "path": "matlab/g2/evidence/m3_20261121/report/m3_paths_offsets.png",
+        "blob": "71410aa7f95ec6eccd4ff1a6c94689dfcddc0750",
+        "bytes": 123699
+      },
+      {
+        "path": "matlab/g2/evidence/m3_20261121/report/m3_phase_snapshot.png",
+        "blob": "29f44869834cc0754b7a9689c62e1a9c6ccb8530",
+        "bytes": 752480
+      },
+      {
+        "path": "matlab/g2/evidence/m3_20261121/report/m3_ratios.pdf",
+        "blob": "cc8265cc43b4bfbdbb3cfe5b2b44cc300f8623fd",
+        "bytes": 8775
+      },
+      {
+        "path": "matlab/g2/evidence/m3_20261121/report/m3_ratios.png",
+        "blob": "db11f9633e67fee569534ca12a6b1eeeded30deb",
+        "bytes": 118773
+      },
+      {
+        "path": "matlab/g2/evidence/m4_20261121/report/m4a_fig1_paths.png",
+        "blob": "18ac91166054680310a259d7bb6a9394d5858285",
+        "bytes": 147071
+      },
+      {
+        "path": "matlab/g2/evidence/m4_20261121/report/m4a_fig2_ratios.png",
+        "blob": "6c6f9ab67be4a3c2aed91250960cc8489b75e01e",
+        "bytes": 89860
+      },
+      {
+        "path": "matlab/g2/evidence/m4_20261121/report/m4a_fig3_interface_meshes.png",
+        "blob": "e315ebcee10ef6035968f140f91ae2296a0bc8f7",
+        "bytes": 395945
+      },
+      {
+        "path": "matlab/g2/evidence/m4_20261121/report/m4a_fig4_tip_q_support.png",
+        "blob": "21aaadc84d21e0e71d8b0ee2a2dcd0ccf0051c96",
+        "bytes": 539545
+      },
+      {
+        "path": "matlab/g2/evidence/m4_20261121/report/m4a_fig5_K.png",
+        "blob": "7eceef8606c9970a34fd8fb5e82d4954c7f8cfe7",
+        "bytes": 157239
+      },
+      {
+        "path": "matlab/g2/evidence/m4b_20261121/report/m4b_fig1_schematic.png",
+        "blob": "bea473a36bba89c90d07b6c82121eb006445e62d",
+        "bytes": 122229
+      },
+      {
+        "path": "matlab/g2/evidence/m4b_20261121/report/m4b_fig2_FG_Ftheta.png",
+        "blob": "15bab95768d0d2d7340dc8adb15e02a44478a6b4",
+        "bytes": 71613
+      },
+      {
+        "path": "matlab/g2/evidence/m4b_20261121/report/m4b_fig3_decomposition.png",
+        "blob": "d83df0296d79b5d709fe351b6861ef434decc693",
+        "bytes": 77878
+      },
+      {
+        "path": "matlab/g2/evidence/m4b_20261121/report/m4b_fig4_equal_area.png",
+        "blob": "54065e1e75ea6f7bd7e030fc8fc83f89c855d6b9",
+        "bytes": 136716
+      },
+      {
+        "path": "matlab/g2/evidence/m4b_20261121/report/m4b_fig5_energy_density.png",
+        "blob": "15c2b317040acb9be8eab1985a108793661d38f2",
+        "bytes": 525333
+      },
+      {
+        "path": "matlab/g2/evidence/m4b_r1_20261121/report/r1_g1_crossfamily_grey.png",
+        "blob": "77a816e3a2db1b9df0bc9f687f3f51d9b4670cd2",
+        "bytes": 79008
+      },
+      {
+        "path": "matlab/g2/evidence/m4b_r1_20261121/report/r1_g2_three_questions_grey.png",
+        "blob": "5fd3903aa07284b2dd7598868741a0d6084576c6",
+        "bytes": 126184
+      },
+      {
+        "path": "matlab/g2/evidence/m4b_r1_20261121/report/r1_g3_equal_area_grey.png",
+        "blob": "39ae62de1d2f74b2c57c35fb9021852b2d62e992",
+        "bytes": 119328
+      },
+      {
+        "path": "matlab/g2/evidence/m4b_r1_20261121/report/r1_g4_stress_global_grey.png",
+        "blob": "40453ad00f71e74ae2cdb07031c37391ce512dc3",
+        "bytes": 568874
+      },
+      {
+        "path": "matlab/g2/evidence/m4b_r1_20261121/report/r1_g4b_stress_local_grey.png",
+        "blob": "6e55e19aa086439cf3a24e549069e8710af94aed",
+        "bytes": 372263
+      },
+      {
+        "path": "matlab/g2/evidence/m4b_r1_20261121/report/r1_g5_energy_density_grey.png",
+        "blob": "b9a699dd6b0570c3a21dfa5ea8e113e3ddb9af6a",
+        "bytes": 462422
+      },
+      {
+        "path": "matlab/g2/evidence/m4b_r1_20261121/report/r1_g6_m4b_masks_grey.png",
+        "blob": "7c241fabce3b68035cf5a3a0ba0797a516eab5d4",
+        "bytes": 61272
+      },
+      {
+        "path": "matlab/g2/evidence/m4b_r1_20261121/report/r1_g7_m4b_decomposition_grey.png",
+        "blob": "e720812de357700bf3c816f3aede9acc92b8c6fb",
+        "bytes": 72709
+      },
+      {
+        "path": "matlab/g2/evidence/material_20261119/report/material_EDI_vs_COD.png",
+        "blob": "9d94749c05e732f175b65652535d71b98d39662b",
+        "bytes": 85059
+      },
+      {
+        "path": "matlab/g2/evidence/material_20261119/report/material_annulus_zoom.png",
+        "blob": "998d21092267937d5aec9bcf907788c696e5ab26",
+        "bytes": 429231
+      },
+      {
+        "path": "matlab/g2/evidence/material_20261119/report/material_benchmark_convergence.png",
+        "blob": "098012144d01ec6dce19fd14d980a2caed2b84ee",
+        "bytes": 87088
+      },
+      {
+        "path": "matlab/g2/evidence/material_20261119/report/material_interface_tractions.png",
+        "blob": "7fa2011e331bbdd661e889b38341188247652cb1",
+        "bytes": 204483
+      },
+      {
+        "path": "matlab/g2/evidence/material_20261119/report/material_phase_map.pdf",
+        "blob": "6f8612048b6b316d81bc71013ab66d6e4e7d3dbe",
+        "bytes": 887932
+      },
+      {
+        "path": "matlab/g2/evidence/material_20261119/report/material_phase_map.png",
+        "blob": "d424e19d575415b2a1218054c2c4f089218c1762",
+        "bytes": 948236
+      },
+      {
+        "path": "matlab/g2/evidence/material_20261119/report/material_ratios.pdf",
+        "blob": "1a139cab4cf9ddefbce6cd0445206f92900d4296",
+        "bytes": 11535
+      },
+      {
+        "path": "matlab/g2/evidence/material_20261119/report/material_ratios.png",
+        "blob": "934850f1ebd8ba01bad3762874351918449f37b1",
+        "bytes": 146875
+      },
+      {
+        "path": "matlab/g2/evidence/p010_isolated_run_20261118_162823_323/p010_inner_tip_zoom.png",
+        "blob": "49f7ba02abb1ea9ac003c2425aa370651ebc649d",
+        "bytes": 304278
+      },
+      {
+        "path": "matlab/g2/evidence/p010_isolated_run_20261118_162823_323/p010_regular_core_and_collar.png",
+        "blob": "a4e87eab0636da637b412125c5d6f978f87abfc3",
+        "bytes": 294927
+      },
+      {
+        "path": "matlab/g2/evidence/wp1_20261118/mesh_run_20261118_163717_510/protected_full_mesh.png",
+        "blob": "4dcaec949bc6eb5fa28db34f6c31252fcd1eef0d",
+        "bytes": 736415
+      },
+      {
+        "path": "matlab/g2/evidence/wp1_20261118/mesh_run_20261118_163717_510/protected_tip_seams_q.png",
+        "blob": "053b8e23a2a3289783d13ceb371d5407dbce711c",
+        "bytes": 690556
+      },
+      {
+        "path": "matlab/g2/evidence/wp2_20261118/cornell_run_20261118_170047_650/cornell_K_vs_annulus.png",
+        "blob": "d1d133bc316fdd98a9e7952e1b0cdab0d8a351f7",
+        "bytes": 83738
+      },
+      {
+        "path": "matlab/g2/evidence/wp2_20261118/cornell_run_20261118_170047_650/cornell_cod_extrapolation.png",
+        "blob": "f0400350fd345291518624e5ccbdeb0c464a5e88",
+        "bytes": 82279
+      },
+      {
+        "path": "matlab/g2/evidence/wp2_20261118/mesh_famA_run_20261118_165922_343/protected_full_mesh.png",
+        "blob": "fb331e4c7471339cf16ec13175d4a3fcb766ca41",
+        "bytes": 780777
+      },
+      {
+        "path": "matlab/g2/evidence/wp2_20261118/mesh_famA_run_20261118_165922_343/protected_tip_seams_q.png",
+        "blob": "95d9c9fc535718db6d40110fdd13c69b44a12245",
+        "bytes": 701413
+      },
+      {
+        "path": "matlab/g2/evidence/wp2_20261118/mesh_famB_run_20261118_165941_636/protected_full_mesh.png",
+        "blob": "b4ef6f80d01eaa29244676aeb8ec88f4691836ed",
+        "bytes": 896693
+      },
+      {
+        "path": "matlab/g2/evidence/wp34_20261118/state2_report/state2_K_vs_annulus.png",
+        "blob": "31ae99d02eb1a94cabea2710be8116cca5bce45e",
+        "bytes": 83354
+      },
+      {
+        "path": "matlab/g2/evidence/wp34_20261118/state2_report/state2_full_mesh.png",
+        "blob": "1d7cca76ffb670f0e350a06e6da532c0cf08fb82",
+        "bytes": 829694
+      },
+      {
+        "path": "matlab/g2/evidence/wp34_20261118/state2_report/state2_trajectory.png",
+        "blob": "bef6ef8c508290b129c8b04fa3e53b8583614ce9",
+        "bytes": 46614
+      },
+      {
+        "path": "matlab/g2/evidence/wp34_20261118/state2_report/state2_two_kink_zoom.pdf",
+        "blob": "61c08a5b6e8cf7878406a7018de483a68ac5f1c1",
+        "bytes": 66075
+      },
+      {
+        "path": "matlab/g2/evidence/wp34_20261118/state2_report/state2_two_kink_zoom.png",
+        "blob": "c6b21ba1b7009e673019b6091c081c4d5af5f3d3",
+        "bytes": 678940
+      },
+      {
+        "path": "matlab/g2/evidence/wp3_20261118/g2_wp3_kinked_mesh_run_20261118_183545_651_famA/kinked_full_mesh.png",
+        "blob": "d2b52d9b858226d0a10f93fd45f26c109fb4f086",
+        "bytes": 784685
+      },
+      {
+        "path": "matlab/g2/evidence/wp3_20261118/g2_wp3_kinked_mesh_run_20261118_183545_651_famA/kinked_kink_vertex_zoom.png",
+        "blob": "00b1f5ee31d2dff66863e5f9601ece63a35fcc21",
+        "bytes": 175241
+      },
+      {
+        "path": "matlab/g2/evidence/wp3_20261118/g2_wp3_kinked_mesh_run_20261118_183545_651_famA/kinked_rotated_core_seams_q.pdf",
+        "blob": "00929717770e325b12dab11ed2f556b7c60222fa",
+        "bytes": 170934
+      },
+      {
+        "path": "matlab/g2/evidence/wp3_20261118/g2_wp3_kinked_mesh_run_20261118_183545_651_famA/kinked_rotated_core_seams_q.png",
+        "blob": "bc16bf31af9978101da786030a866dd922569ac1",
+        "bytes": 705333
+      },
+      {
+        "path": "matlab/g2/evidence/wp3_20261118/g2_wp3_kinked_mesh_run_20261118_184040_732_famA_mirror/kinked_full_mesh.png",
+        "blob": "98e1ba7f28e4cc63bf7ad3dcc064a701b3192b8b",
+        "bytes": 782714
+      },
+      {
+        "path": "matlab/g2/evidence/wp3_20261118/g2_wp3_kinked_mesh_run_20261118_184040_732_famA_mirror/kinked_kink_vertex_zoom.png",
+        "blob": "b473454553f7fcb387a6fade50f94883e599b13b",
+        "bytes": 174703
+      },
+      {
+        "path": "matlab/g2/evidence/wp3_20261118/g2_wp3_kinked_mesh_run_20261118_184040_732_famA_mirror/kinked_rotated_core_seams_q.pdf",
+        "blob": "a7f2b1712584dafdea8e23e2e4da1b05f2aae4f9",
+        "bytes": 170403
+      },
+      {
+        "path": "matlab/g2/evidence/wp3_20261118/g2_wp3_kinked_mesh_run_20261118_184040_732_famA_mirror/kinked_rotated_core_seams_q.png",
+        "blob": "d1e22b127138c807b79bbba442b5155500e45c29",
+        "bytes": 709656
+      },
+      {
+        "path": "matlab/g2/evidence/wp3_20261118/g2_wp3_kinked_mesh_run_20261118_184957_278_famB/kinked_full_mesh.png",
+        "blob": "dcce2a216c6937e4cfac90dc6559c6a930e01b1e",
+        "bytes": 904176
+      },
+      {
+        "path": "matlab/g2/evidence/wp3_20261118/g2_wp3_kinked_mesh_run_20261118_184957_278_famB/kinked_kink_vertex_zoom.png",
+        "blob": "ce1cdb869884937661af05fba3df2e3385af430c",
+        "bytes": 186377
+      },
+      {
+        "path": "matlab/g2/evidence/wp3_20261118/g2_wp3_kinked_mesh_run_20261118_184957_278_famB/kinked_rotated_core_seams_q.pdf",
+        "blob": "c6e91cf9490493222e3905a20983e64676b024bd",
+        "bytes": 171409
+      },
+      {
+        "path": "matlab/g2/evidence/wp3_20261118/g2_wp3_kinked_mesh_run_20261118_184957_278_famB/kinked_rotated_core_seams_q.png",
+        "blob": "de056e497f89d8e2aa9ad53888f70989b1745478",
+        "bytes": 706598
+      },
+      {
+        "path": "matlab/g2/evidence/wp3_20261118/g2_wp3_kinked_sif_run_20261118_185423_469/kinked_K_vs_annulus.png",
+        "blob": "9674a415080fd377d3f40b406171a660937a8cf4",
+        "bytes": 78694
+      },
+      {
+        "path": "matlab/g2/evidence/wp3_20261118/g2_wp3_kinked_sif_run_20261118_185423_469/kinked_cod_extrapolation.png",
+        "blob": "4ffd9edba705b881e46543d979e5ad8c5740bc9b",
+        "bytes": 82167
+      },
+      {
+        "path": "reports/G2/LP1_20261122_v3/LP1_clearances_UA.pdf",
+        "blob": "6074e58053b3658991615387dfb0333630273459",
+        "bytes": 49473
+      },
+      {
+        "path": "reports/G2/LP1_20261122_v3/LP1_clearances_UA.png",
+        "blob": "f4cb0060db83793dd4d55e4756a9ab34cf487a5a",
+        "bytes": 460667
+      },
+      {
+        "path": "reports/G2/LP1_20261122_v3/LP1_energy_UA.pdf",
+        "blob": "70b700cd246882fc5a738810be3b782bdeed54d6",
+        "bytes": 47827
+      },
+      {
+        "path": "reports/G2/LP1_20261122_v3/LP1_energy_UA.png",
+        "blob": "8ca3a5d6ef0383d1ac5b231ff33a08d63e4da5ff",
+        "bytes": 350864
+      },
+      {
+        "path": "reports/G2/LP1_20261122_v3/LP1_paths_UA.pdf",
+        "blob": "1cc66c2f3d8215dd29cdbb63a589026099932f12",
+        "bytes": 47968
+      },
+      {
+        "path": "reports/G2/LP1_20261122_v3/LP1_paths_UA.png",
+        "blob": "fd8db87522de66fa399fb784744933c62d042fc7",
+        "bytes": 274259
+      },
+      {
+        "path": "reports/G2/LP1_20261122_v3/LP1_signed_SIF_UA.pdf",
+        "blob": "42d7ac4162644a4951deb002900086683c1b5eaf",
+        "bytes": 45378
+      },
+      {
+        "path": "reports/G2/LP1_20261122_v3/LP1_signed_SIF_UA.png",
+        "blob": "02af22edf46e53a3e749c08fe9e985c8b6ce8e21",
+        "bytes": 347065
+      },
+      {
+        "path": "reports/G2/LP1_20261122_v3/LP1_turn_offset_UA.pdf",
+        "blob": "8c015c22b05aa80867c42d8c0c55034a952b4c68",
+        "bytes": 46435
+      },
+      {
+        "path": "reports/G2/LP1_20261122_v3/LP1_turn_offset_UA.png",
+        "blob": "2b2e4d69357d878a2390b9fada3e701590d80eae",
+        "bytes": 311249
+      },
+      {
+        "path": "reports/G2/LP1_20261122_v3/LP1_uncertainty_UA.pdf",
+        "blob": "acf33b4d99d95e6b95b6113012e81eedbdf6d9a7",
+        "bytes": 47772
+      },
+      {
+        "path": "reports/G2/LP1_20261122_v3/LP1_uncertainty_UA.png",
+        "blob": "16a4f6d8be3ac7efc5200dd0bb26d7cafd713be1",
+        "bytes": 221218
+      },
+      {
+        "path": "reports/G2/proposals/render_check/Metakompozyt_G2_M4A_proponovani_dopovnennia_UA.pdf",
+        "blob": "698002434034e8d793a063611fd70cd3fb61cf68",
+        "bytes": 1626392
+      },
+      {
+        "path": "reports/G2/proposals/render_check/p01.png",
+        "blob": "cd3e71544126285647dc9eb0207fbfd2c4513d7d",
+        "bytes": 239733
+      },
+      {
+        "path": "reports/G2/proposals/render_check/p02.png",
+        "blob": "4d4d70a69447875f90a8b4c3270c3a3e476734fb",
+        "bytes": 220078
+      },
+      {
+        "path": "reports/G2/proposals/render_check/p03.png",
+        "blob": "bd2d44ee4fe8bc9ff4f14c4264fd4b80fac100d7",
+        "bytes": 354705
+      },
+      {
+        "path": "reports/G2/proposals/render_check/p04.png",
+        "blob": "6e13dd701ac858a7a320e75a62c04e4659237b40",
+        "bytes": 216697
+      },
+      {
+        "path": "reports/G2/proposals/render_check/p05.png",
+        "blob": "4d1edaae7b3238baf4791bd804929a01dce8d528",
+        "bytes": 357665
+      },
+      {
+        "path": "reports/G2/proposals/render_check/p06.png",
+        "blob": "e62c14e67f37abe4ff41f3a3a991e2f5ba9cbecf",
+        "bytes": 248005
+      },
+      {
+        "path": "reports/G2/proposals/render_check/p07.png",
+        "blob": "ad75f1e2ce4e922d88711cd74fbed18ad55f604d",
+        "bytes": 234216
+      },
+      {
+        "path": "reports/G2/proposals/render_check/p08.png",
+        "blob": "06b88611e543685583d9fe907e2a9b00f83c541a",
+        "bytes": 226629
+      },
+      {
+        "path": "reports/G2/proposals/render_check_r1/Metakompozyt_G2_M4B_R1_proponovani_dopovnennia_UA.pdf",
+        "blob": "2f15251579c7a11ff2f1ec2f0ce87ff2e109a1f9",
+        "bytes": 1602233
+      },
+      {
+        "path": "reports/G2/proposals/render_check_r1/Metakompozyt_G2_M4B_R1_proponovani_dopovnennia_UA_p01.png",
+        "blob": "5dcb2ec0e33c27da383f762931dc59088a3fd609",
+        "bytes": 183736
+      },
+      {
+        "path": "reports/G2/proposals/render_check_r1/Metakompozyt_G2_M4B_R1_proponovani_dopovnennia_UA_p02.png",
+        "blob": "5fe488b414759a956f614cc26f85d72f3c872b44",
+        "bytes": 267709
+      },
+      {
+        "path": "reports/G2/proposals/render_check_r1/Metakompozyt_G2_M4B_R1_proponovani_dopovnennia_UA_p03.png",
+        "blob": "fafe4aa95dc86f4d45b0e9345fcaec52823f8ea4",
+        "bytes": 186991
+      },
+      {
+        "path": "reports/G2/proposals/render_check_r1/Metakompozyt_G2_M4B_R1_proponovani_dopovnennia_UA_p04.png",
+        "blob": "51107acab2d2f0df6eff7d8738aae26ce7501e3d",
+        "bytes": 186321
+      },
+      {
+        "path": "reports/G2/proposals/render_check_r1/Metakompozyt_G2_M4B_R1_proponovani_dopovnennia_UA_p05.png",
+        "blob": "ac4f03c775a3cfb11a2f1294cdcd7d48de5ee5d7",
+        "bytes": 98423
+      },
+      {
+        "path": "reports/G2/proposals/render_check_r1/Metakompozyt_G2_M4B_R1_proponovani_dopovnennia_UA_p06.png",
+        "blob": "6fedfe6d37388f47def5f019951694fdd5675610",
+        "bytes": 255011
+      },
+      {
+        "path": "reports/G2/proposals/render_check_r1/Metakompozyt_G2_M4B_R1_proponovani_dopovnennia_UA_p07.png",
+        "blob": "c9e8a89a5681f211c82688bd5abb696a73d350d8",
+        "bytes": 354149
+      },
+      {
+        "path": "reports/G2/proposals/render_check_r1/Metakompozyt_G2_M4B_R1_proponovani_dopovnennia_UA_p08.png",
+        "blob": "8d38f2077c51f64e16cd83a7e99a70869f78c939",
+        "bytes": 155840
+      },
+      {
+        "path": "reports/G2/proposals/render_check_r1/Metakompozyt_G2_M4B_R1_proponovani_dopovnennia_UA_p09.png",
+        "blob": "f9da4e731fe3f4a5690b64cdec6afda0b9827f2b",
+        "bytes": 102404
+      },
+      {
+        "path": "reports/G2/render_check_v0_4/Metakompozyt_G2_Naukovyi_zvit_UA_v0_4_Atrybutsiia_kilets_kandydat.pdf",
+        "blob": "ce7bcd1984edd58f709a057f28ded464101142e5",
+        "bytes": 3443172
+      },
+      {
+        "path": "reports/G2/render_check_v0_4/Metakompozyt_G2_Naukovyi_zvit_UA_v0_4_Atrybutsiia_kilets_kandydat_p01.png",
+        "blob": "937feb1d3135d538b133b7dc6b127cb279e9e92e",
+        "bytes": 133297
+      },
+      {
+        "path": "reports/G2/render_check_v0_4/Metakompozyt_G2_Naukovyi_zvit_UA_v0_4_Atrybutsiia_kilets_kandydat_p02.png",
+        "blob": "e42eab5a77bb52c3a402a4fd7eeb689014a045c9",
+        "bytes": 239540
+      },
+      {
+        "path": "reports/G2/render_check_v0_4/Metakompozyt_G2_Naukovyi_zvit_UA_v0_4_Atrybutsiia_kilets_kandydat_p03.png",
+        "blob": "2333e89af65b95cf950b8523d218144640c35a2d",
+        "bytes": 209806
+      },
+      {
+        "path": "reports/G2/render_check_v0_4/Metakompozyt_G2_Naukovyi_zvit_UA_v0_4_Atrybutsiia_kilets_kandydat_p04.png",
+        "blob": "4af93bcae505e7bbca15e14ba40d88f93f27562b",
+        "bytes": 209771
+      },
+      {
+        "path": "reports/G2/render_check_v0_4/Metakompozyt_G2_Naukovyi_zvit_UA_v0_4_Atrybutsiia_kilets_kandydat_p05.png",
+        "blob": "dc63603bc6312ffe9b252f13cafc920816f02721",
+        "bytes": 234316
+      },
+      {
+        "path": "reports/G2/render_check_v0_4/Metakompozyt_G2_Naukovyi_zvit_UA_v0_4_Atrybutsiia_kilets_kandydat_p06.png",
+        "blob": "7f3c9c1acde35345eef821cd9de9ee1e5f831b56",
+        "bytes": 204897
+      },
+      {
+        "path": "reports/G2/render_check_v0_4/Metakompozyt_G2_Naukovyi_zvit_UA_v0_4_Atrybutsiia_kilets_kandydat_p07.png",
+        "blob": "883cc1df2d963bf855bab3d8a1e55f508029e5f1",
+        "bytes": 208908
+      },
+      {
+        "path": "reports/G2/render_check_v0_4/Metakompozyt_G2_Naukovyi_zvit_UA_v0_4_Atrybutsiia_kilets_kandydat_p08.png",
+        "blob": "b506abcc44b91be5ec8896393fe9cd913efc94e4",
+        "bytes": 158156
+      },
+      {
+        "path": "reports/G2/render_check_v0_4/Metakompozyt_G2_Naukovyi_zvit_UA_v0_4_Atrybutsiia_kilets_kandydat_p09.png",
+        "blob": "9ddc35f654ddf8ed7229c1efac1dc987a442db49",
+        "bytes": 173553
+      },
+      {
+        "path": "reports/G2/render_check_v0_4/Metakompozyt_G2_Naukovyi_zvit_UA_v0_4_Atrybutsiia_kilets_kandydat_p10.png",
+        "blob": "b05b5d25784e163a9025f403dadc5f3da50b2385",
+        "bytes": 175881
+      },
+      {
+        "path": "reports/G2/render_check_v0_4/Metakompozyt_G2_Naukovyi_zvit_UA_v0_4_Atrybutsiia_kilets_kandydat_p11.png",
+        "blob": "b5071d966fe38404a83717295f3bc1abb025afdc",
+        "bytes": 169456
+      },
+      {
+        "path": "reports/G2/render_check_v0_4/Metakompozyt_G2_Naukovyi_zvit_UA_v0_4_Atrybutsiia_kilets_kandydat_p12.png",
+        "blob": "225c07eda7328845b5e17d7dca6289a985699f76",
+        "bytes": 196173
+      },
+      {
+        "path": "reports/G2/render_check_v0_4/Metakompozyt_G2_Naukovyi_zvit_UA_v0_4_Atrybutsiia_kilets_kandydat_p13.png",
+        "blob": "b4fed530979e49e4de1988c08c361e500e671fa2",
+        "bytes": 240725
+      },
+      {
+        "path": "reports/G2/render_check_v0_4/Metakompozyt_G2_Naukovyi_zvit_UA_v0_4_Atrybutsiia_kilets_kandydat_p14.png",
+        "blob": "e6fbd5ef9f258b104da8447cd58bea1729a0a7cb",
+        "bytes": 224829
+      },
+      {
+        "path": "reports/G2/render_check_v0_4/Metakompozyt_G2_Naukovyi_zvit_UA_v0_4_Atrybutsiia_kilets_kandydat_p15.png",
+        "blob": "1cdf973cc55601fdc009c54ce4ed1e0e6523ba68",
+        "bytes": 205428
+      },
+      {
+        "path": "reports/G2/render_check_v0_4/Metakompozyt_G2_Naukovyi_zvit_UA_v0_4_Atrybutsiia_kilets_kandydat_p16.png",
+        "blob": "ced09befc841a44f464c54c1ed10a4d3d88a0443",
+        "bytes": 208186
+      },
+      {
+        "path": "reports/G2/render_check_v0_4/Metakompozyt_G2_Naukovyi_zvit_UA_v0_4_Atrybutsiia_kilets_kandydat_p17.png",
+        "blob": "6c40a54b201a08487c67a946196e9215b26b5c31",
+        "bytes": 100372
+      },
+      {
+        "path": "reports/G2/render_check_v0_4/Metakompozyt_G2_Naukovyi_zvit_UA_v0_4_Atrybutsiia_kilets_kandydat_p18.png",
+        "blob": "a9c1caf489bd8ff25cd0ee373391bd55bab8da99",
+        "bytes": 203326
+      },
+      {
+        "path": "reports/G2/render_check_v0_4/Metakompozyt_G2_Naukovyi_zvit_UA_v0_4_Atrybutsiia_kilets_kandydat_p19.png",
+        "blob": "93378b84e2257c1ea008229d4a5d93064b3ff5c5",
+        "bytes": 195797
+      },
+      {
+        "path": "reports/G2/render_check_v0_4/Metakompozyt_G2_Naukovyi_zvit_UA_v0_4_Atrybutsiia_kilets_kandydat_p20.png",
+        "blob": "7d80b8e626441af71a0a1cc07bba2990fc30785e",
+        "bytes": 159785
+      },
+      {
+        "path": "reports/G2/render_check_v0_4/Metakompozyt_G2_Naukovyi_zvit_UA_v0_4_Atrybutsiia_kilets_kandydat_p21.png",
+        "blob": "3951b521ceced7cf1e6b414b782179b953267c3c",
+        "bytes": 204262
+      },
+      {
+        "path": "reports/G2/render_check_v0_4/Metakompozyt_G2_Naukovyi_zvit_UA_v0_4_Atrybutsiia_kilets_kandydat_p22.png",
+        "blob": "11c83f15bc7d29d58161b036928758af3bb0d3bb",
+        "bytes": 242452
+      },
+      {
+        "path": "reports/G2/render_check_v0_4/Metakompozyt_G2_Naukovyi_zvit_UA_v0_4_Atrybutsiia_kilets_kandydat_p23.png",
+        "blob": "8d80b0782665c07064e27d98904217fadc607021",
+        "bytes": 230356
+      },
+      {
+        "path": "reports/G2/render_check_v0_4/Metakompozyt_G2_Naukovyi_zvit_UA_v0_4_Atrybutsiia_kilets_kandydat_p24.png",
+        "blob": "878a02e2a77846081be0f4ce4867d3abc18e0700",
+        "bytes": 202261
+      },
+      {
+        "path": "reports/G2/render_check_v0_4/Metakompozyt_G2_Naukovyi_zvit_UA_v0_4_Atrybutsiia_kilets_kandydat_p25.png",
+        "blob": "a8a5dd6205b41e739bb858b6061559df23378106",
+        "bytes": 319524
+      },
+      {
+        "path": "reports/G2/render_check_v0_4/Metakompozyt_G2_Naukovyi_zvit_UA_v0_4_Atrybutsiia_kilets_kandydat_p26.png",
+        "blob": "56a8d5a5b40cd0635c0695d8319bf4abc37ec324",
+        "bytes": 332283
+      },
+      {
+        "path": "reports/G2/render_check_v0_4/Metakompozyt_G2_Naukovyi_zvit_UA_v0_4_Atrybutsiia_kilets_kandydat_p27.png",
+        "blob": "1597929f73a5dd14b5a72be615806cbb52d98f1a",
+        "bytes": 205186
+      },
+      {
+        "path": "reports/G2/render_check_v0_4/Metakompozyt_G2_Naukovyi_zvit_UA_v0_4_Atrybutsiia_kilets_kandydat_p28.png",
+        "blob": "ac615d2e720981e105e77e9236e586b28b5e6bec",
+        "bytes": 226138
+      },
+      {
+        "path": "reports/G2/render_check_v0_4/Metakompozyt_G2_Naukovyi_zvit_UA_v0_4_Atrybutsiia_kilets_kandydat_p29.png",
+        "blob": "723c02070e9f50baa7906cd9cf451b16b2bc9f9d",
+        "bytes": 115631
+      },
+      {
+        "path": "reports/G2/render_check_v0_4/Metakompozyt_G2_Naukovyi_zvit_UA_v0_4_Atrybutsiia_kilets_kandydat_p30.png",
+        "blob": "b6296a53cbc244de92d0e4e959c7e8947adc97de",
+        "bytes": 205957
+      },
+      {
+        "path": "reports/G2/render_check_v0_4/Metakompozyt_G2_Naukovyi_zvit_UA_v0_4_Atrybutsiia_kilets_kandydat_p31.png",
+        "blob": "41cc8b8d9c3f0e6ed4cfadad3483de9188e5b97e",
+        "bytes": 210769
+      },
+      {
+        "path": "reports/G2/render_check_v0_4/Metakompozyt_G2_Naukovyi_zvit_UA_v0_4_Atrybutsiia_kilets_kandydat_p32.png",
+        "blob": "3eaf14610b61a142fcef1063330a99ce102e8a82",
+        "bytes": 138524
+      },
+      {
+        "path": "reports/G2/render_check_v0_4/Metakompozyt_G2_Naukovyi_zvit_UA_v0_4_Atrybutsiia_kilets_kandydat_p33.png",
+        "blob": "37e67046a65e8fd016017a4e09c08182c16c995a",
+        "bytes": 174844
+      },
+      {
+        "path": "reports/G2/render_check_v0_4/Metakompozyt_G2_Naukovyi_zvit_UA_v0_4_Atrybutsiia_kilets_kandydat_p34.png",
+        "blob": "e538592e11da4572d57ab20ba8d54be569fa2a03",
+        "bytes": 146176
+      },
+      {
+        "path": "reports/G2/render_check_v0_4/Metakompozyt_G2_Naukovyi_zvit_UA_v0_4_Atrybutsiia_kilets_kandydat_p35.png",
+        "blob": "0423c539005cbc987b9da8dba5f57a9518ceeb54",
+        "bytes": 159525
+      },
+      {
+        "path": "reports/G2/render_check_v0_4/Metakompozyt_G2_Naukovyi_zvit_UA_v0_4_Atrybutsiia_kilets_kandydat_p36.png",
+        "blob": "1bf534714bd2f08ce0ba2970c60843020fd9f98b",
+        "bytes": 369734
+      },
+      {
+        "path": "reports/G2/render_check_v0_4/Metakompozyt_G2_Naukovyi_zvit_UA_v0_4_Atrybutsiia_kilets_kandydat_p37.png",
+        "blob": "a8ebd174cce617fa223ddfd1ea0f32fd0e4732dc",
+        "bytes": 215199
+      },
+      {
+        "path": "reports/G2/render_check_v0_4/Metakompozyt_G2_Naukovyi_zvit_UA_v0_4_Atrybutsiia_kilets_kandydat_p38.png",
+        "blob": "6307dd980933afde9e62ec32372be4263841ba4d",
+        "bytes": 185167
+      }
+    ]
+  },
+  {
+    "pr": 67,
+    "sha": "30efdaa94c10771801180a8d2bf5943b03fd10b2",
+    "status": "COMPLETE",
+    "tree_entries": 1250,
+    "files": [
+      {
+        "path": "matlab/g2/evidence/m2_20261121/report/m2_K_by_state.png",
+        "blob": "35660f221580a6b0b88bf6b3020e899b2c8be6bd",
+        "bytes": 76845
+      },
+      {
+        "path": "matlab/g2/evidence/m2_20261121/report/m2_R_vs_s.pdf",
+        "blob": "a4719b33f6dff2fda28893e46522bf6c6a69d09e",
+        "bytes": 4038
+      },
+      {
+        "path": "matlab/g2/evidence/m2_20261121/report/m2_R_vs_s.png",
+        "blob": "9d1abbf89b31bf9e0ef92586e569ddb1c4b9b5a0",
+        "bytes": 82841
+      },
+      {
+        "path": "matlab/g2/evidence/m2_20261121/report/m2_geometry_tips_bands.png",
+        "blob": "fb49bc96a3dcbf56520ce72b8222089d219acae7",
+        "bytes": 101178
+      },
+      {
+        "path": "matlab/g2/evidence/m2_20261121/report/m2_steering_mixity_G_compliance.pdf",
+        "blob": "09713199cbeacd188777379652da10710696105e",
+        "bytes": 12276
+      },
+      {
+        "path": "matlab/g2/evidence/m2_20261121/report/m2_steering_mixity_G_compliance.png",
+        "blob": "93ce181e5c8bfcad2e1a6a833a8e7bffef7419ba",
+        "bytes": 184870
+      },
+      {
+        "path": "matlab/g2/evidence/m3_20261121/report/m3_G_theta.png",
+        "blob": "81f121a19b0dd8d291ac3881d5900210082a7ffc",
+        "bytes": 144679
+      },
+      {
+        "path": "matlab/g2/evidence/m3_20261121/report/m3_paths_offsets.pdf",
+        "blob": "97eca5853c6a94b5ecab32cea13cb0d8f6706353",
+        "bytes": 7710
+      },
+      {
+        "path": "matlab/g2/evidence/m3_20261121/report/m3_paths_offsets.png",
+        "blob": "71410aa7f95ec6eccd4ff1a6c94689dfcddc0750",
+        "bytes": 123699
+      },
+      {
+        "path": "matlab/g2/evidence/m3_20261121/report/m3_phase_snapshot.png",
+        "blob": "29f44869834cc0754b7a9689c62e1a9c6ccb8530",
+        "bytes": 752480
+      },
+      {
+        "path": "matlab/g2/evidence/m3_20261121/report/m3_ratios.pdf",
+        "blob": "cc8265cc43b4bfbdbb3cfe5b2b44cc300f8623fd",
+        "bytes": 8775
+      },
+      {
+        "path": "matlab/g2/evidence/m3_20261121/report/m3_ratios.png",
+        "blob": "db11f9633e67fee569534ca12a6b1eeeded30deb",
+        "bytes": 118773
+      },
+      {
+        "path": "matlab/g2/evidence/m4_20261121/report/m4a_fig1_paths.png",
+        "blob": "18ac91166054680310a259d7bb6a9394d5858285",
+        "bytes": 147071
+      },
+      {
+        "path": "matlab/g2/evidence/m4_20261121/report/m4a_fig2_ratios.png",
+        "blob": "6c6f9ab67be4a3c2aed91250960cc8489b75e01e",
+        "bytes": 89860
+      },
+      {
+        "path": "matlab/g2/evidence/m4_20261121/report/m4a_fig3_interface_meshes.png",
+        "blob": "e315ebcee10ef6035968f140f91ae2296a0bc8f7",
+        "bytes": 395945
+      },
+      {
+        "path": "matlab/g2/evidence/m4_20261121/report/m4a_fig4_tip_q_support.png",
+        "blob": "21aaadc84d21e0e71d8b0ee2a2dcd0ccf0051c96",
+        "bytes": 539545
+      },
+      {
+        "path": "matlab/g2/evidence/m4_20261121/report/m4a_fig5_K.png",
+        "blob": "7eceef8606c9970a34fd8fb5e82d4954c7f8cfe7",
+        "bytes": 157239
+      },
+      {
+        "path": "matlab/g2/evidence/m4b_20261121/report/m4b_fig1_schematic.png",
+        "blob": "bea473a36bba89c90d07b6c82121eb006445e62d",
+        "bytes": 122229
+      },
+      {
+        "path": "matlab/g2/evidence/m4b_20261121/report/m4b_fig2_FG_Ftheta.png",
+        "blob": "15bab95768d0d2d7340dc8adb15e02a44478a6b4",
+        "bytes": 71613
+      },
+      {
+        "path": "matlab/g2/evidence/m4b_20261121/report/m4b_fig3_decomposition.png",
+        "blob": "d83df0296d79b5d709fe351b6861ef434decc693",
+        "bytes": 77878
+      },
+      {
+        "path": "matlab/g2/evidence/m4b_20261121/report/m4b_fig4_equal_area.png",
+        "blob": "54065e1e75ea6f7bd7e030fc8fc83f89c855d6b9",
+        "bytes": 136716
+      },
+      {
+        "path": "matlab/g2/evidence/m4b_20261121/report/m4b_fig5_energy_density.png",
+        "blob": "15c2b317040acb9be8eab1985a108793661d38f2",
+        "bytes": 525333
+      },
+      {
+        "path": "matlab/g2/evidence/m4b_r1_20261121/report/r1_g1_crossfamily_grey.png",
+        "blob": "77a816e3a2db1b9df0bc9f687f3f51d9b4670cd2",
+        "bytes": 79008
+      },
+      {
+        "path": "matlab/g2/evidence/m4b_r1_20261121/report/r1_g2_three_questions_grey.png",
+        "blob": "5fd3903aa07284b2dd7598868741a0d6084576c6",
+        "bytes": 126184
+      },
+      {
+        "path": "matlab/g2/evidence/m4b_r1_20261121/report/r1_g3_equal_area_grey.png",
+        "blob": "39ae62de1d2f74b2c57c35fb9021852b2d62e992",
+        "bytes": 119328
+      },
+      {
+        "path": "matlab/g2/evidence/m4b_r1_20261121/report/r1_g4_stress_global_grey.png",
+        "blob": "40453ad00f71e74ae2cdb07031c37391ce512dc3",
+        "bytes": 568874
+      },
+      {
+        "path": "matlab/g2/evidence/m4b_r1_20261121/report/r1_g4b_stress_local_grey.png",
+        "blob": "6e55e19aa086439cf3a24e549069e8710af94aed",
+        "bytes": 372263
+      },
+      {
+        "path": "matlab/g2/evidence/m4b_r1_20261121/report/r1_g5_energy_density_grey.png",
+        "blob": "b9a699dd6b0570c3a21dfa5ea8e113e3ddb9af6a",
+        "bytes": 462422
+      },
+      {
+        "path": "matlab/g2/evidence/m4b_r1_20261121/report/r1_g6_m4b_masks_grey.png",
+        "blob": "7c241fabce3b68035cf5a3a0ba0797a516eab5d4",
+        "bytes": 61272
+      },
+      {
+        "path": "matlab/g2/evidence/m4b_r1_20261121/report/r1_g7_m4b_decomposition_grey.png",
+        "blob": "e720812de357700bf3c816f3aede9acc92b8c6fb",
+        "bytes": 72709
+      },
+      {
+        "path": "matlab/g2/evidence/material_20261119/report/material_EDI_vs_COD.png",
+        "blob": "9d94749c05e732f175b65652535d71b98d39662b",
+        "bytes": 85059
+      },
+      {
+        "path": "matlab/g2/evidence/material_20261119/report/material_annulus_zoom.png",
+        "blob": "998d21092267937d5aec9bcf907788c696e5ab26",
+        "bytes": 429231
+      },
+      {
+        "path": "matlab/g2/evidence/material_20261119/report/material_benchmark_convergence.png",
+        "blob": "098012144d01ec6dce19fd14d980a2caed2b84ee",
+        "bytes": 87088
+      },
+      {
+        "path": "matlab/g2/evidence/material_20261119/report/material_interface_tractions.png",
+        "blob": "7fa2011e331bbdd661e889b38341188247652cb1",
+        "bytes": 204483
+      },
+      {
+        "path": "matlab/g2/evidence/material_20261119/report/material_phase_map.pdf",
+        "blob": "6f8612048b6b316d81bc71013ab66d6e4e7d3dbe",
+        "bytes": 887932
+      },
+      {
+        "path": "matlab/g2/evidence/material_20261119/report/material_phase_map.png",
+        "blob": "d424e19d575415b2a1218054c2c4f089218c1762",
+        "bytes": 948236
+      },
+      {
+        "path": "matlab/g2/evidence/material_20261119/report/material_ratios.pdf",
+        "blob": "1a139cab4cf9ddefbce6cd0445206f92900d4296",
+        "bytes": 11535
+      },
+      {
+        "path": "matlab/g2/evidence/material_20261119/report/material_ratios.png",
+        "blob": "934850f1ebd8ba01bad3762874351918449f37b1",
+        "bytes": 146875
+      },
+      {
+        "path": "matlab/g2/evidence/p010_isolated_run_20261118_162823_323/p010_inner_tip_zoom.png",
+        "blob": "49f7ba02abb1ea9ac003c2425aa370651ebc649d",
+        "bytes": 304278
+      },
+      {
+        "path": "matlab/g2/evidence/p010_isolated_run_20261118_162823_323/p010_regular_core_and_collar.png",
+        "blob": "a4e87eab0636da637b412125c5d6f978f87abfc3",
+        "bytes": 294927
+      },
+      {
+        "path": "matlab/g2/evidence/wp1_20261118/mesh_run_20261118_163717_510/protected_full_mesh.png",
+        "blob": "4dcaec949bc6eb5fa28db34f6c31252fcd1eef0d",
+        "bytes": 736415
+      },
+      {
+        "path": "matlab/g2/evidence/wp1_20261118/mesh_run_20261118_163717_510/protected_tip_seams_q.png",
+        "blob": "053b8e23a2a3289783d13ceb371d5407dbce711c",
+        "bytes": 690556
+      },
+      {
+        "path": "matlab/g2/evidence/wp2_20261118/cornell_run_20261118_170047_650/cornell_K_vs_annulus.png",
+        "blob": "d1d133bc316fdd98a9e7952e1b0cdab0d8a351f7",
+        "bytes": 83738
+      },
+      {
+        "path": "matlab/g2/evidence/wp2_20261118/cornell_run_20261118_170047_650/cornell_cod_extrapolation.png",
+        "blob": "f0400350fd345291518624e5ccbdeb0c464a5e88",
+        "bytes": 82279
+      },
+      {
+        "path": "matlab/g2/evidence/wp2_20261118/mesh_famA_run_20261118_165922_343/protected_full_mesh.png",
+        "blob": "fb331e4c7471339cf16ec13175d4a3fcb766ca41",
+        "bytes": 780777
+      },
+      {
+        "path": "matlab/g2/evidence/wp2_20261118/mesh_famA_run_20261118_165922_343/protected_tip_seams_q.png",
+        "blob": "95d9c9fc535718db6d40110fdd13c69b44a12245",
+        "bytes": 701413
+      },
+      {
+        "path": "matlab/g2/evidence/wp2_20261118/mesh_famB_run_20261118_165941_636/protected_full_mesh.png",
+        "blob": "b4ef6f80d01eaa29244676aeb8ec88f4691836ed",
+        "bytes": 896693
+      },
+      {
+        "path": "matlab/g2/evidence/wp34_20261118/state2_report/state2_K_vs_annulus.png",
+        "blob": "31ae99d02eb1a94cabea2710be8116cca5bce45e",
+        "bytes": 83354
+      },
+      {
+        "path": "matlab/g2/evidence/wp34_20261118/state2_report/state2_full_mesh.png",
+        "blob": "1d7cca76ffb670f0e350a06e6da532c0cf08fb82",
+        "bytes": 829694
+      },
+      {
+        "path": "matlab/g2/evidence/wp34_20261118/state2_report/state2_trajectory.png",
+        "blob": "bef6ef8c508290b129c8b04fa3e53b8583614ce9",
+        "bytes": 46614
+      },
+      {
+        "path": "matlab/g2/evidence/wp34_20261118/state2_report/state2_two_kink_zoom.pdf",
+        "blob": "61c08a5b6e8cf7878406a7018de483a68ac5f1c1",
+        "bytes": 66075
+      },
+      {
+        "path": "matlab/g2/evidence/wp34_20261118/state2_report/state2_two_kink_zoom.png",
+        "blob": "c6b21ba1b7009e673019b6091c081c4d5af5f3d3",
+        "bytes": 678940
+      },
+      {
+        "path": "matlab/g2/evidence/wp3_20261118/g2_wp3_kinked_mesh_run_20261118_183545_651_famA/kinked_full_mesh.png",
+        "blob": "d2b52d9b858226d0a10f93fd45f26c109fb4f086",
+        "bytes": 784685
+      },
+      {
+        "path": "matlab/g2/evidence/wp3_20261118/g2_wp3_kinked_mesh_run_20261118_183545_651_famA/kinked_kink_vertex_zoom.png",
+        "blob": "00b1f5ee31d2dff66863e5f9601ece63a35fcc21",
+        "bytes": 175241
+      },
+      {
+        "path": "matlab/g2/evidence/wp3_20261118/g2_wp3_kinked_mesh_run_20261118_183545_651_famA/kinked_rotated_core_seams_q.pdf",
+        "blob": "00929717770e325b12dab11ed2f556b7c60222fa",
+        "bytes": 170934
+      },
+      {
+        "path": "matlab/g2/evidence/wp3_20261118/g2_wp3_kinked_mesh_run_20261118_183545_651_famA/kinked_rotated_core_seams_q.png",
+        "blob": "bc16bf31af9978101da786030a866dd922569ac1",
+        "bytes": 705333
+      },
+      {
+        "path": "matlab/g2/evidence/wp3_20261118/g2_wp3_kinked_mesh_run_20261118_184040_732_famA_mirror/kinked_full_mesh.png",
+        "blob": "98e1ba7f28e4cc63bf7ad3dcc064a701b3192b8b",
+        "bytes": 782714
+      },
+      {
+        "path": "matlab/g2/evidence/wp3_20261118/g2_wp3_kinked_mesh_run_20261118_184040_732_famA_mirror/kinked_kink_vertex_zoom.png",
+        "blob": "b473454553f7fcb387a6fade50f94883e599b13b",
+        "bytes": 174703
+      },
+      {
+        "path": "matlab/g2/evidence/wp3_20261118/g2_wp3_kinked_mesh_run_20261118_184040_732_famA_mirror/kinked_rotated_core_seams_q.pdf",
+        "blob": "a7f2b1712584dafdea8e23e2e4da1b05f2aae4f9",
+        "bytes": 170403
+      },
+      {
+        "path": "matlab/g2/evidence/wp3_20261118/g2_wp3_kinked_mesh_run_20261118_184040_732_famA_mirror/kinked_rotated_core_seams_q.png",
+        "blob": "d1e22b127138c807b79bbba442b5155500e45c29",
+        "bytes": 709656
+      },
+      {
+        "path": "matlab/g2/evidence/wp3_20261118/g2_wp3_kinked_mesh_run_20261118_184957_278_famB/kinked_full_mesh.png",
+        "blob": "dcce2a216c6937e4cfac90dc6559c6a930e01b1e",
+        "bytes": 904176
+      },
+      {
+        "path": "matlab/g2/evidence/wp3_20261118/g2_wp3_kinked_mesh_run_20261118_184957_278_famB/kinked_kink_vertex_zoom.png",
+        "blob": "ce1cdb869884937661af05fba3df2e3385af430c",
+        "bytes": 186377
+      },
+      {
+        "path": "matlab/g2/evidence/wp3_20261118/g2_wp3_kinked_mesh_run_20261118_184957_278_famB/kinked_rotated_core_seams_q.pdf",
+        "blob": "c6e91cf9490493222e3905a20983e64676b024bd",
+        "bytes": 171409
+      },
+      {
+        "path": "matlab/g2/evidence/wp3_20261118/g2_wp3_kinked_mesh_run_20261118_184957_278_famB/kinked_rotated_core_seams_q.png",
+        "blob": "de056e497f89d8e2aa9ad53888f70989b1745478",
+        "bytes": 706598
+      },
+      {
+        "path": "matlab/g2/evidence/wp3_20261118/g2_wp3_kinked_sif_run_20261118_185423_469/kinked_K_vs_annulus.png",
+        "blob": "9674a415080fd377d3f40b406171a660937a8cf4",
+        "bytes": 78694
+      },
+      {
+        "path": "matlab/g2/evidence/wp3_20261118/g2_wp3_kinked_sif_run_20261118_185423_469/kinked_cod_extrapolation.png",
+        "blob": "4ffd9edba705b881e46543d979e5ad8c5740bc9b",
+        "bytes": 82167
+      },
+      {
+        "path": "reports/G2/LP1_20261122_v3/LP1_clearances_UA.pdf",
+        "blob": "6074e58053b3658991615387dfb0333630273459",
+        "bytes": 49473
+      },
+      {
+        "path": "reports/G2/LP1_20261122_v3/LP1_clearances_UA.png",
+        "blob": "f4cb0060db83793dd4d55e4756a9ab34cf487a5a",
+        "bytes": 460667
+      },
+      {
+        "path": "reports/G2/LP1_20261122_v3/LP1_energy_UA.pdf",
+        "blob": "70b700cd246882fc5a738810be3b782bdeed54d6",
+        "bytes": 47827
+      },
+      {
+        "path": "reports/G2/LP1_20261122_v3/LP1_energy_UA.png",
+        "blob": "8ca3a5d6ef0383d1ac5b231ff33a08d63e4da5ff",
+        "bytes": 350864
+      },
+      {
+        "path": "reports/G2/LP1_20261122_v3/LP1_paths_UA.pdf",
+        "blob": "1cc66c2f3d8215dd29cdbb63a589026099932f12",
+        "bytes": 47968
+      },
+      {
+        "path": "reports/G2/LP1_20261122_v3/LP1_paths_UA.png",
+        "blob": "fd8db87522de66fa399fb784744933c62d042fc7",
+        "bytes": 274259
+      },
+      {
+        "path": "reports/G2/LP1_20261122_v3/LP1_signed_SIF_UA.pdf",
+        "blob": "42d7ac4162644a4951deb002900086683c1b5eaf",
+        "bytes": 45378
+      },
+      {
+        "path": "reports/G2/LP1_20261122_v3/LP1_signed_SIF_UA.png",
+        "blob": "02af22edf46e53a3e749c08fe9e985c8b6ce8e21",
+        "bytes": 347065
+      },
+      {
+        "path": "reports/G2/LP1_20261122_v3/LP1_turn_offset_UA.pdf",
+        "blob": "8c015c22b05aa80867c42d8c0c55034a952b4c68",
+        "bytes": 46435
+      },
+      {
+        "path": "reports/G2/LP1_20261122_v3/LP1_turn_offset_UA.png",
+        "blob": "2b2e4d69357d878a2390b9fada3e701590d80eae",
+        "bytes": 311249
+      },
+      {
+        "path": "reports/G2/LP1_20261122_v3/LP1_uncertainty_UA.pdf",
+        "blob": "acf33b4d99d95e6b95b6113012e81eedbdf6d9a7",
+        "bytes": 47772
+      },
+      {
+        "path": "reports/G2/LP1_20261122_v3/LP1_uncertainty_UA.png",
+        "blob": "16a4f6d8be3ac7efc5200dd0bb26d7cafd713be1",
+        "bytes": 221218
+      },
+      {
+        "path": "reports/G2/figures/a1/A1_F1_tip_mesh_levels_UA.pdf",
+        "blob": "d63caa0ace90d6ef52b50504b8cf9cb68e79bff7",
+        "bytes": 103708
+      },
+      {
+        "path": "reports/G2/figures/a1/A1_F1_tip_mesh_levels_UA.png",
+        "blob": "b7fdf63248621f1e47a9bfd6f8720ce02843b8ab",
+        "bytes": 598082
+      },
+      {
+        "path": "reports/G2/figures/a1/A1_F2_preservation_UA.pdf",
+        "blob": "be88caad71b975f4bf3634af4129c2ba6a4c1350",
+        "bytes": 64746
+      },
+      {
+        "path": "reports/G2/figures/a1/A1_F2_preservation_UA.png",
+        "blob": "64e551574a387d79951f86ad558b714c3443463a",
+        "bytes": 169994
+      },
+      {
+        "path": "reports/G2/figures/a1/A1_F3_cost_UA.pdf",
+        "blob": "75c599f09ca4ac33fcca2e28a8bcca6ab33a96e3",
+        "bytes": 28635
+      },
+      {
+        "path": "reports/G2/figures/a1/A1_F3_cost_UA.png",
+        "blob": "801a17b94cc3c4ad229c7b8a46ac20bbdb821a51",
+        "bytes": 75199
+      },
+      {
+        "path": "reports/G2/figures/a1/A1_F4_sif_changes_UA.pdf",
+        "blob": "627e732c02d35a13293028ab11e74711dd4b2775",
+        "bytes": 41673
+      },
+      {
+        "path": "reports/G2/figures/a1/A1_F4_sif_changes_UA.png",
+        "blob": "a57703f2d7a6bdd067b6c93ea40844371b4b767c",
+        "bytes": 162738
+      },
+      {
+        "path": "reports/G2/figures/a1/A1_F5_FG_robustness_UA.pdf",
+        "blob": "3c14389d569337c13a46b4e62b21d8b45f238b6b",
+        "bytes": 29793
+      },
+      {
+        "path": "reports/G2/figures/a1/A1_F5_FG_robustness_UA.png",
+        "blob": "d4a5a2f274bb6b9e1f85ae2178e7a46da9da629d",
+        "bytes": 80458
+      },
+      {
+        "path": "reports/G2/figures/a1/A1_F6_numerical_indicators_UA.pdf",
+        "blob": "fc8978d12a9e55bd1e1ab6115ec19249b833c0e4",
+        "bytes": 38193
+      },
+      {
+        "path": "reports/G2/figures/a1/A1_F6_numerical_indicators_UA.png",
+        "blob": "f0cc192cabc71fe02e19ceadc3be0dc5c8dd6728",
+        "bytes": 82902
+      },
+      {
+        "path": "reports/G2/proposals/render_check/Metakompozyt_G2_M4A_proponovani_dopovnennia_UA.pdf",
+        "blob": "698002434034e8d793a063611fd70cd3fb61cf68",
+        "bytes": 1626392
+      },
+      {
+        "path": "reports/G2/proposals/render_check/p01.png",
+        "blob": "cd3e71544126285647dc9eb0207fbfd2c4513d7d",
+        "bytes": 239733
+      },
+      {
+        "path": "reports/G2/proposals/render_check/p02.png",
+        "blob": "4d4d70a69447875f90a8b4c3270c3a3e476734fb",
+        "bytes": 220078
+      },
+      {
+        "path": "reports/G2/proposals/render_check/p03.png",
+        "blob": "bd2d44ee4fe8bc9ff4f14c4264fd4b80fac100d7",
+        "bytes": 354705
+      },
+      {
+        "path": "reports/G2/proposals/render_check/p04.png",
+        "blob": "6e13dd701ac858a7a320e75a62c04e4659237b40",
+        "bytes": 216697
+      },
+      {
+        "path": "reports/G2/proposals/render_check/p05.png",
+        "blob": "4d1edaae7b3238baf4791bd804929a01dce8d528",
+        "bytes": 357665
+      },
+      {
+        "path": "reports/G2/proposals/render_check/p06.png",
+        "blob": "e62c14e67f37abe4ff41f3a3a991e2f5ba9cbecf",
+        "bytes": 248005
+      },
+      {
+        "path": "reports/G2/proposals/render_check/p07.png",
+        "blob": "ad75f1e2ce4e922d88711cd74fbed18ad55f604d",
+        "bytes": 234216
+      },
+      {
+        "path": "reports/G2/proposals/render_check/p08.png",
+        "blob": "06b88611e543685583d9fe907e2a9b00f83c541a",
+        "bytes": 226629
+      },
+      {
+        "path": "reports/G2/proposals/render_check_r1/Metakompozyt_G2_M4B_R1_proponovani_dopovnennia_UA.pdf",
+        "blob": "2f15251579c7a11ff2f1ec2f0ce87ff2e109a1f9",
+        "bytes": 1602233
+      },
+      {
+        "path": "reports/G2/proposals/render_check_r1/Metakompozyt_G2_M4B_R1_proponovani_dopovnennia_UA_p01.png",
+        "blob": "5dcb2ec0e33c27da383f762931dc59088a3fd609",
+        "bytes": 183736
+      },
+      {
+        "path": "reports/G2/proposals/render_check_r1/Metakompozyt_G2_M4B_R1_proponovani_dopovnennia_UA_p02.png",
+        "blob": "5fe488b414759a956f614cc26f85d72f3c872b44",
+        "bytes": 267709
+      },
+      {
+        "path": "reports/G2/proposals/render_check_r1/Metakompozyt_G2_M4B_R1_proponovani_dopovnennia_UA_p03.png",
+        "blob": "fafe4aa95dc86f4d45b0e9345fcaec52823f8ea4",
+        "bytes": 186991
+      },
+      {
+        "path": "reports/G2/proposals/render_check_r1/Metakompozyt_G2_M4B_R1_proponovani_dopovnennia_UA_p04.png",
+        "blob": "51107acab2d2f0df6eff7d8738aae26ce7501e3d",
+        "bytes": 186321
+      },
+      {
+        "path": "reports/G2/proposals/render_check_r1/Metakompozyt_G2_M4B_R1_proponovani_dopovnennia_UA_p05.png",
+        "blob": "ac4f03c775a3cfb11a2f1294cdcd7d48de5ee5d7",
+        "bytes": 98423
+      },
+      {
+        "path": "reports/G2/proposals/render_check_r1/Metakompozyt_G2_M4B_R1_proponovani_dopovnennia_UA_p06.png",
+        "blob": "6fedfe6d37388f47def5f019951694fdd5675610",
+        "bytes": 255011
+      },
+      {
+        "path": "reports/G2/proposals/render_check_r1/Metakompozyt_G2_M4B_R1_proponovani_dopovnennia_UA_p07.png",
+        "blob": "c9e8a89a5681f211c82688bd5abb696a73d350d8",
+        "bytes": 354149
+      },
+      {
+        "path": "reports/G2/proposals/render_check_r1/Metakompozyt_G2_M4B_R1_proponovani_dopovnennia_UA_p08.png",
+        "blob": "8d38f2077c51f64e16cd83a7e99a70869f78c939",
+        "bytes": 155840
+      },
+      {
+        "path": "reports/G2/proposals/render_check_r1/Metakompozyt_G2_M4B_R1_proponovani_dopovnennia_UA_p09.png",
+        "blob": "f9da4e731fe3f4a5690b64cdec6afda0b9827f2b",
+        "bytes": 102404
+      },
+      {
+        "path": "reports/G2/render_check_v0_4/Metakompozyt_G2_Naukovyi_zvit_UA_v0_4_Atrybutsiia_kilets_kandydat.pdf",
+        "blob": "ce7bcd1984edd58f709a057f28ded464101142e5",
+        "bytes": 3443172
+      },
+      {
+        "path": "reports/G2/render_check_v0_4/Metakompozyt_G2_Naukovyi_zvit_UA_v0_4_Atrybutsiia_kilets_kandydat_p01.png",
+        "blob": "937feb1d3135d538b133b7dc6b127cb279e9e92e",
+        "bytes": 133297
+      },
+      {
+        "path": "reports/G2/render_check_v0_4/Metakompozyt_G2_Naukovyi_zvit_UA_v0_4_Atrybutsiia_kilets_kandydat_p02.png",
+        "blob": "e42eab5a77bb52c3a402a4fd7eeb689014a045c9",
+        "bytes": 239540
+      },
+      {
+        "path": "reports/G2/render_check_v0_4/Metakompozyt_G2_Naukovyi_zvit_UA_v0_4_Atrybutsiia_kilets_kandydat_p03.png",
+        "blob": "2333e89af65b95cf950b8523d218144640c35a2d",
+        "bytes": 209806
+      },
+      {
+        "path": "reports/G2/render_check_v0_4/Metakompozyt_G2_Naukovyi_zvit_UA_v0_4_Atrybutsiia_kilets_kandydat_p04.png",
+        "blob": "4af93bcae505e7bbca15e14ba40d88f93f27562b",
+        "bytes": 209771
+      },
+      {
+        "path": "reports/G2/render_check_v0_4/Metakompozyt_G2_Naukovyi_zvit_UA_v0_4_Atrybutsiia_kilets_kandydat_p05.png",
+        "blob": "dc63603bc6312ffe9b252f13cafc920816f02721",
+        "bytes": 234316
+      },
+      {
+        "path": "reports/G2/render_check_v0_4/Metakompozyt_G2_Naukovyi_zvit_UA_v0_4_Atrybutsiia_kilets_kandydat_p06.png",
+        "blob": "7f3c9c1acde35345eef821cd9de9ee1e5f831b56",
+        "bytes": 204897
+      },
+      {
+        "path": "reports/G2/render_check_v0_4/Metakompozyt_G2_Naukovyi_zvit_UA_v0_4_Atrybutsiia_kilets_kandydat_p07.png",
+        "blob": "883cc1df2d963bf855bab3d8a1e55f508029e5f1",
+        "bytes": 208908
+      },
+      {
+        "path": "reports/G2/render_check_v0_4/Metakompozyt_G2_Naukovyi_zvit_UA_v0_4_Atrybutsiia_kilets_kandydat_p08.png",
+        "blob": "b506abcc44b91be5ec8896393fe9cd913efc94e4",
+        "bytes": 158156
+      },
+      {
+        "path": "reports/G2/render_check_v0_4/Metakompozyt_G2_Naukovyi_zvit_UA_v0_4_Atrybutsiia_kilets_kandydat_p09.png",
+        "blob": "9ddc35f654ddf8ed7229c1efac1dc987a442db49",
+        "bytes": 173553
+      },
+      {
+        "path": "reports/G2/render_check_v0_4/Metakompozyt_G2_Naukovyi_zvit_UA_v0_4_Atrybutsiia_kilets_kandydat_p10.png",
+        "blob": "b05b5d25784e163a9025f403dadc5f3da50b2385",
+        "bytes": 175881
+      },
+      {
+        "path": "reports/G2/render_check_v0_4/Metakompozyt_G2_Naukovyi_zvit_UA_v0_4_Atrybutsiia_kilets_kandydat_p11.png",
+        "blob": "b5071d966fe38404a83717295f3bc1abb025afdc",
+        "bytes": 169456
+      },
+      {
+        "path": "reports/G2/render_check_v0_4/Metakompozyt_G2_Naukovyi_zvit_UA_v0_4_Atrybutsiia_kilets_kandydat_p12.png",
+        "blob": "225c07eda7328845b5e17d7dca6289a985699f76",
+        "bytes": 196173
+      },
+      {
+        "path": "reports/G2/render_check_v0_4/Metakompozyt_G2_Naukovyi_zvit_UA_v0_4_Atrybutsiia_kilets_kandydat_p13.png",
+        "blob": "b4fed530979e49e4de1988c08c361e500e671fa2",
+        "bytes": 240725
+      },
+      {
+        "path": "reports/G2/render_check_v0_4/Metakompozyt_G2_Naukovyi_zvit_UA_v0_4_Atrybutsiia_kilets_kandydat_p14.png",
+        "blob": "e6fbd5ef9f258b104da8447cd58bea1729a0a7cb",
+        "bytes": 224829
+      },
+      {
+        "path": "reports/G2/render_check_v0_4/Metakompozyt_G2_Naukovyi_zvit_UA_v0_4_Atrybutsiia_kilets_kandydat_p15.png",
+        "blob": "1cdf973cc55601fdc009c54ce4ed1e0e6523ba68",
+        "bytes": 205428
+      },
+      {
+        "path": "reports/G2/render_check_v0_4/Metakompozyt_G2_Naukovyi_zvit_UA_v0_4_Atrybutsiia_kilets_kandydat_p16.png",
+        "blob": "ced09befc841a44f464c54c1ed10a4d3d88a0443",
+        "bytes": 208186
+      },
+      {
+        "path": "reports/G2/render_check_v0_4/Metakompozyt_G2_Naukovyi_zvit_UA_v0_4_Atrybutsiia_kilets_kandydat_p17.png",
+        "blob": "6c40a54b201a08487c67a946196e9215b26b5c31",
+        "bytes": 100372
+      },
+      {
+        "path": "reports/G2/render_check_v0_4/Metakompozyt_G2_Naukovyi_zvit_UA_v0_4_Atrybutsiia_kilets_kandydat_p18.png",
+        "blob": "a9c1caf489bd8ff25cd0ee373391bd55bab8da99",
+        "bytes": 203326
+      },
+      {
+        "path": "reports/G2/render_check_v0_4/Metakompozyt_G2_Naukovyi_zvit_UA_v0_4_Atrybutsiia_kilets_kandydat_p19.png",
+        "blob": "93378b84e2257c1ea008229d4a5d93064b3ff5c5",
+        "bytes": 195797
+      },
+      {
+        "path": "reports/G2/render_check_v0_4/Metakompozyt_G2_Naukovyi_zvit_UA_v0_4_Atrybutsiia_kilets_kandydat_p20.png",
+        "blob": "7d80b8e626441af71a0a1cc07bba2990fc30785e",
+        "bytes": 159785
+      },
+      {
+        "path": "reports/G2/render_check_v0_4/Metakompozyt_G2_Naukovyi_zvit_UA_v0_4_Atrybutsiia_kilets_kandydat_p21.png",
+        "blob": "3951b521ceced7cf1e6b414b782179b953267c3c",
+        "bytes": 204262
+      },
+      {
+        "path": "reports/G2/render_check_v0_4/Metakompozyt_G2_Naukovyi_zvit_UA_v0_4_Atrybutsiia_kilets_kandydat_p22.png",
+        "blob": "11c83f15bc7d29d58161b036928758af3bb0d3bb",
+        "bytes": 242452
+      },
+      {
+        "path": "reports/G2/render_check_v0_4/Metakompozyt_G2_Naukovyi_zvit_UA_v0_4_Atrybutsiia_kilets_kandydat_p23.png",
+        "blob": "8d80b0782665c07064e27d98904217fadc607021",
+        "bytes": 230356
+      },
+      {
+        "path": "reports/G2/render_check_v0_4/Metakompozyt_G2_Naukovyi_zvit_UA_v0_4_Atrybutsiia_kilets_kandydat_p24.png",
+        "blob": "878a02e2a77846081be0f4ce4867d3abc18e0700",
+        "bytes": 202261
+      },
+      {
+        "path": "reports/G2/render_check_v0_4/Metakompozyt_G2_Naukovyi_zvit_UA_v0_4_Atrybutsiia_kilets_kandydat_p25.png",
+        "blob": "a8a5dd6205b41e739bb858b6061559df23378106",
+        "bytes": 319524
+      },
+      {
+        "path": "reports/G2/render_check_v0_4/Metakompozyt_G2_Naukovyi_zvit_UA_v0_4_Atrybutsiia_kilets_kandydat_p26.png",
+        "blob": "56a8d5a5b40cd0635c0695d8319bf4abc37ec324",
+        "bytes": 332283
+      },
+      {
+        "path": "reports/G2/render_check_v0_4/Metakompozyt_G2_Naukovyi_zvit_UA_v0_4_Atrybutsiia_kilets_kandydat_p27.png",
+        "blob": "1597929f73a5dd14b5a72be615806cbb52d98f1a",
+        "bytes": 205186
+      },
+      {
+        "path": "reports/G2/render_check_v0_4/Metakompozyt_G2_Naukovyi_zvit_UA_v0_4_Atrybutsiia_kilets_kandydat_p28.png",
+        "blob": "ac615d2e720981e105e77e9236e586b28b5e6bec",
+        "bytes": 226138
+      },
+      {
+        "path": "reports/G2/render_check_v0_4/Metakompozyt_G2_Naukovyi_zvit_UA_v0_4_Atrybutsiia_kilets_kandydat_p29.png",
+        "blob": "723c02070e9f50baa7906cd9cf451b16b2bc9f9d",
+        "bytes": 115631
+      },
+      {
+        "path": "reports/G2/render_check_v0_4/Metakompozyt_G2_Naukovyi_zvit_UA_v0_4_Atrybutsiia_kilets_kandydat_p30.png",
+        "blob": "b6296a53cbc244de92d0e4e959c7e8947adc97de",
+        "bytes": 205957
+      },
+      {
+        "path": "reports/G2/render_check_v0_4/Metakompozyt_G2_Naukovyi_zvit_UA_v0_4_Atrybutsiia_kilets_kandydat_p31.png",
+        "blob": "41cc8b8d9c3f0e6ed4cfadad3483de9188e5b97e",
+        "bytes": 210769
+      },
+      {
+        "path": "reports/G2/render_check_v0_4/Metakompozyt_G2_Naukovyi_zvit_UA_v0_4_Atrybutsiia_kilets_kandydat_p32.png",
+        "blob": "3eaf14610b61a142fcef1063330a99ce102e8a82",
+        "bytes": 138524
+      },
+      {
+        "path": "reports/G2/render_check_v0_4/Metakompozyt_G2_Naukovyi_zvit_UA_v0_4_Atrybutsiia_kilets_kandydat_p33.png",
+        "blob": "37e67046a65e8fd016017a4e09c08182c16c995a",
+        "bytes": 174844
+      },
+      {
+        "path": "reports/G2/render_check_v0_4/Metakompozyt_G2_Naukovyi_zvit_UA_v0_4_Atrybutsiia_kilets_kandydat_p34.png",
+        "blob": "e538592e11da4572d57ab20ba8d54be569fa2a03",
+        "bytes": 146176
+      },
+      {
+        "path": "reports/G2/render_check_v0_4/Metakompozyt_G2_Naukovyi_zvit_UA_v0_4_Atrybutsiia_kilets_kandydat_p35.png",
+        "blob": "0423c539005cbc987b9da8dba5f57a9518ceeb54",
+        "bytes": 159525
+      },
+      {
+        "path": "reports/G2/render_check_v0_4/Metakompozyt_G2_Naukovyi_zvit_UA_v0_4_Atrybutsiia_kilets_kandydat_p36.png",
+        "blob": "1bf534714bd2f08ce0ba2970c60843020fd9f98b",
+        "bytes": 369734
+      },
+      {
+        "path": "reports/G2/render_check_v0_4/Metakompozyt_G2_Naukovyi_zvit_UA_v0_4_Atrybutsiia_kilets_kandydat_p37.png",
+        "blob": "a8ebd174cce617fa223ddfd1ea0f32fd0e4732dc",
+        "bytes": 215199
+      },
+      {
+        "path": "reports/G2/render_check_v0_4/Metakompozyt_G2_Naukovyi_zvit_UA_v0_4_Atrybutsiia_kilets_kandydat_p38.png",
+        "blob": "6307dd980933afde9e62ec32372be4263841ba4d",
+        "bytes": 185167
+      }
+    ]
+  }
+]
