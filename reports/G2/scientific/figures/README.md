@@ -17,3 +17,7 @@
 ## Розділ 4
 
 Одинадцять оригінальних рисунків Клауде: A1-F1–F6, R1 g1/g2, LP2A2-6/7/8. Джерела та точні blobs: [CH04_VERIFICATION_PROVENANCE.md](../evidence/CH04_VERIFICATION_PROVENANCE.md). Включені PNG R1 мають українські підписи за FIGURE_NOTES.json; решта PDF.
+
+## Розділ 5
+
+П'ять нових українських TikZ-рисунків M2_UA_* за оригінальними даними Клауде; чотири англомовні оригінали в archive_m2/ збережено без зміни. Див. [CH05_FIXED_CRACK_PROVENANCE.md](../evidence/CH05_FIXED_CRACK_PROVENANCE.md).
