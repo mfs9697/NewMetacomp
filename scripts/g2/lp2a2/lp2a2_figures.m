@@ -60,16 +60,16 @@ save1(f,outDir,'LP2A2_3_pislia_kolapsu_UA');
 tip=P9(end,:);rw=D9.elementRows;
 f=figure('Visible','off','Color','w','Units','centimeters','Position',[0 0 17 8.5]);tl=tiledlayout(f,1,2,'TileSpacing','compact','Padding','compact');
 for q=1:2
- ax=nexttile(tl);hold(ax,'on');wd=[6 1.2];w=wd(q);
- sel=@(r)r(all(abs(X(T(r,1),:)-tip)<w+1,2));
+ ax=nexttile(tl);hold(ax,'on');wd=[6 .6];w=wd(q);cz=tip;if q==2,cz=tip-3.3*t9;end
+ sel=@(r)r(all(abs(X(T(r,1),:)-cz)<w+1,2));
  patch(ax,'Faces',T(sel(rw.core),:),'Vertices',X,'FaceColor',[.88 .88 .88],'EdgeColor',[.5 .5 .5],'LineWidth',.2);
  patch(ax,'Faces',T(sel(rw.collar),:),'Vertices',X,'FaceColor',[.80 .90 1],'EdgeColor',[.3 .45 .7],'LineWidth',.3);
  patch(ax,'Faces',T(sel(rw.exterior),:),'Vertices',X,'FaceColor','w','EdgeColor',[.6 .6 .6],'LineWidth',.2);
  plot(ax,tip(1)+3.3*cos(th),tip(2)+3.3*sin(th),'-','Color',[.2 .3 .7],'LineWidth',.6);plot(ax,tip(1)+3.0*cos(th),tip(2)+3.0*sin(th),':','Color',[.3 .3 .3]);
  X6=D9.X6;plot(ax,X6(up,1),X6(up,2),'.','Color',cU,'MarkerSize',6);plot(ax,X6(lo,1),X6(lo,2),'.','Color',cL,'MarkerSize',4);
- axis(ax,'equal');xlim(ax,tip(1)+[-w w]);ylim(ax,tip(2)+[-w w]);box(ax,'on');xlabel(ax,'x, мм');ylabel(ax,'y, мм');
+ axis(ax,'equal');xlim(ax,cz(1)+[-w w]);ylim(ax,cz(2)+[-w w]);box(ax,'on');xlabel(ax,'x, мм');ylabel(ax,'y, мм');
  if q==1,title(ax,'(а) ядро p010 3,0 мм (сіре), комір 3,3 мм (блакитне), зовнішня сітка','FontWeight','normal','FontSize',7);
- else,title(ax,'(б) вхід берегів у комір: 65 ідентичностей обода незмінні','FontWeight','normal','FontSize',7);end
+ else,title(ax,'(б) вхід берегів у комір (r = 3,3 мм): обидва береги закінчуються на ободі','FontWeight','normal','FontSize',7);end
 end
 save1(f,outDir,'LP2A2_4_komir_UA');
 % ------------------------------------------------------------------ 5 full meshes
@@ -111,21 +111,21 @@ plot(ax,Cl(keep,1),Cl(keep,2),'-','Color',[.9 .55 0],'LineWidth',1.2);
 uL=lc(Ex.upperSeed);lL=lc(Ex.lowerSeed);plot(ax,[-60 60],[20 20],'-','Color',cU);plot(ax,[-60 60],[-20 -20],'-','Color',cL);plot(ax,[-60 60],[0 0],':','Color',[.4 .4 .4]);
 q=lc(XU);plot(ax,q(1),q(2),'o','Color',cU,'MarkerFaceColor',cU,'MarkerSize',6);q2=lc(XL);plot(ax,q2(1),q2(2),'s','Color',cL,'MarkerFaceColor',cL,'MarkerSize',6);
 plot(ax,0,0,'kp','MarkerFaceColor','y','MarkerSize',9);
-text(ax,q(1)+3,q(2)+6,sprintf('U*: s = %.4f мм',Ex.seedStationsUL(i,1)),'FontSize',7);text(ax,q2(1)+3,q2(2)-7,sprintf('L*: s = %.4f мм',Ex.seedStationsUL(i,2)),'FontSize',7);
-text(ax,3,-6,'точка колапсу (середня станція)','FontSize',7);axis(ax,'equal');xlim(ax,[-30 30]);ylim(ax,[-35 35]);box(ax,'on');
-xlabel(ax,'вздовж відрізка, мкм');ylabel(ax,'за нормаллю, мкм');legend(ax,{'коло 15-мм напрямної','верхній берег (+w)','нижній берег (−w)','осьова лінія'},'Location','southwest','FontSize',6);
+text(ax,q(1)+3,q(2)+6,sprintf('U*: s = %.4f мм',Ex.seedStationsUL(i,1)),'FontSize',7);text(ax,q2(1)+3,q2(2)-6,sprintf('L*: s = %.4f мм',Ex.seedStationsUL(i,2)),'FontSize',7);
+text(ax,2,4,'точка колапсу','FontSize',7);axis(ax,'equal');xlim(ax,[-30 30]);ylim(ax,[-35 35]);box(ax,'on');
+xlabel(ax,'вздовж відрізка, мкм');ylabel(ax,'за нормаллю, мкм');legend(ax,{'коло 15-мм напрямної','верхній берег (+w)','нижній берег (−w)','осьова лінія'},'Location','northwest','FontSize',6);
 title(ax,sprintf('(а) до колапсу: Δs = %.2f мкм, |U*−L*| = %.2f мкм',1000*diff(Ex.seedStationsUL(i,[2 1])),1000*norm(XU-XL)),'FontWeight','normal','FontSize',7);
 ax=nexttile(tl);hold(ax,'on');Xa=Ex.coord3;wdw=1.2;e=all(abs(Xa(T0(:,1),:)-Xc)<2*wdw,2);
 triplot(T0(e,:),Xa(:,1),Xa(:,2),'Color',[.55 .55 .55],'LineWidth',.3);plot(ax,C(:,1),C(:,2),'-','Color',[.9 .55 0],'LineWidth',1);
 plot(ax,Xa(Ex.upperLipNodes,1),Xa(Ex.upperLipNodes,2),'o','Color',cU,'MarkerSize',4);plot(ax,Xa(Ex.lowerLipNodes,1),Xa(Ex.lowerLipNodes,2),'x','Color',cL,'MarkerSize',5);
 plot(ax,Xc(1),Xc(2),'kp','MarkerFaceColor','y','MarkerSize',9);axis(ax,'equal');xlim(ax,Xc(1)+[-wdw wdw]);ylim(ax,Xc(2)+[-wdw wdw]);box(ax,'on');xlabel(ax,'x, мм');ylabel(ax,'y, мм');
-title(ax,'(б) після колапсу: два різні вузли в одній точці; межа напрямної проходить через неї','FontWeight','normal','FontSize',7);
+plot(ax,P9(:,1),P9(:,2),'-','Color',[0 0 0 .4]);title(ax,'(б) після колапсу: два різні вузли в одній точці','FontWeight','normal','FontSize',7);
 save1(f,outDir,'LP2A2_7_vymushena_para_UA');
 % ------------------------------------------------------------------ 8 remaining failures (enlarged)
-fl={'C2_soft2_straight_S12',0.45,'(а) м’яке \{2\}, пряме продовження S12: голкоподібний T3 між колом напрямної і колом кільця 1';
-    'C1_soft1_straight_S20',0.45,'(б) м’яке \{1\}, пряме з S4, S20: нерівномірні хорди кільця 2 біля кола напрямної';
-    'C2_stiff13_straight_S10',0.45,'(в) жорсткі \{1,3\}, пряме продовження S10, щабель 0,45 мм: відношення сусідів'};
-f=figure('Visible','off','Color','w','Units','centimeters','Position',[0 0 17 6.5]);tl=tiledlayout(f,1,3,'TileSpacing','compact','Padding','compact');
+fl={'C2_soft2_straight_S12',0.45,'(а) м’яке \{2\}, S12 (C2): кільце 1';
+    'C1_soft1_straight_S20',0.45,'(б) м’яке \{1\}, S20 (C1): кільце 2';
+    'C2_stiff13_straight_S10',0.45,'(в) жорсткі \{1,3\}, S10 (C2), 0,45 мм'};
+f=figure('Visible','off','Color','w','Units','centimeters','Position',[0 0 17 7]);tl=tiledlayout(f,1,3,'TileSpacing','compact','Padding','compact');
 for q=1:3
  rq=get(fl{q,1});Pq=rq.polyline_mm;Dq=g2_lp2a2_join(Pq,'ExpectedVertices',size(Pq,1),'ExpectedTangent',reshape(rq.tangent,1,2),'ExteriorOptions',[opts,{'SeedSpacing_mm',fl{q,2}}],'MaxT3Elements',40000);
  tq=Pq(end,:);s=Dq.summary;
@@ -135,7 +135,7 @@ for q=1:3
  ph=linspace(0,2*pi,4000);plot(ax,tq(1)+15*cos(ph),tq(2)+15*sin(ph),'-','Color',[.9 .55 0],'LineWidth',.9);
  if q~=2,plot(ax,c0(1),c0(2),'r*','MarkerSize',7);end
  axis(ax,'equal');xlim(ax,c0(1)+[-wd wd]);ylim(ax,c0(2)+[-wd wd]);box(ax,'on');xlabel(ax,'x, мм');ylabel(ax,'y, мм');
- title(ax,{fl{q,3},sprintf('мін. кут %.1f°, відн. %.2f',s.minAngle_deg,s.maxNeighborRatio)},'FontWeight','normal','FontSize',6);
+ title(ax,{fl{q,3},sprintf('мін. кут %.1f°, відн. сусідів %.2f',s.minAngle_deg,s.maxNeighborRatio)},'FontWeight','normal','FontSize',7);
 end
 save1(f,outDir,'LP2A2_8_zalyshkovi_vidmovy_UA');
 end

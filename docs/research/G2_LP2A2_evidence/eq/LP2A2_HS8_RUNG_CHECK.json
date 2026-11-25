@@ -1,0 +1,47 @@
+{
+  "schema": "NewMetacomp.G2.LP2A2.HS8FallbackRungCheck.v1",
+  "physicalSolves": 0,
+  "sourceCommit": "1200ddea2a13115d9a1e385c99a9a2ca5f14e285",
+  "rows": [
+    {
+      "seedSpacing_mm": 0.45,
+      "stage": "KINKED_PROTECTED_MESH_JOIN_PASS",
+      "T3": 29973,
+      "minAngle_deg": 30.126847321221675,
+      "maxNeighborRatio": 1.5918285508620826,
+      "auditPass": true,
+      "pairingPass": true,
+      "bankPairsT6": 301
+    },
+    {
+      "seedSpacing_mm": 0.4,
+      "stage": "KINKED_PROTECTED_MESH_JOIN_PASS",
+      "T3": 29975,
+      "minAngle_deg": 22.918309363393181,
+      "maxNeighborRatio": 1.5918285508620826,
+      "auditPass": true,
+      "pairingPass": true,
+      "bankPairsT6": 329
+    },
+    {
+      "seedSpacing_mm": 0.5,
+      "stage": "KINKED_PROTECTED_MESH_JOIN_PASS",
+      "T3": 29943,
+      "minAngle_deg": 30.126847321221675,
+      "maxNeighborRatio": 1.5918285508620826,
+      "auditPass": true,
+      "pairingPass": true,
+      "bankPairsT6": 275
+    },
+    {
+      "seedSpacing_mm": 0.35,
+      "stage": "KINKED_PROTECTED_MESH_JOIN_PASS",
+      "T3": 29875,
+      "minAngle_deg": 30.126847321221675,
+      "maxNeighborRatio": 1.621208983144607,
+      "auditPass": true,
+      "pairingPass": true,
+      "bankPairsT6": 375
+    }
+  ]
+}
