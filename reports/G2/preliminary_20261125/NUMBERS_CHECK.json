@@ -1,0 +1,1869 @@
+{
+ "schema": "NewMetacomp.G2.PrelimReport.NumbersCheck.v1",
+ "script": "scripts/report/g2_prelim/check_report_numbers.py",
+ "reviewedSnapshot": "05bc5f1",
+ "E_matrix_MPa": 3268.115,
+ "tolerance": "half a unit of the last printed digit; bounds: the printed bound; negative controls must be rejected",
+ "docxProbed": "Metakompozyt_G2_Preliminary_Report_20261125_UA.docx",
+ "counts": {
+  "PASS": 116,
+  "FAIL": 0,
+  "REJECTED_NEGATIVE_CONTROLS": 1,
+  "total": 117
+ },
+ "statedStringsNotFoundInText": [],
+ "evidenceFiles": {
+  "docs/research/G2_LP2_evidence/campaign_20261125/LP2A_ANALYSIS.json": "7c9a426e5aef7eb42d5efeeeb5068275b644d1730e1f4efaae1cbea60d47565b",
+  "reports/G2/LP1_20261122_v3/LP1_COMPARISON.json": "6b8ab342378be1f9941c5b318d2177affc9201dec14975e19cb3146655f05160",
+  "docs/research/G2_LP2_evidence/campaign_20261125/lp2a_campaign.log": "1a519d6dfb0d9c140c8cf3cb2f881b830af4d49e121f8e576012b087444e9c86",
+  "matlab/g2/evidence/a1_campaign_20261122/campaign/A1_ANALYSIS.json": "4b24dfe68f1bd9fdee1eeab564d26e3d1e84bbb9d23574dec105ff7b89f14a19",
+  "matlab/g2/evidence/m4b_20261121/analysis/cases_16_logical.csv": "7f7a012ad7b687d0eb2e92c0d6372e729ac4c044f32a94c155ccd41c7e365068",
+  "matlab/g2/evidence/m2_20261121/report/m2_results.csv": "80c5d22e09e0b3cc572e35c035598f3fc4462cb599a1cbc89017ff14983cae8b",
+  "matlab/g2/evidence/m4b_r1_20261121/analysis/r1_crossfamily.csv": "64eb8dd166c41ed66dd3881ef3c1f66cccfa48a70f52af4caf57e411d536b477",
+  "docs/research/G2_M5_X6_evidence/campaign_20261125/M5X6_ANALYSIS.json": "6729e4f5b5bba5119203341259a0e8bca784d50bd520f9f2d7f88161dfafc246",
+  "docs/research/G2_G1_evidence/G1_FIELD_EVIDENCE.json": "24dd4663b625ea72b8a635ca1a4bbf85074e6830f693c44e33a210db1f62249e",
+  "docs/research/G2_M5_evidence/M5_EXISTING_EVIDENCE.json": "4a464464bf4e5d97863d428a0d1ce605eda36c1ae85181b05b686cc89343e1a8",
+  "docs/research/G2_LP2A2_evidence/supplement/LP2A2_RECONCILIATION.json": "ee99b7e56eb449cb40f3993f89de2b762d4fb7c4013162034234fe8e140866f2",
+  "docs/research/G2_LP2A2_evidence/supplement/LP2A2_SUPPLEMENT.json": "74b587de4664776fff7fa05c6b73190881dd6b63fe2a662f96322ee236c11c89",
+  "docs/research/G2_LP2_evidence/LP2_MESH_SCAN.json": "36302703bdd37a1e7baaa97a72288829fe7475ad170f6c33d5647172afea56f6",
+  "docs/research/G2_LP2A2_evidence/attempt2/LP2A2_MESH_QUALIFICATION_ATTEMPT2.json": "c245185355f8b1d170e6c5f0c1d3e5f847604219ce78d61d18a3dd69511e0daa",
+  "docs/research/G2_LP2A2_evidence/attempt2/LP2A2_SUMMARY_ATTEMPT2.json": "8550d732de5e1b9c80be25c2bd02886e1fcc256af21ce381bd62a759847c41d1"
+ },
+ "checks": [
+  {
+   "id": "N-01",
+   "family": "LP2A",
+   "desc": "G = (K_I^2 + K_II^2)/E для всіх 36 станів S0-S8: найбільша відносна нев’язка зі збереженим G",
+   "computed": "3,807e-16",
+   "stated": "≤ 10⁻¹²",
+   "tol": "межа",
+   "dev": -9.996193197451097e-13,
+   "sec": [
+    "sec:derived",
+    "sec:edi"
+   ],
+   "textFound": null,
+   "negative": false,
+   "status": "PASS"
+  },
+  {
+   "id": "N-02",
+   "family": "LP2A",
+   "desc": "Рекурентність курсу φ_{n+1} = φ_n + θ_n (+ φ_0 = 90°): найбільша нев’язка, градуси",
+   "computed": "1,421e-14",
+   "stated": "≤ 10⁻⁹°",
+   "tol": "межа",
+   "dev": -9.999857891452849e-10,
+   "sec": [
+    "sec:mts"
+   ],
+   "textFound": null,
+   "negative": false,
+   "status": "PASS"
+  },
+  {
+   "id": "N-03",
+   "family": "LP2A",
+   "desc": "Збережені Δφ, Δθ, F_G збігаються з перерахованими з станів; Δφ_{n+1} = Δφ_n + Δθ_n (макс. нев’язка, град. або %)",
+   "computed": "1,865e-14",
+   "stated": "≤ 10⁻⁹",
+   "tol": "межа",
+   "dev": -9.999813482531864e-10,
+   "sec": [
+    "sec:derived"
+   ],
+   "textFound": null,
+   "negative": false,
+   "status": "PASS"
+  },
+  {
+   "id": "N-04",
+   "family": "LP2A",
+   "desc": "Бічне зміщення d_n: перераховано проєкцією різниці вершин на ліву нормаль останнього відрізка H; макс. відхилення, мм",
+   "computed": "0",
+   "stated": "≤ 10⁻⁹ мм",
+   "tol": "межа",
+   "dev": -1e-09,
+   "sec": [
+    "sec:derived"
+   ],
+   "textFound": null,
+   "negative": false,
+   "status": "PASS"
+  },
+  {
+   "id": "N-05",
+   "family": "LP2A",
+   "desc": "F_G(stiff13) у стані S0, %",
+   "computed": "−3,9312",
+   "stated": "−3,93",
+   "tol": "±0,005",
+   "dev": 0.0012131376338264666,
+   "negative": false,
+   "sec": [
+    "sec:evol"
+   ],
+   "textFound": true,
+   "status": "PASS"
+  },
+  {
+   "id": "N-06",
+   "family": "LP2A",
+   "desc": "F_G(stiff13) у стані S4, %",
+   "computed": "−7,1732",
+   "stated": "−7,17",
+   "tol": "±0,005",
+   "dev": 0.0031695978936365776,
+   "negative": false,
+   "sec": [
+    "sec:evol"
+   ],
+   "textFound": true,
+   "status": "PASS"
+  },
+  {
+   "id": "N-07",
+   "family": "LP2A",
+   "desc": "F_G(stiff13) у стані S8, %",
+   "computed": "−10,9489",
+   "stated": "−10,95",
+   "tol": "±0,005",
+   "dev": 0.0011067716563406549,
+   "negative": false,
+   "sec": [
+    "sec:evol"
+   ],
+   "textFound": true,
+   "status": "PASS"
+  },
+  {
+   "id": "N-08",
+   "family": "LP2A",
+   "desc": "F_G(soft2) у стані S0, %",
+   "computed": "−4,2590",
+   "stated": "−4,26",
+   "tol": "±0,005",
+   "dev": 0.0010480471099665323,
+   "negative": false,
+   "sec": [
+    "sec:evol"
+   ],
+   "textFound": true,
+   "status": "PASS"
+  },
+  {
+   "id": "N-09",
+   "family": "LP2A",
+   "desc": "F_G(soft2) у стані S4, %",
+   "computed": "−2,9318",
+   "stated": "−2,93",
+   "tol": "±0,005",
+   "dev": 0.0018154347938494908,
+   "negative": false,
+   "sec": [
+    "sec:evol"
+   ],
+   "textFound": true,
+   "status": "PASS"
+  },
+  {
+   "id": "N-10",
+   "family": "LP2A",
+   "desc": "F_G(soft2) у стані S8, %",
+   "computed": "−1,4884",
+   "stated": "−1,49",
+   "tol": "±0,005",
+   "dev": 0.0016486337071828228,
+   "negative": false,
+   "sec": [
+    "sec:evol"
+   ],
+   "textFound": true,
+   "status": "PASS"
+  },
+  {
+   "id": "N-11",
+   "family": "LP2A",
+   "desc": "F_G(soft1) у стані S0, %",
+   "computed": "2,7458",
+   "stated": "+2,75",
+   "tol": "±0,005",
+   "dev": 0.004178107362521111,
+   "negative": false,
+   "sec": [
+    "sec:evol"
+   ],
+   "textFound": true,
+   "status": "PASS"
+  },
+  {
+   "id": "N-12",
+   "family": "LP2A",
+   "desc": "F_G(soft1) у стані S4, %",
+   "computed": "6,3289",
+   "stated": "+6,33",
+   "tol": "±0,005",
+   "dev": 0.0010639107231513734,
+   "negative": false,
+   "sec": [
+    "sec:evol"
+   ],
+   "textFound": true,
+   "status": "PASS"
+  },
+  {
+   "id": "N-13",
+   "family": "LP2A",
+   "desc": "F_G(soft1) у стані S8, %",
+   "computed": "10,7325",
+   "stated": "+10,73",
+   "tol": "±0,005",
+   "dev": 0.002482855393054706,
+   "negative": false,
+   "sec": [
+    "sec:evol"
+   ],
+   "textFound": true,
+   "status": "PASS"
+  },
+  {
+   "id": "N-14",
+   "family": "LP2A",
+   "desc": "Табл. 15: F_G(S0..S8) для трьох архітектур, % (27 значень)",
+   "computed": "n=27; max |відх.|/допуск = 0.966 (soft1 S8)",
+   "stated": "усі 27 значень у межах ½ одиниці останнього розряду",
+   "tol": "½ розряду",
+   "dev": 0.9657107861116287,
+   "sec": [
+    "sec:evol"
+   ],
+   "bad": [],
+   "negative": false,
+   "textFound": null,
+   "status": "PASS"
+  },
+  {
+   "id": "N-15",
+   "family": "LP2A",
+   "desc": "H1: F_G(stiff13) < 0 і строго спадає на S4-S8; H2: F_G(soft2) < 0 і строго зростає; soft1 > 0 і зростає",
+   "computed": "(True, True, True)",
+   "stated": "(True, True, True)",
+   "tol": "збіг",
+   "dev": 0.0,
+   "sec": [
+    "sec:p_hres"
+   ],
+   "textFound": null,
+   "negative": false,
+   "status": "PASS"
+  },
+  {
+   "id": "N-16",
+   "family": "LP2A",
+   "desc": "H1/H2: кінцеві значення F_G на S4 і S8 (6 знаків), %",
+   "computed": "n=4; max |відх.|/допуск = 0.870 (soft2 S4)",
+   "stated": "усі 4 значень у межах ½ одиниці останнього розряду",
+   "tol": "½ розряду",
+   "dev": 0.8695876996256402,
+   "sec": [
+    "sec:p_hres"
+   ],
+   "bad": [],
+   "negative": false,
+   "textFound": null,
+   "status": "PASS"
+  },
+  {
+   "id": "N-17",
+   "family": "LP2A",
+   "desc": "Зростання абсолютної G між S4 і S8, %: H",
+   "computed": "66,3704",
+   "stated": "66,37",
+   "tol": "±0,005",
+   "dev": 0.00042096070114894246,
+   "negative": false,
+   "sec": [
+    "sec:abs",
+    "sec:p_K"
+   ],
+   "textFound": true,
+   "status": "PASS"
+  },
+  {
+   "id": "N-18",
+   "family": "LP2A",
+   "desc": "Зростання абсолютної G між S4 і S8, %: stiff13",
+   "computed": "59,6033",
+   "stated": "59,60",
+   "tol": "±0,005",
+   "dev": 0.00331788168681868,
+   "negative": false,
+   "sec": [
+    "sec:abs",
+    "sec:p_K"
+   ],
+   "textFound": true,
+   "status": "PASS"
+  },
+  {
+   "id": "N-19",
+   "family": "LP2A",
+   "desc": "Зростання абсолютної G між S4 і S8, %: soft2",
+   "computed": "68,8445",
+   "stated": "68,84",
+   "tol": "±0,005",
+   "dev": 0.004452238754396376,
+   "negative": false,
+   "sec": [
+    "sec:abs",
+    "sec:p_K"
+   ],
+   "textFound": true,
+   "status": "PASS"
+  },
+  {
+   "id": "N-20",
+   "family": "LP2A",
+   "desc": "Зростання абсолютної G між S4 і S8, %: soft1",
+   "computed": "73,2605",
+   "stated": "73,26",
+   "tol": "±0,005",
+   "dev": 0.0005484851951393921,
+   "negative": false,
+   "sec": [
+    "sec:abs",
+    "sec:p_K"
+   ],
+   "textFound": true,
+   "status": "PASS"
+  },
+  {
+   "id": "N-21",
+   "family": "LP2A",
+   "desc": "Табл. 16: G·10⁸ у S0, S4, S8 (Н/мм за P = 1 Н) і G(S8)/G(S0)",
+   "computed": "n=16; max |відх.|/допуск = 0.942 (H G8/G0)",
+   "stated": "усі 16 значень у межах ½ одиниці останнього розряду",
+   "tol": "½ розряду",
+   "dev": 0.9418325554015894,
+   "sec": [
+    "sec:abs"
+   ],
+   "bad": [],
+   "negative": false,
+   "textFound": null,
+   "status": "PASS"
+  },
+  {
+   "id": "N-22",
+   "family": "LP2A",
+   "desc": "G(S4)/G(S0) за сталої сили (розд. 6.2): 1,79 / 1,73 / 1,82 / 1,86",
+   "computed": "n=4; max |відх.|/допуск = 0.956 (soft1)",
+   "stated": "усі 4 значень у межах ½ одиниці останнього розряду",
+   "tol": "½ розряду",
+   "dev": 0.9556136662997705,
+   "sec": [
+    "sec:m5"
+   ],
+   "bad": [],
+   "negative": false,
+   "textFound": null,
+   "status": "PASS"
+  },
+  {
+   "id": "N-23",
+   "family": "LP2A",
+   "desc": "Δφ(stiff13) у S8, градуси",
+   "computed": "0,02346001",
+   "stated": "+0,023460",
+   "tol": "±0,0000005",
+   "dev": 6.163119826985142e-09,
+   "negative": false,
+   "sec": [
+    "sec:p_dir"
+   ],
+   "textFound": true,
+   "status": "PASS"
+  },
+  {
+   "id": "N-24",
+   "family": "LP2A",
+   "desc": "Δθ(stiff13) у S8, градуси",
+   "computed": "0,38288226",
+   "stated": "+0,382882",
+   "tol": "±0,0000005",
+   "dev": 2.580816810815456e-07,
+   "negative": false,
+   "sec": [
+    "sec:p_dir"
+   ],
+   "textFound": true,
+   "status": "PASS"
+  },
+  {
+   "id": "N-25",
+   "family": "LP2A",
+   "desc": "Геометричний прогноз S9: Δφ_9 = Δφ_8 + Δθ_8 (stiff13), градуси",
+   "computed": "0,40634226",
+   "stated": "+0,406342",
+   "tol": "±0,0000005",
+   "dev": 2.6424480092934743e-07,
+   "negative": false,
+   "sec": [
+    "sec:p_dir"
+   ],
+   "textFound": true,
+   "status": "PASS"
+  },
+  {
+   "id": "N-26",
+   "family": "LP2A",
+   "desc": "Геометричний прогноз S9: Δφ_9 = Δφ_8 + Δθ_8 (soft1), градуси",
+   "computed": "−0,06041178",
+   "stated": "−0,060412",
+   "tol": "±0,0000005",
+   "dev": 2.1606438580651366e-07,
+   "negative": false,
+   "sec": [
+    "sec:p_dir"
+   ],
+   "textFound": true,
+   "status": "PASS"
+  },
+  {
+   "id": "N-27",
+   "family": "LP2A",
+   "desc": "Геометричний прогноз S9: Δφ_9 = Δφ_8 + Δθ_8 (soft2), градуси",
+   "computed": "−0,50616095",
+   "stated": "−0,506161",
+   "tol": "±0,0000005",
+   "dev": 5.406306990973775e-08,
+   "negative": false,
+   "sec": [
+    "sec:p_dir"
+   ],
+   "textFound": true,
+   "status": "PASS"
+  },
+  {
+   "id": "N-28",
+   "family": "LP2A",
+   "desc": "Знаки Δφ і Δθ у S4..S8 (o - протилежні, s - однакові): stiff13 oooos, soft1 ooooo, soft2 sssss",
+   "computed": "('oooos', 'ooooo', 'sssss')",
+   "stated": "('oooos', 'ooooo', 'sssss')",
+   "tol": "збіг",
+   "dev": 0.0,
+   "sec": [
+    "sec:p_dir",
+    "sec:p_split"
+   ],
+   "textFound": null,
+   "negative": false,
+   "status": "PASS"
+  },
+  {
+   "id": "N-29",
+   "family": "LP2A",
+   "desc": "sign(d) = sign(F_G) на S4..S8 для всіх трьох архітектур",
+   "computed": "True",
+   "stated": "True",
+   "tol": "збіг",
+   "dev": 0.0,
+   "sec": [
+    "sec:p_dir",
+    "sec:c_table"
+   ],
+   "textFound": null,
+   "negative": false,
+   "status": "PASS"
+  },
+  {
+   "id": "N-30",
+   "family": "LP2A",
+   "desc": "Бічне зміщення d у S8, мм: −0,278 / −0,209 / +0,495 (3 знаки)",
+   "computed": "n=3; max |відх.|/допуск = 0.684 (soft2)",
+   "stated": "усі 3 значень у межах ½ одиниці останнього розряду",
+   "tol": "½ розряду",
+   "dev": 0.6843190236305863,
+   "sec": [
+    "sec:c_table"
+   ],
+   "bad": [],
+   "negative": false,
+   "textFound": null,
+   "status": "PASS"
+  },
+  {
+   "id": "N-31",
+   "family": "LP2A",
+   "desc": "Найбільше розходження траєкторій max|d| на S0-S8, мм («не більше ніж на 0,495 мм»)",
+   "computed": "0,49478",
+   "stated": "0,495",
+   "tol": "±0,0005",
+   "dev": 0.00022260731054457583,
+   "negative": false,
+   "sec": [
+    "sec:p_sum"
+   ],
+   "textFound": true,
+   "status": "PASS"
+  },
+  {
+   "id": "N-32",
+   "family": "LP2A",
+   "desc": "Табл. 36: d (мм), Δφ і Δθ (град.) у S4..S8, 6 знаків (45 значень)",
+   "computed": "n=45; max |відх.|/допуск = 0.932 (stiff13 d S5)",
+   "stated": "усі 45 значень у межах ½ одиниці останнього розряду",
+   "tol": "½ розряду",
+   "dev": 0.9315468909587565,
+   "sec": [
+    "sec:p_dir"
+   ],
+   "bad": [],
+   "negative": false,
+   "textFound": null,
+   "status": "PASS"
+  },
+  {
+   "id": "N-33",
+   "family": "LP2A",
+   "desc": "d(stiff13): S7→S8 змінюється лише на +0,0023 мм (немає роздільної здатності)",
+   "computed": "n=1; max |відх.|/допуск = 0.064 (d8-d7)",
+   "stated": "усі 1 значень у межах ½ одиниці останнього розряду",
+   "tol": "½ розряду",
+   "dev": 0.06392115890103967,
+   "sec": [
+    "sec:p_dir"
+   ],
+   "bad": [],
+   "negative": false,
+   "textFound": null,
+   "status": "PASS"
+  },
+  {
+   "id": "N-34",
+   "family": "LP2A",
+   "desc": "|Δθ| зростає S4→S8 у 4,9 (stiff13) і 4,4 (soft1) раза; |Δφ| досягає максимуму в S2: −0,715° / +1,124°",
+   "computed": "n=4; max |відх.|/допуск = 0.856 (soft1 |dTh8/dTh4|)",
+   "stated": "усі 4 значень у межах ½ одиниці останнього розряду",
+   "tol": "½ розряду",
+   "dev": 0.8560557915294176,
+   "sec": [
+    "sec:p_split",
+    "sec:p_hres"
+   ],
+   "bad": [],
+   "negative": false,
+   "textFound": null,
+   "status": "PASS"
+  },
+  {
+   "id": "N-35",
+   "family": "LP2A",
+   "desc": "Для stiff13 і soft1 |Δφ| максимальний у S2 і далі монотонно спадає; для soft2 |Δφ| зростає на S1-S8",
+   "computed": "(True, True)",
+   "stated": "(True, True)",
+   "tol": "збіг",
+   "dev": 0.0,
+   "sec": [
+    "sec:p_split"
+   ],
+   "textFound": null,
+   "negative": false,
+   "status": "PASS"
+  },
+  {
+   "id": "N-36",
+   "family": "LP2A",
+   "desc": "Лінійна екстраполяція F_G(soft2) до нуля: 72,8 мм (за останнім кроком) і 73,9 мм (за хордою S4-S8); приріст за крок 0,34→0,39 п.п.",
+   "computed": "n=4; max |відх.|/допуск = 0.578 (приріст S7-S8)",
+   "stated": "усі 4 значень у межах ½ одиниці останнього розряду",
+   "tol": "½ розряду",
+   "dev": 0.5778044936241455,
+   "sec": [
+    "sec:p_hres"
+   ],
+   "bad": [],
+   "negative": false,
+   "textFound": null,
+   "status": "PASS"
+  },
+  {
+   "id": "N-37",
+   "family": "LP2A",
+   "desc": "Лінеаризована частка першого зламу 16 sin(Δθ_0)/d(S4): 0,969 / 0,798 / 0,990",
+   "computed": "n=3; max |відх.|/допуск = 0.881 (soft1)",
+   "stated": "усі 3 значень у межах ½ одиниці останнього розряду",
+   "tol": "½ розряду",
+   "dev": 0.8812711529768702,
+   "sec": [
+    "sec:m5",
+    "sec:c_answer"
+   ],
+   "bad": [],
+   "negative": false,
+   "textFound": null,
+   "status": "PASS"
+  },
+  {
+   "id": "N-38",
+   "family": "LP2A",
+   "desc": "Відстань вершини S8 до номінального кола кільця 1 (R = 19,05 мм), перерахована з координат вершин, мм (табл. 38, 39)",
+   "computed": "n=4; max |відх.|/допуск = 0.816 (H S8)",
+   "stated": "усі 4 значень у межах ½ одиниці останнього розряду",
+   "tol": "½ розряду",
+   "dev": 0.8158458140954394,
+   "sec": [
+    "sec:p_dist"
+   ],
+   "bad": [],
+   "negative": false,
+   "textFound": null,
+   "status": "PASS"
+  },
+  {
+   "id": "N-39",
+   "family": "LP2A",
+   "desc": "Діапазон відстаней вершин S8 до кола кільця 1: 24,096-24,731 мм (мін/макс)",
+   "computed": "n=2; max |відх.|/допуск = 0.241 (макс)",
+   "stated": "усі 2 значень у межах ½ одиниці останнього розряду",
+   "tol": "½ розряду",
+   "dev": 0.241440088707634,
+   "sec": [
+    "sec:p_dist",
+    "sec:c_not"
+   ],
+   "bad": [],
+   "negative": false,
+   "textFound": null,
+   "status": "PASS"
+  },
+  {
+   "id": "N-40",
+   "family": "LP2A",
+   "desc": "Перерахована відстань збігається зі збереженою (ringDistance, terminal.clearanceToRingCircles) до 10⁻⁹ мм",
+   "computed": "True",
+   "stated": "True",
+   "tol": "збіг",
+   "dev": 0.0,
+   "sec": [
+    "sec:p_dist"
+   ],
+   "textFound": null,
+   "negative": false,
+   "status": "PASS"
+  },
+  {
+   "id": "N-41",
+   "family": "LP2A",
+   "desc": "Відстані S8 до кіл кілець 2 і 3: 57,6-57,8 і 103,6-103,7 мм; запас до 15-мм напрямної 9,1-9,7 мм",
+   "computed": "n=6; max |відх.|/допуск = 0.835 (кільце 3 мін)",
+   "stated": "усі 6 значень у межах ½ одиниці останнього розряду",
+   "tol": "½ розряду",
+   "dev": 0.8352720109098755,
+   "sec": [
+    "sec:p_dist"
+   ],
+   "bad": [],
+   "negative": false,
+   "textFound": null,
+   "status": "PASS"
+  },
+  {
+   "id": "N-42",
+   "family": "LP2A",
+   "desc": "Кандидат S9 (лише геометрія): координати, відстань до кола і до багатокутника кільця 1, мм (табл. 38, 39)",
+   "computed": "n=16; max |відх.|/допуск = 0.979 (soft1 до багатокутника)",
+   "stated": "усі 16 значень у межах ½ одиниці останнього розряду",
+   "tol": "½ розряду",
+   "dev": 0.979104406653164,
+   "sec": [
+    "sec:p_dist"
+   ],
+   "bad": [],
+   "negative": false,
+   "textFound": null,
+   "status": "PASS"
+  },
+  {
+   "id": "N-43",
+   "family": "LP2A",
+   "desc": "Різниця «багатокутник - коло» для кандидатів S9 (три кільця × чотири кандидати): від 4,7·10⁻⁶ до 0,0033 мм; δ_max = R·(1 - cos π/76) = 0,0163 мм (рівн. 28)",
+   "computed": "n=3; max |відх.|/допуск = 0.561 (мін, ·10⁻⁶ мм)",
+   "stated": "усі 3 значень у межах ½ одиниці останнього розряду",
+   "tol": "½ розряду",
+   "dev": 0.5606043302523211,
+   "sec": [
+    "sec:p_dist"
+   ],
+   "bad": [],
+   "negative": false,
+   "textFound": null,
+   "status": "PASS"
+  },
+  {
+   "id": "N-44",
+   "family": "LP2A",
+   "desc": "Відстані S8 до нижнього, верхнього і лівого країв (табл. 39), мм",
+   "computed": "n=12; max |відх.|/допуск = 0.965 (soft1 y)",
+   "stated": "усі 12 значень у межах ½ одиниці останнього розряду",
+   "tol": "½ розряду",
+   "dev": 0.9646308828905603,
+   "sec": [
+    "sec:p_dist"
+   ],
+   "bad": [],
+   "negative": false,
+   "textFound": null,
+   "status": "PASS"
+  },
+  {
+   "id": "N-45",
+   "family": "LP2A",
+   "desc": "Табл. 34: K_II/K_I у S4..S8 (5 знаків, 20 значень) і G·10⁸ (5 знаків, 20 значень)",
+   "computed": "n=40; max |відх.|/допуск = 0.986 (soft1 KII/KI S8)",
+   "stated": "усі 40 значень у межах ½ одиниці останнього розряду",
+   "tol": "½ розряду",
+   "dev": 0.9857466219568427,
+   "sec": [
+    "sec:p_K"
+   ],
+   "bad": [],
+   "negative": false,
+   "textFound": null,
+   "status": "PASS"
+  },
+  {
+   "id": "N-46",
+   "family": "LP2A",
+   "desc": "Табл. 35: курс φ_n і приріст θ_n у S0..S8, град. (72 значення, 4 знаки)",
+   "computed": "n=72; max |відх.|/допуск = 0.999 (soft2 phi S5)",
+   "stated": "усі 72 значень у межах ½ одиниці останнього розряду",
+   "tol": "½ розряду",
+   "dev": 0.9993331318014498,
+   "sec": [
+    "sec:p_dir"
+   ],
+   "bad": [],
+   "negative": false,
+   "textFound": null,
+   "status": "PASS"
+  },
+  {
+   "id": "N-47",
+   "family": "LP2A",
+   "desc": "Знакові КІН: K_I·10³ і K_II·10⁵ у S8 (табл. 34)",
+   "computed": "n=8; max |відх.|/допуск = 0.806 (soft1 KII)",
+   "stated": "усі 8 значень у межах ½ одиниці останнього розряду",
+   "tol": "½ розряду",
+   "dev": 0.8062039899670025,
+   "sec": [
+    "sec:p_K"
+   ],
+   "bad": [],
+   "negative": false,
+   "textFound": null,
+   "status": "PASS"
+  },
+  {
+   "id": "N-48",
+   "family": "LP2A",
+   "desc": "Початкова тріщина (H, S0): K_I = 5,2632·10⁻³, K_II = +0,5954·10⁻³ Н·мм⁻³ᐟ²; 0,166436 і +0,018827 МПа·√м/кН; K_II/K_I = 0,1131",
+   "computed": "n=5; max |відх.|/допуск = 0.707 (KI)",
+   "stated": "усі 5 значень у межах ½ одиниці останнього розряду",
+   "tol": "½ розряду",
+   "dev": 0.7072350919656856,
+   "sec": [
+    "sec:v_sif"
+   ],
+   "bad": [],
+   "negative": false,
+   "textFound": null,
+   "status": "PASS"
+  },
+  {
+   "id": "N-49",
+   "family": "LP1/A0 ~ LP2A",
+   "desc": "Таблиці S0-S4: LP1_COMPARISON (вибір за caseId+state) і LP2A_ANALYSIS мають ті самі числа; макс. відносна різниця G, K_I",
+   "computed": "0",
+   "stated": "≤ 10⁻⁹",
+   "tol": "межа",
+   "dev": -1e-09,
+   "sec": [
+    "sec:evol",
+    "sec:v_lp1"
+   ],
+   "textFound": null,
+   "negative": false,
+   "status": "PASS"
+  },
+  {
+   "id": "N-50",
+   "family": "LP1/A0 ~ LP2A",
+   "desc": "Те саме: макс. абс. різниця θ, φ (град.), координат вершин (мм), F_G, d (мм)",
+   "computed": "4,441e-16",
+   "stated": "≤ 10⁻⁹",
+   "tol": "межа",
+   "dev": -9.999995559107902e-10,
+   "sec": [
+    "sec:evol",
+    "sec:v_lp1"
+   ],
+   "textFound": null,
+   "negative": false,
+   "status": "PASS"
+  },
+  {
+   "id": "N-51",
+   "family": "LP1/A0",
+   "desc": "S4: |F_G|/U_cons: stiff13 2,21; soft1 1,70; soft2 0,863 (soft2 < 1: нерозрізнено за консервативним правилом)",
+   "computed": "n=3; max |відх.|/допуск = 0.488 (stiff13)",
+   "stated": "усі 3 значень у межах ½ одиниці останнього розряду",
+   "tol": "½ розряду",
+   "dev": 0.48770697783613315,
+   "sec": [
+    "sec:v_soft2"
+   ],
+   "bad": [],
+   "negative": false,
+   "textFound": null,
+   "status": "PASS"
+  },
+  {
+   "id": "N-52",
+   "family": "LP1/A0",
+   "desc": "Консервативне правило FG_conservative_resolved за S0..S4 (рядок станів): stiff13 11111, soft2 11100, soft1 00111; S4: soft2 = 0",
+   "computed": "('11111', '11100', '00111')",
+   "stated": "('11111', '11100', '00111')",
+   "tol": "збіг",
+   "dev": 0.0,
+   "sec": [
+    "sec:v_soft2"
+   ],
+   "textFound": null,
+   "negative": false,
+   "status": "PASS"
+  },
+  {
+   "id": "N-53",
+   "family": "LP1/A0",
+   "desc": "Показники якості 20 станів S0-S4: COD-EDI 0,8705-0,8794 %; розкид за областями 1,63-1,64·10⁻⁶; |J/G-1| 6,9·10⁻⁶...2,25·10⁻⁵",
+   "computed": "n=6; max |відх.|/допуск = 0.874 (розкид макс)",
+   "stated": "усі 6 значень у межах ½ одиниці останнього розряду",
+   "tol": "½ розряду",
+   "dev": 0.8740016939200679,
+   "sec": [
+    "sec:v_lp1"
+   ],
+   "bad": [],
+   "negative": false,
+   "textFound": null,
+   "status": "PASS"
+  },
+  {
+   "id": "N-54",
+   "family": "LP2A",
+   "desc": "Журнал LP2-A1: 16 розв’язків (pass=1), 16 записів ACCEPTED у порядку H, stiff13, soft2, soft1 × S5..S8",
+   "computed": "(True, True)",
+   "stated": "(True, True)",
+   "tol": "збіг",
+   "dev": 0.0,
+   "sec": [
+    "sec:p_exec"
+   ],
+   "textFound": null,
+   "negative": false,
+   "status": "PASS"
+  },
+  {
+   "id": "N-55",
+   "family": "LP2A",
+   "desc": "K_I, K_II з журналу (МПа·√м/кН → Н·мм⁻³ᐟ²) збігаються з LP2A_ANALYSIS у S5-S8; макс. відносна різниця (9 знаків журналу)",
+   "computed": "1,781e-9",
+   "stated": "≤ 5·10⁻⁸",
+   "tol": "межа",
+   "dev": -4.821945628752928e-08,
+   "sec": [
+    "sec:p_exec"
+   ],
+   "textFound": null,
+   "negative": false,
+   "status": "PASS"
+  },
+  {
+   "id": "N-56",
+   "family": "LP2A",
+   "desc": "Табл. 32: COD-EDI (max|ΔK|/K_еф) у S5-S8, %: діапазони по конфігураціях і загальний 0,8757-0,8796",
+   "computed": "n=10; max |відх.|/допуск = 0.951 (H макс)",
+   "stated": "усі 10 значень у межах ½ одиниці останнього розряду",
+   "tol": "½ розряду",
+   "dev": 0.9512838579572858,
+   "sec": [
+    "sec:p_exec"
+   ],
+   "bad": [],
+   "negative": false,
+   "textFound": null,
+   "status": "PASS"
+  },
+  {
+   "id": "N-57",
+   "family": "LP2A",
+   "desc": "Табл. 32: число трикутників T3 у S5-S8 (діапазони по конфігураціях; 16 сіток)",
+   "computed": "n=8; max |відх.|/допуск = 0.000 ()",
+   "stated": "усі 8 значень у межах ½ одиниці останнього розряду",
+   "tol": "½ розряду",
+   "dev": 0.0,
+   "sec": [
+    "sec:p_exec"
+   ],
+   "bad": [],
+   "negative": false,
+   "textFound": null,
+   "status": "PASS"
+  },
+  {
+   "id": "A-01",
+   "family": "A1 (B9)",
+   "desc": "Подрібнення першого ребра біля вершини h1(m=0)/h1(m=9) («в 4,23 раза»)",
+   "computed": "4,2251",
+   "stated": "4,23",
+   "tol": "±0,005",
+   "dev": 0.004867690634306143,
+   "negative": false,
+   "sec": [
+    "sec:v_a1"
+   ],
+   "textFound": true,
+   "status": "PASS"
+  },
+  {
+   "id": "A-02",
+   "family": "A1 (B9)",
+   "desc": "max |F_G(m=9) - F_G(m=0)| за трьома архітектурами ≤ 5,1·10⁻⁶ (абсолютні одиниці)",
+   "computed": "5,083e-6",
+   "stated": "≤ 5,1·10⁻⁶",
+   "tol": "межа",
+   "dev": -1.6843174985743602e-08,
+   "sec": [
+    "sec:v_a1",
+    "sec:c_table"
+   ],
+   "textFound": null,
+   "negative": false,
+   "status": "PASS"
+  },
+  {
+   "id": "A-03",
+   "family": "A1 (B9)",
+   "desc": "Табл. 12: F_G(9) - F_G(0), ·10⁻⁶: −4,48 / +1,18 / +5,08; F_G(9) - F_G(6): −0,86 / +0,23 / +0,97",
+   "computed": "n=6; max |відх.|/допуск = 0.924 (soft2 9-6)",
+   "stated": "усі 6 значень у межах ½ одиниці останнього розряду",
+   "tol": "½ розряду",
+   "dev": 0.9238971052744793,
+   "sec": [
+    "sec:v_a1"
+   ],
+   "bad": [],
+   "negative": false,
+   "textFound": null,
+   "status": "PASS"
+  },
+  {
+   "id": "A-04",
+   "family": "A1 (B9)",
+   "desc": "Відносна зміна G між m=0 і m=9: 1,04-1,14·10⁻⁴ для всіх чотирьох конфігурацій",
+   "computed": "n=2; max |відх.|/допуск = 0.390 (макс)",
+   "stated": "усі 2 значень у межах ½ одиниці останнього розряду",
+   "tol": "½ розряду",
+   "dev": 0.3897132519965485,
+   "sec": [
+    "sec:v_a1",
+    "sec:c_table"
+   ],
+   "bad": [],
+   "negative": false,
+   "textFound": null,
+   "status": "PASS"
+  },
+  {
+   "id": "A-05",
+   "family": "A1 (B9)",
+   "desc": "Зміна кута МКН між m=0 і m=9: менше 2·10⁻⁴ градуса",
+   "computed": "1,764e-4",
+   "stated": "≤ 2·10⁻⁴°",
+   "tol": "межа",
+   "dev": -2.355556250457341e-05,
+   "sec": [
+    "sec:v_a1"
+   ],
+   "textFound": null,
+   "negative": false,
+   "status": "PASS"
+  },
+  {
+   "id": "A-06",
+   "family": "A1 (B9)",
+   "desc": "Табл. 11: розбіжність COD-EDI (·10⁻³) для H на m=0 і m=9: 8,79 і 2,52; |J/G-1|·10⁶: 19,2 і 4,7",
+   "computed": "n=4; max |відх.|/допуск = 0.950 (m0 J/G)",
+   "stated": "усі 4 значень у межах ½ одиниці останнього розряду",
+   "tol": "½ розряду",
+   "dev": 0.9498992193424982,
+   "sec": [
+    "sec:v_a1"
+   ],
+   "bad": [],
+   "negative": false,
+   "textFound": null,
+   "status": "PASS"
+  },
+  {
+   "id": "A-07",
+   "family": "A1 (B9)",
+   "desc": "Табл. 10: трикутники T3 (H, S4) на рівнях m = 0, 3, 6, 9: 29 063 / 29 837 / 30 611 / 31 385; h1 0,04167 / 0,02577 / 0,01594 / 0,00986",
+   "computed": "n=8; max |відх.|/допуск = 0.723 (h1 m3)",
+   "stated": "усі 8 значень у межах ½ одиниці останнього розряду",
+   "tol": "½ розряду",
+   "dev": 0.7228060015726511,
+   "sec": [
+    "sec:v_a1"
+   ],
+   "bad": [],
+   "negative": false,
+   "textFound": null,
+   "status": "PASS"
+  },
+  {
+   "id": "A-08",
+   "family": "A1 (B9) ~ LP1/A0",
+   "desc": "A1 на m=0 є збереженим розв’язком A0 стану S4: G·10⁸ (Табл. 11) і K_I·10³ збігаються зі станом S4 траєкторій LP1/A0",
+   "computed": "n=8; max |відх.|/допуск = 0.996 (soft1 KI)",
+   "stated": "усі 8 значень у межах ½ одиниці останнього розряду",
+   "tol": "½ розряду",
+   "dev": 0.9959175280016552,
+   "sec": [
+    "sec:v_a1"
+   ],
+   "bad": [],
+   "negative": false,
+   "textFound": null,
+   "status": "PASS"
+  },
+  {
+   "id": "A-09",
+   "family": "A1 (B9)",
+   "desc": "Табл. 12: F_G(S4), %, на m=0 і m=9 (stiff13, soft2, soft1)",
+   "computed": "n=6; max |відх.|/допуск = 0.913 (soft2 m0)",
+   "stated": "усі 6 значень у межах ½ одиниці останнього розряду",
+   "tol": "½ розряду",
+   "dev": 0.913041230088396,
+   "sec": [
+    "sec:v_a1"
+   ],
+   "bad": [],
+   "negative": false,
+   "textFound": null,
+   "status": "PASS"
+  },
+  {
+   "id": "M-01",
+   "family": "M4.B",
+   "desc": "Текст: одиночні кільця S2: м’які +4,43 / −3,63 / +2,33 %, жорсткі −3,65 / +3,04 / −1,82 %",
+   "computed": "n=6; max |відх.|/допуск = 0.966 (жорстке 3)",
+   "stated": "усі 6 значень у межах ½ одиниці останнього розряду",
+   "tol": "½ розряду",
+   "dev": 0.9658127719999854,
+   "sec": [
+    "sec:m4b",
+    "sec:c_answer"
+   ],
+   "bad": [],
+   "negative": false,
+   "textFound": null,
+   "status": "PASS"
+  },
+  {
+   "id": "M-02",
+   "family": "M4.B",
+   "desc": "Жорстке кільце 3, S2: необокуглене F_G = −1,8248 % (запис у звіті: −1,82)",
+   "computed": "−1,8248",
+   "stated": "−1,82",
+   "tol": "±0,005",
+   "dev": 0.004829063859999927,
+   "negative": false,
+   "sec": [
+    "sec:m4b"
+   ],
+   "textFound": true,
+   "status": "PASS"
+  },
+  {
+   "id": "M-03",
+   "family": "M4.B",
+   "desc": "Негативний контроль: історичне значення −1,83 % для жорсткого кільця 3 має бути відхилене допуском (необокуглене −1,82483)",
+   "computed": "−1,8248",
+   "stated": "−1,83",
+   "tol": "±0,005",
+   "dev": 0.005170936140000082,
+   "negative": true,
+   "sec": [
+    "sec:m4b"
+   ],
+   "textFound": true,
+   "status": "REJECTED"
+  },
+  {
+   "id": "M-04",
+   "family": "M4.B",
+   "desc": "Необокуглене значення жорсткого кільця 3, %, чотири знаки (−1,8248)",
+   "computed": "−1,824829",
+   "stated": "−1,8248",
+   "tol": "±0,00005",
+   "dev": 2.9063860000011488e-05,
+   "negative": false,
+   "sec": [
+    "sec:m4b"
+   ],
+   "textFound": true,
+   "status": "PASS"
+  },
+  {
+   "id": "M-05",
+   "family": "M4.B",
+   "desc": "Табл. 17: F_G (%) і F_θ (град.) для семи комбінацій активних кілець, м’які і жорсткі (28 значень)",
+   "computed": "n=28; max |відх.|/допуск = 0.900 (м’які rings13 F_G)",
+   "stated": "усі 28 значень у межах ½ одиниці останнього розряду",
+   "tol": "½ розряду",
+   "dev": 0.900001959999841,
+   "sec": [
+    "sec:m4b"
+   ],
+   "bad": [],
+   "negative": false,
+   "textFound": null,
+   "status": "PASS"
+  },
+  {
+   "id": "M-06",
+   "family": "M4.B",
+   "desc": "Сума одиночних м’яких +4,43 − 3,63 + 2,33 = +3,13 %; повний ефект +2,18 %; взаємодії разом −0,95 %",
+   "computed": "n=3; max |відх.|/допуск = 0.599 (сума)",
+   "stated": "усі 3 значень у межах ½ одиниці останнього розряду",
+   "tol": "½ розряду",
+   "dev": 0.5988133560000719,
+   "sec": [
+    "sec:m4b"
+   ],
+   "bad": [],
+   "negative": false,
+   "textFound": null,
+   "status": "PASS"
+  },
+  {
+   "id": "M-07",
+   "family": "M4.B",
+   "desc": "Найближче кільце 1 впливає на локальний кут у 3,5-3,8 раза сильніше за кільця 2 і 3 (мін/макс відношень)",
+   "computed": "n=2; max |відх.|/допуск = 0.998 (макс)",
+   "stated": "усі 2 значень у межах ½ одиниці останнього розряду",
+   "tol": "½ розряду",
+   "dev": 0.997876308691863,
+   "sec": [
+    "sec:m4b"
+   ],
+   "bad": [],
+   "negative": false,
+   "textFound": null,
+   "status": "PASS",
+   "note": "Первинне формулювання звіту «3,5–3,9» виправлено на «3,5–3,8» (найбільше відношення 1,11001/0,28832 = 3,84989; найменше 3,5285); виправлення зроблено в `ch06.py` після першого прогону цього скрипта."
+  },
+  {
+   "id": "M-08",
+   "family": "M4.B",
+   "desc": "Парні взаємодії F_G (у частках) лежать між −4,9·10⁻³ і −1,4·10⁻⁵",
+   "computed": "n=2; max |відх.|/допуск = 0.804 (найменша за модулем)",
+   "stated": "усі 2 значень у межах ½ одиниці останнього розряду",
+   "tol": "½ розряду",
+   "dev": 0.8038899999981672,
+   "sec": [
+    "sec:m4b"
+   ],
+   "bad": [],
+   "negative": false,
+   "textFound": null,
+   "status": "PASS"
+  },
+  {
+   "id": "M-09",
+   "family": "M4.B",
+   "desc": "Потрійна взаємодія F_G: звіт (підрозділ 6.1) — −7,3·10⁻⁴ (м’які) і +3,1·10⁻⁴ (жорсткі)",
+   "computed": "n=2; max |відх.|/допуск = 0.590 (потрійна, м’які)",
+   "stated": "усі 2 значень у межах ½ одиниці останнього розряду",
+   "tol": "½ розряду",
+   "dev": 0.5902007860002456,
+   "sec": [
+    "sec:m4b"
+   ],
+   "bad": [],
+   "negative": false,
+   "textFound": null,
+   "status": "PASS",
+   "note": "Первинне формулювання звіту «близько ±5·10⁻⁴» було неточним (джерело G2_M4B_RESULTS.md, рядок 129: «±3–7·10⁻⁴»; перераховано −7,33·10⁻⁴ і +3,09·10⁻⁴); виправлено в `ch06.py` на «−7,3·10⁻⁴ (м’які) і +3,1·10⁻⁴ (жорсткі)» після першого прогону цього скрипта."
+  },
+  {
+   "id": "M-10",
+   "family": "M2",
+   "desc": "Табл. 13: прямий ефект трьох однакових кілець на S0, S1, S2 (G/G_H − 1, %; Δθ, град.) за m2_results.csv",
+   "computed": "n=12; max |відх.|/допуск = 0.894 (S0 жорсткі Δθ)",
+   "stated": "усі 12 значень у межах ½ одиниці останнього розряду",
+   "tol": "½ розряду",
+   "dev": 0.8939999999999504,
+   "sec": [
+    "sec:first"
+   ],
+   "bad": [],
+   "negative": false,
+   "textFound": null,
+   "status": "PASS"
+  },
+  {
+   "id": "M-11",
+   "family": "R1",
+   "desc": "R1_PLACEMENT_STABLE: усі рядки r1_crossfamily.csv (30) мають клас STABLE",
+   "computed": "(30, 30)",
+   "stated": "(30, 30)",
+   "tol": "збіг",
+   "dev": 0.0,
+   "sec": [
+    "sec:m4b"
+   ],
+   "textFound": null,
+   "negative": false,
+   "status": "PASS"
+  },
+  {
+   "id": "X-01",
+   "family": "M5-X6 (B9)",
+   "desc": "Тотожність F_G = F_m + F_p + F_i: збережені нев’язки (G, J, K_I, θ) ≤ 1,2·10⁻¹⁶",
+   "computed": "1,110e-16",
+   "stated": "≤ 1,2·10⁻¹⁶",
+   "tol": "межа",
+   "dev": -8.977697537484348e-18,
+   "sec": [
+    "sec:x6def"
+   ],
+   "textFound": null,
+   "negative": false,
+   "status": "PASS"
+  },
+  {
+   "id": "X-02",
+   "family": "M5-X6 (B9)",
+   "desc": "Незалежне перерахування F_m, F_p, F_i, F_G з чотирьох значень G_AB: макс. розбіжність тотожності і зі збереженими (округлення, ≤ 10⁻¹⁵)",
+   "computed": "1,110e-16",
+   "stated": "≤ 10⁻¹⁵",
+   "tol": "межа",
+   "dev": -8.889776975374844e-16,
+   "sec": [
+    "sec:x6def"
+   ],
+   "textFound": null,
+   "negative": false,
+   "status": "PASS"
+  },
+  {
+   "id": "X-03",
+   "family": "M5-X6 (B9)",
+   "desc": "Табл. 25: F_G, F_m, F_p, F_i у S4, % (4 знаки) для трьох архітектур (12 значень)",
+   "computed": "n=12; max |відх.|/допуск = 0.939 (soft1 F_i)",
+   "stated": "усі 12 значень у межах ½ одиниці останнього розряду",
+   "tol": "½ розряду",
+   "dev": 0.9385031281240394,
+   "sec": [
+    "sec:x6G"
+   ],
+   "bad": [],
+   "negative": false,
+   "textFound": null,
+   "status": "PASS"
+  },
+  {
+   "id": "X-04",
+   "family": "M5-X6 (B9)",
+   "desc": "Частка |F_m|/|F_G|: 102,7 / 103,4 / 105,7 % (stiff13 / soft2 / soft1)",
+   "computed": "n=3; max |відх.|/допуск = 0.399 (soft2)",
+   "stated": "усі 3 значень у межах ½ одиниці останнього розряду",
+   "tol": "½ розряду",
+   "dev": 0.39880992156099637,
+   "sec": [
+    "sec:x6G",
+    "sec:c_answer"
+   ],
+   "bad": [],
+   "negative": false,
+   "textFound": null,
+   "status": "PASS"
+  },
+  {
+   "id": "X-05",
+   "family": "M5-X6 (B9)",
+   "desc": "Траєкторний внесок протилежний матеріальному і становить 2,7 / 3,1 / 5,6 % його модуля; взаємодійний 0,1-0,2 % матеріального",
+   "computed": "n=5; max |відх.|/допуск = 0.945 (|F_p|/|F_m| stiff13)",
+   "stated": "усі 5 значень у межах ½ одиниці останнього розряду",
+   "tol": "½ розряду",
+   "dev": 0.9445159422295646,
+   "sec": [
+    "sec:x6G"
+   ],
+   "bad": [],
+   "negative": false,
+   "textFound": null,
+   "status": "PASS"
+  },
+  {
+   "id": "X-06",
+   "family": "M5-X6 (B9)",
+   "desc": "Знаки F_p і F_i (P3): stiff13 (+, −), soft2 (+, +), soft1 (−, +); P1, P2 виконано для всіх трьох",
+   "computed": "(('+', '-'), ('+', '+'), ('-', '+'), True)",
+   "stated": "(('+', '-'), ('+', '+'), ('-', '+'), True)",
+   "tol": "збіг",
+   "dev": 0.0,
+   "sec": [
+    "sec:x6pred"
+   ],
+   "textFound": null,
+   "negative": false,
+   "status": "PASS"
+  },
+  {
+   "id": "X-07",
+   "family": "M5-X6 (B9)",
+   "desc": "Табл. 24: чотири значення G_AB·10⁸ (Н/мм) у S4 на рівні B9",
+   "computed": "n=10; max |відх.|/допуск = 0.880 (soft1 G_XH)",
+   "stated": "усі 10 значень у межах ½ одиниці останнього розряду",
+   "tol": "½ розряду",
+   "dev": 0.8796692081425306,
+   "sec": [
+    "sec:x6G"
+   ],
+   "bad": [],
+   "negative": false,
+   "textFound": null,
+   "status": "PASS"
+  },
+  {
+   "id": "X-08",
+   "family": "M5-X6 (B9)",
+   "desc": "Табл. 26: матеріальний внесок за Шеплі, за базою XX і мультиплікативні множники",
+   "computed": "n=15; max |відх.|/допуск = 0.865 (stiff13 база XX)",
+   "stated": "усі 15 значень у межах ½ одиниці останнього розряду",
+   "tol": "½ розряду",
+   "dev": 0.865338296360818,
+   "sec": [
+    "sec:x6ref"
+   ],
+   "bad": [],
+   "negative": false,
+   "textFound": null,
+   "status": "PASS"
+  },
+  {
+   "id": "X-09",
+   "family": "M5-X6 (B9)",
+   "desc": "Табл. 27: розклад Δθ у S4 (град.): повна, матеріал, траєкторія, взаємодія; відношення траєкторія/матеріал",
+   "computed": "n=15; max |відх.|/допуск = 0.994 (soft1 мат.)",
+   "stated": "усі 15 значень у межах ½ одиниці останнього розряду",
+   "tol": "½ розряду",
+   "dev": 0.9935204337541137,
+   "sec": [
+    "sec:x6angle"
+   ],
+   "bad": [],
+   "negative": false,
+   "textFound": null,
+   "status": "PASS"
+  },
+  {
+   "id": "X-10",
+   "family": "M5-X6 (B9)",
+   "desc": "Залишок після компенсації кута: 7-11 % матеріального члена (мін/макс за трьома архітектурами)",
+   "computed": "n=2; max |відх.|/допуск = 0.345 (мін)",
+   "stated": "усі 2 значень у межах ½ одиниці останнього розряду",
+   "tol": "½ розряду",
+   "dev": 0.34465925530329855,
+   "sec": [
+    "sec:x6angle",
+    "sec:c_table"
+   ],
+   "bad": [],
+   "negative": false,
+   "textFound": null,
+   "status": "PASS"
+  },
+  {
+   "id": "X-11",
+   "family": "M5-X6 (B9)",
+   "desc": "COD-EDI у десяти розв’язках: 2,514-2,518·10⁻³ (макс. ≤ 2,518·10⁻³)",
+   "computed": "2,517e-3",
+   "stated": "≤ 2,518·10⁻³",
+   "tol": "межа",
+   "dev": -9.604004733067967e-07,
+   "sec": [
+    "sec:x6why"
+   ],
+   "textFound": null,
+   "negative": false,
+   "status": "PASS"
+  },
+  {
+   "id": "X-12",
+   "family": "M5-X6 (B9) vs LP1/A0",
+   "desc": "Базові G_HH(S4): 1,539127 (B9, M5-X6) проти 1,538959 (базова сітка, LP1/A0); F_G(stiff13): −7,1736 % (B9) проти −7,1732 % (A0, табл. 15 дає −7,173)",
+   "computed": "n=4; max |відх.|/допуск = 0.608 (F_G A0)",
+   "stated": "усі 4 значень у межах ½ одиниці останнього розряду",
+   "tol": "½ розряду",
+   "dev": 0.608042127261399,
+   "sec": [
+    "sec:x6limits"
+   ],
+   "bad": [],
+   "negative": false,
+   "textFound": null,
+   "status": "PASS"
+  },
+  {
+   "id": "X-13",
+   "family": "M5-X6 (B9)",
+   "desc": "Дослідницький масштаб чутливості сітки (R1, S2): U_m = 6,2·10⁻⁵ (знак F_i(soft2) = +5,80·10⁻⁵ нижче масштабу)",
+   "computed": "n=1; max |відх.|/допуск = 0.707 (F_i(soft2))",
+   "stated": "усі 1 значень у межах ½ одиниці останнього розряду",
+   "tol": "½ розряду",
+   "dev": 0.7073545900670553,
+   "sec": [
+    "sec:x6G"
+   ],
+   "bad": [],
+   "negative": false,
+   "textFound": null,
+   "status": "PASS"
+  },
+  {
+   "id": "X-14",
+   "family": "M5-X6 (B9) / G1",
+   "desc": "P4 (перераховано з G1_FIELD_EVIDENCE.json, смуга: жорстка для stiff13, м’яка для інших): інтервали [−7,11; −6,50], [−3,28; −2,99], [+5,67; +6,23] %",
+   "computed": "n=6; max |відх.|/допуск = 0.783 (soft1 верхня)",
+   "stated": "усі 6 значень у межах ½ одиниці останнього розряду",
+   "tol": "½ розряду",
+   "dev": 0.7833275273201323,
+   "sec": [
+    "sec:x6pred"
+   ],
+   "bad": [],
+   "negative": false,
+   "textFound": null,
+   "status": "PASS"
+  },
+  {
+   "id": "X-15",
+   "family": "M5-X6 (B9) / G1",
+   "desc": "P4: F_m всередині інтервалу? stiff13 — ні, soft2 — так, soft1 — ні",
+   "computed": "(False, True, False)",
+   "stated": "(False, True, False)",
+   "tol": "збіг",
+   "dev": 0.0,
+   "sec": [
+    "sec:x6pred",
+    "sec:c_table"
+   ],
+   "textFound": null,
+   "negative": false,
+   "status": "PASS"
+  },
+  {
+   "id": "K-01",
+   "family": "M5",
+   "desc": "Ірвін-Кіс: знак dΔC/da збігається зі знаком F_G за податливістю на всіх чотирьох кроках S0→S4 для трьох архітектур (12 з 12)",
+   "computed": "(12, 12)",
+   "stated": "(12, 12)",
+   "tol": "збіг",
+   "dev": 0.0,
+   "sec": [
+    "sec:m5"
+   ],
+   "textFound": null,
+   "negative": false,
+   "status": "PASS"
+  },
+  {
+   "id": "K-02",
+   "family": "M5",
+   "desc": "Податливість: ΔC/C м’якого кільця 2: 0,41 % (S0) → 0,33 % (S4); stiff13: оцінка за податливістю −1,66 % проти EDI −4,21 % на першому кроці",
+   "computed": "n=4; max |відх.|/допуск = 0.843 (stiff13 EDI)",
+   "stated": "усі 4 значень у межах ½ одиниці останнього розряду",
+   "tol": "½ розряду",
+   "dev": 0.8426245718300862,
+   "sec": [
+    "sec:m5"
+   ],
+   "bad": [],
+   "negative": false,
+   "textFound": null,
+   "status": "PASS"
+  },
+  {
+   "id": "K-03",
+   "family": "M5",
+   "desc": "На двох останніх кроках оцінка за податливістю відрізняється від EDI на 0,03-0,5 п.п.",
+   "computed": "n=2; max |відх.|/допуск = 0.165 (макс)",
+   "stated": "усі 2 значень у межах ½ одиниці останнього розряду",
+   "tol": "½ розряду",
+   "dev": 0.16528244414314663,
+   "sec": [
+    "sec:m5"
+   ],
+   "bad": [],
+   "negative": false,
+   "textFound": null,
+   "status": "PASS"
+  },
+  {
+   "id": "G-01",
+   "family": "G1",
+   "desc": "Знак оцінки першого порядку збігається зі знаком спостереженого ефекту у всіх 21 порівнянні (12 одиночних кілець на двох сімействах + 9 архітектур)",
+   "computed": "(12, 9, 21)",
+   "stated": "(12, 9, 21)",
+   "tol": "збіг",
+   "dev": 0.0,
+   "sec": [
+    "sec:g1",
+    "sec:c_table"
+   ],
+   "textFound": null,
+   "negative": false,
+   "status": "PASS"
+  },
+  {
+   "id": "G-02",
+   "family": "G1",
+   "desc": "Відношення спостереженого до оцінки першого порядку: м’які 0,68-0,78, жорсткі 1,14-1,26",
+   "computed": "n=4; max |відх.|/допуск = 0.596 (м’які мін)",
+   "stated": "усі 4 значень у межах ½ одиниці останнього розряду",
+   "tol": "½ розряду",
+   "dev": 0.5956489978979018,
+   "sec": [
+    "sec:g1",
+    "sec:c_table"
+   ],
+   "bad": [],
+   "negative": false,
+   "textFound": null,
+   "status": "PASS"
+  },
+  {
+   "id": "G-03",
+   "family": "G1",
+   "desc": "Параметр розвинення 1/λ − 1: +1 (м’яке, λ = 0,5) і −0,5 (жорстке, λ = 2); відхилення 14-32 % = ·(1 − відношення): мін/макс",
+   "computed": "n=4; max |відх.|/допуск = 0.596 (відхилення макс)",
+   "stated": "усі 4 значень у межах ½ одиниці останнього розряду",
+   "tol": "½ розряду",
+   "dev": 0.5956489978979107,
+   "sec": [
+    "sec:g1"
+   ],
+   "bad": [],
+   "negative": false,
+   "textFound": null,
+   "status": "PASS"
+  },
+  {
+   "id": "G-04",
+   "family": "G1",
+   "desc": "Нормування оцінки на ΔU/Δa проти G за EDI: +8,0 % (S0), +1,2 % (S2), −5,9 % (S4) (stiff13)",
+   "computed": "n=3; max |відх.|/допуск = 0.927 (S2)",
+   "stated": "усі 3 значень у межах ½ одиниці останнього розряду",
+   "tol": "½ розряду",
+   "dev": 0.9269509041414326,
+   "sec": [
+    "sec:g1"
+   ],
+   "bad": [],
+   "negative": false,
+   "textFound": null,
+   "status": "PASS"
+  },
+  {
+   "id": "G-05",
+   "family": "G1",
+   "desc": "Табл. 19: усереднений напружений стан у кільцях однорідної пластини (S2): відстань, σ_1, σ_2, кут осі стиску, частка переважного стиску",
+   "computed": "n=15; max |відх.|/допуск = 0.999 (кільце 2 частка стиску)",
+   "stated": "усі 15 значень у межах ½ одиниці останнього розряду",
+   "tol": "½ розряду",
+   "dev": 0.9989902529272854,
+   "sec": [
+    "sec:g1"
+   ],
+   "bad": [],
+   "negative": false,
+   "textFound": null,
+   "status": "PASS"
+  },
+  {
+   "id": "G-06",
+   "family": "G1",
+   "desc": "Кільце 2: головні напруження різних знаків (σ_1 > 0 > σ_2), отже стан змішаний, а не «стиснутий в обох напрямках» (виправлення К-21)",
+   "computed": "(True, True, True)",
+   "stated": "(True, True, True)",
+   "tol": "збіг",
+   "dev": 0.0,
+   "sec": [
+    "sec:g1"
+   ],
+   "textFound": null,
+   "negative": false,
+   "status": "PASS"
+  },
+  {
+   "id": "G-07",
+   "family": "G1",
+   "desc": "Смуга ±10 мм уздовж лінії «шарнір-сила»: медіанний кут 11,4°, у 61 % площі кут < 15°",
+   "computed": "n=2; max |відх.|/допуск = 0.786 (медіана)",
+   "stated": "усі 2 значень у межах ½ одиниці останнього розряду",
+   "tol": "½ розряду",
+   "dev": 0.785827557631471,
+   "sec": [
+    "sec:g1"
+   ],
+   "bad": [],
+   "negative": false,
+   "textFound": null,
+   "status": "PASS"
+  },
+  {
+   "id": "G-08",
+   "family": "G1",
+   "desc": "G1: обчислень МСЕ не виконано (boundaryValueProblemsSolved = 0)",
+   "computed": "0",
+   "stated": "0",
+   "tol": "збіг",
+   "dev": 0.0,
+   "sec": [
+    "sec:g1"
+   ],
+   "textFound": null,
+   "negative": false,
+   "status": "PASS"
+  },
+  {
+   "id": "P-01",
+   "family": "LP2-A2",
+   "desc": "Склад набору: 127 унікальних геометрій = 117 + 10 рядків-обмежувачів; успадкований генератор: 57 пройшло, 60 HOLD (двічі однаково)",
+   "computed": "(127, 117, 10, 57, 60, True)",
+   "stated": "(127, 117, 10, 57, 60, True)",
+   "tol": "збіг",
+   "dev": 0.0,
+   "sec": [
+    "sec:pr_qual"
+   ],
+   "textFound": null,
+   "negative": false,
+   "status": "PASS"
+  },
+  {
+   "id": "P-02",
+   "family": "LP2-A2",
+   "desc": "Табл. 48: спроба 1 (108 з’єднано, 108 аудит парування, 107 повний, 10 HOLD); спроба 2 (113, 113, 112, 5 HOLD, 135 спроб щаблів)",
+   "computed": "(108, 108, 107, 10, 113, 113, 112, 5, 135)",
+   "stated": "(108, 108, 107, 10, 113, 113, 112, 5, 135)",
+   "tol": "збіг",
+   "dev": 0.0,
+   "sec": [
+    "sec:pr_qual",
+    "sec:pr_levels"
+   ],
+   "textFound": null,
+   "negative": false,
+   "status": "PASS"
+  },
+  {
+   "id": "P-03",
+   "family": "LP2-A2",
+   "desc": "Табл. 49: усі 117 геометрій (спроба 1: 55/2/52/8; спроба 2: 57/0/55/5); лише C1 (спроба 1: 36/0/41/5; спроба 2: 36/0/44/2)",
+   "computed": "(55, 2, 52, 8, 57, 0, 55, 5, 36, 0, 41, 5, 36, 0, 44, 2)",
+   "stated": "(55, 2, 52, 8, 57, 0, 55, 5, 36, 0, 41, 5, 36, 0, 44, 2)",
+   "tol": "збіг",
+   "dev": 0.0,
+   "sec": [
+    "sec:pr_qual"
+   ],
+   "textFound": null,
+   "negative": false,
+   "status": "PASS"
+  },
+  {
+   "id": "P-04",
+   "family": "LP2-A2",
+   "desc": "Табл. 43: вимушена пара на колі 15-мм напрямної, 113 сіток: max|Δs| = 2,282 мкм; |Δx| = 1,948 мкм; частина параметризації 0,768 мкм; залишок формули 1,7·10⁻⁹ мм; мін. кут 21,79°; мін. площа 0,0497 мм²",
+   "computed": "n=6; max |відх.|/допуск = 0.796 (залишок формули (·10⁻⁹ мм))",
+   "stated": "усі 6 значень у межах ½ одиниці останнього розряду",
+   "tol": "½ розряду",
+   "dev": 0.7961162574378378,
+   "sec": [
+    "sec:pr_forced"
+   ],
+   "bad": [],
+   "negative": false,
+   "textFound": null,
+   "status": "PASS"
+  },
+  {
+   "id": "P-05",
+   "family": "LP2-A2",
+   "desc": "113 з 113 вимушених пар: різні ідентифікатори, однаковий індекс берега, всередині відрізка, залишок після згортання 0",
+   "computed": "(113, 113, True, True, True, True, 0)",
+   "stated": "(113, 113, True, True, True, True, 0)",
+   "tol": "збіг",
+   "dev": 0.0,
+   "sec": [
+    "sec:pr_forced"
+   ],
+   "textFound": null,
+   "negative": false,
+   "status": "PASS"
+  },
+  {
+   "id": "P-06",
+   "family": "LP2-A2",
+   "desc": "LP2A2_SUPPLEMENT.json: у всіх вимушених парах з |circleDx| > 10⁻⁹ мм (58 з 113; решта 55 — прямі ділянки з b ≈ 0, значення на рівні округлення 10⁻¹⁵) predictedDx_mm має знак, протилежний circleDx_mm (потрібна примітка-erratum за рецензією)",
+   "computed": "(58, 58)",
+   "stated": "(58, 58)",
+   "tol": "збіг",
+   "dev": 0.0,
+   "sec": [
+    "sec:pr_forced"
+   ],
+   "textFound": null,
+   "negative": false,
+   "status": "PASS"
+  },
+  {
+   "id": "P-07",
+   "family": "LP2-A2",
+   "desc": "Табл. 30: успадкований генератор на 82 синтетичних ламаних S6..S20: пройшло / усього за станами (8/8, 8/8, 8/8, 5/8, 4/8, 2/8, 0/5, 1/4, 0/4 … 0/1)",
+   "computed": "((6, (8, 8)), (7, (8, 8)), (8, (8, 8)), (9, (5, 8)), (10, (4, 8)), (11, (2, 8)), (12, (0, 5)), (13, (1, 4)), (14, (0, 4)), (15, (0, 4)), (16, (0, 4)), (17, (0, 4)), (18, (0, 4)), (19, (0, 4)), (20, (0, 1)))",
+   "stated": "((6, (8, 8)), (7, (8, 8)), (8, (8, 8)), (9, (5, 8)), (10, (4, 8)), (11, (2, 8)), (12, (0, 5)), (13, (1, 4)), (14, (0, 4)), (15, (0, 4)), (16, (0, 4)), (17, (0, 4)), (18, (0, 4)), (19, (0, 4)), (20, (0, 1)))",
+   "tol": "збіг",
+   "dev": 0.0,
+   "sec": [
+    "sec:p_limit"
+   ],
+   "textFound": null,
+   "negative": false,
+   "status": "PASS"
+  },
+  {
+   "id": "P-08",
+   "family": "LP2-A2",
+   "desc": "Табл. 54: геометрії обмеженого режиму (зазор напрямна-коло ≥ 1,0 мм): S6-S11 76 (76 пройшло, щаблі 74/2/0), у т.ч. S9-S11 48 (щаблі 46/2/0) і S6-S8 28; будь-який стан 109 (щаблі 104/4/1)",
+   "computed": "(76, 76, (74, 2, 0), 48, 48, (46, 2, 0), 28, 28, 109, 109, (104, 4, 1))",
+   "stated": "(76, 76, (74, 2, 0), 48, 48, (46, 2, 0), 28, 28, 109, 109, (104, 4, 1))",
+   "tol": "збіг",
+   "dev": 0.0,
+   "sec": [
+    "sec:pr_regime"
+   ],
+   "textFound": null,
+   "negative": false,
+   "status": "PASS"
+  },
+  {
+   "id": "P-09",
+   "family": "LP2-A2",
+   "desc": "Табл. 41: 59 відмов HOLD_LIP_STATIONS у групах A 0, B 1, C1 46, C2 9, C3 3 (+1 відмова мінімального кута: C2_soft1_frozen_S12) = 60",
+   "computed": "(59, (0, 1, 46, 9, 3), ('C2_soft1_frozen_S12',))",
+   "stated": "(59, (0, 1, 46, 9, 3), ('C2_soft1_frozen_S12',))",
+   "tol": "збіг",
+   "dev": 0.0,
+   "sec": [
+    "sec:pr_problem"
+   ],
+   "textFound": null,
+   "negative": false,
+   "status": "PASS"
+  },
+  {
+   "id": "P-10",
+   "family": "LP2-A2",
+   "desc": "Табл. 47: рядків без обмежувачів A 4, B 4, C1 82, C2 21, C3 6 (=117); старий пройшов 4/3/36/11/3 (=57); новий (спроба 2) 4/4/80/18/6 (=112)",
+   "computed": "((4, 4, 82, 21, 6), (4, 3, 36, 11, 3), (4, 4, 80, 18, 6))",
+   "stated": "((4, 4, 82, 21, 6), (4, 3, 36, 11, 3), (4, 4, 80, 18, 6))",
+   "tol": "збіг",
+   "dev": 0.0,
+   "sec": [
+    "sec:pr_qual"
+   ],
+   "textFound": null,
+   "negative": false,
+   "status": "PASS"
+  },
+  {
+   "id": "P-11",
+   "family": "LP2-A2",
+   "desc": "Табл. 50: геометрій / старий пройшов / новий (спроба 2) пройшов за станами S6..S20 (117 геометрій; сума 117 / 57 / 112)",
+   "computed": "((6, (8, 8, 8)), (7, (8, 8, 8)), (8, (12, 12, 12)), (9, (12, 8, 12)), (10, (18, 12, 18)), (11, (18, 5, 18)), (12, (12, 3, 8)), (13, (4, 1, 4)), (14, (4, 0, 4)), (15, (4, 0, 4)), (16, (4, 0, 4)), (17, (4, 0, 4)), (18, (4, 0, 4)), (19, (4, 0, 4)), (20, (1, 0, 0)))",
+   "stated": "((6, (8, 8, 8)), (7, (8, 8, 8)), (8, (12, 12, 12)), (9, (12, 8, 12)), (10, (18, 12, 18)), (11, (18, 5, 18)), (12, (12, 3, 8)), (13, (4, 1, 4)), (14, (4, 0, 4)), (15, (4, 0, 4)), (16, (4, 0, 4)), (17, (4, 0, 4)), (18, (4, 0, 4)), (19, (4, 0, 4)), (20, (1, 0, 0)))",
+   "tol": "збіг",
+   "dev": 0.0,
+   "sec": [
+    "sec:pr_qual"
+   ],
+   "textFound": null,
+   "negative": false,
+   "status": "PASS"
+  },
+  {
+   "id": "P-12",
+   "family": "LP2-A2",
+   "desc": "Табл. 51: показники 113 з’єднаних сіток спроби 2: T3 29 579-32 591; вузлів T6 60 149-66 425; мін. кут 21,36-30,13°; відношення ребер 1,592-1,790",
+   "computed": "n=8; max |відх.|/допуск = 0.791 (відношення макс)",
+   "stated": "усі 8 значень у межах ½ одиниці останнього розряду",
+   "tol": "½ розряду",
+   "dev": 0.7914867440379503,
+   "sec": [
+    "sec:pr_qual"
+   ],
+   "bad": [],
+   "negative": false,
+   "textFound": null,
+   "status": "PASS"
+  },
+  {
+   "id": "P-13",
+   "family": "LP2-A2",
+   "desc": "Кількість з’єднаних сіток у таблиці 51 дорівнює 113",
+   "computed": "113",
+   "stated": "113",
+   "tol": "збіг",
+   "dev": 0.0,
+   "sec": [
+    "sec:pr_qual"
+   ],
+   "textFound": null,
+   "negative": false,
+   "status": "PASS"
+  },
+  {
+   "id": "P-14",
+   "family": "LP2-A2",
+   "desc": "Табл. 52: п’ять геометрій без побудованої сітки і зазор напрямна-коло кільця, мм (0,0750-0,4923)",
+   "computed": "n=5; max |відх.|/допуск = 0.668 (C2_stiff13_straight_S12)",
+   "stated": "усі 5 значень у межах ½ одиниці останнього розряду",
+   "tol": "½ розряду",
+   "dev": 0.667921316937492,
+   "sec": [
+    "sec:pr_resid"
+   ],
+   "bad": [],
+   "negative": false,
+   "textFound": null,
+   "status": "PASS"
+  }
+ ]
+}
