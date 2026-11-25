@@ -100,6 +100,21 @@
    "file": "archive_m5x6.py",
    "originalSHA256": "5607a4284cf3eee91e721c40386f15fb9b6cfd2f3a4d9700bd29a73b6840601f",
    "sanitizedSHA256": "5607a4284cf3eee91e721c40386f15fb9b6cfd2f3a4d9700bd29a73b6840601f"
+  },
+  {
+   "file": "M5X6_POST_REVOCATION.json",
+   "originalSHA256": "91ac23b6e14aefa3b4a730d0b840be369302d130f124fba820a6ccf9826d1fef",
+   "sanitizedSHA256": "91ac23b6e14aefa3b4a730d0b840be369302d130f124fba820a6ccf9826d1fef"
+  },
+  {
+   "file": "post_revocation.m",
+   "originalSHA256": "df139ba63935940ec9b8d5457f98ded7549508e2b154a97ac9efff5614077e3d",
+   "sanitizedSHA256": "347ccbf5ac1240ced5b91474379888b723c06823af2285c8cb9da03bbce38dc2"
+  },
+  {
+   "file": "post_revocation.log",
+   "originalSHA256": "6dd4d9e8741c662fa9384d514a7463ec8e5c76c60a3550313e785a96edc3ef86",
+   "sanitizedSHA256": "8666be3fbed8a6d2250661cfa88b38e596feef1cd6728e434dd812c947b72428"
   }
  ]
 }
