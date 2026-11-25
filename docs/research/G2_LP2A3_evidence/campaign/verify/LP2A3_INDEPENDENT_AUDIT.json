@@ -1,0 +1,320 @@
+{
+ "schema": "NewMetacomp.G2.LP2A3.IndependentAudit.v1",
+ "approvedHead": "2348ba11b9ebe1e33a723b11055a3603b846383e",
+ "cases": {
+  "H": {
+   "acceptedStates": [
+    9,
+    10,
+    11
+   ],
+   "terminal": "CAMPAIGN_LIMIT_REACHED",
+   "lastAcceptedState": 11,
+   "failedFolder": null,
+   "terminalFailure": {
+    "identifier": "",
+    "message": "",
+    "stage": "limit"
+   },
+   "terminalCandidateClassification": "PASSIVE_CONTOUR_APPROACH",
+   "terminalCandidateGap_mm": [
+    -0.06177869703875061,
+    26.807115488567916,
+    72.7828499284687
+   ],
+   "minGuardMargin_mm": 0.9566946605367015,
+   "rows": [
+    {
+     "stateIndex": 9,
+     "tip_mm": [
+      113.0090467767817,
+      59.45519081915546
+     ],
+     "KI": 0.009728330891580945,
+     "KII": 0.0001055407774512671,
+     "G": 2.8962126728035312e-08,
+     "J": 2.896303004107645e-08,
+     "MTS_deg": -1.242840393627304,
+     "gap_mm": [
+      6.6894066444265015,
+      38.726726132148514,
+      84.6701940669217
+     ]
+    },
+    {
+     "stateIndex": 10,
+     "tip_mm": [
+      114.73497161080275,
+      63.06367851725136
+     ],
+     "KI": 0.010336206195789625,
+     "KII": 0.00010980867509538642,
+     "G": 3.269444816568758e-08,
+     "J": 3.269562397114348e-08,
+     "MTS_deg": -1.2170650372123342,
+     "gap_mm": [
+      4.221510589814077,
+      34.760164841202894,
+      80.69427675540412
+     ]
+    },
+    {
+     "stateIndex": 11,
+     "tip_mm": [
+      116.53715206030587,
+      66.63469316681929
+     ],
+     "KI": 0.010966585950524308,
+     "KII": 0.00011415365460466159,
+     "G": 3.680379621497308e-08,
+     "J": 3.680534965571676e-08,
+     "MTS_deg": -1.1925078331893162,
+     "gap_mm": [
+      1.9566946605367015,
+      30.786696666535093,
+      76.7308305117787
+     ]
+    }
+   ]
+  },
+  "stiff13": {
+   "acceptedStates": [
+    9,
+    10,
+    11
+   ],
+   "terminal": "CAMPAIGN_LIMIT_REACHED",
+   "lastAcceptedState": 11,
+   "failedFolder": null,
+   "terminalFailure": {
+    "identifier": "",
+    "message": "",
+    "stage": "limit"
+   },
+   "terminalCandidateClassification": "INTERFACE_APPROACH",
+   "terminalCandidateGap_mm": [
+    -0.011774069123074327,
+    26.772163246921693,
+    72.72710550276665
+   ],
+   "minGuardMargin_mm": 0.8670450674982568,
+   "rows": [
+    {
+     "stateIndex": 9,
+     "tip_mm": [
+      113.2510381957138,
+      59.386960904158364
+     ],
+     "KI": 0.009142874427504435,
+     "KII": 5.9435267419040683e-05,
+     "G": 2.5579174951960913e-08,
+     "J": 2.557977713305889e-08,
+     "MTS_deg": -0.7448542090953163,
+     "gap_mm": [
+      6.473035393151019,
+      38.65351552443721,
+      84.65453210282068
+     ]
+    },
+    {
+     "stateIndex": 10,
+     "tip_mm": [
+      114.91979582056622,
+      63.02223915891369
+     ],
+     "KI": 0.009688135688190462,
+     "KII": 5.096771173378269e-05,
+     "G": 2.8720706223749492e-08,
+     "J": 2.8721332584758578e-08,
+     "MTS_deg": -0.6028086944219392,
+     "gap_mm": [
+      4.047034312858489,
+      34.69390536541758,
+      80.67290541275466
+     ]
+    },
+    {
+     "stateIndex": 11,
+     "tip_mm": [
+      116.62670713185807,
+      66.63975954937231
+     ],
+     "KI": 0.010274212920575938,
+     "KII": 4.328921132790837e-05,
+     "G": 3.230037042550429e-08,
+     "J": 3.230099185757814e-08,
+     "MTS_deg": -0.4827983212474627,
+     "gap_mm": [
+      1.8670450674982568,
+      30.732980451384563,
+      76.69707664741424
+     ]
+    }
+   ]
+  },
+  "soft2": {
+   "acceptedStates": [
+    9,
+    10,
+    11
+   ],
+   "terminal": "CAMPAIGN_LIMIT_REACHED",
+   "lastAcceptedState": 11,
+   "failedFolder": null,
+   "terminalFailure": {
+    "identifier": "",
+    "message": "",
+    "stage": "limit"
+   },
+   "terminalCandidateClassification": "PASSIVE_CONTOUR_APPROACH",
+   "terminalCandidateGap_mm": [
+    -0.3961046801657737,
+    26.733677739566474,
+    72.80507142338436
+   ],
+   "minGuardMargin_mm": 0.6707639493853499,
+   "rows": [
+    {
+     "stateIndex": 9,
+     "tip_mm": [
+      113.23932135822288,
+      59.373237169992024
+     ],
+     "KI": 0.009675881386141056,
+     "KII": 0.000106791789827546,
+     "G": 2.865079260829118e-08,
+     "J": 2.8651636222973172e-08,
+     "MTS_deg": -1.2643769379876781,
+     "gap_mm": [
+      6.487899687585884,
+      38.671388976074894,
+      84.67135241033263
+     ]
+    },
+    {
+     "stateIndex": 10,
+     "tip_mm": [
+      114.99840690534252,
+      62.9656761796225
+     ],
+     "KI": 0.010303644638529596,
+     "KII": 0.00011159249429785022,
+     "G": 3.248892579419125e-08,
+     "J": 3.2490036607956713e-08,
+     "MTS_deg": -1.2407318248477945,
+     "gap_mm": [
+      3.9798971926318423,
+      34.69853002524856,
+      80.70071973971602
+     ]
+    },
+    {
+     "stateIndex": 11,
+     "tip_mm": [
+      116.83486768985694,
+      66.51918314977758
+     ],
+     "KI": 0.010958772455045965,
+     "KII": 0.00011674977976309677,
+     "G": 3.675155991528723e-08,
+     "J": 3.67530463371258e-08,
+     "MTS_deg": -1.2204832310417044,
+     "gap_mm": [
+      1.67076394938535,
+      30.719004694454796,
+      76.74420093620832
+     ]
+    }
+   ]
+  },
+  "soft1": {
+   "acceptedStates": [
+    9
+   ],
+   "terminal": "NUMERICAL_HOLD",
+   "lastAcceptedState": 9,
+   "failedFolder": {
+    "stateIndex": 10,
+    "files": [
+     "FAILED_MESH.mat",
+     "HOLD.mat",
+     "HOLD.mat.manifest.json"
+    ],
+    "hold": {
+     "schema": "NewMetacomp.G2.LP2A3.Hold.v1",
+     "scope": "LOCAL",
+     "stateIndex": 10,
+     "caseId": "soft1",
+     "identifier": "G2LP2A3:HOLD_MESH_QUALITY",
+     "message": "Default rung (0.45 mm) failed: HOLD_KINKED_PROTECTED_MESH_JOIN globalNeighborRatioAtMost1p8",
+     "parentSHA256": "79ebecbc21b4d9425e3a2b82a9bc17270373a85f2a7c26d11cfe1e7c9b45aec6",
+     "physicalArrest": false
+    }
+   },
+   "terminalFailure": {
+    "identifier": "G2LP2A3:HOLD_MESH_QUALITY",
+    "message": "Default rung (0.45 mm) failed: HOLD_KINKED_PROTECTED_MESH_JOIN globalNeighborRatioAtMost1p8",
+    "stage": "mesh/audit/solve"
+   },
+   "terminalCandidateClassification": "MATRIX_ADVANCE",
+   "terminalCandidateGap_mm": [
+    4.632956381638341,
+    34.900088262551904,
+    80.72429254150799
+   ],
+   "minGuardMargin_mm": 6.113230040251874,
+   "rows": [
+    {
+     "stateIndex": 9,
+     "tip_mm": [
+      112.53494070252768,
+      59.5938528405785
+     ],
+     "KI": 0.010277889641379047,
+     "KII": 0.00015550195627223593,
+     "G": 3.2330317733241096e-08,
+     "J": 3.233159025689768e-08,
+     "MTS_deg": -1.7328171539890624,
+     "gap_mm": [
+      7.113230040251874,
+      38.868283432510395,
+      84.69771833656907
+     ]
+    }
+   ]
+  }
+ },
+ "runFiles": 83,
+ "ledgerFiles": 26,
+ "admissions": 11,
+ "admittedKeys": [
+  "H_S9",
+  "H_S10",
+  "H_S11",
+  "stiff13_S9",
+  "stiff13_S10",
+  "stiff13_S11",
+  "soft2_S9",
+  "soft2_S10",
+  "soft2_S11",
+  "soft1_S9",
+  "soft1_S10"
+ ],
+ "physicalSolvesCompletedWithAcceptedState": 10,
+ "acceptedStates": 10,
+ "ledgerAdmitOrder": [
+  "H_S9",
+  "H_S10",
+  "H_S11",
+  "stiff13_S9",
+  "stiff13_S10",
+  "stiff13_S11",
+  "soft2_S9",
+  "soft2_S10",
+  "soft2_S11",
+  "soft1_S9",
+  "soft1_S10"
+ ],
+ "problems": [],
+ "pass": true
+}

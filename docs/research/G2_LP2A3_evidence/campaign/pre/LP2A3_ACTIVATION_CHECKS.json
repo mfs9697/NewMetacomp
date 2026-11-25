@@ -1,0 +1,43 @@
+{
+  "head": "2348ba11b9ebe1e33a723b11055a3603b846383e",
+  "ramInsideMATLAB_GiB": 8.0039520263671875,
+  "release": "2023a",
+  "pde": true,
+  "pdeVersion": "3.10",
+  "preflight": {
+    "pass": true,
+    "status": "PREFLIGHT_READY_NOT_LP0_QUALIFIED",
+    "cause": "",
+    "physicalSolves": 0,
+    "meshBuilds": 0,
+    "policySHA256": "1cf5a76ded840b0758343a1b935b299041e779ec6332c3b7cb0b6dfba1e2af43",
+    "release": "R2023a",
+    "pdeAvailable": true,
+    "freePhysicalRAM_GiB": 7.9266624450683594,
+    "matlabProcesses": 1,
+    "currentPID": 9324,
+    "sourceCommit": "2348ba11b9ebe1e33a723b11055a3603b846383e",
+    "dirtySource": "",
+    "token": "G2LP0|policy=1cf5a76ded840b0758343a1b935b299041e779ec6332c3b7cb0b6dfba1e2af43|source=2348ba11b9ebe1e33a723b11055a3603b846383e|geometry=179b777f4a26caf1482ad470d78f5f802bc24456b9a1b6fc6b641eccf2b66008|cases=H,stiff13,soft2,soft1|maxState=4"
+  },
+  "tokenEqualsAuthorization": true,
+  "goAbsent": true,
+  "rootsAbsent": true,
+  "memgate": {
+    "pass": true,
+    "minGiB": 7,
+    "freeGiB": 7.8346481323242188,
+    "reason": "OK"
+  },
+  "engines": 1,
+  "probe": {
+    "identifier": "G2LP2A3:HOLD_UNAUTHORIZED",
+    "message": "No GO_LP2A3_PHYSICAL record (matlab/g2/lp2a3/G2_LP2A3_GO.json): the campaign is prepared, not authorized.",
+    "pass": true
+  },
+  "outputsUnchanged": true,
+  "gitClean": true,
+  "physicalSolves": 0,
+  "externalEntryInvoked": false,
+  "allPass": true
+}

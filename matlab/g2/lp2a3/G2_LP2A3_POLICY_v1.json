@@ -1,0 +1,447 @@
+{
+ "schema": "NewMetacomp.G2.LP2A3.Policy.v1",
+ "status": "PROPOSED_NOT_AUTHORIZED",
+ "assignment": "G2-LP2-A3, https://github.com/mfs9697/NewMetacomp/issues/74; start head 666c3a7842299ec8f95f8a325df01f5c24dde588 (PR #71)",
+ "scope": "Restricted matrix-confined continuation of the four accepted LP2-A1 S8 paths to at most S11 with the LP2-A2 paired-bank mesh family at the default 0.45 mm seed spacing ONLY; unchanged LP1/LP2 numerics, BVP, SIF gates and signed MTS; per-case termination at the first non-MATRIX_ADVANCE classification or local numerical HOLD",
+ "authority": {
+  "wp5ScientificAcceptance": "https://github.com/mfs9697/NewMetacomp/pull/71#pullrequestreview-6063867614",
+  "wp5FinalClosure": "https://github.com/mfs9697/NewMetacomp/pull/71#pullrequestreview-6064434652",
+  "lp2a1Acceptance": "https://github.com/mfs9697/NewMetacomp/pull/70#pullrequestreview-6056658077",
+  "lp2a1Head": "ed5c6e605fcff56e78178331df844d21c11863c6"
+ },
+ "lp1PolicyFile": "matlab/g2/G2_LP1_POLICY_v2.json",
+ "lp1PolicySHA256": "074d7edc981920537726314f781f24b41ac7224c18d594d6a1b15343084e5091",
+ "lp2PolicyFile": "matlab/g2/lp2/G2_LP2A_POLICY_v1.json",
+ "lp2PolicySHA256": "093a546b9bae54d8fab0026420c8d85dced85f0e0e6ed212d597b3fd1aa6eec5",
+ "lp2a2PolicyFile": "matlab/g2/lp2a2/G2_LP2A2_EQ_POLICY_v1.json",
+ "lp2a2PolicySHA256": "6f2c290b37d4f8291f428ec8b9e0a886fe6b31fc901bee5781f2518e67c94756",
+ "sourcePins": {
+  "g2SourceSHA256": "7e5683703bd104547ef5d013aa0253ad2819b59dc58693957e2d04b4707f0947",
+  "lp2SourceSHA256": "357dfdcdb576d2866b9d1b41a14265300a14c30700d6475f995881041ba822ca",
+  "lp2a2SourceSHA256": "f1d7e4d67b91968e16ebaead13be86667c7776ce48971ed5206c7f136fae7afd",
+  "lp2a3SourceSHA256": "fa3bcecfa9cd3044253d5a72253e2058bccd044d32345f51650dcd775f42e002",
+  "definition": "g2: sorted relative-path sha256 lines of matlab/g2/*.m and matlab/g2/vendor_p010_a14d8872/*.m; lp2, lp2a2, lp2a3: sorted \"name sha256\" lines of the folder *.m; SHA-256 of the newline-joined string (g2_lp1_digest)"
+ },
+ "cases": [
+  {
+   "id": "H",
+   "mask": [
+    0,
+    0,
+    0
+   ],
+   "ratio": 1
+  },
+  {
+   "id": "stiff13",
+   "mask": [
+    1,
+    0,
+    1
+   ],
+   "ratio": 2
+  },
+  {
+   "id": "soft2",
+   "mask": [
+    0,
+    1,
+    0
+   ],
+   "ratio": 0.5
+  },
+  {
+   "id": "soft1",
+   "mask": [
+    1,
+    0,
+    0
+   ],
+   "ratio": 0.5
+  }
+ ],
+ "parents": {
+  "run": "outputs/g2_lp2a_paths_v1/run_lp2a_s5_s8_v1",
+  "stateIndex": 8,
+  "authority": "accepted LP2-A1 campaign G2-LP2A-001 (PR #70, review 6056658077); the ORIGINAL S8 STATE is the authoritative parent (full-precision polyline, tangent, signed KI/KII); WP5 records are NOT parents",
+  "manifest": "docs/research/G2_LP2_evidence/campaign_20261125/LP2A_RUN_LEDGER_SHA256.json",
+  "manifestSHA256": "bd0aa185e1858c82ff0864730d38dd873328297767627d9b366ebe6b837e1de3",
+  "S8": {
+   "H": {
+    "STATE": "ffd355d8b89dc35b48161583c5dfd451609e1f4befdd36fa3c2b3259fc3a8ce2",
+    "MESH": "5e1be8855a77610b569e3e0aa47e0bc0aedfb45a112e33e3b4c858c129bcda11",
+    "PHASE": "31747be8ab725e3ebcf9bdcb76a332dee224690b415a0c12f49d7aa711d8d856",
+    "SOLUTION": "cfc00c993f00fae1ddbcd2dff1ff4c82d3c6d80a5f4055bf60eb82886fc427df",
+    "TERMINAL": "e515e32132dd3116193414472b8a36d87424f588381a197804e0a8ca8f34d32d"
+   },
+   "stiff13": {
+    "STATE": "15752ce36e8ff41dd98b04fe2bc0cc86332b5b0945f2ed3640b914e1f3f80f36",
+    "MESH": "ecef38f468eedeb231c10a2481a3ed3ee46bb1388a293b29e07ff6a07f66f899",
+    "PHASE": "bf0ef4122d5141795bbda3ba6b4e40b8a6786b3280d0bc886866fd05646fe165",
+    "SOLUTION": "b1c5e833163571830495d811328ed80162cb1713daa6a02e4fe20f5b3a2ccca7",
+    "TERMINAL": "99a58a50e8e09263c121d1a0534f417c71db8a5b9e722c311a2daad9babe1206"
+   },
+   "soft2": {
+    "STATE": "ea03bab03dd24a52a0ec907902b3c2eeb7243225bfc1365754fede1120e6eb41",
+    "MESH": "6df72ec1a955a5d73cfc4561dc144b9f37d73dd35844d550b8c02d67f85b6ac1",
+    "PHASE": "eed7f8e275b9f1c15181dad894e077c6e5543925086ec811a68a2f1448ef62ef",
+    "SOLUTION": "803181602c39ad4b608f74f07438a67d16b211ddec68ebe6119747f3399dc365",
+    "TERMINAL": "269ad9f9fbb755e2e410b9b70a0e98c30972e7fd20109fdf14dc0eee1038e528"
+   },
+   "soft1": {
+    "STATE": "67d92ab42a3cab540fce3b74f6478e85b11d0b54b527b7e815f6c44d159ad303",
+    "MESH": "2123b50fa96a89bed6b177db8dc52bb8703dbcaaee36e8a71a09038783357efe",
+    "PHASE": "6e1cf92a6d4f8b401c40e02b45d53ec9f9bdc8e653d84c342ebcbb55b72aaa5d",
+    "SOLUTION": "aa52ac08687f75e926fe5218c217c0a2b40c50322f75ba38b1fe4c55f3c1caa9",
+    "TERMINAL": "f379253fb2eab34106155b46f8aa77083f3216135f5a9a1790e1757d4028429e"
+   }
+  },
+  "terminalCandidateRule": "the S9 forecast of g2_lp2_forecast from the S8 STATE under this policy must equal TERMINAL.candidate.polyline_mm of the accepted LP2-A1 chain bitwise (isequal)"
+ },
+ "meshTransition": "S8 parents were solved with the LP1 mesh family (g2_kinked_join); S9-S11 use the LP2-A2 family (g2_lp2a2_join, 0.45 mm paired bank seeds). Eligibility of the new family rests on the WP5 fixed-S8 equivalence (qualificationEvidence), not on new S9-S11 comparisons; the parent S8 geometry/SIFs are not recomputed",
+ "qualificationEvidence": {
+  "campaign": "G2-LP2A2-EQ-001 activation A2 (GO 820efd4, revoked 886c230), outcome EQUIVALENT; replay closure VERIFIED_V2",
+  "records": [
+   {
+    "path": "outputs/g2_lp2a2_eq_v1/EQ-H/COMPARISON.json",
+    "sha256": "a66a20572ba84ca07eabf1c3849b4b2ae8dde1d273a307369a4c420b004db6a0"
+   },
+   {
+    "path": "outputs/g2_lp2a2_eq_v1/EQ-H/MESH.mat",
+    "sha256": "33b2b8d3fa5d44e8866af22b2a2d28863aa38fc8fde6cb0d88d123b376933fbb"
+   },
+   {
+    "path": "outputs/g2_lp2a2_eq_v1/EQ-H/PHASE.mat",
+    "sha256": "60863c8d52b6a8c477170aa444cdf0293bc36c55f755aa00f1956920442f384e"
+   },
+   {
+    "path": "outputs/g2_lp2a2_eq_v1/EQ-H/PHASE.mat.manifest.json",
+    "sha256": "8b54f2e271e2582ca964f9df9e36de7f17a9cf8e467d6bd1cfcc896894e85778"
+   },
+   {
+    "path": "outputs/g2_lp2a2_eq_v1/EQ-H/SOLUTION.mat",
+    "sha256": "ae641f5f0ee3b554e391c177e97926947d1e28ed29e66e58ed7182c2ac6b0a7a"
+   },
+   {
+    "path": "outputs/g2_lp2a2_eq_v1/EQ-H/SOLUTION.mat.manifest.json",
+    "sha256": "acc80ac87a98af450b441cd653aef3d3c10cb57da655ce678012cc7b5e74ef82"
+   },
+   {
+    "path": "outputs/g2_lp2a2_eq_v1/EQ-soft1/COMPARISON.json",
+    "sha256": "2c362242ec00a99f100e91d6ce07ee407721d639c46f72448938c3aa13b4858b"
+   },
+   {
+    "path": "outputs/g2_lp2a2_eq_v1/EQ-soft1/MESH.mat",
+    "sha256": "75a81c2cc578716e13ce1a5a2fb53136fa0f1ed998cb1c09ae9fc9a9dbe16f02"
+   },
+   {
+    "path": "outputs/g2_lp2a2_eq_v1/EQ-soft1/PHASE.mat",
+    "sha256": "d2be3beeee03e6868788b0ae5b62a51e3775564fcebf870d0a15930fb68802fc"
+   },
+   {
+    "path": "outputs/g2_lp2a2_eq_v1/EQ-soft1/PHASE.mat.manifest.json",
+    "sha256": "ba6103f0c6e5facd8798182fa1ba31956d9848848010ccab9f722cce8ab2402b"
+   },
+   {
+    "path": "outputs/g2_lp2a2_eq_v1/EQ-soft1/SOLUTION.mat",
+    "sha256": "15c5d613c1a868f050c7a5b4dcbe6f0cbedaa2f1d0463013f59b743ab77aaf37"
+   },
+   {
+    "path": "outputs/g2_lp2a2_eq_v1/EQ-soft1/SOLUTION.mat.manifest.json",
+    "sha256": "366d24ffa483202947b7fea071755cf22e0349f0e395a72231d74f51176efb37"
+   },
+   {
+    "path": "outputs/g2_lp2a2_eq_v1/EQ-soft2/COMPARISON.json",
+    "sha256": "b89f207b8b28949790c871be9e151a9eef0ab60900387d04a492bddeca2afae8"
+   },
+   {
+    "path": "outputs/g2_lp2a2_eq_v1/EQ-soft2/MESH.mat",
+    "sha256": "b2f212cc7e45d1664ca353346258c15418a252ae47ba79a1f83e253938105343"
+   },
+   {
+    "path": "outputs/g2_lp2a2_eq_v1/EQ-soft2/PHASE.mat",
+    "sha256": "fca197e5b272b4bd65e235c2798f5f826c26627cd73ef31d5e42751337e0cecc"
+   },
+   {
+    "path": "outputs/g2_lp2a2_eq_v1/EQ-soft2/PHASE.mat.manifest.json",
+    "sha256": "ca6ba51da70703a60137d33ba3b241e34ea01208122dee3633ba193dfc45eac6"
+   },
+   {
+    "path": "outputs/g2_lp2a2_eq_v1/EQ-soft2/SOLUTION.mat",
+    "sha256": "7771dca68242c2ccb23e076501ef825da161c8ffc99cf7b38f19ec926989cb5c"
+   },
+   {
+    "path": "outputs/g2_lp2a2_eq_v1/EQ-soft2/SOLUTION.mat.manifest.json",
+    "sha256": "a77e54f8be81ac61d815a86f8a082619d8d9529b6fd86269ab4545f6cc41cb3f"
+   },
+   {
+    "path": "outputs/g2_lp2a2_eq_v1/EQ-stiff13/COMPARISON.json",
+    "sha256": "486b8c6532e8474aa32c6e70a23c067918a6e34a2497a39129e1e6a39c9b5bca"
+   },
+   {
+    "path": "outputs/g2_lp2a2_eq_v1/EQ-stiff13/MESH.mat",
+    "sha256": "1258a6f0e244f9888fb11d5368873a56e01b90999f09a0e7c40779ef7e7a803f"
+   },
+   {
+    "path": "outputs/g2_lp2a2_eq_v1/EQ-stiff13/PHASE.mat",
+    "sha256": "4ebe44f8befec6d7daa67015b7637de0204062f03e2cfdb43424c4af8de4a88a"
+   },
+   {
+    "path": "outputs/g2_lp2a2_eq_v1/EQ-stiff13/PHASE.mat.manifest.json",
+    "sha256": "07ef6325a0d7dba32c539222df488f31188dab20f1635d247270513448a22890"
+   },
+   {
+    "path": "outputs/g2_lp2a2_eq_v1/EQ-stiff13/SOLUTION.mat",
+    "sha256": "42a93838816d8ed78416b15c04ec245679721fedf0f9e86900ae8a1475559a1e"
+   },
+   {
+    "path": "outputs/g2_lp2a2_eq_v1/EQ-stiff13/SOLUTION.mat.manifest.json",
+    "sha256": "c005322a2bc348aab49c3eabc2c55c6675e408d9363ee8f4e2b7aba516a89f92"
+   }
+  ],
+  "archiveSHA256": "96ed7a364d8742542244ab4003c754c139f437c5e1c41d80a25dbf0dad9675ea",
+  "archiveName": "NewMetacomp_G2_LP2A2_EQ_A2_Records_20261125.zip",
+  "archiveManifestSHA256": "0ac58654f39fd1d3a801aff103802a53f8e7b22bf5ca007f9739623c61b83fbf",
+  "evidenceFiles": [
+   {
+    "path": "docs/research/G2_LP2A2_evidence/eq_campaign_A2/post/LP2A2_EQ_A2_ARCHIVE_RECORD.json",
+    "sha256": "1d64afddf7dd94e14df6295055a366ae4b1ef70c47bde84adc177691a8064945"
+   },
+   {
+    "path": "docs/research/G2_LP2A2_evidence/eq_campaign_A2/verify/LP2A2_EQ_A2_INDEPENDENT_AUDIT.json",
+    "sha256": "c84b50a3033f77f475307c2a18910de7e4468f782b6ffb5eef8f131bd4b531c8"
+   },
+   {
+    "path": "docs/research/G2_LP2A2_evidence/eq_campaign_A2/verify/LP2A2_EQ_A2_AUDIT_DUMP.json",
+    "sha256": "d905fc75d02c778776ca80cf482261ac44b20d4532358a5b78547a4b973b4106"
+   },
+   {
+    "path": "docs/research/G2_LP2A2_evidence/eq_campaign_A2/closure/LP2A2_EQ_CLOSURE_VERIFY.json",
+    "sha256": "64757922040a6b50661f3b9fe1494bbb3ed2aa88180d0977a8443b13f542392f"
+   },
+   {
+    "path": "docs/research/G2_LP2A2_evidence/eq_campaign_A2/closure/LP2A2_EQ_CLOSURE_FINAL.json",
+    "sha256": "9279cdc70b1d3729995addaa0a58d4632e0b9fef631830507abc9906d7aba770"
+   },
+   {
+    "path": "docs/research/G2_LP2A2_evidence/eq_campaign_A2/closure/LP2A2_EQ_CLOSURE_TESTS.json",
+    "sha256": "51b0436bad00e009e70df3bf303c066e435f7a8f624286e1036c784810ce4fb6"
+   },
+   {
+    "path": "docs/research/G2_LP2A2_evidence/eq_campaign_A2/closure/ARCHIVE_UNCHANGED.json",
+    "sha256": "669d29a6af7803f3ad333b96cc7446742cccf25ae6b3d58465ed2f8329805b56"
+   },
+   {
+    "path": "docs/research/G2_LP2A2_evidence/eq_campaign_A2/campaign/LP2A2_EQ_A2_CAMPAIGN.json",
+    "sha256": "3a3182d2629acee4d3ea1d308566a2f573382e487423322bf2e32436c04d1da1"
+   }
+  ],
+  "use": "eligibility of the mesh family only; never a parent state and never an acceptance threshold for S9-S11"
+ },
+ "caps": {
+  "firstStateIndex": 9,
+  "maxStateIndex": 11,
+  "statesPerCaseMax": 3,
+  "maxAdmissions": 12,
+  "initialArc_mm": 25.4,
+  "increment_mm": 4,
+  "maxArcLength_mm": 69.4,
+  "arcByState_mm": {
+   "S9": 61.4,
+   "S10": 65.4,
+   "S11": 69.4
+  },
+  "adaptiveStep": false,
+  "retry": false,
+  "resumption": false,
+  "informationOnlyForecast": "S12 (geometry only, no admission, mesh or FEM; outside the campaign)"
+ },
+ "meshFamily": {
+  "function": "g2_lp2a3_mesh = g2_lp2a2_join(...,ExteriorOptions,[xo,{SeedSpacing_mm,0.45}]) + g2_lp2a2_pairing_audit (identical to rung 1 of g2_lp2a2_mesh)",
+  "seedSpacing_mm": 0.45,
+  "fallbackRungs": "NONE: a rung-1 failure stops the case (TERMINAL NUMERICAL_HOLD); no other seed spacing, also not for diagnostics of a live candidate",
+  "ExpectedVertices": "stateIndex + 2",
+  "ExteriorOptions": {
+   "BottomVertices_mm": [
+    25.4,
+    482.6
+   ],
+   "TopVertices_mm": 254,
+   "TipGuideRadius_mm": 15,
+   "TipGuideHface_mm": 1.5,
+   "MaxT3Elements": 40000
+  },
+  "gates": "inherited 34 kink-mesh gates (g2_lp1_audit), P1-P10 pairing audit, four-mask phase audit, owner map, actual-polygon clearance; T3 <= 40000, min angle >= 20 deg, neighbour ratio <= 1.8; 76 chords per circle; protected p010 core 3.0 mm, collar 3.3 mm, 64 sectors, q domains"
+ },
+ "ringProximityGuard": {
+  "function": "g2_lp2a3_guard",
+  "rule": "min_i(||tip - c_i|| - R_ring - 15 mm) >= 1 mm for EVERY ring i, irrespective of activation; evaluated on the full-precision candidate tip BEFORE any admission or mesh; exactly 1 mm passes, below fails; no rounding",
+  "minGap_mm": 1.0,
+  "guideRadius_mm": 15,
+  "ringR_mm": 19.05,
+  "objectTypes": "active ring -> PHYSICAL_INTERFACE (INTERFACE_APPROACH), passive ring -> NUMERICAL_RING (PASSIVE_CONTOUR_APPROACH); a proximity stop is neither an interface encounter nor crack arrest"
+ },
+ "bvp": {
+  "model": "idealized pin/roller vertical point load",
+  "P_N": 1,
+  "thickness_mm": 12.7,
+  "E_MPa": 3268.115,
+  "nu": 0.35,
+  "plane": "stress",
+  "pin_mm": [
+   25.4,
+   0
+  ],
+  "roller_mm": [
+   482.6,
+   0
+  ],
+  "load_mm": [
+   254,
+   203.2
+  ]
+ },
+ "qAnnuli_mm": [
+  [
+   0.4,
+   2.6
+  ],
+  [
+   0.2,
+   1
+  ],
+  [
+   0.4,
+   1.6
+  ],
+  [
+   0.8,
+   2.6
+  ],
+  [
+   1.2,
+   2.4
+  ]
+ ],
+ "geometry": {
+  "centres_mm": [
+   [
+    152.4,
+    69.85
+   ],
+   [
+    152.4,
+    120.65
+   ],
+   [
+    152.4,
+    171.45
+   ]
+  ],
+  "holeR_mm": 6.35,
+  "ringR_mm": 19.05,
+  "plate_mm": [
+   508,
+   203.2
+  ],
+  "expectedChords": 76,
+  "tipGuideRadius_mm": 15,
+  "collarRadius_mm": 3.3,
+  "channelHalfWidth_mm": 0.02,
+  "minSegmentRingClearance_mm": 1.52,
+  "minQClearance_mm": 1,
+  "minNonadjacentClearance_mm": 0.16,
+  "distanceTolerance_mm": 1e-09,
+  "nominalCircleEnvelopeRequired": true
+ },
+ "startPolyline_mm": [
+  [
+   101.6,
+   0
+  ],
+  [
+   101.6,
+   25.4
+  ]
+ ],
+ "physics": "unchanged LP1: g2_lp1_audit (kink auditor 34 gates, T3 budget, bank adapter, four-mask phase audit, phase map) -> g2_m4b_ring_activation(case mask) -> g2_m4b_sif_partial with G2_TRAJECTORY_POLICY_v1 gates (16 criteria) -> g2_mts_direction (status OK, stationarity <= 1e-12)",
+ "classification": {
+  "function": "matlab/g2/lp2a3/g2_lp2a3_classify.m (wraps the unchanged g2_lp2_classify, adds the ring-proximity guard)",
+  "labels": [
+   "MATRIX_ADVANCE",
+   "INTERFACE_APPROACH",
+   "INTERFACE_ENCOUNTER",
+   "HOLE_BOUNDARY_APPROACH",
+   "EXTERNAL_BOUNDARY_APPROACH",
+   "PASSIVE_CONTOUR_APPROACH",
+   "NUMERICAL_HOLD",
+   "CAMPAIGN_LIMIT_REACHED"
+  ],
+  "precedence": "INTERFACE_APPROACH > HOLE_BOUNDARY_APPROACH > EXTERNAL_BOUNDARY_APPROACH > PASSIVE_CONTOUR_APPROACH > NUMERICAL_HOLD",
+  "passiveContour": "a candidate whose ONLY failing constraints are NUMERICAL_RING (passive ring contour) is PASSIVE_CONTOUR_APPROACH (LP2-A1 reported this as NUMERICAL_HOLD)",
+  "failureClasses": "g2_lp2a3_failure_class = g2_lp2_failure_class + LP2-A3 local identifiers (mesh rung-1 failure, pairing, actual-polygon clearance)"
+ },
+ "acceptance": "a new state is accepted only after the unchanged inherited gates (34 mesh gates, pairing P1-P10, phase/owner, actual-polygon clearance, 16 SIF gates of g2_m4b_sif_partial, MTS status OK with stationarity <= 1e-12, positive KI) and verified record completion; WP5 criteria C1-C11 are fixed-S8 cross-family comparisons and are NOT acceptance thresholds; there are no archived S9-S11 states to compare with",
+ "authorization": {
+  "goPath": "matlab/g2/lp2a3/G2_LP2A3_GO.json",
+  "goPresent": false,
+  "decision": "GO_LP2A3_PHYSICAL",
+  "campaignId": "G2-LP2A3-001",
+  "campaignScope": "LP2A3_S9_S11_MAX12",
+  "runName": "run_lp2a3_s9_s11_v1",
+  "runRoot": "outputs/g2_lp2a3_paths_v1/run_lp2a3_s9_s11_v1",
+  "ledgerRoot": "outputs/g2_lp2a3_campaign_ledger/G2-LP2A3-001",
+  "forbiddenRunNames": [
+   "run_20261122_lp1_v1",
+   "run_a0_lp1_repro_v1",
+   "run_a1_family_b_s4_v1",
+   "run_m5x6_crossed_s4_b9_v1",
+   "run_lp2a_s5_s8_v1"
+  ],
+  "forbiddenCampaignIds": [
+   "G2-LP1-A0-001",
+   "G2-A1-FB-001",
+   "G2-M5-X6-001",
+   "G2-LP2A-001",
+   "G2-LP2A2-EQ-001"
+  ],
+  "contractEvidenceDir": "docs/research/G2_LP2A3_evidence/",
+  "activation": "GO file only, committed directly on the reviewed head (validator: ancestor + HEAD~1 == approvedHead + sole changed file, via g2_lp2a2_git)",
+  "resumption": "none"
+ },
+ "resources": {
+  "matlabRelease": "R2023a",
+  "pdeRequired": true,
+  "oneMatlabProcess": true,
+  "freeRAMBeforeMATLABStart_GiB_min": 8.2,
+  "freeRAMInsideMATLAB_GiB_min": 7,
+  "preflightGuard_GiB": 5,
+  "archiveDevices": 2,
+  "memoryTiming": "g2_lp2a2_eq_memgate(7) immediately before each admission (failure before the state folder exists: pre-admission memory HOLD, global) and again immediately before each solve (failure after admission: global HOLD); the inherited 5 GiB guard of g2_lp1_admit_state and of the solve is unchanged; no automatic retry"
+ },
+ "stopRules": [
+  "per case: stop at the first candidate that is not MATRIX_ADVANCE (terminal record, no mesh, no solve)",
+  "per case: stop at the first local numerical HOLD (rung-1 mesh failure, audit, pairing, phase, actual clearance, SIF gates, MTS) with TERMINAL NUMERICAL_HOLD; accepted prefix preserved; never retried",
+  "per case: CAMPAIGN_LIMIT_REACHED after an accepted S11 (an S12 candidate is forecast for information only)",
+  "global: source, policy, authorization, memory, record/ledger integrity or any unexpected error stops the whole campaign with a ledger HOLD; partial records preserved; no resumption",
+  "at most 3 admissions per case and 12 in total; no retry, no resumption, no adaptive step, no guide reduction, no passive-ring crossing, no fallback seed spacing"
+ ],
+ "analysis": {
+  "quantities": "G, J, signed KI/KII, KII/KI, local MTS, global heading, signed lateral tip offset relative to H, tip-to-ring circle, guide-to-ring gap, segment clearance, phase activity, mesh/solver diagnostics, terminal reason, last accepted state",
+  "matching": "only accepted arclengths s = 25.4 + 4k common to the compared chains; no interpolation or extrapolation",
+  "preregistered": "see docs/research/G2_LP2A3_READINESS_MEMO_UA.md section WP3"
+ },
+ "excluded": [
+  "physical FEM during preparation",
+  "accepted states during preparation",
+  "fallback seed spacing",
+  "S12 admission",
+  "passive-ring crossing",
+  "guide reduction",
+  "adaptive stepping",
+  "interface propagation / CZM",
+  "LP2-B",
+  "physical arrest claims",
+  "changes to historical sources, policies, records or archives"
+ ]
+}

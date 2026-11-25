@@ -1,0 +1,55 @@
+{
+ "rule": "absolute local paths replaced by <repo> (execution clone), <worktree>, <scratch>, <user>; MATLAB startup path warnings removed; CRLF to LF",
+ "files": [
+  {
+   "file": "a3_activation_checks.log",
+   "originalSHA256": "adb03be2f41b98d665a1529c8588cd07021c5a7bbcce99a22b7a119eb801270e",
+   "sanitizedSHA256": "d02d6da46f521f0561a8e5560b9862f4e45fd5e9d5ba05c5753295a976dc48c6"
+  },
+  {
+   "file": "a3_activation_checks.m",
+   "originalSHA256": "d843ad377416cb349b374db76fc61386d552059c5562299e544c3b3499459718",
+   "sanitizedSHA256": "909fb9fde97504db11528e4d663f42638b6a9d21c1bca7c9f088bc1b95b5ed9f"
+  },
+  {
+   "file": "a3_campaign.log",
+   "originalSHA256": "281619f88888c37949b3f70d87f963a7ffac30dd76e32af551fa7207fda5a257",
+   "sanitizedSHA256": "2a81d38da1efe3f8066c3d82dcbd57bf82f0808873f56c66667a6bac1b473b3f"
+  },
+  {
+   "file": "a3_campaign.m",
+   "originalSHA256": "fc3a8fe6866d7239079c4ee1b4134eaf871c08e60b8273445c7145ffa1136990",
+   "sanitizedSHA256": "2f68d159cbd983ef09f6b935c4ec1d0070a36cb7295df06c6dcd30e39f2c2841"
+  },
+  {
+   "file": "a3_closure.log",
+   "originalSHA256": "3e2ae2f144ff9f11280559961f887017d7e2c186c9abb6b54174a68ea15c33f4",
+   "sanitizedSHA256": "506e817870e312ecb2156e8740a2d3414a06cea748d7d0994738a22000c9eaf0"
+  },
+  {
+   "file": "a3_closure.m",
+   "originalSHA256": "201aad46a686fe1043a8b0bc1f6a73f18b3bbe8712eac69cb165c218d37bb848",
+   "sanitizedSHA256": "51c1b15aa30403a4b0fdf74f25b446d0dd54022911f9889127294c8d4e1e0334"
+  },
+  {
+   "file": "launch.ps1",
+   "originalSHA256": "8ee728572701fc9d638e70a3bbac4e24886f879d8aea846b4e423d280a9c13e3",
+   "sanitizedSHA256": "b29b23b786c9d43147bf043d5ae93e73ed6e98fa8bdd075eefa3318d2a75e324"
+  },
+  {
+   "file": "make_go.py",
+   "originalSHA256": "40b3ebcbd1208fe5f5585def5efbe67bafa1866a3f08359ab2241d5a63ae6014",
+   "sanitizedSHA256": "40b3ebcbd1208fe5f5585def5efbe67bafa1866a3f08359ab2241d5a63ae6014"
+  },
+  {
+   "file": "run_cfig.log",
+   "originalSHA256": "4ccaf4cca76be504cb116249dd04aff318b1aa39125fe3c96f8ebcbd1605faa9",
+   "sanitizedSHA256": "3785d30c3f5e036c202f7ac88d1a89ef7bf665fe7a464e5445b421296ac14282"
+  },
+  {
+   "file": "run_cfig.m",
+   "originalSHA256": "6fa4b071bc11dd1e65740fbf673a3bdb5b64b7c247adde97a79b0c2cd69de239",
+   "sanitizedSHA256": "6d654a58b90038913b06f7fedf176ee8eeafee0754d08f7ddccd87dca86a48ef"
+  }
+ ]
+}

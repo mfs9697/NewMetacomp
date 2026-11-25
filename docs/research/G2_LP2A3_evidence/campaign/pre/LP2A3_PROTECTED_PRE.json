@@ -1,0 +1,14 @@
+{
+ "schema": "NewMetacomp.G2.LP2A3.ProtectedCheck.v1",
+ "protectedTreeFiles": 541,
+ "protectedTreeSHA256": "20f2d54fb59395f373b7c7f7ea4437d69fbdf3be8a8710b96077881c049218ef",
+ "protectedTreeEqualsReference": true,
+ "lp2a1RunLedgerFiles": 158,
+ "lp2a1RunLedgerEqualsManifest": true,
+ "wp5RecordFiles": 24,
+ "wp5RecordsEqualArchiveRecord": true,
+ "setsDisjoint": true,
+ "totalProtectedFiles": 723,
+ "manifestSHA256": "44c54678607fa2ed77b29eac59e7caa8b527c51b6e60d8133550906c82d7e02f",
+ "pass": true
+}
