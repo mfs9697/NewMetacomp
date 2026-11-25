@@ -20,6 +20,8 @@ ip=inputParser;addParameter(ip,'Mesh',true,@islogical);addParameter(ip,'RealGit'
 C=g2_lp2a3_context('Preflight',false);pol=C.policy;R={};ids={pol.cases.id};
 R{end+1}=t('A1_token_and_no_GO',startsWith(C.token,'G2LP2A3|policy=')&&~isfile(C.goFile)&&strcmp(pol.status,'PROPOSED_NOT_AUTHORIZED'));
 R{end+1}=t('A2_roots_absent',~isfolder(C.runRoot)&&~isfolder(C.ledgerRoot));
+% H0 first, before any mesh work, so that the unchanged 5 GiB preflight sees a fresh MATLAB process
+R{end+1}=t('H0_no_GO_refused_with_real_preflight',refuses(@()g2_lp2a3_run('Case','H','Run',true,'AuthToken',C.token),'G2LP2A3:HOLD_UNAUTHORIZED')&&~isfolder(C.runRoot)&&~isfolder(C.ledgerRoot));
 Par=struct();ok=true;
 for k=1:4,Pk=g2_lp2a3_parent(C,ids{k});Par.(ids{k})=Pk;ok=ok&&Pk.terminalComparison.bitwiseEqual&&Pk.state.stateIndex==8;end
 R{end+1}=t('A3_four_S8_parents_bitwise_terminal',ok);
@@ -112,7 +114,6 @@ movefile(fullfile(run.rd,'soft1','S10'),fullfile(fx,'S10_moved'));Vg=g2_lp2a3_ve
 R{end+1}=t('G16_gap_in_chain_detected',~Vg.pass&&any(contains(Vg.problems,'contiguous')));
 Pa=pol;Pa.parents.S8.H.STATE=repmat('a',1,64);Ca=C;Ca.policy=Pa;R{end+1}=t('G17_parent_pin_mismatch_refused',refuses(@()g2_lp2a3_parent(Ca,'H'),'G2LP2A3:HOLD_SOURCE'));
 % ---------------------------------------------------------------- H GO
-R{end+1}=t('H0_no_GO_refused_with_real_preflight',refuses(@()g2_lp2a3_run('Case','H','Run',true,'AuthToken',C.token),'G2LP2A3:HOLD_UNAUTHORIZED')&&~isfolder(C.runRoot)&&~isfolder(C.ledgerRoot));
 R{end+1}=t('H1_preflight_bypass_refused',refuses(@()g2_lp2a3_run('Case','H','Run',true,'Preflight',false,'AuthToken',C.token),'G2LP2A3:HOLD_PREFLIGHT_REQUIRED'));
 head='0123456789abcdef0123456789abcdef01234567';au=pol.authorization;
 ev=struct('exists',true,'sha256',repmat('b',1,64),'text',jsonencode(struct('passed',60,'total',60,'physicalSolves',0,'token',C.token)));
