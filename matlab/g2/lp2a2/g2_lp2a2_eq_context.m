@@ -6,7 +6,7 @@ function C=g2_lp2a2_eq_context(varargin)
 %  LP2 digest         matlab/g2/lp2/*.m (the archived records were produced under it)
 %  LP2-A2 digest      matlab/g2/lp2a2/*.m (this campaign's sources)
 ip=inputParser;addParameter(ip,'Preflight',true,@islogical);parse(ip,varargin{:});o=ip.Results;
-lp2a2=fileparts(mfilename('fullpath'));here=fileparts(lp2a2);repo=fileparts(fileparts(here));addpath(here);addpath(fullfile(here,'lp2'));
+lp2a2=fileparts(mfilename('fullpath'));here=fileparts(lp2a2);repo=fileparts(fileparts(here));addpath(here);addpath(fullfile(here,'lp2'));addpath(fullfile(here,'vendor_p010_a14d8872'),'-begin');   % pinned vendor builder first (as g2_lp2_run)
 P=struct('pass',true,'status','SKIPPED');
 if o.Preflight
  P=g2_lp0_preflight();assert(P.pass,'G2LP2A2:Preflight','%s: %s (RAM %.6f GiB)',P.status,P.cause,P.freePhysicalRAM_GiB);
