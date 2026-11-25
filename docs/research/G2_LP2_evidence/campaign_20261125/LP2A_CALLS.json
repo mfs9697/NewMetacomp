@@ -1,0 +1,67 @@
+{
+  "calls": [
+    {
+      "caseId": "H",
+      "status": "TERMINAL_CAMPAIGN_LIMIT_REACHED",
+      "computed": 4,
+      "reused": 0,
+      "terminal": "CAMPAIGN_LIMIT_REACHED",
+      "lastState": 8,
+      "seconds": 36.3042627,
+      "admitsAfter": 4,
+      "holdsAfter": 0,
+      "verifyPass": true,
+      "verifyProblems": [],
+      "decision": "CONTINUE",
+      "error": ""
+    },
+    {
+      "caseId": "stiff13",
+      "status": "TERMINAL_CAMPAIGN_LIMIT_REACHED",
+      "computed": 4,
+      "reused": 0,
+      "terminal": "CAMPAIGN_LIMIT_REACHED",
+      "lastState": 8,
+      "seconds": 33.1464674,
+      "admitsAfter": 8,
+      "holdsAfter": 0,
+      "verifyPass": true,
+      "verifyProblems": [],
+      "decision": "CONTINUE",
+      "error": ""
+    },
+    {
+      "caseId": "soft2",
+      "status": "TERMINAL_CAMPAIGN_LIMIT_REACHED",
+      "computed": 4,
+      "reused": 0,
+      "terminal": "CAMPAIGN_LIMIT_REACHED",
+      "lastState": 8,
+      "seconds": 32.7126565,
+      "admitsAfter": 12,
+      "holdsAfter": 0,
+      "verifyPass": true,
+      "verifyProblems": [],
+      "decision": "CONTINUE",
+      "error": ""
+    },
+    {
+      "caseId": "soft1",
+      "status": "TERMINAL_CAMPAIGN_LIMIT_REACHED",
+      "computed": 4,
+      "reused": 0,
+      "terminal": "CAMPAIGN_LIMIT_REACHED",
+      "lastState": 8,
+      "seconds": 34.0136284,
+      "admitsAfter": 16,
+      "holdsAfter": 0,
+      "verifyPass": true,
+      "verifyProblems": [],
+      "decision": "CONTINUE",
+      "error": ""
+    }
+  ],
+  "globalStop": "",
+  "closedReturned": true,
+  "closedFile": true
+}
