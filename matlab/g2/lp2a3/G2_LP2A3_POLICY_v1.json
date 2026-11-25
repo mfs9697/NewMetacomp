@@ -19,7 +19,7 @@
   "g2SourceSHA256": "7e5683703bd104547ef5d013aa0253ad2819b59dc58693957e2d04b4707f0947",
   "lp2SourceSHA256": "357dfdcdb576d2866b9d1b41a14265300a14c30700d6475f995881041ba822ca",
   "lp2a2SourceSHA256": "f1d7e4d67b91968e16ebaead13be86667c7776ce48971ed5206c7f136fae7afd",
-  "lp2a3SourceSHA256": "110db7fcf384d94533a47171b9e42e48370c4eab06b2469d519f693640cdc6ae",
+  "lp2a3SourceSHA256": "fa3bcecfa9cd3044253d5a72253e2058bccd044d32345f51650dcd775f42e002",
   "definition": "g2: sorted relative-path sha256 lines of matlab/g2/*.m and matlab/g2/vendor_p010_a14d8872/*.m; lp2, lp2a2, lp2a3: sorted \"name sha256\" lines of the folder *.m; SHA-256 of the newline-joined string (g2_lp1_digest)"
  },
  "cases": [
