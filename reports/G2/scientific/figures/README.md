@@ -21,3 +21,7 @@
 ## Розділ 5
 
 П'ять нових українських TikZ-рисунків M2_UA_* за оригінальними даними Клауде; чотири англомовні оригінали в archive_m2/ збережено без зміни. Див. [CH05_FIXED_CRACK_PROVENANCE.md](../evidence/CH05_FIXED_CRACK_PROVENANCE.md).
+
+## Розділ 6
+
+Оригінальні рисунки G1-1–G1-5, F06-1, R1 g3/g4/g5/g6/g7 включено; F06-2 і R1 g4b збережено як альтернативи. Джерела й SHA: [CH06_RING_PLACEMENT_PROVENANCE.md](../evidence/CH06_RING_PLACEMENT_PROVENANCE.md).
