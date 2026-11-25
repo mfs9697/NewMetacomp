@@ -15,9 +15,16 @@ Memorandum: [`../G2_LP2A2_MESH_QUALIFICATION_MEMO_UA.md`](../G2_LP2A2_MESH_QUALI
 | `supplement/LP2A2_RECONCILIATION.json` | Populations, paired outcome tables, regressions/resolutions, ladder usage, remaining-failure table, forced-pair maxima (`scripts/g2/lp2a2/lp2a2_reconcile.py`) | read-only |
 | `eq/LP2A2_EQ_TESTS.json`, `lp2a2_batch4.m/.log` | EQ contract tests 24/24 (E1–E6), refusal without GO, four dry calls at rung 1. An intermediate attempt at `7481509` stopped at the unchanged 5 GiB preflight (4.86 GiB free); no test ran | `1200dde` |
 | `eq/LP2A2_HS8_RUNG_CHECK.json` | H S8 meshed at 0.45/0.40/0.50/0.35 mm: all pass every audit (input to the proposed supplementary experiment) | `1200dde` |
+| `supplement/ERRATUM_FORCED_PAIR_SIGNED_TERM.md` | Appended erratum: sign of `predictedDx_mm` in `LP2A2_SUPPLEMENT.json`; station vs coordinate residual; no universal pairing guarantee | review closeout |
+| `independent/LP2A2_INDEPENDENT_SET.json`, `lp2a2_indep_build.*` | Eight S11 polylines (±1° from each S9 predictor), frozen before meshing, SHA `ab7096d0…`; all admissible, clearance 1.716–2.818 mm | `13fc23e` → committed `7a96184` |
+| `independent/LP2A2_INDEPENDENT_QUALIFICATION.json`, `lp2a2_indep_qual.*` | 8/8 pass every audit at rung 1; inherited mesher 2/8 | `7a96184` |
+| `eq/v2_attempt1_vendor_path/` | Failed v2 suite run (60/64: E6 dry calls without the vendor folder first on the path), preserved | `bf9cb8a` |
+| `eq/v2/LP2A2_EQ_TESTS_v2.json`, `lp2a2_eqtests_v2.*` | Contract suite v2 64/64 (E1–E11), SHA `84f518a6…`; v1 kept as history in `eq/` | `7282530` |
+| `eq/v2/LP2A2_EQ_HASHCHECK_v2.json` | Independent Python recomputation of the pins, the 20 archived hashes, the token and the evidence SHA (`scripts/g2/lp2a2/lp2a2_eq_hashcheck.py`) | read-only |
+| `eq/v2/LP2A2_PROTECTED_CHECK_v2.json` | 541 protected files, tree `20f2d54f…`, unchanged after the closeout | after `7282530` |
 | `LP2A2_PROTECTED_CHECK.json` | 541 protected files, tree `20f2d54f…`, identical to `LP2_PROTECTED_AFTER.json` of LP2-A1; 158 LP2-A1 run/ledger files unchanged | after `d3a8d8d` |
 | `figures/` | Ukrainian figures LP2A2-1…8 (PNG 300 dpi + vector PDF), `scripts/g2/lp2a2/lp2a2_figures.m` | `d3a8d8d` |
 
-Policy `matlab/g2/lp2a2/G2_LP2A2_EQ_POLICY_v1.json` (`d09f59b2…`, status `PREREGISTERED_NOT_AUTHORIZED`); LP2-A2 source digest `f9c15e01…` (14 files); shared g2 `7e568370…` and LP2 `357dfdcd…` unchanged.
+Current pins (after the review closeout): policy `matlab/g2/lp2a2/G2_LP2A2_EQ_POLICY_v1.json` `bc1f86e7…` (status `PREREGISTERED_NOT_AUTHORIZED`), LP2-A2 source digest `00c99e93…` (19 files), shared g2 `7e568370…` and LP2 `357dfdcd…` unchanged, contract evidence `84f518a6…`. Earlier pins (`d09f59b2…`/`f9c15e01…` with v1 evidence 24/24) are history.
 
 Reproduction: `python -I scripts/g2/lp2a2/lp2a2_analyze.py <qualification.json> LP2A2_TEST_SET.json <out>`; `python -I scripts/g2/lp2a2/lp2a2_reconcile.py docs/research/G2_LP2A2_evidence <out>`.

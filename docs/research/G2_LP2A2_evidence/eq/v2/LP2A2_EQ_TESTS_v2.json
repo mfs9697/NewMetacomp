@@ -1,0 +1,269 @@
+{
+  "schema": "NewMetacomp.G2.LP2A2.EQ.Tests.v1",
+  "physicalSolves": 0,
+  "token": "G2LP2A2EQ|policy=bc1f86e7750aaea653cd7544c8fff0ad757843a23bd00608145dad70dcd8a330|g2source=7e5683703bd104547ef5d013aa0253ad2819b59dc58693957e2d04b4707f0947|lp2source=357dfdcdb576d2866b9d1b41a14265300a14c30700d6475f995881041ba822ca|lp2a2source=00c99e93915ad2c0dbd4eaeb307d94d65b4c71300f94a0f073aadacb9c5a61c2|archivedS8=da951c99c0d8c1d5dd731986d8f3b30e3db3f71854166a634d35b739757def8d|solves=EQ-H,EQ-stiff13,EQ-soft2,EQ-soft1|limit=4",
+  "lp2a2SourceSHA256": "00c99e93915ad2c0dbd4eaeb307d94d65b4c71300f94a0f073aadacb9c5a61c2",
+  "policySHA256": "bc1f86e7750aaea653cd7544c8fff0ad757843a23bd00608145dad70dcd8a330",
+  "passed": 64,
+  "total": 64,
+  "tests": [
+    {
+      "name": "E1_context_pins_token",
+      "pass": true
+    },
+    {
+      "name": "E2_identity_H",
+      "pass": true
+    },
+    {
+      "name": "E3_negative_KI",
+      "pass": true
+    },
+    {
+      "name": "E3_negative_KII",
+      "pass": true
+    },
+    {
+      "name": "E3_negative_C3_direct",
+      "pass": true
+    },
+    {
+      "name": "E3_negative_C5_direct",
+      "pass": true
+    },
+    {
+      "name": "E3_negative_J",
+      "pass": true
+    },
+    {
+      "name": "E3_negative_COD",
+      "pass": true
+    },
+    {
+      "name": "E3_negative_spread",
+      "pass": true
+    },
+    {
+      "name": "E3_negative_opening",
+      "pass": true
+    },
+    {
+      "name": "E3_negative_chords",
+      "pass": true
+    },
+    {
+      "name": "E3_negative_area",
+      "pass": true
+    },
+    {
+      "name": "E3_negative_S9tip",
+      "pass": true
+    },
+    {
+      "name": "E3_negative_compliance",
+      "pass": true
+    },
+    {
+      "name": "E2_identity_stiff13",
+      "pass": true
+    },
+    {
+      "name": "E2_identity_soft2",
+      "pass": true
+    },
+    {
+      "name": "E2_identity_soft1",
+      "pass": true
+    },
+    {
+      "name": "E4_contrast_identity",
+      "pass": true
+    },
+    {
+      "name": "E4_contrast_FG_shift",
+      "pass": true
+    },
+    {
+      "name": "E4_contrast_sign_flip",
+      "pass": true
+    },
+    {
+      "name": "E4_contrast_MTS_shift",
+      "pass": true
+    },
+    {
+      "name": "E7_actual_helper_reading",
+      "pass": true
+    },
+    {
+      "name": "E7_gate_at_threshold",
+      "pass": true
+    },
+    {
+      "name": "E7_below_threshold_refuses",
+      "pass": true
+    },
+    {
+      "name": "E7_error_refuses",
+      "pass": true
+    },
+    {
+      "name": "E7_invalid_refuses",
+      "pass": true
+    },
+    {
+      "name": "E7_driver_uses_gate",
+      "pass": true
+    },
+    {
+      "name": "E8_valid_fixture_passes",
+      "pass": true
+    },
+    {
+      "name": "E8_reject_decision_wrong",
+      "pass": true
+    },
+    {
+      "name": "E8_reject_decision_missing",
+      "pass": true
+    },
+    {
+      "name": "E8_reject_token_wrong",
+      "pass": true
+    },
+    {
+      "name": "E8_reject_solveLimit_5",
+      "pass": true
+    },
+    {
+      "name": "E8_reject_solves_reordered",
+      "pass": true
+    },
+    {
+      "name": "E8_reject_solves_three",
+      "pass": true
+    },
+    {
+      "name": "E8_reject_solves_extra",
+      "pass": true
+    },
+    {
+      "name": "E8_reject_campaign_wrong",
+      "pass": true
+    },
+    {
+      "name": "E8_reject_url_other_repo",
+      "pass": true
+    },
+    {
+      "name": "E8_reject_url_http",
+      "pass": true
+    },
+    {
+      "name": "E8_reject_url_no_comment",
+      "pass": true
+    },
+    {
+      "name": "E8_reject_url_placeholder",
+      "pass": true
+    },
+    {
+      "name": "E8_reject_head_short",
+      "pass": true
+    },
+    {
+      "name": "E8_reject_head_uppercase",
+      "pass": true
+    },
+    {
+      "name": "E8_reject_head_injection",
+      "pass": true
+    },
+    {
+      "name": "E8_reject_evidence_sha_wrong",
+      "pass": true
+    },
+    {
+      "name": "E8_reject_evidence_path_escape",
+      "pass": true
+    },
+    {
+      "name": "E8_injection_never_reaches_git",
+      "pass": true
+    },
+    {
+      "name": "E8_reject_caller_token",
+      "pass": true
+    },
+    {
+      "name": "E8_reject_not_ancestor",
+      "pass": true
+    },
+    {
+      "name": "E8_reject_activation_parent",
+      "pass": true
+    },
+    {
+      "name": "E8_reject_activation_extra_file",
+      "pass": true
+    },
+    {
+      "name": "E9_preflight_bypass_refused",
+      "pass": true
+    },
+    {
+      "name": "E10_all_pass_equivalent",
+      "pass": true
+    },
+    {
+      "name": "E10_exception_stops",
+      "pass": true
+    },
+    {
+      "name": "E10_hold_stage_stops",
+      "pass": true
+    },
+    {
+      "name": "E10_failed_comparison_stops",
+      "pass": true
+    },
+    {
+      "name": "E10_incomplete_record_stops",
+      "pass": true
+    },
+    {
+      "name": "E10_rejected_go_no_solve",
+      "pass": true
+    },
+    {
+      "name": "E10_default_validator_no_go_file",
+      "pass": true
+    },
+    {
+      "name": "E11_replay_no_records",
+      "pass": true
+    },
+    {
+      "name": "E5_refusal_without_GO",
+      "pass": true
+    },
+    {
+      "name": "E6_dry_EQ-H",
+      "pass": true
+    },
+    {
+      "name": "E6_dry_EQ-stiff13",
+      "pass": true
+    },
+    {
+      "name": "E6_dry_EQ-soft2",
+      "pass": true
+    },
+    {
+      "name": "E6_dry_EQ-soft1",
+      "pass": true
+    }
+  ],
+  "sourceCommit": "7282530862029c68f3e4d864bd52cc5ee905929d",
+  "version": "v2"
+}
