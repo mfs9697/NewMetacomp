@@ -10,6 +10,16 @@
    "file": "lp2a2_indep_build.log",
    "originalSHA256": "f735be1f47e1a869c8442854298d5a071910b6549603b05276367f6b94b9ea2f",
    "sanitizedSHA256": "2bc95a78427cb900e49935f50047dfe5286fe22c5e90f4e969810373c6715094"
+  },
+  {
+   "file": "lp2a2_indep_qual.m",
+   "originalSHA256": "ed7bb75d0305d5e8c66ab10de6509627ba1b31898f0ff0984e5c0c63bf9d022f",
+   "sanitizedSHA256": "d1ee0064f18c31d852fad676a24a67ae4dbacf76ecdf6f7f1ac82bb3fb4e5504"
+  },
+  {
+   "file": "lp2a2_indep_qual.log",
+   "originalSHA256": "fe9bbf93228f7fb05a6e9df5a1a13fb2b099a8e75943614e45daba5c1b090827",
+   "sanitizedSHA256": "1caab30b2f8fb2a553dcd9e3a80564b23e57f61ddc4821380c27f2e612bb55f3"
   }
  ]
 }

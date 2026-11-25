@@ -1,0 +1,18 @@
+SOURCE_COMMIT=7a9618438c332df90da6f38fefda7cbbdc37a38a
+SET_SHA256=ab7096d0d0eb2dc31f632e15d5f3b470819f07f2595b45d341c62df19cd41313
+LP2A2_QUAL I_H_p1deg_S11                N=13 new=1 KINKED_PROTECTED_MESH_JOIN_PASS    T3=30571  pair=1 | old=0 HOLD_KINKED_EXTERIOR
+LP2A2_QUAL I_H_m1deg_S11                N=13 new=1 KINKED_PROTECTED_MESH_JOIN_PASS    T3=30579  pair=1 | old=0 HOLD_KINKED_EXTERIOR
+LP2A2_QUAL I_stiff13_p1deg_S11          N=13 new=1 KINKED_PROTECTED_MESH_JOIN_PASS    T3=30527  pair=1 | old=0 HOLD_KINKED_EXTERIOR
+LP2A2_QUAL I_stiff13_m1deg_S11          N=13 new=1 KINKED_PROTECTED_MESH_JOIN_PASS    T3=30569  pair=1 | old=1 KINKED_PROTECTED_MESH_JOIN_PASS
+LP2A2_QUAL I_soft2_p1deg_S11            N=13 new=1 KINKED_PROTECTED_MESH_JOIN_PASS    T3=30533  pair=1 | old=0 HOLD_KINKED_EXTERIOR
+LP2A2_QUAL I_soft2_m1deg_S11            N=13 new=1 KINKED_PROTECTED_MESH_JOIN_PASS    T3=30591  pair=1 | old=1 KINKED_PROTECTED_MESH_JOIN_PASS
+LP2A2_QUAL I_soft1_p1deg_S11            N=13 new=1 KINKED_PROTECTED_MESH_JOIN_PASS    T3=30541  pair=1 | old=0 HOLD_KINKED_EXTERIOR
+LP2A2_QUAL I_soft1_m1deg_S11            N=13 new=1 KINKED_PROTECTED_MESH_JOIN_PASS    T3=30529  pair=1 | old=0 HOLD_KINKED_EXTERIOR
+INDEP_QUAL I_H_p1deg_S11            pass=1 rung=1 T3=30571 audit=34/34 pairing=1 forced=1 minAng=30.13 ratio=1.592
+INDEP_QUAL I_H_m1deg_S11            pass=1 rung=1 T3=30579 audit=34/34 pairing=1 forced=1 minAng=30.13 ratio=1.727
+INDEP_QUAL I_stiff13_p1deg_S11      pass=1 rung=1 T3=30527 audit=34/34 pairing=1 forced=1 minAng=30.13 ratio=1.653
+INDEP_QUAL I_stiff13_m1deg_S11      pass=1 rung=1 T3=30569 audit=34/34 pairing=1 forced=1 minAng=29.27 ratio=1.669
+INDEP_QUAL I_soft2_p1deg_S11        pass=1 rung=1 T3=30533 audit=34/34 pairing=1 forced=1 minAng=30.13 ratio=1.702
+INDEP_QUAL I_soft2_m1deg_S11        pass=1 rung=1 T3=30591 audit=34/34 pairing=1 forced=1 minAng=30.13 ratio=1.677
+INDEP_QUAL I_soft1_p1deg_S11        pass=1 rung=1 T3=30541 audit=34/34 pairing=1 forced=1 minAng=30.13 ratio=1.654
+INDEP_QUAL I_soft1_m1deg_S11        pass=1 rung=1 T3=30529 audit=34/34 pairing=1 forced=1 minAng=30.13 ratio=1.656
