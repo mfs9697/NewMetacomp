@@ -17,7 +17,7 @@ P = {
  'scope': 'Four fixed-geometry solves on the accepted LP2-A1 S8 geometries with the LP2-A2 paired-bank mesh family; '
           'each compared with its archived LP2-A1 S8 solution. No trajectory, no state acceptance, no S9 solve.',
  'goFile': 'matlab/g2/lp2a2/G2_LP2A2_EQ_GO.json',
- 'goRequirement': 'An explicit investigator decision GO_LP2A2_EQ in the PR thread on the approved head; the GO file must repeat the token, the approved head, the decision URL and solveLimit 4. No GO exists in this policy commit.',
+ 'goRequirement': 'An explicit investigator decision GO_LP2A2_EQ in the PR thread. The GO file (g2_lp2a2_eq_go_validate) must give decision GO_LP2A2_EQ, the token, solveLimit 4, solves exactly EQ-H, EQ-stiff13, EQ-soft2, EQ-soft1 in this order, the campaignId, a decision URL of the form https://github.com/mfs9697/NewMetacomp/pull/<n>#issuecomment-<n> or #pullrequestreview-<n>, the full 40-hex approved (reviewed) head, and the contract-evidence file with its SHA-256. The activation commit must add only the GO file directly on the approved head. Physical calls require the normal preflight. No GO exists in this policy commit.',
  'campaignId': 'G2-LP2A2-EQ-001',
  'outputRoot': 'outputs/g2_lp2a2_eq_v1',
  'solves': [
