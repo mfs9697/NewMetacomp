@@ -1,0 +1,329 @@
+{
+  "scope": "All returned PRs #8–#72; project directories only; graphical extensions; path and blob variants preserved",
+  "stats": {
+    "research_prs": 44,
+    "complete_tree_scans": 44,
+    "failed_or_truncated": [],
+    "path_blob_records": 219,
+    "unique_paths": 219,
+    "unique_blobs": 219,
+    "matched_pr72_register": 38,
+    "claim_ids": 44,
+    "classification_counts": {
+      "FIGURE_CANDIDATE": 107,
+      "REVIEW_NEEDED": 47,
+      "DOCUMENT_OR_FIGURE_REVIEW": 7,
+      "LAYOUT_CHECK": 58
+    }
+  },
+  "scans": [
+    {
+      "pr": 8,
+      "sha": "ba754bd78532a9fbff1b919425e3a87ecd9075ab",
+      "status": "COMPLETE",
+      "tree_entries": 38,
+      "graphic_files": 0
+    },
+    {
+      "pr": 10,
+      "sha": "fa8ccc982eb77932cb2bd2f443d0a8e27758141e",
+      "status": "COMPLETE",
+      "tree_entries": 40,
+      "graphic_files": 0
+    },
+    {
+      "pr": 11,
+      "sha": "a8bf2717eaca428dac051e8045312d1c4a767245",
+      "status": "COMPLETE",
+      "tree_entries": 42,
+      "graphic_files": 0
+    },
+    {
+      "pr": 12,
+      "sha": "2a65fc40674916ffbfff1c2486313718366e0c19",
+      "status": "COMPLETE",
+      "tree_entries": 48,
+      "graphic_files": 0
+    },
+    {
+      "pr": 13,
+      "sha": "adbdbd656297805bfce95a472520ecf43e35ff0a",
+      "status": "COMPLETE",
+      "tree_entries": 56,
+      "graphic_files": 0
+    },
+    {
+      "pr": 15,
+      "sha": "82a88e51fe7f590c5140ab372eb9b05bb8ef6703",
+      "status": "COMPLETE",
+      "tree_entries": 57,
+      "graphic_files": 0
+    },
+    {
+      "pr": 16,
+      "sha": "4ebe773c420fbbdc5028cddbe62823ea8763f396",
+      "status": "COMPLETE",
+      "tree_entries": 59,
+      "graphic_files": 0
+    },
+    {
+      "pr": 17,
+      "sha": "e90f95d9c3c360e45381947ef68b3eccfe98a1f1",
+      "status": "COMPLETE",
+      "tree_entries": 65,
+      "graphic_files": 0
+    },
+    {
+      "pr": 18,
+      "sha": "666ff87a84c0e9b1493490d06b6c425b5a7f782d",
+      "status": "COMPLETE",
+      "tree_entries": 66,
+      "graphic_files": 0
+    },
+    {
+      "pr": 19,
+      "sha": "8176eb71191affba55032bbd95cc18e8cf303d5c",
+      "status": "COMPLETE",
+      "tree_entries": 77,
+      "graphic_files": 0
+    },
+    {
+      "pr": 21,
+      "sha": "3280b010bc977372c36378ba997a3d68e6d72d8e",
+      "status": "COMPLETE",
+      "tree_entries": 78,
+      "graphic_files": 0
+    },
+    {
+      "pr": 22,
+      "sha": "81a7ea72d17f3c06949680d9bd2c7c9ece93b9d3",
+      "status": "COMPLETE",
+      "tree_entries": 107,
+      "graphic_files": 4
+    },
+    {
+      "pr": 23,
+      "sha": "513044cc2c5e2db68fc6630c3fe356769abd5e83",
+      "status": "COMPLETE",
+      "tree_entries": 149,
+      "graphic_files": 9
+    },
+    {
+      "pr": 25,
+      "sha": "1937398384286a45dc5416360cb2e1519f77a000",
+      "status": "COMPLETE",
+      "tree_entries": 150,
+      "graphic_files": 9
+    },
+    {
+      "pr": 26,
+      "sha": "99c476f3e344a5db75edec7df90b78318beca824",
+      "status": "COMPLETE",
+      "tree_entries": 194,
+      "graphic_files": 17
+    },
+    {
+      "pr": 27,
+      "sha": "ebe6235e93bd8abc008c351032aa01b4acfe8178",
+      "status": "COMPLETE",
+      "tree_entries": 241,
+      "graphic_files": 23
+    },
+    {
+      "pr": 29,
+      "sha": "49daa2ef13ada4e693563f860cb7705a0a90422c",
+      "status": "COMPLETE",
+      "tree_entries": 248,
+      "graphic_files": 23
+    },
+    {
+      "pr": 31,
+      "sha": "3d22111fdcbb9c10e26b177d1d13426786cc52b5",
+      "status": "COMPLETE",
+      "tree_entries": 249,
+      "graphic_files": 23
+    },
+    {
+      "pr": 32,
+      "sha": "f2c9790d9802e9ce40a55978ea0b6e13feafb7bf",
+      "status": "COMPLETE",
+      "tree_entries": 325,
+      "graphic_files": 28
+    },
+    {
+      "pr": 34,
+      "sha": "6cd95cecee48d3108eabf3c92e797aef85472b49",
+      "status": "COMPLETE",
+      "tree_entries": 326,
+      "graphic_files": 28
+    },
+    {
+      "pr": 35,
+      "sha": "75a4bce9d72968ae22bac17719d233cfa62e880e",
+      "status": "COMPLETE",
+      "tree_entries": 400,
+      "graphic_files": 36
+    },
+    {
+      "pr": 37,
+      "sha": "ed77300e9cbd394dbcef5a9a3f4afe06187f9aa6",
+      "status": "COMPLETE",
+      "tree_entries": 402,
+      "graphic_files": 36
+    },
+    {
+      "pr": 38,
+      "sha": "49ec4fc6867c5be70e18f9c6b79db708190e3aa9",
+      "status": "COMPLETE",
+      "tree_entries": 520,
+      "graphic_files": 42
+    },
+    {
+      "pr": 40,
+      "sha": "a717df8ae453e96778e73e3c1f26382347ec211c",
+      "status": "COMPLETE",
+      "tree_entries": 522,
+      "graphic_files": 42
+    },
+    {
+      "pr": 41,
+      "sha": "92636e583e34f76e1eaafeda36de530c0c2f8655",
+      "status": "COMPLETE",
+      "tree_entries": 588,
+      "graphic_files": 48
+    },
+    {
+      "pr": 43,
+      "sha": "bd2448bcf6282c1b5c7b53c3cc239b4976b94829",
+      "status": "COMPLETE",
+      "tree_entries": 597,
+      "graphic_files": 48
+    },
+    {
+      "pr": 45,
+      "sha": "bbb7c255ea38160715b32211ad42204458439e37",
+      "status": "COMPLETE",
+      "tree_entries": 597,
+      "graphic_files": 48
+    },
+    {
+      "pr": 46,
+      "sha": "97c9562442e0abea8d77a42ab0f285d90eb3f370",
+      "status": "COMPLETE",
+      "tree_entries": 726,
+      "graphic_files": 62
+    },
+    {
+      "pr": 48,
+      "sha": "9467e211995e3a99d0a58c843145f9ffaba4762c",
+      "status": "COMPLETE",
+      "tree_entries": 728,
+      "graphic_files": 62
+    },
+    {
+      "pr": 49,
+      "sha": "ece74694b1c09be95fdcab2afac9d6fef7322602",
+      "status": "COMPLETE",
+      "tree_entries": 847,
+      "graphic_files": 106
+    },
+    {
+      "pr": 51,
+      "sha": "6699c544bbdb99d26a89a647f79b868a5488a96a",
+      "status": "COMPLETE",
+      "tree_entries": 933,
+      "graphic_files": 124
+    },
+    {
+      "pr": 54,
+      "sha": "6bffd949e89d6f44fa46e0e606492f061886e461",
+      "status": "COMPLETE",
+      "tree_entries": 935,
+      "graphic_files": 124
+    },
+    {
+      "pr": 55,
+      "sha": "70bf6f4baf9f4963380120964f6aaec04e65a349",
+      "status": "COMPLETE",
+      "tree_entries": 1025,
+      "graphic_files": 136
+    },
+    {
+      "pr": 57,
+      "sha": "6446a2c8fbf13a6bdf917ec23b1ea1e349508c9b",
+      "status": "COMPLETE",
+      "tree_entries": 1047,
+      "graphic_files": 136
+    },
+    {
+      "pr": 59,
+      "sha": "7cced5a55d68a307bb8889137159d9836a72e8aa",
+      "status": "COMPLETE",
+      "tree_entries": 1089,
+      "graphic_files": 136
+    },
+    {
+      "pr": 61,
+      "sha": "d3acb94716f267474f9ed9f95e80004348cac41e",
+      "status": "COMPLETE",
+      "tree_entries": 1106,
+      "graphic_files": 136
+    },
+    {
+      "pr": 63,
+      "sha": "7f843acd3378c456cb4b8b3ce2ae061f4edfea89",
+      "status": "COMPLETE",
+      "tree_entries": 1142,
+      "graphic_files": 136
+    },
+    {
+      "pr": 65,
+      "sha": "e4f2aba0a89285e36bbf2602885fd971dfef02fb",
+      "status": "COMPLETE",
+      "tree_entries": 1177,
+      "graphic_files": 136
+    },
+    {
+      "pr": 67,
+      "sha": "30efdaa94c10771801180a8d2bf5943b03fd10b2",
+      "status": "COMPLETE",
+      "tree_entries": 1250,
+      "graphic_files": 148
+    },
+    {
+      "pr": 68,
+      "sha": "b57aa65f390135562aac090f21833ef66899b72c",
+      "status": "COMPLETE",
+      "tree_entries": 1270,
+      "graphic_files": 154
+    },
+    {
+      "pr": 69,
+      "sha": "d5f4681d851418d4386c2ddb21c7835f620fd9bf",
+      "status": "COMPLETE",
+      "tree_entries": 1346,
+      "graphic_files": 164
+    },
+    {
+      "pr": 70,
+      "sha": "ed5c6e605fcff56e78178331df844d21c11863c6",
+      "status": "COMPLETE",
+      "tree_entries": 1429,
+      "graphic_files": 176
+    },
+    {
+      "pr": 71,
+      "sha": "2a25973a8b7fc4e6c10c19a01b4243e5ffddafc8",
+      "status": "COMPLETE",
+      "tree_entries": 1633,
+      "graphic_files": 196
+    },
+    {
+      "pr": 72,
+      "sha": "923ef406349d75c5d7f7ed77f954cf36614b272d",
+      "status": "COMPLETE",
+      "tree_entries": 1588,
+      "graphic_files": 215
+    }
+  ]
+}
