@@ -1,0 +1,30 @@
+{
+ "rule": "absolute local paths replaced by <repo> (execution clone), <worktree>, <scratch>, <user>; MATLAB startup path warnings removed; CRLF to LF",
+ "files": [
+  {
+   "file": "LP2A3_ARCHIVE_RECORD.json",
+   "originalSHA256": "cfe97b8642a5445503f7ecfc4be0247fd23d240f154682a49eff557cdd6222bd",
+   "sanitizedSHA256": "cfe97b8642a5445503f7ecfc4be0247fd23d240f154682a49eff557cdd6222bd"
+  },
+  {
+   "file": "LP2A3_HASHCHECK_CLOSURE.json",
+   "originalSHA256": "2f913459927e9497d3d720dba3b6f5bd09b34a1b2ba74d0e60e1e2e1ee6d8852",
+   "sanitizedSHA256": "2f913459927e9497d3d720dba3b6f5bd09b34a1b2ba74d0e60e1e2e1ee6d8852"
+  },
+  {
+   "file": "LP2A3_POST_REVOCATION.json",
+   "originalSHA256": "2a1b63fe852dc47aed44b0672588d0ed3f5b2be4af32dd03e68475051ec59fb6",
+   "sanitizedSHA256": "2a1b63fe852dc47aed44b0672588d0ed3f5b2be4af32dd03e68475051ec59fb6"
+  },
+  {
+   "file": "LP2A3_PRESTART_CLOSURE.json",
+   "originalSHA256": "48848b110d2b069b2ae2cdb08bf2ac0fa11b51b122bc3c24586df34b51d7c942",
+   "sanitizedSHA256": "017d7e645a8baf487d963a136ee92de1a33f32fcd647975fbea97d2b734a6067"
+  },
+  {
+   "file": "LP2A3_PROTECTED_CLOSURE.json",
+   "originalSHA256": "67e7fb784082737cc51b69be6eaf86c7b9b485f49ecc69a28730492f8502f5d6",
+   "sanitizedSHA256": "67e7fb784082737cc51b69be6eaf86c7b9b485f49ecc69a28730492f8502f5d6"
+  }
+ ]
+}

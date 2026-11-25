@@ -1,0 +1,864 @@
+{
+  "campaignId": "G2-LP2A3-001",
+  "outcome": "CAMPAIGN_CLOSED_VERIFIED",
+  "reason": "",
+  "caseCalls": 4,
+  "results": [
+    {
+      "status": "TERMINAL_CAMPAIGN_LIMIT_REACHED",
+      "computed": 3,
+      "reused": 0,
+      "caseId": "H",
+      "terminal": "CAMPAIGN_LIMIT_REACHED",
+      "lastState": 11,
+      "campaignClosed": false,
+      "terminalRecord": {
+        "schema": "NewMetacomp.G2.LP2A3.Terminal.v1",
+        "caseId": "H",
+        "mask": [
+          0,
+          0,
+          0
+        ],
+        "classification": "CAMPAIGN_LIMIT_REACHED",
+        "lastAcceptedState": 11,
+        "acceptedPrefixLength": 3,
+        "lastTip_mm": [
+          116.53715206030587,
+          66.634693166819289
+        ],
+        "lastArc_mm": 69.4,
+        "lastTipToRingCircle_mm": [
+          16.956694660536709,
+          45.786696666535093,
+          91.73083051177872
+        ],
+        "lastTipToHoleCircle_mm": [
+          29.656694660536708,
+          58.486696666535089,
+          104.43083051177872
+        ],
+        "nearestRing": 1,
+        "nearestRingActive": false,
+        "candidate": {
+          "polyline_mm": [
+            [
+              101.6,
+              0
+            ],
+            [
+              101.6,
+              25.4
+            ],
+            [
+              102.47228398131915,
+              29.30373163216095
+            ],
+            [
+              103.4091548344762,
+              33.192468317063231
+            ],
+            [
+              104.47045098146482,
+              37.049105516539882
+            ],
+            [
+              105.64746005474672,
+              40.872016664004875
+            ],
+            [
+              106.93272250534098,
+              44.659905315099628
+            ],
+            [
+              108.31820718188585,
+              48.412295514833573
+            ],
+            [
+              109.79660566817732,
+              52.129059956620424
+            ],
+            [
+              111.36179591382988,
+              55.810116801456438
+            ],
+            [
+              113.0090467767817,
+              59.455190819155462
+            ],
+            [
+              114.73497161080275,
+              63.063678517251361
+            ],
+            [
+              116.53715206030587,
+              66.634693166819289
+            ],
+            [
+              118.41326101517032,
+              70.167427969982043
+            ]
+          ],
+          "classification": "PASSIVE_CONTOUR_APPROACH",
+          "constraints": [
+            {
+              "object": "ring1",
+              "type": "NUMERICAL_RING",
+              "guard": "tipGuideRadius",
+              "margin_mm": -0.061778697038750607
+            },
+            {
+              "object": "ring1",
+              "type": "NUMERICAL_RING",
+              "guard": "guideRingGap1mm",
+              "margin_mm": -1.0617786970387506
+            }
+          ],
+          "clearance": {
+            "segmentToRingPolygon_mm": [
+              14.940111512872264,
+              41.810115985022925,
+              87.783535525841543
+            ],
+            "segmentToHolePolygon_mm": [
+              27.638561869817543,
+              54.5081002813736,
+              100.48306803594248
+            ],
+            "tipToRingPolygon_mm": [
+              14.940111512872264,
+              41.810115985022925,
+              87.783535525841543
+            ],
+            "tipToHolePolygon_mm": [
+              27.638561869817543,
+              54.5081002813736,
+              100.48306803594248
+            ],
+            "segmentToNominalRing_mm": [
+              14.938221302961249,
+              41.807115488567916,
+              87.7828499284687
+            ],
+            "tipToNominalRing_mm": [
+              14.938221302961249,
+              41.807115488567916,
+              87.7828499284687
+            ],
+            "guideRingMargin_mm": [
+              -0.061778697038750607,
+              26.807115488567916,
+              72.7828499284687
+            ],
+            "qRingMargin_mm": [
+              11.33822130296125,
+              38.207115488567915,
+              84.182849928468713
+            ],
+            "segmentPlate_mm": [
+              116.53715206030587,
+              389.58673898482971,
+              66.634693166819289,
+              133.03257203001795
+            ],
+            "tipPlate_mm": [
+              118.41326101517032,
+              389.58673898482971,
+              70.167427969982043,
+              133.03257203001795
+            ],
+            "guidePlateMargin_mm": [
+              103.41326101517032,
+              374.58673898482971,
+              55.167427969982043,
+              118.03257203001795
+            ],
+            "qPlateMargin_mm": [
+              114.81326101517033,
+              385.98673898482969,
+              66.567427969982049,
+              129.43257203001795
+            ],
+            "nonadjacentSegment_mm": 3.9999999999999982,
+            "tipEarlierSegment_mm": 7.9995668151128179,
+            "rimEarlierMargin_mm": 4.35572016455186,
+            "miterDenominator": 1.9997834134204449
+          }
+        },
+        "failure": {
+          "identifier": "",
+          "message": "",
+          "stage": "limit"
+        },
+        "truncatedByCeiling": true,
+        "candidateIsInformationOnly": true,
+        "parentSHA256": "591c894b68e29751dbd8b06b5af50a6ce832e5b2bcf82c3c1052784d61781e7f",
+        "token": "G2LP2A3|policy=7a6e17f8baa85c6e6f10186bfab3a9c10c9363e0acb5e532c00095961bf45d43|g2source=7e5683703bd104547ef5d013aa0253ad2819b59dc58693957e2d04b4707f0947|lp2source=357dfdcdb576d2866b9d1b41a14265300a14c30700d6475f995881041ba822ca|lp2a2source=f1d7e4d67b91968e16ebaead13be86667c7776ce48971ed5206c7f136fae7afd|lp2a3source=fa3bcecfa9cd3044253d5a72253e2058bccd044d32345f51650dcd775f42e002|parentsS8=da951c99c0d8c1d5dd731986d8f3b30e3db3f71854166a634d35b739757def8d|qualification=a77f49200f9f95b36260f44306afd4b05690d8ec9353c4fa71f4b5adbe5d4ded|cases=H,stiff13,soft2,soft1|states=S9-S11|maxAdmissions=12|seed=0.45|campaign=G2-LP2A3-001|run=run_lp2a3_s9_s11_v1",
+        "note": "S11 accepted; S12 candidate forecast for information only (outside the campaign; no admission, mesh or FEM)",
+        "interfaceEncounter": false,
+        "physicalArrest": false
+      },
+      "campaignMode": "OPEN_NEW",
+      "campaignId": "G2-LP2A3-001",
+      "token": "G2LP2A3|policy=7a6e17f8baa85c6e6f10186bfab3a9c10c9363e0acb5e532c00095961bf45d43|g2source=7e5683703bd104547ef5d013aa0253ad2819b59dc58693957e2d04b4707f0947|lp2source=357dfdcdb576d2866b9d1b41a14265300a14c30700d6475f995881041ba822ca|lp2a2source=f1d7e4d67b91968e16ebaead13be86667c7776ce48971ed5206c7f136fae7afd|lp2a3source=fa3bcecfa9cd3044253d5a72253e2058bccd044d32345f51650dcd775f42e002|parentsS8=da951c99c0d8c1d5dd731986d8f3b30e3db3f71854166a634d35b739757def8d|qualification=a77f49200f9f95b36260f44306afd4b05690d8ec9353c4fa71f4b5adbe5d4ded|cases=H,stiff13,soft2,soft1|states=S9-S11|maxAdmissions=12|seed=0.45|campaign=G2-LP2A3-001|run=run_lp2a3_s9_s11_v1"
+    },
+    {
+      "status": "TERMINAL_CAMPAIGN_LIMIT_REACHED",
+      "computed": 3,
+      "reused": 0,
+      "caseId": "stiff13",
+      "terminal": "CAMPAIGN_LIMIT_REACHED",
+      "lastState": 11,
+      "campaignClosed": false,
+      "terminalRecord": {
+        "schema": "NewMetacomp.G2.LP2A3.Terminal.v1",
+        "caseId": "stiff13",
+        "mask": [
+          1,
+          0,
+          1
+        ],
+        "classification": "CAMPAIGN_LIMIT_REACHED",
+        "lastAcceptedState": 11,
+        "acceptedPrefixLength": 3,
+        "lastTip_mm": [
+          116.62670713185807,
+          66.639759549372314
+        ],
+        "lastArc_mm": 69.4,
+        "lastTipToRingCircle_mm": [
+          16.867045067498257,
+          45.732980451384563,
+          91.697076647414249
+        ],
+        "lastTipToHoleCircle_mm": [
+          29.567045067498256,
+          58.432980451384559,
+          104.39707664741425
+        ],
+        "nearestRing": 1,
+        "nearestRingActive": true,
+        "candidate": {
+          "polyline_mm": [
+            [
+              101.6,
+              0
+            ],
+            [
+              101.6,
+              25.4
+            ],
+            [
+              102.51737532716155,
+              29.293381885856462
+            ],
+            [
+              103.50270915027406,
+              33.170122431344446
+            ],
+            [
+              104.61095410120757,
+              37.013531481748835
+            ],
+            [
+              105.83199310467963,
+              40.822607977699
+            ],
+            [
+              107.1557497480221,
+              44.59721634800799
+            ],
+            [
+              108.57091380134817,
+              48.3385143449836
+            ],
+            [
+              110.06599655454902,
+              52.048598920984716
+            ],
+            [
+              111.62967944430136,
+              55.730296331187759
+            ],
+            [
+              113.2510381957138,
+              59.386960904158364
+            ],
+            [
+              114.91979582056622,
+              63.022239158913692
+            ],
+            [
+              116.62670713185807,
+              66.639759549372314
+            ],
+            [
+              118.36404023088942,
+              70.24276852840778
+            ]
+          ],
+          "classification": "INTERFACE_APPROACH",
+          "constraints": [
+            {
+              "object": "ring1",
+              "type": "PHYSICAL_INTERFACE",
+              "guard": "tipGuideRadius",
+              "margin_mm": -0.011774069123074327
+            },
+            {
+              "object": "ring1",
+              "type": "PHYSICAL_INTERFACE",
+              "guard": "guideRingGap1mm",
+              "margin_mm": -1.0117740691230743
+            }
+          ],
+          "clearance": {
+            "segmentToRingPolygon_mm": [
+              14.991105940467143,
+              41.775746433552861,
+              87.72767829722487
+            ],
+            "segmentToHolePolygon_mm": [
+              27.688745646087295,
+              54.473315767326817,
+              100.42728919607721
+            ],
+            "tipToRingPolygon_mm": [
+              14.991105940467143,
+              41.775746433552861,
+              87.72767829722487
+            ],
+            "tipToHolePolygon_mm": [
+              27.688745646087295,
+              54.473315767326817,
+              100.42728919607721
+            ],
+            "segmentToNominalRing_mm": [
+              14.988225930876926,
+              41.772163246921693,
+              87.727105502766662
+            ],
+            "tipToNominalRing_mm": [
+              14.988225930876926,
+              41.772163246921693,
+              87.727105502766662
+            ],
+            "guideRingMargin_mm": [
+              -0.011774069123074327,
+              26.772163246921693,
+              72.727105502766662
+            ],
+            "qRingMargin_mm": [
+              11.388225930876926,
+              38.172163246921691,
+              84.127105502766668
+            ],
+            "segmentPlate_mm": [
+              116.62670713185807,
+              389.63595976911057,
+              66.639759549372314,
+              132.95723147159219
+            ],
+            "tipPlate_mm": [
+              118.36404023088942,
+              389.63595976911057,
+              70.24276852840778,
+              132.95723147159219
+            ],
+            "guidePlateMargin_mm": [
+              103.36404023088942,
+              374.63595976911057,
+              55.24276852840778,
+              117.95723147159219
+            ],
+            "qPlateMargin_mm": [
+              114.76404023088942,
+              386.03595976911055,
+              66.642768528407785,
+              129.3572314715922
+            ],
+            "nonadjacentSegment_mm": 3.9999999999999951,
+            "tipEarlierSegment_mm": 7.9999289955454751,
+            "rimEarlierMargin_mm": 4.3560823449845172,
+            "miterDenominator": 1.9999644979302889
+          }
+        },
+        "failure": {
+          "identifier": "",
+          "message": "",
+          "stage": "limit"
+        },
+        "truncatedByCeiling": true,
+        "candidateIsInformationOnly": true,
+        "parentSHA256": "dfe386d5a48f0421489715a2b050b8dda960c5535c8b6c53151441107160599f",
+        "token": "G2LP2A3|policy=7a6e17f8baa85c6e6f10186bfab3a9c10c9363e0acb5e532c00095961bf45d43|g2source=7e5683703bd104547ef5d013aa0253ad2819b59dc58693957e2d04b4707f0947|lp2source=357dfdcdb576d2866b9d1b41a14265300a14c30700d6475f995881041ba822ca|lp2a2source=f1d7e4d67b91968e16ebaead13be86667c7776ce48971ed5206c7f136fae7afd|lp2a3source=fa3bcecfa9cd3044253d5a72253e2058bccd044d32345f51650dcd775f42e002|parentsS8=da951c99c0d8c1d5dd731986d8f3b30e3db3f71854166a634d35b739757def8d|qualification=a77f49200f9f95b36260f44306afd4b05690d8ec9353c4fa71f4b5adbe5d4ded|cases=H,stiff13,soft2,soft1|states=S9-S11|maxAdmissions=12|seed=0.45|campaign=G2-LP2A3-001|run=run_lp2a3_s9_s11_v1",
+        "note": "S11 accepted; S12 candidate forecast for information only (outside the campaign; no admission, mesh or FEM)",
+        "interfaceEncounter": false,
+        "physicalArrest": false
+      },
+      "campaignMode": "CONTINUE",
+      "campaignId": "G2-LP2A3-001",
+      "token": "G2LP2A3|policy=7a6e17f8baa85c6e6f10186bfab3a9c10c9363e0acb5e532c00095961bf45d43|g2source=7e5683703bd104547ef5d013aa0253ad2819b59dc58693957e2d04b4707f0947|lp2source=357dfdcdb576d2866b9d1b41a14265300a14c30700d6475f995881041ba822ca|lp2a2source=f1d7e4d67b91968e16ebaead13be86667c7776ce48971ed5206c7f136fae7afd|lp2a3source=fa3bcecfa9cd3044253d5a72253e2058bccd044d32345f51650dcd775f42e002|parentsS8=da951c99c0d8c1d5dd731986d8f3b30e3db3f71854166a634d35b739757def8d|qualification=a77f49200f9f95b36260f44306afd4b05690d8ec9353c4fa71f4b5adbe5d4ded|cases=H,stiff13,soft2,soft1|states=S9-S11|maxAdmissions=12|seed=0.45|campaign=G2-LP2A3-001|run=run_lp2a3_s9_s11_v1"
+    },
+    {
+      "status": "TERMINAL_CAMPAIGN_LIMIT_REACHED",
+      "computed": 3,
+      "reused": 0,
+      "caseId": "soft2",
+      "terminal": "CAMPAIGN_LIMIT_REACHED",
+      "lastState": 11,
+      "campaignClosed": false,
+      "terminalRecord": {
+        "schema": "NewMetacomp.G2.LP2A3.Terminal.v1",
+        "caseId": "soft2",
+        "mask": [
+          0,
+          1,
+          0
+        ],
+        "classification": "CAMPAIGN_LIMIT_REACHED",
+        "lastAcceptedState": 11,
+        "acceptedPrefixLength": 3,
+        "lastTip_mm": [
+          116.83486768985694,
+          66.519183149777575
+        ],
+        "lastArc_mm": 69.4,
+        "lastTipToRingCircle_mm": [
+          16.67076394938535,
+          45.719004694454796,
+          91.7442009362083
+        ],
+        "lastTipToHoleCircle_mm": [
+          29.370763949385349,
+          58.419004694454792,
+          104.4442009362083
+        ],
+        "nearestRing": 1,
+        "nearestRingActive": false,
+        "candidate": {
+          "polyline_mm": [
+            [
+              101.6,
+              0
+            ],
+            [
+              101.6,
+              25.4
+            ],
+            [
+              102.48885131468673,
+              29.299992735939345
+            ],
+            [
+              103.4449885170134,
+              33.184037232379481
+            ],
+            [
+              104.528277910323,
+              37.034554611945886
+            ],
+            [
+              105.72974312219405,
+              40.849850320624789
+            ],
+            [
+              107.04158625847126,
+              44.628615672668019
+            ],
+            [
+              108.45543591025044,
+              48.370410584493605
+            ],
+            [
+              109.96367516396928,
+              52.075166224686576
+            ],
+            [
+              111.55993396965808,
+              55.742857300180944
+            ],
+            [
+              113.23932135822288,
+              59.373237169992024
+            ],
+            [
+              114.99840690534252,
+              62.9656761796225
+            ],
+            [
+              116.83486768985694,
+              66.519183149777575
+            ],
+            [
+              118.74660097116804,
+              70.032767624516651
+            ]
+          ],
+          "classification": "PASSIVE_CONTOUR_APPROACH",
+          "constraints": [
+            {
+              "object": "ring1",
+              "type": "NUMERICAL_RING",
+              "guard": "tipGuideRadius",
+              "margin_mm": -0.39610468016576661
+            },
+            {
+              "object": "ring1",
+              "type": "NUMERICAL_RING",
+              "guard": "guideRingGap1mm",
+              "margin_mm": -1.3961046801657666
+            }
+          ],
+          "clearance": {
+            "segmentToRingPolygon_mm": [
+              14.604542690541956,
+              41.734782689250679,
+              87.80648647840944
+            ],
+            "segmentToHolePolygon_mm": [
+              27.304010740772028,
+              54.4340975236047,
+              100.50550984837966
+            ],
+            "tipToRingPolygon_mm": [
+              14.604542690541956,
+              41.734782689250679,
+              87.80648647840944
+            ],
+            "tipToHolePolygon_mm": [
+              27.304010740772028,
+              54.4340975236047,
+              100.50550984837966
+            ],
+            "segmentToNominalRing_mm": [
+              14.603895319834233,
+              41.733677739566474,
+              87.805071423384362
+            ],
+            "tipToNominalRing_mm": [
+              14.603895319834233,
+              41.733677739566474,
+              87.805071423384362
+            ],
+            "guideRingMargin_mm": [
+              -0.39610468016576661,
+              26.733677739566474,
+              72.805071423384362
+            ],
+            "qRingMargin_mm": [
+              11.003895319834234,
+              38.133677739566473,
+              84.205071423384368
+            ],
+            "segmentPlate_mm": [
+              116.83486768985694,
+              389.25339902883195,
+              66.519183149777575,
+              133.16723237548334
+            ],
+            "tipPlate_mm": [
+              118.74660097116804,
+              389.25339902883195,
+              70.032767624516651,
+              133.16723237548334
+            ],
+            "guidePlateMargin_mm": [
+              103.74660097116804,
+              374.25339902883195,
+              55.032767624516651,
+              118.16723237548334
+            ],
+            "qPlateMargin_mm": [
+              115.14660097116804,
+              385.65339902883193,
+              66.432767624516657,
+              129.56723237548334
+            ],
+            "nonadjacentSegment_mm": 3.9999999999999973,
+            "tipEarlierSegment_mm": 7.9995462524811831,
+            "rimEarlierMargin_mm": 4.3556996019202252,
+            "miterDenominator": 1.9997731326745547
+          }
+        },
+        "failure": {
+          "identifier": "",
+          "message": "",
+          "stage": "limit"
+        },
+        "truncatedByCeiling": true,
+        "candidateIsInformationOnly": true,
+        "parentSHA256": "77f0916df6b2d8f42c007836ab163065c0bebaecd94f333ac7fb0fb791d51c1a",
+        "token": "G2LP2A3|policy=7a6e17f8baa85c6e6f10186bfab3a9c10c9363e0acb5e532c00095961bf45d43|g2source=7e5683703bd104547ef5d013aa0253ad2819b59dc58693957e2d04b4707f0947|lp2source=357dfdcdb576d2866b9d1b41a14265300a14c30700d6475f995881041ba822ca|lp2a2source=f1d7e4d67b91968e16ebaead13be86667c7776ce48971ed5206c7f136fae7afd|lp2a3source=fa3bcecfa9cd3044253d5a72253e2058bccd044d32345f51650dcd775f42e002|parentsS8=da951c99c0d8c1d5dd731986d8f3b30e3db3f71854166a634d35b739757def8d|qualification=a77f49200f9f95b36260f44306afd4b05690d8ec9353c4fa71f4b5adbe5d4ded|cases=H,stiff13,soft2,soft1|states=S9-S11|maxAdmissions=12|seed=0.45|campaign=G2-LP2A3-001|run=run_lp2a3_s9_s11_v1",
+        "note": "S11 accepted; S12 candidate forecast for information only (outside the campaign; no admission, mesh or FEM)",
+        "interfaceEncounter": false,
+        "physicalArrest": false
+      },
+      "campaignMode": "CONTINUE",
+      "campaignId": "G2-LP2A3-001",
+      "token": "G2LP2A3|policy=7a6e17f8baa85c6e6f10186bfab3a9c10c9363e0acb5e532c00095961bf45d43|g2source=7e5683703bd104547ef5d013aa0253ad2819b59dc58693957e2d04b4707f0947|lp2source=357dfdcdb576d2866b9d1b41a14265300a14c30700d6475f995881041ba822ca|lp2a2source=f1d7e4d67b91968e16ebaead13be86667c7776ce48971ed5206c7f136fae7afd|lp2a3source=fa3bcecfa9cd3044253d5a72253e2058bccd044d32345f51650dcd775f42e002|parentsS8=da951c99c0d8c1d5dd731986d8f3b30e3db3f71854166a634d35b739757def8d|qualification=a77f49200f9f95b36260f44306afd4b05690d8ec9353c4fa71f4b5adbe5d4ded|cases=H,stiff13,soft2,soft1|states=S9-S11|maxAdmissions=12|seed=0.45|campaign=G2-LP2A3-001|run=run_lp2a3_s9_s11_v1"
+    },
+    {
+      "status": "TERMINAL_NUMERICAL_HOLD",
+      "computed": 1,
+      "reused": 0,
+      "caseId": "soft1",
+      "terminal": "NUMERICAL_HOLD",
+      "lastState": 9,
+      "campaignClosed": true,
+      "terminalRecord": {
+        "schema": "NewMetacomp.G2.LP2A3.Terminal.v1",
+        "caseId": "soft1",
+        "mask": [
+          1,
+          0,
+          0
+        ],
+        "classification": "NUMERICAL_HOLD",
+        "lastAcceptedState": 9,
+        "acceptedPrefixLength": 1,
+        "lastTip_mm": [
+          112.53494070252768,
+          59.5938528405785
+        ],
+        "lastArc_mm": 61.399999999999991,
+        "lastTipToRingCircle_mm": [
+          22.113230040251874,
+          53.868283432510395,
+          99.697718336569082
+        ],
+        "lastTipToHoleCircle_mm": [
+          34.813230040251874,
+          66.5682834325104,
+          112.39771833656908
+        ],
+        "nearestRing": 1,
+        "nearestRingActive": true,
+        "candidate": {
+          "polyline_mm": [
+            [
+              101.6,
+              0
+            ],
+            [
+              101.6,
+              25.4
+            ],
+            [
+              102.39826203613242,
+              29.319537947471577
+            ],
+            [
+              103.25866686020588,
+              33.225904998672874
+            ],
+            [
+              104.24504715803435,
+              37.102379415982476
+            ],
+            [
+              105.35058232560786,
+              40.946568796496685
+            ],
+            [
+              106.57091154428718,
+              44.75587274840673
+            ],
+            [
+              107.90161973099126,
+              48.528036016591017
+            ],
+            [
+              109.33966475408087,
+              52.260599011580808
+            ],
+            [
+              110.883847446255,
+              55.950517684558555
+            ],
+            [
+              112.53494070252768,
+              59.5938528405785
+            ],
+            [
+              114.29544883822506,
+              63.185594911516127
+            ]
+          ],
+          "classification": "MATRIX_ADVANCE",
+          "constraints": [],
+          "clearance": {
+            "segmentToRingPolygon_mm": [
+              19.634474474810748,
+              49.900868927518545,
+              95.724847576588857
+            ],
+            "segmentToHolePolygon_mm": [
+              32.33345911094672,
+              62.600414481244592,
+              108.42443999746432
+            ],
+            "tipToRingPolygon_mm": [
+              19.634474474810748,
+              49.900868927518545,
+              95.724847576588857
+            ],
+            "tipToHolePolygon_mm": [
+              32.33345911094672,
+              62.600414481244592,
+              108.42443999746432
+            ],
+            "segmentToNominalRing_mm": [
+              19.632956381638333,
+              49.900088262551904,
+              95.724292541508
+            ],
+            "tipToNominalRing_mm": [
+              19.632956381638333,
+              49.900088262551904,
+              95.724292541508
+            ],
+            "guideRingMargin_mm": [
+              4.6329563816383335,
+              34.900088262551904,
+              80.724292541508
+            ],
+            "qRingMargin_mm": [
+              16.032956381638332,
+              46.3000882625519,
+              92.124292541508012
+            ],
+            "segmentPlate_mm": [
+              112.53494070252768,
+              393.70455116177493,
+              59.5938528405785,
+              140.01440508848387
+            ],
+            "tipPlate_mm": [
+              114.29544883822506,
+              393.70455116177493,
+              63.185594911516127,
+              140.01440508848387
+            ],
+            "guidePlateMargin_mm": [
+              99.295448838225056,
+              378.70455116177493,
+              48.185594911516127,
+              125.01440508848387
+            ],
+            "qPlateMargin_mm": [
+              110.69544883822506,
+              390.10455116177491,
+              59.585594911516125,
+              136.41440508848387
+            ],
+            "nonadjacentSegment_mm": 3.9999999999999964,
+            "tipEarlierSegment_mm": 7.9990853563224373,
+            "rimEarlierMargin_mm": 4.3552387057614794,
+            "miterDenominator": 1.99954270430413
+          }
+        },
+        "failure": {
+          "identifier": "G2LP2A3:HOLD_MESH_QUALITY",
+          "message": "Default rung (0.45 mm) failed: HOLD_KINKED_PROTECTED_MESH_JOIN globalNeighborRatioAtMost1p8",
+          "stage": "mesh/audit/solve"
+        },
+        "truncatedByCeiling": false,
+        "candidateIsInformationOnly": false,
+        "parentSHA256": "79ebecbc21b4d9425e3a2b82a9bc17270373a85f2a7c26d11cfe1e7c9b45aec6",
+        "token": "G2LP2A3|policy=7a6e17f8baa85c6e6f10186bfab3a9c10c9363e0acb5e532c00095961bf45d43|g2source=7e5683703bd104547ef5d013aa0253ad2819b59dc58693957e2d04b4707f0947|lp2source=357dfdcdb576d2866b9d1b41a14265300a14c30700d6475f995881041ba822ca|lp2a2source=f1d7e4d67b91968e16ebaead13be86667c7776ce48971ed5206c7f136fae7afd|lp2a3source=fa3bcecfa9cd3044253d5a72253e2058bccd044d32345f51650dcd775f42e002|parentsS8=da951c99c0d8c1d5dd731986d8f3b30e3db3f71854166a634d35b739757def8d|qualification=a77f49200f9f95b36260f44306afd4b05690d8ec9353c4fa71f4b5adbe5d4ded|cases=H,stiff13,soft2,soft1|states=S9-S11|maxAdmissions=12|seed=0.45|campaign=G2-LP2A3-001|run=run_lp2a3_s9_s11_v1",
+        "note": "local numerical HOLD; accepted prefix preserved; never retried",
+        "interfaceEncounter": false,
+        "physicalArrest": false
+      },
+      "campaignMode": "CONTINUE",
+      "campaignId": "G2-LP2A3-001",
+      "token": "G2LP2A3|policy=7a6e17f8baa85c6e6f10186bfab3a9c10c9363e0acb5e532c00095961bf45d43|g2source=7e5683703bd104547ef5d013aa0253ad2819b59dc58693957e2d04b4707f0947|lp2source=357dfdcdb576d2866b9d1b41a14265300a14c30700d6475f995881041ba822ca|lp2a2source=f1d7e4d67b91968e16ebaead13be86667c7776ce48971ed5206c7f136fae7afd|lp2a3source=fa3bcecfa9cd3044253d5a72253e2058bccd044d32345f51650dcd775f42e002|parentsS8=da951c99c0d8c1d5dd731986d8f3b30e3db3f71854166a634d35b739757def8d|qualification=a77f49200f9f95b36260f44306afd4b05690d8ec9353c4fa71f4b5adbe5d4ded|cases=H,stiff13,soft2,soft1|states=S9-S11|maxAdmissions=12|seed=0.45|campaign=G2-LP2A3-001|run=run_lp2a3_s9_s11_v1"
+    }
+  ],
+  "wallSeconds": 114.7179138,
+  "precheck": {
+    "approvedHead": "2348ba11b9ebe1e33a723b11055a3603b846383e",
+    "campaignId": "G2-LP2A3-001",
+    "parentCheck": {
+      "approvedHead": "2348ba11b9ebe1e33a723b11055a3603b846383e",
+      "head": "30979295882b5b85726906102e2870e934ec54c1",
+      "parent": "2348ba11b9ebe1e33a723b11055a3603b846383e",
+      "commands": [
+        "git -C \"<repo>\" rev-parse --verify HEAD",
+        "git -C \"<repo>\" rev-parse --verify HEAD~1",
+        "git -C \"<repo>\" diff --name-only 2348ba11b9ebe1e33a723b11055a3603b846383e HEAD"
+      ],
+      "statuses": [
+        0,
+        0,
+        0
+      ],
+      "outputs": [
+        "30979295882b5b85726906102e2870e934ec54c1",
+        "2348ba11b9ebe1e33a723b11055a3603b846383e",
+        "matlab/g2/lp2a3/G2_LP2A3_GO.json"
+      ],
+      "changedFiles": [
+        "matlab/g2/lp2a3/G2_LP2A3_GO.json"
+      ],
+      "parentOk": true,
+      "filesOk": true,
+      "pass": true
+    },
+    "engines": 1,
+    "release": "2023a",
+    "tokenEqualsContext": true,
+    "memgate": {
+      "pass": true,
+      "minGiB": 7,
+      "freeGiB": 7.8760948181152344,
+      "reason": "OK"
+    },
+    "finalVerify": {
+      "pass": true,
+      "problems": [],
+      "cases": {
+        "H": {
+          "caseId": "H",
+          "acceptedStates": [
+            9,
+            10,
+            11
+          ],
+          "failedFolder": null,
+          "terminal": "CAMPAIGN_LIMIT_REACHED"
+        },
+        "stiff13": {
+          "caseId": "stiff13",
+          "acceptedStates": [
+            9,
+            10,
+            11
+          ],
+          "failedFolder": null,
+          "terminal": "CAMPAIGN_LIMIT_REACHED"
+        },
+        "soft2": {
+          "caseId": "soft2",
+          "acceptedStates": [
+            9,
+            10,
+            11
+          ],
+          "failedFolder": null,
+          "terminal": "CAMPAIGN_LIMIT_REACHED"
+        },
+        "soft1": {
+          "caseId": "soft1",
+          "acceptedStates": 9,
+          "failedFolder": 10,
+          "terminal": "NUMERICAL_HOLD"
+        }
+      },
+      "ledgerAdmits": 11,
+      "ledgerHolds": 0,
+      "closed": true
+    }
+  }
+}

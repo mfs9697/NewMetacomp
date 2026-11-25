@@ -1,0 +1,33 @@
+{
+  "sourceCommit": "db9d2309c97cca89a7c7469e6e2d1830bc642a62",
+  "tokenEqualsAuthorization": true,
+  "probes": [
+    {
+      "caseId": "H",
+      "identifier": "G2LP2A3:HOLD_UNAUTHORIZED",
+      "message": "No GO_LP2A3_PHYSICAL record (matlab/g2/lp2a3/G2_LP2A3_GO.json): the campaign is prepared, not authorized."
+    },
+    {
+      "caseId": "stiff13",
+      "identifier": "G2LP2A3:HOLD_UNAUTHORIZED",
+      "message": "No GO_LP2A3_PHYSICAL record (matlab/g2/lp2a3/G2_LP2A3_GO.json): the campaign is prepared, not authorized."
+    },
+    {
+      "caseId": "soft2",
+      "identifier": "G2LP2A3:HOLD_UNAUTHORIZED",
+      "message": "No GO_LP2A3_PHYSICAL record (matlab/g2/lp2a3/G2_LP2A3_GO.json): the campaign is prepared, not authorized."
+    },
+    {
+      "caseId": "soft1",
+      "identifier": "G2LP2A3:HOLD_UNAUTHORIZED",
+      "message": "No GO_LP2A3_PHYSICAL record (matlab/g2/lp2a3/G2_LP2A3_GO.json): the campaign is prepared, not authorized."
+    }
+  ],
+  "runFilesUnchanged": true,
+  "ledgerUnchanged": true,
+  "runFiles": 83,
+  "ledgerFiles": 26,
+  "gitClean": true,
+  "physicalSolves": 0,
+  "pass": true
+}

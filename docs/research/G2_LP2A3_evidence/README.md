@@ -4,7 +4,7 @@
 - **Memorandum (Ukrainian):** [`../G2_LP2A3_READINESS_MEMO_UA.md`](../G2_LP2A3_READINESS_MEMO_UA.md)
 - **GO template (not a GO):** [`../G2_LP2A3_GO_DECISION_TEMPLATE.md`](../G2_LP2A3_GO_DECISION_TEMPLATE.md)
 
-**Status: zero physical FEM solves, zero new accepted states, no GO file, no run root, no ledger root.**
+**Readiness status (at `2348ba1`): zero physical FEM solves, zero new accepted states, no GO file. The authorized campaign afterwards is documented in `campaign/`.**
 
 All evidence runs used the clean LF execution clone at the source commit printed in each file. Absolute local paths are sanitized; see `logs/SANITIZATION.json`. Logs written by the launcher as UTF-16 were converted to UTF-8 first.
 
@@ -18,6 +18,7 @@ All evidence runs used the clean LF execution clone at the source commit printed
 | `LP2A3_PROTECTED_CHECK_v1.json`, `LP2A3_PROTECTED_MANIFEST.json` | 723 protected files (541 tree `20f2d54f…` + 158 LP2-A1 run/ledger + 24 WP5 records), disjoint; manifest of every path and SHA-256 | read-only |
 | `figures/` | LP2A3-1, the actual S9 candidates near ring 1 (PNG 300 dpi, vector PDF), from `scripts/g2/lp2a3/lp2a3_figures.m` | — |
 | `logs/` | Stage scripts and logs `ev1`–`ev4`, figure run, and the development dry smoke (`dev_dry.log`, uncommitted sources, superseded by `ev2_s9`) | — |
+| `campaign/` | **Physical campaign G2-LP2A3-001** (GO `3097929`, revoked `db9d230`): H, stiff13, soft2 S9–S11 CAMPAIGN_LIMIT_REACHED; soft1 S9, S10 NUMERICAL_HOLD (rung-1 mesh). 11 admissions, 10 accepted states; independent audit 0 problems; archive `e089d749…` on two devices. Memorandum `../G2_LP2A3_DEMONSTRATION_MEMO_UA.md` | `2348ba1` → `3097929` |
 
 **Reproduction:** see the memorandum, section "Відтворення". Earlier, superseded runs of the contract suite are kept only in the scratch logs:
 - at `8474edc`, 77/78: H0 was refused by the unchanged 5 GiB preflight after the mesh tests;

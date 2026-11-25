@@ -1,0 +1,42 @@
+{
+  "pass": true,
+  "problems": [],
+  "closed": true,
+  "ledgerAdmits": 11,
+  "ledgerHolds": 0,
+  "unchanged": true,
+  "cases": {
+    "H": {
+      "acceptedStates": [
+        9,
+        10,
+        11
+      ],
+      "failedFolder": null,
+      "terminal": "CAMPAIGN_LIMIT_REACHED"
+    },
+    "stiff13": {
+      "acceptedStates": [
+        9,
+        10,
+        11
+      ],
+      "failedFolder": null,
+      "terminal": "CAMPAIGN_LIMIT_REACHED"
+    },
+    "soft2": {
+      "acceptedStates": [
+        9,
+        10,
+        11
+      ],
+      "failedFolder": null,
+      "terminal": "CAMPAIGN_LIMIT_REACHED"
+    },
+    "soft1": {
+      "acceptedStates": 9,
+      "failedFolder": 10,
+      "terminal": "NUMERICAL_HOLD"
+    }
+  }
+}
