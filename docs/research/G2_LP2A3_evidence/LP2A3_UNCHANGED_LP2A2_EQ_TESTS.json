@@ -1,0 +1,817 @@
+{
+  "schema": "NewMetacomp.G2.LP2A2.EQ.Tests.v1",
+  "physicalSolves": 0,
+  "token": "G2LP2A2EQ|policy=6f2c290b37d4f8291f428ec8b9e0a886fe6b31fc901bee5781f2518e67c94756|g2source=7e5683703bd104547ef5d013aa0253ad2819b59dc58693957e2d04b4707f0947|lp2source=357dfdcdb576d2866b9d1b41a14265300a14c30700d6475f995881041ba822ca|lp2a2source=f1d7e4d67b91968e16ebaead13be86667c7776ce48971ed5206c7f136fae7afd|archivedS8=da951c99c0d8c1d5dd731986d8f3b30e3db3f71854166a634d35b739757def8d|solves=EQ-H,EQ-stiff13,EQ-soft2,EQ-soft1|limit=4",
+  "lp2a2SourceSHA256": "f1d7e4d67b91968e16ebaead13be86667c7776ce48971ed5206c7f136fae7afd",
+  "policySHA256": "6f2c290b37d4f8291f428ec8b9e0a886fe6b31fc901bee5781f2518e67c94756",
+  "passed": 72,
+  "total": 80,
+  "tests": [
+    {
+      "name": "E1_context_pins_token",
+      "pass": true
+    },
+    {
+      "name": "E2_identity_H",
+      "pass": true
+    },
+    {
+      "name": "E3_negative_KI",
+      "pass": true
+    },
+    {
+      "name": "E3_negative_KII",
+      "pass": true
+    },
+    {
+      "name": "E3_negative_C3_direct",
+      "pass": true
+    },
+    {
+      "name": "E3_negative_C5_direct",
+      "pass": true
+    },
+    {
+      "name": "E3_negative_J",
+      "pass": true
+    },
+    {
+      "name": "E3_negative_COD",
+      "pass": true
+    },
+    {
+      "name": "E3_negative_spread",
+      "pass": true
+    },
+    {
+      "name": "E3_negative_opening",
+      "pass": true
+    },
+    {
+      "name": "E3_negative_chords",
+      "pass": true
+    },
+    {
+      "name": "E3_negative_area",
+      "pass": true
+    },
+    {
+      "name": "E3_negative_S9tip",
+      "pass": true
+    },
+    {
+      "name": "E3_negative_compliance",
+      "pass": true
+    },
+    {
+      "name": "E2_identity_stiff13",
+      "pass": true
+    },
+    {
+      "name": "E2_identity_soft2",
+      "pass": true
+    },
+    {
+      "name": "E2_identity_soft1",
+      "pass": true
+    },
+    {
+      "name": "E4_contrast_identity",
+      "pass": true
+    },
+    {
+      "name": "E4_contrast_FG_shift",
+      "pass": true
+    },
+    {
+      "name": "E4_contrast_sign_flip",
+      "pass": true
+    },
+    {
+      "name": "E4_contrast_MTS_shift",
+      "pass": true
+    },
+    {
+      "name": "E7_actual_helper_reading",
+      "pass": true
+    },
+    {
+      "name": "E7_gate_at_threshold",
+      "pass": true
+    },
+    {
+      "name": "E7_below_threshold_refuses",
+      "pass": true
+    },
+    {
+      "name": "E7_error_refuses",
+      "pass": true
+    },
+    {
+      "name": "E7_invalid_refuses",
+      "pass": true
+    },
+    {
+      "name": "E7_driver_uses_gate",
+      "pass": true
+    },
+    {
+      "name": "E8_valid_fixture_passes",
+      "pass": true
+    },
+    {
+      "name": "E8_reject_decision_wrong",
+      "pass": true
+    },
+    {
+      "name": "E8_reject_decision_missing",
+      "pass": true
+    },
+    {
+      "name": "E8_reject_token_wrong",
+      "pass": true
+    },
+    {
+      "name": "E8_reject_solveLimit_5",
+      "pass": true
+    },
+    {
+      "name": "E8_reject_solves_reordered",
+      "pass": true
+    },
+    {
+      "name": "E8_reject_solves_three",
+      "pass": true
+    },
+    {
+      "name": "E8_reject_solves_extra",
+      "pass": true
+    },
+    {
+      "name": "E8_reject_campaign_wrong",
+      "pass": true
+    },
+    {
+      "name": "E8_reject_url_other_repo",
+      "pass": true
+    },
+    {
+      "name": "E8_reject_url_http",
+      "pass": true
+    },
+    {
+      "name": "E8_reject_url_no_comment",
+      "pass": true
+    },
+    {
+      "name": "E8_reject_url_placeholder",
+      "pass": true
+    },
+    {
+      "name": "E8_reject_head_short",
+      "pass": true
+    },
+    {
+      "name": "E8_reject_head_uppercase",
+      "pass": true
+    },
+    {
+      "name": "E8_reject_head_injection",
+      "pass": true
+    },
+    {
+      "name": "E8_reject_evidence_sha_wrong",
+      "pass": true
+    },
+    {
+      "name": "E8_reject_evidence_path_escape",
+      "pass": true
+    },
+    {
+      "name": "E8_injection_never_reaches_git",
+      "pass": true
+    },
+    {
+      "name": "E8_reject_caller_token",
+      "pass": true
+    },
+    {
+      "name": "E8_reject_not_ancestor",
+      "pass": true
+    },
+    {
+      "name": "E8_reject_activation_parent",
+      "pass": true
+    },
+    {
+      "name": "E8_reject_activation_extra_file",
+      "pass": true
+    },
+    {
+      "name": "E9_preflight_bypass_refused",
+      "pass": false
+    },
+    {
+      "name": "E10_all_pass_equivalent",
+      "pass": true
+    },
+    {
+      "name": "E10_exception_stops",
+      "pass": true
+    },
+    {
+      "name": "E10_hold_stage_stops",
+      "pass": true
+    },
+    {
+      "name": "E10_failed_comparison_stops",
+      "pass": true
+    },
+    {
+      "name": "E10_incomplete_record_stops",
+      "pass": true
+    },
+    {
+      "name": "E10_rejected_go_no_solve",
+      "pass": true
+    },
+    {
+      "name": "E10_default_validator_no_go_file",
+      "pass": true
+    },
+    {
+      "name": "E11_replay_no_records",
+      "pass": false
+    },
+    {
+      "name": "E5_refusal_without_GO",
+      "pass": false
+    },
+    {
+      "name": "E6_dry_EQ-H",
+      "pass": false
+    },
+    {
+      "name": "E6_dry_EQ-stiff13",
+      "pass": false
+    },
+    {
+      "name": "E6_dry_EQ-soft2",
+      "pass": false
+    },
+    {
+      "name": "E6_dry_EQ-soft1",
+      "pass": false
+    },
+    {
+      "name": "E12_fixture_inert_outside_repo",
+      "pass": true
+    },
+    {
+      "name": "E12_caret_defect_reproduced",
+      "pass": true
+    },
+    {
+      "name": "E12_validator_valid_activation",
+      "pass": true
+    },
+    {
+      "name": "E12_external_check_valid_activation",
+      "pass": true
+    },
+    {
+      "name": "E12_validator_wrong_parent_ancestor",
+      "pass": true
+    },
+    {
+      "name": "E12_external_check_wrong_parent_ancestor",
+      "pass": true
+    },
+    {
+      "name": "E12_validator_not_ancestor",
+      "pass": true
+    },
+    {
+      "name": "E12_external_check_not_ancestor",
+      "pass": true
+    },
+    {
+      "name": "E12_validator_extra_changed_file",
+      "pass": true
+    },
+    {
+      "name": "E12_external_check_extra_changed_file",
+      "pass": true
+    },
+    {
+      "name": "E12_validator_git_failure_root_commit",
+      "pass": true
+    },
+    {
+      "name": "E12_external_check_git_failure_root_commit",
+      "pass": true
+    },
+    {
+      "name": "E12_validator_git_failure_not_a_repository",
+      "pass": true
+    },
+    {
+      "name": "E12_external_check_git_failure_not_a_repository",
+      "pass": true
+    },
+    {
+      "name": "E12_unsafe_arguments_refused",
+      "pass": true
+    },
+    {
+      "name": "E12_no_production_go_or_output",
+      "pass": false
+    }
+  ],
+  "realGit": {
+    "schema": "NewMetacomp.G2.LP2A2.EQ.RealGit.v1",
+    "matlabVersion": "9.14.0.2206163 (R2023a)",
+    "release": "2023a",
+    "computer": "PCWIN64",
+    "ispc": true,
+    "comSpec": "C:\\WINDOWS\\system32\\cmd.exe",
+    "gitVersion": "git version 2.53.0.windows.1",
+    "fixture": "<tempdir>/lp2a2_e12_fixture_<stamp>",
+    "cases": [
+      {
+        "case": "valid_activation",
+        "approvedHead": "f504d48602b37584dc9527b111ad534fc6984c28",
+        "expectedParent": "f504d48602b37584dc9527b111ad534fc6984c28",
+        "expectedValidatorPass": true,
+        "expectedFailed": [],
+        "gitHead": {
+          "op": "rev-parse --verify HEAD",
+          "command": "git -C \"<fixture>\" rev-parse --verify HEAD",
+          "status": 0,
+          "output": "a5437f3b317993069cecfbf4338a45fd3c5b456e",
+          "value": "a5437f3b317993069cecfbf4338a45fd3c5b456e",
+          "ok": true
+        },
+        "gitParent": {
+          "op": "rev-parse --verify HEAD~1",
+          "command": "git -C \"<fixture>\" rev-parse --verify HEAD~1",
+          "status": 0,
+          "output": "f504d48602b37584dc9527b111ad534fc6984c28",
+          "value": "f504d48602b37584dc9527b111ad534fc6984c28",
+          "ok": true
+        },
+        "gitIsAncestor": {
+          "op": "merge-base --is-ancestor f504d48602b37584dc9527b111ad534fc6984c28 HEAD",
+          "command": "git -C \"<fixture>\" merge-base --is-ancestor f504d48602b37584dc9527b111ad534fc6984c28 HEAD",
+          "status": 0,
+          "output": "",
+          "value": true,
+          "ok": true
+        },
+        "gitChangedFiles": {
+          "op": "diff --name-only f504d48602b37584dc9527b111ad534fc6984c28 HEAD",
+          "command": "git -C \"<fixture>\" diff --name-only f504d48602b37584dc9527b111ad534fc6984c28 HEAD",
+          "status": 0,
+          "output": "matlab/g2/lp2a2/G2_LP2A2_EQ_GO.json",
+          "value": [
+            "matlab/g2/lp2a2/G2_LP2A2_EQ_GO.json"
+          ],
+          "ok": true
+        },
+        "validatorPass": true,
+        "validatorChecks": {
+          "fields": true,
+          "decision": true,
+          "token": true,
+          "solveLimit": true,
+          "solves": true,
+          "campaignId": true,
+          "decisionUrl": true,
+          "approvedHead": true,
+          "contractEvidence": true,
+          "ancestor": true,
+          "activationBinding": true
+        },
+        "validatorFailed": [],
+        "externalCheck": {
+          "pass": true,
+          "parentOk": true,
+          "filesOk": true,
+          "head": "a5437f3b317993069cecfbf4338a45fd3c5b456e",
+          "parent": "f504d48602b37584dc9527b111ad534fc6984c28",
+          "statuses": [
+            0,
+            0,
+            0
+          ],
+          "changedFiles": [
+            "matlab/g2/lp2a2/G2_LP2A2_EQ_GO.json"
+          ]
+        }
+      },
+      {
+        "case": "wrong_parent_ancestor",
+        "approvedHead": "d4b7fbf9701dd8f95cb59149edeaa0ae69bbe66e",
+        "expectedParent": "f504d48602b37584dc9527b111ad534fc6984c28",
+        "expectedValidatorPass": false,
+        "expectedFailed": [
+          "activationBinding"
+        ],
+        "gitHead": {
+          "op": "rev-parse --verify HEAD",
+          "command": "git -C \"<fixture>\" rev-parse --verify HEAD",
+          "status": 0,
+          "output": "a5437f3b317993069cecfbf4338a45fd3c5b456e",
+          "value": "a5437f3b317993069cecfbf4338a45fd3c5b456e",
+          "ok": true
+        },
+        "gitParent": {
+          "op": "rev-parse --verify HEAD~1",
+          "command": "git -C \"<fixture>\" rev-parse --verify HEAD~1",
+          "status": 0,
+          "output": "f504d48602b37584dc9527b111ad534fc6984c28",
+          "value": "f504d48602b37584dc9527b111ad534fc6984c28",
+          "ok": true
+        },
+        "gitIsAncestor": {
+          "op": "merge-base --is-ancestor d4b7fbf9701dd8f95cb59149edeaa0ae69bbe66e HEAD",
+          "command": "git -C \"<fixture>\" merge-base --is-ancestor d4b7fbf9701dd8f95cb59149edeaa0ae69bbe66e HEAD",
+          "status": 0,
+          "output": "",
+          "value": true,
+          "ok": true
+        },
+        "gitChangedFiles": {
+          "op": "diff --name-only d4b7fbf9701dd8f95cb59149edeaa0ae69bbe66e HEAD",
+          "command": "git -C \"<fixture>\" diff --name-only d4b7fbf9701dd8f95cb59149edeaa0ae69bbe66e HEAD",
+          "status": 0,
+          "output": "evidence/fixture_evidence.json\nmatlab/g2/lp2a2/G2_LP2A2_EQ_GO.json",
+          "value": [
+            "evidence/fixture_evidence.json",
+            "matlab/g2/lp2a2/G2_LP2A2_EQ_GO.json"
+          ],
+          "ok": true
+        },
+        "validatorPass": false,
+        "validatorChecks": {
+          "fields": true,
+          "decision": true,
+          "token": true,
+          "solveLimit": true,
+          "solves": true,
+          "campaignId": true,
+          "decisionUrl": true,
+          "approvedHead": true,
+          "contractEvidence": true,
+          "ancestor": true,
+          "activationBinding": false
+        },
+        "validatorFailed": [
+          "activationBinding"
+        ],
+        "externalCheck": {
+          "pass": false,
+          "parentOk": false,
+          "filesOk": false,
+          "head": "a5437f3b317993069cecfbf4338a45fd3c5b456e",
+          "parent": "f504d48602b37584dc9527b111ad534fc6984c28",
+          "statuses": [
+            0,
+            0,
+            0
+          ],
+          "changedFiles": [
+            "evidence/fixture_evidence.json",
+            "matlab/g2/lp2a2/G2_LP2A2_EQ_GO.json"
+          ]
+        }
+      },
+      {
+        "case": "not_ancestor",
+        "approvedHead": "697687877e990581d93d9175ee07592c76e4303b",
+        "expectedParent": "f504d48602b37584dc9527b111ad534fc6984c28",
+        "expectedValidatorPass": false,
+        "expectedFailed": [
+          "ancestor",
+          "activationBinding"
+        ],
+        "gitHead": {
+          "op": "rev-parse --verify HEAD",
+          "command": "git -C \"<fixture>\" rev-parse --verify HEAD",
+          "status": 0,
+          "output": "a5437f3b317993069cecfbf4338a45fd3c5b456e",
+          "value": "a5437f3b317993069cecfbf4338a45fd3c5b456e",
+          "ok": true
+        },
+        "gitParent": {
+          "op": "rev-parse --verify HEAD~1",
+          "command": "git -C \"<fixture>\" rev-parse --verify HEAD~1",
+          "status": 0,
+          "output": "f504d48602b37584dc9527b111ad534fc6984c28",
+          "value": "f504d48602b37584dc9527b111ad534fc6984c28",
+          "ok": true
+        },
+        "gitIsAncestor": {
+          "op": "merge-base --is-ancestor 697687877e990581d93d9175ee07592c76e4303b HEAD",
+          "command": "git -C \"<fixture>\" merge-base --is-ancestor 697687877e990581d93d9175ee07592c76e4303b HEAD",
+          "status": 1,
+          "output": "",
+          "value": false,
+          "ok": true
+        },
+        "gitChangedFiles": {
+          "op": "diff --name-only 697687877e990581d93d9175ee07592c76e4303b HEAD",
+          "command": "git -C \"<fixture>\" diff --name-only 697687877e990581d93d9175ee07592c76e4303b HEAD",
+          "status": 0,
+          "output": "evidence/fixture_evidence.json\nmatlab/g2/lp2a2/G2_LP2A2_EQ_GO.json\nside.txt",
+          "value": [
+            "evidence/fixture_evidence.json",
+            "matlab/g2/lp2a2/G2_LP2A2_EQ_GO.json",
+            "side.txt"
+          ],
+          "ok": true
+        },
+        "validatorPass": false,
+        "validatorChecks": {
+          "fields": true,
+          "decision": true,
+          "token": true,
+          "solveLimit": true,
+          "solves": true,
+          "campaignId": true,
+          "decisionUrl": true,
+          "approvedHead": true,
+          "contractEvidence": true,
+          "ancestor": false,
+          "activationBinding": false
+        },
+        "validatorFailed": [
+          "ancestor",
+          "activationBinding"
+        ],
+        "externalCheck": {
+          "pass": false,
+          "parentOk": false,
+          "filesOk": false,
+          "head": "a5437f3b317993069cecfbf4338a45fd3c5b456e",
+          "parent": "f504d48602b37584dc9527b111ad534fc6984c28",
+          "statuses": [
+            0,
+            0,
+            0
+          ],
+          "changedFiles": [
+            "evidence/fixture_evidence.json",
+            "matlab/g2/lp2a2/G2_LP2A2_EQ_GO.json",
+            "side.txt"
+          ]
+        }
+      },
+      {
+        "case": "extra_changed_file",
+        "approvedHead": "f504d48602b37584dc9527b111ad534fc6984c28",
+        "expectedParent": "f504d48602b37584dc9527b111ad534fc6984c28",
+        "expectedValidatorPass": false,
+        "expectedFailed": [
+          "activationBinding"
+        ],
+        "gitHead": {
+          "op": "rev-parse --verify HEAD",
+          "command": "git -C \"<fixture>\" rev-parse --verify HEAD",
+          "status": 0,
+          "output": "7c949d09f0227c895ceaf4c4bf969f7f862cc34c",
+          "value": "7c949d09f0227c895ceaf4c4bf969f7f862cc34c",
+          "ok": true
+        },
+        "gitParent": {
+          "op": "rev-parse --verify HEAD~1",
+          "command": "git -C \"<fixture>\" rev-parse --verify HEAD~1",
+          "status": 0,
+          "output": "f504d48602b37584dc9527b111ad534fc6984c28",
+          "value": "f504d48602b37584dc9527b111ad534fc6984c28",
+          "ok": true
+        },
+        "gitIsAncestor": {
+          "op": "merge-base --is-ancestor f504d48602b37584dc9527b111ad534fc6984c28 HEAD",
+          "command": "git -C \"<fixture>\" merge-base --is-ancestor f504d48602b37584dc9527b111ad534fc6984c28 HEAD",
+          "status": 0,
+          "output": "",
+          "value": true,
+          "ok": true
+        },
+        "gitChangedFiles": {
+          "op": "diff --name-only f504d48602b37584dc9527b111ad534fc6984c28 HEAD",
+          "command": "git -C \"<fixture>\" diff --name-only f504d48602b37584dc9527b111ad534fc6984c28 HEAD",
+          "status": 0,
+          "output": "extra.txt\nmatlab/g2/lp2a2/G2_LP2A2_EQ_GO.json",
+          "value": [
+            "extra.txt",
+            "matlab/g2/lp2a2/G2_LP2A2_EQ_GO.json"
+          ],
+          "ok": true
+        },
+        "validatorPass": false,
+        "validatorChecks": {
+          "fields": true,
+          "decision": true,
+          "token": true,
+          "solveLimit": true,
+          "solves": true,
+          "campaignId": true,
+          "decisionUrl": true,
+          "approvedHead": true,
+          "contractEvidence": true,
+          "ancestor": true,
+          "activationBinding": false
+        },
+        "validatorFailed": [
+          "activationBinding"
+        ],
+        "externalCheck": {
+          "pass": false,
+          "parentOk": true,
+          "filesOk": false,
+          "head": "7c949d09f0227c895ceaf4c4bf969f7f862cc34c",
+          "parent": "f504d48602b37584dc9527b111ad534fc6984c28",
+          "statuses": [
+            0,
+            0,
+            0
+          ],
+          "changedFiles": [
+            "extra.txt",
+            "matlab/g2/lp2a2/G2_LP2A2_EQ_GO.json"
+          ]
+        }
+      },
+      {
+        "case": "git_failure_root_commit",
+        "approvedHead": "f504d48602b37584dc9527b111ad534fc6984c28",
+        "expectedParent": "",
+        "expectedValidatorPass": false,
+        "expectedFailed": [
+          "ancestor",
+          "activationBinding"
+        ],
+        "gitHead": {
+          "op": "rev-parse --verify HEAD",
+          "command": "git -C \"<fixture>\" rev-parse --verify HEAD",
+          "status": 0,
+          "output": "8cad8627fcea684be3f86b23835fa9a3073ee230",
+          "value": "8cad8627fcea684be3f86b23835fa9a3073ee230",
+          "ok": true
+        },
+        "gitParent": {
+          "op": "rev-parse --verify HEAD~1",
+          "command": "git -C \"<fixture>\" rev-parse --verify HEAD~1",
+          "status": 128,
+          "output": "fatal: Needed a single revision",
+          "value": "",
+          "ok": false
+        },
+        "gitIsAncestor": {
+          "op": "merge-base --is-ancestor f504d48602b37584dc9527b111ad534fc6984c28 HEAD",
+          "command": "git -C \"<fixture>\" merge-base --is-ancestor f504d48602b37584dc9527b111ad534fc6984c28 HEAD",
+          "status": 128,
+          "output": "fatal: Not a valid commit name f504d48602b37584dc9527b111ad534fc6984c28",
+          "value": false,
+          "ok": false
+        },
+        "gitChangedFiles": {
+          "op": "diff --name-only f504d48602b37584dc9527b111ad534fc6984c28 HEAD",
+          "command": "git -C \"<fixture>\" diff --name-only f504d48602b37584dc9527b111ad534fc6984c28 HEAD",
+          "status": 128,
+          "output": "fatal: bad object f504d48602b37584dc9527b111ad534fc6984c28",
+          "value": [],
+          "ok": false
+        },
+        "validatorPass": false,
+        "validatorChecks": {
+          "fields": true,
+          "decision": true,
+          "token": true,
+          "solveLimit": true,
+          "solves": true,
+          "campaignId": true,
+          "decisionUrl": true,
+          "approvedHead": true,
+          "contractEvidence": true,
+          "ancestor": false,
+          "activationBinding": false
+        },
+        "validatorFailed": [
+          "ancestor",
+          "activationBinding"
+        ],
+        "externalCheck": {
+          "pass": false,
+          "parentOk": false,
+          "filesOk": false,
+          "head": "8cad8627fcea684be3f86b23835fa9a3073ee230",
+          "parent": "",
+          "statuses": [
+            0,
+            128,
+            128
+          ],
+          "changedFiles": []
+        }
+      },
+      {
+        "case": "git_failure_not_a_repository",
+        "approvedHead": "f504d48602b37584dc9527b111ad534fc6984c28",
+        "expectedParent": "",
+        "expectedValidatorPass": false,
+        "expectedFailed": [
+          "ancestor",
+          "activationBinding"
+        ],
+        "gitHead": {
+          "op": "rev-parse --verify HEAD",
+          "command": "git -C \"<fixture>\" rev-parse --verify HEAD",
+          "status": 128,
+          "output": "fatal: not a git repository (or any of the parent directories): .git",
+          "value": "",
+          "ok": false
+        },
+        "gitParent": {
+          "op": "rev-parse --verify HEAD~1",
+          "command": "git -C \"<fixture>\" rev-parse --verify HEAD~1",
+          "status": 128,
+          "output": "fatal: not a git repository (or any of the parent directories): .git",
+          "value": "",
+          "ok": false
+        },
+        "gitIsAncestor": {
+          "op": "merge-base --is-ancestor f504d48602b37584dc9527b111ad534fc6984c28 HEAD",
+          "command": "git -C \"<fixture>\" merge-base --is-ancestor f504d48602b37584dc9527b111ad534fc6984c28 HEAD",
+          "status": 128,
+          "output": "fatal: not a git repository (or any of the parent directories): .git",
+          "value": false,
+          "ok": false
+        },
+        "gitChangedFiles": {
+          "op": "diff --name-only f504d48602b37584dc9527b111ad534fc6984c28 HEAD",
+          "command": "git -C \"<fixture>\" diff --name-only f504d48602b37584dc9527b111ad534fc6984c28 HEAD",
+          "status": 1,
+          "output": "error: Could not access 'f504d48602b37584dc9527b111ad534fc6984c28'",
+          "value": [],
+          "ok": false
+        },
+        "validatorPass": false,
+        "validatorChecks": {
+          "fields": true,
+          "decision": true,
+          "token": true,
+          "solveLimit": true,
+          "solves": true,
+          "campaignId": true,
+          "decisionUrl": true,
+          "approvedHead": true,
+          "contractEvidence": true,
+          "ancestor": false,
+          "activationBinding": false
+        },
+        "validatorFailed": [
+          "ancestor",
+          "activationBinding"
+        ],
+        "externalCheck": {
+          "pass": false,
+          "parentOk": false,
+          "filesOk": false,
+          "head": "",
+          "parent": "",
+          "statuses": [
+            128,
+            128,
+            1
+          ],
+          "changedFiles": []
+        }
+      }
+    ],
+    "fixtureCommits": {
+      "c0": "d4b7fbf9701dd8f95cb59149edeaa0ae69bbe66e",
+      "c1_reviewedParent": "f504d48602b37584dc9527b111ad534fc6984c28",
+      "cS_sideBranch": "697687877e990581d93d9175ee07592c76e4303b",
+      "cA_validActivation": "a5437f3b317993069cecfbf4338a45fd3c5b456e",
+      "cX_extraFile": "7c949d09f0227c895ceaf4c4bf969f7f862cc34c",
+      "cR_rootOnly": "8cad8627fcea684be3f86b23835fa9a3073ee230",
+      "catFileParentsOfCA": [
+        "f504d48602b37584dc9527b111ad534fc6984c28"
+      ]
+    },
+    "caretDiagnostic": {
+      "unquotedCommand": "git -C \"<fixture>\" rev-parse HEAD^",
+      "unquotedStatus": 0,
+      "unquotedOutput": "a5437f3b317993069cecfbf4338a45fd3c5b456e",
+      "quotedStatus": 0,
+      "quotedOutput": "f504d48602b37584dc9527b111ad534fc6984c28",
+      "head": "a5437f3b317993069cecfbf4338a45fd3c5b456e",
+      "expectedParent": "f504d48602b37584dc9527b111ad534fc6984c28"
+    },
+    "fixturesRemoved": true
+  },
+  "sourceCommit": "2775d8b21ec908d7c626d24013c7e8053d63e5e1"
+}

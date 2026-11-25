@@ -1,0 +1,60 @@
+{
+ "rule": "absolute local paths replaced by <repo> (execution clone), <worktree>, <scratch>, <user>; MATLAB startup path warnings removed; CRLF to LF",
+ "files": [
+  {
+   "file": "dev_dry.log",
+   "originalSHA256": "d2aa2e29efed2a0c5075f0f714da4cbf69a640d057f34bca2fb69417aa1f0532",
+   "sanitizedSHA256": "2feec450d992668600cadde824c7a32d6329b0005185b3a1223c67c4a284aa6d"
+  },
+  {
+   "file": "ev1_tests.log",
+   "originalSHA256": "646b21ef50b56521fc4a54535c0ae460b5467ce82b8a9bb27f7633deb44b3b84",
+   "sanitizedSHA256": "2719262a92a0e17fa764c4efbf3775b0eb8cac29e8134c46e1a267d71341a540"
+  },
+  {
+   "file": "ev1_tests.m",
+   "originalSHA256": "2da969438719a7b87cd7a7fb8fd0e83532345bc62a232d30d5b8947af463d616",
+   "sanitizedSHA256": "136452eb78dd059f823be081bdace4e5b13ce4fe9bc18a19aa6c574568c4282a"
+  },
+  {
+   "file": "ev2_s9.log",
+   "originalSHA256": "c61e823d072f30e720586f7475ee15d9a31ad2fee2ab2223a1d0d2104de6831f",
+   "sanitizedSHA256": "2aa1a0b4354df67f9954a565cc07351dc7e29ccc451b01eb3fb90af545cf3821"
+  },
+  {
+   "file": "ev2_s9.m",
+   "originalSHA256": "6f5dbaed71b336e25888d291e02964c8e97dee0b3c1003bf90c22ab7783f68ec",
+   "sanitizedSHA256": "6d5f4a877b340e9d7698c8cdcf32ee773b21eec225b3a35a92ca4bf6bf654661"
+  },
+  {
+   "file": "ev3_lp2a2.log",
+   "originalSHA256": "f00b589d7f2f69509411a5737be6a07c1a0e6498436d0fcac2c36f7b99ef4f70",
+   "sanitizedSHA256": "9b4d631fdb1ab47e12051779190c950ab964627e53547b12a0fad370ee4f2b84"
+  },
+  {
+   "file": "ev3_lp2a2.m",
+   "originalSHA256": "59c4cd64c150a448396fe5f2132b5201f5dd70cc9e9bf574f68527c5ef8b4165",
+   "sanitizedSHA256": "45c0527882521ea6aa20c00c8556db4b2a12d426ed195fae531200ee9283a942"
+  },
+  {
+   "file": "ev4_lp2.log",
+   "originalSHA256": "e8495f1f216e023b2afd7964fb1d1c30220bf286d3e14837b715ad82fd467f05",
+   "sanitizedSHA256": "e2fa790c48e2d2905d30a54b7039112dc8d3ec0b408dbbeb6363458c5af02958"
+  },
+  {
+   "file": "ev4_lp2.m",
+   "originalSHA256": "15726eaef72cb8d1f6cd800f79f19c63b747438d394838cd6ca07876c9e8c10f",
+   "sanitizedSHA256": "b814997014e44b2e6d5af285820a6f231d98d245ea9c4e97bf871620a4f7e617"
+  },
+  {
+   "file": "run_fig.log",
+   "originalSHA256": "6d3fb54ec6d6af95d469a9ecfc1206ffead06996e20831f6a3ea679063e46d4b",
+   "sanitizedSHA256": "f2c78ed8897cd893e40a64a0dedf3b5bac8a42d245b0f1063097b0afa2909969"
+  },
+  {
+   "file": "run_fig.m",
+   "originalSHA256": "f12950a619b1f6ecf2929c6b64412382fcde72c8810cd930f11f23d5397e58b7",
+   "sanitizedSHA256": "be3f6257f059cfa274e3e6a8d293a719c501d0c0013ef9ed053ba99b2e6cfcf8"
+  }
+ ]
+}

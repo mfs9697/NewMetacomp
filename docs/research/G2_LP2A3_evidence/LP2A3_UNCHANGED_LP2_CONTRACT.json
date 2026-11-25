@@ -1,0 +1,714 @@
+{
+  "sourceCommit": "2775d8b21ec908d7c626d24013c7e8053d63e5e1",
+  "passed": 101,
+  "total": 101,
+  "rows": [
+    {
+      "name": "go_valid_fixture",
+      "kind": "go",
+      "expected": "true",
+      "observed": "true",
+      "pass": true
+    },
+    {
+      "name": "go_missing_field",
+      "kind": "go",
+      "expected": "error",
+      "observed": "G2LP2:HOLD_UNAUTHORIZED_STATE: Incomplete GO_LP2A record.",
+      "pass": true
+    },
+    {
+      "name": "go_x6_decision",
+      "kind": "go",
+      "expected": "error",
+      "observed": "G2LP2:HOLD_UNAUTHORIZED_STATE: GO_LP2A decision or review proof is absent or invalid.",
+      "pass": true
+    },
+    {
+      "name": "go_not_reviewed",
+      "kind": "go",
+      "expected": "error",
+      "observed": "G2LP2:HOLD_UNAUTHORIZED_STATE: GO_LP2A decision or review proof is absent or invalid.",
+      "pass": true
+    },
+    {
+      "name": "go_empty_reviewer",
+      "kind": "go",
+      "expected": "error",
+      "observed": "G2LP2:HOLD_UNAUTHORIZED_STATE: GO_LP2A decision or review proof is absent or invalid.",
+      "pass": true
+    },
+    {
+      "name": "go_foreign_url",
+      "kind": "go",
+      "expected": "error",
+      "observed": "G2LP2:HOLD_UNAUTHORIZED_STATE: GO_LP2A decision or review proof is absent or invalid.",
+      "pass": true
+    },
+    {
+      "name": "go_wrong_scope",
+      "kind": "go",
+      "expected": "error",
+      "observed": "G2LP2:HOLD_UNAUTHORIZED_STATE: LP2-A campaign scope, run name or campaign ID is invalid.",
+      "pass": true
+    },
+    {
+      "name": "go_bad_run_name",
+      "kind": "go",
+      "expected": "error",
+      "observed": "G2LP2:HOLD_UNAUTHORIZED_STATE: LP2-A campaign scope, run name or campaign ID is invalid.",
+      "pass": true
+    },
+    {
+      "name": "go_forbidden_run_run_20261122_lp1_v1",
+      "kind": "go",
+      "expected": "error",
+      "observed": "G2LP2:HOLD_UNAUTHORIZED_STATE: LP2-A campaign scope, run name or campaign ID is invalid.",
+      "pass": true
+    },
+    {
+      "name": "go_forbidden_run_run_a0_lp1_repro_v1",
+      "kind": "go",
+      "expected": "error",
+      "observed": "G2LP2:HOLD_UNAUTHORIZED_STATE: LP2-A campaign scope, run name or campaign ID is invalid.",
+      "pass": true
+    },
+    {
+      "name": "go_forbidden_run_run_a1_family_b_s4_v1",
+      "kind": "go",
+      "expected": "error",
+      "observed": "G2LP2:HOLD_UNAUTHORIZED_STATE: LP2-A campaign scope, run name or campaign ID is invalid.",
+      "pass": true
+    },
+    {
+      "name": "go_forbidden_run_run_m5x6_crossed_s4_b9_v1",
+      "kind": "go",
+      "expected": "error",
+      "observed": "G2LP2:HOLD_UNAUTHORIZED_STATE: LP2-A campaign scope, run name or campaign ID is invalid.",
+      "pass": true
+    },
+    {
+      "name": "go_forbidden_campaign_G2-LP1-A0-001",
+      "kind": "go",
+      "expected": "error",
+      "observed": "G2LP2:HOLD_UNAUTHORIZED_STATE: LP2-A campaign scope, run name or campaign ID is invalid.",
+      "pass": true
+    },
+    {
+      "name": "go_forbidden_campaign_G2-A1-FB-001",
+      "kind": "go",
+      "expected": "error",
+      "observed": "G2LP2:HOLD_UNAUTHORIZED_STATE: LP2-A campaign scope, run name or campaign ID is invalid.",
+      "pass": true
+    },
+    {
+      "name": "go_forbidden_campaign_G2-M5-X6-001",
+      "kind": "go",
+      "expected": "error",
+      "observed": "G2LP2:HOLD_UNAUTHORIZED_STATE: LP2-A campaign scope, run name or campaign ID is invalid.",
+      "pass": true
+    },
+    {
+      "name": "go_three_cases",
+      "kind": "go",
+      "expected": "error",
+      "observed": "G2LP2:HOLD_UNAUTHORIZED_STATE: GO_LP2A must list the four cases, S8, sixteen solves and revocation.",
+      "pass": true
+    },
+    {
+      "name": "go_reordered_cases",
+      "kind": "go",
+      "expected": "error",
+      "observed": "G2LP2:HOLD_UNAUTHORIZED_STATE: GO_LP2A must list the four cases, S8, sixteen solves and revocation.",
+      "pass": true
+    },
+    {
+      "name": "go_state_nine",
+      "kind": "go",
+      "expected": "error",
+      "observed": "G2LP2:HOLD_UNAUTHORIZED_STATE: GO_LP2A must list the four cases, S8, sixteen solves and revocation.",
+      "pass": true
+    },
+    {
+      "name": "go_seventeen_solves",
+      "kind": "go",
+      "expected": "error",
+      "observed": "G2LP2:HOLD_UNAUTHORIZED_STATE: GO_LP2A must list the four cases, S8, sixteen solves and revocation.",
+      "pass": true
+    },
+    {
+      "name": "go_no_revocation",
+      "kind": "go",
+      "expected": "error",
+      "observed": "G2LP2:HOLD_UNAUTHORIZED_STATE: GO_LP2A must list the four cases, S8, sixteen solves and revocation.",
+      "pass": true
+    },
+    {
+      "name": "go_mismatch_approvedPolicySHA256",
+      "kind": "go",
+      "expected": "error",
+      "observed": "G2LP2:HOLD_SOURCE: GO_LP2A does not bind the exact policy, sources, parents and token.",
+      "pass": true
+    },
+    {
+      "name": "go_mismatch_approvedG2SourceSHA256",
+      "kind": "go",
+      "expected": "error",
+      "observed": "G2LP2:HOLD_SOURCE: GO_LP2A does not bind the exact policy, sources, parents and token.",
+      "pass": true
+    },
+    {
+      "name": "go_mismatch_approvedLP2SourceSHA256",
+      "kind": "go",
+      "expected": "error",
+      "observed": "G2LP2:HOLD_SOURCE: GO_LP2A does not bind the exact policy, sources, parents and token.",
+      "pass": true
+    },
+    {
+      "name": "go_mismatch_approvedParentManifestSHA256",
+      "kind": "go",
+      "expected": "error",
+      "observed": "G2LP2:HOLD_SOURCE: GO_LP2A does not bind the exact policy, sources, parents and token.",
+      "pass": true
+    },
+    {
+      "name": "go_token_mismatch",
+      "kind": "go",
+      "expected": "error",
+      "observed": "G2LP2:HOLD_SOURCE: GO_LP2A does not bind the exact policy, sources, parents and token.",
+      "pass": true
+    },
+    {
+      "name": "go_contract_outside_dir",
+      "kind": "go",
+      "expected": "error",
+      "observed": "G2LP2:HOLD_SOURCE: LP2-A contract evidence path is not pinned.",
+      "pass": true
+    },
+    {
+      "name": "go_contract_dotdot",
+      "kind": "go",
+      "expected": "error",
+      "observed": "G2LP2:HOLD_SOURCE: LP2-A contract evidence path is not pinned.",
+      "pass": true
+    },
+    {
+      "name": "go_contract_absent",
+      "kind": "go",
+      "expected": "error",
+      "observed": "G2LP2:HOLD_SOURCE: LP2-A contract evidence bytes are absent or changed.",
+      "pass": true
+    },
+    {
+      "name": "go_contract_changed",
+      "kind": "go",
+      "expected": "error",
+      "observed": "G2LP2:HOLD_SOURCE: LP2-A contract evidence bytes are absent or changed.",
+      "pass": true
+    },
+    {
+      "name": "go_contract_with_solves",
+      "kind": "go",
+      "expected": "error",
+      "observed": "G2LP2:HOLD_UNAUTHORIZED_STATE: LP2-A contract qualification has not passed.",
+      "pass": true
+    },
+    {
+      "name": "go_contract_not_passed",
+      "kind": "go",
+      "expected": "error",
+      "observed": "G2LP2:HOLD_UNAUTHORIZED_STATE: LP2-A contract qualification has not passed.",
+      "pass": true
+    },
+    {
+      "name": "go_contract_other_token",
+      "kind": "go",
+      "expected": "error",
+      "observed": "G2LP2:HOLD_SOURCE: LP2-A contract evidence was produced for another token.",
+      "pass": true
+    },
+    {
+      "name": "gate_go_absent",
+      "kind": "gate",
+      "expected": "true",
+      "observed": "true",
+      "pass": true
+    },
+    {
+      "name": "gate_refuses_without_go",
+      "kind": "gate",
+      "expected": "error",
+      "observed": "G2LP2:HOLD_UNAUTHORIZED_STATE: LP2-A is on scientific HOLD: no GO_LP2A record.",
+      "pass": true
+    },
+    {
+      "name": "hook_sixteen_admissions",
+      "kind": "ledger",
+      "expected": "true",
+      "observed": "true",
+      "pass": true
+    },
+    {
+      "name": "hook_seventeenth_refused",
+      "kind": "ledger",
+      "expected": "error",
+      "observed": "G2LP2:HOLD_UNAUTHORIZED_STATE: The sixteen-solve ceiling is reached.",
+      "pass": true
+    },
+    {
+      "name": "hook_s4_refused",
+      "kind": "ledger",
+      "expected": "error",
+      "observed": "G2LP2:HOLD_UNAUTHORIZED_STATE: Only S5-S8 may be admitted.",
+      "pass": true
+    },
+    {
+      "name": "hook_s9_refused",
+      "kind": "ledger",
+      "expected": "error",
+      "observed": "G2LP2:HOLD_UNAUTHORIZED_STATE: Only S5-S8 may be admitted.",
+      "pass": true
+    },
+    {
+      "name": "hook_duplicate_refused",
+      "kind": "ledger",
+      "expected": "error",
+      "observed": "G2LP1:HOLD_CAMPAIGN_INTEGRITY: State H_S5 was already admitted; review required.",
+      "pass": true
+    },
+    {
+      "name": "hook_closed_refused",
+      "kind": "ledger",
+      "expected": "error",
+      "observed": "G2LP1:HOLD_CAMPAIGN_CLOSED: Campaign is closed: no new state may be computed.",
+      "pass": true
+    },
+    {
+      "name": "forecast_s9_refused",
+      "kind": "forecast",
+      "expected": "error",
+      "observed": "G2LP2:HOLD_UNAUTHORIZED_STATE: State S9 is outside the LP2 policy (S5-S8).",
+      "pass": true
+    },
+    {
+      "name": "forecast_s4_refused",
+      "kind": "forecast",
+      "expected": "error",
+      "observed": "G2LP2:HOLD_UNAUTHORIZED_STATE: State S4 is outside the LP2 policy (S5-S8).",
+      "pass": true
+    },
+    {
+      "name": "forecast_reproduces_A0_S1_S4_bitwise",
+      "kind": "forecast",
+      "expected": "true",
+      "observed": "true",
+      "pass": true
+    },
+    {
+      "name": "parent_pins_equal_A0_manifest",
+      "kind": "forecast",
+      "expected": "true",
+      "observed": "true",
+      "pass": true
+    },
+    {
+      "name": "classify_S5_H_matrix_advance",
+      "kind": "classify",
+      "expected": "true",
+      "observed": "true",
+      "pass": true
+    },
+    {
+      "name": "classify_active_ring_interface_approach",
+      "kind": "classify",
+      "expected": "true",
+      "observed": "true",
+      "pass": true
+    },
+    {
+      "name": "classify_passive_ring_numerical_hold",
+      "kind": "classify",
+      "expected": "true",
+      "observed": "true",
+      "pass": true
+    },
+    {
+      "name": "classify_passive_ring_typed_numerical_ring",
+      "kind": "classify",
+      "expected": "true",
+      "observed": "true",
+      "pass": true
+    },
+    {
+      "name": "classify_precedence_active_over_passive",
+      "kind": "classify",
+      "expected": "true",
+      "observed": "true",
+      "pass": true
+    },
+    {
+      "name": "classify_external_boundary",
+      "kind": "classify",
+      "expected": "true",
+      "observed": "true",
+      "pass": true
+    },
+    {
+      "name": "classify_hole_boundary",
+      "kind": "classify",
+      "expected": "true",
+      "observed": "true",
+      "pass": true
+    },
+    {
+      "name": "classify_self_intersection_numerical",
+      "kind": "classify",
+      "expected": "true",
+      "observed": "true",
+      "pass": true
+    },
+    {
+      "name": "classify_inconsistent_refused",
+      "kind": "classify",
+      "expected": "error",
+      "observed": "G2LP2:HOLD_CLASSIFICATION: Classification INTERFACE_APPROACH inconsistent with clearance pass=1 ().",
+      "pass": true
+    },
+    {
+      "name": "classify_never_encounter",
+      "kind": "classify",
+      "expected": "true",
+      "observed": "true",
+      "pass": true
+    },
+    {
+      "name": "driver_unknown_case",
+      "kind": "driver",
+      "expected": "error",
+      "observed": "G2LP2:HOLD_INPUT: Exactly H, stiff13, soft2, soft1 permitted.",
+      "pass": true
+    },
+    {
+      "name": "driver_gate_first",
+      "kind": "driver",
+      "expected": "true",
+      "observed": "true",
+      "pass": true
+    },
+    {
+      "name": "driver_dry_has_no_mesh_solve_write",
+      "kind": "driver",
+      "expected": "true",
+      "observed": "true",
+      "pass": true
+    },
+    {
+      "name": "driver_no_other_go",
+      "kind": "driver",
+      "expected": "true",
+      "observed": "true",
+      "pass": true
+    },
+    {
+      "name": "driver_no_resume",
+      "kind": "driver",
+      "expected": "true",
+      "observed": "true",
+      "pass": true
+    },
+    {
+      "name": "chain_classification_before_admission_before_compute",
+      "kind": "driver",
+      "expected": "true",
+      "observed": "true",
+      "pass": true
+    },
+    {
+      "name": "chain_closure_after_every_terminal_path",
+      "kind": "driver",
+      "expected": "true",
+      "observed": "true",
+      "pass": true
+    },
+    {
+      "name": "driver_unchanged_mesher_call",
+      "kind": "driver",
+      "expected": "true",
+      "observed": "true",
+      "pass": true
+    },
+    {
+      "name": "driver_dry_four_cases",
+      "kind": "driver",
+      "expected": "true",
+      "observed": "true",
+      "pass": true
+    },
+    {
+      "name": "analysis_reproduces_M5_offsets_and_F_G",
+      "kind": "analysis",
+      "expected": "true",
+      "observed": "true",
+      "pass": true
+    },
+    {
+      "name": "analysis_insufficient_evidence_on_S0_S4",
+      "kind": "analysis",
+      "expected": "true",
+      "observed": "true",
+      "pass": true
+    },
+    {
+      "name": "analysis_H1_supported_when_negative_strictly_decreasing",
+      "kind": "analysis",
+      "expected": "true",
+      "observed": "true",
+      "pass": true
+    },
+    {
+      "name": "analysis_H1_sign_transition",
+      "kind": "analysis",
+      "expected": "true",
+      "observed": "true",
+      "pass": true
+    },
+    {
+      "name": "analysis_H1_contradicted",
+      "kind": "analysis",
+      "expected": "true",
+      "observed": "true",
+      "pass": true
+    },
+    {
+      "name": "analysis_H1_mixed",
+      "kind": "analysis",
+      "expected": "true",
+      "observed": "true",
+      "pass": true
+    },
+    {
+      "name": "analysis_H2_supported_when_negative_towards_zero",
+      "kind": "analysis",
+      "expected": "true",
+      "observed": "true",
+      "pass": true
+    },
+    {
+      "name": "analysis_H2_transition_not_weakening",
+      "kind": "analysis",
+      "expected": "true",
+      "observed": "true",
+      "pass": true
+    },
+    {
+      "name": "analysis_H2_no_shielding",
+      "kind": "analysis",
+      "expected": "true",
+      "observed": "true",
+      "pass": true
+    },
+    {
+      "name": "analysis_unequal_arclength_rejected",
+      "kind": "analysis",
+      "expected": "error",
+      "observed": "G2LP2:ANALYSIS_UNSUPPORTED: stiff13 and H do not share their accepted arclengths (unequal increments): interpolation is not supported in LP2-A1.",
+      "pass": true
+    },
+    {
+      "name": "c1_all_four_cases_complete_and_closed",
+      "kind": "campaign",
+      "expected": "true",
+      "observed": "true",
+      "pass": true
+    },
+    {
+      "name": "c1_verifier_passes_complete_campaign",
+      "kind": "verify",
+      "expected": "true",
+      "observed": "true",
+      "pass": true
+    },
+    {
+      "name": "c6_verify_only_reuses_without_computation",
+      "kind": "campaign",
+      "expected": "true",
+      "observed": "true",
+      "pass": true
+    },
+    {
+      "name": "c5_rerun_of_completed_case_admits_nothing",
+      "kind": "campaign",
+      "expected": "true",
+      "observed": "true",
+      "pass": true
+    },
+    {
+      "name": "c5_admission_refused_in_full_campaign",
+      "kind": "campaign",
+      "expected": "error",
+      "observed": "G2LP2:HOLD_UNAUTHORIZED_STATE: The sixteen-solve ceiling is reached.",
+      "pass": true
+    },
+    {
+      "name": "c5_duplicate_admission_refused",
+      "kind": "campaign",
+      "expected": "error",
+      "observed": "G2LP1:HOLD_CAMPAIGN_INTEGRITY: State H_S6 was already admitted; review required.",
+      "pass": true
+    },
+    {
+      "name": "c2_local_hold_earlier_case_terminal",
+      "kind": "campaign",
+      "expected": "true",
+      "observed": "true",
+      "pass": true
+    },
+    {
+      "name": "c2_other_cases_continue_and_campaign_closes",
+      "kind": "campaign",
+      "expected": "true",
+      "observed": "true",
+      "pass": true
+    },
+    {
+      "name": "c7_failed_state_never_retried_prefix_preserved",
+      "kind": "campaign",
+      "expected": "true",
+      "observed": "true",
+      "pass": true
+    },
+    {
+      "name": "c3_local_hold_final_case_closes_campaign",
+      "kind": "campaign",
+      "expected": "true",
+      "observed": "true",
+      "pass": true
+    },
+    {
+      "name": "candidate_non_advance_terminal_without_admission",
+      "kind": "campaign",
+      "expected": "true",
+      "observed": "true",
+      "pass": true
+    },
+    {
+      "name": "forecast_local_exception_is_documented_terminal",
+      "kind": "campaign",
+      "expected": "true",
+      "observed": "true",
+      "pass": true
+    },
+    {
+      "name": "forecast_unexpected_exception_is_global",
+      "kind": "campaign",
+      "expected": "true",
+      "observed": "true",
+      "pass": true
+    },
+    {
+      "name": "c4_preadmission_memory_hold_global",
+      "kind": "campaign",
+      "expected": "true",
+      "observed": "true",
+      "pass": true
+    },
+    {
+      "name": "c4_campaign_blocked_after_global_hold",
+      "kind": "campaign",
+      "expected": "error",
+      "observed": "G2LP1:HOLD_CAMPAIGN_REVIEW_REQUIRED: Unreviewed pre-admission memory HOLD; scientist review required.",
+      "pass": true
+    },
+    {
+      "name": "c4_global_hold_after_admission_no_terminal_no_closure",
+      "kind": "campaign",
+      "expected": "true",
+      "observed": "true",
+      "pass": true
+    },
+    {
+      "name": "failure_class_table",
+      "kind": "campaign",
+      "expected": "true",
+      "observed": "true",
+      "pass": true
+    },
+    {
+      "name": "v_altered_mesh_hash",
+      "kind": "verify",
+      "expected": "error",
+      "observed": "H S6: MESH hash | H S6: PHASE hash or links | H S6: SOLUTION hash or links",
+      "pass": true
+    },
+    {
+      "name": "v_state_manifest_tamper",
+      "kind": "verify",
+      "expected": "error",
+      "observed": "H S5: STATE manifest fails | H S6: parent SHA-256 link | H S6: polyline or tangent is not the recurrence from the parent",
+      "pass": true
+    },
+    {
+      "name": "v_incorrect_parent_link",
+      "kind": "verify",
+      "expected": "error",
+      "observed": "stiff13 S7: parent SHA-256 link | stiff13 S8: parent SHA-256 link",
+      "pass": true
+    },
+    {
+      "name": "v_inconsistent_sif",
+      "kind": "verify",
+      "expected": "error",
+      "observed": "soft2 S5: signed K_I/K_II differ between STATE and SOLUTION | soft2 S6: parent SHA-256 link | soft2 S6: polyline or tangent is not the recurrence from the parent",
+      "pass": true
+    },
+    {
+      "name": "v_missing_phase_record",
+      "kind": "verify",
+      "expected": "error",
+      "observed": "soft1 S6: PHASE hash or links | soft1 S6: SOLUTION hash or links",
+      "pass": true
+    },
+    {
+      "name": "v_missing_solution_record",
+      "kind": "verify",
+      "expected": "error",
+      "observed": "H S8: SOLUTION hash or links",
+      "pass": true
+    },
+    {
+      "name": "v_terminal_wrong_last_state",
+      "kind": "verify",
+      "expected": "error",
+      "observed": "H: terminal does not bind the last accepted state S8 | CLOSED does not bind the current TERMINAL records",
+      "pass": true
+    },
+    {
+      "name": "v_closed_binding_broken",
+      "kind": "verify",
+      "expected": "error",
+      "observed": "CLOSED does not bind the current TERMINAL records",
+      "pass": true
+    },
+    {
+      "name": "v_extra_admission",
+      "kind": "verify",
+      "expected": "error",
+      "observed": "ADMIT entries (H_S5,H_S6,H_S7,H_S8,H_S9,soft1_S5,soft1_S6,soft1_S7,soft1_S8,soft2_S5,soft2_S6,soft2_S7,soft2_S8,stiff13_S5,stiff13_S6,stiff13_S7,stiff13_S8) differ from state folders (H_S5,H_S6,H_S7,H_S8,soft1_S5,soft1_S6,soft1_S7,soft1_S8,soft2_S5,soft2_S6,soft2_S7,soft2_S8,stiff13_S5,stiff13_S6,stiff13_S7,stiff13_S8)",
+      "pass": true
+    },
+    {
+      "name": "v_missing_terminal",
+      "kind": "verify",
+      "expected": "error",
+      "observed": "soft1: TERMINAL record missing | CLOSED exists but a TERMINAL record or the CLOSED record is missing/unverifiable",
+      "pass": true
+    },
+    {
+      "name": "v_state_gap",
+      "kind": "verify",
+      "expected": "error",
+      "observed": "stiff13: state folders are not contiguous from S5 ([5 7 8]) | stiff13 S7: parent SHA-256 link | stiff13 S7: polyline or tangent is not the recurrence from the parent | ADMIT entries (H_S5,H_S6,H_S7,H_S8,soft1_S5,soft1_S6,soft1_S7,soft1_S8,soft2_S5,soft2_S6,soft2_S7,soft2_S8,stiff13_S5,stiff13_S6,stiff13_S7,stiff13_S8) differ from state folders (H_S5,H_S6,H_S7,H_S8,soft1_S5,soft1_S6,soft1_S7,soft1_",
+      "pass": true
+    }
+  ]
+}

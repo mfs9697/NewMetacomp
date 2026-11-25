@@ -1,0 +1,131 @@
+SOURCE_COMMIT=2775d8b21ec908d7c626d24013c7e8053d63e5e1 status=0
+RAM_INSIDE_MATLAB=7.882
+LP2A3_TEST A1_token_and_no_GO                             1
+LP2A3_TEST A2_roots_absent                                1
+LP2A3_TEST H0_no_GO_refused_with_real_preflight           1
+LP2A3_TEST A3_four_S8_parents_bitwise_terminal            1
+LP2A3_TEST B1_exactly_1mm_passes                          1
+LP2A3_TEST B2_below_1mm_fails_passive                     1
+LP2A3_TEST B3_below_1mm_fails_active                      1
+LP2A3_TEST B4_every_ring_checked                          1
+LP2A3_TEST B5_nonfinite_tip_refused                       1
+LP2A3_TEST C1_H_S9_matrix_advance                         1
+LP2A3_TEST C2_passive_only_is_PASSIVE_CONTOUR_APPROACH    1
+LP2A3_TEST C3_active_is_INTERFACE_APPROACH                1
+LP2A3_TEST C4_attribution_by_ring_activity                1
+G2_KB_VENDOR_LOCAL_GATES=15/15
+G2_KB_GATES=12/12 TURN=-1.3443345492 MIN_ANGLE=30.126847 RATIO=1.591829 Q=2443
+G2_KEXT_NATIVE_T3=27057
+G2_KEXT_RIM_NODES=65
+G2_KJOIN_GATES=13/13
+G2_KJOIN_T3=29973 T6_NODES=60973 MIN_ANGLE=30.126847 MAX_RATIO=1.591829
+G2_KB_VENDOR_LOCAL_GATES=15/15
+G2_KB_GATES=12/12 TURN=-1.3443345492 MIN_ANGLE=30.126847 RATIO=1.591829 Q=2443
+G2_KEXT_NATIVE_T3=27057
+G2_KEXT_RIM_NODES=65
+G2_KJOIN_GATES=13/13
+G2_KJOIN_T3=29973 T6_NODES=60973 MIN_ANGLE=30.126847 MAX_RATIO=1.591829
+LP2A3_TEST D1_identical_to_ladder_rung1_H_S8              1
+G2_KB_VENDOR_LOCAL_GATES=15/15
+G2_KB_GATES=12/12 TURN=0.0000000000 MIN_ANGLE=30.126847 RATIO=1.591829 Q=2443
+G2_KEXT_NATIVE_T3=27421
+G2_KEXT_RIM_NODES=65
+G2_KJOIN_GATES=12/13
+G2_KJOIN_T3=30337 T6_NODES=61737 MIN_ANGLE=30.126847 MAX_RATIO=1.826336
+G2_KB_VENDOR_LOCAL_GATES=15/15
+G2_KB_GATES=12/12 TURN=0.0000000000 MIN_ANGLE=30.126847 RATIO=1.591829 Q=2443
+G2_KEXT_NATIVE_T3=27421
+G2_KEXT_RIM_NODES=65
+G2_KJOIN_GATES=12/13
+G2_KJOIN_T3=30337 T6_NODES=61737 MIN_ANGLE=30.126847 MAX_RATIO=1.826336
+G2_KB_VENDOR_LOCAL_GATES=15/15
+G2_KB_GATES=12/12 TURN=0.0000000000 MIN_ANGLE=30.126847 RATIO=1.591829 Q=2443
+G2_KEXT_NATIVE_T3=27401
+G2_KEXT_RIM_NODES=65
+G2_KJOIN_GATES=13/13
+G2_KJOIN_T3=30317 T6_NODES=61729 MIN_ANGLE=22.002277 MAX_RATIO=1.591829
+LP2A3_TEST D2_rung1_failure_no_fallback                   1
+LP2A3_TEST D2 rung1 stage=HOLD_KINKED_PROTECTED_MESH_JOIN gates=[globalNeighborRatioAtMost1p8]; ladder rung=2
+LP2A3_TEST D3_seed_spacing_cannot_be_passed               1
+LP2A3_TEST E1_failure_classes                             1
+LP2A3_TEST F1_S10_before_S9_refused                       1
+LP2A3_TEST F2_repeat_refused                              1
+LP2A3_TEST F3_S11_skipping_S10_refused                    1
+LP2A3_TEST F4_S12_refused                                 1
+LP2A3_TEST F5_twelve_admissions_recorded                  1
+LP2A3_TEST F6_thirteenth_refused                          1
+LP2A3_TEST F7_closed_campaign_refused                     1
+G2_LP2A3_TERMINAL H CAMPAIGN_LIMIT_REACHED last=S11 (S11 accepted; S12 candidate forecast for information only (outside the campaign; no admission, mesh or FEM))
+G2_LP2A3_TERMINAL stiff13 CAMPAIGN_LIMIT_REACHED last=S11 (S11 accepted; S12 candidate forecast for information only (outside the campaign; no admission, mesh or FEM))
+G2_LP2A3_TERMINAL soft2 CAMPAIGN_LIMIT_REACHED last=S11 (S11 accepted; S12 candidate forecast for information only (outside the campaign; no admission, mesh or FEM))
+G2_LP2A3_TERMINAL soft1 CAMPAIGN_LIMIT_REACHED last=S11 (S11 accepted; S12 candidate forecast for information only (outside the campaign; no admission, mesh or FEM))
+LP2A3_TEST G1_three_states_and_limit                      1
+LP2A3_TEST G2_S12_information_only_label                  1
+LP2A3_TEST G3_all_cases_closed                            1
+LP2A3_TEST G4_full_verify_pass                            1
+LP2A3_TEST G5_postclosure_replay_read_only                1
+matlab.exe : G2_LP2A3_GLOBAL_HOLD H S9 G2LP1:HOLD_CAMPAIGN_CLOSED: Campaign is closed: no new state may be computed.
+At <scratch>
+ls\runml.ps1:12 char:3
++   & $exe -batch ("run('" + $Script.Replace("'", "''") + "')") *> $log
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (G2_LP2A3_GLOBAL...ay be computed.:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+LP2A3_TEST G6_closed_campaign_computes_nothing            1
+G2_LP2A3_TERMINAL stiff13 INTERFACE_APPROACH last=S9 (candidate segment fails a guard; no mesh, no solve)
+LP2A3_TEST G7_local_guard_stop_at_S10                     1
+LP2A3_TEST G8_no_admission_after_guard_stop               1
+G2_LP2A3_TERMINAL soft2 NUMERICAL_HOLD last=S8 (local numerical HOLD; accepted prefix preserved; never retried)
+LP2A3_TEST G9_rung1_mesh_failure_local_hold               1
+LP2A3_TEST G10_no_retry_after_local_hold                  1
+G2_LP2A3_TERMINAL soft1 NUMERICAL_HOLD last=S8 (candidate could not be evaluated)
+LP2A3_TEST G11_invalid_MTS_local_hold                     1
+G2_LP2A3_GLOBAL_HOLD H S9 X:unexpected: injected failure at S9
+LP2A3_TEST G12_unexpected_global_hold                     1
+G2_LP2A3_GLOBAL_HOLD H S9 G2LP1:HOLD_MEMORY: injected pre-admission failure
+LP2A3_TEST G13_preadmission_memory_global                 1
+LP2A3_TEST G14_altered_parent_link_detected               1
+LP2A3_TEST G15_mesh_tamper_detected                       1
+LP2A3_TEST G16_gap_in_chain_detected                      1
+LP2A3_TEST G17_parent_pin_mismatch_refused                1
+LP2A3_TEST H1_preflight_bypass_refused                    1
+LP2A3_TEST H2_valid_fixture_passes                        1
+LP2A3_TEST H3_json_round_trip_passes                      1
+LP2A3_TEST H4_reject_decision                             1
+LP2A3_TEST H4_reject_url                                  1
+LP2A3_TEST H4_reject_token                                1
+LP2A3_TEST H4_reject_campaignId                           1
+LP2A3_TEST H4_reject_runName                              1
+LP2A3_TEST H4_reject_scope                                1
+LP2A3_TEST H4_reject_order                                1
+LP2A3_TEST H4_reject_casesEmptyJSON                       1
+LP2A3_TEST H4_reject_casesMixedJSON                       1
+LP2A3_TEST H4_reject_maxState                             1
+LP2A3_TEST H4_reject_maxAdm                               1
+LP2A3_TEST H4_reject_seed                                 1
+LP2A3_TEST H4_reject_headShort                            1
+LP2A3_TEST H4_reject_headUpper                            1
+LP2A3_TEST H4_reject_headInject                           1
+LP2A3_TEST H4_reject_evidenceDir                          1
+LP2A3_TEST H4_reject_evidenceSHA                          1
+LP2A3_TEST H4_reject_missingField                         1
+LP2A3_TEST H5_invalid_head_never_reaches_git              1
+LP2A3_TEST H6_reject_failed_evidence                      1
+LP2A3_TEST H7_reject_evidence_other_token                 1
+LP2A3_TEST H8_reject_caller_token                         1
+LP2A3_TEST H9_reject_not_ancestor                         1
+LP2A3_TEST H10_reject_wrong_parent                        1
+LP2A3_TEST H11_reject_extra_file                          1
+LP2A3_TEST H12_malformed_record_rejected                  1
+LP2A3_TEST I_valid                                        1
+LP2A3_TEST I_wrong_parent                                 1
+LP2A3_TEST I_extra_file                                   1
+LP2A3_TEST I_root_commit                                  1
+LP2A3_TEST I_not_a_repo                                   1
+LP2A3_TEST I_caret_defect_still_reproduced                1
+LP2A3_TEST J1_WP5_corrected_replay_VERIFIED_V2            1
+LP2A3_TEST Z1_repository_untouched                        1
+LP2A3_TESTS 78/78
+EVID_TESTS 78/78
+EVID_GO_FILE=0 RUN_ROOT=0 LEDGER=0
