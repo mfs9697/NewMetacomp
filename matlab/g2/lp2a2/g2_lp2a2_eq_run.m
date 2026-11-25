@@ -26,7 +26,7 @@ if o.Run
  assert(isfile(gf),'G2LP2A2:HOLD_UNAUTHORIZED','No GO file (%s): the campaign is prepared, not authorized.',pol.goFile);
  G=jsondecode(fileread(gf));V=g2_lp2a2_eq_go_validate(G,C,o.Token);
  assert(V.pass,'G2LP2A2:HOLD_UNAUTHORIZED','GO record rejected: %s',strjoin(V.failed,', '));
- [~,ah]=system(sprintf('git -C "%s" rev-parse HEAD',C.repo));activationHead=strtrim(ah);
+ AH=g2_lp2a2_git('head',C.repo);assert(AH.ok,'G2LP2A2:HOLD_GIT','git rev-parse HEAD failed (status %d): %s',AH.status,AH.output);activationHead=AH.value;
  sd=fullfile(C.repo,pol.outputRoot,solveId);
  assert(~exist(sd,'dir'),'G2LP2A2:HOLD_ONE_ATTEMPT','%s already attempted; no retry.',solveId);
 end

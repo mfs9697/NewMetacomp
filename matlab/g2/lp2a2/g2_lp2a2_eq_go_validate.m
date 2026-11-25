@@ -16,6 +16,9 @@ function V=g2_lp2a2_eq_go_validate(G,C,callerToken,git)
 %  ancestor        approvedHead is an ancestor of HEAD
 %  activationBinding  HEAD's parent == approvedHead and HEAD changes exactly the GO file
 %                  (the activation commit adds only the GO file on the reviewed head)
+% Default git queries go through g2_lp2a2_git (shell-safe on Windows cmd.exe: the parent is HEAD~1,
+% never an unquoted caret; exit status checked; a commit is accepted only as an exact 40-hex output;
+% any git failure makes ancestor / activationBinding false).
 if nargin<4||isempty(git),git=defaultGit(C.repo);end
 pol=C.policy;req={'decision','decisionUrl','approvedHead','token','solveLimit','solves','campaignId','contractEvidenceFile','contractEvidenceSHA256'};
 c=struct();c.fields=isstruct(G)&&all(isfield(G,req));
@@ -50,12 +53,10 @@ if isstruct(G)&&isfield(G,f),v=G.(f);else,v=[];end
 end
 
 function g=defaultGit(repo)
-g=struct('isAncestor',@(h)system(sprintf('git -C "%s" merge-base --is-ancestor %s HEAD',repo,h))==0, ...
- 'headParent',@()gitOut(repo,'rev-parse HEAD^'),'changedFiles',@(h)lines(gitOut(repo,['diff --name-only ' h ' HEAD'])));
+g=struct('isAncestor',@(h)val(g2_lp2a2_git('isAncestor',repo,h),false), ...
+ 'headParent',@()val(g2_lp2a2_git('parent',repo),''), ...
+ 'changedFiles',@(h)val(g2_lp2a2_git('changedFiles',repo,h),{'<git-query-failed>'}));
 end
-function s=gitOut(repo,args)
-[st,o]=system(sprintf('git -C "%s" %s',repo,args));if st~=0,s='';else,s=strtrim(o);end
-end
-function c=lines(s)
-c=strtrim(strsplit(s,{char(10),char(13)}));c=c(~cellfun(@isempty,c));
+function v=val(R,bad)
+if R.ok,v=R.value;else,v=bad;end
 end

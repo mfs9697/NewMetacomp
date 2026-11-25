@@ -67,7 +67,14 @@ P = {
  'interpretation': {
    'EQUIVALENT': 'All criteria of all four solves and the contrast check pass: the LP2-A2 mesh family reproduces the accepted S8 results within the preregistered numerical tolerances. This is NUMERICAL EQUIVALENCE on four geometries, NOT a certified discretization-error bound for either family and not a convergence statement.',
    'NOT_EQUIVALENT': 'Any criterion fails: HOLD; the new family may not be used for continuation until the difference is explained in a separate review. No retry, no tolerance change after any solve.'},
- 'resources': {'freeRAMInsideMATLAB_GiB_min': 7, 'preflightGuard_GiB': 5, 'matlabProcesses': 1, 'archiveDevices': 2},
+ 'resources': {'freeRAMInsideMATLAB_GiB_min': 7, 'preflightGuard_GiB': 5, 'matlabProcesses': 1, 'archiveDevices': 2,
+   'freeRAMBeforeMATLABStart_GiB_min': 8.2},
+ 'activation': {'label': 'A2',
+   'previous': 'A1: GO 91667cf on 4d3701e, revoked 91718b0, HOLD_LP2A2_EQ_ACTIVATION_BINDING_WINDOWS_CARET before the first wrapper call, zero solves; its authorization (PR #71 issuecomment-7167996437) is consumed and may not be reused',
+   'externalScript': 'matlab/g2/lp2a2/g2_lp2a2_eq_external_run.m',
+   'prestartCheck': 'scripts/g2/lp2a2/lp2a2_eq_prestart_check.ps1 (>= 8.2 GiB available before MATLAB starts, no MATLAB process, removable backup drive)',
+   'gitQueries': 'g2_lp2a2_git: parent as HEAD~1 (never an unquoted caret, which cmd.exe consumes), exit status checked, commit accepted only as an exact 40-hex output',
+   'evidenceAndArchiveNames': 'docs/research/G2_LP2A2_evidence/eq_campaign_A2/, LP2A2_EQ_A2_*.json, NewMetacomp_G2_LP2A2_EQ_A2_Records_<date>.zip'},
  'excluded': ['accepted S9 states', 'trajectory continuation', 'adaptive stepping', 'guide reduction', 'passive-ring crossing', 'interface/CZM', 'M5', 'changes to any LP1/A0/A1/M5-X6/LP2-A1 record']}
 open(out, 'w', encoding='utf-8', newline='\n').write(json.dumps(P, indent=1, ensure_ascii=False) + '\n')
 print('written', out, hashlib.sha256(open(out, 'rb').read()).hexdigest())

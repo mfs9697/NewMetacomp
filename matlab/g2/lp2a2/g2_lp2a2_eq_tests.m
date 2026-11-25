@@ -19,6 +19,14 @@ function T=g2_lp2a2_eq_tests(varargin)
 %  E10 wrapper: injected runners - all pass -> EQUIVALENT; exception / HOLD stage / incomplete
 %     record / failed comparison / rejected GO stop the whole campaign at once (no later calls)
 %  E11 replay: g2_lp2a2_eq_verify without records -> NO_RECORDS, nothing created
+%  E12 real git (no injection): MATLAB system() -> cmd.exe on Windows -> git, on disposable inert
+%     fixtures outside the repository (no production token, no physical record, no GO in the
+%     repository): the ACTUAL default path of g2_lp2a2_eq_go_validate and the pre-wrapper check of
+%     g2_lp2a2_eq_external_run, both through g2_lp2a2_git (HEAD~1, exit status, exact 40-hex):
+%     valid activation, wrong parent (ancestor), non-ancestor, extra changed file, git failure (root
+%     commit without parent; not a repository); the historical unquoted-caret defect reproduced as a
+%     diagnostic; unsafe arguments refused. Commands, statuses, outputs and the independently known
+%     fixture SHAs are returned in T.realGit.
 ip=inputParser;addParameter(ip,'Dry',true,@islogical);parse(ip,varargin{:});
 C=g2_lp2a2_eq_context();pol=C.policy;tol=pol.tolerances;R={};
 R{end+1}=t('E1_context_pins_token',~isempty(strfind(C.token,'G2LP2A2EQ|policy='))&&~isfile(fullfile(C.repo,pol.goFile))&&strcmp(pol.status,'PREREGISTERED_NOT_AUTHORIZED'));
@@ -141,8 +149,9 @@ if ip.Results.Dry
   R{end+1}=t(['E6_dry_',sid],ok&&~exist(od,'dir')); %#ok<AGROW>
  end
 end
+[R12,RG]=realGitTests(pol,C.repo);R=[R,R12];
 T=struct('schema','NewMetacomp.G2.LP2A2.EQ.Tests.v1','physicalSolves',0,'token',C.token,'lp2a2SourceSHA256',C.lp2a2SourceSHA256,'policySHA256',C.policySHA256, ...
- 'passed',nnz(cellfun(@(r)r.pass,R)),'total',numel(R),'tests',{R});
+ 'passed',nnz(cellfun(@(r)r.pass,R)),'total',numel(R),'tests',{R},'realGit',RG);
 fprintf('LP2A2_EQ_TESTS %d/%d\n',T.passed,T.total);
 end
 
@@ -168,4 +177,93 @@ lo=n.D.lowerBankT6(:);
 % scale the jump of every far-field pair by f (upper moved away from lower)
 [~,iu]=sort(vecnorm(n.D.X6(up,:)-P(1,:),2,2));[~,il]=sort(vecnorm(n.D.X6(lo,:)-P(1,:),2,2));up=up(iu);lo=lo(il);far=far(iu);
 U(:,up(far))=U(:,lo(far))+f*(U(:,up(far))-U(:,lo(far)));n.K.u=U(:);
+end
+
+function [R,Rec]=realGitTests(pol,prodRepo)
+% E12: real git through MATLAB system() (cmd.exe on Windows) on disposable inert fixtures.
+R={};fx=fullfile(tempdir,sprintf('lp2a2_e12_fixture_%s',datestr(now,'yyyymmddHHMMSSFFF')));fr=[fx '_rootonly'];fn=[fx '_notrepo'];
+[~,gv]=system('git --version');
+Rec=struct('schema','NewMetacomp.G2.LP2A2.EQ.RealGit.v1','matlabVersion',version,'release',version('-release'),'computer',computer, ...
+ 'ispc',ispc,'comSpec',getenv('ComSpec'),'gitVersion',strtrim(gv),'fixture','<tempdir>/lp2a2_e12_fixture_<stamp>','cases',struct([]));
+goF=pol.goFile;
+prodGo0=isfile(fullfile(prodRepo,goF));prodOut0=isfolder(fullfile(prodRepo,pol.outputRoot));
+try
+ % ---- fixture: c0 -> c1 (reviewed parent) -> cA (GO path only, inert content); side branch cS; extra cX
+ mkdir(fx);sh(sprintf('git init -q "%s"',fx));sh(sprintf('git -C "%s" config core.autocrlf false',fx));
+ wf(fx,'README_FIXTURE.txt','Inert LP2-A2 E12 git fixture. Not an authorization; no token; no physical record.');c0=commit(fx);
+ wf(fx,'evidence/fixture_evidence.json','{"fixture":"inert contract-evidence stand-in"}');c1=commit(fx);
+ sh(sprintf('git -C "%s" checkout -q -b side %s',fx,c0));wf(fx,'side.txt','side branch');cS=commit(fx);
+ sh(sprintf('git -C "%s" checkout -q -b valid %s',fx,c1));wf(fx,goF,'{"fixture":"INERT_NOT_AN_AUTHORIZATION"}');cA=commit(fx);
+ sh(sprintf('git -C "%s" checkout -q -b extra %s',fx,c1));wf(fx,goF,'{"fixture":"INERT_NOT_AN_AUTHORIZATION"}');wf(fx,'extra.txt','additional changed file');cX=commit(fx);
+ mkdir(fr);sh(sprintf('git init -q "%s"',fr));sh(sprintf('git -C "%s" config core.autocrlf false',fr));wf(fr,'README_FIXTURE.txt','single root commit');cR=commit(fr);
+ mkdir(fn);
+ [~,cat]=system(sprintf('git -C "%s" cat-file -p %s',fx,cA));pl=regexp(cat,'(?m)^parent ([0-9a-f]{40})','tokens');pl=[pl{:}];
+ Rec.fixtureCommits=struct('c0',c0,'c1_reviewedParent',c1,'cS_sideBranch',cS,'cA_validActivation',cA,'cX_extraFile',cX,'cR_rootOnly',cR,'catFileParentsOfCA',{pl});
+ tokF='FIXTURE-INERT-TOKEN-NOT-A-PRODUCTION-TOKEN';
+ ev='evidence/fixture_evidence.json';
+ G=struct('decision','GO_LP2A2_EQ','decisionUrl','https://github.com/mfs9697/NewMetacomp/pull/71#pullrequestreview-6063184270','approvedHead',c1, ...
+  'token',tokF,'solveLimit',4,'solves',{{'EQ-H','EQ-stiff13','EQ-soft2','EQ-soft1'}},'campaignId',pol.campaignId, ...
+  'contractEvidenceFile',ev,'contractEvidenceSHA256',lower(g2_sha256_file(fullfile(fx,ev))));
+ Cf=struct('repo',fx,'policy',pol,'token',tokF);
+ inert=~contains(fileread(fullfile(fx,'README_FIXTURE.txt')),'G2LP2A2EQ|')&&~contains(fileread(fullfile(fx,ev)),'G2LP2A2EQ|')&&~startsWith(lower(strrep(fx,'\','/')),lower(strrep(prodRepo,'\','/')));
+ R{end+1}=t('E12_fixture_inert_outside_repo',inert&&numel(pl)==1&&strcmp(pl{1},c1));
+ % ---- historical defect reproduced (diagnostic): unquoted caret through system()
+ sh(sprintf('git -C "%s" checkout -q valid',fx));
+ [s1,o1]=system(sprintf('git -C "%s" rev-parse HEAD^',fx));[s2,o2]=system(sprintf('git -C "%s" rev-parse "HEAD^"',fx));
+ Rec.caretDiagnostic=struct('unquotedCommand','git -C "<fixture>" rev-parse HEAD^','unquotedStatus',s1,'unquotedOutput',strtrim(o1), ...
+  'quotedStatus',s2,'quotedOutput',strtrim(o2),'head',cA,'expectedParent',c1);
+ if ispc,R{end+1}=t('E12_caret_defect_reproduced',s1==0&&strcmp(strtrim(o1),cA)&&strcmp(strtrim(o2),c1));end
+ % ---- cases through the ACTUAL default validator path and the external parent check
+ K={'valid_activation','valid',c1,fx,true,{},true; ...
+    'wrong_parent_ancestor','valid',c0,fx,false,{'activationBinding'},false; ...
+    'not_ancestor','valid',cS,fx,false,{'ancestor','activationBinding'},false; ...
+    'extra_changed_file','extra',c1,fx,false,{'activationBinding'},false; ...
+    'git_failure_root_commit','',c1,fr,false,{'ancestor','activationBinding'},false; ...
+    'git_failure_not_a_repository','',c1,fn,false,{'ancestor','activationBinding'},false};
+ for k=1:size(K,1)
+  [nm,br,ah,rp,expPass,expFail,expExt]=K{k,:};
+  if ~isempty(br),sh(sprintf('git -C "%s" checkout -q %s',rp,br));end
+  Gk=G;Gk.approvedHead=ah;Ck=Cf;Ck.repo=rp;
+  if ~strcmp(rp,fx),copyfile(fullfile(fx,'evidence'),fullfile(rp,'evidence'));end
+  Hh=g2_lp2a2_git('head',rp);Hp=g2_lp2a2_git('parent',rp);Ha=g2_lp2a2_git('isAncestor',rp,ah);Hf=g2_lp2a2_git('changedFiles',rp,ah);
+  V=g2_lp2a2_eq_go_validate(Gk,Ck,tokF);             % 3 arguments -> real default git path
+  P=g2_lp2a2_eq_external_run(ah,'','','ParentCheckOnly',true,'Repo',rp);
+  expParent='';if ~isempty(br),expParent=c1;end   % fixture branches valid/extra both sit on c1
+  parentOK=strcmp(Hp.value,expParent)&&(isempty(expParent)||(Hp.status==0&&Hp.ok))&&(~isempty(expParent)||(Hp.status~=0&&~Hp.ok));
+  okV=V.pass==expPass&&isequal(sort(reshape(V.failed,1,[])),sort(reshape(expFail,1,[])));okP=P.pass==expExt;
+  R{end+1}=t(['E12_validator_' nm],okV&&parentOK); %#ok<AGROW>
+  R{end+1}=t(['E12_external_check_' nm],okP&&parentOK); %#ok<AGROW>
+  c=struct('case',nm,'approvedHead',ah,'expectedParent',expParent,'expectedValidatorPass',expPass,'expectedFailed',{expFail}, ...
+   'gitHead',sanit(Hh,rp),'gitParent',sanit(Hp,rp),'gitIsAncestor',sanit(Ha,rp),'gitChangedFiles',sanit(Hf,rp), ...
+   'validatorPass',V.pass,'validatorChecks',V.checks,'validatorFailed',{V.failed}, ...
+   'externalCheck',struct('pass',P.pass,'parentOk',P.parentOk,'filesOk',P.filesOk,'head',P.head,'parent',P.parent,'statuses',P.statuses,'changedFiles',{P.changedFiles}));
+  if isempty(Rec.cases),Rec.cases=c;else,Rec.cases(end+1)=c;end
+ end
+ % ---- unsafe arguments are refused before any shell call
+ try,g2_lp2a2_git('isAncestor',fx,'HEAD^');a=false;catch ME,a=strcmp(ME.identifier,'G2LP2A2:GIT_UNSAFE_ARG');end
+ try,g2_lp2a2_git('head','%TEMP%');b=false;catch ME,b=strcmp(ME.identifier,'G2LP2A2:GIT_UNSAFE_REPO');end
+ R{end+1}=t('E12_unsafe_arguments_refused',a&&b);
+catch ME
+ fprintf('E12 ERROR %s: %s\n',ME.identifier,ME.message);R{end+1}=t('E12_fixture_error',false);Rec.error=[ME.identifier ': ' ME.message];
+end
+R{end+1}=t('E12_no_production_go_or_output',~prodGo0&&~prodOut0&&~isfile(fullfile(prodRepo,goF))&&~isfolder(fullfile(prodRepo,pol.outputRoot)));
+rm=true;for d={fx,fr,fn},if isfolder(d{1}),[~,~]=system(sprintf('attrib -R "%s\\*" /S /D',d{1}));try,rmdir(d{1},'s');catch,rm=false;end,end,end
+Rec.fixturesRemoved=rm&&~isfolder(fx)&&~isfolder(fr)&&~isfolder(fn);
+end
+
+function sh(cmd)
+[st,o]=system(cmd);assert(st==0,'G2LP2A2:E12_SETUP','fixture setup failed (%d): %s',st,o);
+end
+function wf(root,rel,txt)
+p=fullfile(root,rel);d=fileparts(p);if ~isfolder(d),mkdir(d);end
+fid=fopen(p,'w');fwrite(fid,txt,'char');fclose(fid);
+end
+function c=commit(root)
+sh(sprintf('git -C "%s" add -A',root));
+sh(sprintf('git -C "%s" -c user.name=lp2a2-fixture -c user.email=fixture@example.invalid -c commit.gpgsign=false commit -q -m fixture',root));
+[st,o]=system(sprintf('git -C "%s" rev-parse --verify HEAD',root));c=strtrim(o);
+assert(st==0&&~isempty(regexp(c,'^[0-9a-f]{40}$','once')),'G2LP2A2:E12_SETUP','commit hash');
+end
+function S=sanit(Rg,rp)
+S=Rg;S.command=strrep(S.command,rp,'<fixture>');
 end
