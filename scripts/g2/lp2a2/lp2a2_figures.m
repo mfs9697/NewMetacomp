@@ -99,7 +99,48 @@ plot(ax,V(ng&nw),t3(ng&nw),'o','Color',[.15 .45 .2],'MarkerSize',3.5);plot(ax,V(
 yline(ax,40000,'--','бюджет 40 000 T3','FontSize',7);xlabel(ax,'стан');ylabel(ax,'T3 (LP2-A2)');box(ax,'on');ylim(ax,[25000 42000]);
 title(ax,'(б) розмір сітки; хрестики — з’єднано, але не пройдено аудит','FontWeight','normal','FontSize',7);
 save1(f,outDir,'LP2A2_6_kvalifikatsiia_UA');
+% ------------------------------------------------------------------ 7 forced tip-guide pair (enlarged)
+Ex=g2_lp2a2_exterior_mesh(P9,'ExpectedVertices',N9,'ExpectedTangent',t9,opts{:});
+i=find(Ex.seedForced,1);k=Ex.seedSegment(i);XU=Ex.upperSeed(i,:);XL=Ex.lowerSeed(i,:);tk=(P9(k+1,:)-P9(k,:))/norm(P9(k+1,:)-P9(k,:));nk=[-tk(2),tk(1)];
+sb=mean(Ex.seedStationsUL(i,:));Sc=Ex.centreStations;Xc=Ex.centreControl(k,:)+(sb-Sc(k))*tk;
+X0=Ex.coord3;X0(Ex.upperLipNodes,:)=Ex.upperSeed;X0(Ex.lowerLipNodes,:)=Ex.lowerSeed;T0=Ex.connect3;
+lc=@(Q)[(Q-Xc)*tk.',(Q-Xc)*nk.']*1000;   % local coordinates, micrometres
+f=figure('Visible','off','Color','w','Units','centimeters','Position',[0 0 17 8]);tl=tiledlayout(f,1,2,'TileSpacing','compact','Padding','compact');
+ax=nexttile(tl);hold(ax,'on');ph=linspace(0,2*pi,20000);C=tip9(P9)+15*[cos(ph(:)),sin(ph(:))];Cl=lc(C);keep=abs(Cl(:,1))<60&abs(Cl(:,2))<60;
+plot(ax,Cl(keep,1),Cl(keep,2),'-','Color',[.9 .55 0],'LineWidth',1.2);
+uL=lc(Ex.upperSeed);lL=lc(Ex.lowerSeed);plot(ax,[-60 60],[20 20],'-','Color',cU);plot(ax,[-60 60],[-20 -20],'-','Color',cL);plot(ax,[-60 60],[0 0],':','Color',[.4 .4 .4]);
+q=lc(XU);plot(ax,q(1),q(2),'o','Color',cU,'MarkerFaceColor',cU,'MarkerSize',6);q2=lc(XL);plot(ax,q2(1),q2(2),'s','Color',cL,'MarkerFaceColor',cL,'MarkerSize',6);
+plot(ax,0,0,'kp','MarkerFaceColor','y','MarkerSize',9);
+text(ax,q(1)+3,q(2)+6,sprintf('U*: s = %.4f мм',Ex.seedStationsUL(i,1)),'FontSize',7);text(ax,q2(1)+3,q2(2)-7,sprintf('L*: s = %.4f мм',Ex.seedStationsUL(i,2)),'FontSize',7);
+text(ax,3,-6,'точка колапсу (середня станція)','FontSize',7);axis(ax,'equal');xlim(ax,[-30 30]);ylim(ax,[-35 35]);box(ax,'on');
+xlabel(ax,'вздовж відрізка, мкм');ylabel(ax,'за нормаллю, мкм');legend(ax,{'коло 15-мм напрямної','верхній берег (+w)','нижній берег (−w)','осьова лінія'},'Location','southwest','FontSize',6);
+title(ax,sprintf('(а) до колапсу: Δs = %.2f мкм, |U*−L*| = %.2f мкм',1000*diff(Ex.seedStationsUL(i,[2 1])),1000*norm(XU-XL)),'FontWeight','normal','FontSize',7);
+ax=nexttile(tl);hold(ax,'on');Xa=Ex.coord3;wdw=1.2;e=all(abs(Xa(T0(:,1),:)-Xc)<2*wdw,2);
+triplot(T0(e,:),Xa(:,1),Xa(:,2),'Color',[.55 .55 .55],'LineWidth',.3);plot(ax,C(:,1),C(:,2),'-','Color',[.9 .55 0],'LineWidth',1);
+plot(ax,Xa(Ex.upperLipNodes,1),Xa(Ex.upperLipNodes,2),'o','Color',cU,'MarkerSize',4);plot(ax,Xa(Ex.lowerLipNodes,1),Xa(Ex.lowerLipNodes,2),'x','Color',cL,'MarkerSize',5);
+plot(ax,Xc(1),Xc(2),'kp','MarkerFaceColor','y','MarkerSize',9);axis(ax,'equal');xlim(ax,Xc(1)+[-wdw wdw]);ylim(ax,Xc(2)+[-wdw wdw]);box(ax,'on');xlabel(ax,'x, мм');ylabel(ax,'y, мм');
+title(ax,'(б) після колапсу: два різні вузли в одній точці; межа напрямної проходить через неї','FontWeight','normal','FontSize',7);
+save1(f,outDir,'LP2A2_7_vymushena_para_UA');
+% ------------------------------------------------------------------ 8 remaining failures (enlarged)
+fl={'C2_soft2_straight_S12',0.45,'(а) м’яке \{2\}, пряме продовження S12: голкоподібний T3 між колом напрямної і колом кільця 1';
+    'C1_soft1_straight_S20',0.45,'(б) м’яке \{1\}, пряме з S4, S20: нерівномірні хорди кільця 2 біля кола напрямної';
+    'C2_stiff13_straight_S10',0.45,'(в) жорсткі \{1,3\}, пряме продовження S10, щабель 0,45 мм: відношення сусідів'};
+f=figure('Visible','off','Color','w','Units','centimeters','Position',[0 0 17 6.5]);tl=tiledlayout(f,1,3,'TileSpacing','compact','Padding','compact');
+for q=1:3
+ rq=get(fl{q,1});Pq=rq.polyline_mm;Dq=g2_lp2a2_join(Pq,'ExpectedVertices',size(Pq,1),'ExpectedTangent',reshape(rq.tangent,1,2),'ExteriorOptions',[opts,{'SeedSpacing_mm',fl{q,2}}],'MaxT3Elements',40000);
+ tq=Pq(end,:);s=Dq.summary;
+ if q==1,c0=s.minAngleAt_mm;wd=1.5;elseif q==2,u=(cen(2,:)-tq)/norm(cen(2,:)-tq);c0=tq+15.25*u;wd=4;else,c0=s.maxRatioAt_mm;wd=6;end
+ ax=nexttile(tl);hold(ax,'on');X=Dq.X3;T=Dq.T3;e=all(abs(X(T(:,1),:)-c0)<1.5*wd,2);triplot(T(e,:),X(:,1),X(:,2),'Color',[.5 .5 .5],'LineWidth',.25);
+ for h=1:3,plot(ax,cen(h,1)+19.05*cos(th),cen(h,2)+19.05*sin(th),'-','Color',[.1 .5 .2],'LineWidth',.9);end
+ ph=linspace(0,2*pi,4000);plot(ax,tq(1)+15*cos(ph),tq(2)+15*sin(ph),'-','Color',[.9 .55 0],'LineWidth',.9);
+ if q~=2,plot(ax,c0(1),c0(2),'r*','MarkerSize',7);end
+ axis(ax,'equal');xlim(ax,c0(1)+[-wd wd]);ylim(ax,c0(2)+[-wd wd]);box(ax,'on');xlabel(ax,'x, мм');ylabel(ax,'y, мм');
+ title(ax,{fl{q,3},sprintf('мін. кут %.1f°, відн. %.2f',s.minAngle_deg,s.maxNeighborRatio)},'FontWeight','normal','FontSize',6);
 end
+save1(f,outDir,'LP2A2_8_zalyshkovi_vidmovy_UA');
+end
+
+function t=tip9(P),t=P(end,:);end
 
 function v=gf(s,f),if isfield(s,f)&&~isempty(s.(f)),v=double(s.(f));else,v=NaN;end,end
 function save1(f,o,n)
