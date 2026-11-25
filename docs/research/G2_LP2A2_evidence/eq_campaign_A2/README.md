@@ -14,6 +14,8 @@
 
 The independent audit confirmed it (`EQUIVALENT_CONFIRMED`). The read-only replay `g2_lp2a2_eq_verify` returned `VERIFY_HOLD`. The cause is a defect in that tool: an empty `cell` compared with an empty `double` from `jsondecode`. Its own recomputation agrees exactly with the stored records; see `verify/LP2A2_EQ_A2_REPLAY_DIAGNOSTIC.json`.
 
+**Replay closure (read-only, zero solves).** After the independent review (pull request 71, review 6063867614) a separate corrected verifier was run: `scripts/g2/lp2a2/closure/` (outside every historical source digest; own pins in `closure/CLOSURE_SOURCE_PINS.json`). Result `VERIFIED_V2` on the four existing record sets; the 24 campaign files are unchanged and match both committed references; the historical `g2_lp2a2_eq_verify` still returns `VERIFY_HOLD` on the same records, which is kept as history. No FEM, no GO, no re-pin, no archive written. See memorandum section 10 and `closure/`.
+
 The activation-A1 evidence in `../eq_campaign/` and its HOLD archive are unchanged. Campaign records (`outputs/g2_lp2a2_eq_v1/`, 24 files) are not in git. They are in the archive `NewMetacomp_G2_LP2A2_EQ_A2_Records_20261125.zip` (`96ed7a36…`, 62 members), kept on the internal SSD and on the removable USB drive.
 
 Absolute local paths are sanitized; see `SANITIZATION.json` in each folder. The activation-check and campaign logs were written as UTF-16LE by the launcher. They were converted to UTF-8 before sanitization; the originals are in the archive.
@@ -27,3 +29,4 @@ Absolute local paths are sanitized; see `SANITIZATION.json` in each folder. The 
 | `opening/` | Crack-face jump profiles, new family vs archived (interpolated), per solve |
 | `figures/` | LP2A2-EQ-1 (tolerance use), LP2A2-EQ-2 (opening difference); PNG 300 dpi and vector PDF |
 | `scripts_logs/` | All scripts and logs of this activation: activation checks, single campaign call, closure (post-revocation + replay + dump), replay diagnostic, opening export and figures, GO generator, pre-start wait loops |
+| `closure/` | Read-only verification closure: corrected replay `VERIFIED_V2` (`LP2A2_EQ_CLOSURE_VERIFY.json`), JSON round-trip and mutation tests 32/32 and 23/23 (`LP2A2_EQ_CLOSURE_TESTS.json`), final re-verification and file-set comparison (`LP2A2_EQ_CLOSURE_FINAL.json`), source pins of the new verifier, archive hashes (`ARCHIVE_UNCHANGED.json`), independent tolerance-use recheck, logs |
