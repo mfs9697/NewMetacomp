@@ -105,6 +105,21 @@
    "file": "lp2a_archive.py",
    "originalSHA256": "a64df541521ca313ba7ea6fe7014b9d7be15567ef969a5d96c1584ca18cb7d0b",
    "sanitizedSHA256": "a64df541521ca313ba7ea6fe7014b9d7be15567ef969a5d96c1584ca18cb7d0b"
+  },
+  {
+   "file": "LP2A_POST_REVOCATION.json",
+   "originalSHA256": "2d2bb62063f25dcc6cda85599059948ef30e19031232a2ddf6921c9ec3b6761f",
+   "sanitizedSHA256": "2d2bb62063f25dcc6cda85599059948ef30e19031232a2ddf6921c9ec3b6761f"
+  },
+  {
+   "file": "lp2a_post_revocation.m",
+   "originalSHA256": "f95ae4481d200fc506046320ebfb2abeaad9580b416022d1c3d9b2b619ed27ec",
+   "sanitizedSHA256": "427bd0b9612d94f1dfce415bf81d4ab1bde8de99e0a4761adfb969b69b25aa48"
+  },
+  {
+   "file": "lp2a_post_revocation.log",
+   "originalSHA256": "6909975fd9baf41fb910b03e3b4012b0698f7caa68a51a2a9fed7e1d47c0dd7c",
+   "sanitizedSHA256": "9475b45620e5343bbeec9d8294b54ff08ba298710c890f8d35dd62d0beabc362"
   }
  ]
 }

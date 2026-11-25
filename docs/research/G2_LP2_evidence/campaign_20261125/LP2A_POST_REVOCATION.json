@@ -1,0 +1,23 @@
+{
+  "schema": "NewMetacomp.G2.LP2A.PostRevocation.v1",
+  "sourceCommit": "ee4a28ad2ea42e6b977e9c1ad6ed6dcea49d6827",
+  "token": "G2LP2A|policy=093a546b9bae54d8fab0026420c8d85dced85f0e0e6ed212d597b3fd1aa6eec5|g2source=7e5683703bd104547ef5d013aa0253ad2819b59dc58693957e2d04b4707f0947|lp2source=357dfdcdb576d2866b9d1b41a14265300a14c30700d6475f995881041ba822ca|parents=0dcc572f42605fc39d005de2ebcbba243147128dee7621bb57a30f16ebdd76f6|cases=H,stiff13,soft2,soft1|states=S5-S8|maxSolves=16",
+  "probes": [
+    {
+      "caseId": "H",
+      "identifier": "G2LP2:HOLD_UNAUTHORIZED_STATE",
+      "message": "LP2-A is on scientific HOLD: no GO_LP2A record."
+    },
+    {
+      "caseId": "soft1",
+      "identifier": "G2LP2:HOLD_UNAUTHORIZED_STATE",
+      "message": "LP2-A is on scientific HOLD: no GO_LP2A record."
+    }
+  ],
+  "campaignFilesUnchanged": true,
+  "campaignFiles": 158,
+  "outputsListingUnchanged": true,
+  "gitClean": true,
+  "physicalSolves": 0,
+  "pass": true
+}
