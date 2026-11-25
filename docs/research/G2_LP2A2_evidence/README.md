@@ -24,6 +24,7 @@ Memorandum: [`../G2_LP2A2_MESH_QUALIFICATION_MEMO_UA.md`](../G2_LP2A2_MESH_QUALI
 | `eq/v2/LP2A2_PROTECTED_CHECK_v2.json` | 541 protected files, tree `20f2d54f…`, unchanged after the closeout | after `7282530` |
 | `LP2A2_PROTECTED_CHECK.json` | 541 protected files, tree `20f2d54f…`, identical to `LP2_PROTECTED_AFTER.json` of LP2-A1; 158 LP2-A1 run/ledger files unchanged | after `d3a8d8d` |
 | `figures/` | Ukrainian figures LP2A2-1…8 (PNG 300 dpi + vector PDF), `scripts/g2/lp2a2/lp2a2_figures.m` | `d3a8d8d` |
+| `eq_campaign/` | WP5 attempt `G2-LP2A2-EQ-001` under `GO_LP2A2_EQ` (PR #71 comment 7167996437): pre-activation checks, GO `91667cf`, dry validation, revocation `91718b0`, archive, post-revocation refusal. **HOLD before the first call** (`HOLD_LP2A2_EQ_ACTIVATION_BINDING_WINDOWS_CARET`: unquoted `git rev-parse HEAD^` is mangled by `cmd.exe`); 0 solves, no records. Report `../G2_LP2A2_EQ_DEMONSTRATION_REPORT_UA.md` | `4d3701e` (approved), GO `91667cf`, revocation `91718b0` |
 
 Current pins (after the review closeout): policy `matlab/g2/lp2a2/G2_LP2A2_EQ_POLICY_v1.json` `bc1f86e7…` (status `PREREGISTERED_NOT_AUTHORIZED`), LP2-A2 source digest `00c99e93…` (19 files), shared g2 `7e568370…` and LP2 `357dfdcd…` unchanged, contract evidence `84f518a6…`. Earlier pins (`d09f59b2…`/`f9c15e01…` with v1 evidence 24/24) are history.
 
