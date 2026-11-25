@@ -1,0 +1,120 @@
+{
+ "rule": "absolute local paths replaced by <repo> (execution clone), <worktree>, <scratch>, <user>; MATLAB startup path warnings removed; CRLF to LF",
+ "files": [
+  {
+   "file": "ACTIVATION_HASHCHECK.json",
+   "originalSHA256": "71a473112b34605f705fbb8f1eabe0f6022e279f528b3c7f42efd87bff1933e6",
+   "sanitizedSHA256": "9ea6a78eb8ca58490e809e9b694a465f4e786237cc6247e9161231e4264a1e33"
+  },
+  {
+   "file": "ACTIVATION_CHECKS.json",
+   "originalSHA256": "730fafbdc1690aca401d196fbf379e059caa0bef2d7d0245dbaf08ac4572c133",
+   "sanitizedSHA256": "730fafbdc1690aca401d196fbf379e059caa0bef2d7d0245dbaf08ac4572c133"
+  },
+  {
+   "file": "ACT_DIAGONAL_AUDIT.json",
+   "originalSHA256": "4b272884b6b89a738bfcfe07d9e55fba86343d4a83d2be5053094d10d5d3aec5",
+   "sanitizedSHA256": "4b272884b6b89a738bfcfe07d9e55fba86343d4a83d2be5053094d10d5d3aec5"
+  },
+  {
+   "file": "activation_checks.m",
+   "originalSHA256": "e470e559be18a80b1e04b807a30df3a2db6a792bf356d695f583c43fd5aff389",
+   "sanitizedSHA256": "654bac7952c92b3c9f1e01b905832707c880945d9210a830896d7c492c42251f"
+  },
+  {
+   "file": "activation_checks.log",
+   "originalSHA256": "07be931060cc3aad87837b45aca73a8b1f84dfebb5393861abb296b9cc039131",
+   "sanitizedSHA256": "f6bf3b1aaa0173afafa74bb00266420921342e3d8e51866831fd93528cf54686"
+  },
+  {
+   "file": "m5x6_campaign.m",
+   "originalSHA256": "c2ce3a8fa4e1edc7079ae7a2f6b70652eecd6ff2f5df6cd02417bb48c7b4a0c6",
+   "sanitizedSHA256": "13f4fadc1a343d10db3a86c80e19d4cc6e67332dbeecf1b7b52b6619bb70f942"
+  },
+  {
+   "file": "m5x6_campaign.log",
+   "originalSHA256": "2f88c4e34b4899ddc484320365d8b1af498a7c241dc85a81418cc5c376cfb6ae",
+   "sanitizedSHA256": "6ec03540f0d17b149e4498523c9453c625bc048ea9b0a941bdca2aea783fb2dc"
+  },
+  {
+   "file": "m5x6_campaign_precheck_refused.log",
+   "originalSHA256": "70e4b3f69857eac11074e8e2dd4bd21a34329e9984e84a2ed326b9db10faa890",
+   "sanitizedSHA256": "a59b2e0913d9df4ea8296ff63f4384ec91b88d366f80f133ce5ec2dc9121c183"
+  },
+  {
+   "file": "M5X6_CALLS.json",
+   "originalSHA256": "9b1c07c8a14a0c2230ba2ccfb13626895c164d3189d16a7b6cb6eed860ff7702",
+   "sanitizedSHA256": "9b1c07c8a14a0c2230ba2ccfb13626895c164d3189d16a7b6cb6eed860ff7702"
+  },
+  {
+   "file": "m5x6_verify_analyze.m",
+   "originalSHA256": "7549fa940fe8d96c09b5e3276b91b7ad1f8e6129ce816a3cd7ca155710692304",
+   "sanitizedSHA256": "1def85988c5cf4ca22208c1fd7a4ee3dc79557a1150c406c6d9f8932d077c712"
+  },
+  {
+   "file": "m5x6_verify_analyze.log",
+   "originalSHA256": "1b043421028df2888f0bf45d11690ac3397128db2bd715182fc799a7b0f7dbbe",
+   "sanitizedSHA256": "a27a06aeb28956ff45c8d386e01553f93ccd4830dd0220f6380a0a0974cff924"
+  },
+  {
+   "file": "M5X6_VERIFY_ONLY.json",
+   "originalSHA256": "73083e80ac868258b922c1431965d3db4faca2a6c0e7fc3f498b24d47df5b1fe",
+   "sanitizedSHA256": "73083e80ac868258b922c1431965d3db4faca2a6c0e7fc3f498b24d47df5b1fe"
+  },
+  {
+   "file": "M5X6_ANALYSIS.json",
+   "originalSHA256": "6729e4f5b5bba5119203341259a0e8bca784d50bd520f9f2d7f88161dfafc246",
+   "sanitizedSHA256": "6729e4f5b5bba5119203341259a0e8bca784d50bd520f9f2d7f88161dfafc246"
+  },
+  {
+   "file": "PROTECTED_BEFORE.json",
+   "originalSHA256": "e95fd84232205c74e37be98f0162890ab6749484de286414ddc938af1a4b162b",
+   "sanitizedSHA256": "bd3e48221a498bd13dd131f92fc53ab6ff99a378dd5b59f2f0cf7f27fec3ae8d"
+  },
+  {
+   "file": "PROTECTED_AFTER.json",
+   "originalSHA256": "e95fd84232205c74e37be98f0162890ab6749484de286414ddc938af1a4b162b",
+   "sanitizedSHA256": "bd3e48221a498bd13dd131f92fc53ab6ff99a378dd5b59f2f0cf7f27fec3ae8d"
+  },
+  {
+   "file": "M5X6_RUN_LEDGER_SHA256.json",
+   "originalSHA256": "55b2bbff5811255fe74d4a4a0b540cd8bb8f15178c660e976e9757d7c799dc2a",
+   "sanitizedSHA256": "3a8723d55db2d338b4dedeeb0e3e14e8e017e03f85837a528ab6c4000e4f0122"
+  },
+  {
+   "file": "M5X6_ARCHIVE_RECORD.json",
+   "originalSHA256": "737725998a46dd5aeeb58331d7cc45cf382ddde732bc3cded1d96c4849b5b0f0",
+   "sanitizedSHA256": "e02489b1f53bb7980a864eabe9c15640b1713b4ad413a40d29084bb4550a89cc"
+  },
+  {
+   "file": "activation_hashcheck.py",
+   "originalSHA256": "635c5dd0d3c6f654f5a77780f293b8a9a8763a35e0fddf92bddeb0a75d8773a9",
+   "sanitizedSHA256": "635c5dd0d3c6f654f5a77780f293b8a9a8763a35e0fddf92bddeb0a75d8773a9"
+  },
+  {
+   "file": "tree_hash.py",
+   "originalSHA256": "9babecb4eae207dc4b2ebcb99680c00c444a99e85e1573fd81a6d67fda38e2bd",
+   "sanitizedSHA256": "9babecb4eae207dc4b2ebcb99680c00c444a99e85e1573fd81a6d67fda38e2bd"
+  },
+  {
+   "file": "archive_m5x6.py",
+   "originalSHA256": "5607a4284cf3eee91e721c40386f15fb9b6cfd2f3a4d9700bd29a73b6840601f",
+   "sanitizedSHA256": "5607a4284cf3eee91e721c40386f15fb9b6cfd2f3a4d9700bd29a73b6840601f"
+  },
+  {
+   "file": "M5X6_POST_REVOCATION.json",
+   "originalSHA256": "91ac23b6e14aefa3b4a730d0b840be369302d130f124fba820a6ccf9826d1fef",
+   "sanitizedSHA256": "91ac23b6e14aefa3b4a730d0b840be369302d130f124fba820a6ccf9826d1fef"
+  },
+  {
+   "file": "post_revocation.m",
+   "originalSHA256": "df139ba63935940ec9b8d5457f98ded7549508e2b154a97ac9efff5614077e3d",
+   "sanitizedSHA256": "347ccbf5ac1240ced5b91474379888b723c06823af2285c8cb9da03bbce38dc2"
+  },
+  {
+   "file": "post_revocation.log",
+   "originalSHA256": "6dd4d9e8741c662fa9384d514a7463ec8e5c76c60a3550313e785a96edc3ef86",
+   "sanitizedSHA256": "8666be3fbed8a6d2250661cfa88b38e596feef1cd6728e434dd812c947b72428"
+  }
+ ]
+}

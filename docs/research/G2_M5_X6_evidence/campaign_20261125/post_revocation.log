@@ -1,0 +1,3 @@
+POSTREV X6-01 G2M5X6:HOLD_UNAUTHORIZED_STATE | M5-X6 is on scientific HOLD: no GO_M5_X6 record.
+POSTREV X6-06 G2M5X6:HOLD_UNAUTHORIZED_STATE | M5-X6 is on scientific HOLD: no GO_M5_X6 record.
+POSTREV_RESULT pass=1 listing=1 files=1 (42) git=1 commit=c894394e85ee6b79e4b8a721e219b22bda3d95e4

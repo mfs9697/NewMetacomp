@@ -1,0 +1,113 @@
+{
+  "schema": "NewMetacomp.G2.M5X6.VerifyOnly.v1",
+  "calls": [
+    {
+      "config": "X6-01",
+      "status": "REUSED_ZERO_SOLVE",
+      "computed": 0,
+      "reused": 1,
+      "mode": "VERIFY_ONLY",
+      "stateSHA256": "7eb021af53468a80516bb83b35afd0274a537a766230c5b71d5811b10f900a90",
+      "solutionSHA256": "167f1664ab29243dc87b1cb7648ff0683f02a0c4bba71525d247759753521da3",
+      "solutionInState": true,
+      "stateEqualsSolution": true,
+      "sifPass": true,
+      "auditPass": true
+    },
+    {
+      "config": "X6-02",
+      "status": "REUSED_ZERO_SOLVE",
+      "computed": 0,
+      "reused": 1,
+      "mode": "VERIFY_ONLY",
+      "stateSHA256": "f153b0b84901aefc1dcaf68a2baabbbc44930a55de2307124a604218384e0643",
+      "solutionSHA256": "a12376b3cb6481fed410454cd22ca2f7ba3889637ea5a5612829b2449e1719e7",
+      "solutionInState": true,
+      "stateEqualsSolution": true,
+      "sifPass": true,
+      "auditPass": true
+    },
+    {
+      "config": "X6-03",
+      "status": "REUSED_ZERO_SOLVE",
+      "computed": 0,
+      "reused": 1,
+      "mode": "VERIFY_ONLY",
+      "stateSHA256": "ba0c8afae1255de2abd2644663277b52500e0834a9947101e7ebdc77dffbded4",
+      "solutionSHA256": "754631dca966a92b731a016bf64c6e24daf20435d30be5dfa841628d9ec0ebb5",
+      "solutionInState": true,
+      "stateEqualsSolution": true,
+      "sifPass": true,
+      "auditPass": true
+    },
+    {
+      "config": "X6-04",
+      "status": "REUSED_ZERO_SOLVE",
+      "computed": 0,
+      "reused": 1,
+      "mode": "VERIFY_ONLY",
+      "stateSHA256": "e426dd7401657093aecc9fa6e4590182a0c5f4efd50a7a84a36cd3107c4021d1",
+      "solutionSHA256": "9dacf02893ad4d462038d1cf2deaca9d8b683fd6a494f0bc7d606efc1afd038c",
+      "solutionInState": true,
+      "stateEqualsSolution": true,
+      "sifPass": true,
+      "auditPass": true
+    },
+    {
+      "config": "X6-05",
+      "status": "REUSED_ZERO_SOLVE",
+      "computed": 0,
+      "reused": 1,
+      "mode": "VERIFY_ONLY",
+      "stateSHA256": "b40fe5f688c0c1c1ae1c5477bc68d9f8f799de03b43f53a07c87af13b3f31668",
+      "solutionSHA256": "0a590fbaa14c97e470b0b978faadd7b51c8c83908a6e45d5ad53a4379b66735d",
+      "solutionInState": true,
+      "stateEqualsSolution": true,
+      "sifPass": true,
+      "auditPass": true
+    },
+    {
+      "config": "X6-06",
+      "status": "REUSED_ZERO_SOLVE",
+      "computed": 0,
+      "reused": 1,
+      "mode": "VERIFY_ONLY",
+      "stateSHA256": "9fc12b8c1fcbc1280966090b818a9b76b17648990a81f716b79bbff9afd6dbd5",
+      "solutionSHA256": "fd4802c21fdce0cc06efc7e3ea5e3bd95f5bc1cf0e6e3ece1fc5402fb611b219",
+      "solutionInState": true,
+      "stateEqualsSolution": true,
+      "sifPass": true,
+      "auditPass": true
+    }
+  ],
+  "ledger": {
+    "integrityOK": true,
+    "closed": true,
+    "admits": [
+      "X6_01",
+      "X6_02",
+      "X6_03",
+      "X6_04",
+      "X6_05",
+      "X6_06"
+    ],
+    "holds": 0,
+    "resumes": 0,
+    "entries": [
+      "ADMIT_X6_01.mat",
+      "ADMIT_X6_02.mat",
+      "ADMIT_X6_03.mat",
+      "ADMIT_X6_04.mat",
+      "ADMIT_X6_05.mat",
+      "ADMIT_X6_06.mat",
+      "CLOSED.mat",
+      "RECEIPT.mat"
+    ],
+    "unchangedByVerify": true
+  },
+  "zeroSolves": true,
+  "allReusedVerifyOnly": true,
+  "allRecordsVerified": true,
+  "token": "G2M5X6|plan=e6153735e76b09382a24376002110f7f07485d27db12aaca09108419e43fea52|a1policy=312e1e005b9ca85d743b672115609d7b02bb2f6ebbbae09658c0cdf1d9a8a013|a1source=7e5683703bd104547ef5d013aa0253ad2819b59dc58693957e2d04b4707f0947|x6source=f21d7d44a2de33922dd766c226320cec0695252f24d5516908f500c3a8d8e6bb|meshes=9c3d0f4560da34216c674cf8af5a9f6782d28ab80ec86076f284e55278904ad8|configs=X6-01,X6-02,X6-03,X6-04,X6-05,X6-06|maxSolves=6",
+  "sourceCommit": "dbf1b8df98fd3ab255b5cb7547524e37b2f0608e"
+}

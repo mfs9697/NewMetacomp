@@ -1,0 +1,14 @@
+ACT token=1 RAM=7.126 commit=2baa641a299cdb92edeab826db7c6fcff5be97a7
+M5X6_DIAGONAL H_B9     pass=1 files=1/1 edi=1 verifier=1 material=1 mesh=19/19
+M5X6_DIAGONAL stiff13_B9 pass=1 files=1/1 edi=1 verifier=1 material=1 mesh=19/19
+M5X6_DIAGONAL soft2_B9 pass=1 files=1/1 edi=1 verifier=1 material=1 mesh=19/19
+M5X6_DIAGONAL soft1_B9 pass=1 files=1/1 edi=1 verifier=1 material=1 mesh=19/19
+ACT_DRY X6-01 DRY_READY_NO_FEM pass=1 active=8180
+ACT_DRY X6-02 DRY_READY_NO_FEM pass=1 active=0
+ACT_DRY X6-03 DRY_READY_NO_FEM pass=1 active=4102
+ACT_DRY X6-04 DRY_READY_NO_FEM pass=1 active=0
+ACT_DRY X6-05 DRY_READY_NO_FEM pass=1 active=4090
+ACT_DRY X6-06 DRY_READY_NO_FEM pass=1 active=0
+ACT_DIR_COUNT entries=50 unique=50 (g2_a1_fixed_path_v1)
+ACT_PROBE G2M5X6:HOLD_UNAUTHORIZED_STATE | M5-X6 is on scientific HOLD: no GO_M5_X6 record. | listingUnchanged=1 run=0 ledger=0 pass=1
+ACT_RESULT allPass=1 physicalSolves=0 RAMend=6.880

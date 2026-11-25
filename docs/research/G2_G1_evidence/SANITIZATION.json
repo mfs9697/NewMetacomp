@@ -1,0 +1,30 @@
+{
+ "rule": "absolute local paths replaced by <repo> (execution clone), <worktree>, <scratch>, <user>; MATLAB startup path warnings removed; CRLF to LF",
+ "files": [
+  {
+   "file": "G1_FIELD_EVIDENCE.json",
+   "originalSHA256": "24dd4663b625ea72b8a635ca1a4bbf85074e6830f693c44e33a210db1f62249e",
+   "sanitizedSHA256": "24dd4663b625ea72b8a635ca1a4bbf85074e6830f693c44e33a210db1f62249e"
+  },
+  {
+   "file": "run_g1.m",
+   "originalSHA256": "301994dd8ba702d29b7cd4aa5b5feb0b72264084f164f4ac541169504431a7a8",
+   "sanitizedSHA256": "5e3bbc10540c19fb8a20b2b328c06ecc47851ab59bea2eb46dd05afa9b9550d2"
+  },
+  {
+   "file": "run_g1.log",
+   "originalSHA256": "44cbaec7fbf86ec4635ff128dc7f1ff83d125ccf947d9b50ff4e98bdb6786d03",
+   "sanitizedSHA256": "149a7459251466d45a13d6d6c35a7a1d463cf5f0a8784e54e1ff9dd9a417dd0f"
+  },
+  {
+   "file": "run_fig.m",
+   "originalSHA256": "dbb9a1ddf54959cee3f94cd0dd5fd158d0d1ef1f89965903350be1ed53720540",
+   "sanitizedSHA256": "ee7f15fc533dd02fe027d215b8b87a7a9551a1713bda7a1d8b0a0b3d8d366519"
+  },
+  {
+   "file": "run_fig.log",
+   "originalSHA256": "7a1647928f7617c71d6784fb9a8a84170fc1652928380622355ed3c601dc67e5",
+   "sanitizedSHA256": "46c6b48caba89fd8496856afbb1979eafbd65ce4b119f20003444b8f059df43c"
+  }
+ ]
+}
