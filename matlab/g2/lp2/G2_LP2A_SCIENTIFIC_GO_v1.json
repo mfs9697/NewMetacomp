@@ -1,0 +1,20 @@
+{
+ "decision": "GO_LP2A_PHYSICAL",
+ "reviewStatus": "REVIEWED_ACCEPTED",
+ "scientificReviewer": "Principal investigator (explicit approval in research conversation, recorded in this PR)",
+ "reviewURL": "https://github.com/mfs9697/NewMetacomp/pull/70#issuecomment-7159870558",
+ "approvedPolicySHA256": "093a546b9bae54d8fab0026420c8d85dced85f0e0e6ed212d597b3fd1aa6eec5",
+ "approvedG2SourceSHA256": "7e5683703bd104547ef5d013aa0253ad2819b59dc58693957e2d04b4707f0947",
+ "approvedLP2SourceSHA256": "357dfdcdb576d2866b9d1b41a14265300a14c30700d6475f995881041ba822ca",
+ "approvedParentManifestSHA256": "0dcc572f42605fc39d005de2ebcbba243147128dee7621bb57a30f16ebdd76f6",
+ "approvedToken": "G2LP2A|policy=093a546b9bae54d8fab0026420c8d85dced85f0e0e6ed212d597b3fd1aa6eec5|g2source=7e5683703bd104547ef5d013aa0253ad2819b59dc58693957e2d04b4707f0947|lp2source=357dfdcdb576d2866b9d1b41a14265300a14c30700d6475f995881041ba822ca|parents=0dcc572f42605fc39d005de2ebcbba243147128dee7621bb57a30f16ebdd76f6|cases=H,stiff13,soft2,soft1|states=S5-S8|maxSolves=16",
+ "approvedCases": ["H", "stiff13", "soft2", "soft1"],
+ "maxStateIndex": 8,
+ "maxSolves": 16,
+ "revocationRequired": true,
+ "contractEvidenceFile": "docs/research/G2_LP2_evidence/qualification_v2/LP2A_CONTRACT.json",
+ "contractEvidenceSHA256": "34fedbdaa7c4ca681ec47cf95dc51209411902759a87177174cbb09c3ca421dc",
+ "approvedRunName": "run_lp2a_s5_s8_v1",
+ "campaignId": "G2-LP2A-001",
+ "campaignScope": "LP2A_S5_S8_MAX16"
+}
