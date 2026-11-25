@@ -1,0 +1,25 @@
+% Exact nominal coordinates (mm); new editorial schematic, not an experiment image.
+% Sources: G2_SPECIMEN1_1990_GEOMETRY.json and G2_MATERIAL_POLICY_v1.json.
+\begin{tikzpicture}[x=0.265mm,y=0.265mm,line width=0.5pt,>=stealth,font=\small]
+  \draw (0,0) rectangle (508,203.2);
+  \foreach \y/\i in {69.85/1,120.65/2,171.45/3}{
+    \draw[dashed] (152.4,\y) circle[radius=19.05];
+    \draw (152.4,\y) circle[radius=6.35];
+    \node[anchor=west] at (176,\y) {$\i$};
+  }
+  \draw[very thick] (101.6,0)--(101.6,25.4);
+  \fill (101.6,25.4) circle[radius=1.5];
+  \draw[->] (70,42)--(100,25.4);
+  \node[anchor=east] at (70,42) {$a_0$};
+  \draw (25.4,0)--(14,-14)--(36.8,-14)--cycle;
+  \draw (482.6,0)--(471.2,-11)--(494,-11)--cycle;
+  \draw (478,-15) circle[radius=4] (487,-15) circle[radius=4];
+  \node[above right] at (25.4,0) {$A$};
+  \node[above left] at (482.6,0) {$C$};
+  \draw[->,thick] (254,235)--(254,203.2) node[pos=0,above] {$P$};
+  \draw[<->] (0,-30)--(508,-30) node[midway,fill=white] {$508$};
+  \draw[<->] (530,0)--(530,203.2) node[midway,fill=white,rotate=90] {$203{,}2$};
+  \draw[->] (0,0)--(44,0) node[above] {$x$};
+  \draw[->] (0,0)--(0,44) node[right] {$y$};
+  \node[below left] at (0,0) {$O$};
+\end{tikzpicture}
