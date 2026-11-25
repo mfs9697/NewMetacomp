@@ -1,0 +1,96 @@
+{
+  "schema": "NewMetacomp.G2.LP2A.Qualification.v2",
+  "status": "LP2A_PREFLIGHT_PASS_SCIENTIFIC_HOLD",
+  "sourceCommit": "8d49759de931d2cba9b5c3daeb7ed38d598b0b44",
+  "policySHA256": "093a546b9bae54d8fab0026420c8d85dced85f0e0e6ed212d597b3fd1aa6eec5",
+  "g2SourceSHA256": "7e5683703bd104547ef5d013aa0253ad2819b59dc58693957e2d04b4707f0947",
+  "lp2SourceSHA256": "357dfdcdb576d2866b9d1b41a14265300a14c30700d6475f995881041ba822ca",
+  "lp2SourceLines": [
+    "g2_lp2_admit_hook.m 56b79912d82537d3a0c9f7ff910fb21924915411f9d9701427d572c0a923eb79",
+    "g2_lp2_analyze.m b7af568717758c0f60ad0baa2402acefcf87bc92ff99d028cf8454dc39c6cc59",
+    "g2_lp2_campaign_tests.m 560e22fc103ca014bc08f074f0df1f2d92633303bd67f9826e4645272a0cd646",
+    "g2_lp2_chain.m 199a05c64f71ba4cf6dfc4dabbf9bbb57eb75c1c46a52fb206dfd4926245d26e",
+    "g2_lp2_classify.m a3d2674ed0de6df9c15bbca6a72c547822a231bd0d88aaa7e2eca6921cc9a4d1",
+    "g2_lp2_context.m 19f7447785ef81a586b6975b6e0b7ffa8e7ece1db0bf3563a6982b2f2378452e",
+    "g2_lp2_contract.m 636446101f0091f20cf9f70c18a5eabfa3dba7afc62a800d8681779927f58d56",
+    "g2_lp2_failure_class.m 10ac5af413172ed677f37ff8a379b0e4c1bc00e089951b27ebafb13806918d39",
+    "g2_lp2_forecast.m c88be5fd037d687fdb62887c7da6d321d342698dfd49f21294668d8be8d700d9",
+    "g2_lp2_go_validate.m 602522707d3d9a23c3511fe2809ddc5e6e8a3541c8b4a4f711b1f6cfe7c0f69b",
+    "g2_lp2_mesh_probe.m e9b73234717c03be9a377cebc381e5ef74393435c272565c097f389d4d5e9c08",
+    "g2_lp2_mesh_scan.m d519c65642c16da02a217fc5d49b1e4e31e4c9098e8b2bae1b8099cab7afdd9d",
+    "g2_lp2_qualify.m e6609042192c3155bb2c6a831519b147a4e73bf169ec0e3095ef4aa5c08187b3",
+    "g2_lp2_run.m c661c24d43152392202e7bddabcf160d2a5ea9c700e2442a9372c89e5e34b5e6",
+    "g2_lp2_s5_geometry.m 2a1bf6a64cd346e628c8a4c638e093c4163c0c0425d317fcb24bccb23080bf48",
+    "g2_lp2_scientific_gate.m bca971d3af89d28d40ac63041cea643928d021c1d770c9965a04cde05220731a",
+    "g2_lp2_verify.m f80aec0d0168b6fd5afef1550448503bdd6330d5d163aab665a208c942d4cccc"
+  ],
+  "parentManifestSHA256": "0dcc572f42605fc39d005de2ebcbba243147128dee7621bb57a30f16ebdd76f6",
+  "token": "G2LP2A|policy=093a546b9bae54d8fab0026420c8d85dced85f0e0e6ed212d597b3fd1aa6eec5|g2source=7e5683703bd104547ef5d013aa0253ad2819b59dc58693957e2d04b4707f0947|lp2source=357dfdcdb576d2866b9d1b41a14265300a14c30700d6475f995881041ba822ca|parents=0dcc572f42605fc39d005de2ebcbba243147128dee7621bb57a30f16ebdd76f6|cases=H,stiff13,soft2,soft1|states=S5-S8|maxSolves=16",
+  "preflight": {
+    "pass": true,
+    "status": "PREFLIGHT_READY_NOT_LP0_QUALIFIED",
+    "cause": "",
+    "physicalSolves": 0,
+    "meshBuilds": 0,
+    "policySHA256": "1cf5a76ded840b0758343a1b935b299041e779ec6332c3b7cb0b6dfba1e2af43",
+    "release": "R2023a",
+    "pdeAvailable": true,
+    "freePhysicalRAM_GiB": 7.7268486022949219,
+    "matlabProcesses": 1,
+    "currentPID": 11464,
+    "sourceCommit": "8d49759de931d2cba9b5c3daeb7ed38d598b0b44",
+    "dirtySource": "",
+    "token": "G2LP0|policy=1cf5a76ded840b0758343a1b935b299041e779ec6332c3b7cb0b6dfba1e2af43|source=8d49759de931d2cba9b5c3daeb7ed38d598b0b44|geometry=179b777f4a26caf1482ad470d78f5f802bc24456b9a1b6fc6b641eccf2b66008|cases=H,stiff13,soft2,soft1|maxState=4"
+  },
+  "contractPassed": 107,
+  "contractTotal": 107,
+  "negativeTests": 56,
+  "inheritedMeshEvidence": {
+    "dependencies": [
+      "g2_lp2_forecast.m",
+      "g2_lp2_classify.m",
+      "g2_lp2_s5_geometry.m",
+      "g2_lp2_mesh_probe.m",
+      "g2_lp2_mesh_scan.m"
+    ],
+    "dependenciesUnchanged": true,
+    "g2SourceUnchanged": true,
+    "parentsUnchanged": true,
+    "probeSHA256": "5eff852185260fe8e69e0df4d17d2cde9997de6494d70f89090f072f5264622a",
+    "scanSHA256": "36302703bdd37a1e7baaa97a72288829fe7475ad170f6c33d5647172afea56f6",
+    "meshesRebuilt": false
+  },
+  "original": {
+    "sourceCommit": "86a88fa0ddff8058ed886b2b207996a4b6292823",
+    "token": "G2LP2A|policy=f9d0ce0c406180df8727c37b3b40cf51cfdf2dd907cbd1ed8dc396c5f47903d6|g2source=7e5683703bd104547ef5d013aa0253ad2819b59dc58693957e2d04b4707f0947|lp2source=f114a61976298b233f9af16bee770dccc11c7faf224b9b65a195a87c89b0bee5|parents=0dcc572f42605fc39d005de2ebcbba243147128dee7621bb57a30f16ebdd76f6|cases=H,stiff13,soft2,soft1|states=S5-S8|maxSolves=16",
+    "policySHA256": "f9d0ce0c406180df8727c37b3b40cf51cfdf2dd907cbd1ed8dc396c5f47903d6",
+    "lp2SourceSHA256": "f114a61976298b233f9af16bee770dccc11c7faf224b9b65a195a87c89b0bee5",
+    "contract": "70/70"
+  },
+  "protectedFilesHashed": 541,
+  "protectedUnchanged": true,
+  "goPresent": false,
+  "physicalSolves": 0,
+  "ramObservations": [
+    {
+      "stage": "context",
+      "freeGiB": 7.542266845703125
+    },
+    {
+      "stage": "protected_before",
+      "freeGiB": 7.4158668518066406
+    },
+    {
+      "stage": "s4_s5_recheck",
+      "freeGiB": 7.2544059753417969
+    },
+    {
+      "stage": "contract",
+      "freeGiB": 7.2227668762207031
+    },
+    {
+      "stage": "protected_after",
+      "freeGiB": 7.2092857360839844
+    }
+  ]
+}
