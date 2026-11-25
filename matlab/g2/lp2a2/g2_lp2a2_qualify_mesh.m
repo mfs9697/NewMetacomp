@@ -1,4 +1,4 @@
-function Q=g2_lp2a2_qualify_mesh(execRepo,testSetFile,outFile,rowFilter)
+function Q=g2_lp2a2_qualify_mesh(execRepo,testSetFile,outFile,rowFilter,mesher)
 %G2_LP2A2_QUALIFY_MESH  Geometry-only qualification of the LP2-A2 paired-bank mesher (zero FEM).
 % For every row of the PREDECLARED test set (g2_lp2a2_testset) and with the unchanged LP1 options
 % (TipGuideRadius 15 mm, TipGuideHface 1.5 mm, plate-edge vertices, 40,000-T3 budget):
@@ -9,10 +9,13 @@ function Q=g2_lp2a2_qualify_mesh(execRepo,testSetFile,outFile,rowFilter)
 %       difference, kink angles, distance to the tip and to the tip-guide crossing).
 % Group A rows are also compared with the archived accepted S8 MESH.mat (old-mesher determinism and
 % mesh-family differences). Meshes are held in memory only; nothing is written except outFile.
+% mesher: 'join' (attempt 1: g2_lp2a2_join, seed spacing 0.45 mm) or 'ladder' (attempt 2:
+% g2_lp2a2_mesh, predeclared seed-spacing ladder 0.45/0.40/0.50/0.35 mm).
 here=fileparts(mfilename('fullpath'));
 g2=fullfile(execRepo,'matlab','g2');addpath(g2,'-begin');addpath(fullfile(g2,'vendor_p010_a14d8872'),'-begin');addpath(here,'-begin');
 lp=jsondecode(fileread(fullfile(g2,'G2_LP1_POLICY_v2.json')));Ca=struct('repo',execRepo,'here',g2,'policy',lp);
 opts={'BottomVertices_mm',[25.4 482.6],'TopVertices_mm',254,'TipGuideRadius_mm',15,'TipGuideHface_mm',1.5};
+if nargin<5||isempty(mesher),mesher='join';end
 TS=jsondecode(fileread(testSetFile));rowsIn=TS.rows;if ~iscell(rowsIn),rowsIn=num2cell(rowsIn);end
 if nargin>3&&~isempty(rowFilter),rowsIn=rowsIn(cellfun(@(r)any(strcmp(r.id,rowFilter)),rowsIn));end
 base=fullfile(execRepo,'outputs','g2_lp2a_paths_v1','run_lp2a_s5_s8_v1');
@@ -24,7 +27,12 @@ cen=lp.geometry.centres_mm;r.tip_mm=P(end,:);r.tipToRingCircle_mm=vecnorm(cen-P(
  % ---------------- NEW mesher
  n=struct('pass',false);tm=tic;
  try
-  [~,D]=evalc('g2_lp2a2_join(P,''ExpectedVertices'',N,''ExpectedTangent'',t,''ExteriorOptions'',opts,''MaxT3Elements'',40000)');
+  if strcmp(mesher,'ladder')
+   [~,D]=evalc('g2_lp2a2_mesh(P,''ExpectedVertices'',N,''ExpectedTangent'',t,''ExteriorOptions'',opts,''MaxT3Elements'',40000)');
+   n.seedRung=D.seedRung;n.seedSpacing_mm=D.seedSpacing_mm;n.ladder=D.ladder;
+  else
+   [~,D]=evalc('g2_lp2a2_join(P,''ExpectedVertices'',N,''ExpectedTangent'',t,''ExteriorOptions'',opts,''MaxT3Elements'',40000)');
+  end
   n.joinSeconds=toc(tm);n.stage=D.stage;n.message=D.message;
   if isfield(D,'exterior')&&isfield(D.exterior,'summary'),n.exterior=pick(D.exterior.summary,{'seedsPerSegment','seedCount','guideCrossingPairs','guideCrossingSegments', ...
     'seedStationMismatchRegular_mm','seedStationMismatchForced_mm','minSeedSpacing_mm','seedMaxDeviation_mm','lipNodesPerBank','lipPairs', ...
@@ -77,7 +85,7 @@ cen=lp.geometry.centres_mm;r.tip_mm=P(end,:);r.tipToRingCircle_mm=vecnorm(cen-P(
  out{i}=r;
  fprintf('LP2A2_QUAL %-28s N=%-2d new=%d %-34s T3=%-6s pair=%s | old=%d %s\n',r.id,N,n.pass,n.stage,num2str(getf(n,'T3')),num2str(isfield(n,'pairing')&&n.pairing.pass),o.pass,o.stage);
 end
-Q=struct('schema','NewMetacomp.G2.LP2A2.MeshQualification.v1','physicalSolves',0,'meshesSaved',0,'testSetSHA256',lower(g2_sha256_file(testSetFile)), ...
+Q=struct('schema','NewMetacomp.G2.LP2A2.MeshQualification.v1','physicalSolves',0,'meshesSaved',0,'testSetSHA256',lower(g2_sha256_file(testSetFile)),'mesher',mesher, ...
  'options',struct('TipGuideRadius_mm',15,'TipGuideHface_mm',1.5,'MaxT3Elements',40000,'lipHedge_mm',.45),'rows',{out});
 if nargin>2&&~isempty(outFile),fid=fopen(outFile,'w');fwrite(fid,jsonencode(Q,'PrettyPrint',true),'char');fclose(fid);end
 end

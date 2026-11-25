@@ -48,6 +48,7 @@ addParameter(ip,'Hmin_mm',.12,@(v)isnumeric(v)&&isscalar(v)&&v>0);
 addParameter(ip,'Hmax_mm',6,@(v)isnumeric(v)&&isscalar(v)&&v>0);
 addParameter(ip,'Hgrad',1.12,@(v)isnumeric(v)&&isscalar(v)&&v>=1&&v<=1.3);
 addParameter(ip,'Hedge_mm',.45,@(v)isnumeric(v)&&isscalar(v)&&v>0);
+addParameter(ip,'SeedSpacing_mm',[],@(v)isempty(v)||(isnumeric(v)&&isscalar(v)&&v>0));   % LP2-A2: default = Hedge_mm
 addParameter(ip,'GuideHface_mm',1.5,@(v)isnumeric(v)&&isscalar(v)&&v>0);
 addParameter(ip,'PairStationTolerance_mm',.15,@(v)isnumeric(v)&&isscalar(v)&&v>0);
 addParameter(ip,'MaxT3Elements',40000,@(v)isnumeric(v)&&isscalar(v)&&v>0);
@@ -92,7 +93,8 @@ upperPath=[P(1,:)+w*nn(1,:);P(2:N-1,:)+w*m;EL];
 lowerPath=[P(1,:)-w*nn(1,:);P(2:N-1,:)-w*m;ER];
 Cc=[P(1:N-1,:);entry];Sc=[0;cumsum(vecnorm(diff(Cc),2,2))];
 % ---- LP2-A2: common paired stations on every bank segment (explicit CAD seeds)
-mSeg=ceil(diff(Sc)/o.Hedge_mm);
+hs=o.SeedSpacing_mm;if isempty(hs),hs=o.Hedge_mm;end
+mSeg=ceil(diff(Sc)/hs-1e-9);R.summary.seedSpacing_mm=hs;
 circ=[hx,hy,3*hr];if tg,circ=[circ;tip,Rg];end
 SP=seedPairs(upperPath,lowerPath,mSeg,circ);
 R.summary.seedsPerSegment=mSeg(:).';R.summary.guideCrossingPairs=SP.nForced;R.summary.guideCrossingSegments=SP.forcedSeg(:).';
