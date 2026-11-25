@@ -18,7 +18,7 @@ assert(strcmp(Eo.stage,'HOLD_LIP_STATIONS'),'LP2A2Fig:Repro','Original failure n
 F=Eo.figure;bad=find(F.cntU~=F.cntL,1);
 f=figure('Visible','off','Color','w','Units','centimeters','Position',[0 0 17 7.5]);tl=tiledlayout(f,1,2,'TileSpacing','compact','Padding','compact');
 ax=nexttile(tl);b=bar(ax,1:numel(F.cntU),[F.cntU,F.cntL],'grouped');b(1).FaceColor=cU;b(2).FaceColor=cL;
-set(ax,'YScale','log');xlabel(ax,'відрізок осьової лінії k');ylabel(ax,'внутрішні вузли на березі');
+xlabel(ax,'відрізок осьової лінії k');ylabel(ax,'внутрішні вузли на березі');
 legend(ax,{'верхній берег','нижній берег'},'Location','northeast');title(ax,sprintf('(а) успадкований генератор: %s / %s',mat2str(F.cntU.'),mat2str(F.cntL.')),'FontWeight','normal','FontSize',7);box(ax,'on');
 ax=nexttile(tl);hold(ax,'on');k=bad;in=@(s)s>=F.Sc(k)-1e-9&s<=F.Sc(k+1)+1e-9;
 su=F.sU(in(F.sU));sl=F.sL(in(F.sL));
@@ -31,9 +31,9 @@ save1(f,outDir,'LP2A2_1_vidmova_parovannia_UA');
 D9=g2_lp2a2_join(P9,'ExpectedVertices',N9,'ExpectedTangent',t9,'ExteriorOptions',opts,'MaxT3Elements',40000);assert(D9.pass,'LP2A2Fig:New','%s',D9.stage);
 E=D9.exterior;sUL=E.seedStationsUL;fr=E.seedForced;seg=E.seedSegment;kf=E.summary.guideCrossingSegments(1);
 f=figure('Visible','off','Color','w','Units','centimeters','Position',[0 0 17 7.5]);tl=tiledlayout(f,1,2,'TileSpacing','compact','Padding','compact');
-ax=nexttile(tl);ms=E.summary.seedsPerSegment(:)-1;b=bar(ax,1:numel(ms),[ms,ms],'grouped');b(1).FaceColor=cU;b(2).FaceColor=cL;set(ax,'YScale','log');
+ax=nexttile(tl);ms=E.summary.seedsPerSegment(:)-1;b=bar(ax,1:numel(ms),[ms,ms],'grouped');b(1).FaceColor=cU;b(2).FaceColor=cL;
 xlabel(ax,'відрізок осьової лінії k');ylabel(ax,'внутрішні зерна на березі');legend(ax,{'верхній берег','нижній берег'},'Location','northeast');
-title(ax,sprintf('(а) LP2-A2: m_k = ⌈L_k/0,45⌉, однаково на обох берегах (%d пар)',E.summary.seedCount),'FontWeight','normal','FontSize',7);box(ax,'on');
+title(ax,sprintf('(а) LP2-A2: m_k = ceil(L_k/0,45) на обох берегах; %d пар',E.summary.seedCount),'FontWeight','normal','FontSize',7);box(ax,'on');
 ax=nexttile(tl);hold(ax,'on');sel=seg==kf|[false;seg(1:end-1)==kf];s0=min(sUL(sel,1));
 for i=find(sel)'
  c=[.6 .6 .6];if fr(i),c=[.9 .55 0];end
@@ -41,7 +41,7 @@ for i=find(sel)'
 end
 plot(ax,sUL(sel,1)-s0,+1+0*sUL(sel,1),'o','Color',cU,'MarkerFaceColor',cU,'MarkerSize',4);plot(ax,sUL(sel,2)-s0,-1+0*sUL(sel,2),'s','Color',cL,'MarkerFaceColor',cL,'MarkerSize',4);
 ylim(ax,[-2 2]);yticks(ax,[-1 1]);yticklabels(ax,{'нижній','верхній'});xlabel(ax,sprintf('станція вздовж відрізка %d, мм',kf));
-title(ax,sprintf('(б) пари за індексом зерна; помаранчевим — перетин напрямної (Δs = %.4f мм)',E.summary.seedStationMismatchForced_mm),'FontWeight','normal','FontSize',7);box(ax,'on');
+title(ax,sprintf('(б) пари за індексом; помаранчева — перетин напрямної, Δs = %.4f мм',E.summary.seedStationMismatchForced_mm),'FontWeight','normal','FontSize',7);box(ax,'on');
 save1(f,outDir,'LP2A2_2_stantsii_UA');
 % ------------------------------------------------------------------ 3 after collapse at a kink
 X=D9.X3;T=D9.T3;up=D9.upperBankT6;lo=D9.lowerBankT6;kp=P9(4,:);
