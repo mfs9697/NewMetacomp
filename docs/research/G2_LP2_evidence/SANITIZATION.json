@@ -1,0 +1,40 @@
+{
+ "rule": "absolute local paths replaced by <repo> (execution clone), <worktree>, <scratch>, <user>; MATLAB startup path warnings removed; CRLF to LF",
+ "files": [
+  {
+   "file": "LP2A_CONTRACT.json",
+   "originalSHA256": "ffcd126b5ae0ffec2019e856a8e163cc058618b383dd5ede44a66ccecdb959b1",
+   "sanitizedSHA256": "ffcd126b5ae0ffec2019e856a8e163cc058618b383dd5ede44a66ccecdb959b1"
+  },
+  {
+   "file": "LP2A_QUALIFICATION.json",
+   "originalSHA256": "75841b3f5c1bfff4189acfa124f2712524a32a9f2444c71c7c5ca6d1cfb1a80a",
+   "sanitizedSHA256": "75841b3f5c1bfff4189acfa124f2712524a32a9f2444c71c7c5ca6d1cfb1a80a"
+  },
+  {
+   "file": "LP2_S5_GEOMETRY.json",
+   "originalSHA256": "f8e129385a242e965443695230732c3073991dac0f78188056da0c647e11278e",
+   "sanitizedSHA256": "f8e129385a242e965443695230732c3073991dac0f78188056da0c647e11278e"
+  },
+  {
+   "file": "LP2_MESH_PROBE.json",
+   "originalSHA256": "5eff852185260fe8e69e0df4d17d2cde9997de6494d70f89090f072f5264622a",
+   "sanitizedSHA256": "5eff852185260fe8e69e0df4d17d2cde9997de6494d70f89090f072f5264622a"
+  },
+  {
+   "file": "LP2_MESH_SCAN.json",
+   "originalSHA256": "36302703bdd37a1e7baaa97a72288829fe7475ad170f6c33d5647172afea56f6",
+   "sanitizedSHA256": "36302703bdd37a1e7baaa97a72288829fe7475ad170f6c33d5647172afea56f6"
+  },
+  {
+   "file": "lp2a_qualify.m",
+   "originalSHA256": "47ba59c0172f4cdf0e1166be2cbb46688a9fd57497c6a779ac86c2f6a6d4bf26",
+   "sanitizedSHA256": "8bf009b9c1d5aeba113542273c8d72678d87e847b640c44156f40f0da1a20e7e"
+  },
+  {
+   "file": "lp2a_qualify.log",
+   "originalSHA256": "cd60154e7a49345687565f09e09abfcb472a2397f302b423750ecbd99007457b",
+   "sanitizedSHA256": "915da5b48de8b7c40d22982e761d4ed55151f4143d66ce59c7110aaeca5414e7"
+  }
+ ]
+}

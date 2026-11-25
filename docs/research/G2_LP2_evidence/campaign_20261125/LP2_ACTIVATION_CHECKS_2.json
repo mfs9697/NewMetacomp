@@ -1,0 +1,82 @@
+{
+  "ramInsideMATLAB_GiB": 8.5275230407714844,
+  "release": "2023a",
+  "pde": true,
+  "preflight": {
+    "pass": true,
+    "status": "PREFLIGHT_READY_NOT_LP0_QUALIFIED",
+    "cause": "",
+    "physicalSolves": 0,
+    "meshBuilds": 0,
+    "policySHA256": "1cf5a76ded840b0758343a1b935b299041e779ec6332c3b7cb0b6dfba1e2af43",
+    "release": "R2023a",
+    "pdeAvailable": true,
+    "freePhysicalRAM_GiB": 8.4722747802734375,
+    "matlabProcesses": 1,
+    "currentPID": 13264,
+    "sourceCommit": "3b7bdb93928c056984763978471d49fbc3b745b1",
+    "dirtySource": "",
+    "token": "G2LP0|policy=1cf5a76ded840b0758343a1b935b299041e779ec6332c3b7cb0b6dfba1e2af43|source=3b7bdb93928c056984763978471d49fbc3b745b1|geometry=179b777f4a26caf1482ad470d78f5f802bc24456b9a1b6fc6b641eccf2b66008|cases=H,stiff13,soft2,soft1|maxState=4"
+  },
+  "tokenEqualsApproved": true,
+  "dry": [
+    {
+      "case": "H",
+      "status": "DRY_READY_NO_FEM",
+      "computed": 0,
+      "tokenOK": true,
+      "parentStateSHA256": "3e13276c751aa71ea7a39ce0b40de291fa00b241bfd4caa5407992f3d95262db",
+      "S5tip": [
+        106.93272250534098,
+        44.659905315099628
+      ],
+      "S5class": "MATRIX_ADVANCE"
+    },
+    {
+      "case": "stiff13",
+      "status": "DRY_READY_NO_FEM",
+      "computed": 0,
+      "tokenOK": true,
+      "parentStateSHA256": "2e88c6f43212048ce48ad9969a426a250b6ea031169829b9e32dd076a30965cb",
+      "S5tip": [
+        107.1557497480221,
+        44.59721634800799
+      ],
+      "S5class": "MATRIX_ADVANCE"
+    },
+    {
+      "case": "soft2",
+      "status": "DRY_READY_NO_FEM",
+      "computed": 0,
+      "tokenOK": true,
+      "parentStateSHA256": "fd4a25727617f000507e6490349367aceaea990bc808974c83963aa15c1287f9",
+      "S5tip": [
+        107.04158625847126,
+        44.628615672668019
+      ],
+      "S5class": "MATRIX_ADVANCE"
+    },
+    {
+      "case": "soft1",
+      "status": "DRY_READY_NO_FEM",
+      "computed": 0,
+      "tokenOK": true,
+      "parentStateSHA256": "cecb046ceac2f5d617deae0d5d0f6b2462b86982600af3493b6383cd307a95d7",
+      "S5tip": [
+        106.57091154428718,
+        44.75587274840673
+      ],
+      "S5class": "MATRIX_ADVANCE"
+    }
+  ],
+  "probe": {
+    "identifier": "G2LP2:HOLD_UNAUTHORIZED_STATE",
+    "message": "LP2-A is on scientific HOLD: no GO_LP2A record.",
+    "outputsUnchanged": true,
+    "gitClean": true,
+    "runFolder": false,
+    "ledger": false,
+    "pass": true
+  },
+  "allMatlabChecksPass": true
+}

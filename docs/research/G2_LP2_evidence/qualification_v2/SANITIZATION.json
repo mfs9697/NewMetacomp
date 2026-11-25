@@ -1,0 +1,30 @@
+{
+ "rule": "absolute local paths replaced by <repo> (execution clone), <worktree>, <scratch>, <user>; MATLAB startup path warnings removed; CRLF to LF",
+ "files": [
+  {
+   "file": "LP2A_CONTRACT.json",
+   "originalSHA256": "34fedbdaa7c4ca681ec47cf95dc51209411902759a87177174cbb09c3ca421dc",
+   "sanitizedSHA256": "34fedbdaa7c4ca681ec47cf95dc51209411902759a87177174cbb09c3ca421dc"
+  },
+  {
+   "file": "LP2A_QUALIFICATION.json",
+   "originalSHA256": "53f4fbff4e997840375eb0af2e5316b01ab57baa8e184a4b189f1f1990f0b68c",
+   "sanitizedSHA256": "53f4fbff4e997840375eb0af2e5316b01ab57baa8e184a4b189f1f1990f0b68c"
+  },
+  {
+   "file": "LP2_S5_GEOMETRY_recheck.json",
+   "originalSHA256": "f8e129385a242e965443695230732c3073991dac0f78188056da0c647e11278e",
+   "sanitizedSHA256": "f8e129385a242e965443695230732c3073991dac0f78188056da0c647e11278e"
+  },
+  {
+   "file": "lp2a_requalify_v2.m",
+   "originalSHA256": "78bca94dbff1c6ed859e0881759a9ece1d91030c43a8563b7823466048ada401",
+   "sanitizedSHA256": "8bf009b9c1d5aeba113542273c8d72678d87e847b640c44156f40f0da1a20e7e"
+  },
+  {
+   "file": "lp2a_requalify_v2.log",
+   "originalSHA256": "6667689804cbbb0ccac8225b8c6bee4b8c26b47dcc0dad27bdd4a075a05040e2",
+   "sanitizedSHA256": "222893e30b228ff1003417e9628532b827828cf4b054b6932b96197974ddc9f7"
+  }
+ ]
+}

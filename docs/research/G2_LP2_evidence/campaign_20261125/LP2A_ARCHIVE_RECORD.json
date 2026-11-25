@@ -1,0 +1,12 @@
+{
+ "archive": "NewMetacomp_G2_LP2A_Records_20261125.zip",
+ "sha256": "82740133111dab52723f24cfb49a84b25cd115bae411be0dd347c9fd313397ee",
+ "bytes": 44116318,
+ "members": 172,
+ "runAndLedgerFiles": 158,
+ "manifestSHA256": "54afc4249316da911fa3f030e0e542cb4ebd1ef8a6a855be693bf9557232116d",
+ "localCopyVerified": true,
+ "offDeviceCopyVerified": true,
+ "localLocation": "<user>/Documents/NewMetacomp_LP1_archive_backup/",
+ "offDeviceLocation": "removable USB NTFS drive D: (General UDisk, physically separate from the internal SSD C:)"
+}

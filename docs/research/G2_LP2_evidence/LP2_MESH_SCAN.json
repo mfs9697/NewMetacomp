@@ -1,0 +1,827 @@
+{
+  "schema": "NewMetacomp.G2.LP2.MeshScan.v1",
+  "label": "MESH_ONLY_SYNTHETIC",
+  "physicalSolves": 0,
+  "rows": [
+    {
+      "caseId": "H",
+      "scenario": "frozenMTS",
+      "state": 6,
+      "vertices": 8,
+      "pass": true,
+      "stage": "KINKED_PROTECTED_MESH_JOIN_PASS",
+      "detail": "Joined; the independent kink-aware audit is still required.",
+      "T3": 29427
+    },
+    {
+      "caseId": "H",
+      "scenario": "frozenMTS",
+      "state": 7,
+      "vertices": 9,
+      "pass": true,
+      "stage": "KINKED_PROTECTED_MESH_JOIN_PASS",
+      "detail": "Joined; the independent kink-aware audit is still required.",
+      "T3": 29677
+    },
+    {
+      "caseId": "H",
+      "scenario": "frozenMTS",
+      "state": 8,
+      "vertices": 10,
+      "pass": true,
+      "stage": "KINKED_PROTECTED_MESH_JOIN_PASS",
+      "detail": "Joined; the independent kink-aware audit is still required.",
+      "T3": 29869
+    },
+    {
+      "caseId": "H",
+      "scenario": "frozenMTS",
+      "state": 9,
+      "vertices": 11,
+      "pass": true,
+      "stage": "KINKED_PROTECTED_MESH_JOIN_PASS",
+      "detail": "Joined; the independent kink-aware audit is still required.",
+      "T3": 30047
+    },
+    {
+      "caseId": "H",
+      "scenario": "frozenMTS",
+      "state": 10,
+      "vertices": 12,
+      "pass": true,
+      "stage": "KINKED_PROTECTED_MESH_JOIN_PASS",
+      "detail": "Joined; the independent kink-aware audit is still required.",
+      "T3": 30265
+    },
+    {
+      "caseId": "H",
+      "scenario": "frozenMTS",
+      "state": 11,
+      "vertices": 13,
+      "pass": false,
+      "stage": "HOLD_KINKED_EXTERIOR",
+      "detail": "HOLD_LIP_STATIONS Lip nodes U=143 L=144, per-segment [50 8 7 8 8 8 8 8 8 8 8 1] / [50 8 8 8 8 8 8 8 8 8 8 1], vertices 13/13, gaps 0.521/0.521 mm.",
+      "T3": null
+    },
+    {
+      "caseId": "H",
+      "scenario": "straight",
+      "state": 6,
+      "vertices": 8,
+      "pass": true,
+      "stage": "KINKED_PROTECTED_MESH_JOIN_PASS",
+      "detail": "Joined; the independent kink-aware audit is still required.",
+      "T3": 29431
+    },
+    {
+      "caseId": "H",
+      "scenario": "straight",
+      "state": 7,
+      "vertices": 9,
+      "pass": true,
+      "stage": "KINKED_PROTECTED_MESH_JOIN_PASS",
+      "detail": "Joined; the independent kink-aware audit is still required.",
+      "T3": 29639
+    },
+    {
+      "caseId": "H",
+      "scenario": "straight",
+      "state": 8,
+      "vertices": 10,
+      "pass": true,
+      "stage": "KINKED_PROTECTED_MESH_JOIN_PASS",
+      "detail": "Joined; the independent kink-aware audit is still required.",
+      "T3": 29825
+    },
+    {
+      "caseId": "H",
+      "scenario": "straight",
+      "state": 9,
+      "vertices": 11,
+      "pass": false,
+      "stage": "HOLD_KINKED_EXTERIOR",
+      "detail": "HOLD_LIP_STATIONS Lip nodes U=125 L=126, per-segment [50 7 8 8 8 8 8 8 8 1] / [50 8 8 8 8 8 8 8 8 1], vertices 11/11, gaps 0.521/0.521 mm.",
+      "T3": null
+    },
+    {
+      "caseId": "H",
+      "scenario": "straight",
+      "state": 10,
+      "vertices": 12,
+      "pass": true,
+      "stage": "KINKED_PROTECTED_MESH_JOIN_PASS",
+      "detail": "Joined; the independent kink-aware audit is still required.",
+      "T3": 30261
+    },
+    {
+      "caseId": "H",
+      "scenario": "straight",
+      "state": 11,
+      "vertices": 13,
+      "pass": true,
+      "stage": "KINKED_PROTECTED_MESH_JOIN_PASS",
+      "detail": "Joined; the independent kink-aware audit is still required.",
+      "T3": 30431
+    },
+    {
+      "caseId": "H",
+      "scenario": "straight",
+      "state": 12,
+      "vertices": 14,
+      "pass": false,
+      "stage": "HOLD_KINKED_EXTERIOR",
+      "detail": "HOLD_LIP_STATIONS Lip nodes U=152 L=153, per-segment [50 8 8 8 7 8 8 8 8 8 8 8 1] / [50 8 8 8 8 8 8 8 8 8 8 8 1], vertices 14/14, gaps 0.521/0.521 mm.",
+      "T3": null
+    },
+    {
+      "caseId": "H",
+      "scenario": "straight",
+      "state": 13,
+      "vertices": 15,
+      "pass": true,
+      "stage": "KINKED_PROTECTED_MESH_JOIN_PASS",
+      "detail": "Joined; the independent kink-aware audit is still required.",
+      "T3": 30869
+    },
+    {
+      "caseId": "H",
+      "scenario": "straight",
+      "state": 14,
+      "vertices": 16,
+      "pass": false,
+      "stage": "HOLD_KINKED_EXTERIOR",
+      "detail": "HOLD_LIP_STATIONS Lip nodes U=170 L=171, per-segment [50 8 8 8 8 7 8 8 8 8 8 8 8 8 1] / [50 8 8 8 8 8 8 8 8 8 8 8 8 8 1], vertices 16/16, gaps 0.521/0.521 mm.",
+      "T3": null
+    },
+    {
+      "caseId": "H",
+      "scenario": "straight",
+      "state": 15,
+      "vertices": 17,
+      "pass": false,
+      "stage": "HOLD_KINKED_EXTERIOR",
+      "detail": "HOLD_LIP_STATIONS Lip nodes U=175 L=180, per-segment [50 7 8 7 7 7 7 8 8 8 8 8 8 8 8 1] / [50 8 8 8 8 8 8 8 8 8 8 8 8 8 8 1], vertices 17/17, gaps 0.521/0.521 mm.",
+      "T3": null
+    },
+    {
+      "caseId": "H",
+      "scenario": "straight",
+      "state": 16,
+      "vertices": 18,
+      "pass": false,
+      "stage": "HOLD_KINKED_EXTERIOR",
+      "detail": "HOLD_LIP_STATIONS Lip nodes U=185 L=189, per-segment [50 8 7 7 7 7 8 8 8 8 8 8 8 8 8 8 1] / [50 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 1], vertices 18/18, gaps 0.521/0.521 mm.",
+      "T3": null
+    },
+    {
+      "caseId": "H",
+      "scenario": "straight",
+      "state": 17,
+      "vertices": 19,
+      "pass": false,
+      "stage": "HOLD_KINKED_EXTERIOR",
+      "detail": "HOLD_LIP_STATIONS Lip nodes U=194 L=198, per-segment [50 8 7 8 7 7 8 7 8 8 8 8 8 8 8 8 8 1] / [50 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 1], vertices 19/19, gaps 0.521/0.521 mm.",
+      "T3": null
+    },
+    {
+      "caseId": "H",
+      "scenario": "straight",
+      "state": 18,
+      "vertices": 20,
+      "pass": false,
+      "stage": "HOLD_KINKED_EXTERIOR",
+      "detail": "HOLD_LIP_STATIONS Lip nodes U=204 L=207, per-segment [50 8 8 8 7 7 8 7 8 8 8 8 8 8 8 8 8 8 1] / [50 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 1], vertices 20/20, gaps 0.521/0.521 mm.",
+      "T3": null
+    },
+    {
+      "caseId": "H",
+      "scenario": "straight",
+      "state": 19,
+      "vertices": 21,
+      "pass": false,
+      "stage": "HOLD_KINKED_EXTERIOR",
+      "detail": "HOLD_LIP_STATIONS Lip nodes U=212 L=216, per-segment [50 8 8 8 7 7 8 7 7 8 8 8 8 8 8 8 8 8 8 1] / [50 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 1], vertices 21/21, gaps 0.521/0.521 mm.",
+      "T3": null
+    },
+    {
+      "caseId": "stiff13",
+      "scenario": "frozenMTS",
+      "state": 6,
+      "vertices": 8,
+      "pass": true,
+      "stage": "KINKED_PROTECTED_MESH_JOIN_PASS",
+      "detail": "Joined; the independent kink-aware audit is still required.",
+      "T3": 29453
+    },
+    {
+      "caseId": "stiff13",
+      "scenario": "frozenMTS",
+      "state": 7,
+      "vertices": 9,
+      "pass": true,
+      "stage": "KINKED_PROTECTED_MESH_JOIN_PASS",
+      "detail": "Joined; the independent kink-aware audit is still required.",
+      "T3": 29655
+    },
+    {
+      "caseId": "stiff13",
+      "scenario": "frozenMTS",
+      "state": 8,
+      "vertices": 10,
+      "pass": true,
+      "stage": "KINKED_PROTECTED_MESH_JOIN_PASS",
+      "detail": "Joined; the independent kink-aware audit is still required.",
+      "T3": 29845
+    },
+    {
+      "caseId": "stiff13",
+      "scenario": "frozenMTS",
+      "state": 9,
+      "vertices": 11,
+      "pass": true,
+      "stage": "KINKED_PROTECTED_MESH_JOIN_PASS",
+      "detail": "Joined; the independent kink-aware audit is still required.",
+      "T3": 30017
+    },
+    {
+      "caseId": "stiff13",
+      "scenario": "frozenMTS",
+      "state": 10,
+      "vertices": 12,
+      "pass": false,
+      "stage": "HOLD_KINKED_EXTERIOR",
+      "detail": "HOLD_LIP_STATIONS Lip nodes U=134 L=135, per-segment [50 7 8 8 8 8 8 8 8 8 1] / [50 8 8 8 8 8 8 8 8 8 1], vertices 12/12, gaps 0.521/0.521 mm.",
+      "T3": null
+    },
+    {
+      "caseId": "stiff13",
+      "scenario": "frozenMTS",
+      "state": 11,
+      "vertices": 13,
+      "pass": false,
+      "stage": "HOLD_KINKED_EXTERIOR",
+      "detail": "HOLD_LIP_STATIONS Lip nodes U=142 L=144, per-segment [50 7 7 8 8 8 8 8 8 8 8 1] / [50 8 8 8 8 8 8 8 8 8 8 1], vertices 13/13, gaps 0.521/0.521 mm.",
+      "T3": null
+    },
+    {
+      "caseId": "stiff13",
+      "scenario": "straight",
+      "state": 6,
+      "vertices": 8,
+      "pass": true,
+      "stage": "KINKED_PROTECTED_MESH_JOIN_PASS",
+      "detail": "Joined; the independent kink-aware audit is still required.",
+      "T3": 29451
+    },
+    {
+      "caseId": "stiff13",
+      "scenario": "straight",
+      "state": 7,
+      "vertices": 9,
+      "pass": true,
+      "stage": "KINKED_PROTECTED_MESH_JOIN_PASS",
+      "detail": "Joined; the independent kink-aware audit is still required.",
+      "T3": 29623
+    },
+    {
+      "caseId": "stiff13",
+      "scenario": "straight",
+      "state": 8,
+      "vertices": 10,
+      "pass": true,
+      "stage": "KINKED_PROTECTED_MESH_JOIN_PASS",
+      "detail": "Joined; the independent kink-aware audit is still required.",
+      "T3": 29859
+    },
+    {
+      "caseId": "stiff13",
+      "scenario": "straight",
+      "state": 9,
+      "vertices": 11,
+      "pass": true,
+      "stage": "KINKED_PROTECTED_MESH_JOIN_PASS",
+      "detail": "Joined; the independent kink-aware audit is still required.",
+      "T3": 30031
+    },
+    {
+      "caseId": "stiff13",
+      "scenario": "straight",
+      "state": 10,
+      "vertices": 12,
+      "pass": false,
+      "stage": "HOLD_KINKED_EXTERIOR",
+      "detail": "HOLD_LIP_STATIONS Lip nodes U=134 L=135, per-segment [50 8 7 8 8 8 8 8 8 8 1] / [50 8 8 8 8 8 8 8 8 8 1], vertices 12/12, gaps 0.521/0.521 mm.",
+      "T3": null
+    },
+    {
+      "caseId": "stiff13",
+      "scenario": "straight",
+      "state": 11,
+      "vertices": 13,
+      "pass": false,
+      "stage": "HOLD_KINKED_EXTERIOR",
+      "detail": "HOLD_LIP_STATIONS Lip nodes U=143 L=144, per-segment [50 7 8 8 8 8 8 8 8 8 8 1] / [50 8 8 8 8 8 8 8 8 8 8 1], vertices 13/13, gaps 0.521/0.521 mm.",
+      "T3": null
+    },
+    {
+      "caseId": "stiff13",
+      "scenario": "straight",
+      "state": 12,
+      "vertices": 14,
+      "pass": false,
+      "stage": "HOLD_KINKED_EXTERIOR",
+      "detail": "HOLD_LIP_STATIONS Lip nodes U=151 L=153, per-segment [50 7 7 8 8 8 8 8 8 8 8 8 1] / [50 8 8 8 8 8 8 8 8 8 8 8 1], vertices 14/14, gaps 0.521/0.521 mm.",
+      "T3": null
+    },
+    {
+      "caseId": "stiff13",
+      "scenario": "straight",
+      "state": 13,
+      "vertices": 15,
+      "pass": false,
+      "stage": "HOLD_KINKED_EXTERIOR",
+      "detail": "HOLD_LIP_STATIONS Lip nodes U=160 L=162, per-segment [50 8 8 7 7 8 8 8 8 8 8 8 8 1] / [50 8 8 8 8 8 8 8 8 8 8 8 8 1], vertices 15/15, gaps 0.521/0.521 mm.",
+      "T3": null
+    },
+    {
+      "caseId": "stiff13",
+      "scenario": "straight",
+      "state": 14,
+      "vertices": 16,
+      "pass": false,
+      "stage": "HOLD_KINKED_EXTERIOR",
+      "detail": "HOLD_LIP_STATIONS Lip nodes U=170 L=171, per-segment [50 8 8 7 8 8 8 8 8 8 8 8 8 8 1] / [50 8 8 8 8 8 8 8 8 8 8 8 8 8 1], vertices 16/16, gaps 0.521/0.521 mm.",
+      "T3": null
+    },
+    {
+      "caseId": "stiff13",
+      "scenario": "straight",
+      "state": 15,
+      "vertices": 17,
+      "pass": false,
+      "stage": "HOLD_KINKED_EXTERIOR",
+      "detail": "HOLD_LIP_STATIONS Lip nodes U=179 L=180, per-segment [50 8 8 8 7 8 8 8 8 8 8 8 8 8 8 1] / [50 8 8 8 8 8 8 8 8 8 8 8 8 8 8 1], vertices 17/17, gaps 0.521/0.521 mm.",
+      "T3": null
+    },
+    {
+      "caseId": "stiff13",
+      "scenario": "straight",
+      "state": 16,
+      "vertices": 18,
+      "pass": false,
+      "stage": "HOLD_KINKED_EXTERIOR",
+      "detail": "HOLD_LIP_STATIONS Lip nodes U=187 L=189, per-segment [50 7 8 8 8 7 8 8 8 8 8 8 8 8 8 8 1] / [50 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 1], vertices 18/18, gaps 0.521/0.521 mm.",
+      "T3": null
+    },
+    {
+      "caseId": "stiff13",
+      "scenario": "straight",
+      "state": 17,
+      "vertices": 19,
+      "pass": false,
+      "stage": "HOLD_KINKED_EXTERIOR",
+      "detail": "HOLD_LIP_STATIONS Lip nodes U=196 L=198, per-segment [50 7 8 8 8 7 8 8 8 8 8 8 8 8 8 8 8 1] / [50 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 1], vertices 19/19, gaps 0.521/0.521 mm.",
+      "T3": null
+    },
+    {
+      "caseId": "stiff13",
+      "scenario": "straight",
+      "state": 18,
+      "vertices": 20,
+      "pass": false,
+      "stage": "HOLD_KINKED_EXTERIOR",
+      "detail": "HOLD_LIP_STATIONS Lip nodes U=203 L=207, per-segment [50 7 7 8 8 8 8 7 7 8 8 8 8 8 8 8 8 8 1] / [50 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 1], vertices 20/20, gaps 0.521/0.521 mm.",
+      "T3": null
+    },
+    {
+      "caseId": "stiff13",
+      "scenario": "straight",
+      "state": 19,
+      "vertices": 21,
+      "pass": false,
+      "stage": "HOLD_KINKED_EXTERIOR",
+      "detail": "HOLD_LIP_STATIONS Lip nodes U=213 L=216, per-segment [50 8 8 8 7 8 8 7 7 8 8 8 8 8 8 8 8 8 8 1] / [50 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 1], vertices 21/21, gaps 0.521/0.521 mm.",
+      "T3": null
+    },
+    {
+      "caseId": "soft2",
+      "scenario": "frozenMTS",
+      "state": 6,
+      "vertices": 8,
+      "pass": true,
+      "stage": "KINKED_PROTECTED_MESH_JOIN_PASS",
+      "detail": "Joined; the independent kink-aware audit is still required.",
+      "T3": 29481
+    },
+    {
+      "caseId": "soft2",
+      "scenario": "frozenMTS",
+      "state": 7,
+      "vertices": 9,
+      "pass": true,
+      "stage": "KINKED_PROTECTED_MESH_JOIN_PASS",
+      "detail": "Joined; the independent kink-aware audit is still required.",
+      "T3": 29653
+    },
+    {
+      "caseId": "soft2",
+      "scenario": "frozenMTS",
+      "state": 8,
+      "vertices": 10,
+      "pass": true,
+      "stage": "KINKED_PROTECTED_MESH_JOIN_PASS",
+      "detail": "Joined; the independent kink-aware audit is still required.",
+      "T3": 29853
+    },
+    {
+      "caseId": "soft2",
+      "scenario": "frozenMTS",
+      "state": 9,
+      "vertices": 11,
+      "pass": true,
+      "stage": "KINKED_PROTECTED_MESH_JOIN_PASS",
+      "detail": "Joined; the independent kink-aware audit is still required.",
+      "T3": 30047
+    },
+    {
+      "caseId": "soft2",
+      "scenario": "frozenMTS",
+      "state": 10,
+      "vertices": 12,
+      "pass": false,
+      "stage": "HOLD_KINKED_EXTERIOR",
+      "detail": "HOLD_LIP_STATIONS Lip nodes U=134 L=135, per-segment [50 7 8 8 8 8 8 8 8 8 1] / [50 8 8 8 8 8 8 8 8 8 1], vertices 12/12, gaps 0.521/0.521 mm.",
+      "T3": null
+    },
+    {
+      "caseId": "soft2",
+      "scenario": "frozenMTS",
+      "state": 11,
+      "vertices": 13,
+      "pass": false,
+      "stage": "HOLD_KINKED_EXTERIOR",
+      "detail": "HOLD_LIP_STATIONS Lip nodes U=143 L=144, per-segment [50 8 8 7 8 8 8 8 8 8 8 1] / [50 8 8 8 8 8 8 8 8 8 8 1], vertices 13/13, gaps 0.521/0.521 mm.",
+      "T3": null
+    },
+    {
+      "caseId": "soft2",
+      "scenario": "straight",
+      "state": 6,
+      "vertices": 8,
+      "pass": true,
+      "stage": "KINKED_PROTECTED_MESH_JOIN_PASS",
+      "detail": "Joined; the independent kink-aware audit is still required.",
+      "T3": 29423
+    },
+    {
+      "caseId": "soft2",
+      "scenario": "straight",
+      "state": 7,
+      "vertices": 9,
+      "pass": true,
+      "stage": "KINKED_PROTECTED_MESH_JOIN_PASS",
+      "detail": "Joined; the independent kink-aware audit is still required.",
+      "T3": 29643
+    },
+    {
+      "caseId": "soft2",
+      "scenario": "straight",
+      "state": 8,
+      "vertices": 10,
+      "pass": true,
+      "stage": "KINKED_PROTECTED_MESH_JOIN_PASS",
+      "detail": "Joined; the independent kink-aware audit is still required.",
+      "T3": 29843
+    },
+    {
+      "caseId": "soft2",
+      "scenario": "straight",
+      "state": 9,
+      "vertices": 11,
+      "pass": false,
+      "stage": "HOLD_KINKED_EXTERIOR",
+      "detail": "HOLD_LIP_STATIONS Lip nodes U=125 L=126, per-segment [50 7 8 8 8 8 8 8 8 1] / [50 8 8 8 8 8 8 8 8 1], vertices 11/11, gaps 0.521/0.521 mm.",
+      "T3": null
+    },
+    {
+      "caseId": "soft2",
+      "scenario": "straight",
+      "state": 10,
+      "vertices": 12,
+      "pass": true,
+      "stage": "KINKED_PROTECTED_MESH_JOIN_PASS",
+      "detail": "Joined; the independent kink-aware audit is still required.",
+      "T3": 30249
+    },
+    {
+      "caseId": "soft2",
+      "scenario": "straight",
+      "state": 11,
+      "vertices": 13,
+      "pass": false,
+      "stage": "HOLD_KINKED_EXTERIOR",
+      "detail": "HOLD_LIP_STATIONS Lip nodes U=143 L=144, per-segment [50 7 8 8 8 8 8 8 8 8 8 1] / [50 8 8 8 8 8 8 8 8 8 8 1], vertices 13/13, gaps 0.521/0.521 mm.",
+      "T3": null
+    },
+    {
+      "caseId": "soft2",
+      "scenario": "straight",
+      "state": 12,
+      "vertices": 14,
+      "pass": false,
+      "stage": "HOLD_KINKED_EXTERIOR",
+      "detail": "HOLD_LIP_STATIONS Lip nodes U=152 L=153, per-segment [50 8 8 7 8 8 8 8 8 8 8 8 1] / [50 8 8 8 8 8 8 8 8 8 8 8 1], vertices 14/14, gaps 0.521/0.521 mm.",
+      "T3": null
+    },
+    {
+      "caseId": "soft2",
+      "scenario": "straight",
+      "state": 13,
+      "vertices": 15,
+      "pass": false,
+      "stage": "HOLD_KINKED_EXTERIOR",
+      "detail": "HOLD_LIP_STATIONS Lip nodes U=161 L=162, per-segment [50 8 8 8 8 7 8 8 8 8 8 8 8 1] / [50 8 8 8 8 8 8 8 8 8 8 8 8 1], vertices 15/15, gaps 0.521/0.521 mm.",
+      "T3": null
+    },
+    {
+      "caseId": "soft2",
+      "scenario": "straight",
+      "state": 14,
+      "vertices": 16,
+      "pass": false,
+      "stage": "HOLD_KINKED_EXTERIOR",
+      "detail": "HOLD_LIP_STATIONS Lip nodes U=169 L=171, per-segment [50 7 8 8 8 7 8 8 8 8 8 8 8 8 1] / [50 8 8 8 8 8 8 8 8 8 8 8 8 8 1], vertices 16/16, gaps 0.521/0.521 mm.",
+      "T3": null
+    },
+    {
+      "caseId": "soft2",
+      "scenario": "straight",
+      "state": 15,
+      "vertices": 17,
+      "pass": false,
+      "stage": "HOLD_KINKED_EXTERIOR",
+      "detail": "HOLD_LIP_STATIONS Lip nodes U=179 L=180, per-segment [50 8 8 8 8 7 8 8 8 8 8 8 8 8 8 1] / [50 8 8 8 8 8 8 8 8 8 8 8 8 8 8 1], vertices 17/17, gaps 0.521/0.521 mm.",
+      "T3": null
+    },
+    {
+      "caseId": "soft2",
+      "scenario": "straight",
+      "state": 16,
+      "vertices": 18,
+      "pass": false,
+      "stage": "HOLD_KINKED_EXTERIOR",
+      "detail": "HOLD_LIP_STATIONS Lip nodes U=187 L=189, per-segment [50 7 8 7 8 8 8 8 8 8 8 8 8 8 8 8 1] / [50 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 1], vertices 18/18, gaps 0.521/0.521 mm.",
+      "T3": null
+    },
+    {
+      "caseId": "soft2",
+      "scenario": "straight",
+      "state": 17,
+      "vertices": 19,
+      "pass": false,
+      "stage": "HOLD_KINKED_EXTERIOR",
+      "detail": "HOLD_LIP_STATIONS Lip nodes U=195 L=198, per-segment [50 8 8 8 7 8 7 7 8 8 8 8 8 8 8 8 8 1] / [50 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 1], vertices 19/19, gaps 0.521/0.521 mm.",
+      "T3": null
+    },
+    {
+      "caseId": "soft2",
+      "scenario": "straight",
+      "state": 18,
+      "vertices": 20,
+      "pass": false,
+      "stage": "HOLD_KINKED_EXTERIOR",
+      "detail": "HOLD_LIP_STATIONS Lip nodes U=202 L=207, per-segment [50 7 8 8 8 7 7 7 7 8 8 8 8 8 8 8 8 8 1] / [50 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 1], vertices 20/20, gaps 0.521/0.521 mm.",
+      "T3": null
+    },
+    {
+      "caseId": "soft2",
+      "scenario": "straight",
+      "state": 19,
+      "vertices": 21,
+      "pass": false,
+      "stage": "HOLD_KINKED_EXTERIOR",
+      "detail": "HOLD_LIP_STATIONS Lip nodes U=213 L=216, per-segment [50 7 8 8 8 8 8 8 7 8 7 8 8 8 8 8 8 8 8 1] / [50 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 1], vertices 21/21, gaps 0.521/0.521 mm.",
+      "T3": null
+    },
+    {
+      "caseId": "soft1",
+      "scenario": "frozenMTS",
+      "state": 6,
+      "vertices": 8,
+      "pass": true,
+      "stage": "KINKED_PROTECTED_MESH_JOIN_PASS",
+      "detail": "Joined; the independent kink-aware audit is still required.",
+      "T3": 29459
+    },
+    {
+      "caseId": "soft1",
+      "scenario": "frozenMTS",
+      "state": 7,
+      "vertices": 9,
+      "pass": true,
+      "stage": "KINKED_PROTECTED_MESH_JOIN_PASS",
+      "detail": "Joined; the independent kink-aware audit is still required.",
+      "T3": 29689
+    },
+    {
+      "caseId": "soft1",
+      "scenario": "frozenMTS",
+      "state": 8,
+      "vertices": 10,
+      "pass": true,
+      "stage": "KINKED_PROTECTED_MESH_JOIN_PASS",
+      "detail": "Joined; the independent kink-aware audit is still required.",
+      "T3": 29863
+    },
+    {
+      "caseId": "soft1",
+      "scenario": "frozenMTS",
+      "state": 9,
+      "vertices": 11,
+      "pass": false,
+      "stage": "HOLD_KINKED_EXTERIOR",
+      "detail": "HOLD_LIP_STATIONS Lip nodes U=125 L=126, per-segment [50 7 8 8 8 8 8 8 8 1] / [50 8 8 8 8 8 8 8 8 1], vertices 11/11, gaps 0.521/0.521 mm.",
+      "T3": null
+    },
+    {
+      "caseId": "soft1",
+      "scenario": "frozenMTS",
+      "state": 10,
+      "vertices": 12,
+      "pass": false,
+      "stage": "HOLD_KINKED_EXTERIOR",
+      "detail": "HOLD_LIP_STATIONS Lip nodes U=134 L=135, per-segment [50 7 8 8 8 8 8 8 8 8 1] / [50 8 8 8 8 8 8 8 8 8 1], vertices 12/12, gaps 0.521/0.521 mm.",
+      "T3": null
+    },
+    {
+      "caseId": "soft1",
+      "scenario": "frozenMTS",
+      "state": 11,
+      "vertices": 13,
+      "pass": false,
+      "stage": "HOLD_KINKED_EXTERIOR",
+      "detail": "HOLD_LIP_STATIONS Lip nodes U=142 L=144, per-segment [50 7 7 8 8 8 8 8 8 8 8 1] / [50 8 8 8 8 8 8 8 8 8 8 1], vertices 13/13, gaps 0.521/0.521 mm.",
+      "T3": null
+    },
+    {
+      "caseId": "soft1",
+      "scenario": "frozenMTS",
+      "state": 12,
+      "vertices": 14,
+      "pass": false,
+      "stage": "HOLD_KINKED_EXTERIOR",
+      "detail": "HOLD_LIP_STATIONS Lip nodes U=150 L=153, per-segment [50 7 7 8 7 8 8 8 8 8 8 8 1] / [50 8 8 8 8 8 8 8 8 8 8 8 1], vertices 14/14, gaps 0.521/0.521 mm.",
+      "T3": null
+    },
+    {
+      "caseId": "soft1",
+      "scenario": "straight",
+      "state": 6,
+      "vertices": 8,
+      "pass": true,
+      "stage": "KINKED_PROTECTED_MESH_JOIN_PASS",
+      "detail": "Joined; the independent kink-aware audit is still required.",
+      "T3": 29445
+    },
+    {
+      "caseId": "soft1",
+      "scenario": "straight",
+      "state": 7,
+      "vertices": 9,
+      "pass": true,
+      "stage": "KINKED_PROTECTED_MESH_JOIN_PASS",
+      "detail": "Joined; the independent kink-aware audit is still required.",
+      "T3": 29641
+    },
+    {
+      "caseId": "soft1",
+      "scenario": "straight",
+      "state": 8,
+      "vertices": 10,
+      "pass": true,
+      "stage": "KINKED_PROTECTED_MESH_JOIN_PASS",
+      "detail": "Joined; the independent kink-aware audit is still required.",
+      "T3": 29805
+    },
+    {
+      "caseId": "soft1",
+      "scenario": "straight",
+      "state": 9,
+      "vertices": 11,
+      "pass": true,
+      "stage": "KINKED_PROTECTED_MESH_JOIN_PASS",
+      "detail": "Joined; the independent kink-aware audit is still required.",
+      "T3": 30065
+    },
+    {
+      "caseId": "soft1",
+      "scenario": "straight",
+      "state": 10,
+      "vertices": 12,
+      "pass": true,
+      "stage": "KINKED_PROTECTED_MESH_JOIN_PASS",
+      "detail": "Joined; the independent kink-aware audit is still required.",
+      "T3": 30277
+    },
+    {
+      "caseId": "soft1",
+      "scenario": "straight",
+      "state": 11,
+      "vertices": 13,
+      "pass": true,
+      "stage": "KINKED_PROTECTED_MESH_JOIN_PASS",
+      "detail": "Joined; the independent kink-aware audit is still required.",
+      "T3": 30453
+    },
+    {
+      "caseId": "soft1",
+      "scenario": "straight",
+      "state": 12,
+      "vertices": 14,
+      "pass": false,
+      "stage": "HOLD_KINKED_EXTERIOR",
+      "detail": "HOLD_LIP_STATIONS Lip nodes U=152 L=153, per-segment [50 8 8 8 7 8 8 8 8 8 8 8 1] / [50 8 8 8 8 8 8 8 8 8 8 8 1], vertices 14/14, gaps 0.521/0.521 mm.",
+      "T3": null
+    },
+    {
+      "caseId": "soft1",
+      "scenario": "straight",
+      "state": 13,
+      "vertices": 15,
+      "pass": false,
+      "stage": "HOLD_KINKED_EXTERIOR",
+      "detail": "HOLD_LIP_STATIONS Lip nodes U=161 L=162, per-segment [50 8 8 8 8 7 8 8 8 8 8 8 8 1] / [50 8 8 8 8 8 8 8 8 8 8 8 8 1], vertices 15/15, gaps 0.521/0.521 mm.",
+      "T3": null
+    },
+    {
+      "caseId": "soft1",
+      "scenario": "straight",
+      "state": 14,
+      "vertices": 16,
+      "pass": false,
+      "stage": "HOLD_KINKED_EXTERIOR",
+      "detail": "HOLD_LIP_STATIONS Lip nodes U=170 L=171, per-segment [50 8 7 8 8 8 8 8 8 8 8 8 8 8 1] / [50 8 8 8 8 8 8 8 8 8 8 8 8 8 1], vertices 16/16, gaps 0.521/0.521 mm.",
+      "T3": null
+    },
+    {
+      "caseId": "soft1",
+      "scenario": "straight",
+      "state": 15,
+      "vertices": 17,
+      "pass": false,
+      "stage": "HOLD_KINKED_EXTERIOR",
+      "detail": "HOLD_LIP_STATIONS Lip nodes U=178 L=180, per-segment [50 7 8 7 8 8 8 8 8 8 8 8 8 8 8 1] / [50 8 8 8 8 8 8 8 8 8 8 8 8 8 8 1], vertices 17/17, gaps 0.521/0.521 mm.",
+      "T3": null
+    },
+    {
+      "caseId": "soft1",
+      "scenario": "straight",
+      "state": 16,
+      "vertices": 18,
+      "pass": false,
+      "stage": "HOLD_KINKED_EXTERIOR",
+      "detail": "HOLD_LIP_STATIONS Lip nodes U=188 L=189, per-segment [50 8 8 8 7 8 8 8 8 8 8 8 8 8 8 8 1] / [50 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 1], vertices 18/18, gaps 0.521/0.521 mm.",
+      "T3": null
+    },
+    {
+      "caseId": "soft1",
+      "scenario": "straight",
+      "state": 17,
+      "vertices": 19,
+      "pass": false,
+      "stage": "HOLD_KINKED_EXTERIOR",
+      "detail": "HOLD_LIP_STATIONS Lip nodes U=193 L=198, per-segment [50 7 7 8 7 8 7 8 7 8 8 8 8 8 8 8 8 1] / [50 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 1], vertices 19/19, gaps 0.521/0.521 mm.",
+      "T3": null
+    },
+    {
+      "caseId": "soft1",
+      "scenario": "straight",
+      "state": 18,
+      "vertices": 20,
+      "pass": false,
+      "stage": "HOLD_KINKED_EXTERIOR",
+      "detail": "HOLD_LIP_STATIONS Lip nodes U=205 L=207, per-segment [50 7 8 8 8 8 8 7 8 8 8 8 8 8 8 8 8 8 1] / [50 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 1], vertices 20/20, gaps 0.521/0.521 mm.",
+      "T3": null
+    },
+    {
+      "caseId": "soft1",
+      "scenario": "straight",
+      "state": 19,
+      "vertices": 21,
+      "pass": false,
+      "stage": "HOLD_KINKED_EXTERIOR",
+      "detail": "HOLD_LIP_STATIONS Lip nodes U=210 L=216, per-segment [50 7 8 7 7 7 8 8 8 8 7 7 8 8 8 8 8 8 8 1] / [50 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 1], vertices 21/21, gaps 0.521/0.521 mm.",
+      "T3": null
+    },
+    {
+      "caseId": "soft1",
+      "scenario": "straight",
+      "state": 20,
+      "vertices": 22,
+      "pass": false,
+      "stage": "HOLD_KINKED_EXTERIOR",
+      "detail": "HOLD_LIP_STATIONS Lip nodes U=221 L=225, per-segment [50 8 7 7 7 8 7 8 8 8 8 8 8 8 8 8 8 8 8 8 1] / [50 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 1], vertices 22/22, gaps 0.521/0.521 mm.",
+      "T3": null
+    }
+  ]
+}

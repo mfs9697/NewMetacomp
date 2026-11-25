@@ -1,0 +1,3 @@
+POSTREV H G2LP2:HOLD_UNAUTHORIZED_STATE | LP2-A is on scientific HOLD: no GO_LP2A record.
+POSTREV soft1 G2LP2:HOLD_UNAUTHORIZED_STATE | LP2-A is on scientific HOLD: no GO_LP2A record.
+POSTREV_RESULT pass=1 files=1 (158) listing=1 git=1 commit=ee4a28ad2ea42e6b977e9c1ad6ed6dcea49d6827

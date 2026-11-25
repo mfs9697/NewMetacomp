@@ -1,0 +1,125 @@
+{
+ "rule": "absolute local paths replaced by <repo> (execution clone), <worktree>, <scratch>, <user>; MATLAB startup path warnings removed; CRLF to LF",
+ "files": [
+  {
+   "file": "LP2_ACTIVATION_HASHCHECK.json",
+   "originalSHA256": "3d888c7b3d8110564f69f89f6fc42422f2d307b13b78367971fa7c36c9b48109",
+   "sanitizedSHA256": "3cec020e2333c3c5263964d245b07553d5de126199417410e0d310178818f6d4"
+  },
+  {
+   "file": "LP2_ACTIVATION_HASHCHECK_2.json",
+   "originalSHA256": "3d888c7b3d8110564f69f89f6fc42422f2d307b13b78367971fa7c36c9b48109",
+   "sanitizedSHA256": "3cec020e2333c3c5263964d245b07553d5de126199417410e0d310178818f6d4"
+  },
+  {
+   "file": "LP2_ACTIVATION_CHECKS_1.json",
+   "originalSHA256": "14ab32a2072d886b4189780720af893dbb10bdd0c270b94091424a852c08bd84",
+   "sanitizedSHA256": "14ab32a2072d886b4189780720af893dbb10bdd0c270b94091424a852c08bd84"
+  },
+  {
+   "file": "LP2_ACTIVATION_CHECKS_2.json",
+   "originalSHA256": "47ab3b54ffb64cd5113f1c6622a7942020ff456f620ee75b10d3cf6e547ea566",
+   "sanitizedSHA256": "47ab3b54ffb64cd5113f1c6622a7942020ff456f620ee75b10d3cf6e547ea566"
+  },
+  {
+   "file": "lp2_activation_checks.m",
+   "originalSHA256": "0fd4d1b69cc75a5ad322873ab7efd3f786f216e2f3870858a6a1b32d65216a23",
+   "sanitizedSHA256": "4554d558588e214c25c61bc776ad158243f66ac470b442dafa9a23242c292e99"
+  },
+  {
+   "file": "lp2_activation_checks.log",
+   "originalSHA256": "6873a86d8090d79f2d5ccb32f660f8f273ee398412b87e31b11084e71f52d09f",
+   "sanitizedSHA256": "01e5293ae120b90f781cc9775f221a40aba45f11e457e88287b1af53ebffb704"
+  },
+  {
+   "file": "lp2_activation_checks2.log",
+   "originalSHA256": "5573b5cfd70ca4f3324675a87681a949259a04ac867afc38569af51568b573a0",
+   "sanitizedSHA256": "0f363ce040a068231d9d841b928d074f42466627c2b06cf9ecd7dc055d7003bd"
+  },
+  {
+   "file": "lp2a_campaign.m",
+   "originalSHA256": "1e732d27402dca5b58e3fc6efb175d37ca5454fb33ef4cace50ab4fb9e547c90",
+   "sanitizedSHA256": "c87e155694a529d21220693e87e30653d96d5921e9d857d3ec82ff8595d955f5"
+  },
+  {
+   "file": "lp2a_campaign.log",
+   "originalSHA256": "64b91c5f53d44ad92091356a405fd8ffd62de3e3ea772aa2b605fb57b32cfa7b",
+   "sanitizedSHA256": "1a519d6dfb0d9c140c8cf3cb2f881b830af4d49e121f8e576012b087444e9c86"
+  },
+  {
+   "file": "LP2A_CALLS.json",
+   "originalSHA256": "53cde0d780dad8d98ba9baf9f8005a0a6f089d8472ce05ff198debeb117fcf54",
+   "sanitizedSHA256": "53cde0d780dad8d98ba9baf9f8005a0a6f089d8472ce05ff198debeb117fcf54"
+  },
+  {
+   "file": "lp2a_verify_analyze.m",
+   "originalSHA256": "ce67e8f67a414cadfc5f73caebc1a21c2908b823124289c43a24e746583af44b",
+   "sanitizedSHA256": "362274ff98ecd2a70f4a345065917ec0ff9f2f8a27e560aa5ef811f7f3cf0aa8"
+  },
+  {
+   "file": "lp2a_verify_analyze.log",
+   "originalSHA256": "de2a0b07224b0d5da51b1d751400e45a88181302065f2cf583be98b2383e6db6",
+   "sanitizedSHA256": "2f2e1a691ffd1c9cff9303416015301d216d143ee5f587ba06833d5d38c7a780"
+  },
+  {
+   "file": "LP2A_VERIFY_ONLY.json",
+   "originalSHA256": "9fa62d1d22a517784cf71a268b47848442c5757a3b9d644ae37723aa562984fc",
+   "sanitizedSHA256": "9fa62d1d22a517784cf71a268b47848442c5757a3b9d644ae37723aa562984fc"
+  },
+  {
+   "file": "LP2A_ANALYSIS.json",
+   "originalSHA256": "7c9a426e5aef7eb42d5efeeeb5068275b644d1730e1f4efaae1cbea60d47565b",
+   "sanitizedSHA256": "7c9a426e5aef7eb42d5efeeeb5068275b644d1730e1f4efaae1cbea60d47565b"
+  },
+  {
+   "file": "LP2_PROTECTED_BEFORE.json",
+   "originalSHA256": "4cd08ba6f2ae3163d67b590775c7264c9088fd942bfcf867e79a2c8c8d6979ae",
+   "sanitizedSHA256": "756fe8034cc8ac5f7822c170b0b0afa97478630291b75a18b400733dc354bc57"
+  },
+  {
+   "file": "LP2_PROTECTED_AFTER.json",
+   "originalSHA256": "4cd08ba6f2ae3163d67b590775c7264c9088fd942bfcf867e79a2c8c8d6979ae",
+   "sanitizedSHA256": "756fe8034cc8ac5f7822c170b0b0afa97478630291b75a18b400733dc354bc57"
+  },
+  {
+   "file": "LP2A_RUN_LEDGER_SHA256.json",
+   "originalSHA256": "45f6c665fbc39cb80414789ea0581cab94e87adabe86488984724b721b1af578",
+   "sanitizedSHA256": "bd0aa185e1858c82ff0864730d38dd873328297767627d9b366ebe6b837e1de3"
+  },
+  {
+   "file": "LP2A_ARCHIVE_RECORD.json",
+   "originalSHA256": "afac84267dab80fd50bb34d8253f89e27ff19b0a285395f34a9251241aa9d62e",
+   "sanitizedSHA256": "41e8c28f57f5fd2bc0b91efe9aa656398c5b4c2eb581992d58c4ace079fc1726"
+  },
+  {
+   "file": "lp2_activation_hashcheck.py",
+   "originalSHA256": "b36b9f8f52fb91f1a1ffac0fbbec7a2b2316d39a1761be4b21802b3723d97fbb",
+   "sanitizedSHA256": "b36b9f8f52fb91f1a1ffac0fbbec7a2b2316d39a1761be4b21802b3723d97fbb"
+  },
+  {
+   "file": "lp2_tree_hash.py",
+   "originalSHA256": "91ee8d9e992e6f573b30e5aa3d608bf07460ccc78032297fe9ce10978fe9bdea",
+   "sanitizedSHA256": "91ee8d9e992e6f573b30e5aa3d608bf07460ccc78032297fe9ce10978fe9bdea"
+  },
+  {
+   "file": "lp2a_archive.py",
+   "originalSHA256": "a64df541521ca313ba7ea6fe7014b9d7be15567ef969a5d96c1584ca18cb7d0b",
+   "sanitizedSHA256": "a64df541521ca313ba7ea6fe7014b9d7be15567ef969a5d96c1584ca18cb7d0b"
+  },
+  {
+   "file": "LP2A_POST_REVOCATION.json",
+   "originalSHA256": "2d2bb62063f25dcc6cda85599059948ef30e19031232a2ddf6921c9ec3b6761f",
+   "sanitizedSHA256": "2d2bb62063f25dcc6cda85599059948ef30e19031232a2ddf6921c9ec3b6761f"
+  },
+  {
+   "file": "lp2a_post_revocation.m",
+   "originalSHA256": "f95ae4481d200fc506046320ebfb2abeaad9580b416022d1c3d9b2b619ed27ec",
+   "sanitizedSHA256": "427bd0b9612d94f1dfce415bf81d4ab1bde8de99e0a4761adfb969b69b25aa48"
+  },
+  {
+   "file": "lp2a_post_revocation.log",
+   "originalSHA256": "6909975fd9baf41fb910b03e3b4012b0698f7caa68a51a2a9fed7e1d47c0dd7c",
+   "sanitizedSHA256": "9475b45620e5343bbeec9d8294b54ff08ba298710c890f8d35dd62d0beabc362"
+  }
+ ]
+}

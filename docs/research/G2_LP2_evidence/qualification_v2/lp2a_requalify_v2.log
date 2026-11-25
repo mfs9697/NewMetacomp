@@ -1,0 +1,83 @@
+RAM_OBSERVATION context 7.542 GiB
+RAM_OBSERVATION protected_before 7.416 GiB
+LP2_S5 H       a0=lp1:1 rec=1 S5 tip=(106.9327,44.6599) head=71.257 clear=MATRIX_ADVANCE kink=1 class=MATRIX_ADVANCE | B9-B0 dTheta=-1.55e-04 deg dTip=1.08e-05 mm | outlook frozen=7 (NUMERICAL_HOLD ring1) straight=15 (NUMERICAL_HOLD ring2)
+LP2_S5 stiff13 a0=lp1:1 rec=1 S5 tip=(107.1557,44.5972) head=70.674 clear=MATRIX_ADVANCE kink=1 class=MATRIX_ADVANCE | B9-B0 dTheta=-1.76e-04 deg dTip=1.23e-05 mm | outlook frozen=7 (INTERFACE_APPROACH ring1) straight=15 (NUMERICAL_HOLD ring2)
+LP2_S5 soft2   a0=lp1:1 rec=1 S5 tip=(107.0416,44.6286) head=70.855 clear=MATRIX_ADVANCE kink=1 class=MATRIX_ADVANCE | B9-B0 dTheta=-1.63e-04 deg dTip=1.14e-05 mm | outlook frozen=7 (NUMERICAL_HOLD ring1) straight=15 (INTERFACE_APPROACH ring2)
+LP2_S5 soft1   a0=lp1:1 rec=1 S5 tip=(106.5709,44.7559) head=72.237 clear=MATRIX_ADVANCE kink=1 class=MATRIX_ADVANCE | B9-B0 dTheta=-1.19e-04 deg dTip=8.30e-06 mm | outlook frozen=8 (INTERFACE_APPROACH ring1) straight=16 (NUMERICAL_HOLD ring2)
+RAM_OBSERVATION s4_s5_recheck 7.254 GiB
+G2_LP2A_TERMINAL H CAMPAIGN_LIMIT_REACHED last=S8 (S8 accepted; S9 candidate classified for information only)
+G2_LP2A_TERMINAL stiff13 CAMPAIGN_LIMIT_REACHED last=S8 (S8 accepted; S9 candidate classified for information only)
+G2_LP2A_TERMINAL soft2 CAMPAIGN_LIMIT_REACHED last=S8 (S8 accepted; S9 candidate classified for information only)
+G2_LP2A_TERMINAL soft1 CAMPAIGN_LIMIT_REACHED last=S8 (S8 accepted; S9 candidate classified for information only)
+G2_LP2A_TERMINAL H CAMPAIGN_LIMIT_REACHED last=S8 (S8 accepted; S9 candidate classified for information only)
+G2_LP2A_TERMINAL H CAMPAIGN_LIMIT_REACHED last=S8 (S8 accepted; S9 candidate classified for information only)
+G2_LP2A_TERMINAL stiff13 NUMERICAL_HOLD last=S5 (local numerical HOLD; accepted prefix preserved; never retried)
+G2_LP2A_TERMINAL soft2 CAMPAIGN_LIMIT_REACHED last=S8 (S8 accepted; S9 candidate classified for information only)
+G2_LP2A_TERMINAL soft1 CAMPAIGN_LIMIT_REACHED last=S8 (S8 accepted; S9 candidate classified for information only)
+G2_LP2A_TERMINAL H CAMPAIGN_LIMIT_REACHED last=S8 (S8 accepted; S9 candidate classified for information only)
+G2_LP2A_TERMINAL stiff13 CAMPAIGN_LIMIT_REACHED last=S8 (S8 accepted; S9 candidate classified for information only)
+G2_LP2A_TERMINAL soft2 CAMPAIGN_LIMIT_REACHED last=S8 (S8 accepted; S9 candidate classified for information only)
+G2_LP2A_TERMINAL soft1 NUMERICAL_HOLD last=S6 (local numerical HOLD; accepted prefix preserved; never retried)
+G2_LP2A_TERMINAL H INTERFACE_APPROACH last=S6 (candidate segment fails a guard; no mesh, no solve)
+G2_LP2A_TERMINAL stiff13 NUMERICAL_HOLD last=S5 (candidate could not be evaluated)
+matlab.exe : G2_LP2A_GLOBAL_HOLD soft2 S5 MATLAB:unexpected: Synthetic forecast failure at S5.
+At <scratch>
+ls\runml.ps1:12 char:3
++   & $exe -batch ("run('" + $Script.Replace("'", "''") + "')") *> $log
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (G2_LP2A_GLOBAL_... failure at S5.:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+G2_LP2A_GLOBAL_HOLD H S5 G2LP1:HOLD_MEMORY: Less than 5 GiB free physical RAM; no automatic retry.
+G2_LP2A_TERMINAL H CAMPAIGN_LIMIT_REACHED last=S8 (S8 accepted; S9 candidate classified for information only)
+G2_LP2A_GLOBAL_HOLD stiff13 S6 G2LP2:HOLD_RECORD_INTEGRITY: Synthetic failure stiff13 S6.
+G2_LP2A_TERMINAL soft2 CAMPAIGN_LIMIT_REACHED last=S8 (S8 accepted; S9 candidate classified for information only)
+G2_LP2A_TERMINAL soft1 CAMPAIGN_LIMIT_REACHED last=S8 (S8 accepted; S9 candidate classified for information only)
+G2_LP2A_TERMINAL H CAMPAIGN_LIMIT_REACHED last=S8 (S8 accepted; S9 candidate classified for information only)
+G2_LP2A_TERMINAL stiff13 CAMPAIGN_LIMIT_REACHED last=S8 (S8 accepted; S9 candidate classified for information only)
+G2_LP2A_TERMINAL soft2 CAMPAIGN_LIMIT_REACHED last=S8 (S8 accepted; S9 candidate classified for information only)
+G2_LP2A_TERMINAL soft1 CAMPAIGN_LIMIT_REACHED last=S8 (S8 accepted; S9 candidate classified for information only)
+G2_LP2A_TERMINAL H CAMPAIGN_LIMIT_REACHED last=S8 (S8 accepted; S9 candidate classified for information only)
+G2_LP2A_TERMINAL stiff13 CAMPAIGN_LIMIT_REACHED last=S8 (S8 accepted; S9 candidate classified for information only)
+G2_LP2A_TERMINAL soft2 CAMPAIGN_LIMIT_REACHED last=S8 (S8 accepted; S9 candidate classified for information only)
+G2_LP2A_TERMINAL soft1 CAMPAIGN_LIMIT_REACHED last=S8 (S8 accepted; S9 candidate classified for information only)
+G2_LP2A_TERMINAL H CAMPAIGN_LIMIT_REACHED last=S8 (S8 accepted; S9 candidate classified for information only)
+G2_LP2A_TERMINAL stiff13 CAMPAIGN_LIMIT_REACHED last=S8 (S8 accepted; S9 candidate classified for information only)
+G2_LP2A_TERMINAL soft2 CAMPAIGN_LIMIT_REACHED last=S8 (S8 accepted; S9 candidate classified for information only)
+G2_LP2A_TERMINAL soft1 CAMPAIGN_LIMIT_REACHED last=S8 (S8 accepted; S9 candidate classified for information only)
+G2_LP2A_TERMINAL H CAMPAIGN_LIMIT_REACHED last=S8 (S8 accepted; S9 candidate classified for information only)
+G2_LP2A_TERMINAL stiff13 CAMPAIGN_LIMIT_REACHED last=S8 (S8 accepted; S9 candidate classified for information only)
+G2_LP2A_TERMINAL soft2 CAMPAIGN_LIMIT_REACHED last=S8 (S8 accepted; S9 candidate classified for information only)
+G2_LP2A_TERMINAL soft1 CAMPAIGN_LIMIT_REACHED last=S8 (S8 accepted; S9 candidate classified for information only)
+G2_LP2A_TERMINAL H CAMPAIGN_LIMIT_REACHED last=S8 (S8 accepted; S9 candidate classified for information only)
+G2_LP2A_TERMINAL stiff13 CAMPAIGN_LIMIT_REACHED last=S8 (S8 accepted; S9 candidate classified for information only)
+G2_LP2A_TERMINAL soft2 CAMPAIGN_LIMIT_REACHED last=S8 (S8 accepted; S9 candidate classified for information only)
+G2_LP2A_TERMINAL soft1 CAMPAIGN_LIMIT_REACHED last=S8 (S8 accepted; S9 candidate classified for information only)
+G2_LP2A_TERMINAL H CAMPAIGN_LIMIT_REACHED last=S8 (S8 accepted; S9 candidate classified for information only)
+G2_LP2A_TERMINAL stiff13 CAMPAIGN_LIMIT_REACHED last=S8 (S8 accepted; S9 candidate classified for information only)
+G2_LP2A_TERMINAL soft2 CAMPAIGN_LIMIT_REACHED last=S8 (S8 accepted; S9 candidate classified for information only)
+G2_LP2A_TERMINAL soft1 CAMPAIGN_LIMIT_REACHED last=S8 (S8 accepted; S9 candidate classified for information only)
+G2_LP2A_TERMINAL H CAMPAIGN_LIMIT_REACHED last=S8 (S8 accepted; S9 candidate classified for information only)
+G2_LP2A_TERMINAL stiff13 CAMPAIGN_LIMIT_REACHED last=S8 (S8 accepted; S9 candidate classified for information only)
+G2_LP2A_TERMINAL soft2 CAMPAIGN_LIMIT_REACHED last=S8 (S8 accepted; S9 candidate classified for information only)
+G2_LP2A_TERMINAL soft1 CAMPAIGN_LIMIT_REACHED last=S8 (S8 accepted; S9 candidate classified for information only)
+G2_LP2A_TERMINAL H CAMPAIGN_LIMIT_REACHED last=S8 (S8 accepted; S9 candidate classified for information only)
+G2_LP2A_TERMINAL stiff13 CAMPAIGN_LIMIT_REACHED last=S8 (S8 accepted; S9 candidate classified for information only)
+G2_LP2A_TERMINAL soft2 CAMPAIGN_LIMIT_REACHED last=S8 (S8 accepted; S9 candidate classified for information only)
+G2_LP2A_TERMINAL soft1 CAMPAIGN_LIMIT_REACHED last=S8 (S8 accepted; S9 candidate classified for information only)
+G2_LP2A_TERMINAL H CAMPAIGN_LIMIT_REACHED last=S8 (S8 accepted; S9 candidate classified for information only)
+G2_LP2A_TERMINAL stiff13 CAMPAIGN_LIMIT_REACHED last=S8 (S8 accepted; S9 candidate classified for information only)
+G2_LP2A_TERMINAL soft2 CAMPAIGN_LIMIT_REACHED last=S8 (S8 accepted; S9 candidate classified for information only)
+G2_LP2A_TERMINAL soft1 CAMPAIGN_LIMIT_REACHED last=S8 (S8 accepted; S9 candidate classified for information only)
+G2_LP2A_TERMINAL H CAMPAIGN_LIMIT_REACHED last=S8 (S8 accepted; S9 candidate classified for information only)
+G2_LP2A_TERMINAL stiff13 CAMPAIGN_LIMIT_REACHED last=S8 (S8 accepted; S9 candidate classified for information only)
+G2_LP2A_TERMINAL soft2 CAMPAIGN_LIMIT_REACHED last=S8 (S8 accepted; S9 candidate classified for information only)
+G2_LP2A_TERMINAL soft1 CAMPAIGN_LIMIT_REACHED last=S8 (S8 accepted; S9 candidate classified for information only)
+G2_LP2A_TERMINAL H CAMPAIGN_LIMIT_REACHED last=S8 (S8 accepted; S9 candidate classified for information only)
+G2_LP2A_TERMINAL stiff13 CAMPAIGN_LIMIT_REACHED last=S8 (S8 accepted; S9 candidate classified for information only)
+G2_LP2A_TERMINAL soft2 CAMPAIGN_LIMIT_REACHED last=S8 (S8 accepted; S9 candidate classified for information only)
+G2_LP2A_TERMINAL soft1 CAMPAIGN_LIMIT_REACHED last=S8 (S8 accepted; S9 candidate classified for information only)
+LP2A_CONTRACT 101/101 (negatives 56)
+RAM_OBSERVATION contract 7.223 GiB
+RAM_OBSERVATION protected_after 7.209 GiB
+LP2A_QUALIFY LP2A_PREFLIGHT_PASS_SCIENTIFIC_HOLD contract=107/107 (negatives 56) protected=541 unchanged=1 token=G2LP2A|policy=093a546b9bae54d8fab0026420c8d85dced85f0e0e6ed212d597b3fd1aa6eec5|g2source=7e5683703bd104547ef5d013aa0253ad2819b59dc58693957e2d04b4707f0947|lp2source=357dfdcdb576d2866b9d1b41a14265300a14c30700d6475f995881041ba822ca|parents=0dcc572f42605fc39d005de2ebcbba243147128dee7621bb57a30f16ebdd76f6|cases=H,stiff13,soft2,soft1|states=S5-S8|maxSolves=16
