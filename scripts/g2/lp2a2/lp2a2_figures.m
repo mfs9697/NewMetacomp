@@ -111,7 +111,7 @@ plot(ax,Cl(keep,1),Cl(keep,2),'-','Color',[.9 .55 0],'LineWidth',1.2);
 uL=lc(Ex.upperSeed);lL=lc(Ex.lowerSeed);plot(ax,[-60 60],[20 20],'-','Color',cU);plot(ax,[-60 60],[-20 -20],'-','Color',cL);plot(ax,[-60 60],[0 0],':','Color',[.4 .4 .4]);
 q=lc(XU);plot(ax,q(1),q(2),'o','Color',cU,'MarkerFaceColor',cU,'MarkerSize',6);q2=lc(XL);plot(ax,q2(1),q2(2),'s','Color',cL,'MarkerFaceColor',cL,'MarkerSize',6);
 plot(ax,0,0,'kp','MarkerFaceColor','y','MarkerSize',9);
-text(ax,q(1)+3,q(2)+6,sprintf('U*: s = %.4f мм',Ex.seedStationsUL(i,1)),'FontSize',7);text(ax,q2(1)+3,q2(2)-6,sprintf('L*: s = %.4f мм',Ex.seedStationsUL(i,2)),'FontSize',7);
+text(ax,q(1)+11,q(2)-5,sprintf('U*: s = %.4f мм',Ex.seedStationsUL(i,1)),'FontSize',7);text(ax,q2(1)+11,q2(2)+5,sprintf('L*: s = %.4f мм',Ex.seedStationsUL(i,2)),'FontSize',7);
 text(ax,2,4,'точка колапсу','FontSize',7);axis(ax,'equal');xlim(ax,[-30 30]);ylim(ax,[-35 35]);box(ax,'on');
 xlabel(ax,'вздовж відрізка, мкм');ylabel(ax,'за нормаллю, мкм');legend(ax,{'коло 15-мм напрямної','верхній берег (+w)','нижній берег (−w)','осьова лінія'},'Location','northwest','FontSize',6);
 title(ax,sprintf('(а) до колапсу: Δs = %.2f мкм, |U*−L*| = %.2f мкм',1000*diff(Ex.seedStationsUL(i,[2 1])),1000*norm(XU-XL)),'FontWeight','normal','FontSize',7);
