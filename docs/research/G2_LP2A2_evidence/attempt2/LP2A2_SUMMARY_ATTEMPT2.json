@@ -1,0 +1,866 @@
+{
+ "schema": "NewMetacomp.G2.LP2A2.QualificationSummary.v1",
+ "testSetSHA256": "7d2b6d352217bd5130f14f3d4aa9c89145b0efc7cd56a0c065abcaf9ebc4d711",
+ "physicalSolves": 0,
+ "groups": {
+  "A": {
+   "rows": 4,
+   "guard": 0,
+   "newPass": 4,
+   "oldPass": 4,
+   "newFailNonGuard": [],
+   "oldFailNonGuard": 0
+  },
+  "B": {
+   "rows": 4,
+   "guard": 0,
+   "newPass": 4,
+   "oldPass": 3,
+   "newFailNonGuard": [],
+   "oldFailNonGuard": 1
+  },
+  "C1": {
+   "rows": 82,
+   "guard": 0,
+   "newPass": 80,
+   "oldPass": 36,
+   "newFailNonGuard": [
+    "C1_soft1_frozenMTS_S12",
+    "C1_soft1_straight_S20"
+   ],
+   "oldFailNonGuard": 46
+  },
+  "C2": {
+   "rows": 29,
+   "guard": 8,
+   "newPass": 18,
+   "oldPass": 11,
+   "newFailNonGuard": [
+    "C2_stiff13_straight_S12",
+    "C2_soft2_straight_S12",
+    "C2_soft1_frozen_S12"
+   ],
+   "oldFailNonGuard": 10
+  },
+  "C3": {
+   "rows": 8,
+   "guard": 2,
+   "newPass": 6,
+   "oldPass": 3,
+   "newFailNonGuard": [],
+   "oldFailNonGuard": 3
+  }
+ },
+ "guardRows": [
+  {
+   "id": "C2_H_straight_S13",
+   "newStage": "HOLD_KINKED_P010_BLOCK",
+   "oldStage": "HOLD_KINKED_P010_BLOCK",
+   "newMessage": "HOLD_KINK_ADMISSIBILITY K9_tipGuideAdmissible",
+   "tipToRingCircle_mm": [
+    14.017903007480346,
+    37.948953861391615,
+    83.73888691523989
+   ]
+  },
+  {
+   "id": "C2_H_frozen_S12",
+   "newStage": "HOLD_KINKED_P010_BLOCK",
+   "oldStage": "HOLD_KINKED_P010_BLOCK",
+   "newMessage": "HOLD_KINK_ADMISSIBILITY K9_tipGuideAdmissible",
+   "tipToRingCircle_mm": [
+    14.916687391251774,
+    41.80436424413648,
+    87.78656416593078
+   ]
+  },
+  {
+   "id": "C2_stiff13_straight_S13",
+   "newStage": "HOLD_KINKED_P010_BLOCK",
+   "oldStage": "HOLD_KINKED_P010_BLOCK",
+   "newMessage": "HOLD_KINK_ADMISSIBILITY K9_tipGuideAdmissible",
+   "tipToRingCircle_mm": [
+    13.8778257365238,
+    37.88731638756022,
+    83.71553063697667
+   ]
+  },
+  {
+   "id": "C2_stiff13_frozen_S12",
+   "newStage": "HOLD_KINKED_P010_BLOCK",
+   "oldStage": "HOLD_KINKED_P010_BLOCK",
+   "newMessage": "HOLD_KINK_ADMISSIBILITY K9_tipGuideAdmissible",
+   "tipToRingCircle_mm": [
+    14.894688334407402,
+    41.75748251645177,
+    87.74015869384745
+   ]
+  },
+  {
+   "id": "C2_soft2_straight_S13",
+   "newStage": "HOLD_KINKED_P010_BLOCK",
+   "oldStage": "HOLD_KINKED_P010_BLOCK",
+   "newMessage": "HOLD_KINK_ADMISSIBILITY K9_tipGuideAdmissible",
+   "tipToRingCircle_mm": [
+    13.64429126530948,
+    37.858781446965466,
+    83.75847304680713
+   ]
+  },
+  {
+   "id": "C2_soft2_frozen_S12",
+   "newStage": "HOLD_KINKED_P010_BLOCK",
+   "oldStage": "HOLD_KINKED_P010_BLOCK",
+   "newMessage": "HOLD_KINK_ADMISSIBILITY K9_tipGuideAdmissible",
+   "tipToRingCircle_mm": [
+    14.5831110080988,
+    41.731361626632335,
+    87.80898037269402
+   ]
+  },
+  {
+   "id": "C2_soft1_straight_S13",
+   "newStage": "HOLD_KINKED_P010_BLOCK",
+   "oldStage": "HOLD_KINKED_P010_BLOCK",
+   "newMessage": "HOLD_KINK_ADMISSIBILITY K9_tipGuideAdmissible",
+   "tipToRingCircle_mm": [
+    14.489699025499387,
+    38.107016670849816,
+    83.76156403198289
+   ]
+  },
+  {
+   "id": "C2_soft1_frozen_S13",
+   "newStage": "HOLD_KINKED_P010_BLOCK",
+   "oldStage": "HOLD_KINKED_P010_BLOCK",
+   "newMessage": "HOLD_KINK_ADMISSIBILITY K9_tipGuideAdmissible",
+   "tipToRingCircle_mm": [
+    13.393128860706138,
+    37.942327484402384,
+    83.93045530053918
+   ]
+  },
+  {
+   "id": "C3_H_zigzag2_S13",
+   "newStage": "HOLD_KINKED_P010_BLOCK",
+   "oldStage": "HOLD_KINKED_P010_BLOCK",
+   "newMessage": "HOLD_KINK_ADMISSIBILITY K9_tipGuideAdmissible",
+   "tipToRingCircle_mm": [
+    14.28635017481567,
+    38.00678197271942,
+    83.71633931004327
+   ]
+  },
+  {
+   "id": "C3_H_zigzag5_S13",
+   "newStage": "HOLD_KINKED_P010_BLOCK",
+   "oldStage": "HOLD_KINKED_P010_BLOCK",
+   "newMessage": "HOLD_KINK_ADMISSIBILITY K9_tipGuideAdmissible",
+   "tipToRingCircle_mm": [
+    14.693894329297851,
+    38.113717109467814,
+    83.70218101352255
+   ]
+  }
+ ],
+ "newFailures": [
+  {
+   "id": "C1_soft1_frozenMTS_S12",
+   "stage": "HOLD_LP2A2_LADDER_EXHAUSTED",
+   "message": "All 4 seed-spacing rungs fail the global quality gates.",
+   "auditError": null,
+   "auditFailed": null,
+   "pairingFailed": null,
+   "phaseMasks": null,
+   "ringPolygons": null,
+   "tipToRingCircle_mm": [
+    15.128933391555389,
+    41.919141058756324,
+    87.8497326240841
+   ],
+   "polylineToRingCircle_mm": [
+    15.128933391555389,
+    41.919141058756324,
+    87.8497326240841
+   ],
+   "vertices": 14
+  },
+  {
+   "id": "C1_soft1_straight_S20",
+   "stage": "KINKED_PROTECTED_MESH_JOIN_PASS",
+   "message": "Joined; the independent kink-aware audit is still required.",
+   "auditError": "G2LP1:HOLD_OWNER_MASK: Phase or activity qualification failed.",
+   "auditFailed": null,
+   "pairingFailed": [],
+   "phaseMasks": null,
+   "ringPolygons": {
+    "nodes": [
+     76,
+     76,
+     76
+    ],
+    "vertexMeanOffset_mm": [
+     0,
+     6.3440368176470466e-06,
+     0
+    ],
+    "chordMinMax_mm": [
+     [
+      1.5496621968937068,
+      1.5955657297686823
+     ],
+     [
+      1.5496621968937139,
+      1.5999418719999323
+     ],
+     [
+      1.5496621968937139,
+      1.5955657297686776
+     ]
+    ]
+   },
+   "tipToRingCircle_mm": [
+    24.825442632167668,
+    15.49227582949155,
+    55.933752725458575
+   ],
+   "polylineToRingCircle_mm": [
+    18.178278031065364,
+    15.49227582949155,
+    55.933752725458575
+   ],
+   "vertices": 22
+  },
+  {
+   "id": "C2_stiff13_straight_S12",
+   "stage": "HOLD_LP2A2_LADDER_EXHAUSTED",
+   "message": "All 4 seed-spacing rungs fail the global quality gates.",
+   "auditError": null,
+   "auditFailed": null,
+   "pairingFailed": null,
+   "phaseMasks": null,
+   "ringPolygons": null,
+   "tipToRingCircle_mm": [
+    15.238633396065847,
+    41.81742799285897,
+    87.69857001741025
+   ],
+   "polylineToRingCircle_mm": [
+    15.238633396065847,
+    41.81742799285897,
+    87.69857001741025
+   ],
+   "vertices": 14
+  },
+  {
+   "id": "C2_soft2_straight_S12",
+   "stage": "HOLD_LP2A2_LADDER_EXHAUSTED",
+   "message": "All 4 seed-spacing rungs fail the global quality gates.",
+   "auditError": null,
+   "auditFailed": null,
+   "pairingFailed": null,
+   "phaseMasks": null,
+   "ringPolygons": null,
+   "tipToRingCircle_mm": [
+    15.075032436260958,
+    41.80274979806792,
+    87.7342520093513
+   ],
+   "polylineToRingCircle_mm": [
+    15.075032436260958,
+    41.80274979806792,
+    87.7342520093513
+   ],
+   "vertices": 14
+  },
+  {
+   "id": "C2_soft1_frozen_S12",
+   "stage": "HOLD_LP2A2_LADDER_EXHAUSTED",
+   "message": "All 4 seed-spacing rungs fail the global quality gates.",
+   "auditError": null,
+   "auditFailed": null,
+   "pairingFailed": null,
+   "phaseMasks": null,
+   "ringPolygons": null,
+   "tipToRingCircle_mm": [
+    15.236725475243436,
+    41.935879475818425,
+    87.8343087036792
+   ],
+   "polylineToRingCircle_mm": [
+    15.236725475243436,
+    41.935879475818425,
+    87.8343087036792
+   ],
+   "vertices": 14
+  }
+ ],
+ "newJoinedRows": 113,
+ "newPairingPass": 113,
+ "newAuditPass": 112,
+ "newMetrics": {
+  "T3": [
+   29579,
+   32591
+  ],
+  "T6nodes": [
+   60149,
+   66425
+  ],
+  "minAngle_deg": [
+   21.363467320746974,
+   30.126847321229672
+  ],
+  "maxNeighborRatio": [
+   1.591828550861294,
+   1.790395743372019
+  ],
+  "minEdge_mm": [
+   0.04166666666663996,
+   0.04166666666666631
+  ],
+  "minBankEdge_mm": [
+   0.04166666666665148,
+   0.041666666666685614
+  ],
+  "pairsT6": [
+   265,
+   517
+  ],
+  "pairsT3": [
+   133,
+   259
+  ],
+  "unmatchedOnCrack": [
+   0,
+   0
+  ],
+  "maxPairDistanceAfterCollapse_mm": [
+   0,
+   0
+  ],
+  "seedMaxDeviation_mm": [
+   1.7763568394002505e-15,
+   1.5888218580782548e-14
+  ],
+  "seedStationMismatchRegular_mm": [
+   0,
+   0
+  ],
+  "seedStationMismatchForced_mm": [
+   0,
+   0.002281827988397822
+  ],
+  "guideCrossingPairs": [
+   1,
+   1
+  ],
+  "minSeedSpacing_mm": [
+   0.19994889604153293,
+   0.3504912684976936
+  ],
+  "pairCollapseResidual_mm": [
+   0,
+   0
+  ],
+  "joinSeconds": [
+   2.0072806,
+   8.0740997
+  ],
+  "auditSeconds": [
+   2.9168572,
+   4.8558598
+  ],
+  "memUsedMATLAB_GiB": [
+   1.9486618041992188,
+   2.0102882385253906
+  ]
+ },
+ "newPhaseMasksAllPass": 112,
+ "newQCollarPass": 112,
+ "oldReproducesScan": {
+  "rows": 82,
+  "identical": 82,
+  "differences": []
+ },
+ "groupA_archived": [
+  {
+   "id": "A_H_S8",
+   "oldRerunIdenticalX3T3": true,
+   "archivedT3": 29873,
+   "newT3": 29973,
+   "archivedBankNodesT6": [
+    289,
+    289
+   ],
+   "newBankNodesT6": [
+    301,
+    301
+   ],
+   "archivedLipStationMismatch_mm": 0.01372271362433608,
+   "newForcedMismatch_mm": 0.0019272433028376668,
+   "newMinAngle_deg": 30.126847321221675,
+   "oldMinAngle_deg": 30.126847321221675,
+   "newMaxRatio": 1.5918285508620826,
+   "oldMaxRatio": 1.5931813354349598
+  },
+  {
+   "id": "A_stiff13_S8",
+   "oldRerunIdenticalX3T3": true,
+   "archivedT3": 29871,
+   "newT3": 29981,
+   "archivedBankNodesT6": [
+    289,
+    289
+   ],
+   "newBankNodesT6": [
+    301,
+    301
+   ],
+   "archivedLipStationMismatch_mm": 0.013352307272050723,
+   "newForcedMismatch_mm": 0.0017198982885631153,
+   "newMinAngle_deg": 30.126847321223654,
+   "oldMinAngle_deg": 30.126847321223654,
+   "newMaxRatio": 1.5918285508620371,
+   "oldMaxRatio": 1.5918285508620371
+  },
+  {
+   "id": "A_soft2_S8",
+   "oldRerunIdenticalX3T3": true,
+   "archivedT3": 29879,
+   "newT3": 30001,
+   "archivedBankNodesT6": [
+    289,
+    289
+   ],
+   "newBankNodesT6": [
+    301,
+    301
+   ],
+   "archivedLipStationMismatch_mm": 0.0133520974098289,
+   "newForcedMismatch_mm": 0.0019658578762218326,
+   "newMinAngle_deg": 30.126847321224652,
+   "oldMinAngle_deg": 30.126847321224652,
+   "newMaxRatio": 1.5918285508617434,
+   "oldMaxRatio": 1.7447467466075472
+  },
+  {
+   "id": "A_soft1_S8",
+   "oldRerunIdenticalX3T3": true,
+   "archivedT3": 29875,
+   "newT3": 30021,
+   "archivedBankNodesT6": [
+    289,
+    289
+   ],
+   "newBankNodesT6": [
+    301,
+    301
+   ],
+   "archivedLipStationMismatch_mm": 0.016934647417844673,
+   "newForcedMismatch_mm": 0.0021539132761034807,
+   "newMinAngle_deg": 30.12684732122907,
+   "oldMinAngle_deg": 30.12684732122907,
+   "newMaxRatio": 1.5918285508618053,
+   "oldMaxRatio": 1.5918285508618053
+  }
+ ],
+ "wp1Diagnosis": {
+  "failures": 60,
+  "allHOLD_LIP_STATIONS": false,
+  "failuresWithEqualPerSegmentCounts": 1,
+  "equalCountFailureMessages": [
+   "C2_soft1_frozen_S12: globalMinAngleAtLeast20"
+  ],
+  "firstFailingSegment": {
+   "2": 29,
+   "3": 12,
+   "4": 6,
+   "5": 8,
+   "6": 4
+  },
+  "failingSegmentIndex": {
+   "2": 29,
+   "3": 18,
+   "4": 15,
+   "5": 18,
+   "6": 14,
+   "7": 5,
+   "8": 8,
+   "9": 6,
+   "11": 2,
+   "12": 1
+  },
+  "fewerNodesOnUpperBank": 60,
+  "failingSegmentsPerGeometry": [
+   0,
+   6
+  ],
+  "distanceFailingSegmentEndToTip_mm": [
+   31.999999999999993,
+   72
+  ],
+  "failingSegmentContainsTipGuideCrossing": 0,
+  "kinkTurnAtFailingSegment_deg": [
+   0,
+   1.824237697292033,
+   13.258443470413024
+  ],
+  "kinkTurnAtAllInteriorSegments_deg": [
+   0,
+   3.657637883683044e-14,
+   13.258443470413024
+  ],
+  "upperMinusLowerLengthFailing_mm": [
+   0,
+   0.004998678034389137
+  ],
+  "upperMinusLowerLengthAll_mm": [
+   -0.0012983943011168897,
+   0.004998678034389137
+  ],
+  "passByVertices": {
+   "8": {
+    "rows": 8,
+    "oldPass": 8,
+    "newPass": 8
+   },
+   "9": {
+    "rows": 8,
+    "oldPass": 8,
+    "newPass": 8
+   },
+   "10": {
+    "rows": 12,
+    "oldPass": 12,
+    "newPass": 12
+   },
+   "11": {
+    "rows": 12,
+    "oldPass": 8,
+    "newPass": 12
+   },
+   "12": {
+    "rows": 18,
+    "oldPass": 12,
+    "newPass": 18
+   },
+   "13": {
+    "rows": 18,
+    "oldPass": 5,
+    "newPass": 18
+   },
+   "14": {
+    "rows": 12,
+    "oldPass": 3,
+    "newPass": 8
+   },
+   "15": {
+    "rows": 4,
+    "oldPass": 1,
+    "newPass": 4
+   },
+   "16": {
+    "rows": 4,
+    "oldPass": 0,
+    "newPass": 4
+   },
+   "17": {
+    "rows": 4,
+    "oldPass": 0,
+    "newPass": 4
+   },
+   "18": {
+    "rows": 4,
+    "oldPass": 0,
+    "newPass": 4
+   },
+   "19": {
+    "rows": 4,
+    "oldPass": 0,
+    "newPass": 4
+   },
+   "20": {
+    "rows": 4,
+    "oldPass": 0,
+    "newPass": 4
+   },
+   "21": {
+    "rows": 4,
+    "oldPass": 0,
+    "newPass": 4
+   },
+   "22": {
+    "rows": 1,
+    "oldPass": 0,
+    "newPass": 0
+   }
+  }
+ },
+ "wp6Continuations": {
+  "C2_H_straight": {
+   "admissibleStates": [
+    10,
+    11,
+    12
+   ],
+   "newPass": [
+    true,
+    true,
+    true
+   ],
+   "guard": {
+    "state": 13,
+    "stage": "HOLD_KINKED_P010_BLOCK",
+    "message": "HOLD_KINK_ADMISSIBILITY K9_tipGuideAdmissible",
+    "tipToRingCircle_mm": [
+     14.017903007480346,
+     37.948953861391615,
+     83.73888691523989
+    ]
+   },
+   "lastTipToRingCircle_mm": [
+    15.40343916678103,
+    41.88253254705752,
+    87.71978774343125
+   ]
+  },
+  "C2_H_frozen": {
+   "admissibleStates": [
+    10,
+    11
+   ],
+   "newPass": [
+    true,
+    true
+   ],
+   "guard": {
+    "state": 12,
+    "stage": "HOLD_KINKED_P010_BLOCK",
+    "message": "HOLD_KINK_ADMISSIBILITY K9_tipGuideAdmissible",
+    "tipToRingCircle_mm": [
+     14.916687391251774,
+     41.80436424413648,
+     87.78656416593078
+    ]
+   },
+   "lastTipToRingCircle_mm": [
+    16.947911517916534,
+    45.78542381322198,
+    91.73219499733914
+   ]
+  },
+  "C2_stiff13_straight": {
+   "admissibleStates": [
+    10,
+    11,
+    12
+   ],
+   "newPass": [
+    true,
+    true,
+    false
+   ],
+   "guard": {
+    "state": 13,
+    "stage": "HOLD_KINKED_P010_BLOCK",
+    "message": "HOLD_KINK_ADMISSIBILITY K9_tipGuideAdmissible",
+    "tipToRingCircle_mm": [
+     13.8778257365238,
+     37.88731638756022,
+     83.71553063697667
+    ]
+   },
+   "lastTipToRingCircle_mm": [
+    15.238633396065847,
+    41.81742799285897,
+    87.69857001741025
+   ]
+  },
+  "C2_stiff13_frozen": {
+   "admissibleStates": [
+    10,
+    11
+   ],
+   "newPass": [
+    true,
+    true
+   ],
+   "guard": {
+    "state": 12,
+    "stage": "HOLD_KINKED_P010_BLOCK",
+    "message": "HOLD_KINK_ADMISSIBILITY K9_tipGuideAdmissible",
+    "tipToRingCircle_mm": [
+     14.894688334407402,
+     41.75748251645177,
+     87.74015869384745
+    ]
+   },
+   "lastTipToRingCircle_mm": [
+    16.83037033672152,
+    45.72690969527426,
+    91.7018626653256
+   ]
+  },
+  "C2_soft2_straight": {
+   "admissibleStates": [
+    10,
+    11,
+    12
+   ],
+   "newPass": [
+    true,
+    true,
+    false
+   ],
+   "guard": {
+    "state": 13,
+    "stage": "HOLD_KINKED_P010_BLOCK",
+    "message": "HOLD_KINK_ADMISSIBILITY K9_tipGuideAdmissible",
+    "tipToRingCircle_mm": [
+     13.64429126530948,
+     37.858781446965466,
+     83.75847304680713
+    ]
+   },
+   "lastTipToRingCircle_mm": [
+    15.075032436260958,
+    41.80274979806792,
+    87.7342520093513
+   ]
+  },
+  "C2_soft2_frozen": {
+   "admissibleStates": [
+    10,
+    11
+   ],
+   "newPass": [
+    true,
+    true
+   ],
+   "guard": {
+    "state": 12,
+    "stage": "HOLD_KINKED_P010_BLOCK",
+    "message": "HOLD_KINK_ADMISSIBILITY K9_tipGuideAdmissible",
+    "tipToRingCircle_mm": [
+     14.5831110080988,
+     41.731361626632335,
+     87.80898037269402
+    ]
+   },
+   "lastTipToRingCircle_mm": [
+    16.66215039307068,
+    45.717889998265505,
+    91.7456743919073
+   ]
+  },
+  "C2_soft1_straight": {
+   "admissibleStates": [
+    10,
+    11,
+    12
+   ],
+   "newPass": [
+    true,
+    true,
+    true
+   ],
+   "guard": {
+    "state": 13,
+    "stage": "HOLD_KINKED_P010_BLOCK",
+    "message": "HOLD_KINK_ADMISSIBILITY K9_tipGuideAdmissible",
+    "tipToRingCircle_mm": [
+     14.489699025499387,
+     38.107016670849816,
+     83.76156403198289
+    ]
+   },
+   "lastTipToRingCircle_mm": [
+    15.868282244083641,
+    42.035697431721545,
+    87.74381267920991
+   ]
+  },
+  "C2_soft1_frozen": {
+   "admissibleStates": [
+    10,
+    11,
+    12
+   ],
+   "newPass": [
+    true,
+    true,
+    false
+   ],
+   "guard": {
+    "state": 13,
+    "stage": "HOLD_KINKED_P010_BLOCK",
+    "message": "HOLD_KINK_ADMISSIBILITY K9_tipGuideAdmissible",
+    "tipToRingCircle_mm": [
+     13.393128860706138,
+     37.942327484402384,
+     83.93045530053918
+    ]
+   },
+   "lastTipToRingCircle_mm": [
+    15.236725475243436,
+    41.935879475818425,
+    87.8343087036792
+   ]
+  },
+  "C3_H_zigzag2": {
+   "admissibleStates": [
+    10,
+    11,
+    12
+   ],
+   "newPass": [
+    true,
+    true,
+    true
+   ],
+   "guard": {
+    "state": 13,
+    "stage": "HOLD_KINKED_P010_BLOCK",
+    "message": "HOLD_KINK_ADMISSIBILITY K9_tipGuideAdmissible",
+    "tipToRingCircle_mm": [
+     14.28635017481567,
+     38.00678197271942,
+     83.71633931004327
+    ]
+   },
+   "lastTipToRingCircle_mm": [
+    15.66173419977262,
+    41.93695055057593,
+    87.69826361005185
+   ]
+  },
+  "C3_H_zigzag5": {
+   "admissibleStates": [
+    10,
+    11,
+    12
+   ],
+   "newPass": [
+    true,
+    true,
+    true
+   ],
+   "guard": {
+    "state": 13,
+    "stage": "HOLD_KINKED_P010_BLOCK",
+    "message": "HOLD_KINK_ADMISSIBILITY K9_tipGuideAdmissible",
+    "tipToRingCircle_mm": [
+     14.693894329297851,
+     38.113717109467814,
+     83.70218101352255
+    ]
+   },
+   "lastTipToRingCircle_mm": [
+    16.05622743810422,
+    42.03868041133778,
+    87.68559173893789
+   ]
+  }
+ }
+}
