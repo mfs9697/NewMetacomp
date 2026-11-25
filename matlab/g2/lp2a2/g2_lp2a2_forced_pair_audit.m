@@ -4,7 +4,8 @@ function R=g2_lp2a2_forced_pair_audit(D)
 %  origin   along-segment positions x_U, x_L of the two analytic crossings (offset lines at +/-w,
 %           circle of radius Rg about the tip); dx = x_U - x_L is the pure circle-geometry part,
 %           b the normal offset of the circle centre from the centre line of that segment
-%           (dx ~ 2 w b / sqrt(Rg^2 - b^2)); the station mismatch ds = s_U - s_L adds the linear
+%           (crossing behind the tip: x = a - sqrt(Rg^2-(eta-b)^2), so dx ~ -2 w b / sqrt(Rg^2 - b^2));
+%           the station mismatch ds = s_U - s_L adds the linear
 %           map of the mitred offset segment onto the centre-line segment (parametrisation part)
 %  before   station mismatch ds and native coordinate distance |X_U - X_L| (before collapse)
 %  after    the two nodes found INDEPENDENTLY in the joined mesh at the collapsed point (mean
@@ -24,7 +25,7 @@ for q=1:numel(f)
  sb=.5*(sU+sL);Xc=P(k,:)+(sb-Sv(k))*tt(k,:);
  ids=find(vecnorm(X-Xc,2,2)<=1e-9);iu=intersect(ids,up);il=intersect(ids,lo);
  r=struct('segment',k,'stationU_mm',sU,'stationL_mm',sL,'stationMismatch_mm',sU-sL,'circleDx_mm',xU-xL,'parametrisationPart_mm',(sU-sL)-(xU-xL), ...
-  'tipNormalOffset_mm',b,'predictedDx_mm',2*w*b/sqrt(Rg^2-b^2),'nativeDistance_mm',norm(XU-XL),'nodesAtCollapsedPoint',numel(ids), ...
+  'tipNormalOffset_mm',b,'predictedDx_mm',-2*w*b/sqrt(Rg^2-b^2),'nativeDistance_mm',norm(XU-XL),'nodesAtCollapsedPoint',numel(ids), ...
   'collapseDisplacementU_mm',norm(XU-Xc),'collapseDisplacementL_mm',norm(XL-Xc),'distanceToTip_mm',norm(Xc-tip), ...
   'interiorOfSegment',min(abs(sb-Sv))>1e-9&&sb>Sv(k)&&sb<Sv(k+1));
  ok=numel(ids)==2&&isscalar(iu)&&isscalar(il)&&iu~=il;

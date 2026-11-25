@@ -66,7 +66,7 @@ for q=1:2
  patch(ax,'Faces',T(sel(rw.collar),:),'Vertices',X,'FaceColor',[.80 .90 1],'EdgeColor',[.3 .45 .7],'LineWidth',.3);
  patch(ax,'Faces',T(sel(rw.exterior),:),'Vertices',X,'FaceColor','w','EdgeColor',[.6 .6 .6],'LineWidth',.2);
  plot(ax,tip(1)+3.3*cos(th),tip(2)+3.3*sin(th),'-','Color',[.2 .3 .7],'LineWidth',.6);plot(ax,tip(1)+3.0*cos(th),tip(2)+3.0*sin(th),':','Color',[.3 .3 .3]);
- plot(ax,X(up,1),X(up,2),'.','Color',cU,'MarkerSize',6);plot(ax,X(lo,1),X(lo,2),'.','Color',cL,'MarkerSize',4);
+ X6=D9.X6;plot(ax,X6(up,1),X6(up,2),'.','Color',cU,'MarkerSize',6);plot(ax,X6(lo,1),X6(lo,2),'.','Color',cL,'MarkerSize',4);
  axis(ax,'equal');xlim(ax,tip(1)+[-w w]);ylim(ax,tip(2)+[-w w]);box(ax,'on');xlabel(ax,'x, мм');ylabel(ax,'y, мм');
  if q==1,title(ax,'(а) ядро p010 3,0 мм (сіре), комір 3,3 мм (блакитне), зовнішня сітка','FontWeight','normal','FontSize',7);
  else,title(ax,'(б) вхід берегів у комір: 65 ідентичностей обода незмінні','FontWeight','normal','FontSize',7);end

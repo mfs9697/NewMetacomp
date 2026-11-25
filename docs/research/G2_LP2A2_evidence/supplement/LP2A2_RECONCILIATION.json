@@ -1,0 +1,2502 @@
+{
+ "schema": "NewMetacomp.G2.LP2A2.Reconciliation.v1",
+ "physicalSolves": 0,
+ "accounting": {
+  "uniqueTestGeometries": {
+   "total": 127,
+   "nonGuard": 117,
+   "guardRows": 10,
+   "byGroup": {
+    "A": 4,
+    "B": 4,
+    "C1": 82,
+    "C2": 29,
+    "C3": 8
+   }
+  },
+  "originalMesher": {
+   "attemptsPerRun": 127,
+   "runs": 2,
+   "identicalOutcomesBetweenRuns": true,
+   "geometries": 117,
+   "finalPass": 57,
+   "finalHOLD": 60
+  },
+  "newAttempt1": {
+   "geometries": 117,
+   "joined": 108,
+   "pairingPass": 108,
+   "fullAuditPass": 107,
+   "finalPass": 107,
+   "finalHOLD": 10
+  },
+  "spacingExploration": {
+   "geometries": 46,
+   "spacings": [
+    0.45,
+    0.4,
+    0.5,
+    0.35
+   ],
+   "meshAttempts": 184,
+   "passBySpacing": {
+    "0.45": 39,
+    "0.4": 37,
+    "0.5": 39,
+    "0.35": 39
+   },
+   "disjointFromTestSet": true
+  },
+  "newAttempt2": {
+   "geometries": 117,
+   "joined": 113,
+   "pairingPass": 113,
+   "fullAuditPass": 112,
+   "finalPass": 112,
+   "finalHOLD": 5,
+   "ladderRungAttempts": 135
+  },
+  "guardRowsBothMeshersStopAtAdmissibility": true
+ },
+ "originalCrackFaceFailures": {
+  "total": 59,
+  "byGroup": {
+   "A": 0,
+   "B": 1,
+   "C1": 46,
+   "C2": 9,
+   "C3": 3
+  },
+  "otherOriginalFailures": [
+   [
+    "C2_soft1_frozen_S12",
+    "globalMinAngleAtLeast20"
+   ]
+  ]
+ },
+ "pairedC1": {
+  "attempt1": {
+   "oldPass_newPass": 36,
+   "oldPass_newFail": 0,
+   "oldFail_newPass": 41,
+   "oldFail_newFail": 5
+  },
+  "attempt2": {
+   "oldPass_newPass": 36,
+   "oldPass_newFail": 0,
+   "oldFail_newPass": 44,
+   "oldFail_newFail": 2
+  }
+ },
+ "pairedAllNonGuard": {
+  "attempt1": {
+   "oldPass_newPass": 55,
+   "oldPass_newFail": 2,
+   "oldFail_newPass": 52,
+   "oldFail_newFail": 8
+  },
+  "attempt2": {
+   "oldPass_newPass": 57,
+   "oldPass_newFail": 0,
+   "oldFail_newPass": 55,
+   "oldFail_newFail": 5
+  }
+ },
+ "regressions": {
+  "attempt1": [
+   "C2_stiff13_straight_S10",
+   "C2_stiff13_straight_S11"
+  ],
+  "attempt2": []
+ },
+ "resolved": {
+  "attempt1": [
+   "B_soft2_S9",
+   "C1_H_frozenMTS_S11",
+   "C1_H_straight_S9",
+   "C1_H_straight_S12",
+   "C1_H_straight_S14",
+   "C1_H_straight_S15",
+   "C1_H_straight_S16",
+   "C1_H_straight_S17",
+   "C1_H_straight_S18",
+   "C1_H_straight_S19",
+   "C1_stiff13_frozenMTS_S10",
+   "C1_stiff13_frozenMTS_S11",
+   "C1_stiff13_straight_S10",
+   "C1_stiff13_straight_S11",
+   "C1_stiff13_straight_S12",
+   "C1_stiff13_straight_S14",
+   "C1_stiff13_straight_S15",
+   "C1_stiff13_straight_S16",
+   "C1_stiff13_straight_S17",
+   "C1_stiff13_straight_S18",
+   "C1_stiff13_straight_S19",
+   "C1_soft2_frozenMTS_S10",
+   "C1_soft2_frozenMTS_S11",
+   "C1_soft2_straight_S9",
+   "C1_soft2_straight_S11",
+   "C1_soft2_straight_S13",
+   "C1_soft2_straight_S14",
+   "C1_soft2_straight_S15",
+   "C1_soft2_straight_S16",
+   "C1_soft2_straight_S17",
+   "C1_soft2_straight_S18",
+   "C1_soft2_straight_S19",
+   "C1_soft1_frozenMTS_S9",
+   "C1_soft1_frozenMTS_S10",
+   "C1_soft1_frozenMTS_S11",
+   "C1_soft1_straight_S13",
+   "C1_soft1_straight_S14",
+   "C1_soft1_straight_S15",
+   "C1_soft1_straight_S16",
+   "C1_soft1_straight_S17",
+   "C1_soft1_straight_S18",
+   "C1_soft1_straight_S19",
+   "C2_H_straight_S11",
+   "C2_H_frozen_S11",
+   "C2_stiff13_frozen_S11",
+   "C2_soft2_frozen_S10",
+   "C2_soft2_frozen_S11",
+   "C2_soft1_frozen_S10",
+   "C2_soft1_frozen_S11",
+   "C3_H_zigzag2_S11",
+   "C3_H_zigzag5_S11",
+   "C3_H_zigzag5_S12"
+  ],
+  "attempt2": [
+   "B_soft2_S9",
+   "C1_H_frozenMTS_S11",
+   "C1_H_straight_S9",
+   "C1_H_straight_S12",
+   "C1_H_straight_S14",
+   "C1_H_straight_S15",
+   "C1_H_straight_S16",
+   "C1_H_straight_S17",
+   "C1_H_straight_S18",
+   "C1_H_straight_S19",
+   "C1_stiff13_frozenMTS_S10",
+   "C1_stiff13_frozenMTS_S11",
+   "C1_stiff13_straight_S10",
+   "C1_stiff13_straight_S11",
+   "C1_stiff13_straight_S12",
+   "C1_stiff13_straight_S13",
+   "C1_stiff13_straight_S14",
+   "C1_stiff13_straight_S15",
+   "C1_stiff13_straight_S16",
+   "C1_stiff13_straight_S17",
+   "C1_stiff13_straight_S18",
+   "C1_stiff13_straight_S19",
+   "C1_soft2_frozenMTS_S10",
+   "C1_soft2_frozenMTS_S11",
+   "C1_soft2_straight_S9",
+   "C1_soft2_straight_S11",
+   "C1_soft2_straight_S12",
+   "C1_soft2_straight_S13",
+   "C1_soft2_straight_S14",
+   "C1_soft2_straight_S15",
+   "C1_soft2_straight_S16",
+   "C1_soft2_straight_S17",
+   "C1_soft2_straight_S18",
+   "C1_soft2_straight_S19",
+   "C1_soft1_frozenMTS_S9",
+   "C1_soft1_frozenMTS_S10",
+   "C1_soft1_frozenMTS_S11",
+   "C1_soft1_straight_S12",
+   "C1_soft1_straight_S13",
+   "C1_soft1_straight_S14",
+   "C1_soft1_straight_S15",
+   "C1_soft1_straight_S16",
+   "C1_soft1_straight_S17",
+   "C1_soft1_straight_S18",
+   "C1_soft1_straight_S19",
+   "C2_H_straight_S11",
+   "C2_H_frozen_S11",
+   "C2_stiff13_frozen_S11",
+   "C2_soft2_frozen_S10",
+   "C2_soft2_frozen_S11",
+   "C2_soft1_frozen_S10",
+   "C2_soft1_frozen_S11",
+   "C3_H_zigzag2_S11",
+   "C3_H_zigzag5_S11",
+   "C3_H_zigzag5_S12"
+  ]
+ },
+ "failureCategories": {
+  "attempt1": {
+   "C1_stiff13_straight_S13": "QUALITY",
+   "C1_soft2_straight_S12": "QUALITY",
+   "C1_soft1_frozenMTS_S12": "QUALITY",
+   "C1_soft1_straight_S12": "QUALITY",
+   "C1_soft1_straight_S20": "PHASE_OR_AUDIT",
+   "C2_stiff13_straight_S10": "QUALITY",
+   "C2_stiff13_straight_S11": "QUALITY",
+   "C2_stiff13_straight_S12": "QUALITY",
+   "C2_soft2_straight_S12": "QUALITY",
+   "C2_soft1_frozen_S12": "QUALITY"
+  },
+  "attempt2": {
+   "C1_soft1_frozenMTS_S12": "QUALITY",
+   "C1_soft1_straight_S20": "PHASE_OR_AUDIT",
+   "C2_stiff13_straight_S12": "QUALITY",
+   "C2_soft2_straight_S12": "QUALITY",
+   "C2_soft1_frozen_S12": "QUALITY"
+  }
+ },
+ "ladder": {
+  "firstAcceptedRungCount": {
+   "1": 108,
+   "2": 4,
+   "3": 1,
+   "none": 4
+  },
+  "rejections": {
+   "0.45": [
+    [
+     "C1_stiff13_straight_S13",
+     "globalNeighborRatioAtMost1p8"
+    ],
+    [
+     "C1_soft2_straight_S12",
+     "globalNeighborRatioAtMost1p8"
+    ],
+    [
+     "C1_soft1_frozenMTS_S12",
+     "globalMinAngleAtLeast20"
+    ],
+    [
+     "C1_soft1_straight_S12",
+     "globalNeighborRatioAtMost1p8"
+    ],
+    [
+     "C2_stiff13_straight_S10",
+     "globalNeighborRatioAtMost1p8"
+    ],
+    [
+     "C2_stiff13_straight_S11",
+     "globalNeighborRatioAtMost1p8"
+    ],
+    [
+     "C2_stiff13_straight_S12",
+     "globalMinAngleAtLeast20"
+    ],
+    [
+     "C2_soft2_straight_S12",
+     "globalMinAngleAtLeast20"
+    ],
+    [
+     "C2_soft1_frozen_S12",
+     "globalMinAngleAtLeast20"
+    ]
+   ],
+   "0.4": [
+    [
+     "C1_soft2_straight_S12",
+     "globalNeighborRatioAtMost1p8"
+    ],
+    [
+     "C1_soft1_frozenMTS_S12",
+     "globalMinAngleAtLeast20"
+    ],
+    [
+     "C2_stiff13_straight_S12",
+     "globalMinAngleAtLeast20, globalNeighborRatioAtMost1p8"
+    ],
+    [
+     "C2_soft2_straight_S12",
+     "globalMinAngleAtLeast20, globalNeighborRatioAtMost1p8"
+    ],
+    [
+     "C2_soft1_frozen_S12",
+     "globalMinAngleAtLeast20"
+    ]
+   ],
+   "0.5": [
+    [
+     "C1_soft1_frozenMTS_S12",
+     "globalMinAngleAtLeast20"
+    ],
+    [
+     "C2_stiff13_straight_S12",
+     "globalMinAngleAtLeast20, globalNeighborRatioAtMost1p8"
+    ],
+    [
+     "C2_soft2_straight_S12",
+     "globalMinAngleAtLeast20"
+    ],
+    [
+     "C2_soft1_frozen_S12",
+     "globalMinAngleAtLeast20"
+    ]
+   ],
+   "0.35": [
+    [
+     "C1_soft1_frozenMTS_S12",
+     "globalMinAngleAtLeast20"
+    ],
+    [
+     "C2_stiff13_straight_S12",
+     "globalMinAngleAtLeast20"
+    ],
+    [
+     "C2_soft2_straight_S12",
+     "globalMinAngleAtLeast20"
+    ],
+    [
+     "C2_soft1_frozen_S12",
+     "globalMinAngleAtLeast20"
+    ]
+   ]
+  },
+  "rungs_mm": [
+   0.45,
+   0.4,
+   0.5,
+   0.35
+  ],
+  "perGeometry": {
+   "A_H_S8": [
+    {
+     "rung": 1,
+     "seedSpacing_mm": 0.45,
+     "stage": "KINKED_PROTECTED_MESH_JOIN_PASS",
+     "message": "Joined; the independent kink-aware audit is still required.",
+     "pairingPass": true
+    }
+   ],
+   "B_H_S9": [
+    {
+     "rung": 1,
+     "seedSpacing_mm": 0.45,
+     "stage": "KINKED_PROTECTED_MESH_JOIN_PASS",
+     "message": "Joined; the independent kink-aware audit is still required.",
+     "pairingPass": true
+    }
+   ],
+   "A_stiff13_S8": [
+    {
+     "rung": 1,
+     "seedSpacing_mm": 0.45,
+     "stage": "KINKED_PROTECTED_MESH_JOIN_PASS",
+     "message": "Joined; the independent kink-aware audit is still required.",
+     "pairingPass": true
+    }
+   ],
+   "B_stiff13_S9": [
+    {
+     "rung": 1,
+     "seedSpacing_mm": 0.45,
+     "stage": "KINKED_PROTECTED_MESH_JOIN_PASS",
+     "message": "Joined; the independent kink-aware audit is still required.",
+     "pairingPass": true
+    }
+   ],
+   "A_soft2_S8": [
+    {
+     "rung": 1,
+     "seedSpacing_mm": 0.45,
+     "stage": "KINKED_PROTECTED_MESH_JOIN_PASS",
+     "message": "Joined; the independent kink-aware audit is still required.",
+     "pairingPass": true
+    }
+   ],
+   "B_soft2_S9": [
+    {
+     "rung": 1,
+     "seedSpacing_mm": 0.45,
+     "stage": "KINKED_PROTECTED_MESH_JOIN_PASS",
+     "message": "Joined; the independent kink-aware audit is still required.",
+     "pairingPass": true
+    }
+   ],
+   "A_soft1_S8": [
+    {
+     "rung": 1,
+     "seedSpacing_mm": 0.45,
+     "stage": "KINKED_PROTECTED_MESH_JOIN_PASS",
+     "message": "Joined; the independent kink-aware audit is still required.",
+     "pairingPass": true
+    }
+   ],
+   "B_soft1_S9": [
+    {
+     "rung": 1,
+     "seedSpacing_mm": 0.45,
+     "stage": "KINKED_PROTECTED_MESH_JOIN_PASS",
+     "message": "Joined; the independent kink-aware audit is still required.",
+     "pairingPass": true
+    }
+   ],
+   "C1_H_frozenMTS_S6": [
+    {
+     "rung": 1,
+     "seedSpacing_mm": 0.45,
+     "stage": "KINKED_PROTECTED_MESH_JOIN_PASS",
+     "message": "Joined; the independent kink-aware audit is still required.",
+     "pairingPass": true
+    }
+   ],
+   "C1_H_frozenMTS_S7": [
+    {
+     "rung": 1,
+     "seedSpacing_mm": 0.45,
+     "stage": "KINKED_PROTECTED_MESH_JOIN_PASS",
+     "message": "Joined; the independent kink-aware audit is still required.",
+     "pairingPass": true
+    }
+   ],
+   "C1_H_frozenMTS_S8": [
+    {
+     "rung": 1,
+     "seedSpacing_mm": 0.45,
+     "stage": "KINKED_PROTECTED_MESH_JOIN_PASS",
+     "message": "Joined; the independent kink-aware audit is still required.",
+     "pairingPass": true
+    }
+   ],
+   "C1_H_frozenMTS_S9": [
+    {
+     "rung": 1,
+     "seedSpacing_mm": 0.45,
+     "stage": "KINKED_PROTECTED_MESH_JOIN_PASS",
+     "message": "Joined; the independent kink-aware audit is still required.",
+     "pairingPass": true
+    }
+   ],
+   "C1_H_frozenMTS_S10": [
+    {
+     "rung": 1,
+     "seedSpacing_mm": 0.45,
+     "stage": "KINKED_PROTECTED_MESH_JOIN_PASS",
+     "message": "Joined; the independent kink-aware audit is still required.",
+     "pairingPass": true
+    }
+   ],
+   "C1_H_frozenMTS_S11": [
+    {
+     "rung": 1,
+     "seedSpacing_mm": 0.45,
+     "stage": "KINKED_PROTECTED_MESH_JOIN_PASS",
+     "message": "Joined; the independent kink-aware audit is still required.",
+     "pairingPass": true
+    }
+   ],
+   "C1_H_straight_S6": [
+    {
+     "rung": 1,
+     "seedSpacing_mm": 0.45,
+     "stage": "KINKED_PROTECTED_MESH_JOIN_PASS",
+     "message": "Joined; the independent kink-aware audit is still required.",
+     "pairingPass": true
+    }
+   ],
+   "C1_H_straight_S7": [
+    {
+     "rung": 1,
+     "seedSpacing_mm": 0.45,
+     "stage": "KINKED_PROTECTED_MESH_JOIN_PASS",
+     "message": "Joined; the independent kink-aware audit is still required.",
+     "pairingPass": true
+    }
+   ],
+   "C1_H_straight_S8": [
+    {
+     "rung": 1,
+     "seedSpacing_mm": 0.45,
+     "stage": "KINKED_PROTECTED_MESH_JOIN_PASS",
+     "message": "Joined; the independent kink-aware audit is still required.",
+     "pairingPass": true
+    }
+   ],
+   "C1_H_straight_S9": [
+    {
+     "rung": 1,
+     "seedSpacing_mm": 0.45,
+     "stage": "KINKED_PROTECTED_MESH_JOIN_PASS",
+     "message": "Joined; the independent kink-aware audit is still required.",
+     "pairingPass": true
+    }
+   ],
+   "C1_H_straight_S10": [
+    {
+     "rung": 1,
+     "seedSpacing_mm": 0.45,
+     "stage": "KINKED_PROTECTED_MESH_JOIN_PASS",
+     "message": "Joined; the independent kink-aware audit is still required.",
+     "pairingPass": true
+    }
+   ],
+   "C1_H_straight_S11": [
+    {
+     "rung": 1,
+     "seedSpacing_mm": 0.45,
+     "stage": "KINKED_PROTECTED_MESH_JOIN_PASS",
+     "message": "Joined; the independent kink-aware audit is still required.",
+     "pairingPass": true
+    }
+   ],
+   "C1_H_straight_S12": [
+    {
+     "rung": 1,
+     "seedSpacing_mm": 0.45,
+     "stage": "KINKED_PROTECTED_MESH_JOIN_PASS",
+     "message": "Joined; the independent kink-aware audit is still required.",
+     "pairingPass": true
+    }
+   ],
+   "C1_H_straight_S13": [
+    {
+     "rung": 1,
+     "seedSpacing_mm": 0.45,
+     "stage": "KINKED_PROTECTED_MESH_JOIN_PASS",
+     "message": "Joined; the independent kink-aware audit is still required.",
+     "pairingPass": true
+    }
+   ],
+   "C1_H_straight_S14": [
+    {
+     "rung": 1,
+     "seedSpacing_mm": 0.45,
+     "stage": "KINKED_PROTECTED_MESH_JOIN_PASS",
+     "message": "Joined; the independent kink-aware audit is still required.",
+     "pairingPass": true
+    }
+   ],
+   "C1_H_straight_S15": [
+    {
+     "rung": 1,
+     "seedSpacing_mm": 0.45,
+     "stage": "KINKED_PROTECTED_MESH_JOIN_PASS",
+     "message": "Joined; the independent kink-aware audit is still required.",
+     "pairingPass": true
+    }
+   ],
+   "C1_H_straight_S16": [
+    {
+     "rung": 1,
+     "seedSpacing_mm": 0.45,
+     "stage": "KINKED_PROTECTED_MESH_JOIN_PASS",
+     "message": "Joined; the independent kink-aware audit is still required.",
+     "pairingPass": true
+    }
+   ],
+   "C1_H_straight_S17": [
+    {
+     "rung": 1,
+     "seedSpacing_mm": 0.45,
+     "stage": "KINKED_PROTECTED_MESH_JOIN_PASS",
+     "message": "Joined; the independent kink-aware audit is still required.",
+     "pairingPass": true
+    }
+   ],
+   "C1_H_straight_S18": [
+    {
+     "rung": 1,
+     "seedSpacing_mm": 0.45,
+     "stage": "KINKED_PROTECTED_MESH_JOIN_PASS",
+     "message": "Joined; the independent kink-aware audit is still required.",
+     "pairingPass": true
+    }
+   ],
+   "C1_H_straight_S19": [
+    {
+     "rung": 1,
+     "seedSpacing_mm": 0.45,
+     "stage": "KINKED_PROTECTED_MESH_JOIN_PASS",
+     "message": "Joined; the independent kink-aware audit is still required.",
+     "pairingPass": true
+    }
+   ],
+   "C1_stiff13_frozenMTS_S6": [
+    {
+     "rung": 1,
+     "seedSpacing_mm": 0.45,
+     "stage": "KINKED_PROTECTED_MESH_JOIN_PASS",
+     "message": "Joined; the independent kink-aware audit is still required.",
+     "pairingPass": true
+    }
+   ],
+   "C1_stiff13_frozenMTS_S7": [
+    {
+     "rung": 1,
+     "seedSpacing_mm": 0.45,
+     "stage": "KINKED_PROTECTED_MESH_JOIN_PASS",
+     "message": "Joined; the independent kink-aware audit is still required.",
+     "pairingPass": true
+    }
+   ],
+   "C1_stiff13_frozenMTS_S8": [
+    {
+     "rung": 1,
+     "seedSpacing_mm": 0.45,
+     "stage": "KINKED_PROTECTED_MESH_JOIN_PASS",
+     "message": "Joined; the independent kink-aware audit is still required.",
+     "pairingPass": true
+    }
+   ],
+   "C1_stiff13_frozenMTS_S9": [
+    {
+     "rung": 1,
+     "seedSpacing_mm": 0.45,
+     "stage": "KINKED_PROTECTED_MESH_JOIN_PASS",
+     "message": "Joined; the independent kink-aware audit is still required.",
+     "pairingPass": true
+    }
+   ],
+   "C1_stiff13_frozenMTS_S10": [
+    {
+     "rung": 1,
+     "seedSpacing_mm": 0.45,
+     "stage": "KINKED_PROTECTED_MESH_JOIN_PASS",
+     "message": "Joined; the independent kink-aware audit is still required.",
+     "pairingPass": true
+    }
+   ],
+   "C1_stiff13_frozenMTS_S11": [
+    {
+     "rung": 1,
+     "seedSpacing_mm": 0.45,
+     "stage": "KINKED_PROTECTED_MESH_JOIN_PASS",
+     "message": "Joined; the independent kink-aware audit is still required.",
+     "pairingPass": true
+    }
+   ],
+   "C1_stiff13_straight_S6": [
+    {
+     "rung": 1,
+     "seedSpacing_mm": 0.45,
+     "stage": "KINKED_PROTECTED_MESH_JOIN_PASS",
+     "message": "Joined; the independent kink-aware audit is still required.",
+     "pairingPass": true
+    }
+   ],
+   "C1_stiff13_straight_S7": [
+    {
+     "rung": 1,
+     "seedSpacing_mm": 0.45,
+     "stage": "KINKED_PROTECTED_MESH_JOIN_PASS",
+     "message": "Joined; the independent kink-aware audit is still required.",
+     "pairingPass": true
+    }
+   ],
+   "C1_stiff13_straight_S8": [
+    {
+     "rung": 1,
+     "seedSpacing_mm": 0.45,
+     "stage": "KINKED_PROTECTED_MESH_JOIN_PASS",
+     "message": "Joined; the independent kink-aware audit is still required.",
+     "pairingPass": true
+    }
+   ],
+   "C1_stiff13_straight_S9": [
+    {
+     "rung": 1,
+     "seedSpacing_mm": 0.45,
+     "stage": "KINKED_PROTECTED_MESH_JOIN_PASS",
+     "message": "Joined; the independent kink-aware audit is still required.",
+     "pairingPass": true
+    }
+   ],
+   "C1_stiff13_straight_S10": [
+    {
+     "rung": 1,
+     "seedSpacing_mm": 0.45,
+     "stage": "KINKED_PROTECTED_MESH_JOIN_PASS",
+     "message": "Joined; the independent kink-aware audit is still required.",
+     "pairingPass": true
+    }
+   ],
+   "C1_stiff13_straight_S11": [
+    {
+     "rung": 1,
+     "seedSpacing_mm": 0.45,
+     "stage": "KINKED_PROTECTED_MESH_JOIN_PASS",
+     "message": "Joined; the independent kink-aware audit is still required.",
+     "pairingPass": true
+    }
+   ],
+   "C1_stiff13_straight_S12": [
+    {
+     "rung": 1,
+     "seedSpacing_mm": 0.45,
+     "stage": "KINKED_PROTECTED_MESH_JOIN_PASS",
+     "message": "Joined; the independent kink-aware audit is still required.",
+     "pairingPass": true
+    }
+   ],
+   "C1_stiff13_straight_S13": [
+    {
+     "rung": 1,
+     "seedSpacing_mm": 0.45,
+     "stage": "HOLD_KINKED_PROTECTED_MESH_JOIN",
+     "message": "globalNeighborRatioAtMost1p8",
+     "pairingPass": false
+    },
+    {
+     "rung": 2,
+     "seedSpacing_mm": 0.4,
+     "stage": "KINKED_PROTECTED_MESH_JOIN_PASS",
+     "message": "Joined; the independent kink-aware audit is still required.",
+     "pairingPass": true
+    }
+   ],
+   "C1_stiff13_straight_S14": [
+    {
+     "rung": 1,
+     "seedSpacing_mm": 0.45,
+     "stage": "KINKED_PROTECTED_MESH_JOIN_PASS",
+     "message": "Joined; the independent kink-aware audit is still required.",
+     "pairingPass": true
+    }
+   ],
+   "C1_stiff13_straight_S15": [
+    {
+     "rung": 1,
+     "seedSpacing_mm": 0.45,
+     "stage": "KINKED_PROTECTED_MESH_JOIN_PASS",
+     "message": "Joined; the independent kink-aware audit is still required.",
+     "pairingPass": true
+    }
+   ],
+   "C1_stiff13_straight_S16": [
+    {
+     "rung": 1,
+     "seedSpacing_mm": 0.45,
+     "stage": "KINKED_PROTECTED_MESH_JOIN_PASS",
+     "message": "Joined; the independent kink-aware audit is still required.",
+     "pairingPass": true
+    }
+   ],
+   "C1_stiff13_straight_S17": [
+    {
+     "rung": 1,
+     "seedSpacing_mm": 0.45,
+     "stage": "KINKED_PROTECTED_MESH_JOIN_PASS",
+     "message": "Joined; the independent kink-aware audit is still required.",
+     "pairingPass": true
+    }
+   ],
+   "C1_stiff13_straight_S18": [
+    {
+     "rung": 1,
+     "seedSpacing_mm": 0.45,
+     "stage": "KINKED_PROTECTED_MESH_JOIN_PASS",
+     "message": "Joined; the independent kink-aware audit is still required.",
+     "pairingPass": true
+    }
+   ],
+   "C1_stiff13_straight_S19": [
+    {
+     "rung": 1,
+     "seedSpacing_mm": 0.45,
+     "stage": "KINKED_PROTECTED_MESH_JOIN_PASS",
+     "message": "Joined; the independent kink-aware audit is still required.",
+     "pairingPass": true
+    }
+   ],
+   "C1_soft2_frozenMTS_S6": [
+    {
+     "rung": 1,
+     "seedSpacing_mm": 0.45,
+     "stage": "KINKED_PROTECTED_MESH_JOIN_PASS",
+     "message": "Joined; the independent kink-aware audit is still required.",
+     "pairingPass": true
+    }
+   ],
+   "C1_soft2_frozenMTS_S7": [
+    {
+     "rung": 1,
+     "seedSpacing_mm": 0.45,
+     "stage": "KINKED_PROTECTED_MESH_JOIN_PASS",
+     "message": "Joined; the independent kink-aware audit is still required.",
+     "pairingPass": true
+    }
+   ],
+   "C1_soft2_frozenMTS_S8": [
+    {
+     "rung": 1,
+     "seedSpacing_mm": 0.45,
+     "stage": "KINKED_PROTECTED_MESH_JOIN_PASS",
+     "message": "Joined; the independent kink-aware audit is still required.",
+     "pairingPass": true
+    }
+   ],
+   "C1_soft2_frozenMTS_S9": [
+    {
+     "rung": 1,
+     "seedSpacing_mm": 0.45,
+     "stage": "KINKED_PROTECTED_MESH_JOIN_PASS",
+     "message": "Joined; the independent kink-aware audit is still required.",
+     "pairingPass": true
+    }
+   ],
+   "C1_soft2_frozenMTS_S10": [
+    {
+     "rung": 1,
+     "seedSpacing_mm": 0.45,
+     "stage": "KINKED_PROTECTED_MESH_JOIN_PASS",
+     "message": "Joined; the independent kink-aware audit is still required.",
+     "pairingPass": true
+    }
+   ],
+   "C1_soft2_frozenMTS_S11": [
+    {
+     "rung": 1,
+     "seedSpacing_mm": 0.45,
+     "stage": "KINKED_PROTECTED_MESH_JOIN_PASS",
+     "message": "Joined; the independent kink-aware audit is still required.",
+     "pairingPass": true
+    }
+   ],
+   "C1_soft2_straight_S6": [
+    {
+     "rung": 1,
+     "seedSpacing_mm": 0.45,
+     "stage": "KINKED_PROTECTED_MESH_JOIN_PASS",
+     "message": "Joined; the independent kink-aware audit is still required.",
+     "pairingPass": true
+    }
+   ],
+   "C1_soft2_straight_S7": [
+    {
+     "rung": 1,
+     "seedSpacing_mm": 0.45,
+     "stage": "KINKED_PROTECTED_MESH_JOIN_PASS",
+     "message": "Joined; the independent kink-aware audit is still required.",
+     "pairingPass": true
+    }
+   ],
+   "C1_soft2_straight_S8": [
+    {
+     "rung": 1,
+     "seedSpacing_mm": 0.45,
+     "stage": "KINKED_PROTECTED_MESH_JOIN_PASS",
+     "message": "Joined; the independent kink-aware audit is still required.",
+     "pairingPass": true
+    }
+   ],
+   "C1_soft2_straight_S9": [
+    {
+     "rung": 1,
+     "seedSpacing_mm": 0.45,
+     "stage": "KINKED_PROTECTED_MESH_JOIN_PASS",
+     "message": "Joined; the independent kink-aware audit is still required.",
+     "pairingPass": true
+    }
+   ],
+   "C1_soft2_straight_S10": [
+    {
+     "rung": 1,
+     "seedSpacing_mm": 0.45,
+     "stage": "KINKED_PROTECTED_MESH_JOIN_PASS",
+     "message": "Joined; the independent kink-aware audit is still required.",
+     "pairingPass": true
+    }
+   ],
+   "C1_soft2_straight_S11": [
+    {
+     "rung": 1,
+     "seedSpacing_mm": 0.45,
+     "stage": "KINKED_PROTECTED_MESH_JOIN_PASS",
+     "message": "Joined; the independent kink-aware audit is still required.",
+     "pairingPass": true
+    }
+   ],
+   "C1_soft2_straight_S12": [
+    {
+     "rung": 1,
+     "seedSpacing_mm": 0.45,
+     "stage": "HOLD_KINKED_PROTECTED_MESH_JOIN",
+     "message": "globalNeighborRatioAtMost1p8",
+     "pairingPass": false
+    },
+    {
+     "rung": 2,
+     "seedSpacing_mm": 0.4,
+     "stage": "HOLD_KINKED_PROTECTED_MESH_JOIN",
+     "message": "globalNeighborRatioAtMost1p8",
+     "pairingPass": false
+    },
+    {
+     "rung": 3,
+     "seedSpacing_mm": 0.5,
+     "stage": "KINKED_PROTECTED_MESH_JOIN_PASS",
+     "message": "Joined; the independent kink-aware audit is still required.",
+     "pairingPass": true
+    }
+   ],
+   "C1_soft2_straight_S13": [
+    {
+     "rung": 1,
+     "seedSpacing_mm": 0.45,
+     "stage": "KINKED_PROTECTED_MESH_JOIN_PASS",
+     "message": "Joined; the independent kink-aware audit is still required.",
+     "pairingPass": true
+    }
+   ],
+   "C1_soft2_straight_S14": [
+    {
+     "rung": 1,
+     "seedSpacing_mm": 0.45,
+     "stage": "KINKED_PROTECTED_MESH_JOIN_PASS",
+     "message": "Joined; the independent kink-aware audit is still required.",
+     "pairingPass": true
+    }
+   ],
+   "C1_soft2_straight_S15": [
+    {
+     "rung": 1,
+     "seedSpacing_mm": 0.45,
+     "stage": "KINKED_PROTECTED_MESH_JOIN_PASS",
+     "message": "Joined; the independent kink-aware audit is still required.",
+     "pairingPass": true
+    }
+   ],
+   "C1_soft2_straight_S16": [
+    {
+     "rung": 1,
+     "seedSpacing_mm": 0.45,
+     "stage": "KINKED_PROTECTED_MESH_JOIN_PASS",
+     "message": "Joined; the independent kink-aware audit is still required.",
+     "pairingPass": true
+    }
+   ],
+   "C1_soft2_straight_S17": [
+    {
+     "rung": 1,
+     "seedSpacing_mm": 0.45,
+     "stage": "KINKED_PROTECTED_MESH_JOIN_PASS",
+     "message": "Joined; the independent kink-aware audit is still required.",
+     "pairingPass": true
+    }
+   ],
+   "C1_soft2_straight_S18": [
+    {
+     "rung": 1,
+     "seedSpacing_mm": 0.45,
+     "stage": "KINKED_PROTECTED_MESH_JOIN_PASS",
+     "message": "Joined; the independent kink-aware audit is still required.",
+     "pairingPass": true
+    }
+   ],
+   "C1_soft2_straight_S19": [
+    {
+     "rung": 1,
+     "seedSpacing_mm": 0.45,
+     "stage": "KINKED_PROTECTED_MESH_JOIN_PASS",
+     "message": "Joined; the independent kink-aware audit is still required.",
+     "pairingPass": true
+    }
+   ],
+   "C1_soft1_frozenMTS_S6": [
+    {
+     "rung": 1,
+     "seedSpacing_mm": 0.45,
+     "stage": "KINKED_PROTECTED_MESH_JOIN_PASS",
+     "message": "Joined; the independent kink-aware audit is still required.",
+     "pairingPass": true
+    }
+   ],
+   "C1_soft1_frozenMTS_S7": [
+    {
+     "rung": 1,
+     "seedSpacing_mm": 0.45,
+     "stage": "KINKED_PROTECTED_MESH_JOIN_PASS",
+     "message": "Joined; the independent kink-aware audit is still required.",
+     "pairingPass": true
+    }
+   ],
+   "C1_soft1_frozenMTS_S8": [
+    {
+     "rung": 1,
+     "seedSpacing_mm": 0.45,
+     "stage": "KINKED_PROTECTED_MESH_JOIN_PASS",
+     "message": "Joined; the independent kink-aware audit is still required.",
+     "pairingPass": true
+    }
+   ],
+   "C1_soft1_frozenMTS_S9": [
+    {
+     "rung": 1,
+     "seedSpacing_mm": 0.45,
+     "stage": "KINKED_PROTECTED_MESH_JOIN_PASS",
+     "message": "Joined; the independent kink-aware audit is still required.",
+     "pairingPass": true
+    }
+   ],
+   "C1_soft1_frozenMTS_S10": [
+    {
+     "rung": 1,
+     "seedSpacing_mm": 0.45,
+     "stage": "KINKED_PROTECTED_MESH_JOIN_PASS",
+     "message": "Joined; the independent kink-aware audit is still required.",
+     "pairingPass": true
+    }
+   ],
+   "C1_soft1_frozenMTS_S11": [
+    {
+     "rung": 1,
+     "seedSpacing_mm": 0.45,
+     "stage": "KINKED_PROTECTED_MESH_JOIN_PASS",
+     "message": "Joined; the independent kink-aware audit is still required.",
+     "pairingPass": true
+    }
+   ],
+   "C1_soft1_frozenMTS_S12": [
+    {
+     "rung": 1,
+     "seedSpacing_mm": 0.45,
+     "stage": "HOLD_KINKED_PROTECTED_MESH_JOIN",
+     "message": "globalMinAngleAtLeast20",
+     "pairingPass": false
+    },
+    {
+     "rung": 2,
+     "seedSpacing_mm": 0.4,
+     "stage": "HOLD_KINKED_PROTECTED_MESH_JOIN",
+     "message": "globalMinAngleAtLeast20",
+     "pairingPass": false
+    },
+    {
+     "rung": 3,
+     "seedSpacing_mm": 0.5,
+     "stage": "HOLD_KINKED_PROTECTED_MESH_JOIN",
+     "message": "globalMinAngleAtLeast20",
+     "pairingPass": false
+    },
+    {
+     "rung": 4,
+     "seedSpacing_mm": 0.35,
+     "stage": "HOLD_KINKED_PROTECTED_MESH_JOIN",
+     "message": "globalMinAngleAtLeast20",
+     "pairingPass": false
+    }
+   ],
+   "C1_soft1_straight_S6": [
+    {
+     "rung": 1,
+     "seedSpacing_mm": 0.45,
+     "stage": "KINKED_PROTECTED_MESH_JOIN_PASS",
+     "message": "Joined; the independent kink-aware audit is still required.",
+     "pairingPass": true
+    }
+   ],
+   "C1_soft1_straight_S7": [
+    {
+     "rung": 1,
+     "seedSpacing_mm": 0.45,
+     "stage": "KINKED_PROTECTED_MESH_JOIN_PASS",
+     "message": "Joined; the independent kink-aware audit is still required.",
+     "pairingPass": true
+    }
+   ],
+   "C1_soft1_straight_S8": [
+    {
+     "rung": 1,
+     "seedSpacing_mm": 0.45,
+     "stage": "KINKED_PROTECTED_MESH_JOIN_PASS",
+     "message": "Joined; the independent kink-aware audit is still required.",
+     "pairingPass": true
+    }
+   ],
+   "C1_soft1_straight_S9": [
+    {
+     "rung": 1,
+     "seedSpacing_mm": 0.45,
+     "stage": "KINKED_PROTECTED_MESH_JOIN_PASS",
+     "message": "Joined; the independent kink-aware audit is still required.",
+     "pairingPass": true
+    }
+   ],
+   "C1_soft1_straight_S10": [
+    {
+     "rung": 1,
+     "seedSpacing_mm": 0.45,
+     "stage": "KINKED_PROTECTED_MESH_JOIN_PASS",
+     "message": "Joined; the independent kink-aware audit is still required.",
+     "pairingPass": true
+    }
+   ],
+   "C1_soft1_straight_S11": [
+    {
+     "rung": 1,
+     "seedSpacing_mm": 0.45,
+     "stage": "KINKED_PROTECTED_MESH_JOIN_PASS",
+     "message": "Joined; the independent kink-aware audit is still required.",
+     "pairingPass": true
+    }
+   ],
+   "C1_soft1_straight_S12": [
+    {
+     "rung": 1,
+     "seedSpacing_mm": 0.45,
+     "stage": "HOLD_KINKED_PROTECTED_MESH_JOIN",
+     "message": "globalNeighborRatioAtMost1p8",
+     "pairingPass": false
+    },
+    {
+     "rung": 2,
+     "seedSpacing_mm": 0.4,
+     "stage": "KINKED_PROTECTED_MESH_JOIN_PASS",
+     "message": "Joined; the independent kink-aware audit is still required.",
+     "pairingPass": true
+    }
+   ],
+   "C1_soft1_straight_S13": [
+    {
+     "rung": 1,
+     "seedSpacing_mm": 0.45,
+     "stage": "KINKED_PROTECTED_MESH_JOIN_PASS",
+     "message": "Joined; the independent kink-aware audit is still required.",
+     "pairingPass": true
+    }
+   ],
+   "C1_soft1_straight_S14": [
+    {
+     "rung": 1,
+     "seedSpacing_mm": 0.45,
+     "stage": "KINKED_PROTECTED_MESH_JOIN_PASS",
+     "message": "Joined; the independent kink-aware audit is still required.",
+     "pairingPass": true
+    }
+   ],
+   "C1_soft1_straight_S15": [
+    {
+     "rung": 1,
+     "seedSpacing_mm": 0.45,
+     "stage": "KINKED_PROTECTED_MESH_JOIN_PASS",
+     "message": "Joined; the independent kink-aware audit is still required.",
+     "pairingPass": true
+    }
+   ],
+   "C1_soft1_straight_S16": [
+    {
+     "rung": 1,
+     "seedSpacing_mm": 0.45,
+     "stage": "KINKED_PROTECTED_MESH_JOIN_PASS",
+     "message": "Joined; the independent kink-aware audit is still required.",
+     "pairingPass": true
+    }
+   ],
+   "C1_soft1_straight_S17": [
+    {
+     "rung": 1,
+     "seedSpacing_mm": 0.45,
+     "stage": "KINKED_PROTECTED_MESH_JOIN_PASS",
+     "message": "Joined; the independent kink-aware audit is still required.",
+     "pairingPass": true
+    }
+   ],
+   "C1_soft1_straight_S18": [
+    {
+     "rung": 1,
+     "seedSpacing_mm": 0.45,
+     "stage": "KINKED_PROTECTED_MESH_JOIN_PASS",
+     "message": "Joined; the independent kink-aware audit is still required.",
+     "pairingPass": true
+    }
+   ],
+   "C1_soft1_straight_S19": [
+    {
+     "rung": 1,
+     "seedSpacing_mm": 0.45,
+     "stage": "KINKED_PROTECTED_MESH_JOIN_PASS",
+     "message": "Joined; the independent kink-aware audit is still required.",
+     "pairingPass": true
+    }
+   ],
+   "C1_soft1_straight_S20": [
+    {
+     "rung": 1,
+     "seedSpacing_mm": 0.45,
+     "stage": "KINKED_PROTECTED_MESH_JOIN_PASS",
+     "message": "Joined; the independent kink-aware audit is still required.",
+     "pairingPass": true
+    }
+   ],
+   "C2_H_straight_S10": [
+    {
+     "rung": 1,
+     "seedSpacing_mm": 0.45,
+     "stage": "KINKED_PROTECTED_MESH_JOIN_PASS",
+     "message": "Joined; the independent kink-aware audit is still required.",
+     "pairingPass": true
+    }
+   ],
+   "C2_H_straight_S11": [
+    {
+     "rung": 1,
+     "seedSpacing_mm": 0.45,
+     "stage": "KINKED_PROTECTED_MESH_JOIN_PASS",
+     "message": "Joined; the independent kink-aware audit is still required.",
+     "pairingPass": true
+    }
+   ],
+   "C2_H_straight_S12": [
+    {
+     "rung": 1,
+     "seedSpacing_mm": 0.45,
+     "stage": "KINKED_PROTECTED_MESH_JOIN_PASS",
+     "message": "Joined; the independent kink-aware audit is still required.",
+     "pairingPass": true
+    }
+   ],
+   "C2_H_frozen_S10": [
+    {
+     "rung": 1,
+     "seedSpacing_mm": 0.45,
+     "stage": "KINKED_PROTECTED_MESH_JOIN_PASS",
+     "message": "Joined; the independent kink-aware audit is still required.",
+     "pairingPass": true
+    }
+   ],
+   "C2_H_frozen_S11": [
+    {
+     "rung": 1,
+     "seedSpacing_mm": 0.45,
+     "stage": "KINKED_PROTECTED_MESH_JOIN_PASS",
+     "message": "Joined; the independent kink-aware audit is still required.",
+     "pairingPass": true
+    }
+   ],
+   "C2_stiff13_straight_S10": [
+    {
+     "rung": 1,
+     "seedSpacing_mm": 0.45,
+     "stage": "HOLD_KINKED_PROTECTED_MESH_JOIN",
+     "message": "globalNeighborRatioAtMost1p8",
+     "pairingPass": false
+    },
+    {
+     "rung": 2,
+     "seedSpacing_mm": 0.4,
+     "stage": "KINKED_PROTECTED_MESH_JOIN_PASS",
+     "message": "Joined; the independent kink-aware audit is still required.",
+     "pairingPass": true
+    }
+   ],
+   "C2_stiff13_straight_S11": [
+    {
+     "rung": 1,
+     "seedSpacing_mm": 0.45,
+     "stage": "HOLD_KINKED_PROTECTED_MESH_JOIN",
+     "message": "globalNeighborRatioAtMost1p8",
+     "pairingPass": false
+    },
+    {
+     "rung": 2,
+     "seedSpacing_mm": 0.4,
+     "stage": "KINKED_PROTECTED_MESH_JOIN_PASS",
+     "message": "Joined; the independent kink-aware audit is still required.",
+     "pairingPass": true
+    }
+   ],
+   "C2_stiff13_straight_S12": [
+    {
+     "rung": 1,
+     "seedSpacing_mm": 0.45,
+     "stage": "HOLD_KINKED_PROTECTED_MESH_JOIN",
+     "message": "globalMinAngleAtLeast20",
+     "pairingPass": false
+    },
+    {
+     "rung": 2,
+     "seedSpacing_mm": 0.4,
+     "stage": "HOLD_KINKED_PROTECTED_MESH_JOIN",
+     "message": "globalMinAngleAtLeast20, globalNeighborRatioAtMost1p8",
+     "pairingPass": false
+    },
+    {
+     "rung": 3,
+     "seedSpacing_mm": 0.5,
+     "stage": "HOLD_KINKED_PROTECTED_MESH_JOIN",
+     "message": "globalMinAngleAtLeast20, globalNeighborRatioAtMost1p8",
+     "pairingPass": false
+    },
+    {
+     "rung": 4,
+     "seedSpacing_mm": 0.35,
+     "stage": "HOLD_KINKED_PROTECTED_MESH_JOIN",
+     "message": "globalMinAngleAtLeast20",
+     "pairingPass": false
+    }
+   ],
+   "C2_stiff13_frozen_S10": [
+    {
+     "rung": 1,
+     "seedSpacing_mm": 0.45,
+     "stage": "KINKED_PROTECTED_MESH_JOIN_PASS",
+     "message": "Joined; the independent kink-aware audit is still required.",
+     "pairingPass": true
+    }
+   ],
+   "C2_stiff13_frozen_S11": [
+    {
+     "rung": 1,
+     "seedSpacing_mm": 0.45,
+     "stage": "KINKED_PROTECTED_MESH_JOIN_PASS",
+     "message": "Joined; the independent kink-aware audit is still required.",
+     "pairingPass": true
+    }
+   ],
+   "C2_soft2_straight_S10": [
+    {
+     "rung": 1,
+     "seedSpacing_mm": 0.45,
+     "stage": "KINKED_PROTECTED_MESH_JOIN_PASS",
+     "message": "Joined; the independent kink-aware audit is still required.",
+     "pairingPass": true
+    }
+   ],
+   "C2_soft2_straight_S11": [
+    {
+     "rung": 1,
+     "seedSpacing_mm": 0.45,
+     "stage": "KINKED_PROTECTED_MESH_JOIN_PASS",
+     "message": "Joined; the independent kink-aware audit is still required.",
+     "pairingPass": true
+    }
+   ],
+   "C2_soft2_straight_S12": [
+    {
+     "rung": 1,
+     "seedSpacing_mm": 0.45,
+     "stage": "HOLD_KINKED_PROTECTED_MESH_JOIN",
+     "message": "globalMinAngleAtLeast20",
+     "pairingPass": false
+    },
+    {
+     "rung": 2,
+     "seedSpacing_mm": 0.4,
+     "stage": "HOLD_KINKED_PROTECTED_MESH_JOIN",
+     "message": "globalMinAngleAtLeast20, globalNeighborRatioAtMost1p8",
+     "pairingPass": false
+    },
+    {
+     "rung": 3,
+     "seedSpacing_mm": 0.5,
+     "stage": "HOLD_KINKED_PROTECTED_MESH_JOIN",
+     "message": "globalMinAngleAtLeast20",
+     "pairingPass": false
+    },
+    {
+     "rung": 4,
+     "seedSpacing_mm": 0.35,
+     "stage": "HOLD_KINKED_PROTECTED_MESH_JOIN",
+     "message": "globalMinAngleAtLeast20",
+     "pairingPass": false
+    }
+   ],
+   "C2_soft2_frozen_S10": [
+    {
+     "rung": 1,
+     "seedSpacing_mm": 0.45,
+     "stage": "KINKED_PROTECTED_MESH_JOIN_PASS",
+     "message": "Joined; the independent kink-aware audit is still required.",
+     "pairingPass": true
+    }
+   ],
+   "C2_soft2_frozen_S11": [
+    {
+     "rung": 1,
+     "seedSpacing_mm": 0.45,
+     "stage": "KINKED_PROTECTED_MESH_JOIN_PASS",
+     "message": "Joined; the independent kink-aware audit is still required.",
+     "pairingPass": true
+    }
+   ],
+   "C2_soft1_straight_S10": [
+    {
+     "rung": 1,
+     "seedSpacing_mm": 0.45,
+     "stage": "KINKED_PROTECTED_MESH_JOIN_PASS",
+     "message": "Joined; the independent kink-aware audit is still required.",
+     "pairingPass": true
+    }
+   ],
+   "C2_soft1_straight_S11": [
+    {
+     "rung": 1,
+     "seedSpacing_mm": 0.45,
+     "stage": "KINKED_PROTECTED_MESH_JOIN_PASS",
+     "message": "Joined; the independent kink-aware audit is still required.",
+     "pairingPass": true
+    }
+   ],
+   "C2_soft1_straight_S12": [
+    {
+     "rung": 1,
+     "seedSpacing_mm": 0.45,
+     "stage": "KINKED_PROTECTED_MESH_JOIN_PASS",
+     "message": "Joined; the independent kink-aware audit is still required.",
+     "pairingPass": true
+    }
+   ],
+   "C2_soft1_frozen_S10": [
+    {
+     "rung": 1,
+     "seedSpacing_mm": 0.45,
+     "stage": "KINKED_PROTECTED_MESH_JOIN_PASS",
+     "message": "Joined; the independent kink-aware audit is still required.",
+     "pairingPass": true
+    }
+   ],
+   "C2_soft1_frozen_S11": [
+    {
+     "rung": 1,
+     "seedSpacing_mm": 0.45,
+     "stage": "KINKED_PROTECTED_MESH_JOIN_PASS",
+     "message": "Joined; the independent kink-aware audit is still required.",
+     "pairingPass": true
+    }
+   ],
+   "C2_soft1_frozen_S12": [
+    {
+     "rung": 1,
+     "seedSpacing_mm": 0.45,
+     "stage": "HOLD_KINKED_PROTECTED_MESH_JOIN",
+     "message": "globalMinAngleAtLeast20",
+     "pairingPass": false
+    },
+    {
+     "rung": 2,
+     "seedSpacing_mm": 0.4,
+     "stage": "HOLD_KINKED_PROTECTED_MESH_JOIN",
+     "message": "globalMinAngleAtLeast20",
+     "pairingPass": false
+    },
+    {
+     "rung": 3,
+     "seedSpacing_mm": 0.5,
+     "stage": "HOLD_KINKED_PROTECTED_MESH_JOIN",
+     "message": "globalMinAngleAtLeast20",
+     "pairingPass": false
+    },
+    {
+     "rung": 4,
+     "seedSpacing_mm": 0.35,
+     "stage": "HOLD_KINKED_PROTECTED_MESH_JOIN",
+     "message": "globalMinAngleAtLeast20",
+     "pairingPass": false
+    }
+   ],
+   "C3_H_zigzag2_S10": [
+    {
+     "rung": 1,
+     "seedSpacing_mm": 0.45,
+     "stage": "KINKED_PROTECTED_MESH_JOIN_PASS",
+     "message": "Joined; the independent kink-aware audit is still required.",
+     "pairingPass": true
+    }
+   ],
+   "C3_H_zigzag2_S11": [
+    {
+     "rung": 1,
+     "seedSpacing_mm": 0.45,
+     "stage": "KINKED_PROTECTED_MESH_JOIN_PASS",
+     "message": "Joined; the independent kink-aware audit is still required.",
+     "pairingPass": true
+    }
+   ],
+   "C3_H_zigzag2_S12": [
+    {
+     "rung": 1,
+     "seedSpacing_mm": 0.45,
+     "stage": "KINKED_PROTECTED_MESH_JOIN_PASS",
+     "message": "Joined; the independent kink-aware audit is still required.",
+     "pairingPass": true
+    }
+   ],
+   "C3_H_zigzag5_S10": [
+    {
+     "rung": 1,
+     "seedSpacing_mm": 0.45,
+     "stage": "KINKED_PROTECTED_MESH_JOIN_PASS",
+     "message": "Joined; the independent kink-aware audit is still required.",
+     "pairingPass": true
+    }
+   ],
+   "C3_H_zigzag5_S11": [
+    {
+     "rung": 1,
+     "seedSpacing_mm": 0.45,
+     "stage": "KINKED_PROTECTED_MESH_JOIN_PASS",
+     "message": "Joined; the independent kink-aware audit is still required.",
+     "pairingPass": true
+    }
+   ],
+   "C3_H_zigzag5_S12": [
+    {
+     "rung": 1,
+     "seedSpacing_mm": 0.45,
+     "stage": "KINKED_PROTECTED_MESH_JOIN_PASS",
+     "message": "Joined; the independent kink-aware audit is still required.",
+     "pairingPass": true
+    }
+   ]
+  }
+ },
+ "remainingFailures": [
+  {
+   "id": "C1_soft1_frozenMTS_S12",
+   "group": "C1",
+   "caseId": "soft1",
+   "state": 12,
+   "nearestRing": 1,
+   "nearestRingActive": true,
+   "tipToRingCircle_mm": 15.128933391555389,
+   "tipGuideClearanceToRing_mm": 0.12893339155538897,
+   "category": "QUALITY",
+   "finalStage": "HOLD_LP2A2_LADDER_EXHAUSTED",
+   "finalMessage": "All 4 seed-spacing rungs fail the global quality gates.",
+   "oldStage": "HOLD_KINKED_EXTERIOR",
+   "oldMessage": "HOLD_LIP_STATIONS Lip nodes U=150 L=153, per-segment [50 7 7 8 7 8 8 8 8 8 8 8 1] / [50 8 8 8 8 8 8 8 8 8 8 8 1], vertices 14/14, gaps 0.521/0.521 mm.",
+   "rungs": [
+    {
+     "seedSpacing_mm": 0.45,
+     "stage": "HOLD_KINKED_PROTECTED_MESH_JOIN",
+     "message": "globalMinAngleAtLeast20",
+     "minAngle_deg": 9.405889082155275,
+     "maxNeighborRatio": 1.5918285508620285,
+     "minAngleAt": {
+      "xy": [
+       133.32748404466574,
+       70.57192855451676
+      ],
+      "toTip_mm": 15.110589020801108,
+      "toTipGuideCircle_mm": 0.11058902080110755,
+      "toRingCircles_mm": [
+       0.03617420292256668,
+       34.53707031146044,
+       83.61521398909419
+      ],
+      "toCrack_mm": 15.110589020801108
+     },
+     "maxRatioAt": {
+      "xy": [
+       118.18727867720884,
+       70.18121219363377
+      ],
+      "toTip_mm": 0.04056521370357671,
+      "toTipGuideCircle_mm": -14.959434786296423,
+      "toRingCircles_mm": [
+       15.164324512229978,
+       41.92219729479159,
+       87.84189718627786
+      ],
+      "toCrack_mm": 0.04056521370357671
+     },
+     "auditPass": null,
+     "ringPolygons": null
+    },
+    {
+     "seedSpacing_mm": 0.4,
+     "stage": "HOLD_KINKED_PROTECTED_MESH_JOIN",
+     "message": "globalMinAngleAtLeast20",
+     "minAngle_deg": 9.405889082155275,
+     "maxNeighborRatio": 1.6391943141483616,
+     "minAngleAt": {
+      "xy": [
+       133.3274840446657,
+       70.57192855451676
+      ],
+      "toTip_mm": 15.11058902080108,
+      "toTipGuideCircle_mm": 0.11058902080107913,
+      "toRingCircles_mm": [
+       0.0361742029225951,
+       34.537070311460454,
+       83.61521398909419
+      ],
+      "toCrack_mm": 15.11058902080108
+     },
+     "maxRatioAt": {
+      "xy": [
+       109.75940897077456,
+       25.393433194753154
+      ],
+      "toTip_mm": 45.56054971493461,
+      "toTipGuideCircle_mm": 30.56054971493461,
+      "toRingCircles_mm": [
+       42.55037609812976,
+       85.31490560932883,
+       133.10367465249462
+      ],
+      "toCrack_mm": 7.99658878030453
+     },
+     "auditPass": null,
+     "ringPolygons": null
+    },
+    {
+     "seedSpacing_mm": 0.5,
+     "stage": "HOLD_KINKED_PROTECTED_MESH_JOIN",
+     "message": "globalMinAngleAtLeast20",
+     "minAngle_deg": 9.405889082155275,
+     "maxNeighborRatio": 1.68413534084492,
+     "minAngleAt": {
+      "xy": [
+       133.32748404466574,
+       70.57192855451676
+      ],
+      "toTip_mm": 15.110589020801108,
+      "toTipGuideCircle_mm": 0.11058902080110755,
+      "toRingCircles_mm": [
+       0.03617420292256668,
+       34.53707031146044,
+       83.61521398909419
+      ],
+      "toCrack_mm": 15.110589020801108
+     },
+     "maxRatioAt": {
+      "xy": [
+       113.28853703533316,
+       32.17668209293582
+      ],
+      "toTip_mm": 38.30347898309598,
+      "toTipGuideCircle_mm": 23.303478983095978,
+      "toRingCircles_mm": [
+       35.254561662564114,
+       77.68279959104332,
+       125.61085723539269
+      ],
+      "toCrack_mm": 9.978866986266716
+     },
+     "auditPass": null,
+     "ringPolygons": null
+    },
+    {
+     "seedSpacing_mm": 0.35,
+     "stage": "HOLD_KINKED_PROTECTED_MESH_JOIN",
+     "message": "globalMinAngleAtLeast20",
+     "minAngle_deg": 9.405889082155275,
+     "maxNeighborRatio": 1.7947720597878363,
+     "minAngleAt": {
+      "xy": [
+       133.32748404466574,
+       70.57192855451676
+      ],
+      "toTip_mm": 15.110589020801108,
+      "toTipGuideCircle_mm": 0.11058902080110755,
+      "toRingCircles_mm": [
+       0.03617420292256668,
+       34.53707031146044,
+       83.61521398909419
+      ],
+      "toCrack_mm": 15.110589020801108
+     },
+     "maxRatioAt": {
+      "xy": [
+       111.32221580894694,
+       34.55712467198849
+      ],
+      "toTip_mm": 36.26642560634766,
+      "toTipGuideCircle_mm": 21.26642560634766,
+      "toRingCircles_mm": [
+       35.106914636685985,
+       76.34060507351478,
+       123.87320899566039
+      ],
+      "toCrack_mm": 7.486263088669556
+     },
+     "auditPass": null,
+     "ringPolygons": null
+    }
+   ],
+   "oldDetail": {
+    "seedSpacing_mm": null,
+    "stage": "HOLD_KINKED_EXTERIOR",
+    "message": "HOLD_LIP_STATIONS Lip nodes U=150 L=153, per-segment [50 7 7 8 7 8 8 8 8 8 8 8 1] / [50 8 8 8 8 8 8 8 8 8 8 8 1], vertices 14/14, gaps 0.521/0.521 mm."
+   }
+  },
+  {
+   "id": "C1_soft1_straight_S20",
+   "group": "C1",
+   "caseId": "soft1",
+   "state": 20,
+   "nearestRing": 2,
+   "nearestRingActive": false,
+   "tipToRingCircle_mm": 15.49227582949155,
+   "tipGuideClearanceToRing_mm": 0.49227582949155035,
+   "category": "PHASE_OR_AUDIT",
+   "finalStage": "KINKED_PROTECTED_MESH_JOIN_PASS",
+   "finalMessage": "Joined; the independent kink-aware audit is still required.",
+   "oldStage": "HOLD_KINKED_EXTERIOR",
+   "oldMessage": "HOLD_LIP_STATIONS Lip nodes U=221 L=225, per-segment [50 8 7 7 7 8 7 8 8 8 8 8 8 8 8 8 8 8 8 8 1] / [50 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 1], vertices 22/22",
+   "rungs": [
+    {
+     "seedSpacing_mm": 0.45,
+     "stage": "KINKED_PROTECTED_MESH_JOIN_PASS",
+     "message": "Joined; the independent kink-aware audit is still required.",
+     "minAngle_deg": 21.363467320746974,
+     "maxNeighborRatio": 1.7532038177179279,
+     "minAngleAt": {
+      "xy": [
+       135.2335556787837,
+       111.98211881602136
+      ],
+      "toTip_mm": 15.47566941099839,
+      "toTipGuideCircle_mm": 0.4756694109983908,
+      "toRingCircles_mm": [
+       26.44507936646293,
+       0.18067796134579694,
+       42.84600716641761
+      ],
+      "toCrack_mm": 15.47566941099839
+     },
+     "maxRatioAt": {
+      "xy": [
+       116.07109775852061,
+       51.845467813136494
+      ],
+      "toTip_mm": 51.08558126333705,
+      "toTipGuideCircle_mm": 36.08558126333705,
+      "toRingCircles_mm": [
+       21.495681858106305,
+       58.75650864499771,
+       105.95013303076693
+      ],
+      "toCrack_mm": 7.2906438575285675
+     },
+     "auditPass": false,
+     "ringPolygons": {
+      "nodes": [
+       76,
+       76,
+       76
+      ],
+      "vertexMeanOffset_mm": [
+       0,
+       6.3440368176470466e-06,
+       0
+      ],
+      "chordMinMax_mm": [
+       [
+        1.5496621968937068,
+        1.5955657297686823
+       ],
+       [
+        1.5496621968937139,
+        1.5999418719999323
+       ],
+       [
+        1.5496621968937139,
+        1.5955657297686776
+       ]
+      ]
+     }
+    },
+    {
+     "seedSpacing_mm": 0.4,
+     "stage": "HOLD_KINKED_PROTECTED_MESH_JOIN",
+     "message": "globalNeighborRatioAtMost1p8",
+     "minAngle_deg": 21.363467320746974,
+     "maxNeighborRatio": 2.111177994279082,
+     "minAngleAt": {
+      "xy": [
+       135.2335556787837,
+       111.98211881602136
+      ],
+      "toTip_mm": 15.47566941099839,
+      "toTipGuideCircle_mm": 0.4756694109983908,
+      "toRingCircles_mm": [
+       26.44507936646293,
+       0.18067796134579694,
+       42.84600716641761
+      ],
+      "toCrack_mm": 15.47566941099839
+     },
+     "maxRatioAt": {
+      "xy": [
+       95.21337937645805,
+       28.07115505723072
+      ],
+      "toTip_mm": 79.41675630913177,
+      "toTipGuideCircle_mm": 64.41675630913177,
+      "toRingCircles_mm": [
+       51.77218199895336,
+       89.767057988526,
+       135.31256915283439
+      ],
+      "toCrack_mm": 6.791220891221921
+     },
+     "auditPass": null,
+     "ringPolygons": null
+    },
+    {
+     "seedSpacing_mm": 0.5,
+     "stage": "HOLD_KINKED_PROTECTED_MESH_JOIN",
+     "message": "globalNeighborRatioAtMost1p8",
+     "minAngle_deg": 21.363467320746974,
+     "maxNeighborRatio": 1.8563584086209952,
+     "minAngleAt": {
+      "xy": [
+       135.2335556787837,
+       111.98211881602136
+      ],
+      "toTip_mm": 15.47566941099839,
+      "toTipGuideCircle_mm": 0.4756694109983908,
+      "toRingCircles_mm": [
+       26.44507936646293,
+       0.18067796134579694,
+       42.84600716641761
+      ],
+      "toCrack_mm": 15.47566941099839
+     },
+     "maxRatioAt": {
+      "xy": [
+       95.00102844662436,
+       24.190548852458516
+      ],
+      "toTip_mm": 83.13387384570738,
+      "toTipGuideCircle_mm": 68.13387384570738,
+      "toRingCircles_mm": [
+       54.2945799938888,
+       93.19556851417418,
+       139.0005864831269
+      ],
+      "toCrack_mm": 6.598971553375634
+     },
+     "auditPass": null,
+     "ringPolygons": null
+    },
+    {
+     "seedSpacing_mm": 0.35,
+     "stage": "KINKED_PROTECTED_MESH_JOIN_PASS",
+     "message": "Joined; the independent kink-aware audit is still required.",
+     "minAngle_deg": 21.363467320746974,
+     "maxNeighborRatio": 1.6634130173190604,
+     "minAngleAt": {
+      "xy": [
+       135.2335556787837,
+       111.98211881602136
+      ],
+      "toTip_mm": 15.47566941099839,
+      "toTipGuideCircle_mm": 0.4756694109983908,
+      "toRingCircles_mm": [
+       26.44507936646293,
+       0.18067796134579694,
+       42.84600716641761
+      ],
+      "toCrack_mm": 15.47566941099839
+     },
+     "maxRatioAt": {
+      "xy": [
+       113.11385295709657,
+       37.71348903586305
+      ],
+      "toTip_mm": 65.49651323172992,
+      "toTipGuideCircle_mm": 50.49651323172992,
+      "toRingCircles_mm": [
+       31.70585371584961,
+       72.72072627140444,
+       120.33743025946545
+      ],
+      "toCrack_mm": 8.354441473644336
+     },
+     "auditPass": false,
+     "ringPolygons": {
+      "nodes": [
+       76,
+       76,
+       76
+      ],
+      "vertexMeanOffset_mm": [
+       0,
+       6.3440368176470466e-06,
+       0
+      ],
+      "chordMinMax_mm": [
+       [
+        1.5496621968937068,
+        1.5955657297686823
+       ],
+       [
+        1.5496621968937139,
+        1.5999418719999323
+       ],
+       [
+        1.5496621968937139,
+        1.5955657297686776
+       ]
+      ]
+     }
+    }
+   ],
+   "oldDetail": {
+    "seedSpacing_mm": null,
+    "stage": "HOLD_KINKED_EXTERIOR",
+    "message": "HOLD_LIP_STATIONS Lip nodes U=221 L=225, per-segment [50 8 7 7 7 8 7 8 8 8 8 8 8 8 8 8 8 8 8 8 1] / [50 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 1], vertices 22/22, gaps 0.521/0.521 mm."
+   }
+  },
+  {
+   "id": "C2_stiff13_straight_S12",
+   "group": "C2",
+   "caseId": "stiff13",
+   "state": 12,
+   "nearestRing": 1,
+   "nearestRingActive": true,
+   "tipToRingCircle_mm": 15.238633396065847,
+   "tipGuideClearanceToRing_mm": 0.23863339606584688,
+   "category": "QUALITY",
+   "finalStage": "HOLD_LP2A2_LADDER_EXHAUSTED",
+   "finalMessage": "All 4 seed-spacing rungs fail the global quality gates.",
+   "oldStage": "HOLD_KINKED_EXTERIOR",
+   "oldMessage": "HOLD_LIP_STATIONS Lip nodes U=150 L=153, per-segment [50 8 7 7 7 8 8 8 8 8 8 8 1] / [50 8 8 8 8 8 8 8 8 8 8 8 1], vertices 14/14, gaps 0.521/0.521 mm.",
+   "rungs": [
+    {
+     "seedSpacing_mm": 0.45,
+     "stage": "HOLD_KINKED_PROTECTED_MESH_JOIN",
+     "message": "globalMinAngleAtLeast20",
+     "minAngle_deg": 14.604098241679848,
+     "maxNeighborRatio": 1.591828550861634,
+     "minAngleAt": {
+      "xy": [
+       133.28218948812045,
+       69.17809553356206
+      ],
+      "toTip_mm": 15.212819395706198,
+      "toTipGuideCircle_mm": 0.21281939570619812,
+      "toRingCircles_mm": [
+       0.07961406772628976,
+       35.85762814190983,
+       84.99341940728563
+      ],
+      "toCrack_mm": 15.212819395706198
+     },
+     "maxRatioAt": {
+      "xy": [
+       118.08233298930571,
+       70.33306084980663
+      ],
+      "toTip_mm": 0.04056521370359329,
+      "toTipGuideCircle_mm": -14.959434786296407,
+      "toRingCircles_mm": [
+       15.27106666235056,
+       41.855637132380096,
+       87.7317290184084
+      ],
+      "toCrack_mm": 0.02028260685180718
+     },
+     "auditPass": null,
+     "ringPolygons": null
+    },
+    {
+     "seedSpacing_mm": 0.4,
+     "stage": "HOLD_KINKED_PROTECTED_MESH_JOIN",
+     "message": "globalMinAngleAtLeast20, globalNeighborRatioAtMost1p8",
+     "minAngle_deg": 14.604098241679848,
+     "maxNeighborRatio": 1.8406587259570406,
+     "minAngleAt": {
+      "xy": [
+       133.28218948812045,
+       69.17809553356204
+      ],
+      "toTip_mm": 15.212819395706198,
+      "toTipGuideCircle_mm": 0.21281939570619812,
+      "toRingCircles_mm": [
+       0.07961406772628976,
+       35.85762814190984,
+       84.99341940728564
+      ],
+      "toCrack_mm": 15.212819395706198
+     },
+     "maxRatioAt": {
+      "xy": [
+       114.1018943868581,
+       37.70204888962974
+      ],
+      "toTip_mm": 32.90058971712657,
+      "toTipGuideCircle_mm": 17.90058971712657,
+      "toRingCircles_mm": [
+       30.952356485971006,
+       72.31250591442722,
+       120.0731803826284
+      ],
+      "toCrack_mm": 8.82775273923648
+     },
+     "auditPass": null,
+     "ringPolygons": null
+    },
+    {
+     "seedSpacing_mm": 0.5,
+     "stage": "HOLD_KINKED_PROTECTED_MESH_JOIN",
+     "message": "globalMinAngleAtLeast20, globalNeighborRatioAtMost1p8",
+     "minAngle_deg": 14.604098241679848,
+     "maxNeighborRatio": 1.8049574792836405,
+     "minAngleAt": {
+      "xy": [
+       133.28218948812045,
+       69.17809553356204
+      ],
+      "toTip_mm": 15.212819395706198,
+      "toTipGuideCircle_mm": 0.21281939570619812,
+      "toRingCircles_mm": [
+       0.07961406772628976,
+       35.85762814190984,
+       84.99341940728564
+      ],
+      "toCrack_mm": 15.212819395706198
+     },
+     "maxRatioAt": {
+      "xy": [
+       114.21408158084384,
+       34.65938542270467
+      ],
+      "toTip_mm": 35.91008917088261,
+      "toTipGuideCircle_mm": 20.910089170882607,
+      "toRingCircles_mm": [
+       32.87825550547794,
+       75.03799158710642,
+       122.97054992834173
+      ],
+      "toCrack_mm": 9.86338783206465
+     },
+     "auditPass": null,
+     "ringPolygons": null
+    },
+    {
+     "seedSpacing_mm": 0.35,
+     "stage": "HOLD_KINKED_PROTECTED_MESH_JOIN",
+     "message": "globalMinAngleAtLeast20",
+     "minAngle_deg": 14.604098241679848,
+     "maxNeighborRatio": 1.6041835161048608,
+     "minAngleAt": {
+      "xy": [
+       133.28218948812045,
+       69.17809553356204
+      ],
+      "toTip_mm": 15.212819395706198,
+      "toTipGuideCircle_mm": 0.21281939570619812,
+      "toRingCircles_mm": [
+       0.07961406772628976,
+       35.85762814190984,
+       84.99341940728564
+      ],
+      "toCrack_mm": 15.212819395706198
+     },
+     "maxRatioAt": {
+      "xy": [
+       107.49057935319166,
+       16.980419981841095
+      ],
+      "toTip_mm": 54.42366393701001,
+      "toTipGuideCircle_mm": 39.42366393701001,
+      "toRingCircles_mm": [
+       50.31893075526307,
+       93.92892672517928,
+       141.8154941677001
+      ],
+      "toCrack_mm": 5.890579353191669
+     },
+     "auditPass": null,
+     "ringPolygons": null
+    }
+   ],
+   "oldDetail": {
+    "seedSpacing_mm": null,
+    "stage": "HOLD_KINKED_EXTERIOR",
+    "message": "HOLD_LIP_STATIONS Lip nodes U=150 L=153, per-segment [50 8 7 7 7 8 8 8 8 8 8 8 1] / [50 8 8 8 8 8 8 8 8 8 8 8 1], vertices 14/14, gaps 0.521/0.521 mm."
+   }
+  },
+  {
+   "id": "C2_soft2_straight_S12",
+   "group": "C2",
+   "caseId": "soft2",
+   "state": 12,
+   "nearestRing": 1,
+   "nearestRingActive": false,
+   "tipToRingCircle_mm": 15.075032436260958,
+   "tipGuideClearanceToRing_mm": 0.07503243626095824,
+   "category": "QUALITY",
+   "finalStage": "HOLD_LP2A2_LADDER_EXHAUSTED",
+   "finalMessage": "All 4 seed-spacing rungs fail the global quality gates.",
+   "oldStage": "HOLD_KINKED_EXTERIOR",
+   "oldMessage": "HOLD_LIP_STATIONS Lip nodes U=151 L=153, per-segment [50 8 8 7 7 8 8 8 8 8 8 8 1] / [50 8 8 8 8 8 8 8 8 8 8 8 1], vertices 14/14, gaps 0.521/0.521 mm.",
+   "rungs": [
+    {
+     "seedSpacing_mm": 0.45,
+     "stage": "HOLD_KINKED_PROTECTED_MESH_JOIN",
+     "message": "globalMinAngleAtLeast20",
+     "minAngle_deg": 3.447402766652818,
+     "maxNeighborRatio": 1.6238928801816546,
+     "minAngleAt": {
+      "xy": [
+       133.34631258186604,
+       70.43074875153148
+      ],
+      "toTip_mm": 15.0697474700402,
+      "toTipGuideCircle_mm": 0.0697474700402001,
+      "toRingCircles_mm": [
+       0.012535858074123496,
+       34.6623468132306,
+       83.75044808768668
+      ],
+      "toCrack_mm": 15.0697474700402
+     },
+     "maxRatioAt": {
+      "xy": [
+       109.43937694060509,
+       29.093413435910193
+      ],
+      "toTip_mm": 42.108910584471886,
+      "toTipGuideCircle_mm": 27.108910584471886,
+      "toRingCircles_mm": [
+       40.1675183708973,
+       82.08468088108592,
+       129.6477231561755
+      ],
+      "toCrack_mm": 6.798417239675709
+     },
+     "auditPass": null,
+     "ringPolygons": null
+    },
+    {
+     "seedSpacing_mm": 0.4,
+     "stage": "HOLD_KINKED_PROTECTED_MESH_JOIN",
+     "message": "globalMinAngleAtLeast20, globalNeighborRatioAtMost1p8",
+     "minAngle_deg": 3.447402766652818,
+     "maxNeighborRatio": 1.8631412617544176,
+     "minAngleAt": {
+      "xy": [
+       133.34631258186604,
+       70.43074875153148
+      ],
+      "toTip_mm": 15.0697474700402,
+      "toTipGuideCircle_mm": 0.0697474700402001,
+      "toRingCircles_mm": [
+       0.012535858074123496,
+       34.6623468132306,
+       83.75044808768668
+      ],
+      "toCrack_mm": 15.0697474700402
+     },
+     "maxRatioAt": {
+      "xy": [
+       94.60069780817427,
+       30.34744373357125
+      ],
+      "toTip_mm": 46.41068546807302,
+      "toTipGuideCircle_mm": 31.41068546807302,
+      "toRingCircles_mm": [
+       50.958651504255954,
+       88.16618815325194,
+       133.431771759062
+      ],
+      "toCrack_mm": 7.923692392922027
+     },
+     "auditPass": null,
+     "ringPolygons": null
+    },
+    {
+     "seedSpacing_mm": 0.5,
+     "stage": "HOLD_KINKED_PROTECTED_MESH_JOIN",
+     "message": "globalMinAngleAtLeast20",
+     "minAngle_deg": 3.447402766652818,
+     "maxNeighborRatio": 1.595689879872214,
+     "minAngleAt": {
+      "xy": [
+       133.34631258186604,
+       70.43074875153148
+      ],
+      "toTip_mm": 15.0697474700402,
+      "toTipGuideCircle_mm": 0.0697474700402001,
+      "toRingCircles_mm": [
+       0.012535858074123496,
+       34.6623468132306,
+       83.75044808768668
+      ],
+      "toCrack_mm": 15.0697474700402
+     },
+     "maxRatioAt": {
+      "xy": [
+       94.4894714246609,
+       28.959493328305363
+      ],
+      "toTip_mm": 47.66511215286257,
+      "toTipGuideCircle_mm": 32.66511215286257,
+      "toRingCircles_mm": [
+       51.84190966353685,
+       89.39712229278953,
+       134.75888729664294
+      ],
+      "toCrack_mm": 7.723717529248623
+     },
+     "auditPass": null,
+     "ringPolygons": null
+    },
+    {
+     "seedSpacing_mm": 0.35,
+     "stage": "HOLD_KINKED_PROTECTED_MESH_JOIN",
+     "message": "globalMinAngleAtLeast20",
+     "minAngle_deg": 3.447402766652818,
+     "maxNeighborRatio": 1.7452405937565207,
+     "minAngleAt": {
+      "xy": [
+       133.34631258186604,
+       70.43074875153148
+      ],
+      "toTip_mm": 15.0697474700402,
+      "toTipGuideCircle_mm": 0.0697474700402001,
+      "toRingCircles_mm": [
+       0.012535858074123496,
+       34.6623468132306,
+       83.75044808768668
+      ],
+      "toCrack_mm": 15.0697474700402
+     },
+     "maxRatioAt": {
+      "xy": [
+       94.77110167098765,
+       23.624226938263398
+      ],
+      "toTip_mm": 52.22885758871021,
+      "toTipGuideCircle_mm": 37.22885758871021,
+      "toRingCircles_mm": [
+       54.82768281267907,
+       93.79985848836168,
+       139.61174429873034
+      ],
+      "toCrack_mm": 6.828898329012347
+     },
+     "auditPass": null,
+     "ringPolygons": null
+    }
+   ],
+   "oldDetail": {
+    "seedSpacing_mm": null,
+    "stage": "HOLD_KINKED_EXTERIOR",
+    "message": "HOLD_LIP_STATIONS Lip nodes U=151 L=153, per-segment [50 8 8 7 7 8 8 8 8 8 8 8 1] / [50 8 8 8 8 8 8 8 8 8 8 8 1], vertices 14/14, gaps 0.521/0.521 mm."
+   }
+  },
+  {
+   "id": "C2_soft1_frozen_S12",
+   "group": "C2",
+   "caseId": "soft1",
+   "state": 12,
+   "nearestRing": 1,
+   "nearestRingActive": true,
+   "tipToRingCircle_mm": 15.236725475243436,
+   "tipGuideClearanceToRing_mm": 0.23672547524343557,
+   "category": "QUALITY",
+   "finalStage": "HOLD_LP2A2_LADDER_EXHAUSTED",
+   "finalMessage": "All 4 seed-spacing rungs fail the global quality gates.",
+   "oldStage": "HOLD_KINKED_PROTECTED_MESH_JOIN",
+   "oldMessage": "globalMinAngleAtLeast20",
+   "rungs": [
+    {
+     "seedSpacing_mm": 0.45,
+     "stage": "HOLD_KINKED_PROTECTED_MESH_JOIN",
+     "message": "globalMinAngleAtLeast20",
+     "minAngle_deg": 9.580616756984844,
+     "maxNeighborRatio": 1.653458317618448,
+     "minAngleAt": {
+      "xy": [
+       133.29034610330325,
+       69.29942101400958
+      ],
+      "toTip_mm": 15.20265472008952,
+      "toTipGuideCircle_mm": 0.20265472008951946,
+      "toRingCircles_mm": [
+       0.0675837717885166,
+       35.741065277543,
+       84.87266191367792
+      ],
+      "toCrack_mm": 15.20265472008952
+     },
+     "maxRatioAt": {
+      "xy": [
+       94.44847766153035,
+       33.106129961054755
+      ],
+      "toTip_mm": 44.01225295152315,
+      "toTipGuideCircle_mm": 29.012252951523152,
+      "toRingCircles_mm": [
+       49.568444508638095,
+       85.93718075432773,
+       130.94135081296758
+      ],
+      "toCrack_mm": 8.578194445096363
+     },
+     "auditPass": null,
+     "ringPolygons": null
+    },
+    {
+     "seedSpacing_mm": 0.4,
+     "stage": "HOLD_KINKED_PROTECTED_MESH_JOIN",
+     "message": "globalMinAngleAtLeast20",
+     "minAngle_deg": 9.580616756984844,
+     "maxNeighborRatio": 1.591828550861947,
+     "minAngleAt": {
+      "xy": [
+       133.29034610330325,
+       69.29942101400958
+      ],
+      "toTip_mm": 15.20265472008952,
+      "toTipGuideCircle_mm": 0.20265472008951946,
+      "toRingCircles_mm": [
+       0.0675837717885166,
+       35.741065277543,
+       84.87266191367792
+      ],
+      "toCrack_mm": 15.20265472008952
+     },
+     "maxRatioAt": {
+      "xy": [
+       118.15011535933945,
+       70.23425790291975
+      ],
+      "toTip_mm": 0.040565213703576096,
+      "toTipGuideCircle_mm": -14.959434786296423,
+      "toRingCircles_mm": [
+       15.202040114926174,
+       41.89917266951099,
+       87.80354952532562
+      ],
+      "toCrack_mm": 0.040565213703576096
+     },
+     "auditPass": null,
+     "ringPolygons": null
+    },
+    {
+     "seedSpacing_mm": 0.5,
+     "stage": "HOLD_KINKED_PROTECTED_MESH_JOIN",
+     "message": "globalMinAngleAtLeast20",
+     "minAngle_deg": 9.580616756984844,
+     "maxNeighborRatio": 1.6543344409019103,
+     "minAngleAt": {
+      "xy": [
+       133.29034610330325,
+       69.29942101400958
+      ],
+      "toTip_mm": 15.20265472008952,
+      "toTipGuideCircle_mm": 0.20265472008951946,
+      "toRingCircles_mm": [
+       0.0675837717885166,
+       35.741065277543,
+       84.87266191367792
+      ],
+      "toCrack_mm": 15.20265472008952
+     },
+     "maxRatioAt": {
+      "xy": [
+       111.55244641988293,
+       33.44097190114586
+      ],
+      "toTip_mm": 37.35366319320306,
+      "toTipGuideCircle_mm": 22.35366319320306,
+      "toRingCircles_mm": [
+       35.668735005331456,
+       77.25128356064248,
+       124.87711513217668
+      ],
+      "toCrack_mm": 7.9846216326447585
+     },
+     "auditPass": null,
+     "ringPolygons": null
+    },
+    {
+     "seedSpacing_mm": 0.35,
+     "stage": "HOLD_KINKED_PROTECTED_MESH_JOIN",
+     "message": "globalMinAngleAtLeast20",
+     "minAngle_deg": 9.580616756984844,
+     "maxNeighborRatio": 1.591828550861947,
+     "minAngleAt": {
+      "xy": [
+       133.29034610330325,
+       69.29942101400958
+      ],
+      "toTip_mm": 15.20265472008952,
+      "toTipGuideCircle_mm": 0.20265472008951946,
+      "toRingCircles_mm": [
+       0.0675837717885166,
+       35.741065277543,
+       84.87266191367792
+      ],
+      "toCrack_mm": 15.20265472008952
+     },
+     "maxRatioAt": {
+      "xy": [
+       118.15011535933945,
+       70.23425790291975
+      ],
+      "toTip_mm": 0.040565213703576096,
+      "toTipGuideCircle_mm": -14.959434786296423,
+      "toRingCircles_mm": [
+       15.202040114926174,
+       41.89917266951099,
+       87.80354952532562
+      ],
+      "toCrack_mm": 0.040565213703576096
+     },
+     "auditPass": null,
+     "ringPolygons": null
+    }
+   ],
+   "oldDetail": {
+    "seedSpacing_mm": null,
+    "stage": "HOLD_KINKED_PROTECTED_MESH_JOIN",
+    "message": "globalMinAngleAtLeast20",
+    "minAngle_deg": 9.580616756984844,
+    "maxNeighborRatio": 1.662433778300371,
+    "minAngleAt": {
+     "xy": [
+      133.29034610330325,
+      69.29942101400958
+     ],
+     "toTip_mm": 15.20265472008952,
+     "toTipGuideCircle_mm": 0.20265472008951946,
+     "toRingCircles_mm": [
+      0.0675837717885166,
+      35.741065277543,
+      84.87266191367792
+     ],
+     "toCrack_mm": 15.20265472008952
+    },
+    "maxRatioAt": {
+     "xy": [
+      94.01697088240793,
+      26.348746581340023
+     ],
+     "toTip_mm": 50.04848033185969,
+     "toTipGuideCircle_mm": 35.04848033185969,
+     "toRingCircles_mm": [
+      53.757534898113946,
+      91.86124598198299,
+      137.3563676216917
+     ],
+     "toCrack_mm": 7.642149610800185
+    }
+   }
+  }
+ ],
+ "forcedPairs": {
+  "meshes": 113,
+  "pairs": 113,
+  "allPass": true,
+  "maxStationMismatch_mm": 0.002281827988397822,
+  "maxCircleDx_mm": 0.001948029348154967,
+  "maxParametrisationPart_mm": 0.0007680277240762479,
+  "maxAbsPredictedMinusAbsCircleDx_mm": 1.7398058128718918e-09,
+  "maxDsMinusCirclePlusParam_mm": 0.0,
+  "maxNativeDistance_mm": 0.040047407136311164,
+  "maxResidualAfterCollapse_mm": 0,
+  "maxMidsideResidual_mm": 0,
+  "allDistinctIDs": true,
+  "allSameBankIndex": true,
+  "allInteriorOfSegment": true,
+  "minIncidentMinAngle_deg": 21.792449319575834,
+  "minIncidentArea_mm2": 0.04968495580558332,
+  "distanceToTip_mm": [
+   14.999986665701082,
+   14.999986815702202
+  ],
+  "maxCollapseDisplacement_mm": 0.020023712343005786,
+  "nodesAtCollapsedPoint": [
+   2
+  ],
+  "maxAbsTipNormalOffset_mm": 0.7296455944708171
+ },
+ "determinism": {
+  "rowsRemeshed": 117,
+  "sameRungAndT3": 117
+ }
+}

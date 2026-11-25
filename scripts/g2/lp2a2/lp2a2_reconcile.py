@@ -93,7 +93,7 @@ fp = [p for r in S['rows'] if r.get('forcedPairs') for p in L(r['forcedPairs'].g
 mx = lambda k, f=abs: max(f(p[k]) for p in fp if p.get(k) is not None)
 O['forcedPairs'] = {'meshes': sum(1 for r in S['rows'] if r.get('forcedPairs')), 'pairs': len(fp), 'allPass': all(p['pass'] for p in fp),
  'maxStationMismatch_mm': mx('stationMismatch_mm'), 'maxCircleDx_mm': mx('circleDx_mm'), 'maxParametrisationPart_mm': mx('parametrisationPart_mm'),
- 'maxPredictedMinusCircleDx_mm': max(abs(p['predictedDx_mm'] - p['circleDx_mm']) for p in fp), 'maxNativeDistance_mm': mx('nativeDistance_mm'),
+ 'maxAbsPredictedMinusAbsCircleDx_mm': max(abs(abs(p['predictedDx_mm']) - abs(p['circleDx_mm'])) for p in fp), 'maxDsMinusCirclePlusParam_mm': max(abs(p['stationMismatch_mm'] - p['circleDx_mm'] - p['parametrisationPart_mm']) for p in fp), 'maxNativeDistance_mm': mx('nativeDistance_mm'),
  'maxResidualAfterCollapse_mm': mx('residualAfterCollapse_mm'), 'maxMidsideResidual_mm': mx('midsideResidual_mm'),
  'allDistinctIDs': all(p.get('distinctIDs') for p in fp), 'allSameBankIndex': all(p.get('sameBankIndex') for p in fp), 'allInteriorOfSegment': all(p.get('interiorOfSegment') for p in fp),
  'minIncidentMinAngle_deg': min(p['incidentMinAngle_deg'] for p in fp), 'minIncidentArea_mm2': min(p['incidentMinArea_mm2'] for p in fp),
