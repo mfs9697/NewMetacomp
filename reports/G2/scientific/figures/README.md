@@ -13,3 +13,7 @@
 ## Розділ 3
 
 П'ять незмінних PDF Клауде включено безпосередньо як Git blobs. Детальні джерела, контрольні суми та межі інтерпретації: [CH03_METHODS_PROVENANCE.md](../evidence/CH03_METHODS_PROVENANCE.md). Рисунки LP2-A2 ілюструють алгоритм, а не нові прийняті траєкторії.
+
+## Розділ 4
+
+Одинадцять оригінальних рисунків Клауде: A1-F1–F6, R1 g1/g2, LP2A2-6/7/8. Джерела та точні blobs: [CH04_VERIFICATION_PROVENANCE.md](../evidence/CH04_VERIFICATION_PROVENANCE.md). Включені PNG R1 мають українські підписи за FIGURE_NOTES.json; решта PDF.
