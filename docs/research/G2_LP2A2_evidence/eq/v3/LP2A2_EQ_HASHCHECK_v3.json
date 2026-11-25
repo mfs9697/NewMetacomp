@@ -1,0 +1,26 @@
+{
+ "schema": "NewMetacomp.G2.LP2A2.EQ.Hashcheck.v1",
+ "policySHA256": "6f2c290b37d4f8291f428ec8b9e0a886fe6b31fc901bee5781f2518e67c94756",
+ "g2SourceSHA256": "7e5683703bd104547ef5d013aa0253ad2819b59dc58693957e2d04b4707f0947",
+ "lp2SourceSHA256": "357dfdcdb576d2866b9d1b41a14265300a14c30700d6475f995881041ba822ca",
+ "lp2a2SourceSHA256": "f1d7e4d67b91968e16ebaead13be86667c7776ce48971ed5206c7f136fae7afd",
+ "archivedManifestSHA256": "da951c99c0d8c1d5dd731986d8f3b30e3db3f71854166a634d35b739757def8d",
+ "token": "G2LP2A2EQ|policy=6f2c290b37d4f8291f428ec8b9e0a886fe6b31fc901bee5781f2518e67c94756|g2source=7e5683703bd104547ef5d013aa0253ad2819b59dc58693957e2d04b4707f0947|lp2source=357dfdcdb576d2866b9d1b41a14265300a14c30700d6475f995881041ba822ca|lp2a2source=f1d7e4d67b91968e16ebaead13be86667c7776ce48971ed5206c7f136fae7afd|archivedS8=da951c99c0d8c1d5dd731986d8f3b30e3db3f71854166a634d35b739757def8d|solves=EQ-H,EQ-stiff13,EQ-soft2,EQ-soft1|limit=4",
+ "contractEvidenceSHA256": "75057751f4d58733d988dc8480440ae4a5ad6f3dff9c9d8819119919c1d2482f",
+ "checks": {
+  "g2SourceEqualsPin": true,
+  "lp2SourceEqualsPin": true,
+  "lp2a2SourceEqualsPin": true,
+  "lp1Policy": true,
+  "lp2Policy": true,
+  "testSet": true,
+  "archived20": true,
+  "tokenEqualsMATLAB": true,
+  "evidencePolicyEqual": true,
+  "evidenceDigestEqual": true,
+  "evidenceAllPassed": true,
+  "noGoFile": true,
+  "statusNotAuthorized": true
+ },
+ "pass": true
+}
