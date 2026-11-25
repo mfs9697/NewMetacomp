@@ -1,0 +1,13 @@
+{
+ "archive": "NewMetacomp_G2_M5X6_Records_20261125.zip",
+ "sha256": "49def65cbe2fd18b97821d6df0419cfc886eebf0040f954972297a0458b0c254",
+ "bytes": 6959064,
+ "members": 55,
+ "runAndLedgerFiles": 42,
+ "manifestSHA256": "5699b83fb59201988bd1451307cc5cf41f492517ab1e9471e72d46d0c77cb29c",
+ "localCopyVerified": true,
+ "offDeviceCopyVerified": true,
+ "scratchCopyVerified": true,
+ "localLocation": "<user>/Documents/NewMetacomp_LP1_archive_backup/",
+ "offDeviceLocation": "removable USB NTFS drive D:\\ (General UDisk, 7.5 GB; physically separate from the internal SSD C:)"
+}

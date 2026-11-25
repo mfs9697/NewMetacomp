@@ -1,0 +1,106 @@
+{
+  "preflight": {
+    "pass": true,
+    "status": "PREFLIGHT_READY_NOT_LP0_QUALIFIED",
+    "cause": "",
+    "physicalSolves": 0,
+    "meshBuilds": 0,
+    "policySHA256": "1cf5a76ded840b0758343a1b935b299041e779ec6332c3b7cb0b6dfba1e2af43",
+    "release": "R2023a",
+    "pdeAvailable": true,
+    "freePhysicalRAM_GiB": 7.1264381408691406,
+    "matlabProcesses": 1,
+    "currentPID": 4724,
+    "sourceCommit": "2baa641a299cdb92edeab826db7c6fcff5be97a7",
+    "dirtySource": "",
+    "token": "G2LP0|policy=1cf5a76ded840b0758343a1b935b299041e779ec6332c3b7cb0b6dfba1e2af43|source=2baa641a299cdb92edeab826db7c6fcff5be97a7|geometry=179b777f4a26caf1482ad470d78f5f802bc24456b9a1b6fc6b641eccf2b66008|cases=H,stiff13,soft2,soft1|maxState=4"
+  },
+  "tokenEqualsApproved": true,
+  "diagonalAllPass": true,
+  "dry": [
+    {
+      "id": "X6-01",
+      "status": "DRY_READY_NO_FEM",
+      "computed": 0,
+      "tokenOK": true,
+      "pass": true,
+      "mask": "101",
+      "ratio": 2,
+      "activeElements": 8180,
+      "meshContentSHA256": "9df5f874cbbc28e185214d2fe65c07109fc7145a4827d18ff51d0961e3b708ae"
+    },
+    {
+      "id": "X6-02",
+      "status": "DRY_READY_NO_FEM",
+      "computed": 0,
+      "tokenOK": true,
+      "pass": true,
+      "mask": "000",
+      "ratio": 1,
+      "activeElements": 0,
+      "meshContentSHA256": "2b173786a997d2a383e09c2e1d32ee3196951d8f5fbf832114bb5b27832ee693"
+    },
+    {
+      "id": "X6-03",
+      "status": "DRY_READY_NO_FEM",
+      "computed": 0,
+      "tokenOK": true,
+      "pass": true,
+      "mask": "010",
+      "ratio": 0.5,
+      "activeElements": 4102,
+      "meshContentSHA256": "9df5f874cbbc28e185214d2fe65c07109fc7145a4827d18ff51d0961e3b708ae"
+    },
+    {
+      "id": "X6-04",
+      "status": "DRY_READY_NO_FEM",
+      "computed": 0,
+      "tokenOK": true,
+      "pass": true,
+      "mask": "000",
+      "ratio": 1,
+      "activeElements": 0,
+      "meshContentSHA256": "c7da6c008bad66c192a72795ba556e86611b0f99b650a1d13d08d1002aa7ad78"
+    },
+    {
+      "id": "X6-05",
+      "status": "DRY_READY_NO_FEM",
+      "computed": 0,
+      "tokenOK": true,
+      "pass": true,
+      "mask": "100",
+      "ratio": 0.5,
+      "activeElements": 4090,
+      "meshContentSHA256": "9df5f874cbbc28e185214d2fe65c07109fc7145a4827d18ff51d0961e3b708ae"
+    },
+    {
+      "id": "X6-06",
+      "status": "DRY_READY_NO_FEM",
+      "computed": 0,
+      "tokenOK": true,
+      "pass": true,
+      "mask": "000",
+      "ratio": 1,
+      "activeElements": 0,
+      "meshContentSHA256": "a6d31fd9ea12c8845e2d0253f7e8bce7e4ed4247ddf29653c77b12332feb1407"
+    }
+  ],
+  "qualCountMethod": {
+    "entries": 50,
+    "unique": 50
+  },
+  "probe": {
+    "identifier": "G2M5X6:HOLD_UNAUTHORIZED_STATE",
+    "message": "M5-X6 is on scientific HOLD: no GO_M5_X6 record.",
+    "seconds": 4.4285943,
+    "outputsListingUnchanged": true,
+    "outputsEntries": 2036,
+    "gitStatusBefore": "",
+    "gitStatusAfter": "",
+    "runFolderExists": false,
+    "ledgerExists": false,
+    "pass": true
+  },
+  "freeRAM_end_GiB": 6.8798179626464844,
+  "allPass": true
+}

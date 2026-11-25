@@ -1,0 +1,258 @@
+{
+  "schema": "NewMetacomp.G2.M5X6.DiagonalAudit.v1",
+  "physicalSolves": 0,
+  "rows": [
+    {
+      "caseId": "H",
+      "key": "H_B9",
+      "fileSHA256": {
+        "STATE_mat": "a0524c3abdcd43acaaa615fee201d1f7b592399204039821d6404c103863ffe0",
+        "STATE_mat_manifest_json": "e642f656c5968a403384d227fbb9fa1a944c16103ee72b9fb28ca9a2dcaaf570",
+        "SOLUTION_mat": "6b4dd9fadac8dad3828671179be1f38ffadde0dd73c2f2da50ed7811562ccc05",
+        "SOLUTION_mat_manifest_json": "ee1717ca94ffc7cdf4f59804f27b4209fc51ab4e3e28d8e22bdc519225983933"
+      },
+      "filesEqualCommittedManifest": true,
+      "filesEqualPlanPins": true,
+      "recordManifestsVerify": true,
+      "solutionSHAInState": true,
+      "recordIdentity": true,
+      "stateEqualsSolution": true,
+      "Grecomputed_rel": 2.2204460492503131E-16,
+      "MTSrecomputed_absdiff_deg": 0,
+      "sifCriteriaTrue": "16/16",
+      "sifGatesPassed": true,
+      "relativeResidual": 1.0998690655937776E-12,
+      "staticsMax": 7.700048730228438E-13,
+      "energyIdentityRel": 7.7093806037086638E-12,
+      "CODminusEDI_rel": 0.0025160671160630236,
+      "meshGates": "19/19",
+      "crackArclength_mm": 41.4,
+      "tip_mm": [
+        105.64746005474672,
+        40.872016664004875
+      ],
+      "activationVerifierPass": true,
+      "ringElements": [
+        4090,
+        4102,
+        4090
+      ],
+      "ringArea_mm2": [
+        1012.1525285981629,
+        1012.1525285981616,
+        1012.1525285981614
+      ],
+      "savedMaterialMatchesPolicy": true,
+      "mask": "000",
+      "ratio": 1,
+      "activeElements": 0,
+      "EDIfromSavedU_bitwise": true,
+      "KI": 0.0070915622696787646,
+      "KII": 0.0001009183597941766,
+      "J": 1.539134197194813E-8,
+      "G": 1.5391269872717145E-8,
+      "MTS_deg": -1.6299557141951186,
+      "KI_COD": 0.0070737176164227238,
+      "KII_COD": 0.00010041449102976804,
+      "compliance_mm_per_N": 0.00022455159879871103,
+      "T3": 31385,
+      "DOF": 127498,
+      "pass": true
+    },
+    {
+      "caseId": "stiff13",
+      "key": "stiff13_B9",
+      "fileSHA256": {
+        "STATE_mat": "80fad8f840f86d535c80f0dd81db7cd2ff4b08135c2323dea04814947cc168ae",
+        "STATE_mat_manifest_json": "e7e6e6aea69d5b26bcce9c6ce9304f33deb67dadecfb042a530786b5b003dc0c",
+        "SOLUTION_mat": "1befa2eefb8716e43616d0ccbba8b54a9aad3ea78f6ab7b63b78f5ead72804b7",
+        "SOLUTION_mat_manifest_json": "93a5a0006be57671a8ca5e8431ccef57693297af4b0b0fc9d9056c7b2d234d6b"
+      },
+      "filesEqualCommittedManifest": true,
+      "filesEqualPlanPins": true,
+      "recordManifestsVerify": true,
+      "solutionSHAInState": true,
+      "recordIdentity": true,
+      "stateEqualsSolution": true,
+      "Grecomputed_rel": 0,
+      "MTSrecomputed_absdiff_deg": 0,
+      "sifCriteriaTrue": "16/16",
+      "sifGatesPassed": true,
+      "relativeResidual": 1.5128818130300993E-12,
+      "staticsMax": 4.9262682543298571E-13,
+      "energyIdentityRel": 1.0096406450559343E-11,
+      "CODminusEDI_rel": 0.0025176714460850465,
+      "meshGates": "19/19",
+      "crackArclength_mm": 41.400000000000006,
+      "tip_mm": [
+        105.83199310467963,
+        40.822607977699
+      ],
+      "activationVerifierPass": true,
+      "ringElements": [
+        4100,
+        4078,
+        4110
+      ],
+      "ringArea_mm2": [
+        1012.1525285981618,
+        1012.1525285981613,
+        1012.1525285981611
+      ],
+      "savedMaterialMatchesPolicy": true,
+      "mask": "101",
+      "ratio": 2,
+      "activeElements": 8210,
+      "EDIfromSavedU_bitwise": true,
+      "KI": 0.0068325329148740946,
+      "KII": 9.2588122322126863E-5,
+      "J": 1.4287237298425575E-8,
+      "G": 1.4287158987132653E-8,
+      "MTS_deg": -1.5521732624554319,
+      "KI_COD": 0.0068153292625014843,
+      "KII_COD": 9.2148349105079222E-5,
+      "compliance_mm_per_N": 0.00022262149934720459,
+      "T3": 31369,
+      "DOF": 127434,
+      "pass": true
+    },
+    {
+      "caseId": "soft2",
+      "key": "soft2_B9",
+      "fileSHA256": {
+        "STATE_mat": "e9b42d01fda9a78af98770f17f6042e1cdf97b10cac898186728201c702497ca",
+        "STATE_mat_manifest_json": "288b0e06fda5f3f29258a4c5f1b7acc162742ad16861c10d791e136a6da51b0c",
+        "SOLUTION_mat": "dbd6368ef5e88f214bea038c176b13bc47032c1b56fcd8c39cef8fdc06f904f2",
+        "SOLUTION_mat_manifest_json": "e8aa2ffb3919dfa995bfc931705c9895841b00620bdf3094dc4c377a8ba76b1d"
+      },
+      "filesEqualCommittedManifest": true,
+      "filesEqualPlanPins": true,
+      "recordManifestsVerify": true,
+      "solutionSHAInState": true,
+      "recordIdentity": true,
+      "stateEqualsSolution": true,
+      "Grecomputed_rel": 0,
+      "MTSrecomputed_absdiff_deg": 0,
+      "sifCriteriaTrue": "16/16",
+      "sifGatesPassed": true,
+      "relativeResidual": 1.0351060209188087E-12,
+      "staticsMax": 1.097716647735363E-12,
+      "energyIdentityRel": 6.0416883437195388E-12,
+      "CODminusEDI_rel": 0.0025163223100598117,
+      "meshGates": "19/19",
+      "crackArclength_mm": 41.4,
+      "tip_mm": [
+        105.72974312219405,
+        40.849850320624789
+      ],
+      "activationVerifierPass": true,
+      "ringElements": [
+        4086,
+        4076,
+        4082
+      ],
+      "ringArea_mm2": [
+        1012.152528598162,
+        1012.1525285981617,
+        1012.1525285981613
+      ],
+      "savedMaterialMatchesPolicy": true,
+      "mask": "010",
+      "ratio": 0.5,
+      "activeElements": 4076,
+      "EDIfromSavedU_bitwise": true,
+      "KI": 0.0069868061154392744,
+      "KII": 0.00010160449239130458,
+      "J": 1.494010856587175E-8,
+      "G": 1.4940044388772652E-8,
+      "MTS_deg": -1.6656075789227336,
+      "KI_COD": 0.0069692232004160345,
+      "KII_COD": 0.00010109767313344633,
+      "compliance_mm_per_N": 0.000225285037705414,
+      "T3": 31327,
+      "DOF": 127266,
+      "pass": true
+    },
+    {
+      "caseId": "soft1",
+      "key": "soft1_B9",
+      "fileSHA256": {
+        "STATE_mat": "1371199a8b44924713ce686412da1836c5a1be04090a52d9b464257e46f69e78",
+        "STATE_mat_manifest_json": "8bcbbd86f811e8e06cfe1121830a67139747a921e0296a02cc268fa5a7bb5b86",
+        "SOLUTION_mat": "848db030939c25db968aa2335edc1345b79fdcb3342743fbbe21d28b293b7be3",
+        "SOLUTION_mat_manifest_json": "3c720c5b3a3edd98159bc4ce238a9d5d1f40b5dfbb225897daa5b862a4731a70"
+      },
+      "filesEqualCommittedManifest": true,
+      "filesEqualPlanPins": true,
+      "recordManifestsVerify": true,
+      "solutionSHAInState": true,
+      "recordIdentity": true,
+      "stateEqualsSolution": true,
+      "Grecomputed_rel": 2.2204460492503131E-16,
+      "MTSrecomputed_absdiff_deg": 0,
+      "sifCriteriaTrue": "16/16",
+      "sifGatesPassed": true,
+      "relativeResidual": 1.0414930022029772E-12,
+      "staticsMax": 6.1323785555739759E-13,
+      "energyIdentityRel": 7.0500298769586719E-12,
+      "CODminusEDI_rel": 0.0025137504249016021,
+      "meshGates": "19/19",
+      "crackArclength_mm": 41.4,
+      "tip_mm": [
+        105.35058232560786,
+        40.946568796496685
+      ],
+      "activationVerifierPass": true,
+      "ringElements": [
+        4090,
+        4078,
+        4094
+      ],
+      "ringArea_mm2": [
+        1012.1525285981618,
+        1012.1525285981618,
+        1012.152528598162
+      ],
+      "savedMaterialMatchesPolicy": true,
+      "mask": "100",
+      "ratio": 0.5,
+      "activeElements": 4090,
+      "EDIfromSavedU_bitwise": true,
+      "KI": 0.0073124644505492171,
+      "KII": 0.00010973596031348716,
+      "J": 1.6365514962100705E-8,
+      "G": 1.636545174252803E-8,
+      "MTS_deg": -1.7187384197277971,
+      "KI_COD": 0.007294080670255867,
+      "KII_COD": 0.00010916130338695219,
+      "compliance_mm_per_N": 0.00022559450711614535,
+      "T3": 31357,
+      "DOF": 127386,
+      "pass": true
+    }
+  ],
+  "ringAreaEqualAcrossMeshes_maxRelDiff": 1.1232184330860978E-15,
+  "ringElementsByMesh": [
+    [
+      4090,
+      4102,
+      4090
+    ],
+    [
+      4100,
+      4078,
+      4110
+    ],
+    [
+      4086,
+      4076,
+      4082
+    ],
+    [
+      4090,
+      4078,
+      4094
+    ]
+  ],
+  "allPass": true
+}

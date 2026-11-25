@@ -1,0 +1,11 @@
+M5X6_VERIFY X6-01 REUSED_ZERO_SOLVE computed=0 mode=VERIFY_ONLY state=7eb021af5346 sol=1 eq=1 sif=1 audit=1
+M5X6_VERIFY X6-02 REUSED_ZERO_SOLVE computed=0 mode=VERIFY_ONLY state=f153b0b84901 sol=1 eq=1 sif=1 audit=1
+M5X6_VERIFY X6-03 REUSED_ZERO_SOLVE computed=0 mode=VERIFY_ONLY state=ba0c8afae125 sol=1 eq=1 sif=1 audit=1
+M5X6_VERIFY X6-04 REUSED_ZERO_SOLVE computed=0 mode=VERIFY_ONLY state=e426dd740165 sol=1 eq=1 sif=1 audit=1
+M5X6_VERIFY X6-05 REUSED_ZERO_SOLVE computed=0 mode=VERIFY_ONLY state=b40fe5f688c0 sol=1 eq=1 sif=1 audit=1
+M5X6_VERIFY X6-06 REUSED_ZERO_SOLVE computed=0 mode=VERIFY_ONLY state=9fc12b8c1fcb sol=1 eq=1 sif=1 audit=1
+M5X6_VERIFY_DONE zeroSolves=1 reused=1 records=1 ledger closed=1 admits=6 holds=0 integrity=1
+M5X6 stiff13 F_G -7.173618e-02 = mat -7.368357e-02 + path +2.024254e-03 + int -7.686436e-05 (res 1.1e-16) P1=1 P2=1
+M5X6 soft2   F_G -2.931698e-02 = mat -3.031960e-02 + path +9.446585e-04 + int +5.796463e-05 (res -3.5e-18) P1=1 P2=1
+M5X6 soft1   F_G +6.329444e-02 = mat +6.691160e-02 + path -3.734627e-03 + int +1.174693e-04 (res 1.4e-17) P1=1 P2=1
+M5X6_ANALYSIS_DONE
