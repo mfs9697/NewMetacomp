@@ -1,0 +1,5 @@
+DIAG EQ-H pass 1/1 failed recomputed cell [1 0] stored double [1 0] isequal=0 bothEmpty=1 criteriaIdentical=1 metricsMaxAbsDiff=0
+DIAG EQ-stiff13 pass 1/1 failed recomputed cell [1 0] stored double [1 0] isequal=0 bothEmpty=1 criteriaIdentical=1 metricsMaxAbsDiff=0
+DIAG EQ-soft2 pass 1/1 failed recomputed cell [1 0] stored double [1 0] isequal=0 bothEmpty=1 criteriaIdentical=1 metricsMaxAbsDiff=0
+DIAG EQ-soft1 pass 1/1 failed recomputed cell [1 0] stored double [1 0] isequal=0 bothEmpty=1 criteriaIdentical=1 metricsMaxAbsDiff=0
+DIAG_EMPTY isequal(cell(1,0),zeros(1,0))=0 isequal(cell(1,0),[])=0 jsondecode([])=double unchanged=1

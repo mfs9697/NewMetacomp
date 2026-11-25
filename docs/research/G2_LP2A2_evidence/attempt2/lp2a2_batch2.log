@@ -1,0 +1,329 @@
+SOURCE_COMMIT=7e2b8587c7fd9cc91b66ed296c012a581d18d64d
+EQ_TEST E1_context_pins_token            1
+matlab.exe : EQ_TESTS_ERROR MATLAB:UndefinedFunction: Undefined function 'g2_lp2_forecast' for input arguments of type 
+'struct'.
+At <scratch>
+ls\runml.ps1:12 char:3
++   & $exe -batch ("run('" + $Script.Replace("'", "''") + "')") *> $log
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (EQ_TESTS_ERROR ... type 'struct'.:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+    file: '<repo>\matlab\g2\lp2a2\g2_lp2a2_eq_tests.m'
+    name: 'g2_lp2a2_eq_tests'
+    line: 22
+
+LP2A2_EXPLORE E_H_straight_S9    N=11 hs=0.450 pass=1 ratio=1.7091 minAng=30.13 Joined; the independent kink-aware audit is still required.
+LP2A2_EXPLORE E_H_straight_S9    N=11 hs=0.400 pass=0 ratio=1.944 minAng=22.06 globalNeighborRatioAtMost1p8
+LP2A2_EXPLORE E_H_straight_S9    N=11 hs=0.500 pass=1 ratio=1.681 minAng=30.13 Joined; the independent kink-aware audit is still required.
+LP2A2_EXPLORE E_H_straight_S9    N=11 hs=0.350 pass=1 ratio=1.5918 minAng=30.13 Joined; the independent kink-aware audit is still required.
+LP2A2_EXPLORE E_H_straight_S10   N=12 hs=0.450 pass=1 ratio=1.5918 minAng=30.13 Joined; the independent kink-aware audit is still required.
+LP2A2_EXPLORE E_H_straight_S10   N=12 hs=0.400 pass=1 ratio=1.6687 minAng=21.97 Joined; the independent kink-aware audit is still required.
+LP2A2_EXPLORE E_H_straight_S10   N=12 hs=0.500 pass=1 ratio=1.7135 minAng=30.13 Joined; the independent kink-aware audit is still required.
+LP2A2_EXPLORE E_H_straight_S10   N=12 hs=0.350 pass=1 ratio=1.7894 minAng=29.76 Joined; the independent kink-aware audit is still required.
+LP2A2_EXPLORE E_H_straight_S11   N=13 hs=0.450 pass=1 ratio=1.6468 minAng=30.13 Joined; the independent kink-aware audit is still required.
+LP2A2_EXPLORE E_H_straight_S11   N=13 hs=0.400 pass=1 ratio=1.5918 minAng=21.79 Joined; the independent kink-aware audit is still required.
+LP2A2_EXPLORE E_H_straight_S11   N=13 hs=0.500 pass=1 ratio=1.5918 minAng=30.13 Joined; the independent kink-aware audit is still required.
+LP2A2_EXPLORE E_H_straight_S11   N=13 hs=0.350 pass=1 ratio=1.6599 minAng=30.13 Joined; the independent kink-aware audit is still required.
+LP2A2_EXPLORE E_H_straight_S12   N=14 hs=0.450 pass=1 ratio=1.6282 minAng=27.32 Joined; the independent kink-aware audit is still required.
+LP2A2_EXPLORE E_H_straight_S12   N=14 hs=0.400 pass=1 ratio=1.6271 minAng=21.79 Joined; the independent kink-aware audit is still required.
+LP2A2_EXPLORE E_H_straight_S12   N=14 hs=0.500 pass=1 ratio=1.6278 minAng=27.32 Joined; the independent kink-aware audit is still required.
+LP2A2_EXPLORE E_H_straight_S12   N=14 hs=0.350 pass=1 ratio=1.628 minAng=27.32 Joined; the independent kink-aware audit is still required.
+LP2A2_EXPLORE E_H_mts_S9         N=11 hs=0.450 pass=1 ratio=1.5918 minAng=30.13 Joined; the independent kink-aware audit is still required.
+LP2A2_EXPLORE E_H_mts_S9         N=11 hs=0.400 pass=1 ratio=1.5918 minAng=22.22 Joined; the independent kink-aware audit is still required.
+LP2A2_EXPLORE E_H_mts_S9         N=11 hs=0.500 pass=1 ratio=1.6684 minAng=30.13 Joined; the independent kink-aware audit is still required.
+LP2A2_EXPLORE E_H_mts_S9         N=11 hs=0.350 pass=1 ratio=1.7149 minAng=30.13 Joined; the independent kink-aware audit is still required.
+LP2A2_EXPLORE E_H_mts_S10        N=12 hs=0.450 pass=1 ratio=1.67 minAng=30.13 Joined; the independent kink-aware audit is still required.
+LP2A2_EXPLORE E_H_mts_S10        N=12 hs=0.400 pass=0 ratio=1.9141 minAng=22.2 globalNeighborRatioAtMost1p8
+LP2A2_EXPLORE E_H_mts_S10        N=12 hs=0.500 pass=1 ratio=1.5918 minAng=30.13 Joined; the independent kink-aware audit is still required.
+LP2A2_EXPLORE E_H_mts_S10        N=12 hs=0.350 pass=1 ratio=1.6358 minAng=30.13 Joined; the independent kink-aware audit is still required.
+LP2A2_EXPLORE E_H_mts_S11        N=13 hs=0.450 pass=1 ratio=1.6145 minAng=30.13 Joined; the independent kink-aware audit is still required.
+LP2A2_EXPLORE E_H_mts_S11        N=13 hs=0.400 pass=1 ratio=1.5918 minAng=22.2 Joined; the independent kink-aware audit is still required.
+LP2A2_EXPLORE E_H_mts_S11        N=13 hs=0.500 pass=1 ratio=1.7064 minAng=30.13 Joined; the independent kink-aware audit is still required.
+LP2A2_EXPLORE E_H_mts_S11        N=13 hs=0.350 pass=1 ratio=1.7692 minAng=30.13 Joined; the independent kink-aware audit is still required.
+LP2A2_EXPLORE E_H_zigzag3_S9     N=11 hs=0.450 pass=1 ratio=1.7884 minAng=29.63 Joined; the independent kink-aware audit is still required.
+LP2A2_EXPLORE E_H_zigzag3_S9     N=11 hs=0.400 pass=1 ratio=1.5918 minAng=22.24 Joined; the independent kink-aware audit is still required.
+LP2A2_EXPLORE E_H_zigzag3_S9     N=11 hs=0.500 pass=1 ratio=1.5918 minAng=30.13 Joined; the independent kink-aware audit is still required.
+LP2A2_EXPLORE E_H_zigzag3_S9     N=11 hs=0.350 pass=1 ratio=1.6892 minAng=30.13 Joined; the independent kink-aware audit is still required.
+LP2A2_EXPLORE E_H_zigzag3_S10    N=12 hs=0.450 pass=1 ratio=1.5918 minAng=30.13 Joined; the independent kink-aware audit is still required.
+LP2A2_EXPLORE E_H_zigzag3_S10    N=12 hs=0.400 pass=1 ratio=1.5918 minAng=22.39 Joined; the independent kink-aware audit is still required.
+LP2A2_EXPLORE E_H_zigzag3_S10    N=12 hs=0.500 pass=1 ratio=1.5918 minAng=30.13 Joined; the independent kink-aware audit is still required.
+LP2A2_EXPLORE E_H_zigzag3_S10    N=12 hs=0.350 pass=1 ratio=1.6053 minAng=30.13 Joined; the independent kink-aware audit is still required.
+LP2A2_EXPLORE E_H_zigzag3_S11    N=13 hs=0.450 pass=1 ratio=1.6288 minAng=30.13 Joined; the independent kink-aware audit is still required.
+LP2A2_EXPLORE E_H_zigzag3_S11    N=13 hs=0.400 pass=1 ratio=1.6432 minAng=22.79 Joined; the independent kink-aware audit is still required.
+LP2A2_EXPLORE E_H_zigzag3_S11    N=13 hs=0.500 pass=1 ratio=1.6696 minAng=30.13 Joined; the independent kink-aware audit is still required.
+LP2A2_EXPLORE E_H_zigzag3_S11    N=13 hs=0.350 pass=1 ratio=1.5918 minAng=30.13 Joined; the independent kink-aware audit is still required.
+LP2A2_EXPLORE E_H_zigzag3_S12    N=14 hs=0.450 pass=1 ratio=1.6265 minAng=30.13 Joined; the independent kink-aware audit is still required.
+LP2A2_EXPLORE E_H_zigzag3_S12    N=14 hs=0.400 pass=1 ratio=1.666 minAng=22.79 Joined; the independent kink-aware audit is still required.
+LP2A2_EXPLORE E_H_zigzag3_S12    N=14 hs=0.500 pass=1 ratio=1.5918 minAng=30.13 Joined; the independent kink-aware audit is still required.
+LP2A2_EXPLORE E_H_zigzag3_S12    N=14 hs=0.350 pass=1 ratio=1.7426 minAng=30.13 Joined; the independent kink-aware audit is still required.
+LP2A2_EXPLORE E_H_zigzag3_S13    N=15 hs=0.450 pass=0 ratio=1.878 minAng=5.5 globalMinAngleAtLeast20, globalNeighborRatioAtMost1p8
+LP2A2_EXPLORE E_H_zigzag3_S13    N=15 hs=0.400 pass=0 ratio=1.878 minAng=5.5 globalMinAngleAtLeast20, globalNeighborRatioAtMost1p8
+LP2A2_EXPLORE E_H_zigzag3_S13    N=15 hs=0.500 pass=0 ratio=1.878 minAng=5.5 globalMinAngleAtLeast20, globalNeighborRatioAtMost1p8
+LP2A2_EXPLORE E_H_zigzag3_S13    N=15 hs=0.350 pass=0 ratio=1.878 minAng=5.5 globalMinAngleAtLeast20, globalNeighborRatioAtMost1p8
+LP2A2_EXPLORE E_H_curve1_S9      N=11 hs=0.450 pass=1 ratio=1.7131 minAng=30.13 Joined; the independent kink-aware audit is still required.
+LP2A2_EXPLORE E_H_curve1_S9      N=11 hs=0.400 pass=1 ratio=1.6822 minAng=22.47 Joined; the independent kink-aware audit is still required.
+LP2A2_EXPLORE E_H_curve1_S9      N=11 hs=0.500 pass=1 ratio=1.6474 minAng=30.13 Joined; the independent kink-aware audit is still required.
+LP2A2_EXPLORE E_H_curve1_S9      N=11 hs=0.350 pass=1 ratio=1.7044 minAng=30.13 Joined; the independent kink-aware audit is still required.
+LP2A2_EXPLORE E_H_curve1_S10     N=12 hs=0.450 pass=1 ratio=1.5918 minAng=30.13 Joined; the independent kink-aware audit is still required.
+LP2A2_EXPLORE E_H_curve1_S10     N=12 hs=0.400 pass=1 ratio=1.5918 minAng=22.14 Joined; the independent kink-aware audit is still required.
+LP2A2_EXPLORE E_H_curve1_S10     N=12 hs=0.500 pass=1 ratio=1.7253 minAng=30.13 Joined; the independent kink-aware audit is still required.
+LP2A2_EXPLORE E_H_curve1_S10     N=12 hs=0.350 pass=1 ratio=1.6207 minAng=30.13 Joined; the independent kink-aware audit is still required.
+LP2A2_EXPLORE E_H_curve1_S11     N=13 hs=0.450 pass=1 ratio=1.5918 minAng=30.13 Joined; the independent kink-aware audit is still required.
+LP2A2_EXPLORE E_H_curve1_S11     N=13 hs=0.400 pass=1 ratio=1.6783 minAng=22.54 Joined; the independent kink-aware audit is still required.
+LP2A2_EXPLORE E_H_curve1_S11     N=13 hs=0.500 pass=1 ratio=1.6378 minAng=30.13 Joined; the independent kink-aware audit is still required.
+LP2A2_EXPLORE E_H_curve1_S11     N=13 hs=0.350 pass=1 ratio=1.646 minAng=30.13 Joined; the independent kink-aware audit is still required.
+LP2A2_EXPLORE E_H_curve1_S12     N=14 hs=0.450 pass=1 ratio=1.6213 minAng=30.13 Joined; the independent kink-aware audit is still required.
+LP2A2_EXPLORE E_H_curve1_S12     N=14 hs=0.400 pass=1 ratio=1.6289 minAng=22.54 Joined; the independent kink-aware audit is still required.
+LP2A2_EXPLORE E_H_curve1_S12     N=14 hs=0.500 pass=1 ratio=1.6706 minAng=30.13 Joined; the independent kink-aware audit is still required.
+LP2A2_EXPLORE E_H_curve1_S12     N=14 hs=0.350 pass=1 ratio=1.6228 minAng=30.13 Joined; the independent kink-aware audit is still required.
+LP2A2_EXPLORE E_H_curve1_S13     N=15 hs=0.450 pass=1 ratio=1.644 minAng=27.86 Joined; the independent kink-aware audit is still required.
+LP2A2_EXPLORE E_H_curve1_S13     N=15 hs=0.400 pass=1 ratio=1.6124 minAng=22.54 Joined; the independent kink-aware audit is still required.
+LP2A2_EXPLORE E_H_curve1_S13     N=15 hs=0.500 pass=1 ratio=1.5918 minAng=27.86 Joined; the independent kink-aware audit is still required.
+LP2A2_EXPLORE E_H_curve1_S13     N=15 hs=0.350 pass=1 ratio=1.6183 minAng=27.86 Joined; the independent kink-aware audit is still required.
+LP2A2_EXPLORE E_H_curve1_S14     N=16 hs=0.450 pass=0 ratio=1.5918 minAng=3.722 globalMinAngleAtLeast20
+LP2A2_EXPLORE E_H_curve1_S14     N=16 hs=0.400 pass=0 ratio=1.6673 minAng=3.722 globalMinAngleAtLeast20
+LP2A2_EXPLORE E_H_curve1_S14     N=16 hs=0.500 pass=0 ratio=1.7025 minAng=3.722 globalMinAngleAtLeast20
+LP2A2_EXPLORE E_H_curve1_S14     N=16 hs=0.350 pass=0 ratio=1.742 minAng=3.722 globalMinAngleAtLeast20
+LP2A2_EXPLORE E_H_curve1_S15     N=17 hs=0.450 pass=0 ratio=1.8116 minAng=13.77 globalMinAngleAtLeast20, globalNeighborRatioAtMost1p8
+LP2A2_EXPLORE E_H_curve1_S15     N=17 hs=0.400 pass=0 ratio=1.8116 minAng=13.77 globalMinAngleAtLeast20, globalNeighborRatioAtMost1p8
+LP2A2_EXPLORE E_H_curve1_S15     N=17 hs=0.500 pass=0 ratio=1.8116 minAng=13.77 globalMinAngleAtLeast20, globalNeighborRatioAtMost1p8
+LP2A2_EXPLORE E_H_curve1_S15     N=17 hs=0.350 pass=0 ratio=1.8116 minAng=13.77 globalMinAngleAtLeast20, globalNeighborRatioAtMost1p8
+LP2A2_EXPLORE E_H_curve1_S16     N=18 hs=0.450 pass=1 ratio=1.5918 minAng=28.29 Joined; the independent kink-aware audit is still required.
+LP2A2_EXPLORE E_H_curve1_S16     N=18 hs=0.400 pass=1 ratio=1.7409 minAng=22.31 Joined; the independent kink-aware audit is still required.
+LP2A2_EXPLORE E_H_curve1_S16     N=18 hs=0.500 pass=1 ratio=1.7875 minAng=28.29 Joined; the independent kink-aware audit is still required.
+LP2A2_EXPLORE E_H_curve1_S16     N=18 hs=0.350 pass=1 ratio=1.724 minAng=28.29 Joined; the independent kink-aware audit is still required.
+LP2A2_EXPLORE E_H_curve1_S17     N=19 hs=0.450 pass=1 ratio=1.5992 minAng=30.13 Joined; the independent kink-aware audit is still required.
+LP2A2_EXPLORE E_H_curve1_S17     N=19 hs=0.400 pass=1 ratio=1.7127 minAng=22.55 Joined; the independent kink-aware audit is still required.
+LP2A2_EXPLORE E_H_curve1_S17     N=19 hs=0.500 pass=1 ratio=1.7295 minAng=30.13 Joined; the independent kink-aware audit is still required.
+LP2A2_EXPLORE E_H_curve1_S17     N=19 hs=0.350 pass=1 ratio=1.7137 minAng=30.13 Joined; the independent kink-aware audit is still required.
+LP2A2_EXPLORE E_H_curve1_S18     N=20 hs=0.450 pass=1 ratio=1.5918 minAng=30.13 Joined; the independent kink-aware audit is still required.
+LP2A2_EXPLORE E_H_curve1_S18     N=20 hs=0.400 pass=1 ratio=1.6488 minAng=22.62 Joined; the independent kink-aware audit is still required.
+LP2A2_EXPLORE E_H_curve1_S18     N=20 hs=0.500 pass=1 ratio=1.7169 minAng=30.13 Joined; the independent kink-aware audit is still required.
+LP2A2_EXPLORE E_H_curve1_S18     N=20 hs=0.350 pass=1 ratio=1.7702 minAng=29.27 Joined; the independent kink-aware audit is still required.
+LP2A2_EXPLORE E_H_curve1_S19     N=21 hs=0.450 pass=1 ratio=1.6445 minAng=30.13 Joined; the independent kink-aware audit is still required.
+LP2A2_EXPLORE E_H_curve1_S19     N=21 hs=0.400 pass=1 ratio=1.7228 minAng=21.98 Joined; the independent kink-aware audit is still required.
+LP2A2_EXPLORE E_H_curve1_S19     N=21 hs=0.500 pass=1 ratio=1.7886 minAng=30.13 Joined; the independent kink-aware audit is still required.
+LP2A2_EXPLORE E_H_curve1_S19     N=21 hs=0.350 pass=1 ratio=1.6935 minAng=30.13 Joined; the independent kink-aware audit is still required.
+LP2A2_EXPLORE E_stiff13_straight_S9 N=11 hs=0.450 pass=1 ratio=1.6603 minAng=30.13 Joined; the independent kink-aware audit is still required.
+LP2A2_EXPLORE E_stiff13_straight_S9 N=11 hs=0.400 pass=1 ratio=1.6082 minAng=22.45 Joined; the independent kink-aware audit is still required.
+LP2A2_EXPLORE E_stiff13_straight_S9 N=11 hs=0.500 pass=1 ratio=1.6431 minAng=30.13 Joined; the independent kink-aware audit is still required.
+LP2A2_EXPLORE E_stiff13_straight_S9 N=11 hs=0.350 pass=1 ratio=1.7781 minAng=30.13 Joined; the independent kink-aware audit is still required.
+LP2A2_EXPLORE E_stiff13_straight_S10 N=12 hs=0.450 pass=1 ratio=1.6669 minAng=30.13 Joined; the independent kink-aware audit is still required.
+LP2A2_EXPLORE E_stiff13_straight_S10 N=12 hs=0.400 pass=1 ratio=1.594 minAng=21.98 Joined; the independent kink-aware audit is still required.
+LP2A2_EXPLORE E_stiff13_straight_S10 N=12 hs=0.500 pass=1 ratio=1.5968 minAng=30.13 Joined; the independent kink-aware audit is still required.
+LP2A2_EXPLORE E_stiff13_straight_S10 N=12 hs=0.350 pass=1 ratio=1.5918 minAng=30.13 Joined; the independent kink-aware audit is still required.
+LP2A2_EXPLORE E_stiff13_straight_S11 N=13 hs=0.450 pass=1 ratio=1.6961 minAng=30.13 Joined; the independent kink-aware audit is still required.
+LP2A2_EXPLORE E_stiff13_straight_S11 N=13 hs=0.400 pass=1 ratio=1.6003 minAng=21.79 Joined; the independent kink-aware audit is still required.
+LP2A2_EXPLORE E_stiff13_straight_S11 N=13 hs=0.500 pass=1 ratio=1.5918 minAng=30.13 Joined; the independent kink-aware audit is still required.
+LP2A2_EXPLORE E_stiff13_straight_S11 N=13 hs=0.350 pass=1 ratio=1.6938 minAng=30.13 Joined; the independent kink-aware audit is still required.
+LP2A2_EXPLORE E_stiff13_straight_S12 N=14 hs=0.450 pass=0 ratio=1.8231 minAng=18.78 globalMinAngleAtLeast20, globalNeighborRatioAtMost1p8
+LP2A2_EXPLORE E_stiff13_straight_S12 N=14 hs=0.400 pass=0 ratio=1.8107 minAng=18.78 globalMinAngleAtLeast20, globalNeighborRatioAtMost1p8
+LP2A2_EXPLORE E_stiff13_straight_S12 N=14 hs=0.500 pass=0 ratio=1.7123 minAng=18.78 globalMinAngleAtLeast20
+LP2A2_EXPLORE E_stiff13_straight_S12 N=14 hs=0.350 pass=0 ratio=1.6366 minAng=18.78 globalMinAngleAtLeast20
+LP2A2_EXPLORE E_stiff13_mts_S9   N=11 hs=0.450 pass=1 ratio=1.7904 minAng=30.13 Joined; the independent kink-aware audit is still required.
+LP2A2_EXPLORE E_stiff13_mts_S9   N=11 hs=0.400 pass=1 ratio=1.5918 minAng=22.6 Joined; the independent kink-aware audit is still required.
+LP2A2_EXPLORE E_stiff13_mts_S9   N=11 hs=0.500 pass=1 ratio=1.6007 minAng=30.13 Joined; the independent kink-aware audit is still required.
+LP2A2_EXPLORE E_stiff13_mts_S9   N=11 hs=0.350 pass=1 ratio=1.5918 minAng=30.13 Joined; the independent kink-aware audit is still required.
+LP2A2_EXPLORE E_stiff13_mts_S10  N=12 hs=0.450 pass=1 ratio=1.6656 minAng=30.13 Joined; the independent kink-aware audit is still required.
+LP2A2_EXPLORE E_stiff13_mts_S10  N=12 hs=0.400 pass=1 ratio=1.6247 minAng=22.51 Joined; the independent kink-aware audit is still required.
+LP2A2_EXPLORE E_stiff13_mts_S10  N=12 hs=0.500 pass=1 ratio=1.6774 minAng=30.13 Joined; the independent kink-aware audit is still required.
+LP2A2_EXPLORE E_stiff13_mts_S10  N=12 hs=0.350 pass=1 ratio=1.7907 minAng=29.89 Joined; the independent kink-aware audit is still required.
+LP2A2_EXPLORE E_stiff13_mts_S11  N=13 hs=0.450 pass=1 ratio=1.7021 minAng=30.13 Joined; the independent kink-aware audit is still required.
+LP2A2_EXPLORE E_stiff13_mts_S11  N=13 hs=0.400 pass=1 ratio=1.5918 minAng=22.07 Joined; the independent kink-aware audit is still required.
+LP2A2_EXPLORE E_stiff13_mts_S11  N=13 hs=0.500 pass=1 ratio=1.5918 minAng=30.13 Joined; the independent kink-aware audit is still required.
+LP2A2_EXPLORE E_stiff13_mts_S11  N=13 hs=0.350 pass=1 ratio=1.5918 minAng=28.75 Joined; the independent kink-aware audit is still required.
+LP2A2_EXPLORE E_soft2_straight_S9 N=11 hs=0.450 pass=1 ratio=1.6446 minAng=30.13 Joined; the independent kink-aware audit is still required.
+LP2A2_EXPLORE E_soft2_straight_S9 N=11 hs=0.400 pass=1 ratio=1.5918 minAng=22.59 Joined; the independent kink-aware audit is still required.
+LP2A2_EXPLORE E_soft2_straight_S9 N=11 hs=0.500 pass=1 ratio=1.5918 minAng=30.13 Joined; the independent kink-aware audit is still required.
+LP2A2_EXPLORE E_soft2_straight_S9 N=11 hs=0.350 pass=1 ratio=1.5918 minAng=30.13 Joined; the independent kink-aware audit is still required.
+LP2A2_EXPLORE E_soft2_straight_S10 N=12 hs=0.450 pass=1 ratio=1.5918 minAng=30.13 Joined; the independent kink-aware audit is still required.
+LP2A2_EXPLORE E_soft2_straight_S10 N=12 hs=0.400 pass=1 ratio=1.5918 minAng=21.97 Joined; the independent kink-aware audit is still required.
+LP2A2_EXPLORE E_soft2_straight_S10 N=12 hs=0.500 pass=1 ratio=1.6113 minAng=30.13 Joined; the independent kink-aware audit is still required.
+LP2A2_EXPLORE E_soft2_straight_S10 N=12 hs=0.350 pass=1 ratio=1.5918 minAng=30.13 Joined; the independent kink-aware audit is still required.
+LP2A2_EXPLORE E_soft2_straight_S11 N=13 hs=0.450 pass=1 ratio=1.6148 minAng=30.13 Joined; the independent kink-aware audit is still required.
+LP2A2_EXPLORE E_soft2_straight_S11 N=13 hs=0.400 pass=1 ratio=1.6076 minAng=21.79 Joined; the independent kink-aware audit is still required.
+LP2A2_EXPLORE E_soft2_straight_S11 N=13 hs=0.500 pass=1 ratio=1.6281 minAng=30.13 Joined; the independent kink-aware audit is still required.
+LP2A2_EXPLORE E_soft2_straight_S11 N=13 hs=0.350 pass=1 ratio=1.7608 minAng=30.13 Joined; the independent kink-aware audit is still required.
+LP2A2_EXPLORE E_soft2_straight_S12 N=14 hs=0.450 pass=0 ratio=1.5987 minAng=19.36 globalMinAngleAtLeast20
+LP2A2_EXPLORE E_soft2_straight_S12 N=14 hs=0.400 pass=0 ratio=1.6506 minAng=19.36 globalMinAngleAtLeast20
+LP2A2_EXPLORE E_soft2_straight_S12 N=14 hs=0.500 pass=0 ratio=1.642 minAng=19.36 globalMinAngleAtLeast20
+LP2A2_EXPLORE E_soft2_straight_S12 N=14 hs=0.350 pass=0 ratio=1.7648 minAng=19.36 globalMinAngleAtLeast20
+LP2A2_EXPLORE E_soft2_mts_S9     N=11 hs=0.450 pass=1 ratio=1.6015 minAng=30.13 Joined; the independent kink-aware audit is still required.
+LP2A2_EXPLORE E_soft2_mts_S9     N=11 hs=0.400 pass=1 ratio=1.5918 minAng=22.23 Joined; the independent kink-aware audit is still required.
+LP2A2_EXPLORE E_soft2_mts_S9     N=11 hs=0.500 pass=1 ratio=1.5918 minAng=30.13 Joined; the independent kink-aware audit is still required.
+LP2A2_EXPLORE E_soft2_mts_S9     N=11 hs=0.350 pass=1 ratio=1.5918 minAng=30.13 Joined; the independent kink-aware audit is still required.
+LP2A2_EXPLORE E_soft2_mts_S10    N=12 hs=0.450 pass=1 ratio=1.6646 minAng=30.13 Joined; the independent kink-aware audit is still required.
+LP2A2_EXPLORE E_soft2_mts_S10    N=12 hs=0.400 pass=1 ratio=1.6484 minAng=22.81 Joined; the independent kink-aware audit is still required.
+LP2A2_EXPLORE E_soft2_mts_S10    N=12 hs=0.500 pass=1 ratio=1.7199 minAng=30.13 Joined; the independent kink-aware audit is still required.
+LP2A2_EXPLORE E_soft2_mts_S10    N=12 hs=0.350 pass=1 ratio=1.5918 minAng=30.13 Joined; the independent kink-aware audit is still required.
+LP2A2_EXPLORE E_soft2_mts_S11    N=13 hs=0.450 pass=1 ratio=1.6166 minAng=30.13 Joined; the independent kink-aware audit is still required.
+LP2A2_EXPLORE E_soft2_mts_S11    N=13 hs=0.400 pass=1 ratio=1.6721 minAng=22.79 Joined; the independent kink-aware audit is still required.
+LP2A2_EXPLORE E_soft2_mts_S11    N=13 hs=0.500 pass=1 ratio=1.7494 minAng=30.13 Joined; the independent kink-aware audit is still required.
+LP2A2_EXPLORE E_soft2_mts_S11    N=13 hs=0.350 pass=1 ratio=1.6104 minAng=30.13 Joined; the independent kink-aware audit is still required.
+LP2A2_EXPLORE E_soft1_straight_S9 N=11 hs=0.450 pass=1 ratio=1.7375 minAng=30.13 Joined; the independent kink-aware audit is still required.
+LP2A2_EXPLORE E_soft1_straight_S9 N=11 hs=0.400 pass=1 ratio=1.5918 minAng=22.12 Joined; the independent kink-aware audit is still required.
+LP2A2_EXPLORE E_soft1_straight_S9 N=11 hs=0.500 pass=1 ratio=1.6769 minAng=30.13 Joined; the independent kink-aware audit is still required.
+LP2A2_EXPLORE E_soft1_straight_S9 N=11 hs=0.350 pass=1 ratio=1.5918 minAng=30.13 Joined; the independent kink-aware audit is still required.
+LP2A2_EXPLORE E_soft1_straight_S10 N=12 hs=0.450 pass=1 ratio=1.5918 minAng=30.13 Joined; the independent kink-aware audit is still required.
+LP2A2_EXPLORE E_soft1_straight_S10 N=12 hs=0.400 pass=1 ratio=1.5918 minAng=21.97 Joined; the independent kink-aware audit is still required.
+LP2A2_EXPLORE E_soft1_straight_S10 N=12 hs=0.500 pass=1 ratio=1.6503 minAng=30.13 Joined; the independent kink-aware audit is still required.
+LP2A2_EXPLORE E_soft1_straight_S10 N=12 hs=0.350 pass=1 ratio=1.5918 minAng=30.13 Joined; the independent kink-aware audit is still required.
+LP2A2_EXPLORE E_soft1_straight_S11 N=13 hs=0.450 pass=1 ratio=1.6103 minAng=30.13 Joined; the independent kink-aware audit is still required.
+LP2A2_EXPLORE E_soft1_straight_S11 N=13 hs=0.400 pass=1 ratio=1.7573 minAng=21.79 Joined; the independent kink-aware audit is still required.
+LP2A2_EXPLORE E_soft1_straight_S11 N=13 hs=0.500 pass=1 ratio=1.6843 minAng=30.13 Joined; the independent kink-aware audit is still required.
+LP2A2_EXPLORE E_soft1_straight_S11 N=13 hs=0.350 pass=1 ratio=1.5918 minAng=30.13 Joined; the independent kink-aware audit is still required.
+LP2A2_EXPLORE E_soft1_straight_S12 N=14 hs=0.450 pass=1 ratio=1.5918 minAng=30.13 Joined; the independent kink-aware audit is still required.
+LP2A2_EXPLORE E_soft1_straight_S12 N=14 hs=0.400 pass=1 ratio=1.6237 minAng=21.79 Joined; the independent kink-aware audit is still required.
+LP2A2_EXPLORE E_soft1_straight_S12 N=14 hs=0.500 pass=1 ratio=1.5918 minAng=30.13 Joined; the independent kink-aware audit is still required.
+LP2A2_EXPLORE E_soft1_straight_S12 N=14 hs=0.350 pass=1 ratio=1.5918 minAng=30.13 Joined; the independent kink-aware audit is still required.
+LP2A2_EXPLORE E_soft1_straight_S13 N=15 hs=0.450 pass=0 ratio=1.6706 minAng=3.703 globalMinAngleAtLeast20
+LP2A2_EXPLORE E_soft1_straight_S13 N=15 hs=0.400 pass=0 ratio=1.6531 minAng=3.703 globalMinAngleAtLeast20
+LP2A2_EXPLORE E_soft1_straight_S13 N=15 hs=0.500 pass=0 ratio=1.8064 minAng=3.703 globalMinAngleAtLeast20, globalNeighborRatioAtMost1p8
+LP2A2_EXPLORE E_soft1_straight_S13 N=15 hs=0.350 pass=0 ratio=1.6706 minAng=3.703 globalMinAngleAtLeast20
+LP2A2_EXPLORE E_soft1_mts_S9     N=11 hs=0.450 pass=1 ratio=1.5918 minAng=30.13 Joined; the independent kink-aware audit is still required.
+LP2A2_EXPLORE E_soft1_mts_S9     N=11 hs=0.400 pass=1 ratio=1.5918 minAng=22.39 Joined; the independent kink-aware audit is still required.
+LP2A2_EXPLORE E_soft1_mts_S9     N=11 hs=0.500 pass=1 ratio=1.6293 minAng=30.13 Joined; the independent kink-aware audit is still required.
+LP2A2_EXPLORE E_soft1_mts_S9     N=11 hs=0.350 pass=1 ratio=1.7222 minAng=30.13 Joined; the independent kink-aware audit is still required.
+LP2A2_EXPLORE E_soft1_mts_S10    N=12 hs=0.450 pass=1 ratio=1.6103 minAng=30.13 Joined; the independent kink-aware audit is still required.
+LP2A2_EXPLORE E_soft1_mts_S10    N=12 hs=0.400 pass=1 ratio=1.7441 minAng=22.4 Joined; the independent kink-aware audit is still required.
+LP2A2_EXPLORE E_soft1_mts_S10    N=12 hs=0.500 pass=1 ratio=1.7124 minAng=30.13 Joined; the independent kink-aware audit is still required.
+LP2A2_EXPLORE E_soft1_mts_S10    N=12 hs=0.350 pass=1 ratio=1.5945 minAng=30.13 Joined; the independent kink-aware audit is still required.
+LP2A2_EXPLORE E_soft1_mts_S11    N=13 hs=0.450 pass=1 ratio=1.6797 minAng=30.13 Joined; the independent kink-aware audit is still required.
+LP2A2_EXPLORE E_soft1_mts_S11    N=13 hs=0.400 pass=1 ratio=1.7359 minAng=23.17 Joined; the independent kink-aware audit is still required.
+LP2A2_EXPLORE E_soft1_mts_S11    N=13 hs=0.500 pass=1 ratio=1.5918 minAng=30.13 Joined; the independent kink-aware audit is still required.
+LP2A2_EXPLORE E_soft1_mts_S11    N=13 hs=0.350 pass=1 ratio=1.5939 minAng=30.13 Joined; the independent kink-aware audit is still required.
+LP2A2_EXPLORE E_soft1_mts_S12    N=14 hs=0.450 pass=0 ratio=1.6535 minAng=9.581 globalMinAngleAtLeast20
+LP2A2_EXPLORE E_soft1_mts_S12    N=14 hs=0.400 pass=0 ratio=1.5918 minAng=9.581 globalMinAngleAtLeast20
+LP2A2_EXPLORE E_soft1_mts_S12    N=14 hs=0.500 pass=0 ratio=1.6543 minAng=9.581 globalMinAngleAtLeast20
+LP2A2_EXPLORE E_soft1_mts_S12    N=14 hs=0.350 pass=0 ratio=1.5918 minAng=9.581 globalMinAngleAtLeast20
+EXPLORE_DONE 184 rows 530.3 s
+TESTSET_SHA256=7d2b6d352217bd5130f14f3d4aa9c89145b0efc7cd56a0c065abcaf9ebc4d711
+LP2A2_QUAL A_H_S8                       N=10 new=1 KINKED_PROTECTED_MESH_JOIN_PASS    T3=29973  pair=1 | old=1 KINKED_PROTECTED_MESH_JOIN_PASS
+LP2A2_QUAL B_H_S9                       N=11 new=1 KINKED_PROTECTED_MESH_JOIN_PASS    T3=30169  pair=1 | old=1 KINKED_PROTECTED_MESH_JOIN_PASS
+LP2A2_QUAL A_stiff13_S8                 N=10 new=1 KINKED_PROTECTED_MESH_JOIN_PASS    T3=29981  pair=1 | old=1 KINKED_PROTECTED_MESH_JOIN_PASS
+LP2A2_QUAL B_stiff13_S9                 N=11 new=1 KINKED_PROTECTED_MESH_JOIN_PASS    T3=30179  pair=1 | old=1 KINKED_PROTECTED_MESH_JOIN_PASS
+LP2A2_QUAL A_soft2_S8                   N=10 new=1 KINKED_PROTECTED_MESH_JOIN_PASS    T3=30001  pair=1 | old=1 KINKED_PROTECTED_MESH_JOIN_PASS
+LP2A2_QUAL B_soft2_S9                   N=11 new=1 KINKED_PROTECTED_MESH_JOIN_PASS    T3=30173  pair=1 | old=0 HOLD_KINKED_EXTERIOR
+LP2A2_QUAL A_soft1_S8                   N=10 new=1 KINKED_PROTECTED_MESH_JOIN_PASS    T3=30021  pair=1 | old=1 KINKED_PROTECTED_MESH_JOIN_PASS
+LP2A2_QUAL B_soft1_S9                   N=11 new=1 KINKED_PROTECTED_MESH_JOIN_PASS    T3=30187  pair=1 | old=1 KINKED_PROTECTED_MESH_JOIN_PASS
+LP2A2_QUAL C1_H_frozenMTS_S6            N=8  new=1 KINKED_PROTECTED_MESH_JOIN_PASS    T3=29611  pair=1 | old=1 KINKED_PROTECTED_MESH_JOIN_PASS
+LP2A2_QUAL C1_H_frozenMTS_S7            N=9  new=1 KINKED_PROTECTED_MESH_JOIN_PASS    T3=29857  pair=1 | old=1 KINKED_PROTECTED_MESH_JOIN_PASS
+LP2A2_QUAL C1_H_frozenMTS_S8            N=10 new=1 KINKED_PROTECTED_MESH_JOIN_PASS    T3=30021  pair=1 | old=1 KINKED_PROTECTED_MESH_JOIN_PASS
+LP2A2_QUAL C1_H_frozenMTS_S9            N=11 new=1 KINKED_PROTECTED_MESH_JOIN_PASS    T3=30187  pair=1 | old=1 KINKED_PROTECTED_MESH_JOIN_PASS
+LP2A2_QUAL C1_H_frozenMTS_S10           N=12 new=1 KINKED_PROTECTED_MESH_JOIN_PASS    T3=30389  pair=1 | old=1 KINKED_PROTECTED_MESH_JOIN_PASS
+LP2A2_QUAL C1_H_frozenMTS_S11           N=13 new=1 KINKED_PROTECTED_MESH_JOIN_PASS    T3=30577  pair=1 | old=0 HOLD_KINKED_EXTERIOR
+LP2A2_QUAL C1_H_straight_S6             N=8  new=1 KINKED_PROTECTED_MESH_JOIN_PASS    T3=29579  pair=1 | old=1 KINKED_PROTECTED_MESH_JOIN_PASS
+LP2A2_QUAL C1_H_straight_S7             N=9  new=1 KINKED_PROTECTED_MESH_JOIN_PASS    T3=29785  pair=1 | old=1 KINKED_PROTECTED_MESH_JOIN_PASS
+LP2A2_QUAL C1_H_straight_S8             N=10 new=1 KINKED_PROTECTED_MESH_JOIN_PASS    T3=29987  pair=1 | old=1 KINKED_PROTECTED_MESH_JOIN_PASS
+LP2A2_QUAL C1_H_straight_S9             N=11 new=1 KINKED_PROTECTED_MESH_JOIN_PASS    T3=30237  pair=1 | old=0 HOLD_KINKED_EXTERIOR
+LP2A2_QUAL C1_H_straight_S10            N=12 new=1 KINKED_PROTECTED_MESH_JOIN_PASS    T3=30359  pair=1 | old=1 KINKED_PROTECTED_MESH_JOIN_PASS
+LP2A2_QUAL C1_H_straight_S11            N=13 new=1 KINKED_PROTECTED_MESH_JOIN_PASS    T3=30589  pair=1 | old=1 KINKED_PROTECTED_MESH_JOIN_PASS
+LP2A2_QUAL C1_H_straight_S12            N=14 new=1 KINKED_PROTECTED_MESH_JOIN_PASS    T3=30791  pair=1 | old=0 HOLD_KINKED_EXTERIOR
+LP2A2_QUAL C1_H_straight_S13            N=15 new=1 KINKED_PROTECTED_MESH_JOIN_PASS    T3=31019  pair=1 | old=1 KINKED_PROTECTED_MESH_JOIN_PASS
+LP2A2_QUAL C1_H_straight_S14            N=16 new=1 KINKED_PROTECTED_MESH_JOIN_PASS    T3=31233  pair=1 | old=0 HOLD_KINKED_EXTERIOR
+LP2A2_QUAL C1_H_straight_S15            N=17 new=1 KINKED_PROTECTED_MESH_JOIN_PASS    T3=31481  pair=1 | old=0 HOLD_KINKED_EXTERIOR
+LP2A2_QUAL C1_H_straight_S16            N=18 new=1 KINKED_PROTECTED_MESH_JOIN_PASS    T3=31817  pair=1 | old=0 HOLD_KINKED_EXTERIOR
+LP2A2_QUAL C1_H_straight_S17            N=19 new=1 KINKED_PROTECTED_MESH_JOIN_PASS    T3=31887  pair=1 | old=0 HOLD_KINKED_EXTERIOR
+LP2A2_QUAL C1_H_straight_S18            N=20 new=1 KINKED_PROTECTED_MESH_JOIN_PASS    T3=32191  pair=1 | old=0 HOLD_KINKED_EXTERIOR
+LP2A2_QUAL C1_H_straight_S19            N=21 new=1 KINKED_PROTECTED_MESH_JOIN_PASS    T3=32297  pair=1 | old=0 HOLD_KINKED_EXTERIOR
+LP2A2_QUAL C1_stiff13_frozenMTS_S6      N=8  new=1 KINKED_PROTECTED_MESH_JOIN_PASS    T3=29589  pair=1 | old=1 KINKED_PROTECTED_MESH_JOIN_PASS
+LP2A2_QUAL C1_stiff13_frozenMTS_S7      N=9  new=1 KINKED_PROTECTED_MESH_JOIN_PASS    T3=29833  pair=1 | old=1 KINKED_PROTECTED_MESH_JOIN_PASS
+LP2A2_QUAL C1_stiff13_frozenMTS_S8      N=10 new=1 KINKED_PROTECTED_MESH_JOIN_PASS    T3=29993  pair=1 | old=1 KINKED_PROTECTED_MESH_JOIN_PASS
+LP2A2_QUAL C1_stiff13_frozenMTS_S9      N=11 new=1 KINKED_PROTECTED_MESH_JOIN_PASS    T3=30159  pair=1 | old=1 KINKED_PROTECTED_MESH_JOIN_PASS
+LP2A2_QUAL C1_stiff13_frozenMTS_S10     N=12 new=1 KINKED_PROTECTED_MESH_JOIN_PASS    T3=30385  pair=1 | old=0 HOLD_KINKED_EXTERIOR
+LP2A2_QUAL C1_stiff13_frozenMTS_S11     N=13 new=1 KINKED_PROTECTED_MESH_JOIN_PASS    T3=30537  pair=1 | old=0 HOLD_KINKED_EXTERIOR
+LP2A2_QUAL C1_stiff13_straight_S6       N=8  new=1 KINKED_PROTECTED_MESH_JOIN_PASS    T3=29595  pair=1 | old=1 KINKED_PROTECTED_MESH_JOIN_PASS
+LP2A2_QUAL C1_stiff13_straight_S7       N=9  new=1 KINKED_PROTECTED_MESH_JOIN_PASS    T3=29811  pair=1 | old=1 KINKED_PROTECTED_MESH_JOIN_PASS
+LP2A2_QUAL C1_stiff13_straight_S8       N=10 new=1 KINKED_PROTECTED_MESH_JOIN_PASS    T3=29975  pair=1 | old=1 KINKED_PROTECTED_MESH_JOIN_PASS
+LP2A2_QUAL C1_stiff13_straight_S9       N=11 new=1 KINKED_PROTECTED_MESH_JOIN_PASS    T3=30161  pair=1 | old=1 KINKED_PROTECTED_MESH_JOIN_PASS
+LP2A2_QUAL C1_stiff13_straight_S10      N=12 new=1 KINKED_PROTECTED_MESH_JOIN_PASS    T3=30397  pair=1 | old=0 HOLD_KINKED_EXTERIOR
+LP2A2_QUAL C1_stiff13_straight_S11      N=13 new=1 KINKED_PROTECTED_MESH_JOIN_PASS    T3=30585  pair=1 | old=0 HOLD_KINKED_EXTERIOR
+LP2A2_QUAL C1_stiff13_straight_S12      N=14 new=1 KINKED_PROTECTED_MESH_JOIN_PASS    T3=30757  pair=1 | old=0 HOLD_KINKED_EXTERIOR
+LP2A2_QUAL C1_stiff13_straight_S13      N=15 new=1 KINKED_PROTECTED_MESH_JOIN_PASS    T3=30959  pair=1 | old=0 HOLD_KINKED_EXTERIOR
+LP2A2_QUAL C1_stiff13_straight_S14      N=16 new=1 KINKED_PROTECTED_MESH_JOIN_PASS    T3=31247  pair=1 | old=0 HOLD_KINKED_EXTERIOR
+LP2A2_QUAL C1_stiff13_straight_S15      N=17 new=1 KINKED_PROTECTED_MESH_JOIN_PASS    T3=31479  pair=1 | old=0 HOLD_KINKED_EXTERIOR
+LP2A2_QUAL C1_stiff13_straight_S16      N=18 new=1 KINKED_PROTECTED_MESH_JOIN_PASS    T3=31747  pair=1 | old=0 HOLD_KINKED_EXTERIOR
+LP2A2_QUAL C1_stiff13_straight_S17      N=19 new=1 KINKED_PROTECTED_MESH_JOIN_PASS    T3=31935  pair=1 | old=0 HOLD_KINKED_EXTERIOR
+LP2A2_QUAL C1_stiff13_straight_S18      N=20 new=1 KINKED_PROTECTED_MESH_JOIN_PASS    T3=32089  pair=1 | old=0 HOLD_KINKED_EXTERIOR
+LP2A2_QUAL C1_stiff13_straight_S19      N=21 new=1 KINKED_PROTECTED_MESH_JOIN_PASS    T3=32365  pair=1 | old=0 HOLD_KINKED_EXTERIOR
+LP2A2_QUAL C1_soft2_frozenMTS_S6        N=8  new=1 KINKED_PROTECTED_MESH_JOIN_PASS    T3=29581  pair=1 | old=1 KINKED_PROTECTED_MESH_JOIN_PASS
+LP2A2_QUAL C1_soft2_frozenMTS_S7        N=9  new=1 KINKED_PROTECTED_MESH_JOIN_PASS    T3=29827  pair=1 | old=1 KINKED_PROTECTED_MESH_JOIN_PASS
+LP2A2_QUAL C1_soft2_frozenMTS_S8        N=10 new=1 KINKED_PROTECTED_MESH_JOIN_PASS    T3=30005  pair=1 | old=1 KINKED_PROTECTED_MESH_JOIN_PASS
+LP2A2_QUAL C1_soft2_frozenMTS_S9        N=11 new=1 KINKED_PROTECTED_MESH_JOIN_PASS    T3=30181  pair=1 | old=1 KINKED_PROTECTED_MESH_JOIN_PASS
+LP2A2_QUAL C1_soft2_frozenMTS_S10       N=12 new=1 KINKED_PROTECTED_MESH_JOIN_PASS    T3=30393  pair=1 | old=0 HOLD_KINKED_EXTERIOR
+LP2A2_QUAL C1_soft2_frozenMTS_S11       N=13 new=1 KINKED_PROTECTED_MESH_JOIN_PASS    T3=30595  pair=1 | old=0 HOLD_KINKED_EXTERIOR
+LP2A2_QUAL C1_soft2_straight_S6         N=8  new=1 KINKED_PROTECTED_MESH_JOIN_PASS    T3=29599  pair=1 | old=1 KINKED_PROTECTED_MESH_JOIN_PASS
+LP2A2_QUAL C1_soft2_straight_S7         N=9  new=1 KINKED_PROTECTED_MESH_JOIN_PASS    T3=29791  pair=1 | old=1 KINKED_PROTECTED_MESH_JOIN_PASS
+LP2A2_QUAL C1_soft2_straight_S8         N=10 new=1 KINKED_PROTECTED_MESH_JOIN_PASS    T3=30009  pair=1 | old=1 KINKED_PROTECTED_MESH_JOIN_PASS
+LP2A2_QUAL C1_soft2_straight_S9         N=11 new=1 KINKED_PROTECTED_MESH_JOIN_PASS    T3=30177  pair=1 | old=0 HOLD_KINKED_EXTERIOR
+LP2A2_QUAL C1_soft2_straight_S10        N=12 new=1 KINKED_PROTECTED_MESH_JOIN_PASS    T3=30395  pair=1 | old=1 KINKED_PROTECTED_MESH_JOIN_PASS
+LP2A2_QUAL C1_soft2_straight_S11        N=13 new=1 KINKED_PROTECTED_MESH_JOIN_PASS    T3=30553  pair=1 | old=0 HOLD_KINKED_EXTERIOR
+LP2A2_QUAL C1_soft2_straight_S12        N=14 new=1 KINKED_PROTECTED_MESH_JOIN_PASS    T3=30691  pair=1 | old=0 HOLD_KINKED_EXTERIOR
+LP2A2_QUAL C1_soft2_straight_S13        N=15 new=1 KINKED_PROTECTED_MESH_JOIN_PASS    T3=31013  pair=1 | old=0 HOLD_KINKED_EXTERIOR
+LP2A2_QUAL C1_soft2_straight_S14        N=16 new=1 KINKED_PROTECTED_MESH_JOIN_PASS    T3=31263  pair=1 | old=0 HOLD_KINKED_EXTERIOR
+LP2A2_QUAL C1_soft2_straight_S15        N=17 new=1 KINKED_PROTECTED_MESH_JOIN_PASS    T3=31455  pair=1 | old=0 HOLD_KINKED_EXTERIOR
+LP2A2_QUAL C1_soft2_straight_S16        N=18 new=1 KINKED_PROTECTED_MESH_JOIN_PASS    T3=31663  pair=1 | old=0 HOLD_KINKED_EXTERIOR
+LP2A2_QUAL C1_soft2_straight_S17        N=19 new=1 KINKED_PROTECTED_MESH_JOIN_PASS    T3=31975  pair=1 | old=0 HOLD_KINKED_EXTERIOR
+LP2A2_QUAL C1_soft2_straight_S18        N=20 new=1 KINKED_PROTECTED_MESH_JOIN_PASS    T3=32149  pair=1 | old=0 HOLD_KINKED_EXTERIOR
+LP2A2_QUAL C1_soft2_straight_S19        N=21 new=1 KINKED_PROTECTED_MESH_JOIN_PASS    T3=32303  pair=1 | old=0 HOLD_KINKED_EXTERIOR
+LP2A2_QUAL C1_soft1_frozenMTS_S6        N=8  new=1 KINKED_PROTECTED_MESH_JOIN_PASS    T3=29611  pair=1 | old=1 KINKED_PROTECTED_MESH_JOIN_PASS
+LP2A2_QUAL C1_soft1_frozenMTS_S7        N=9  new=1 KINKED_PROTECTED_MESH_JOIN_PASS    T3=29857  pair=1 | old=1 KINKED_PROTECTED_MESH_JOIN_PASS
+LP2A2_QUAL C1_soft1_frozenMTS_S8        N=10 new=1 KINKED_PROTECTED_MESH_JOIN_PASS    T3=30025  pair=1 | old=1 KINKED_PROTECTED_MESH_JOIN_PASS
+LP2A2_QUAL C1_soft1_frozenMTS_S9        N=11 new=1 KINKED_PROTECTED_MESH_JOIN_PASS    T3=30183  pair=1 | old=0 HOLD_KINKED_EXTERIOR
+LP2A2_QUAL C1_soft1_frozenMTS_S10       N=12 new=1 KINKED_PROTECTED_MESH_JOIN_PASS    T3=30427  pair=1 | old=0 HOLD_KINKED_EXTERIOR
+LP2A2_QUAL C1_soft1_frozenMTS_S11       N=13 new=1 KINKED_PROTECTED_MESH_JOIN_PASS    T3=30573  pair=1 | old=0 HOLD_KINKED_EXTERIOR
+LP2A2_QUAL C1_soft1_frozenMTS_S12       N=14 new=0 HOLD_LP2A2_LADDER_EXHAUSTED        T3=       pair=0 | old=0 HOLD_KINKED_EXTERIOR
+LP2A2_QUAL C1_soft1_straight_S6         N=8  new=1 KINKED_PROTECTED_MESH_JOIN_PASS    T3=29621  pair=1 | old=1 KINKED_PROTECTED_MESH_JOIN_PASS
+LP2A2_QUAL C1_soft1_straight_S7         N=9  new=1 KINKED_PROTECTED_MESH_JOIN_PASS    T3=29781  pair=1 | old=1 KINKED_PROTECTED_MESH_JOIN_PASS
+LP2A2_QUAL C1_soft1_straight_S8         N=10 new=1 KINKED_PROTECTED_MESH_JOIN_PASS    T3=30011  pair=1 | old=1 KINKED_PROTECTED_MESH_JOIN_PASS
+LP2A2_QUAL C1_soft1_straight_S9         N=11 new=1 KINKED_PROTECTED_MESH_JOIN_PASS    T3=30171  pair=1 | old=1 KINKED_PROTECTED_MESH_JOIN_PASS
+LP2A2_QUAL C1_soft1_straight_S10        N=12 new=1 KINKED_PROTECTED_MESH_JOIN_PASS    T3=30447  pair=1 | old=1 KINKED_PROTECTED_MESH_JOIN_PASS
+LP2A2_QUAL C1_soft1_straight_S11        N=13 new=1 KINKED_PROTECTED_MESH_JOIN_PASS    T3=30603  pair=1 | old=1 KINKED_PROTECTED_MESH_JOIN_PASS
+LP2A2_QUAL C1_soft1_straight_S12        N=14 new=1 KINKED_PROTECTED_MESH_JOIN_PASS    T3=30801  pair=1 | old=0 HOLD_KINKED_EXTERIOR
+LP2A2_QUAL C1_soft1_straight_S13        N=15 new=1 KINKED_PROTECTED_MESH_JOIN_PASS    T3=31035  pair=1 | old=0 HOLD_KINKED_EXTERIOR
+LP2A2_QUAL C1_soft1_straight_S14        N=16 new=1 KINKED_PROTECTED_MESH_JOIN_PASS    T3=31295  pair=1 | old=0 HOLD_KINKED_EXTERIOR
+LP2A2_QUAL C1_soft1_straight_S15        N=17 new=1 KINKED_PROTECTED_MESH_JOIN_PASS    T3=31473  pair=1 | old=0 HOLD_KINKED_EXTERIOR
+LP2A2_QUAL C1_soft1_straight_S16        N=18 new=1 KINKED_PROTECTED_MESH_JOIN_PASS    T3=31785  pair=1 | old=0 HOLD_KINKED_EXTERIOR
+LP2A2_QUAL C1_soft1_straight_S17        N=19 new=1 KINKED_PROTECTED_MESH_JOIN_PASS    T3=32009  pair=1 | old=0 HOLD_KINKED_EXTERIOR
+LP2A2_QUAL C1_soft1_straight_S18        N=20 new=1 KINKED_PROTECTED_MESH_JOIN_PASS    T3=32181  pair=1 | old=0 HOLD_KINKED_EXTERIOR
+LP2A2_QUAL C1_soft1_straight_S19        N=21 new=1 KINKED_PROTECTED_MESH_JOIN_PASS    T3=32443  pair=1 | old=0 HOLD_KINKED_EXTERIOR
+LP2A2_QUAL C1_soft1_straight_S20        N=22 new=0 KINKED_PROTECTED_MESH_JOIN_PASS    T3=32591  pair=1 | old=0 HOLD_KINKED_EXTERIOR
+LP2A2_QUAL C2_H_straight_S10            N=12 new=1 KINKED_PROTECTED_MESH_JOIN_PASS    T3=30367  pair=1 | old=1 KINKED_PROTECTED_MESH_JOIN_PASS
+LP2A2_QUAL C2_H_straight_S11            N=13 new=1 KINKED_PROTECTED_MESH_JOIN_PASS    T3=30549  pair=1 | old=0 HOLD_KINKED_EXTERIOR
+LP2A2_QUAL C2_H_straight_S12            N=14 new=1 KINKED_PROTECTED_MESH_JOIN_PASS    T3=30775  pair=1 | old=1 KINKED_PROTECTED_MESH_JOIN_PASS
+LP2A2_QUAL C2_H_straight_S13            N=15 new=0 HOLD_KINKED_P010_BLOCK             T3=       pair=0 | old=0 HOLD_KINKED_P010_BLOCK
+LP2A2_QUAL C2_H_frozen_S10              N=12 new=1 KINKED_PROTECTED_MESH_JOIN_PASS    T3=30437  pair=1 | old=1 KINKED_PROTECTED_MESH_JOIN_PASS
+LP2A2_QUAL C2_H_frozen_S11              N=13 new=1 KINKED_PROTECTED_MESH_JOIN_PASS    T3=30593  pair=1 | old=0 HOLD_KINKED_EXTERIOR
+LP2A2_QUAL C2_H_frozen_S12              N=14 new=0 HOLD_KINKED_P010_BLOCK             T3=       pair=0 | old=0 HOLD_KINKED_P010_BLOCK
+LP2A2_QUAL C2_stiff13_straight_S10      N=12 new=1 KINKED_PROTECTED_MESH_JOIN_PASS    T3=30317  pair=1 | old=1 KINKED_PROTECTED_MESH_JOIN_PASS
+LP2A2_QUAL C2_stiff13_straight_S11      N=13 new=1 KINKED_PROTECTED_MESH_JOIN_PASS    T3=30463  pair=1 | old=1 KINKED_PROTECTED_MESH_JOIN_PASS
+LP2A2_QUAL C2_stiff13_straight_S12      N=14 new=0 HOLD_LP2A2_LADDER_EXHAUSTED        T3=       pair=0 | old=0 HOLD_KINKED_EXTERIOR
+LP2A2_QUAL C2_stiff13_straight_S13      N=15 new=0 HOLD_KINKED_P010_BLOCK             T3=       pair=0 | old=0 HOLD_KINKED_P010_BLOCK
+LP2A2_QUAL C2_stiff13_frozen_S10        N=12 new=1 KINKED_PROTECTED_MESH_JOIN_PASS    T3=30385  pair=1 | old=1 KINKED_PROTECTED_MESH_JOIN_PASS
+LP2A2_QUAL C2_stiff13_frozen_S11        N=13 new=1 KINKED_PROTECTED_MESH_JOIN_PASS    T3=30531  pair=1 | old=0 HOLD_KINKED_EXTERIOR
+LP2A2_QUAL C2_stiff13_frozen_S12        N=14 new=0 HOLD_KINKED_P010_BLOCK             T3=       pair=0 | old=0 HOLD_KINKED_P010_BLOCK
+LP2A2_QUAL C2_soft2_straight_S10        N=12 new=1 KINKED_PROTECTED_MESH_JOIN_PASS    T3=30353  pair=1 | old=1 KINKED_PROTECTED_MESH_JOIN_PASS
+LP2A2_QUAL C2_soft2_straight_S11        N=13 new=1 KINKED_PROTECTED_MESH_JOIN_PASS    T3=30527  pair=1 | old=1 KINKED_PROTECTED_MESH_JOIN_PASS
+LP2A2_QUAL C2_soft2_straight_S12        N=14 new=0 HOLD_LP2A2_LADDER_EXHAUSTED        T3=       pair=0 | old=0 HOLD_KINKED_EXTERIOR
+LP2A2_QUAL C2_soft2_straight_S13        N=15 new=0 HOLD_KINKED_P010_BLOCK             T3=       pair=0 | old=0 HOLD_KINKED_P010_BLOCK
+LP2A2_QUAL C2_soft2_frozen_S10          N=12 new=1 KINKED_PROTECTED_MESH_JOIN_PASS    T3=30375  pair=1 | old=0 HOLD_KINKED_EXTERIOR
+LP2A2_QUAL C2_soft2_frozen_S11          N=13 new=1 KINKED_PROTECTED_MESH_JOIN_PASS    T3=30541  pair=1 | old=0 HOLD_KINKED_EXTERIOR
+LP2A2_QUAL C2_soft2_frozen_S12          N=14 new=0 HOLD_KINKED_P010_BLOCK             T3=       pair=0 | old=0 HOLD_KINKED_P010_BLOCK
+LP2A2_QUAL C2_soft1_straight_S10        N=12 new=1 KINKED_PROTECTED_MESH_JOIN_PASS    T3=30361  pair=1 | old=1 KINKED_PROTECTED_MESH_JOIN_PASS
+LP2A2_QUAL C2_soft1_straight_S11        N=13 new=1 KINKED_PROTECTED_MESH_JOIN_PASS    T3=30551  pair=1 | old=1 KINKED_PROTECTED_MESH_JOIN_PASS
+LP2A2_QUAL C2_soft1_straight_S12        N=14 new=1 KINKED_PROTECTED_MESH_JOIN_PASS    T3=30737  pair=1 | old=1 KINKED_PROTECTED_MESH_JOIN_PASS
+LP2A2_QUAL C2_soft1_straight_S13        N=15 new=0 HOLD_KINKED_P010_BLOCK             T3=       pair=0 | old=0 HOLD_KINKED_P010_BLOCK
+LP2A2_QUAL C2_soft1_frozen_S10          N=12 new=1 KINKED_PROTECTED_MESH_JOIN_PASS    T3=30409  pair=1 | old=0 HOLD_KINKED_EXTERIOR
+LP2A2_QUAL C2_soft1_frozen_S11          N=13 new=1 KINKED_PROTECTED_MESH_JOIN_PASS    T3=30591  pair=1 | old=0 HOLD_KINKED_EXTERIOR
+LP2A2_QUAL C2_soft1_frozen_S12          N=14 new=0 HOLD_LP2A2_LADDER_EXHAUSTED        T3=       pair=0 | old=0 HOLD_KINKED_PROTECTED_MESH_JOIN
+LP2A2_QUAL C2_soft1_frozen_S13          N=15 new=0 HOLD_KINKED_P010_BLOCK             T3=       pair=0 | old=0 HOLD_KINKED_P010_BLOCK
+LP2A2_QUAL C3_H_zigzag2_S10             N=12 new=1 KINKED_PROTECTED_MESH_JOIN_PASS    T3=30339  pair=1 | old=1 KINKED_PROTECTED_MESH_JOIN_PASS
+LP2A2_QUAL C3_H_zigzag2_S11             N=13 new=1 KINKED_PROTECTED_MESH_JOIN_PASS    T3=30523  pair=1 | old=0 HOLD_KINKED_EXTERIOR
+LP2A2_QUAL C3_H_zigzag2_S12             N=14 new=1 KINKED_PROTECTED_MESH_JOIN_PASS    T3=30773  pair=1 | old=1 KINKED_PROTECTED_MESH_JOIN_PASS
+LP2A2_QUAL C3_H_zigzag2_S13             N=15 new=0 HOLD_KINKED_P010_BLOCK             T3=       pair=0 | old=0 HOLD_KINKED_P010_BLOCK
+LP2A2_QUAL C3_H_zigzag5_S10             N=12 new=1 KINKED_PROTECTED_MESH_JOIN_PASS    T3=30389  pair=1 | old=1 KINKED_PROTECTED_MESH_JOIN_PASS
+LP2A2_QUAL C3_H_zigzag5_S11             N=13 new=1 KINKED_PROTECTED_MESH_JOIN_PASS    T3=30567  pair=1 | old=0 HOLD_KINKED_EXTERIOR
+LP2A2_QUAL C3_H_zigzag5_S12             N=14 new=1 KINKED_PROTECTED_MESH_JOIN_PASS    T3=30769  pair=1 | old=0 HOLD_KINKED_EXTERIOR
+LP2A2_QUAL C3_H_zigzag5_S13             N=15 new=0 HOLD_KINKED_P010_BLOCK             T3=       pair=0 | old=0 HOLD_KINKED_P010_BLOCK
+LP2A2_QUAL2_DONE rows=127 seconds=976.7

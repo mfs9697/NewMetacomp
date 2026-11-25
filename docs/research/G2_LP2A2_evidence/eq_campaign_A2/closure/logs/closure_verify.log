@@ -1,0 +1,2 @@
+CLOSURE_VERIFY v2 outcome=VERIFIED_V2 solvesPass=4 unchanged=1 problems=0 files=24 refDump=24 refArchive=24 refMismatch=0
+CLOSURE_LEGACY outcome=VERIFY_HOLD unchanged=1

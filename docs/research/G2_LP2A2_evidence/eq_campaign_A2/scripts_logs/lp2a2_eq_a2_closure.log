@@ -1,0 +1,13 @@
+POSTREV_RUN EQ-H G2LP2A2:HOLD_UNAUTHORIZED | No GO file (matlab/g2/lp2a2/G2_LP2A2_EQ_GO.json): the campaign is prepared, not authorized.
+POSTREV_RUN EQ-stiff13 G2LP2A2:HOLD_UNAUTHORIZED | No GO file (matlab/g2/lp2a2/G2_LP2A2_EQ_GO.json): the campaign is prepared, not authorized.
+POSTREV_RUN EQ-soft2 G2LP2A2:HOLD_UNAUTHORIZED | No GO file (matlab/g2/lp2a2/G2_LP2A2_EQ_GO.json): the campaign is prepared, not authorized.
+POSTREV_RUN EQ-soft1 G2LP2A2:HOLD_UNAUTHORIZED | No GO file (matlab/g2/lp2a2/G2_LP2A2_EQ_GO.json): the campaign is prepared, not authorized.
+POSTREV_WRAPPER outcome=HOLD_UNAUTHORIZED solvesCalled=0 reason=noGoFile
+POSTREV_RESULT pass=1 files=1 (24) listing=1 git=1 commit=886c2304b2a3603c306ac21856a2b541107dc916
+AUDIT head=886c2304b2a3603c306ac21856a2b541107dc916
+AUDIT_VERIFY outcome=VERIFY_HOLD unchanged=1 solvesReplayed=4 problems=4 physicalSolves=0
+AUDIT_SOLVE EQ-H files=6 links(mesh)=1(phase)=1 polyBitwise=1 pass=1
+AUDIT_SOLVE EQ-stiff13 files=6 links(mesh)=1(phase)=1 polyBitwise=1 pass=1
+AUDIT_SOLVE EQ-soft2 files=6 links(mesh)=1(phase)=1 polyBitwise=1 pass=1
+AUDIT_SOLVE EQ-soft1 files=6 links(mesh)=1(phase)=1 polyBitwise=1 pass=1
+AUDIT_DONE verify=VERIFY_HOLD

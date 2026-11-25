@@ -1,0 +1,2957 @@
+{
+  "schema": "NewMetacomp.G2.LP2A2.MeshQualification.v1",
+  "physicalSolves": 0,
+  "meshesSaved": 0,
+  "testSetSHA256": "ab7096d0d0eb2dc31f632e15d5f3b470819f07f2595b45d341c62df19cd41313",
+  "mesher": "ladder",
+  "options": {
+    "TipGuideRadius_mm": 15,
+    "TipGuideHface_mm": 1.5,
+    "MaxT3Elements": 40000,
+    "lipHedge_mm": 0.45
+  },
+  "rows": [
+    {
+      "id": "I_H_p1deg_S11",
+      "group": "I",
+      "caseId": "H",
+      "label": "MESH_ONLY_SYNTHETIC_INDEPENDENT",
+      "vertices": 13,
+      "state": 11,
+      "arc_mm": 69.399999999999991,
+      "guardRow": false,
+      "tip_mm": [
+        116.11146759576987,
+        66.8287999291445
+      ],
+      "tipToRingCircle_mm": [
+        17.364080160303349,
+        45.862087943001171,
+        91.685961134217067
+      ],
+      "polylineToRingCircle_mm": [
+        17.364080160303349,
+        45.862087943001171,
+        91.685961134217067
+      ],
+      "new": {
+        "pass": true,
+        "seedRung": 1,
+        "seedSpacing_mm": 0.45,
+        "ladder": {
+          "rung": 1,
+          "seedSpacing_mm": 0.45,
+          "stage": "KINKED_PROTECTED_MESH_JOIN_PASS",
+          "message": "Joined; the independent kink-aware audit is still required.",
+          "failedGates": [],
+          "pairingPass": true
+        },
+        "joinSeconds": 6.2964449,
+        "stage": "KINKED_PROTECTED_MESH_JOIN_PASS",
+        "message": "Joined; the independent kink-aware audit is still required.",
+        "exterior": {
+          "seedsPerSegment": [
+            57,
+            9,
+            9,
+            9,
+            9,
+            9,
+            9,
+            9,
+            9,
+            9,
+            9,
+            2
+          ],
+          "seedCount": 150,
+          "guideCrossingPairs": 1,
+          "guideCrossingSegments": 9,
+          "seedStationMismatchRegular_mm": 0,
+          "seedStationMismatchForced_mm": 0.00039855315198167318,
+          "minSeedSpacing_mm": 0.33440691303241749,
+          "seedMaxDeviation_mm": 7.1054273576010019E-15,
+          "lipNodesPerBank": [
+            150,
+            150
+          ],
+          "lipPairs": 150,
+          "lipStationMismatch_mm": 0.00039855315198167318,
+          "pairStationResidual_mm": 0.00039855315198167318,
+          "pairCollapseResidual_mm": 0,
+          "nativeT3": 27655,
+          "nativeMeshingSeconds": 1.3004277,
+          "lipMaxStationGap_mm": [
+            0.55452031648908928,
+            0.55412176333710761
+          ]
+        },
+        "T3": 30571,
+        "T6nodes": 62223,
+        "DOF": 124446,
+        "minAngle_deg": 30.126847321224627,
+        "maxNeighborRatio": 1.5918285508613121,
+        "joinGatesFailed": [],
+        "auditGates": "34/34",
+        "auditFailed": [],
+        "auditSummary": {
+          "Euler": -2,
+          "boundaryComponents": 4,
+          "crackEdgesPerSide": [
+            177,
+            177
+          ],
+          "bankNodesPerSide": [
+            355,
+            355
+          ],
+          "minAngle_deg": 30.126847321224627,
+          "maxNeighborRatio": 1.5918285508613121,
+          "minJacobian_mm2": 0.0015035163260113259,
+          "maxMidsideError_mm": 0,
+          "qActive": 2443,
+          "qSupportMaxRadius_mm": 2.769187409874684,
+          "qSupportDistanceToKink_mm": 1.234148197636626,
+          "materialArea_mm2": 102845.67828213252,
+          "analyticArea_mm2": 102845.56939067687
+        },
+        "qCollarGates": {
+          "G1_T6CornersEqualT3AndAllNodesUsed": true,
+          "G1_uniqueMidsidesAtGeometricMidpoints": true,
+          "G4_platePerimeterAndDoubleCrackLength": true,
+          "G5_bankSetsValidEqualSizeShareOnlyTip": true,
+          "G6_rotatedKernelAndCollarMatchP0LocalCoordinates": true,
+          "G6_kernelAndCollarConnectivityIdenticalToP0": true,
+          "G6_exactly2916ElementsInsideRimNoExteriorNodeInside": true,
+          "G7_seams64Plus64TwoOwnersOppositeSides": true,
+          "G7_65IdentitiesOnEachSeamCircle": true,
+          "G7_rimSeamEdgesSingleChords": true,
+          "G9_nodalQEqualsRecomputation": true,
+          "G9_qActive2443EqualsP0AllInKernel": true,
+          "G9_qSupportInsideInradiusZeroOutsideClearOfKink": true
+        },
+        "qCollarPass": true,
+        "phaseMasks": {
+          "H": true,
+          "stiff13": true,
+          "soft2": true,
+          "soft1": true
+        },
+        "phaseAuditPass": true,
+        "phaseMapPass": true,
+        "auditPass": true,
+        "auditSeconds": 5.1343542,
+        "pairing": {
+          "schema": "NewMetacomp.G2.LP2A2.PairingAudit.v1",
+          "pass": true,
+          "gates": {
+            "P1_countsEqual": true,
+            "P2_strictOrder": true,
+            "P3_coincidentIdenticalStation": true,
+            "P4_distinctIDs": true,
+            "P5_sameSegment": true,
+            "P6_sameClassMidsides": true,
+            "P7_noUnmatchedNodeOnCrack": true,
+            "P8_oneOwnerCorrectSide": true,
+            "P9_mouthKinksTip": true,
+            "P10_connectedPositive": true
+          },
+          "gatesPassed": 10,
+          "gatesTotal": 10,
+          "failedGates": [],
+          "metrics": {
+            "pairsT6": 355,
+            "pairsT3": 178,
+            "bankNodesUL": [
+              355,
+              355
+            ],
+            "maxPairDistance_mm": 0,
+            "maxPairStationDifference_mm": 0,
+            "nodesOnCrack": 709,
+            "unmatchedOnCrack": 0,
+            "minEdge_mm": 0.041666666666660433,
+            "minBankEdge_mm": 0.041666666666678974,
+            "bankEdgesT3": 354,
+            "T3": 30571,
+            "T6nodes": 62223,
+            "T3nodes": 15825,
+            "minArea_mm2": 0.00075175816300726344
+          }
+        },
+        "forcedPairs": {
+          "nForced": 1,
+          "pairs": {
+            "segment": 9,
+            "stationU_mm": 54.398964760933531,
+            "stationL_mm": 54.398566207781549,
+            "stationMismatch_mm": 0.00039855315198167318,
+            "circleDx_mm": 0.00015831878354810591,
+            "parametrisationPart_mm": 0.00024023436843356727,
+            "tipNormalOffset_mm": -0.059369026033798455,
+            "predictedDx_mm": 0.00015831864281221279,
+            "nativeDistance_mm": 0.0400003133092383,
+            "nodesAtCollapsedPoint": 2,
+            "collapseDisplacementU_mm": 0.020000156745067426,
+            "collapseDisplacementL_mm": 0.020000156564196975,
+            "distanceToTip_mm": 14.999986689301895,
+            "interiorOfSegment": true,
+            "residualAfterCollapse_mm": 0,
+            "distinctIDs": true,
+            "ids": [
+              1646,
+              1695
+            ],
+            "dofs": [
+              3291,
+              3292,
+              3389,
+              3390
+            ],
+            "sameBankIndex": true,
+            "midsideResidual_mm": 0,
+            "midsideDistinct": true,
+            "incidentElements": 6,
+            "incidentMinAngle_deg": 34.177640096783186,
+            "incidentMinArea_mm2": 0.083000716375545527,
+            "pass": true
+          },
+          "pass": true
+        },
+        "totalSeconds": 11.6855712,
+        "memUsedMATLAB_GiB": 1.7226829528808594
+      },
+      "old": {
+        "pass": false,
+        "stage": "HOLD_KINKED_EXTERIOR",
+        "message": "HOLD_LIP_STATIONS Lip nodes U=143 L=144, per-segment [50 8 7 8 8 8 8 8 8 8 8 1] / [50 8 8 8 8 8 8 8 8 8 8 1], vertices 13/13, gaps 0.521/0.521 mm.",
+        "seconds": 1.2888448,
+        "exterior": {
+          "lipInteriorNodesPerSegment": [
+            [
+              50,
+              50
+            ],
+            [
+              8,
+              8
+            ],
+            [
+              7,
+              8
+            ],
+            [
+              8,
+              8
+            ],
+            [
+              8,
+              8
+            ],
+            [
+              8,
+              8
+            ],
+            [
+              8,
+              8
+            ],
+            [
+              8,
+              8
+            ],
+            [
+              8,
+              8
+            ],
+            [
+              8,
+              8
+            ],
+            [
+              8,
+              8
+            ],
+            [
+              1,
+              1
+            ]
+          ],
+          "lipMaxStationGap_mm": [
+            0.52145077013953411,
+            0.52144711341629035
+          ],
+          "nativeT3": 27456
+        },
+        "diagnosis": {
+          "segmentLength_mm": [
+            25.4,
+            4.0000000000000009,
+            3.9999999999999982,
+            4.0000000000000018,
+            4.0000000000000009,
+            3.9999999999999991,
+            4.0000000000000027,
+            4.0000000000000027,
+            3.9999999999999987,
+            4.0000000000000027,
+            4.0000000000000044,
+            0.69999999999999218
+          ],
+          "upperMinusLowerLength_mm": [
+            0.0044145425068293775,
+            0.0047460773643912546,
+            0.00097411348934528519,
+            0.001245285567470944,
+            0.001171653065815903,
+            0.0011006093639789327,
+            0.0010292499847230907,
+            0.00096686956266234247,
+            0.00091732622699680633,
+            9.8968703594604079E-5,
+            -0.00069814942326296148,
+            -0.00034907471161960135
+          ],
+          "kinkTurn_deg": [
+            -12.595758490243211,
+            -0.9497556568861758,
+            -1.8406938503972106,
+            -1.7264975345175693,
+            -1.62980069765023,
+            -1.5230132870592554,
+            -1.4254075163084792,
+            -1.3443345491900704,
+            -1.2834961606663764,
+            0.99999999999998113,
+            1.0000000000000833
+          ],
+          "countsU": [
+            50,
+            8,
+            7,
+            8,
+            8,
+            8,
+            8,
+            8,
+            8,
+            8,
+            8,
+            1
+          ],
+          "countsL": [
+            50,
+            8,
+            8,
+            8,
+            8,
+            8,
+            8,
+            8,
+            8,
+            8,
+            8,
+            1
+          ],
+          "failingSegments": 3,
+          "firstFailingSegment": 3,
+          "fewerOnUpper": true,
+          "distanceSegmentEndToTip_mm": [
+            43.999999999999993,
+            39.999999999999993,
+            35.999999999999993,
+            31.999999999999993,
+            27.999999999999993,
+            23.999999999999993,
+            19.999999999999993,
+            15.999999999999993,
+            11.999999999999993,
+            7.9999999999999929,
+            3.9999999999999858,
+            0
+          ],
+          "tipGuideCrossingSegment": 9,
+          "nSegments": 12
+        }
+      }
+    },
+    {
+      "id": "I_H_m1deg_S11",
+      "group": "I",
+      "caseId": "H",
+      "label": "MESH_ONLY_SYNTHETIC_INDEPENDENT",
+      "vertices": 13,
+      "state": 11,
+      "arc_mm": 69.399999999999991,
+      "guardRow": false,
+      "tip_mm": [
+        116.49312071959372,
+        66.656326493896131
+      ],
+      "tipToRingCircle_mm": [
+        16.998627298709447,
+        45.793047108702524,
+        91.724626998070121
+      ],
+      "polylineToRingCircle_mm": [
+        16.998627298709447,
+        45.793047108702524,
+        91.724626998070121
+      ],
+      "new": {
+        "pass": true,
+        "seedRung": 1,
+        "seedSpacing_mm": 0.45,
+        "ladder": {
+          "rung": 1,
+          "seedSpacing_mm": 0.45,
+          "stage": "KINKED_PROTECTED_MESH_JOIN_PASS",
+          "message": "Joined; the independent kink-aware audit is still required.",
+          "failedGates": [],
+          "pairingPass": true
+        },
+        "joinSeconds": 3.9587778,
+        "stage": "KINKED_PROTECTED_MESH_JOIN_PASS",
+        "message": "Joined; the independent kink-aware audit is still required.",
+        "exterior": {
+          "seedsPerSegment": [
+            57,
+            9,
+            9,
+            9,
+            9,
+            9,
+            9,
+            9,
+            9,
+            9,
+            9,
+            2
+          ],
+          "seedCount": 150,
+          "guideCrossingPairs": 1,
+          "guideCrossingSegments": 9,
+          "seedStationMismatchRegular_mm": 0,
+          "seedStationMismatchForced_mm": 0.0015161920285464703,
+          "minSeedSpacing_mm": 0.33572637968517971,
+          "seedMaxDeviation_mm": 1.5888218580782548E-14,
+          "lipNodesPerBank": [
+            150,
+            150
+          ],
+          "lipPairs": 150,
+          "lipStationMismatch_mm": 0.0015161920285464703,
+          "pairStationResidual_mm": 0.0015161920285464703,
+          "pairCollapseResidual_mm": 0,
+          "nativeT3": 27663,
+          "nativeMeshingSeconds": 2.2767991,
+          "lipMaxStationGap_mm": [
+            0.55320100111665482,
+            0.55168480908810835
+          ]
+        },
+        "T3": 30579,
+        "T6nodes": 62239,
+        "DOF": 124478,
+        "minAngle_deg": 30.126847321226094,
+        "maxNeighborRatio": 1.7269744068181041,
+        "joinGatesFailed": [],
+        "auditGates": "34/34",
+        "auditFailed": [],
+        "auditSummary": {
+          "Euler": -2,
+          "boundaryComponents": 4,
+          "crackEdgesPerSide": [
+            177,
+            177
+          ],
+          "bankNodesPerSide": [
+            355,
+            355
+          ],
+          "minAngle_deg": 30.126847321226094,
+          "maxNeighborRatio": 1.7269744068181041,
+          "minJacobian_mm2": 0.0015035163260126874,
+          "maxMidsideError_mm": 0,
+          "qActive": 2443,
+          "qSupportMaxRadius_mm": 2.7691874098746836,
+          "qSupportDistanceToKink_mm": 1.2341481976366246,
+          "materialArea_mm2": 102845.67828213281,
+          "analyticArea_mm2": 102845.56939067687
+        },
+        "qCollarGates": {
+          "G1_T6CornersEqualT3AndAllNodesUsed": true,
+          "G1_uniqueMidsidesAtGeometricMidpoints": true,
+          "G4_platePerimeterAndDoubleCrackLength": true,
+          "G5_bankSetsValidEqualSizeShareOnlyTip": true,
+          "G6_rotatedKernelAndCollarMatchP0LocalCoordinates": true,
+          "G6_kernelAndCollarConnectivityIdenticalToP0": true,
+          "G6_exactly2916ElementsInsideRimNoExteriorNodeInside": true,
+          "G7_seams64Plus64TwoOwnersOppositeSides": true,
+          "G7_65IdentitiesOnEachSeamCircle": true,
+          "G7_rimSeamEdgesSingleChords": true,
+          "G9_nodalQEqualsRecomputation": true,
+          "G9_qActive2443EqualsP0AllInKernel": true,
+          "G9_qSupportInsideInradiusZeroOutsideClearOfKink": true
+        },
+        "qCollarPass": true,
+        "phaseMasks": {
+          "H": true,
+          "stiff13": true,
+          "soft2": true,
+          "soft1": true
+        },
+        "phaseAuditPass": true,
+        "phaseMapPass": true,
+        "auditPass": true,
+        "auditSeconds": 4.1158595,
+        "pairing": {
+          "schema": "NewMetacomp.G2.LP2A2.PairingAudit.v1",
+          "pass": true,
+          "gates": {
+            "P1_countsEqual": true,
+            "P2_strictOrder": true,
+            "P3_coincidentIdenticalStation": true,
+            "P4_distinctIDs": true,
+            "P5_sameSegment": true,
+            "P6_sameClassMidsides": true,
+            "P7_noUnmatchedNodeOnCrack": true,
+            "P8_oneOwnerCorrectSide": true,
+            "P9_mouthKinksTip": true,
+            "P10_connectedPositive": true
+          },
+          "gatesPassed": 10,
+          "gatesTotal": 10,
+          "failedGates": [],
+          "metrics": {
+            "pairsT6": 355,
+            "pairsT3": 178,
+            "bankNodesUL": [
+              355,
+              355
+            ],
+            "maxPairDistance_mm": 0,
+            "maxPairStationDifference_mm": 0,
+            "nodesOnCrack": 709,
+            "unmatchedOnCrack": 0,
+            "minEdge_mm": 0.0416666666666473,
+            "minBankEdge_mm": 0.041666666666657748,
+            "bankEdgesT3": 354,
+            "T3": 30579,
+            "T6nodes": 62239,
+            "T3nodes": 15829,
+            "minArea_mm2": 0.000751758163007146
+          }
+        },
+        "forcedPairs": {
+          "nForced": 1,
+          "pairs": {
+            "segment": 9,
+            "stationU_mm": 54.397645445561096,
+            "stationL_mm": 54.39612925353255,
+            "stationMismatch_mm": 0.0015161920285464703,
+            "circleDx_mm": 0.0012755269445314799,
+            "parametrisationPart_mm": 0.00024066508401499043,
+            "tipNormalOffset_mm": -0.47807917160624136,
+            "predictedDx_mm": 0.0012755258084233756,
+            "nativeDistance_mm": 0.040020331944981814,
+            "nodesAtCollapsedPoint": 2,
+            "collapseDisplacementU_mm": 0.020010168743230663,
+            "collapseDisplacementL_mm": 0.020010163202128402,
+            "distanceToTip_mm": 14.999986739986163,
+            "interiorOfSegment": true,
+            "residualAfterCollapse_mm": 0,
+            "distinctIDs": true,
+            "ids": [
+              1646,
+              1848
+            ],
+            "dofs": [
+              3291,
+              3292,
+              3695,
+              3696
+            ],
+            "sameBankIndex": true,
+            "midsideResidual_mm": 0,
+            "midsideDistinct": true,
+            "incidentElements": 6,
+            "incidentMinAngle_deg": 33.824392243399224,
+            "incidentMinArea_mm2": 0.081264503587015618,
+            "pass": true
+          },
+          "pass": true
+        },
+        "totalSeconds": 8.3080223,
+        "memUsedMATLAB_GiB": 1.7472724914550781
+      },
+      "old": {
+        "pass": false,
+        "stage": "HOLD_KINKED_EXTERIOR",
+        "message": "HOLD_LIP_STATIONS Lip nodes U=142 L=144, per-segment [50 7 8 7 8 8 8 8 8 8 8 1] / [50 8 8 8 8 8 8 8 8 8 8 1], vertices 13/13, gaps 0.521/0.521 mm.",
+        "seconds": 1.0978884,
+        "exterior": {
+          "lipInteriorNodesPerSegment": [
+            [
+              50,
+              50
+            ],
+            [
+              7,
+              8
+            ],
+            [
+              8,
+              8
+            ],
+            [
+              7,
+              8
+            ],
+            [
+              8,
+              8
+            ],
+            [
+              8,
+              8
+            ],
+            [
+              8,
+              8
+            ],
+            [
+              8,
+              8
+            ],
+            [
+              8,
+              8
+            ],
+            [
+              8,
+              8
+            ],
+            [
+              8,
+              8
+            ],
+            [
+              1,
+              1
+            ]
+          ],
+          "lipMaxStationGap_mm": [
+            0.52145077013953411,
+            0.52144711341629035
+          ],
+          "nativeT3": 27475
+        },
+        "diagnosis": {
+          "segmentLength_mm": [
+            25.4,
+            4.0000000000000009,
+            3.9999999999999982,
+            4.0000000000000018,
+            4.0000000000000009,
+            3.9999999999999991,
+            4.0000000000000027,
+            4.0000000000000027,
+            3.9999999999999987,
+            4.0000000000000027,
+            3.9999999999999987,
+            0.69999999999999618
+          ],
+          "upperMinusLowerLength_mm": [
+            0.0044145425068293775,
+            0.0047460773643912546,
+            0.00097411348934528519,
+            0.001245285567470944,
+            0.001171653065815903,
+            0.0011006093639789327,
+            0.0010292499847230907,
+            0.00096686956266234247,
+            0.00091732622699680633,
+            0.00079711812685223649,
+            0.00069814942326518192,
+            0.00034907471163470039
+          ],
+          "kinkTurn_deg": [
+            -12.595758490243211,
+            -0.9497556568861758,
+            -1.8406938503972106,
+            -1.7264975345175693,
+            -1.62980069765023,
+            -1.5230132870592554,
+            -1.4254075163084792,
+            -1.3443345491900704,
+            -1.2834961606663764,
+            -1.0000000000000131,
+            -1.0000000000000131
+          ],
+          "countsU": [
+            50,
+            7,
+            8,
+            7,
+            8,
+            8,
+            8,
+            8,
+            8,
+            8,
+            8,
+            1
+          ],
+          "countsL": [
+            50,
+            8,
+            8,
+            8,
+            8,
+            8,
+            8,
+            8,
+            8,
+            8,
+            8,
+            1
+          ],
+          "failingSegments": [
+            2,
+            4
+          ],
+          "firstFailingSegment": 2,
+          "fewerOnUpper": true,
+          "distanceSegmentEndToTip_mm": [
+            43.999999999999993,
+            39.999999999999993,
+            35.999999999999993,
+            31.999999999999993,
+            27.999999999999993,
+            23.999999999999993,
+            19.999999999999993,
+            15.999999999999993,
+            11.999999999999993,
+            7.9999999999999929,
+            4,
+            0
+          ],
+          "tipGuideCrossingSegment": 9,
+          "nSegments": 12
+        }
+      }
+    },
+    {
+      "id": "I_stiff13_p1deg_S11",
+      "group": "I",
+      "caseId": "stiff13",
+      "label": "MESH_ONLY_SYNTHETIC_INDEPENDENT",
+      "vertices": 13,
+      "state": 11,
+      "arc_mm": 69.4,
+      "guardRow": false,
+      "tip_mm": [
+        116.30108772026506,
+        66.782386797424365
+      ],
+      "tipToRingCircle_mm": [
+        17.179017631459654,
+        45.794824156769053,
+        91.6678428316953
+      ],
+      "polylineToRingCircle_mm": [
+        17.179017631459654,
+        45.794824156769053,
+        91.6678428316953
+      ],
+      "new": {
+        "pass": true,
+        "seedRung": 1,
+        "seedSpacing_mm": 0.45,
+        "ladder": {
+          "rung": 1,
+          "seedSpacing_mm": 0.45,
+          "stage": "KINKED_PROTECTED_MESH_JOIN_PASS",
+          "message": "Joined; the independent kink-aware audit is still required.",
+          "failedGates": [],
+          "pairingPass": true
+        },
+        "joinSeconds": 3.045244,
+        "stage": "KINKED_PROTECTED_MESH_JOIN_PASS",
+        "message": "Joined; the independent kink-aware audit is still required.",
+        "exterior": {
+          "seedsPerSegment": [
+            57,
+            9,
+            9,
+            9,
+            9,
+            9,
+            9,
+            9,
+            9,
+            9,
+            9,
+            2
+          ],
+          "seedCount": 150,
+          "guideCrossingPairs": 1,
+          "guideCrossingSegments": 9,
+          "seedStationMismatchRegular_mm": 0,
+          "seedStationMismatchForced_mm": 0.00014452791812402666,
+          "minSeedSpacing_mm": 0.33449845692838864,
+          "seedMaxDeviation_mm": 7.1054273576010019E-15,
+          "lipNodesPerBank": [
+            150,
+            150
+          ],
+          "lipPairs": 150,
+          "lipStationMismatch_mm": 0.00014452791812402666,
+          "pairStationResidual_mm": 0.00014452791812402666,
+          "pairCollapseResidual_mm": 0,
+          "nativeT3": 27611,
+          "nativeMeshingSeconds": 1.3279624,
+          "lipMaxStationGap_mm": [
+            0.554419096182265,
+            0.554274568264141
+          ]
+        },
+        "T3": 30527,
+        "T6nodes": 62135,
+        "DOF": 124270,
+        "minAngle_deg": 30.126847321224869,
+        "maxNeighborRatio": 1.653470426604031,
+        "joinGatesFailed": [],
+        "auditGates": "34/34",
+        "auditFailed": [],
+        "auditSummary": {
+          "Euler": -2,
+          "boundaryComponents": 4,
+          "crackEdgesPerSide": [
+            177,
+            177
+          ],
+          "bankNodesPerSide": [
+            355,
+            355
+          ],
+          "minAngle_deg": 30.126847321224869,
+          "maxNeighborRatio": 1.653470426604031,
+          "minJacobian_mm2": 0.0015035163260120089,
+          "maxMidsideError_mm": 0,
+          "qActive": 2443,
+          "qSupportMaxRadius_mm": 2.7691874098746831,
+          "qSupportDistanceToKink_mm": 1.2341481976366169,
+          "materialArea_mm2": 102845.67828213275,
+          "analyticArea_mm2": 102845.56939067687
+        },
+        "qCollarGates": {
+          "G1_T6CornersEqualT3AndAllNodesUsed": true,
+          "G1_uniqueMidsidesAtGeometricMidpoints": true,
+          "G4_platePerimeterAndDoubleCrackLength": true,
+          "G5_bankSetsValidEqualSizeShareOnlyTip": true,
+          "G6_rotatedKernelAndCollarMatchP0LocalCoordinates": true,
+          "G6_kernelAndCollarConnectivityIdenticalToP0": true,
+          "G6_exactly2916ElementsInsideRimNoExteriorNodeInside": true,
+          "G7_seams64Plus64TwoOwnersOppositeSides": true,
+          "G7_65IdentitiesOnEachSeamCircle": true,
+          "G7_rimSeamEdgesSingleChords": true,
+          "G9_nodalQEqualsRecomputation": true,
+          "G9_qActive2443EqualsP0AllInKernel": true,
+          "G9_qSupportInsideInradiusZeroOutsideClearOfKink": true
+        },
+        "qCollarPass": true,
+        "phaseMasks": {
+          "H": true,
+          "stiff13": true,
+          "soft2": true,
+          "soft1": true
+        },
+        "phaseAuditPass": true,
+        "phaseMapPass": true,
+        "auditPass": true,
+        "auditSeconds": 4.1178933,
+        "pairing": {
+          "schema": "NewMetacomp.G2.LP2A2.PairingAudit.v1",
+          "pass": true,
+          "gates": {
+            "P1_countsEqual": true,
+            "P2_strictOrder": true,
+            "P3_coincidentIdenticalStation": true,
+            "P4_distinctIDs": true,
+            "P5_sameSegment": true,
+            "P6_sameClassMidsides": true,
+            "P7_noUnmatchedNodeOnCrack": true,
+            "P8_oneOwnerCorrectSide": true,
+            "P9_mouthKinksTip": true,
+            "P10_connectedPositive": true
+          },
+          "gatesPassed": 10,
+          "gatesTotal": 10,
+          "failedGates": [],
+          "metrics": {
+            "pairsT6": 355,
+            "pairsT3": 178,
+            "bankNodesUL": [
+              355,
+              355
+            ],
+            "maxPairDistance_mm": 0,
+            "maxPairStationDifference_mm": 0,
+            "nodesOnCrack": 709,
+            "unmatchedOnCrack": 0,
+            "minEdge_mm": 0.041666666666652329,
+            "minBankEdge_mm": 0.041666666666665506,
+            "bankEdgesT3": 354,
+            "T3": 30527,
+            "T6nodes": 62135,
+            "T3nodes": 15803,
+            "minArea_mm2": 0.00075175816300686012
+          }
+        },
+        "forcedPairs": {
+          "nForced": 1,
+          "pairs": {
+            "segment": 9,
+            "stationU_mm": 54.398863540626714,
+            "stationL_mm": 54.39871901270859,
+            "stationMismatch_mm": 0.00014452791812402666,
+            "circleDx_mm": -5.5502107053073679E-5,
+            "parametrisationPart_mm": 0.00020003002517710033,
+            "tipNormalOffset_mm": 0.020813251608140071,
+            "predictedDx_mm": -5.5502057717324672E-5,
+            "nativeDistance_mm": 0.040000038506033189,
+            "nodesAtCollapsedPoint": 2,
+            "collapseDisplacementU_mm": 0.020000019244420679,
+            "collapseDisplacementL_mm": 0.020000019261614429,
+            "distanceToTip_mm": 14.999986672828118,
+            "interiorOfSegment": true,
+            "residualAfterCollapse_mm": 0,
+            "distinctIDs": true,
+            "ids": [
+              1646,
+              1695
+            ],
+            "dofs": [
+              3291,
+              3292,
+              3389,
+              3390
+            ],
+            "sameBankIndex": true,
+            "midsideResidual_mm": 0,
+            "midsideDistinct": true,
+            "incidentElements": 6,
+            "incidentMinAngle_deg": 34.221152358204272,
+            "incidentMinArea_mm2": 0.083101012473839941,
+            "pass": true
+          },
+          "pass": true
+        },
+        "totalSeconds": 7.3545823,
+        "memUsedMATLAB_GiB": 1.760894775390625
+      },
+      "old": {
+        "pass": false,
+        "stage": "HOLD_KINKED_EXTERIOR",
+        "message": "HOLD_LIP_STATIONS Lip nodes U=143 L=144, per-segment [50 7 8 8 8 8 8 8 8 8 8 1] / [50 8 8 8 8 8 8 8 8 8 8 1], vertices 13/13, gaps 0.521/0.521 mm.",
+        "seconds": 1.0991516,
+        "exterior": {
+          "lipInteriorNodesPerSegment": [
+            [
+              50,
+              50
+            ],
+            [
+              7,
+              8
+            ],
+            [
+              8,
+              8
+            ],
+            [
+              8,
+              8
+            ],
+            [
+              8,
+              8
+            ],
+            [
+              8,
+              8
+            ],
+            [
+              8,
+              8
+            ],
+            [
+              8,
+              8
+            ],
+            [
+              8,
+              8
+            ],
+            [
+              8,
+              8
+            ],
+            [
+              8,
+              8
+            ],
+            [
+              1,
+              1
+            ]
+          ],
+          "lipMaxStationGap_mm": [
+            0.52145086717334665,
+            0.52144701637904234
+          ],
+          "nativeT3": 27474
+        },
+        "diagnosis": {
+          "segmentLength_mm": [
+            25.4,
+            3.9999999999999991,
+            3.9999999999999991,
+            3.9999999999999991,
+            4.0000000000000036,
+            4.0000000000000036,
+            3.9999999999999969,
+            4.0000000000000009,
+            4.0000000000000036,
+            4.0000000000000027,
+            4.0000000000000018,
+            0.70000000000000107
+          ],
+          "upperMinusLowerLength_mm": [
+            0.0046488328598712769,
+            0.0049986780343891368,
+            0.000986678056022594,
+            0.0012264141455640143,
+            0.001131363480385783,
+            0.0010282566640795743,
+            0.00091548852180167728,
+            0.00080023788275607188,
+            0.00068560383953242265,
+            -3.4694680814073564E-5,
+            -0.0006981494232660701,
+            -0.00034907471162226589
+          ],
+          "kinkTurn_deg": [
+            -13.258443470413024,
+            -1.0022070451376237,
+            -1.8242376972920329,
+            -1.6889036056826605,
+            -1.5519968180178756,
+            -1.3935779291129091,
+            -1.2289876664215387,
+            -1.0634473440115164,
+            -0.90061390258465213,
+            1.00000000000008,
+            1.0000000000000386
+          ],
+          "countsU": [
+            50,
+            7,
+            8,
+            8,
+            8,
+            8,
+            8,
+            8,
+            8,
+            8,
+            8,
+            1
+          ],
+          "countsL": [
+            50,
+            8,
+            8,
+            8,
+            8,
+            8,
+            8,
+            8,
+            8,
+            8,
+            8,
+            1
+          ],
+          "failingSegments": 2,
+          "firstFailingSegment": 2,
+          "fewerOnUpper": true,
+          "distanceSegmentEndToTip_mm": [
+            44.000000000000007,
+            40.000000000000007,
+            36.000000000000007,
+            32.000000000000007,
+            28,
+            24,
+            20,
+            16,
+            12,
+            8,
+            4,
+            0
+          ],
+          "tipGuideCrossingSegment": 9,
+          "nSegments": 12
+        }
+      }
+    },
+    {
+      "id": "I_stiff13_m1deg_S11",
+      "group": "I",
+      "caseId": "stiff13",
+      "label": "MESH_ONLY_SYNTHETIC_INDEPENDENT",
+      "vertices": 13,
+      "state": 11,
+      "arc_mm": 69.4,
+      "guardRow": false,
+      "tip_mm": [
+        116.68395441934274,
+        66.612624364806791
+      ],
+      "tipToRingCircle_mm": [
+        16.812466631883115,
+        45.724021624865642,
+        91.704283176743047
+      ],
+      "polylineToRingCircle_mm": [
+        16.812466631883115,
+        45.724021624865642,
+        91.704283176743047
+      ],
+      "new": {
+        "pass": true,
+        "seedRung": 1,
+        "seedSpacing_mm": 0.45,
+        "ladder": {
+          "rung": 1,
+          "seedSpacing_mm": 0.45,
+          "stage": "KINKED_PROTECTED_MESH_JOIN_PASS",
+          "message": "Joined; the independent kink-aware audit is still required.",
+          "failedGates": [],
+          "pairingPass": true
+        },
+        "joinSeconds": 3.3818413,
+        "stage": "KINKED_PROTECTED_MESH_JOIN_PASS",
+        "message": "Joined; the independent kink-aware audit is still required.",
+        "exterior": {
+          "seedsPerSegment": [
+            57,
+            9,
+            9,
+            9,
+            9,
+            9,
+            9,
+            9,
+            9,
+            9,
+            9,
+            2
+          ],
+          "seedCount": 150,
+          "guideCrossingPairs": 1,
+          "guideCrossingSegments": 9,
+          "seedStationMismatchRegular_mm": 0,
+          "seedStationMismatchForced_mm": 0.0012618311041165953,
+          "minSeedSpacing_mm": 0.33525755229221677,
+          "seedMaxDeviation_mm": 7.1054273576010019E-15,
+          "lipNodesPerBank": [
+            150,
+            150
+          ],
+          "lipPairs": 150,
+          "lipStationMismatch_mm": 0.0012618311041165953,
+          "pairStationResidual_mm": 0.0012618311041237007,
+          "pairCollapseResidual_mm": 0,
+          "nativeT3": 27653,
+          "nativeMeshingSeconds": 1.8108982,
+          "lipMaxStationGap_mm": [
+            0.55366006586770311,
+            0.55239823476357941
+          ]
+        },
+        "T3": 30569,
+        "T6nodes": 62219,
+        "DOF": 124438,
+        "minAngle_deg": 29.268990768795497,
+        "maxNeighborRatio": 1.6692646067169206,
+        "joinGatesFailed": [],
+        "auditGates": "34/34",
+        "auditFailed": [],
+        "auditSummary": {
+          "Euler": -2,
+          "boundaryComponents": 4,
+          "crackEdgesPerSide": [
+            177,
+            177
+          ],
+          "bankNodesPerSide": [
+            355,
+            355
+          ],
+          "minAngle_deg": 29.268990768795497,
+          "maxNeighborRatio": 1.6692646067169206,
+          "minJacobian_mm2": 0.0015035163260091278,
+          "maxMidsideError_mm": 0,
+          "qActive": 2443,
+          "qSupportMaxRadius_mm": 2.7691874098746787,
+          "qSupportDistanceToKink_mm": 1.2341481976366147,
+          "materialArea_mm2": 102845.67828213246,
+          "analyticArea_mm2": 102845.56939067687
+        },
+        "qCollarGates": {
+          "G1_T6CornersEqualT3AndAllNodesUsed": true,
+          "G1_uniqueMidsidesAtGeometricMidpoints": true,
+          "G4_platePerimeterAndDoubleCrackLength": true,
+          "G5_bankSetsValidEqualSizeShareOnlyTip": true,
+          "G6_rotatedKernelAndCollarMatchP0LocalCoordinates": true,
+          "G6_kernelAndCollarConnectivityIdenticalToP0": true,
+          "G6_exactly2916ElementsInsideRimNoExteriorNodeInside": true,
+          "G7_seams64Plus64TwoOwnersOppositeSides": true,
+          "G7_65IdentitiesOnEachSeamCircle": true,
+          "G7_rimSeamEdgesSingleChords": true,
+          "G9_nodalQEqualsRecomputation": true,
+          "G9_qActive2443EqualsP0AllInKernel": true,
+          "G9_qSupportInsideInradiusZeroOutsideClearOfKink": true
+        },
+        "qCollarPass": true,
+        "phaseMasks": {
+          "H": true,
+          "stiff13": true,
+          "soft2": true,
+          "soft1": true
+        },
+        "phaseAuditPass": true,
+        "phaseMapPass": true,
+        "auditPass": true,
+        "auditSeconds": 4.1254014,
+        "pairing": {
+          "schema": "NewMetacomp.G2.LP2A2.PairingAudit.v1",
+          "pass": true,
+          "gates": {
+            "P1_countsEqual": true,
+            "P2_strictOrder": true,
+            "P3_coincidentIdenticalStation": true,
+            "P4_distinctIDs": true,
+            "P5_sameSegment": true,
+            "P6_sameClassMidsides": true,
+            "P7_noUnmatchedNodeOnCrack": true,
+            "P8_oneOwnerCorrectSide": true,
+            "P9_mouthKinksTip": true,
+            "P10_connectedPositive": true
+          },
+          "gatesPassed": 10,
+          "gatesTotal": 10,
+          "failedGates": [],
+          "metrics": {
+            "pairsT6": 355,
+            "pairsT3": 178,
+            "bankNodesUL": [
+              355,
+              355
+            ],
+            "maxPairDistance_mm": 0,
+            "maxPairStationDifference_mm": 0,
+            "nodesOnCrack": 709,
+            "unmatchedOnCrack": 0,
+            "minEdge_mm": 0.041666666666649838,
+            "minBankEdge_mm": 0.041666666666669273,
+            "bankEdgesT3": 354,
+            "T3": 30569,
+            "T6nodes": 62219,
+            "T3nodes": 15824,
+            "minArea_mm2": 0.00075175816300678358
+          }
+        },
+        "forcedPairs": {
+          "nForced": 1,
+          "pairs": {
+            "segment": 9,
+            "stationU_mm": 54.398104510312152,
+            "stationL_mm": 54.396842679208035,
+            "stationMismatch_mm": 0.0012618311041165953,
+            "circleDx_mm": 0.001061575226994238,
+            "parametrisationPart_mm": 0.00020025587712235726,
+            "tipNormalOffset_mm": -0.39795023480539005,
+            "predictedDx_mm": 0.0010615742820478443,
+            "nativeDistance_mm": 0.040014084294955149,
+            "nodesAtCollapsedPoint": 2,
+            "collapseDisplacementU_mm": 0.020007043582023803,
+            "collapseDisplacementL_mm": 0.020007040713077368,
+            "distanceToTip_mm": 14.999986711320282,
+            "interiorOfSegment": true,
+            "residualAfterCollapse_mm": 0,
+            "distinctIDs": true,
+            "ids": [
+              1646,
+              1848
+            ],
+            "dofs": [
+              3291,
+              3292,
+              3695,
+              3696
+            ],
+            "sameBankIndex": true,
+            "midsideResidual_mm": 0,
+            "midsideDistinct": true,
+            "incidentElements": 6,
+            "incidentMinAngle_deg": 33.875521274184891,
+            "incidentMinArea_mm2": 0.081531096675603917,
+            "pass": true
+          },
+          "pass": true
+        },
+        "totalSeconds": 7.7054759,
+        "memUsedMATLAB_GiB": 1.7788963317871094
+      },
+      "old": {
+        "pass": true,
+        "stage": "KINKED_PROTECTED_MESH_JOIN_PASS",
+        "message": "Joined; the independent kink-aware audit is still required.",
+        "seconds": 1.0671221,
+        "exterior": {
+          "lipInteriorNodesPerSegment": [
+            [
+              50,
+              50
+            ],
+            [
+              8,
+              8
+            ],
+            [
+              8,
+              8
+            ],
+            [
+              8,
+              8
+            ],
+            [
+              8,
+              8
+            ],
+            [
+              8,
+              8
+            ],
+            [
+              8,
+              8
+            ],
+            [
+              8,
+              8
+            ],
+            [
+              8,
+              8
+            ],
+            [
+              8,
+              8
+            ],
+            [
+              8,
+              8
+            ],
+            [
+              1,
+              1
+            ]
+          ],
+          "lipStationMismatch_mm": 0.022398207698152817,
+          "lipPairs": 144,
+          "lipMaxStationGap_mm": [
+            0.52145086717334665,
+            0.52144701637904234
+          ],
+          "nativeT3": 27525
+        },
+        "diagnosis": {
+          "segmentLength_mm": [
+            25.4,
+            3.9999999999999991,
+            3.9999999999999991,
+            3.9999999999999991,
+            4.0000000000000036,
+            4.0000000000000036,
+            3.9999999999999969,
+            4.0000000000000009,
+            4.0000000000000036,
+            4.0000000000000027,
+            4.0000000000000036,
+            0.69999999999999885
+          ],
+          "upperMinusLowerLength_mm": [
+            0.0046488328598712769,
+            0.0049986780343891368,
+            0.000986678056022594,
+            0.0012264141455640143,
+            0.001131363480385783,
+            0.0010282566640795743,
+            0.00091548852180167728,
+            0.00080023788275607188,
+            0.00068560383953242265,
+            0.00066345474243867386,
+            0.000698149423275396,
+            0.00034907471163114767
+          ],
+          "kinkTurn_deg": [
+            -13.258443470413024,
+            -1.0022070451376237,
+            -1.8242376972920329,
+            -1.6889036056826605,
+            -1.5519968180178756,
+            -1.3935779291129091,
+            -1.2289876664215387,
+            -1.0634473440115164,
+            -0.90061390258465213,
+            -0.99999999999992717,
+            -1.0000000000000131
+          ],
+          "countsU": [
+            50,
+            8,
+            8,
+            8,
+            8,
+            8,
+            8,
+            8,
+            8,
+            8,
+            8,
+            1
+          ],
+          "countsL": [
+            50,
+            8,
+            8,
+            8,
+            8,
+            8,
+            8,
+            8,
+            8,
+            8,
+            8,
+            1
+          ],
+          "failingSegments": [],
+          "firstFailingSegment": null,
+          "fewerOnUpper": true,
+          "distanceSegmentEndToTip_mm": [
+            44.000000000000007,
+            40.000000000000007,
+            36.000000000000007,
+            32.000000000000007,
+            28,
+            24,
+            20,
+            16,
+            12,
+            8,
+            4,
+            0
+          ],
+          "tipGuideCrossingSegment": 9,
+          "nSegments": 12
+        },
+        "T3": 30441,
+        "T6nodes": 61951,
+        "minAngle_deg": 30.126847321224119,
+        "maxNeighborRatio": 1.6000831158518189,
+        "bankNodesT6": [
+          343,
+          343
+        ]
+      }
+    },
+    {
+      "id": "I_soft2_p1deg_S11",
+      "group": "I",
+      "caseId": "soft2",
+      "label": "MESH_ONLY_SYNTHETIC_INDEPENDENT",
+      "vertices": 13,
+      "state": 11,
+      "arc_mm": 69.4,
+      "guardRow": false,
+      "tip_mm": [
+        116.40676002379236,
+        66.719151581749074
+      ],
+      "tipToRingCircle_mm": [
+        17.079150776110648,
+        45.788643840669835,
+        91.693234260118686
+      ],
+      "polylineToRingCircle_mm": [
+        17.079150776110648,
+        45.788643840669835,
+        91.693234260118686
+      ],
+      "new": {
+        "pass": true,
+        "seedRung": 1,
+        "seedSpacing_mm": 0.45,
+        "ladder": {
+          "rung": 1,
+          "seedSpacing_mm": 0.45,
+          "stage": "KINKED_PROTECTED_MESH_JOIN_PASS",
+          "message": "Joined; the independent kink-aware audit is still required.",
+          "failedGates": [],
+          "pairingPass": true
+        },
+        "joinSeconds": 3.0753977,
+        "stage": "KINKED_PROTECTED_MESH_JOIN_PASS",
+        "message": "Joined; the independent kink-aware audit is still required.",
+        "exterior": {
+          "seedsPerSegment": [
+            57,
+            9,
+            9,
+            9,
+            9,
+            9,
+            9,
+            9,
+            9,
+            9,
+            9,
+            2
+          ],
+          "seedCount": 150,
+          "guideCrossingPairs": 1,
+          "guideCrossingSegments": 9,
+          "seedStationMismatchRegular_mm": 0,
+          "seedStationMismatchForced_mm": 0.000414991735226522,
+          "minSeedSpacing_mm": 0.33440402859078988,
+          "seedMaxDeviation_mm": 7.1054273576010019E-15,
+          "lipNodesPerBank": [
+            150,
+            150
+          ],
+          "lipPairs": 150,
+          "lipStationMismatch_mm": 0.000414991735226522,
+          "pairStationResidual_mm": 0.000414991735226522,
+          "pairCollapseResidual_mm": 0,
+          "nativeT3": 27617,
+          "nativeMeshingSeconds": 1.4854853,
+          "lipMaxStationGap_mm": [
+            0.55452386310059154,
+            0.55410887136537212
+          ]
+        },
+        "T3": 30533,
+        "T6nodes": 62147,
+        "DOF": 124294,
+        "minAngle_deg": 30.12684732122548,
+        "maxNeighborRatio": 1.7020444634694267,
+        "joinGatesFailed": [],
+        "auditGates": "34/34",
+        "auditFailed": [],
+        "auditSummary": {
+          "Euler": -2,
+          "boundaryComponents": 4,
+          "crackEdgesPerSide": [
+            177,
+            177
+          ],
+          "bankNodesPerSide": [
+            355,
+            355
+          ],
+          "minAngle_deg": 30.12684732122548,
+          "maxNeighborRatio": 1.7020444634694267,
+          "minJacobian_mm2": 0.00150351632601037,
+          "maxMidsideError_mm": 0,
+          "qActive": 2443,
+          "qSupportMaxRadius_mm": 2.7691874098746756,
+          "qSupportDistanceToKink_mm": 1.2341481976366222,
+          "materialArea_mm2": 102845.6782821329,
+          "analyticArea_mm2": 102845.56939067687
+        },
+        "qCollarGates": {
+          "G1_T6CornersEqualT3AndAllNodesUsed": true,
+          "G1_uniqueMidsidesAtGeometricMidpoints": true,
+          "G4_platePerimeterAndDoubleCrackLength": true,
+          "G5_bankSetsValidEqualSizeShareOnlyTip": true,
+          "G6_rotatedKernelAndCollarMatchP0LocalCoordinates": true,
+          "G6_kernelAndCollarConnectivityIdenticalToP0": true,
+          "G6_exactly2916ElementsInsideRimNoExteriorNodeInside": true,
+          "G7_seams64Plus64TwoOwnersOppositeSides": true,
+          "G7_65IdentitiesOnEachSeamCircle": true,
+          "G7_rimSeamEdgesSingleChords": true,
+          "G9_nodalQEqualsRecomputation": true,
+          "G9_qActive2443EqualsP0AllInKernel": true,
+          "G9_qSupportInsideInradiusZeroOutsideClearOfKink": true
+        },
+        "qCollarPass": true,
+        "phaseMasks": {
+          "H": true,
+          "stiff13": true,
+          "soft2": true,
+          "soft1": true
+        },
+        "phaseAuditPass": true,
+        "phaseMapPass": true,
+        "auditPass": true,
+        "auditSeconds": 4.3543336,
+        "pairing": {
+          "schema": "NewMetacomp.G2.LP2A2.PairingAudit.v1",
+          "pass": true,
+          "gates": {
+            "P1_countsEqual": true,
+            "P2_strictOrder": true,
+            "P3_coincidentIdenticalStation": true,
+            "P4_distinctIDs": true,
+            "P5_sameSegment": true,
+            "P6_sameClassMidsides": true,
+            "P7_noUnmatchedNodeOnCrack": true,
+            "P8_oneOwnerCorrectSide": true,
+            "P9_mouthKinksTip": true,
+            "P10_connectedPositive": true
+          },
+          "gatesPassed": 10,
+          "gatesTotal": 10,
+          "failedGates": [],
+          "metrics": {
+            "pairsT6": 355,
+            "pairsT3": 178,
+            "bankNodesUL": [
+              355,
+              355
+            ],
+            "maxPairDistance_mm": 0,
+            "maxPairStationDifference_mm": 0,
+            "nodesOnCrack": 709,
+            "unmatchedOnCrack": 0,
+            "minEdge_mm": 0.041666666666654216,
+            "minBankEdge_mm": 0.041666666666672826,
+            "bankEdgesT3": 354,
+            "T3": 30533,
+            "T6nodes": 62147,
+            "T3nodes": 15806,
+            "minArea_mm2": 0.00075175816300720479
+          }
+        },
+        "forcedPairs": {
+          "nForced": 1,
+          "pairs": {
+            "segment": 9,
+            "stationU_mm": 54.39896830754504,
+            "stationL_mm": 54.398553315809814,
+            "stationMismatch_mm": 0.000414991735226522,
+            "circleDx_mm": 0.00017043787364856566,
+            "parametrisationPart_mm": 0.00024455386157795633,
+            "tipNormalOffset_mm": -0.06391356560931083,
+            "predictedDx_mm": 0.0001704377221396915,
+            "nativeDistance_mm": 0.04000036311171562,
+            "nodesAtCollapsedPoint": 2,
+            "collapseDisplacementU_mm": 0.020000181659006414,
+            "collapseDisplacementL_mm": 0.0200001814527385,
+            "distanceToTip_mm": 14.999986690622292,
+            "interiorOfSegment": true,
+            "residualAfterCollapse_mm": 0,
+            "distinctIDs": true,
+            "ids": [
+              1646,
+              1695
+            ],
+            "dofs": [
+              3291,
+              3292,
+              3389,
+              3390
+            ],
+            "sameBankIndex": true,
+            "midsideResidual_mm": 0,
+            "midsideDistinct": true,
+            "incidentElements": 6,
+            "incidentMinAngle_deg": 34.172636730367088,
+            "incidentMinArea_mm2": 0.08310398307817965,
+            "pass": true
+          },
+          "pass": true
+        },
+        "totalSeconds": 7.648158,
+        "memUsedMATLAB_GiB": 1.7845649719238281
+      },
+      "old": {
+        "pass": false,
+        "stage": "HOLD_KINKED_EXTERIOR",
+        "message": "HOLD_LIP_STATIONS Lip nodes U=142 L=144, per-segment [50 7 8 7 8 8 8 8 8 8 8 1] / [50 8 8 8 8 8 8 8 8 8 8 1], vertices 13/13, gaps 0.521/0.521 mm.",
+        "seconds": 1.0323008,
+        "exterior": {
+          "lipInteriorNodesPerSegment": [
+            [
+              50,
+              50
+            ],
+            [
+              7,
+              8
+            ],
+            [
+              8,
+              8
+            ],
+            [
+              7,
+              8
+            ],
+            [
+              8,
+              8
+            ],
+            [
+              8,
+              8
+            ],
+            [
+              8,
+              8
+            ],
+            [
+              8,
+              8
+            ],
+            [
+              8,
+              8
+            ],
+            [
+              8,
+              8
+            ],
+            [
+              8,
+              8
+            ],
+            [
+              1,
+              1
+            ]
+          ],
+          "lipMaxStationGap_mm": [
+            0.52145080574684144,
+            0.52144707780774668
+          ],
+          "nativeT3": 27475
+        },
+        "diagnosis": {
+          "segmentLength_mm": [
+            25.4,
+            3.9999999999999996,
+            3.9999999999999991,
+            4.0000000000000009,
+            4.0000000000000009,
+            4.0000000000000009,
+            3.9999999999999973,
+            4,
+            4.0000000000000044,
+            4.0000000000000036,
+            3.9999999999999987,
+            0.69999999999999885
+          ],
+          "upperMinusLowerLength_mm": [
+            0.0045005171239864694,
+            0.0048462805659217345,
+            0.0010033427231883607,
+            0.0012742174236355375,
+            0.001198028908243387,
+            0.0011239381927956593,
+            0.0010495719950305293,
+            0.00098458408323409685,
+            0.0009331789986664063,
+            0.00010654477192906242,
+            -0.00069814942326296148,
+            -0.00034907471163514447
+          ],
+          "kinkTurn_deg": [
+            -12.839036394192451,
+            -0.9905146266322985,
+            -1.8836561976574819,
+            -1.7663982319475602,
+            -1.6654445829136981,
+            -1.5541885821816106,
+            -1.4524406079989167,
+            -1.3680422366198397,
+            -1.305197228711567,
+            1.0000000000000131,
+            0.99999999999993994
+          ],
+          "countsU": [
+            50,
+            7,
+            8,
+            7,
+            8,
+            8,
+            8,
+            8,
+            8,
+            8,
+            8,
+            1
+          ],
+          "countsL": [
+            50,
+            8,
+            8,
+            8,
+            8,
+            8,
+            8,
+            8,
+            8,
+            8,
+            8,
+            1
+          ],
+          "failingSegments": [
+            2,
+            4
+          ],
+          "firstFailingSegment": 2,
+          "fewerOnUpper": true,
+          "distanceSegmentEndToTip_mm": [
+            44.000000000000007,
+            40.000000000000007,
+            36.000000000000007,
+            32.000000000000007,
+            28.000000000000007,
+            24.000000000000007,
+            20.000000000000007,
+            16.000000000000007,
+            12,
+            8,
+            4,
+            0
+          ],
+          "tipGuideCrossingSegment": 9,
+          "nSegments": 12
+        }
+      }
+    },
+    {
+      "id": "I_soft2_m1deg_S11",
+      "group": "I",
+      "caseId": "soft2",
+      "label": "MESH_ONLY_SYNTHETIC_INDEPENDENT",
+      "vertices": 13,
+      "state": 11,
+      "arc_mm": 69.4,
+      "guardRow": false,
+      "tip_mm": [
+        116.78687461440231,
+        66.543313329948433
+      ],
+      "tipToRingCircle_mm": [
+        16.716309237384277,
+        45.725213177120764,
+        91.73676639300686
+      ],
+      "polylineToRingCircle_mm": [
+        16.716309237384277,
+        45.725213177120764,
+        91.73676639300686
+      ],
+      "new": {
+        "pass": true,
+        "seedRung": 1,
+        "seedSpacing_mm": 0.45,
+        "ladder": {
+          "rung": 1,
+          "seedSpacing_mm": 0.45,
+          "stage": "KINKED_PROTECTED_MESH_JOIN_PASS",
+          "message": "Joined; the independent kink-aware audit is still required.",
+          "failedGates": [],
+          "pairingPass": true
+        },
+        "joinSeconds": 3.2699178,
+        "stage": "KINKED_PROTECTED_MESH_JOIN_PASS",
+        "message": "Joined; the independent kink-aware audit is still required.",
+        "exterior": {
+          "seedsPerSegment": [
+            57,
+            9,
+            9,
+            9,
+            9,
+            9,
+            9,
+            9,
+            9,
+            9,
+            9,
+            2
+          ],
+          "seedCount": 150,
+          "guideCrossingPairs": 1,
+          "guideCrossingSegments": 9,
+          "seedStationMismatchRegular_mm": 0,
+          "seedStationMismatchForced_mm": 0.0015326542563656176,
+          "minSeedSpacing_mm": 0.335755262936114,
+          "seedMaxDeviation_mm": 7.1054273576010019E-15,
+          "lipNodesPerBank": [
+            150,
+            150
+          ],
+          "lipPairs": 150,
+          "lipStationMismatch_mm": 0.0015326542563656176,
+          "pairStationResidual_mm": 0.0015326542563656176,
+          "pairCollapseResidual_mm": 0,
+          "nativeT3": 27675,
+          "nativeMeshingSeconds": 1.6684896,
+          "lipMaxStationGap_mm": [
+            0.55317278635482836,
+            0.55164013209846985
+          ]
+        },
+        "T3": 30591,
+        "T6nodes": 62263,
+        "DOF": 124526,
+        "minAngle_deg": 30.126847321225377,
+        "maxNeighborRatio": 1.677098244762361,
+        "joinGatesFailed": [],
+        "auditGates": "34/34",
+        "auditFailed": [],
+        "auditSummary": {
+          "Euler": -2,
+          "boundaryComponents": 4,
+          "crackEdgesPerSide": [
+            177,
+            177
+          ],
+          "bankNodesPerSide": [
+            355,
+            355
+          ],
+          "minAngle_deg": 30.126847321225377,
+          "maxNeighborRatio": 1.677098244762361,
+          "minJacobian_mm2": 0.0015035163260116431,
+          "maxMidsideError_mm": 0,
+          "qActive": 2443,
+          "qSupportMaxRadius_mm": 2.7691874098746756,
+          "qSupportDistanceToKink_mm": 1.2341481976366153,
+          "materialArea_mm2": 102845.67828213271,
+          "analyticArea_mm2": 102845.56939067687
+        },
+        "qCollarGates": {
+          "G1_T6CornersEqualT3AndAllNodesUsed": true,
+          "G1_uniqueMidsidesAtGeometricMidpoints": true,
+          "G4_platePerimeterAndDoubleCrackLength": true,
+          "G5_bankSetsValidEqualSizeShareOnlyTip": true,
+          "G6_rotatedKernelAndCollarMatchP0LocalCoordinates": true,
+          "G6_kernelAndCollarConnectivityIdenticalToP0": true,
+          "G6_exactly2916ElementsInsideRimNoExteriorNodeInside": true,
+          "G7_seams64Plus64TwoOwnersOppositeSides": true,
+          "G7_65IdentitiesOnEachSeamCircle": true,
+          "G7_rimSeamEdgesSingleChords": true,
+          "G9_nodalQEqualsRecomputation": true,
+          "G9_qActive2443EqualsP0AllInKernel": true,
+          "G9_qSupportInsideInradiusZeroOutsideClearOfKink": true
+        },
+        "qCollarPass": true,
+        "phaseMasks": {
+          "H": true,
+          "stiff13": true,
+          "soft2": true,
+          "soft1": true
+        },
+        "phaseAuditPass": true,
+        "phaseMapPass": true,
+        "auditPass": true,
+        "auditSeconds": 4.0954246,
+        "pairing": {
+          "schema": "NewMetacomp.G2.LP2A2.PairingAudit.v1",
+          "pass": true,
+          "gates": {
+            "P1_countsEqual": true,
+            "P2_strictOrder": true,
+            "P3_coincidentIdenticalStation": true,
+            "P4_distinctIDs": true,
+            "P5_sameSegment": true,
+            "P6_sameClassMidsides": true,
+            "P7_noUnmatchedNodeOnCrack": true,
+            "P8_oneOwnerCorrectSide": true,
+            "P9_mouthKinksTip": true,
+            "P10_connectedPositive": true
+          },
+          "gatesPassed": 10,
+          "gatesTotal": 10,
+          "failedGates": [],
+          "metrics": {
+            "pairsT6": 355,
+            "pairsT3": 178,
+            "bankNodesUL": [
+              355,
+              355
+            ],
+            "maxPairDistance_mm": 0,
+            "maxPairStationDifference_mm": 0,
+            "nodesOnCrack": 709,
+            "unmatchedOnCrack": 0,
+            "minEdge_mm": 0.041666666666659045,
+            "minBankEdge_mm": 0.041666666666659045,
+            "bankEdgesT3": 354,
+            "T3": 30591,
+            "T6nodes": 62263,
+            "T3nodes": 15835,
+            "minArea_mm2": 0.00075175816300718527
+          }
+        },
+        "forcedPairs": {
+          "nForced": 1,
+          "pairs": {
+            "segment": 9,
+            "stationU_mm": 54.397617230799277,
+            "stationL_mm": 54.396084576542911,
+            "stationMismatch_mm": 0.0015326542563656176,
+            "circleDx_mm": 0.0012876548232747531,
+            "parametrisationPart_mm": 0.00024499943309086447,
+            "tipNormalOffset_mm": -0.48262012797406051,
+            "predictedDx_mm": 0.0012876536763144081,
+            "nativeDistance_mm": 0.040020720320151047,
+            "nodesAtCollapsedPoint": 2,
+            "collapseDisplacementU_mm": 0.020010363036376284,
+            "collapseDisplacementL_mm": 0.020010357284173674,
+            "distanceToTip_mm": 14.999986742187366,
+            "interiorOfSegment": true,
+            "residualAfterCollapse_mm": 0,
+            "distinctIDs": true,
+            "ids": [
+              1646,
+              1695
+            ],
+            "dofs": [
+              3291,
+              3292,
+              3389,
+              3390
+            ],
+            "sameBankIndex": true,
+            "midsideResidual_mm": 0,
+            "midsideDistinct": true,
+            "incidentElements": 6,
+            "incidentMinAngle_deg": 33.821721171722807,
+            "incidentMinArea_mm2": 0.081245536033948046,
+            "pass": true
+          },
+          "pass": true
+        },
+        "totalSeconds": 7.5926438,
+        "memUsedMATLAB_GiB": 1.7885322570800781
+      },
+      "old": {
+        "pass": true,
+        "stage": "KINKED_PROTECTED_MESH_JOIN_PASS",
+        "message": "Joined; the independent kink-aware audit is still required.",
+        "seconds": 1.106849,
+        "exterior": {
+          "lipInteriorNodesPerSegment": [
+            [
+              50,
+              50
+            ],
+            [
+              8,
+              8
+            ],
+            [
+              8,
+              8
+            ],
+            [
+              8,
+              8
+            ],
+            [
+              8,
+              8
+            ],
+            [
+              8,
+              8
+            ],
+            [
+              8,
+              8
+            ],
+            [
+              8,
+              8
+            ],
+            [
+              8,
+              8
+            ],
+            [
+              8,
+              8
+            ],
+            [
+              8,
+              8
+            ],
+            [
+              1,
+              1
+            ]
+          ],
+          "lipStationMismatch_mm": 0.018312289206448895,
+          "lipPairs": 144,
+          "lipMaxStationGap_mm": [
+            0.52145080574684144,
+            0.52144707780774668
+          ],
+          "nativeT3": 27501
+        },
+        "diagnosis": {
+          "segmentLength_mm": [
+            25.4,
+            3.9999999999999996,
+            3.9999999999999991,
+            4.0000000000000009,
+            4.0000000000000009,
+            4.0000000000000009,
+            3.9999999999999973,
+            4,
+            4.0000000000000044,
+            4.0000000000000036,
+            3.9999999999999969,
+            0.70000000000000107
+          ],
+          "upperMinusLowerLength_mm": [
+            0.0045005171239864694,
+            0.0048462805659217345,
+            0.0010033427231883607,
+            0.0012742174236355375,
+            0.001198028908243387,
+            0.0011239381927956593,
+            0.0010495719950305293,
+            0.00098458408323409685,
+            0.0009331789986664063,
+            0.00080469419518047758,
+            0.00069814942326473783,
+            0.00034907471163792003
+          ],
+          "kinkTurn_deg": [
+            -12.839036394192451,
+            -0.9905146266322985,
+            -1.8836561976574819,
+            -1.7663982319475602,
+            -1.6654445829136981,
+            -1.5541885821816106,
+            -1.4524406079989167,
+            -1.3680422366198397,
+            -1.305197228711567,
+            -1.0000000000000069,
+            -1.0000000000000766
+          ],
+          "countsU": [
+            50,
+            8,
+            8,
+            8,
+            8,
+            8,
+            8,
+            8,
+            8,
+            8,
+            8,
+            1
+          ],
+          "countsL": [
+            50,
+            8,
+            8,
+            8,
+            8,
+            8,
+            8,
+            8,
+            8,
+            8,
+            8,
+            1
+          ],
+          "failingSegments": [],
+          "firstFailingSegment": null,
+          "fewerOnUpper": true,
+          "distanceSegmentEndToTip_mm": [
+            44.000000000000007,
+            40.000000000000007,
+            36.000000000000007,
+            32.000000000000007,
+            28.000000000000007,
+            24.000000000000007,
+            20.000000000000007,
+            16.000000000000007,
+            12,
+            8,
+            4,
+            0
+          ],
+          "tipGuideCrossingSegment": 9,
+          "nSegments": 12
+        },
+        "T3": 30417,
+        "T6nodes": 61903,
+        "minAngle_deg": 30.126847321225377,
+        "maxNeighborRatio": 1.6929477113063369,
+        "bankNodesT6": [
+          343,
+          343
+        ]
+      }
+    },
+    {
+      "id": "I_soft1_p1deg_S11",
+      "group": "I",
+      "caseId": "soft1",
+      "label": "MESH_ONLY_SYNTHETIC_INDEPENDENT",
+      "vertices": 13,
+      "state": 11,
+      "arc_mm": 69.399999999999991,
+      "guardRow": false,
+      "tip_mm": [
+        115.64513441497844,
+        66.964186707916951
+      ],
+      "tipToRingCircle_mm": [
+        17.817981535876971,
+        46.012175593853343,
+        91.711930840343527
+      ],
+      "polylineToRingCircle_mm": [
+        17.817981535876971,
+        46.012175593853343,
+        91.711930840343527
+      ],
+      "new": {
+        "pass": true,
+        "seedRung": 1,
+        "seedSpacing_mm": 0.45,
+        "ladder": {
+          "rung": 1,
+          "seedSpacing_mm": 0.45,
+          "stage": "KINKED_PROTECTED_MESH_JOIN_PASS",
+          "message": "Joined; the independent kink-aware audit is still required.",
+          "failedGates": [],
+          "pairingPass": true
+        },
+        "joinSeconds": 2.8559462,
+        "stage": "KINKED_PROTECTED_MESH_JOIN_PASS",
+        "message": "Joined; the independent kink-aware audit is still required.",
+        "exterior": {
+          "seedsPerSegment": [
+            57,
+            9,
+            9,
+            9,
+            9,
+            9,
+            9,
+            9,
+            9,
+            9,
+            9,
+            2
+          ],
+          "seedCount": 150,
+          "guideCrossingPairs": 1,
+          "guideCrossingSegments": 9,
+          "seedStationMismatchRegular_mm": 0,
+          "seedStationMismatchForced_mm": 0.00065803783179063657,
+          "minSeedSpacing_mm": 0.33442213766660039,
+          "seedMaxDeviation_mm": 7.1054273576010019E-15,
+          "lipNodesPerBank": [
+            150,
+            150
+          ],
+          "lipPairs": 150,
+          "lipStationMismatch_mm": 0.00065803783179063657,
+          "pairStationResidual_mm": 0.00065803783179063657,
+          "pairCollapseResidual_mm": 0,
+          "nativeT3": 27625,
+          "nativeMeshingSeconds": 1.2455564,
+          "lipMaxStationGap_mm": [
+            0.55451503206009534,
+            0.5538569942283047
+          ]
+        },
+        "T3": 30541,
+        "T6nodes": 62163,
+        "DOF": 124326,
+        "minAngle_deg": 30.126847321224602,
+        "maxNeighborRatio": 1.6539616632460736,
+        "joinGatesFailed": [],
+        "auditGates": "34/34",
+        "auditFailed": [],
+        "auditSummary": {
+          "Euler": -2,
+          "boundaryComponents": 4,
+          "crackEdgesPerSide": [
+            177,
+            177
+          ],
+          "bankNodesPerSide": [
+            355,
+            355
+          ],
+          "minAngle_deg": 30.126847321224602,
+          "maxNeighborRatio": 1.6539616632460736,
+          "minJacobian_mm2": 0.0015035163260104568,
+          "maxMidsideError_mm": 0,
+          "qActive": 2443,
+          "qSupportMaxRadius_mm": 2.7691874098746787,
+          "qSupportDistanceToKink_mm": 1.2341481976366353,
+          "materialArea_mm2": 102845.67828213249,
+          "analyticArea_mm2": 102845.56939067687
+        },
+        "qCollarGates": {
+          "G1_T6CornersEqualT3AndAllNodesUsed": true,
+          "G1_uniqueMidsidesAtGeometricMidpoints": true,
+          "G4_platePerimeterAndDoubleCrackLength": true,
+          "G5_bankSetsValidEqualSizeShareOnlyTip": true,
+          "G6_rotatedKernelAndCollarMatchP0LocalCoordinates": true,
+          "G6_kernelAndCollarConnectivityIdenticalToP0": true,
+          "G6_exactly2916ElementsInsideRimNoExteriorNodeInside": true,
+          "G7_seams64Plus64TwoOwnersOppositeSides": true,
+          "G7_65IdentitiesOnEachSeamCircle": true,
+          "G7_rimSeamEdgesSingleChords": true,
+          "G9_nodalQEqualsRecomputation": true,
+          "G9_qActive2443EqualsP0AllInKernel": true,
+          "G9_qSupportInsideInradiusZeroOutsideClearOfKink": true
+        },
+        "qCollarPass": true,
+        "phaseMasks": {
+          "H": true,
+          "stiff13": true,
+          "soft2": true,
+          "soft1": true
+        },
+        "phaseAuditPass": true,
+        "phaseMapPass": true,
+        "auditPass": true,
+        "auditSeconds": 4.0452618,
+        "pairing": {
+          "schema": "NewMetacomp.G2.LP2A2.PairingAudit.v1",
+          "pass": true,
+          "gates": {
+            "P1_countsEqual": true,
+            "P2_strictOrder": true,
+            "P3_coincidentIdenticalStation": true,
+            "P4_distinctIDs": true,
+            "P5_sameSegment": true,
+            "P6_sameClassMidsides": true,
+            "P7_noUnmatchedNodeOnCrack": true,
+            "P8_oneOwnerCorrectSide": true,
+            "P9_mouthKinksTip": true,
+            "P10_connectedPositive": true
+          },
+          "gatesPassed": 10,
+          "gatesTotal": 10,
+          "failedGates": [],
+          "metrics": {
+            "pairsT6": 355,
+            "pairsT3": 178,
+            "bankNodesUL": [
+              355,
+              355
+            ],
+            "maxPairDistance_mm": 0,
+            "maxPairStationDifference_mm": 0,
+            "nodesOnCrack": 709,
+            "unmatchedOnCrack": 0,
+            "minEdge_mm": 0.041666666666652044,
+            "minBankEdge_mm": 0.041666666666666616,
+            "bankEdgesT3": 354,
+            "T3": 30541,
+            "T6nodes": 62163,
+            "T3nodes": 15810,
+            "minArea_mm2": 0.00075175816300698632
+          }
+        },
+        "forcedPairs": {
+          "nForced": 1,
+          "pairs": {
+            "segment": 9,
+            "stationU_mm": 54.398959476504537,
+            "stationL_mm": 54.398301438672746,
+            "stationMismatch_mm": 0.00065803783179063657,
+            "circleDx_mm": 0.00037444647846740509,
+            "parametrisationPart_mm": 0.00028359135332323149,
+            "tipNormalOffset_mm": -0.1404111525234546,
+            "predictedDx_mm": 0.00037444614556638741,
+            "nativeDistance_mm": 0.040001752588682306,
+            "nodesAtCollapsedPoint": 2,
+            "collapseDisplacementU_mm": 0.020000876739102932,
+            "collapseDisplacementL_mm": 0.020000875849692214,
+            "distanceToTip_mm": 14.999986712997874,
+            "interiorOfSegment": true,
+            "residualAfterCollapse_mm": 0,
+            "distinctIDs": true,
+            "ids": [
+              1646,
+              1695
+            ],
+            "dofs": [
+              3291,
+              3292,
+              3389,
+              3390
+            ],
+            "sameBankIndex": true,
+            "midsideResidual_mm": 0,
+            "midsideDistinct": true,
+            "incidentElements": 6,
+            "incidentMinAngle_deg": 34.092355988379268,
+            "incidentMinArea_mm2": 0.082980142903135157,
+            "pass": true
+          },
+          "pass": true
+        },
+        "totalSeconds": 7.1107202,
+        "memUsedMATLAB_GiB": 1.7929840087890625
+      },
+      "old": {
+        "pass": false,
+        "stage": "HOLD_KINKED_EXTERIOR",
+        "message": "HOLD_LIP_STATIONS Lip nodes U=143 L=144, per-segment [50 8 7 8 8 8 8 8 8 8 8 1] / [50 8 8 8 8 8 8 8 8 8 8 1], vertices 13/13, gaps 0.521/0.521 mm.",
+        "seconds": 0.9836099,
+        "exterior": {
+          "lipInteriorNodesPerSegment": [
+            [
+              50,
+              50
+            ],
+            [
+              8,
+              8
+            ],
+            [
+              7,
+              8
+            ],
+            [
+              8,
+              8
+            ],
+            [
+              8,
+              8
+            ],
+            [
+              8,
+              8
+            ],
+            [
+              8,
+              8
+            ],
+            [
+              8,
+              8
+            ],
+            [
+              8,
+              8
+            ],
+            [
+              8,
+              8
+            ],
+            [
+              8,
+              8
+            ],
+            [
+              1,
+              1
+            ]
+          ],
+          "lipMaxStationGap_mm": [
+            0.52145061164804662,
+            0.52144727191302209
+          ],
+          "nativeT3": 27514
+        },
+        "diagnosis": {
+          "segmentLength_mm": [
+            25.4,
+            4.0000000000000009,
+            3.9999999999999991,
+            4.0000000000000009,
+            4,
+            3.9999999999999978,
+            3.9999999999999996,
+            3.9999999999999969,
+            4.0000000000000009,
+            3.9999999999999964,
+            3.9999999999999956,
+            0.70000000000000107
+          ],
+          "upperMinusLowerLength_mm": [
+            0.0040318616637833316,
+            0.0043494877425609424,
+            0.0009650784225834208,
+            0.0012647820080093908,
+            0.0012172860298531596,
+            0.001182318406239613,
+            0.0011544646470027509,
+            0.0011440820269128515,
+            0.0011551342742555093,
+            0.00023408014209058692,
+            -0.00069814942324919471,
+            -0.00034907471163858617
+          ],
+          "kinkTurn_deg": [
+            -11.51155234054556,
+            -0.90991256466538206,
+            -1.8546523772268333,
+            -1.7683788248889902,
+            -1.7186195121962515,
+            -1.6682264913143894,
+            -1.6388414968506657,
+            -1.6384886675273762,
+            -1.6704972516387089,
+            1.0000000000000833,
+            0.99999999999985068
+          ],
+          "countsU": [
+            50,
+            8,
+            7,
+            8,
+            8,
+            8,
+            8,
+            8,
+            8,
+            8,
+            8,
+            1
+          ],
+          "countsL": [
+            50,
+            8,
+            8,
+            8,
+            8,
+            8,
+            8,
+            8,
+            8,
+            8,
+            8,
+            1
+          ],
+          "failingSegments": 3,
+          "firstFailingSegment": 3,
+          "fewerOnUpper": true,
+          "distanceSegmentEndToTip_mm": [
+            43.999999999999993,
+            39.999999999999993,
+            35.999999999999993,
+            31.999999999999993,
+            27.999999999999993,
+            23.999999999999993,
+            19.999999999999993,
+            15.999999999999993,
+            11.999999999999993,
+            8,
+            4,
+            0
+          ],
+          "tipGuideCrossingSegment": 9,
+          "nSegments": 12
+        }
+      }
+    },
+    {
+      "id": "I_soft1_m1deg_S11",
+      "group": "I",
+      "caseId": "soft1",
+      "label": "MESH_ONLY_SYNTHETIC_INDEPENDENT",
+      "vertices": 13,
+      "state": 11,
+      "arc_mm": 69.399999999999991,
+      "guardRow": false,
+      "tip_mm": [
+        116.02660547336589,
+        66.791310959462677
+      ],
+      "tipToRingCircle_mm": [
+        17.45177266978796,
+        45.94063174454817,
+        91.7492103810946
+      ],
+      "polylineToRingCircle_mm": [
+        17.45177266978796,
+        45.94063174454817,
+        91.7492103810946
+      ],
+      "new": {
+        "pass": true,
+        "seedRung": 1,
+        "seedSpacing_mm": 0.45,
+        "ladder": {
+          "rung": 1,
+          "seedSpacing_mm": 0.45,
+          "stage": "KINKED_PROTECTED_MESH_JOIN_PASS",
+          "message": "Joined; the independent kink-aware audit is still required.",
+          "failedGates": [],
+          "pairingPass": true
+        },
+        "joinSeconds": 3.270358,
+        "stage": "KINKED_PROTECTED_MESH_JOIN_PASS",
+        "message": "Joined; the independent kink-aware audit is still required.",
+        "exterior": {
+          "seedsPerSegment": [
+            57,
+            9,
+            9,
+            9,
+            9,
+            9,
+            9,
+            9,
+            9,
+            9,
+            9,
+            2
+          ],
+          "seedCount": 150,
+          "guideCrossingPairs": 1,
+          "guideCrossingSegments": 9,
+          "seedStationMismatchRegular_mm": 0,
+          "seedStationMismatchForced_mm": 0.0017761308879542526,
+          "minSeedSpacing_mm": 0.33630826377969492,
+          "seedMaxDeviation_mm": 7.1054273576010019E-15,
+          "lipNodesPerBank": [
+            150,
+            150
+          ],
+          "lipPairs": 150,
+          "lipStationMismatch_mm": 0.0017761308879542526,
+          "pairStationResidual_mm": 0.0017761308879471471,
+          "pairCollapseResidual_mm": 0,
+          "nativeT3": 27613,
+          "nativeMeshingSeconds": 1.8099843,
+          "lipMaxStationGap_mm": [
+            0.5526291782488002,
+            0.550853047360853
+          ]
+        },
+        "T3": 30529,
+        "T6nodes": 62139,
+        "DOF": 124278,
+        "minAngle_deg": 30.126847321223934,
+        "maxNeighborRatio": 1.6562627450470804,
+        "joinGatesFailed": [],
+        "auditGates": "34/34",
+        "auditFailed": [],
+        "auditSummary": {
+          "Euler": -2,
+          "boundaryComponents": 4,
+          "crackEdgesPerSide": [
+            177,
+            177
+          ],
+          "bankNodesPerSide": [
+            355,
+            355
+          ],
+          "minAngle_deg": 30.126847321223934,
+          "maxNeighborRatio": 1.6562627450470804,
+          "minJacobian_mm2": 0.0015035163260100259,
+          "maxMidsideError_mm": 0,
+          "qActive": 2443,
+          "qSupportMaxRadius_mm": 2.7691874098746787,
+          "qSupportDistanceToKink_mm": 1.2341481976366249,
+          "materialArea_mm2": 102845.67828213247,
+          "analyticArea_mm2": 102845.56939067687
+        },
+        "qCollarGates": {
+          "G1_T6CornersEqualT3AndAllNodesUsed": true,
+          "G1_uniqueMidsidesAtGeometricMidpoints": true,
+          "G4_platePerimeterAndDoubleCrackLength": true,
+          "G5_bankSetsValidEqualSizeShareOnlyTip": true,
+          "G6_rotatedKernelAndCollarMatchP0LocalCoordinates": true,
+          "G6_kernelAndCollarConnectivityIdenticalToP0": true,
+          "G6_exactly2916ElementsInsideRimNoExteriorNodeInside": true,
+          "G7_seams64Plus64TwoOwnersOppositeSides": true,
+          "G7_65IdentitiesOnEachSeamCircle": true,
+          "G7_rimSeamEdgesSingleChords": true,
+          "G9_nodalQEqualsRecomputation": true,
+          "G9_qActive2443EqualsP0AllInKernel": true,
+          "G9_qSupportInsideInradiusZeroOutsideClearOfKink": true
+        },
+        "qCollarPass": true,
+        "phaseMasks": {
+          "H": true,
+          "stiff13": true,
+          "soft2": true,
+          "soft1": true
+        },
+        "phaseAuditPass": true,
+        "phaseMapPass": true,
+        "auditPass": true,
+        "auditSeconds": 4.0622916,
+        "pairing": {
+          "schema": "NewMetacomp.G2.LP2A2.PairingAudit.v1",
+          "pass": true,
+          "gates": {
+            "P1_countsEqual": true,
+            "P2_strictOrder": true,
+            "P3_coincidentIdenticalStation": true,
+            "P4_distinctIDs": true,
+            "P5_sameSegment": true,
+            "P6_sameClassMidsides": true,
+            "P7_noUnmatchedNodeOnCrack": true,
+            "P8_oneOwnerCorrectSide": true,
+            "P9_mouthKinksTip": true,
+            "P10_connectedPositive": true
+          },
+          "gatesPassed": 10,
+          "gatesTotal": 10,
+          "failedGates": [],
+          "metrics": {
+            "pairsT6": 355,
+            "pairsT3": 178,
+            "bankNodesUL": [
+              355,
+              355
+            ],
+            "maxPairDistance_mm": 0,
+            "maxPairStationDifference_mm": 0,
+            "nodesOnCrack": 709,
+            "unmatchedOnCrack": 0,
+            "minEdge_mm": 0.041666666666655972,
+            "minBankEdge_mm": 0.04166666666665865,
+            "bankEdgesT3": 354,
+            "T3": 30529,
+            "T6nodes": 62139,
+            "T3nodes": 15804,
+            "minArea_mm2": 0.0007517581630071071
+          }
+        },
+        "forcedPairs": {
+          "nForced": 1,
+          "pairs": {
+            "segment": 9,
+            "stationU_mm": 54.397073622693242,
+            "stationL_mm": 54.395297491805287,
+            "stationMismatch_mm": 0.0017761308879542526,
+            "circleDx_mm": 0.0014918334875785311,
+            "parametrisationPart_mm": 0.00028429740037572149,
+            "tipNormalOffset_mm": -0.55904838257449541,
+            "predictedDx_mm": 0.0014918321578138087,
+            "nativeDistance_mm": 0.04002780992204142,
+            "nodesAtCollapsedPoint": 2,
+            "collapseDisplacementU_mm": 0.020013909740524711,
+            "collapseDisplacementL_mm": 0.02001390018233714,
+            "distanceToTip_mm": 14.999986776254591,
+            "interiorOfSegment": true,
+            "residualAfterCollapse_mm": 0,
+            "distinctIDs": true,
+            "ids": [
+              1646,
+              1695
+            ],
+            "dofs": [
+              3291,
+              3292,
+              3389,
+              3390
+            ],
+            "sameBankIndex": true,
+            "midsideResidual_mm": 0,
+            "midsideDistinct": true,
+            "incidentElements": 6,
+            "incidentMinAngle_deg": 33.780364051242024,
+            "incidentMinArea_mm2": 0.080974573969616659,
+            "pass": true
+          },
+          "pass": true
+        },
+        "totalSeconds": 7.5559122,
+        "memUsedMATLAB_GiB": 1.7934608459472656
+      },
+      "old": {
+        "pass": false,
+        "stage": "HOLD_KINKED_EXTERIOR",
+        "message": "HOLD_LIP_STATIONS Lip nodes U=141 L=144, per-segment [50 7 7 7 8 8 8 8 8 8 8 1] / [50 8 8 8 8 8 8 8 8 8 8 1], vertices 13/13, gaps 0.521/0.521 mm.",
+        "seconds": 1.0015453,
+        "exterior": {
+          "lipInteriorNodesPerSegment": [
+            [
+              50,
+              50
+            ],
+            [
+              7,
+              8
+            ],
+            [
+              7,
+              8
+            ],
+            [
+              7,
+              8
+            ],
+            [
+              8,
+              8
+            ],
+            [
+              8,
+              8
+            ],
+            [
+              8,
+              8
+            ],
+            [
+              8,
+              8
+            ],
+            [
+              8,
+              8
+            ],
+            [
+              8,
+              8
+            ],
+            [
+              8,
+              8
+            ],
+            [
+              1,
+              1
+            ]
+          ],
+          "lipMaxStationGap_mm": [
+            0.52145061164804662,
+            0.52144727191302209
+          ],
+          "nativeT3": 27460
+        },
+        "diagnosis": {
+          "segmentLength_mm": [
+            25.4,
+            4.0000000000000009,
+            3.9999999999999991,
+            4.0000000000000009,
+            4,
+            3.9999999999999978,
+            3.9999999999999996,
+            3.9999999999999969,
+            4.0000000000000009,
+            3.9999999999999964,
+            3.9999999999999947,
+            0.70000000000000018
+          ],
+          "upperMinusLowerLength_mm": [
+            0.0040318616637833316,
+            0.0043494877425609424,
+            0.0009650784225834208,
+            0.0012647820080093908,
+            0.0012172860298531596,
+            0.001182318406239613,
+            0.0011544646470027509,
+            0.0011440820269128515,
+            0.0011551342742555093,
+            0.00093222956535266022,
+            0.00069814942326473783,
+            0.00034907471163503345
+          ],
+          "kinkTurn_deg": [
+            -11.51155234054556,
+            -0.90991256466538206,
+            -1.8546523772268333,
+            -1.7683788248889902,
+            -1.7186195121962515,
+            -1.6682264913143894,
+            -1.6388414968506657,
+            -1.6384886675273762,
+            -1.6704972516387089,
+            -0.99999999999993994,
+            -0.9999999999999809
+          ],
+          "countsU": [
+            50,
+            7,
+            7,
+            7,
+            8,
+            8,
+            8,
+            8,
+            8,
+            8,
+            8,
+            1
+          ],
+          "countsL": [
+            50,
+            8,
+            8,
+            8,
+            8,
+            8,
+            8,
+            8,
+            8,
+            8,
+            8,
+            1
+          ],
+          "failingSegments": [
+            2,
+            3,
+            4
+          ],
+          "firstFailingSegment": 2,
+          "fewerOnUpper": true,
+          "distanceSegmentEndToTip_mm": [
+            43.999999999999993,
+            39.999999999999993,
+            35.999999999999993,
+            31.999999999999993,
+            27.999999999999993,
+            23.999999999999993,
+            19.999999999999993,
+            15.999999999999993,
+            11.999999999999993,
+            8,
+            4,
+            0
+          ],
+          "tipGuideCrossingSegment": 9,
+          "nSegments": 12
+        }
+      }
+    }
+  ]
+}

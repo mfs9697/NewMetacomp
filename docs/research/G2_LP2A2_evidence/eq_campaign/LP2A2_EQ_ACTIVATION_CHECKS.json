@@ -1,0 +1,57 @@
+{
+  "head": "4d3701e1ccc91b7512db9052c927f32af52e2479",
+  "ramInsideMATLAB_GiB": 7.5454292297363281,
+  "release": "2023a",
+  "versionFull": "9.14.0.2206163 (R2023a)",
+  "pde": true,
+  "pdeVersion": "3.10",
+  "createpdeExists": true,
+  "goFileAbsent": true,
+  "outputRootAbsentBefore": true,
+  "gitCleanBefore": true,
+  "preflight": {
+    "pass": true,
+    "status": "PREFLIGHT_READY_NOT_LP0_QUALIFIED",
+    "cause": "",
+    "physicalSolves": 0,
+    "meshBuilds": 0,
+    "policySHA256": "1cf5a76ded840b0758343a1b935b299041e779ec6332c3b7cb0b6dfba1e2af43",
+    "release": "R2023a",
+    "pdeAvailable": true,
+    "freePhysicalRAM_GiB": 7.4096717834472656,
+    "matlabProcesses": 1,
+    "currentPID": 11764,
+    "sourceCommit": "4d3701e1ccc91b7512db9052c927f32af52e2479",
+    "dirtySource": "",
+    "token": "G2LP0|policy=1cf5a76ded840b0758343a1b935b299041e779ec6332c3b7cb0b6dfba1e2af43|source=4d3701e1ccc91b7512db9052c927f32af52e2479|geometry=179b777f4a26caf1482ad470d78f5f802bc24456b9a1b6fc6b641eccf2b66008|cases=H,stiff13,soft2,soft1|maxState=4"
+  },
+  "tokenEqualsApproved": true,
+  "tokenFromContext": "G2LP2A2EQ|policy=bc1f86e7750aaea653cd7544c8fff0ad757843a23bd00608145dad70dcd8a330|g2source=7e5683703bd104547ef5d013aa0253ad2819b59dc58693957e2d04b4707f0947|lp2source=357dfdcdb576d2866b9d1b41a14265300a14c30700d6475f995881041ba822ca|lp2a2source=00c99e93915ad2c0dbd4eaeb307d94d65b4c71300f94a0f073aadacb9c5a61c2|archivedS8=da951c99c0d8c1d5dd731986d8f3b30e3db3f71854166a634d35b739757def8d|solves=EQ-H,EQ-stiff13,EQ-soft2,EQ-soft1|limit=4",
+  "memgate": {
+    "pass": true,
+    "minGiB": 7,
+    "freeGiB": 7.4683341979980469,
+    "reason": "OK"
+  },
+  "ramAfterContext_GiB": 7.4682731628417969,
+  "margin73": true,
+  "exactlyOneEngine": true,
+  "probeRun": {
+    "identifier": "G2LP2A2:HOLD_UNAUTHORIZED",
+    "message": "No GO file (matlab/g2/lp2a2/G2_LP2A2_EQ_GO.json): the campaign is prepared, not authorized.",
+    "expectedIdentifier": "G2LP2A2:HOLD_UNAUTHORIZED",
+    "pass": true
+  },
+  "probeWrapper": {
+    "outcome": "HOLD_UNAUTHORIZED",
+    "solvesCalled": 0,
+    "reason": "noGoFile",
+    "resultsEmpty": true,
+    "pass": true
+  },
+  "outputsListingUnchanged": true,
+  "outputRootAbsentAfter": true,
+  "gitCleanAfter": true,
+  "physicalSolves": 0,
+  "allMatlabChecksPass": true
+}

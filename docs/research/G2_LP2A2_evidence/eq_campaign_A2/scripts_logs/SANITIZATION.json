@@ -1,0 +1,75 @@
+{
+ "rule": "absolute local paths replaced by <repo> (execution clone), <worktree>, <scratch>, <user>; MATLAB startup path warnings removed; CRLF to LF",
+ "files": [
+  {
+   "file": "lp2a2_eq_a2_activation_checks.log",
+   "originalSHA256": "9a64eb141846ac3a4c6e95767e36f4122a493a301d127b1f3f2d60c22ab5ff2b",
+   "sanitizedSHA256": "150b4bfc2a51207799dda628c20a46524af84d195bf6b08e7c1a4ba3d7c86ece"
+  },
+  {
+   "file": "lp2a2_eq_a2_activation_checks.m",
+   "originalSHA256": "ff71e828ede4ac64360157cef18879a76efc010b5283eba5c49626c9d0c50c28",
+   "sanitizedSHA256": "6e93dc54fd4ebd435628dcc59db06375f57b158fbdd44148071ecc9da28166fa"
+  },
+  {
+   "file": "lp2a2_eq_a2_campaign.log",
+   "originalSHA256": "a390b0519606887faea05ee2d44c4538c0e7cee4b45019f59cb51d3e6a6bf02e",
+   "sanitizedSHA256": "c310c833fd75824818510a35af2ab93b08a2800683efb03bc01326b9f36c8822"
+  },
+  {
+   "file": "lp2a2_eq_a2_campaign.m",
+   "originalSHA256": "dfb7980eb1f4e384f1259b26cdc52133f78c3d78d904b002a9941da0bcf0e281",
+   "sanitizedSHA256": "a0ce33bb0ca4aaa25a6c072839a7ee9345aca5740dcd824978fefc917fd92724"
+  },
+  {
+   "file": "lp2a2_eq_a2_closure.log",
+   "originalSHA256": "1689792a48ca2bb99ce32b8a8385c2e14d0253de19f88f9487dab70ca04f5a49",
+   "sanitizedSHA256": "9ad1a27232ec8103c07207bc6151be99d306ac7431d3e4c3dcbfb5f716e988e3"
+  },
+  {
+   "file": "lp2a2_eq_a2_closure.m",
+   "originalSHA256": "d34b50e0820106aeb2151037bc71ab70aaef666141a0a741a5ea2905e724356e",
+   "sanitizedSHA256": "58d1a9186a1b6b1d26893ddd27a4fedaa9325277d368caa51d89ca9d5a6bdff0"
+  },
+  {
+   "file": "lp2a2_eq_a2_replay_diag.log",
+   "originalSHA256": "e43ee7696a7a63a62eff29f8425605c8d1fde818f35a26aa7e520651b99bef6f",
+   "sanitizedSHA256": "ab1c7c07b3ee85e294a9cf71d40b815f1ed2a0d662a21cf9316447f7d62c83b5"
+  },
+  {
+   "file": "lp2a2_eq_a2_replay_diag.m",
+   "originalSHA256": "60f06842171b6c5e68cb0487ad6fa2487c6b0a99005269033495e44c573fee6f",
+   "sanitizedSHA256": "0b67e533739045b8e5f184fcb78dc8e0a9bbef9950041ade55090f5e49c2a0d8"
+  },
+  {
+   "file": "make_go_a2.py",
+   "originalSHA256": "23e30dd3f53fbb5f00a8e93672c9e57da65e10bb3c791a20b2d7ffd944970233",
+   "sanitizedSHA256": "23e30dd3f53fbb5f00a8e93672c9e57da65e10bb3c791a20b2d7ffd944970233"
+  },
+  {
+   "file": "run_figures.log",
+   "originalSHA256": "31c8a9ca9e9938a05fd12b7079fa7fcaf0f101106e7b7997f36090c86c450d44",
+   "sanitizedSHA256": "ab5ac09debafaba30a6e075f2ee68f0e06f92bbcbed45231137eafc5a2ad32d6"
+  },
+  {
+   "file": "run_opening_export.log",
+   "originalSHA256": "10e5586e452187d3faf1509b1e7c29ab6ca3efe3c70e0a813514e1f247b1affc",
+   "sanitizedSHA256": "07ccc2103016e2b14879450080f72a258aa76470a70074ba0a80ab82644b6bbe"
+  },
+  {
+   "file": "run_opening_export.m",
+   "originalSHA256": "ed5f409dfdf45b88c85f5f4d697851c57952fa4405aa4aef39bdac3584f6ed6f",
+   "sanitizedSHA256": "723097bf72429b3d823132657abc6cc1da93ec9be493ff5740af49a491b64502"
+  },
+  {
+   "file": "wait_then_actcheck.ps1",
+   "originalSHA256": "d2fa35297558d25adf4ead6836d5ef2f19bdfe54562b055a88d9e8d07f1e754a",
+   "sanitizedSHA256": "ac294d873a6550272caca5ceeb44bbd915c5a05da059c574902245f80111bbeb"
+  },
+  {
+   "file": "wait_then_campaign.ps1",
+   "originalSHA256": "12e635fb3a42244a986832195aee3bf3d0b66b855650cc9c8965205423747b68",
+   "sanitizedSHA256": "f30ffd6d683f8fe704518cce8c5bc35dce27f09a171eefd4522750a31c3e3255"
+  }
+ ]
+}

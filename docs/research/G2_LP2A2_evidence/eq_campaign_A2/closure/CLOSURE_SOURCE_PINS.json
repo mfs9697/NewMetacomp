@@ -1,0 +1,27 @@
+{
+ "schema": "NewMetacomp.G2.LP2A2.EQ.ClosureSourcePins.v1",
+ "note": "Pins of the SEPARATE read-only verification sources (scripts/g2/lp2a2/closure/). They are outside matlab/g2 and therefore outside every historical source digest; the historical pinned sources, policy, token and campaign outputs are not re-pinned.",
+ "closureSourceSHA256": {
+  "lp2a2_eq_failed_list.m": "efcc659cad2f7e28d7a08df7cee5d7a741190fa204d85b0fe69b4802aa84b9e4",
+  "lp2a2_eq_failed_check.m": "a77c49e995fca14c31b642ee3f8a608d2e7d247e895249cf73a34de346d20a68",
+  "lp2a2_eq_compare_records.m": "4b52ee4175996ec53113135c0f86063f69a6f4c5988272c1d340000fd80e8db5",
+  "lp2a2_eq_closure_verify.m": "82a5e10fab99232500e5a3c627e88e32de4d25aeb24181fa1a86a0d3ae14d921",
+  "lp2a2_eq_closure_tests.m": "c4833cd85eccc8c3cba69473f9d7bd557c2a9773069b78c7df71b3164b5e9545",
+  "lp2a2_eq_closure_run.m": "f2e801bea91db12b56488b5b4792ffe573f12c46295dea32bf918501cdde5443"
+ },
+ "closureSourceDigestSHA256": "76614f269810c6970544bca0c1c0f84ebf9131935554ebd75e57e24f819f65f7",
+ "digestRule": "sha256 of \"\\n\".join(\"name sha\") over the six file names in sorted order (LF bytes)",
+ "historicalPinsReused": {
+  "policySHA256": "6f2c290b37d4f8291f428ec8b9e0a886fe6b31fc901bee5781f2518e67c94756",
+  "g2SourceSHA256": "7e5683703bd104547ef5d013aa0253ad2819b59dc58693957e2d04b4707f0947",
+  "lp2SourceSHA256": "357dfdcdb576d2866b9d1b41a14265300a14c30700d6475f995881041ba822ca",
+  "lp2a2SourceSHA256": "f1d7e4d67b91968e16ebaead13be86667c7776ce48971ed5206c7f136fae7afd",
+  "archivedManifestSHA256": "da951c99c0d8c1d5dd731986d8f3b30e3db3f71854166a634d35b739757def8d",
+  "token": "G2LP2A2EQ|policy=6f2c290b37d4f8291f428ec8b9e0a886fe6b31fc901bee5781f2518e67c94756|g2source=7e5683703bd104547ef5d013aa0253ad2819b59dc58693957e2d04b4707f0947|lp2source=357dfdcdb576d2866b9d1b41a14265300a14c30700d6475f995881041ba822ca|lp2a2source=f1d7e4d67b91968e16ebaead13be86667c7776ce48971ed5206c7f136fae7afd|archivedS8=da951c99c0d8c1d5dd731986d8f3b30e3db3f71854166a634d35b739757def8d|solves=EQ-H,EQ-stiff13,EQ-soft2,EQ-soft1|limit=4"
+ },
+ "historicalPinsEqualCampaignHashcheck": true,
+ "executionClone": {
+  "head": "2a25973a8b7fc4e6c10c19a01b4243e5ffddafc8",
+  "statusClean": true
+ }
+}

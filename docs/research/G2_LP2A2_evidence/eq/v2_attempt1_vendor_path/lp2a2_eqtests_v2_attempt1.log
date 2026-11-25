@@ -1,0 +1,72 @@
+SOURCE_COMMIT=bf9cb8a30b69e14e5ddc9bddc2ba33f17120acfc
+EQ_TEST E1_context_pins_token            1
+EQ_TEST E2_identity_H                    1
+EQ_TEST E3_negative_KI                   1
+EQ_TEST E3_negative_KII                  1
+EQ_TEST E3_negative_C3_direct            1
+EQ_TEST E3_negative_C5_direct            1
+EQ_TEST E3_negative_J                    1
+EQ_TEST E3_negative_COD                  1
+EQ_TEST E3_negative_spread               1
+EQ_TEST E3_negative_opening              1
+EQ_TEST E3_negative_chords               1
+EQ_TEST E3_negative_area                 1
+EQ_TEST E3_negative_S9tip                1
+EQ_TEST E3_negative_compliance           1
+EQ_TEST E2_identity_stiff13              1
+EQ_TEST E2_identity_soft2                1
+EQ_TEST E2_identity_soft1                1
+EQ_TEST E4_contrast_identity             1
+EQ_TEST E4_contrast_FG_shift             1
+EQ_TEST E4_contrast_sign_flip            1
+EQ_TEST E4_contrast_MTS_shift            1
+EQ_TEST E7_actual_helper_reading         1
+EQ_MEMGATE actual free 7.401 GiB, gate 7 GiB pass=1 (OK)
+EQ_TEST E7_gate_at_threshold             1
+EQ_TEST E7_below_threshold_refuses       1
+EQ_TEST E7_error_refuses                 1
+EQ_TEST E7_invalid_refuses               1
+EQ_TEST E7_driver_uses_gate              1
+EQ_TEST E8_valid_fixture_passes          1
+EQ_TEST E8_reject_decision_wrong         1
+EQ_TEST E8_reject_decision_missing       1
+EQ_TEST E8_reject_token_wrong            1
+EQ_TEST E8_reject_solveLimit_5           1
+EQ_TEST E8_reject_solves_reordered       1
+EQ_TEST E8_reject_solves_three           1
+EQ_TEST E8_reject_solves_extra           1
+EQ_TEST E8_reject_campaign_wrong         1
+EQ_TEST E8_reject_url_other_repo         1
+EQ_TEST E8_reject_url_http               1
+EQ_TEST E8_reject_url_no_comment         1
+EQ_TEST E8_reject_url_placeholder        1
+EQ_TEST E8_reject_head_short             1
+EQ_TEST E8_reject_head_uppercase         1
+EQ_TEST E8_reject_head_injection         1
+EQ_TEST E8_reject_evidence_sha_wrong     1
+EQ_TEST E8_reject_evidence_path_escape   1
+EQ_TEST E8_injection_never_reaches_git   1
+EQ_TEST E8_reject_caller_token           1
+EQ_TEST E8_reject_not_ancestor           1
+EQ_TEST E8_reject_activation_parent      1
+EQ_TEST E8_reject_activation_extra_file  1
+EQ_TEST E9_preflight_bypass_refused      1
+EQ_TEST E10_all_pass_equivalent          1
+EQ_TEST E10_exception_stops              1
+EQ_TEST E10_hold_stage_stops             1
+EQ_TEST E10_failed_comparison_stops      1
+EQ_TEST E10_incomplete_record_stops      1
+EQ_TEST E10_rejected_go_no_solve         1
+EQ_TEST E10_default_validator_no_go_file 1
+EQ_TEST E11_replay_no_records            1
+EQ_TEST E5_refusal_without_GO            1
+EQ_DRY EQ-H ERROR The pinned vendor builder must be first on the path.
+EQ_TEST E6_dry_EQ-H                      0
+EQ_DRY EQ-stiff13 ERROR The pinned vendor builder must be first on the path.
+EQ_TEST E6_dry_EQ-stiff13                0
+EQ_DRY EQ-soft2 ERROR The pinned vendor builder must be first on the path.
+EQ_TEST E6_dry_EQ-soft2                  0
+EQ_DRY EQ-soft1 ERROR The pinned vendor builder must be first on the path.
+EQ_TEST E6_dry_EQ-soft1                  0
+LP2A2_EQ_TESTS 60/64
+EQ_OUTPUT_ROOT_EXISTS=0 GO_FILE_EXISTS=0

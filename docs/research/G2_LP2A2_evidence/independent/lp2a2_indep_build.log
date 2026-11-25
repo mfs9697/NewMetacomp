@@ -1,0 +1,10 @@
+SOURCE_COMMIT=13fc23e4a418f82453667dc1c452452a32bdf8ef
+INDEP I_H_p1deg_S11            tip=(116.1115, 66.8288) S10 adm=1 gap=[4.35 34.78 80.68] | S11 adm=1 gap=[2.364 30.86 76.69] inRegime=1
+INDEP I_H_m1deg_S11            tip=(116.4931, 66.6563) S10 adm=1 gap=[4.235 34.76 80.69] | S11 adm=1 gap=[1.999 30.79 76.72] inRegime=1
+INDEP I_stiff13_p1deg_S11      tip=(116.3011, 66.7824) S10 adm=1 gap=[4.148 34.71 80.66] | S11 adm=1 gap=[2.179 30.79 76.67] inRegime=1
+INDEP I_stiff13_m1deg_S11      tip=(116.6840, 66.6126) S10 adm=1 gap=[4.032 34.69 80.67] | S11 adm=1 gap=[1.812 30.72 76.7] inRegime=1
+INDEP I_soft2_p1deg_S11        tip=(116.4068, 66.7192) S10 adm=1 gap=[4.109 34.72 80.68] | S11 adm=1 gap=[2.079 30.79 76.69] inRegime=1
+INDEP I_soft2_m1deg_S11        tip=(116.7869, 66.5433) S10 adm=1 gap=[3.995 34.7 80.7] | S11 adm=1 gap=[1.716 30.73 76.74] inRegime=1
+INDEP I_soft1_p1deg_S11        tip=(115.6451, 66.9642) S10 adm=1 gap=[4.79 34.93 80.71] | S11 adm=1 gap=[2.818 31.01 76.71] inRegime=1
+INDEP I_soft1_m1deg_S11        tip=(116.0266, 66.7913) S10 adm=1 gap=[4.675 34.91 80.72] | S11 adm=1 gap=[2.452 30.94 76.75] inRegime=1
+INDEP_SET_SHA256=ab7096d0d0eb2dc31f632e15d5f3b470819f07f2595b45d341c62df19cd41313

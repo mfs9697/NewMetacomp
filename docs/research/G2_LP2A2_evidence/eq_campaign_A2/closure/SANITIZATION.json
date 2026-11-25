@@ -1,0 +1,35 @@
+{
+ "rule": "absolute local paths replaced by <repo> (execution clone), <worktree>, <scratch>; MATLAB startup path warnings removed from logs; CRLF to LF. The JSON files contain no local paths (copied unchanged).",
+ "files": [
+  {
+   "file": "LP2A2_EQ_CLOSURE_VERIFY.json",
+   "originalSHA256": "64757922040a6b50661f3b9fe1494bbb3ed2aa88180d0977a8443b13f542392f",
+   "sanitizedSHA256": "64757922040a6b50661f3b9fe1494bbb3ed2aa88180d0977a8443b13f542392f"
+  },
+  {
+   "file": "LP2A2_EQ_CLOSURE_TESTS.json",
+   "originalSHA256": "51b0436bad00e009e70df3bf303c066e435f7a8f624286e1036c784810ce4fb6",
+   "sanitizedSHA256": "51b0436bad00e009e70df3bf303c066e435f7a8f624286e1036c784810ce4fb6"
+  },
+  {
+   "file": "LP2A2_EQ_CLOSURE_FINAL.json",
+   "originalSHA256": "9279cdc70b1d3729995addaa0a58d4632e0b9fef631830507abc9906d7aba770",
+   "sanitizedSHA256": "9279cdc70b1d3729995addaa0a58d4632e0b9fef631830507abc9906d7aba770"
+  },
+  {
+   "file": "logs/closure_verify.log",
+   "originalSHA256": "e04dc38e6c70ea53949bbd49733ef01dd8212a3096fe7811b9b6adc63a86255c",
+   "sanitizedSHA256": "eb42d5175a8d844d4f13a0bb4b586374c64e08126072dd18450931c990b5145a"
+  },
+  {
+   "file": "logs/closure_tests.log",
+   "originalSHA256": "f33073029a82d1554e994306ff2946cecd273b1e2ae7cc114a7bda6694be6013",
+   "sanitizedSHA256": "5287b3b5fa4a6e973ad67b497079b0fbc60ff0a600e7d483e222b29aae2488e4"
+  },
+  {
+   "file": "logs/closure_final.log",
+   "originalSHA256": "2341a600b05556a35eb1915ba534e5d48132314339e773796c604118591e7473",
+   "sanitizedSHA256": "d6f6f60d2e8feb05721fcf4e214a2cf8219757b7e8c7d536a7d8c986931a8083"
+  }
+ ]
+}

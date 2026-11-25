@@ -1,0 +1,19 @@
+{
+ "schema": "NewMetacomp.G2.LP2A2.EQ.ArchiveUnchanged.v1",
+ "note": "SHA-256 of the archive copies computed read-only during the verification closure; no archive was written, replaced or renamed.",
+ "recordsArchive": {
+  "name": "NewMetacomp_G2_LP2A2_EQ_A2_Records_20261125.zip",
+  "bytes": 11522091,
+  "sha256ExpectedFromCommittedArchiveRecord": "96ed7a364d8742542244ab4003c754c139f437c5e1c41d80a25dbf0dad9675ea",
+  "internalSSDCopy": "96ed7a364d8742542244ab4003c754c139f437c5e1c41d80a25dbf0dad9675ea",
+  "removableUSBCopy": "96ed7a364d8742542244ab4003c754c139f437c5e1c41d80a25dbf0dad9675ea"
+ },
+ "holdEvidenceArchive": {
+  "name": "NewMetacomp_G2_LP2A2_EQ_HoldEvidence_20261125.zip",
+  "bytes": 20635,
+  "sha256Expected": "4f60ddfd373a80655c49cdba9f8052d109140a9294b51ccedef59f8f8d5df1da",
+  "internalSSDCopy": "4f60ddfd373a80655c49cdba9f8052d109140a9294b51ccedef59f8f8d5df1da",
+  "removableUSBCopy": "4f60ddfd373a80655c49cdba9f8052d109140a9294b51ccedef59f8f8d5df1da"
+ },
+ "allEqual": true
+}

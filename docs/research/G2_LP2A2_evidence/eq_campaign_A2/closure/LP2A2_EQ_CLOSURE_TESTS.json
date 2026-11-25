@@ -1,0 +1,649 @@
+{
+  "schema": "NewMetacomp.G2.LP2A2.EQ.ClosureTests.v1",
+  "partA": [
+    {
+      "name": "empty_1x0_cell",
+      "expect": "equal",
+      "got": "equal",
+      "pass": true,
+      "storedClass": "double",
+      "storedSize": [
+        0,
+        0
+      ],
+      "legacyIsequal": false,
+      "why": ""
+    },
+    {
+      "name": "empty_0x0_cell",
+      "expect": "equal",
+      "got": "equal",
+      "pass": true,
+      "storedClass": "double",
+      "storedSize": [
+        0,
+        0
+      ],
+      "legacyIsequal": false,
+      "why": ""
+    },
+    {
+      "name": "empty_0x1_cell",
+      "expect": "equal",
+      "got": "equal",
+      "pass": true,
+      "storedClass": "double",
+      "storedSize": [
+        0,
+        0
+      ],
+      "legacyIsequal": false,
+      "why": ""
+    },
+    {
+      "name": "empty_stored_vs_recomputed_empty_0x1",
+      "expect": "equal",
+      "got": "equal",
+      "pass": true,
+      "storedClass": "double",
+      "storedSize": [
+        0,
+        0
+      ],
+      "legacyIsequal": false,
+      "why": ""
+    },
+    {
+      "name": "singleton",
+      "expect": "equal",
+      "got": "equal",
+      "pass": true,
+      "storedClass": "cell",
+      "storedSize": [
+        1,
+        1
+      ],
+      "legacyIsequal": true,
+      "why": ""
+    },
+    {
+      "name": "singleton_recomputed_column",
+      "expect": "equal",
+      "got": "equal",
+      "pass": true,
+      "storedClass": "cell",
+      "storedSize": [
+        1,
+        1
+      ],
+      "legacyIsequal": true,
+      "why": ""
+    },
+    {
+      "name": "multiple_reordered",
+      "expect": "equal",
+      "got": "equal",
+      "pass": true,
+      "storedClass": "cell",
+      "storedSize": [
+        3,
+        1
+      ],
+      "legacyIsequal": true,
+      "why": ""
+    },
+    {
+      "name": "multiple_all_eleven",
+      "expect": "equal",
+      "got": "equal",
+      "pass": true,
+      "storedClass": "cell",
+      "storedSize": [
+        11,
+        1
+      ],
+      "legacyIsequal": true,
+      "why": ""
+    },
+    {
+      "name": "mismatch_stored_empty",
+      "expect": "mismatch",
+      "got": "mismatch",
+      "pass": true,
+      "storedClass": "double",
+      "storedSize": [
+        0,
+        0
+      ],
+      "legacyIsequal": false,
+      "why": "stored and recomputed failed lists differ"
+    },
+    {
+      "name": "mismatch_recomputed_empty",
+      "expect": "mismatch",
+      "got": "mismatch",
+      "pass": true,
+      "storedClass": "cell",
+      "storedSize": [
+        1,
+        1
+      ],
+      "legacyIsequal": false,
+      "why": "stored and recomputed failed lists differ"
+    },
+    {
+      "name": "mismatch_other_name",
+      "expect": "mismatch",
+      "got": "mismatch",
+      "pass": true,
+      "storedClass": "cell",
+      "storedSize": [
+        1,
+        1
+      ],
+      "legacyIsequal": false,
+      "why": "stored and recomputed failed lists differ"
+    },
+    {
+      "name": "mismatch_stored_longer",
+      "expect": "mismatch",
+      "got": "mismatch",
+      "pass": true,
+      "storedClass": "cell",
+      "storedSize": [
+        2,
+        1
+      ],
+      "legacyIsequal": false,
+      "why": "stored and recomputed failed lists differ"
+    },
+    {
+      "name": "mismatch_stored_shorter",
+      "expect": "mismatch",
+      "got": "mismatch",
+      "pass": true,
+      "storedClass": "cell",
+      "storedSize": [
+        1,
+        1
+      ],
+      "legacyIsequal": false,
+      "why": "stored and recomputed failed lists differ"
+    },
+    {
+      "name": "malformed_numeric_vector",
+      "expect": "rejected",
+      "got": "rejected",
+      "pass": true,
+      "storedClass": "double",
+      "storedSize": [
+        2,
+        1
+      ],
+      "legacyIsequal": false,
+      "why": "raw text: failed is not an empty array or a list of strings"
+    },
+    {
+      "name": "malformed_numeric_scalar",
+      "expect": "rejected",
+      "got": "rejected",
+      "pass": true,
+      "storedClass": "double",
+      "storedSize": [
+        1,
+        1
+      ],
+      "legacyIsequal": false,
+      "why": "raw text: 1 \"failed\" member(s), 0 flat array value(s)"
+    },
+    {
+      "name": "malformed_logical",
+      "expect": "rejected",
+      "got": "rejected",
+      "pass": true,
+      "storedClass": "logical",
+      "storedSize": [
+        1,
+        1
+      ],
+      "legacyIsequal": false,
+      "why": "raw text: 1 \"failed\" member(s), 0 flat array value(s)"
+    },
+    {
+      "name": "malformed_mixed_elements",
+      "expect": "rejected",
+      "got": "rejected",
+      "pass": true,
+      "storedClass": "cell",
+      "storedSize": [
+        2,
+        1
+      ],
+      "legacyIsequal": false,
+      "why": "raw text: failed is not an empty array or a list of strings"
+    },
+    {
+      "name": "malformed_nested_list",
+      "expect": "rejected",
+      "got": "rejected",
+      "pass": true,
+      "storedClass": "cell",
+      "storedSize": [
+        1,
+        1
+      ],
+      "legacyIsequal": false,
+      "why": "raw text: 1 \"failed\" member(s), 0 flat array value(s)"
+    },
+    {
+      "name": "malformed_nested_empty",
+      "expect": "rejected",
+      "got": "rejected",
+      "pass": true,
+      "storedClass": "cell",
+      "storedSize": [
+        1,
+        1
+      ],
+      "legacyIsequal": false,
+      "why": "raw text: 1 \"failed\" member(s), 0 flat array value(s)"
+    },
+    {
+      "name": "malformed_object",
+      "expect": "rejected",
+      "got": "rejected",
+      "pass": true,
+      "storedClass": "struct",
+      "storedSize": [
+        1,
+        1
+      ],
+      "legacyIsequal": false,
+      "why": "raw text: 1 \"failed\" member(s), 0 flat array value(s)"
+    },
+    {
+      "name": "malformed_bare_string",
+      "expect": "rejected",
+      "got": "rejected",
+      "pass": true,
+      "storedClass": "char",
+      "storedSize": [
+        1,
+        5
+      ],
+      "legacyIsequal": false,
+      "why": "raw text: 1 \"failed\" member(s), 0 flat array value(s)"
+    },
+    {
+      "name": "malformed_empty_string",
+      "expect": "rejected",
+      "got": "rejected",
+      "pass": true,
+      "storedClass": "char",
+      "storedSize": [
+        0,
+        0
+      ],
+      "legacyIsequal": false,
+      "why": "raw text: 1 \"failed\" member(s), 0 flat array value(s)"
+    },
+    {
+      "name": "malformed_empty_name",
+      "expect": "rejected",
+      "got": "rejected",
+      "pass": true,
+      "storedClass": "cell",
+      "storedSize": [
+        1,
+        1
+      ],
+      "legacyIsequal": false,
+      "why": "raw text: failed is not an empty array or a list of strings"
+    },
+    {
+      "name": "malformed_unknown_name",
+      "expect": "rejected",
+      "got": "rejected",
+      "pass": true,
+      "storedClass": "cell",
+      "storedSize": [
+        1,
+        1
+      ],
+      "legacyIsequal": true,
+      "why": "stored list: name that is not a criterion"
+    },
+    {
+      "name": "malformed_duplicate_name",
+      "expect": "rejected",
+      "got": "rejected",
+      "pass": true,
+      "storedClass": "cell",
+      "storedSize": [
+        2,
+        1
+      ],
+      "legacyIsequal": false,
+      "why": "stored list: duplicate criterion names"
+    },
+    {
+      "name": "malformed_recomputed_numeric",
+      "expect": "rejected",
+      "got": "rejected",
+      "pass": true,
+      "storedClass": "double",
+      "storedSize": [
+        0,
+        0
+      ],
+      "legacyIsequal": false,
+      "why": "recomputed list: unsupported class double, size [1 2]"
+    },
+    {
+      "name": "malformed_null",
+      "expect": "rejected",
+      "got": "rejected",
+      "pass": true,
+      "storedClass": "double",
+      "storedSize": [
+        0,
+        0
+      ],
+      "legacyIsequal": false,
+      "why": "raw text: 1 \"failed\" member(s), 0 flat array value(s)"
+    },
+    {
+      "name": "malformed_missing_field",
+      "expect": "rejected",
+      "got": "rejected",
+      "pass": true,
+      "storedClass": "(absent)",
+      "storedSize": [],
+      "legacyIsequal": false,
+      "why": "raw text: 0 \"failed\" member(s), 0 flat array value(s)"
+    },
+    {
+      "name": "malformed_two_members",
+      "expect": "rejected",
+      "got": "rejected",
+      "pass": true,
+      "storedClass": "double",
+      "storedSize": [
+        0,
+        0
+      ],
+      "legacyIsequal": false,
+      "why": "raw text: 2 \"failed\" member(s), 2 flat array value(s)"
+    },
+    {
+      "name": "malformed_trailing_number",
+      "expect": "rejected",
+      "got": "rejected",
+      "pass": true,
+      "storedClass": "cell",
+      "storedSize": [
+        2,
+        1
+      ],
+      "legacyIsequal": false,
+      "why": "raw text: failed is not an empty array or a list of strings"
+    },
+    {
+      "name": "valid_hand_written_empty",
+      "expect": "equal",
+      "got": "equal",
+      "pass": true,
+      "storedClass": "double",
+      "storedSize": [
+        0,
+        0
+      ],
+      "legacyIsequal": false,
+      "why": ""
+    },
+    {
+      "name": "valid_hand_written_singleton",
+      "expect": "equal",
+      "got": "equal",
+      "pass": true,
+      "storedClass": "cell",
+      "storedSize": [
+        1,
+        1
+      ],
+      "legacyIsequal": true,
+      "why": ""
+    }
+  ],
+  "partAPassed": 32,
+  "partATotal": 32,
+  "defect": {
+    "storedClassAfterRoundTrip": "double",
+    "storedSizeAfterRoundTrip": [
+      0,
+      0
+    ],
+    "recomputedClass": "cell",
+    "recomputedSize": [
+      0,
+      1
+    ],
+    "historicalIsequal": false,
+    "corrected": true
+  },
+  "partB": [
+    {
+      "name": "m00_baseline_copy_no_reference",
+      "expectOutcome": "VERIFIED_V2",
+      "outcome": "VERIFIED_V2",
+      "expectTag": "",
+      "tagFound": true,
+      "pass": true,
+      "problems": " ||  ||  ||  || "
+    },
+    {
+      "name": "m01_baseline_copy_with_reference",
+      "expectOutcome": "VERIFIED_V2",
+      "outcome": "VERIFIED_V2",
+      "expectTag": "",
+      "tagFound": true,
+      "pass": true,
+      "problems": " ||  ||  ||  || "
+    },
+    {
+      "name": "m02_failed_nonempty_with_pass",
+      "expectOutcome": "VERIFY_HOLD_V2",
+      "outcome": "VERIFY_HOLD_V2",
+      "expectTag": "FAILED_LIST",
+      "tagFound": true,
+      "pass": true,
+      "problems": "EQ-soft2: FAILED_LIST: stored and recomputed failed lists differ | CONSISTENCY: stored failed list is not the set of false stored criteria ||  ||  || FAILED_LIST: stored and recomputed failed lists differ | CONSISTENCY: stored failed list is not the set of false stored criteria || "
+    },
+    {
+      "name": "m03_failed_null",
+      "expectOutcome": "VERIFY_HOLD_V2",
+      "outcome": "VERIFY_HOLD_V2",
+      "expectTag": "FAILED_LIST",
+      "tagFound": true,
+      "pass": true,
+      "problems": "EQ-soft2: FAILED_LIST: raw text: 1 \"failed\" member(s), 0 flat array value(s) ||  ||  || FAILED_LIST: raw text: 1 \"failed\" member(s), 0 flat array value(s) || "
+    },
+    {
+      "name": "m04_failed_numeric",
+      "expectOutcome": "VERIFY_HOLD_V2",
+      "outcome": "VERIFY_HOLD_V2",
+      "expectTag": "FAILED_LIST",
+      "tagFound": true,
+      "pass": true,
+      "problems": "EQ-soft2: FAILED_LIST: raw text: failed is not an empty array or a list of strings ||  ||  || FAILED_LIST: raw text: failed is not an empty array or a list of strings || "
+    },
+    {
+      "name": "m05_failed_object",
+      "expectOutcome": "VERIFY_HOLD_V2",
+      "outcome": "VERIFY_HOLD_V2",
+      "expectTag": "FAILED_LIST",
+      "tagFound": true,
+      "pass": true,
+      "problems": "EQ-soft2: FAILED_LIST: raw text: 1 \"failed\" member(s), 0 flat array value(s) ||  ||  || FAILED_LIST: raw text: 1 \"failed\" member(s), 0 flat array value(s) || "
+    },
+    {
+      "name": "m06_failed_duplicate_names",
+      "expectOutcome": "VERIFY_HOLD_V2",
+      "outcome": "VERIFY_HOLD_V2",
+      "expectTag": "FAILED_LIST",
+      "tagFound": true,
+      "pass": true,
+      "problems": "EQ-soft2: FAILED_LIST: stored list: duplicate criterion names ||  ||  || FAILED_LIST: stored list: duplicate criterion names || "
+    },
+    {
+      "name": "m07_failed_nested",
+      "expectOutcome": "VERIFY_HOLD_V2",
+      "outcome": "VERIFY_HOLD_V2",
+      "expectTag": "FAILED_LIST",
+      "tagFound": true,
+      "pass": true,
+      "problems": "EQ-soft2: FAILED_LIST: raw text: 1 \"failed\" member(s), 0 flat array value(s) ||  ||  || FAILED_LIST: raw text: 1 \"failed\" member(s), 0 flat array value(s) || "
+    },
+    {
+      "name": "m08_failed_bare_string",
+      "expectOutcome": "VERIFY_HOLD_V2",
+      "outcome": "VERIFY_HOLD_V2",
+      "expectTag": "FAILED_LIST",
+      "tagFound": true,
+      "pass": true,
+      "problems": "EQ-soft2: FAILED_LIST: raw text: 1 \"failed\" member(s), 0 flat array value(s) ||  ||  || FAILED_LIST: raw text: 1 \"failed\" member(s), 0 flat array value(s) || "
+    },
+    {
+      "name": "m09_failed_duplicate_member",
+      "expectOutcome": "VERIFY_HOLD_V2",
+      "outcome": "VERIFY_HOLD_V2",
+      "expectTag": "FAILED_LIST",
+      "tagFound": true,
+      "pass": true,
+      "problems": "EQ-soft2: FAILED_LIST: raw text: 2 \"failed\" member(s), 2 flat array value(s) ||  ||  || FAILED_LIST: raw text: 2 \"failed\" member(s), 2 flat array value(s) || "
+    },
+    {
+      "name": "m10_criterion_false_inconsistent",
+      "expectOutcome": "VERIFY_HOLD_V2",
+      "outcome": "VERIFY_HOLD_V2",
+      "expectTag": "CRITERION",
+      "tagFound": true,
+      "pass": true,
+      "problems": "EQ-H: CRITERION: C5_MTS differs from the recomputed value | CONSISTENCY: stored failed list is not the set of false stored criteria | PASS: stored pass differs from the recomputed pass or from all(stored criteria) || CRITERION: C5_MTS differs from the recomputed value | CONSISTENCY: stored failed list is not the set of false stored criteria | PASS: stored pass differs from the recomputed pass or from all(stored criteria) ||  ||  || "
+    },
+    {
+      "name": "m11_criterion_not_logical",
+      "expectOutcome": "VERIFY_HOLD_V2",
+      "outcome": "VERIFY_HOLD_V2",
+      "expectTag": "not a logical scalar",
+      "tagFound": true,
+      "pass": true,
+      "problems": "EQ-H: CRITERION: C1_KI is not a logical scalar | PASS: stored pass differs from the recomputed pass or from all(stored criteria) || CRITERION: C1_KI is not a logical scalar | PASS: stored pass differs from the recomputed pass or from all(stored criteria) ||  ||  || "
+    },
+    {
+      "name": "m12_pass_flag_false",
+      "expectOutcome": "VERIFY_HOLD_V2",
+      "outcome": "VERIFY_HOLD_V2",
+      "expectTag": "PASS",
+      "tagFound": true,
+      "pass": true,
+      "problems": "EQ-stiff13: PASS: stored pass differs from the recomputed pass or from all(stored criteria) ||  || PASS: stored pass differs from the recomputed pass or from all(stored criteria) ||  || "
+    },
+    {
+      "name": "m13_metric_perturbed_1e-6",
+      "expectOutcome": "VERIFY_HOLD_V2",
+      "outcome": "VERIFY_HOLD_V2",
+      "expectTag": "METRIC: dG_rel",
+      "tagFound": true,
+      "pass": true,
+      "problems": "EQ-soft1: METRIC: dG_rel differs from the recomputed value ||  ||  ||  || METRIC: dG_rel differs from the recomputed value"
+    },
+    {
+      "name": "m14_metric_renamed",
+      "expectOutcome": "VERIFY_HOLD_V2",
+      "outcome": "VERIFY_HOLD_V2",
+      "expectTag": "METRIC_SET",
+      "tagFound": true,
+      "pass": true,
+      "problems": "EQ-soft1: METRIC_SET: stored metric names differ from the recomputed ones | METRIC: dJ_rel missing ||  ||  ||  || METRIC_SET: stored metric names differ from the recomputed ones | METRIC: dJ_rel missing"
+    },
+    {
+      "name": "m15_metric_null",
+      "expectOutcome": "VERIFY_HOLD_V2",
+      "outcome": "VERIFY_HOLD_V2",
+      "expectTag": "not a finite numeric scalar",
+      "tagFound": true,
+      "pass": true,
+      "problems": "EQ-soft1: METRIC: dG_rel is not a finite numeric scalar ||  ||  ||  || METRIC: dG_rel is not a finite numeric scalar"
+    },
+    {
+      "name": "m16_manifest_file_deleted",
+      "expectOutcome": "VERIFY_HOLD_V2",
+      "outcome": "VERIFY_HOLD_V2",
+      "expectTag": "RECORD_SET",
+      "tagFound": true,
+      "pass": true,
+      "problems": "RECORD_SET: 1 expected file(s) missing || EQ-soft2: incomplete records ||  ||  || RECORD_SET: incomplete records || "
+    },
+    {
+      "name": "m17_extra_file",
+      "expectOutcome": "VERIFY_HOLD_V2",
+      "outcome": "VERIFY_HOLD_V2",
+      "expectTag": "unexpected file",
+      "tagFound": true,
+      "pass": true,
+      "problems": "RECORD_SET: 1 unexpected file(s) ||  ||  ||  || "
+    },
+    {
+      "name": "m18_solve_folder_missing",
+      "expectOutcome": "VERIFY_HOLD_V2",
+      "outcome": "VERIFY_HOLD_V2",
+      "expectTag": "missing",
+      "tagFound": true,
+      "pass": true,
+      "problems": "RECORD_SET: 6 expected file(s) missing || EQ-soft1: incomplete records ||  ||  ||  || RECORD_SET: incomplete records"
+    },
+    {
+      "name": "m19_mesh_link_broken",
+      "expectOutcome": "VERIFY_HOLD_V2",
+      "outcome": "VERIFY_HOLD_V2",
+      "expectTag": "LINKS",
+      "tagFound": true,
+      "pass": true,
+      "problems": "EQ-H: LINKS: a hash link, token, identifier or manifest check failed || LINKS: a hash link, token, identifier or manifest check failed ||  ||  || "
+    },
+    {
+      "name": "m20_manifest_sha_broken",
+      "expectOutcome": "VERIFY_HOLD_V2",
+      "outcome": "VERIFY_HOLD_V2",
+      "expectTag": "LINKS",
+      "tagFound": true,
+      "pass": true,
+      "problems": "EQ-soft2: LINKS: a hash link, token, identifier or manifest check failed ||  ||  || LINKS: a hash link, token, identifier or manifest check failed || "
+    },
+    {
+      "name": "m21_phase_file_modified",
+      "expectOutcome": "VERIFY_HOLD_V2",
+      "outcome": "VERIFY_HOLD_V2",
+      "expectTag": "LINKS",
+      "tagFound": true,
+      "pass": true,
+      "problems": "EQ-stiff13: LINKS: a hash link, token, identifier or manifest check failed ||  || LINKS: a hash link, token, identifier or manifest check failed ||  || "
+    },
+    {
+      "name": "m22_reference_detects_whitespace",
+      "expectOutcome": "VERIFY_HOLD_V2",
+      "outcome": "VERIFY_HOLD_V2",
+      "expectTag": "REFERENCE",
+      "tagFound": true,
+      "pass": true,
+      "problems": "REFERENCE: 2 file hash(es) differ from the committed reference ||  ||  ||  || "
+    }
+  ],
+  "partBPassed": 23,
+  "partBTotal": 23,
+  "physicalSolves": 0,
+  "stage": "tests",
+  "elapsed_s": 31.9900697,
+  "matlab": "9.14.0.2206163 (R2023a)"
+}

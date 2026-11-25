@@ -1,0 +1,108 @@
+{
+  "schema": "NewMetacomp.G2.LP2A2.EQ.Tests.v1",
+  "physicalSolves": 0,
+  "token": "G2LP2A2EQ|policy=d09f59b2f5865be18008452a68baa4845e81a034a34c251155a6e6f0e243db84|g2source=7e5683703bd104547ef5d013aa0253ad2819b59dc58693957e2d04b4707f0947|lp2source=357dfdcdb576d2866b9d1b41a14265300a14c30700d6475f995881041ba822ca|lp2a2source=f9c15e018960d2100b4df19bff4dd17f8f9657e68ce99a2695abc1bbb62b99d9|archivedS8=da951c99c0d8c1d5dd731986d8f3b30e3db3f71854166a634d35b739757def8d|solves=EQ-H,EQ-stiff13,EQ-soft2,EQ-soft1|limit=4",
+  "lp2a2SourceSHA256": "f9c15e018960d2100b4df19bff4dd17f8f9657e68ce99a2695abc1bbb62b99d9",
+  "policySHA256": "d09f59b2f5865be18008452a68baa4845e81a034a34c251155a6e6f0e243db84",
+  "passed": 24,
+  "total": 24,
+  "tests": [
+    {
+      "name": "E1_context_pins_token",
+      "pass": true
+    },
+    {
+      "name": "E2_identity_H",
+      "pass": true
+    },
+    {
+      "name": "E3_negative_KI",
+      "pass": true
+    },
+    {
+      "name": "E3_negative_KII",
+      "pass": true
+    },
+    {
+      "name": "E3_negative_J",
+      "pass": true
+    },
+    {
+      "name": "E3_negative_COD",
+      "pass": true
+    },
+    {
+      "name": "E3_negative_spread",
+      "pass": true
+    },
+    {
+      "name": "E3_negative_opening",
+      "pass": true
+    },
+    {
+      "name": "E3_negative_chords",
+      "pass": true
+    },
+    {
+      "name": "E3_negative_area",
+      "pass": true
+    },
+    {
+      "name": "E3_negative_S9tip",
+      "pass": true
+    },
+    {
+      "name": "E3_negative_compliance",
+      "pass": true
+    },
+    {
+      "name": "E2_identity_stiff13",
+      "pass": true
+    },
+    {
+      "name": "E2_identity_soft2",
+      "pass": true
+    },
+    {
+      "name": "E2_identity_soft1",
+      "pass": true
+    },
+    {
+      "name": "E4_contrast_identity",
+      "pass": true
+    },
+    {
+      "name": "E4_contrast_FG_shift",
+      "pass": true
+    },
+    {
+      "name": "E4_contrast_sign_flip",
+      "pass": true
+    },
+    {
+      "name": "E4_contrast_MTS_shift",
+      "pass": true
+    },
+    {
+      "name": "E5_refusal_without_GO",
+      "pass": true
+    },
+    {
+      "name": "E6_dry_EQ-H",
+      "pass": true
+    },
+    {
+      "name": "E6_dry_EQ-stiff13",
+      "pass": true
+    },
+    {
+      "name": "E6_dry_EQ-soft2",
+      "pass": true
+    },
+    {
+      "name": "E6_dry_EQ-soft1",
+      "pass": true
+    }
+  ],
+  "sourceCommit": "1200ddea2a13115d9a1e385c99a9a2ca5f14e285"
+}

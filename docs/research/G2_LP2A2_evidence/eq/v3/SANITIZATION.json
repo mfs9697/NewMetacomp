@@ -1,0 +1,25 @@
+{
+ "rule": "absolute local paths replaced by <repo> (execution clone), <worktree>, <scratch>, <user>; MATLAB startup path warnings removed; CRLF to LF",
+ "files": [
+  {
+   "file": "lp2a2_eqtests_v3.m",
+   "originalSHA256": "415383e7c5b9d50fe3cfa8f88d514f913ce66a2f2c83714befcd39e1011cc31f",
+   "sanitizedSHA256": "60166cf4c180ffc97478766401ffaad5abe89fab236a3cd9ffdc5f07fe2e11a1"
+  },
+  {
+   "file": "lp2a2_eqtests_v3.log",
+   "originalSHA256": "f2ee99aecdaddd8fe84d60626e2b87f6d34bd8c3b14b5e7e2543f8542766b97f",
+   "sanitizedSHA256": "0ef42eeaae75e9ba2ddb755db47d2fc7087e01e38a0de4adb3591d28b9c3e0d6"
+  },
+  {
+   "file": "LP2A2_EQ_A2_PRESTART_EXERCISE.json",
+   "originalSHA256": "f0a47330991edce9a74939bcc897522ed05f7c98a0102a5469c7d8b5dc4b1b0f",
+   "sanitizedSHA256": "8c662cb54a17fa81871adb1847aae94db3a3e911ea72d7ff07d9b8cc780ea9ef"
+  },
+  {
+   "file": "LP2A2_EQ_A2_PRESTART_EXERCISE_REFUSE.json",
+   "originalSHA256": "33673e1e107b8e905a62c78e7f64dce40d89c38c19d3b127ddbddf9394471354",
+   "sanitizedSHA256": "c6b357d8446cb6ad3a30caa6a3bf792d585133b7207313a2344b8fc94300804a"
+  }
+ ]
+}

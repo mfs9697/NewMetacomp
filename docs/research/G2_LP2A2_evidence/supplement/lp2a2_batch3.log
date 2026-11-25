@@ -1,0 +1,139 @@
+SOURCE_COMMIT=7481509e10aacc924cecc3dd2b2943be5cb7d0a2
+LP2A2_SUPP A_H_S8                       rung=1 det=1 forced=1 fail-diag=0
+LP2A2_SUPP B_H_S9                       rung=1 det=1 forced=1 fail-diag=0
+LP2A2_SUPP A_stiff13_S8                 rung=1 det=1 forced=1 fail-diag=0
+LP2A2_SUPP B_stiff13_S9                 rung=1 det=1 forced=1 fail-diag=0
+LP2A2_SUPP A_soft2_S8                   rung=1 det=1 forced=1 fail-diag=0
+LP2A2_SUPP B_soft2_S9                   rung=1 det=1 forced=1 fail-diag=0
+LP2A2_SUPP A_soft1_S8                   rung=1 det=1 forced=1 fail-diag=0
+LP2A2_SUPP B_soft1_S9                   rung=1 det=1 forced=1 fail-diag=0
+LP2A2_SUPP C1_H_frozenMTS_S6            rung=1 det=1 forced=1 fail-diag=0
+LP2A2_SUPP C1_H_frozenMTS_S7            rung=1 det=1 forced=1 fail-diag=0
+LP2A2_SUPP C1_H_frozenMTS_S8            rung=1 det=1 forced=1 fail-diag=0
+LP2A2_SUPP C1_H_frozenMTS_S9            rung=1 det=1 forced=1 fail-diag=0
+LP2A2_SUPP C1_H_frozenMTS_S10           rung=1 det=1 forced=1 fail-diag=0
+LP2A2_SUPP C1_H_frozenMTS_S11           rung=1 det=1 forced=1 fail-diag=0
+LP2A2_SUPP C1_H_straight_S6             rung=1 det=1 forced=1 fail-diag=0
+LP2A2_SUPP C1_H_straight_S7             rung=1 det=1 forced=1 fail-diag=0
+LP2A2_SUPP C1_H_straight_S8             rung=1 det=1 forced=1 fail-diag=0
+LP2A2_SUPP C1_H_straight_S9             rung=1 det=1 forced=1 fail-diag=0
+LP2A2_SUPP C1_H_straight_S10            rung=1 det=1 forced=1 fail-diag=0
+LP2A2_SUPP C1_H_straight_S11            rung=1 det=1 forced=1 fail-diag=0
+LP2A2_SUPP C1_H_straight_S12            rung=1 det=1 forced=1 fail-diag=0
+LP2A2_SUPP C1_H_straight_S13            rung=1 det=1 forced=1 fail-diag=0
+LP2A2_SUPP C1_H_straight_S14            rung=1 det=1 forced=1 fail-diag=0
+LP2A2_SUPP C1_H_straight_S15            rung=1 det=1 forced=1 fail-diag=0
+LP2A2_SUPP C1_H_straight_S16            rung=1 det=1 forced=1 fail-diag=0
+LP2A2_SUPP C1_H_straight_S17            rung=1 det=1 forced=1 fail-diag=0
+LP2A2_SUPP C1_H_straight_S18            rung=1 det=1 forced=1 fail-diag=0
+LP2A2_SUPP C1_H_straight_S19            rung=1 det=1 forced=1 fail-diag=0
+LP2A2_SUPP C1_stiff13_frozenMTS_S6      rung=1 det=1 forced=1 fail-diag=0
+LP2A2_SUPP C1_stiff13_frozenMTS_S7      rung=1 det=1 forced=1 fail-diag=0
+LP2A2_SUPP C1_stiff13_frozenMTS_S8      rung=1 det=1 forced=1 fail-diag=0
+LP2A2_SUPP C1_stiff13_frozenMTS_S9      rung=1 det=1 forced=1 fail-diag=0
+LP2A2_SUPP C1_stiff13_frozenMTS_S10     rung=1 det=1 forced=1 fail-diag=0
+LP2A2_SUPP C1_stiff13_frozenMTS_S11     rung=1 det=1 forced=1 fail-diag=0
+LP2A2_SUPP C1_stiff13_straight_S6       rung=1 det=1 forced=1 fail-diag=0
+LP2A2_SUPP C1_stiff13_straight_S7       rung=1 det=1 forced=1 fail-diag=0
+LP2A2_SUPP C1_stiff13_straight_S8       rung=1 det=1 forced=1 fail-diag=0
+LP2A2_SUPP C1_stiff13_straight_S9       rung=1 det=1 forced=1 fail-diag=0
+LP2A2_SUPP C1_stiff13_straight_S10      rung=1 det=1 forced=1 fail-diag=0
+LP2A2_SUPP C1_stiff13_straight_S11      rung=1 det=1 forced=1 fail-diag=0
+LP2A2_SUPP C1_stiff13_straight_S12      rung=1 det=1 forced=1 fail-diag=0
+LP2A2_SUPP C1_stiff13_straight_S13      rung=2 det=1 forced=1 fail-diag=0
+LP2A2_SUPP C1_stiff13_straight_S14      rung=1 det=1 forced=1 fail-diag=0
+LP2A2_SUPP C1_stiff13_straight_S15      rung=1 det=1 forced=1 fail-diag=0
+LP2A2_SUPP C1_stiff13_straight_S16      rung=1 det=1 forced=1 fail-diag=0
+LP2A2_SUPP C1_stiff13_straight_S17      rung=1 det=1 forced=1 fail-diag=0
+LP2A2_SUPP C1_stiff13_straight_S18      rung=1 det=1 forced=1 fail-diag=0
+LP2A2_SUPP C1_stiff13_straight_S19      rung=1 det=1 forced=1 fail-diag=0
+LP2A2_SUPP C1_soft2_frozenMTS_S6        rung=1 det=1 forced=1 fail-diag=0
+LP2A2_SUPP C1_soft2_frozenMTS_S7        rung=1 det=1 forced=1 fail-diag=0
+LP2A2_SUPP C1_soft2_frozenMTS_S8        rung=1 det=1 forced=1 fail-diag=0
+LP2A2_SUPP C1_soft2_frozenMTS_S9        rung=1 det=1 forced=1 fail-diag=0
+LP2A2_SUPP C1_soft2_frozenMTS_S10       rung=1 det=1 forced=1 fail-diag=0
+LP2A2_SUPP C1_soft2_frozenMTS_S11       rung=1 det=1 forced=1 fail-diag=0
+LP2A2_SUPP C1_soft2_straight_S6         rung=1 det=1 forced=1 fail-diag=0
+LP2A2_SUPP C1_soft2_straight_S7         rung=1 det=1 forced=1 fail-diag=0
+LP2A2_SUPP C1_soft2_straight_S8         rung=1 det=1 forced=1 fail-diag=0
+LP2A2_SUPP C1_soft2_straight_S9         rung=1 det=1 forced=1 fail-diag=0
+LP2A2_SUPP C1_soft2_straight_S10        rung=1 det=1 forced=1 fail-diag=0
+LP2A2_SUPP C1_soft2_straight_S11        rung=1 det=1 forced=1 fail-diag=0
+LP2A2_SUPP C1_soft2_straight_S12        rung=3 det=1 forced=1 fail-diag=0
+LP2A2_SUPP C1_soft2_straight_S13        rung=1 det=1 forced=1 fail-diag=0
+LP2A2_SUPP C1_soft2_straight_S14        rung=1 det=1 forced=1 fail-diag=0
+LP2A2_SUPP C1_soft2_straight_S15        rung=1 det=1 forced=1 fail-diag=0
+LP2A2_SUPP C1_soft2_straight_S16        rung=1 det=1 forced=1 fail-diag=0
+LP2A2_SUPP C1_soft2_straight_S17        rung=1 det=1 forced=1 fail-diag=0
+LP2A2_SUPP C1_soft2_straight_S18        rung=1 det=1 forced=1 fail-diag=0
+LP2A2_SUPP C1_soft2_straight_S19        rung=1 det=1 forced=1 fail-diag=0
+LP2A2_SUPP C1_soft1_frozenMTS_S6        rung=1 det=1 forced=1 fail-diag=0
+LP2A2_SUPP C1_soft1_frozenMTS_S7        rung=1 det=1 forced=1 fail-diag=0
+LP2A2_SUPP C1_soft1_frozenMTS_S8        rung=1 det=1 forced=1 fail-diag=0
+LP2A2_SUPP C1_soft1_frozenMTS_S9        rung=1 det=1 forced=1 fail-diag=0
+LP2A2_SUPP C1_soft1_frozenMTS_S10       rung=1 det=1 forced=1 fail-diag=0
+LP2A2_SUPP C1_soft1_frozenMTS_S11       rung=1 det=1 forced=1 fail-diag=0
+LP2A2_SUPP C1_soft1_frozenMTS_S12       rung=4 det=1 forced=0 fail-diag=1
+LP2A2_SUPP C1_soft1_straight_S6         rung=1 det=1 forced=1 fail-diag=0
+LP2A2_SUPP C1_soft1_straight_S7         rung=1 det=1 forced=1 fail-diag=0
+LP2A2_SUPP C1_soft1_straight_S8         rung=1 det=1 forced=1 fail-diag=0
+LP2A2_SUPP C1_soft1_straight_S9         rung=1 det=1 forced=1 fail-diag=0
+LP2A2_SUPP C1_soft1_straight_S10        rung=1 det=1 forced=1 fail-diag=0
+LP2A2_SUPP C1_soft1_straight_S11        rung=1 det=1 forced=1 fail-diag=0
+LP2A2_SUPP C1_soft1_straight_S12        rung=2 det=1 forced=1 fail-diag=0
+LP2A2_SUPP C1_soft1_straight_S13        rung=1 det=1 forced=1 fail-diag=0
+LP2A2_SUPP C1_soft1_straight_S14        rung=1 det=1 forced=1 fail-diag=0
+LP2A2_SUPP C1_soft1_straight_S15        rung=1 det=1 forced=1 fail-diag=0
+LP2A2_SUPP C1_soft1_straight_S16        rung=1 det=1 forced=1 fail-diag=0
+LP2A2_SUPP C1_soft1_straight_S17        rung=1 det=1 forced=1 fail-diag=0
+LP2A2_SUPP C1_soft1_straight_S18        rung=1 det=1 forced=1 fail-diag=0
+LP2A2_SUPP C1_soft1_straight_S19        rung=1 det=1 forced=1 fail-diag=0
+LP2A2_SUPP C1_soft1_straight_S20        rung=1 det=1 forced=1 fail-diag=1
+LP2A2_SUPP C2_H_straight_S10            rung=1 det=1 forced=1 fail-diag=0
+LP2A2_SUPP C2_H_straight_S11            rung=1 det=1 forced=1 fail-diag=0
+LP2A2_SUPP C2_H_straight_S12            rung=1 det=1 forced=1 fail-diag=0
+LP2A2_SUPP C2_H_frozen_S10              rung=1 det=1 forced=1 fail-diag=0
+LP2A2_SUPP C2_H_frozen_S11              rung=1 det=1 forced=1 fail-diag=0
+LP2A2_SUPP C2_stiff13_straight_S10      rung=2 det=1 forced=1 fail-diag=0
+LP2A2_SUPP C2_stiff13_straight_S11      rung=2 det=1 forced=1 fail-diag=0
+LP2A2_SUPP C2_stiff13_straight_S12      rung=4 det=1 forced=0 fail-diag=1
+LP2A2_SUPP C2_stiff13_frozen_S10        rung=1 det=1 forced=1 fail-diag=0
+LP2A2_SUPP C2_stiff13_frozen_S11        rung=1 det=1 forced=1 fail-diag=0
+LP2A2_SUPP C2_soft2_straight_S10        rung=1 det=1 forced=1 fail-diag=0
+LP2A2_SUPP C2_soft2_straight_S11        rung=1 det=1 forced=1 fail-diag=0
+LP2A2_SUPP C2_soft2_straight_S12        rung=4 det=1 forced=0 fail-diag=1
+LP2A2_SUPP C2_soft2_frozen_S10          rung=1 det=1 forced=1 fail-diag=0
+LP2A2_SUPP C2_soft2_frozen_S11          rung=1 det=1 forced=1 fail-diag=0
+LP2A2_SUPP C2_soft1_straight_S10        rung=1 det=1 forced=1 fail-diag=0
+LP2A2_SUPP C2_soft1_straight_S11        rung=1 det=1 forced=1 fail-diag=0
+LP2A2_SUPP C2_soft1_straight_S12        rung=1 det=1 forced=1 fail-diag=0
+LP2A2_SUPP C2_soft1_frozen_S10          rung=1 det=1 forced=1 fail-diag=0
+LP2A2_SUPP C2_soft1_frozen_S11          rung=1 det=1 forced=1 fail-diag=0
+LP2A2_SUPP C2_soft1_frozen_S12          rung=4 det=1 forced=0 fail-diag=1
+LP2A2_SUPP C3_H_zigzag2_S10             rung=1 det=1 forced=1 fail-diag=0
+LP2A2_SUPP C3_H_zigzag2_S11             rung=1 det=1 forced=1 fail-diag=0
+LP2A2_SUPP C3_H_zigzag2_S12             rung=1 det=1 forced=1 fail-diag=0
+LP2A2_SUPP C3_H_zigzag5_S10             rung=1 det=1 forced=1 fail-diag=0
+LP2A2_SUPP C3_H_zigzag5_S11             rung=1 det=1 forced=1 fail-diag=0
+LP2A2_SUPP C3_H_zigzag5_S12             rung=1 det=1 forced=1 fail-diag=0
+SUPP_DONE 117 rows 451.7 s
+G2_KEXT_NATIVE_T3=27096
+G2_KEXT_RIM_NODES=65
+G2_KB_VENDOR_LOCAL_GATES=15/15
+G2_KB_GATES=12/12 TURN=-1.3051972287 MIN_ANGLE=30.126847 RATIO=1.591829 Q=2443
+G2_KEXT_NATIVE_T3=27257
+G2_KEXT_RIM_NODES=65
+G2_KJOIN_GATES=13/13
+G2_KJOIN_T3=30173 T6_NODES=61391 MIN_ANGLE=30.126847 MAX_RATIO=1.601463
+matlab.exe : FIG_ERROR MATLAB:badsubscript: Index in position 1 exceeds array bounds. Index must not exceed 15608.
+At <scratch>
+ls\runml.ps1:12 char:3
++   & $exe -batch ("run('" + $Script.Replace("'", "''") + "')") *> $log
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (FIG_ERROR MATLA...t exceed 15608.:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+    file: '<repo>\scripts\g2\lp2a2\lp2a2_figures.m'
+    name: 'lp2a2_figures'
+    line: 69
+

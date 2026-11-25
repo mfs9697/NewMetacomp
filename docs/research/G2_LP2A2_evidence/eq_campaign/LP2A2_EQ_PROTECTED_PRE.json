@@ -1,0 +1,13 @@
+{
+ "schema": "NewMetacomp.G2.LP2A2.EQ.ProtectedCheck.v1",
+ "protectedTreeFiles": 541,
+ "protectedTreeSHA256": "20f2d54fb59395f373b7c7f7ea4437d69fbdf3be8a8710b96077881c049218ef",
+ "protectedTreeEqualsReference": true,
+ "lp2a1RunLedgerFiles": 158,
+ "lp2a1RunLedgerEqualsManifest": true,
+ "extraFilesInLp2a1Roots": [],
+ "missingFilesInLp2a1Roots": [],
+ "changedFilesInLp2a1Roots": [],
+ "totalProtectedFiles": 699,
+ "pass": true
+}

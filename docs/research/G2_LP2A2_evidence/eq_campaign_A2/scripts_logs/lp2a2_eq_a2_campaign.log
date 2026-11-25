@@ -1,0 +1,143 @@
+A2_ENTRY_CALL g2_lp2a2_eq_external_run start 2026-11-25 21:23:35 which=<repo>\matlab\g2\lp2a2\g2_lp2a2_eq_external_run.m
+A2 head=820efd48339f69a6d1adcfbca15c4995ff81a916 parent=a4561f88dfeda31752ae6c268d2d4d74e16b60a7 approved=a4561f88dfeda31752ae6c268d2d4d74e16b60a7 statuses=[0 0 0] changed=[matlab/g2/lp2a2/G2_LP2A2_EQ_GO.json] pass=1
+A2 ram=7.484 memgate=1 engines=1 release=2023a token=1 goValidate=1 failed=[]
+A2_CALL g2_lp2a2_eq_campaign start 21:23:41
+G2_KB_VENDOR_LOCAL_GATES=15/15
+G2_KB_GATES=12/12 TURN=-1.3443345492 MIN_ANGLE=30.126847 RATIO=1.591829 Q=2443
+G2_KEXT_NATIVE_T3=27057
+G2_KEXT_RIM_NODES=65
+G2_KJOIN_GATES=13/13
+G2_KJOIN_T3=29973 T6_NODES=60973 MIN_ANGLE=30.126847 MAX_RATIO=1.591829
+G2_KINKED_AUDIT_GATES=34/34
+G2_KINKED_AUDIT_PASS=1
+G2_M2_ADAPTER LP1 pass=1 added=[] banks=301 side-checked U/L 572/571
+PHASE_MAP pass=1 PHASE_MAP_TOPOLOGICAL_OK: 17735 matrix + 12238 reinforcement elements; chords per circle [76 76 76].
+PHASE_VERIFY pass=1 failed=[]
+PHASE_NEG N1_swapped_labels                    mapper=1 (PHASE_MAP_TOPOLOGICAL_OK) verifier=0 [labelsMatchGeometry,annulusAreaIdentity,matrixConnected,bandsConnected,tipGuideMatrixOnly,qSupportMatrixOnly] -> rejected=1
+PHASE_NEG N2_band_element_relabelled_matrix    mapper=1 (PHASE_MAP_TOPOLOGICAL_OK) verifier=0 [labelsMatchGeometry,interfaceChordsTwoOwnersMixed,noOtherMixedEdges,annulusAreaIdentity] -> rejected=1
+PHASE_NEG N3_matrix_element_relabelled_band    mapper=1 (PHASE_MAP_TOPOLOGICAL_OK) verifier=0 [labelsMatchGeometry,interfaceChordsTwoOwnersMixed,noOtherMixedEdges,annulusAreaIdentity] -> rejected=1
+PHASE_NEG N4_detached_interface                mapper=0 (HOLD_INTERFACE_DUPLICATE_ANGLE) verifier=0 [interfaceChordsTwoOwnersMixed,noOtherMixedEdges,coincidentNodesOnlyRegisteredTwins] -> rejected=1
+PHASE_NEG N5_nonconforming_interface           mapper=0 (HOLD_INTERFACE_NONCONFORMING) verifier=0 [noStraddle,labelsMatchGeometry,interfaceChordsTwoOwnersMixed,noOtherMixedEdges,annulusAreaIdentity] -> rejected=1
+PHASE_NEG N6_filled_void                       mapper=1 (PHASE_MAP_TOPOLOGICAL_OK) verifier=0 [noVoidPenetration,annulusAreaIdentity,domainAreaIdentity,coincidentNodesOnlyRegisteredTwins] -> rejected=1
+PHASE_NEG N7_q_domain_crossing_band            mapper=1 (PHASE_MAP_TOPOLOGICAL_OK) verifier=0 [qSupportMatrixOnly] -> rejected=1
+PHASE_NEG N9_band_label_in_tip_guide           mapper=1 (PHASE_MAP_TOPOLOGICAL_OK) verifier=0 [labelsMatchGeometry,noOtherMixedEdges,annulusAreaIdentity,bandsConnected,tipGuideMatrixOnly] -> rejected=1
+G2_MATERIAL_PHASE_NEGATIVES_PASS=1 (8 cases)
+M2_PHASE_NEG tip-to-band 24.323 mm: PR35 N7(45 mm) expected rejected=1 observed=1; N7s(25.323 mm) rejected=1; others rejected=1 -> pass=1
+  N1_wrong_mask              expect phaseFromMask            rejected=1 failed=[phaseFromMask,inactiveAndMatrixLabelOne,activeChordsCarryJump,passiveChordsNoJump]
+  N2_swapped_ring_ids        expect oracleAgreement          rejected=1 failed=[oracleAgreement,interfaceIdsOneToOne,activeChordsCarryJump,passiveChordsNoJump]
+  N3_swapped_centre_order    expect centresAscendingY        rejected=1 failed=[oracleAgreement,centresAscendingY,interfaceIdsOneToOne,activeChordsCarryJump,passiveChordsNoJump]
+  N4_off_band_E              expect phaseFromMask            rejected=1 failed=[phaseFromMask,inactiveAndMatrixLabelOne,activeAreaIdentity,activeChordsCarryJump,jumpEdgeCount]
+  N5_ring_element_dropped    expect oracleAgreement          rejected=1 failed=[oracleAgreement,ringAreaIdentity,jumpEdgeCount,ringsAndMatrixConnected]
+  N6_detached_midside        expect chordsConforming         rejected=1 failed=[chordsConforming,coincidentOnlyTwins]
+  N7_q_reaches_ring          expect qSupportOwnerFree        rejected=1 failed=[qSupportOwnerFree,qClearance]
+  N8_node_in_hole            expect noVoidFilling            rejected=1 failed=[oraclePass,noVoidFilling]
+  N9_wrong_modulus           expect materialsAdmissible      rejected=1 failed=[materialsAdmissible]
+  N10_inactive_ring_jump     expect passiveChordsNoJump      rejected=1 failed=[phaseFromMask,inactiveAndMatrixLabelOne,activeAreaIdentity,passiveChordsNoJump,jumpEdgeCount]
+M4B_ACTIVATION_NEGATIVES positive=1, rejected 10/10 -> pass=1
+G2_M4B_SIF bits=000 pass=1 KI=0.289249737 KII=+0.00324072467 MPa sqrt(m)/kN, COD 0.286710749 / +0.00319193018, C=0.000232720687 mm/N
+G2_KB_VENDOR_LOCAL_GATES=15/15
+G2_KB_GATES=12/12 TURN=-1.0634473440 MIN_ANGLE=30.126847 RATIO=1.591829 Q=2443
+G2_KEXT_NATIVE_T3=27065
+G2_KEXT_RIM_NODES=65
+G2_KJOIN_GATES=13/13
+G2_KJOIN_T3=29981 T6_NODES=60989 MIN_ANGLE=30.126847 MAX_RATIO=1.591829
+G2_KINKED_AUDIT_GATES=34/34
+G2_KINKED_AUDIT_PASS=1
+G2_M2_ADAPTER LP1 pass=1 added=[] banks=301 side-checked U/L 571/571
+PHASE_MAP pass=1 PHASE_MAP_TOPOLOGICAL_OK: 17729 matrix + 12252 reinforcement elements; chords per circle [76 76 76].
+PHASE_VERIFY pass=1 failed=[]
+PHASE_NEG N1_swapped_labels                    mapper=1 (PHASE_MAP_TOPOLOGICAL_OK) verifier=0 [labelsMatchGeometry,annulusAreaIdentity,matrixConnected,bandsConnected,tipGuideMatrixOnly,qSupportMatrixOnly] -> rejected=1
+PHASE_NEG N2_band_element_relabelled_matrix    mapper=1 (PHASE_MAP_TOPOLOGICAL_OK) verifier=0 [labelsMatchGeometry,interfaceChordsTwoOwnersMixed,noOtherMixedEdges,annulusAreaIdentity] -> rejected=1
+PHASE_NEG N3_matrix_element_relabelled_band    mapper=1 (PHASE_MAP_TOPOLOGICAL_OK) verifier=0 [labelsMatchGeometry,interfaceChordsTwoOwnersMixed,noOtherMixedEdges,annulusAreaIdentity] -> rejected=1
+PHASE_NEG N4_detached_interface                mapper=0 (HOLD_INTERFACE_DUPLICATE_ANGLE) verifier=0 [interfaceChordsTwoOwnersMixed,noOtherMixedEdges,coincidentNodesOnlyRegisteredTwins] -> rejected=1
+PHASE_NEG N5_nonconforming_interface           mapper=0 (HOLD_INTERFACE_NONCONFORMING) verifier=0 [noStraddle,labelsMatchGeometry,interfaceChordsTwoOwnersMixed,noOtherMixedEdges,annulusAreaIdentity] -> rejected=1
+PHASE_NEG N6_filled_void                       mapper=1 (PHASE_MAP_TOPOLOGICAL_OK) verifier=0 [noVoidPenetration,annulusAreaIdentity,domainAreaIdentity,coincidentNodesOnlyRegisteredTwins] -> rejected=1
+PHASE_NEG N7_q_domain_crossing_band            mapper=1 (PHASE_MAP_TOPOLOGICAL_OK) verifier=0 [qSupportMatrixOnly] -> rejected=1
+PHASE_NEG N9_band_label_in_tip_guide           mapper=1 (PHASE_MAP_TOPOLOGICAL_OK) verifier=0 [labelsMatchGeometry,noOtherMixedEdges,annulusAreaIdentity,bandsConnected,tipGuideMatrixOnly] -> rejected=1
+G2_MATERIAL_PHASE_NEGATIVES_PASS=1 (8 cases)
+M2_PHASE_NEG tip-to-band 24.096 mm: PR35 N7(45 mm) expected rejected=1 observed=1; N7s(25.096 mm) rejected=1; others rejected=1 -> pass=1
+  N1_wrong_mask              expect phaseFromMask            rejected=1 failed=[phaseFromMask,inactiveAndMatrixLabelOne,activeChordsCarryJump,passiveChordsNoJump]
+  N2_swapped_ring_ids        expect oracleAgreement          rejected=1 failed=[oracleAgreement,interfaceIdsOneToOne,activeChordsCarryJump,passiveChordsNoJump]
+  N3_swapped_centre_order    expect centresAscendingY        rejected=1 failed=[oracleAgreement,centresAscendingY,interfaceIdsOneToOne,activeChordsCarryJump,passiveChordsNoJump]
+  N4_off_band_E              expect phaseFromMask            rejected=1 failed=[phaseFromMask,inactiveAndMatrixLabelOne,activeAreaIdentity,activeChordsCarryJump,jumpEdgeCount]
+  N5_ring_element_dropped    expect oracleAgreement          rejected=1 failed=[oracleAgreement,ringAreaIdentity,jumpEdgeCount,ringsAndMatrixConnected]
+  N6_detached_midside        expect chordsConforming         rejected=1 failed=[chordsConforming,coincidentOnlyTwins]
+  N7_q_reaches_ring          expect qSupportOwnerFree        rejected=1 failed=[qSupportOwnerFree,qClearance]
+  N8_node_in_hole            expect noVoidFilling            rejected=1 failed=[oraclePass,noVoidFilling]
+  N9_wrong_modulus           expect materialsAdmissible      rejected=1 failed=[materialsAdmissible]
+  N10_inactive_ring_jump     expect passiveChordsNoJump      rejected=1 failed=[phaseFromMask,inactiveAndMatrixLabelOne,activeAreaIdentity,passiveChordsNoJump,jumpEdgeCount]
+M4B_ACTIVATION_NEGATIVES positive=1, rejected 10/10 -> pass=1
+G2_M4B_SIF bits=101 pass=1 KI=0.27296469 KII=+0.00214562365 MPa sqrt(m)/kN, COD 0.270563676 / +0.00211481543, C=0.000230032199 mm/N
+G2_KB_VENDOR_LOCAL_GATES=15/15
+G2_KB_GATES=12/12 TURN=-1.3680422366 MIN_ANGLE=30.126847 RATIO=1.591829 Q=2443
+G2_KEXT_NATIVE_T3=27085
+G2_KEXT_RIM_NODES=65
+G2_KJOIN_GATES=13/13
+G2_KJOIN_T3=30001 T6_NODES=61029 MIN_ANGLE=30.126847 MAX_RATIO=1.591829
+G2_KINKED_AUDIT_GATES=34/34
+G2_KINKED_AUDIT_PASS=1
+G2_M2_ADAPTER LP1 pass=1 added=[] banks=301 side-checked U/L 572/571
+PHASE_MAP pass=1 PHASE_MAP_TOPOLOGICAL_OK: 17741 matrix + 12260 reinforcement elements; chords per circle [76 76 76].
+PHASE_VERIFY pass=1 failed=[]
+PHASE_NEG N1_swapped_labels                    mapper=1 (PHASE_MAP_TOPOLOGICAL_OK) verifier=0 [labelsMatchGeometry,annulusAreaIdentity,matrixConnected,bandsConnected,tipGuideMatrixOnly,qSupportMatrixOnly] -> rejected=1
+PHASE_NEG N2_band_element_relabelled_matrix    mapper=1 (PHASE_MAP_TOPOLOGICAL_OK) verifier=0 [labelsMatchGeometry,interfaceChordsTwoOwnersMixed,noOtherMixedEdges,annulusAreaIdentity] -> rejected=1
+PHASE_NEG N3_matrix_element_relabelled_band    mapper=1 (PHASE_MAP_TOPOLOGICAL_OK) verifier=0 [labelsMatchGeometry,interfaceChordsTwoOwnersMixed,noOtherMixedEdges,annulusAreaIdentity] -> rejected=1
+PHASE_NEG N4_detached_interface                mapper=0 (HOLD_INTERFACE_DUPLICATE_ANGLE) verifier=0 [interfaceChordsTwoOwnersMixed,noOtherMixedEdges,coincidentNodesOnlyRegisteredTwins] -> rejected=1
+PHASE_NEG N5_nonconforming_interface           mapper=0 (HOLD_INTERFACE_NONCONFORMING) verifier=0 [noStraddle,labelsMatchGeometry,interfaceChordsTwoOwnersMixed,noOtherMixedEdges,annulusAreaIdentity] -> rejected=1
+PHASE_NEG N6_filled_void                       mapper=1 (PHASE_MAP_TOPOLOGICAL_OK) verifier=0 [noVoidPenetration,annulusAreaIdentity,domainAreaIdentity,coincidentNodesOnlyRegisteredTwins] -> rejected=1
+PHASE_NEG N7_q_domain_crossing_band            mapper=1 (PHASE_MAP_TOPOLOGICAL_OK) verifier=0 [qSupportMatrixOnly] -> rejected=1
+PHASE_NEG N9_band_label_in_tip_guide           mapper=1 (PHASE_MAP_TOPOLOGICAL_OK) verifier=0 [labelsMatchGeometry,noOtherMixedEdges,annulusAreaIdentity,bandsConnected,tipGuideMatrixOnly] -> rejected=1
+G2_MATERIAL_PHASE_NEGATIVES_PASS=1 (8 cases)
+M2_PHASE_NEG tip-to-band 24.158 mm: PR35 N7(45 mm) expected rejected=1 observed=1; N7s(25.158 mm) rejected=1; others rejected=1 -> pass=1
+  N1_wrong_mask              expect phaseFromMask            rejected=1 failed=[phaseFromMask,inactiveAndMatrixLabelOne,activeChordsCarryJump,passiveChordsNoJump]
+  N2_swapped_ring_ids        expect oracleAgreement          rejected=1 failed=[oracleAgreement,interfaceIdsOneToOne,activeChordsCarryJump,passiveChordsNoJump]
+  N3_swapped_centre_order    expect centresAscendingY        rejected=1 failed=[oracleAgreement,centresAscendingY,interfaceIdsOneToOne,activeChordsCarryJump,passiveChordsNoJump]
+  N4_off_band_E              expect phaseFromMask            rejected=1 failed=[phaseFromMask,inactiveAndMatrixLabelOne,activeAreaIdentity,activeChordsCarryJump,jumpEdgeCount]
+  N5_ring_element_dropped    expect oracleAgreement          rejected=1 failed=[oracleAgreement,ringAreaIdentity,jumpEdgeCount,ringsAndMatrixConnected]
+  N6_detached_midside        expect chordsConforming         rejected=1 failed=[chordsConforming,coincidentOnlyTwins]
+  N7_q_reaches_ring          expect qSupportOwnerFree        rejected=1 failed=[qSupportOwnerFree,qClearance]
+  N8_node_in_hole            expect noVoidFilling            rejected=1 failed=[oraclePass,noVoidFilling]
+  N9_wrong_modulus           expect materialsAdmissible      rejected=1 failed=[materialsAdmissible]
+  N10_inactive_ring_jump     expect passiveChordsNoJump      rejected=1 failed=[phaseFromMask,inactiveAndMatrixLabelOne,activeAreaIdentity,passiveChordsNoJump,jumpEdgeCount]
+M4B_ACTIVATION_NEGATIVES positive=1, rejected 10/10 -> pass=1
+G2_M4B_SIF bits=010 pass=1 KI=0.287088565 KII=+0.00327091229 MPa sqrt(m)/kN, COD 0.284568427 / +0.00322154852, C=0.000233276624 mm/N
+G2_KB_VENDOR_LOCAL_GATES=15/15
+G2_KB_GATES=12/12 TURN=-1.6384886675 MIN_ANGLE=30.126847 RATIO=1.591829 Q=2443
+G2_KEXT_NATIVE_T3=27105
+G2_KEXT_RIM_NODES=65
+G2_KJOIN_GATES=13/13
+G2_KJOIN_T3=30021 T6_NODES=61069 MIN_ANGLE=30.126847 MAX_RATIO=1.591829
+G2_KINKED_AUDIT_GATES=34/34
+G2_KINKED_AUDIT_PASS=1
+G2_M2_ADAPTER LP1 pass=1 added=[] banks=301 side-checked U/L 571/571
+PHASE_MAP pass=1 PHASE_MAP_TOPOLOGICAL_OK: 17763 matrix + 12258 reinforcement elements; chords per circle [76 76 76].
+PHASE_VERIFY pass=1 failed=[]
+PHASE_NEG N1_swapped_labels                    mapper=1 (PHASE_MAP_TOPOLOGICAL_OK) verifier=0 [labelsMatchGeometry,annulusAreaIdentity,matrixConnected,bandsConnected,tipGuideMatrixOnly,qSupportMatrixOnly] -> rejected=1
+PHASE_NEG N2_band_element_relabelled_matrix    mapper=1 (PHASE_MAP_TOPOLOGICAL_OK) verifier=0 [labelsMatchGeometry,interfaceChordsTwoOwnersMixed,noOtherMixedEdges,annulusAreaIdentity] -> rejected=1
+PHASE_NEG N3_matrix_element_relabelled_band    mapper=1 (PHASE_MAP_TOPOLOGICAL_OK) verifier=0 [labelsMatchGeometry,interfaceChordsTwoOwnersMixed,noOtherMixedEdges,annulusAreaIdentity] -> rejected=1
+PHASE_NEG N4_detached_interface                mapper=0 (HOLD_INTERFACE_DUPLICATE_ANGLE) verifier=0 [interfaceChordsTwoOwnersMixed,noOtherMixedEdges,coincidentNodesOnlyRegisteredTwins] -> rejected=1
+PHASE_NEG N5_nonconforming_interface           mapper=0 (HOLD_INTERFACE_NONCONFORMING) verifier=0 [noStraddle,labelsMatchGeometry,interfaceChordsTwoOwnersMixed,noOtherMixedEdges,annulusAreaIdentity] -> rejected=1
+PHASE_NEG N6_filled_void                       mapper=1 (PHASE_MAP_TOPOLOGICAL_OK) verifier=0 [noVoidPenetration,annulusAreaIdentity,domainAreaIdentity,coincidentNodesOnlyRegisteredTwins] -> rejected=1
+PHASE_NEG N7_q_domain_crossing_band            mapper=1 (PHASE_MAP_TOPOLOGICAL_OK) verifier=0 [qSupportMatrixOnly] -> rejected=1
+PHASE_NEG N9_band_label_in_tip_guide           mapper=1 (PHASE_MAP_TOPOLOGICAL_OK) verifier=0 [labelsMatchGeometry,noOtherMixedEdges,annulusAreaIdentity,bandsConnected,tipGuideMatrixOnly] -> rejected=1
+G2_MATERIAL_PHASE_NEGATIVES_PASS=1 (8 cases)
+M2_PHASE_NEG tip-to-band 24.732 mm: PR35 N7(45 mm) expected rejected=1 observed=1; N7s(25.732 mm) rejected=1; others rejected=1 -> pass=1
+  N1_wrong_mask              expect phaseFromMask            rejected=1 failed=[phaseFromMask,inactiveAndMatrixLabelOne,activeChordsCarryJump,passiveChordsNoJump]
+  N2_swapped_ring_ids        expect oracleAgreement          rejected=1 failed=[oracleAgreement,interfaceIdsOneToOne,activeChordsCarryJump,passiveChordsNoJump]
+  N3_swapped_centre_order    expect centresAscendingY        rejected=1 failed=[oracleAgreement,centresAscendingY,interfaceIdsOneToOne,activeChordsCarryJump,passiveChordsNoJump]
+  N4_off_band_E              expect phaseFromMask            rejected=1 failed=[phaseFromMask,inactiveAndMatrixLabelOne,activeAreaIdentity,activeChordsCarryJump,jumpEdgeCount]
+  N5_ring_element_dropped    expect oracleAgreement          rejected=1 failed=[oracleAgreement,ringAreaIdentity,jumpEdgeCount,ringsAndMatrixConnected]
+  N6_detached_midside        expect chordsConforming         rejected=1 failed=[chordsConforming,coincidentOnlyTwins]
+  N7_q_reaches_ring          expect qSupportOwnerFree        rejected=1 failed=[qSupportOwnerFree,qClearance]
+  N8_node_in_hole            expect noVoidFilling            rejected=1 failed=[oraclePass,noVoidFilling]
+  N9_wrong_modulus           expect materialsAdmissible      rejected=1 failed=[materialsAdmissible]
+  N10_inactive_ring_jump     expect passiveChordsNoJump      rejected=1 failed=[phaseFromMask,inactiveAndMatrixLabelOne,activeAreaIdentity,passiveChordsNoJump,jumpEdgeCount]
+M4B_ACTIVATION_NEGATIVES positive=1, rejected 10/10 -> pass=1
+G2_M4B_SIF bits=100 pass=1 KI=0.304362797 KII=+0.0044391458 MPa sqrt(m)/kN, COD 0.301697206 / +0.00437063933, C=0.000234486415 mm/N
+A2_RESULT outcome=EQUIVALENT stoppedAt= reason= solvesCalled=4 wrapperCalled=1 wall=60.0s
+A2_SOLVE EQ-H stage=SOLVED_COMPARED comparisonPass=1 failed=[] KI=0.00914687981634 KII=0.00010248071225
+A2_SOLVE EQ-stiff13 stage=SOLVED_COMPARED comparisonPass=1 failed=[] KI=0.00863190141949 KII=6.78505773431e-05
+A2_SOLVE EQ-soft2 stage=SOLVED_COMPARED comparisonPass=1 failed=[] KI=0.00907853756346 KII=0.000103435328747
+A2_SOLVE EQ-soft1 stage=SOLVED_COMPARED comparisonPass=1 failed=[] KI=0.00962479674665 KII=0.000140378116074
+A2_ENTRY_RETURN outcome=EQUIVALENT solvesCalled=4 wrapperCalled=1
+A2_ENTRY_END 2026-11-25 21:24:36

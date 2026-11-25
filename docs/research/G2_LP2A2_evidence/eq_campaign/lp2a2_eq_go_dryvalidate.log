@@ -1,0 +1,9 @@
+DRY head=91667cfb2b170de782af8ef9bcf8e66674e3caa4
+DRY HEAD^ (unquoted, as in the validator)=91667cfb2b170de782af8ef9bcf8e66674e3caa4
+DRY "HEAD^" quoted=4d3701e1ccc91b7512db9052c927f32af52e2479
+DRY HEAD~1=4d3701e1ccc91b7512db9052c927f32af52e2479
+DRY changed=matlab/g2/lp2a2/G2_LP2A2_EQ_GO.json
+DRY validator(default git): pass=0 failed=[activationBinding]
+DRY diagnostic (quoted caret, NOT used): pass=1 failed=[]
+DRY verify outcome=NO_RECORDS outputRootExists=0 physicalSolves=0
+DRY_DONE gitClean=1

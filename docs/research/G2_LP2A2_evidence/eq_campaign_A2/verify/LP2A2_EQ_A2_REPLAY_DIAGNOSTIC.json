@@ -1,0 +1,196 @@
+{
+  "schema": "NewMetacomp.G2.LP2A2.EQ.ReplayDiagnostic.v1",
+  "emptyProbe": {
+    "isequal_cell1x0_double1x0": false,
+    "isequal_cell1x0_double0x0": false,
+    "jsondecodeEmptyArrayClass": "double"
+  },
+  "solves": [
+    {
+      "solveId": "EQ-H",
+      "recomputedPass": true,
+      "storedPass": true,
+      "recomputedFailedClass": "cell",
+      "recomputedFailedSize": [
+        1,
+        0
+      ],
+      "storedFailedClass": "double",
+      "storedFailedSize": [
+        1,
+        0
+      ],
+      "replayIsequal": false,
+      "bothEmpty": true,
+      "criteriaIdentical": true,
+      "metricsMaxAbsDiff": 0,
+      "metricAbsDiff": {
+        "dKI_overKeq": 0,
+        "dKII_overKeq": 0,
+        "dKIIoverKI": 0,
+        "dG_rel": 0,
+        "dJ_rel": 0,
+        "newJoverGminus1": 0,
+        "dMTS_deg": 0,
+        "newCODminusEDI_rel": 0,
+        "archivedCODminusEDI_rel": 0,
+        "dCODminusEDI": 0,
+        "newPathSpread_rel": 0,
+        "archivedPathSpread_rel": 0,
+        "newQuad4x4_rel": 0,
+        "archivedQuad4x4_rel": 0,
+        "dCompliance_rel": 0,
+        "dActiveArea_rel": 0,
+        "S9tipDisplacement_mm": 0,
+        "openingNearTipRel": 0,
+        "openingWholeCrackRel": 0,
+        "signedOpeningNearTipRel": 0,
+        "signedOpeningWholeCrackRel": 0,
+        "newMinSignedOpening_mm": 0,
+        "archivedMinSignedOpening_mm": 0,
+        "newSolverGatesPass": 0,
+        "archivedSolverGatesPass": 0
+      }
+    },
+    {
+      "solveId": "EQ-stiff13",
+      "recomputedPass": true,
+      "storedPass": true,
+      "recomputedFailedClass": "cell",
+      "recomputedFailedSize": [
+        1,
+        0
+      ],
+      "storedFailedClass": "double",
+      "storedFailedSize": [
+        1,
+        0
+      ],
+      "replayIsequal": false,
+      "bothEmpty": true,
+      "criteriaIdentical": true,
+      "metricsMaxAbsDiff": 0,
+      "metricAbsDiff": {
+        "dKI_overKeq": 0,
+        "dKII_overKeq": 0,
+        "dKIIoverKI": 0,
+        "dG_rel": 0,
+        "dJ_rel": 0,
+        "newJoverGminus1": 0,
+        "dMTS_deg": 0,
+        "newCODminusEDI_rel": 0,
+        "archivedCODminusEDI_rel": 0,
+        "dCODminusEDI": 0,
+        "newPathSpread_rel": 0,
+        "archivedPathSpread_rel": 0,
+        "newQuad4x4_rel": 0,
+        "archivedQuad4x4_rel": 0,
+        "dCompliance_rel": 0,
+        "dActiveArea_rel": 0,
+        "S9tipDisplacement_mm": 0,
+        "openingNearTipRel": 0,
+        "openingWholeCrackRel": 0,
+        "signedOpeningNearTipRel": 0,
+        "signedOpeningWholeCrackRel": 0,
+        "newMinSignedOpening_mm": 0,
+        "archivedMinSignedOpening_mm": 0,
+        "newSolverGatesPass": 0,
+        "archivedSolverGatesPass": 0
+      }
+    },
+    {
+      "solveId": "EQ-soft2",
+      "recomputedPass": true,
+      "storedPass": true,
+      "recomputedFailedClass": "cell",
+      "recomputedFailedSize": [
+        1,
+        0
+      ],
+      "storedFailedClass": "double",
+      "storedFailedSize": [
+        1,
+        0
+      ],
+      "replayIsequal": false,
+      "bothEmpty": true,
+      "criteriaIdentical": true,
+      "metricsMaxAbsDiff": 0,
+      "metricAbsDiff": {
+        "dKI_overKeq": 0,
+        "dKII_overKeq": 0,
+        "dKIIoverKI": 0,
+        "dG_rel": 0,
+        "dJ_rel": 0,
+        "newJoverGminus1": 0,
+        "dMTS_deg": 0,
+        "newCODminusEDI_rel": 0,
+        "archivedCODminusEDI_rel": 0,
+        "dCODminusEDI": 0,
+        "newPathSpread_rel": 0,
+        "archivedPathSpread_rel": 0,
+        "newQuad4x4_rel": 0,
+        "archivedQuad4x4_rel": 0,
+        "dCompliance_rel": 0,
+        "dActiveArea_rel": 0,
+        "S9tipDisplacement_mm": 0,
+        "openingNearTipRel": 0,
+        "openingWholeCrackRel": 0,
+        "signedOpeningNearTipRel": 0,
+        "signedOpeningWholeCrackRel": 0,
+        "newMinSignedOpening_mm": 0,
+        "archivedMinSignedOpening_mm": 0,
+        "newSolverGatesPass": 0,
+        "archivedSolverGatesPass": 0
+      }
+    },
+    {
+      "solveId": "EQ-soft1",
+      "recomputedPass": true,
+      "storedPass": true,
+      "recomputedFailedClass": "cell",
+      "recomputedFailedSize": [
+        1,
+        0
+      ],
+      "storedFailedClass": "double",
+      "storedFailedSize": [
+        1,
+        0
+      ],
+      "replayIsequal": false,
+      "bothEmpty": true,
+      "criteriaIdentical": true,
+      "metricsMaxAbsDiff": 0,
+      "metricAbsDiff": {
+        "dKI_overKeq": 0,
+        "dKII_overKeq": 0,
+        "dKIIoverKI": 0,
+        "dG_rel": 0,
+        "dJ_rel": 0,
+        "newJoverGminus1": 0,
+        "dMTS_deg": 0,
+        "newCODminusEDI_rel": 0,
+        "archivedCODminusEDI_rel": 0,
+        "dCODminusEDI": 0,
+        "newPathSpread_rel": 0,
+        "archivedPathSpread_rel": 0,
+        "newQuad4x4_rel": 0,
+        "archivedQuad4x4_rel": 0,
+        "dCompliance_rel": 0,
+        "dActiveArea_rel": 0,
+        "S9tipDisplacement_mm": 0,
+        "openingNearTipRel": 0,
+        "openingWholeCrackRel": 0,
+        "signedOpeningNearTipRel": 0,
+        "signedOpeningWholeCrackRel": 0,
+        "newMinSignedOpening_mm": 0,
+        "archivedMinSignedOpening_mm": 0,
+        "newSolverGatesPass": 0,
+        "archivedSolverGatesPass": 0
+      }
+    }
+  ],
+  "recordsUnchanged": true,
+  "physicalSolves": 0
+}

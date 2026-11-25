@@ -1,0 +1,324 @@
+{
+  "stage": "final",
+  "schema": "NewMetacomp.G2.LP2A2.EQ.ClosureStage.v1",
+  "git": {
+    "head": "2a25973a8b7fc4e6c10c19a01b4243e5ffddafc8",
+    "statusClean": true
+  },
+  "v2": {
+    "schema": "NewMetacomp.G2.LP2A2.EQ.ClosureVerify.v2",
+    "outcome": "VERIFIED_V2",
+    "problems": [],
+    "solves": [
+      {
+        "solveId": "EQ-H",
+        "recordsComplete": true,
+        "links": {
+          "solutionMeshLink": true,
+          "solutionPhaseLink": true,
+          "comparisonSolutionLink": true,
+          "comparisonMeshLink": true,
+          "comparisonArchivedSolutionPin": true,
+          "token": true,
+          "solveIdEqual": true,
+          "caseIdEqual": true
+        },
+        "manifestsOK": true,
+        "recomputedPass": true,
+        "storedPass": true,
+        "failedRecomputed": [],
+        "failedStored": [],
+        "failedNormalization": "empty double array (jsondecode of an empty JSON array)",
+        "compare": {
+          "ok": true,
+          "problems": [],
+          "criteriaTotal": 11,
+          "criteriaIdentical": 11,
+          "criteriaSetEqual": true,
+          "internallyConsistent": true,
+          "passEqual": true,
+          "metricsTotal": 25,
+          "metricsWithinTol": 25,
+          "metricsBitwiseIdentical": 25,
+          "metricsMaxAbsDiff": 0,
+          "metricsMaxRelDiff": 0,
+          "metricsAllFinite": true,
+          "metricSetEqual": true,
+          "failedListRawOK": true,
+          "failedListEqual": true
+        },
+        "pass": true,
+        "problems": []
+      },
+      {
+        "solveId": "EQ-stiff13",
+        "recordsComplete": true,
+        "links": {
+          "solutionMeshLink": true,
+          "solutionPhaseLink": true,
+          "comparisonSolutionLink": true,
+          "comparisonMeshLink": true,
+          "comparisonArchivedSolutionPin": true,
+          "token": true,
+          "solveIdEqual": true,
+          "caseIdEqual": true
+        },
+        "manifestsOK": true,
+        "recomputedPass": true,
+        "storedPass": true,
+        "failedRecomputed": [],
+        "failedStored": [],
+        "failedNormalization": "empty double array (jsondecode of an empty JSON array)",
+        "compare": {
+          "ok": true,
+          "problems": [],
+          "criteriaTotal": 11,
+          "criteriaIdentical": 11,
+          "criteriaSetEqual": true,
+          "internallyConsistent": true,
+          "passEqual": true,
+          "metricsTotal": 25,
+          "metricsWithinTol": 25,
+          "metricsBitwiseIdentical": 25,
+          "metricsMaxAbsDiff": 0,
+          "metricsMaxRelDiff": 0,
+          "metricsAllFinite": true,
+          "metricSetEqual": true,
+          "failedListRawOK": true,
+          "failedListEqual": true
+        },
+        "pass": true,
+        "problems": []
+      },
+      {
+        "solveId": "EQ-soft2",
+        "recordsComplete": true,
+        "links": {
+          "solutionMeshLink": true,
+          "solutionPhaseLink": true,
+          "comparisonSolutionLink": true,
+          "comparisonMeshLink": true,
+          "comparisonArchivedSolutionPin": true,
+          "token": true,
+          "solveIdEqual": true,
+          "caseIdEqual": true
+        },
+        "manifestsOK": true,
+        "recomputedPass": true,
+        "storedPass": true,
+        "failedRecomputed": [],
+        "failedStored": [],
+        "failedNormalization": "empty double array (jsondecode of an empty JSON array)",
+        "compare": {
+          "ok": true,
+          "problems": [],
+          "criteriaTotal": 11,
+          "criteriaIdentical": 11,
+          "criteriaSetEqual": true,
+          "internallyConsistent": true,
+          "passEqual": true,
+          "metricsTotal": 25,
+          "metricsWithinTol": 25,
+          "metricsBitwiseIdentical": 25,
+          "metricsMaxAbsDiff": 0,
+          "metricsMaxRelDiff": 0,
+          "metricsAllFinite": true,
+          "metricSetEqual": true,
+          "failedListRawOK": true,
+          "failedListEqual": true
+        },
+        "pass": true,
+        "problems": []
+      },
+      {
+        "solveId": "EQ-soft1",
+        "recordsComplete": true,
+        "links": {
+          "solutionMeshLink": true,
+          "solutionPhaseLink": true,
+          "comparisonSolutionLink": true,
+          "comparisonMeshLink": true,
+          "comparisonArchivedSolutionPin": true,
+          "token": true,
+          "solveIdEqual": true,
+          "caseIdEqual": true
+        },
+        "manifestsOK": true,
+        "recomputedPass": true,
+        "storedPass": true,
+        "failedRecomputed": [],
+        "failedStored": [],
+        "failedNormalization": "empty double array (jsondecode of an empty JSON array)",
+        "compare": {
+          "ok": true,
+          "problems": [],
+          "criteriaTotal": 11,
+          "criteriaIdentical": 11,
+          "criteriaSetEqual": true,
+          "internallyConsistent": true,
+          "passEqual": true,
+          "metricsTotal": 25,
+          "metricsWithinTol": 25,
+          "metricsBitwiseIdentical": 25,
+          "metricsMaxAbsDiff": 0,
+          "metricsMaxRelDiff": 0,
+          "metricsAllFinite": true,
+          "metricSetEqual": true,
+          "failedListRawOK": true,
+          "failedListEqual": true
+        },
+        "pass": true,
+        "problems": []
+      }
+    ],
+    "unchanged": true,
+    "physicalSolves": 0,
+    "token": "G2LP2A2EQ|policy=6f2c290b37d4f8291f428ec8b9e0a886fe6b31fc901bee5781f2518e67c94756|g2source=7e5683703bd104547ef5d013aa0253ad2819b59dc58693957e2d04b4707f0947|lp2source=357dfdcdb576d2866b9d1b41a14265300a14c30700d6475f995881041ba822ca|lp2a2source=f1d7e4d67b91968e16ebaead13be86667c7776ce48971ed5206c7f136fae7afd|archivedS8=da951c99c0d8c1d5dd731986d8f3b30e3db3f71854166a634d35b739757def8d|solves=EQ-H,EQ-stiff13,EQ-soft2,EQ-soft1|limit=4",
+    "policySHA256": "6f2c290b37d4f8291f428ec8b9e0a886fe6b31fc901bee5781f2518e67c94756",
+    "g2SourceSHA256": "7e5683703bd104547ef5d013aa0253ad2819b59dc58693957e2d04b4707f0947",
+    "lp2SourceSHA256": "357dfdcdb576d2866b9d1b41a14265300a14c30700d6475f995881041ba822ca",
+    "lp2a2SourceSHA256": "f1d7e4d67b91968e16ebaead13be86667c7776ce48971ed5206c7f136fae7afd",
+    "archivedManifestSHA256": "da951c99c0d8c1d5dd731986d8f3b30e3db3f71854166a634d35b739757def8d",
+    "filesExpected": 24,
+    "filesFound": 24,
+    "extraFiles": [],
+    "missingFiles": [],
+    "reference": {
+      "dumpChecked": 24,
+      "archiveChecked": 24,
+      "mismatches": []
+    },
+    "metricTolerance": 1E-12,
+    "files": [
+      {
+        "rel": "EQ-H/COMPARISON.json",
+        "bytes": 2292,
+        "sha": "a66a20572ba84ca07eabf1c3849b4b2ae8dde1d273a307369a4c420b004db6a0"
+      },
+      {
+        "rel": "EQ-H/MESH.mat",
+        "bytes": 1.910163E+6,
+        "sha": "33b2b8d3fa5d44e8866af22b2a2d28863aa38fc8fde6cb0d88d123b376933fbb"
+      },
+      {
+        "rel": "EQ-H/PHASE.mat",
+        "bytes": 21848,
+        "sha": "60863c8d52b6a8c477170aa444cdf0293bc36c55f755aa00f1956920442f384e"
+      },
+      {
+        "rel": "EQ-H/PHASE.mat.manifest.json",
+        "bytes": 296,
+        "sha": "8b54f2e271e2582ca964f9df9e36de7f17a9cf8e467d6bd1cfcc896894e85778"
+      },
+      {
+        "rel": "EQ-H/SOLUTION.mat",
+        "bytes": 1.148472E+6,
+        "sha": "ae641f5f0ee3b554e391c177e97926947d1e28ed29e66e58ed7182c2ac6b0a7a"
+      },
+      {
+        "rel": "EQ-H/SOLUTION.mat.manifest.json",
+        "bytes": 308,
+        "sha": "acc80ac87a98af450b441cd653aef3d3c10cb57da655ce678012cc7b5e74ef82"
+      },
+      {
+        "rel": "EQ-soft1/COMPARISON.json",
+        "bytes": 2323,
+        "sha": "2c362242ec00a99f100e91d6ce07ee407721d639c46f72448938c3aa13b4858b"
+      },
+      {
+        "rel": "EQ-soft1/MESH.mat",
+        "bytes": 1.910999E+6,
+        "sha": "75a81c2cc578716e13ce1a5a2fb53136fa0f1ed998cb1c09ae9fc9a9dbe16f02"
+      },
+      {
+        "rel": "EQ-soft1/PHASE.mat",
+        "bytes": 21864,
+        "sha": "d2be3beeee03e6868788b0ae5b62a51e3775564fcebf870d0a15930fb68802fc"
+      },
+      {
+        "rel": "EQ-soft1/PHASE.mat.manifest.json",
+        "bytes": 296,
+        "sha": "ba6103f0c6e5facd8798182fa1ba31956d9848848010ccab9f722cce8ab2402b"
+      },
+      {
+        "rel": "EQ-soft1/SOLUTION.mat",
+        "bytes": 1.152115E+6,
+        "sha": "15c5d613c1a868f050c7a5b4dcbe6f0cbedaa2f1d0463013f59b743ab77aaf37"
+      },
+      {
+        "rel": "EQ-soft1/SOLUTION.mat.manifest.json",
+        "bytes": 308,
+        "sha": "366d24ffa483202947b7fea071755cf22e0349f0e395a72231d74f51176efb37"
+      },
+      {
+        "rel": "EQ-soft2/COMPARISON.json",
+        "bytes": 2322,
+        "sha": "b89f207b8b28949790c871be9e151a9eef0ab60900387d04a492bddeca2afae8"
+      },
+      {
+        "rel": "EQ-soft2/MESH.mat",
+        "bytes": 1.911136E+6,
+        "sha": "b2f212cc7e45d1664ca353346258c15418a252ae47ba79a1f83e253938105343"
+      },
+      {
+        "rel": "EQ-soft2/PHASE.mat",
+        "bytes": 21864,
+        "sha": "fca197e5b272b4bd65e235c2798f5f826c26627cd73ef31d5e42751337e0cecc"
+      },
+      {
+        "rel": "EQ-soft2/PHASE.mat.manifest.json",
+        "bytes": 296,
+        "sha": "ca6ba51da70703a60137d33ba3b241e34ea01208122dee3633ba193dfc45eac6"
+      },
+      {
+        "rel": "EQ-soft2/SOLUTION.mat",
+        "bytes": 1.150294E+6,
+        "sha": "7771dca68242c2ccb23e076501ef825da161c8ffc99cf7b38f19ec926989cb5c"
+      },
+      {
+        "rel": "EQ-soft2/SOLUTION.mat.manifest.json",
+        "bytes": 308,
+        "sha": "a77e54f8be81ac61d815a86f8a082619d8d9529b6fd86269ab4545f6cc41cb3f"
+      },
+      {
+        "rel": "EQ-stiff13/COMPARISON.json",
+        "bytes": 2328,
+        "sha": "486b8c6532e8474aa32c6e70a23c067918a6e34a2497a39129e1e6a39c9b5bca"
+      },
+      {
+        "rel": "EQ-stiff13/MESH.mat",
+        "bytes": 1.90966E+6,
+        "sha": "1258a6f0e244f9888fb11d5368873a56e01b90999f09a0e7c40779ef7e7a803f"
+      },
+      {
+        "rel": "EQ-stiff13/PHASE.mat",
+        "bytes": 21872,
+        "sha": "4ebe44f8befec6d7daa67015b7637de0204062f03e2cfdb43424c4af8de4a88a"
+      },
+      {
+        "rel": "EQ-stiff13/PHASE.mat.manifest.json",
+        "bytes": 296,
+        "sha": "07ef6325a0d7dba32c539222df488f31188dab20f1635d247270513448a22890"
+      },
+      {
+        "rel": "EQ-stiff13/SOLUTION.mat",
+        "bytes": 1.145739E+6,
+        "sha": "42a93838816d8ed78416b15c04ec245679721fedf0f9e86900ae8a1475559a1e"
+      },
+      {
+        "rel": "EQ-stiff13/SOLUTION.mat.manifest.json",
+        "bytes": 308,
+        "sha": "c005322a2bc348aab49c3eabc2c55c6675e408d9363ee8f4e2b7aba516a89f92"
+      }
+    ],
+    "nSolvesPass": 4
+  },
+  "filesEqualToStageVerify": true,
+  "gitAfter": {
+    "head": "2a25973a8b7fc4e6c10c19a01b4243e5ffddafc8",
+    "statusClean": true
+  },
+  "elapsed_s": 2.569587,
+  "matlab": "9.14.0.2206163 (R2023a)",
+  "physicalSolves": 0
+}

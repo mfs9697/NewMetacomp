@@ -1,0 +1,24 @@
+MUT m00_baseline_copy_no_reference         expect VERIFIED_V2     got VERIFIED_V2     tag 1 pass 1
+MUT m01_baseline_copy_with_reference       expect VERIFIED_V2     got VERIFIED_V2     tag 1 pass 1
+MUT m02_failed_nonempty_with_pass          expect VERIFY_HOLD_V2  got VERIFY_HOLD_V2  tag 1 pass 1
+MUT m03_failed_null                        expect VERIFY_HOLD_V2  got VERIFY_HOLD_V2  tag 1 pass 1
+MUT m04_failed_numeric                     expect VERIFY_HOLD_V2  got VERIFY_HOLD_V2  tag 1 pass 1
+MUT m05_failed_object                      expect VERIFY_HOLD_V2  got VERIFY_HOLD_V2  tag 1 pass 1
+MUT m06_failed_duplicate_names             expect VERIFY_HOLD_V2  got VERIFY_HOLD_V2  tag 1 pass 1
+MUT m07_failed_nested                      expect VERIFY_HOLD_V2  got VERIFY_HOLD_V2  tag 1 pass 1
+MUT m08_failed_bare_string                 expect VERIFY_HOLD_V2  got VERIFY_HOLD_V2  tag 1 pass 1
+MUT m09_failed_duplicate_member            expect VERIFY_HOLD_V2  got VERIFY_HOLD_V2  tag 1 pass 1
+MUT m10_criterion_false_inconsistent       expect VERIFY_HOLD_V2  got VERIFY_HOLD_V2  tag 1 pass 1
+MUT m11_criterion_not_logical              expect VERIFY_HOLD_V2  got VERIFY_HOLD_V2  tag 1 pass 1
+MUT m12_pass_flag_false                    expect VERIFY_HOLD_V2  got VERIFY_HOLD_V2  tag 1 pass 1
+MUT m13_metric_perturbed_1e-6              expect VERIFY_HOLD_V2  got VERIFY_HOLD_V2  tag 1 pass 1
+MUT m14_metric_renamed                     expect VERIFY_HOLD_V2  got VERIFY_HOLD_V2  tag 1 pass 1
+MUT m15_metric_null                        expect VERIFY_HOLD_V2  got VERIFY_HOLD_V2  tag 1 pass 1
+MUT m16_manifest_file_deleted              expect VERIFY_HOLD_V2  got VERIFY_HOLD_V2  tag 1 pass 1
+MUT m17_extra_file                         expect VERIFY_HOLD_V2  got VERIFY_HOLD_V2  tag 1 pass 1
+MUT m18_solve_folder_missing               expect VERIFY_HOLD_V2  got VERIFY_HOLD_V2  tag 1 pass 1
+MUT m19_mesh_link_broken                   expect VERIFY_HOLD_V2  got VERIFY_HOLD_V2  tag 1 pass 1
+MUT m20_manifest_sha_broken                expect VERIFY_HOLD_V2  got VERIFY_HOLD_V2  tag 1 pass 1
+MUT m21_phase_file_modified                expect VERIFY_HOLD_V2  got VERIFY_HOLD_V2  tag 1 pass 1
+MUT m22_reference_detects_whitespace       expect VERIFY_HOLD_V2  got VERIFY_HOLD_V2  tag 1 pass 1
+CLOSURE_TESTS partA 32/32 partB 23/23

@@ -1,0 +1,15 @@
+{
+ "rule": "absolute local paths replaced by <repo> (execution clone), <worktree>, <scratch>, <user>; MATLAB startup path warnings removed; CRLF to LF",
+ "files": [
+  {
+   "file": "lp2a2_eq_audit_dump.m",
+   "originalSHA256": "f7e4e3f1a7bd0ccbe16f947a7e649b86c22b53a44d56f4ce011a1486da7bcead",
+   "sanitizedSHA256": "de3ceea21933bac5da8778493e23adac25b5b9b39b852db95f4d7a066eca44d8"
+  },
+  {
+   "file": "lp2a2_eq_audit.py",
+   "originalSHA256": "1c72608a6d7f572974b0324871b413d37eabd6ea6acbf9cbb104f6b2f835abca",
+   "sanitizedSHA256": "1c72608a6d7f572974b0324871b413d37eabd6ea6acbf9cbb104f6b2f835abca"
+  }
+ ]
+}

@@ -1,0 +1,55 @@
+{
+  "head": "91667cfb2b170de782af8ef9bcf8e66674e3caa4",
+  "revParseHeadCaretUnquoted": "91667cfb2b170de782af8ef9bcf8e66674e3caa4",
+  "revParseHeadCaretQuoted": "4d3701e1ccc91b7512db9052c927f32af52e2479",
+  "revParseHeadTilde1": "4d3701e1ccc91b7512db9052c927f32af52e2479",
+  "changedFiles": "matlab/g2/lp2a2/G2_LP2A2_EQ_GO.json",
+  "validatorDefaultGit": {
+    "pass": false,
+    "checks": {
+      "fields": true,
+      "decision": true,
+      "token": true,
+      "solveLimit": true,
+      "solves": true,
+      "campaignId": true,
+      "decisionUrl": true,
+      "approvedHead": true,
+      "contractEvidence": true,
+      "ancestor": true,
+      "activationBinding": false
+    },
+    "failed": [
+      "activationBinding"
+    ]
+  },
+  "validatorDiagnosticQuotedCaret": {
+    "pass": true,
+    "checks": {
+      "fields": true,
+      "decision": true,
+      "token": true,
+      "solveLimit": true,
+      "solves": true,
+      "campaignId": true,
+      "decisionUrl": true,
+      "approvedHead": true,
+      "contractEvidence": true,
+      "ancestor": true,
+      "activationBinding": true
+    },
+    "failed": []
+  },
+  "verify": {
+    "outcome": "NO_RECORDS",
+    "solves": [],
+    "problems": [],
+    "unchanged": true,
+    "physicalSolves": 0
+  },
+  "outputRootExists": false,
+  "gitClean": true,
+  "physicalSolves": 0,
+  "wrapperCalled": false,
+  "driverRunCalled": false
+}
