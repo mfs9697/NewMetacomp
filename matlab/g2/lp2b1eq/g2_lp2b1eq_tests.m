@@ -300,9 +300,9 @@ jm={'failed_null',@(x)regexprep(x,'"failed":\s*\[\s*\]','"failed": null'),false;
  'failed_mismatch',@(x)regexprep(x,'"failed":\s*\[\s*\]','"failed": ["C1_KI"]'),false;
  'failed_number',@(x)regexprep(x,'"failed":\s*\[\s*\]','"failed": [1]'),false;
  'criterion_flag_flipped',@(x)regexprep(x,'"C11_compliance":\s*true','"C11_compliance": false'),false;
- 'metric_changed',@(x)regexprep(x,'"dJ_rel":\s*0\b','"dJ_rel": 1e-9'),false;
+ 'metric_changed',@(x)regexprep(x,'"dJ_rel":\s*0,','"dJ_rel": 1e-9,'),false;
  'metric_removed',@(x)regexprep(x,'"dJ_rel":\s*0,\s*',''),false;
- 'metric_null',@(x)regexprep(x,'"dJ_rel":\s*0\b','"dJ_rel": null'),false;
+ 'metric_null',@(x)regexprep(x,'"dJ_rel":\s*0,','"dJ_rel": null,'),false;   % (in MATLAB regexp \b is a backspace, not a word boundary)
  'outcome_text',@(x)regexprep(x,'"outcome":\s*"EQUIVALENT_CASE"','"outcome": "EQUIVALENT"'),false;
  'validation_null',@(x)regexprep(x,'"validation":\s*\[\s*\]','"validation": null'),false;
  'pass_flag',@(x)regexprep(x,'"pass":\s*true','"pass": false','once'),false;
