@@ -40,7 +40,7 @@ fn=fieldnames(t5);fn=fn(~startsWith(fn,'contrast_')&~strcmp(fn,'S9tipDisplacemen
 for k=1:numel(fn),ok=ok&&isfield(t,fn{k})&&isequal(t.(fn{k}),t5.(fn{k}));end
 assert(ok&&isequal(t.nextTipDisplacement_mm,t5.S9tipDisplacement_mm)&&isequal(t.activeAreaExactZeroWhenArchivedZero,true)&& ...
  t.nearTipRadius_mm==3.3&&t.nodeMatch_mm==1e-9&&numel(fieldnames(t))==numel(fn)+4,SRC,'Tolerances differ from the WP5 policy.');
-s=pol.solves;if ~iscell(s),s=num2cell(s);end
+s=pol.solves;if ~iscell(s),s=num2cell(s);end;s=reshape(s,1,[]);   % jsondecode returns a heterogeneous array as a COLUMN cell
 assert(numel(s)==2&&strcmp(s{1}.id,'EQB-soft1-S9')&&strcmp(s{2}.id,'EQB-H-S10')&&pol.solveLimit==2&&pol.attemptsPerSolve==1&& ...
  ~pol.retry&&~pol.adaptiveStep&&pol.newStates==0&&~pol.targetSolve,SRC,'Solve set, order or limits differ from the assignment.');
 % ---- reference, parent, next-tip, admission and qualification files

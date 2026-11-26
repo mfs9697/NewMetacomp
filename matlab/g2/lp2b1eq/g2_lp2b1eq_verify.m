@@ -18,7 +18,7 @@ function R=g2_lp2b1eq_verify(C,varargin)
 % VERIFIED_PARTIAL_HOLD | VERIFY_HOLD (any problem; R.problems).
 ip=inputParser;addParameter(ip,'MetricTol',1e-12,@isnumeric);addParameter(ip,'Reference',[]);parse(ip,varargin{:});o=ip.Results;
 refFn=o.Reference;if isempty(refFn),refFn=@g2_lp2b1eq_reference;end
-ids=cellfun(@(x)x.id,C.solves,'UniformOutput',false);root=C.runRoot;
+ids=reshape(cellfun(@(x)x.id,C.solves,'UniformOutput',false),1,[]);root=C.runRoot;
 names=sort({'GEOMETRY_h040/ATTEMPT.json','GEOMETRY_h040/ATTEMPT_ARRAYS.mat','MESH.mat','PHASE.mat','PHASE.mat.manifest.json','SOLUTION.mat', ...
  'SOLUTION.mat.manifest.json','COMPARISON.mat','COMPARISON.mat.manifest.json','COMPARISON.json'});
 R=struct('schema','NewMetacomp.G2.LP2B1EQ.Verify.v1','outcome','NO_RECORDS','problems',{{}},'solves',{{}},'unchanged',true,'physicalSolves',0, ...
@@ -28,7 +28,7 @@ T0=[treeInfo(root);treeInfo(C.receiptRoot)];
 [Rr,~,okr]=g2_trajectory_record('read',fullfile(C.receiptRoot,'RECEIPT.mat'));
 R.receipt=struct('present',okr,'tokenOK',okr&&strcmp(Rr.token,C.token)&&strcmp(Rr.campaignId,C.policy.campaignId));
 if ~R.receipt.tokenOK,bad('RECEIPT: missing, failing its manifest or bound to another token');end
-d=dir(root);d=d([d.isdir]&~ismember({d.name},{'.','..'}));present={d.name};
+d=dir(root);d=d([d.isdir]&~ismember({d.name},{'.','..'}));present=reshape({d.name},1,[]);
 top=dir(root);top=top(~[top.isdir]);if ~isempty(top),bad(sprintf('RECORD_SET: %d unexpected file(s) at the run root',numel(top)));end
 extra=setdiff(present,ids);if ~isempty(extra),bad(['RECORD_SET: unexpected folder(s) ' strjoin(extra,',')]);end
 pres=ismember(ids,present);
