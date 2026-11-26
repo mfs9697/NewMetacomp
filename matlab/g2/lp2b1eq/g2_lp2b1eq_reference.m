@@ -56,7 +56,8 @@ c.stateEqualsSolution=isequal(St.KI,K.KI)&&isequal(St.KII,K.KII)&&isequal(St.J,K
 % ---- displacement vector and its node ordering (interleaved ux, uy per T6 node)
 N6=size(Ma.X6,1);u=K.u;
 c.uShape=isa(u,'double')&&isreal(u)&&isvector(u)&&numel(u)==2*N6&&all(isfinite(u));
-at=@(xy)find(vecnorm(Ma.X6-reshape(xy,1,2),2,2)<1e-9);   % policy vectors decode as columnspin=at(P3.bvp.pin_mm);rol=at(P3.bvp.roller_mm);ld=at(P3.bvp.load_mm);
+at=@(xy)find(vecnorm(Ma.X6-reshape(xy,1,2),2,2)<1e-9);   % policy vectors decode as columns
+pin=at(P3.bvp.pin_mm);rol=at(P3.bvp.roller_mm);ld=at(P3.bvp.load_mm);
 c.uOrdering=c.uShape&&isscalar(pin)&&isscalar(rol)&&isscalar(ld)&&ld==K.loadNode&&u(2*pin-1)==0&&u(2*pin)==0&&u(2*rol)==0&& ...
  isequal(K.uyLoad_mm,u(2*ld))&&isequal(K.compliance_mm_per_N,abs(u(2*ld))/P3.bvp.P_N);
 M=g2_mts_direction(K.KI,K.KII);c.mts=M.admissibleForStep&&strcmp(M.status,'OK')&&M.stationarityResidual_rel<=1e-12;
