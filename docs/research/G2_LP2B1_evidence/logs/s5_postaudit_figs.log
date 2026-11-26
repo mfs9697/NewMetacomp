@@ -1,0 +1,12 @@
+SOURCE_COMMIT=097a9713b113e6ddc58094e0fb6d05ffbaf45291
+SOURCE_STATUS=[]
+LP2B1_POSTAUDIT wp1/T_soft1_S10_h040                     pass=1 ratio=1.601535087 minAng=23.179107 pairing=10/10
+LP2B1_POSTAUDIT wp1_attempt2/T_soft1_S10_h040            pass=1 ratio=1.601535087 minAng=23.179107 pairing=10/10
+LP2B1_POSTAUDIT wp1_attempt2/T_soft1_S10_h040_REPEAT     pass=1 ratio=1.601535087 minAng=23.179107 pairing=10/10
+LP2B1_POSTAUDIT wp1_attempt2/R_soft1_S9_h040             pass=1 ratio=1.591828551 minAng=22.387808 pairing=10/10
+LP2B1_POSTAUDIT wp1_attempt2/R_H_S10_h040                pass=1 ratio=1.591828551 minAng=22.782266 pairing=10/10
+LP2B1_POSTAUDIT_PASS=0 attempt1VsAttempt2=0
+[Warning: Vectorized content might take a long time to create, or it might contain unexpected results. Set 'ContentType' to 'image' for better performance. <a
+href="matlab:warning('off', 'MATLAB:print:ContentTypeImageSuggested')">Click here</a> to not see this message again.] 
+LP2B1_FIGURES_DONE
+MATLAB_PROCESSES_END=1

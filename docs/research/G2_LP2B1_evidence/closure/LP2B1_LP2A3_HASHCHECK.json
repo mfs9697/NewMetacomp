@@ -1,0 +1,33 @@
+{
+ "schema": "NewMetacomp.G2.LP2A3.Hashcheck.v1",
+ "policySHA256": "7a6e17f8baa85c6e6f10186bfab3a9c10c9363e0acb5e532c00095961bf45d43",
+ "g2SourceSHA256": "7e5683703bd104547ef5d013aa0253ad2819b59dc58693957e2d04b4707f0947",
+ "lp2SourceSHA256": "357dfdcdb576d2866b9d1b41a14265300a14c30700d6475f995881041ba822ca",
+ "lp2a2SourceSHA256": "f1d7e4d67b91968e16ebaead13be86667c7776ce48971ed5206c7f136fae7afd",
+ "lp2a3SourceSHA256": "fa3bcecfa9cd3044253d5a72253e2058bccd044d32345f51650dcd775f42e002",
+ "parentManifestSHA256": "da951c99c0d8c1d5dd731986d8f3b30e3db3f71854166a634d35b739757def8d",
+ "qualificationManifestSHA256": "a77f49200f9f95b36260f44306afd4b05690d8ec9353c4fa71f4b5adbe5d4ded",
+ "token": "G2LP2A3|policy=7a6e17f8baa85c6e6f10186bfab3a9c10c9363e0acb5e532c00095961bf45d43|g2source=7e5683703bd104547ef5d013aa0253ad2819b59dc58693957e2d04b4707f0947|lp2source=357dfdcdb576d2866b9d1b41a14265300a14c30700d6475f995881041ba822ca|lp2a2source=f1d7e4d67b91968e16ebaead13be86667c7776ce48971ed5206c7f136fae7afd|lp2a3source=fa3bcecfa9cd3044253d5a72253e2058bccd044d32345f51650dcd775f42e002|parentsS8=da951c99c0d8c1d5dd731986d8f3b30e3db3f71854166a634d35b739757def8d|qualification=a77f49200f9f95b36260f44306afd4b05690d8ec9353c4fa71f4b5adbe5d4ded|cases=H,stiff13,soft2,soft1|states=S9-S11|maxAdmissions=12|seed=0.45|campaign=G2-LP2A3-001|run=run_lp2a3_s9_s11_v1",
+ "contractEvidenceSHA256": "2972135b9754ec697653144545baa5b33fe82e3c8deaf11e25705e1b0dd4f599",
+ "checks": {
+  "g2SourceEqualsPin": true,
+  "lp2SourceEqualsPin": true,
+  "lp2a2SourceEqualsPin": true,
+  "lp2a3SourceEqualsPin": true,
+  "lp1Policy": true,
+  "lp2Policy": true,
+  "lp2a2Policy": true,
+  "parents20": true,
+  "parentsEqualLP2A1Manifest": true,
+  "qualification24PlusEvidence": true,
+  "noGoFile": true,
+  "runRootAbsent": false,
+  "ledgerRootAbsent": false,
+  "statusNotAuthorized": true,
+  "tokenEqualsMATLAB": true,
+  "evidencePolicyEqual": true,
+  "evidenceDigestEqual": true,
+  "evidenceAllPassed": true
+ },
+ "pass": false
+}

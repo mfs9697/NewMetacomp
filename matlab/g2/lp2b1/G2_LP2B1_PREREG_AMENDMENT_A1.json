@@ -1,0 +1,31 @@
+{
+ "schema": "NewMetacomp.G2.LP2B1.PreregistrationAmendment.v1",
+ "amends": "matlab/g2/lp2b1/G2_LP2B1_PREREG_v1.json",
+ "amendsSHA256": "3d51140b80075cf27dd21820f16e65ceaa1456ea7a512acbc6ffe9888c70f9b1",
+ "status": "committed BEFORE attempt 2; preregistration v1 is kept unchanged",
+ "attempt1": {
+  "root": "outputs/g2_lp2b1_geometry_v1/wp1",
+  "sourceCommit": "e5f0d18c75f0d5a7a6998bdfdff1a62955e11580",
+  "outcome": "HOLD_NON_QUALITY_FAILURE at the first candidate (0.40 mm), caused by two defects of the LP2-B1 qualification harness, not by the mesh",
+  "records": {
+   "LP2B1_WP1_TARGET.json": "d8a6421b9691b06835c9cb22045140797b00c060d309d87e87d2f8f254454874",
+   "T_soft1_S10_h040/ATTEMPT.json": "de785b16bee090e5866cf4e792b5dc3c480ee4a9f1170640a3f94c3165502f7a",
+   "T_soft1_S10_h040/ATTEMPT_ARRAYS.mat": "cc94cd6f5bd91fffcd796cdad5511f3e9ec405093731b281852a26cc8861de9b"
+  },
+  "observed": "join 13/13 (min angle 23.179107 deg, max ratio 1.601535, 0 violations), pairing P1-P10 pass, block T3 rows/nodes identical, 2443 q rows identical, q annuli inside the core; 8/19 attempt checks",
+  "defects": [
+   "D1 bookkeeping: after g2_lp1_audit returned, struct(...,'ringNodes',<1x3 cell>,...) created a 1x3 struct array; the following scalar field assignment raised MATLAB:scalarStrucRequired inside the try, so the eight audit/clearance checks were recorded as false although no audit assertion had failed",
+   "D2 ill-posed checks: block T6 rows and nodal q were compared by node ID; T6 midside IDs are numbered over the whole mesh (T3toT6_fast) and therefore shift with ANY exterior change, so coreT6RowsIdentical / coreT6NodesIdentical / nodalQOnBlockIdentical cannot hold for any alternative mesh even when the protected block is geometrically identical"
+  ],
+  "preserved": "attempt-1 outputs are kept unchanged and are archived; they are never overwritten"
+ },
+ "corrections": {
+  "D1": "only the inherited audit and clearance calls (which assert) remain inside the try; all bookkeeping runs outside it, so a harness defect raises an error (HOLD of the run) instead of being recorded as a gate failure; the ring polygons are summarized by node counts and an identity flag",
+  "D2": "coreT6VertexRowsIdentical = block T6 vertex columns 1-3 (= T3 IDs) identical; coreT6NodeCoordinatesIdentical = coordinates of all six nodes of every block element identical; nodalQOnBlockIdentical = q at those node positions identical and q = 0 at every other node; T6 midside ID identity is reported as informative only"
+ },
+ "unchanged": "target, references, mesher and every mesher option, candidate order 0.40/0.50/0.35, all mesh, pairing, audit, phase, chord, clearance and guard gates and their thresholds, stopping rules, selection rule, determinism and reference rules; number of attempt checks (19)",
+ "attempt2": {
+  "root": "outputs/g2_lp2b1_geometry_v1/wp1_attempt2",
+  "rule": "rerun the complete preregistered order from the first candidate (0.40 mm) with the corrected harness; attempt-1 results are not used for selection; any further harness defect is a HOLD"
+ }
+}

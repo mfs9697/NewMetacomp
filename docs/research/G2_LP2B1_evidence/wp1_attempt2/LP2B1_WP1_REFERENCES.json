@@ -1,0 +1,83 @@
+{
+  "schema": "NewMetacomp.G2.LP2B1.WP1.v1",
+  "stage": "references",
+  "physicalSolves": 0,
+  "preregSHA256": "3d51140b80075cf27dd21820f16e65ceaa1456ea7a512acbc6ffe9888c70f9b1",
+  "amendmentA1SHA256": "78564d86d5a979700a590f16ef8b6a746655f7d55b199eab1a9f2ef607880c50",
+  "preflight": {
+    "pass": true,
+    "status": "PREFLIGHT_READY_NOT_LP0_QUALIFIED",
+    "cause": "",
+    "physicalSolves": 0,
+    "meshBuilds": 0,
+    "policySHA256": "1cf5a76ded840b0758343a1b935b299041e779ec6332c3b7cb0b6dfba1e2af43",
+    "release": "R2023a",
+    "pdeAvailable": true,
+    "freePhysicalRAM_GiB": 7.8613128662109375,
+    "matlabProcessInfo": [
+      {
+        "pid": 13856,
+        "executable": "C:\\Program Files\\Polyspace\\R2023a\\bin\\matlab.exe",
+        "launcher": true
+      },
+      {
+        "pid": 19660,
+        "executable": "C:\\Program Files\\Polyspace\\R2023a\\bin\\win64\\MATLAB.exe",
+        "launcher": false
+      }
+    ],
+    "matlabProcesses": 1,
+    "currentPID": 19660,
+    "sourceCommit": "3e8de6a765dd1fab775ca449c86352563a5df38e",
+    "dirtySource": "",
+    "token": "G2LP0|policy=1cf5a76ded840b0758343a1b935b299041e779ec6332c3b7cb0b6dfba1e2af43|source=3e8de6a765dd1fab775ca449c86352563a5df38e|geometry=179b777f4a26caf1482ad470d78f5f802bc24456b9a1b6fc6b641eccf2b66008|cases=H,stiff13,soft2,soft1|maxState=4"
+  },
+  "attempts": [
+    {
+      "name": "R_soft1_S9_h040",
+      "seedSpacing_mm": 0.4,
+      "stage": "KINKED_PROTECTED_MESH_JOIN_PASS",
+      "failedGates": [],
+      "joinGates": "13/13",
+      "qualityOnlyFailure": false,
+      "pass": true,
+      "checks": "19/19",
+      "T3": 30183,
+      "canonicalSHA256": "7535d71ad4790f3a24a47d03e27c3d73d8ba61df03050a2e952accfeffebee16",
+      "arraysFileSHA256": "1c4de0dffd17a23aadb9f2b0e18250dd9f7c6c289d1679c47e1d074275b37449",
+      "maxNeighborRatio": 1.5918285508619603,
+      "minAngle_deg": 22.387807593359415,
+      "violations": 0,
+      "originalAcceptedMesh": {
+        "T3": 30187,
+        "maxRatio": 1.5918285508619598,
+        "minAngle_deg": 30.126847321224169,
+        "seedSpacing_mm": 0.45
+      }
+    },
+    {
+      "name": "R_H_S10_h040",
+      "seedSpacing_mm": 0.4,
+      "stage": "KINKED_PROTECTED_MESH_JOIN_PASS",
+      "failedGates": [],
+      "joinGates": "13/13",
+      "qualityOnlyFailure": false,
+      "pass": true,
+      "checks": "19/19",
+      "T3": 30349,
+      "canonicalSHA256": "45298fae6257674b99de036341b6d0c05b55fbb6bb7be635786f8ae71bb068e3",
+      "arraysFileSHA256": "ffcb53f12c4b06b463a3df4c644d93459a4f456a04a5185fe3ad453b5db75122",
+      "maxNeighborRatio": 1.5918285508617926,
+      "minAngle_deg": 22.782265870508365,
+      "violations": 0,
+      "originalAcceptedMesh": {
+        "T3": 30379,
+        "maxRatio": 1.6528445610466254,
+        "minAngle_deg": 30.126847321223664,
+        "seedSpacing_mm": 0.45
+      }
+    }
+  ],
+  "selected": 0.4,
+  "outcome": "REFERENCES_PASS"
+}

@@ -1,0 +1,35 @@
+SOURCE_COMMIT=e5f0d18c75f0d5a7a6998bdfdff1a62955e11580
+SOURCE_STATUS=[]
+G2_LP2B1_WP0 checks=29/29 violations=1 maxRatio=1.84123656200881 minAngle=30.1268473212255 T3=30387
+                       failedMeshSHA: 1
+                             holdSHA: 1
+                      parentStateSHA: 1
+                         terminalSHA: 1
+                            admitSHA: 1
+                           s9MESHSHA: 1
+                          s9PHASESHA: 1
+                       s9SOLUTIONSHA: 1
+                         manifestsOK: 1
+                          s9Identity: 1
+                             s9Links: 1
+                  s9ParentIsPinnedS8: 1
+                           holdLinks: 1
+                       terminalLinks: 1
+                       admitIdentity: 1
+    forecastEqualsFailedMeshPolyline: 1
+     forecastEqualsTerminalCandidate: 1
+                   tipEqualsExpected: 1
+                   arcEqualsExpected: 1
+         classificationMatrixAdvance: 1
+              ring1GapEqualsExpected: 1
+        ring1GapEqualsTerminalMetric: 1
+                          savedStage: 1
+                    savedGates12of13: 1
+                            T3Equals: 1
+                     minAngleMatches: 1
+                     maxRatioMatches: 1
+                       areasPositive: 1
+                            manifold: 1
+
+WP0_PASS=1
+MATLAB_PROCESSES_END=1

@@ -1,0 +1,70 @@
+{
+ "schema": "NewMetacomp.G2.LP2B1.Pins.v1",
+ "assignment": "https://github.com/mfs9697/NewMetacomp/issues/76",
+ "startHead": "5d794e12b8ac475a51f1cb90d0ba7bee70244996",
+ "scope": "geometry only: zero physical FEM, no GO, no new accepted state, no LP2-A3 retry or resumption",
+ "archive": {
+  "name": "NewMetacomp_G2_LP2A3_Records_20261126.zip",
+  "sha256": "e089d749737f6c5259e6ad391c785b6ac222a636ca4716aaefbbde2fd5186dc6",
+  "bytes": 30147021,
+  "members": 135,
+  "campaignRecordFiles": 109,
+  "manifestSHA256": "f99d7dfdd1c3853d6ccec6ddf946055c21b4553302c1d5d1c3c559cd1f3fb8e9"
+ },
+ "lp2a3": {
+  "runRoot": "outputs/g2_lp2a3_paths_v1/run_lp2a3_s9_s11_v1",
+  "ledgerRoot": "outputs/g2_lp2a3_campaign_ledger/G2-LP2A3-001",
+  "policyFile": "matlab/g2/lp2a3/G2_LP2A3_POLICY_v1.json",
+  "policySHA256": "7a6e17f8baa85c6e6f10186bfab3a9c10c9363e0acb5e532c00095961bf45d43",
+  "lp2a3SourceSHA256": "fa3bcecfa9cd3044253d5a72253e2058bccd044d32345f51650dcd775f42e002",
+  "lp2a2SourceSHA256": "f1d7e4d67b91968e16ebaead13be86667c7776ce48971ed5206c7f136fae7afd",
+  "lp2SourceSHA256": "357dfdcdb576d2866b9d1b41a14265300a14c30700d6475f995881041ba822ca",
+  "g2SourceSHA256": "7e5683703bd104547ef5d013aa0253ad2819b59dc58693957e2d04b4707f0947",
+  "protectedManifestFile": "docs/research/G2_LP2A3_evidence/LP2A3_PROTECTED_MANIFEST.json",
+  "protectedManifestDigest": "44c54678607fa2ed77b29eac59e7caa8b527c51b6e60d8133550906c82d7e02f",
+  "protectedManifestFileSHA256": "a6bb3a386de036cf5b7dcc3b4d382530159b3eb8c4fbbe8eb7344a4cc164629d",
+  "campaignSummary": {"path": "outputs/LP2A3_CAMPAIGN.json", "sha256": "b496aff556b9de52ffcb15fe71224afc606511481934646cb77d08059e237481"}
+ },
+ "target": {
+  "id": "soft1_S10_candidate",
+  "caseId": "soft1",
+  "stateIndex": 10,
+  "mask": [1, 0, 0],
+  "failedMesh": {"path": "soft1/S10/FAILED_MESH.mat", "sha256": "ab54ecaf0ff41bb7cd16cff0eb62c29cb9104d56490201337367bca6b54b8e12"},
+  "hold": {"path": "soft1/S10/HOLD.mat", "sha256": "dc4043f300dd459fceb4280022f8f1d2e1130c859ee8bb3b0d0a480e9d909ba0"},
+  "parentState": {"path": "soft1/S9/STATE.mat", "sha256": "79ebecbc21b4d9425e3a2b82a9bc17270373a85f2a7c26d11cfe1e7c9b45aec6"},
+  "terminal": {"path": "soft1/TERMINAL.mat", "sha256": "8f0289fdd4f9c665fb1666d50aa0a1a3126210cc5f05b70e048d9616328761e7"},
+  "admit": {"path": "ADMIT_soft1_S10.mat", "sha256": "fbe2ad38d4fe3072c1d00656c87c99bd661ef294c11e57a47541aa299863d297"},
+  "expectedTip_mm": [114.29544883822506, 63.18559491151613],
+  "expectedArc_mm": 65.4,
+  "expectedRing1GuideGap_mm": 4.632956381638341,
+  "expectedClassification": "MATRIX_ADVANCE",
+  "expectedSavedSummary": {"T3": 30387, "minAngle_deg": 30.126847, "maxNeighborRatio": 1.841237, "joinGatesPassed": 12, "joinGatesTotal": 13, "failedGate": "globalNeighborRatioAtMost1p8"}
+ },
+ "references": [
+  {
+   "id": "soft1_S9",
+   "reason": "same material (soft {1}), immediately preceding accepted state of the target",
+   "caseId": "soft1", "stateIndex": 9, "mask": [1, 0, 0],
+   "STATE": {"path": "soft1/S9/STATE.mat", "sha256": "79ebecbc21b4d9425e3a2b82a9bc17270373a85f2a7c26d11cfe1e7c9b45aec6"},
+   "MESH": {"path": "soft1/S9/MESH.mat", "sha256": "5afd6e8199ca797ced1a73ba7584c29334abdad7d2413d1bc39a2e0385d1eae0"},
+   "PHASE": {"path": "soft1/S9/PHASE.mat", "sha256": "fe0ad27f471d052153edbebe6ecf39e525021f5051c4572b97e3f89907f0c83e"},
+   "SOLUTION": {"path": "soft1/S9/SOLUTION.mat", "sha256": "ae981011e8092115037b0ae910cd92d2e7e352b2fcb88677425dfd564abcc54b"},
+   "admit": {"path": "ADMIT_soft1_S9.mat", "sha256": "d0ab9305e48a75ac73bca946bc94e9e6d29f69fad607867298175a717c90a216"},
+   "nextPredictor": "S10 candidate = signed-MTS forecast from soft1 S9 (equals the target polyline); no accepted S10 exists"
+  },
+  {
+   "id": "H_S10",
+   "reason": "same state index S10, homogeneous comparison (mask [0 0 0])",
+   "caseId": "H", "stateIndex": 10, "mask": [0, 0, 0],
+   "STATE": {"path": "H/S10/STATE.mat", "sha256": "b1d929ab1faa49441a5dac09be58b0b866c93f616e717edaacc410828ecf5a4a"},
+   "MESH": {"path": "H/S10/MESH.mat", "sha256": "6e79b5e0c34cc7e0db6546e159d17384406613c32884a574237a83e58afa11d0"},
+   "PHASE": {"path": "H/S10/PHASE.mat", "sha256": "b64a080234eff198b9c8a69a3d1e43f9376b5b08e46fe9712889e775711010ea"},
+   "SOLUTION": {"path": "H/S10/SOLUTION.mat", "sha256": "51a232d061e3ceb9c6d9995ab84bc19b5279bb219d765c6dd2626bc3515e54ac"},
+   "admit": {"path": "ADMIT_H_S10.mat", "sha256": "d2a18b576a9bd2d7b065ee09f56e33aa9dededdb75a2314dacd3e59a34566ed5"},
+   "parentState": {"path": "H/S9/STATE.mat", "sha256": "09b81360575c394bb6fed2d1dd3f817fd4e7a85a2e2f9566d3c433c73b8f3d5f"},
+   "nextState": {"path": "H/S11/STATE.mat", "sha256": "591c894b68e29751dbd8b06b5af50a6ce832e5b2bcf82c3c1052784d61781e7f"},
+   "nextPredictor": "S11 = signed-MTS forecast from H S10 (equals the accepted H S11 polyline)"
+  }
+ ]
+}

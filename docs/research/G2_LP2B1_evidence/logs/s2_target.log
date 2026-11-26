@@ -1,0 +1,21 @@
+SOURCE_COMMIT=e5f0d18c75f0d5a7a6998bdfdff1a62955e11580
+SOURCE_STATUS=[]
+G2_LP2B1_ATTEMPT T_soft1_S10_h040 hs=0.40 stage=KINKED_PROTECTED_MESH_JOIN_PASS join=13/13 T3=30357 minAng=23.179107 ratio=1.601535 checks=8/19 pass=0
+G2_LP2B1_WP1 target outcome=HOLD_NON_QUALITY_FAILURE
+                  name: 'T_soft1_S10_h040'
+        seedSpacing_mm: 0.4000
+                 stage: 'KINKED_PROTECTED_MESH_JOIN_PASS'
+           failedGates: {1x0 cell}
+             joinGates: '13/13'
+    qualityOnlyFailure: 0
+                  pass: 0
+                checks: '8/19'
+                    T3: 30357
+       canonicalSHA256: '54293d2a527f9bec33605ffea10c8f56af46a56291157f0d911cf68301b85bd2'
+      arraysFileSHA256: 'cc94cd6f5bd91fffcd796cdad5511f3e9ec405093731b281852a26cc8861de9b'
+      maxNeighborRatio: 1.6015
+          minAngle_deg: 23.1791
+            violations: 0
+
+WP1_TARGET_OUTCOME=HOLD_NON_QUALITY_FAILURE
+MATLAB_PROCESSES_END=1

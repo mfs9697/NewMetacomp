@@ -1,0 +1,46 @@
+SOURCE_COMMIT=3e8de6a765dd1fab775ca449c86352563a5df38e
+SOURCE_STATUS=[]
+CHECKCODE g2_lp2b1_attempt.m:23 NASGU Value assigned to variable might be unused.
+CHECKCODE g2_lp2b1_attempt.m:80 NASGU Value assigned to variable might be unused.
+CHECKCODE g2_lp2b1_attempt.m:109 MSNU A Code Analyzer message was once suppressed here, but the message is no longer generated.
+CHECKCODE g2_lp2b1_attempt.m:110 MSNU A Code Analyzer message was once suppressed here, but the message is no longer generated.
+CHECKCODE g2_lp2b1_metrics.m:30 FNDSB For array or cell array, performance can be improved using logical indexing instead of 'find'.
+CHECKCODE g2_lp2b1_metrics.m:36 FNDSB For array or cell array, performance can be improved using logical indexing instead of 'find'.
+PARSE_ERRORS=0
+G2_LP2B1_ATTEMPT R_soft1_S9_h040 hs=0.40 stage=KINKED_PROTECTED_MESH_JOIN_PASS join=13/13 T3=30183 minAng=22.387808 ratio=1.591829 checks=19/19 pass=1
+G2_LP2B1_ATTEMPT R_H_S10_h040 hs=0.40 stage=KINKED_PROTECTED_MESH_JOIN_PASS join=13/13 T3=30349 minAng=22.782266 ratio=1.591829 checks=19/19 pass=1
+G2_LP2B1_WP1 references outcome=REFERENCES_PASS
+                    name: 'R_soft1_S9_h040'
+          seedSpacing_mm: 0.4000
+                   stage: 'KINKED_PROTECTED_MESH_JOIN_PASS'
+             failedGates: {1x0 cell}
+               joinGates: '13/13'
+      qualityOnlyFailure: 0
+                    pass: 1
+                  checks: '19/19'
+                      T3: 30183
+         canonicalSHA256: '7535d71ad4790f3a24a47d03e27c3d73d8ba61df03050a2e952accfeffebee16'
+        arraysFileSHA256: '1c4de0dffd17a23aadb9f2b0e18250dd9f7c6c289d1679c47e1d074275b37449'
+        maxNeighborRatio: 1.5918
+            minAngle_deg: 22.3878
+              violations: 0
+    originalAcceptedMesh: [1x1 struct]
+
+                    name: 'R_H_S10_h040'
+          seedSpacing_mm: 0.4000
+                   stage: 'KINKED_PROTECTED_MESH_JOIN_PASS'
+             failedGates: {1x0 cell}
+               joinGates: '13/13'
+      qualityOnlyFailure: 0
+                    pass: 1
+                  checks: '19/19'
+                      T3: 30349
+         canonicalSHA256: '45298fae6257674b99de036341b6d0c05b55fbb6bb7be635786f8ae71bb068e3'
+        arraysFileSHA256: 'ffcb53f12c4b06b463a3df4c644d93459a4f456a04a5185fe3ad453b5db75122'
+        maxNeighborRatio: 1.5918
+            minAngle_deg: 22.7823
+              violations: 0
+    originalAcceptedMesh: [1x1 struct]
+
+WP1_REFERENCES_OUTCOME=REFERENCES_PASS
+MATLAB_PROCESSES_END=1
