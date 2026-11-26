@@ -25,3 +25,7 @@
 ## Розділ 6
 
 Оригінальні рисунки G1-1–G1-5, F06-1, R1 g3/g4/g5/g6/g7 включено; F06-2 і R1 g4b збережено як альтернативи. Джерела й SHA: [CH06_RING_PLACEMENT_PROVENANCE.md](../evidence/CH06_RING_PLACEMENT_PROVENANCE.md).
+
+## Розділ 7
+
+П'ять оригіналів M4.A/M5/F07-1 та один оновлений TikZ-графік. Вісім альтернативних або історичних рисунків у archive_feedback/; M5-2 застарів після X6, тому його не включено. [Джерела](../evidence/CH07_FEEDBACK_PROVENANCE.md).
