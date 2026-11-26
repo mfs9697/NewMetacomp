@@ -1,0 +1,468 @@
+{
+  "scope": "Independent arithmetic of committed summary arrays and M4.B table; no FEM or raw MAT verification",
+  "source_sha": "923ef406349d75c5d7f7ed77f954cf36614b272d",
+  "source_paths": [
+    "docs/research/G2_LP2_evidence/campaign_20261125/LP2A_ANALYSIS.json",
+    "docs/research/G2_M5_X6_evidence/campaign_20261125/M5X6_ANALYSIS.json",
+    "matlab/g2/evidence/a1_campaign_20261122/campaign/A1_ANALYSIS.json",
+    "matlab/g2/evidence/m4b_20261121/analysis/cases_16_logical.csv"
+  ],
+  "checks": [
+    {
+      "check": "H matched arclength",
+      "pass": true
+    },
+    {
+      "check": "H S4-S8 G growth",
+      "pass": true,
+      "recomputed": 0.6637042096070116
+    },
+    {
+      "check": "stiff13 matched arclength",
+      "pass": true
+    },
+    {
+      "check": "stiff13 S0 F_G",
+      "pass": true,
+      "recomputed": -0.039312131376338266,
+      "stored": -0.039312131376338266
+    },
+    {
+      "check": "stiff13 S1 F_G",
+      "pass": true,
+      "recomputed": -0.044972131080844746,
+      "stored": -0.044972131080844746
+    },
+    {
+      "check": "stiff13 S2 F_G",
+      "pass": true,
+      "recomputed": -0.05347845313462685,
+      "stored": -0.05347845313462685
+    },
+    {
+      "check": "stiff13 S3 F_G",
+      "pass": true,
+      "recomputed": -0.062411167596481465,
+      "stored": -0.062411167596481465
+    },
+    {
+      "check": "stiff13 S4 F_G",
+      "pass": true,
+      "recomputed": -0.07173169597893636,
+      "stored": -0.07173169597893636
+    },
+    {
+      "check": "stiff13 S5 F_G",
+      "pass": true,
+      "recomputed": -0.08135956088567498,
+      "stored": -0.08135956088567498
+    },
+    {
+      "check": "stiff13 S6 F_G",
+      "pass": true,
+      "recomputed": -0.09111180146017828,
+      "stored": -0.09111180146017828
+    },
+    {
+      "check": "stiff13 S7 F_G",
+      "pass": true,
+      "recomputed": -0.10066332983470483,
+      "stored": -0.10066332983470483
+    },
+    {
+      "check": "stiff13 S8 F_G",
+      "pass": true,
+      "recomputed": -0.10948893228343659,
+      "stored": -0.10948893228343659
+    },
+    {
+      "check": "stiff13 S4-S8 G growth",
+      "pass": true,
+      "recomputed": 0.5960331788168682
+    },
+    {
+      "check": "soft2 matched arclength",
+      "pass": true
+    },
+    {
+      "check": "soft2 S0 F_G",
+      "pass": true,
+      "recomputed": -0.04258951952890033,
+      "stored": -0.04258951952890033
+    },
+    {
+      "check": "soft2 S1 F_G",
+      "pass": true,
+      "recomputed": -0.03881374646885294,
+      "stored": -0.03881374646885294
+    },
+    {
+      "check": "soft2 S2 F_G",
+      "pass": true,
+      "recomputed": -0.035768158657430216,
+      "stored": -0.035768158657430216
+    },
+    {
+      "check": "soft2 S3 F_G",
+      "pass": true,
+      "recomputed": -0.03259547403597396,
+      "stored": -0.03259547403597396
+    },
+    {
+      "check": "soft2 S4 F_G",
+      "pass": true,
+      "recomputed": -0.029318154347938497,
+      "stored": -0.029318154347938497
+    },
+    {
+      "check": "soft2 S5 F_G",
+      "pass": true,
+      "recomputed": -0.025933194830278783,
+      "stored": -0.025933194830278783
+    },
+    {
+      "check": "soft2 S6 F_G",
+      "pass": true,
+      "recomputed": -0.022422503836180496,
+      "stored": -0.022422503836180496
+    },
+    {
+      "check": "soft2 S7 F_G",
+      "pass": true,
+      "recomputed": -0.018754623438246965,
+      "stored": -0.018754623438246965
+    },
+    {
+      "check": "soft2 S8 F_G",
+      "pass": true,
+      "recomputed": -0.014883513662928172,
+      "stored": -0.014883513662928172
+    },
+    {
+      "check": "soft2 S4-S8 G growth",
+      "pass": true,
+      "recomputed": 0.688444522387544
+    },
+    {
+      "check": "soft1 matched arclength",
+      "pass": true
+    },
+    {
+      "check": "soft1 S0 F_G",
+      "pass": true,
+      "recomputed": 0.02745821892637479,
+      "stored": 0.02745821892637479
+    },
+    {
+      "check": "soft1 S1 F_G",
+      "pass": true,
+      "recomputed": 0.0327435824560931,
+      "stored": 0.0327435824560931
+    },
+    {
+      "check": "soft1 S2 F_G",
+      "pass": true,
+      "recomputed": 0.04239471266845096,
+      "stored": 0.04239471266845096
+    },
+    {
+      "check": "soft1 S3 F_G",
+      "pass": true,
+      "recomputed": 0.05258473303853295,
+      "stored": 0.05258473303853295
+    },
+    {
+      "check": "soft1 S4 F_G",
+      "pass": true,
+      "recomputed": 0.06328936089276849,
+      "stored": 0.06328936089276849
+    },
+    {
+      "check": "soft1 S5 F_G",
+      "pass": true,
+      "recomputed": 0.07440871537679805,
+      "stored": 0.07440871537679805
+    },
+    {
+      "check": "soft1 S6 F_G",
+      "pass": true,
+      "recomputed": 0.08572566543829652,
+      "stored": 0.08572566543829652
+    },
+    {
+      "check": "soft1 S7 F_G",
+      "pass": true,
+      "recomputed": 0.09687929255834704,
+      "stored": 0.09687929255834704
+    },
+    {
+      "check": "soft1 S8 F_G",
+      "pass": true,
+      "recomputed": 0.10732482855393055,
+      "stored": 0.10732482855393055
+    },
+    {
+      "check": "soft1 S4-S8 G growth",
+      "pass": true,
+      "recomputed": 0.7326054848519514
+    },
+    {
+      "check": "stiff13 G F_mat",
+      "pass": true,
+      "recomputed": -0.07368356830618941,
+      "stored": -0.07368356830618941
+    },
+    {
+      "check": "stiff13 G F_path",
+      "pass": true,
+      "recomputed": 0.0020242539967398926,
+      "stored": 0.0020242539967398926
+    },
+    {
+      "check": "stiff13 G F_int",
+      "pass": true,
+      "recomputed": -0.00007686436295887716,
+      "stored": -0.00007686436295887716
+    },
+    {
+      "check": "stiff13 G F_tot",
+      "pass": true,
+      "recomputed": -0.0717361786724083,
+      "stored": -0.0717361786724083
+    },
+    {
+      "check": "stiff13 MTS_deg F_mat",
+      "pass": true,
+      "recomputed": -0.7112649619950269,
+      "stored": -0.7112649619950269
+    },
+    {
+      "check": "stiff13 MTS_deg F_path",
+      "pass": true,
+      "recomputed": 0.8056562262603554,
+      "stored": 0.8056562262603554
+    },
+    {
+      "check": "stiff13 MTS_deg F_int",
+      "pass": true,
+      "recomputed": -0.016608812525641836,
+      "stored": -0.016608812525641836
+    },
+    {
+      "check": "stiff13 MTS_deg F_tot",
+      "pass": true,
+      "recomputed": 0.07778245173968679,
+      "stored": 0.07778245173968679
+    },
+    {
+      "check": "stiff13 A1 range",
+      "pass": true,
+      "recomputed": 0.000004482693471641319,
+      "stored": 0.000004482693471641319
+    },
+    {
+      "check": "soft2 G F_mat",
+      "pass": true,
+      "recomputed": -0.030319598763305436,
+      "stored": -0.030319598763305436
+    },
+    {
+      "check": "soft2 G F_path",
+      "pass": true,
+      "recomputed": 0.000944658489905817,
+      "stored": 0.000944658489905817
+    },
+    {
+      "check": "soft2 G F_int",
+      "pass": true,
+      "recomputed": 0.00005796463227049664,
+      "stored": 0.00005796463227049664
+    },
+    {
+      "check": "soft2 G F_tot",
+      "pass": true,
+      "recomputed": -0.029316975641129124,
+      "stored": -0.029316975641129124
+    },
+    {
+      "check": "soft2 MTS_deg F_mat",
+      "pass": true,
+      "recomputed": -0.4713891158343555,
+      "stored": -0.4713891158343555
+    },
+    {
+      "check": "soft2 MTS_deg F_path",
+      "pass": true,
+      "recomputed": 0.43870774487365005,
+      "stored": 0.43870774487365005
+    },
+    {
+      "check": "soft2 MTS_deg F_int",
+      "pass": true,
+      "recomputed": -0.002970493766909499,
+      "stored": -0.002970493766909499
+    },
+    {
+      "check": "soft2 MTS_deg F_tot",
+      "pass": true,
+      "recomputed": -0.035651864727614946,
+      "stored": -0.035651864727614946
+    },
+    {
+      "check": "soft2 A1 range",
+      "pass": true,
+      "recomputed": 0.0000011787068096014153,
+      "stored": 0.0000011787068096014153
+    },
+    {
+      "check": "soft1 G F_mat",
+      "pass": true,
+      "recomputed": 0.06691160210597277,
+      "stored": 0.06691160210597277
+    },
+    {
+      "check": "soft1 G F_path",
+      "pass": true,
+      "recomputed": -0.003734627307943628,
+      "stored": -0.003734627307943628
+    },
+    {
+      "check": "soft1 G F_int",
+      "pass": true,
+      "recomputed": 0.00011746925156406203,
+      "stored": 0.00011746925156406203
+    },
+    {
+      "check": "soft1 G F_tot",
+      "pass": true,
+      "recomputed": 0.06329444404959321,
+      "stored": 0.06329444404959321
+    },
+    {
+      "check": "soft1 MTS_deg F_mat",
+      "pass": true,
+      "recomputed": 1.2378503239783123,
+      "stored": 1.2378503239783123
+    },
+    {
+      "check": "soft1 MTS_deg F_path",
+      "pass": true,
+      "recomputed": -1.2958625551300538,
+      "stored": -1.2958625551300538
+    },
+    {
+      "check": "soft1 MTS_deg F_int",
+      "pass": true,
+      "recomputed": -0.03077047438093694,
+      "stored": -0.03077047438093694
+    },
+    {
+      "check": "soft1 MTS_deg F_tot",
+      "pass": true,
+      "recomputed": -0.08878270553267842,
+      "stored": -0.08878270553267842
+    },
+    {
+      "check": "soft1 A1 range",
+      "pass": true,
+      "recomputed": 0.000005083156825014257,
+      "stored": 0.000005083156825014257
+    },
+    {
+      "check": "M4.B 0.5 none F_G",
+      "pass": true,
+      "recomputed": 0,
+      "stored": 0
+    },
+    {
+      "check": "M4.B 0.5 ring1 F_G",
+      "pass": true,
+      "recomputed": 0.04429805111897611,
+      "stored": 0.0442980511184
+    },
+    {
+      "check": "M4.B 0.5 ring2 F_G",
+      "pass": true,
+      "recomputed": -0.03627839469827565,
+      "stored": -0.0362783946958
+    },
+    {
+      "check": "M4.B 0.5 ring3 F_G",
+      "pass": true,
+      "recomputed": 0.023310284242157087,
+      "stored": 0.0233102842452
+    },
+    {
+      "check": "M4.B 0.5 rings12 F_G",
+      "pass": true,
+      "recomputed": 0.003158631617738772,
+      "stored": 0.00315863162463
+    },
+    {
+      "check": "M4.B 0.5 rings13 F_G",
+      "pass": true,
+      "recomputed": 0.06746549998436002,
+      "stored": 0.0674654999902
+    },
+    {
+      "check": "M4.B 0.5 rings23 F_G",
+      "pass": true,
+      "recomputed": -0.016748020552721732,
+      "stored": -0.0167480205537
+    },
+    {
+      "check": "M4.B 0.5 all F_G",
+      "pass": true,
+      "recomputed": 0.021813219390160565,
+      "stored": 0.0218132193894
+    },
+    {
+      "check": "M4.B 2 none F_G",
+      "pass": true,
+      "recomputed": 0,
+      "stored": 0
+    },
+    {
+      "check": "M4.B 2 ring1 F_G",
+      "pass": true,
+      "recomputed": -0.03651686304080548,
+      "stored": -0.0365168630369
+    },
+    {
+      "check": "M4.B 2 ring2 F_G",
+      "pass": true,
+      "recomputed": 0.030352193836526764,
+      "stored": 0.0303521938362
+    },
+    {
+      "check": "M4.B 2 ring3 F_G",
+      "pass": true,
+      "recomputed": -0.018248290638919307,
+      "stored": -0.0182482906386
+    },
+    {
+      "check": "M4.B 2 rings12 F_G",
+      "pass": true,
+      "recomputed": -0.009057940583425461,
+      "stored": -0.00905794057768
+    },
+    {
+      "check": "M4.B 2 rings13 F_G",
+      "pass": true,
+      "recomputed": -0.0547795556271059,
+      "stored": -0.0547795556205
+    },
+    {
+      "check": "M4.B 2 rings23 F_G",
+      "pass": true,
+      "recomputed": 0.009802819980021305,
+      "stored": 0.00980281998297
+    },
+    {
+      "check": "M4.B 2 all F_G",
+      "pass": true,
+      "recomputed": -0.029312701358743865,
+      "stored": -0.0293127013556
+    }
+  ]
+}

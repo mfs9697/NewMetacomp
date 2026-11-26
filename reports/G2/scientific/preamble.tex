@@ -1,0 +1,38 @@
+% Compile with XeLaTeX. UTF-8 sources.
+\usepackage{fontspec}
+\usepackage{polyglossia}
+\setmainlanguage{ukrainian}
+\setotherlanguage{english}
+\setmainfont{Libertinus Serif}
+\setsansfont{Libertinus Sans}
+\setmonofont{Libertinus Mono}
+\usepackage{amsmath}
+\usepackage{unicode-math}
+\setmathfont{Libertinus Math}
+\usepackage[a4paper,left=25mm,right=20mm,top=23mm,bottom=23mm]{geometry}
+\usepackage{graphicx}
+\usepackage{tikz}
+\graphicspath{{figures/}}
+\usepackage{booktabs,array,tabularx}
+\usepackage{siunitx}
+\sisetup{output-decimal-marker={,}}
+\usepackage{caption,subcaption}
+\captionsetup{font=small,labelfont=bf}
+\usepackage{microtype}
+\usepackage{setspace}
+\setstretch{1.12}
+\setlength{\parindent}{1.25cm}
+\setlength{\parskip}{0pt}
+\usepackage{titlesec}
+\titleformat{\chapter}[hang]{\normalfont\Large\bfseries}{\thechapter.}{0.7em}{}
+\titlespacing*{\chapter}{0pt}{0pt}{1.2em}
+\newif\ifreportbibliography
+% Enable only after verified references and citations are added:
+% \reportbibliographytrue
+\ifreportbibliography
+  \usepackage[backend=biber,style=numeric,sorting=none]{biblatex}
+  \addbibresource{references.bib}
+\fi
+\usepackage[unicode,hidelinks]{hyperref}
+% Visible placeholders are never evidence or scientific claims.
+\newcommand{\reporttodo}[1]{\par\noindent\textit{Робочий план: #1}\par}

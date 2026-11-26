@@ -1,0 +1,45 @@
+\begin{tikzpicture}[x=1mm,y=1mm,font=\small]
+ \draw[->] (0,0)--(121,0) node[right] {Стан};
+ \draw[->] (0,-42)--(0,42) node[above] {$F_G$, \%};
+ \foreach \v in {-8,-6,-4,-2,2,4,6,8}{
+  \draw[black!15] (0,5*\v)--(112,5*\v);
+  \node[anchor=east,font=\scriptsize] at (-1,5*\v) {\v};
+ }
+ \foreach \i in {0,1,2,3,4}{
+  \draw (10+24*\i,0)--(10+24*\i,-1);
+  \node[anchor=north,font=\scriptsize] at (10+24*\i,-43) {S\i};
+ }
+\draw[red!65!black,line width=.8pt] (10,-19.65607)--(34,-22.48607)--(58,-26.73923)--(82,-31.20558)--(106,-35.86585);
+\draw[red!65!black,fill=white] (10,-19.65607) circle[radius=.8mm];
+\draw[red!65!black,fill=white] (34,-22.48607) circle[radius=.8mm];
+\draw[red!65!black,fill=white] (58,-26.73923) circle[radius=.8mm];
+\draw[red!65!black,fill=white] (82,-31.20558) circle[radius=.8mm];
+\draw[red!65!black,fill=white] (106,-35.86585) circle[radius=.8mm];
+\fill[red!65!black] (10,-19.65607) circle[radius=1mm];
+\fill[red!65!black] (58,-27.38978) circle[radius=1mm];
+\fill[red!65!black] (106,-36.84178) circle[radius=1mm];
+\node[anchor=west,font=\scriptsize,text=red!65!black] at (112,-36.84178) {stiff13};
+\draw[blue!65!black,line width=.8pt] (10,-21.29476)--(34,-19.40687)--(58,-17.88408)--(82,-16.29774)--(106,-14.65908);
+\draw[blue!65!black,fill=white] (10,-21.29476) circle[radius=.8mm];
+\draw[blue!65!black,fill=white] (34,-19.40687) circle[radius=.8mm];
+\draw[blue!65!black,fill=white] (58,-17.88408) circle[radius=.8mm];
+\draw[blue!65!black,fill=white] (82,-16.29774) circle[radius=.8mm];
+\draw[blue!65!black,fill=white] (106,-14.65908) circle[radius=.8mm];
+\fill[blue!65!black] (10,-21.29476) circle[radius=1mm];
+\fill[blue!65!black] (58,-18.13920) circle[radius=1mm];
+\fill[blue!65!black] (106,-15.15980) circle[radius=1mm];
+\node[anchor=west,font=\scriptsize,text=blue!65!black] at (112,-15.15980) {soft2};
+\draw[green!45!black,line width=.8pt] (10,13.72911)--(34,16.37179)--(58,21.19736)--(82,26.29237)--(106,31.64468);
+\draw[green!45!black,fill=white] (10,13.72911) circle[radius=.8mm];
+\draw[green!45!black,fill=white] (34,16.37179) circle[radius=.8mm];
+\draw[green!45!black,fill=white] (58,21.19736) circle[radius=.8mm];
+\draw[green!45!black,fill=white] (82,26.29237) circle[radius=.8mm];
+\draw[green!45!black,fill=white] (106,31.64468) circle[radius=.8mm];
+\fill[green!45!black] (10,13.72911) circle[radius=1mm];
+\fill[green!45!black] (58,22.14903) circle[radius=1mm];
+\fill[green!45!black] (106,33.45580) circle[radius=1mm];
+\node[anchor=west,font=\scriptsize,text=green!45!black] at (112,33.45580) {soft1};
+ \node[anchor=west,font=\scriptsize] at (1,-50) {Порожні: власна траєкторія B0; заповнені: фіксована геометрія.};
+ \node[anchor=west,font=\scriptsize] at (1,-55) {S4: прямий ефект B9, решта станів --- базові сітки.};
+ \node[anchor=west,font=\scriptsize] at (1,-60) {Довжини S0--S4: 25,4; 29,4; 33,4; 37,4; 41,4 мм.};
+\end{tikzpicture}

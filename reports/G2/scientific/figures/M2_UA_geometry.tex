@@ -1,0 +1,22 @@
+% Nominal rings; reference tips from WP34_STATE2_RESULTS.md.
+\begin{tikzpicture}[x=.7mm,y=.7mm,font=\small]
+ \draw (65,0)--(205,0);
+ \foreach \yy in {69.85,120.65}{
+   \filldraw[fill=black!8,draw=black!55] (152.4,\yy) circle[radius=19.05];
+   \filldraw[fill=white,draw=black] (152.4,\yy) circle[radius=6.35];
+ }
+ \node[anchor=west] at (174,69.85) {Кільце 1};
+ \node[anchor=west] at (174,120.65) {Кільце 2};
+ \draw[very thick] (101.6,0)--(101.6,25.4)--(102.4722795671,29.3037326185)--(103.4091509165,33.1924691839);
+ \foreach \xx/\yy/\lab/\ly in {101.6/25.4/S0/16,102.4722795671/29.3037326185/S1/29,103.4091509165/33.1924691839/S2/42}{
+   \fill (\xx,\yy) circle[radius=1.1pt];
+   \draw[black!65] (\xx,\yy)--(89,\ly)--(81,\ly);
+   \node[anchor=east] at (80,\ly) {\lab};
+ }
+ \draw[densely dashed] (101.6,25.4)--(138.06341397,57.30548722);
+ \draw[densely dashed] (103.4091509165,33.1924691839)--(137.14721633,58.43706477);
+ \node[anchor=west,align=left,font=\scriptsize] at (110,18) {Відстані до найближчого\\вузла кільця: 48,46;\\45,27; 42,14 мм};
+ \draw[->] (66,2)--(79,2) node[anchor=west] {$x$};
+ \draw[->] (66,2)--(66,15) node[anchor=south] {$y$};
+ \node[anchor=north] at (135,-3) {Фрагмент пластини; розміри в мм};
+\end{tikzpicture}

@@ -1,0 +1,3 @@
+# Дані G2-SR0
+
+SR0_OWN_PATHS.csv, SR0_CROSSED_S4.csv — похідні таблиці з JSON, джерело: PR #72, SHA 923ef406349d75c5d7f7ed77f954cf36614b272d, відповідно `docs/research/G2_LP2_evidence/campaign_20261125/LP2A_ANALYSIS.json` і `docs/research/G2_M5_X6_evidence/campaign_20261125/M5X6_ANALYSIS.json`. SR0_M4B_SOURCE.csv — текстова копія `matlab/g2/evidence/m4b_20261121/analysis/cases_16_logical.csv` на тому самому SHA. Порівняння за однаковою довжиною тріщини. G у N/mm за P=1 N у таблиці траєкторій; для J/m² множити на 1000. КІН у вихідних MPa sqrt(mm) за P=1 N. У X6 енергетичні внески — частки, кутові — градуси. M4.B має власні одиниці в заголовках. Перевірки в evidence/SR0_ARITHMETIC_CHECKS.json. Вихідні файли не змінено. Не екстраполювати за S8 і не змішувати B0 з B9.
