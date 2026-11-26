@@ -9,14 +9,15 @@ function T=g2_lp2b1eq_topology(Dn,Do,nBlk)
 %  coordinates  X6_new(map(i)) == X6_old(i) bitwise;  nodal q equal at mapped nodes; qActiveT6Rows equal
 %  T3 block     T3 rows and the X3 block vertices identical (vertex IDs are protected and not renumbered)
 %  banks        map(old upper-bank block nodes) == new upper-bank block nodes (as sets), same for lower; the only
-%               block node common to both banks is the physical tip node, in both meshes, and map(tip) = new tip
+%               block node common to both banks is the physical tip node, in both meshes, and map(tip) = new tip,
+%               with identical tip coordinates and within 1e-9 mm of the polyline tip in both meshes
 %  coincidence  every set of coincident block nodes is exactly one {upper, lower} bank pair, in both meshes
 % T.pass = all checks; T.checks names each; counts reported.
 if nargin<3,nBlk=2916;end
 c=struct();
 c.blockRows=isfield(Dn,'elementRows')&&isfield(Do,'elementRows')&&Dn.elementRows.collar(end)==nBlk&&Do.elementRows.collar(end)==nBlk&& ...
  Dn.elementRows.core(end)==2788&&Do.elementRows.core(end)==2788&&size(Dn.T6,1)>=nBlk&&size(Do.T6,1)>=nBlk;
-T=struct('pass',false,'checks',c,'blockNodes',NaN,'bankPairsInBlock',NaN,'distinctBankDOFsInBlock',NaN,'tipOld',NaN,'tipNew',NaN);
+T=struct('pass',false,'checks',c,'blockNodes',NaN,'bankPairsInBlock',NaN,'distinctBankDOFsInBlock',NaN,'tipOld',NaN,'tipNew',NaN,'tipOffsetFromPolyline_mm',[NaN NaN]);
 if ~c.blockRows,T.checks=c;return,end
 T6o=double(Do.T6(1:nBlk,:));T6n=double(Dn.T6(1:nBlk,:));
 [uo,~,io]=unique(T6o(:));nv=T6n(:);
@@ -33,11 +34,16 @@ nU=intersect(mp,double(Dn.upperBankT6(:)));nL=intersect(mp,double(Dn.lowerBankT6
 c.banks=c.injective&&isequal(sort(mapf(uoU)),sort(nU))&&isequal(sort(mapf(uoL)),sort(nL));
 shO=intersect(uoU,uoL);shN=intersect(nU,nL);
 tipO=NaN;tipN=NaN;if isfield(Do,'physicalTipNode'),tipO=double(Do.physicalTipNode);end;if isfield(Dn,'physicalTipNode'),tipN=double(Dn.physicalTipNode);end
+% Correction after replay_v1 (diag_tip_v1): the archived accepted H S10 mesh and its 0.40 mm replacement place the
+% physical tip node one ulp (1.42e-14 mm) from the polyline tip, identically in both. Required here: identical tip
+% coordinates in both meshes (bitwise) and the inherited 1e-9 mm node tolerance to the polyline tip (as the bank
+% pairing, the comparator node match and the solver BVP anchors); the offset is reported.
 c.tip=isscalar(shO)&&isscalar(shN)&&isequal(shO,tipO)&&isequal(shN,tipN)&&c.injective&&isequal(mapf(shO),shN)&& ...
- isequal(Do.X6(tipO,:),Do.crackPolyline(end,:))&&isequal(Dn.X6(tipN,:),Dn.crackPolyline(end,:));
+ isequal(Dn.X6(tipN,:),Do.X6(tipO,:))&&norm(Do.X6(tipO,:)-Do.crackPolyline(end,:))<=1e-9&&norm(Dn.X6(tipN,:)-Dn.crackPolyline(end,:))<=1e-9;
 c.coincidenceOld=pairsOnly(Do.X6(uo,:),uo,uoU,uoL);c.coincidenceNew=c.injective&&pairsOnly(Dn.X6(mp,:),mp,nU,nL);
 T.checks=c;T.pass=all(cell2mat(struct2cell(c)));T.blockNodes=numel(uo);
 T.bankPairsInBlock=numel(setdiff(uoU,shO));T.distinctBankDOFsInBlock=2*numel(unique([nU;nL]));T.tipOld=tipO;T.tipNew=tipN;
+if isfinite(tipO)&&isfinite(tipN),T.tipOffsetFromPolyline_mm=[norm(Do.X6(tipO,:)-Do.crackPolyline(end,:)),norm(Dn.X6(tipN,:)-Dn.crackPolyline(end,:))];end
 end
 
 function ok=pairsOnly(X,ids,U,L)

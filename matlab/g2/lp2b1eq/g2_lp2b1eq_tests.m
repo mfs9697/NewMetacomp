@@ -170,6 +170,9 @@ R{end+1}=t('E4_merged_bank_pair_detected_although_coordinates_equal',~Em.pass&&~
 Ds=Qa{1};Ds.upperBankT6=Qa{1}.lowerBankT6;Ds.lowerBankT6=Qa{1}.upperBankT6;R{end+1}=t('E5_swapped_bank_sides_detected',~g2_lp2b1eq_topology(Ds,Ref1.mesh).checks.banks);
 Dc=Qa{1};nd=Dc.T6(100,4);Dc.X6(nd,1)=up1(Dc.X6(nd,1));R{end+1}=t('E6_one_ulp_coordinate_detected',~g2_lp2b1eq_topology(Dc,Ref1.mesh).checks.coordinates);
 Dt=Qa{1};Dt.T6(100,:)=Dt.T6(100,[2 3 1 5 6 4]);R{end+1}=t('E7_local_rotation_detected',~g2_lp2b1eq_topology(Dt,Ref1.mesh).pass);
+R{end+1}=t('E8_H_tip_one_ulp_from_polyline_identical_in_both_meshes',E2.checks.tip&&E2.tipOffsetFromPolyline_mm(1)>0&&E2.tipOffsetFromPolyline_mm(1)<=1e-13&&isequal(E2.tipOffsetFromPolyline_mm(1),E2.tipOffsetFromPolyline_mm(2))&&E1.tipOffsetFromPolyline_mm(1)==0);
+Du=Qa{2};Du.X6(Du.physicalTipNode,1)=up1(Du.X6(Du.physicalTipNode,1));Tu=g2_lp2b1eq_topology(Du,Ref2.mesh);
+R{end+1}=t('E9_tip_moved_one_ulp_versus_archived_detected',~Tu.pass&&~Tu.checks.tip&&~Tu.checks.coordinates);
 % ---------------------------------------------------------------- F C8 station coverage 0.40 mm vs archived
 okf=true;F=struct([]);
 for k=1:2
