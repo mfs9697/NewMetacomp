@@ -1,0 +1,54 @@
+{
+ "schema": "NewMetacomp.G2.LP2B1.EquivalenceContractDraft.v1",
+ "status": "PROSPECTIVE DRAFT for review. NOT a policy, NOT a GO template, NOT executable. Zero physical calculations are authorized by this file.",
+ "assignment": "https://github.com/mfs9697/NewMetacomp/issues/76 (WP2)",
+ "purpose": "Two future fixed-geometry physical equivalence calculations at the LP2-B1 selected bank seed spacing, against the original accepted LP2-A3 records of the SAME geometry and material, before any continuation of soft1 beyond S9 may be proposed.",
+ "selectedSpacing_mm": 0.40,
+ "selectionEvidence": "LP2-B1 WP1 attempt 2 (amendment A1): first preregistered candidate passing all 19 checks on the soft1 S10 target; deterministic repeat; references soft1 S9 and H S10 pass 19/19 at 0.40 mm",
+ "solves": [
+  {"order": 1, "id": "EQB-soft1-S9", "geometry": "accepted soft1 S9 polyline/tangent (STATE 79ebecbc...)", "material": "soft1, mask [1 0 0], ratio 0.5",
+   "mesh": "g2_lp2a2_join(...,SeedSpacing_mm 0.40) + pairing + g2_lp1_audit; canonical array digest must equal the LP2-B1 record of R_soft1_S9_h040 before the solve",
+   "archived": {"STATE": "79ebecbc21b4d9425e3a2b82a9bc17270373a85f2a7c26d11cfe1e7c9b45aec6", "SOLUTION": "ae981011e8092115037b0ae910cd92d2e7e352b2fcb88677425dfd564abcc54b", "MESH": "5afd6e8199ca797ced1a73ba7584c29334abdad7d2413d1bc39a2e0385d1eae0"},
+   "nextPredictor": {"state": "S10", "archivedNextTip_mm": [114.29544883822506, 63.18559491151613], "source": "signed-MTS 4-mm forecast from the archived soft1 S9 K (= stored TERMINAL candidate and failed-mesh polyline)"}},
+  {"order": 2, "id": "EQB-H-S10", "geometry": "accepted H S10 polyline/tangent (STATE b1d929ab...)", "material": "H, mask [0 0 0], ratio 1",
+   "mesh": "g2_lp2a2_join(...,SeedSpacing_mm 0.40) + pairing + g2_lp1_audit; canonical array digest must equal the LP2-B1 record of R_H_S10_h040 before the solve",
+   "archived": {"STATE": "b1d929ab1faa49441a5dac09be58b0b866c93f616e717edaacc410828ecf5a4a", "SOLUTION": "51a232d061e3ceb9c6d9995ab84bc19b5279bb219d765c6dd2626bc3515e54ac", "MESH": "6e79b5e0c34cc7e0db6546e159d17384406613c32884a574237a83e58afa11d0"},
+   "nextPredictor": {"state": "S11", "archivedNextTip_mm": [116.53715206030587, 66.63469316681929], "source": "accepted H S11 STATE tip (591c894b...) = signed-MTS 4-mm forecast from the archived H S10 K"}}
+ ],
+ "solveRules": {"maxSolves": 2, "attemptsPerSolve": 1, "retry": false, "order": "EQB-soft1-S9 then EQB-H-S10", "globalStop": "stop at the first failure of any criterion, gate or integrity check; the second solve is not run", "adaptiveStep": false, "newStates": 0, "targetS10Solve": false},
+ "criteria": {
+  "source": "inherited WP5 C1-C11 (G2_LP2A2_EQ_POLICY_v1.json, g2_lp2a2_eq_compare) with identical numerical thresholds",
+  "C1_KI": "|dK_I|/K_eq <= 5e-4",
+  "C2_KII": "|dK_II|/K_eq <= 5e-5",
+  "C3_KIIoverKI": "|d(K_II/K_I)| <= 1e-4",
+  "C4_G_J": "|dG/G| <= 1e-3, |dJ/J| <= 1e-3, |J/G - 1| (new) <= 1e-4",
+  "C5_MTS": "|dtheta_MTS| <= 0.006 deg and admissible tensile root",
+  "C6_COD_EDI": "new COD-EDI <= 3 % and |d(COD-EDI)| <= 1e-3",
+  "C7_EDI_spread_quadrature": "path spread <= max(1e-5, 5 x archived); 4x4 quadrature <= max(1e-5, 5 x archived)",
+  "C8_crackOpening": "near-tip jump (identical node positions <= 3.3 mm) <= 1e-3 of the near-tip maximum; whole-crack jump (archived interpolated to new stations) <= 2e-3 of the maximum",
+  "C9_phaseActivation": "solver gates pass, 76 chords per circle as archived, active area relative difference <= 1e-9 (H S10: archived active area 0 -> new active area must be 0)",
+  "C10_nextPredictor": "|new next-tip forecast - archived next tip| <= 5e-4 mm, with the STATE-SPECIFIC next state (S10 for soft1 S9, S11 for H S10), never a hard-coded S9",
+  "C11_compliance": "|dC/C| <= 1e-3",
+  "reporting": "full signed differences of every quantity, also when within tolerance; signed normal opening reported (not a criterion), as in WP5"
+ },
+ "excludedComparisons": {
+  "contrast": "no F_G or MTS contrast criterion: the two references differ in arclength (61.4 vs 65.4 mm) and architecture, so no same-s contrast exists; no multi-architecture contrast qualification is claimed. A same-s contrast test would need a separately predeclared, correctly matched reference pair and its own review.",
+  "targetPhysics": "no estimate of the soft1 S10 G, signed SIF or MTS angle from mesh quality or from these two solves"
+ },
+ "interpretation": {
+  "EQUIVALENT_AT_0p40": "both solves pass C1-C11: the 0.40 mm family reproduces the accepted 0.45 mm results on these two fixed geometries within the inherited tolerances. Numerical equivalence on two geometries; not a discretization-error bound, not a convergence statement, not a multi-architecture qualification.",
+  "NOT_EQUIVALENT": "any failure: HOLD; 0.40 mm may not be used for continuation until a separate review explains the difference; no retry, no tolerance change after a solve.",
+  "after": "only after EQUIVALENT_AT_0p40 and review may a separate new campaign seek authorization to solve the actual soft1 S10 candidate at exactly 0.40 mm, as a prospective continuation of the original soft1 S9 (not a resumption of the revoked LP2-A3). S11 and beyond are unknown and not authorized by this."
+ },
+ "requiredImplementation": [
+  "isolated module (e.g. matlab/g2/lp2b1eq) outside every pinned digest; pinned policy JSON with digests of LP2-A3/LP2-A2/LP2/g2 sources, LP2-B1 sources, records and canonical mesh digests",
+  "comparator: copy of g2_lp2a2_eq_compare with C10 generalized to an input archived next tip (state-specific), contrast removed; pure function with unit tests on both sides of every threshold",
+  "mesh: forced 0.40 mm g2_lp2a2_join + pairing + g2_lp1_audit (no ladder); canonical digest equal to the LP2-B1 record before admission; any difference HOLD",
+  "archived inputs: A3 SOLUTION K (signed K, J, COD, EDI_all, EDI4x4, compliance, active area, displacement vector u for C8 must be confirmed present), MESH arrays, STATE tip, next-tip source per solve",
+  "solver: unchanged g2_m4b_sif_partial with the case materials and the audited phase labels; unchanged BVP (P = 1 N, 12.7 mm, plane stress, E = 3268.115 MPa)",
+  "controller: GO file + exact investigator token + real-git activation binding (HEAD~1 through g2_lp2a2_git), JSON round trip, receipt, immutable g2_trajectory_record outputs in a NEW root (e.g. outputs/g2_lp2b1_eq_v1), no STATE/accepted-state records, no ledger or file in any historical root, read-only verification and replay",
+  "resources: pre-start >= 8.2 GiB with removable backup; 7 GiB memory gate inside MATLAB before each solve; 5 GiB guard unchanged; one MATLAB process",
+  "tests (before any GO): refusal without GO / wrong token / wrong head; real Windows git through system(); JSON round trip; digest and canonical-mesh mismatch HOLD; historical-root write refusal; comparator threshold tests; predictor selection S10 vs S11; global stop after an injected first failure; post-revocation refusal"
+ ],
+ "nextSteps": "separate readiness implementation and review, then a separate explicit investigator GO; nothing here authorizes a solve"
+}

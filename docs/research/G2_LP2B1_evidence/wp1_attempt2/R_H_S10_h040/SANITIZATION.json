@@ -1,0 +1,10 @@
+{
+ "rule": "absolute local paths replaced by <repo> (execution clone), <worktree>, <scratch>, <user>; MATLAB startup path warnings removed; CRLF to LF",
+ "files": [
+  {
+   "file": "ATTEMPT.json",
+   "originalSHA256": "ccc1dd59ffc2e1fc88f8113c126ae4a2305483daa31539141c2231cc2f7fef51",
+   "sanitizedSHA256": "ccc1dd59ffc2e1fc88f8113c126ae4a2305483daa31539141c2231cc2f7fef51"
+  }
+ ]
+}

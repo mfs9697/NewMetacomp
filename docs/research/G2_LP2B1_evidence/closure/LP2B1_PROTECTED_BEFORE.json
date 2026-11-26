@@ -1,0 +1,41 @@
+{
+ "schema": "NewMetacomp.G2.LP2B1.ProtectedCheck.v1",
+ "a3ProtectedFiles": 723,
+ "a3ProtectedUnchanged": true,
+ "a3ProtectedMissingOrChanged": [],
+ "a3RunLedgerFiles": 109,
+ "a3RunLedgerEqualArchiveRecord": true,
+ "a3RunLedgerChanged": [],
+ "setsDisjoint": true,
+ "totalKnownProtectedFiles": 832,
+ "knownManifestSHA256": "e756d64aee23adde0ea4a1662d0e9e77dbae3eb27c1195145a0056367fff1f35",
+ "archiveCopies": {
+  "local": {
+   "path_present": true,
+   "sha256": "e089d749737f6c5259e6ad391c785b6ac222a636ca4716aaefbbde2fd5186dc6",
+   "shaOK": true,
+   "members": 135,
+   "memberBytesEqualRecord": true,
+   "run109EqualMemberBytes": true,
+   "campaignSummaryEqual": true,
+   "pass": true
+  },
+  "offDevice": {
+   "path_present": true,
+   "sha256": "e089d749737f6c5259e6ad391c785b6ac222a636ca4716aaefbbde2fd5186dc6",
+   "shaOK": true,
+   "members": 135,
+   "memberBytesEqualRecord": true,
+   "run109EqualMemberBytes": true,
+   "campaignSummaryEqual": true,
+   "pass": true
+  }
+ },
+ "additional": {
+  "outputs/LP2A3_CAMPAIGN.json": "b496aff556b9de52ffcb15fe71224afc606511481934646cb77d08059e237481"
+ },
+ "additionalOK": true,
+ "lp2b1OutputRoots": [],
+ "overlapWithProtected": [],
+ "pass": true
+}

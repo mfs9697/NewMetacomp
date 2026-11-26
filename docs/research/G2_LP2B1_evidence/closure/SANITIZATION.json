@@ -1,0 +1,85 @@
+{
+ "rule": "absolute local paths replaced by <repo> (execution clone), <worktree>, <scratch>, <user>; MATLAB startup path warnings removed; CRLF to LF",
+ "files": [
+  {
+   "file": "LP2B1_PROTECTED_BEFORE.json",
+   "originalSHA256": "0c9734be79e53f2f2146dc31adbf2ea701b31c07979e0ce33ac3e0e1dd66a687",
+   "sanitizedSHA256": "0c9734be79e53f2f2146dc31adbf2ea701b31c07979e0ce33ac3e0e1dd66a687"
+  },
+  {
+   "file": "LP2B1_KNOWN_PROTECTED_MANIFEST.json",
+   "originalSHA256": "938322752744acb01fe0c753afa0c88a7d10d94b671d8e3c1792c3afbcf8a0f1",
+   "sanitizedSHA256": "938322752744acb01fe0c753afa0c88a7d10d94b671d8e3c1792c3afbcf8a0f1"
+  },
+  {
+   "file": "LP2B1_PROTECTED_AFTER.json",
+   "originalSHA256": "84bc4858dce5c74180cad6ebc1c71de629557a09d5f96c980d5906bb5187b570",
+   "sanitizedSHA256": "84bc4858dce5c74180cad6ebc1c71de629557a09d5f96c980d5906bb5187b570"
+  },
+  {
+   "file": "LP2B1_LP2A3_HASHCHECK.json",
+   "originalSHA256": "02da8d816ca16c547aabce23f66b50d0c4fbece590048adf3128c80a4016c53e",
+   "sanitizedSHA256": "02da8d816ca16c547aabce23f66b50d0c4fbece590048adf3128c80a4016c53e"
+  },
+  {
+   "file": "LP2B1_ARCHIVE_RECORD.json",
+   "originalSHA256": "db58840eda9c22dd90fd12081b5c1117cf0056a7c6eefaec0dd34ac14d38ec89",
+   "sanitizedSHA256": "db58840eda9c22dd90fd12081b5c1117cf0056a7c6eefaec0dd34ac14d38ec89"
+  },
+  {
+   "file": "LP2B1_PROTECTED_DRYRUN_NO_D.json",
+   "originalSHA256": "93168f13808eb5bf7a6637cb1bd4d4d6bb9166fdee64044563c9c09987d57abe",
+   "sanitizedSHA256": "93168f13808eb5bf7a6637cb1bd4d4d6bb9166fdee64044563c9c09987d57abe"
+  },
+  {
+   "file": "PRESTART_s1.json",
+   "originalSHA256": "6f1a39193c9d4b03767391320a0108a033386c3571fa51f1a11265ecba3cd022",
+   "sanitizedSHA256": "4b1ee0636523bd45138d60d83d7681d7118626224287102197cbbbcf0adf00be"
+  },
+  {
+   "file": "PRESTART_s1b.json",
+   "originalSHA256": "9df0db4db21f145e050b93de9fae72b0530a1fd7d22e2b4b7182ba8fb134297e",
+   "sanitizedSHA256": "738f6b5451bffd1f1d24127a94a180248dc278dc2871923b478a664961b3ace6"
+  },
+  {
+   "file": "PRESTART_s1c.json",
+   "originalSHA256": "8fcda52477eecb8bfbc525bd806b019ddd629201e2ca97f1673189ca723cb4d8",
+   "sanitizedSHA256": "f29a9d567f52593cda7960633228cd6bcd2ba8422fe2186bfc43885ca6ba6ca8"
+  },
+  {
+   "file": "PRESTART_s1d.json",
+   "originalSHA256": "d616c7dfc9be9bb66d67f961a25d80fbed68c4ed43bb825b27cf7f79bd76d579",
+   "sanitizedSHA256": "2c9d9c3850424c26eb1556e933cb7d1f16f66b6fe6999d98a3d9007632ffad93"
+  },
+  {
+   "file": "PRESTART_s2.json",
+   "originalSHA256": "9e17dd78bc3b0aa5c84bb9aad871c7d0dd695e422787feffe3d52d6f7d29a1b7",
+   "sanitizedSHA256": "fccdf598f5a712792653c06db71aca5e6ae2218195b70209f7f319d088e6b081"
+  },
+  {
+   "file": "PRESTART_s3.json",
+   "originalSHA256": "85c215b97ff62e2943778befb1c8e04687a6d6875a62d38ff26e5f216d115079",
+   "sanitizedSHA256": "688f7879f81d6f49f7a72ba28ad6f92cdb0567d0dfbefdbec97f8cd758818247"
+  },
+  {
+   "file": "PRESTART_s4f.json",
+   "originalSHA256": "9736db4c69c78ac40c5d2a98a601765467a2445a5f16ea4ecb52c96a4bec7d77",
+   "sanitizedSHA256": "0481b1f6805d3b2717b985724c15d37a6cb1dc210ce2ada8a36a32f48662bcd0"
+  },
+  {
+   "file": "PRESTART_s4r.json",
+   "originalSHA256": "ee59e08944e028e84a768964ed64a7605fd0f758a8e3ec6a27af80b964ca3581",
+   "sanitizedSHA256": "e9efc64730bdbea656984592eceba0e9a79b63e73b65d1c5af66e1b249bc5153"
+  },
+  {
+   "file": "PRESTART_s5.json",
+   "originalSHA256": "db614627184e6112294734aa9c626ca5763e89b6e6c0ac1f3a0c96eae6f3a759",
+   "sanitizedSHA256": "e40edd76b55ee461442609d7c4a1478e87f8ea814e7c28492c5dc5db2a57b79f"
+  },
+  {
+   "file": "PRESTART_s6.json",
+   "originalSHA256": "e1d10547791507c547003c3b40321694d71f47a7d17c6830f3821092e220d966",
+   "sanitizedSHA256": "4fa80026b9a216a408feb1f2e4afcc0093dec2138339d9cb86b5b89d65260e24"
+  }
+ ]
+}

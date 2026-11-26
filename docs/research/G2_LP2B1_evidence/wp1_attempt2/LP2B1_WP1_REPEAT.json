@@ -1,0 +1,77 @@
+{
+  "schema": "NewMetacomp.G2.LP2B1.WP1.v1",
+  "stage": "repeat",
+  "physicalSolves": 0,
+  "preregSHA256": "3d51140b80075cf27dd21820f16e65ceaa1456ea7a512acbc6ffe9888c70f9b1",
+  "amendmentA1SHA256": "78564d86d5a979700a590f16ef8b6a746655f7d55b199eab1a9f2ef607880c50",
+  "preflight": {
+    "pass": true,
+    "status": "PREFLIGHT_READY_NOT_LP0_QUALIFIED",
+    "cause": "",
+    "physicalSolves": 0,
+    "meshBuilds": 0,
+    "policySHA256": "1cf5a76ded840b0758343a1b935b299041e779ec6332c3b7cb0b6dfba1e2af43",
+    "release": "R2023a",
+    "pdeAvailable": true,
+    "freePhysicalRAM_GiB": 7.4795417785644531,
+    "matlabProcessInfo": [
+      {
+        "pid": 21468,
+        "executable": "C:\\Program Files\\Polyspace\\R2023a\\bin\\matlab.exe",
+        "launcher": true
+      },
+      {
+        "pid": 412,
+        "executable": "C:\\Program Files\\Polyspace\\R2023a\\bin\\win64\\MATLAB.exe",
+        "launcher": false
+      }
+    ],
+    "matlabProcesses": 1,
+    "currentPID": 412,
+    "sourceCommit": "3e8de6a765dd1fab775ca449c86352563a5df38e",
+    "dirtySource": "",
+    "token": "G2LP0|policy=1cf5a76ded840b0758343a1b935b299041e779ec6332c3b7cb0b6dfba1e2af43|source=3e8de6a765dd1fab775ca449c86352563a5df38e|geometry=179b777f4a26caf1482ad470d78f5f802bc24456b9a1b6fc6b641eccf2b66008|cases=H,stiff13,soft2,soft1|maxState=4"
+  },
+  "attempts": [
+    {
+      "name": "T_soft1_S10_h040_REPEAT",
+      "seedSpacing_mm": 0.4,
+      "stage": "KINKED_PROTECTED_MESH_JOIN_PASS",
+      "failedGates": [],
+      "joinGates": "13/13",
+      "qualityOnlyFailure": false,
+      "pass": true,
+      "checks": "19/19",
+      "T3": 30357,
+      "canonicalSHA256": "54293d2a527f9bec33605ffea10c8f56af46a56291157f0d911cf68301b85bd2",
+      "arraysFileSHA256": "f13e163a762613c2a600d7d3961b190729bbe3f08da9c7a024982c6530fdff1a",
+      "maxNeighborRatio": 1.6015350873084404,
+      "minAngle_deg": 23.179107436795395,
+      "violations": 0
+    }
+  ],
+  "determinism": {
+    "arraysEqual": {
+      "X3": true,
+      "T3": true,
+      "X6": true,
+      "T6": true,
+      "upperBankT6": true,
+      "lowerBankT6": true,
+      "nodalQ": true,
+      "qActiveT6Rows": true,
+      "elementRows": true,
+      "crackPolyline": true,
+      "extraVertexXY": true,
+      "physicalTipNode": true
+    },
+    "canonicalSHA256": [
+      "54293d2a527f9bec33605ffea10c8f56af46a56291157f0d911cf68301b85bd2",
+      "54293d2a527f9bec33605ffea10c8f56af46a56291157f0d911cf68301b85bd2"
+    ],
+    "canonicalEqual": true,
+    "gatesEqual": true,
+    "repeatPass": true
+  },
+  "outcome": "DETERMINISTIC"
+}

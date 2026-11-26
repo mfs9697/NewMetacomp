@@ -1,0 +1,111 @@
+{
+ "schema": "NewMetacomp.G2.LP2B1.IndependentAudit.v1",
+ "physicalSolves": 0,
+ "attemptFolders": [
+  "wp1/T_soft1_S10_h040",
+  "wp1_attempt2/R_H_S10_h040",
+  "wp1_attempt2/R_soft1_S9_h040",
+  "wp1_attempt2/T_soft1_S10_h040",
+  "wp1_attempt2/T_soft1_S10_h040_REPEAT"
+ ],
+ "attempts": {
+  "wp1/T_soft1_S10_h040": {
+   "pass": false,
+   "checks": "8/19",
+   "seed": 0.4,
+   "arraysSHA": true,
+   "canonical": "54293d2a527f9bec33605ffea10c8f56af46a56291157f0d911cf68301b85bd2"
+  },
+  "wp1_attempt2/R_H_S10_h040": {
+   "pass": true,
+   "checks": "19/19",
+   "seed": 0.4,
+   "arraysSHA": true,
+   "canonical": "45298fae6257674b99de036341b6d0c05b55fbb6bb7be635786f8ae71bb068e3"
+  },
+  "wp1_attempt2/R_soft1_S9_h040": {
+   "pass": true,
+   "checks": "19/19",
+   "seed": 0.4,
+   "arraysSHA": true,
+   "canonical": "7535d71ad4790f3a24a47d03e27c3d73d8ba61df03050a2e952accfeffebee16"
+  },
+  "wp1_attempt2/T_soft1_S10_h040": {
+   "pass": true,
+   "checks": "19/19",
+   "seed": 0.4,
+   "arraysSHA": true,
+   "canonical": "54293d2a527f9bec33605ffea10c8f56af46a56291157f0d911cf68301b85bd2"
+  },
+  "wp1_attempt2/T_soft1_S10_h040_REPEAT": {
+   "pass": true,
+   "checks": "19/19",
+   "seed": 0.4,
+   "arraysSHA": true,
+   "canonical": "54293d2a527f9bec33605ffea10c8f56af46a56291157f0d911cf68301b85bd2"
+  }
+ },
+ "numpy": [
+  {
+   "attempt": "wp1/T_soft1_S10_h040",
+   "shaOK": true,
+   "maxRatio": 1.6015350873084404,
+   "minAngle_deg": 23.179107436795427,
+   "violations": 0,
+   "dMaxRatio": 0.0,
+   "dMinAngle": 3.197442310920451e-14,
+   "countsEqual": true,
+   "pass": true
+  },
+  {
+   "attempt": "wp1_attempt2/T_soft1_S10_h040",
+   "shaOK": true,
+   "maxRatio": 1.6015350873084404,
+   "minAngle_deg": 23.179107436795427,
+   "violations": 0,
+   "dMaxRatio": 0.0,
+   "dMinAngle": 3.197442310920451e-14,
+   "countsEqual": true,
+   "pass": true
+  },
+  {
+   "attempt": "wp1_attempt2/T_soft1_S10_h040_REPEAT",
+   "shaOK": true,
+   "maxRatio": 1.6015350873084404,
+   "minAngle_deg": 23.179107436795427,
+   "violations": 0,
+   "dMaxRatio": 0.0,
+   "dMinAngle": 3.197442310920451e-14,
+   "countsEqual": true,
+   "pass": true
+  },
+  {
+   "attempt": "wp1_attempt2/R_soft1_S9_h040",
+   "shaOK": true,
+   "maxRatio": 1.5918285508619603,
+   "minAngle_deg": 22.387807593359405,
+   "violations": 0,
+   "dMaxRatio": 0.0,
+   "dMinAngle": -1.0658141036401503e-14,
+   "countsEqual": true,
+   "pass": true
+  },
+  {
+   "attempt": "wp1_attempt2/R_H_S10_h040",
+   "shaOK": true,
+   "maxRatio": 1.5918285508617929,
+   "minAngle_deg": 22.782265870508358,
+   "violations": 0,
+   "dMaxRatio": 2.220446049250313e-16,
+   "dMinAngle": -7.105427357601002e-15,
+   "countsEqual": true,
+   "pass": true
+  }
+ ],
+ "attempt1VsAttempt2Differences": [
+  "summary"
+ ],
+ "wp0NumpyPass": true,
+ "problems": [],
+ "pass": true
+}

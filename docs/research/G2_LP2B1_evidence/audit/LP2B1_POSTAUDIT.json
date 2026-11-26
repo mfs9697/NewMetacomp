@@ -1,0 +1,831 @@
+{
+  "schema": "NewMetacomp.G2.LP2B1.PostAudit.v1",
+  "physicalSolves": 0,
+  "meshesGenerated": 0,
+  "sourceCommit": "097a9713b113e6ddc58094e0fb6d05ffbaf45291",
+  "attempts": [
+    {
+      "attempt": "wp1/T_soft1_S10_h040",
+      "role": "attempt1",
+      "baseline": "target",
+      "recordPass": false,
+      "recordChecks": "8/19",
+      "arraysSHAEqualsRecord": true,
+      "canonicalEqualsRecord": true,
+      "metricsEqualRecord": true,
+      "pairingRecomputed": "10/10",
+      "pairingPass": true,
+      "bankPairsT6": 369,
+      "blockT3Rows": true,
+      "blockNodes": true,
+      "blockT6Coordinates": true,
+      "blockNodalQ": true,
+      "qRows2443": true,
+      "metrics": {
+        "T3": 30357,
+        "minAngle_deg": 23.179107436795395,
+        "maxNeighborRatio": 1.6015350873084404,
+        "violations": 0,
+        "ratioCounts": {
+          "above1p8": 0,
+          "above1p75": 0,
+          "above1p7": 0,
+          "above1p6": 1,
+          "above1p5": 10,
+          "above1p4": 129,
+          "above1p3": 325
+        }
+      },
+      "minAngle": {
+        "minAngle_deg": 23.179107436795395,
+        "element": 24127,
+        "region": "exterior",
+        "centroid_mm": [
+          108.13277788075648,
+          49.587835096669664
+        ],
+        "distTip_mm": 14.929085213511241,
+        "distPolyline_mm": 0.16530660919452267,
+        "exteriorMinAngle_deg": 23.179107436795395,
+        "exteriorElement": 24127,
+        "exteriorCentroid_mm": [
+          108.13277788075648,
+          49.587835096669664
+        ],
+        "exteriorDistTip_mm": 14.929085213511241,
+        "exteriorDistPolyline_mm": 0.16530660919452267,
+        "exteriorTouchesCrack": true,
+        "exteriorH_mm": 0.52632100938736726
+      },
+      "baselineMinAngle": {
+        "minAngle_deg": 30.126847321225497,
+        "element": 2050,
+        "region": "core",
+        "centroid_mm": [
+          113.90064411936997,
+          62.346575451917538
+        ],
+        "distTip_mm": 0.92726717811823289,
+        "distPolyline_mm": 0.01476596652880062,
+        "exteriorMinAngle_deg": 32.019654544381396,
+        "exteriorElement": 22910,
+        "exteriorCentroid_mm": [
+          93.644887812976549,
+          31.043683900093928
+        ],
+        "exteriorDistTip_mm": 38.204032694516634,
+        "exteriorDistPolyline_mm": 8.921375673702201,
+        "exteriorTouchesCrack": false,
+        "exteriorH_mm": 3.09049463892359
+      },
+      "worstExteriorPair": {
+        "ratio": 1.6015350873084404,
+        "midpoint_mm": [
+          94.602265538210617,
+          31.250557663825404
+        ],
+        "h_mm": [
+          1.7779797904901626,
+          2.8474970189953051
+        ],
+        "distTip_mm": 37.518902869078694,
+        "distPolyline_mm": 8.02887063252356,
+        "face": "free exterior (graded, Hgrad 1.12, Hmax 6 mm)"
+      },
+      "baselineWorstExteriorPair": {
+        "ratio": 1.8412365620088138,
+        "midpoint_mm": [
+          94.840891899633732,
+          31.592681702666198
+        ],
+        "h_mm": [
+          1.4174854111585025,
+          2.6099259651391309
+        ],
+        "distTip_mm": 37.102452084718287,
+        "distPolyline_mm": 7.8694213869332579,
+        "face": "free exterior (graded, Hgrad 1.12, Hmax 6 mm)"
+      },
+      "baselineMetrics": {
+        "T3": 30387,
+        "minAngle_deg": 30.126847321225497,
+        "maxNeighborRatio": 1.8412365620088138,
+        "violations": 1,
+        "ratioCounts": {
+          "above1p8": 1,
+          "above1p75": 2,
+          "above1p7": 2,
+          "above1p6": 2,
+          "above1p5": 11,
+          "above1p4": 127,
+          "above1p3": 310
+        }
+      },
+      "pass": true,
+      "note": "record pass=false is the harness-defect HOLD of attempt 1 (amendment A1); the arrays are re-audited here"
+    },
+    {
+      "attempt": "wp1_attempt2/T_soft1_S10_h040",
+      "role": "attempt2",
+      "baseline": "target",
+      "recordPass": true,
+      "recordChecks": "19/19",
+      "arraysSHAEqualsRecord": true,
+      "canonicalEqualsRecord": true,
+      "metricsEqualRecord": true,
+      "pairingRecomputed": "10/10",
+      "pairingPass": true,
+      "bankPairsT6": 369,
+      "blockT3Rows": true,
+      "blockNodes": true,
+      "blockT6Coordinates": true,
+      "blockNodalQ": true,
+      "qRows2443": true,
+      "metrics": {
+        "T3": 30357,
+        "minAngle_deg": 23.179107436795395,
+        "maxNeighborRatio": 1.6015350873084404,
+        "violations": 0,
+        "ratioCounts": {
+          "above1p8": 0,
+          "above1p75": 0,
+          "above1p7": 0,
+          "above1p6": 1,
+          "above1p5": 10,
+          "above1p4": 129,
+          "above1p3": 325
+        }
+      },
+      "minAngle": {
+        "minAngle_deg": 23.179107436795395,
+        "element": 24127,
+        "region": "exterior",
+        "centroid_mm": [
+          108.13277788075648,
+          49.587835096669664
+        ],
+        "distTip_mm": 14.929085213511241,
+        "distPolyline_mm": 0.16530660919452267,
+        "exteriorMinAngle_deg": 23.179107436795395,
+        "exteriorElement": 24127,
+        "exteriorCentroid_mm": [
+          108.13277788075648,
+          49.587835096669664
+        ],
+        "exteriorDistTip_mm": 14.929085213511241,
+        "exteriorDistPolyline_mm": 0.16530660919452267,
+        "exteriorTouchesCrack": true,
+        "exteriorH_mm": 0.52632100938736726
+      },
+      "baselineMinAngle": {
+        "minAngle_deg": 30.126847321225497,
+        "element": 2050,
+        "region": "core",
+        "centroid_mm": [
+          113.90064411936997,
+          62.346575451917538
+        ],
+        "distTip_mm": 0.92726717811823289,
+        "distPolyline_mm": 0.01476596652880062,
+        "exteriorMinAngle_deg": 32.019654544381396,
+        "exteriorElement": 22910,
+        "exteriorCentroid_mm": [
+          93.644887812976549,
+          31.043683900093928
+        ],
+        "exteriorDistTip_mm": 38.204032694516634,
+        "exteriorDistPolyline_mm": 8.921375673702201,
+        "exteriorTouchesCrack": false,
+        "exteriorH_mm": 3.09049463892359
+      },
+      "worstExteriorPair": {
+        "ratio": 1.6015350873084404,
+        "midpoint_mm": [
+          94.602265538210617,
+          31.250557663825404
+        ],
+        "h_mm": [
+          1.7779797904901626,
+          2.8474970189953051
+        ],
+        "distTip_mm": 37.518902869078694,
+        "distPolyline_mm": 8.02887063252356,
+        "face": "free exterior (graded, Hgrad 1.12, Hmax 6 mm)"
+      },
+      "baselineWorstExteriorPair": {
+        "ratio": 1.8412365620088138,
+        "midpoint_mm": [
+          94.840891899633732,
+          31.592681702666198
+        ],
+        "h_mm": [
+          1.4174854111585025,
+          2.6099259651391309
+        ],
+        "distTip_mm": 37.102452084718287,
+        "distPolyline_mm": 7.8694213869332579,
+        "face": "free exterior (graded, Hgrad 1.12, Hmax 6 mm)"
+      },
+      "baselineMetrics": {
+        "T3": 30387,
+        "minAngle_deg": 30.126847321225497,
+        "maxNeighborRatio": 1.8412365620088138,
+        "violations": 1,
+        "ratioCounts": {
+          "above1p8": 1,
+          "above1p75": 2,
+          "above1p7": 2,
+          "above1p6": 2,
+          "above1p5": 11,
+          "above1p4": 127,
+          "above1p3": 310
+        }
+      },
+      "pass": true
+    },
+    {
+      "attempt": "wp1_attempt2/T_soft1_S10_h040_REPEAT",
+      "role": "repeat",
+      "baseline": "target",
+      "recordPass": true,
+      "recordChecks": "19/19",
+      "arraysSHAEqualsRecord": true,
+      "canonicalEqualsRecord": true,
+      "metricsEqualRecord": true,
+      "pairingRecomputed": "10/10",
+      "pairingPass": true,
+      "bankPairsT6": 369,
+      "blockT3Rows": true,
+      "blockNodes": true,
+      "blockT6Coordinates": true,
+      "blockNodalQ": true,
+      "qRows2443": true,
+      "metrics": {
+        "T3": 30357,
+        "minAngle_deg": 23.179107436795395,
+        "maxNeighborRatio": 1.6015350873084404,
+        "violations": 0,
+        "ratioCounts": {
+          "above1p8": 0,
+          "above1p75": 0,
+          "above1p7": 0,
+          "above1p6": 1,
+          "above1p5": 10,
+          "above1p4": 129,
+          "above1p3": 325
+        }
+      },
+      "minAngle": {
+        "minAngle_deg": 23.179107436795395,
+        "element": 24127,
+        "region": "exterior",
+        "centroid_mm": [
+          108.13277788075648,
+          49.587835096669664
+        ],
+        "distTip_mm": 14.929085213511241,
+        "distPolyline_mm": 0.16530660919452267,
+        "exteriorMinAngle_deg": 23.179107436795395,
+        "exteriorElement": 24127,
+        "exteriorCentroid_mm": [
+          108.13277788075648,
+          49.587835096669664
+        ],
+        "exteriorDistTip_mm": 14.929085213511241,
+        "exteriorDistPolyline_mm": 0.16530660919452267,
+        "exteriorTouchesCrack": true,
+        "exteriorH_mm": 0.52632100938736726
+      },
+      "baselineMinAngle": {
+        "minAngle_deg": 30.126847321225497,
+        "element": 2050,
+        "region": "core",
+        "centroid_mm": [
+          113.90064411936997,
+          62.346575451917538
+        ],
+        "distTip_mm": 0.92726717811823289,
+        "distPolyline_mm": 0.01476596652880062,
+        "exteriorMinAngle_deg": 32.019654544381396,
+        "exteriorElement": 22910,
+        "exteriorCentroid_mm": [
+          93.644887812976549,
+          31.043683900093928
+        ],
+        "exteriorDistTip_mm": 38.204032694516634,
+        "exteriorDistPolyline_mm": 8.921375673702201,
+        "exteriorTouchesCrack": false,
+        "exteriorH_mm": 3.09049463892359
+      },
+      "worstExteriorPair": {
+        "ratio": 1.6015350873084404,
+        "midpoint_mm": [
+          94.602265538210617,
+          31.250557663825404
+        ],
+        "h_mm": [
+          1.7779797904901626,
+          2.8474970189953051
+        ],
+        "distTip_mm": 37.518902869078694,
+        "distPolyline_mm": 8.02887063252356,
+        "face": "free exterior (graded, Hgrad 1.12, Hmax 6 mm)"
+      },
+      "baselineWorstExteriorPair": {
+        "ratio": 1.8412365620088138,
+        "midpoint_mm": [
+          94.840891899633732,
+          31.592681702666198
+        ],
+        "h_mm": [
+          1.4174854111585025,
+          2.6099259651391309
+        ],
+        "distTip_mm": 37.102452084718287,
+        "distPolyline_mm": 7.8694213869332579,
+        "face": "free exterior (graded, Hgrad 1.12, Hmax 6 mm)"
+      },
+      "baselineMetrics": {
+        "T3": 30387,
+        "minAngle_deg": 30.126847321225497,
+        "maxNeighborRatio": 1.8412365620088138,
+        "violations": 1,
+        "ratioCounts": {
+          "above1p8": 1,
+          "above1p75": 2,
+          "above1p7": 2,
+          "above1p6": 2,
+          "above1p5": 11,
+          "above1p4": 127,
+          "above1p3": 310
+        }
+      },
+      "pass": true
+    },
+    {
+      "attempt": "wp1_attempt2/R_soft1_S9_h040",
+      "role": "reference",
+      "baseline": "soft1_S9",
+      "recordPass": true,
+      "recordChecks": "19/19",
+      "arraysSHAEqualsRecord": true,
+      "canonicalEqualsRecord": true,
+      "metricsEqualRecord": true,
+      "pairingRecomputed": "10/10",
+      "pairingPass": true,
+      "bankPairsT6": 349,
+      "blockT3Rows": true,
+      "blockNodes": true,
+      "blockT6Coordinates": true,
+      "blockNodalQ": true,
+      "qRows2443": true,
+      "metrics": {
+        "T3": 30183,
+        "minAngle_deg": 22.387807593359415,
+        "maxNeighborRatio": 1.5918285508619603,
+        "violations": 0,
+        "ratioCounts": {
+          "above1p8": 0,
+          "above1p75": 0,
+          "above1p7": 0,
+          "above1p6": 0,
+          "above1p5": 9,
+          "above1p4": 113,
+          "above1p3": 296
+        }
+      },
+      "minAngle": {
+        "minAngle_deg": 22.387807593359415,
+        "element": 23954,
+        "region": "exterior",
+        "centroid_mm": [
+          107.0786686617642,
+          45.697542550688119
+        ],
+        "distTip_mm": 14.929110631773431,
+        "distPolyline_mm": 0.1655637581595194,
+        "exteriorMinAngle_deg": 22.387807593359415,
+        "exteriorElement": 23954,
+        "exteriorCentroid_mm": [
+          107.0786686617642,
+          45.697542550688119
+        ],
+        "exteriorDistTip_mm": 14.929110631773431,
+        "exteriorDistPolyline_mm": 0.1655637581595194,
+        "exteriorTouchesCrack": true,
+        "exteriorH_mm": 0.54399012440205741
+      },
+      "baselineMinAngle": {
+        "minAngle_deg": 30.126847321224169,
+        "element": 191,
+        "region": "core",
+        "centroid_mm": [
+          112.13878874712886,
+          58.755468651886311
+        ],
+        "distTip_mm": 0.92726717811824255,
+        "distPolyline_mm": 0.014765966528819251,
+        "exteriorMinAngle_deg": 33.887869717108693,
+        "exteriorElement": 23958,
+        "exteriorCentroid_mm": [
+          107.09345430828313,
+          45.739455475890168
+        ],
+        "exteriorDistTip_mm": 14.884693497597844,
+        "exteriorDistPolyline_mm": 0.1655637581595194,
+        "exteriorTouchesCrack": true,
+        "exteriorH_mm": 0.61062787789231976
+      },
+      "worstExteriorPair": {
+        "ratio": 1.5915153408459244,
+        "midpoint_mm": [
+          94.941210737410074,
+          29.205187824134136
+        ],
+        "h_mm": [
+          1.3563583976511551,
+          2.15866519754701
+        ],
+        "distTip_mm": 35.114246333463385,
+        "distPolyline_mm": 7.28422854482428,
+        "face": "free exterior (graded, Hgrad 1.12, Hmax 6 mm)"
+      },
+      "baselineWorstExteriorPair": {
+        "ratio": 1.5780691641228155,
+        "midpoint_mm": [
+          93.893746410869312,
+          26.052610944840577
+        ],
+        "h_mm": [
+          1.5491648738029056,
+          2.4446893174905782
+        ],
+        "distTip_mm": 38.373285401796934,
+        "distPolyline_mm": 7.7338376906497874,
+        "face": "free exterior (graded, Hgrad 1.12, Hmax 6 mm)"
+      },
+      "baselineMetrics": {
+        "T3": 30187,
+        "minAngle_deg": 30.126847321224169,
+        "maxNeighborRatio": 1.5918285508619603,
+        "violations": 0,
+        "ratioCounts": {
+          "above1p8": 0,
+          "above1p75": 0,
+          "above1p7": 0,
+          "above1p6": 0,
+          "above1p5": 11,
+          "above1p4": 123,
+          "above1p3": 283
+        }
+      },
+      "pass": true
+    },
+    {
+      "attempt": "wp1_attempt2/R_H_S10_h040",
+      "role": "reference",
+      "baseline": "H_S10",
+      "recordPass": true,
+      "recordChecks": "19/19",
+      "arraysSHAEqualsRecord": true,
+      "canonicalEqualsRecord": true,
+      "metricsEqualRecord": true,
+      "pairingRecomputed": "10/10",
+      "pairingPass": true,
+      "bankPairsT6": 369,
+      "blockT3Rows": true,
+      "blockNodes": true,
+      "blockT6Coordinates": true,
+      "blockNodalQ": true,
+      "qRows2443": true,
+      "metrics": {
+        "T3": 30349,
+        "minAngle_deg": 22.782265870508365,
+        "maxNeighborRatio": 1.5918285508617926,
+        "violations": 0,
+        "ratioCounts": {
+          "above1p8": 0,
+          "above1p75": 0,
+          "above1p7": 0,
+          "above1p6": 0,
+          "above1p5": 9,
+          "above1p4": 127,
+          "above1p3": 311
+        }
+      },
+      "minAngle": {
+        "minAngle_deg": 22.782265870508365,
+        "element": 24143,
+        "region": "exterior",
+        "centroid_mm": [
+          108.56091161953979,
+          49.469976538711528
+        ],
+        "distTip_mm": 14.930095453716017,
+        "distPolyline_mm": 0.16539970023608708,
+        "exteriorMinAngle_deg": 22.782265870508365,
+        "exteriorElement": 24143,
+        "exteriorCentroid_mm": [
+          108.56091161953979,
+          49.469976538711528
+        ],
+        "exteriorDistTip_mm": 14.930095453716017,
+        "exteriorDistPolyline_mm": 0.16539970023608708,
+        "exteriorTouchesCrack": true,
+        "exteriorH_mm": 0.52719171493445172
+      },
+      "baselineMinAngle": {
+        "minAngle_deg": 30.126847321223664,
+        "element": 191,
+        "region": "core",
+        "centroid_mm": [
+          114.32160327760795,
+          62.233647770394896
+        ],
+        "distTip_mm": 0.92726717811823034,
+        "distPolyline_mm": 0.014765966528805343,
+        "exteriorMinAngle_deg": 33.842589653203675,
+        "exteriorElement": 24147,
+        "exteriorCentroid_mm": [
+          108.88043354945289,
+          49.377708265821667
+        ],
+        "exteriorDistTip_mm": 14.885610421975066,
+        "exteriorDistPolyline_mm": 0.16559955537521615,
+        "exteriorTouchesCrack": true,
+        "exteriorH_mm": 0.60637467425488034
+      },
+      "worstExteriorPair": {
+        "ratio": 1.549669587969948,
+        "midpoint_mm": [
+          94.00843608745754,
+          25.741409834384868
+        ],
+        "h_mm": [
+          1.6030818321780389,
+          2.484247162353451
+        ],
+        "distTip_mm": 42.691228776372412,
+        "distPolyline_mm": 7.5992370217826224,
+        "face": "free exterior (graded, Hgrad 1.12, Hmax 6 mm)"
+      },
+      "baselineWorstExteriorPair": {
+        "ratio": 1.6528445610466256,
+        "midpoint_mm": [
+          112.27439305790017,
+          31.089245221270382
+        ],
+        "h_mm": [
+          1.7082808366610727,
+          2.8235226896154328
+        ],
+        "distTip_mm": 32.068969915077425,
+        "distPolyline_mm": 9.1055375206254023,
+        "face": "free exterior (graded, Hgrad 1.12, Hmax 6 mm)"
+      },
+      "baselineMetrics": {
+        "T3": 30379,
+        "minAngle_deg": 30.126847321223664,
+        "maxNeighborRatio": 1.6528445610466256,
+        "violations": 0,
+        "ratioCounts": {
+          "above1p8": 0,
+          "above1p75": 0,
+          "above1p7": 0,
+          "above1p6": 1,
+          "above1p5": 14,
+          "above1p4": 131,
+          "above1p3": 293
+        }
+      },
+      "pass": true
+    }
+  ],
+  "exports": [
+    {
+      "attempt": "wp1/T_soft1_S10_h040",
+      "X3": "wp1__T_soft1_S10_h040_X3_f64le.bin",
+      "T3": "wp1__T_soft1_S10_h040_T3_i32le.bin",
+      "rows": [
+        15725,
+        30357
+      ],
+      "X3sha256": "37af5d2dda1a204032d1ffbcea7886617efe5aefc85a3bd59be19c9125affc8d",
+      "T3sha256": "6754c96f757d1d3046504a7a8791ec7233e9a78d1edc5a40fa7d4586ecadd50e",
+      "maxNeighborRatio": 1.6015350873084404,
+      "minAngle_deg": 23.179107436795395,
+      "violations": 0,
+      "ratioCounts": {
+        "above1p8": 0,
+        "above1p75": 0,
+        "above1p7": 0,
+        "above1p6": 1,
+        "above1p5": 10,
+        "above1p4": 129,
+        "above1p3": 325
+      }
+    },
+    {
+      "attempt": "wp1_attempt2/T_soft1_S10_h040",
+      "X3": "a2_T_soft1_S10_h040_X3_f64le.bin",
+      "T3": "a2_T_soft1_S10_h040_T3_i32le.bin",
+      "rows": [
+        15725,
+        30357
+      ],
+      "X3sha256": "37af5d2dda1a204032d1ffbcea7886617efe5aefc85a3bd59be19c9125affc8d",
+      "T3sha256": "6754c96f757d1d3046504a7a8791ec7233e9a78d1edc5a40fa7d4586ecadd50e",
+      "maxNeighborRatio": 1.6015350873084404,
+      "minAngle_deg": 23.179107436795395,
+      "violations": 0,
+      "ratioCounts": {
+        "above1p8": 0,
+        "above1p75": 0,
+        "above1p7": 0,
+        "above1p6": 1,
+        "above1p5": 10,
+        "above1p4": 129,
+        "above1p3": 325
+      }
+    },
+    {
+      "attempt": "wp1_attempt2/T_soft1_S10_h040_REPEAT",
+      "X3": "a2_T_soft1_S10_h040_REPEAT_X3_f64le.bin",
+      "T3": "a2_T_soft1_S10_h040_REPEAT_T3_i32le.bin",
+      "rows": [
+        15725,
+        30357
+      ],
+      "X3sha256": "37af5d2dda1a204032d1ffbcea7886617efe5aefc85a3bd59be19c9125affc8d",
+      "T3sha256": "6754c96f757d1d3046504a7a8791ec7233e9a78d1edc5a40fa7d4586ecadd50e",
+      "maxNeighborRatio": 1.6015350873084404,
+      "minAngle_deg": 23.179107436795395,
+      "violations": 0,
+      "ratioCounts": {
+        "above1p8": 0,
+        "above1p75": 0,
+        "above1p7": 0,
+        "above1p6": 1,
+        "above1p5": 10,
+        "above1p4": 129,
+        "above1p3": 325
+      }
+    },
+    {
+      "attempt": "wp1_attempt2/R_soft1_S9_h040",
+      "X3": "a2_R_soft1_S9_h040_X3_f64le.bin",
+      "T3": "a2_R_soft1_S9_h040_T3_i32le.bin",
+      "rows": [
+        15628,
+        30183
+      ],
+      "X3sha256": "f956cde31cdd0b25353e3d22af35a6705257ede945efefab42fa6e44e8dc5fb7",
+      "T3sha256": "7775e6888b48eaffc4d946bc8e3bf8cd1da334c1787ede26257f4695c2c9e085",
+      "maxNeighborRatio": 1.5918285508619603,
+      "minAngle_deg": 22.387807593359415,
+      "violations": 0,
+      "ratioCounts": {
+        "above1p8": 0,
+        "above1p75": 0,
+        "above1p7": 0,
+        "above1p6": 0,
+        "above1p5": 9,
+        "above1p4": 113,
+        "above1p3": 296
+      }
+    },
+    {
+      "attempt": "wp1_attempt2/R_H_S10_h040",
+      "X3": "a2_R_H_S10_h040_X3_f64le.bin",
+      "T3": "a2_R_H_S10_h040_T3_i32le.bin",
+      "rows": [
+        15721,
+        30349
+      ],
+      "X3sha256": "52f2177fabb8a770b2f1d4cf08abd03cbf7594ea954d1b9b31c2d2c384c16588",
+      "T3sha256": "82328df44f47b1a9ce87ef07d1bcce7dbf93c8d459b0ea279ddff8e11ac1156a",
+      "maxNeighborRatio": 1.5918285508617926,
+      "minAngle_deg": 22.782265870508365,
+      "violations": 0,
+      "ratioCounts": {
+        "above1p8": 0,
+        "above1p75": 0,
+        "above1p7": 0,
+        "above1p6": 0,
+        "above1p5": 9,
+        "above1p4": 127,
+        "above1p3": 311
+      }
+    }
+  ],
+  "attempt1VsAttempt2": {
+    "T3": true,
+    "T6": true,
+    "X3": true,
+    "X6": true,
+    "crackPolyline": true,
+    "elementRows": true,
+    "extraVertexXY": true,
+    "gates": true,
+    "lowerBankT6": true,
+    "nodalQ": true,
+    "physicalTipNode": true,
+    "qActiveT6Rows": true,
+    "summary": false,
+    "upperBankT6": true
+  },
+  "attempt1VsAttempt2AllEqual": false,
+  "target": {
+    "oldOffendingMidpoint_mm": [
+      94.840891899633732,
+      31.592681702666198
+    ],
+    "oldRatio": 1.8412365620088138,
+    "h45_mm": [
+      1.4174854111585025,
+      2.6099259651391309
+    ],
+    "near45": {
+      "radius_mm": 6,
+      "sharedEdges": 181,
+      "maxRatio": 1.8412365620088138,
+      "above1p5": 3,
+      "above1p4": 7,
+      "quantiles50_90_99": [
+        1.0651415038838512,
+        1.2584571015921557,
+        1.7659670140207402
+      ]
+    },
+    "near40": {
+      "radius_mm": 6,
+      "sharedEdges": 179,
+      "maxRatio": 1.6015350873084404,
+      "above1p5": 3,
+      "above1p4": 9,
+      "quantiles50_90_99": [
+        1.0660105332852392,
+        1.2569371486060277,
+        1.5372400917387647
+      ]
+    },
+    "containing40": {
+      "element": 22642,
+      "h_mm": 1.7779797904901626,
+      "maxRatioToEdgeNeighbours": 1.6015350873084404
+    },
+    "counts45": {
+      "above1p8": 1,
+      "above1p75": 2,
+      "above1p7": 2,
+      "above1p6": 2,
+      "above1p5": 11,
+      "above1p4": 127,
+      "above1p3": 310
+    },
+    "counts40": {
+      "above1p8": 0,
+      "above1p75": 0,
+      "above1p7": 0,
+      "above1p6": 1,
+      "above1p5": 10,
+      "above1p4": 129,
+      "above1p3": 325
+    },
+    "T3": [
+      30387,
+      30357
+    ],
+    "exteriorT3": [
+      27471,
+      27441
+    ],
+    "seedsPerSegment45": [
+      57,
+      9,
+      9,
+      9,
+      9,
+      9,
+      9,
+      9,
+      9,
+      9,
+      2
+    ],
+    "seedsPerSegment40": [
+      64,
+      10,
+      10,
+      10,
+      10,
+      10,
+      10,
+      10,
+      10,
+      10,
+      2
+    ]
+  },
+  "pass": false
+}

@@ -1,0 +1,28 @@
+SOURCE_COMMIT=3e8de6a765dd1fab775ca449c86352563a5df38e
+SOURCE_STATUS=[]
+CHECKCODE g2_lp2b1_attempt.m:23 NASGU Value assigned to variable might be unused.
+CHECKCODE g2_lp2b1_attempt.m:80 NASGU Value assigned to variable might be unused.
+CHECKCODE g2_lp2b1_attempt.m:109 MSNU A Code Analyzer message was once suppressed here, but the message is no longer generated.
+CHECKCODE g2_lp2b1_attempt.m:110 MSNU A Code Analyzer message was once suppressed here, but the message is no longer generated.
+CHECKCODE g2_lp2b1_metrics.m:30 FNDSB For array or cell array, performance can be improved using logical indexing instead of 'find'.
+CHECKCODE g2_lp2b1_metrics.m:36 FNDSB For array or cell array, performance can be improved using logical indexing instead of 'find'.
+PARSE_ERRORS=0
+G2_LP2B1_ATTEMPT T_soft1_S10_h040_REPEAT hs=0.40 stage=KINKED_PROTECTED_MESH_JOIN_PASS join=13/13 T3=30357 minAng=23.179107 ratio=1.601535 checks=19/19 pass=1
+G2_LP2B1_WP1 repeat outcome=DETERMINISTIC
+                  name: 'T_soft1_S10_h040_REPEAT'
+        seedSpacing_mm: 0.4000
+                 stage: 'KINKED_PROTECTED_MESH_JOIN_PASS'
+           failedGates: {1x0 cell}
+             joinGates: '13/13'
+    qualityOnlyFailure: 0
+                  pass: 1
+                checks: '19/19'
+                    T3: 30357
+       canonicalSHA256: '54293d2a527f9bec33605ffea10c8f56af46a56291157f0d911cf68301b85bd2'
+      arraysFileSHA256: 'f13e163a762613c2a600d7d3961b190729bbe3f08da9c7a024982c6530fdff1a'
+      maxNeighborRatio: 1.6015
+          minAngle_deg: 23.1791
+            violations: 0
+
+WP1_REPEAT_OUTCOME=DETERMINISTIC
+MATLAB_PROCESSES_END=1

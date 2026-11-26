@@ -1,0 +1,41 @@
+"""Build and verify the LP2-B1 geometry-only archive (deterministic ZIP + SHA-256 manifest) and copy it to two devices.
+Members: every file under outputs/g2_lp2b1_geometry_v1 of the execution clone and every file of the scratch evidence
+folder (published under logs/). Existing archives are never overwritten; each copy is re-read member by member.
+usage: python lp2b1_archive.py <execRepo> <scratchDir> <localDir> <offDeviceDir> <archiveName> <out.json>"""
+import hashlib, json, os, shutil, sys, zipfile
+ex, sd, loc, off, name, out = sys.argv[1:7]
+def fsha(p):
+    h = hashlib.sha256()
+    with open(p, 'rb') as f:
+        for b in iter(lambda: f.read(1 << 20), b''): h.update(b)
+    return h.hexdigest()
+members = []
+for d, _, fs in os.walk(os.path.join(ex, 'outputs', 'g2_lp2b1_geometry_v1')):
+    for n in fs:
+        p = os.path.join(d, n); members.append((os.path.relpath(p, ex).replace('\\', '/'), p))
+nout = len(members)
+for d, _, fs in os.walk(sd):
+    if os.path.abspath(d).startswith(os.path.abspath(os.path.join(sd, 'archive'))): continue
+    for n in fs:
+        p = os.path.join(d, n); members.append(('logs/' + os.path.relpath(p, sd).replace('\\', '/'), p))
+members.sort(); assert len({m for m, _ in members}) == len(members)
+man = {m: fsha(p) for m, p in members}
+tmp = os.path.join(sd, 'archive', name); os.makedirs(os.path.dirname(tmp), exist_ok=True); assert not os.path.exists(tmp), tmp
+with zipfile.ZipFile(tmp, 'w', zipfile.ZIP_DEFLATED) as z:
+    for m, p in members:
+        zi = zipfile.ZipInfo(m, date_time=(2026, 11, 26, 0, 0, 0)); zi.compress_type = zipfile.ZIP_DEFLATED
+        z.writestr(zi, open(p, 'rb').read())
+    z.writestr(zipfile.ZipInfo('MANIFEST.sha256', date_time=(2026, 11, 26, 0, 0, 0)), ''.join(f'{v}  {k}\n' for k, v in man.items()))
+h = fsha(tmp)
+def verify(p):
+    if fsha(p) != h: return False
+    with zipfile.ZipFile(p) as z:
+        return all(hashlib.sha256(z.read(m)).hexdigest() == v for m, v in man.items())
+res = {'schema': 'NewMetacomp.G2.LP2B1.ArchiveRecord.v1', 'archive': name, 'sha256': h, 'bytes': os.path.getsize(tmp), 'members': len(man) + 1,
+       'outputFiles': nout, 'logFiles': len(man) - nout, 'manifestSHA256': hashlib.sha256(''.join(f'{v}  {k}\n' for k, v in man.items()).encode()).hexdigest(), 'memberSHA256': man}
+for tag, dd in (('local', loc), ('offDevice', off)):
+    dst = os.path.join(dd, name); assert not os.path.exists(dst), dst + ' exists'
+    shutil.copyfile(tmp, dst); res[tag + 'CopyVerified'] = verify(dst)
+res['pass'] = res['localCopyVerified'] and res['offDeviceCopyVerified']
+json.dump(res, open(out, 'w', encoding='utf-8', newline='\n'), indent=1)
+print('archive', name, h, res['members'], 'members', 'outputs', nout, '| local', res['localCopyVerified'], '| off-device', res['offDeviceCopyVerified'])

@@ -1,0 +1,80 @@
+{
+ "rule": "absolute local paths replaced by <repo> (execution clone), <worktree>, <scratch>, <user>; MATLAB startup path warnings removed; CRLF to LF",
+ "files": [
+  {
+   "file": "s1_wp0.m",
+   "originalSHA256": "3157196c2724cac62734d48955c23f02efa50d1147b5b57e9dea5705af1c5b67",
+   "sanitizedSHA256": "ec534eed9d05aa6c7e71e3689adf99b725a8a6b04ea4d3d987bcb9d2c5bda3f6"
+  },
+  {
+   "file": "s2_target.m",
+   "originalSHA256": "6ec4a4f44b1a144728379535e04ae31933947c56dca10a5f5f362b07d366728f",
+   "sanitizedSHA256": "b26718f9ef4a13a6cd7e67196a9d82f7a1c1966df142ac90a6427f6ce149d6eb"
+  },
+  {
+   "file": "s3_target_a2.m",
+   "originalSHA256": "bdf88d5881521253d7b725d44672f6052b61a2aff33e0a7ed84b9988429331fd",
+   "sanitizedSHA256": "4157371be9573d621244353633d4af873ba23753a06821e0c5ca30f076fda446"
+  },
+  {
+   "file": "s4_references.m",
+   "originalSHA256": "89babc64e85bcfb9f6c15cf3a550d188ef1d7d934656a8f18157afbb70e2e497",
+   "sanitizedSHA256": "f85fd11faebf98c7cad6e41231282a72711637b906b06c1d3f19b9711e48cda9"
+  },
+  {
+   "file": "s4_repeat.m",
+   "originalSHA256": "5493c2c710aec93b07264f5799772c4947ce1cd1fe237561015143bef64458de",
+   "sanitizedSHA256": "6e62e69d9e92ca30826614d0c0ccb027cafb5e1aa99320a6ec1663e7ad06b762"
+  },
+  {
+   "file": "s5_postaudit_figs.m",
+   "originalSHA256": "b84ef6c15ab3b7e760b779f65b063094d6d1c3692238d6f5e454974019241457",
+   "sanitizedSHA256": "040c7d919c36cdbf0f456988efa09239ae11a3904a056b1e3c49be68c42a704a"
+  },
+  {
+   "file": "s6_figs2.m",
+   "originalSHA256": "6a5b14f5e21d28f7c22931be4b685588508df4416ca71e65e8cf20a1ffcd36c9",
+   "sanitizedSHA256": "8b33a280907ddebd1d3fce65ea4840f7a75307716213db058988b0afb5074015"
+  },
+  {
+   "file": "s1_wp0.log",
+   "originalSHA256": "354dd4f18c31b84689292f72d49647daf9a0adf8600d7a9ea5a6705cd4d92ebb",
+   "sanitizedSHA256": "83c4240509db2463c31ac979645b641434ae830b2e36988619c8cd1a88c640bd"
+  },
+  {
+   "file": "s1_wp0_d.log",
+   "originalSHA256": "f5dd3aa3d2bbad8b25f492debf1742c2ebabadcafe06d2b61b18bb12a8173f55",
+   "sanitizedSHA256": "1521968bfbc05cb6fd850dc709ce9589ae4e87256dad197233ed27c568093465"
+  },
+  {
+   "file": "s2_target.log",
+   "originalSHA256": "48e357e65063f041883e94445c15feea3906cd842b77cec34739df2fc50c165c",
+   "sanitizedSHA256": "04ef911284b223ae62e1a5ce485776b0b0648b38c12e158a8a515abfcccad4b3"
+  },
+  {
+   "file": "s3_target_a2.log",
+   "originalSHA256": "8c23a6fd0bcba5260e5f351ffecb22289cd8b2087fad01a1e9888eb93e91dcdd",
+   "sanitizedSHA256": "546f9706cedabacd3531f689584ace1d0ce66843ee3cef3d3937303ef8cc1a70"
+  },
+  {
+   "file": "s4_references.log",
+   "originalSHA256": "886458e7e39d1f9b7feea6a286a1cadaf146957e77d170dd96eba143768776e9",
+   "sanitizedSHA256": "3d9590f397f5122a547d5b631cb42cec5785d47d789acb41d012348ce3aa587d"
+  },
+  {
+   "file": "s4_repeat.log",
+   "originalSHA256": "f70ee8052c48783e46442318866ef1ebb8a3b961b5c15bf4168b222fc5309629",
+   "sanitizedSHA256": "773e9844d21e21e282faff966d56c857223994174bc1e0ac132013c3a0017f63"
+  },
+  {
+   "file": "s5_postaudit_figs.log",
+   "originalSHA256": "d7cacb9cac4ff7d3ba59b8eb5424028e61757f4846605215ccd0d8fb27c0c0be",
+   "sanitizedSHA256": "010e9241ab897a55dd9546ac7b282a0253852145876a5e34360732505ed09e06"
+  },
+  {
+   "file": "s6_figs2.log",
+   "originalSHA256": "beaf5b58f54887523c13151e62454d3e2c8f0663c8b5ef43ebeeef15a7006527",
+   "sanitizedSHA256": "933b89f8100b5640090f7afa06a14018c14b5318f26a1a35a68f0a146e2a9b04"
+  }
+ ]
+}

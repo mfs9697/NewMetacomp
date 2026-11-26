@@ -1,0 +1,14 @@
+{
+  "schema": "NewMetacomp.G2.LP2B1.SummaryDiff.v1",
+  "differingPaths": [
+    "summary.exterior.nativeMeshingSeconds"
+  ],
+  "onlyTiming": true,
+  "values": [
+    {
+      "path": "summary.exterior.nativeMeshingSeconds",
+      "attempt1": 1.3678628,
+      "attempt2": 1.3504676
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+ "schema": "NewMetacomp.G2.LP2B1.PythonMetricsCheck.v1",
+ "exportsSHA256Match": true,
+ "T3": 30387,
+ "nodes": 15724,
+ "edges": 46113,
+ "interiorEdges": 45048,
+ "boundaryEdges": 1065,
+ "nonmanifoldEdges": 0,
+ "minAngle_deg": 30.126847321225505,
+ "maxNeighborRatio": 1.8412365620088138,
+ "allAreasPositive": true,
+ "violations": 1,
+ "violationPairs": [
+  [
+   23067,
+   23068
+  ]
+ ],
+ "ratioCounts": {
+  "above1p8": 1,
+  "above1p75": 2,
+  "above1p7": 2,
+  "above1p6": 2,
+  "above1p5": 11,
+  "above1p4": 127,
+  "above1p3": 310
+ },
+ "diff_minAngle_vs_savedSummary": 0.0,
+ "diff_maxRatio_vs_savedSummary": -2.220446049250313e-16,
+ "diff_minAngle_vs_matlabIndependent": 7.105427357601002e-15,
+ "diff_maxRatio_vs_matlabIndependent": 0.0,
+ "checks": {
+  "sha": true,
+  "T3": true,
+  "minAngle": true,
+  "maxRatio": true,
+  "violationSet": true,
+  "counts": true,
+  "areas": true,
+  "manifold": true
+ },
+ "pass": true
+}
