@@ -38,7 +38,7 @@ ck=struct();
 ck.failedMeshSHA=strcmp(fh(tg.failedMesh.path,rr),tg.failedMesh.sha256);
 ck.holdSHA=strcmp(fh(tg.hold.path,rr),tg.hold.sha256);ck.parentStateSHA=strcmp(fh(tg.parentState.path,rr),tg.parentState.sha256);
 ck.terminalSHA=strcmp(fh(tg.terminal.path,rr),tg.terminal.sha256);ck.admitSHA=strcmp(fh(tg.admit.path,lr),tg.admit.sha256);
-ref1=pins.references(1);for f={'MESH','PHASE','SOLUTION'},ck.(['s9' f{1} 'SHA'])=strcmp(fh(ref1.(f{1}).path,rr),ref1.(f{1}).sha256);end
+refs=pins.references;if ~iscell(refs),refs=num2cell(refs);end;ref1=refs{1};for f={'MESH','PHASE','SOLUTION'},ck.(['s9' f{1} 'SHA'])=strcmp(fh(ref1.(f{1}).path,rr),ref1.(f{1}).sha256);end
 [S9,s9h,okS9]=g2_trajectory_record('read',fullfile(rr,'soft1','S9','STATE.mat'));
 [Ho,~,okH]=g2_trajectory_record('read',fullfile(rr,'soft1','S10','HOLD.mat'));
 [Tm,~,okT]=g2_trajectory_record('read',fullfile(rr,'soft1','TERMINAL.mat'));

@@ -1,0 +1,57 @@
+{
+ "schema": "NewMetacomp.G2.LP2B1.Preregistration.v1",
+ "assignment": "https://github.com/mfs9697/NewMetacomp/issues/76",
+ "authority": "https://github.com/mfs9697/NewMetacomp/pull/75#pullrequestreview-6069396048",
+ "status": "PREREGISTERED before any alternative mesh is generated; geometry only; zero physical FEM; no GO; no new accepted state",
+ "pinsFile": "matlab/g2/lp2b1/G2_LP2B1_PINS_v1.json",
+ "pinsSHA256": "fbef586dcbff895d7dc77e5ce3ad007a4e209516514182cc4ebd426fbba1b2f6",
+ "target": {
+  "id": "soft1_S10_candidate",
+  "definition": "signed-MTS 4-mm forecast g2_lp2_forecast(soft1 S9 STATE, LP2-A3 policy) at full precision; must equal the stored FAILED_MESH.mat polyline and the soft1 TERMINAL candidate bitwise",
+  "stateIndex": 10, "expectedVertices": 12, "mask": [1, 0, 0],
+  "tip_mm": [114.29544883822506, 63.18559491151613], "arc_mm": 65.4,
+  "nominalClearanceGeometry": "clearanceGeometry of the accepted soft1 S9 STATE"
+ },
+ "baseline": {
+  "seedSpacing_mm": 0.45,
+  "source": "stored FAILED_MESH.mat (not regenerated)",
+  "sha256": "ab54ecaf0ff41bb7cd16cff0eb62c29cb9104d56490201337367bca6b54b8e12",
+  "outcome": "HOLD_KINKED_PROTECTED_MESH_JOIN, globalNeighborRatioAtMost1p8, join 12/13"
+ },
+ "references": [
+  {"id": "soft1_S9", "stateIndex": 9, "expectedVertices": 11, "mask": [1, 0, 0], "polyline": "accepted soft1 S9 STATE polyline_mm and tangent",
+   "nominalClearanceGeometry": "accepted LP2-A1 soft1 S8 parent (g2_lp2a3_parent)", "baselineMesh": "original accepted soft1 S9 MESH.mat (0.45 mm)"},
+  {"id": "H_S10", "stateIndex": 10, "expectedVertices": 12, "mask": [0, 0, 0], "polyline": "accepted H S10 STATE polyline_mm and tangent",
+   "nominalClearanceGeometry": "accepted H S9 STATE", "baselineMesh": "original accepted H S10 MESH.mat (0.45 mm)"}
+ ],
+ "mesher": {
+  "function": "g2_lp2a2_join (unchanged; LP2-A2 source digest f1d7e4d6...) followed by g2_lp2a2_pairing_audit, exactly as rung k of g2_lp2a2_mesh",
+  "exteriorOptions": {"BottomVertices_mm": [25.4, 482.6], "TopVertices_mm": 254, "TipGuideRadius_mm": 15, "TipGuideHface_mm": 1.5, "MaxT3Elements": 40000},
+  "inheritedDefaultsUnchanged": {"ChannelHalfWidth_mm": 0.02, "RimRadius_mm": 3.3, "Hmin_mm": 0.12, "Hmax_mm": 6, "Hgrad": 1.12, "Hedge_mm": 0.45, "GuideHface_mm": 1.5},
+  "onlyVariedParameter": "SeedSpacing_mm (paired crack-bank seed spacing)",
+  "newMeshAlgorithm": false
+ },
+ "candidateOrder_mm": [0.40, 0.50, 0.35],
+ "gates": {
+  "join": "13/13 inherited join gates (min angle >= 20 deg, neighbour ratio <= 1.8, T3 <= 40000, seams, banks, q 2443 inside core, ...)",
+  "independentMetrics": "g2_lp2b1_metrics agrees with the join summary (T3, min angle 1e-10 deg, max ratio 1e-12)",
+  "pairing": "P1-P10",
+  "kinkedAudit": "g2_lp1_audit: g2_kinked_mesh_auditor 34/34, T3 budget, bank adapter, four-mask phase audit, owner re-map",
+  "chords": "76 chords on each ring circle",
+  "clearance": "actual-polygon clearance and the 1-mm guide-to-every-ring guard (g2_lp2a3_classify) = MATRIX_ADVANCE; nominal clearance on the parent geometry = MATRIX_ADVANCE",
+  "protected": "block T3 rows 1-2916 (core 2788 + collar 128), block nodes, T6 block rows and nodes, nodal q on the block and 2443 active q parents identical to the baseline; every inherited q annulus inside the 3 mm core",
+  "geometry": "exact polyline; tangent equal to the input within 1e-12",
+  "thresholdsChanged": false
+ },
+ "stoppingRules": {
+  "progress": "generate the next candidate ONLY if the previous one failed the join with failed gates contained in {globalMinAngleAtLeast20, globalNeighborRatioAtMost1p8}",
+  "hold": "any other failure (admissibility, CAD, seeds, budget, any other join gate, pairing, kinked audit, phase, owner map, chords, clearance, guard, protected-array difference, error) stops with HOLD; no further candidate",
+  "selection": "the first candidate passing EVERY gate is selected prospectively; no physical result is used",
+  "exhausted": "if all three fail the quality gates: HOLD with full diagnostics and a proposal (not an implementation) of a separate local transition repair"
+ },
+ "determinism": "one geometry-only repeat of the selected spacing on the target in a new MATLAB session; canonical arrays (X3, T3, X6, T6, banks, q, rows, polyline, CAD point vertices, tip node), canonical SHA-256 and gates must be identical (MAT bytes are not compared); otherwise HOLD",
+ "referenceRule": "the SAME selected spacing on soft1 S9 and H S10 only, all gates above with the original accepted MESH as baseline; a reference failure is HOLD for scientific disposition; the target selection is never changed afterwards",
+ "outputs": "outputs/g2_lp2b1_geometry_v1/<attempt> in the execution clone: distinct attempt names (T_soft1_S10_h040, ..., *_REPEAT, R_<ref>_h0xx), never overwritten; no record under any historical run or ledger root",
+ "resources": "pre-start check >= 8.2 GiB free with the removable backup present before MATLAB starts; g2_lp0_preflight 5 GiB guard unchanged; one MATLAB process",
+ "excluded": "physical FEM, GO, new accepted state, LP2-A3 retry/resumption, other spacings, smaller steps, guide-radius change, threshold change, LP2-B2, S12, merges"
+}
