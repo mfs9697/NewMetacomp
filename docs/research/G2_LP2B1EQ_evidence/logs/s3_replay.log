@@ -1,0 +1,45 @@
+[Warning: Name is nonexistent or not a directory: <drive>\Projects\8 - CohZonFEM\czm_project\CrackPath\CrackFromHoleLEFM\cfh] 
+[Warning: Name is nonexistent or not a directory: <drive>\Projects\8 - CohZonFEM\Asphalt\remmers2003] 
+SOURCE_COMMIT=72c04e130934424b7ae0b38ccf9017406e78a04b
+SOURCE_STATUS=[]
+G2_LP2B1_ATTEMPT GEOMETRY_h040 hs=0.40 stage=KINKED_PROTECTED_MESH_JOIN_PASS join=13/13 T3=30183 minAng=22.387808 ratio=1.591829 checks=19/19 pass=1
+REPLAY EQB-soft1-S9 pass=1 canonical=7535d71ad4790f3a24a47d03e27c3d73d8ba61df03050a2e952accfeffebee16 attempt=19/19 T3=30183 minAngle=22.387807593 ratio=1.5918285508620 activeArea=1012.152528598162 chords=[76 76 76] (21.3 s)
+   attempt19                      1
+   attemptCanonicalEqualsPin      1
+   joinPass                       1
+   pairing                        1
+   kinkedAudit34                  1
+   phaseAudit                     1
+   chords76                       1
+   canonicalEqualsPin             1
+   canonicalEqualsAttempt         1
+   qualificationFilePin           1
+   qualificationArraysEqual       1
+   attemptArraysEqual             1
+   protectedTopology              1
+   ringPolygonsEqualArchived      1
+   stationCoverage                1
+   topology pass=1 blockNodes=5953 bankPairs=56 DOFs=226 tip 1114->1114
+   stations new=349 arch=319 near=57/57 matched=57
+G2_LP2B1_ATTEMPT GEOMETRY_h040 hs=0.40 stage=KINKED_PROTECTED_MESH_JOIN_PASS join=13/13 T3=30349 minAng=22.782266 ratio=1.591829 checks=19/19 pass=1
+REPLAY EQB-H-S10 pass=0 canonical=45298fae6257674b99de036341b6d0c05b55fbb6bb7be635786f8ae71bb068e3 attempt=19/19 T3=30349 minAngle=22.782265871 ratio=1.5918285508618 activeArea=0 chords=[76 76 76] (17.4 s)
+   attempt19                      1
+   attemptCanonicalEqualsPin      1
+   joinPass                       1
+   pairing                        1
+   kinkedAudit34                  1
+   phaseAudit                     1
+   chords76                       1
+   canonicalEqualsPin             1
+   canonicalEqualsAttempt         1
+   qualificationFilePin           1
+   qualificationArraysEqual       1
+   attemptArraysEqual             1
+   protectedTopology              0
+   ringPolygonsEqualArchived      1
+   stationCoverage                1
+   topology pass=0 blockNodes=5953 bankPairs=56 DOFs=226 tip 1114->1114
+   stations new=369 arch=337 near=57/57 matched=57
+EXPORT sets=4
+REPLAY_RESULT pass=1,0
+MATLAB_PROCESSES_END=1

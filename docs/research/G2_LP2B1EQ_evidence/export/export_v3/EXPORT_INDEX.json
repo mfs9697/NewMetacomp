@@ -1,0 +1,361 @@
+{
+  "schema": "NewMetacomp.G2.LP2B1EQ.Export.v1",
+  "sets": [
+    {
+      "name": "Q_EQB-soft1-S9",
+      "source": "outputs/g2_lp2b1_geometry_v1/wp1_attempt2/R_soft1_S9_h040/ATTEMPT_ARRAYS.mat",
+      "sourceFileSHA256": "1c4de0dffd17a23aadb9f2b0e18250dd9f7c6c289d1679c47e1d074275b37449",
+      "expectedCanonicalSHA256": "7535d71ad4790f3a24a47d03e27c3d73d8ba61df03050a2e952accfeffebee16",
+      "arrays": [
+        {
+          "name": "X3",
+          "file": "Q_EQB-soft1-S9_X3.f64",
+          "size": [
+            15628,
+            2
+          ],
+          "numel": 31256
+        },
+        {
+          "name": "T3",
+          "file": "Q_EQB-soft1-S9_T3.f64",
+          "size": [
+            30183,
+            3
+          ],
+          "numel": 90549
+        },
+        {
+          "name": "X6",
+          "file": "Q_EQB-soft1-S9_X6.f64",
+          "size": [
+            61441,
+            2
+          ],
+          "numel": 122882
+        },
+        {
+          "name": "T6",
+          "file": "Q_EQB-soft1-S9_T6.f64",
+          "size": [
+            30183,
+            6
+          ],
+          "numel": 181098
+        },
+        {
+          "name": "upperBankT6",
+          "file": "Q_EQB-soft1-S9_upperBankT6.f64",
+          "size": [
+            349,
+            1
+          ],
+          "numel": 349
+        },
+        {
+          "name": "lowerBankT6",
+          "file": "Q_EQB-soft1-S9_lowerBankT6.f64",
+          "size": [
+            349,
+            1
+          ],
+          "numel": 349
+        },
+        {
+          "name": "nodalQ",
+          "file": "Q_EQB-soft1-S9_nodalQ.f64",
+          "size": [
+            61441,
+            1
+          ],
+          "numel": 61441
+        },
+        {
+          "name": "qActiveT6Rows",
+          "file": "Q_EQB-soft1-S9_qActiveT6Rows.f64",
+          "size": [
+            2443,
+            1
+          ],
+          "numel": 2443
+        },
+        {
+          "name": "crackPolyline",
+          "file": "Q_EQB-soft1-S9_crackPolyline.f64",
+          "size": [
+            11,
+            2
+          ],
+          "numel": 22
+        }
+      ]
+    },
+    {
+      "name": "Q_EQB-H-S10",
+      "source": "outputs/g2_lp2b1_geometry_v1/wp1_attempt2/R_H_S10_h040/ATTEMPT_ARRAYS.mat",
+      "sourceFileSHA256": "ffcb53f12c4b06b463a3df4c644d93459a4f456a04a5185fe3ad453b5db75122",
+      "expectedCanonicalSHA256": "45298fae6257674b99de036341b6d0c05b55fbb6bb7be635786f8ae71bb068e3",
+      "arrays": [
+        {
+          "name": "X3",
+          "file": "Q_EQB-H-S10_X3.f64",
+          "size": [
+            15721,
+            2
+          ],
+          "numel": 31442
+        },
+        {
+          "name": "T3",
+          "file": "Q_EQB-H-S10_T3.f64",
+          "size": [
+            30349,
+            3
+          ],
+          "numel": 91047
+        },
+        {
+          "name": "X6",
+          "file": "Q_EQB-H-S10_X6.f64",
+          "size": [
+            61793,
+            2
+          ],
+          "numel": 123586
+        },
+        {
+          "name": "T6",
+          "file": "Q_EQB-H-S10_T6.f64",
+          "size": [
+            30349,
+            6
+          ],
+          "numel": 182094
+        },
+        {
+          "name": "upperBankT6",
+          "file": "Q_EQB-H-S10_upperBankT6.f64",
+          "size": [
+            369,
+            1
+          ],
+          "numel": 369
+        },
+        {
+          "name": "lowerBankT6",
+          "file": "Q_EQB-H-S10_lowerBankT6.f64",
+          "size": [
+            369,
+            1
+          ],
+          "numel": 369
+        },
+        {
+          "name": "nodalQ",
+          "file": "Q_EQB-H-S10_nodalQ.f64",
+          "size": [
+            61793,
+            1
+          ],
+          "numel": 61793
+        },
+        {
+          "name": "qActiveT6Rows",
+          "file": "Q_EQB-H-S10_qActiveT6Rows.f64",
+          "size": [
+            2443,
+            1
+          ],
+          "numel": 2443
+        },
+        {
+          "name": "crackPolyline",
+          "file": "Q_EQB-H-S10_crackPolyline.f64",
+          "size": [
+            12,
+            2
+          ],
+          "numel": 24
+        }
+      ]
+    },
+    {
+      "name": "P_EQB-soft1-S9",
+      "source": "outputs/g2_lp2b1eq_readiness_v1/replay_v3/EQB-soft1-S9/GEOMETRY_h040/ATTEMPT_ARRAYS.mat",
+      "sourceFileSHA256": "3ce5c2c2f3e56695f2bb6b745b98fb90f0957c7c7f8459cbe6e5c995c59c353e",
+      "expectedCanonicalSHA256": "7535d71ad4790f3a24a47d03e27c3d73d8ba61df03050a2e952accfeffebee16",
+      "arrays": [
+        {
+          "name": "X3",
+          "file": "P_EQB-soft1-S9_X3.f64",
+          "size": [
+            15628,
+            2
+          ],
+          "numel": 31256
+        },
+        {
+          "name": "T3",
+          "file": "P_EQB-soft1-S9_T3.f64",
+          "size": [
+            30183,
+            3
+          ],
+          "numel": 90549
+        },
+        {
+          "name": "X6",
+          "file": "P_EQB-soft1-S9_X6.f64",
+          "size": [
+            61441,
+            2
+          ],
+          "numel": 122882
+        },
+        {
+          "name": "T6",
+          "file": "P_EQB-soft1-S9_T6.f64",
+          "size": [
+            30183,
+            6
+          ],
+          "numel": 181098
+        },
+        {
+          "name": "upperBankT6",
+          "file": "P_EQB-soft1-S9_upperBankT6.f64",
+          "size": [
+            349,
+            1
+          ],
+          "numel": 349
+        },
+        {
+          "name": "lowerBankT6",
+          "file": "P_EQB-soft1-S9_lowerBankT6.f64",
+          "size": [
+            349,
+            1
+          ],
+          "numel": 349
+        },
+        {
+          "name": "nodalQ",
+          "file": "P_EQB-soft1-S9_nodalQ.f64",
+          "size": [
+            61441,
+            1
+          ],
+          "numel": 61441
+        },
+        {
+          "name": "qActiveT6Rows",
+          "file": "P_EQB-soft1-S9_qActiveT6Rows.f64",
+          "size": [
+            2443,
+            1
+          ],
+          "numel": 2443
+        },
+        {
+          "name": "crackPolyline",
+          "file": "P_EQB-soft1-S9_crackPolyline.f64",
+          "size": [
+            11,
+            2
+          ],
+          "numel": 22
+        }
+      ]
+    },
+    {
+      "name": "P_EQB-H-S10",
+      "source": "outputs/g2_lp2b1eq_readiness_v1/replay_v3/EQB-H-S10/GEOMETRY_h040/ATTEMPT_ARRAYS.mat",
+      "sourceFileSHA256": "3d2d9b5081a14edac845bd7920c0bea130d6d03e0de63479f1bbf080bafbc865",
+      "expectedCanonicalSHA256": "45298fae6257674b99de036341b6d0c05b55fbb6bb7be635786f8ae71bb068e3",
+      "arrays": [
+        {
+          "name": "X3",
+          "file": "P_EQB-H-S10_X3.f64",
+          "size": [
+            15721,
+            2
+          ],
+          "numel": 31442
+        },
+        {
+          "name": "T3",
+          "file": "P_EQB-H-S10_T3.f64",
+          "size": [
+            30349,
+            3
+          ],
+          "numel": 91047
+        },
+        {
+          "name": "X6",
+          "file": "P_EQB-H-S10_X6.f64",
+          "size": [
+            61793,
+            2
+          ],
+          "numel": 123586
+        },
+        {
+          "name": "T6",
+          "file": "P_EQB-H-S10_T6.f64",
+          "size": [
+            30349,
+            6
+          ],
+          "numel": 182094
+        },
+        {
+          "name": "upperBankT6",
+          "file": "P_EQB-H-S10_upperBankT6.f64",
+          "size": [
+            369,
+            1
+          ],
+          "numel": 369
+        },
+        {
+          "name": "lowerBankT6",
+          "file": "P_EQB-H-S10_lowerBankT6.f64",
+          "size": [
+            369,
+            1
+          ],
+          "numel": 369
+        },
+        {
+          "name": "nodalQ",
+          "file": "P_EQB-H-S10_nodalQ.f64",
+          "size": [
+            61793,
+            1
+          ],
+          "numel": 61793
+        },
+        {
+          "name": "qActiveT6Rows",
+          "file": "P_EQB-H-S10_qActiveT6Rows.f64",
+          "size": [
+            2443,
+            1
+          ],
+          "numel": 2443
+        },
+        {
+          "name": "crackPolyline",
+          "file": "P_EQB-H-S10_crackPolyline.f64",
+          "size": [
+            12,
+            2
+          ],
+          "numel": 24
+        }
+      ]
+    }
+  ]
+}

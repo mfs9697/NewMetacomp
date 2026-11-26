@@ -1,0 +1,12 @@
+{
+ "schema": "NewMetacomp.G2.LP2B1EQ.Sanitization.v1",
+ "rule": "absolute local paths replaced by <repo>, <temp>, <scratch>, <backup>, <home>, <drive>, <matlabroot>; test temp stamps by <stamp>; UTF-16 logs converted to UTF-8; MATLAB startup path warnings removed from logs; binaries (.mat, .f64) only in the archive",
+ "files": [
+  {
+   "file": "ATTEMPT.json",
+   "sourceSHA256": "2b98ab25f345ad2d676d69ba38215f11d90678a9c644e9dd7d85b9629aee4ecb",
+   "publishedSHA256": "2b98ab25f345ad2d676d69ba38215f11d90678a9c644e9dd7d85b9629aee4ecb",
+   "replacements": {}
+  }
+ ]
+}

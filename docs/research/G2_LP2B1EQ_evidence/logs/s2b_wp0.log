@@ -1,0 +1,18 @@
+[Warning: Name is nonexistent or not a directory: <drive>\Projects\8 - CohZonFEM\czm_project\CrackPath\CrackFromHoleLEFM\cfh] 
+[Warning: Name is nonexistent or not a directory: <drive>\Projects\8 - CohZonFEM\Asphalt\remmers2003] 
+SOURCE_COMMIT=770d0d5fce71486f969aef8dca39588e00c09858
+SOURCE_STATUS=[]
+PREFLIGHT pass=1 free=8.394 engines=1 commit=770d0d5fce71486f969aef8dca39588e00c09858
+TOKEN G2LP2B1EQ|policy=cde4b50ea1f70debf505e14a821e0cad2d4b808e93bb8792da907646ee776387|g2source=7e5683703bd104547ef5d013aa0253ad2819b59dc58693957e2d04b4707f0947|lp2source=357dfdcdb576d2866b9d1b41a14265300a14c30700d6475f995881041ba822ca|lp2a2source=f1d7e4d67b91968e16ebaead13be86667c7776ce48971ed5206c7f136fae7afd|lp2a3source=fa3bcecfa9cd3044253d5a72253e2058bccd044d32345f51650dcd775f42e002|lp2b1source=9c7a1260e3bde5b59e1d93c47bc99cc4d7b89f9b0cc6e874572fb378f1717bee|lp2b1eqsource=2e01ba1e0ed0c5492f20d3e8dd3ba8696a6b24b64fbf692a82f851e93b106a20|closure=76614f269810c6970544bca0c1c0f84ebf9131935554ebd75e57e24f819f65f7|references=63014a95ebeebd127ae094e9254331d6e32e314902b6c1d6ac2bf8abbeb3d89d|qualification=441b1eadf330a720255f2c6b178c0c51a822e4ad99a24d0318230c0884c5d5ad|solves=EQB-soft1-S9,EQB-H-S10|limit=2|seed=0.40|campaign=G2-LP2B1-EQ-001|run=run_lp2b1_eq_v1
+matlab.exe : S2_ERROR MATLAB:UndefinedFunction: Unrecognized function or variable 'pin'.
+At <scratch>\sr1\too
+ls\runml.ps1:12 char:3
++   & $exe -batch ("run('" + $Script.Replace("'", "''") + "')") *> $log
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (S2_ERROR MATLAB...variable 'pin'.:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+  g2_lp2b1eq_reference:60
+  s2b_wp0:14
+  run:91
+MATLAB_PROCESSES_END=1

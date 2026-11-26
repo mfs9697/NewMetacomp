@@ -1,0 +1,46 @@
+[Warning: Name is nonexistent or not a directory: <drive>\Projects\8 - CohZonFEM\czm_project\CrackPath\CrackFromHoleLEFM\cfh] 
+[Warning: Name is nonexistent or not a directory: <drive>\Projects\8 - CohZonFEM\Asphalt\remmers2003] 
+SOURCE_COMMIT=307c26267154e3c60847a2db7966084974ee7b83
+LINT g2_lp2b1eq_banks.m 0
+LINT g2_lp2b1eq_campaign.m 0
+LINT g2_lp2b1eq_canon.m 0
+LINT g2_lp2b1eq_compare.m 1
+  L100 NASGU: Value assigned to variable might be unused.
+LINT g2_lp2b1eq_compare_case.m 0
+LINT g2_lp2b1eq_context.m 0
+LINT g2_lp2b1eq_criteria.m 0
+LINT g2_lp2b1eq_external_run.m 1
+  L19 NASGU: Value assigned to variable might be unused.
+LINT g2_lp2b1eq_geometry.m 1
+  L28 NASGU: Value assigned to variable might be unused.
+LINT g2_lp2b1eq_go_validate.m 1
+  L31 ISCLSTR: To support string in addition to cellstr, include a call to 'isstring'.
+LINT g2_lp2b1eq_reference.m 0
+LINT g2_lp2b1eq_run.m 2
+  L112 NOCOMMA: Extra comma is unnecessary.
+  L139 ALIGN: This keyword might not be aligned with its matching END on line 141.
+LINT g2_lp2b1eq_tests.m 18
+  L90 MSNU: A Code Analyzer message was once suppressed here, but the message is no longer generated.
+  L102 MSNU: A Code Analyzer message was once suppressed here, but the message is no longer generated.
+  L137 NASGU: Value assigned to variable might be unused.
+  L191 DATST: 'datestr' is not recommended. With appropriate code changes, use 'datetime' instead.
+  L191 TNOW1: 'now' is not recommended. With appropriate code changes, use 'datetime("now")' instead.
+  L329 MSNU: A Code Analyzer message was once suppressed here, but the message is no longer generated.
+  L354 NOCOMMA: Extra comma is unnecessary.
+  L381 NOCOMMA: Extra comma is unnecessary.
+  L411 NASGU: Value assigned to variable might be unused.
+  L413 STOUT: Function return value might be unset.
+  L413 NASGU: Value assigned to variable might be unused.
+  L417 NASGU: Value assigned to variable might be unused.
+  L423 NASGU: Value assigned to variable might be unused.
+  L423 NASGU: Value assigned to variable might be unused.
+  L458 DATST: 'datestr' is not recommended. With appropriate code changes, use 'datetime' instead.
+  L458 TNOW1: 'now' is not recommended. With appropriate code changes, use 'datetime("now")' instead.
+  L487 NOCOMMA: Extra comma is unnecessary.
+  L492 NOCOMMA: Extra comma is unnecessary.
+LINT g2_lp2b1eq_topology.m 0
+LINT g2_lp2b1eq_verify.m 2
+  L43 NOCOMMA: Extra comma is unnecessary.
+  L88 STLOW: In this comparison the call to UPPER/LOWER is unnecessary.
+LINT lp2b1eq_export.m 0
+MATLAB_PROCESSES_END=1

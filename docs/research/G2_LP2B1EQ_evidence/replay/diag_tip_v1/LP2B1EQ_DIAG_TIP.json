@@ -1,0 +1,126 @@
+{
+  "schema": "NewMetacomp.G2.LP2B1EQ.DiagTip.v1",
+  "physicalSolves": 0,
+  "entries": [
+    {
+      "solveId": "EQB-soft1-S9",
+      "mesh": "old",
+      "physicalTipNode": 1114,
+      "sharedBlockIds": 1114,
+      "sharedIsScalar": true,
+      "sharedEqualsTip": true,
+      "tipXY": [
+        112.53494070252768,
+        59.5938528405785
+      ],
+      "polylineTip": [
+        112.53494070252768,
+        59.5938528405785
+      ],
+      "tipMinusPolyline": [
+        0,
+        0
+      ],
+      "tipCoordinateBitwise": true,
+      "distance_mm": 0,
+      "X3tip": [
+        112.53494070252768,
+        59.5938528405785
+      ],
+      "tipInUpper": true,
+      "tipInLower": true,
+      "upperLast": 1114,
+      "lowerLast": 1114
+    },
+    {
+      "solveId": "EQB-soft1-S9",
+      "mesh": "new",
+      "physicalTipNode": 1114,
+      "sharedBlockIds": 1114,
+      "sharedIsScalar": true,
+      "sharedEqualsTip": true,
+      "tipXY": [
+        112.53494070252768,
+        59.5938528405785
+      ],
+      "polylineTip": [
+        112.53494070252768,
+        59.5938528405785
+      ],
+      "tipMinusPolyline": [
+        0,
+        0
+      ],
+      "tipCoordinateBitwise": true,
+      "distance_mm": 0,
+      "X3tip": [
+        112.53494070252768,
+        59.5938528405785
+      ],
+      "tipInUpper": true,
+      "tipInLower": true,
+      "upperLast": 1114,
+      "lowerLast": 1114
+    },
+    {
+      "solveId": "EQB-H-S10",
+      "mesh": "old",
+      "physicalTipNode": 1114,
+      "sharedBlockIds": 1114,
+      "sharedIsScalar": true,
+      "sharedEqualsTip": true,
+      "tipXY": [
+        114.73497161080273,
+        63.063678517251361
+      ],
+      "polylineTip": [
+        114.73497161080275,
+        63.063678517251361
+      ],
+      "tipMinusPolyline": [
+        -1.4210854715202004E-14,
+        0
+      ],
+      "tipCoordinateBitwise": false,
+      "distance_mm": 1.4210854715202004E-14,
+      "X3tip": [
+        114.73497161080273,
+        63.063678517251361
+      ],
+      "tipInUpper": true,
+      "tipInLower": true,
+      "upperLast": 1114,
+      "lowerLast": 1114
+    },
+    {
+      "solveId": "EQB-H-S10",
+      "mesh": "new",
+      "physicalTipNode": 1114,
+      "sharedBlockIds": 1114,
+      "sharedIsScalar": true,
+      "sharedEqualsTip": true,
+      "tipXY": [
+        114.73497161080273,
+        63.063678517251361
+      ],
+      "polylineTip": [
+        114.73497161080275,
+        63.063678517251361
+      ],
+      "tipMinusPolyline": [
+        -1.4210854715202004E-14,
+        0
+      ],
+      "tipCoordinateBitwise": false,
+      "distance_mm": 1.4210854715202004E-14,
+      "X3tip": [
+        114.73497161080273,
+        63.063678517251361
+      ],
+      "tipInUpper": true,
+      "tipInLower": true,
+      "upperLast": 1114,
+      "lowerLast": 1114
+    }
+  ]
+}
