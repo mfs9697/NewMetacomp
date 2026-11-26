@@ -1,0 +1,682 @@
+{
+ "schema": "NewMetacomp.G2.LP2B1EQ.Policy.v1",
+ "status": "PROPOSED_NOT_AUTHORIZED",
+ "assignment": "G2-LP2-B1-EQ, https://github.com/mfs9697/NewMetacomp/issues/78; start head 28f554883f8248423098fbab5224bec42ba98a1a (PR #77)",
+ "scope": "Readiness of exactly two FUTURE fixed-geometry physical equivalence solves at the LP2-B1 qualified 0.40 mm bank seed spacing against the ORIGINAL accepted LP2-A3 records of the same geometry and material: EQB-soft1-S9 then EQB-H-S10, one attempt each, global stop on the first failure. No propagation, no new STATE, no target soft1 S10 solve, no same-s contrast, no fallback, no retry, no adaptive step, no LP2-B2, no S12.",
+ "authority": {
+  "b1Review": "https://github.com/mfs9697/NewMetacomp/pull/77#pullrequestreview-6072320621 (LP2B1_MESH_QUALIFIED_RESTRICTED_0p40)",
+  "b1Head": "28f554883f8248423098fbab5224bec42ba98a1a",
+  "wp5ScientificAcceptance": "https://github.com/mfs9697/NewMetacomp/pull/71#pullrequestreview-6063867614",
+  "wp5FinalClosure": "https://github.com/mfs9697/NewMetacomp/pull/71#pullrequestreview-6064434652",
+  "a3ScientificAcceptance": "https://github.com/mfs9697/NewMetacomp/pull/75#pullrequestreview-6069396048",
+  "contractDraft": {
+   "path": "docs/research/G2_LP2B1_evidence/wp2/G2_LP2B1_EQ_CONTRACT_DRAFT_v1.json",
+   "sha256": "4555aa6c8037b5522e63f662137e53d05dd268f9a8fa44601ce17f59620a6947"
+  }
+ },
+ "campaignId": "G2-LP2B1-EQ-001",
+ "solves": [
+  {
+   "order": 1,
+   "id": "EQB-soft1-S9",
+   "caseId": "soft1",
+   "stateIndex": 9,
+   "mask": [
+    1,
+    0,
+    0
+   ],
+   "ratio": 0.5,
+   "arc_mm": 61.4,
+   "archived": {
+    "folder": "outputs/g2_lp2a3_paths_v1/run_lp2a3_s9_s11_v1/soft1/S9",
+    "STATE": {
+     "record": {
+      "path": "outputs/g2_lp2a3_paths_v1/run_lp2a3_s9_s11_v1/soft1/S9/STATE.mat",
+      "sha256": "79ebecbc21b4d9425e3a2b82a9bc17270373a85f2a7c26d11cfe1e7c9b45aec6"
+     },
+     "manifest": {
+      "path": "outputs/g2_lp2a3_paths_v1/run_lp2a3_s9_s11_v1/soft1/S9/STATE.mat.manifest.json",
+      "sha256": "b2f451373cb6ffc8424a522bab577629f0099f82b94c833bec99f90b960e8506"
+     }
+    },
+    "MESH": {
+     "path": "outputs/g2_lp2a3_paths_v1/run_lp2a3_s9_s11_v1/soft1/S9/MESH.mat",
+     "sha256": "5afd6e8199ca797ced1a73ba7584c29334abdad7d2413d1bc39a2e0385d1eae0"
+    },
+    "PHASE": {
+     "record": {
+      "path": "outputs/g2_lp2a3_paths_v1/run_lp2a3_s9_s11_v1/soft1/S9/PHASE.mat",
+      "sha256": "fe0ad27f471d052153edbebe6ecf39e525021f5051c4572b97e3f89907f0c83e"
+     },
+     "manifest": {
+      "path": "outputs/g2_lp2a3_paths_v1/run_lp2a3_s9_s11_v1/soft1/S9/PHASE.mat.manifest.json",
+      "sha256": "b797bf9e60f394d60eba04dc0e45464f88cc94fd5d640ca3cb5b8d717651f2bb"
+     }
+    },
+    "SOLUTION": {
+     "record": {
+      "path": "outputs/g2_lp2a3_paths_v1/run_lp2a3_s9_s11_v1/soft1/S9/SOLUTION.mat",
+      "sha256": "ae981011e8092115037b0ae910cd92d2e7e352b2fcb88677425dfd564abcc54b"
+     },
+     "manifest": {
+      "path": "outputs/g2_lp2a3_paths_v1/run_lp2a3_s9_s11_v1/soft1/S9/SOLUTION.mat.manifest.json",
+      "sha256": "48430b77e0c315394577abf2aa92e8612304c7c83dedb6920c1f7aa1c6e6ce71"
+     }
+    },
+    "ADMIT": {
+     "record": {
+      "path": "outputs/g2_lp2a3_campaign_ledger/G2-LP2A3-001/ADMIT_soft1_S9.mat",
+      "sha256": "d0ab9305e48a75ac73bca946bc94e9e6d29f69fad607867298175a717c90a216"
+     },
+     "manifest": {
+      "path": "outputs/g2_lp2a3_campaign_ledger/G2-LP2A3-001/ADMIT_soft1_S9.mat.manifest.json",
+      "sha256": "0aabbccd4acdf1c61bbedc0b95710c3a17cad4e4c7038e4ea4f2084f96a664fb"
+     }
+    }
+   },
+   "parent": {
+    "kind": "LP2-A1 S8 STATE (original accepted parent of LP2-A3 soft1 S9)",
+    "STATE": {
+     "path": "outputs/g2_lp2a_paths_v1/run_lp2a_s5_s8_v1/soft1/S8/STATE.mat",
+     "sha256": "67d92ab42a3cab540fce3b74f6478e85b11d0b54b527b7e815f6c44d159ad303"
+    },
+    "loader": "g2_lp2a3_parent(C3,soft1) (pins S8 STATE/MESH/PHASE/SOLUTION/TERMINAL of the LP2-A3 policy)"
+   },
+   "nominalGeometry": "clearanceGeometry of the soft1 S8 parent STATE (as LP2-B1 WP1 references)",
+   "nextPredictor": {
+    "state": "S10",
+    "tip_mm": [
+     114.29544883822506,
+     63.18559491151613
+    ],
+    "source": "signed-MTS forecast g2_lp2_forecast(soft1 S9 STATE, LP2-A3 policy) = TERMINAL.candidate (NUMERICAL_HOLD terminal) = FAILED_MESH crack polyline; no accepted S10 exists",
+    "TERMINAL": {
+     "record": {
+      "path": "outputs/g2_lp2a3_paths_v1/run_lp2a3_s9_s11_v1/soft1/TERMINAL.mat",
+      "sha256": "8f0289fdd4f9c665fb1666d50aa0a1a3126210cc5f05b70e048d9616328761e7"
+     },
+     "manifest": {
+      "path": "outputs/g2_lp2a3_paths_v1/run_lp2a3_s9_s11_v1/soft1/TERMINAL.mat.manifest.json",
+      "sha256": "58b1abc4dd9773efa75b78049e9216491e2dfb9acebbb7a86bf5980b4a118dc6"
+     }
+    },
+    "FAILED_MESH": {
+     "path": "outputs/g2_lp2a3_paths_v1/run_lp2a3_s9_s11_v1/soft1/S10/FAILED_MESH.mat",
+     "sha256": "ab54ecaf0ff41bb7cd16cff0eb62c29cb9104d56490201337367bca6b54b8e12"
+    }
+   },
+   "qualification": {
+    "attempt": "R_soft1_S9_h040",
+    "arrays": {
+     "path": "outputs/g2_lp2b1_geometry_v1/wp1_attempt2/R_soft1_S9_h040/ATTEMPT_ARRAYS.mat",
+     "sha256": "1c4de0dffd17a23aadb9f2b0e18250dd9f7c6c289d1679c47e1d074275b37449"
+    },
+    "attemptJson": {
+     "path": "outputs/g2_lp2b1_geometry_v1/wp1_attempt2/R_soft1_S9_h040/ATTEMPT.json",
+     "sha256": "16ce48b3beddb0471a873a33ce64f8419aa9dbf9375723fc1a711849a1589471"
+    },
+    "canonicalSHA256": "7535d71ad4790f3a24a47d03e27c3d73d8ba61df03050a2e952accfeffebee16",
+    "T3": 30183,
+    "seedSpacing_mm": 0.4,
+    "minAngle_deg": 22.387807593359415,
+    "maxNeighborRatio": 1.5918285508619603
+   }
+  },
+  {
+   "order": 2,
+   "id": "EQB-H-S10",
+   "caseId": "H",
+   "stateIndex": 10,
+   "mask": [
+    0,
+    0,
+    0
+   ],
+   "ratio": 1,
+   "arc_mm": 65.4,
+   "archived": {
+    "folder": "outputs/g2_lp2a3_paths_v1/run_lp2a3_s9_s11_v1/H/S10",
+    "STATE": {
+     "record": {
+      "path": "outputs/g2_lp2a3_paths_v1/run_lp2a3_s9_s11_v1/H/S10/STATE.mat",
+      "sha256": "b1d929ab1faa49441a5dac09be58b0b866c93f616e717edaacc410828ecf5a4a"
+     },
+     "manifest": {
+      "path": "outputs/g2_lp2a3_paths_v1/run_lp2a3_s9_s11_v1/H/S10/STATE.mat.manifest.json",
+      "sha256": "efec659229869921c6ff3552309a9ff6677aa350d5a65abb843c3c94999339e7"
+     }
+    },
+    "MESH": {
+     "path": "outputs/g2_lp2a3_paths_v1/run_lp2a3_s9_s11_v1/H/S10/MESH.mat",
+     "sha256": "6e79b5e0c34cc7e0db6546e159d17384406613c32884a574237a83e58afa11d0"
+    },
+    "PHASE": {
+     "record": {
+      "path": "outputs/g2_lp2a3_paths_v1/run_lp2a3_s9_s11_v1/H/S10/PHASE.mat",
+      "sha256": "b64a080234eff198b9c8a69a3d1e43f9376b5b08e46fe9712889e775711010ea"
+     },
+     "manifest": {
+      "path": "outputs/g2_lp2a3_paths_v1/run_lp2a3_s9_s11_v1/H/S10/PHASE.mat.manifest.json",
+      "sha256": "589786da11b341bd02edcc6db8eb6c12a81d8570389c870650c62fc302696a94"
+     }
+    },
+    "SOLUTION": {
+     "record": {
+      "path": "outputs/g2_lp2a3_paths_v1/run_lp2a3_s9_s11_v1/H/S10/SOLUTION.mat",
+      "sha256": "51a232d061e3ceb9c6d9995ab84bc19b5279bb219d765c6dd2626bc3515e54ac"
+     },
+     "manifest": {
+      "path": "outputs/g2_lp2a3_paths_v1/run_lp2a3_s9_s11_v1/H/S10/SOLUTION.mat.manifest.json",
+      "sha256": "19ad90be2a35ff3ca28453b55a5ad0a1e5f9b044e2e674baf5b4401bcfdecbf2"
+     }
+    },
+    "ADMIT": {
+     "record": {
+      "path": "outputs/g2_lp2a3_campaign_ledger/G2-LP2A3-001/ADMIT_H_S10.mat",
+      "sha256": "d2a18b576a9bd2d7b065ee09f56e33aa9dededdb75a2314dacd3e59a34566ed5"
+     },
+     "manifest": {
+      "path": "outputs/g2_lp2a3_campaign_ledger/G2-LP2A3-001/ADMIT_H_S10.mat.manifest.json",
+      "sha256": "f797c51015d0326d654d04228803cbc4cc7dcfec94eebefc66d2a01a571e6e10"
+     }
+    }
+   },
+   "parent": {
+    "kind": "LP2-A3 H S9 STATE (accepted)",
+    "STATE": {
+     "record": {
+      "path": "outputs/g2_lp2a3_paths_v1/run_lp2a3_s9_s11_v1/H/S9/STATE.mat",
+      "sha256": "09b81360575c394bb6fed2d1dd3f817fd4e7a85a2e2f9566d3c433c73b8f3d5f"
+     },
+     "manifest": {
+      "path": "outputs/g2_lp2a3_paths_v1/run_lp2a3_s9_s11_v1/H/S9/STATE.mat.manifest.json",
+      "sha256": "7fc2fecb70d40781868a1d3bc3245eabfcb0dacc562dc2018882d06a73700cad"
+     }
+    },
+    "ADMIT": {
+     "record": {
+      "path": "outputs/g2_lp2a3_campaign_ledger/G2-LP2A3-001/ADMIT_H_S9.mat",
+      "sha256": "9b1d3cd7abd33e4d725413d5c3243b18bb4f2298e96aa16c30a2ed12cdca905d"
+     },
+     "manifest": {
+      "path": "outputs/g2_lp2a3_campaign_ledger/G2-LP2A3-001/ADMIT_H_S9.mat.manifest.json",
+      "sha256": "c361fdf59c7996894194e02a07d83953e324fd57c245835831d8c6fa3ecd123d"
+     }
+    },
+    "grandparent": {
+     "path": "outputs/g2_lp2a_paths_v1/run_lp2a_s5_s8_v1/H/S8/STATE.mat",
+     "sha256": "ffd355d8b89dc35b48161583c5dfd451609e1f4befdd36fa3c2b3259fc3a8ce2"
+    }
+   },
+   "nominalGeometry": "clearanceGeometry of the accepted H S9 STATE (as LP2-B1 WP1 references)",
+   "nextPredictor": {
+    "state": "S11",
+    "tip_mm": [
+     116.53715206030587,
+     66.63469316681929
+    ],
+    "source": "accepted H S11 STATE tip = g2_lp2_forecast(H S10 STATE, LP2-A3 policy)",
+    "STATE": {
+     "record": {
+      "path": "outputs/g2_lp2a3_paths_v1/run_lp2a3_s9_s11_v1/H/S11/STATE.mat",
+      "sha256": "591c894b68e29751dbd8b06b5af50a6ce832e5b2bcf82c3c1052784d61781e7f"
+     },
+     "manifest": {
+      "path": "outputs/g2_lp2a3_paths_v1/run_lp2a3_s9_s11_v1/H/S11/STATE.mat.manifest.json",
+      "sha256": "356d585e9c0c0a7d12352a658f700f474f6a4036b635f6a83d131006b9073e33"
+     }
+    },
+    "ADMIT": {
+     "record": {
+      "path": "outputs/g2_lp2a3_campaign_ledger/G2-LP2A3-001/ADMIT_H_S11.mat",
+      "sha256": "8a280ca94387ab531a92716e61971c30e4ecdad24f9afd25961f1edb43e2b3db"
+     },
+     "manifest": {
+      "path": "outputs/g2_lp2a3_campaign_ledger/G2-LP2A3-001/ADMIT_H_S11.mat.manifest.json",
+      "sha256": "bf19b1580340a38c848b9f0d6340c2109e4b76cd8b48bcf1ad09f6bb7f30bd8b"
+     }
+    }
+   },
+   "qualification": {
+    "attempt": "R_H_S10_h040",
+    "arrays": {
+     "path": "outputs/g2_lp2b1_geometry_v1/wp1_attempt2/R_H_S10_h040/ATTEMPT_ARRAYS.mat",
+     "sha256": "ffcb53f12c4b06b463a3df4c644d93459a4f456a04a5185fe3ad453b5db75122"
+    },
+    "attemptJson": {
+     "path": "outputs/g2_lp2b1_geometry_v1/wp1_attempt2/R_H_S10_h040/ATTEMPT.json",
+     "sha256": "ccc1dd59ffc2e1fc88f8113c126ae4a2305483daa31539141c2231cc2f7fef51"
+    },
+    "canonicalSHA256": "45298fae6257674b99de036341b6d0c05b55fbb6bb7be635786f8ae71bb068e3",
+    "T3": 30349,
+    "seedSpacing_mm": 0.4,
+    "minAngle_deg": 22.782265870508365,
+    "maxNeighborRatio": 1.5918285508617926
+   }
+  }
+ ],
+ "solveLimit": 2,
+ "attemptsPerSolve": 1,
+ "retry": false,
+ "adaptiveStep": false,
+ "newStates": 0,
+ "targetSolve": false,
+ "provenanceOnly": {
+  "targetCanonicalSHA256": "54293d2a527f9bec33605ffea10c8f56af46a56291157f0d911cf68301b85bd2",
+  "note": "soft1 S10 target qualification digest: provenance only, NOT a solve case"
+ },
+ "policyPins": {
+  "lp1": {
+   "path": "matlab/g2/G2_LP1_POLICY_v2.json",
+   "sha256": "074d7edc981920537726314f781f24b41ac7224c18d594d6a1b15343084e5091"
+  },
+  "lp2": {
+   "path": "matlab/g2/lp2/G2_LP2A_POLICY_v1.json",
+   "sha256": "093a546b9bae54d8fab0026420c8d85dced85f0e0e6ed212d597b3fd1aa6eec5"
+  },
+  "lp2a2": {
+   "path": "matlab/g2/lp2a2/G2_LP2A2_EQ_POLICY_v1.json",
+   "sha256": "6f2c290b37d4f8291f428ec8b9e0a886fe6b31fc901bee5781f2518e67c94756"
+  },
+  "lp2a3": {
+   "path": "matlab/g2/lp2a3/G2_LP2A3_POLICY_v1.json",
+   "sha256": "7a6e17f8baa85c6e6f10186bfab3a9c10c9363e0acb5e532c00095961bf45d43"
+  },
+  "lp2b1Pins": {
+   "path": "matlab/g2/lp2b1/G2_LP2B1_PINS_v1.json",
+   "sha256": "fbef586dcbff895d7dc77e5ce3ad007a4e209516514182cc4ebd426fbba1b2f6"
+  },
+  "lp2b1Prereg": {
+   "path": "matlab/g2/lp2b1/G2_LP2B1_PREREG_v1.json",
+   "sha256": "3d51140b80075cf27dd21820f16e65ceaa1456ea7a512acbc6ffe9888c70f9b1"
+  },
+  "lp2b1AmendmentA1": {
+   "path": "matlab/g2/lp2b1/G2_LP2B1_PREREG_AMENDMENT_A1.json",
+   "sha256": "78564d86d5a979700a590f16ef8b6a746655f7d55b199eab1a9f2ef607880c50"
+  }
+ },
+ "sourcePins": {
+  "g2SourceSHA256": "7e5683703bd104547ef5d013aa0253ad2819b59dc58693957e2d04b4707f0947",
+  "lp2SourceSHA256": "357dfdcdb576d2866b9d1b41a14265300a14c30700d6475f995881041ba822ca",
+  "lp2a2SourceSHA256": "f1d7e4d67b91968e16ebaead13be86667c7776ce48971ed5206c7f136fae7afd",
+  "lp2a3SourceSHA256": "fa3bcecfa9cd3044253d5a72253e2058bccd044d32345f51650dcd775f42e002",
+  "lp2b1SourceSHA256": "9c7a1260e3bde5b59e1d93c47bc99cc4d7b89f9b0cc6e874572fb378f1717bee",
+  "lp2b1eqSourceSHA256": "b3b08589426fff831e4f56515b50307283a2cac55cb4413aab48085265a67c68",
+  "closureSourceSHA256": "76614f269810c6970544bca0c1c0f84ebf9131935554ebd75e57e24f819f65f7",
+  "definition": "g2: sorted relative-path sha256 lines of matlab/g2/*.m and matlab/g2/vendor_p010_a14d8872/*.m; lp2, lp2a2, lp2a3, lp2b1, lp2b1eq and scripts/g2/lp2a2/closure: sorted \"name sha256\" lines of the folder *.m; SHA-256 of the newline-joined string (g2_lp1_digest)"
+ },
+ "qualificationEvidence": {
+  "b1ArchiveSHA256": "5a5a4179c987d04dcf14cf3d2552b8f9f1d9c370c370b0a6bd6c930748bbbd42",
+  "b1ArchiveName": "NewMetacomp_G2_LP2B1_Geometry_20261126.zip",
+  "b1ArchiveMembers": 76,
+  "b1ArchiveManifestSHA256": "cb186e628fa76b9a380ce0ff23dff40e3181a1648b0ebd6971bb51fa0ff3a8a5",
+  "b1OutputFiles": 43,
+  "records": [
+   {
+    "path": "outputs/g2_lp2b1_geometry_v1/wp1/LP2B1_WP1_TARGET.json",
+    "sha256": "d8a6421b9691b06835c9cb22045140797b00c060d309d87e87d2f8f254454874"
+   },
+   {
+    "path": "outputs/g2_lp2b1_geometry_v1/wp1/T_soft1_S10_h040/ATTEMPT.json",
+    "sha256": "de785b16bee090e5866cf4e792b5dc3c480ee4a9f1170640a3f94c3165502f7a"
+   },
+   {
+    "path": "outputs/g2_lp2b1_geometry_v1/wp1/T_soft1_S10_h040/ATTEMPT_ARRAYS.mat",
+    "sha256": "cc94cd6f5bd91fffcd796cdad5511f3e9ec405093731b281852a26cc8861de9b"
+   },
+   {
+    "path": "outputs/g2_lp2b1_geometry_v1/wp1_attempt2/LP2B1_WP1_REFERENCES.json",
+    "sha256": "c92ca54b125ec75ef9f262e6b9bca62cb405e735db12f01c04ba4edaa4895e7c"
+   },
+   {
+    "path": "outputs/g2_lp2b1_geometry_v1/wp1_attempt2/LP2B1_WP1_REPEAT.json",
+    "sha256": "6f5145402eed2f48327ed4a004ebfc5e02244fa97eecce5d0baede2608b6f57b"
+   },
+   {
+    "path": "outputs/g2_lp2b1_geometry_v1/wp1_attempt2/LP2B1_WP1_TARGET.json",
+    "sha256": "9fa97df9a2ed8ef69ed759ffd173b90fa00cafc6b0ec34e933a3bbff37acf494"
+   },
+   {
+    "path": "outputs/g2_lp2b1_geometry_v1/wp1_attempt2/R_H_S10_h040/ATTEMPT.json",
+    "sha256": "ccc1dd59ffc2e1fc88f8113c126ae4a2305483daa31539141c2231cc2f7fef51"
+   },
+   {
+    "path": "outputs/g2_lp2b1_geometry_v1/wp1_attempt2/R_H_S10_h040/ATTEMPT_ARRAYS.mat",
+    "sha256": "ffcb53f12c4b06b463a3df4c644d93459a4f456a04a5185fe3ad453b5db75122"
+   },
+   {
+    "path": "outputs/g2_lp2b1_geometry_v1/wp1_attempt2/R_soft1_S9_h040/ATTEMPT.json",
+    "sha256": "16ce48b3beddb0471a873a33ce64f8419aa9dbf9375723fc1a711849a1589471"
+   },
+   {
+    "path": "outputs/g2_lp2b1_geometry_v1/wp1_attempt2/R_soft1_S9_h040/ATTEMPT_ARRAYS.mat",
+    "sha256": "1c4de0dffd17a23aadb9f2b0e18250dd9f7c6c289d1679c47e1d074275b37449"
+   },
+   {
+    "path": "outputs/g2_lp2b1_geometry_v1/wp1_attempt2/T_soft1_S10_h040/ATTEMPT.json",
+    "sha256": "73f296f7f13e8a9e77b522c0d1247604d2137299bc5ffae7da1072d68c6af4b7"
+   },
+   {
+    "path": "outputs/g2_lp2b1_geometry_v1/wp1_attempt2/T_soft1_S10_h040/ATTEMPT_ARRAYS.mat",
+    "sha256": "086b6671a733bafad3874dee8d50c84bc52e6bfaa6ba0174caae09995c2f2a88"
+   },
+   {
+    "path": "outputs/g2_lp2b1_geometry_v1/wp1_attempt2/T_soft1_S10_h040_REPEAT/ATTEMPT.json",
+    "sha256": "a376c3927c5ad0ff4f3c7052abe9e534312b8e929861a90500a471b0e4007035"
+   },
+   {
+    "path": "outputs/g2_lp2b1_geometry_v1/wp1_attempt2/T_soft1_S10_h040_REPEAT/ATTEMPT_ARRAYS.mat",
+    "sha256": "f13e163a762613c2a600d7d3961b190729bbe3f08da9c7a024982c6530fdff1a"
+   }
+  ],
+  "evidenceFiles": [
+   {
+    "path": "docs/research/G2_LP2B1_evidence/closure/LP2B1_ARCHIVE_RECORD.json",
+    "sha256": "db58840eda9c22dd90fd12081b5c1117cf0056a7c6eefaec0dd34ac14d38ec89"
+   },
+   {
+    "path": "docs/research/G2_LP2B1_evidence/closure/LP2B1_KNOWN_PROTECTED_MANIFEST.json",
+    "sha256": "938322752744acb01fe0c753afa0c88a7d10d94b671d8e3c1792c3afbcf8a0f1"
+   },
+   {
+    "path": "docs/research/G2_LP2B1_evidence/closure/LP2B1_PROTECTED_AFTER.json",
+    "sha256": "84bc4858dce5c74180cad6ebc1c71de629557a09d5f96c980d5906bb5187b570"
+   },
+   {
+    "path": "docs/research/G2_LP2B1_evidence/audit/LP2B1_INDEPENDENT_AUDIT_run1.json",
+    "sha256": "4bf637b1dccb5f905bec7c65e123f9d906195ed842cd69880b391f8c5242826e"
+   },
+   {
+    "path": "docs/research/G2_LP2B1_evidence/audit/LP2B1_SUMMARY_DIFF.json",
+    "sha256": "16b50aec7b236699ee12e2c22571906f0112ec085e8d170f8a3687c52bc518d8"
+   },
+   {
+    "path": "docs/research/G2_LP2B1_evidence/wp2/G2_LP2B1_EQ_CONTRACT_DRAFT_v1.json",
+    "sha256": "4555aa6c8037b5522e63f662137e53d05dd268f9a8fa44601ce17f59620a6947"
+   },
+   {
+    "path": "docs/research/G2_LP2A3_evidence/campaign/verify/LP2A3_RECORD_DUMP.json",
+    "sha256": "f99171e641a1ba0d44f267ccb8c8b2ae7815ef2568a86b34d0c9838e4b3c718b"
+   },
+   {
+    "path": "docs/research/G2_LP2A3_evidence/LP2A3_PROTECTED_MANIFEST.json",
+    "sha256": "888ca7bf35cf89cf93f763cca3d1b3cdd50e6e9bb7e40da9fe4650a440ecbde8"
+   }
+  ],
+  "attempt1": "outputs/g2_lp2b1_geometry_v1/wp1 (HOLD on harness defects D1/D2, preserved; amendment A1)",
+  "use": "mesh-family admission only (canonical arrays and metadata); never a physical result"
+ },
+ "meshFamily": {
+  "function": "g2_lp2a2_join(P,ExpectedVertices k+2,ExpectedTangent t,ExteriorOptions [xo,{SeedSpacing_mm,0.40}],MaxT3Elements 40000) + g2_lp2a2_pairing_audit + g2_lp1_audit; NO ladder, NO other spacing",
+  "seedSpacing_mm": 0.4,
+  "ExteriorOptions": {
+   "BottomVertices_mm": [
+    25.4,
+    482.6
+   ],
+   "TopVertices_mm": 254,
+   "TipGuideRadius_mm": 15,
+   "TipGuideHface_mm": 1.5,
+   "MaxT3Elements": 40000
+  },
+  "admissionHarness": "g2_lp2b1_attempt (accepted LP2-B1 harness under amendment A1, unchanged): 19/19 checks on the fixed reference geometry and canonical digest equal to the qualification record",
+  "canonicalDigest": "SHA-256 over, in this order, X3,T3,X6,T6,upperBankT6,lowerBankT6,nodalQ,qActiveT6Rows,crackPolyline: for each, int64 size vector bytes then double(a(:)) column-major bytes (little endian), identical to canon() of g2_lp2b1_attempt",
+  "metadataNotInDigest": "elementRows, extraVertexXY, physicalTipNode, gates and the remaining saved summary fields are compared with the qualification ATTEMPT_ARRAYS.mat by isequal (summary except the timing field nativeMeshingSeconds); ring polygons and 76 chords per circle from the audit",
+  "protectedTopology": "g2_lp2b1eq_topology: element-local bijection of the 2916 protected T6 rows (core 2788 + collar 128) between the archived 0.45 mm MESH and the new mesh, coordinates and nodal q bitwise, bank side and distinct coincident upper/lower IDs preserved except the single physical tip node",
+  "expectedChords": 76
+ },
+ "bvp": {
+  "model": "idealized pin/roller vertical point load",
+  "P_N": 1,
+  "thickness_mm": 12.7,
+  "E_MPa": 3268.115,
+  "nu": 0.35,
+  "plane": "stress",
+  "pin_mm": [
+   25.4,
+   0
+  ],
+  "roller_mm": [
+   482.6,
+   0
+  ],
+  "load_mm": [
+   254,
+   203.2
+  ]
+ },
+ "qAnnuli_mm": [
+  [
+   0.4,
+   2.6
+  ],
+  [
+   0.2,
+   1
+  ],
+  [
+   0.4,
+   1.6
+  ],
+  [
+   0.8,
+   2.6
+  ],
+  [
+   1.2,
+   2.4
+  ]
+ ],
+ "geometry": {
+  "centres_mm": [
+   [
+    152.4,
+    69.85
+   ],
+   [
+    152.4,
+    120.65
+   ],
+   [
+    152.4,
+    171.45
+   ]
+  ],
+  "holeR_mm": 6.35,
+  "ringR_mm": 19.05,
+  "plate_mm": [
+   508,
+   203.2
+  ],
+  "expectedChords": 76,
+  "tipGuideRadius_mm": 15,
+  "collarRadius_mm": 3.3,
+  "channelHalfWidth_mm": 0.02,
+  "minSegmentRingClearance_mm": 1.52,
+  "minQClearance_mm": 1,
+  "minNonadjacentClearance_mm": 0.16,
+  "distanceTolerance_mm": 1e-09,
+  "nominalCircleEnvelopeRequired": true
+ },
+ "physics": "unchanged: g2_m4b_ring_activation(case mask) on the audited phase owner map -> g2_m4b_sif_partial (G2_TRAJECTORY_POLICY_v1 BVP, 16 numerical gates, signed K, COD, five-annulus EDI + 4x4) -> g2_mts_direction; matrix E = 3268.115 MPa, active rings E*ratio, nu 0.35, plane stress, P = 1 N, thickness 12.7 mm",
+ "tolerances": {
+  "E_MPa": 3268.115,
+  "KI_overKeq": 0.0005,
+  "KII_overKeq": 5e-05,
+  "KIIoverKI_abs": 0.0001,
+  "G_rel": 0.001,
+  "J_rel": 0.001,
+  "newJoverGminus1": 0.0001,
+  "MTS_deg": 0.006,
+  "newCODminusEDI_gate": 0.03,
+  "dCODminusEDI": 0.001,
+  "spreadFloor": 1e-05,
+  "spreadFactor": 5,
+  "quadFloor": 1e-05,
+  "quadFactor": 5,
+  "openingNearTipRel": 0.001,
+  "openingWholeCrackRel": 0.002,
+  "activeArea_rel": 1e-09,
+  "compliance_rel": 0.001,
+  "nextTipDisplacement_mm": 0.0005,
+  "activeAreaExactZeroWhenArchivedZero": true,
+  "nearTipRadius_mm": 3.3,
+  "nodeMatch_mm": 1e-09
+ },
+ "units": {
+  "K": "MPa*mm^0.5 at P = 1 N (x sqrt(1000) = MPa*m^0.5/kN)",
+  "G_J": "MPa*mm = N/mm at P = 1 N",
+  "compliance": "mm/N",
+  "activeArea": "mm^2",
+  "MTS": "deg",
+  "nextTip": "mm"
+ },
+ "criteria": {
+  "C1_KI": "|KI_new - KI_arch| / Keq_arch <= 5e-4, Keq_arch = hypot(KI_arch, KII_arch)",
+  "C2_KII": "|KII_new - KII_arch| / Keq_arch <= 5e-5 (signed KII)",
+  "C3_KIIoverKI": "|KII_new/KI_new - KII_arch/KI_arch| <= 1e-4",
+  "C4_G_J": "|G_new/G_arch - 1| <= 1e-3 and |J_new/J_arch - 1| <= 1e-3 and |J_new/G_new - 1| <= 1e-4, G = (KI^2 + KII^2)/E",
+  "C5_MTS": "|theta_MTS,new - theta_MTS,arch| <= 0.006 deg and new tensile root admissible",
+  "C6_COD_EDI": "new COD-EDI <= 0.03 and |new - archived COD-EDI| <= 1e-3",
+  "C7_EDI_spread_quadrature": "new path spread <= max(1e-5, 5 x archived) and new 4x4 quadrature drift <= max(1e-5, 5 x archived)",
+  "C8_crackOpening": "scalar jump magnitude j = |u_U - u_L| (difference of magnitudes, NOT norm of vector differences); near tip (<= 3.3 mm, identical node positions within 1e-9 mm): max|j_new - j_arch| / max j_new(near) <= 1e-3; whole crack: archived j linearly interpolated in arc station onto new stations (no extrapolation), max|.| / max j_new <= 2e-3; signed normal opening reported only",
+  "C9_phaseActivation": "all 16 inherited solver gates pass, chords per circle equal to archived (76 each), |dA_active| / max(A_arch, 1 mm^2) <= 1e-9 and, STRONGER (draft requirement), new active area exactly 0 when archived is exactly 0 (H)",
+  "C10_nextPredictor": "|forecast(new K) - archived next tip| <= 5e-4 mm with the STATE-SPECIFIC next state: S10 for EQB-soft1-S9, S11 for EQB-H-S10",
+  "C11_compliance": "|C_new/C_arch - 1| <= 1e-3"
+ },
+ "validation": "before any criterion: finite real inputs of the correct shape/type, positive archived KI/Keq/G/J/compliance, valid archived MTS root, all 16 archived gates, u of length 2*N_T6 for each mesh, identity of solve/case/state/mask/geometry/predictor/pins/canonical digest, paired banks with unique stations, near-tip node identity, station coverage without extrapolation, nonzero normalizations (C8 near-tip and whole-crack maxima and the maxima of the reported signed normal opening), finite metrics (a non-admissible new MTS root makes the forecast impossible: NaN next tip); any failure = INPUT_INVALID (verification-infrastructure HOLD, never an equivalence statement)",
+ "outcomes": {
+  "EQUIVALENT_CASE": "valid and C1-C11 pass",
+  "NOT_EQUIVALENT": "valid and at least one criterion fails (numerical HOLD)",
+  "INPUT_INVALID": "verification-infrastructure HOLD"
+ },
+ "excludedComparisons": {
+  "contrast": "no F_G or MTS contrast criterion: the two references differ in arclength (61.4 vs 65.4 mm) and architecture, so no same-s contrast exists; no multi-architecture contrast qualification is claimed. A same-s contrast test would need a separately predeclared, correctly matched reference pair and its own review.",
+  "targetPhysics": "no estimate of the soft1 S10 G, signed SIF or MTS angle from mesh quality or from these two solves"
+ },
+ "interpretation": {
+  "EQUIVALENT_AT_0p40": "both solves pass C1-C11: the 0.40 mm family reproduces the accepted 0.45 mm results on these two fixed geometries within the inherited tolerances. Numerical equivalence on two geometries; not a discretization-error bound, not a convergence statement, not a multi-architecture qualification.",
+  "NOT_EQUIVALENT": "any failure: HOLD; 0.40 mm may not be used for continuation until a separate review explains the difference; no retry, no tolerance change after a solve.",
+  "after": "only after EQUIVALENT_AT_0p40 and review may a separate new campaign seek authorization to solve the actual soft1 S10 candidate at exactly 0.40 mm, as a prospective continuation of the original soft1 S9 (not a resumption of the revoked LP2-A3). S11 and beyond are unknown and not authorized by this."
+ },
+ "protected": {
+  "knownManifestSHA256": "e756d64aee23adde0ea4a1662d0e9e77dbae3eb27c1195145a0056367fff1f35",
+  "knownFiles": 832,
+  "campaignSummary": {
+   "path": "outputs/LP2A3_CAMPAIGN.json",
+   "sha256": "b496aff556b9de52ffcb15fe71224afc606511481934646cb77d08059e237481"
+  },
+  "b1OutputFiles": 43,
+  "b1ArchiveRecord": {
+   "path": "docs/research/G2_LP2B1_evidence/closure/LP2B1_ARCHIVE_RECORD.json",
+   "sha256": "db58840eda9c22dd90fd12081b5c1117cf0056a7c6eefaec0dd34ac14d38ec89"
+  }
+ },
+ "historicalRoots": [
+  "outputs/g2_a1_campaign_ledger",
+  "outputs/g2_a1_campaign_log",
+  "outputs/g2_a1_contract_20261122_221128_091",
+  "outputs/g2_a1_fixed_path_v1",
+  "outputs/g2_a1_geometry_v1",
+  "outputs/g2_a1_prephysical_batch",
+  "outputs/g2_lp1_a0_campaign_log",
+  "outputs/g2_lp1_campaign_ledger",
+  "outputs/g2_lp1_matrix_paths_v1",
+  "outputs/g2_lp2a2_eq_v1",
+  "outputs/g2_lp2a3_campaign_ledger",
+  "outputs/g2_lp2a3_paths_v1",
+  "outputs/g2_lp2a_campaign_ledger",
+  "outputs/g2_lp2a_paths_v1",
+  "outputs/g2_lp2b1_geometry_v1",
+  "outputs/g2_m4_alt_family_v1",
+  "outputs/g2_m4b_r1_s2alt_v1",
+  "outputs/g2_m4b_ring_factorial_v1",
+  "outputs/g2_m5x6_campaign_ledger",
+  "outputs/g2_m5x6_crossed_v1",
+  "outputs/g2_material_evolution_v1",
+  "outputs/g2_material_trajectories_v1",
+  "outputs/g2_p010_isolated",
+  "outputs/g2_protected_mesh",
+  "outputs/g2_trajectory_chain_v1_attempt2",
+  "outputs/g2_wp3_kinked_mesh",
+  "outputs/g2_wp3_state",
+  "outputs/lp2a2_figures"
+ ],
+ "authorization": {
+  "goPath": "matlab/g2/lp2b1eq/G2_LP2B1EQ_GO.json",
+  "goPresent": false,
+  "decision": "GO_LP2B1_EQ",
+  "campaignId": "G2-LP2B1-EQ-001",
+  "campaignScope": "LP2B1_EQ_TWO_FIXED_REFERENCES_0p40",
+  "runName": "run_lp2b1_eq_v1",
+  "runRoot": "outputs/g2_lp2b1_eq_v1/run_lp2b1_eq_v1",
+  "receiptRoot": "outputs/g2_lp2b1_eq_receipts/G2-LP2B1-EQ-001",
+  "forbiddenRunNames": [
+   "run_20261122_lp1_v1",
+   "run_a0_lp1_repro_v1",
+   "run_a1_family_b_s4_v1",
+   "run_m5x6_crossed_s4_b9_v1",
+   "run_lp2a_s5_s8_v1",
+   "run_lp2a3_s9_s11_v1"
+  ],
+  "forbiddenCampaignIds": [
+   "G2-LP1-A0-001",
+   "G2-A1-FB-001",
+   "G2-M5-X6-001",
+   "G2-LP2A-001",
+   "G2-LP2A2-EQ-001",
+   "G2-LP2A3-001"
+  ],
+  "contractEvidenceDir": "docs/research/G2_LP2B1EQ_evidence/",
+  "activation": "GO file only, committed directly on the reviewed head (validator: ancestor + HEAD~1 == approvedHead + sole changed file, via g2_lp2a2_git); single external entry g2_lp2b1eq_external_run writes the receipt; the driver refuses a physical call without a receipt bound to the token",
+  "resumption": "none"
+ },
+ "resources": {
+  "matlabRelease": "R2023a",
+  "pdeRequired": true,
+  "oneMatlabProcess": true,
+  "freeRAMBeforeMATLABStart_GiB_min": 8.2,
+  "freeRAMInsideMATLAB_GiB_min": 7,
+  "preflightGuard_GiB": 5,
+  "archiveDevices": 2,
+  "memoryTiming": "g2_lp2a2_eq_memgate(7) immediately before each admission (failure before the state folder exists: pre-admission memory HOLD, global) and again immediately before each solve (failure after admission: global HOLD); the inherited 5 GiB guard of g2_lp1_admit_state and of the solve is unchanged; no automatic retry"
+ },
+ "records": {
+  "perSolve": [
+   "GEOMETRY_h040/ATTEMPT.json",
+   "GEOMETRY_h040/ATTEMPT_ARRAYS.mat",
+   "MESH.mat",
+   "PHASE.mat",
+   "PHASE.mat.manifest.json",
+   "SOLUTION.mat",
+   "SOLUTION.mat.manifest.json",
+   "COMPARISON.mat",
+   "COMPARISON.mat.manifest.json",
+   "COMPARISON.json"
+  ],
+  "onFailure": "HOLD.json in the solve folder (never overwritten); partial records preserved",
+  "receipt": [
+   "RECEIPT.mat",
+   "RECEIPT.mat.manifest.json"
+  ],
+  "noState": "no STATE, no ADMIT, no accepted propagation record"
+ },
+ "stopRules": [
+  "global: stop at the first failure of any criterion, gate, integrity, resource or authorization check; the second solve is not called; no retry, no resumption",
+  "EQB-H-S10 may be called only after EQB-soft1-S9 has a complete record set with outcome EQUIVALENT_CASE"
+ ],
+ "excluded": [
+  "physical FEM during readiness",
+  "live GO during readiness",
+  "new accepted states",
+  "target soft1 S10 solve",
+  "other seed spacings",
+  "same-s or architecture contrast",
+  "LP2-B2",
+  "S12",
+  "retries or resumption",
+  "changes to historical sources, policies, records or archives",
+  "merges"
+ ]
+}
