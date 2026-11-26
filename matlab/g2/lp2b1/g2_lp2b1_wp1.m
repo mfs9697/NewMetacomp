@@ -21,6 +21,10 @@ assert(strcmp(pr.schema,'NewMetacomp.G2.LP2B1.Preregistration.v1')&&strcmpi(pr.p
 [s1,~]=system(sprintf('git -C "%s" ls-files --error-unmatch matlab/g2/lp2b1/G2_LP2B1_PREREG_v1.json',repo));
 [s2,~]=system(sprintf('git -C "%s" diff --quiet HEAD -- matlab/g2/lp2b1',repo));
 assert(s1==0&&s2==0,'G2LP2B1:HOLD_PREREG','The preregistration and the LP2-B1 sources must be committed unchanged before any alternative mesh.');
+af=fullfile(here,'G2_LP2B1_PREREG_AMENDMENT_A1.json');am=jsondecode(fileread(af));
+assert(strcmp(am.schema,'NewMetacomp.G2.LP2B1.PreregistrationAmendment.v1')&&strcmpi(am.amendsSHA256,g2_sha256_file(pf)),'G2LP2B1:HOLD_PREREG','Amendment A1 must pin the unchanged preregistration.');
+[~,rootName]=fileparts(outRoot);[~,a2]=fileparts(am.attempt2.root);
+assert(strcmp(rootName,a2),'G2LP2B1:HOLD_PREREG','After amendment A1 the WP1 root is %s.',a2);
 assert(isequal(pr.candidateOrder_mm(:).',[0.40 0.50 0.35])&&pr.baseline.seedSpacing_mm==0.45&&strcmp(pr.baseline.source,'stored FAILED_MESH.mat (not regenerated)'), ...
  'G2LP2B1:HOLD_PREREG','Candidate order or baseline differ from the assignment.');
 od=char(java.io.File(outRoot).getCanonicalPath());
@@ -38,7 +42,7 @@ for i=1:2,rf=refs{i};for f={'STATE','MESH','PHASE','SOLUTION'},assert(strcmp(fh(
 F=g2_lp2_forecast(S9,pol);Sf=load(fullfile(rr,'soft1','S10','FAILED_MESH.mat'));fm=Sf.failedMesh;
 assert(isequal(F.polyline_mm,fm.crackPolyline),'G2LP2B1:HOLD_SOURCE','Target polyline differs from the stored failed mesh.');
 baseT=struct('X3',fm.X3,'T3',fm.T3,'X6',fm.X6,'T6',fm.T6,'qActiveT6Rows',fm.qActiveT6Rows,'nodalQ',fm.nodalQ,'maxRatio',fm.summary.maxNeighborRatio,'minAngle',fm.summary.minAngle_deg);
-O=struct('schema','NewMetacomp.G2.LP2B1.WP1.v1','stage',stage,'physicalSolves',0,'preregSHA256',lower(g2_sha256_file(pf)),'preflight',C.preflight,'attempts',{{}});
+O=struct('schema','NewMetacomp.G2.LP2B1.WP1.v1','stage',stage,'physicalSolves',0,'preregSHA256',lower(g2_sha256_file(pf)),'amendmentA1SHA256',lower(g2_sha256_file(af)),'preflight',C.preflight,'attempts',{{}});
 switch stage
  case 'target'
   O.selected=[];O.outcome='';
