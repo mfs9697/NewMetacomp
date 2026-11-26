@@ -1,11 +1,11 @@
 \begin{tikzpicture}[x=1mm,y=1mm,font=\small]
- \draw[->] (0,0)--(121,0) node[right] {$s$, мм};
+ \draw[->] (0,0)--(121,0) node[right] {Стан};
  \draw[->] (0,-42)--(0,42) node[above] {$F_G$, \%};
  \foreach \v in {-8,-6,-4,-2,2,4,6,8}{
   \draw[black!15] (0,5*\v)--(112,5*\v);
   \node[anchor=east,font=\scriptsize] at (-1,5*\v) {\v};
  }
- \foreach \i/\s in {0/25,1/29,2/33,3/37,4/41}{
+ \foreach \i in {0,1,2,3,4}{
   \draw (10+24*\i,0)--(10+24*\i,-1);
   \node[anchor=north,font=\scriptsize] at (10+24*\i,-43) {S\i};
  }

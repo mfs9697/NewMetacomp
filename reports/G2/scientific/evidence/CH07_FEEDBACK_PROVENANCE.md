@@ -26,3 +26,5 @@ Pinned source 923ef406349d75c5d7f7ed77f954cf36614b272d; PR #69 scientific adjudi
 | m3_ratios.pdf | matlab/g2/evidence/m3_20261121/report/m3_ratios.pdf | cc8265cc43b4bfbdbb3cfe5b2b44cc300f8623fd | 8775 | archive |
 | m3_G_theta.png | matlab/g2/evidence/m3_20261121/report/m3_G_theta.png | 81f121a19b0dd8d291ac3881d5900210082a7ffc | 144679 | archive |
 | m3_phase_snapshot.png | matlab/g2/evidence/m3_20261121/report/m3_phase_snapshot.png | 29f44869834cc0754b7a9689c62e1a9c6ccb8530 | 752480 | archive |
+
+Independent geometric audit: 12 paired states S1–S4, max tip-vector residual 1.5888218580782548e-14 mm, projected offset residual 2.0317081350640365e-14 mm, cumulative heading residual 1.4210854715202004e-14 deg, linearized projection discrepancy 0.00014560294770982196 mm. No new solver runs.
