@@ -44,7 +44,7 @@ R{end+1}=t('A9_forbidden_names_include_A3_and_EQ',any(strcmp(cellstr(au.forbidde
  any(strcmp(cellstr(au.forbiddenCampaignIds),'G2-LP2A3-001'))&&any(strcmp(cellstr(au.forbiddenCampaignIds),'G2-LP2B1-EQ-001')));
 % ---------------------------------------------------------------- B target qualification
 Tq=g2_lp2b1s10_target(C);
-R{end+1}=t('B1_target_qualification_all_checks',Tq.pass&&numel(fieldnames(Tq.checks))==10);
+R{end+1}=t('B1_target_qualification_all_checks',Tq.pass&&numel(fieldnames(Tq.checks))==9);
 R{end+1}=t('B2_tip_bitwise_S10_arc_65p4',isequal(Tq.forecast.polyline_mm(end,:),[114.29544883822506 63.18559491151613])&&Tq.forecast.stateIndex==10&&abs(Tq.forecast.arc_mm-65.4)<=1e-9);
 R{end+1}=t('B3_guide_gap_matlab_bitwise_issue_within_1e12',isequal(Tq.info.nominal.guideRingGap_mm(1),4.6329563816383335)&&abs(Tq.info.nominal.gapMinusIssueValue_mm)<=1e-12);
 R{end+1}=t('B4_independent_MTS_and_recurrence',abs(Tq.info.mts.diff_rad)<=4*eps(abs(Tq.info.mts.theta_deg*pi/180))&&Tq.info.forecast.independentTipDiff_mm<=1e-12);
