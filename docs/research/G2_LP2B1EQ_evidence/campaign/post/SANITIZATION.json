@@ -43,6 +43,12 @@
    "sourceSHA256": "e904b579fb90574e21ca1d21e41c5dec1d5b6c449dfc242e4a12e6f7a12491bf",
    "publishedSHA256": "18641b23860651eee844d473748c637c952bfe7515066dca1b47cbf78463aa35",
    "replacements": {}
+  },
+  {
+   "file": "LP2B1EQ_PROTECTED_FINAL_ba33e33.json",
+   "sourceSHA256": "f38e0e57227deccae522f2ff8d69450fc8436d277d7677a30cb462999916b023",
+   "publishedSHA256": "f38e0e57227deccae522f2ff8d69450fc8436d277d7677a30cb462999916b023",
+   "replacements": {}
   }
  ]
 }
