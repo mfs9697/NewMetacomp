@@ -49,6 +49,30 @@
    "sourceSHA256": "8e65611dcdf0ac7dfe4b899f6d16f15ebc26de11742eed8641e7e0e1ae3276c2",
    "publishedSHA256": "ace523eee4b128b86995fdd8914312844cdd9e6a1aba5470d0fd26b5d2fcda5a",
    "replacements": {}
+  },
+  {
+   "file": "LP2B1S10_ARCHIVE_RECORD.json",
+   "sourceSHA256": "49ee3c55faac247f2fa772566cfde792ce7fe0ac0ed870044d67131b16b8ae53",
+   "publishedSHA256": "49ee3c55faac247f2fa772566cfde792ce7fe0ac0ed870044d67131b16b8ae53",
+   "replacements": {}
+  },
+  {
+   "file": "LP2B1S10_PROTECTED_AFTER.json",
+   "sourceSHA256": "91528aa421595063688078c985a1bb2fd434204f743d53df04ac4f60970040f2",
+   "publishedSHA256": "91528aa421595063688078c985a1bb2fd434204f743d53df04ac4f60970040f2",
+   "replacements": {}
+  },
+  {
+   "file": "D_STABILITY_LOG_attempt1_INVALID_QUERY.csv",
+   "sourceSHA256": "c32c46a3e4734b01d42093dbbb25402abcac0e619348a4aa485c5c9d5b43edda",
+   "publishedSHA256": "b271b36a7c09f085300d84fc09793d1c27349564e014bdb93dd72242dfee9d86",
+   "replacements": {}
+  },
+  {
+   "file": "D_STABILITY_LOG_v2.csv",
+   "sourceSHA256": "e63742b676b0ab33e9dcb0308881b66561319da43805b5ae7f41eeab5b0abca2",
+   "publishedSHA256": "6ffe7c3a086ba8c75c94be5359d10ec130ee621ed776450a8eb53e12aacf0251",
+   "replacements": {}
   }
  ]
 }

@@ -104,6 +104,27 @@
    "sourceSHA256": "6105eae72b7d96be7f483cccf8c53d6efc6fcf0a120a48dbfe47c442e00113dc",
    "publishedSHA256": "6105eae72b7d96be7f483cccf8c53d6efc6fcf0a120a48dbfe47c442e00113dc",
    "replacements": {}
+  },
+  {
+   "file": "d_stability.ps1",
+   "sourceSHA256": "277c72654281ce0229e36368767b332c9a5d72986b9c7f86042a67db3f4f6f74",
+   "publishedSHA256": "277c72654281ce0229e36368767b332c9a5d72986b9c7f86042a67db3f4f6f74",
+   "replacements": {}
+  },
+  {
+   "file": "publish_closure_version.py",
+   "sourceSHA256": "d031ee11a02e5a01157f49ef8c2e2a1731dc5d7d397f85e0a044ae9409487b01",
+   "publishedSHA256": "29c078c0bfe0c7d379273dbabe2718b9ca707098d9420c98c7d1a4cc14f116a3",
+   "replacements": {
+    "<scratch>": 1,
+    "<temp>": 1,
+    "<repo>": 1,
+    "<worktree>": 1,
+    "<backup>": 1,
+    "<matlabroot>": 2,
+    "<drive>": 1,
+    "<home>": 1
+   }
   }
  ]
 }
