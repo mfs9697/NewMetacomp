@@ -126,7 +126,7 @@ if o.RealGeometry
  Cn=mk('g17',true);fkN=@(D,act,mats,polT,PM,expect)fakeK(D,act,mats,expect,Tq,pol,cnt,'negKI');
  R{end+1}=t('G17_negative_KI_MTS_HOLD_no_STATE',refuses(@()g2_lp2b1s10_run('Run',true,'Token',C.token,'Test',tt(Cn,struct('gate',okGate,'memgate',memOK,'target',tgtC,'solve',fkN,'geometry',geoC))),'G2LP2B1S10:HOLD_K_EXTRACTION')&& ...
   ~isfile(fullfile(Cn.runRoot,'soft1','S10','STATE.mat')));
- Cq=mk('g18',true);fq=@(St,p)error('B1S10T:FORECAST','injected S11 forecast failure');
+ Cq=mk('g18',true);fq=@failingForecast;   % named function with an output (an anonymous error() raises MATLAB:maxlhs; tests_v1 defect)
  try,Oq=g2_lp2b1s10_run('Run',true,'Token',C.token,'Test',tt(Cq,struct('gate',okGate,'memgate',memOK,'target',tgtC,'solve',fk,'geometry',geoC,'forecast',fq)));catch ME,Oq=struct('stage',ME.identifier);end
  [Tm,~,okt]=g2_trajectory_record('read',fullfile(Cq.runRoot,'soft1','TERMINAL.mat'));
  R{end+1}=t('G18_S11_forecast_failure_information_unavailable',strcmp(Oq.stage,'STATE_ACCEPTED')&&okt&&isempty(Tm.candidate.polyline_mm)&&startsWith(Tm.candidate.note,'S11 information unavailable (B1S10T:FORECAST)'));
@@ -209,6 +209,7 @@ function f=memSequence(cnt,seq)
 k=0;f=@step;
  function M=step(m),k=k+1;M=bumpMem(cnt,m,seq(min(k,end)));end
 end
+function F=failingForecast(~,~),F=[];error('B1S10T:FORECAST','injected S11 forecast failure');end %#ok<UNRCH>
 function K=sentinelSolve(cnt),cnt('sentinel')=cnt('sentinel')+1;error('B1S10T:SENTINEL','The default solve operation must never be called in tests.');end
 function Gq=cachedGeometry(C,s,Ref,od,GC,cnt)
 % first call: the REAL unchanged g2_lp2b1eq_geometry; later calls: the cached result and a copy of its attempt folder
