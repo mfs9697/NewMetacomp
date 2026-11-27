@@ -1,0 +1,23 @@
+{
+ "schema": "NewMetacomp.G2.LP2B1EQ.Sanitization.v1",
+ "rule": "absolute local paths replaced by <repo>, <worktree>, <temp>, <scratch>, <backup>, <home>, <drive>, <matlabroot>; UTF-16 logs converted to UTF-8; MATLAB startup path warnings removed from logs; binaries (.mat, .f64) only in the archive; figures byte for byte",
+ "files": [
+  {
+   "file": "b1eq_figure_v1.log",
+   "sourceSHA256": "6870297e315f9a4cdbba64de651088401d2ebf48dbc5b37b7ec43c2349e0a9f1",
+   "publishedSHA256": "d1c2dd516a280267a60a0c68d612de80e5cb70538632b9c866104a51c9ebd2af",
+   "replacements": {
+    "<drive>": 2
+   }
+  },
+  {
+   "file": "b1eq_preact_attempt1.log",
+   "sourceSHA256": "c811e3195030228557d3fbb9148072cda2f938c8558ff57b15b191d5d3f71aa8",
+   "publishedSHA256": "a9646124724ac9f30b67b5975990f15c14fe6d5ac3aceb598c3c4da465200877",
+   "replacements": {
+    "<scratch>": 1,
+    "<drive>": 2
+   }
+  }
+ ]
+}

@@ -1,0 +1,70 @@
+{
+  "attempt": 2,
+  "previousAttempt": "attempt 1: script path defect (lp2a2 not on path), stopped at line 1, no context/probe/write",
+  "dependencies": [
+    "<repo>\\matlab\\g2\\lp2a2\\g2_lp2a2_git.m",
+    "<repo>\\matlab\\g2\\lp2a2\\g2_lp2a2_eq_memgate.m",
+    "<repo>\\matlab\\g2\\lp2b1eq\\g2_lp2b1eq_external_run.m",
+    "<repo>\\matlab\\g2\\lp2b1eq\\g2_lp2b1eq_campaign.m",
+    "<repo>\\matlab\\g2\\lp2b1eq\\g2_lp2b1eq_run.m",
+    "<repo>\\matlab\\g2\\lp2b1eq\\g2_lp2b1eq_verify.m",
+    "<repo>\\matlab\\g2\\g2_m4b_sif_partial.m",
+    "<repo>\\matlab\\g2\\lp2\\g2_lp2_forecast.m",
+    "<repo>\\matlab\\g2\\lp2b1\\g2_lp2b1_attempt.m",
+    "<repo>\\matlab\\g2\\g2_trajectory_record.m"
+  ],
+  "dependenciesResolved": true,
+  "head": "7d0df53f35b30c4e33734c40fdda33e987ea96ee",
+  "ramInsideMATLAB_GiB": 8.2364921569824219,
+  "release": "2023a",
+  "pde": true,
+  "pdeVersion": "3.10",
+  "preflight": {
+    "pass": true,
+    "status": "PREFLIGHT_READY_NOT_LP0_QUALIFIED",
+    "cause": "",
+    "physicalSolves": 0,
+    "meshBuilds": 0,
+    "policySHA256": "1cf5a76ded840b0758343a1b935b299041e779ec6332c3b7cb0b6dfba1e2af43",
+    "release": "R2023a",
+    "pdeAvailable": true,
+    "freePhysicalRAM_GiB": 8.2076416015625,
+    "matlabProcesses": 1,
+    "currentPID": 6200,
+    "sourceCommit": "7d0df53f35b30c4e33734c40fdda33e987ea96ee",
+    "dirtySource": "",
+    "token": "G2LP0|policy=1cf5a76ded840b0758343a1b935b299041e779ec6332c3b7cb0b6dfba1e2af43|source=7d0df53f35b30c4e33734c40fdda33e987ea96ee|geometry=179b777f4a26caf1482ad470d78f5f802bc24456b9a1b6fc6b641eccf2b66008|cases=H,stiff13,soft2,soft1|maxState=4"
+  },
+  "tokenEqualsAuthorization": true,
+  "goAbsent": true,
+  "summaryPath": "outputs/LP2B1EQ_CAMPAIGN.json",
+  "rootsAbsent": true,
+  "memgate": {
+    "pass": true,
+    "minGiB": 7,
+    "freeGiB": 8.121490478515625,
+    "reason": "OK"
+  },
+  "engines": 1,
+  "probes": [
+    {
+      "solveId": "EQB-soft1-S9",
+      "identifier": "G2LP2B1EQ:HOLD_UNAUTHORIZED",
+      "message": "No GO_LP2B1_EQ record (matlab/g2/lp2b1eq/G2_LP2B1EQ_GO.json): the campaign is prepared, not authorized.",
+      "pass": true
+    },
+    {
+      "solveId": "EQB-H-S10",
+      "identifier": "G2LP2B1EQ:HOLD_UNAUTHORIZED",
+      "message": "No GO_LP2B1_EQ record (matlab/g2/lp2b1eq/G2_LP2B1EQ_GO.json): the campaign is prepared, not authorized.",
+      "pass": true
+    }
+  ],
+  "outputsUnchanged": true,
+  "outputsEntries": 2875,
+  "gitClean": true,
+  "rootsStillAbsent": true,
+  "physicalSolves": 0,
+  "externalEntryInvoked": false,
+  "allPass": true
+}

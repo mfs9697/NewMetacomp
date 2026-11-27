@@ -1,0 +1,53 @@
+{
+ "schema": "NewMetacomp.G2.LP2B1EQ.ProtectedCheck.v1",
+ "lp2b1CheckerPass": false,
+ "lp2b1CheckerExit": 0,
+ "lp2b1CheckerStdout": "a3 723 True | run/ledger 109 True | disjoint True | total 832 | archives {'local': True, 'offDevice': False} | extra True | overlap 0 FAIL",
+ "known832ManifestSHA256": "e756d64aee23adde0ea4a1662d0e9e77dbae3eb27c1195145a0056367fff1f35",
+ "known832Expected": "e756d64aee23adde0ea4a1662d0e9e77dbae3eb27c1195145a0056367fff1f35",
+ "known832OK": true,
+ "lp2a3ArchiveCopies": {
+  "local": true,
+  "offDevice": false
+ },
+ "campaignSummaryOK": true,
+ "b1Outputs": 43,
+ "b1OutputsEqualArchiveRecord": true,
+ "b1OutputsChanged": [],
+ "b1OutputsDisjointFrom832": true,
+ "b1ArchiveCopies": {
+  "local": {
+   "present": true,
+   "sha256": "5a5a4179c987d04dcf14cf3d2552b8f9f1d9c370c370b0a6bd6c930748bbbd42",
+   "shaOK": true,
+   "members": 76,
+   "memberBytesEqualRecord": true,
+   "outputs43EqualMemberBytes": true,
+   "pass": true
+  },
+  "offDevice": {
+   "present": false,
+   "pass": false
+  }
+ },
+ "policyPinnedFiles": 61,
+ "policyPinnedUnchanged": true,
+ "policyPinnedChanged": [],
+ "eqRootsAndGoAbsent": {
+  "outputs/g2_lp2b1_eq_v1/run_lp2b1_eq_v1": false,
+  "outputs/g2_lp2b1_eq_receipts/G2-LP2B1-EQ-001": false,
+  "matlab/g2/lp2b1eq/G2_LP2B1EQ_GO.json": true,
+  "outputs/LP2B1EQ_CAMPAIGN.json": false
+ },
+ "readinessRoots": [
+  "g2_lp2b1eq_readiness_v1",
+  "g2_lp2b1_eq_receipts",
+  "g2_lp2b1_eq_v1"
+ ],
+ "overlapWithProtected": [],
+ "combinedFiles": 891,
+ "combinedManifestSHA256": "e351f5aca3629da34f99bd25e738bba33ea515ad6d4b6dc7c848bcb4e975d054",
+ "pass": false,
+ "previousCombinedManifestSHA256": "e351f5aca3629da34f99bd25e738bba33ea515ad6d4b6dc7c848bcb4e975d054",
+ "unchangedSincePrevious": true
+}

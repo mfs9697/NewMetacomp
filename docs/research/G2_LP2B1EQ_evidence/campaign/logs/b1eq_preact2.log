@@ -1,0 +1,5 @@
+﻿[Warning: Name is nonexistent or not a directory: <drive>\Projects\8 - CohZonFEM\czm_project\CrackPath\CrackFromHoleLEFM\cfh] 
+[Warning: Name is nonexistent or not a directory: <drive>\Projects\8 - CohZonFEM\Asphalt\remmers2003] 
+PREACT_PROBE EQB-soft1-S9 G2LP2B1EQ:HOLD_UNAUTHORIZED
+PREACT_PROBE EQB-H-S10 G2LP2B1EQ:HOLD_UNAUTHORIZED
+B1EQACT ram=8.236 memgate=1(8.121) engines=1 release=2023a pde=3.10 token=1 unchanged=1 clean=1 ALL=1

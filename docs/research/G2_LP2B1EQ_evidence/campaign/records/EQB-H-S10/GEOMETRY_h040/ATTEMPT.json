@@ -1,0 +1,1324 @@
+{
+  "schema": "NewMetacomp.G2.LP2B1.Attempt.v1",
+  "name": "GEOMETRY_h040",
+  "stateIndex": 10,
+  "mask": [
+    0,
+    0,
+    0
+  ],
+  "seedSpacing_mm": 0.4,
+  "physicalSolves": 0,
+  "polyline_mm": [
+    [
+      101.6,
+      0
+    ],
+    [
+      101.6,
+      25.4
+    ],
+    [
+      102.47228398131915,
+      29.30373163216095
+    ],
+    [
+      103.4091548344762,
+      33.192468317063231
+    ],
+    [
+      104.47045098146482,
+      37.049105516539882
+    ],
+    [
+      105.64746005474672,
+      40.872016664004875
+    ],
+    [
+      106.93272250534098,
+      44.659905315099628
+    ],
+    [
+      108.31820718188585,
+      48.412295514833573
+    ],
+    [
+      109.79660566817732,
+      52.129059956620424
+    ],
+    [
+      111.36179591382988,
+      55.810116801456438
+    ],
+    [
+      113.0090467767817,
+      59.455190819155462
+    ],
+    [
+      114.73497161080275,
+      63.063678517251361
+    ]
+  ],
+  "tangent": [
+    0.43148120850526117,
+    0.90212192452397433
+  ],
+  "stage": "KINKED_PROTECTED_MESH_JOIN_PASS",
+  "message": "Joined; the independent kink-aware audit is still required.",
+  "joinPass": true,
+  "joinGatesPassed": 13,
+  "joinGatesTotal": 13,
+  "failedGates": [],
+  "qualityOnlyFailure": false,
+  "pass": true,
+  "checks": {
+    "independentAgreesWithJoin": true,
+    "join13": true,
+    "blockT3RowsIdentical": true,
+    "blockNodesIdentical": true,
+    "coreT6VertexRowsIdentical": true,
+    "coreT6NodeCoordinatesIdentical": true,
+    "qActive2443Identical": true,
+    "nodalQOnBlockIdentical": true,
+    "allQAnnuliInsideCore": true,
+    "exactPolylineTangent": true,
+    "pairingP1toP10": true,
+    "kinkedAudit34": true,
+    "phaseAuditFourMasks": true,
+    "ownerReMap": true,
+    "chords76": true,
+    "T3Budget": true,
+    "actualClearanceMatrixAdvance": true,
+    "nominalClearanceMatrixAdvance": true,
+    "guide1mmEveryRing": true
+  },
+  "startedUTC": "2026-11-27T08:23:32.996Z",
+  "joinSeconds": 2.7524447,
+  "joinGates": {
+    "kinkedP010BlockPass": true,
+    "kinkedExteriorPass": true,
+    "rimCoordinatesCoincide": true,
+    "blockRowsAndNodesUnchanged": true,
+    "allT3AreasPositive": true,
+    "globalMinAngleAtLeast20": true,
+    "globalNeighborRatioAtMost1p8": true,
+    "noNonmanifoldEdges": true,
+    "coreCollarSeam64TwoOwners": true,
+    "collarExteriorSeam64TwoOwners": true,
+    "distinctBanksOnPolylineMeetOnlyAtTip": true,
+    "qSupport2443InsideCore": true,
+    "T3BudgetRespected": true
+  },
+  "exterior": {
+    "seedSpacing_mm": 0.4,
+    "seedsPerSegment": [
+      64,
+      10,
+      10,
+      10,
+      10,
+      10,
+      10,
+      10,
+      10,
+      10,
+      2
+    ],
+    "seedCount": 157,
+    "guideCrossingPairs": 1,
+    "seedStationMismatchForced_mm": 0.0017172604189994445,
+    "minSeedSpacing_mm": 0.20359791764194368,
+    "lipPairs": 157,
+    "pairCollapseResidual_mm": 0,
+    "nativeT3": 27433,
+    "nativeMeshingSeconds": 1.3932652,
+    "controls": {
+      "Hmin_mm": 0.12,
+      "Hmax_mm": 6,
+      "Hgrad": 1.12,
+      "lipHedge_mm": 0.45,
+      "guideHface_mm": 1.5,
+      "rimHedge_mm": 0.3238466505609589,
+      "tipGuideRadius_mm": 15,
+      "tipGuideHface_mm": 1.5
+    }
+  },
+  "T3": 30349,
+  "T6nodes": 61793,
+  "summary": {
+    "T3elements": 30349,
+    "T3nodes": 15721,
+    "T6nodes": 61793,
+    "minAngle_deg": 22.782265870508372,
+    "minAngleAt_mm": [
+      108.56091161953979,
+      49.469976538711528
+    ],
+    "maxNeighborRatio": 1.5918285508617922,
+    "maxRatioAt_mm": [
+      114.69837684214774,
+      63.081181644683454
+    ],
+    "crackBankEdgesPerSide": [
+      184,
+      184
+    ],
+    "bankT6NodesPerSide": [
+      369,
+      369
+    ],
+    "qActiveT6": 2443,
+    "tip_mm": [
+      114.73497161080275,
+      63.063678517251361
+    ],
+    "tangent": [
+      0.43148120850526073,
+      0.90212192452397466
+    ],
+    "kinkNodeIDs": [
+      1588,
+      1762,
+      1598,
+      1752,
+      1608,
+      1742,
+      1618,
+      1732,
+      1628,
+      1722,
+      1638,
+      1712,
+      1648,
+      1702,
+      1658,
+      1692,
+      1668,
+      1682,
+      1678,
+      1680
+    ]
+  },
+  "independent": {
+    "T3": 30349,
+    "minAngle_deg": 22.782265870508365,
+    "maxNeighborRatio": 1.5918285508617926,
+    "violations": 0,
+    "ratioCounts": {
+      "above1p8": 0,
+      "above1p75": 0,
+      "above1p7": 0,
+      "above1p6": 0,
+      "above1p5": 9,
+      "above1p4": 127,
+      "above1p3": 311
+    },
+    "allAreasPositive": true,
+    "nonmanifoldEdges": 0,
+    "euler": -2
+  },
+  "worstPairs": [
+    {
+      "pair": 3405,
+      "ratio": 1.5918285508617926,
+      "small": 2066,
+      "large": 2072,
+      "hSmall_mm": 0.041666666666666338,
+      "hLarge_mm": 0.066326189619240833,
+      "areaSmall_mm2": 0.00075175816300728112,
+      "areaLarge_mm2": 0.0013118608979095941,
+      "edgeNodes": [
+        1116,
+        1117
+      ],
+      "edgeXY_mm": [
+        [
+          114.71140828164873,
+          63.098042461004823
+        ],
+        [
+          114.69342989796101,
+          63.060454047482992
+        ]
+      ],
+      "edgeLength_mm": 0.04166666666666588,
+      "edgeOrientation_deg": 64.438401863453649,
+      "edgeIsLongestOfSmallLarge": [
+        false,
+        false
+      ],
+      "midpoint_mm": [
+        114.70241908980486,
+        63.079248254243907
+      ],
+      "centroidSmall_mm": [
+        114.71326993013749,
+        63.074058341913059
+      ],
+      "centroidLarge_mm": [
+        114.68348375415799,
+        63.088304947453842
+      ],
+      "directionSmallToLarge_deg": 154.4384018634496,
+      "regionSmallLarge": [
+        "core",
+        "core"
+      ],
+      "face": "protected core/collar",
+      "distTip_mm": 0.036084391824369406,
+      "distPolyline_mm": 0.036084391824372473,
+      "signedToCore_mm": -2.9639156081756304,
+      "signedToCollar_mm": -3.26391560817563,
+      "signedToTipGuide_mm": -14.963915608175631,
+      "signedToRing_mm": [
+        19.250792233103585,
+        49.764962494011343,
+        95.690260765003515
+      ],
+      "signedToHole_mm": [
+        31.950792233103584,
+        62.464962494011338,
+        108.39026076500352
+      ],
+      "toPlateEdges_mm": [
+        114.70241908980486,
+        393.29758091019517,
+        63.079248254243907,
+        140.12075174575608
+      ],
+      "vertexFlags": {
+        "nodes": [
+          1114,
+          1116,
+          1117,
+          1122
+        ],
+        "onTipGuide": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "onCollar": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "onRing": [
+          [
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "onHole": [
+          [
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "onPlateEdge": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "onCrack": [
+          true,
+          false,
+          false,
+          false
+        ],
+        "cadPointVertex": [
+          false,
+          false,
+          false,
+          false
+        ]
+      },
+      "boundaryEdgeInPair": false,
+      "largeOneRing": {
+        "elements": [
+          2065,
+          2066,
+          2067,
+          2069,
+          2070,
+          2071,
+          2073,
+          2074,
+          2075,
+          2083,
+          2084,
+          2085
+        ],
+        "h_mm": [
+          0.041666666666672292,
+          0.041666666666666338,
+          0.041666666666666338,
+          0.066326189619240666,
+          0.066326189619240666,
+          0.066326189619240833,
+          0.066326189619238737,
+          0.066326189619230133,
+          0.066326189619237641,
+          0.0789447452011636,
+          0.069014853929995693,
+          0.078944745201174255
+        ],
+        "ratioToLarge": [
+          1.5918285508615651,
+          1.5918285508617926,
+          1.5918285508617926,
+          1.0000000000000024,
+          1.0000000000000024,
+          1,
+          1.0000000000000315,
+          1.0000000000001614,
+          1.0000000000000482,
+          0.84015965154148375,
+          0.96104223717575243,
+          0.8401596515413704
+        ]
+      }
+    },
+    {
+      "pair": 3881,
+      "ratio": 1.5918285508617716,
+      "small": 2428,
+      "large": 2434,
+      "hSmall_mm": 0.041666666666666886,
+      "hLarge_mm": 0.066326189619240833,
+      "areaSmall_mm2": 0.00075175816300721726,
+      "areaLarge_mm2": 0.0013118608979095941,
+      "edgeNodes": [
+        1290,
+        1291
+      ],
+      "edgeXY_mm": [
+        [
+          114.77651332364445,
+          63.066902987019738
+        ],
+        [
+          114.75853493995673,
+          63.029314573497906
+        ]
+      ],
+      "edgeLength_mm": 0.04166666666666588,
+      "edgeOrientation_deg": 64.438401863453649,
+      "edgeIsLongestOfSmallLarge": [
+        false,
+        false
+      ],
+      "midpoint_mm": [
+        114.7675241318006,
+        63.048108780258822
+      ],
+      "centroidSmall_mm": [
+        114.75667329146798,
+        63.053298692589671
+      ],
+      "centroidLarge_mm": [
+        114.78645946744747,
+        63.039052087048894
+      ],
+      "directionSmallToLarge_deg": -25.561598136539267,
+      "regionSmallLarge": [
+        "core",
+        "core"
+      ],
+      "face": "protected core/collar",
+      "distTip_mm": 0.0360843918243407,
+      "distPolyline_mm": 0.0360843918243407,
+      "signedToCore_mm": -2.9639156081756592,
+      "signedToCollar_mm": -3.2639156081756591,
+      "signedToTipGuide_mm": -14.963915608175659,
+      "signedToRing_mm": [
+        19.19224057421064,
+        49.755385778015281,
+        95.698303952551768
+      ],
+      "signedToHole_mm": [
+        31.892240574210639,
+        62.455385778015277,
+        108.39830395255177
+      ],
+      "toPlateEdges_mm": [
+        114.7675241318006,
+        393.2324758681994,
+        63.048108780258822,
+        140.15189121974117
+      ],
+      "vertexFlags": {
+        "nodes": [
+          1114,
+          1290,
+          1291,
+          1295
+        ],
+        "onTipGuide": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "onCollar": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "onRing": [
+          [
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "onHole": [
+          [
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "onPlateEdge": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "onCrack": [
+          true,
+          false,
+          false,
+          false
+        ],
+        "cadPointVertex": [
+          false,
+          false,
+          false,
+          false
+        ]
+      },
+      "boundaryEdgeInPair": false,
+      "largeOneRing": {
+        "elements": [
+          2427,
+          2428,
+          2429,
+          2431,
+          2432,
+          2433,
+          2435,
+          2436,
+          2437,
+          2445,
+          2446,
+          2447
+        ],
+        "h_mm": [
+          0.041666666666672292,
+          0.041666666666666886,
+          0.041666666666666886,
+          0.066326189619237641,
+          0.066326189619230133,
+          0.066326189619238737,
+          0.066326189619240833,
+          0.066326189619240666,
+          0.066326189619240666,
+          0.078944745201174255,
+          0.069014853929995693,
+          0.0789447452011636
+        ],
+        "ratioToLarge": [
+          1.5918285508615651,
+          1.5918285508617716,
+          1.5918285508617716,
+          1.0000000000000482,
+          1.0000000000001614,
+          1.0000000000000315,
+          1,
+          1.0000000000000024,
+          1.0000000000000024,
+          0.8401596515413704,
+          0.96104223717575243,
+          0.84015965154148375
+        ]
+      }
+    },
+    {
+      "pair": 3885,
+      "ratio": 1.5918285508617676,
+      "small": 2429,
+      "large": 2437,
+      "hSmall_mm": 0.041666666666666886,
+      "hLarge_mm": 0.066326189619240666,
+      "areaSmall_mm2": 0.00075175816300721726,
+      "areaLarge_mm2": 0.001311860897909552,
+      "edgeNodes": [
+        1291,
+        1292
+      ],
+      "edgeXY_mm": [
+        [
+          114.75853493995673,
+          63.029314573497906
+        ],
+        [
+          114.71699322711501,
+          63.02609010372953
+        ]
+      ],
+      "edgeLength_mm": 0.041666666666666886,
+      "edgeOrientation_deg": 4.4384018634665665,
+      "edgeIsLongestOfSmallLarge": [
+        true,
+        false
+      ],
+      "midpoint_mm": [
+        114.73776408353586,
+        63.027702338613722
+      ],
+      "centroidSmall_mm": [
+        114.73683325929149,
+        63.039694398159604
+      ],
+      "centroidLarge_mm": [
+        114.73938842496523,
+        63.006775510309375
+      ],
+      "directionSmallToLarge_deg": -85.561598136537185,
+      "regionSmallLarge": [
+        "core",
+        "core"
+      ],
+      "face": "protected core/collar",
+      "distTip_mm": 0.036084391824341054,
+      "distPolyline_mm": 0.018042195912155997,
+      "signedToCore_mm": -2.9639156081756588,
+      "signedToCollar_mm": -3.2639156081756586,
+      "signedToTipGuide_mm": -14.963915608175659,
+      "signedToRing_mm": [
+        19.225158518390987,
+        49.788747824207292,
+        95.727343776555685
+      ],
+      "signedToHole_mm": [
+        31.925158518390987,
+        62.488747824207287,
+        108.42734377655569
+      ],
+      "toPlateEdges_mm": [
+        114.73776408353586,
+        393.26223591646414,
+        63.027702338613722,
+        140.17229766138627
+      ],
+      "vertexFlags": {
+        "nodes": [
+          1114,
+          1291,
+          1292,
+          1297
+        ],
+        "onTipGuide": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "onCollar": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "onRing": [
+          [
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "onHole": [
+          [
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "onPlateEdge": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "onCrack": [
+          true,
+          false,
+          true,
+          false
+        ],
+        "cadPointVertex": [
+          false,
+          false,
+          false,
+          false
+        ]
+      },
+      "boundaryEdgeInPair": true,
+      "largeOneRing": {
+        "elements": [
+          2428,
+          2429,
+          2434,
+          2435,
+          2436,
+          2438,
+          2450,
+          2451,
+          2452
+        ],
+        "h_mm": [
+          0.041666666666666886,
+          0.041666666666666886,
+          0.066326189619240833,
+          0.066326189619240833,
+          0.066326189619240666,
+          0.066326189619232492,
+          0.0789447452011736,
+          0.069014853930002007,
+          0.078944745201176988
+        ],
+        "ratioToLarge": [
+          1.5918285508617676,
+          1.5918285508617676,
+          0.99999999999999745,
+          0.99999999999999745,
+          1,
+          1.0000000000001232,
+          0.84015965154137517,
+          0.96104223717566217,
+          0.8401596515413392
+        ]
+      }
+    },
+    {
+      "pair": 3409,
+      "ratio": 1.591828550861716,
+      "small": 2067,
+      "large": 2075,
+      "hSmall_mm": 0.041666666666666338,
+      "hLarge_mm": 0.066326189619237641,
+      "areaSmall_mm2": 0.00075175816300728112,
+      "areaLarge_mm2": 0.0013118608979094154,
+      "edgeNodes": [
+        1117,
+        1118
+      ],
+      "edgeXY_mm": [
+        [
+          114.69342989796101,
+          63.060454047482992
+        ],
+        [
+          114.71699322711501,
+          63.02609010372953
+        ]
+      ],
+      "edgeLength_mm": 0.041666666666664125,
+      "edgeOrientation_deg": 124.43840186345577,
+      "edgeIsLongestOfSmallLarge": [
+        false,
+        false
+      ],
+      "midpoint_mm": [
+        114.70521156253801,
+        63.043272075606261
+      ],
+      "centroidSmall_mm": [
+        114.71513157862626,
+        63.050074222821287
+      ],
+      "centroidLarge_mm": [
+        114.68790056832047,
+        63.031401940511849
+      ],
+      "directionSmallToLarge_deg": -145.56159813658016,
+      "regionSmallLarge": [
+        "core",
+        "core"
+      ],
+      "face": "protected core/collar",
+      "distTip_mm": 0.036084391824363418,
+      "distPolyline_mm": 0.01804219591218777,
+      "signedToCore_mm": -2.9639156081756366,
+      "signedToCollar_mm": -3.2639156081756364,
+      "signedToTipGuide_mm": -14.963915608175636,
+      "signedToRing_mm": [
+        19.254420376527566,
+        49.793534028259657,
+        95.723323270778153
+      ],
+      "signedToHole_mm": [
+        31.954420376527565,
+        62.493534028259653,
+        108.42332327077816
+      ],
+      "toPlateEdges_mm": [
+        114.70521156253801,
+        393.294788437462,
+        63.043272075606261,
+        140.15672792439372
+      ],
+      "vertexFlags": {
+        "nodes": [
+          1114,
+          1117,
+          1118,
+          1124
+        ],
+        "onTipGuide": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "onCollar": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "onRing": [
+          [
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "onHole": [
+          [
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "onPlateEdge": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "onCrack": [
+          true,
+          false,
+          true,
+          false
+        ],
+        "cadPointVertex": [
+          false,
+          false,
+          false,
+          false
+        ]
+      },
+      "boundaryEdgeInPair": true,
+      "largeOneRing": {
+        "elements": [
+          2066,
+          2067,
+          2072,
+          2073,
+          2074,
+          2076,
+          2088,
+          2089,
+          2090
+        ],
+        "h_mm": [
+          0.041666666666666338,
+          0.041666666666666338,
+          0.066326189619240833,
+          0.066326189619238737,
+          0.066326189619230133,
+          0.066326189619237641,
+          0.078944745201176822,
+          0.069014853930003131,
+          0.078944745201180139
+        ],
+        "ratioToLarge": [
+          1.591828550861716,
+          1.591828550861716,
+          0.99999999999995193,
+          0.99999999999998346,
+          1.0000000000001132,
+          1,
+          0.84015965154130268,
+          0.96104223717560266,
+          0.84015965154126737
+        ]
+      }
+    },
+    {
+      "pair": 3400,
+      "ratio": 1.5918285508615611,
+      "small": 2065,
+      "large": 2069,
+      "hSmall_mm": 0.041666666666672292,
+      "hLarge_mm": 0.066326189619240666,
+      "areaSmall_mm2": 0.00075175816300736482,
+      "areaLarge_mm2": 0.001311860897909552,
+      "edgeNodes": [
+        1115,
+        1116
+      ],
+      "edgeXY_mm": [
+        [
+          114.75294999449045,
+          63.1012669307732
+        ],
+        [
+          114.71140828164873,
+          63.098042461004823
+        ]
+      ],
+      "edgeLength_mm": 0.041666666666666886,
+      "edgeOrientation_deg": 4.4384018634665665,
+      "edgeIsLongestOfSmallLarge": [
+        false,
+        false
+      ],
+      "midpoint_mm": [
+        114.7321791380696,
+        63.099654695889015
+      ],
+      "centroidSmall_mm": [
+        114.73310996231397,
+        63.087662636343133
+      ],
+      "centroidLarge_mm": [
+        114.73055479664025,
+        63.120581524193362
+      ],
+      "directionSmallToLarge_deg": 94.43840186343823,
+      "regionSmallLarge": [
+        "core",
+        "core"
+      ],
+      "face": "protected core/collar",
+      "distTip_mm": 0.036084391824357416,
+      "distPolyline_mm": 0.036084391824357416,
+      "signedToCore_mm": -2.9639156081756424,
+      "signedToCollar_mm": -3.2639156081756422,
+      "signedToTipGuide_mm": -14.963915608175643,
+      "signedToRing_mm": [
+        19.217896338983845,
+        49.731588910906169,
+        95.661211553215523
+      ],
+      "signedToHole_mm": [
+        31.917896338983844,
+        62.431588910906164,
+        108.36121155321553
+      ],
+      "toPlateEdges_mm": [
+        114.7321791380696,
+        393.26782086193043,
+        63.099654695889015,
+        140.100345304111
+      ],
+      "vertexFlags": {
+        "nodes": [
+          1114,
+          1115,
+          1116,
+          1120
+        ],
+        "onTipGuide": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "onCollar": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "onRing": [
+          [
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "onHole": [
+          [
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "onPlateEdge": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "onCrack": [
+          true,
+          false,
+          false,
+          false
+        ],
+        "cadPointVertex": [
+          false,
+          false,
+          false,
+          false
+        ]
+      },
+      "boundaryEdgeInPair": false,
+      "largeOneRing": {
+        "elements": [
+          2065,
+          2066,
+          2068,
+          2070,
+          2071,
+          2072,
+          2078,
+          2079,
+          2080,
+          2427,
+          2430,
+          2431
+        ],
+        "h_mm": [
+          0.041666666666672292,
+          0.041666666666666338,
+          0.066326189619232492,
+          0.066326189619240666,
+          0.066326189619240833,
+          0.066326189619240833,
+          0.078944745201172173,
+          0.069014853930006864,
+          0.0789447452011736,
+          0.041666666666672292,
+          0.066326189619237641,
+          0.066326189619237641
+        ],
+        "ratioToLarge": [
+          1.5918285508615611,
+          1.5918285508617886,
+          1.0000000000001232,
+          1,
+          0.99999999999999745,
+          0.99999999999999745,
+          0.84015965154139038,
+          0.96104223717559445,
+          0.84015965154137517,
+          1.5918285508615611,
+          1.0000000000000455,
+          1.0000000000000455
+        ]
+      }
+    }
+  ],
+  "T6blockMidsideIDsIdentical_informative": false,
+  "qAnnuliActiveRows": [
+    2443,
+    1057,
+    1669,
+    2059,
+    1290
+  ],
+  "tangentFrameMinusInput": 5.5511151231257827E-16,
+  "blockCompare": {
+    "blockNodes": 1519,
+    "blockT3": 2916,
+    "coreT6Nodes": 5953
+  },
+  "exteriorVsBaseline": {
+    "T3": [
+      30379,
+      30349
+    ],
+    "exteriorT3": [
+      27463,
+      27433
+    ],
+    "maxRatio": [
+      1.6528445610466254,
+      1.5918285508617926
+    ],
+    "minAngle_deg": [
+      30.126847321223664,
+      22.782265870508365
+    ]
+  },
+  "pairing": {
+    "pass": true,
+    "gatesPassed": 10,
+    "gatesTotal": 10,
+    "failedGates": [],
+    "metrics": {
+      "pairsT6": 369,
+      "pairsT3": 185,
+      "bankNodesUL": [
+        369,
+        369
+      ],
+      "maxPairDistance_mm": 0,
+      "maxPairStationDifference_mm": 0,
+      "nodesOnCrack": 737,
+      "unmatchedOnCrack": 0,
+      "minEdge_mm": 0.041666666666658261,
+      "minBankEdge_mm": 0.041666666666665873,
+      "bankEdgesT3": 368,
+      "T3": 30349,
+      "T6nodes": 61793,
+      "T3nodes": 15721,
+      "minArea_mm2": 0.00075175816300721726
+    }
+  },
+  "audit": {
+    "meshAudit": "34/34",
+    "failed": [],
+    "phaseMasks": {
+      "H": true,
+      "stiff13": true,
+      "soft2": true,
+      "soft1": true
+    },
+    "chordsPerCircle": [
+      76,
+      76,
+      76
+    ],
+    "actualClassification": "MATRIX_ADVANCE",
+    "nominalClassification": "MATRIX_ADVANCE",
+    "guideRingGap_mm": [
+      4.221510589814077,
+      34.760164841202894,
+      80.694276755404132
+    ],
+    "actualClearance": {
+      "segmentToRingPolygon_mm": [
+        19.225286286179585,
+        49.760190622115005,
+        95.69437991710835
+      ],
+      "segmentToHolePolygon_mm": [
+        31.92256212974587,
+        62.460204229916485,
+        108.39430049636938
+      ],
+      "tipToRingPolygon_mm": [
+        19.225286286179585,
+        49.760190622115005,
+        95.69437991710835
+      ],
+      "tipToHolePolygon_mm": [
+        31.92256212974587,
+        62.460204229916485,
+        108.39430049636938
+      ],
+      "segmentToNominalRing_mm": [
+        19.221510589814077,
+        49.760164841202894,
+        95.694276755404132
+      ],
+      "tipToNominalRing_mm": [
+        19.221510589814077,
+        49.760164841202894,
+        95.694276755404132
+      ],
+      "guideRingMargin_mm": [
+        4.221510589814077,
+        34.760164841202894,
+        80.694276755404132
+      ],
+      "qRingMargin_mm": [
+        15.621510589814076,
+        46.160164841202892,
+        92.094276755404138
+      ],
+      "segmentPlate_mm": [
+        113.0090467767817,
+        393.26502838919725,
+        59.455190819155462,
+        140.13632148274863
+      ],
+      "tipPlate_mm": [
+        114.73497161080275,
+        393.26502838919725,
+        63.063678517251361,
+        140.13632148274863
+      ],
+      "guidePlateMargin_mm": [
+        99.734971610802745,
+        378.26502838919725,
+        48.063678517251361,
+        125.13632148274863
+      ],
+      "qPlateMargin_mm": [
+        111.13497161080275,
+        389.66502838919723,
+        59.46367851725136,
+        136.53632148274863
+      ],
+      "nonadjacentSegment_mm": 3.9999999999999982,
+      "tipEarlierSegment_mm": 7.99952947663137,
+      "rimEarlierMargin_mm": 4.3556828260704119,
+      "miterDenominator": 1.9997647452341907
+    },
+    "ringNodeCounts": [
+      76,
+      76,
+      76
+    ],
+    "ringPolygonsIdenticalToBaseline": true
+  },
+  "checksPassed": 19,
+  "checksTotal": 19,
+  "canonicalSHA256": "45298fae6257674b99de036341b6d0c05b55fbb6bb7be635786f8ae71bb068e3",
+  "endedUTC": "2026-11-27T08:23:39.167Z",
+  "arraysFileSHA256": "16828b03582b66a48ff5512f0b4e02fce137158e75addc5f6f13bf0ce5ee75ef"
+}

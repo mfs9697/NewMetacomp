@@ -1,0 +1,30 @@
+{
+ "schema": "NewMetacomp.G2.LP2B1EQ.Sanitization.v1",
+ "rule": "absolute local paths replaced by <repo>, <worktree>, <temp>, <scratch>, <backup>, <home>, <drive>, <matlabroot>; UTF-16 logs converted to UTF-8; MATLAB startup path warnings removed from logs; binaries (.mat, .f64) only in the archive; figures byte for byte",
+ "files": [
+  {
+   "file": "COMPARISON.json",
+   "sourceSHA256": "8c0cf24d4ab0557c998eae2639f8792e0d58f6e867b0992dc199c623d0d59ea3",
+   "publishedSHA256": "8c0cf24d4ab0557c998eae2639f8792e0d58f6e867b0992dc199c623d0d59ea3",
+   "replacements": {}
+  },
+  {
+   "file": "COMPARISON.mat.manifest.json",
+   "sourceSHA256": "6d969f2677a631d5762c4eb820c10337d52c1a62d7e9692e897e82266feef30b",
+   "publishedSHA256": "6d969f2677a631d5762c4eb820c10337d52c1a62d7e9692e897e82266feef30b",
+   "replacements": {}
+  },
+  {
+   "file": "PHASE.mat.manifest.json",
+   "sourceSHA256": "f69382b23e04c1c343ae808ddbd0500154c515451b15f7b1056f3723a42cbdca",
+   "publishedSHA256": "f69382b23e04c1c343ae808ddbd0500154c515451b15f7b1056f3723a42cbdca",
+   "replacements": {}
+  },
+  {
+   "file": "SOLUTION.mat.manifest.json",
+   "sourceSHA256": "e042be1890d39f558e59fb9d9c0bcc6b2cb018275670e415a1aac0c6054eb0e2",
+   "publishedSHA256": "e042be1890d39f558e59fb9d9c0bcc6b2cb018275670e415a1aac0c6054eb0e2",
+   "replacements": {}
+  }
+ ]
+}

@@ -4,6 +4,7 @@
 - **Memorandum (Ukrainian):** [`../G2_LP2B1EQ_READINESS_MEMO_UA.md`](../G2_LP2B1EQ_READINESS_MEMO_UA.md)
 - **Decision template:** [`../G2_LP2B1EQ_GO_DECISION_TEMPLATE.md`](../G2_LP2B1EQ_GO_DECISION_TEMPLATE.md). It is not a GO and creates no GO file.
 - **Status:** `REVIEW_STOP_LP2B1_EQ_READY`
+- **Later campaign (after the investigator GO):** see [`campaign/README.md`](campaign/README.md) and [`../G2_LP2B1EQ_DEMONSTRATION_MEMO_UA.md`](../G2_LP2B1EQ_DEMONSTRATION_MEMO_UA.md). The readiness evidence below is unchanged.
 
 **Scope:** zero physical FEM (`g2_m4b_sif_partial` never called), no GO, no new state, no target soft1 S10 solve, no LP2-B2, no change to historical sources, policies, records or archives.
 

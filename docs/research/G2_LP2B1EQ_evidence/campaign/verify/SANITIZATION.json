@@ -1,0 +1,42 @@
+{
+ "schema": "NewMetacomp.G2.LP2B1EQ.Sanitization.v1",
+ "rule": "absolute local paths replaced by <repo>, <worktree>, <temp>, <scratch>, <backup>, <home>, <drive>, <matlabroot>; UTF-16 logs converted to UTF-8; MATLAB startup path warnings removed from logs; binaries (.mat, .f64) only in the archive; figures byte for byte",
+ "files": [
+  {
+   "file": "LP2B1EQ_AUDIT_attempt1_FAILED.txt",
+   "sourceSHA256": "8e95ce173b908d15cb5a96c1f0612f67e071c9da0ea6bc0f12bf831ef6e1a75f",
+   "publishedSHA256": "8e95ce173b908d15cb5a96c1f0612f67e071c9da0ea6bc0f12bf831ef6e1a75f",
+   "replacements": {}
+  },
+  {
+   "file": "LP2B1EQ_AUDIT_v2.json",
+   "sourceSHA256": "14de7e637b11fc5e2e250745eb208b36a9aeded20f818195ccbc8062a57993e5",
+   "publishedSHA256": "14de7e637b11fc5e2e250745eb208b36a9aeded20f818195ccbc8062a57993e5",
+   "replacements": {}
+  },
+  {
+   "file": "LP2B1EQ_AUDIT_v3.json",
+   "sourceSHA256": "4a128792a284ba1040622327950a7444e294fa28a23d44bcf73d8670675eeba9",
+   "publishedSHA256": "4a128792a284ba1040622327950a7444e294fa28a23d44bcf73d8670675eeba9",
+   "replacements": {}
+  },
+  {
+   "file": "LP2B1EQ_RECORD_DUMP.json",
+   "sourceSHA256": "c899573687abcd3b2573571059fef94fa030f24192e62c5f86cd1ccd4b07b1f6",
+   "publishedSHA256": "c899573687abcd3b2573571059fef94fa030f24192e62c5f86cd1ccd4b07b1f6",
+   "replacements": {}
+  },
+  {
+   "file": "LP2B1EQ_VERIFY_POSTREV.json",
+   "sourceSHA256": "9d82a0917ec8bcbd044718aa84ba325d316106a2beca0d6c68d011d08f2a5633",
+   "publishedSHA256": "9d82a0917ec8bcbd044718aa84ba325d316106a2beca0d6c68d011d08f2a5633",
+   "replacements": {}
+  },
+  {
+   "file": "RAW_INDEX.json",
+   "sourceSHA256": "ef58dbda55acb23cf6edbcfc2365ab7dba362dd04df1e538e9266c8184eb52ba",
+   "publishedSHA256": "ef58dbda55acb23cf6edbcfc2365ab7dba362dd04df1e538e9266c8184eb52ba",
+   "replacements": {}
+  }
+ ]
+}

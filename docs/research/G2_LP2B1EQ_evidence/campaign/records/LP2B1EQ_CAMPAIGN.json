@@ -1,0 +1,580 @@
+{
+  "campaignId": "G2-LP2B1-EQ-001",
+  "outcome": "EQUIVALENT_AT_0p40",
+  "reason": "",
+  "solvesCalled": 2,
+  "campaign": {
+    "campaignId": "G2-LP2B1-EQ-001",
+    "token": "G2LP2B1EQ|policy=b113a7c6d7b2e8fe9950d817ccca3c851c05f1e347c73f66c604b9c41e54eecb|g2source=7e5683703bd104547ef5d013aa0253ad2819b59dc58693957e2d04b4707f0947|lp2source=357dfdcdb576d2866b9d1b41a14265300a14c30700d6475f995881041ba822ca|lp2a2source=f1d7e4d67b91968e16ebaead13be86667c7776ce48971ed5206c7f136fae7afd|lp2a3source=fa3bcecfa9cd3044253d5a72253e2058bccd044d32345f51650dcd775f42e002|lp2b1source=9c7a1260e3bde5b59e1d93c47bc99cc4d7b89f9b0cc6e874572fb378f1717bee|lp2b1eqsource=74a0edd827daca5714a1347705abc1429a7a573116ad3c438f9e5a1c12dfbf1f|closure=76614f269810c6970544bca0c1c0f84ebf9131935554ebd75e57e24f819f65f7|references=63014a95ebeebd127ae094e9254331d6e32e314902b6c1d6ac2bf8abbeb3d89d|qualification=441b1eadf330a720255f2c6b178c0c51a822e4ad99a24d0318230c0884c5d5ad|solves=EQB-soft1-S9,EQB-H-S10|limit=2|seed=0.40|campaign=G2-LP2B1-EQ-001|run=run_lp2b1_eq_v1",
+    "outcome": "EQUIVALENT_AT_0p40",
+    "holdKind": "",
+    "stoppedAt": "",
+    "reason": "",
+    "solvesCalled": 2,
+    "results": [
+      {
+        "solveId": "EQB-soft1-S9",
+        "caseId": "soft1",
+        "token": "G2LP2B1EQ|policy=b113a7c6d7b2e8fe9950d817ccca3c851c05f1e347c73f66c604b9c41e54eecb|g2source=7e5683703bd104547ef5d013aa0253ad2819b59dc58693957e2d04b4707f0947|lp2source=357dfdcdb576d2866b9d1b41a14265300a14c30700d6475f995881041ba822ca|lp2a2source=f1d7e4d67b91968e16ebaead13be86667c7776ce48971ed5206c7f136fae7afd|lp2a3source=fa3bcecfa9cd3044253d5a72253e2058bccd044d32345f51650dcd775f42e002|lp2b1source=9c7a1260e3bde5b59e1d93c47bc99cc4d7b89f9b0cc6e874572fb378f1717bee|lp2b1eqsource=74a0edd827daca5714a1347705abc1429a7a573116ad3c438f9e5a1c12dfbf1f|closure=76614f269810c6970544bca0c1c0f84ebf9131935554ebd75e57e24f819f65f7|references=63014a95ebeebd127ae094e9254331d6e32e314902b6c1d6ac2bf8abbeb3d89d|qualification=441b1eadf330a720255f2c6b178c0c51a822e4ad99a24d0318230c0884c5d5ad|solves=EQB-soft1-S9,EQB-H-S10|limit=2|seed=0.40|campaign=G2-LP2B1-EQ-001|run=run_lp2b1_eq_v1",
+        "run": true,
+        "solveCalls": 1,
+        "stage": "SOLVED_COMPARED",
+        "reference": {
+          "pass": true,
+          "checks": {
+            "records": true,
+            "links": true,
+            "identity": true,
+            "parentRecords": true,
+            "parent": true,
+            "Kfields": true,
+            "Kvalues": true,
+            "gates16": true,
+            "stateEqualsSolution": true,
+            "uShape": true,
+            "uOrdering": true,
+            "mts": true,
+            "banks": true,
+            "normalization": true,
+            "phase": true,
+            "nextTip": true,
+            "exported": true
+          },
+          "stateSHA256": "79EBECBC21B4D9425E3A2B82A9BC17270373A85F2A7C26D11CFE1E7C9B45AEC6",
+          "solutionSHA256": "AE981011E8092115037B0AE910CD92D2E7E352B2FCB88677425DFD564ABCC54B",
+          "meshSHA256": "5afd6e8199ca797ced1a73ba7584c29334abdad7d2413d1bc39a2e0385d1eae0",
+          "phaseSHA256": "FE0AD27F471D052153EDBEBE6ECF39E525021F5051C4572B97E3F89907F0C83E",
+          "nextState": "S10",
+          "nextTip_mm": [
+            114.29544883822506,
+            63.185594911516127
+          ],
+          "chordsPerCircle": [
+            76,
+            76,
+            76
+          ],
+          "banks": {
+            "pairs": 319,
+            "tipNode": 1114,
+            "stationMax_mm": 61.399999999999991,
+            "arc_mm": 61.399999999999991
+          },
+          "maxJump_mm": 9.2719179364719045E-5,
+          "maxJumpNearTip_mm": 1.8415310470565105E-5,
+          "uLength": 122838,
+          "N_T6": 61419,
+          "mts": {
+            "theta_deg": -1.7328171539890624,
+            "status": "OK",
+            "stationarity": 0
+          },
+          "KI": 0.010277889641379047,
+          "KII": 0.00015550195627223593,
+          "activeArea_mm2": 1012.152528598162
+        },
+        "geometry": {
+          "pass": true,
+          "checks": {
+            "attempt19": true,
+            "attemptCanonicalEqualsPin": true,
+            "joinPass": true,
+            "pairing": true,
+            "kinkedAudit34": true,
+            "phaseAudit": true,
+            "chords76": true,
+            "canonicalEqualsPin": true,
+            "canonicalEqualsAttempt": true,
+            "qualificationFilePin": true,
+            "qualificationArraysEqual": true,
+            "attemptArraysEqual": true,
+            "protectedTopology": true,
+            "ringPolygonsEqualArchived": true,
+            "stationCoverage": true
+          },
+          "canonicalSHA256": "7535d71ad4790f3a24a47d03e27c3d73d8ba61df03050a2e952accfeffebee16",
+          "metadataSHA256": "58a12546bbe3a50c6488f66078f2d841f42e6d17700400809f4f4c5c3a406f21",
+          "chordsPerCircle": [
+            76,
+            76,
+            76
+          ],
+          "activeAreaGeometric_mm2": 1012.152528598162,
+          "stations": {
+            "problemsNew": [],
+            "problemsArchived": [],
+            "nNew": 349,
+            "nArchived": 319,
+            "nearNew": 57,
+            "nearArchived": 57,
+            "nearMatched": 57,
+            "rangeNew": [
+              0,
+              61.399999999999991
+            ],
+            "rangeArchived": [
+              0,
+              61.399999999999991
+            ]
+          },
+          "attemptChecks": "19/19",
+          "attemptCanonicalSHA256": "7535d71ad4790f3a24a47d03e27c3d73d8ba61df03050a2e952accfeffebee16",
+          "attemptArraysSHA256": "58f17b2fa2aaba1391366681b59608de82a2f45995c2efbc5258d4e23174855b",
+          "T3": 30183,
+          "minAngle_deg": 22.387807593359415,
+          "maxNeighborRatio": 1.5918285508619603,
+          "topology": {
+            "pass": true,
+            "checks": {
+              "blockRows": true,
+              "function": true,
+              "injective": true,
+              "coordinates": true,
+              "nodalQ": true,
+              "qActiveRows": true,
+              "T3block": true,
+              "banks": true,
+              "tip": true,
+              "coincidenceOld": true,
+              "coincidenceNew": true
+            },
+            "blockNodes": 5953,
+            "bankPairsInBlock": 56,
+            "distinctBankDOFsInBlock": 226,
+            "tipOld": 1114,
+            "tipNew": 1114,
+            "tipOffsetFromPolyline_mm": [
+              0,
+              0
+            ]
+          }
+        },
+        "outcome": "EQUIVALENT_CASE",
+        "comparisonPass": true,
+        "failed": [],
+        "validation": [],
+        "newK": {
+          "KI": 0.010277889503869731,
+          "KII": 0.00015550140570708742
+        },
+        "solutionSHA256": "40425a1eddea6625ba3f692c682941015db85c6fe99c3271f7d1ded3b4e023ad",
+        "comparisonSHA256": "71aa928bea5df9df289059ae0c0e5a4eee3014caae046fe3e4319f21748a47ce",
+        "activationHead": "3269d125825dcc403ea9ab975fb5ab55d9a003e8"
+      },
+      {
+        "solveId": "EQB-H-S10",
+        "caseId": "H",
+        "token": "G2LP2B1EQ|policy=b113a7c6d7b2e8fe9950d817ccca3c851c05f1e347c73f66c604b9c41e54eecb|g2source=7e5683703bd104547ef5d013aa0253ad2819b59dc58693957e2d04b4707f0947|lp2source=357dfdcdb576d2866b9d1b41a14265300a14c30700d6475f995881041ba822ca|lp2a2source=f1d7e4d67b91968e16ebaead13be86667c7776ce48971ed5206c7f136fae7afd|lp2a3source=fa3bcecfa9cd3044253d5a72253e2058bccd044d32345f51650dcd775f42e002|lp2b1source=9c7a1260e3bde5b59e1d93c47bc99cc4d7b89f9b0cc6e874572fb378f1717bee|lp2b1eqsource=74a0edd827daca5714a1347705abc1429a7a573116ad3c438f9e5a1c12dfbf1f|closure=76614f269810c6970544bca0c1c0f84ebf9131935554ebd75e57e24f819f65f7|references=63014a95ebeebd127ae094e9254331d6e32e314902b6c1d6ac2bf8abbeb3d89d|qualification=441b1eadf330a720255f2c6b178c0c51a822e4ad99a24d0318230c0884c5d5ad|solves=EQB-soft1-S9,EQB-H-S10|limit=2|seed=0.40|campaign=G2-LP2B1-EQ-001|run=run_lp2b1_eq_v1",
+        "run": true,
+        "solveCalls": 1,
+        "stage": "SOLVED_COMPARED",
+        "reference": {
+          "pass": true,
+          "checks": {
+            "records": true,
+            "links": true,
+            "identity": true,
+            "parentRecords": true,
+            "parent": true,
+            "Kfields": true,
+            "Kvalues": true,
+            "gates16": true,
+            "stateEqualsSolution": true,
+            "uShape": true,
+            "uOrdering": true,
+            "mts": true,
+            "banks": true,
+            "normalization": true,
+            "phase": true,
+            "nextTip": true,
+            "exported": true
+          },
+          "stateSHA256": "B1D929AB1FAA49441A5DAC09BE58B0B866C93F616E717EDAACC410828ECF5A4A",
+          "solutionSHA256": "51A232D061E3CEB9C6D9995AB84BC19B5279BB219D765C6DD2626BC3515E54AC",
+          "meshSHA256": "6e79b5e0c34cc7e0db6546e159d17384406613c32884a574237a83e58afa11d0",
+          "phaseSHA256": "B64A080234EFF198B9C8A69A3D1E43F9376B5B08E46FE9712889E775711010EA",
+          "nextState": "S11",
+          "nextTip_mm": [
+            116.53715206030587,
+            66.634693166819289
+          ],
+          "chordsPerCircle": [
+            76,
+            76,
+            76
+          ],
+          "banks": {
+            "pairs": 337,
+            "tipNode": 1114,
+            "stationMax_mm": 65.399999999999991,
+            "arc_mm": 65.4
+          },
+          "maxJump_mm": 9.8747036917615159E-5,
+          "maxJumpNearTip_mm": 1.8508752806966107E-5,
+          "uLength": 123642,
+          "N_T6": 61821,
+          "mts": {
+            "theta_deg": -1.2170650372123342,
+            "status": "OK",
+            "stationarity": 0
+          },
+          "KI": 0.010336206195789625,
+          "KII": 0.00010980867509538642,
+          "activeArea_mm2": 0
+        },
+        "geometry": {
+          "pass": true,
+          "checks": {
+            "attempt19": true,
+            "attemptCanonicalEqualsPin": true,
+            "joinPass": true,
+            "pairing": true,
+            "kinkedAudit34": true,
+            "phaseAudit": true,
+            "chords76": true,
+            "canonicalEqualsPin": true,
+            "canonicalEqualsAttempt": true,
+            "qualificationFilePin": true,
+            "qualificationArraysEqual": true,
+            "attemptArraysEqual": true,
+            "protectedTopology": true,
+            "ringPolygonsEqualArchived": true,
+            "stationCoverage": true
+          },
+          "canonicalSHA256": "45298fae6257674b99de036341b6d0c05b55fbb6bb7be635786f8ae71bb068e3",
+          "metadataSHA256": "b2c92e34adeeca92e9546062a2157901fb0ab69a89058e52412711a5fd737210",
+          "chordsPerCircle": [
+            76,
+            76,
+            76
+          ],
+          "activeAreaGeometric_mm2": 0,
+          "stations": {
+            "problemsNew": [],
+            "problemsArchived": [],
+            "nNew": 369,
+            "nArchived": 337,
+            "nearNew": 57,
+            "nearArchived": 57,
+            "nearMatched": 57,
+            "rangeNew": [
+              0,
+              65.399999999999991
+            ],
+            "rangeArchived": [
+              0,
+              65.399999999999991
+            ]
+          },
+          "attemptChecks": "19/19",
+          "attemptCanonicalSHA256": "45298fae6257674b99de036341b6d0c05b55fbb6bb7be635786f8ae71bb068e3",
+          "attemptArraysSHA256": "16828b03582b66a48ff5512f0b4e02fce137158e75addc5f6f13bf0ce5ee75ef",
+          "T3": 30349,
+          "minAngle_deg": 22.782265870508365,
+          "maxNeighborRatio": 1.5918285508617926,
+          "topology": {
+            "pass": true,
+            "checks": {
+              "blockRows": true,
+              "function": true,
+              "injective": true,
+              "coordinates": true,
+              "nodalQ": true,
+              "qActiveRows": true,
+              "T3block": true,
+              "banks": true,
+              "tip": true,
+              "coincidenceOld": true,
+              "coincidenceNew": true
+            },
+            "blockNodes": 5953,
+            "bankPairsInBlock": 56,
+            "distinctBankDOFsInBlock": 226,
+            "tipOld": 1114,
+            "tipNew": 1114,
+            "tipOffsetFromPolyline_mm": [
+              1.4210854715202004E-14,
+              1.4210854715202004E-14
+            ]
+          }
+        },
+        "outcome": "EQUIVALENT_CASE",
+        "comparisonPass": true,
+        "failed": [],
+        "validation": [],
+        "newK": {
+          "KI": 0.010336206049051612,
+          "KII": 0.00010980858206191415
+        },
+        "solutionSHA256": "f57c4bbbf60b755cac8391737698930c9b756b5b7dfc32d954675042b8c3f4ee",
+        "comparisonSHA256": "7b5db9180797bb148eb96e3af0aa418ac1b75df292048de90379daa00670ffd9",
+        "activationHead": "3269d125825dcc403ea9ab975fb5ab55d9a003e8"
+      }
+    ],
+    "next": "read-only verification (g2_lp2b1eq_verify); archive on two physical devices; revoke the GO in a separate commit and verify refusal - on every outcome"
+  },
+  "verification": {
+    "schema": "NewMetacomp.G2.LP2B1EQ.Verify.v1",
+    "outcome": "VERIFIED_EQUIVALENT",
+    "problems": [],
+    "solves": [
+      {
+        "solveId": "EQB-soft1-S9",
+        "kind": "COMPLETE",
+        "outcome": "EQUIVALENT_CASE",
+        "pass": true,
+        "problems": [],
+        "compare": {
+          "ok": true,
+          "problems": [],
+          "criteriaTotal": 11,
+          "criteriaIdentical": 11,
+          "criteriaSetEqual": true,
+          "internallyConsistent": true,
+          "passEqual": true,
+          "metricsTotal": 52,
+          "metricsWithinTol": 52,
+          "metricsBitwiseIdentical": 52,
+          "metricsMaxAbsDiff": 0,
+          "metricsMaxRelDiff": 0,
+          "metricsAllFinite": true,
+          "metricSetEqual": true,
+          "failedListRawOK": true,
+          "failedListEqual": true
+        },
+        "links": {
+          "phaseMesh": true,
+          "solutionMesh": true,
+          "solutionPhase": true,
+          "comparisonSolution": true,
+          "comparisonMesh": true,
+          "comparisonPhase": true,
+          "jsonBindsRecord": true,
+          "archivedPin": true,
+          "token": true,
+          "policy": true,
+          "identity": true,
+          "canonical": true,
+          "attemptArrays": true
+        },
+        "jsonExact": {
+          "outcome": true,
+          "valid": true,
+          "validation": true,
+          "validationRaw": true
+        },
+        "recomputedPass": true,
+        "storedPass": true
+      },
+      {
+        "solveId": "EQB-H-S10",
+        "kind": "COMPLETE",
+        "outcome": "EQUIVALENT_CASE",
+        "pass": true,
+        "problems": [],
+        "compare": {
+          "ok": true,
+          "problems": [],
+          "criteriaTotal": 11,
+          "criteriaIdentical": 11,
+          "criteriaSetEqual": true,
+          "internallyConsistent": true,
+          "passEqual": true,
+          "metricsTotal": 52,
+          "metricsWithinTol": 52,
+          "metricsBitwiseIdentical": 52,
+          "metricsMaxAbsDiff": 0,
+          "metricsMaxRelDiff": 0,
+          "metricsAllFinite": true,
+          "metricSetEqual": true,
+          "failedListRawOK": true,
+          "failedListEqual": true
+        },
+        "links": {
+          "phaseMesh": true,
+          "solutionMesh": true,
+          "solutionPhase": true,
+          "comparisonSolution": true,
+          "comparisonMesh": true,
+          "comparisonPhase": true,
+          "jsonBindsRecord": true,
+          "archivedPin": true,
+          "token": true,
+          "policy": true,
+          "identity": true,
+          "canonical": true,
+          "attemptArrays": true
+        },
+        "jsonExact": {
+          "outcome": true,
+          "valid": true,
+          "validation": true,
+          "validationRaw": true
+        },
+        "recomputedPass": true,
+        "storedPass": true
+      }
+    ],
+    "unchanged": true,
+    "physicalSolves": 0,
+    "token": "G2LP2B1EQ|policy=b113a7c6d7b2e8fe9950d817ccca3c851c05f1e347c73f66c604b9c41e54eecb|g2source=7e5683703bd104547ef5d013aa0253ad2819b59dc58693957e2d04b4707f0947|lp2source=357dfdcdb576d2866b9d1b41a14265300a14c30700d6475f995881041ba822ca|lp2a2source=f1d7e4d67b91968e16ebaead13be86667c7776ce48971ed5206c7f136fae7afd|lp2a3source=fa3bcecfa9cd3044253d5a72253e2058bccd044d32345f51650dcd775f42e002|lp2b1source=9c7a1260e3bde5b59e1d93c47bc99cc4d7b89f9b0cc6e874572fb378f1717bee|lp2b1eqsource=74a0edd827daca5714a1347705abc1429a7a573116ad3c438f9e5a1c12dfbf1f|closure=76614f269810c6970544bca0c1c0f84ebf9131935554ebd75e57e24f819f65f7|references=63014a95ebeebd127ae094e9254331d6e32e314902b6c1d6ac2bf8abbeb3d89d|qualification=441b1eadf330a720255f2c6b178c0c51a822e4ad99a24d0318230c0884c5d5ad|solves=EQB-soft1-S9,EQB-H-S10|limit=2|seed=0.40|campaign=G2-LP2B1-EQ-001|run=run_lp2b1_eq_v1",
+    "policySHA256": "b113a7c6d7b2e8fe9950d817ccca3c851c05f1e347c73f66c604b9c41e54eecb",
+    "metricTolerance": 1E-12,
+    "receipt": {
+      "present": true,
+      "tokenOK": true
+    },
+    "files": [
+      {
+        "rel": "EQB-H-S10/COMPARISON.json",
+        "bytes": 4609,
+        "sha": "8c0cf24d4ab0557c998eae2639f8792e0d58f6e867b0992dc199c623d0d59ea3"
+      },
+      {
+        "rel": "EQB-H-S10/COMPARISON.mat",
+        "bytes": 46960,
+        "sha": "7b5db9180797bb148eb96e3af0aa418ac1b75df292048de90379daa00670ffd9"
+      },
+      {
+        "rel": "EQB-H-S10/COMPARISON.mat.manifest.json",
+        "bytes": 305,
+        "sha": "6d969f2677a631d5762c4eb820c10337d52c1a62d7e9692e897e82266feef30b"
+      },
+      {
+        "rel": "EQB-H-S10/GEOMETRY_h040/ATTEMPT.json",
+        "bytes": 28375,
+        "sha": "07bd7215c0db39bfc1542fc513d784cec8d686ec640d9304dde31e4d82ca7fb5"
+      },
+      {
+        "rel": "EQB-H-S10/GEOMETRY_h040/ATTEMPT_ARRAYS.mat",
+        "bytes": 1.799751E+6,
+        "sha": "16828b03582b66a48ff5512f0b4e02fce137158e75addc5f6f13bf0ce5ee75ef"
+      },
+      {
+        "rel": "EQB-H-S10/MESH.mat",
+        "bytes": 1.936679E+6,
+        "sha": "3e5cfd549ec865f9bc7b71633eb35da129923ccce53bc2ba55ac64dcf431ff65"
+      },
+      {
+        "rel": "EQB-H-S10/PHASE.mat",
+        "bytes": 232984,
+        "sha": "f8f5f1d6ba0970737401459dde9034fc789eb191c0a919d2a96bc13afd86bdb7"
+      },
+      {
+        "rel": "EQB-H-S10/PHASE.mat.manifest.json",
+        "bytes": 296,
+        "sha": "f69382b23e04c1c343ae808ddbd0500154c515451b15f7b1056f3723a42cbdca"
+      },
+      {
+        "rel": "EQB-H-S10/SOLUTION.mat",
+        "bytes": 1.167393E+6,
+        "sha": "f57c4bbbf60b755cac8391737698930c9b756b5b7dfc32d954675042b8c3f4ee"
+      },
+      {
+        "rel": "EQB-H-S10/SOLUTION.mat.manifest.json",
+        "bytes": 307,
+        "sha": "e042be1890d39f558e59fb9d9c0bcc6b2cb018275670e415a1aac0c6054eb0e2"
+      },
+      {
+        "rel": "EQB-soft1-S9/COMPARISON.json",
+        "bytes": 4645,
+        "sha": "94ab9b3509921672ce0d1aff2afc0f4341972fea1a77dfd406fbe5efcc95516f"
+      },
+      {
+        "rel": "EQB-soft1-S9/COMPARISON.mat",
+        "bytes": 46976,
+        "sha": "71aa928bea5df9df289059ae0c0e5a4eee3014caae046fe3e4319f21748a47ce"
+      },
+      {
+        "rel": "EQB-soft1-S9/COMPARISON.mat.manifest.json",
+        "bytes": 304,
+        "sha": "9e261efa025241a8728ba779b285026cfa47cd642c05025d18ccf9acef4400d3"
+      },
+      {
+        "rel": "EQB-soft1-S9/GEOMETRY_h040/ATTEMPT.json",
+        "bytes": 28264,
+        "sha": "2ed2ed5489fed8f17f77bd5cbaed80d6dccd5aad9274daa4af459cc3bc6aea3f"
+      },
+      {
+        "rel": "EQB-soft1-S9/GEOMETRY_h040/ATTEMPT_ARRAYS.mat",
+        "bytes": 1.787394E+6,
+        "sha": "58f17b2fa2aaba1391366681b59608de82a2f45995c2efbc5258d4e23174855b"
+      },
+      {
+        "rel": "EQB-soft1-S9/MESH.mat",
+        "bytes": 1.922922E+6,
+        "sha": "f95d7846674a60b165b8c4586f189b4024bbc30e2961a70666e1dc405a469cc6"
+      },
+      {
+        "rel": "EQB-soft1-S9/PHASE.mat",
+        "bytes": 233000,
+        "sha": "146c0ca9fdcd0683ea6c4cf39e80f5613e2d8735e8872bee929f2f859f5145e7"
+      },
+      {
+        "rel": "EQB-soft1-S9/PHASE.mat.manifest.json",
+        "bytes": 295,
+        "sha": "223210b5f43e3aa65d55bf73b26d318711e96a0e38322a15b353edae9ebc8a5d"
+      },
+      {
+        "rel": "EQB-soft1-S9/SOLUTION.mat",
+        "bytes": 1.163296E+6,
+        "sha": "40425a1eddea6625ba3f692c682941015db85c6fe99c3271f7d1ded3b4e023ad"
+      },
+      {
+        "rel": "EQB-soft1-S9/SOLUTION.mat.manifest.json",
+        "bytes": 306,
+        "sha": "a34543467ab2cbde87ff5cb528d55555fd6e7acf04904129df56c24d8b3eec43"
+      },
+      {
+        "rel": "RECEIPT.mat",
+        "bytes": 13992,
+        "sha": "fd8e0b3c50006e9b1e93aa96f19ea39258f29bc5e93e9671e918aa6f025ef9df"
+      },
+      {
+        "rel": "RECEIPT.mat.manifest.json",
+        "bytes": 299,
+        "sha": "ce677661d484e8997b4f416d595c33de064d9824e78d1ad58af6f539d661da80"
+      }
+    ]
+  },
+  "wallSeconds": 51.3406906,
+  "precheck": {
+    "approvedHead": "7d0df53f35b30c4e33734c40fdda33e987ea96ee",
+    "campaignId": "G2-LP2B1-EQ-001",
+    "parentCheck": {
+      "approvedHead": "7d0df53f35b30c4e33734c40fdda33e987ea96ee",
+      "head": "3269d125825dcc403ea9ab975fb5ab55d9a003e8",
+      "parent": "7d0df53f35b30c4e33734c40fdda33e987ea96ee",
+      "commands": [
+        "git -C \"<repo>\" rev-parse --verify HEAD",
+        "git -C \"<repo>\" rev-parse --verify HEAD~1",
+        "git -C \"<repo>\" diff --name-only 7d0df53f35b30c4e33734c40fdda33e987ea96ee HEAD"
+      ],
+      "statuses": [
+        0,
+        0,
+        0
+      ],
+      "outputs": [
+        "3269d125825dcc403ea9ab975fb5ab55d9a003e8",
+        "7d0df53f35b30c4e33734c40fdda33e987ea96ee",
+        "matlab/g2/lp2b1eq/G2_LP2B1EQ_GO.json"
+      ],
+      "changedFiles": [
+        "matlab/g2/lp2b1eq/G2_LP2B1EQ_GO.json"
+      ],
+      "parentOk": true,
+      "filesOk": true,
+      "pass": true
+    },
+    "engines": 1,
+    "release": "2023a",
+    "tokenEqualsContext": true,
+    "memgate": {
+      "pass": true,
+      "minGiB": 7,
+      "freeGiB": 8.1336860656738281,
+      "reason": "OK"
+    }
+  }
+}

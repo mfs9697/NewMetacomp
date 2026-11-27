@@ -1,0 +1,39 @@
+{
+  "approvedHead": "7d0df53f35b30c4e33734c40fdda33e987ea96ee",
+  "campaignId": "G2-LP2B1-EQ-001",
+  "parentCheck": {
+    "approvedHead": "7d0df53f35b30c4e33734c40fdda33e987ea96ee",
+    "head": "3269d125825dcc403ea9ab975fb5ab55d9a003e8",
+    "parent": "7d0df53f35b30c4e33734c40fdda33e987ea96ee",
+    "commands": [
+      "git -C \"<repo>\" rev-parse --verify HEAD",
+      "git -C \"<repo>\" rev-parse --verify HEAD~1",
+      "git -C \"<repo>\" diff --name-only 7d0df53f35b30c4e33734c40fdda33e987ea96ee HEAD"
+    ],
+    "statuses": [
+      0,
+      0,
+      0
+    ],
+    "outputs": [
+      "3269d125825dcc403ea9ab975fb5ab55d9a003e8",
+      "7d0df53f35b30c4e33734c40fdda33e987ea96ee",
+      "matlab/g2/lp2b1eq/G2_LP2B1EQ_GO.json"
+    ],
+    "changedFiles": [
+      "matlab/g2/lp2b1eq/G2_LP2B1EQ_GO.json"
+    ],
+    "parentOk": true,
+    "filesOk": true,
+    "pass": true
+  },
+  "engines": 1,
+  "release": "2023a",
+  "tokenEqualsContext": true,
+  "memgate": {
+    "pass": true,
+    "minGiB": 7,
+    "freeGiB": 8.1336860656738281,
+    "reason": "OK"
+  }
+}
