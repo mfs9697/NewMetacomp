@@ -1,0 +1,12 @@
+﻿[Warning: Name is nonexistent or not a directory: <drive>\Projects\8 - CohZonFEM\czm_project\CrackPath\CrackFromHoleLEFM\cfh] 
+[Warning: Name is nonexistent or not a directory: <drive>\Projects\8 - CohZonFEM\Asphalt\remmers2003] 
+B1EQ_ENTRY_CALL g2_lp2b1eq_external_run start 2026-11-27 10:22:57 which=<repo>\matlab\g2\lp2b1eq\g2_lp2b1eq_external_run.m
+B1EQ head=3269d125825dcc403ea9ab975fb5ab55d9a003e8 parent=7d0df53f35b30c4e33734c40fdda33e987ea96ee statuses=[0 0 0] changed=[matlab/g2/lp2b1eq/G2_LP2B1EQ_GO.json] pass=1
+G2_LP2B1_ATTEMPT GEOMETRY_h040 hs=0.40 stage=KINKED_PROTECTED_MESH_JOIN_PASS join=13/13 T3=30183 minAng=22.387808 ratio=1.591829 checks=19/19 pass=1
+G2_M4B_SIF bits=100 pass=1 KI=0.325015404 KII=+0.00491738621 MPa sqrt(m)/kN, COD 0.322173315 / +0.00484207548, C=0.000237565782 mm/N
+G2_LP2B1_ATTEMPT GEOMETRY_h040 hs=0.40 stage=KINKED_PROTECTED_MESH_JOIN_PASS join=13/13 T3=30349 minAng=22.782266 ratio=1.591829 checks=19/19 pass=1
+G2_M4B_SIF bits=000 pass=1 KI=0.326859535 KII=+0.00347245226 MPa sqrt(m)/kN, COD 0.323994183 / +0.003420483, C=0.000238619388 mm/N
+B1EQ_RESULT outcome=EQUIVALENT_AT_0p40 solvesCalled=2 reason= wall=51.3s
+B1EQ_ENTRY_RETURN outcome=EQUIVALENT_AT_0p40 solvesCalled=2
+B1EQ_VERIFY outcome=VERIFIED_EQUIVALENT
+B1EQ_ENTRY_END 2026-11-27 10:23:49

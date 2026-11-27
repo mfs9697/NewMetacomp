@@ -1,0 +1,9 @@
+{
+  "schema": "NewMetacomp.G2.TrajectoryRecordManifest.v1",
+  "file": "RECEIPT.mat",
+  "SHA256": "FD8E0B3C50006E9B1E93AA96F19EA39258F29BC5E93E9671E918AA6F025EF9DF",
+  "bytes": 13992,
+  "recordSchema": "NewMetacomp.G2.LP2B1EQ.Receipt.v1",
+  "stateIndex": -1,
+  "physicalFractureGrowthProven": false
+}

@@ -1,0 +1,9 @@
+bash: HEAD=3269d125825dcc403ea9ab975fb5ab55d9a003e8 PARENT=7d0df53f35b30c4e33734c40fdda33e987ea96ee
+bash: diff=[matlab/g2/lp2b1eq/G2_LP2B1EQ_GO.json ]
+bash: status=[]
+bash: committed GO sha=6abdc02b7ba3d088b9d8b4edced1e7003b4c142f02c21610dcd9ced7567aac2c worktree GO sha=6abdc02b7ba3d088b9d8b4edced1e7003b4c142f02c21610dcd9ced7567aac2c
+bash: tree(HEAD~1)==tree(7d0df53): yes
+3269d125825dcc403ea9ab975fb5ab55d9a003e8
+7d0df53f35b30c4e33734c40fdda33e987ea96ee
+matlab/g2/lp2b1eq/G2_LP2B1EQ_GO.json
+run/receipt/summary absent

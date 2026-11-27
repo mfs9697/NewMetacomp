@@ -1,0 +1,10 @@
+[Warning: Name is nonexistent or not a directory: <drive>\Projects\8 - CohZonFEM\czm_project\CrackPath\CrackFromHoleLEFM\cfh] 
+[Warning: Name is nonexistent or not a directory: <drive>\Projects\8 - CohZonFEM\Asphalt\remmers2003] 
+SOURCE_COMMIT=72c04e130934424b7ae0b38ccf9017406e78a04b
+DIAG EQB-soft1-S9 old tip=1114 shared=1114 bitwise=1 d=0.000e+00 dx=0.000e+00 dy=0.000e+00
+DIAG EQB-soft1-S9 new tip=1114 shared=1114 bitwise=1 d=0.000e+00 dx=0.000e+00 dy=0.000e+00
+DIAG EQB-soft1-S9 topology pass=1 tip=1
+DIAG EQB-H-S10 old tip=1114 shared=1114 bitwise=0 d=1.421e-14 dx=-1.421e-14 dy=0.000e+00
+DIAG EQB-H-S10 new tip=1114 shared=1114 bitwise=0 d=1.421e-14 dx=-1.421e-14 dy=0.000e+00
+DIAG EQB-H-S10 topology pass=0 tip=0
+MATLAB_PROCESSES_END=1

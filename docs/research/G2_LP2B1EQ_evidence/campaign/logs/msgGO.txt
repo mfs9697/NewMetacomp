@@ -1,0 +1,8 @@
+LP2-B1-EQ: GO_LP2B1_EQ activation (GO file only, directly on the approved head 7d0df53)
+
+Investigator authorization: https://github.com/mfs9697/NewMetacomp/pull/79#issuecomment-7211904299
+Readiness review: https://github.com/mfs9697/NewMetacomp/pull/79#pullrequestreview-6084428945
+Campaign G2-LP2B1-EQ-001, run run_lp2b1_eq_v1: EQB-soft1-S9 then EQB-H-S10, one attempt each,
+0.40 mm only, global stop; contract evidence 35d89119... (committed sanitized tests_v3).
+
+Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>

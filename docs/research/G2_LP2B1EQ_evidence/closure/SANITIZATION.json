@@ -1,0 +1,96 @@
+{
+ "schema": "NewMetacomp.G2.LP2B1EQ.Sanitization.v1",
+ "rule": "absolute local paths replaced by <repo>, <temp>, <scratch>, <backup>, <home>, <drive>, <matlabroot>; test temp stamps by <stamp>; UTF-16 logs converted to UTF-8; MATLAB startup path warnings removed from logs; binaries (.mat, .f64) only in the archive",
+ "files": [
+  {
+   "file": "LP2B1EQ_PROTECTED_BEFORE.json",
+   "sourceSHA256": "c7f6584c901f0a5c1003e1d020f3afa41c3c67f4510dc4c72ad653d977cd65a9",
+   "publishedSHA256": "c7f6584c901f0a5c1003e1d020f3afa41c3c67f4510dc4c72ad653d977cd65a9",
+   "replacements": {}
+  },
+  {
+   "file": "PRESTART_s1.json",
+   "sourceSHA256": "ec9d755e31cace9751bb4a2830a807d2283344fa0f76e2c8c11a462e7c1c3183",
+   "publishedSHA256": "b83e0e1f809731b681fc2575a0085b2cb842da3fd9cf0273b2c09cc4f76c605c",
+   "replacements": {}
+  },
+  {
+   "file": "PRESTART_s2.json",
+   "sourceSHA256": "e8923a8f2270ae7f73087416a2d4e45eea94427b826c2e988bebf1b7ea398d5a",
+   "publishedSHA256": "c41b240037115023ff3fe190eb4cb5cce110bcec1f09c799140bf7ca1d88208e",
+   "replacements": {}
+  },
+  {
+   "file": "PRESTART_s2b.json",
+   "sourceSHA256": "d13de1ccb8b98234006b91d33b2ccb949694f62e7a4af17eeedae54ad8f849da",
+   "publishedSHA256": "62249f640c038890c5d3b7b5bb3e85b7dd5aa7f076c5fedab201ac7099474d4c",
+   "replacements": {}
+  },
+  {
+   "file": "PRESTART_s2c.json",
+   "sourceSHA256": "2311f6fc55c4b7716a81d1d07a9c1a0f32a81a9901588be370a0d774fd2f811f",
+   "publishedSHA256": "8cc7b8bd0de8af921113913ae8ae1d630238962e7367ddbac08af46e065a3999",
+   "replacements": {}
+  },
+  {
+   "file": "PRESTART_s2d.json",
+   "sourceSHA256": "f0703a56a054a40916e86aed13e6a5cb8249c4675f1d83cbcdc48e85bd67ab2f",
+   "publishedSHA256": "5e7158a092f9a6c8179d5e631d13f8cfe26b48a666371878e63997b9b2265974",
+   "replacements": {}
+  },
+  {
+   "file": "PRESTART_s3.json",
+   "sourceSHA256": "cffb260775ca817ec6990a9f1b5626aa3ad7af9504d89b2b14287d23d05983c7",
+   "publishedSHA256": "35739ede088da8c4d88dd58262fe7eb89ba6d5f61a91ce0b0cd1501c0a5dc5e0",
+   "replacements": {}
+  },
+  {
+   "file": "PRESTART_s3b.json",
+   "sourceSHA256": "0f78f241fff69ad7b87b3d4ec9e07a4e459a07eee86e76aeeca07fe83e6691fc",
+   "publishedSHA256": "612cf6a62a46e8094228a6a0010822ba4e9c5bfc4a8fef197ddb04b6257ac678",
+   "replacements": {}
+  },
+  {
+   "file": "PRESTART_s3c.json",
+   "sourceSHA256": "83dfb7108f9d4351327ec6dca350c0c4fb66f4cf22d17a93fbc751da9e9f6f20",
+   "publishedSHA256": "215f048336934d7958830f73cb7be8f4ce5321f83fab4df3b6412395967847c6",
+   "replacements": {}
+  },
+  {
+   "file": "PRESTART_s4.json",
+   "sourceSHA256": "c2e2b1c6e6cf1c46c22fe3eb93e7fe95c1813b41c0e6701ac5123872e1399185",
+   "publishedSHA256": "72bbbca5f512ef3631a5a60c296da1c949060a71efed33eac7aaf0456de0a1c2",
+   "replacements": {}
+  },
+  {
+   "file": "PRESTART_s4b.json",
+   "sourceSHA256": "73990468101b53b09ad94f68526c2d77e5dd97b11c9333d16d70ff77cd38ec17",
+   "publishedSHA256": "ad76a284301f12d95e9455625f594572639e27d165defa80876de25f0629fe16",
+   "replacements": {}
+  },
+  {
+   "file": "PRESTART_s4c.json",
+   "sourceSHA256": "0c519847d3e906941d8c5bfd76e73e8cc33f41c96bfcca87182bd526e721da96",
+   "publishedSHA256": "9a82c18d944b51266e3d430480222b07f193bc1cf91c64d480d46f0bf3a2a8e4",
+   "replacements": {}
+  },
+  {
+   "file": "PRESTART_s5.json",
+   "sourceSHA256": "2e3e8c902d184e465a7ee5e56c1e57a02c81cd2aad7f2c11cf4431f589bba5b1",
+   "publishedSHA256": "3bd526bf368b0b17d2deef0c4725219ff866649c7aede2748a1f61d5a1e3c613",
+   "replacements": {}
+  },
+  {
+   "file": "LP2B1EQ_HASHCHECK_v1.json",
+   "sourceSHA256": "9e30adfa724003355d089f1ad50170334ed08fc19c9c3a32cfd68491cb0d7b0b",
+   "publishedSHA256": "9e30adfa724003355d089f1ad50170334ed08fc19c9c3a32cfd68491cb0d7b0b",
+   "replacements": {}
+  },
+  {
+   "file": "LP2B1EQ_PROTECTED_AFTER.json",
+   "sourceSHA256": "96c04253cc48dd5bc04808b6d0f114f8ef56864d3c831df83abbacc0d4e6753a",
+   "publishedSHA256": "96c04253cc48dd5bc04808b6d0f114f8ef56864d3c831df83abbacc0d4e6753a",
+   "replacements": {}
+  }
+ ]
+}

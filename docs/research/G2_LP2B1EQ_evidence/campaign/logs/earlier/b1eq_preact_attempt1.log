@@ -1,0 +1,18 @@
+﻿[Warning: Name is nonexistent or not a directory: <drive>\Projects\8 - CohZonFEM\czm_project\CrackPath\CrackFromHoleLEFM\cfh] 
+[Warning: Name is nonexistent or not a directory: <drive>\Projects\8 - CohZonFEM\Asphalt\remmers2003] 
+matlab.exe : B1EQACT_ERROR MATLAB:UndefinedFunction: Undefined function 'g2_lp2a2_git' for input arguments of type 'cha
+r'.
+At <scratch>\sr1\too
+ls\runml.ps1:12 char:3
++   & $exe -batch ("run('" + $Script.Replace("'", "''") + "')") *> $log
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (B1EQACT_ERROR M...of type 'char'.:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+Undefined function 'g2_lp2a2_git' for input arguments of type 'char'.
+
+Error in b1eq_activation_checks (line 15)
+ R=struct();H=g2_lp2a2_git('head',ex);R.head=H.value;assert(H.ok&&strcmp(R.head,'7d0df53f35b30c4e33734c40fdda33e987ea96ee'),'B1EQACT:Head','Not at the approved head.');
+
+Error in run (line 91)
+evalin('caller', strcat(script, ';'));

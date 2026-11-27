@@ -1,0 +1,231 @@
+{
+ "schema": "NewMetacomp.G2.LP2B1EQ.Sanitization.v1",
+ "rule": "absolute local paths replaced by <repo>, <temp>, <scratch>, <backup>, <home>, <drive>, <matlabroot>; test temp stamps by <stamp>; UTF-16 logs converted to UTF-8; MATLAB startup path warnings removed from logs; binaries (.mat, .f64) only in the archive",
+ "files": [
+  {
+   "file": "s1_lint.log",
+   "sourceSHA256": "398d1e436cc7a4742a8224be468b510604a64396d85fd46521d0923ed08b8a06",
+   "publishedSHA256": "8bfb819fe9f1b02ad90384d9507eb12b30682bede350923d600245f49e4bbceb",
+   "replacements": {
+    "<drive>": 2
+   }
+  },
+  {
+   "file": "s1_lint.m",
+   "sourceSHA256": "d26e64d4d0872dfa37ae43660dda0487c9466da8369cb7e0506c3563746417ee",
+   "publishedSHA256": "ba18cf526fe6a89b5b8531b63d6e7dfd631af3a61c928e133d6785d8965f9193",
+   "replacements": {
+    "<repo>": 1
+   }
+  },
+  {
+   "file": "s2_wp0.log",
+   "sourceSHA256": "ac22cffcaae107174e37cb5abbe8d6d27198d98fb9fbf9831f5792ebdefbb19f",
+   "publishedSHA256": "54bbfe86d0e4c6bde0742febe33089f61514baa7d2229eaa26af9689620e68c8",
+   "replacements": {
+    "<scratch>": 1,
+    "<drive>": 2
+   }
+  },
+  {
+   "file": "s2_wp0.m",
+   "sourceSHA256": "c690612f6702cad023b0f8b340d2736a59ac0946cffccface8df82ca6641fae3",
+   "publishedSHA256": "f184374cf5fc917a195ed97f3fecbe4971ba5b83bcdcca960c829c800314b539",
+   "replacements": {
+    "<repo>": 1
+   }
+  },
+  {
+   "file": "s2b_wp0.log",
+   "sourceSHA256": "38cd212c89db1f64625b4fa23bc5db82252440b96af2239eeea79351ce6ca682",
+   "publishedSHA256": "6422bbe63977d02d58caf15b98227ab0a3b4b23aab9178c07b2653a21d030306",
+   "replacements": {
+    "<scratch>": 1,
+    "<drive>": 2
+   }
+  },
+  {
+   "file": "s2b_wp0.m",
+   "sourceSHA256": "8f38cf6242ca50f4583bc886ba27100079cb2e3a704682cd6e600b633b381be8",
+   "publishedSHA256": "21119a992d4571c1b51ccb5596fe878b12f603db5bb52ab3d8639bd7d6c8b415",
+   "replacements": {
+    "<repo>": 1
+   }
+  },
+  {
+   "file": "s2c_wp0.log",
+   "sourceSHA256": "affe5bb019c2336e9edc2cab8fcac28e108da288cac557a1473c34d3d0b7329e",
+   "publishedSHA256": "8345d2cf63cc38f5119303e893f202c6b6aad9afd06949af19b549ad453a6c43",
+   "replacements": {
+    "<drive>": 2
+   }
+  },
+  {
+   "file": "s2c_wp0.m",
+   "sourceSHA256": "05df8f1cc4a0b06676703f27f61a4370a70eb8f1c864df8473abca780441b83f",
+   "publishedSHA256": "8b64a045abd6068c816c388bbca0d50e52ebe3f49584d64f759173ee02d08c0e",
+   "replacements": {
+    "<repo>": 1
+   }
+  },
+  {
+   "file": "s2d_wp0.log",
+   "sourceSHA256": "cee2e58e55a5f8093f1c446e1140d92faf2a15905d27e2f282a8eb0f9ea784df",
+   "publishedSHA256": "b5532fdc067126077b1a944be864bd37df408932328e507d13f39270b4184a4e",
+   "replacements": {
+    "<drive>": 2
+   }
+  },
+  {
+   "file": "s2d_wp0.m",
+   "sourceSHA256": "9da523a747e4d62ad53b54de4ec05ae2b888e8e4445a15d447ee607b1e894184",
+   "publishedSHA256": "7e386429557a2e0a8901bbfe4cc34003e5568b1c1ecd43a55c7f48362801a6d3",
+   "replacements": {
+    "<repo>": 1
+   }
+  },
+  {
+   "file": "s3_replay.log",
+   "sourceSHA256": "dc4437fe964b5ec5d90ca7762fbaf8f70955682013e011f1d3756d5512130f07",
+   "publishedSHA256": "33ce5bbbdd431612b4318547609679ab660464d7a21f96bd9bda2db8696777fd",
+   "replacements": {
+    "<drive>": 2
+   }
+  },
+  {
+   "file": "s3_replay.m",
+   "sourceSHA256": "2ca14e4597caf9f3ea5734c6d99996aff19847a9e9b19dd5a0842921a2f5d14a",
+   "publishedSHA256": "6fd005a624e28176aa06403eafb229408036c726b7cb289b59285a51537f5f7a",
+   "replacements": {
+    "<repo>": 1
+   }
+  },
+  {
+   "file": "s3b_replay.log",
+   "sourceSHA256": "28d7bed20dac200a91c873da0cb52997018f5475ccebc2651752dd47a04e7fe2",
+   "publishedSHA256": "1ffa7204a3abf0ebda2be4e6a956b320b4c1ffe9056d70eb801eab2caad92c2c",
+   "replacements": {
+    "<drive>": 2
+   }
+  },
+  {
+   "file": "s3b_replay.m",
+   "sourceSHA256": "11262bf9735fe73a92bea1dd1473bf77d24632154d83d9239e08f716476e3748",
+   "publishedSHA256": "fd5fd8b65a9474668149f25231ae21492cc6f173b354bc35f8e30976b139abc8",
+   "replacements": {
+    "<repo>": 1
+   }
+  },
+  {
+   "file": "s3c_replay.log",
+   "sourceSHA256": "f285b02b1afb8c35cc9c7ea5c8b1054fbfcde3ac7f136001841a72aae7328239",
+   "publishedSHA256": "c88800ce7afb4b99bd24d4ddbfd584bbd551cf07680188c89511de7165dedbc7",
+   "replacements": {
+    "<drive>": 2
+   }
+  },
+  {
+   "file": "s3c_replay.m",
+   "sourceSHA256": "805be421b7ffdc796806541f800b3643769ca37d0ad95844a3fa0a03c211228f",
+   "publishedSHA256": "c45159fb7c29ef8efee86c6a6d87ba337f253fd2f12bb2c95902baf0f94c6667",
+   "replacements": {
+    "<repo>": 1
+   }
+  },
+  {
+   "file": "s4_tests.m",
+   "sourceSHA256": "e6dc55348fbea9c6b92ced40876b3e33353c69e159295ce49dbfb63909c89fe4",
+   "publishedSHA256": "681016e55e327b19f42af78e7c32ba9dfa1d77199bf3c795d9a7351f98532109",
+   "replacements": {
+    "<repo>": 1
+   }
+  },
+  {
+   "file": "s4_tests_v1.log",
+   "sourceSHA256": "0070ba107242f1bb0bbaf8ce8a0fce1fd035aec12c3aa7fa15d4511fa315886f",
+   "publishedSHA256": "cad9561589f5927de246b1f042bc5af598b9097af8ce9b36e131c02a5c03e68d",
+   "replacements": {
+    "<scratch>": 1,
+    "<drive>": 2
+   }
+  },
+  {
+   "file": "s4b_tests.m",
+   "sourceSHA256": "b5399b8f956d68837a4a423ecbbacb4c448925a0ecc30088a1f2d8709ee13e71",
+   "publishedSHA256": "b50ad80aa11fd7aff40a13b660ac154812bf53ef4e9b16e8fa82f48413b78d62",
+   "replacements": {
+    "<repo>": 1
+   }
+  },
+  {
+   "file": "s4b_tests_v2.log",
+   "sourceSHA256": "2a775670c839281cce2d786d2c94f5dacb19bf6be209c2a5f43113aa17706ad4",
+   "publishedSHA256": "079acbd7975a59ea49e4a9051aa9ff54c83c655c8ed3a4dfeaedb50fd512b1c2",
+   "replacements": {
+    "<drive>": 2
+   }
+  },
+  {
+   "file": "s4c_tests.m",
+   "sourceSHA256": "080dce3113af4bf956ba1f40caaae79b8e8cc34f4649a5070297eb426811422d",
+   "publishedSHA256": "3887526f90a298342007266c932891a94c2609b545f690455042eb2db76cf498",
+   "replacements": {
+    "<repo>": 1
+   }
+  },
+  {
+   "file": "s4c_tests_v3.log",
+   "sourceSHA256": "5b15b3e1786ec197c65f9d50c8bc375214aa79c5e5f795def66a6804a4aaca28",
+   "publishedSHA256": "eada836d0d6d5e99d8e650af011dccadc4d9ab789ee5c086c15009acc5bc3185",
+   "replacements": {
+    "<drive>": 2
+   }
+  },
+  {
+   "file": "s5_diag.log",
+   "sourceSHA256": "3d36d0b1f3aff0b4804203e185bb625610fcd3a9a58ff1bd3d4d6a37d4d745bd",
+   "publishedSHA256": "80c10398369504939bf7eb166db0c111cdd3dc25a2dbad35e719d3ec9ae9c2f5",
+   "replacements": {
+    "<drive>": 2
+   }
+  },
+  {
+   "file": "s5_diag.m",
+   "sourceSHA256": "9b3585e4dac00e954319a3c677b8049947fb3dc9f55ce2f1fd99a47ac67c0b34",
+   "publishedSHA256": "40c1df9beb0f733360888e7ea0f156610c9c011da315c99c236605fe7d12cb6e",
+   "replacements": {
+    "<repo>": 1
+   }
+  },
+  {
+   "file": "publish.py",
+   "sourceSHA256": "0613ee759e5a1c6baeac4099fad7a984cbf7b207e2b30966e47ee03382bf0bc4",
+   "publishedSHA256": "db0876e7033b8101396a4eaa55fd0d8c5c8e6b93423f1a9be6cfafae412cb6e5",
+   "replacements": {
+    "<scratch>": 2,
+    "<temp>": 1,
+    "<repo>": 2,
+    "<backup>": 1,
+    "<matlabroot>": 1,
+    "<drive>": 1,
+    "<home>": 2
+   }
+  },
+  {
+   "file": "repin.sh",
+   "sourceSHA256": "10976a9e99d7ff3cc4e89cf7d142152513a6ac4642fdd674e128d9ffa57aa72e",
+   "publishedSHA256": "b43d873e6d085fe46ba1364d4a90f8ad306217deef7123213eefbf3c349506f0",
+   "replacements": {
+    "<scratch>": 1,
+    "<repo>": 1,
+    "<home>": 1
+   }
+  },
+  {
+   "file": "digest.py",
+   "sourceSHA256": "6105eae72b7d96be7f483cccf8c53d6efc6fcf0a120a48dbfe47c442e00113dc",
+   "publishedSHA256": "6105eae72b7d96be7f483cccf8c53d6efc6fcf0a120a48dbfe47c442e00113dc",
+   "replacements": {}
+  }
+ ]
+}

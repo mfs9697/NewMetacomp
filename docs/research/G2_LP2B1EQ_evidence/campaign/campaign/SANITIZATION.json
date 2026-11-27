@@ -1,0 +1,22 @@
+{
+ "schema": "NewMetacomp.G2.LP2B1EQ.Sanitization.v1",
+ "rule": "absolute local paths replaced by <repo>, <worktree>, <temp>, <scratch>, <backup>, <home>, <drive>, <matlabroot>; UTF-16 logs converted to UTF-8; MATLAB startup path warnings removed from logs; binaries (.mat, .f64) only in the archive; figures byte for byte",
+ "files": [
+  {
+   "file": "LP2B1EQ_CAMPAIGN.json",
+   "sourceSHA256": "7dbddb7aab58786c1d5b00bcdba3de2ca9d8deba691a62125166a8998c1dea75",
+   "publishedSHA256": "77fe5ef9fb4c10ecc8cefc4bbdbf2f8a1e20d542615f5ef8a881f48f78bd4d0d",
+   "replacements": {
+    "<repo>": 3
+   }
+  },
+  {
+   "file": "LP2B1EQ_PRECHECK.json",
+   "sourceSHA256": "6b8b5cab372c7adccf9a29c9d53183750f28d4e7fc8d1aa5607e970375494496",
+   "publishedSHA256": "d7460998a4f7def2911050acc74b798eaaf7159d0ba78e9552ba98b1c66cd5a5",
+   "replacements": {
+    "<repo>": 3
+   }
+  }
+ ]
+}

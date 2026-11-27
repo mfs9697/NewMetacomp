@@ -1,0 +1,530 @@
+[
+  {
+    "file": "EQB_soft1_S9_arch_u.f64",
+    "shape": [
+      122838,
+      1
+    ],
+    "class": "double"
+  },
+  {
+    "file": "EQB_soft1_S9_arch_X6.f64",
+    "shape": [
+      61419,
+      2
+    ],
+    "class": "double"
+  },
+  {
+    "file": "EQB_soft1_S9_arch_T6.f64",
+    "shape": [
+      30187,
+      6
+    ],
+    "class": "double"
+  },
+  {
+    "file": "EQB_soft1_S9_arch_up.f64",
+    "shape": [
+      319,
+      1
+    ],
+    "class": "double"
+  },
+  {
+    "file": "EQB_soft1_S9_arch_lo.f64",
+    "shape": [
+      319,
+      1
+    ],
+    "class": "double"
+  },
+  {
+    "file": "EQB_soft1_S9_arch_poly.f64",
+    "shape": [
+      11,
+      2
+    ],
+    "class": "double"
+  },
+  {
+    "file": "EQB_soft1_S9_arch_statePoly.f64",
+    "shape": [
+      11,
+      2
+    ],
+    "class": "double"
+  },
+  {
+    "file": "EQB_soft1_S9_arch_tangent.f64",
+    "shape": [
+      1,
+      2
+    ],
+    "class": "double"
+  },
+  {
+    "file": "EQB_soft1_S9_arch_owner.f64",
+    "shape": [
+      30187,
+      1
+    ],
+    "class": "double"
+  },
+  {
+    "file": "EQB_soft1_S9_arch_labels.f64",
+    "shape": [
+      30187,
+      1
+    ],
+    "class": "double"
+  },
+  {
+    "file": "EQB_soft1_S9_qual_T3.f64",
+    "shape": [
+      30183,
+      3
+    ],
+    "class": "double"
+  },
+  {
+    "file": "EQB_soft1_S9_qual_T6.f64",
+    "shape": [
+      30183,
+      6
+    ],
+    "class": "double"
+  },
+  {
+    "file": "EQB_soft1_S9_qual_X3.f64",
+    "shape": [
+      15628,
+      2
+    ],
+    "class": "double"
+  },
+  {
+    "file": "EQB_soft1_S9_qual_X6.f64",
+    "shape": [
+      61441,
+      2
+    ],
+    "class": "double"
+  },
+  {
+    "file": "EQB_soft1_S9_qual_crackPolyline.f64",
+    "shape": [
+      11,
+      2
+    ],
+    "class": "double"
+  },
+  {
+    "file": "EQB_soft1_S9_qual_extraVertexXY.f64",
+    "shape": [
+      3,
+      2
+    ],
+    "class": "double"
+  },
+  {
+    "file": "EQB_soft1_S9_qual_lowerBankT6.f64",
+    "shape": [
+      349,
+      1
+    ],
+    "class": "double"
+  },
+  {
+    "file": "EQB_soft1_S9_qual_nodalQ.f64",
+    "shape": [
+      61441,
+      1
+    ],
+    "class": "double"
+  },
+  {
+    "file": "EQB_soft1_S9_qual_physicalTipNode.f64",
+    "shape": [
+      1,
+      1
+    ],
+    "class": "double"
+  },
+  {
+    "file": "EQB_soft1_S9_qual_qActiveT6Rows.f64",
+    "shape": [
+      2443,
+      1
+    ],
+    "class": "double"
+  },
+  {
+    "file": "EQB_soft1_S9_qual_upperBankT6.f64",
+    "shape": [
+      349,
+      1
+    ],
+    "class": "double"
+  },
+  {
+    "file": "EQB_soft1_S9_new_X3.f64",
+    "shape": [
+      15628,
+      2
+    ],
+    "class": "double"
+  },
+  {
+    "file": "EQB_soft1_S9_new_T3.f64",
+    "shape": [
+      30183,
+      3
+    ],
+    "class": "double"
+  },
+  {
+    "file": "EQB_soft1_S9_new_X6.f64",
+    "shape": [
+      61441,
+      2
+    ],
+    "class": "double"
+  },
+  {
+    "file": "EQB_soft1_S9_new_T6.f64",
+    "shape": [
+      30183,
+      6
+    ],
+    "class": "double"
+  },
+  {
+    "file": "EQB_soft1_S9_new_upperBankT6.f64",
+    "shape": [
+      349,
+      1
+    ],
+    "class": "double"
+  },
+  {
+    "file": "EQB_soft1_S9_new_lowerBankT6.f64",
+    "shape": [
+      349,
+      1
+    ],
+    "class": "double"
+  },
+  {
+    "file": "EQB_soft1_S9_new_nodalQ.f64",
+    "shape": [
+      61441,
+      1
+    ],
+    "class": "double"
+  },
+  {
+    "file": "EQB_soft1_S9_new_qActiveT6Rows.f64",
+    "shape": [
+      2443,
+      1
+    ],
+    "class": "double"
+  },
+  {
+    "file": "EQB_soft1_S9_new_crackPolyline.f64",
+    "shape": [
+      11,
+      2
+    ],
+    "class": "double"
+  },
+  {
+    "file": "EQB_soft1_S9_new_owner.f64",
+    "shape": [
+      30183,
+      1
+    ],
+    "class": "double"
+  },
+  {
+    "file": "EQB_soft1_S9_new_labels.f64",
+    "shape": [
+      30183,
+      1
+    ],
+    "class": "double"
+  },
+  {
+    "file": "EQB_soft1_S9_new_u.f64",
+    "shape": [
+      122882,
+      1
+    ],
+    "class": "double"
+  },
+  {
+    "file": "EQB_H_S10_arch_u.f64",
+    "shape": [
+      123642,
+      1
+    ],
+    "class": "double"
+  },
+  {
+    "file": "EQB_H_S10_arch_X6.f64",
+    "shape": [
+      61821,
+      2
+    ],
+    "class": "double"
+  },
+  {
+    "file": "EQB_H_S10_arch_T6.f64",
+    "shape": [
+      30379,
+      6
+    ],
+    "class": "double"
+  },
+  {
+    "file": "EQB_H_S10_arch_up.f64",
+    "shape": [
+      337,
+      1
+    ],
+    "class": "double"
+  },
+  {
+    "file": "EQB_H_S10_arch_lo.f64",
+    "shape": [
+      337,
+      1
+    ],
+    "class": "double"
+  },
+  {
+    "file": "EQB_H_S10_arch_poly.f64",
+    "shape": [
+      12,
+      2
+    ],
+    "class": "double"
+  },
+  {
+    "file": "EQB_H_S10_arch_statePoly.f64",
+    "shape": [
+      12,
+      2
+    ],
+    "class": "double"
+  },
+  {
+    "file": "EQB_H_S10_arch_tangent.f64",
+    "shape": [
+      1,
+      2
+    ],
+    "class": "double"
+  },
+  {
+    "file": "EQB_H_S10_arch_owner.f64",
+    "shape": [
+      30379,
+      1
+    ],
+    "class": "double"
+  },
+  {
+    "file": "EQB_H_S10_arch_labels.f64",
+    "shape": [
+      30379,
+      1
+    ],
+    "class": "double"
+  },
+  {
+    "file": "EQB_H_S10_qual_T3.f64",
+    "shape": [
+      30349,
+      3
+    ],
+    "class": "double"
+  },
+  {
+    "file": "EQB_H_S10_qual_T6.f64",
+    "shape": [
+      30349,
+      6
+    ],
+    "class": "double"
+  },
+  {
+    "file": "EQB_H_S10_qual_X3.f64",
+    "shape": [
+      15721,
+      2
+    ],
+    "class": "double"
+  },
+  {
+    "file": "EQB_H_S10_qual_X6.f64",
+    "shape": [
+      61793,
+      2
+    ],
+    "class": "double"
+  },
+  {
+    "file": "EQB_H_S10_qual_crackPolyline.f64",
+    "shape": [
+      12,
+      2
+    ],
+    "class": "double"
+  },
+  {
+    "file": "EQB_H_S10_qual_extraVertexXY.f64",
+    "shape": [
+      3,
+      2
+    ],
+    "class": "double"
+  },
+  {
+    "file": "EQB_H_S10_qual_lowerBankT6.f64",
+    "shape": [
+      369,
+      1
+    ],
+    "class": "double"
+  },
+  {
+    "file": "EQB_H_S10_qual_nodalQ.f64",
+    "shape": [
+      61793,
+      1
+    ],
+    "class": "double"
+  },
+  {
+    "file": "EQB_H_S10_qual_physicalTipNode.f64",
+    "shape": [
+      1,
+      1
+    ],
+    "class": "double"
+  },
+  {
+    "file": "EQB_H_S10_qual_qActiveT6Rows.f64",
+    "shape": [
+      2443,
+      1
+    ],
+    "class": "double"
+  },
+  {
+    "file": "EQB_H_S10_qual_upperBankT6.f64",
+    "shape": [
+      369,
+      1
+    ],
+    "class": "double"
+  },
+  {
+    "file": "EQB_H_S10_new_X3.f64",
+    "shape": [
+      15721,
+      2
+    ],
+    "class": "double"
+  },
+  {
+    "file": "EQB_H_S10_new_T3.f64",
+    "shape": [
+      30349,
+      3
+    ],
+    "class": "double"
+  },
+  {
+    "file": "EQB_H_S10_new_X6.f64",
+    "shape": [
+      61793,
+      2
+    ],
+    "class": "double"
+  },
+  {
+    "file": "EQB_H_S10_new_T6.f64",
+    "shape": [
+      30349,
+      6
+    ],
+    "class": "double"
+  },
+  {
+    "file": "EQB_H_S10_new_upperBankT6.f64",
+    "shape": [
+      369,
+      1
+    ],
+    "class": "double"
+  },
+  {
+    "file": "EQB_H_S10_new_lowerBankT6.f64",
+    "shape": [
+      369,
+      1
+    ],
+    "class": "double"
+  },
+  {
+    "file": "EQB_H_S10_new_nodalQ.f64",
+    "shape": [
+      61793,
+      1
+    ],
+    "class": "double"
+  },
+  {
+    "file": "EQB_H_S10_new_qActiveT6Rows.f64",
+    "shape": [
+      2443,
+      1
+    ],
+    "class": "double"
+  },
+  {
+    "file": "EQB_H_S10_new_crackPolyline.f64",
+    "shape": [
+      12,
+      2
+    ],
+    "class": "double"
+  },
+  {
+    "file": "EQB_H_S10_new_owner.f64",
+    "shape": [
+      30349,
+      1
+    ],
+    "class": "double"
+  },
+  {
+    "file": "EQB_H_S10_new_labels.f64",
+    "shape": [
+      30349,
+      1
+    ],
+    "class": "double"
+  },
+  {
+    "file": "EQB_H_S10_new_u.f64",
+    "shape": [
+      123586,
+      1
+    ],
+    "class": "double"
+  }
+]

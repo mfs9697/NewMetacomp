@@ -1,0 +1,8 @@
+LP2-B1-EQ: revoke GO_LP2B1_EQ (campaign G2-LP2B1-EQ-001 executed once)
+
+Deletes matlab/g2/lp2b1eq/G2_LP2B1EQ_GO.json only; the tree returns to the approved head 7d0df53.
+Entry point g2_lp2b1eq_external_run called once; 2 physical solves attempted and completed
+(EQB-soft1-S9, EQB-H-S10); controller outcome EQUIVALENT_AT_0p40, verifier VERIFIED_EQUIVALENT.
+Independent audit, post-revocation refusals and evidence follow in a separate commit.
+
+Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>

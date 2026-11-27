@@ -1,0 +1,1449 @@
+{
+ "schema": "NewMetacomp.G2.LP2B1EQ.IndependentAudit.v1",
+ "pass": true,
+ "problems": [],
+ "checks": {
+  "runSetExact": true,
+  "receiptSetExact": true,
+  "noHoldFiles": true,
+  "dumpRunHashesEqualAudit": true,
+  "manifestsMatchFiles": true,
+  "summaryCopiesIdentical": true,
+  "summaryOutcome": true,
+  "precheck": true,
+  "precheckFileEqualsSummary": true,
+  "goEqualsAuthorizationRecord": true,
+  "activationCommit": true,
+  "revocationCommit": true,
+  "tokenComponents": true,
+  "receiptLinks": true,
+  "EQB-soft1-S9:recordLinks": true,
+  "EQB-soft1-S9:activationLinks": true,
+  "EQB-soft1-S9:identity": true,
+  "EQB-soft1-S9:archivedPins": true,
+  "EQB-soft1-S9:canonicalDigest": true,
+  "EQB-soft1-S9:arraysEqualQualification": true,
+  "EQB-soft1-S9:polylineIdentity": true,
+  "EQB-soft1-S9:meshQuality": true,
+  "EQB-soft1-S9:banks": true,
+  "EQB-soft1-S9:protectedTopologyDisk": true,
+  "EQB-soft1-S9:phase": true,
+  "EQB-soft1-S9:solverGates": true,
+  "EQB-soft1-S9:uShapeAndLoad": true,
+  "EQB-soft1-S9:nextTipRecurrenceReproducesArchived": true,
+  "EQB-soft1-S9:C8nearTipIdentity": true,
+  "EQB-soft1-S9:C8noExtrapolation": true,
+  "EQB-soft1-S9:metricsRecomputed": true,
+  "EQB-soft1-S9:metricKeysComplete": true,
+  "EQB-soft1-S9:criteriaFlagsEqualRecorded": true,
+  "EQB-soft1-S9:jsonEqualsMatAndVectors": true,
+  "EQB-soft1-S9:memoryGate": true,
+  "EQB-H-S10:recordLinks": true,
+  "EQB-H-S10:activationLinks": true,
+  "EQB-H-S10:identity": true,
+  "EQB-H-S10:archivedPins": true,
+  "EQB-H-S10:canonicalDigest": true,
+  "EQB-H-S10:arraysEqualQualification": true,
+  "EQB-H-S10:polylineIdentity": true,
+  "EQB-H-S10:meshQuality": true,
+  "EQB-H-S10:banks": true,
+  "EQB-H-S10:protectedTopologyDisk": true,
+  "EQB-H-S10:phase": true,
+  "EQB-H-S10:exactZeroActiveArea": true,
+  "EQB-H-S10:solverGates": true,
+  "EQB-H-S10:uShapeAndLoad": true,
+  "EQB-H-S10:nextTipRecurrenceReproducesArchived": true,
+  "EQB-H-S10:C8nearTipIdentity": true,
+  "EQB-H-S10:C8noExtrapolation": true,
+  "EQB-H-S10:metricsRecomputed": true,
+  "EQB-H-S10:metricKeysComplete": true,
+  "EQB-H-S10:criteriaFlagsEqualRecorded": true,
+  "EQB-H-S10:jsonEqualsMatAndVectors": true,
+  "EQB-H-S10:memoryGate": true,
+  "ordering": true,
+  "counts": true
+ },
+ "detail": {
+  "runSetExact": {
+   "files": 20,
+   "unexpected": [],
+   "missing": []
+  },
+  "receiptSetExact": [
+   "G2-LP2B1-EQ-001/RECEIPT.mat",
+   "G2-LP2B1-EQ-001/RECEIPT.mat.manifest.json"
+  ],
+  "manifestsMatchFiles": {
+   "run_lp2b1_eq_v1/EQB-H-S10/COMPARISON.mat.manifest.json": true,
+   "run_lp2b1_eq_v1/EQB-H-S10/PHASE.mat.manifest.json": true,
+   "run_lp2b1_eq_v1/EQB-H-S10/SOLUTION.mat.manifest.json": true,
+   "run_lp2b1_eq_v1/EQB-soft1-S9/COMPARISON.mat.manifest.json": true,
+   "run_lp2b1_eq_v1/EQB-soft1-S9/PHASE.mat.manifest.json": true,
+   "run_lp2b1_eq_v1/EQB-soft1-S9/SOLUTION.mat.manifest.json": true,
+   "RECEIPT": true
+  },
+  "summaryCopiesIdentical": "7dbddb7aab58786c1d5b00bcdba3de2ca9d8deba691a62125166a8998c1dea75",
+  "summaryOutcome": {
+   "outcome": "EQUIVALENT_AT_0p40",
+   "solvesCalled": 2,
+   "verify": "VERIFIED_EQUIVALENT",
+   "wall_s": 51.3406906
+  },
+  "precheck": {
+   "memgateFreeGiB": 8.133686065673828,
+   "parent": "7d0df53f35b30c4e33734c40fdda33e987ea96ee",
+   "head": "3269d125825dcc403ea9ab975fb5ab55d9a003e8"
+  },
+  "activationCommit": {
+   "parent": "7d0df53f35b30c4e33734c40fdda33e987ea96ee",
+   "changed": [
+    "matlab/g2/lp2b1eq/G2_LP2B1EQ_GO.json"
+   ]
+  },
+  "revocationCommit": {
+   "treeEqualsApproved": true
+  },
+  "tokenComponents": {
+   "policy": "b113a7c6d7b2e8fe9950d817ccca3c851c05f1e347c73f66c604b9c41e54eecb",
+   "lp2b1eqsource": "74a0edd827daca5714a1347705abc1429a7a573116ad3c438f9e5a1c12dfbf1f"
+  },
+  "receiptLinks": {
+   "openedUTC": "2026-11-27T08:23:04.250Z",
+   "goFileSHA256": "6abdc02b7ba3d088b9d8b4edced1e7003b4c142f02c21610dcd9ced7567aac2c"
+  },
+  "goFileSHA256": "6abdc02b7ba3d088b9d8b4edced1e7003b4c142f02c21610dcd9ced7567aac2c",
+  "EQB-soft1-S9:canonicalDigest": "7535d71ad4790f3a24a47d03e27c3d73d8ba61df03050a2e952accfeffebee16",
+  "EQB-soft1-S9:meshQuality": {
+   "T3": 30183,
+   "minArea_mm2": 0.0007517581630071008
+  },
+  "EQB-soft1-S9:banks": {
+   "new": {
+    "stations": 349,
+    "pairResidual_mm": 0.0,
+    "tipNode": 1114,
+    "tipOffset_mm": 0.0
+   },
+   "archived": {
+    "stations": 319,
+    "pairResidual_mm": 0.0,
+    "tipNode": 1114,
+    "tipOffset_mm": 0.0
+   }
+  },
+  "EQB-soft1-S9:protectedTopologyDisk": {
+   "elementsInDisk": 2916,
+   "nodesInDisk": 5953,
+   "nodeCoordinatesBitwiseEqual": true
+  },
+  "EQB-soft1-S9:phase": {
+   "ownerCountsNew": [
+    17909,
+    4090,
+    4100,
+    4084
+   ],
+   "ownerCountsArchived": [
+    17927,
+    4076,
+    4084,
+    4100
+   ],
+   "labelCountsNew": [
+    26093,
+    4090
+   ],
+   "labelCountsArchived": [
+    26111,
+    4076
+   ],
+   "activeAreaRecomputedNew_mm2": 1012.1525285981616,
+   "activeAreaRecomputedArchived_mm2": 1012.1525285981616,
+   "activeAreaRecordedNew_mm2": 1012.152528598162,
+   "activeAreaRecordedArchived_mm2": 1012.152528598162
+  },
+  "EQB-soft1-S9:solverGates": [
+   "EDIquadrature",
+   "JenergyIdentity",
+   "KIpositive",
+   "activeAnnulusResultant",
+   "activeInterfaceNodalForceBalance",
+   "blindCODversusEDI",
+   "conditionalHighMixityKIIagreement",
+   "contourIndependence",
+   "elasticEquilibrium",
+   "heterogeneousEnergyIdentity",
+   "loadThicknessModulus",
+   "qSupportInsideCore",
+   "qSupportMatrixPhaseOnly",
+   "qSupportRingOwnerFree",
+   "stiffnessPositiveDefinite",
+   "wholeCrackOpening"
+  ],
+  "EQB-soft1-S9:uShapeAndLoad": {
+   "u_new": 122882,
+   "u_arch": 122838
+  },
+  "EQB-soft1-S9:nextTipRecurrenceReproducesArchived": 0.0,
+  "EQB-soft1-S9:C8nearTipIdentity": {
+   "nearNew": 57,
+   "nearArchived": 57,
+   "maxMatchDistance_mm": 0.0
+  },
+  "EQB-soft1-S9:C8noExtrapolation": {
+   "newRange": [
+    0.0,
+    61.39999999999999
+   ],
+   "archivedRange": [
+    0.0,
+    61.39999999999999
+   ]
+  },
+  "EQB-soft1-S9:metricsRecomputed": {},
+  "EQB-soft1-S9:metricKeysComplete": [
+   "archivedSolverGatesPass",
+   "chordsEqual",
+   "newMTSadmissible",
+   "newSolverGatesPass"
+  ],
+  "EQB-soft1-S9:jsonEqualsMatAndVectors": {
+   "maxMetricJsonMatDiff": 0.0
+  },
+  "EQB-soft1-S9:memoryGate": {
+   "pass": true,
+   "minGiB": 7,
+   "freeGiB": 7.930103302001953,
+   "reason": "OK"
+  },
+  "EQB-H-S10:canonicalDigest": "45298fae6257674b99de036341b6d0c05b55fbb6bb7be635786f8ae71bb068e3",
+  "EQB-H-S10:meshQuality": {
+   "T3": 30349,
+   "minArea_mm2": 0.0007517581630072173
+  },
+  "EQB-H-S10:banks": {
+   "new": {
+    "stations": 369,
+    "pairResidual_mm": 0.0,
+    "tipNode": 1114,
+    "tipOffset_mm": 1.4210854715202004e-14
+   },
+   "archived": {
+    "stations": 337,
+    "pairResidual_mm": 0.0,
+    "tipNode": 1114,
+    "tipOffset_mm": 1.4210854715202004e-14
+   }
+  },
+  "EQB-H-S10:protectedTopologyDisk": {
+   "elementsInDisk": 2916,
+   "nodesInDisk": 5953,
+   "nodeCoordinatesBitwiseEqual": true
+  },
+  "EQB-H-S10:phase": {
+   "ownerCountsNew": [
+    18087,
+    4088,
+    4080,
+    4094
+   ],
+   "ownerCountsArchived": [
+    18121,
+    4086,
+    4080,
+    4092
+   ],
+   "labelCountsNew": [
+    30349,
+    0
+   ],
+   "labelCountsArchived": [
+    30379,
+    0
+   ],
+   "activeAreaRecomputedNew_mm2": 0.0,
+   "activeAreaRecomputedArchived_mm2": 0.0,
+   "activeAreaRecordedNew_mm2": 0,
+   "activeAreaRecordedArchived_mm2": 0
+  },
+  "EQB-H-S10:solverGates": [
+   "EDIquadrature",
+   "JenergyIdentity",
+   "KIpositive",
+   "activeAnnulusResultant",
+   "activeInterfaceNodalForceBalance",
+   "blindCODversusEDI",
+   "conditionalHighMixityKIIagreement",
+   "contourIndependence",
+   "elasticEquilibrium",
+   "heterogeneousEnergyIdentity",
+   "loadThicknessModulus",
+   "qSupportInsideCore",
+   "qSupportMatrixPhaseOnly",
+   "qSupportRingOwnerFree",
+   "stiffnessPositiveDefinite",
+   "wholeCrackOpening"
+  ],
+  "EQB-H-S10:uShapeAndLoad": {
+   "u_new": 123586,
+   "u_arch": 123642
+  },
+  "EQB-H-S10:nextTipRecurrenceReproducesArchived": 0.0,
+  "EQB-H-S10:C8nearTipIdentity": {
+   "nearNew": 57,
+   "nearArchived": 57,
+   "maxMatchDistance_mm": 0.0
+  },
+  "EQB-H-S10:C8noExtrapolation": {
+   "newRange": [
+    0.0,
+    65.39999999999999
+   ],
+   "archivedRange": [
+    0.0,
+    65.39999999999999
+   ]
+  },
+  "EQB-H-S10:metricsRecomputed": {},
+  "EQB-H-S10:metricKeysComplete": [
+   "archivedSolverGatesPass",
+   "chordsEqual",
+   "newMTSadmissible",
+   "newSolverGatesPass"
+  ],
+  "EQB-H-S10:jsonEqualsMatAndVectors": {
+   "maxMetricJsonMatDiff": 0.0
+  },
+  "EQB-H-S10:memoryGate": {
+   "pass": true,
+   "minGiB": 7,
+   "freeGiB": 7.8711700439453125,
+   "reason": "OK"
+  },
+  "ordering": {
+   "receipt->soft1 comparison->H geometry->H comparison->summary (s)": [
+    0,
+    23.47399663925171,
+    34.973750829696655,
+    43.18910336494446,
+    45.00662064552307
+   ]
+  },
+  "counts": {
+   "entryCalls": 1,
+   "physicalSolveLines": 2,
+   "geometryAdmissions": 2,
+   "caseCalls": 2,
+   "solutionRecords": 2
+  }
+ },
+ "physicalSolvesAttempted": 2,
+ "physicalSolvesCompleted": 2,
+ "caseCalls": 2,
+ "entryInvocations": 1,
+ "results": {
+  "EQB-soft1-S9": {
+   "diagnostics": {
+    "signedWholeMaxAt_station_mm": 25.599999999999994,
+    "signedWholeMaxAt_xy": [
+     101.63991310180661,
+     25.595976897373575
+    ],
+    "signedWholeMax_absDiff_mm": 2.791276737398548e-07,
+    "signedNew_mm": 6.542299311609943e-05,
+    "signedArchivedInterp_mm": 6.514386544235958e-05,
+    "nearestKinkStationDistance_mm": 0.19999999999999574,
+    "jumpWholeMaxAt_station_mm": 56.599999999999994,
+    "jumpWholeMax_absDiff_mm": 1.382100571827255e-09,
+    "maxSignedOpening_new_mm": 9.05933213405937e-05,
+    "maxAbsSignedOpening_new_mm": 9.05933213405937e-05,
+    "nearTipMaxAbsJumpDiff_mm": 2.646028554481616e-11,
+    "nearTipMaxAbsSignedDiff_mm": 2.6308393208081607e-11,
+    "mtsStationarityNew": 5.27383614196785e-18,
+    "mtsStationarityArchived": 0.0,
+    "mtsTensileMaxNew": true,
+    "mtsTensileMaxArchived": true,
+    "nextTipDelta_mm": [
+     -3.827369567943606e-07,
+     1.8760017184149547e-07
+    ],
+    "crackStationsArchived_kinks_mm": [
+     0.0,
+     25.4,
+     29.4,
+     33.4,
+     37.4,
+     41.4,
+     45.4,
+     49.4,
+     53.39999999999999,
+     57.39999999999999,
+     61.39999999999999
+    ]
+   },
+   "mtsClassicalForm": {
+    "newDiff_deg": -9.74044871198202e-14,
+    "archivedDiff_deg": -6.77855716486912e-14,
+    "cancellationBound_rel": 2.425026118410042e-13
+   },
+   "metricAgreement": {
+    "dKI_overKeq": {
+     "audit": -1.3377608180104412e-08,
+     "recorded": -1.3377608180104412e-08,
+     "absDiff": 0.0,
+     "scale": 1.0,
+     "diffOverScale": 0.0,
+     "ok": true,
+     "rule": "normalized (dimensionless O(1) operands)"
+    },
+    "dKII_overKeq": {
+     "audit": -5.356178785145471e-08,
+     "recorded": -5.356178785145471e-08,
+     "absDiff": 0.0,
+     "scale": 1.0,
+     "diffOverScale": 0.0,
+     "ok": true,
+     "rule": "normalized (dimensionless O(1) operands)"
+    },
+    "dKIIoverKI": {
+     "audit": -5.33654955121865e-08,
+     "recorded": -5.33654955121865e-08,
+     "absDiff": 0.0,
+     "scale": 1.0,
+     "diffOverScale": 0.0,
+     "ok": true,
+     "rule": "normalized (dimensionless O(1) operands)"
+    },
+    "dG_rel": {
+     "audit": -2.8372719618197095e-08,
+     "recorded": -2.8372719618197095e-08,
+     "absDiff": 0.0,
+     "scale": 1.0,
+     "diffOverScale": 0.0,
+     "ok": true,
+     "rule": "normalized (dimensionless O(1) operands)"
+    },
+    "dJ_rel": {
+     "audit": -2.824169542670063e-08,
+     "recorded": -2.824169542670063e-08,
+     "absDiff": 0.0,
+     "scale": 1.0,
+     "diffOverScale": 0.0,
+     "ok": true,
+     "rule": "normalized (dimensionless O(1) operands)"
+    },
+    "newJoverGminus1": {
+     "audit": 3.9360203735183674e-05,
+     "recorded": 3.9360203735183674e-05,
+     "absDiff": 0.0,
+     "scale": 1.0,
+     "diffOverScale": 0.0,
+     "ok": true,
+     "rule": "normalized (dimensionless O(1) operands)"
+    },
+    "dMTS_deg": {
+     "audit": 6.105452829974212e-06,
+     "recorded": 6.105452829752167e-06,
+     "absDiff": 2.220446049250313e-16,
+     "scale": 1.7328171539890624,
+     "diffOverScale": 1.2814081648134056e-16,
+     "ok": true,
+     "rule": "angle |theta| (deg)"
+    },
+    "newCODminusEDI_rel": {
+     "audit": 0.008743473046875786,
+     "recorded": 0.008743473046875786,
+     "absDiff": 0.0,
+     "scale": 1.0,
+     "diffOverScale": 0.0,
+     "ok": true,
+     "rule": "normalized (dimensionless O(1) operands)"
+    },
+    "archivedCODminusEDI_rel": {
+     "audit": 0.008743474627729194,
+     "recorded": 0.008743474627729194,
+     "absDiff": 0.0,
+     "scale": 1.0,
+     "diffOverScale": 0.0,
+     "ok": true,
+     "rule": "normalized (dimensionless O(1) operands)"
+    },
+    "dCODminusEDI": {
+     "audit": -1.5808534082478731e-09,
+     "recorded": -1.5808534082478731e-09,
+     "absDiff": 0.0,
+     "scale": 1.0,
+     "diffOverScale": 0.0,
+     "ok": true,
+     "rule": "normalized (dimensionless O(1) operands)"
+    },
+    "newPathSpread_rel": {
+     "audit": 1.644494493585566e-06,
+     "recorded": 1.644494493585566e-06,
+     "absDiff": 0.0,
+     "scale": 1.0,
+     "diffOverScale": 0.0,
+     "ok": true,
+     "rule": "normalized (dimensionless O(1) operands)"
+    },
+    "archivedPathSpread_rel": {
+     "audit": 1.644492979406005e-06,
+     "recorded": 1.644492979406005e-06,
+     "absDiff": 0.0,
+     "scale": 1.0,
+     "diffOverScale": 0.0,
+     "ok": true,
+     "rule": "normalized (dimensionless O(1) operands)"
+    },
+    "newQuad4x4_rel": {
+     "audit": 3.611522990019584e-13,
+     "recorded": 3.611522990019584e-13,
+     "absDiff": 0.0,
+     "scale": 1.0,
+     "diffOverScale": 0.0,
+     "ok": true,
+     "rule": "normalized (dimensionless O(1) operands)"
+    },
+    "archivedQuad4x4_rel": {
+     "audit": 3.608147683702242e-13,
+     "recorded": 3.608147683702242e-13,
+     "absDiff": 0.0,
+     "scale": 1.0,
+     "diffOverScale": 0.0,
+     "ok": true,
+     "rule": "normalized (dimensionless O(1) operands)"
+    },
+    "dCompliance_rel": {
+     "audit": -1.2478412345084955e-05,
+     "recorded": -1.2478412345084955e-05,
+     "absDiff": 0.0,
+     "scale": 1.0,
+     "diffOverScale": 0.0,
+     "ok": true,
+     "rule": "normalized (dimensionless O(1) operands)"
+    },
+    "dActiveArea_rel": {
+     "audit": 0.0,
+     "recorded": 0,
+     "absDiff": 0.0,
+     "scale": 1.0,
+     "diffOverScale": 0.0,
+     "ok": true,
+     "rule": "normalized (dimensionless O(1) operands)"
+    },
+    "nextTipDisplacement_mm": {
+     "audit": 4.2624101465153124e-07,
+     "recorded": 4.2624101465153124e-07,
+     "absDiff": 0.0,
+     "scale": 114.29544883822506,
+     "diffOverScale": 0.0,
+     "ok": true,
+     "rule": "tip coordinate magnitude (mm)"
+    },
+    "openingNearTipRel": {
+     "audit": 1.4368654607795249e-06,
+     "recorded": 1.4368654607795249e-06,
+     "absDiff": 0.0,
+     "scale": 1.0,
+     "diffOverScale": 0.0,
+     "ok": true,
+     "rule": "normalized (dimensionless O(1) operands)"
+    },
+    "openingWholeCrackRel": {
+     "audit": 1.4906312656478323e-05,
+     "recorded": 1.4906312656478323e-05,
+     "absDiff": 0.0,
+     "scale": 1.0,
+     "diffOverScale": 0.0,
+     "ok": true,
+     "rule": "normalized (dimensionless O(1) operands)"
+    },
+    "signedOpeningNearTipRel": {
+     "audit": 1.4286386405837456e-06,
+     "recorded": 1.4286386405837456e-06,
+     "absDiff": 0.0,
+     "scale": 1.0,
+     "diffOverScale": 0.0,
+     "ok": true,
+     "rule": "normalized (dimensionless O(1) operands)"
+    },
+    "signedOpeningWholeCrackRel": {
+     "audit": 0.0030811065276042738,
+     "recorded": 0.003081106527604124,
+     "absDiff": 1.496198998029996e-16,
+     "scale": 1.0,
+     "diffOverScale": 1.496198998029996e-16,
+     "ok": true,
+     "rule": "normalized (dimensionless O(1) operands)"
+    },
+    "newMinSignedOpening_mm": {
+     "audit": 0.0,
+     "recorded": 0,
+     "absDiff": 0.0,
+     "scale": 0.0,
+     "diffOverScale": 0.0,
+     "ok": true,
+     "rule": "value"
+    },
+    "archivedMinSignedOpening_mm": {
+     "audit": 0.0,
+     "recorded": 0,
+     "absDiff": 0.0,
+     "scale": 0.0,
+     "diffOverScale": 0.0,
+     "ok": true,
+     "rule": "value"
+    },
+    "newMaxJumpNearTip_mm": {
+     "audit": 1.841528401027956e-05,
+     "recorded": 1.841528401027956e-05,
+     "absDiff": 0.0,
+     "scale": 1.841528401027956e-05,
+     "diffOverScale": 0.0,
+     "ok": true,
+     "rule": "value"
+    },
+    "newMaxJump_mm": {
+     "audit": 9.271914548408392e-05,
+     "recorded": 9.271914548408392e-05,
+     "absDiff": 0.0,
+     "scale": 9.271914548408392e-05,
+     "diffOverScale": 0.0,
+     "ok": true,
+     "rule": "value"
+    },
+    "nearTipNodes": {
+     "audit": 57,
+     "recorded": 57,
+     "absDiff": 0,
+     "ok": true,
+     "rule": "exact"
+    },
+    "nearTipNodesArchived": {
+     "audit": 57,
+     "recorded": 57,
+     "absDiff": 0,
+     "ok": true,
+     "rule": "exact"
+    },
+    "bankStationsNew": {
+     "audit": 349,
+     "recorded": 349,
+     "absDiff": 0,
+     "ok": true,
+     "rule": "exact"
+    },
+    "bankStationsArchived": {
+     "audit": 319,
+     "recorded": 319,
+     "absDiff": 0,
+     "ok": true,
+     "rule": "exact"
+    },
+    "newKI": {
+     "audit": 0.01027788950386973,
+     "recorded": 0.01027788950386973,
+     "absDiff": 0.0,
+     "scale": 0.01027788950386973,
+     "diffOverScale": 0.0,
+     "ok": true,
+     "rule": "value"
+    },
+    "archivedKI": {
+     "audit": 0.010277889641379047,
+     "recorded": 0.010277889641379047,
+     "absDiff": 0.0,
+     "scale": 0.010277889641379047,
+     "diffOverScale": 0.0,
+     "ok": true,
+     "rule": "value"
+    },
+    "newKII": {
+     "audit": 0.00015550140570708742,
+     "recorded": 0.00015550140570708742,
+     "absDiff": 0.0,
+     "scale": 0.00015550140570708742,
+     "diffOverScale": 0.0,
+     "ok": true,
+     "rule": "value"
+    },
+    "archivedKII": {
+     "audit": 0.00015550195627223593,
+     "recorded": 0.00015550195627223593,
+     "absDiff": 0.0,
+     "scale": 0.00015550195627223593,
+     "diffOverScale": 0.0,
+     "ok": true,
+     "rule": "value"
+    },
+    "archivedKeq": {
+     "audit": 0.010279065927348225,
+     "recorded": 0.010279065927348225,
+     "absDiff": 0.0,
+     "scale": 0.010279065927348225,
+     "diffOverScale": 0.0,
+     "ok": true,
+     "rule": "value"
+    },
+    "newG": {
+     "audit": 3.2330316815942054e-08,
+     "recorded": 3.2330316815942054e-08,
+     "absDiff": 0.0,
+     "scale": 3.2330316815942054e-08,
+     "diffOverScale": 0.0,
+     "ok": true,
+     "rule": "value"
+    },
+    "archivedG": {
+     "audit": 3.2330317733241096e-08,
+     "recorded": 3.2330317733241096e-08,
+     "absDiff": 0.0,
+     "scale": 3.2330317733241096e-08,
+     "diffOverScale": 0.0,
+     "ok": true,
+     "rule": "value"
+    },
+    "newJ": {
+     "audit": 3.2331589343798755e-08,
+     "recorded": 3.2331589343798755e-08,
+     "absDiff": 0.0,
+     "scale": 3.2331589343798755e-08,
+     "diffOverScale": 0.0,
+     "ok": true,
+     "rule": "value"
+    },
+    "archivedJ": {
+     "audit": 3.233159025689768e-08,
+     "recorded": 3.233159025689768e-08,
+     "absDiff": 0.0,
+     "scale": 3.233159025689768e-08,
+     "diffOverScale": 0.0,
+     "ok": true,
+     "rule": "value"
+    },
+    "newMTS_deg": {
+     "audit": -1.7328110485362325,
+     "recorded": -1.7328110485362327,
+     "absDiff": 2.220446049250313e-16,
+     "scale": 1.7328171539890624,
+     "diffOverScale": 1.2814081648134056e-16,
+     "ok": true,
+     "rule": "angle |theta| (deg)"
+    },
+    "archivedMTS_deg": {
+     "audit": -1.7328171539890624,
+     "recorded": -1.7328171539890624,
+     "absDiff": 0.0,
+     "scale": 1.7328171539890624,
+     "diffOverScale": 0.0,
+     "ok": true,
+     "rule": "angle |theta| (deg)"
+    },
+    "newCompliance_mm_per_N": {
+     "audit": 0.00023756578234956544,
+     "recorded": 0.00023756578234956544,
+     "absDiff": 0.0,
+     "scale": 0.00023756578234956544,
+     "diffOverScale": 0.0,
+     "ok": true,
+     "rule": "value"
+    },
+    "archivedCompliance_mm_per_N": {
+     "audit": 0.0002375687468303487,
+     "recorded": 0.0002375687468303487,
+     "absDiff": 0.0,
+     "scale": 0.0002375687468303487,
+     "diffOverScale": 0.0,
+     "ok": true,
+     "rule": "value"
+    },
+    "newActiveArea_mm2": {
+     "audit": 1012.152528598162,
+     "recorded": 1012.152528598162,
+     "absDiff": 0.0,
+     "scale": 1012.152528598162,
+     "diffOverScale": 0.0,
+     "ok": true,
+     "rule": "value"
+    },
+    "archivedActiveArea_mm2": {
+     "audit": 1012.152528598162,
+     "recorded": 1012.152528598162,
+     "absDiff": 0.0,
+     "scale": 1012.152528598162,
+     "diffOverScale": 0.0,
+     "ok": true,
+     "rule": "value"
+    },
+    "newNextTipX_mm": {
+     "audit": 114.2954484554881,
+     "recorded": 114.2954484554881,
+     "absDiff": 0.0,
+     "scale": 114.29544883822506,
+     "diffOverScale": 0.0,
+     "ok": true,
+     "rule": "tip coordinate magnitude (mm)"
+    },
+    "newNextTipY_mm": {
+     "audit": 63.1855950991163,
+     "recorded": 63.1855950991163,
+     "absDiff": 0.0,
+     "scale": 114.29544883822506,
+     "diffOverScale": 0.0,
+     "ok": true,
+     "rule": "tip coordinate magnitude (mm)"
+    },
+    "archivedNextTipX_mm": {
+     "audit": 114.29544883822506,
+     "recorded": 114.29544883822506,
+     "absDiff": 0.0,
+     "scale": 114.29544883822506,
+     "diffOverScale": 0.0,
+     "ok": true,
+     "rule": "tip coordinate magnitude (mm)"
+    },
+    "archivedNextTipY_mm": {
+     "audit": 63.18559491151613,
+     "recorded": 63.18559491151613,
+     "absDiff": 0.0,
+     "scale": 114.29544883822506,
+     "diffOverScale": 0.0,
+     "ok": true,
+     "rule": "tip coordinate magnitude (mm)"
+    }
+   },
+   "metrics": {
+    "dKI_overKeq": -1.3377608180104412e-08,
+    "dKII_overKeq": -5.356178785145471e-08,
+    "dKIIoverKI": -5.33654955121865e-08,
+    "dG_rel": -2.8372719618197095e-08,
+    "dJ_rel": -2.824169542670063e-08,
+    "newJoverGminus1": 3.9360203735183674e-05,
+    "dMTS_deg": 6.105452829974212e-06,
+    "newCODminusEDI_rel": 0.008743473046875786,
+    "archivedCODminusEDI_rel": 0.008743474627729194,
+    "dCODminusEDI": -1.5808534082478731e-09,
+    "newPathSpread_rel": 1.644494493585566e-06,
+    "archivedPathSpread_rel": 1.644492979406005e-06,
+    "newQuad4x4_rel": 3.611522990019584e-13,
+    "archivedQuad4x4_rel": 3.608147683702242e-13,
+    "dCompliance_rel": -1.2478412345084955e-05,
+    "dActiveArea_rel": 0.0,
+    "nextTipDisplacement_mm": 4.2624101465153124e-07,
+    "openingNearTipRel": 1.4368654607795249e-06,
+    "openingWholeCrackRel": 1.4906312656478323e-05,
+    "signedOpeningNearTipRel": 1.4286386405837456e-06,
+    "signedOpeningWholeCrackRel": 0.0030811065276042738,
+    "newMinSignedOpening_mm": 0.0,
+    "archivedMinSignedOpening_mm": 0.0,
+    "newMaxJumpNearTip_mm": 1.841528401027956e-05,
+    "newMaxJump_mm": 9.271914548408392e-05,
+    "nearTipNodes": 57,
+    "nearTipNodesArchived": 57,
+    "bankStationsNew": 349,
+    "bankStationsArchived": 319,
+    "newKI": 0.01027788950386973,
+    "archivedKI": 0.010277889641379047,
+    "newKII": 0.00015550140570708742,
+    "archivedKII": 0.00015550195627223593,
+    "archivedKeq": 0.010279065927348225,
+    "newG": 3.2330316815942054e-08,
+    "archivedG": 3.2330317733241096e-08,
+    "newJ": 3.2331589343798755e-08,
+    "archivedJ": 3.233159025689768e-08,
+    "newMTS_deg": -1.7328110485362325,
+    "archivedMTS_deg": -1.7328171539890624,
+    "newCompliance_mm_per_N": 0.00023756578234956544,
+    "archivedCompliance_mm_per_N": 0.0002375687468303487,
+    "newActiveArea_mm2": 1012.152528598162,
+    "archivedActiveArea_mm2": 1012.152528598162,
+    "newNextTipX_mm": 114.2954484554881,
+    "newNextTipY_mm": 63.1855950991163,
+    "archivedNextTipX_mm": 114.29544883822506,
+    "archivedNextTipY_mm": 63.18559491151613
+   },
+   "utilization": {
+    "C1_KI": 2.6755216360208823e-05,
+    "C2_KII": 0.0010712357570290942,
+    "C3_KIIoverKI": 0.000533654955121865,
+    "C4_G": 2.8372719618197095e-05,
+    "C4_J": 2.824169542670063e-05,
+    "C4_JoverG": 0.39360203735183674,
+    "C5_MTS": 0.0010175754716623686,
+    "C6_newCOD": 0.29144910156252624,
+    "C6_dCOD": 1.5808534082478731e-06,
+    "C7_spread": 0.1644494493585566,
+    "C7_quad": 3.611522990019584e-08,
+    "C8_nearTip": 0.0014368654607795248,
+    "C8_wholeCrack": 0.007453156328239161,
+    "C9_activeArea": 0.0,
+    "C10_nextTip": 0.0008524820293030625,
+    "C11_compliance": 0.012478412345084955
+   },
+   "flags": {
+    "C1_KI": true,
+    "C2_KII": true,
+    "C3_KIIoverKI": true,
+    "C4_G_J": true,
+    "C5_MTS": true,
+    "C6_COD_EDI": true,
+    "C7_EDI_spread_quadrature": true,
+    "C8_crackOpening": true,
+    "C9_phaseActivation": true,
+    "C10_nextPredictor": true,
+    "C11_compliance": true
+   },
+   "solveSeconds": 2.174263
+  },
+  "EQB-H-S10": {
+   "diagnostics": {
+    "signedWholeMaxAt_station_mm": 25.599999999999998,
+    "signedWholeMaxAt_xy": [
+     101.64361419906595,
+     25.595186581608047
+    ],
+    "signedWholeMax_absDiff_mm": 3.5977263683736383e-07,
+    "signedNew_mm": 7.078636414329193e-05,
+    "signedArchivedInterp_mm": 7.042659150645457e-05,
+    "nearestKinkStationDistance_mm": 0.1999999999999993,
+    "jumpWholeMaxAt_station_mm": 60.6,
+    "jumpWholeMax_absDiff_mm": 1.3781410696980096e-09,
+    "maxSignedOpening_new_mm": 9.592166989317643e-05,
+    "maxAbsSignedOpening_new_mm": 9.592166989317643e-05,
+    "nearTipMaxAbsJumpDiff_mm": 1.6503095846267732e-11,
+    "nearTipMaxAbsSignedDiff_mm": 1.6513444528899052e-11,
+    "mtsStationarityNew": 0.0,
+    "mtsStationarityArchived": 0.0,
+    "mtsTensileMaxNew": true,
+    "mtsTensileMaxArchived": true,
+    "nextTipDelta_mm": [
+     -6.315647738119878e-08,
+     3.187311392593983e-08
+    ],
+    "crackStationsArchived_kinks_mm": [
+     0.0,
+     25.4,
+     29.4,
+     33.4,
+     37.4,
+     41.4,
+     45.4,
+     49.4,
+     53.4,
+     57.4,
+     61.4,
+     65.4
+    ]
+   },
+   "mtsClassicalForm": {
+    "newDiff_deg": -1.2722218725854067e-14,
+    "archivedDiff_deg": 1.2682461792335773e-13,
+    "cancellationBound_rel": 4.918461314720642e-13
+   },
+   "metricAgreement": {
+    "dKI_overKeq": {
+     "audit": -1.4195704850799865e-08,
+     "recorded": -1.4195704850799865e-08,
+     "absDiff": 0.0,
+     "scale": 1.0,
+     "diffOverScale": 0.0,
+     "ok": true,
+     "rule": "normalized (dimensionless O(1) operands)"
+    },
+    "dKII_overKeq": {
+     "audit": -9.000228995153775e-09,
+     "recorded": -9.000228995153775e-09,
+     "absDiff": 0.0,
+     "scale": 1.0,
+     "diffOverScale": 0.0,
+     "ok": true,
+     "rule": "normalized (dimensionless O(1) operands)"
+    },
+    "dKIIoverKI": {
+     "audit": -8.849917691039488e-09,
+     "recorded": -8.849917691039488e-09,
+     "absDiff": 0.0,
+     "scale": 1.0,
+     "diffOverScale": 0.0,
+     "ok": true,
+     "rule": "normalized (dimensionless O(1) operands)"
+    },
+    "dG_rel": {
+     "audit": -2.8581027988749952e-08,
+     "recorded": -2.8581027988749952e-08,
+     "absDiff": 0.0,
+     "scale": 1.0,
+     "diffOverScale": 0.0,
+     "ok": true,
+     "rule": "normalized (dimensionless O(1) operands)"
+    },
+    "dJ_rel": {
+     "audit": -2.8477326941001024e-08,
+     "recorded": -2.8477326941001024e-08,
+     "absDiff": 0.0,
+     "scale": 1.0,
+     "diffOverScale": 0.0,
+     "ok": true,
+     "rule": "normalized (dimensionless O(1) operands)"
+    },
+    "newJoverGminus1": {
+     "audit": 3.596356300383796e-05,
+     "recorded": 3.596356300383796e-05,
+     "absDiff": 0.0,
+     "scale": 1.0,
+     "diffOverScale": 0.0,
+     "ok": true,
+     "rule": "normalized (dimensionless O(1) operands)"
+    },
+    "dMTS_deg": {
+     "audit": 1.0133253245392382e-06,
+     "recorded": 1.0133253247612828e-06,
+     "absDiff": 2.220446049250313e-16,
+     "scale": 1.217065037212334,
+     "diffOverScale": 1.8244267819378048e-16,
+     "ok": true,
+     "rule": "angle |theta| (deg)"
+    },
+    "newCODminusEDI_rel": {
+     "audit": 0.00876581511470412,
+     "recorded": 0.00876581511470412,
+     "absDiff": 0.0,
+     "scale": 1.0,
+     "diffOverScale": 0.0,
+     "ok": true,
+     "rule": "normalized (dimensionless O(1) operands)"
+    },
+    "archivedCODminusEDI_rel": {
+     "audit": 0.008765816232767306,
+     "recorded": 0.008765816232767306,
+     "absDiff": 0.0,
+     "scale": 1.0,
+     "diffOverScale": 0.0,
+     "ok": true,
+     "rule": "normalized (dimensionless O(1) operands)"
+    },
+    "dCODminusEDI": {
+     "audit": -1.1180631871721136e-09,
+     "recorded": -1.1180631871721136e-09,
+     "absDiff": 0.0,
+     "scale": 1.0,
+     "diffOverScale": 0.0,
+     "ok": true,
+     "rule": "normalized (dimensionless O(1) operands)"
+    },
+    "newPathSpread_rel": {
+     "audit": 1.6445814344895828e-06,
+     "recorded": 1.6445814344895828e-06,
+     "absDiff": 0.0,
+     "scale": 1.0,
+     "diffOverScale": 0.0,
+     "ok": true,
+     "rule": "normalized (dimensionless O(1) operands)"
+    },
+    "archivedPathSpread_rel": {
+     "audit": 1.6445823138610736e-06,
+     "recorded": 1.6445823138610736e-06,
+     "absDiff": 0.0,
+     "scale": 1.0,
+     "diffOverScale": 0.0,
+     "ok": true,
+     "rule": "normalized (dimensionless O(1) operands)"
+    },
+    "newQuad4x4_rel": {
+     "audit": 3.6299539082759067e-13,
+     "recorded": 3.6299539082759067e-13,
+     "absDiff": 0.0,
+     "scale": 1.0,
+     "diffOverScale": 0.0,
+     "ok": true,
+     "rule": "normalized (dimensionless O(1) operands)"
+    },
+    "archivedQuad4x4_rel": {
+     "audit": 3.646735889949859e-13,
+     "recorded": 3.646735889949859e-13,
+     "absDiff": 0.0,
+     "scale": 1.0,
+     "diffOverScale": 0.0,
+     "ok": true,
+     "rule": "normalized (dimensionless O(1) operands)"
+    },
+    "dCompliance_rel": {
+     "audit": -4.349237039846798e-06,
+     "recorded": -4.349237039846798e-06,
+     "absDiff": 0.0,
+     "scale": 1.0,
+     "diffOverScale": 0.0,
+     "ok": true,
+     "rule": "normalized (dimensionless O(1) operands)"
+    },
+    "dActiveArea_rel": {
+     "audit": 0.0,
+     "recorded": 0,
+     "absDiff": 0.0,
+     "scale": 1.0,
+     "diffOverScale": 0.0,
+     "ok": true,
+     "rule": "normalized (dimensionless O(1) operands)"
+    },
+    "nextTipDisplacement_mm": {
+     "audit": 7.074345218137021e-08,
+     "recorded": 7.074345218137021e-08,
+     "absDiff": 0.0,
+     "scale": 116.53715206030587,
+     "diffOverScale": 0.0,
+     "ok": true,
+     "rule": "tip coordinate magnitude (mm)"
+    },
+    "openingNearTipRel": {
+     "audit": 8.916365842485338e-07,
+     "recorded": 8.916365842485338e-07,
+     "absDiff": 0.0,
+     "scale": 1.0,
+     "diffOverScale": 0.0,
+     "ok": true,
+     "rule": "normalized (dimensionless O(1) operands)"
+    },
+    "openingWholeCrackRel": {
+     "audit": 1.3956277737331265e-05,
+     "recorded": 1.3956277737296952e-05,
+     "absDiff": 3.4313304693271707e-17,
+     "scale": 1.0,
+     "diffOverScale": 3.4313304693271707e-17,
+     "ok": true,
+     "rule": "normalized (dimensionless O(1) operands)"
+    },
+    "signedOpeningNearTipRel": {
+     "audit": 8.922027101732063e-07,
+     "recorded": 8.922027101732063e-07,
+     "absDiff": 0.0,
+     "scale": 1.0,
+     "diffOverScale": 0.0,
+     "ok": true,
+     "rule": "normalized (dimensionless O(1) operands)"
+    },
+    "signedOpeningWholeCrackRel": {
+     "audit": 0.0037506919681238467,
+     "recorded": 0.0037506919681237053,
+     "absDiff": 1.4137996329210978e-16,
+     "scale": 1.0,
+     "diffOverScale": 1.4137996329210978e-16,
+     "ok": true,
+     "rule": "normalized (dimensionless O(1) operands)"
+    },
+    "newMinSignedOpening_mm": {
+     "audit": 0.0,
+     "recorded": 0,
+     "absDiff": 0.0,
+     "scale": 0.0,
+     "diffOverScale": 0.0,
+     "ok": true,
+     "rule": "value"
+    },
+    "archivedMinSignedOpening_mm": {
+     "audit": 0.0,
+     "recorded": 0,
+     "absDiff": 0.0,
+     "scale": 0.0,
+     "diffOverScale": 0.0,
+     "ok": true,
+     "rule": "value"
+    },
+    "newMaxJumpNearTip_mm": {
+     "audit": 1.8508769310061953e-05,
+     "recorded": 1.8508769310061953e-05,
+     "absDiff": 0.0,
+     "scale": 1.8508769310061953e-05,
+     "diffOverScale": 0.0,
+     "ok": true,
+     "rule": "value"
+    },
+    "newMaxJump_mm": {
+     "audit": 9.87470366838328e-05,
+     "recorded": 9.874703668383282e-05,
+     "absDiff": 1.3552527156068805e-20,
+     "scale": 9.874703668383282e-05,
+     "diffOverScale": 1.3724489980860022e-16,
+     "ok": true,
+     "rule": "value"
+    },
+    "nearTipNodes": {
+     "audit": 57,
+     "recorded": 57,
+     "absDiff": 0,
+     "ok": true,
+     "rule": "exact"
+    },
+    "nearTipNodesArchived": {
+     "audit": 57,
+     "recorded": 57,
+     "absDiff": 0,
+     "ok": true,
+     "rule": "exact"
+    },
+    "bankStationsNew": {
+     "audit": 369,
+     "recorded": 369,
+     "absDiff": 0,
+     "ok": true,
+     "rule": "exact"
+    },
+    "bankStationsArchived": {
+     "audit": 337,
+     "recorded": 337,
+     "absDiff": 0,
+     "ok": true,
+     "rule": "exact"
+    },
+    "newKI": {
+     "audit": 0.010336206049051612,
+     "recorded": 0.010336206049051612,
+     "absDiff": 0.0,
+     "scale": 0.010336206049051612,
+     "diffOverScale": 0.0,
+     "ok": true,
+     "rule": "value"
+    },
+    "archivedKI": {
+     "audit": 0.010336206195789625,
+     "recorded": 0.010336206195789625,
+     "absDiff": 0.0,
+     "scale": 0.010336206195789625,
+     "diffOverScale": 0.0,
+     "ok": true,
+     "rule": "value"
+    },
+    "newKII": {
+     "audit": 0.00010980858206191415,
+     "recorded": 0.00010980858206191415,
+     "absDiff": 0.0,
+     "scale": 0.00010980858206191415,
+     "diffOverScale": 0.0,
+     "ok": true,
+     "rule": "value"
+    },
+    "archivedKII": {
+     "audit": 0.00010980867509538642,
+     "recorded": 0.00010980867509538642,
+     "absDiff": 0.0,
+     "scale": 0.00010980867509538642,
+     "diffOverScale": 0.0,
+     "ok": true,
+     "rule": "value"
+    },
+    "archivedKeq": {
+     "audit": 0.010336789466125642,
+     "recorded": 0.010336789466125642,
+     "absDiff": 0.0,
+     "scale": 0.010336789466125642,
+     "diffOverScale": 0.0,
+     "ok": true,
+     "rule": "value"
+    },
+    "newG": {
+     "audit": 3.2694447231246634e-08,
+     "recorded": 3.2694447231246634e-08,
+     "absDiff": 0.0,
+     "scale": 3.2694447231246634e-08,
+     "diffOverScale": 0.0,
+     "ok": true,
+     "rule": "value"
+    },
+    "archivedG": {
+     "audit": 3.269444816568757e-08,
+     "recorded": 3.269444816568757e-08,
+     "absDiff": 0.0,
+     "scale": 3.269444816568757e-08,
+     "diffOverScale": 0.0,
+     "ok": true,
+     "rule": "value"
+    },
+    "newJ": {
+     "audit": 3.269562304005951e-08,
+     "recorded": 3.269562304005951e-08,
+     "absDiff": 0.0,
+     "scale": 3.269562304005951e-08,
+     "diffOverScale": 0.0,
+     "ok": true,
+     "rule": "value"
+    },
+    "archivedJ": {
+     "audit": 3.269562397114348e-08,
+     "recorded": 3.269562397114348e-08,
+     "absDiff": 0.0,
+     "scale": 3.269562397114348e-08,
+     "diffOverScale": 0.0,
+     "ok": true,
+     "rule": "value"
+    },
+    "newMTS_deg": {
+     "audit": -1.2170640238870094,
+     "recorded": -1.2170640238870094,
+     "absDiff": 0.0,
+     "scale": 1.217065037212334,
+     "diffOverScale": 0.0,
+     "ok": true,
+     "rule": "angle |theta| (deg)"
+    },
+    "archivedMTS_deg": {
+     "audit": -1.217065037212334,
+     "recorded": -1.2170650372123342,
+     "absDiff": 2.220446049250313e-16,
+     "scale": 1.217065037212334,
+     "diffOverScale": 1.8244267819378048e-16,
+     "ok": true,
+     "rule": "angle |theta| (deg)"
+    },
+    "newCompliance_mm_per_N": {
+     "audit": 0.0002386193882912188,
+     "recorded": 0.0002386193882912188,
+     "absDiff": 0.0,
+     "scale": 0.0002386193882912188,
+     "diffOverScale": 0.0,
+     "ok": true,
+     "rule": "value"
+    },
+    "archivedCompliance_mm_per_N": {
+     "audit": 0.0002386204261080145,
+     "recorded": 0.0002386204261080145,
+     "absDiff": 0.0,
+     "scale": 0.0002386204261080145,
+     "diffOverScale": 0.0,
+     "ok": true,
+     "rule": "value"
+    },
+    "newActiveArea_mm2": {
+     "audit": 0,
+     "recorded": 0,
+     "absDiff": 0,
+     "ok": true,
+     "rule": "exact"
+    },
+    "archivedActiveArea_mm2": {
+     "audit": 0,
+     "recorded": 0,
+     "absDiff": 0,
+     "ok": true,
+     "rule": "exact"
+    },
+    "newNextTipX_mm": {
+     "audit": 116.5371519971494,
+     "recorded": 116.5371519971494,
+     "absDiff": 0.0,
+     "scale": 116.53715206030587,
+     "diffOverScale": 0.0,
+     "ok": true,
+     "rule": "tip coordinate magnitude (mm)"
+    },
+    "newNextTipY_mm": {
+     "audit": 66.6346931986924,
+     "recorded": 66.6346931986924,
+     "absDiff": 0.0,
+     "scale": 116.53715206030587,
+     "diffOverScale": 0.0,
+     "ok": true,
+     "rule": "tip coordinate magnitude (mm)"
+    },
+    "archivedNextTipX_mm": {
+     "audit": 116.53715206030587,
+     "recorded": 116.53715206030587,
+     "absDiff": 0.0,
+     "scale": 116.53715206030587,
+     "diffOverScale": 0.0,
+     "ok": true,
+     "rule": "tip coordinate magnitude (mm)"
+    },
+    "archivedNextTipY_mm": {
+     "audit": 66.63469316681929,
+     "recorded": 66.63469316681929,
+     "absDiff": 0.0,
+     "scale": 116.53715206030587,
+     "diffOverScale": 0.0,
+     "ok": true,
+     "rule": "tip coordinate magnitude (mm)"
+    }
+   },
+   "metrics": {
+    "dKI_overKeq": -1.4195704850799865e-08,
+    "dKII_overKeq": -9.000228995153775e-09,
+    "dKIIoverKI": -8.849917691039488e-09,
+    "dG_rel": -2.8581027988749952e-08,
+    "dJ_rel": -2.8477326941001024e-08,
+    "newJoverGminus1": 3.596356300383796e-05,
+    "dMTS_deg": 1.0133253245392382e-06,
+    "newCODminusEDI_rel": 0.00876581511470412,
+    "archivedCODminusEDI_rel": 0.008765816232767306,
+    "dCODminusEDI": -1.1180631871721136e-09,
+    "newPathSpread_rel": 1.6445814344895828e-06,
+    "archivedPathSpread_rel": 1.6445823138610736e-06,
+    "newQuad4x4_rel": 3.6299539082759067e-13,
+    "archivedQuad4x4_rel": 3.646735889949859e-13,
+    "dCompliance_rel": -4.349237039846798e-06,
+    "dActiveArea_rel": 0.0,
+    "nextTipDisplacement_mm": 7.074345218137021e-08,
+    "openingNearTipRel": 8.916365842485338e-07,
+    "openingWholeCrackRel": 1.3956277737331265e-05,
+    "signedOpeningNearTipRel": 8.922027101732063e-07,
+    "signedOpeningWholeCrackRel": 0.0037506919681238467,
+    "newMinSignedOpening_mm": 0.0,
+    "archivedMinSignedOpening_mm": 0.0,
+    "newMaxJumpNearTip_mm": 1.8508769310061953e-05,
+    "newMaxJump_mm": 9.87470366838328e-05,
+    "nearTipNodes": 57,
+    "nearTipNodesArchived": 57,
+    "bankStationsNew": 369,
+    "bankStationsArchived": 337,
+    "newKI": 0.010336206049051612,
+    "archivedKI": 0.010336206195789625,
+    "newKII": 0.00010980858206191415,
+    "archivedKII": 0.00010980867509538642,
+    "archivedKeq": 0.010336789466125642,
+    "newG": 3.2694447231246634e-08,
+    "archivedG": 3.269444816568757e-08,
+    "newJ": 3.269562304005951e-08,
+    "archivedJ": 3.269562397114348e-08,
+    "newMTS_deg": -1.2170640238870094,
+    "archivedMTS_deg": -1.217065037212334,
+    "newCompliance_mm_per_N": 0.0002386193882912188,
+    "archivedCompliance_mm_per_N": 0.0002386204261080145,
+    "newActiveArea_mm2": 0,
+    "archivedActiveArea_mm2": 0,
+    "newNextTipX_mm": 116.5371519971494,
+    "newNextTipY_mm": 66.6346931986924,
+    "archivedNextTipX_mm": 116.53715206030587,
+    "archivedNextTipY_mm": 66.63469316681929
+   },
+   "utilization": {
+    "C1_KI": 2.839140970159973e-05,
+    "C2_KII": 0.0001800045799030755,
+    "C3_KIIoverKI": 8.849917691039488e-05,
+    "C4_G": 2.8581027988749952e-05,
+    "C4_J": 2.8477326941001024e-05,
+    "C4_JoverG": 0.3596356300383796,
+    "C5_MTS": 0.00016888755408987302,
+    "C6_newCOD": 0.29219383715680397,
+    "C6_dCOD": 1.1180631871721136e-06,
+    "C7_spread": 0.16445814344895826,
+    "C7_quad": 3.6299539082759066e-08,
+    "C8_nearTip": 0.0008916365842485338,
+    "C8_wholeCrack": 0.0069781388686656325,
+    "C9_activeArea": 0.0,
+    "C10_nextTip": 0.00014148690436274042,
+    "C11_compliance": 0.004349237039846798
+   },
+   "flags": {
+    "C1_KI": true,
+    "C2_KII": true,
+    "C3_KIIoverKI": true,
+    "C4_G_J": true,
+    "C5_MTS": true,
+    "C6_COD_EDI": true,
+    "C7_EDI_spread_quadrature": true,
+    "C8_crackOpening": true,
+    "C9_phaseActivation": true,
+    "C10_nextPredictor": true,
+    "C11_compliance": true
+   },
+   "solveSeconds": 1.8634896
+  }
+ }
+}

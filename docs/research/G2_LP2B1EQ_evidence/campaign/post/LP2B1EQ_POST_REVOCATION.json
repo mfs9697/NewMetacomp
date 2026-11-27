@@ -1,0 +1,27 @@
+{
+  "sourceCommit": "d8906ce669fe6d7e52f6fd773c4fbdbf65fa7447",
+  "tokenEqualsAuthorization": true,
+  "goAbsent": true,
+  "probes": [
+    {
+      "solveId": "EQB-soft1-S9",
+      "identifier": "G2LP2B1EQ:HOLD_UNAUTHORIZED",
+      "message": "No GO_LP2B1_EQ record (matlab/g2/lp2b1eq/G2_LP2B1EQ_GO.json): the campaign is prepared, not authorized."
+    },
+    {
+      "solveId": "EQB-H-S10",
+      "identifier": "G2LP2B1EQ:HOLD_UNAUTHORIZED",
+      "message": "No GO_LP2B1_EQ record (matlab/g2/lp2b1eq/G2_LP2B1EQ_GO.json): the campaign is prepared, not authorized."
+    }
+  ],
+  "runFilesUnchanged": true,
+  "receiptUnchanged": true,
+  "summaryUnchanged": true,
+  "outputsListingUnchanged": true,
+  "runFiles": 20,
+  "receiptFiles": 2,
+  "gitClean": true,
+  "physicalSolves": 0,
+  "externalEntryInvoked": false,
+  "pass": true
+}

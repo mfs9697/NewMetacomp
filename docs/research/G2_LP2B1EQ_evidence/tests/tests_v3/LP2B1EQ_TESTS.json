@@ -1,0 +1,1443 @@
+{
+  "schema": "NewMetacomp.G2.LP2B1EQ.Tests.v1",
+  "passed": 252,
+  "total": 252,
+  "failedTests": [],
+  "physicalSolves": 0,
+  "token": "G2LP2B1EQ|policy=b113a7c6d7b2e8fe9950d817ccca3c851c05f1e347c73f66c604b9c41e54eecb|g2source=7e5683703bd104547ef5d013aa0253ad2819b59dc58693957e2d04b4707f0947|lp2source=357dfdcdb576d2866b9d1b41a14265300a14c30700d6475f995881041ba822ca|lp2a2source=f1d7e4d67b91968e16ebaead13be86667c7776ce48971ed5206c7f136fae7afd|lp2a3source=fa3bcecfa9cd3044253d5a72253e2058bccd044d32345f51650dcd775f42e002|lp2b1source=9c7a1260e3bde5b59e1d93c47bc99cc4d7b89f9b0cc6e874572fb378f1717bee|lp2b1eqsource=74a0edd827daca5714a1347705abc1429a7a573116ad3c438f9e5a1c12dfbf1f|closure=76614f269810c6970544bca0c1c0f84ebf9131935554ebd75e57e24f819f65f7|references=63014a95ebeebd127ae094e9254331d6e32e314902b6c1d6ac2bf8abbeb3d89d|qualification=441b1eadf330a720255f2c6b178c0c51a822e4ad99a24d0318230c0884c5d5ad|solves=EQB-soft1-S9,EQB-H-S10|limit=2|seed=0.40|campaign=G2-LP2B1-EQ-001|run=run_lp2b1_eq_v1",
+  "policySHA256": "b113a7c6d7b2e8fe9950d817ccca3c851c05f1e347c73f66c604b9c41e54eecb",
+  "lp2b1eqSourceSHA256": "74a0edd827daca5714a1347705abc1429a7a573116ad3c438f9e5a1c12dfbf1f",
+  "sourceCommit": "61733fd7d33adbaad69c09055b0bdcd74a1f93c3",
+  "tests": [
+    {
+      "name": "A0_no_GO_refused_with_real_preflight",
+      "pass": true
+    },
+    {
+      "name": "A1_token_status_no_GO",
+      "pass": true
+    },
+    {
+      "name": "A2_run_and_receipt_roots_absent",
+      "pass": true
+    },
+    {
+      "name": "A3_two_solves_fixed_order_limit2_seed040",
+      "pass": true
+    },
+    {
+      "name": "A4_tolerances_equal_WP5",
+      "pass": true
+    },
+    {
+      "name": "A5_preflight_bypass_refused",
+      "pass": true
+    },
+    {
+      "name": "A6_unknown_solve_refused",
+      "pass": true
+    },
+    {
+      "name": "A7_new_roots_not_historical",
+      "pass": true
+    },
+    {
+      "name": "A8_target_is_provenance_only",
+      "pass": true
+    },
+    {
+      "name": "B1_soft1_S9_reference_all_checks",
+      "pass": true
+    },
+    {
+      "name": "B2_H_S10_reference_all_checks",
+      "pass": true
+    },
+    {
+      "name": "B3_u_length_2NT6_interleaved_order",
+      "pass": true
+    },
+    {
+      "name": "B4_next_state_S10_S11_bitwise",
+      "pass": true
+    },
+    {
+      "name": "B5_active_area_soft1_positive_H_exact_zero",
+      "pass": true
+    },
+    {
+      "name": "B6_exported_A3_data_and_parents",
+      "pass": true
+    },
+    {
+      "name": "C0a_positive_control_soft1_all_differences_zero",
+      "pass": true
+    },
+    {
+      "name": "C0b_positive_control_H_all_differences_zero",
+      "pass": true
+    },
+    {
+      "name": "C0c_compare_case_forecast_S10_soft1",
+      "pass": true
+    },
+    {
+      "name": "C0d_compare_case_forecast_S11_H",
+      "pass": true
+    },
+    {
+      "name": "C0e_archived_opening_from_saved_u",
+      "pass": true
+    },
+    {
+      "name": "C1_KI_outside_fails_C1",
+      "pass": true
+    },
+    {
+      "name": "C1_KI_inside_passes_C1",
+      "pass": true
+    },
+    {
+      "name": "C2_signed_KII_flip_fails",
+      "pass": true
+    },
+    {
+      "name": "C2_low_mixity_H_inside_C2_C3_C5",
+      "pass": true
+    },
+    {
+      "name": "C2_low_mixity_H_outside_C2_and_C5",
+      "pass": true
+    },
+    {
+      "name": "C4_J_only",
+      "pass": true
+    },
+    {
+      "name": "C11_compliance_only",
+      "pass": true
+    },
+    {
+      "name": "C11_compliance_inside_equivalent",
+      "pass": true
+    },
+    {
+      "name": "C7_path_spread_only",
+      "pass": true
+    },
+    {
+      "name": "C7_quadrature_only",
+      "pass": true
+    },
+    {
+      "name": "C6_COD_EDI_only",
+      "pass": true
+    },
+    {
+      "name": "C8_jump_scale_outside_only",
+      "pass": true
+    },
+    {
+      "name": "C8_jump_scale_inside_equivalent",
+      "pass": true
+    },
+    {
+      "name": "C8_local_near_tip_jump_fails",
+      "pass": true
+    },
+    {
+      "name": "C9_active_area_soft1_only",
+      "pass": true
+    },
+    {
+      "name": "C9_active_area_soft1_inside_equivalent",
+      "pass": true
+    },
+    {
+      "name": "C9_H_exact_zero_stronger_than_relative",
+      "pass": true
+    },
+    {
+      "name": "C9_chords_only",
+      "pass": true
+    },
+    {
+      "name": "C9_solver_gate_only",
+      "pass": true
+    },
+    {
+      "name": "C10_inside_equivalent",
+      "pass": true
+    },
+    {
+      "name": "C10_outside_only",
+      "pass": true
+    },
+    {
+      "name": "C_invalid_u_NaN",
+      "pass": true
+    },
+    {
+      "name": "C_invalid_u_short",
+      "pass": true
+    },
+    {
+      "name": "C_invalid_u_missing",
+      "pass": true
+    },
+    {
+      "name": "C_invalid_KI_NaN",
+      "pass": true
+    },
+    {
+      "name": "C_invalid_KII_complex",
+      "pass": true
+    },
+    {
+      "name": "C_invalid_EDI_all_size",
+      "pass": true
+    },
+    {
+      "name": "C_invalid_EDI4x4_empty",
+      "pass": true
+    },
+    {
+      "name": "C_invalid_gates_15",
+      "pass": true
+    },
+    {
+      "name": "C_invalid_KI_zero",
+      "pass": true
+    },
+    {
+      "name": "C_invalid_chords_missing",
+      "pass": true
+    },
+    {
+      "name": "C_invalid_nextTip_NaN",
+      "pass": true
+    },
+    {
+      "name": "C_invalid_archived_KI_negative",
+      "pass": true
+    },
+    {
+      "name": "C_invalid_archived_gate_false",
+      "pass": true
+    },
+    {
+      "name": "C_identity_solve",
+      "pass": true
+    },
+    {
+      "name": "C_identity_case",
+      "pass": true
+    },
+    {
+      "name": "C_identity_state",
+      "pass": true
+    },
+    {
+      "name": "C_identity_mask",
+      "pass": true
+    },
+    {
+      "name": "C_identity_canonical",
+      "pass": true
+    },
+    {
+      "name": "C_identity_archived_solution_pin",
+      "pass": true
+    },
+    {
+      "name": "C_identity_geometry",
+      "pass": true
+    },
+    {
+      "name": "C_identity_hardcoded_S9_predictor",
+      "pass": true
+    },
+    {
+      "name": "C_identity_S11_for_soft1",
+      "pass": true
+    },
+    {
+      "name": "C_identity_H_next_tip_for_soft1",
+      "pass": true
+    },
+    {
+      "name": "C_predictor_selection_S10_vs_S11",
+      "pass": true
+    },
+    {
+      "name": "C8_duplicate_bank_id",
+      "pass": true
+    },
+    {
+      "name": "C8_unpaired_bank_lengths",
+      "pass": true
+    },
+    {
+      "name": "C8_bank_pairing",
+      "pass": true
+    },
+    {
+      "name": "C8_merged_coincident_ids",
+      "pass": true
+    },
+    {
+      "name": "C8_near_tip_identity",
+      "pass": true
+    },
+    {
+      "name": "C8_no_extrapolation",
+      "pass": true
+    },
+    {
+      "name": "C8_zero_normalization",
+      "pass": true
+    },
+    {
+      "name": "L0_base_all_true",
+      "pass": true
+    },
+    {
+      "name": "L_C1_KI_dKI_overKeq_at_plus_tol",
+      "pass": true
+    },
+    {
+      "name": "L_C1_KI_dKI_overKeq_at_minus_tol",
+      "pass": true
+    },
+    {
+      "name": "L_C1_KI_dKI_overKeq_beyond_plus",
+      "pass": true
+    },
+    {
+      "name": "L_C1_KI_dKI_overKeq_beyond_minus",
+      "pass": true
+    },
+    {
+      "name": "L_C2_KII_dKII_overKeq_at_plus_tol",
+      "pass": true
+    },
+    {
+      "name": "L_C2_KII_dKII_overKeq_at_minus_tol",
+      "pass": true
+    },
+    {
+      "name": "L_C2_KII_dKII_overKeq_beyond_plus",
+      "pass": true
+    },
+    {
+      "name": "L_C2_KII_dKII_overKeq_beyond_minus",
+      "pass": true
+    },
+    {
+      "name": "L_C3_KIIoverKI_dKIIoverKI_at_plus_tol",
+      "pass": true
+    },
+    {
+      "name": "L_C3_KIIoverKI_dKIIoverKI_at_minus_tol",
+      "pass": true
+    },
+    {
+      "name": "L_C3_KIIoverKI_dKIIoverKI_beyond_plus",
+      "pass": true
+    },
+    {
+      "name": "L_C3_KIIoverKI_dKIIoverKI_beyond_minus",
+      "pass": true
+    },
+    {
+      "name": "L_C4_G_J_dG_rel_at_plus_tol",
+      "pass": true
+    },
+    {
+      "name": "L_C4_G_J_dG_rel_at_minus_tol",
+      "pass": true
+    },
+    {
+      "name": "L_C4_G_J_dG_rel_beyond_plus",
+      "pass": true
+    },
+    {
+      "name": "L_C4_G_J_dG_rel_beyond_minus",
+      "pass": true
+    },
+    {
+      "name": "L_C4_G_J_dJ_rel_at_plus_tol",
+      "pass": true
+    },
+    {
+      "name": "L_C4_G_J_dJ_rel_at_minus_tol",
+      "pass": true
+    },
+    {
+      "name": "L_C4_G_J_dJ_rel_beyond_plus",
+      "pass": true
+    },
+    {
+      "name": "L_C4_G_J_dJ_rel_beyond_minus",
+      "pass": true
+    },
+    {
+      "name": "L_C4_G_J_newJoverGminus1_at_plus_tol",
+      "pass": true
+    },
+    {
+      "name": "L_C4_G_J_newJoverGminus1_at_minus_tol",
+      "pass": true
+    },
+    {
+      "name": "L_C4_G_J_newJoverGminus1_beyond_plus",
+      "pass": true
+    },
+    {
+      "name": "L_C4_G_J_newJoverGminus1_beyond_minus",
+      "pass": true
+    },
+    {
+      "name": "L_C5_MTS_dMTS_deg_at_plus_tol",
+      "pass": true
+    },
+    {
+      "name": "L_C5_MTS_dMTS_deg_at_minus_tol",
+      "pass": true
+    },
+    {
+      "name": "L_C5_MTS_dMTS_deg_beyond_plus",
+      "pass": true
+    },
+    {
+      "name": "L_C5_MTS_dMTS_deg_beyond_minus",
+      "pass": true
+    },
+    {
+      "name": "L_C6_COD_EDI_dCODminusEDI_at_plus_tol",
+      "pass": true
+    },
+    {
+      "name": "L_C6_COD_EDI_dCODminusEDI_at_minus_tol",
+      "pass": true
+    },
+    {
+      "name": "L_C6_COD_EDI_dCODminusEDI_beyond_plus",
+      "pass": true
+    },
+    {
+      "name": "L_C6_COD_EDI_dCODminusEDI_beyond_minus",
+      "pass": true
+    },
+    {
+      "name": "L_C9_phaseActivation_dActiveArea_rel_at_plus_tol",
+      "pass": true
+    },
+    {
+      "name": "L_C9_phaseActivation_dActiveArea_rel_at_minus_tol",
+      "pass": true
+    },
+    {
+      "name": "L_C9_phaseActivation_dActiveArea_rel_beyond_plus",
+      "pass": true
+    },
+    {
+      "name": "L_C9_phaseActivation_dActiveArea_rel_beyond_minus",
+      "pass": true
+    },
+    {
+      "name": "L_C11_compliance_dCompliance_rel_at_plus_tol",
+      "pass": true
+    },
+    {
+      "name": "L_C11_compliance_dCompliance_rel_at_minus_tol",
+      "pass": true
+    },
+    {
+      "name": "L_C11_compliance_dCompliance_rel_beyond_plus",
+      "pass": true
+    },
+    {
+      "name": "L_C11_compliance_dCompliance_rel_beyond_minus",
+      "pass": true
+    },
+    {
+      "name": "L_C6_COD_EDI_newCODminusEDI_rel_at_tol",
+      "pass": true
+    },
+    {
+      "name": "L_C6_COD_EDI_newCODminusEDI_rel_beyond",
+      "pass": true
+    },
+    {
+      "name": "L_C6_COD_EDI_newCODminusEDI_rel_inside",
+      "pass": true
+    },
+    {
+      "name": "L_C8_crackOpening_openingNearTipRel_at_tol",
+      "pass": true
+    },
+    {
+      "name": "L_C8_crackOpening_openingNearTipRel_beyond",
+      "pass": true
+    },
+    {
+      "name": "L_C8_crackOpening_openingNearTipRel_inside",
+      "pass": true
+    },
+    {
+      "name": "L_C8_crackOpening_openingWholeCrackRel_at_tol",
+      "pass": true
+    },
+    {
+      "name": "L_C8_crackOpening_openingWholeCrackRel_beyond",
+      "pass": true
+    },
+    {
+      "name": "L_C8_crackOpening_openingWholeCrackRel_inside",
+      "pass": true
+    },
+    {
+      "name": "L_C10_nextPredictor_nextTipDisplacement_mm_at_tol",
+      "pass": true
+    },
+    {
+      "name": "L_C10_nextPredictor_nextTipDisplacement_mm_beyond",
+      "pass": true
+    },
+    {
+      "name": "L_C10_nextPredictor_nextTipDisplacement_mm_inside",
+      "pass": true
+    },
+    {
+      "name": "L_C7_Path_floor_at",
+      "pass": true
+    },
+    {
+      "name": "L_C7_Path_floor_beyond",
+      "pass": true
+    },
+    {
+      "name": "L_C7_Path_factor_at",
+      "pass": true
+    },
+    {
+      "name": "L_C7_Path_factor_beyond",
+      "pass": true
+    },
+    {
+      "name": "L_C7_Quad_floor_at",
+      "pass": true
+    },
+    {
+      "name": "L_C7_Quad_floor_beyond",
+      "pass": true
+    },
+    {
+      "name": "L_C7_Quad_factor_at",
+      "pass": true
+    },
+    {
+      "name": "L_C7_Quad_factor_beyond",
+      "pass": true
+    },
+    {
+      "name": "L_C5_inadmissible_root",
+      "pass": true
+    },
+    {
+      "name": "L_C9_solver_gates_false",
+      "pass": true
+    },
+    {
+      "name": "L_C9_chords_false",
+      "pass": true
+    },
+    {
+      "name": "L_C9_zero_zero_passes",
+      "pass": true
+    },
+    {
+      "name": "L_C9_zero_tiny_fails",
+      "pass": true
+    },
+    {
+      "name": "L_C9_nonzero_archived_rule_not_applied",
+      "pass": true
+    },
+    {
+      "name": "L_C9_zero_rule_controlled_by_policy_flag",
+      "pass": true
+    },
+    {
+      "name": "D1_qualification_arrays_reproduce_pinned_canonical",
+      "pass": true
+    },
+    {
+      "name": "D2_target_provenance_digest_same_serialization",
+      "pass": true
+    },
+    {
+      "name": "D3_canonical_sensitive_to_one_ulp",
+      "pass": true
+    },
+    {
+      "name": "E1_soft1_protected_topology_bijection",
+      "pass": true
+    },
+    {
+      "name": "E2_H_protected_topology_bijection",
+      "pass": true
+    },
+    {
+      "name": "E3_global_renumbering_invariant",
+      "pass": true
+    },
+    {
+      "name": "E4_merged_bank_pair_detected_although_coordinates_equal",
+      "pass": true
+    },
+    {
+      "name": "E5_swapped_bank_sides_detected",
+      "pass": true
+    },
+    {
+      "name": "E6_one_ulp_coordinate_detected",
+      "pass": true
+    },
+    {
+      "name": "E7_local_rotation_detected",
+      "pass": true
+    },
+    {
+      "name": "E8_H_tip_one_ulp_from_polyline_identical_in_both_meshes",
+      "pass": true
+    },
+    {
+      "name": "E9_tip_moved_one_ulp_versus_archived_detected",
+      "pass": true
+    },
+    {
+      "name": "F1_C8_station_coverage_and_near_tip_identity_both",
+      "pass": true
+    },
+    {
+      "name": "M1_exactly_7_passes",
+      "pass": true
+    },
+    {
+      "name": "M2_below_refuses",
+      "pass": true
+    },
+    {
+      "name": "M3_nan_refuses",
+      "pass": true
+    },
+    {
+      "name": "M4_query_error_refuses",
+      "pass": true
+    },
+    {
+      "name": "M5_negative_refuses",
+      "pass": true
+    },
+    {
+      "name": "M6_actual_reading_finite",
+      "pass": true
+    },
+    {
+      "name": "G1_no_GO_refused_real_gate",
+      "pass": true
+    },
+    {
+      "name": "G2_inert_GO_file_without_binding_refused",
+      "pass": true
+    },
+    {
+      "name": "G3_no_receipt_refused",
+      "pass": true
+    },
+    {
+      "name": "G4_receipt_other_token_refused",
+      "pass": true
+    },
+    {
+      "name": "G5_second_solve_first_refused_order",
+      "pass": true
+    },
+    {
+      "name": "G6_historical_root_refused",
+      "pass": true
+    },
+    {
+      "name": "G7_memory_refusal_before_folder",
+      "pass": true
+    },
+    {
+      "name": "G8_injection_outside_tempdir_refused",
+      "pass": true
+    },
+    {
+      "name": "G9_test_context_roots_outside_test_root_refused",
+      "pass": true
+    },
+    {
+      "name": "G10_replay_root_inside_run_root_refused",
+      "pass": true
+    },
+    {
+      "name": "G11_real_geometry_digest_mismatch_HOLD_before_FEM",
+      "pass": true
+    },
+    {
+      "name": "G11b_hold_record_stage_geometry_attempt_19",
+      "pass": true
+    },
+    {
+      "name": "G12_real_geometry_full_preFEM_path_fabricated_K",
+      "pass": true
+    },
+    {
+      "name": "G12b_verifier_on_driver_records_infrastructure_hold",
+      "pass": true
+    },
+    {
+      "name": "G13_one_attempt_no_retry",
+      "pass": true
+    },
+    {
+      "name": "G14_campaign_stops_on_infrastructure_hold",
+      "pass": true
+    },
+    {
+      "name": "G15_both_equivalent_EQUIVALENT_AT_0p40",
+      "pass": true
+    },
+    {
+      "name": "G16_first_not_equivalent_global_stop",
+      "pass": true
+    },
+    {
+      "name": "G17_injected_exception_global_stop",
+      "pass": true
+    },
+    {
+      "name": "G18_incomplete_driver_result_stop",
+      "pass": true
+    },
+    {
+      "name": "G19_validator_failure_zero_calls",
+      "pass": true
+    },
+    {
+      "name": "G20_default_validator_no_GO_zero_calls",
+      "pass": true
+    },
+    {
+      "name": "H0_valid_fixture_passes",
+      "pass": true
+    },
+    {
+      "name": "H1_decision_decision",
+      "pass": true
+    },
+    {
+      "name": "H2_decisionUrl_decisionUrl",
+      "pass": true
+    },
+    {
+      "name": "H3_token_token",
+      "pass": true
+    },
+    {
+      "name": "H4_campaignId_campaign",
+      "pass": true
+    },
+    {
+      "name": "H5_runName_campaign",
+      "pass": true
+    },
+    {
+      "name": "H6_solves_solves",
+      "pass": true
+    },
+    {
+      "name": "H7_solves_solves",
+      "pass": true
+    },
+    {
+      "name": "H8_solves_solves",
+      "pass": true
+    },
+    {
+      "name": "H9_solveLimit_limits",
+      "pass": true
+    },
+    {
+      "name": "H10_attemptsPerSolve_limits",
+      "pass": true
+    },
+    {
+      "name": "H11_seedSpacing_mm_limits",
+      "pass": true
+    },
+    {
+      "name": "H12_approvedHead_approvedHead",
+      "pass": true
+    },
+    {
+      "name": "H13_approvedHead_approvedHead",
+      "pass": true
+    },
+    {
+      "name": "H14_contractEvidenceFile_evidence",
+      "pass": true
+    },
+    {
+      "name": "H15_contractEvidenceSHA256_evidence",
+      "pass": true
+    },
+    {
+      "name": "H_caller_token_differs",
+      "pass": true
+    },
+    {
+      "name": "H_missing_field",
+      "pass": true
+    },
+    {
+      "name": "H_not_a_scalar_struct",
+      "pass": true
+    },
+    {
+      "name": "H_evidence_physical_solves",
+      "pass": true
+    },
+    {
+      "name": "H_evidence_not_all_passed",
+      "pass": true
+    },
+    {
+      "name": "H_evidence_other_token",
+      "pass": true
+    },
+    {
+      "name": "H_evidence_absent",
+      "pass": true
+    },
+    {
+      "name": "H_not_ancestor",
+      "pass": true
+    },
+    {
+      "name": "H_post_revocation_parent_differs",
+      "pass": true
+    },
+    {
+      "name": "H_extra_changed_file",
+      "pass": true
+    },
+    {
+      "name": "H_no_changed_file",
+      "pass": true
+    },
+    {
+      "name": "H_JSON_round_trip_passes",
+      "pass": true
+    },
+    {
+      "name": "H_JSON_null_solves_rejected",
+      "pass": true
+    },
+    {
+      "name": "I_real_git_valid",
+      "pass": true
+    },
+    {
+      "name": "I_real_git_wrong_parent",
+      "pass": true
+    },
+    {
+      "name": "I_real_git_extra_file",
+      "pass": true
+    },
+    {
+      "name": "I_real_git_post_revocation",
+      "pass": true
+    },
+    {
+      "name": "I_real_git_root_commit",
+      "pass": true
+    },
+    {
+      "name": "I_real_git_not_a_repo",
+      "pass": true
+    },
+    {
+      "name": "I_cmd_caret_defect_still_reproduced_HEAD_tilde_used",
+      "pass": true
+    },
+    {
+      "name": "I_metacharacter_argument_refused",
+      "pass": true
+    },
+    {
+      "name": "J0_positive_control_two_complete_sets_VERIFIED_EQUIVALENT",
+      "pass": true
+    },
+    {
+      "name": "J0b_json_closure_all_metrics_and_flags",
+      "pass": true
+    },
+    {
+      "name": "J1_no_records",
+      "pass": true
+    },
+    {
+      "name": "J2_empty_run_root_hold",
+      "pass": true
+    },
+    {
+      "name": "J_json_failed_null",
+      "pass": true
+    },
+    {
+      "name": "J_json_failed_string",
+      "pass": true
+    },
+    {
+      "name": "J_json_failed_nested",
+      "pass": true
+    },
+    {
+      "name": "J_json_failed_mismatch",
+      "pass": true
+    },
+    {
+      "name": "J_json_failed_number",
+      "pass": true
+    },
+    {
+      "name": "J_json_criterion_flag_flipped",
+      "pass": true
+    },
+    {
+      "name": "J_json_metric_changed",
+      "pass": true
+    },
+    {
+      "name": "J_json_metric_removed",
+      "pass": true
+    },
+    {
+      "name": "J_json_metric_null",
+      "pass": true
+    },
+    {
+      "name": "J_json_outcome_text",
+      "pass": true
+    },
+    {
+      "name": "J_json_validation_null",
+      "pass": true
+    },
+    {
+      "name": "J_json_pass_flag",
+      "pass": true
+    },
+    {
+      "name": "J_json_whitespace_only",
+      "pass": true
+    },
+    {
+      "name": "J_set_missing_comparison_json",
+      "pass": true
+    },
+    {
+      "name": "J_set_extra_file",
+      "pass": true
+    },
+    {
+      "name": "J_set_mesh_bytes_changed",
+      "pass": true
+    },
+    {
+      "name": "J_set_extra_top_file",
+      "pass": true
+    },
+    {
+      "name": "J_set_unexpected_folder",
+      "pass": true
+    },
+    {
+      "name": "J_set_second_only",
+      "pass": true
+    },
+    {
+      "name": "J_partial_hold_preserved_VERIFIED_PARTIAL_HOLD",
+      "pass": true
+    },
+    {
+      "name": "J_second_after_partial_hold_GLOBAL_STOP",
+      "pass": true
+    },
+    {
+      "name": "J_consistent_not_equivalent_VERIFIED_NOT_EQUIVALENT",
+      "pass": true
+    },
+    {
+      "name": "J_second_after_not_equivalent_GLOBAL_STOP",
+      "pass": true
+    },
+    {
+      "name": "J_receipt_other_token_hold",
+      "pass": true
+    },
+    {
+      "name": "J_receipt_missing_hold",
+      "pass": true
+    },
+    {
+      "name": "J_positive_set_unchanged_after_all_replays",
+      "pass": true
+    },
+    {
+      "name": "K1_WP5_closure_replay_VERIFIED_V2",
+      "pass": true
+    },
+    {
+      "name": "K2_LP2A3_campaign_verification_read_only",
+      "pass": true
+    },
+    {
+      "name": "Z_no_physical_solve_sentinel_never_called",
+      "pass": true
+    },
+    {
+      "name": "Z_repository_roots_still_absent",
+      "pass": true
+    }
+  ],
+  "references": {
+    "soft1_S9": {
+      "pass": true,
+      "checks": {
+        "records": true,
+        "links": true,
+        "identity": true,
+        "parentRecords": true,
+        "parent": true,
+        "Kfields": true,
+        "Kvalues": true,
+        "gates16": true,
+        "stateEqualsSolution": true,
+        "uShape": true,
+        "uOrdering": true,
+        "mts": true,
+        "banks": true,
+        "normalization": true,
+        "phase": true,
+        "nextTip": true,
+        "exported": true
+      },
+      "nextState": "S10",
+      "nextTip_mm": [
+        114.29544883822506,
+        63.185594911516127
+      ],
+      "uLength": 122838,
+      "N_T6": 61419,
+      "loadNode": 1522,
+      "pinNode": 1786,
+      "rollerNode": 1787,
+      "banks": {
+        "pairs": 319,
+        "tipNode": 1114,
+        "stationMax_mm": 61.399999999999991,
+        "arc_mm": 61.399999999999991
+      },
+      "maxJump_mm": 9.2719179364719045E-5,
+      "maxJumpNearTip_mm": 1.8415310470565105E-5,
+      "chordsPerCircle": [
+        76,
+        76,
+        76
+      ],
+      "activeArea_mm2": 1012.152528598162,
+      "activeAreaRecomputed_mm2": 1012.152528598162,
+      "KI": 0.010277889641379047,
+      "KII": 0.00015550195627223593,
+      "mts": {
+        "theta_deg": -1.7328171539890624,
+        "status": "OK",
+        "stationarity": 0
+      },
+      "stateSHA256": "79EBECBC21B4D9425E3A2B82A9BC17270373A85F2A7C26D11CFE1E7C9B45AEC6",
+      "solutionSHA256": "AE981011E8092115037B0AE910CD92D2E7E352B2FCB88677425DFD564ABCC54B",
+      "meshSHA256": "5afd6e8199ca797ced1a73ba7584c29334abdad7d2413d1bc39a2e0385d1eae0",
+      "phaseSHA256": "FE0AD27F471D052153EDBEBE6ECF39E525021F5051C4572B97E3F89907F0C83E"
+    },
+    "H_S10": {
+      "pass": true,
+      "checks": {
+        "records": true,
+        "links": true,
+        "identity": true,
+        "parentRecords": true,
+        "parent": true,
+        "Kfields": true,
+        "Kvalues": true,
+        "gates16": true,
+        "stateEqualsSolution": true,
+        "uShape": true,
+        "uOrdering": true,
+        "mts": true,
+        "banks": true,
+        "normalization": true,
+        "phase": true,
+        "nextTip": true,
+        "exported": true
+      },
+      "nextState": "S11",
+      "nextTip_mm": [
+        116.53715206030587,
+        66.634693166819289
+      ],
+      "uLength": 123642,
+      "N_T6": 61821,
+      "loadNode": 1522,
+      "pinNode": 1804,
+      "rollerNode": 1805,
+      "banks": {
+        "pairs": 337,
+        "tipNode": 1114,
+        "stationMax_mm": 65.399999999999991,
+        "arc_mm": 65.4
+      },
+      "maxJump_mm": 9.8747036917615159E-5,
+      "maxJumpNearTip_mm": 1.8508752806966107E-5,
+      "chordsPerCircle": [
+        76,
+        76,
+        76
+      ],
+      "activeArea_mm2": 0,
+      "activeAreaRecomputed_mm2": 0,
+      "KI": 0.010336206195789625,
+      "KII": 0.00010980867509538642,
+      "mts": {
+        "theta_deg": -1.2170650372123342,
+        "status": "OK",
+        "stationarity": 0
+      },
+      "stateSHA256": "B1D929AB1FAA49441A5DAC09BE58B0B866C93F616E717EDAACC410828ECF5A4A",
+      "solutionSHA256": "51A232D061E3CEB9C6D9995AB84BC19B5279BB219D765C6DD2626BC3515E54AC",
+      "meshSHA256": "6e79b5e0c34cc7e0db6546e159d17384406613c32884a574237a83e58afa11d0",
+      "phaseSHA256": "B64A080234EFF198B9C8A69A3D1E43F9376B5B08E46FE9712889E775711010EA"
+    }
+  },
+  "stationCoverage": [
+    {
+      "solveId": "EQB-soft1-S9",
+      "newPairs": 349,
+      "archivedPairs": 319,
+      "nearNew": 57,
+      "nearArchived": 57,
+      "nearMatched": 57,
+      "rangeNew": [
+        0,
+        61.399999999999991
+      ],
+      "rangeArchived": [
+        0,
+        61.399999999999991
+      ],
+      "interpolatedFinite": true,
+      "archivedMaxJump_mm": 9.2719179364719045E-5
+    },
+    {
+      "solveId": "EQB-H-S10",
+      "newPairs": 369,
+      "archivedPairs": 337,
+      "nearNew": 57,
+      "nearArchived": 57,
+      "nearMatched": 57,
+      "rangeNew": [
+        0,
+        65.399999999999991
+      ],
+      "rangeArchived": [
+        0,
+        65.399999999999991
+      ],
+      "interpolatedFinite": true,
+      "archivedMaxJump_mm": 9.8747036917615159E-5
+    }
+  ],
+  "topology": {
+    "soft1": {
+      "pass": true,
+      "checks": {
+        "blockRows": true,
+        "function": true,
+        "injective": true,
+        "coordinates": true,
+        "nodalQ": true,
+        "qActiveRows": true,
+        "T3block": true,
+        "banks": true,
+        "tip": true,
+        "coincidenceOld": true,
+        "coincidenceNew": true
+      },
+      "blockNodes": 5953,
+      "bankPairsInBlock": 56,
+      "distinctBankDOFsInBlock": 226,
+      "tipOld": 1114,
+      "tipNew": 1114,
+      "tipOffsetFromPolyline_mm": [
+        0,
+        0
+      ]
+    },
+    "H": {
+      "pass": true,
+      "checks": {
+        "blockRows": true,
+        "function": true,
+        "injective": true,
+        "coordinates": true,
+        "nodalQ": true,
+        "qActiveRows": true,
+        "T3block": true,
+        "banks": true,
+        "tip": true,
+        "coincidenceOld": true,
+        "coincidenceNew": true
+      },
+      "blockNodes": 5953,
+      "bankPairsInBlock": 56,
+      "distinctBankDOFsInBlock": 226,
+      "tipOld": 1114,
+      "tipNew": 1114,
+      "tipOffsetFromPolyline_mm": [
+        1.4210854715202004E-14,
+        1.4210854715202004E-14
+      ]
+    }
+  },
+  "metadataSHA256": [
+    "58a12546bbe3a50c6488f66078f2d841f42e6d17700400809f4f4c5c3a406f21",
+    "b2c92e34adeeca92e9546062a2157901fb0ab69a89058e52412711a5fd737210"
+  ],
+  "driverRealGeometry": {
+    "stage": "SOLVED_COMPARED",
+    "outcome": "INPUT_INVALID",
+    "validation": [
+      "C8_ZERO_NORMALIZATION"
+    ],
+    "geometry": {
+      "pass": true,
+      "checks": {
+        "attempt19": true,
+        "attemptCanonicalEqualsPin": true,
+        "joinPass": true,
+        "pairing": true,
+        "kinkedAudit34": true,
+        "phaseAudit": true,
+        "chords76": true,
+        "canonicalEqualsPin": true,
+        "canonicalEqualsAttempt": true,
+        "qualificationFilePin": true,
+        "qualificationArraysEqual": true,
+        "attemptArraysEqual": true,
+        "protectedTopology": true,
+        "ringPolygonsEqualArchived": true,
+        "stationCoverage": true
+      },
+      "canonicalSHA256": "7535d71ad4790f3a24a47d03e27c3d73d8ba61df03050a2e952accfeffebee16",
+      "metadataSHA256": "58a12546bbe3a50c6488f66078f2d841f42e6d17700400809f4f4c5c3a406f21",
+      "chordsPerCircle": [
+        76,
+        76,
+        76
+      ],
+      "activeAreaGeometric_mm2": 1012.152528598162,
+      "stations": {
+        "problemsNew": [],
+        "problemsArchived": [],
+        "nNew": 349,
+        "nArchived": 319,
+        "nearNew": 57,
+        "nearArchived": 57,
+        "nearMatched": 57,
+        "rangeNew": [
+          0,
+          61.399999999999991
+        ],
+        "rangeArchived": [
+          0,
+          61.399999999999991
+        ]
+      },
+      "attemptChecks": "19/19",
+      "attemptCanonicalSHA256": "7535d71ad4790f3a24a47d03e27c3d73d8ba61df03050a2e952accfeffebee16",
+      "attemptArraysSHA256": "389ee98a33cecbe2846aaf109aac55d239fb753c349a579dbfa9f4172131786a",
+      "T3": 30183,
+      "minAngle_deg": 22.387807593359415,
+      "maxNeighborRatio": 1.5918285508619603,
+      "topology": {
+        "pass": true,
+        "checks": {
+          "blockRows": true,
+          "function": true,
+          "injective": true,
+          "coordinates": true,
+          "nodalQ": true,
+          "qActiveRows": true,
+          "T3block": true,
+          "banks": true,
+          "tip": true,
+          "coincidenceOld": true,
+          "coincidenceNew": true
+        },
+        "blockNodes": 5953,
+        "bankPairsInBlock": 56,
+        "distinctBankDOFsInBlock": 226,
+        "tipOld": 1114,
+        "tipNew": 1114,
+        "tipOffsetFromPolyline_mm": [
+          0,
+          0
+        ]
+      }
+    },
+    "files": 10
+  },
+  "verifier": {
+    "positive": "VERIFIED_EQUIVALENT",
+    "m_failed_null": "VERIFY_HOLD",
+    "m_failed_string": "VERIFY_HOLD",
+    "m_failed_nested": "VERIFY_HOLD",
+    "m_failed_mismatch": "VERIFY_HOLD",
+    "m_failed_number": "VERIFY_HOLD",
+    "m_criterion_flag_flipped": "VERIFY_HOLD",
+    "m_metric_changed": "VERIFY_HOLD",
+    "m_metric_removed": "VERIFY_HOLD",
+    "m_metric_null": "VERIFY_HOLD",
+    "m_outcome_text": "VERIFY_HOLD",
+    "m_validation_null": "VERIFY_HOLD",
+    "m_pass_flag": "VERIFY_HOLD",
+    "m_whitespace_only": "VERIFIED_EQUIVALENT",
+    "f_missing_comparison_json": "VERIFY_HOLD",
+    "f_extra_file": "VERIFY_HOLD",
+    "f_mesh_bytes_changed": "VERIFY_HOLD",
+    "f_extra_top_file": "VERIFY_HOLD",
+    "f_unexpected_folder": "VERIFY_HOLD",
+    "f_second_only": "VERIFY_HOLD"
+  },
+  "regression": {
+    "wp5Closure": "VERIFIED_V2",
+    "a3": {
+      "pass": true,
+      "closed": true,
+      "problems": []
+    }
+  },
+  "realGit": {
+    "matlab": "9.14.0.2206163 (R2023a)",
+    "comSpec": "C:\\WINDOWS\\system32\\cmd.exe",
+    "git": "git version 2.53.0.windows.1",
+    "cases": [
+      {
+        "case": "valid",
+        "approvedHead": "962eaed6a4dd7508c323d0ff0bc2f70227bd5dc9",
+        "parentStatus": 0,
+        "parentValue": "962eaed6a4dd7508c323d0ff0bc2f70227bd5dc9",
+        "command": "git -C \"<fixture>\" rev-parse --verify HEAD~1",
+        "validatorPass": true,
+        "failed": [],
+        "externalPass": true
+      },
+      {
+        "case": "wrong_parent",
+        "approvedHead": "8713f7239cc01601d25649b55113bed6bd3d8f70",
+        "parentStatus": 0,
+        "parentValue": "962eaed6a4dd7508c323d0ff0bc2f70227bd5dc9",
+        "command": "git -C \"<fixture>\" rev-parse --verify HEAD~1",
+        "validatorPass": false,
+        "failed": [
+          "activationBinding"
+        ],
+        "externalPass": false
+      },
+      {
+        "case": "extra_file",
+        "approvedHead": "962eaed6a4dd7508c323d0ff0bc2f70227bd5dc9",
+        "parentStatus": 0,
+        "parentValue": "962eaed6a4dd7508c323d0ff0bc2f70227bd5dc9",
+        "command": "git -C \"<fixture>\" rev-parse --verify HEAD~1",
+        "validatorPass": false,
+        "failed": [
+          "activationBinding"
+        ],
+        "externalPass": false
+      },
+      {
+        "case": "post_revocation",
+        "approvedHead": "962eaed6a4dd7508c323d0ff0bc2f70227bd5dc9",
+        "parentStatus": 0,
+        "parentValue": "1bf24b51d4bff7e027917748d66042a514258f68",
+        "command": "git -C \"<fixture>\" rev-parse --verify HEAD~1",
+        "validatorPass": false,
+        "failed": [
+          "activationBinding"
+        ],
+        "externalPass": false
+      },
+      {
+        "case": "root_commit",
+        "approvedHead": "962eaed6a4dd7508c323d0ff0bc2f70227bd5dc9",
+        "parentStatus": 128,
+        "parentValue": "",
+        "command": "git -C \"<fixture>\" rev-parse --verify HEAD~1",
+        "validatorPass": false,
+        "failed": [
+          "ancestor",
+          "activationBinding"
+        ],
+        "externalPass": false
+      },
+      {
+        "case": "not_a_repo",
+        "approvedHead": "962eaed6a4dd7508c323d0ff0bc2f70227bd5dc9",
+        "parentStatus": 128,
+        "parentValue": "",
+        "command": "git -C \"<fixture>\" rev-parse --verify HEAD~1",
+        "validatorPass": false,
+        "failed": [
+          "ancestor",
+          "activationBinding"
+        ],
+        "externalPass": false
+      }
+    ],
+    "commits": {
+      "c0": "8713f7239cc01601d25649b55113bed6bd3d8f70",
+      "c1": "962eaed6a4dd7508c323d0ff0bc2f70227bd5dc9",
+      "cA": "1bf24b51d4bff7e027917748d66042a514258f68",
+      "cX": "cd472beb3069f531ac5576d18cd4e3d75ced9789",
+      "cV": "64966bf4ee743b0852f53b0ca0e255157a1d919f",
+      "cR": "0889cb7ae54148c617f66ce1d2d4ae93537e0abc"
+    }
+  },
+  "tempRootRemoved": true,
+  "wallSeconds": 62.9632905,
+  "options": {
+    "OutFile": "<repo>\\outputs\\g2_lp2b1eq_readiness_v1\\tests_v3\\LP2B1EQ_TESTS.json",
+    "RealGeometry": true,
+    "RealGit": true,
+    "Regression": true
+  },
+  "matlab": "9.14.0.2206163 (R2023a)"
+}

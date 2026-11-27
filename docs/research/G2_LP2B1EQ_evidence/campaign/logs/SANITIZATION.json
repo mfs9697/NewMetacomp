@@ -1,0 +1,126 @@
+{
+ "schema": "NewMetacomp.G2.LP2B1EQ.Sanitization.v1",
+ "rule": "absolute local paths replaced by <repo>, <worktree>, <temp>, <scratch>, <backup>, <home>, <drive>, <matlabroot>; UTF-16 logs converted to UTF-8; MATLAB startup path warnings removed from logs; binaries (.mat, .f64) only in the archive; figures byte for byte",
+ "files": [
+  {
+   "file": "b1eq_activation_checks.m",
+   "sourceSHA256": "f486085ae37592a03e6c7a1b39a7032d33bc29a84220f944f73707fe4c54eb61",
+   "publishedSHA256": "def7d78347d0c87e049ade24b73f3220c51f290cd5befb7907bdcb84bc31d689",
+   "replacements": {
+    "<scratch>": 1,
+    "<repo>": 1
+   }
+  },
+  {
+   "file": "b1eq_audit.py",
+   "sourceSHA256": "6c360ea11984c8399e19279e2b7d7f5dfd1743923f4f48f448d7075dc996e57d",
+   "publishedSHA256": "6c360ea11984c8399e19279e2b7d7f5dfd1743923f4f48f448d7075dc996e57d",
+   "replacements": {}
+  },
+  {
+   "file": "b1eq_campaign.log",
+   "sourceSHA256": "b6790ec4940e83b213e6767a64a48d5ae1d141c074f25bfaf31c314369784ec4",
+   "publishedSHA256": "84c6f87f68ff6d8423494992e59994b75cb32f97a0fded66c33cfbf08eb21ed5",
+   "replacements": {
+    "<repo>": 1,
+    "<drive>": 2
+   }
+  },
+  {
+   "file": "b1eq_campaign.m",
+   "sourceSHA256": "d0c4f0511cbaa586049dc4d67be770ae6efad7bfaf150f34eac2f441221aa58e",
+   "publishedSHA256": "bb15dd3f4afab6a0f5abb07b356e15a8bd650831e10cf85e46d3e9058182cb7f",
+   "replacements": {
+    "<scratch>": 1,
+    "<repo>": 1
+   }
+  },
+  {
+   "file": "b1eq_closure.log",
+   "sourceSHA256": "8bfe55e14841ffdd80c728e0c3764a5859f9e27f95a56497b03aea91a2a7c33c",
+   "publishedSHA256": "a95839642a3d95825933652d4237e652f8ddad0109762840c06a75ac1bff0f6d",
+   "replacements": {
+    "<drive>": 2
+   }
+  },
+  {
+   "file": "b1eq_closure.m",
+   "sourceSHA256": "1989018c2a420d6f19f143f0b30e1552f0bebb9cf12ce0fa4b5e6deedb42ad82",
+   "publishedSHA256": "d740a8916d0f00437a6984b542b54c7fc3c53f7df8afb995baf67cada5572c61",
+   "replacements": {
+    "<scratch>": 1,
+    "<repo>": 1
+   }
+  },
+  {
+   "file": "b1eq_figure.log",
+   "sourceSHA256": "6870297e315f9a4cdbba64de651088401d2ebf48dbc5b37b7ec43c2349e0a9f1",
+   "publishedSHA256": "d1c2dd516a280267a60a0c68d612de80e5cb70538632b9c866104a51c9ebd2af",
+   "replacements": {
+    "<drive>": 2
+   }
+  },
+  {
+   "file": "b1eq_figure.m",
+   "sourceSHA256": "49d31fc16beb88fe9e5ccadb3a6750c18783049a51beabf8ee37864478bf58e0",
+   "publishedSHA256": "7be73a1ad23cef22965320be081ba644d9a647dbffb2d52fd70a0a399bb367f3",
+   "replacements": {
+    "<scratch>": 2,
+    "<worktree>": 1
+   }
+  },
+  {
+   "file": "b1eq_preact2.log",
+   "sourceSHA256": "485d97041b893bab7261811a8d0c0e68adc4ff5335a19ddde557237517a23455",
+   "publishedSHA256": "a99718b2b3518fa3721741b1ebcccce6f79c8fa20d7a24dd0102ffc2e04488b9",
+   "replacements": {
+    "<drive>": 2
+   }
+  },
+  {
+   "file": "make_campaign_archive_tool.py",
+   "sourceSHA256": "95c3571e669eae6a484f777a762fb83a7eea5e398dbd4ad6458a52cedeb52ffb",
+   "publishedSHA256": "95c3571e669eae6a484f777a762fb83a7eea5e398dbd4ad6458a52cedeb52ffb",
+   "replacements": {}
+  },
+  {
+   "file": "make_go.py",
+   "sourceSHA256": "792359ff4f160ff902fb2295d5ced6ce62456fce143e126ec0e1f0a630a88714",
+   "publishedSHA256": "792359ff4f160ff902fb2295d5ced6ce62456fce143e126ec0e1f0a630a88714",
+   "replacements": {}
+  },
+  {
+   "file": "msgGO.txt",
+   "sourceSHA256": "3c2739170585a641ea46883ee9d1cd81661bdf6f806fcc03d2ea86a8ff3cabe5",
+   "publishedSHA256": "3c2739170585a641ea46883ee9d1cd81661bdf6f806fcc03d2ea86a8ff3cabe5",
+   "replacements": {}
+  },
+  {
+   "file": "msgRev.txt",
+   "sourceSHA256": "300ef25ebc190905c928f79e40f45c2204daf0175db610a1797b938fd2b7487e",
+   "publishedSHA256": "300ef25ebc190905c928f79e40f45c2204daf0175db610a1797b938fd2b7487e",
+   "replacements": {}
+  },
+  {
+   "file": "publish_campaign.py",
+   "sourceSHA256": "160b5f43e55e45d509f6d2c8348b87101b4fc0bf291332ec6de58729c46ce1e8",
+   "publishedSHA256": "f534ae700ccff4ff1f76d87f578562672c88b48e963bdfe10a1e8bdd9c1ad596",
+   "replacements": {
+    "<scratch>": 1,
+    "<temp>": 1,
+    "<repo>": 1,
+    "<worktree>": 1,
+    "<backup>": 1,
+    "<matlabroot>": 2,
+    "<drive>": 1,
+    "<home>": 1
+   }
+  },
+  {
+   "file": "tables.md",
+   "sourceSHA256": "ff5a9f3ccaa26452acd021f63676f7404eff30c3bbd8d89f7b39f567575bf0b5",
+   "publishedSHA256": "ff5a9f3ccaa26452acd021f63676f7404eff30c3bbd8d89f7b39f567575bf0b5",
+   "replacements": {}
+  }
+ ]
+}

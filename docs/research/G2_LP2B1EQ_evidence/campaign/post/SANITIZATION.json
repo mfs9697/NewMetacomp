@@ -1,0 +1,54 @@
+{
+ "schema": "NewMetacomp.G2.LP2B1EQ.Sanitization.v1",
+ "rule": "absolute local paths replaced by <repo>, <worktree>, <temp>, <scratch>, <backup>, <home>, <drive>, <matlabroot>; UTF-16 logs converted to UTF-8; MATLAB startup path warnings removed from logs; binaries (.mat, .f64) only in the archive; figures byte for byte",
+ "files": [
+  {
+   "file": "LP2B1EQ_CAMPAIGN_ARCHIVE_RECORD.json",
+   "sourceSHA256": "5aeb0378fa664ee72dd48dfdade91b32433331aa3afc30d33b1e156e0ed8598a",
+   "publishedSHA256": "5aeb0378fa664ee72dd48dfdade91b32433331aa3afc30d33b1e156e0ed8598a",
+   "replacements": {}
+  },
+  {
+   "file": "LP2B1EQ_POST_REVOCATION.json",
+   "sourceSHA256": "8e2ea919a012a3b84d670c9028efe18fbcb7137d2b41c0a1638bbc00472f2b39",
+   "publishedSHA256": "8e2ea919a012a3b84d670c9028efe18fbcb7137d2b41c0a1638bbc00472f2b39",
+   "replacements": {}
+  },
+  {
+   "file": "LP2B1EQ_PROTECTED_POSTCAMPAIGN.json",
+   "sourceSHA256": "f38e0e57227deccae522f2ff8d69450fc8436d277d7677a30cb462999916b023",
+   "publishedSHA256": "f38e0e57227deccae522f2ff8d69450fc8436d277d7677a30cb462999916b023",
+   "replacements": {}
+  },
+  {
+   "file": "LP2B1EQ_PROTECTED_POSTCAMPAIGN_attempt1_D_detached.json",
+   "sourceSHA256": "a7ca183733baff343fc8eecbab0edfca4f49018e3806eb9bd98d65af47f5c799",
+   "publishedSHA256": "a7ca183733baff343fc8eecbab0edfca4f49018e3806eb9bd98d65af47f5c799",
+   "replacements": {}
+  },
+  {
+   "file": "PRESTART_06_closure.json",
+   "sourceSHA256": "2c46ec92fadefcc13d9a95e190d5051647caf3c5f7435f026dd6bcc096264079",
+   "publishedSHA256": "ca0f545eb812df64443611ce3c9f089d47685698d055eff8ed041d85124df355",
+   "replacements": {}
+  },
+  {
+   "file": "PRESTART_07_figure.json",
+   "sourceSHA256": "dee411d157d82990defd14b66f413206f8a71f2aeec292144d21eb4fe92af7c0",
+   "publishedSHA256": "8f426e149e302baf5ff060622457daa4791d46aacd6f0631bd2d620a654c20b6",
+   "replacements": {}
+  },
+  {
+   "file": "PRESTART_08_figure2.json",
+   "sourceSHA256": "e904b579fb90574e21ca1d21e41c5dec1d5b6c449dfc242e4a12e6f7a12491bf",
+   "publishedSHA256": "18641b23860651eee844d473748c637c952bfe7515066dca1b47cbf78463aa35",
+   "replacements": {}
+  },
+  {
+   "file": "LP2B1EQ_PROTECTED_FINAL_ba33e33.json",
+   "sourceSHA256": "f38e0e57227deccae522f2ff8d69450fc8436d277d7677a30cb462999916b023",
+   "publishedSHA256": "f38e0e57227deccae522f2ff8d69450fc8436d277d7677a30cb462999916b023",
+   "replacements": {}
+  }
+ ]
+}
