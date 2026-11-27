@@ -1,0 +1,4 @@
+﻿[Warning: Name is nonexistent or not a directory: <drive>\Projects\8 - CohZonFEM\czm_project\CrackPath\CrackFromHoleLEFM\cfh] 
+[Warning: Name is nonexistent or not a directory: <drive>\Projects\8 - CohZonFEM\Asphalt\remmers2003] 
+CAUGHT id=[MATLAB:maxlhs] msg=[Too many output arguments.]
+okt=1 isempty=1 class=double size=[0 0] note=[S11 information unavailable (MATLAB:maxlhs)] startsWith=0

@@ -1,0 +1,106 @@
+﻿[Warning: Name is nonexistent or not a directory: <drive>\Projects\8 - CohZonFEM\czm_project\CrackPath\CrackFromHoleLEFM\cfh] 
+[Warning: Name is nonexistent or not a directory: <drive>\Projects\8 - CohZonFEM\Asphalt\remmers2003] 
+SOURCE_COMMIT=b2a0347799dc02ac6e2f1ab76eb2589d9bce4238
+SOURCE_STATUS=[]
+LP2B1S10_TEST A0_no_GO_correct_token_refused_real_preflight                      1
+LP2B1S10_TEST A1_token_status_no_GO                                              1
+LP2B1S10_TEST A2_run_receipt_summary_absent                                      1
+LP2B1S10_TEST A3_single_target_one_attempt_seed040                               1
+LP2B1S10_TEST A4_preflight_bypass_refused                                        1
+LP2B1S10_TEST A5_historical_roots_include_EQ_exclude_new                         1
+LP2B1S10_TEST A6_expected_quality_and_limits_unchanged                           1
+LP2B1S10_TEST A7_EQ_campaign_evidence_23_outputs_archive                         1
+LP2B1S10_TEST A8_parent_pins_issue                                               1
+LP2B1S10_TEST A9_forbidden_names_include_A3_and_EQ                               1
+LP2B1S10_TEST B1_target_qualification_all_checks                                 1
+LP2B1S10_TEST B2_tip_bitwise_S10_arc_65p4                                        1
+LP2B1S10_TEST B3_guide_gap_matlab_bitwise_issue_within_1e12                      1
+LP2B1S10_TEST B4_independent_MTS_and_recurrence                                  1
+LP2B1S10_TEST B5_shifted_EQ_predictor_not_used                                   1
+LP2B1S10_TEST B6_failed_mesh_is_baseline_same_polyline                           1
+LP2B1S10_TEST B7_wrong_parent_pin_fails                                          1
+LP2B1S10_TEST B8_wrong_failed_mesh_pin_fails                                     1
+LP2B1S10_TEST B9_shifted_EQ_tip_as_target_fails                                  1
+LP2B1S10_TEST B10_wrong_terminal_pin_fails                                       1
+LP2B1S10_TEST B11_guide_gap_issue_value_beyond_1e12_fails                        1
+LP2B1S10_TEST B12_wrong_grandparent_link_fails                                   1
+LP2B1S10_TEST D1_qualification_canonical_equals_pin                              1
+LP2B1S10_TEST D2_repeat_arrays_canonical_equal                                   1
+LP2B1S10_TEST D3_metadata_digest_repeat_equal                                    1
+LP2B1S10_TEST M1_exactly_7_passes                                                1
+LP2B1S10_TEST M2_below_refuses                                                   1
+LP2B1S10_TEST M3_nan_refuses                                                     1
+LP2B1S10_TEST G1_no_GO_refused_real_gate                                         1
+LP2B1S10_TEST G2_inert_GO_file_without_binding_refused                           1
+LP2B1S10_TEST G3_no_receipt_refused                                              1
+LP2B1S10_TEST G4_receipt_other_token_refused                                     1
+LP2B1S10_TEST G5_existing_ledger_ADMIT_refused_one_attempt                       1
+LP2B1S10_TEST G6_existing_case_folder_refused_one_attempt                        1
+LP2B1S10_TEST G7_historical_root_refused                                         1
+LP2B1S10_TEST G8_memory_refusal_before_folder_and_admission                      1
+LP2B1S10_TEST G9_target_failure_HOLD_before_folder                               1
+LP2B1S10_TEST G10_injection_outside_tempdir_refused                              1
+LP2B1S10_TEST G11_test_roots_outside_test_root_refused                           1
+LP2B1S10_TEST G12_replay_root_inside_run_root_refused                            1
+G2_LP2B1_ATTEMPT GEOMETRY_h040 hs=0.40 stage=KINKED_PROTECTED_MESH_JOIN_PASS join=13/13 T3=30357 minAng=23.179107 ratio=1.601535 checks=19/19 pass=1
+LP2B1S10_TEST G13_real_geometry_digest_mismatch_HOLD_before_FEM                  1
+LP2B1S10_TEST G13b_hold_stage_geometry_attempt_19_real_digest                    1
+LP2B1S10_TEST G13c_verifier_partial_hold                                         1
+G2_LP2B1_ATTEMPT GEOMETRY_h040 hs=0.40 stage=KINKED_PROTECTED_MESH_JOIN_PASS join=13/13 T3=30357 minAng=23.179107 ratio=1.601535 checks=19/19 pass=1
+G2_LP2B1S10_ACCEPTED soft1 S10 s=65.4000 KI=0.0102778896 KII=+0.000155501956 MTS=-1.73282 tip=(114.2954,63.1856)
+LP2B1S10_TEST G14_real_geometry_fabricated_K_synthetic_STATE_TERMINAL            1
+LP2B1S10_TEST G14b_verifier_accepts_synthetic_closure                            1
+LP2B1S10_TEST G14c_STATE_links_original_S9_and_qualification                     1
+LP2B1S10_TEST G15_one_attempt_no_retry_after_success                             1
+LP2B1S10_TEST G16_failed_solver_gates_HOLD_no_STATE                              1
+LP2B1S10_TEST G16b_verifier_partial_hold                                         1
+LP2B1S10_TEST G17_negative_KI_MTS_HOLD_no_STATE                                  1
+G2_LP2B1S10_ACCEPTED soft1 S10 s=65.4000 KI=0.0102778896 KII=+0.000155501956 MTS=-1.73282 tip=(114.2954,63.1856)
+LP2B1S10_TEST G18_S11_forecast_failure_information_unavailable                   1
+LP2B1S10_TEST G18b_verifier_flags_forecast_discrepancy                           1
+LP2B1S10_TEST G19_pre_solve_memory_HOLD_after_MESH_PHASE                         1
+LP2B1S10_TEST G20_cached_operation_meshed_once_two_real_meshings_total           1
+LP2B1S10_TEST J1_copy_verifies                                                   1
+LP2B1S10_TEST J2_extra_file_hold                                                 1
+LP2B1S10_TEST J3_missing_manifest_hold                                           1
+LP2B1S10_TEST J4_tampered_MESH_link_hold                                         1
+LP2B1S10_TEST J5_missing_ledger_ADMIT_hold                                       1
+LP2B1S10_TEST J6_other_token_hold                                                1
+LP2B1S10_TEST J7_other_parent_hold                                               1
+LP2B1S10_TEST J8_stray_run_root_file_hold                                        1
+LP2B1S10_TEST J9_no_records_outcome                                              1
+LP2B1S10_TEST H1_valid_record_passes                                             1
+LP2B1S10_TEST H2_mutation_refused_decision                                       1
+LP2B1S10_TEST H2_mutation_refused_decisionUrl                                    1
+LP2B1S10_TEST H2_mutation_refused_token                                          1
+LP2B1S10_TEST H2_mutation_refused_campaignId                                     1
+LP2B1S10_TEST H2_mutation_refused_runName                                        1
+LP2B1S10_TEST H2_mutation_refused_target                                         1
+LP2B1S10_TEST H2_mutation_refused_admissions                                     1
+LP2B1S10_TEST H2_mutation_refused_physicalSolves                                 1
+LP2B1S10_TEST H2_mutation_refused_attemptsPerSolve                               1
+LP2B1S10_TEST H2_mutation_refused_seedSpacing_mm                                 1
+LP2B1S10_TEST H2_mutation_refused_approvedHead                                   1
+LP2B1S10_TEST H2_mutation_refused_contractEvidenceFile                           1
+LP2B1S10_TEST H3_caller_token_mismatch_refused                                   1
+LP2B1S10_TEST H4_missing_field_refused                                           1
+LP2B1S10_TEST H5_extra_activation_file_refused                                   1
+LP2B1S10_TEST H6_wrong_parent_refused                                            1
+LP2B1S10_TEST H7_not_ancestor_refused                                            1
+LP2B1S10_TEST H8_evidence_sha_mismatch_refused                                   1
+LP2B1S10_TEST H9_evidence_failed_tests_refused                                   1
+LP2B1S10_TEST H10_evidence_physical_solve_refused                                1
+LP2B1S10_TEST H11_evidence_other_token_refused                                   1
+LP2B1S10_TEST H12_non_struct_refused                                             1
+LP2B1S10_TEST I_real_git_valid                                                   1
+LP2B1S10_TEST I_real_git_wrong_parent                                            1
+LP2B1S10_TEST I_real_git_extra_file                                              1
+LP2B1S10_TEST I_real_git_post_revocation                                         1
+LP2B1S10_TEST I_real_git_root_commit                                             1
+LP2B1S10_TEST I_real_git_not_a_repo                                              1
+LP2B1S10_TEST I_cmd_caret_defect_still_reproduced_HEAD_tilde_used                1
+LP2B1S10_TEST I_metacharacter_argument_refused                                   1
+LP2B1S10_TEST Z_no_physical_solve_sentinel_never_called                          1
+LP2B1S10_TEST Z_repository_roots_still_absent                                    1
+LP2B1S10_TESTS 96/96 (50.3 s)
+S2_RESULT 96/96 failed=[]

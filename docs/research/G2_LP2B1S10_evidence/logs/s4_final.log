@@ -1,0 +1,31 @@
+﻿[Warning: Name is nonexistent or not a directory: <drive>\Projects\8 - CohZonFEM\czm_project\CrackPath\CrackFromHoleLEFM\cfh] 
+[Warning: Name is nonexistent or not a directory: <drive>\Projects\8 - CohZonFEM\Asphalt\remmers2003] 
+SOURCE_COMMIT=b2a0347799dc02ac6e2f1ab76eb2589d9bce4238
+SOURCE_STATUS=[]
+WP0 target=1 failed=[] roots=1
+G2_LP2B1_ATTEMPT GEOMETRY_h040 hs=0.40 stage=KINKED_PROTECTED_MESH_JOIN_PASS join=13/13 T3=30357 minAng=23.179107 ratio=1.601535 checks=19/19 pass=1
+GEOM attempt19                    1
+GEOM attemptCanonicalEqualsPin    1
+GEOM joinPass                     1
+GEOM pairing                      1
+GEOM kinkedAudit34                1
+GEOM phaseAudit                   1
+GEOM chords76                     1
+GEOM canonicalEqualsPin           1
+GEOM canonicalEqualsAttempt       1
+GEOM qualificationFilePin         1
+GEOM qualificationArraysEqual     1
+GEOM attemptArraysEqual           1
+GEOM protectedTopology            1
+GEOM ringPolygonsEqualArchived    1
+GEOM stationCoverage              1
+EXPECT expectedT3                 1
+EXPECT expectedMinAngle           1
+EXPECT expectedMaxRatio           1
+EXPECT expectedChords             1
+EXPECT qParents2443               1
+EXPECT T3Limit                    1
+EXPECT attemptGuide1mm            1
+REPLAY pass=1 canonical=54293d2a527f9bec33605ffea10c8f56af46a56291157f0d911cf68301b85bd2 T3=30357 minAng=23.179107436795395 ratio=1.6015350873084404 chords=[76 76 76] class=MATRIX_ADVANCE gap=[4.6329563816383335 34.900088262551904 80.724292541508007] topo=1 (19.2 s)
+EXPORT done
+S4_RESULT wp0=1 replay=1 roots=1

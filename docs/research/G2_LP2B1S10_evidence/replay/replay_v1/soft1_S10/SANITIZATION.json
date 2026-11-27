@@ -1,0 +1,12 @@
+{
+ "schema": "NewMetacomp.G2.LP2B1S10.Sanitization.v1",
+ "rule": "absolute local paths replaced by <repo>, <worktree>, <temp>, <scratch>, <backup>, <home>, <drive>, <matlabroot>; test temp stamps by <stamp>; UTF-16 logs converted to UTF-8; MATLAB startup path warnings removed from logs; binaries (.mat, .f64) only in the archive",
+ "files": [
+  {
+   "file": "GEOMETRY_REPLAY.json",
+   "sourceSHA256": "9cd653192c8c062cd2abc8619d9d0211b601ce319fec87ad50ccc12887691f10",
+   "publishedSHA256": "9cd653192c8c062cd2abc8619d9d0211b601ce319fec87ad50ccc12887691f10",
+   "replacements": {}
+  }
+ ]
+}

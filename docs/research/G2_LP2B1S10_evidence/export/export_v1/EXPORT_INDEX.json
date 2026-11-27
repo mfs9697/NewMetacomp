@@ -1,0 +1,183 @@
+{
+  "schema": "NewMetacomp.G2.LP2B1EQ.Export.v1",
+  "sets": [
+    {
+      "name": "Q_soft1_S10",
+      "source": "outputs/g2_lp2b1_geometry_v1/wp1_attempt2/T_soft1_S10_h040/ATTEMPT_ARRAYS.mat",
+      "sourceFileSHA256": "086b6671a733bafad3874dee8d50c84bc52e6bfaa6ba0174caae09995c2f2a88",
+      "expectedCanonicalSHA256": "54293d2a527f9bec33605ffea10c8f56af46a56291157f0d911cf68301b85bd2",
+      "arrays": [
+        {
+          "name": "X3",
+          "file": "Q_soft1_S10_X3.f64",
+          "size": [
+            15725,
+            2
+          ],
+          "numel": 31450
+        },
+        {
+          "name": "T3",
+          "file": "Q_soft1_S10_T3.f64",
+          "size": [
+            30357,
+            3
+          ],
+          "numel": 91071
+        },
+        {
+          "name": "X6",
+          "file": "Q_soft1_S10_X6.f64",
+          "size": [
+            61809,
+            2
+          ],
+          "numel": 123618
+        },
+        {
+          "name": "T6",
+          "file": "Q_soft1_S10_T6.f64",
+          "size": [
+            30357,
+            6
+          ],
+          "numel": 182142
+        },
+        {
+          "name": "upperBankT6",
+          "file": "Q_soft1_S10_upperBankT6.f64",
+          "size": [
+            369,
+            1
+          ],
+          "numel": 369
+        },
+        {
+          "name": "lowerBankT6",
+          "file": "Q_soft1_S10_lowerBankT6.f64",
+          "size": [
+            369,
+            1
+          ],
+          "numel": 369
+        },
+        {
+          "name": "nodalQ",
+          "file": "Q_soft1_S10_nodalQ.f64",
+          "size": [
+            61809,
+            1
+          ],
+          "numel": 61809
+        },
+        {
+          "name": "qActiveT6Rows",
+          "file": "Q_soft1_S10_qActiveT6Rows.f64",
+          "size": [
+            2443,
+            1
+          ],
+          "numel": 2443
+        },
+        {
+          "name": "crackPolyline",
+          "file": "Q_soft1_S10_crackPolyline.f64",
+          "size": [
+            12,
+            2
+          ],
+          "numel": 24
+        }
+      ]
+    },
+    {
+      "name": "R_soft1_S10",
+      "source": "outputs/g2_lp2b1s10_readiness_v1/replay_v1/soft1_S10/GEOMETRY_h040/ATTEMPT_ARRAYS.mat",
+      "sourceFileSHA256": "523ae92d0fef7a96ee12d70e2769a8ccfff0c93184abfbe13d2deb7b241fa4d4",
+      "expectedCanonicalSHA256": "54293d2a527f9bec33605ffea10c8f56af46a56291157f0d911cf68301b85bd2",
+      "arrays": [
+        {
+          "name": "X3",
+          "file": "R_soft1_S10_X3.f64",
+          "size": [
+            15725,
+            2
+          ],
+          "numel": 31450
+        },
+        {
+          "name": "T3",
+          "file": "R_soft1_S10_T3.f64",
+          "size": [
+            30357,
+            3
+          ],
+          "numel": 91071
+        },
+        {
+          "name": "X6",
+          "file": "R_soft1_S10_X6.f64",
+          "size": [
+            61809,
+            2
+          ],
+          "numel": 123618
+        },
+        {
+          "name": "T6",
+          "file": "R_soft1_S10_T6.f64",
+          "size": [
+            30357,
+            6
+          ],
+          "numel": 182142
+        },
+        {
+          "name": "upperBankT6",
+          "file": "R_soft1_S10_upperBankT6.f64",
+          "size": [
+            369,
+            1
+          ],
+          "numel": 369
+        },
+        {
+          "name": "lowerBankT6",
+          "file": "R_soft1_S10_lowerBankT6.f64",
+          "size": [
+            369,
+            1
+          ],
+          "numel": 369
+        },
+        {
+          "name": "nodalQ",
+          "file": "R_soft1_S10_nodalQ.f64",
+          "size": [
+            61809,
+            1
+          ],
+          "numel": 61809
+        },
+        {
+          "name": "qActiveT6Rows",
+          "file": "R_soft1_S10_qActiveT6Rows.f64",
+          "size": [
+            2443,
+            1
+          ],
+          "numel": 2443
+        },
+        {
+          "name": "crackPolyline",
+          "file": "R_soft1_S10_crackPolyline.f64",
+          "size": [
+            12,
+            2
+          ],
+          "numel": 24
+        }
+      ]
+    }
+  ]
+}

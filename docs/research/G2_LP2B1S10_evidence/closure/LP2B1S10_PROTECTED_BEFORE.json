@@ -1,0 +1,95 @@
+{
+ "schema": "NewMetacomp.G2.LP2B1S10.ProtectedCheck.v1",
+ "lp2b1eqCheckerExit": 0,
+ "lp2b1eqCheckerStdout": "832 True e756d64aee23 | b1 43 True {'local': True, 'offDevice': True} | pinned 61 True | absent False | combined 891 e351f5aca362 FAIL",
+ "lp2b1eqSubchecks": {
+  "lp2b1CheckerPass": true,
+  "known832OK": true,
+  "lp2a3ArchiveCopies": true,
+  "campaignSummaryOK": true,
+  "b1OutputsEqualArchiveRecord": true,
+  "b1OutputsDisjointFrom832": true,
+  "b1ArchiveCopies": true,
+  "policyPinnedUnchanged": true,
+  "union891": true,
+  "absencePatternPostCampaign": true,
+  "noOverlapWithProtected": true,
+  "union891Rebuilt": true
+ },
+ "lp2b1eqOverallFlagReadinessOnly": false,
+ "lp2b1eqAbsence": {
+  "outputs/g2_lp2b1_eq_v1/run_lp2b1_eq_v1": false,
+  "outputs/g2_lp2b1_eq_receipts/G2-LP2B1-EQ-001": false,
+  "matlab/g2/lp2b1eq/G2_LP2B1EQ_GO.json": true,
+  "outputs/LP2B1EQ_CAMPAIGN.json": false
+ },
+ "union891Files": 891,
+ "union891ManifestSHA256": "e351f5aca3629da34f99bd25e738bba33ea515ad6d4b6dc7c848bcb4e975d054",
+ "eqCampaignOutputs": 23,
+ "eqCampaignOutputsEqualRecord": true,
+ "eqCampaignOutputsChanged": [],
+ "eqCampaignOutputsDisjointFrom891": true,
+ "eqCampaignArchiveCopies": {
+  "local": {
+   "present": true,
+   "sha256": "1d739f80fe77597e3749de7e939abf8f572bc48f27bb703c28d02f94634d6e8a",
+   "shaOK": true,
+   "members": 136,
+   "memberBytesEqualRecord": true,
+   "outputsEqualMemberBytes": true,
+   "pass": true
+  },
+  "offDevice": {
+   "present": true,
+   "sha256": "1d739f80fe77597e3749de7e939abf8f572bc48f27bb703c28d02f94634d6e8a",
+   "shaOK": true,
+   "members": 136,
+   "memberBytesEqualRecord": true,
+   "outputsEqualMemberBytes": true,
+   "pass": true
+  }
+ },
+ "eqReadinessArchiveCopies": {
+  "local": {
+   "present": true,
+   "sha256": "2187ec2cbb36fb7d1e8fb311ef41fa918e9822a6277f3a6d98dbcf97e6867c24",
+   "shaOK": true,
+   "members": 181,
+   "memberBytesEqualRecord": true,
+   "outputsEqualMemberBytes": true,
+   "pass": true
+  },
+  "offDevice": {
+   "present": true,
+   "sha256": "2187ec2cbb36fb7d1e8fb311ef41fa918e9822a6277f3a6d98dbcf97e6867c24",
+   "shaOK": true,
+   "members": 181,
+   "memberBytesEqualRecord": true,
+   "outputsEqualMemberBytes": true,
+   "pass": true
+  }
+ },
+ "s10PolicyPinnedFiles": 60,
+ "s10PolicyPinnedUnchanged": true,
+ "s10PolicyPinnedChanged": [],
+ "s10PinsAlreadyIn891Or23": 56,
+ "unionFiles": 918,
+ "unionManifestSHA256": "e1ed9be06011cb3e430386ce193b36ea2e779afb8d89e8eee610c60ad94b2d39",
+ "unionFormula": "set union of the accepted 891, the 23 LP2-B1-EQ campaign outputs and the LP2-B1-S10 policy pins",
+ "s10RootsAndGoAbsent": {
+  "outputs/g2_lp2b1_s10_v1/run_lp2b1_s10_v1": true,
+  "outputs/g2_lp2b1_s10_receipts/G2-LP2B1-S10-001": true,
+  "matlab/g2/lp2b1s10/G2_LP2B1S10_GO.json": true,
+  "outputs/LP2B1S10_CAMPAIGN.json": true,
+  "outputs/g2_lp2b1_s10_v1": true,
+  "outputs/g2_lp2b1_s10_receipts": true
+ },
+ "readinessRoots": [
+  "g2_lp2b1s10_readiness_v1"
+ ],
+ "overlapWithProtected": [],
+ "backupLocal": true,
+ "offDeviceDriveType": 2,
+ "offDeviceRemovable": true,
+ "pass": true
+}
