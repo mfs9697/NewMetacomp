@@ -67,6 +67,18 @@
    "sourceSHA256": "6a51151272f7737c2a4d73775e770a984d1d61467776b73089fc0f0d9d0d7aec",
    "publishedSHA256": "6a51151272f7737c2a4d73775e770a984d1d61467776b73089fc0f0d9d0d7aec",
    "replacements": {}
+  },
+  {
+   "file": "LP2B1S10_PROTECTED_FINAL_eef3f63.json",
+   "sourceSHA256": "7a4de1084947da9435c862b4e37f9977f76e7776ce9604044f3d9eee103b0b1e",
+   "publishedSHA256": "7a4de1084947da9435c862b4e37f9977f76e7776ce9604044f3d9eee103b0b1e",
+   "replacements": {}
+  },
+  {
+   "file": "LP2B1S10_PROTECTED_FINAL_ADJUDICATION_eef3f63.json",
+   "sourceSHA256": "a1ce749c5244330ed5a5f0059edf922f9b717c440fddd821d06d7f8ba08609b1",
+   "publishedSHA256": "a1ce749c5244330ed5a5f0059edf922f9b717c440fddd821d06d7f8ba08609b1",
+   "replacements": {}
   }
  ]
 }

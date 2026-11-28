@@ -162,6 +162,18 @@
    "sourceSHA256": "d362bff46426c1fea6742442d9a56c2573dc89035da9ed5fb0b22756fa427b14",
    "publishedSHA256": "d362bff46426c1fea6742442d9a56c2573dc89035da9ed5fb0b22756fa427b14",
    "replacements": {}
+  },
+  {
+   "file": "adjudicate_final.py",
+   "sourceSHA256": "1cf26e5670642a4494a31b7750eb97efb6b0e1f513bf6bdda94d45a771f959ec",
+   "publishedSHA256": "1cf26e5670642a4494a31b7750eb97efb6b0e1f513bf6bdda94d45a771f959ec",
+   "replacements": {}
+  },
+  {
+   "file": "publish_append.py",
+   "sourceSHA256": "b9a4cc44dc5ec0914814ed42d861429c0301eca0879b11dc6052ea834d5e1619",
+   "publishedSHA256": "b9a4cc44dc5ec0914814ed42d861429c0301eca0879b11dc6052ea834d5e1619",
+   "replacements": {}
   }
  ]
 }
