@@ -1,0 +1,7 @@
+LP2-B1-S10: activate GO_LP2B1_S10 (campaign G2-LP2B1-S10-001)
+
+Investigator authorization: https://github.com/mfs9697/NewMetacomp/pull/82#issuecomment-7237508619
+Approved head 0fcee176a5e294b7c8d7f33711ad7d3897be6538; adds only matlab/g2/lp2b1s10/G2_LP2B1S10_GO.json.
+One soft1 S10 admission and one physical solve at 0.40 mm; no retry, fallback, S11 or LP2-B2.
+
+Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>

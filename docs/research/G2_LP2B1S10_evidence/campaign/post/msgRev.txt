@@ -1,0 +1,6 @@
+LP2-B1-S10: revoke GO_LP2B1_S10 after the single authorized attempt
+
+Campaign G2-LP2B1-S10-001 executed once (outcome STATE_ACCEPTED, 1 admission, 1 solve).
+Removes matlab/g2/lp2b1s10/G2_LP2B1S10_GO.json; the tree equals the reviewed head 0fcee176a5e294b7c8d7f33711ad7d3897be6538 again.
+
+Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>

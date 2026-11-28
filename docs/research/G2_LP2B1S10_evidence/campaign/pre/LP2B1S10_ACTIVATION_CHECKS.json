@@ -1,0 +1,60 @@
+{
+  "attempt": 1,
+  "dependencies": [
+    "<repo>\\matlab\\g2\\lp2a2\\g2_lp2a2_git.m",
+    "<repo>\\matlab\\g2\\lp2a2\\g2_lp2a2_eq_memgate.m",
+    "<repo>\\matlab\\g2\\lp2b1s10\\g2_lp2b1s10_external_run.m",
+    "<repo>\\matlab\\g2\\lp2b1s10\\g2_lp2b1s10_run.m",
+    "<repo>\\matlab\\g2\\lp2b1s10\\g2_lp2b1s10_verify.m",
+    "<repo>\\matlab\\g2\\lp2b1s10\\g2_lp2b1s10_go_validate.m",
+    "<repo>\\matlab\\g2\\lp2b1eq\\g2_lp2b1eq_geometry.m",
+    "<repo>\\matlab\\g2\\g2_m4b_sif_partial.m",
+    "<repo>\\matlab\\g2\\g2_lp1_admit_state.m",
+    "<repo>\\matlab\\g2\\g2_lp1_campaign_ledger.m"
+  ],
+  "dependenciesResolved": true,
+  "head": "0fcee176a5e294b7c8d7f33711ad7d3897be6538",
+  "ramInsideMATLAB_GiB": 9.1833000183105469,
+  "release": "2023a",
+  "pde": true,
+  "pdeVersion": "3.10",
+  "preflight": {
+    "pass": true,
+    "status": "PREFLIGHT_READY_NOT_LP0_QUALIFIED",
+    "cause": "",
+    "physicalSolves": 0,
+    "meshBuilds": 0,
+    "policySHA256": "1cf5a76ded840b0758343a1b935b299041e779ec6332c3b7cb0b6dfba1e2af43",
+    "release": "R2023a",
+    "pdeAvailable": true,
+    "freePhysicalRAM_GiB": 9.1200408935546875,
+    "matlabProcesses": 1,
+    "currentPID": 7908,
+    "sourceCommit": "0fcee176a5e294b7c8d7f33711ad7d3897be6538",
+    "dirtySource": "",
+    "token": "G2LP0|policy=1cf5a76ded840b0758343a1b935b299041e779ec6332c3b7cb0b6dfba1e2af43|source=0fcee176a5e294b7c8d7f33711ad7d3897be6538|geometry=179b777f4a26caf1482ad470d78f5f802bc24456b9a1b6fc6b641eccf2b66008|cases=H,stiff13,soft2,soft1|maxState=4"
+  },
+  "tokenEqualsAuthorization": true,
+  "goAbsent": true,
+  "policySHA256": "f57433eccc5641ba253da52b723a0de6b1ad299793aa227235d309e57f120171",
+  "rootsAbsent": true,
+  "memgate": {
+    "pass": true,
+    "minGiB": 7,
+    "freeGiB": 9.0701255798339844,
+    "reason": "OK"
+  },
+  "engines": 1,
+  "probe": {
+    "identifier": "G2LP2B1S10:HOLD_UNAUTHORIZED",
+    "message": "No GO_LP2B1_S10 record (matlab/g2/lp2b1s10/G2_LP2B1S10_GO.json): the campaign is prepared, not authorized.",
+    "pass": true
+  },
+  "outputsUnchanged": true,
+  "outputsEntries": 2975,
+  "gitClean": true,
+  "rootsStillAbsent": true,
+  "physicalSolves": 0,
+  "externalEntryInvoked": false,
+  "allPass": true
+}

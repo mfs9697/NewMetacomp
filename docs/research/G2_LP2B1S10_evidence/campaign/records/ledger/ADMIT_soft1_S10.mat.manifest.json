@@ -1,0 +1,9 @@
+{
+  "schema": "NewMetacomp.G2.TrajectoryRecordManifest.v1",
+  "file": "ADMIT_soft1_S10.mat",
+  "SHA256": "477378641D525A59085E3F62769976D3EEB23813C9AC42F2F2A1C6B7B770D14A",
+  "bytes": 13224,
+  "recordSchema": "NewMetacomp.G2.LP1.CampaignLedger.ADMIT.v1",
+  "stateIndex": 10,
+  "physicalFractureGrowthProven": false
+}

@@ -1,0 +1,354 @@
+[
+  {
+    "file": "hist_H_S10_poly.f64",
+    "shape": [
+      12,
+      2
+    ],
+    "class": "double"
+  },
+  {
+    "file": "hist_H_S9_poly.f64",
+    "shape": [
+      11,
+      2
+    ],
+    "class": "double"
+  },
+  {
+    "file": "hist_H_S8_poly.f64",
+    "shape": [
+      10,
+      2
+    ],
+    "class": "double"
+  },
+  {
+    "file": "hist_H_S7_poly.f64",
+    "shape": [
+      9,
+      2
+    ],
+    "class": "double"
+  },
+  {
+    "file": "hist_H_S6_poly.f64",
+    "shape": [
+      8,
+      2
+    ],
+    "class": "double"
+  },
+  {
+    "file": "hist_H_S5_poly.f64",
+    "shape": [
+      7,
+      2
+    ],
+    "class": "double"
+  },
+  {
+    "file": "hist_H_S4_poly.f64",
+    "shape": [
+      6,
+      2
+    ],
+    "class": "double"
+  },
+  {
+    "file": "hist_H_S3_poly.f64",
+    "shape": [
+      5,
+      2
+    ],
+    "class": "double"
+  },
+  {
+    "file": "hist_H_S2_poly.f64",
+    "shape": [
+      4,
+      2
+    ],
+    "class": "double"
+  },
+  {
+    "file": "hist_H_S1_poly.f64",
+    "shape": [
+      3,
+      2
+    ],
+    "class": "double"
+  },
+  {
+    "file": "hist_H_S0_poly.f64",
+    "shape": [
+      2,
+      2
+    ],
+    "class": "double"
+  },
+  {
+    "file": "hist_stiff13_S10_poly.f64",
+    "shape": [
+      12,
+      2
+    ],
+    "class": "double"
+  },
+  {
+    "file": "hist_stiff13_S9_poly.f64",
+    "shape": [
+      11,
+      2
+    ],
+    "class": "double"
+  },
+  {
+    "file": "hist_stiff13_S8_poly.f64",
+    "shape": [
+      10,
+      2
+    ],
+    "class": "double"
+  },
+  {
+    "file": "hist_stiff13_S7_poly.f64",
+    "shape": [
+      9,
+      2
+    ],
+    "class": "double"
+  },
+  {
+    "file": "hist_stiff13_S6_poly.f64",
+    "shape": [
+      8,
+      2
+    ],
+    "class": "double"
+  },
+  {
+    "file": "hist_stiff13_S5_poly.f64",
+    "shape": [
+      7,
+      2
+    ],
+    "class": "double"
+  },
+  {
+    "file": "hist_stiff13_S4_poly.f64",
+    "shape": [
+      6,
+      2
+    ],
+    "class": "double"
+  },
+  {
+    "file": "hist_stiff13_S3_poly.f64",
+    "shape": [
+      5,
+      2
+    ],
+    "class": "double"
+  },
+  {
+    "file": "hist_stiff13_S2_poly.f64",
+    "shape": [
+      4,
+      2
+    ],
+    "class": "double"
+  },
+  {
+    "file": "hist_stiff13_S1_poly.f64",
+    "shape": [
+      3,
+      2
+    ],
+    "class": "double"
+  },
+  {
+    "file": "hist_stiff13_S0_poly.f64",
+    "shape": [
+      2,
+      2
+    ],
+    "class": "double"
+  },
+  {
+    "file": "hist_soft2_S10_poly.f64",
+    "shape": [
+      12,
+      2
+    ],
+    "class": "double"
+  },
+  {
+    "file": "hist_soft2_S9_poly.f64",
+    "shape": [
+      11,
+      2
+    ],
+    "class": "double"
+  },
+  {
+    "file": "hist_soft2_S8_poly.f64",
+    "shape": [
+      10,
+      2
+    ],
+    "class": "double"
+  },
+  {
+    "file": "hist_soft2_S7_poly.f64",
+    "shape": [
+      9,
+      2
+    ],
+    "class": "double"
+  },
+  {
+    "file": "hist_soft2_S6_poly.f64",
+    "shape": [
+      8,
+      2
+    ],
+    "class": "double"
+  },
+  {
+    "file": "hist_soft2_S5_poly.f64",
+    "shape": [
+      7,
+      2
+    ],
+    "class": "double"
+  },
+  {
+    "file": "hist_soft2_S4_poly.f64",
+    "shape": [
+      6,
+      2
+    ],
+    "class": "double"
+  },
+  {
+    "file": "hist_soft2_S3_poly.f64",
+    "shape": [
+      5,
+      2
+    ],
+    "class": "double"
+  },
+  {
+    "file": "hist_soft2_S2_poly.f64",
+    "shape": [
+      4,
+      2
+    ],
+    "class": "double"
+  },
+  {
+    "file": "hist_soft2_S1_poly.f64",
+    "shape": [
+      3,
+      2
+    ],
+    "class": "double"
+  },
+  {
+    "file": "hist_soft2_S0_poly.f64",
+    "shape": [
+      2,
+      2
+    ],
+    "class": "double"
+  },
+  {
+    "file": "hist_soft1_S10_poly.f64",
+    "shape": [
+      12,
+      2
+    ],
+    "class": "double"
+  },
+  {
+    "file": "hist_soft1_S9_poly.f64",
+    "shape": [
+      11,
+      2
+    ],
+    "class": "double"
+  },
+  {
+    "file": "hist_soft1_S8_poly.f64",
+    "shape": [
+      10,
+      2
+    ],
+    "class": "double"
+  },
+  {
+    "file": "hist_soft1_S7_poly.f64",
+    "shape": [
+      9,
+      2
+    ],
+    "class": "double"
+  },
+  {
+    "file": "hist_soft1_S6_poly.f64",
+    "shape": [
+      8,
+      2
+    ],
+    "class": "double"
+  },
+  {
+    "file": "hist_soft1_S5_poly.f64",
+    "shape": [
+      7,
+      2
+    ],
+    "class": "double"
+  },
+  {
+    "file": "hist_soft1_S4_poly.f64",
+    "shape": [
+      6,
+      2
+    ],
+    "class": "double"
+  },
+  {
+    "file": "hist_soft1_S3_poly.f64",
+    "shape": [
+      5,
+      2
+    ],
+    "class": "double"
+  },
+  {
+    "file": "hist_soft1_S2_poly.f64",
+    "shape": [
+      4,
+      2
+    ],
+    "class": "double"
+  },
+  {
+    "file": "hist_soft1_S1_poly.f64",
+    "shape": [
+      3,
+      2
+    ],
+    "class": "double"
+  },
+  {
+    "file": "hist_soft1_S0_poly.f64",
+    "shape": [
+      2,
+      2
+    ],
+    "class": "double"
+  }
+]

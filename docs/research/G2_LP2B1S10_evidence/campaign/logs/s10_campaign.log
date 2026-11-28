@@ -1,0 +1,11 @@
+﻿[Warning: Name is nonexistent or not a directory: <drive>\Projects\8 - CohZonFEM\czm_project\CrackPath\CrackFromHoleLEFM\cfh] 
+[Warning: Name is nonexistent or not a directory: <drive>\Projects\8 - CohZonFEM\Asphalt\remmers2003] 
+S10_ENTRY_CALL g2_lp2b1s10_external_run start 2026-11-28 14:12:46 which=<repo>\matlab\g2\lp2b1s10\g2_lp2b1s10_external_run.m
+B1S10 head=c243c58c477fddd7a191a1d00c1117cd5a927ab5 parent=0fcee176a5e294b7c8d7f33711ad7d3897be6538 statuses=[0 0 0] changed=[matlab/g2/lp2b1s10/G2_LP2B1S10_GO.json] pass=1
+G2_LP2B1_ATTEMPT GEOMETRY_h040 hs=0.40 stage=KINKED_PROTECTED_MESH_JOIN_PASS join=13/13 T3=30357 minAng=23.179107 ratio=1.601535 checks=19/19 pass=1
+G2_M4B_SIF bits=100 pass=1 KI=0.34631947 KII=+0.00549357292 MPa sqrt(m)/kN, COD 0.343297053 / +0.00541110161, C=0.000241065407 mm/N
+G2_LP2B1S10_ACCEPTED soft1 S10 s=65.4000 KI=0.0109515832 KII=+0.000173722029 MTS=-1.81667 tip=(114.2954,63.1856)
+B1S10_RESULT outcome=STATE_ACCEPTED admissions=1 solveCalls=1 reason= wall=35.6s
+S10_ENTRY_RETURN outcome=STATE_ACCEPTED admissions=1 solveCalls=1
+S10_VERIFY outcome=VERIFIED_ACCEPTED
+S10_ENTRY_END 2026-11-28 14:13:22

@@ -1,0 +1,9 @@
+{
+  "schema": "NewMetacomp.G2.TrajectoryRecordManifest.v1",
+  "file": "TERMINAL.mat",
+  "SHA256": "C27E75ED6D896A8158B37A40FFCD96936A62A334E3B82D2C87AFEC113E4EEFEF",
+  "bytes": 28224,
+  "recordSchema": "NewMetacomp.G2.LP2B1S10.Terminal.v1",
+  "stateIndex": -1,
+  "physicalFractureGrowthProven": false
+}

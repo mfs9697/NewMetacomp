@@ -1,0 +1,167 @@
+{
+ "schema": "NewMetacomp.G2.LP2B1S10.Sanitization.v1",
+ "rule": "absolute local paths replaced by <repo>, <worktree>, <temp>, <scratch>, <backup>, <home>, <drive>, <matlabroot>; UTF-16 logs converted to UTF-8; MATLAB startup path warnings removed from logs; binaries (.mat, .f64) only in the archive; figures byte for byte (superseded v1 layouts only in the archive)",
+ "files": [
+  {
+   "file": "activation_check.cmd",
+   "sourceSHA256": "acdac5e342bfae8ae16e8232f52b6b8b2126b0bc63ec794a641cc8e31204cf65",
+   "publishedSHA256": "48bc91329cde079422eb588ca6ebe35818cffc637d21fe696893e3062f3a799a",
+   "replacements": {
+    "<scratch>": 2,
+    "<repo>": 1
+   }
+  },
+  {
+   "file": "make_go.py",
+   "sourceSHA256": "d148aec8f1c959ee7bb0fc2e58f0ab11b3c0d478cf5f2f340387f1417a9c689a",
+   "publishedSHA256": "d148aec8f1c959ee7bb0fc2e58f0ab11b3c0d478cf5f2f340387f1417a9c689a",
+   "replacements": {}
+  },
+  {
+   "file": "make_tables.py",
+   "sourceSHA256": "d97ceb50a178e1aec0e00d7cf5056f4068ce1fd8c1faec36ca907671ae0a6602",
+   "publishedSHA256": "d97ceb50a178e1aec0e00d7cf5056f4068ce1fd8c1faec36ca907671ae0a6602",
+   "replacements": {}
+  },
+  {
+   "file": "memo_template.md",
+   "sourceSHA256": "162b421b90755415730275889b5d75ad16e762b496d95bc6dab336b915b0e68d",
+   "publishedSHA256": "162b421b90755415730275889b5d75ad16e762b496d95bc6dab336b915b0e68d",
+   "replacements": {}
+  },
+  {
+   "file": "publish_campaign.py",
+   "sourceSHA256": "f20d0f1bae2b9690c78f5efe17361a98007acaf3f0762e236d18ecc70776321a",
+   "publishedSHA256": "0ba6d3d9bd0785e1b7d4af84649bbcc619c6caa8be3947f7261fbec81370780d",
+   "replacements": {
+    "<scratch>": 1,
+    "<temp>": 1,
+    "<repo>": 1,
+    "<worktree>": 1,
+    "<backup>": 1,
+    "<matlabroot>": 2,
+    "<drive>": 1,
+    "<home>": 1
+   }
+  },
+  {
+   "file": "s10_activation_checks.m",
+   "sourceSHA256": "b2d6a901e5c00dea26a2a5b5a07ded42b7287b7fd985fb6553c89747420ae360",
+   "publishedSHA256": "b3790390567b9919cd2fb9944f8c8a7ea8f0790700054c51e40ee91395d24766",
+   "replacements": {
+    "<scratch>": 1,
+    "<repo>": 1
+   }
+  },
+  {
+   "file": "s10_audit.py",
+   "sourceSHA256": "62bb9dfaba67775cf6813f97936fdc858f8bafa9f97574b737de8585304b8f28",
+   "publishedSHA256": "62bb9dfaba67775cf6813f97936fdc858f8bafa9f97574b737de8585304b8f28",
+   "replacements": {}
+  },
+  {
+   "file": "s10_campaign.log",
+   "sourceSHA256": "e7362debc21fb6df63bcd422fe63b2d77bfdd66cbbc0bd5462414b8760976627",
+   "publishedSHA256": "56d83ea69ac540c20fd8554bffadd73e7f000f1d8f5533071205a48098cf5dd6",
+   "replacements": {
+    "<repo>": 1,
+    "<drive>": 2
+   }
+  },
+  {
+   "file": "s10_campaign.m",
+   "sourceSHA256": "726eb4fb66d3079a64c2b1a4d5b9279a2f230f17de5f8b0ce7a374574bdad683",
+   "publishedSHA256": "dec9bf205dcfa66f5885f1140b078c2213c14ec6e8ddaef212ad2a2bfb8be79d",
+   "replacements": {
+    "<scratch>": 1,
+    "<repo>": 1
+   }
+  },
+  {
+   "file": "s10_closure.log",
+   "sourceSHA256": "bd32c53cfff90cc46ea066fec75bd5334103b22b34aa6fd547d72d5b51991052",
+   "publishedSHA256": "73878a4c35fbc74c5c36e7494f6d0f673346b738264920faa2488d0e4dff1fcf",
+   "replacements": {
+    "<drive>": 2
+   }
+  },
+  {
+   "file": "s10_closure.m",
+   "sourceSHA256": "bca809f90c1915384db1f4f3d870a25871c09ad39e58d342bff8edae5379096c",
+   "publishedSHA256": "e037f97d8eaecaa6f90ac7e0f6758ab6181b84bc8c02c9aa81683b95cda0ec1b",
+   "replacements": {
+    "<scratch>": 1,
+    "<repo>": 1
+   }
+  },
+  {
+   "file": "s10_figures.log",
+   "sourceSHA256": "6a28fdc653b3e99d08c6a2037aa79736fc662ab4564437bd99be7c72e6e5cad1",
+   "publishedSHA256": "9cc4a10b6889632d50ef6dc79c7c7c3405d5ef47649b538e55016443776e371f",
+   "replacements": {
+    "<scratch>": 1,
+    "<drive>": 2
+   }
+  },
+  {
+   "file": "s10_figures.m",
+   "sourceSHA256": "c09694f14bfe2b77b213e21ef9806f7c9fb5f56c83ad3afb0b906ea8987d8b55",
+   "publishedSHA256": "3854fb5725ae7b4e98680cf77e49cd3b46b9647239685c1f8d17d90e920885cc",
+   "replacements": {
+    "<scratch>": 1
+   }
+  },
+  {
+   "file": "s10_figures_v2.log",
+   "sourceSHA256": "6a28fdc653b3e99d08c6a2037aa79736fc662ab4564437bd99be7c72e6e5cad1",
+   "publishedSHA256": "9cc4a10b6889632d50ef6dc79c7c7c3405d5ef47649b538e55016443776e371f",
+   "replacements": {
+    "<scratch>": 1,
+    "<drive>": 2
+   }
+  },
+  {
+   "file": "s10_histories_v2.log",
+   "sourceSHA256": "e0bb3b4392960102d721efc552e4ca7f7654dee716af81fed3f142a0aa92e77d",
+   "publishedSHA256": "1dc0f26e12eddf520117c6532266b67bd9da860e17dbd314932e733ad57ce326",
+   "replacements": {
+    "<drive>": 2
+   }
+  },
+  {
+   "file": "s10_histories_v2.m",
+   "sourceSHA256": "9e2d6c6ae7e05a5d9b2eeb2184b4240ba9a391375d58fb6bed0de703ec73ee27",
+   "publishedSHA256": "0856e00413386c242ef938e5cca1e70d2f1df7d446db2bf8b5228757ca449312",
+   "replacements": {
+    "<scratch>": 1,
+    "<repo>": 1
+   }
+  },
+  {
+   "file": "s10_preact.log",
+   "sourceSHA256": "367abb4d02cfd6ac70252bfa317bd29811f367588d7f22b91e912449a025c538",
+   "publishedSHA256": "9561a210f0f3127866f0f0efc3ac25f38d6d26b792056da4bb4b772ee50ffa87",
+   "replacements": {
+    "<drive>": 2
+   }
+  },
+  {
+   "file": "verify_archives.py",
+   "sourceSHA256": "a661e1dcf97ab4b6237711c34c1cc7df262484bcf8c8c4adf0b6cfaac105d085",
+   "publishedSHA256": "a661e1dcf97ab4b6237711c34c1cc7df262484bcf8c8c4adf0b6cfaac105d085",
+   "replacements": {}
+  },
+  {
+   "file": "make_archive_tool.py",
+   "sourceSHA256": "55c1ad65c2806b99954ec4568e5dfeb3a29d41f3da2f6d9f9ed352b650fa25d1",
+   "publishedSHA256": "55c1ad65c2806b99954ec4568e5dfeb3a29d41f3da2f6d9f9ed352b650fa25d1",
+   "replacements": {}
+  },
+  {
+   "file": "lp2b1s10_campaign_archive.py",
+   "sourceSHA256": "d362bff46426c1fea6742442d9a56c2573dc89035da9ed5fb0b22756fa427b14",
+   "publishedSHA256": "d362bff46426c1fea6742442d9a56c2573dc89035da9ed5fb0b22756fa427b14",
+   "replacements": {}
+  }
+ ]
+}

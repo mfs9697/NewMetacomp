@@ -1,0 +1,7 @@
+﻿[Warning: Name is nonexistent or not a directory: <drive>\Projects\8 - CohZonFEM\czm_project\CrackPath\CrackFromHoleLEFM\cfh] 
+[Warning: Name is nonexistent or not a directory: <drive>\Projects\8 - CohZonFEM\Asphalt\remmers2003] 
+HISTORY H states=11 first=S0
+HISTORY stiff13 states=11 first=S0
+HISTORY soft2 states=11 first=S0
+HISTORY soft1 states=11 first=S0
+HISTORIES done raw=44

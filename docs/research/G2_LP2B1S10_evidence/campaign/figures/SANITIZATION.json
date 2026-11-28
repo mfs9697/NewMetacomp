@@ -1,0 +1,42 @@
+{
+ "schema": "NewMetacomp.G2.LP2B1S10.Sanitization.v1",
+ "rule": "absolute local paths replaced by <repo>, <worktree>, <temp>, <scratch>, <backup>, <home>, <drive>, <matlabroot>; UTF-16 logs converted to UTF-8; MATLAB startup path warnings removed from logs; binaries (.mat, .f64) only in the archive; figures byte for byte (superseded v1 layouts only in the archive)",
+ "files": [
+  {
+   "file": "LP2B1S10_F_G_ua.pdf",
+   "sourceSHA256": "58d392043f8762f12656833782ff551dfd11b37d6b0d180b54e2bdd4087be87b",
+   "publishedSHA256": "58d392043f8762f12656833782ff551dfd11b37d6b0d180b54e2bdd4087be87b",
+   "replacements": {}
+  },
+  {
+   "file": "LP2B1S10_F_G_ua.png",
+   "sourceSHA256": "93a561ea43a79ea0d88180125614b4cdb19093395800d9b34b0409b015a8a91d",
+   "publishedSHA256": "93a561ea43a79ea0d88180125614b4cdb19093395800d9b34b0409b015a8a91d",
+   "replacements": {}
+  },
+  {
+   "file": "LP2B1S10_offset_mixity_ua.pdf",
+   "sourceSHA256": "8ecc185504478be792c22d604409935261085f5e92e162d0412d157c5518e5ba",
+   "publishedSHA256": "8ecc185504478be792c22d604409935261085f5e92e162d0412d157c5518e5ba",
+   "replacements": {}
+  },
+  {
+   "file": "LP2B1S10_offset_mixity_ua.png",
+   "sourceSHA256": "56ad989d76864b9011cfda3122a494f614218a2f2d70693f5a2f637ebf871945",
+   "publishedSHA256": "56ad989d76864b9011cfda3122a494f614218a2f2d70693f5a2f637ebf871945",
+   "replacements": {}
+  },
+  {
+   "file": "LP2B1S10_trajectories_ua.pdf",
+   "sourceSHA256": "5054eb1e890cc3ca307875c305fd0e645c9d8068fb843465932c36cd5ec312ef",
+   "publishedSHA256": "5054eb1e890cc3ca307875c305fd0e645c9d8068fb843465932c36cd5ec312ef",
+   "replacements": {}
+  },
+  {
+   "file": "LP2B1S10_trajectories_ua.png",
+   "sourceSHA256": "33deaff29f2ce4aeba21d40c1f4f236d4659a502929451f891f0c81c1b8d93a9",
+   "publishedSHA256": "33deaff29f2ce4aeba21d40c1f4f236d4659a502929451f891f0c81c1b8d93a9",
+   "replacements": {}
+  }
+ ]
+}

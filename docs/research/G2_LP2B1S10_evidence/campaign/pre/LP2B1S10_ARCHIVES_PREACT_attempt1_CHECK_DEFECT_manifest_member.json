@@ -1,0 +1,99 @@
+{
+ "schema": "NewMetacomp.G2.LP2B1S10.ArchiveCopies.v1",
+ "archives": {
+  "NewMetacomp_G2_LP2A3_Records_20261126.zip": {
+   "local": {
+    "present": true,
+    "sha256": "e089d749737f6c5259e6ad391c785b6ac222a636ca4716aaefbbde2fd5186dc6",
+    "bytes": 30147021
+   },
+   "offDevice": {
+    "present": true,
+    "sha256": "e089d749737f6c5259e6ad391c785b6ac222a636ca4716aaefbbde2fd5186dc6",
+    "bytes": 30147021
+   },
+   "bothPresent": true,
+   "copiesIdentical": true,
+   "expectedSHA256": null,
+   "sha256OK": true,
+   "pass": true
+  },
+  "NewMetacomp_G2_LP2B1_Geometry_20261126.zip": {
+   "local": {
+    "present": true,
+    "sha256": "5a5a4179c987d04dcf14cf3d2552b8f9f1d9c370c370b0a6bd6c930748bbbd42",
+    "bytes": 18857086
+   },
+   "offDevice": {
+    "present": true,
+    "sha256": "5a5a4179c987d04dcf14cf3d2552b8f9f1d9c370c370b0a6bd6c930748bbbd42",
+    "bytes": 18857086
+   },
+   "bothPresent": true,
+   "copiesIdentical": true,
+   "expectedSHA256": "5a5a4179c987d04dcf14cf3d2552b8f9f1d9c370c370b0a6bd6c930748bbbd42",
+   "sha256OK": true,
+   "pass": true
+  },
+  "NewMetacomp_G2_LP2B1EQ_Readiness_20261126.zip": {
+   "local": {
+    "present": true,
+    "sha256": "2187ec2cbb36fb7d1e8fb311ef41fa918e9822a6277f3a6d98dbcf97e6867c24",
+    "bytes": 29824101
+   },
+   "offDevice": {
+    "present": true,
+    "sha256": "2187ec2cbb36fb7d1e8fb311ef41fa918e9822a6277f3a6d98dbcf97e6867c24",
+    "bytes": 29824101
+   },
+   "bothPresent": true,
+   "copiesIdentical": true,
+   "expectedSHA256": "2187ec2cbb36fb7d1e8fb311ef41fa918e9822a6277f3a6d98dbcf97e6867c24",
+   "sha256OK": true,
+   "pass": true
+  },
+  "NewMetacomp_G2_LP2B1EQ_Campaign_20261127.zip": {
+   "local": {
+    "present": true,
+    "sha256": "1d739f80fe77597e3749de7e939abf8f572bc48f27bb703c28d02f94634d6e8a",
+    "bytes": 22197754
+   },
+   "offDevice": {
+    "present": true,
+    "sha256": "1d739f80fe77597e3749de7e939abf8f572bc48f27bb703c28d02f94634d6e8a",
+    "bytes": 22197754
+   },
+   "bothPresent": true,
+   "copiesIdentical": true,
+   "expectedSHA256": "1d739f80fe77597e3749de7e939abf8f572bc48f27bb703c28d02f94634d6e8a",
+   "sha256OK": true,
+   "pass": true
+  },
+  "NewMetacomp_G2_LP2B1S10_Readiness_20261127.zip": {
+   "local": {
+    "present": true,
+    "sha256": "c21ead0996f6e29d83c1b2b0c14ce530ce1c5dff727d487125a49fad7cb42e37",
+    "bytes": 5018672,
+    "members": 50,
+    "membersEqualRecord": false
+   },
+   "offDevice": {
+    "present": true,
+    "sha256": "c21ead0996f6e29d83c1b2b0c14ce530ce1c5dff727d487125a49fad7cb42e37",
+    "bytes": 5018672,
+    "members": 50,
+    "membersEqualRecord": false
+   },
+   "bothPresent": true,
+   "copiesIdentical": true,
+   "expectedSHA256": "c21ead0996f6e29d83c1b2b0c14ce530ce1c5dff727d487125a49fad7cb42e37",
+   "sha256OK": true,
+   "recordSHA256": "c21ead0996f6e29d83c1b2b0c14ce530ce1c5dff727d487125a49fad7cb42e37",
+   "recordMembers": 50,
+   "pass": false
+  }
+ },
+ "offDeviceDriveType": 2,
+ "offDeviceRemovable": true,
+ "pass": false
+}

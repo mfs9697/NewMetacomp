@@ -1,0 +1,25 @@
+﻿HEAD:
+c243c58c477fddd7a191a1d00c1117cd5a927ab5
+HEAD~1:
+0fcee176a5e294b7c8d7f33711ad7d3897be6538
+CHANGED:
+matlab/g2/lp2b1s10/G2_LP2B1S10_GO.json
+DIFFSTAT:
+ matlab/g2/lp2b1s10/G2_LP2B1S10_GO.json | 16 ++++++++++++++++
+ 1 file changed, 16 insertions(+)
+COMMITTED_BLOB:
+ee5c63343408d9af4f8daa351096ab0761bd8465
+WORKTREE_BLOB:
+ee5c63343408d9af4f8daa351096ab0761bd8465
+CANDIDATE_BLOB:
+ee5c63343408d9af4f8daa351096ab0761bd8465
+COMMITTED_SHA256:
+CertUtil: -hashfile command FAILED: 0x80070002 (WIN32: 2 ERROR_FILE_NOT_FOUND)
+CertUtil: The system cannot find the file specified.
+SHA256 hash of <scratch>\lp2b1s10run\pre\GO_candidate.json:
+3c197f078cf6d17efda7a8019d785d8297d8ff06a4c03fefae854220978ea6d7
+CertUtil: -hashfile command completed successfully.
+STATUS:
+END
+committed SHA-256 via git show | sha256sum (certutil cannot read stdin)
+3c197f078cf6d17efda7a8019d785d8297d8ff06a4c03fefae854220978ea6d7 *-
