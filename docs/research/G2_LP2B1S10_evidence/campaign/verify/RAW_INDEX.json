@@ -1,0 +1,474 @@
+[
+  {
+    "file": "new_X3.f64",
+    "shape": [
+      15725,
+      2
+    ],
+    "class": "double"
+  },
+  {
+    "file": "new_T3.f64",
+    "shape": [
+      30357,
+      3
+    ],
+    "class": "double"
+  },
+  {
+    "file": "new_X6.f64",
+    "shape": [
+      61809,
+      2
+    ],
+    "class": "double"
+  },
+  {
+    "file": "new_T6.f64",
+    "shape": [
+      30357,
+      6
+    ],
+    "class": "double"
+  },
+  {
+    "file": "new_upperBankT6.f64",
+    "shape": [
+      369,
+      1
+    ],
+    "class": "double"
+  },
+  {
+    "file": "new_lowerBankT6.f64",
+    "shape": [
+      369,
+      1
+    ],
+    "class": "double"
+  },
+  {
+    "file": "new_nodalQ.f64",
+    "shape": [
+      61809,
+      1
+    ],
+    "class": "double"
+  },
+  {
+    "file": "new_qActiveT6Rows.f64",
+    "shape": [
+      2443,
+      1
+    ],
+    "class": "double"
+  },
+  {
+    "file": "new_crackPolyline.f64",
+    "shape": [
+      12,
+      2
+    ],
+    "class": "double"
+  },
+  {
+    "file": "qual_T3.f64",
+    "shape": [
+      30357,
+      3
+    ],
+    "class": "double"
+  },
+  {
+    "file": "qual_T6.f64",
+    "shape": [
+      30357,
+      6
+    ],
+    "class": "double"
+  },
+  {
+    "file": "qual_X3.f64",
+    "shape": [
+      15725,
+      2
+    ],
+    "class": "double"
+  },
+  {
+    "file": "qual_X6.f64",
+    "shape": [
+      61809,
+      2
+    ],
+    "class": "double"
+  },
+  {
+    "file": "qual_crackPolyline.f64",
+    "shape": [
+      12,
+      2
+    ],
+    "class": "double"
+  },
+  {
+    "file": "qual_extraVertexXY.f64",
+    "shape": [
+      3,
+      2
+    ],
+    "class": "double"
+  },
+  {
+    "file": "qual_lowerBankT6.f64",
+    "shape": [
+      369,
+      1
+    ],
+    "class": "double"
+  },
+  {
+    "file": "qual_nodalQ.f64",
+    "shape": [
+      61809,
+      1
+    ],
+    "class": "double"
+  },
+  {
+    "file": "qual_physicalTipNode.f64",
+    "shape": [
+      1,
+      1
+    ],
+    "class": "double"
+  },
+  {
+    "file": "qual_qActiveT6Rows.f64",
+    "shape": [
+      2443,
+      1
+    ],
+    "class": "double"
+  },
+  {
+    "file": "qual_upperBankT6.f64",
+    "shape": [
+      369,
+      1
+    ],
+    "class": "double"
+  },
+  {
+    "file": "new_owner.f64",
+    "shape": [
+      30357,
+      1
+    ],
+    "class": "double"
+  },
+  {
+    "file": "new_labels.f64",
+    "shape": [
+      30357,
+      1
+    ],
+    "class": "double"
+  },
+  {
+    "file": "new_u.f64",
+    "shape": [
+      123618,
+      1
+    ],
+    "class": "double"
+  },
+  {
+    "file": "new_EDI_all.f64",
+    "shape": [
+      5,
+      3
+    ],
+    "class": "double"
+  },
+  {
+    "file": "new_statePoly.f64",
+    "shape": [
+      12,
+      2
+    ],
+    "class": "double"
+  },
+  {
+    "file": "new_tangent.f64",
+    "shape": [
+      1,
+      2
+    ],
+    "class": "double"
+  },
+  {
+    "file": "new_EDI_state.f64",
+    "shape": [
+      5,
+      3
+    ],
+    "class": "double"
+  },
+  {
+    "file": "s11_poly.f64",
+    "shape": [
+      13,
+      2
+    ],
+    "class": "double"
+  },
+  {
+    "file": "target_forecastPoly.f64",
+    "shape": [
+      12,
+      2
+    ],
+    "class": "double"
+  },
+  {
+    "file": "target_forecastTangent.f64",
+    "shape": [
+      1,
+      2
+    ],
+    "class": "double"
+  },
+  {
+    "file": "fail_X3.f64",
+    "shape": [
+      15724,
+      2
+    ],
+    "class": "double"
+  },
+  {
+    "file": "fail_T3.f64",
+    "shape": [
+      30387,
+      3
+    ],
+    "class": "double"
+  },
+  {
+    "file": "fail_X6.f64",
+    "shape": [
+      61837,
+      2
+    ],
+    "class": "double"
+  },
+  {
+    "file": "fail_T6.f64",
+    "shape": [
+      30387,
+      6
+    ],
+    "class": "double"
+  },
+  {
+    "file": "fail_crackPolyline.f64",
+    "shape": [
+      12,
+      2
+    ],
+    "class": "double"
+  },
+  {
+    "file": "hist_H_S10_poly.f64",
+    "shape": [
+      12,
+      2
+    ],
+    "class": "double"
+  },
+  {
+    "file": "hist_H_S9_poly.f64",
+    "shape": [
+      11,
+      2
+    ],
+    "class": "double"
+  },
+  {
+    "file": "hist_H_S8_poly.f64",
+    "shape": [
+      10,
+      2
+    ],
+    "class": "double"
+  },
+  {
+    "file": "hist_H_S7_poly.f64",
+    "shape": [
+      9,
+      2
+    ],
+    "class": "double"
+  },
+  {
+    "file": "hist_H_S6_poly.f64",
+    "shape": [
+      8,
+      2
+    ],
+    "class": "double"
+  },
+  {
+    "file": "hist_H_S5_poly.f64",
+    "shape": [
+      7,
+      2
+    ],
+    "class": "double"
+  },
+  {
+    "file": "hist_stiff13_S10_poly.f64",
+    "shape": [
+      12,
+      2
+    ],
+    "class": "double"
+  },
+  {
+    "file": "hist_stiff13_S9_poly.f64",
+    "shape": [
+      11,
+      2
+    ],
+    "class": "double"
+  },
+  {
+    "file": "hist_stiff13_S8_poly.f64",
+    "shape": [
+      10,
+      2
+    ],
+    "class": "double"
+  },
+  {
+    "file": "hist_stiff13_S7_poly.f64",
+    "shape": [
+      9,
+      2
+    ],
+    "class": "double"
+  },
+  {
+    "file": "hist_stiff13_S6_poly.f64",
+    "shape": [
+      8,
+      2
+    ],
+    "class": "double"
+  },
+  {
+    "file": "hist_stiff13_S5_poly.f64",
+    "shape": [
+      7,
+      2
+    ],
+    "class": "double"
+  },
+  {
+    "file": "hist_soft2_S10_poly.f64",
+    "shape": [
+      12,
+      2
+    ],
+    "class": "double"
+  },
+  {
+    "file": "hist_soft2_S9_poly.f64",
+    "shape": [
+      11,
+      2
+    ],
+    "class": "double"
+  },
+  {
+    "file": "hist_soft2_S8_poly.f64",
+    "shape": [
+      10,
+      2
+    ],
+    "class": "double"
+  },
+  {
+    "file": "hist_soft2_S7_poly.f64",
+    "shape": [
+      9,
+      2
+    ],
+    "class": "double"
+  },
+  {
+    "file": "hist_soft2_S6_poly.f64",
+    "shape": [
+      8,
+      2
+    ],
+    "class": "double"
+  },
+  {
+    "file": "hist_soft2_S5_poly.f64",
+    "shape": [
+      7,
+      2
+    ],
+    "class": "double"
+  },
+  {
+    "file": "hist_soft1_S10_poly.f64",
+    "shape": [
+      12,
+      2
+    ],
+    "class": "double"
+  },
+  {
+    "file": "hist_soft1_S9_poly.f64",
+    "shape": [
+      11,
+      2
+    ],
+    "class": "double"
+  },
+  {
+    "file": "hist_soft1_S8_poly.f64",
+    "shape": [
+      10,
+      2
+    ],
+    "class": "double"
+  },
+  {
+    "file": "hist_soft1_S7_poly.f64",
+    "shape": [
+      9,
+      2
+    ],
+    "class": "double"
+  },
+  {
+    "file": "hist_soft1_S6_poly.f64",
+    "shape": [
+      8,
+      2
+    ],
+    "class": "double"
+  },
+  {
+    "file": "hist_soft1_S5_poly.f64",
+    "shape": [
+      7,
+      2
+    ],
+    "class": "double"
+  }
+]

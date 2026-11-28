@@ -1,0 +1,54 @@
+{
+ "schema": "NewMetacomp.G2.LP2B1S10.Sanitization.v1",
+ "rule": "absolute local paths replaced by <repo>, <worktree>, <temp>, <scratch>, <backup>, <home>, <drive>, <matlabroot>; UTF-16 logs converted to UTF-8; MATLAB startup path warnings removed from logs; binaries (.mat, .f64) only in the archive; figures byte for byte (superseded v1 layouts only in the archive)",
+ "files": [
+  {
+   "file": "LP2B1S10_AUDIT_v1_FAILED_case_and_manifest_count.json",
+   "sourceSHA256": "3048cac511cef0cc4b428deca533d88b8ae80bb9b84735d9f2f90386b4c5eddc",
+   "publishedSHA256": "3048cac511cef0cc4b428deca533d88b8ae80bb9b84735d9f2f90386b4c5eddc",
+   "replacements": {}
+  },
+  {
+   "file": "LP2B1S10_AUDIT_v2.json",
+   "sourceSHA256": "b4f8a8747fe3d972be9f8a715525278511df84d458e768898cf6430a8767b74c",
+   "publishedSHA256": "b4f8a8747fe3d972be9f8a715525278511df84d458e768898cf6430a8767b74c",
+   "replacements": {}
+  },
+  {
+   "file": "LP2B1S10_HISTORIES.json",
+   "sourceSHA256": "09671cbc489a722f7b30f05679f092cd357d03ee7a0754ae700c1e9cfc46ef9a",
+   "publishedSHA256": "09671cbc489a722f7b30f05679f092cd357d03ee7a0754ae700c1e9cfc46ef9a",
+   "replacements": {}
+  },
+  {
+   "file": "LP2B1S10_HISTORIES_v2.json",
+   "sourceSHA256": "1720285f03a948d105797380470e01f29bbfbd0ca7f7e080c5aca5aa4525ca47",
+   "publishedSHA256": "1720285f03a948d105797380470e01f29bbfbd0ca7f7e080c5aca5aa4525ca47",
+   "replacements": {}
+  },
+  {
+   "file": "LP2B1S10_RECORD_DUMP.json",
+   "sourceSHA256": "9fd4e2d10dc12a927210270b4d19be9303a17fdaa089c0cf4d200f5cc28efd6f",
+   "publishedSHA256": "9fd4e2d10dc12a927210270b4d19be9303a17fdaa089c0cf4d200f5cc28efd6f",
+   "replacements": {}
+  },
+  {
+   "file": "LP2B1S10_VERIFY_POSTREV.json",
+   "sourceSHA256": "e491ad8f3f8d94bd657d02980a10bf31997746d02c104bf0301a246a85151003",
+   "publishedSHA256": "e491ad8f3f8d94bd657d02980a10bf31997746d02c104bf0301a246a85151003",
+   "replacements": {}
+  },
+  {
+   "file": "RAW_INDEX.json",
+   "sourceSHA256": "5ac989b31f0597776dafbdd1dec8565ec8627ea1457ea90e7cd6f1ee58245362",
+   "publishedSHA256": "5ac989b31f0597776dafbdd1dec8565ec8627ea1457ea90e7cd6f1ee58245362",
+   "replacements": {}
+  },
+  {
+   "file": "RAW_INDEX_hist_v2.json",
+   "sourceSHA256": "f3ff83ce655d8c7449899e77eb07fa0a283a810050383c7f9d3f06fb9d86cad5",
+   "publishedSHA256": "f3ff83ce655d8c7449899e77eb07fa0a283a810050383c7f9d3f06fb9d86cad5",
+   "replacements": {}
+  }
+ ]
+}

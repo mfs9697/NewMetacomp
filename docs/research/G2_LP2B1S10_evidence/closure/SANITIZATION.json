@@ -1,0 +1,78 @@
+{
+ "schema": "NewMetacomp.G2.LP2B1S10.Sanitization.v1",
+ "rule": "absolute local paths replaced by <repo>, <worktree>, <temp>, <scratch>, <backup>, <home>, <drive>, <matlabroot>; test temp stamps by <stamp>; UTF-16 logs converted to UTF-8; MATLAB startup path warnings removed from logs; binaries (.mat, .f64) only in the archive",
+ "files": [
+  {
+   "file": "LP2B1S10_HASHCHECK_v1.json",
+   "sourceSHA256": "e8b489bea29a999b61a58afec65149e98e2e01037c98b7eebb789f8388d4b105",
+   "publishedSHA256": "e8b489bea29a999b61a58afec65149e98e2e01037c98b7eebb789f8388d4b105",
+   "replacements": {}
+  },
+  {
+   "file": "LP2B1S10_PROTECTED_BEFORE.json",
+   "sourceSHA256": "7445eb76949ca3c9d77468dd332a41a88fc5980a0eb4e3ac41a60f5ad3887c8e",
+   "publishedSHA256": "7445eb76949ca3c9d77468dd332a41a88fc5980a0eb4e3ac41a60f5ad3887c8e",
+   "replacements": {}
+  },
+  {
+   "file": "LP2B1S10_PROTECTED_trial_uncommitted_script.json",
+   "sourceSHA256": "7445eb76949ca3c9d77468dd332a41a88fc5980a0eb4e3ac41a60f5ad3887c8e",
+   "publishedSHA256": "7445eb76949ca3c9d77468dd332a41a88fc5980a0eb4e3ac41a60f5ad3887c8e",
+   "replacements": {}
+  },
+  {
+   "file": "PRESTART_01_s1.json",
+   "sourceSHA256": "ba5dbc624c019c51d121f0644ccff2221dafff26a4b8e2b6daf12aafafad758f",
+   "publishedSHA256": "1ce012234bd0cc2b8c48c123e6f01042e09259c3ce77e69285c38b8b68ddd5e1",
+   "replacements": {}
+  },
+  {
+   "file": "PRESTART_02_tests_v1.json",
+   "sourceSHA256": "01377b8999d502b1d5764f9d5cda6f20a89ea4b191885d6f72c6a022f8c735d7",
+   "publishedSHA256": "a1e27c63aa6a04c97842098853344ba87b71408600810f85736f8e9e27243189",
+   "replacements": {}
+  },
+  {
+   "file": "PRESTART_03_diag.json",
+   "sourceSHA256": "1576e0488142b9569b548dd01a0b9df014549e31cb4722466b70a434eb2dafa2",
+   "publishedSHA256": "04381dac21b15c74febf52006ee7118e8b2d345d938abb1fa073a40ed00724dd",
+   "replacements": {}
+  },
+  {
+   "file": "PRESTART_04_tests_v2.json",
+   "sourceSHA256": "d296203c63fe18632a7669371cdde2f8e8996b835d05fe0729873814ac5fb92d",
+   "publishedSHA256": "35242e73602e1a2ebd8646698d348e454670615686863cd9b8a24cfd9dd13abd",
+   "replacements": {}
+  },
+  {
+   "file": "PRESTART_05_final.json",
+   "sourceSHA256": "8e65611dcdf0ac7dfe4b899f6d16f15ebc26de11742eed8641e7e0e1ae3276c2",
+   "publishedSHA256": "ace523eee4b128b86995fdd8914312844cdd9e6a1aba5470d0fd26b5d2fcda5a",
+   "replacements": {}
+  },
+  {
+   "file": "LP2B1S10_ARCHIVE_RECORD.json",
+   "sourceSHA256": "49ee3c55faac247f2fa772566cfde792ce7fe0ac0ed870044d67131b16b8ae53",
+   "publishedSHA256": "49ee3c55faac247f2fa772566cfde792ce7fe0ac0ed870044d67131b16b8ae53",
+   "replacements": {}
+  },
+  {
+   "file": "LP2B1S10_PROTECTED_AFTER.json",
+   "sourceSHA256": "91528aa421595063688078c985a1bb2fd434204f743d53df04ac4f60970040f2",
+   "publishedSHA256": "91528aa421595063688078c985a1bb2fd434204f743d53df04ac4f60970040f2",
+   "replacements": {}
+  },
+  {
+   "file": "D_STABILITY_LOG_attempt1_INVALID_QUERY.csv",
+   "sourceSHA256": "c32c46a3e4734b01d42093dbbb25402abcac0e619348a4aa485c5c9d5b43edda",
+   "publishedSHA256": "b271b36a7c09f085300d84fc09793d1c27349564e014bdb93dd72242dfee9d86",
+   "replacements": {}
+  },
+  {
+   "file": "D_STABILITY_LOG_v2.csv",
+   "sourceSHA256": "e63742b676b0ab33e9dcb0308881b66561319da43805b5ae7f41eeab5b0abca2",
+   "publishedSHA256": "6ffe7c3a086ba8c75c94be5359d10ec130ee621ed776450a8eb53e12aacf0251",
+   "replacements": {}
+  }
+ ]
+}

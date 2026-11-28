@@ -1,0 +1,130 @@
+{
+ "schema": "NewMetacomp.G2.LP2B1S10.Sanitization.v1",
+ "rule": "absolute local paths replaced by <repo>, <worktree>, <temp>, <scratch>, <backup>, <home>, <drive>, <matlabroot>; test temp stamps by <stamp>; UTF-16 logs converted to UTF-8; MATLAB startup path warnings removed from logs; binaries (.mat, .f64) only in the archive",
+ "files": [
+  {
+   "file": "publish.py",
+   "sourceSHA256": "3e6db421ed9cbff8125beeadc8f1ee7a12b1a29449803ca4f4e2a785f044ab97",
+   "publishedSHA256": "f7c8657996b24586547d232ebc94f4bf3335b43df8ce8e65c28cf55ce9765aef",
+   "replacements": {
+    "<scratch>": 1,
+    "<temp>": 1,
+    "<repo>": 1,
+    "<worktree>": 1,
+    "<backup>": 1,
+    "<matlabroot>": 2,
+    "<drive>": 1,
+    "<home>": 1
+   }
+  },
+  {
+   "file": "repin.sh",
+   "sourceSHA256": "ff232ee58ff9ab911f8c99bef6c16455c8c16ab87cad7fadb059ddb34314e4ca",
+   "publishedSHA256": "cd19062bceeb3f07da8a8f50c130717fb2c6817e44af344e6061b9eeb36a71f4",
+   "replacements": {
+    "<scratch>": 1,
+    "<repo>": 1,
+    "<worktree>": 1
+   }
+  },
+  {
+   "file": "s1_wp0.log",
+   "sourceSHA256": "d220f7eec5682d0a97ed1b3e0f693ecd15233dd5a2a901676a5d2b66a05caf79",
+   "publishedSHA256": "9b871b4b721c7f754cead8f93dd0a06024d3477c33ffa657c7b55c3a42460cf8",
+   "replacements": {
+    "<drive>": 2
+   }
+  },
+  {
+   "file": "s1_wp0.m",
+   "sourceSHA256": "3883f9b58acc71771261620aa686e0bc93247dd0fbbe66c430b7794c421c1fdd",
+   "publishedSHA256": "a281fa54dec94bf69c416e5f2f551a3d9bba1d9cb608c682cc0eb772db4060b2",
+   "replacements": {
+    "<repo>": 1
+   }
+  },
+  {
+   "file": "s2_tests.m",
+   "sourceSHA256": "5faafc077d0eab5180de13f2bbd4b1316e45656e1b39ce674b10c783ec512a39",
+   "publishedSHA256": "44c7bf13a04e56ea175375e232ba99e581a3ff29d1b7769e1e5196f6ffbc6416",
+   "replacements": {
+    "<repo>": 1
+   }
+  },
+  {
+   "file": "s2_tests_v1.log",
+   "sourceSHA256": "442fbaf230c287c43781e7c784b801b2f879dae798ae3994532223c00cf7bf7b",
+   "publishedSHA256": "3361cec9abb9aed47eb86ecd00ce48224e5499d5b95f722f38ebca4c636ef891",
+   "replacements": {
+    "<drive>": 2
+   }
+  },
+  {
+   "file": "s2_tests_v2.log",
+   "sourceSHA256": "42ce0304be20e7bda25e3cc86deab7122a14c51b0ed97c1b8cd58be9b2339c52",
+   "publishedSHA256": "e0e172e3065428471322f706f76a661aa47097bcb96c9527357ffeff2ec7102e",
+   "replacements": {
+    "<drive>": 2
+   }
+  },
+  {
+   "file": "s3_diag_g18.log",
+   "sourceSHA256": "e086de3e2feb10ac558332b908daea1d070eabe3a10be42d0746c3d220e2ab3c",
+   "publishedSHA256": "881575086bca5400905315d4ce4ff550dbd84555bf1aa1188ff41575a1e26caa",
+   "replacements": {
+    "<drive>": 2
+   }
+  },
+  {
+   "file": "s3_diag_g18.m",
+   "sourceSHA256": "be10f9ac230979c2f9c7fbf96e6d5d8bbeef8b46a9d84abc965746b6f470777f",
+   "publishedSHA256": "4cc586c856ea36199ccf04cf98bc41f29347677a7a3371521fe555b7cd010d7e",
+   "replacements": {
+    "<repo>": 1
+   }
+  },
+  {
+   "file": "s4_final.log",
+   "sourceSHA256": "b7577fd97102d5b9b291eff2189cb6af8c5e9ef3fc860ea30d9be854b31ba46b",
+   "publishedSHA256": "8e12c634d248b29ea0890d5f7cfa015a3cb486d9e4cd0c6a75577c86892671c6",
+   "replacements": {
+    "<drive>": 2
+   }
+  },
+  {
+   "file": "s4_final.m",
+   "sourceSHA256": "8208c6658901a0ea389631c7d1da4d4752104053ba615e28edc9ae0821c88abd",
+   "publishedSHA256": "96889b90ba9863bc9ce6b55eb4ad983d95aa81f996795f364d98b7fb2327bf06",
+   "replacements": {
+    "<repo>": 1
+   }
+  },
+  {
+   "file": "digest.py",
+   "sourceSHA256": "6105eae72b7d96be7f483cccf8c53d6efc6fcf0a120a48dbfe47c442e00113dc",
+   "publishedSHA256": "6105eae72b7d96be7f483cccf8c53d6efc6fcf0a120a48dbfe47c442e00113dc",
+   "replacements": {}
+  },
+  {
+   "file": "d_stability.ps1",
+   "sourceSHA256": "277c72654281ce0229e36368767b332c9a5d72986b9c7f86042a67db3f4f6f74",
+   "publishedSHA256": "277c72654281ce0229e36368767b332c9a5d72986b9c7f86042a67db3f4f6f74",
+   "replacements": {}
+  },
+  {
+   "file": "publish_closure_version.py",
+   "sourceSHA256": "d031ee11a02e5a01157f49ef8c2e2a1731dc5d7d397f85e0a044ae9409487b01",
+   "publishedSHA256": "29c078c0bfe0c7d379273dbabe2718b9ca707098d9420c98c7d1a4cc14f116a3",
+   "replacements": {
+    "<scratch>": 1,
+    "<temp>": 1,
+    "<repo>": 1,
+    "<worktree>": 1,
+    "<backup>": 1,
+    "<matlabroot>": 2,
+    "<drive>": 1,
+    "<home>": 1
+   }
+  }
+ ]
+}

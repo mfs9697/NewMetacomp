@@ -1,0 +1,950 @@
+{
+ "schema": "NewMetacomp.G2.LP2B1S10.IndependentAudit.v1",
+ "pass": false,
+ "problems": [
+  "manifestsMatchFiles",
+  "recordLinks",
+  "S10parentInHistory"
+ ],
+ "checks": {
+  "runSetExact11": true,
+  "ledgerSetExact4": true,
+  "noHoldOrClosedFiles": true,
+  "dumpRunHashesEqualAudit": true,
+  "manifestsMatchFiles": false,
+  "summaryCopiesIdentical": true,
+  "summaryOutcome": true,
+  "precheck": true,
+  "goEqualsAuthorizationRecord": true,
+  "activationCommit": true,
+  "revocationCommit": true,
+  "tokenComponents": true,
+  "receiptLinks": true,
+  "admitAndLedger": true,
+  "recordLinks": false,
+  "activationLinksInRecords": true,
+  "parentIsOriginalS9": true,
+  "identity": true,
+  "targetQualification": true,
+  "canonicalDigest": true,
+  "arraysEqualQualification": true,
+  "polylineIdentity": true,
+  "meshQuality": true,
+  "banksAndUniqueTip": true,
+  "protectedNearTipDiskEqualsFailedMeshBaseline": true,
+  "phase": true,
+  "solverGates16": true,
+  "uShapeLoadCompliance": true,
+  "memoryGateBeforeSolve": true,
+  "numericsRecomputed": true,
+  "mtsAdmissible": true,
+  "ringAndHoleCircleDistances": true,
+  "kinkAdmissibilityRecorded": true,
+  "history_H_complete": true,
+  "history_H_recurrence": true,
+  "history_H_G_identity": true,
+  "history_stiff13_complete": true,
+  "history_stiff13_recurrence": true,
+  "history_stiff13_G_identity": true,
+  "history_soft2_complete": true,
+  "history_soft2_recurrence": true,
+  "history_soft2_G_identity": true,
+  "history_soft1_complete": true,
+  "history_soft1_recurrence": true,
+  "history_soft1_G_identity": true,
+  "S10parentInHistory": false,
+  "headingTangent": true,
+  "S11forecastInformationOnly": true,
+  "countsActualFEM": true,
+  "ordering": true
+ },
+ "detail": {
+  "runSetExact11": {
+   "files": 11,
+   "unexpected": [],
+   "missing": []
+  },
+  "ledgerSetExact4": [
+   "G2-LP2B1-S10-001/ADMIT_soft1_S10.mat",
+   "G2-LP2B1-S10-001/ADMIT_soft1_S10.mat.manifest.json",
+   "G2-LP2B1-S10-001/RECEIPT.mat",
+   "G2-LP2B1-S10-001/RECEIPT.mat.manifest.json"
+  ],
+  "manifestsMatchFiles": {
+   "run_lp2b1_s10_v1/soft1/TERMINAL.mat.manifest.json": true,
+   "run_lp2b1_s10_v1/soft1/S10/PHASE.mat.manifest.json": true,
+   "run_lp2b1_s10_v1/soft1/S10/SOLUTION.mat.manifest.json": true,
+   "run_lp2b1_s10_v1/soft1/S10/STATE.mat.manifest.json": true,
+   "G2-LP2B1-S10-001/ADMIT_soft1_S10.mat.manifest.json": true,
+   "G2-LP2B1-S10-001/RECEIPT.mat.manifest.json": true
+  },
+  "summaryCopiesIdentical": "0f26a8feaafe1984e6f66847dd844fa3404d9e62dfabc0cf42d591aefbd1f6b1",
+  "summaryOutcome": {
+   "outcome": "STATE_ACCEPTED",
+   "admissions": 1,
+   "solveCalls": 1,
+   "verify": "VERIFIED_ACCEPTED",
+   "wall_s": 35.6223976
+  },
+  "precheck": {
+   "memgateFreeGiB": 8.753517150878906
+  },
+  "goEqualsAuthorizationRecord": "3c197f078cf6d17efda7a8019d785d8297d8ff06a4c03fefae854220978ea6d7",
+  "revocationCommit": {
+   "treeEqualsApproved": true
+  },
+  "tokenComponents": {
+   "policy": "f57433eccc5641ba253da52b723a0de6b1ad299793aa227235d309e57f120171",
+   "lp2b1s10source": "d544fcfde1cfaa1e7118e0c5959551bdddb1cd477739bcf55376c45fe8388ab9"
+  },
+  "receiptLinks": {
+   "openedUTC": "2026-11-28T12:12:53.751Z"
+  },
+  "admitAndLedger": {
+   "ledger": {
+    "integrityOK": true,
+    "nAdmits": 1,
+    "nHolds": 0,
+    "closed": false
+   },
+   "note": "single-state policy: no CLOSED ledger entry is written by design"
+  },
+  "targetQualification": {
+   "parentRecords": true,
+   "parentIdentity": true,
+   "parentLinks": true,
+   "mtsIndependent": true,
+   "forecast": true,
+   "failedMesh": true,
+   "terminal": true,
+   "nominalClearance": true,
+   "notShiftedEq": true
+  },
+  "canonicalDigest": "54293d2a527f9bec33605ffea10c8f56af46a56291157f0d911cf68301b85bd2",
+  "meshQuality": {
+   "T3": 30357,
+   "minArea_mm2": 0.0007517581630070104,
+   "minAngleRecomputed_deg": 23.179107436795398,
+   "minAngleRecorded_deg": 23.179107436795395,
+   "maxNeighborRatioRecorded": 1.6015350873084404,
+   "qActiveT6Parents": 2443
+  },
+  "banksAndUniqueTip": {
+   "stations": 369,
+   "pairResidual_mm": 0.0,
+   "tipOffset_mm": 0.0
+  },
+  "protectedNearTipDiskEqualsFailedMeshBaseline": {
+   "elementsInDisk": 2916,
+   "radius_mm": 3.3
+  },
+  "phase": {
+   "ownerCounts": [
+    18109,
+    4076,
+    4084,
+    4088
+   ],
+   "labelCounts": [
+    26281,
+    4076
+   ],
+   "activeAreaRecomputed_mm2": 1012.1525285981617,
+   "activeAreaRecorded_mm2": 1012.1525285981612
+  },
+  "solverGates16": [
+   "EDIquadrature",
+   "JenergyIdentity",
+   "KIpositive",
+   "activeAnnulusResultant",
+   "activeInterfaceNodalForceBalance",
+   "blindCODversusEDI",
+   "conditionalHighMixityKIIagreement",
+   "contourIndependence",
+   "elasticEquilibrium",
+   "heterogeneousEnergyIdentity",
+   "loadThicknessModulus",
+   "qSupportInsideCore",
+   "qSupportMatrixPhaseOnly",
+   "qSupportRingOwnerFree",
+   "stiffnessPositiveDefinite",
+   "wholeCrackOpening"
+  ],
+  "uShapeLoadCompliance": {
+   "dofs": 123618,
+   "compliance_mm_per_N": 0.0002410654066619017
+  },
+  "memoryGateBeforeSolve": {
+   "pass": true,
+   "minGiB": 7,
+   "freeGiB": 8.517158508300781,
+   "reason": "OK"
+  },
+  "numericsRecomputed": {
+   "G": {
+    "audit": 3.6708424994075335e-08,
+    "recorded": 3.6708424994075335e-08,
+    "absDiff": 0.0,
+    "ok": true
+   },
+   "JoverGminus1": {
+    "audit": 5.026060636259544e-05,
+    "recorded": 5.026060636259544e-05,
+    "absDiff": 0.0,
+    "ok": true
+   },
+   "KIIoverKI": {
+    "audit": 0.01586273196685727,
+    "recorded": 0.01586273196685727,
+    "absDiff": 0.0,
+    "ok": true
+   },
+   "MTS_deg": {
+    "audit": -1.8166691157234716,
+    "recorded": -1.8166691157234713,
+    "absDiff": 2.220446049250313e-16,
+    "ok": true
+   },
+   "CODminusEDI_rel": {
+    "audit": 0.008726152685775068,
+    "recorded": 0.008726152685775068,
+    "absDiff": 0.0,
+    "ok": true
+   },
+   "pathSpread_rel": {
+    "audit": 1.6446569709088834e-06,
+    "recorded": 1.6446569709088834e-06,
+    "absDiff": 0.0,
+    "ok": true
+   },
+   "quad4x4_rel": {
+    "audit": 3.599963942281319e-13,
+    "recorded": 3.599963942281319e-13,
+    "absDiff": 0.0,
+    "ok": true
+   },
+   "KI_MPa_sqrt_m_per_kN": {
+    "audit": 0.3463194695740868,
+    "recorded": 0.34631946957408677,
+    "absDiff": 5.551115123125783e-17,
+    "ok": true
+   },
+   "KII_MPa_sqrt_m_per_kN": {
+    "audit": 0.00549357292075792,
+    "recorded": 0.00549357292075792,
+    "absDiff": 0.0,
+    "ok": true
+   }
+  },
+  "mtsAdmissible": {
+   "stationarity": 0.0,
+   "tensileMaximum": true
+  },
+  "ringAndHoleCircleDistances": {
+   "tipToRingCircle_mm": [
+    19.63295638163834,
+    49.900088262551904,
+    95.72429254150799
+   ],
+   "guideRingGap_mm": [
+    4.6329563816383335,
+    34.900088262551904,
+    80.724292541508
+   ]
+  },
+  "history_H_recurrence": {
+   "maxTipRecurrenceError_mm": 1.4210854715202004e-14,
+   "maxMTSdiff_deg": 1.7763568394002505e-15
+  },
+  "history_H_G_identity": 3.3306690738754696e-16,
+  "history_stiff13_recurrence": {
+   "maxTipRecurrenceError_mm": 1.4210854715202004e-14,
+   "maxMTSdiff_deg": 2.220446049250313e-16
+  },
+  "history_stiff13_G_identity": 2.220446049250313e-16,
+  "history_soft2_recurrence": {
+   "maxTipRecurrenceError_mm": 1.4210854715202004e-14,
+   "maxMTSdiff_deg": 2.220446049250313e-16
+  },
+  "history_soft2_G_identity": 4.440892098500626e-16,
+  "history_soft1_recurrence": {
+   "maxTipRecurrenceError_mm": 1.4210854715202004e-14,
+   "maxMTSdiff_deg": 1.7763568394002505e-15
+  },
+  "history_soft1_G_identity": 3.3306690738754696e-16,
+  "headingTangent": {
+   "heading_deg": 63.88801331915682,
+   "stepLength_mm": 3.999999999999997
+  },
+  "S11forecastInformationOnly": {
+   "S11tip_mm": [
+    116.16893588019792,
+    66.71972087185763
+   ],
+   "S11tipError_mm": 0.0,
+   "S11tipToRingCircle_mm": [
+    17.316037104327076,
+    45.92049341118289,
+    91.77022095949737
+   ],
+   "S11guideRingGap_mm": [
+    2.3160371043270764,
+    30.92049341118289,
+    76.77022095949738
+   ],
+   "classification": "MATRIX_ADVANCE"
+  },
+  "countsActualFEM": {
+   "entryCalls": 1,
+   "physicalSolveLines": 1,
+   "geometryAdmissions": 1,
+   "acceptedLines": 1,
+   "admitRecords": 1,
+   "solutionRecords": 1,
+   "wrapperAdmissions": 1,
+   "wrapperSolveCalls": 1
+  },
+  "ordering": [
+   0.0,
+   5.765512943267822,
+   24.522449254989624,
+   27.26194453239441,
+   27.330841779708862,
+   27.390320539474487,
+   28.675398588180542
+  ]
+ },
+ "outcome": "VERIFY_HOLD",
+ "physicalSolvesAttempted": 1,
+ "physicalSolvesCompleted": 1,
+ "admissions": 1,
+ "entryInvocations": 1,
+ "goFileSHA256": "3c197f078cf6d17efda7a8019d785d8297d8ff06a4c03fefae854220978ea6d7",
+ "recurrence": {
+  "H": {
+   "maxTipRecurrenceError_mm": 1.4210854715202004e-14,
+   "maxMTSdiff_deg": 1.7763568394002505e-15
+  },
+  "stiff13": {
+   "maxTipRecurrenceError_mm": 1.4210854715202004e-14,
+   "maxMTSdiff_deg": 2.220446049250313e-16
+  },
+  "soft2": {
+   "maxTipRecurrenceError_mm": 1.4210854715202004e-14,
+   "maxMTSdiff_deg": 2.220446049250313e-16
+  },
+  "soft1": {
+   "maxTipRecurrenceError_mm": 1.4210854715202004e-14,
+   "maxMTSdiff_deg": 1.7763568394002505e-15
+  }
+ },
+ "science": {
+  "common_s_mm": 65.4,
+  "E_matrix_MPa": 3268.115,
+  "note": "H S10 is the ORIGINAL LP2-A3 record (not the LP2-B1-EQ re-solve)",
+  "S10": {
+   "H": {
+    "mask": [
+     0,
+     0,
+     0
+    ],
+    "ratio": 1,
+    "path": "outputs/g2_lp2a3_paths_v1/run_lp2a3_s9_s11_v1/H/S10/STATE.mat",
+    "tip_mm": [
+     114.73497161080275,
+     63.06367851725136
+    ],
+    "KI": 0.010336206195789625,
+    "KII": 0.00010980867509538642,
+    "KIIoverKI": 0.010623692389197513,
+    "J": 3.269562397114348e-08,
+    "G": 3.269444816568757e-08,
+    "G_recorded": 3.269444816568758e-08,
+    "F_G": 0.0,
+    "MTS_deg": -1.217065037212334,
+    "MTS_recorded_deg": -1.2170650372123342,
+    "heading_deg": 64.43840186345419,
+    "offsetFromH_mm": 0.0,
+    "signedLateralOffsetFromH_mm": 0.0,
+    "alongOffsetFromH_mm": 0.0,
+    "tipToRingCircle_mm": [
+     19.221510589814077,
+     49.760164841202894,
+     95.6942767554041
+    ],
+    "compliance_mm_per_N": 0.0002386204261080145
+   },
+   "stiff13": {
+    "mask": [
+     1,
+     0,
+     1
+    ],
+    "ratio": 2,
+    "path": "outputs/g2_lp2a3_paths_v1/run_lp2a3_s9_s11_v1/stiff13/S10/STATE.mat",
+    "tip_mm": [
+     114.91979582056622,
+     63.02223915891369
+    ],
+    "KI": 0.009688135688190462,
+    "KII": 5.096771173378269e-05,
+    "KIIoverKI": 0.005260837933546984,
+    "J": 2.8721332584758578e-08,
+    "G": 2.872070622374949e-08,
+    "G_recorded": 2.8720706223749492e-08,
+    "F_G": -0.12154179577523738,
+    "MTS_deg": -0.6028086944219392,
+    "MTS_recorded_deg": -0.6028086944219392,
+    "heading_deg": 65.3427303122309,
+    "offsetFromH_mm": 0.189412800343935,
+    "signedLateralOffsetFromH_mm": -0.1846142762256705,
+    "alongOffsetFromH_mm": 0.042364819695157874,
+    "tipToRingCircle_mm": [
+     19.04703431285849,
+     49.69390536541758,
+     95.67290541275466
+    ],
+    "compliance_mm_per_N": 0.00023524390657755955
+   },
+   "soft2": {
+    "mask": [
+     0,
+     1,
+     0
+    ],
+    "ratio": 0.5,
+    "path": "outputs/g2_lp2a3_paths_v1/run_lp2a3_s9_s11_v1/soft2/S10/STATE.mat",
+    "tip_mm": [
+     114.99840690534252,
+     62.9656761796225
+    ],
+    "KI": 0.010303644638529596,
+    "KII": 0.00011159249429785022,
+    "KIIoverKI": 0.010830390431028614,
+    "J": 3.2490036607956713e-08,
+    "G": 3.248892579419125e-08,
+    "G_recorded": 3.248892579419125e-08,
+    "F_G": -0.006286155082195766,
+    "MTS_deg": -1.2407318248477945,
+    "MTS_recorded_deg": -1.2407318248477945,
+    "heading_deg": 63.910704373156875,
+    "offsetFromH_mm": 0.28107403400168374,
+    "signedLateralOffsetFromH_mm": -0.27993692197420433,
+    "alongOffsetFromH_mm": 0.025257321821363435,
+    "tipToRingCircle_mm": [
+     18.97989719263185,
+     49.69853002524856,
+     95.70071973971602
+    ],
+    "compliance_mm_per_N": 0.00023911263161894482
+   },
+   "soft1": {
+    "mask": [
+     1,
+     0,
+     0
+    ],
+    "ratio": 0.5,
+    "path": "outputs/g2_lp2b1_s10_v1/run_lp2b1_s10_v1/soft1/S10/STATE.mat",
+    "tip_mm": [
+     114.29544883822506,
+     63.18559491151613
+    ],
+    "KI": 0.010951583219154975,
+    "KII": 0.00017372202921818724,
+    "KIIoverKI": 0.01586273196685727,
+    "J": 3.6710269981774156e-08,
+    "G": 3.670842499407534e-08,
+    "G_recorded": 3.6708424994075335e-08,
+    "F_G": 0.12277242937534538,
+    "MTS_deg": -1.8166691157234716,
+    "MTS_recorded_deg": -1.8166691157234713,
+    "heading_deg": 63.88801331915682,
+    "offsetFromH_mm": 0.4561182684402158,
+    "signedLateralOffsetFromH_mm": 0.4491077626038629,
+    "alongOffsetFromH_mm": -0.07966236485225031,
+    "tipToRingCircle_mm": [
+     19.63295638163834,
+     49.900088262551904,
+     95.72429254150799
+    ],
+    "compliance_mm_per_N": 0.0002410654066619017
+   }
+  },
+  "evolution": {
+   "H": [
+    {
+     "state": 0,
+     "s_mm": 25.4,
+     "G": 8.584569785604545e-09,
+     "F_G": 0.0,
+     "KIIoverKI": 0.1131191719349498,
+     "MTS_deg": -12.595758490243137,
+     "lateralOffsetFromH_mm": 0.0,
+     "tipToRing1Circle_mm": 48.45142591086504
+    },
+    {
+     "state": 1,
+     "s_mm": 29.4,
+     "G": 1.0201455432664564e-08,
+     "F_G": 0.0,
+     "KIIoverKI": 0.008289510369592175,
+     "MTS_deg": -0.9497556568863174,
+     "lateralOffsetFromH_mm": 0.0,
+     "tipToRing1Circle_mm": 45.267779077008456
+    },
+    {
+     "state": 2,
+     "s_mm": 33.4,
+     "G": 1.1755709770349431e-08,
+     "F_G": 0.0,
+     "KIIoverKI": 0.016072761495197558,
+     "MTS_deg": -1.8406938503972468,
+     "lateralOffsetFromH_mm": 0.0,
+     "tipToRing1Circle_mm": 42.13723346514239
+    },
+    {
+     "state": 3,
+     "s_mm": 37.4,
+     "G": 1.3476686661191678e-08,
+     "F_G": 0.0,
+     "KIIoverKI": 0.015074518272374611,
+     "MTS_deg": -1.7264975345173723,
+     "lateralOffsetFromH_mm": 0.0,
+     "tipToRing1Circle_mm": 39.02874265198284
+    },
+    {
+     "state": 4,
+     "s_mm": 41.4,
+     "G": 1.5389592037431454e-08,
+     "F_G": 0.0,
+     "KIIoverKI": 0.014229410822954713,
+     "MTS_deg": -1.6298006976503088,
+     "lateralOffsetFromH_mm": 0.0,
+     "tipToRing1Circle_mm": 35.95475897187184
+    },
+    {
+     "state": 5,
+     "s_mm": 45.4,
+     "G": 1.75256891336074e-08,
+     "F_G": 0.0,
+     "KIIoverKI": 0.013296278850482918,
+     "MTS_deg": -1.523013287059174,
+     "lateralOffsetFromH_mm": 0.0,
+     "tipToRing1Circle_mm": 32.92897837597977
+    },
+    {
+     "state": 6,
+     "s_mm": 49.4,
+     "G": 1.9917464739210244e-08,
+     "F_G": 0.0,
+     "KIIoverKI": 0.012443519925817343,
+     "MTS_deg": -1.425407516308576,
+     "lateralOffsetFromH_mm": 0.0,
+     "tipToRing1Circle_mm": 29.96815614292795
+    },
+    {
+     "state": 7,
+     "s_mm": 53.4,
+     "G": 2.2598870466667532e-08,
+     "F_G": 0.0,
+     "KIIoverKI": 0.011735300822730636,
+     "MTS_deg": -1.3443345491900947,
+     "lateralOffsetFromH_mm": 0.0,
+     "tipToRing1Circle_mm": 27.09196489762692
+    },
+    {
+     "state": 8,
+     "s_mm": 57.4,
+     "G": 2.560372905680926e-08,
+     "F_G": 0.0,
+     "KIIoverKI": 0.01120389675883776,
+     "MTS_deg": -1.2834961606663147,
+     "lateralOffsetFromH_mm": 0.0,
+     "tipToRing1Circle_mm": 24.323407922907048
+    },
+    {
+     "state": 9,
+     "s_mm": 61.4,
+     "G": 2.8962126728035312e-08,
+     "F_G": 0.0,
+     "KIIoverKI": 0.010848806298581372,
+     "MTS_deg": -1.2428403936273038,
+     "lateralOffsetFromH_mm": 0.0,
+     "tipToRing1Circle_mm": 21.6894066444265
+    },
+    {
+     "state": 10,
+     "s_mm": 65.4,
+     "G": 3.269444816568757e-08,
+     "F_G": 0.0,
+     "KIIoverKI": 0.010623692389197513,
+     "MTS_deg": -1.217065037212334,
+     "lateralOffsetFromH_mm": 0.0,
+     "tipToRing1Circle_mm": 19.221510589814077
+    }
+   ],
+   "stiff13": [
+    {
+     "state": 0,
+     "s_mm": 25.4,
+     "G": 8.247092050383515e-09,
+     "F_G": -0.039312131376338266,
+     "KIIoverKI": 0.11944764696713808,
+     "MTS_deg": -13.25844347041297,
+     "lateralOffsetFromH_mm": 0.0,
+     "tipToRing1Circle_mm": 48.45142591086504
+    },
+    {
+     "state": 1,
+     "s_mm": 29.4,
+     "G": 9.742674241731378e-09,
+     "F_G": -0.044972131080844746,
+     "KIIoverKI": 0.008747467634214018,
+     "MTS_deg": -1.0022070451376597,
+     "lateralOffsetFromH_mm": -0.04626310775344624,
+     "tipToRing1Circle_mm": 45.23931106418661
+    },
+    {
+     "state": 2,
+     "s_mm": 33.4,
+     "G": 1.1127032596331525e-08,
+     "F_G": -0.053478453134626736,
+     "KIIoverKI": 0.015928897114865434,
+     "MTS_deg": -1.8242376972920544,
+     "lateralOffsetFromH_mm": -0.09618582722299482,
+     "tipToRing1Circle_mm": 42.07575947089944
+    },
+    {
+     "state": 3,
+     "s_mm": 37.4,
+     "G": 1.263559091133478e-08,
+     "F_G": -0.062411167596481354,
+     "KIIoverKI": 0.014745938823488673,
+     "MTS_deg": -1.6889036056825697,
+     "lateralOffsetFromH_mm": -0.14490603607474364,
+     "tipToRing1Circle_mm": 38.93298519968586
+    },
+    {
+     "state": 4,
+     "s_mm": 41.400000000000006,
+     "G": 1.428567050016256e-08,
+     "F_G": -0.07173169597893647,
+     "KIIoverKI": 0.013549526864731062,
+     "MTS_deg": -1.5519968180179362,
+     "lateralOffsetFromH_mm": -0.1909019814362965,
+     "tipToRing1Circle_mm": 35.824117339770936
+    },
+    {
+     "state": 5,
+     "s_mm": 45.400000000000006,
+     "G": 1.6099806761478255e-08,
+     "F_G": -0.08135956088567509,
+     "KIIoverKI": 0.012165460001166507,
+     "MTS_deg": -1.3935779291128962,
+     "lateralOffsetFromH_mm": -0.23134353422655451,
+     "tipToRing1Circle_mm": 32.76452752884964
+    },
+    {
+     "state": 6,
+     "s_mm": 49.400000000000006,
+     "G": 1.8102748646301222e-08,
+     "F_G": -0.09111180146017805,
+     "KIIoverKI": 0.010727819961754618,
+     "MTS_deg": -1.2289876664216364,
+     "lateralOffsetFromH_mm": -0.2626191306307453,
+     "tipToRing1Circle_mm": 29.77348627550914
+    },
+    {
+     "state": 7,
+     "s_mm": 53.400000000000006,
+     "G": 2.032399291498961e-08,
+     "F_G": -0.10066332983470472,
+     "KIIoverKI": 0.009282194158215821,
+     "MTS_deg": -1.0634473440113856,
+     "lateralOffsetFromH_mm": -0.2800539851742582,
+     "tipToRing1Circle_mm": 26.874478528290577
+    },
+    {
+     "state": 8,
+     "s_mm": 57.400000000000006,
+     "G": 2.280040409990482e-08,
+     "F_G": -0.10948893228343637,
+     "KIIoverKI": 0.007860471880627584,
+     "MTS_deg": -0.9006139025846337,
+     "lateralOffsetFromH_mm": -0.27775718123220333,
+     "tipToRing1Circle_mm": 24.096089856550076
+    },
+    {
+     "state": 9,
+     "s_mm": 61.400000000000006,
+     "G": 2.557917495196091e-08,
+     "F_G": -0.11680605529564614,
+     "KIIoverKI": 0.006500720084292315,
+     "MTS_deg": -0.7448542090953163,
+     "lateralOffsetFromH_mm": -0.24861710500340545,
+     "tipToRing1Circle_mm": 21.47303539315102
+    },
+    {
+     "state": 10,
+     "s_mm": 65.4,
+     "G": 2.872070622374949e-08,
+     "F_G": -0.12154179577523738,
+     "KIIoverKI": 0.005260837933546984,
+     "MTS_deg": -0.6028086944219392,
+     "lateralOffsetFromH_mm": -0.1846142762256705,
+     "tipToRing1Circle_mm": 19.04703431285849
+    }
+   ],
+   "soft2": [
+    {
+     "state": 0,
+     "s_mm": 25.4,
+     "G": 8.218957083073332e-09,
+     "F_G": -0.04258951952890033,
+     "KIIoverKI": 0.11543556237396314,
+     "MTS_deg": -12.839036394192503,
+     "lateralOffsetFromH_mm": 0.0,
+     "tipToRing1Circle_mm": 48.45142591086504
+    },
+    {
+     "state": 1,
+     "s_mm": 29.4,
+     "G": 9.80549872788782e-09,
+     "F_G": -0.03881374646885294,
+     "KIIoverKI": 0.008645378017467743,
+     "MTS_deg": -0.9905146266322956,
+     "lateralOffsetFromH_mm": -0.016983950652370388,
+     "tipToRing1Circle_mm": 45.25727682154502
+    },
+    {
+     "state": 2,
+     "s_mm": 33.4,
+     "G": 1.1335229678152874e-08,
+     "F_G": -0.03576815865742988,
+     "KIIoverKI": 0.016448372593102355,
+     "MTS_deg": -1.8836561976574164,
+     "lateralOffsetFromH_mm": -0.036811648334565975,
+     "tipToRing1Circle_mm": 42.11360008187782
+    },
+    {
+     "state": 3,
+     "s_mm": 37.4,
+     "G": 1.3037407671035854e-08,
+     "F_G": -0.032595474035973515,
+     "KIIoverKI": 0.015423284296267718,
+     "MTS_deg": -1.766398231947606,
+     "lateralOffsetFromH_mm": -0.05961507598668511,
+     "tipToRing1Circle_mm": 38.989255955324154
+    },
+    {
+     "state": 4,
+     "s_mm": 41.4,
+     "G": 1.4938397602726234e-08,
+     "F_G": -0.029318154347938497,
+     "KIIoverKI": 0.014540912959457435,
+     "MTS_deg": -1.665444582913597,
+     "lateralOffsetFromH_mm": -0.08516271076796854,
+     "tipToRing1Circle_mm": 35.896533634675805
+    },
+    {
+     "state": 5,
+     "s_mm": 45.4,
+     "G": 1.707119202277066e-08,
+     "F_G": -0.025933194830278783,
+     "KIIoverKI": 0.013568678229058401,
+     "MTS_deg": -1.5541885821817083,
+     "lateralOffsetFromH_mm": -0.11314479437690869,
+     "tipToRing1Circle_mm": 32.84897806830777
+    },
+    {
+     "state": 6,
+     "s_mm": 49.4,
+     "G": 1.9470865309688314e-08,
+     "F_G": -0.022422503836180385,
+     "KIIoverKI": 0.012679688724372588,
+     "MTS_deg": -1.4524406079988952,
+     "lateralOffsetFromH_mm": -0.1432416661503539,
+     "tipToRing1Circle_mm": 29.863162589397557
+    },
+    {
+     "state": 7,
+     "s_mm": 53.4,
+     "G": 2.2175037160935456e-08,
+     "F_G": -0.018754623438247187,
+     "KIIoverKI": 0.011942392401669551,
+     "MTS_deg": -1.3680422366198188,
+     "lateralOffsetFromH_mm": -0.1751585932446064,
+     "tipToRing1Circle_mm": 26.958546829139696
+    },
+    {
+     "state": 8,
+     "s_mm": 57.400000000000006,
+     "G": 2.5222655605570327e-08,
+     "F_G": -0.014883513662928283,
+     "KIIoverKI": 0.01139344353240816,
+     "MTS_deg": -1.305197228711621,
+     "lateralOffsetFromH_mm": -0.2086578404881847,
+     "tipToRing1Circle_mm": 24.157898219142144
+    },
+    {
+     "state": 9,
+     "s_mm": 61.400000000000006,
+     "G": 2.8650792608291182e-08,
+     "F_G": -0.01074969813742166,
+     "KIIoverKI": 0.011036905638436812,
+     "MTS_deg": -1.2643769379876781,
+     "lateralOffsetFromH_mm": -0.24359152826357103,
+     "tipToRing1Circle_mm": 21.487899687585884
+    },
+    {
+     "state": 10,
+     "s_mm": 65.4,
+     "G": 3.248892579419125e-08,
+     "F_G": -0.006286155082195766,
+     "KIIoverKI": 0.010830390431028614,
+     "MTS_deg": -1.2407318248477945,
+     "lateralOffsetFromH_mm": -0.27993692197420433,
+     "tipToRing1Circle_mm": 18.97989719263185
+    }
+   ],
+   "soft1": [
+    {
+     "state": 0,
+     "s_mm": 25.4,
+     "G": 8.820286782166415e-09,
+     "F_G": 0.027458218926374567,
+     "KIIoverKI": 0.10288719768065906,
+     "MTS_deg": -11.511552340545487,
+     "lateralOffsetFromH_mm": 0.0,
+     "tipToRing1Circle_mm": 48.45142591086504
+    },
+    {
+     "state": 1,
+     "s_mm": 29.4,
+     "G": 1.0535487629796172e-08,
+     "F_G": 0.03274358245609266,
+     "KIIoverKI": 0.007941653474826268,
+     "MTS_deg": -0.9099125646653977,
+     "lateralOffsetFromH_mm": 0.0756873511371644,
+     "tipToRing1Circle_mm": 45.315302404313485
+    },
+    {
+     "state": 2,
+     "s_mm": 33.4,
+     "G": 1.2254089708277099e-08,
+     "F_G": 0.042394712668451184,
+     "KIIoverKI": 0.016194794556733755,
+     "MTS_deg": -1.8546523772268206,
+     "lateralOffsetFromH_mm": 0.1541334896519974,
+     "tipToRing1Circle_mm": 42.23780431229743
+    },
+    {
+     "state": 3,
+     "s_mm": 37.4,
+     "G": 1.4185354631514403e-08,
+     "F_G": 0.05258473303853317,
+     "KIIoverKI": 0.015440597040849859,
+     "MTS_deg": -1.7683788248891188,
+     "lateralOffsetFromH_mm": 0.23146003863992418,
+     "tipToRing1Circle_mm": 39.18492197235868
+    },
+    {
+     "state": 4,
+     "s_mm": 41.4,
+     "G": 1.6363589481880926e-08,
+     "F_G": 0.06328936089276826,
+     "KIIoverKI": 0.015005660706410413,
+     "MTS_deg": -1.7186195121961707,
+     "lateralOffsetFromH_mm": 0.3056714291336001,
+     "tipToRing1Circle_mm": 36.168258201749296
+    },
+    {
+     "state": 5,
+     "s_mm": 45.4,
+     "G": 1.8829753148132237e-08,
+     "F_G": 0.07440871537679805,
+     "KIIoverKI": 0.014565225679123724,
+     "MTS_deg": -1.6682264913144966,
+     "lateralOffsetFromH_mm": 0.37346074293171744,
+     "tipToRing1Circle_mm": 33.199598765930304
+    },
+    {
+     "state": 6,
+     "s_mm": 49.4,
+     "G": 2.162490265782285e-08,
+     "F_G": 0.08572566543829652,
+     "KIIoverKI": 0.014308419116676368,
+     "MTS_deg": -1.6388414968506475,
+     "lateralOffsetFromH_mm": 0.43088883992739524,
+     "tipToRing1Circle_mm": 30.293003502777335
+    },
+    {
+     "state": 7,
+     "s_mm": 53.4,
+     "G": 2.4788233050096008e-08,
+     "F_G": 0.09687929255834726,
+     "KIIoverKI": 0.014305335688602342,
+     "MTS_deg": -1.6384886675273518,
+     "lateralOffsetFromH_mm": 0.47320222031322623,
+     "tipToRing1Circle_mm": 27.464293487296434
+    },
+    {
+     "state": 8,
+     "s_mm": 57.4,
+     "G": 2.83516448881726e-08,
+     "F_G": 0.10732482855393033,
+     "KIIoverKI": 0.014585071266890216,
+     "MTS_deg": -1.6704972516386702,
+     "lateralOffsetFromH_mm": 0.4947773926894554,
+     "tipToRing1Circle_mm": 24.731120720044355
+    },
+    {
+     "state": 9,
+     "s_mm": 61.39999999999999,
+     "G": 3.2330317733241096e-08,
+     "F_G": 0.11629639759656807,
+     "KIIoverKI": 0.015129755397078897,
+     "MTS_deg": -1.7328171539890624,
+     "lateralOffsetFromH_mm": 0.4891407168360923,
+     "tipToRing1Circle_mm": 22.113230040251874
+    },
+    {
+     "state": 10,
+     "s_mm": 65.39999999999999,
+     "G": 3.670842499407534e-08,
+     "F_G": 0.12277242937534538,
+     "KIIoverKI": 0.01586273196685727,
+     "MTS_deg": -1.8166691157234716,
+     "lateralOffsetFromH_mm": 0.4491077626038629,
+     "tipToRing1Circle_mm": 19.63295638163834
+    }
+   ]
+  },
+  "soft1_F_G_increments": [
+   0.00528536352971809,
+   0.009651130212358527,
+   0.010190020370081987,
+   0.010704627854235094,
+   0.011119354484029786,
+   0.011316950061498465,
+   0.011153627120050746,
+   0.010445535995583066,
+   0.00897156904263774,
+   0.006476031778777314
+  ],
+  "soft1_F_G_S9_to_S10": {
+   "S9": 0.11629639759656807,
+   "S10": 0.12277242937534538,
+   "change": 0.006476031778777314,
+   "relativeChange": 0.0556855750703702
+  },
+  "G_increase_S9_to_S10": {
+   "H": 0.12886903895905477,
+   "stiff13": 0.12281597345061157,
+   "soft2": 0.1339625482050142,
+   "soft1": 0.13541800909468926
+  }
+ }
+}

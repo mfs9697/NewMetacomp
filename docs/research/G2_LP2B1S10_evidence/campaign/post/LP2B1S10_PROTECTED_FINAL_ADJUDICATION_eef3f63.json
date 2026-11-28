@@ -1,0 +1,23 @@
+{
+ "schema": "NewMetacomp.G2.LP2B1S10.ProtectedFinalAdjudication.v1",
+ "checkerOutput": "LP2B1S10_PROTECTED_FINAL_eef3f63.json",
+ "checkerOutputSHA256": "7a4de1084947da9435c862b4e37f9977f76e7776ce9604044f3d9eee103b0b1e",
+ "checkerOverallFlagReadinessOnly": false,
+ "archive": "NewMetacomp_G2_LP2B1S10_Campaign_20261128.zip",
+ "archiveSHA256": "78a17e5bce134ac14ea5babb1facb3c08ee424da3221bb78c1b081472ceae966",
+ "s10CampaignOutputs": 16,
+ "subchecks": {
+  "lp2b1eqSubchecks": true,
+  "union891": true,
+  "eqCampaignOutputs23": true,
+  "eqArchives": true,
+  "s10Pins": true,
+  "union918Unchanged": true,
+  "noOverlap": true,
+  "removable": true,
+  "absencePatternPostCampaign": true,
+  "s10CampaignOutputs16EqualArchiveRecord": true,
+  "s10CampaignOutputsEqualBytesInBothArchiveCopies": true
+ },
+ "pass": true
+}

@@ -1,0 +1,11 @@
+{
+    "schema":  "NewMetacomp.G2.LP2A2.EQ.PrestartCheck.v1",
+    "activationLabel":  "A2",
+    "utc":  "2026-11-28T12:16:07Z",
+    "freePhysicalGiB":  9.768,
+    "minFreeGiB":  8.2,
+    "matlabProcesses":  0,
+    "backupDrive":  "D",
+    "backupRemovable":  true,
+    "pass":  true
+}

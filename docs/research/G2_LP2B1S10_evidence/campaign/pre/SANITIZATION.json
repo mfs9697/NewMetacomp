@@ -1,0 +1,104 @@
+{
+ "schema": "NewMetacomp.G2.LP2B1S10.Sanitization.v1",
+ "rule": "absolute local paths replaced by <repo>, <worktree>, <temp>, <scratch>, <backup>, <home>, <drive>, <matlabroot>; UTF-16 logs converted to UTF-8; MATLAB startup path warnings removed from logs; binaries (.mat, .f64) only in the archive; figures byte for byte (superseded v1 layouts only in the archive)",
+ "files": [
+  {
+   "file": "ACTIVATION_COMMIT_CHECK.txt",
+   "sourceSHA256": "a65c71621e11eee004f29377c2c297aad9e6ab2f95831a2e45e5a0ba63d2a591",
+   "publishedSHA256": "5bbcd8dc1c583973b6bfb58ba84be8ed929434a38ab121c3249a41497617aca2",
+   "replacements": {
+    "<scratch>": 1
+   }
+  },
+  {
+   "file": "AUTH_ACTIVATION_RECORD.json",
+   "sourceSHA256": "349fbe8fd8fdd5b8e3fa4f3320245fc174061a6cefcc42fca4db51a48f60bf0a",
+   "publishedSHA256": "8fa24461264aecac5d7a0ee2c937ba4e34852a4706333c8d2f8158a31f493592",
+   "replacements": {}
+  },
+  {
+   "file": "GO_candidate.json",
+   "sourceSHA256": "3c197f078cf6d17efda7a8019d785d8297d8ff06a4c03fefae854220978ea6d7",
+   "publishedSHA256": "3c197f078cf6d17efda7a8019d785d8297d8ff06a4c03fefae854220978ea6d7",
+   "replacements": {}
+  },
+  {
+   "file": "LP2B1S10_ACTIVATION_CHECKS.json",
+   "sourceSHA256": "002988ba86bd9d4ddccebfc407be249963a51ddbb6d438c3bb2a0053012648c9",
+   "publishedSHA256": "002988ba86bd9d4ddccebfc407be249963a51ddbb6d438c3bb2a0053012648c9",
+   "replacements": {}
+  },
+  {
+   "file": "LP2B1S10_ARCHIVES_PREACT_attempt1_CHECK_DEFECT_manifest_member.json",
+   "sourceSHA256": "fb5dbcac9ddea18b5aeef78a97c89565612c68e8ad0da2f8a34363f9ecb0d227",
+   "publishedSHA256": "fb5dbcac9ddea18b5aeef78a97c89565612c68e8ad0da2f8a34363f9ecb0d227",
+   "replacements": {}
+  },
+  {
+   "file": "LP2B1S10_ARCHIVES_PREACT_v2.json",
+   "sourceSHA256": "78c0e079162828d9b0a0f90fe52298ba4cdd5f47bacff5d0fa8f5f41b3b4d4c9",
+   "publishedSHA256": "78c0e079162828d9b0a0f90fe52298ba4cdd5f47bacff5d0fa8f5f41b3b4d4c9",
+   "replacements": {}
+  },
+  {
+   "file": "LP2B1S10_ARCHIVES_PREACT_v3_after_replug.json",
+   "sourceSHA256": "78c0e079162828d9b0a0f90fe52298ba4cdd5f47bacff5d0fa8f5f41b3b4d4c9",
+   "publishedSHA256": "78c0e079162828d9b0a0f90fe52298ba4cdd5f47bacff5d0fa8f5f41b3b4d4c9",
+   "replacements": {}
+  },
+  {
+   "file": "LP2B1S10_HASHCHECK_PREACT.json",
+   "sourceSHA256": "e8b489bea29a999b61a58afec65149e98e2e01037c98b7eebb789f8388d4b105",
+   "publishedSHA256": "e8b489bea29a999b61a58afec65149e98e2e01037c98b7eebb789f8388d4b105",
+   "replacements": {}
+  },
+  {
+   "file": "LP2B1S10_PROTECTED_PREACT.json",
+   "sourceSHA256": "91528aa421595063688078c985a1bb2fd434204f743d53df04ac4f60970040f2",
+   "publishedSHA256": "91528aa421595063688078c985a1bb2fd434204f743d53df04ac4f60970040f2",
+   "replacements": {}
+  },
+  {
+   "file": "PRESTART_01_preact_REFUSED_ram3p76.json",
+   "sourceSHA256": "8b71c97f326e86246c670947660be06a1d57a081c8b8861a7f53f705c60ca0cd",
+   "publishedSHA256": "409b719572921395f10a9d075cd35a082017e93169c5beee028bcdf43e9260fb",
+   "replacements": {}
+  },
+  {
+   "file": "PRESTART_02_preact.json",
+   "sourceSHA256": "54ce14fb3a47be756d5029f27ddc2a73086bbaade07c83bdafdf28fc8e9c5057",
+   "publishedSHA256": "961e0056523680fa9a08e83b23c0cbd33df772fd39bb350943b5203b8a1931f8",
+   "replacements": {}
+  },
+  {
+   "file": "PRESTART_03_preact.json",
+   "sourceSHA256": "763a891ea898593f97c3a9082e22d900030b5c0389cf7cdc9233dd75c72ee234",
+   "publishedSHA256": "8bc2e3efbda1ee12fbe2c929637d186b8acba5e9c108c9f633647b7fe82f0561",
+   "replacements": {}
+  },
+  {
+   "file": "PRESTART_04_campaign.json",
+   "sourceSHA256": "33c105efca7b8a57b4e28563d2e0ae8c21b10109c69f95701495cf12ef8ffafc",
+   "publishedSHA256": "91ff3a23651154d3a371cc907149a26e3af1c200b080afd446c31bea1ce56e02",
+   "replacements": {}
+  },
+  {
+   "file": "msgGO.txt",
+   "sourceSHA256": "d5ea7035a18e1b2fb679ee0a04ca39208539790f3bd5ea5c5c8b9f75958f4435",
+   "publishedSHA256": "d5ea7035a18e1b2fb679ee0a04ca39208539790f3bd5ea5c5c8b9f75958f4435",
+   "replacements": {}
+  },
+  {
+   "file": "AUTH_COMMENT_7237508619.reduced.json",
+   "sourceSHA256": "ef2cc8b6a7d3481c80ad2e20a4636d7418c1bbd66c6547d7121c5abbfa80f27e",
+   "publishedSHA256": "caaa0af3b3ce21671ce14430711ee4b3c1c4aca1b74c03f39900c8811a0580fc",
+   "replacements": {}
+  },
+  {
+   "file": "READINESS_REVIEW_6091037917.reduced.json",
+   "sourceSHA256": "3c972f0ef56a462c57ccf31733bb65e68e785bf4e15505d9c70c9f1b8bf86297",
+   "publishedSHA256": "2385f377b44070df7a0fffc42c39e04a511d99d16ad7e00c8c1adb4696cf70c9",
+   "replacements": {}
+  }
+ ]
+}

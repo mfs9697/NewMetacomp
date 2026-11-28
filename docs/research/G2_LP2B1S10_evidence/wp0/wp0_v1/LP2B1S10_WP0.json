@@ -1,0 +1,393 @@
+{
+  "schema": "NewMetacomp.G2.LP2B1S10.WP0.v1",
+  "physicalSolves": 0,
+  "sourceCommit": "e95206c85d660b9829c2b08b2e429db35233e78d",
+  "preflight": {
+    "pass": true,
+    "status": "PREFLIGHT_READY_NOT_LP0_QUALIFIED",
+    "cause": "",
+    "physicalSolves": 0,
+    "meshBuilds": 0,
+    "policySHA256": "1cf5a76ded840b0758343a1b935b299041e779ec6332c3b7cb0b6dfba1e2af43",
+    "release": "R2023a",
+    "pdeAvailable": true,
+    "freePhysicalRAM_GiB": 7.6064720153808594,
+    "matlabProcesses": 1,
+    "currentPID": 6184,
+    "sourceCommit": "e95206c85d660b9829c2b08b2e429db35233e78d",
+    "dirtySource": "",
+    "token": "G2LP0|policy=1cf5a76ded840b0758343a1b935b299041e779ec6332c3b7cb0b6dfba1e2af43|source=e95206c85d660b9829c2b08b2e429db35233e78d|geometry=179b777f4a26caf1482ad470d78f5f802bc24456b9a1b6fc6b641eccf2b66008|cases=H,stiff13,soft2,soft1|maxState=4"
+  },
+  "token": "G2LP2B1S10|policy=46a09824dbde3d7702ce0c2e3715697b2b72652e7f1aa4914ac3f9faf12bd3eb|g2source=7e5683703bd104547ef5d013aa0253ad2819b59dc58693957e2d04b4707f0947|lp2source=357dfdcdb576d2866b9d1b41a14265300a14c30700d6475f995881041ba822ca|lp2a2source=f1d7e4d67b91968e16ebaead13be86667c7776ce48971ed5206c7f136fae7afd|lp2a3source=fa3bcecfa9cd3044253d5a72253e2058bccd044d32345f51650dcd775f42e002|lp2b1source=9c7a1260e3bde5b59e1d93c47bc99cc4d7b89f9b0cc6e874572fb378f1717bee|lp2b1eqsource=74a0edd827daca5714a1347705abc1429a7a573116ad3c438f9e5a1c12dfbf1f|closure=76614f269810c6970544bca0c1c0f84ebf9131935554ebd75e57e24f819f65f7|lp2b1s10source=3d9350772c05da8fb44fc5ad81da7562b9ccce043700d1f171f1f679fcf1e0eb|parent=9f3c173fadd370ae3e455b3aef3d5aa4d1f3035faf6100d717d4175ae33f194b|qualification=773f42aef75b13542efc6a169c9f526f6e64597a8d359df0ab067abf6cf161df|eqcampaign=91ff13fa86617f8236b09c439f7048f4542520e79c31003c01f07957e5cf17b9|case=soft1|state=S10|admissions=1|seed=0.40|campaign=G2-LP2B1-S10-001|run=run_lp2b1_s10_v1",
+  "policySHA256": "46a09824dbde3d7702ce0c2e3715697b2b72652e7f1aa4914ac3f9faf12bd3eb",
+  "lp2b1s10SourceSHA256": "3d9350772c05da8fb44fc5ad81da7562b9ccce043700d1f171f1f679fcf1e0eb",
+  "parentManifestSHA256": "9f3c173fadd370ae3e455b3aef3d5aa4d1f3035faf6100d717d4175ae33f194b",
+  "qualificationManifestSHA256": "773f42aef75b13542efc6a169c9f526f6e64597a8d359df0ab067abf6cf161df",
+  "eqEvidenceManifestSHA256": "91ff13fa86617f8236b09c439f7048f4542520e79c31003c01f07957e5cf17b9",
+  "target": {
+    "pass": true,
+    "checks": {
+      "parentRecords": true,
+      "parentIdentity": true,
+      "parentLinks": true,
+      "mtsIndependent": true,
+      "forecast": true,
+      "failedMesh": true,
+      "terminal": true,
+      "nominalClearance": true,
+      "notShiftedEq": true
+    },
+    "failed": [],
+    "info": {
+      "mts": {
+        "theta_deg": -1.7328171539890624,
+        "thetaIndependent_deg": -1.7328171539890624,
+        "diff_rad": 0,
+        "stationarity": 0,
+        "parentMTS_deg_state": -1.7328171539890624
+      },
+      "forecast": {
+        "tip_mm": [
+          114.29544883822506,
+          63.185594911516127
+        ],
+        "tangent": [
+          0.4401270339243456,
+          0.897935517734407
+        ],
+        "heading_deg": 63.888013319156777,
+        "arc_mm": 65.399999999999991,
+        "parentMTS_deg": -1.7328171539890624,
+        "independentTipDiff_mm": 0
+      },
+      "nominal": {
+        "classification": "MATRIX_ADVANCE",
+        "guideRingGap_mm": [
+          4.6329563816383335,
+          34.900088262551904,
+          80.724292541508
+        ],
+        "gapMinusIssueValue_mm": -7.1054273576010019E-15,
+        "clearance": {
+          "segmentToRingPolygon_mm": [
+            19.634474474810748,
+            49.900868927518545,
+            95.724847576588857
+          ],
+          "segmentToHolePolygon_mm": [
+            32.33345911094672,
+            62.600414481244592,
+            108.42443999746432
+          ],
+          "tipToRingPolygon_mm": [
+            19.634474474810748,
+            49.900868927518545,
+            95.724847576588857
+          ],
+          "tipToHolePolygon_mm": [
+            32.33345911094672,
+            62.600414481244592,
+            108.42443999746432
+          ],
+          "segmentToNominalRing_mm": [
+            19.632956381638333,
+            49.900088262551904,
+            95.724292541508
+          ],
+          "tipToNominalRing_mm": [
+            19.632956381638333,
+            49.900088262551904,
+            95.724292541508
+          ],
+          "guideRingMargin_mm": [
+            4.6329563816383335,
+            34.900088262551904,
+            80.724292541508
+          ],
+          "qRingMargin_mm": [
+            16.032956381638332,
+            46.3000882625519,
+            92.124292541508012
+          ],
+          "segmentPlate_mm": [
+            112.53494070252768,
+            393.70455116177493,
+            59.5938528405785,
+            140.01440508848387
+          ],
+          "tipPlate_mm": [
+            114.29544883822506,
+            393.70455116177493,
+            63.185594911516127,
+            140.01440508848387
+          ],
+          "guidePlateMargin_mm": [
+            99.295448838225056,
+            378.70455116177493,
+            48.185594911516127,
+            125.01440508848387
+          ],
+          "qPlateMargin_mm": [
+            110.69544883822506,
+            390.10455116177491,
+            59.585594911516125,
+            136.41440508848387
+          ],
+          "nonadjacentSegment_mm": 3.9999999999999964,
+          "tipEarlierSegment_mm": 7.9990853563224373,
+          "rimEarlierMargin_mm": 4.3552387057614794,
+          "miterDenominator": 1.99954270430413
+        },
+        "tipToRingCircle_mm": [
+          19.632956381638333,
+          49.900088262551904,
+          95.724292541508
+        ]
+      }
+    },
+    "parentSHA256": "79ebecbc21b4d9425e3a2b82a9bc17270373a85f2a7c26d11cfe1e7c9b45aec6",
+    "forecastPolyline_mm": [
+      [
+        101.6,
+        0
+      ],
+      [
+        101.6,
+        25.4
+      ],
+      [
+        102.39826203613242,
+        29.319537947471577
+      ],
+      [
+        103.25866686020588,
+        33.225904998672874
+      ],
+      [
+        104.24504715803435,
+        37.102379415982476
+      ],
+      [
+        105.35058232560786,
+        40.946568796496685
+      ],
+      [
+        106.57091154428718,
+        44.75587274840673
+      ],
+      [
+        107.90161973099126,
+        48.528036016591017
+      ],
+      [
+        109.33966475408087,
+        52.260599011580808
+      ],
+      [
+        110.883847446255,
+        55.950517684558555
+      ],
+      [
+        112.53494070252768,
+        59.5938528405785
+      ],
+      [
+        114.29544883822506,
+        63.185594911516127
+      ]
+    ]
+  },
+  "driverDry": {
+    "caseId": "soft1",
+    "stateIndex": 10,
+    "token": "G2LP2B1S10|policy=46a09824dbde3d7702ce0c2e3715697b2b72652e7f1aa4914ac3f9faf12bd3eb|g2source=7e5683703bd104547ef5d013aa0253ad2819b59dc58693957e2d04b4707f0947|lp2source=357dfdcdb576d2866b9d1b41a14265300a14c30700d6475f995881041ba822ca|lp2a2source=f1d7e4d67b91968e16ebaead13be86667c7776ce48971ed5206c7f136fae7afd|lp2a3source=fa3bcecfa9cd3044253d5a72253e2058bccd044d32345f51650dcd775f42e002|lp2b1source=9c7a1260e3bde5b59e1d93c47bc99cc4d7b89f9b0cc6e874572fb378f1717bee|lp2b1eqsource=74a0edd827daca5714a1347705abc1429a7a573116ad3c438f9e5a1c12dfbf1f|closure=76614f269810c6970544bca0c1c0f84ebf9131935554ebd75e57e24f819f65f7|lp2b1s10source=3d9350772c05da8fb44fc5ad81da7562b9ccce043700d1f171f1f679fcf1e0eb|parent=9f3c173fadd370ae3e455b3aef3d5aa4d1f3035faf6100d717d4175ae33f194b|qualification=773f42aef75b13542efc6a169c9f526f6e64597a8d359df0ab067abf6cf161df|eqcampaign=91ff13fa86617f8236b09c439f7048f4542520e79c31003c01f07957e5cf17b9|case=soft1|state=S10|admissions=1|seed=0.40|campaign=G2-LP2B1-S10-001|run=run_lp2b1_s10_v1",
+    "run": false,
+    "solveCalls": 0,
+    "admissions": 0,
+    "stage": "TARGET_QUALIFIED",
+    "target": {
+      "pass": true,
+      "checks": {
+        "parentRecords": true,
+        "parentIdentity": true,
+        "parentLinks": true,
+        "mtsIndependent": true,
+        "forecast": true,
+        "failedMesh": true,
+        "terminal": true,
+        "nominalClearance": true,
+        "notShiftedEq": true
+      },
+      "parentSHA256": "79ebecbc21b4d9425e3a2b82a9bc17270373a85f2a7c26d11cfe1e7c9b45aec6",
+      "info": {
+        "mts": {
+          "theta_deg": -1.7328171539890624,
+          "thetaIndependent_deg": -1.7328171539890624,
+          "diff_rad": 0,
+          "stationarity": 0,
+          "parentMTS_deg_state": -1.7328171539890624
+        },
+        "forecast": {
+          "tip_mm": [
+            114.29544883822506,
+            63.185594911516127
+          ],
+          "tangent": [
+            0.4401270339243456,
+            0.897935517734407
+          ],
+          "heading_deg": 63.888013319156777,
+          "arc_mm": 65.399999999999991,
+          "parentMTS_deg": -1.7328171539890624,
+          "independentTipDiff_mm": 0
+        },
+        "nominal": {
+          "classification": "MATRIX_ADVANCE",
+          "guideRingGap_mm": [
+            4.6329563816383335,
+            34.900088262551904,
+            80.724292541508
+          ],
+          "gapMinusIssueValue_mm": -7.1054273576010019E-15,
+          "clearance": {
+            "segmentToRingPolygon_mm": [
+              19.634474474810748,
+              49.900868927518545,
+              95.724847576588857
+            ],
+            "segmentToHolePolygon_mm": [
+              32.33345911094672,
+              62.600414481244592,
+              108.42443999746432
+            ],
+            "tipToRingPolygon_mm": [
+              19.634474474810748,
+              49.900868927518545,
+              95.724847576588857
+            ],
+            "tipToHolePolygon_mm": [
+              32.33345911094672,
+              62.600414481244592,
+              108.42443999746432
+            ],
+            "segmentToNominalRing_mm": [
+              19.632956381638333,
+              49.900088262551904,
+              95.724292541508
+            ],
+            "tipToNominalRing_mm": [
+              19.632956381638333,
+              49.900088262551904,
+              95.724292541508
+            ],
+            "guideRingMargin_mm": [
+              4.6329563816383335,
+              34.900088262551904,
+              80.724292541508
+            ],
+            "qRingMargin_mm": [
+              16.032956381638332,
+              46.3000882625519,
+              92.124292541508012
+            ],
+            "segmentPlate_mm": [
+              112.53494070252768,
+              393.70455116177493,
+              59.5938528405785,
+              140.01440508848387
+            ],
+            "tipPlate_mm": [
+              114.29544883822506,
+              393.70455116177493,
+              63.185594911516127,
+              140.01440508848387
+            ],
+            "guidePlateMargin_mm": [
+              99.295448838225056,
+              378.70455116177493,
+              48.185594911516127,
+              125.01440508848387
+            ],
+            "qPlateMargin_mm": [
+              110.69544883822506,
+              390.10455116177491,
+              59.585594911516125,
+              136.41440508848387
+            ],
+            "nonadjacentSegment_mm": 3.9999999999999964,
+            "tipEarlierSegment_mm": 7.9990853563224373,
+            "rimEarlierMargin_mm": 4.3552387057614794,
+            "miterDenominator": 1.99954270430413
+          },
+          "tipToRingCircle_mm": [
+            19.632956381638333,
+            49.900088262551904,
+            95.724292541508
+          ]
+        }
+      }
+    },
+    "geometry": []
+  },
+  "lint": [
+    {
+      "file": "g2_lp2b1s10_context.m",
+      "messages": []
+    },
+    {
+      "file": "g2_lp2b1s10_external_run.m",
+      "messages": []
+    },
+    {
+      "file": "g2_lp2b1s10_go_validate.m",
+      "messages": []
+    },
+    {
+      "file": "g2_lp2b1s10_run.m",
+      "messages": [
+        "79 ISCLSTR To support string in addition to cellstr, include a call to 'isstring'.",
+        "83 MSNU A Code Analyzer message was once suppressed here, but the message is no longer generated.",
+        "164 NOCOMMA Extra comma is unnecessary.",
+        "182 ALIGN This keyword might not be aligned with its matching END on line 184."
+      ]
+    },
+    {
+      "file": "g2_lp2b1s10_target.m",
+      "messages": [
+        "29 NASGU Value assigned to variable might be unused.",
+        "75 NASGU Value assigned to variable might be unused."
+      ]
+    },
+    {
+      "file": "g2_lp2b1s10_tests.m",
+      "messages": [
+        "68 DATST 'datestr' is not recommended. With appropriate code changes, use 'datetime' instead.",
+        "68 TNOW1 'now' is not recommended. With appropriate code changes, use 'datetime(\"now\")' instead.",
+        "106 NOCOMMA Extra comma is unnecessary.",
+        "130 NOCOMMA Extra comma is unnecessary.",
+        "167 MSNU A Code Analyzer message was once suppressed here, but the message is no longer generated.",
+        "168 MSNU A Code Analyzer message was once suppressed here, but the message is no longer generated.",
+        "169 MSNU A Code Analyzer message was once suppressed here, but the message is no longer generated.",
+        "170 MSNU A Code Analyzer message was once suppressed here, but the message is no longer generated.",
+        "177 NOCOMMA Extra comma is unnecessary.",
+        "202 NOCOMMA Extra comma is unnecessary.",
+        "206 NASGU Value assigned to variable might be unused.",
+        "212 STOUT Function return value might be unset.",
+        "212 NASGU Value assigned to variable might be unused.",
+        "217 NASGU Value assigned to variable might be unused.",
+        "226 NASGU Value assigned to variable might be unused.",
+        "251 DATST 'datestr' is not recommended. With appropriate code changes, use 'datetime' instead.",
+        "251 TNOW1 'now' is not recommended. With appropriate code changes, use 'datetime(\"now\")' instead.",
+        "280 NOCOMMA Extra comma is unnecessary.",
+        "285 NOCOMMA Extra comma is unnecessary."
+      ]
+    },
+    {
+      "file": "g2_lp2b1s10_verify.m",
+      "messages": [
+        "38 NOCOMMA Extra comma is unnecessary."
+      ]
+    }
+  ],
+  "rootsAbsent": true
+}

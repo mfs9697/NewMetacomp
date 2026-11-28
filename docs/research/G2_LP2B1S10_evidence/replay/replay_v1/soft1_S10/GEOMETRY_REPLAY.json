@@ -1,0 +1,222 @@
+{
+  "caseId": "soft1",
+  "stateIndex": 10,
+  "token": "G2LP2B1S10|policy=f57433eccc5641ba253da52b723a0de6b1ad299793aa227235d309e57f120171|g2source=7e5683703bd104547ef5d013aa0253ad2819b59dc58693957e2d04b4707f0947|lp2source=357dfdcdb576d2866b9d1b41a14265300a14c30700d6475f995881041ba822ca|lp2a2source=f1d7e4d67b91968e16ebaead13be86667c7776ce48971ed5206c7f136fae7afd|lp2a3source=fa3bcecfa9cd3044253d5a72253e2058bccd044d32345f51650dcd775f42e002|lp2b1source=9c7a1260e3bde5b59e1d93c47bc99cc4d7b89f9b0cc6e874572fb378f1717bee|lp2b1eqsource=74a0edd827daca5714a1347705abc1429a7a573116ad3c438f9e5a1c12dfbf1f|closure=76614f269810c6970544bca0c1c0f84ebf9131935554ebd75e57e24f819f65f7|lp2b1s10source=d544fcfde1cfaa1e7118e0c5959551bdddb1cd477739bcf55376c45fe8388ab9|parent=9f3c173fadd370ae3e455b3aef3d5aa4d1f3035faf6100d717d4175ae33f194b|qualification=773f42aef75b13542efc6a169c9f526f6e64597a8d359df0ab067abf6cf161df|eqcampaign=91ff13fa86617f8236b09c439f7048f4542520e79c31003c01f07957e5cf17b9|case=soft1|state=S10|admissions=1|seed=0.40|campaign=G2-LP2B1-S10-001|run=run_lp2b1_s10_v1",
+  "run": false,
+  "solveCalls": 0,
+  "admissions": 0,
+  "stage": "GEOMETRY_REPLAY_NO_SOLVE",
+  "target": {
+    "pass": true,
+    "checks": {
+      "parentRecords": true,
+      "parentIdentity": true,
+      "parentLinks": true,
+      "mtsIndependent": true,
+      "forecast": true,
+      "failedMesh": true,
+      "terminal": true,
+      "nominalClearance": true,
+      "notShiftedEq": true
+    },
+    "parentSHA256": "79ebecbc21b4d9425e3a2b82a9bc17270373a85f2a7c26d11cfe1e7c9b45aec6",
+    "info": {
+      "mts": {
+        "theta_deg": -1.7328171539890624,
+        "thetaIndependent_deg": -1.7328171539890624,
+        "diff_rad": 0,
+        "stationarity": 0,
+        "parentMTS_deg_state": -1.7328171539890624
+      },
+      "forecast": {
+        "tip_mm": [
+          114.29544883822506,
+          63.185594911516127
+        ],
+        "tangent": [
+          0.4401270339243456,
+          0.897935517734407
+        ],
+        "heading_deg": 63.888013319156777,
+        "arc_mm": 65.399999999999991,
+        "parentMTS_deg": -1.7328171539890624,
+        "independentTipDiff_mm": 0
+      },
+      "nominal": {
+        "classification": "MATRIX_ADVANCE",
+        "guideRingGap_mm": [
+          4.6329563816383335,
+          34.900088262551904,
+          80.724292541508
+        ],
+        "gapMinusIssueValue_mm": -7.1054273576010019E-15,
+        "clearance": {
+          "segmentToRingPolygon_mm": [
+            19.634474474810748,
+            49.900868927518545,
+            95.724847576588857
+          ],
+          "segmentToHolePolygon_mm": [
+            32.33345911094672,
+            62.600414481244592,
+            108.42443999746432
+          ],
+          "tipToRingPolygon_mm": [
+            19.634474474810748,
+            49.900868927518545,
+            95.724847576588857
+          ],
+          "tipToHolePolygon_mm": [
+            32.33345911094672,
+            62.600414481244592,
+            108.42443999746432
+          ],
+          "segmentToNominalRing_mm": [
+            19.632956381638333,
+            49.900088262551904,
+            95.724292541508
+          ],
+          "tipToNominalRing_mm": [
+            19.632956381638333,
+            49.900088262551904,
+            95.724292541508
+          ],
+          "guideRingMargin_mm": [
+            4.6329563816383335,
+            34.900088262551904,
+            80.724292541508
+          ],
+          "qRingMargin_mm": [
+            16.032956381638332,
+            46.3000882625519,
+            92.124292541508012
+          ],
+          "segmentPlate_mm": [
+            112.53494070252768,
+            393.70455116177493,
+            59.5938528405785,
+            140.01440508848387
+          ],
+          "tipPlate_mm": [
+            114.29544883822506,
+            393.70455116177493,
+            63.185594911516127,
+            140.01440508848387
+          ],
+          "guidePlateMargin_mm": [
+            99.295448838225056,
+            378.70455116177493,
+            48.185594911516127,
+            125.01440508848387
+          ],
+          "qPlateMargin_mm": [
+            110.69544883822506,
+            390.10455116177491,
+            59.585594911516125,
+            136.41440508848387
+          ],
+          "nonadjacentSegment_mm": 3.9999999999999964,
+          "tipEarlierSegment_mm": 7.9990853563224373,
+          "rimEarlierMargin_mm": 4.3552387057614794,
+          "miterDenominator": 1.99954270430413
+        },
+        "tipToRingCircle_mm": [
+          19.632956381638333,
+          49.900088262551904,
+          95.724292541508
+        ]
+      }
+    }
+  },
+  "geometry": {
+    "pass": true,
+    "checks": {
+      "attempt19": true,
+      "attemptCanonicalEqualsPin": true,
+      "joinPass": true,
+      "pairing": true,
+      "kinkedAudit34": true,
+      "phaseAudit": true,
+      "chords76": true,
+      "canonicalEqualsPin": true,
+      "canonicalEqualsAttempt": true,
+      "qualificationFilePin": true,
+      "qualificationArraysEqual": true,
+      "attemptArraysEqual": true,
+      "protectedTopology": true,
+      "ringPolygonsEqualArchived": true,
+      "stationCoverage": true
+    },
+    "expected": {
+      "expectedT3": true,
+      "expectedMinAngle": true,
+      "expectedMaxRatio": true,
+      "expectedChords": true,
+      "qParents2443": true,
+      "T3Limit": true,
+      "attemptGuide1mm": true
+    },
+    "canonicalSHA256": "54293d2a527f9bec33605ffea10c8f56af46a56291157f0d911cf68301b85bd2",
+    "metadataSHA256": "15829842b80c80923d1c09cb388769c0c933d13a2a7d7b812e15bac81c7ea242",
+    "chordsPerCircle": [
+      76,
+      76,
+      76
+    ],
+    "activeAreaGeometric_mm2": 1012.1525285981612,
+    "stations": {
+      "problemsNew": [],
+      "problemsArchived": [],
+      "nNew": 369,
+      "nArchived": 337,
+      "nearNew": 57,
+      "nearArchived": 57,
+      "nearMatched": 57,
+      "rangeNew": [
+        0,
+        65.399999999999991
+      ],
+      "rangeArchived": [
+        0,
+        65.399999999999991
+      ]
+    },
+    "attemptChecks": "19/19",
+    "attemptCanonicalSHA256": "54293d2a527f9bec33605ffea10c8f56af46a56291157f0d911cf68301b85bd2",
+    "attemptArraysSHA256": "523ae92d0fef7a96ee12d70e2769a8ccfff0c93184abfbe13d2deb7b241fa4d4",
+    "T3": 30357,
+    "minAngle_deg": 23.179107436795395,
+    "maxNeighborRatio": 1.6015350873084404,
+    "topology": {
+      "pass": true,
+      "checks": {
+        "blockRows": true,
+        "function": true,
+        "injective": true,
+        "coordinates": true,
+        "nodalQ": true,
+        "qActiveRows": true,
+        "T3block": true,
+        "banks": true,
+        "tip": true,
+        "coincidenceOld": true,
+        "coincidenceNew": true
+      },
+      "blockNodes": 5953,
+      "bankPairsInBlock": 56,
+      "distinctBankDOFsInBlock": 226,
+      "tipOld": 1114,
+      "tipNew": 1114,
+      "tipOffsetFromPolyline_mm": [
+        0,
+        0
+      ]
+    },
+    "actualClassification": "MATRIX_ADVANCE",
+    "guideRingGap_mm": [
+      4.6329563816383335,
+      34.900088262551904,
+      80.724292541508
+    ]
+  }
+}

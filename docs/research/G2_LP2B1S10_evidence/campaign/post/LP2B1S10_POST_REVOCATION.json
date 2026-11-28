@@ -1,0 +1,35 @@
+{
+  "sourceCommit": "37458ef1c00acdcc829b22c220c2e73d1ea0d477",
+  "preflight": {
+    "pass": true,
+    "status": "PREFLIGHT_READY_NOT_LP0_QUALIFIED",
+    "cause": "",
+    "physicalSolves": 0,
+    "meshBuilds": 0,
+    "policySHA256": "1cf5a76ded840b0758343a1b935b299041e779ec6332c3b7cb0b6dfba1e2af43",
+    "release": "R2023a",
+    "pdeAvailable": true,
+    "freePhysicalRAM_GiB": 9.0338058471679688,
+    "matlabProcesses": 1,
+    "currentPID": 16940,
+    "sourceCommit": "37458ef1c00acdcc829b22c220c2e73d1ea0d477",
+    "dirtySource": "",
+    "token": "G2LP0|policy=1cf5a76ded840b0758343a1b935b299041e779ec6332c3b7cb0b6dfba1e2af43|source=37458ef1c00acdcc829b22c220c2e73d1ea0d477|geometry=179b777f4a26caf1482ad470d78f5f802bc24456b9a1b6fc6b641eccf2b66008|cases=H,stiff13,soft2,soft1|maxState=4"
+  },
+  "tokenEqualsAuthorization": true,
+  "goAbsent": true,
+  "probe": {
+    "identifier": "G2LP2B1S10:HOLD_UNAUTHORIZED",
+    "message": "No GO_LP2B1_S10 record (matlab/g2/lp2b1s10/G2_LP2B1S10_GO.json): the campaign is prepared, not authorized."
+  },
+  "runFilesUnchanged": true,
+  "receiptUnchanged": true,
+  "summaryUnchanged": true,
+  "outputsListingUnchanged": true,
+  "runFiles": 11,
+  "receiptFiles": 4,
+  "gitClean": true,
+  "physicalSolves": 0,
+  "externalEntryInvoked": false,
+  "pass": true
+}

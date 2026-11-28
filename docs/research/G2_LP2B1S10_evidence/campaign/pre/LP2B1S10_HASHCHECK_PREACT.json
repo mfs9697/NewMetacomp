@@ -1,0 +1,72 @@
+{
+ "schema": "NewMetacomp.G2.LP2B1S10.Hashcheck.v1",
+ "policySHA256": "f57433eccc5641ba253da52b723a0de6b1ad299793aa227235d309e57f120171",
+ "checks": {
+  "allPolicyFilePins": true,
+  "sourceDigests": true,
+  "inheritedDigestsEqualLP2A3": true,
+  "lp2b1eqDigestAccepted": true,
+  "a3S8GrandparentPin": true,
+  "tokenReconstructedEqualsTestsWp0Replay": true,
+  "testsPolicyAndSource": true,
+  "testsAllPassedZeroFEM": true,
+  "targetQualificationPass": true,
+  "geometryReplayPass": true,
+  "canonicalFromRawExports": true,
+  "qualificationArraysFileEqualsPin": true,
+  "archivesBothCopies": true,
+  "noGoNoRootsNoSummary": true,
+  "policyNotAuthorized": true
+ },
+ "detail": {
+  "filePins": 61,
+  "filePinsBad": [],
+  "sourceDigests": {
+   "g2SourceSHA256": "7e5683703bd104547ef5d013aa0253ad2819b59dc58693957e2d04b4707f0947",
+   "lp2SourceSHA256": "357dfdcdb576d2866b9d1b41a14265300a14c30700d6475f995881041ba822ca",
+   "lp2a2SourceSHA256": "f1d7e4d67b91968e16ebaead13be86667c7776ce48971ed5206c7f136fae7afd",
+   "lp2a3SourceSHA256": "fa3bcecfa9cd3044253d5a72253e2058bccd044d32345f51650dcd775f42e002",
+   "lp2b1SourceSHA256": "9c7a1260e3bde5b59e1d93c47bc99cc4d7b89f9b0cc6e874572fb378f1717bee",
+   "lp2b1eqSourceSHA256": "74a0edd827daca5714a1347705abc1429a7a573116ad3c438f9e5a1c12dfbf1f",
+   "closureSourceSHA256": "76614f269810c6970544bca0c1c0f84ebf9131935554ebd75e57e24f819f65f7",
+   "lp2b1s10SourceSHA256": "d544fcfde1cfaa1e7118e0c5959551bdddb1cd477739bcf55376c45fe8388ab9"
+  },
+  "parentManifestSHA256": "9f3c173fadd370ae3e455b3aef3d5aa4d1f3035faf6100d717d4175ae33f194b",
+  "qualificationManifestSHA256": "773f42aef75b13542efc6a169c9f526f6e64597a8d359df0ab067abf6cf161df",
+  "eqEvidenceManifestSHA256": "91ff13fa86617f8236b09c439f7048f4542520e79c31003c01f07957e5cf17b9",
+  "token": "G2LP2B1S10|policy=f57433eccc5641ba253da52b723a0de6b1ad299793aa227235d309e57f120171|g2source=7e5683703bd104547ef5d013aa0253ad2819b59dc58693957e2d04b4707f0947|lp2source=357dfdcdb576d2866b9d1b41a14265300a14c30700d6475f995881041ba822ca|lp2a2source=f1d7e4d67b91968e16ebaead13be86667c7776ce48971ed5206c7f136fae7afd|lp2a3source=fa3bcecfa9cd3044253d5a72253e2058bccd044d32345f51650dcd775f42e002|lp2b1source=9c7a1260e3bde5b59e1d93c47bc99cc4d7b89f9b0cc6e874572fb378f1717bee|lp2b1eqsource=74a0edd827daca5714a1347705abc1429a7a573116ad3c438f9e5a1c12dfbf1f|closure=76614f269810c6970544bca0c1c0f84ebf9131935554ebd75e57e24f819f65f7|lp2b1s10source=d544fcfde1cfaa1e7118e0c5959551bdddb1cd477739bcf55376c45fe8388ab9|parent=9f3c173fadd370ae3e455b3aef3d5aa4d1f3035faf6100d717d4175ae33f194b|qualification=773f42aef75b13542efc6a169c9f526f6e64597a8d359df0ab067abf6cf161df|eqcampaign=91ff13fa86617f8236b09c439f7048f4542520e79c31003c01f07957e5cf17b9|case=soft1|state=S10|admissions=1|seed=0.40|campaign=G2-LP2B1-S10-001|run=run_lp2b1_s10_v1",
+  "testsPassed": "96/96",
+  "canonical": {
+   "Q_soft1_S10": {
+    "recomputed": "54293d2a527f9bec33605ffea10c8f56af46a56291157f0d911cf68301b85bd2",
+    "expected": "54293d2a527f9bec33605ffea10c8f56af46a56291157f0d911cf68301b85bd2",
+    "sourceFileSHA256": "086b6671a733bafad3874dee8d50c84bc52e6bfaa6ba0174caae09995c2f2a88"
+   },
+   "R_soft1_S10": {
+    "recomputed": "54293d2a527f9bec33605ffea10c8f56af46a56291157f0d911cf68301b85bd2",
+    "expected": "54293d2a527f9bec33605ffea10c8f56af46a56291157f0d911cf68301b85bd2",
+    "sourceFileSHA256": "523ae92d0fef7a96ee12d70e2769a8ccfff0c93184abfbe13d2deb7b241fa4d4"
+   }
+  },
+  "archiveCopies": {
+   "NewMetacomp_G2_LP2A3_Records_20261126.zip": {
+    "local": "e089d749737f6c5259e6ad391c785b6ac222a636ca4716aaefbbde2fd5186dc6",
+    "offDevice": "e089d749737f6c5259e6ad391c785b6ac222a636ca4716aaefbbde2fd5186dc6"
+   },
+   "NewMetacomp_G2_LP2B1_Geometry_20261126.zip": {
+    "local": "5a5a4179c987d04dcf14cf3d2552b8f9f1d9c370c370b0a6bd6c930748bbbd42",
+    "offDevice": "5a5a4179c987d04dcf14cf3d2552b8f9f1d9c370c370b0a6bd6c930748bbbd42"
+   },
+   "NewMetacomp_G2_LP2B1EQ_Readiness_20261126.zip": {
+    "local": "2187ec2cbb36fb7d1e8fb311ef41fa918e9822a6277f3a6d98dbcf97e6867c24",
+    "offDevice": "2187ec2cbb36fb7d1e8fb311ef41fa918e9822a6277f3a6d98dbcf97e6867c24"
+   },
+   "NewMetacomp_G2_LP2B1EQ_Campaign_20261127.zip": {
+    "local": "1d739f80fe77597e3749de7e939abf8f572bc48f27bb703c28d02f94634d6e8a",
+    "offDevice": "1d739f80fe77597e3749de7e939abf8f572bc48f27bb703c28d02f94634d6e8a"
+   }
+  }
+ },
+ "pass": true,
+ "failed": []
+}

@@ -1,0 +1,84 @@
+{
+ "schema": "NewMetacomp.G2.LP2B1S10.Sanitization.v1",
+ "rule": "absolute local paths replaced by <repo>, <worktree>, <temp>, <scratch>, <backup>, <home>, <drive>, <matlabroot>; UTF-16 logs converted to UTF-8; MATLAB startup path warnings removed from logs; binaries (.mat, .f64) only in the archive; figures byte for byte (superseded v1 layouts only in the archive)",
+ "files": [
+  {
+   "file": "LP2B1S10_POST_REVOCATION.json",
+   "sourceSHA256": "fc697715249d3f17fe34d114eca37698647711b6ff6161ddbbc2ab1307198ac5",
+   "publishedSHA256": "fc697715249d3f17fe34d114eca37698647711b6ff6161ddbbc2ab1307198ac5",
+   "replacements": {}
+  },
+  {
+   "file": "LP2B1S10_PROTECTED_POSTCAMPAIGN.json",
+   "sourceSHA256": "7a4de1084947da9435c862b4e37f9977f76e7776ce9604044f3d9eee103b0b1e",
+   "publishedSHA256": "7a4de1084947da9435c862b4e37f9977f76e7776ce9604044f3d9eee103b0b1e",
+   "replacements": {}
+  },
+  {
+   "file": "LP2B1S10_PROTECTED_POSTCAMPAIGN_ADJUDICATION.json",
+   "sourceSHA256": "9d0dfe2869e911870e7f99c264424f4e5992a60e71e8044e26a19e2800d0a882",
+   "publishedSHA256": "9d0dfe2869e911870e7f99c264424f4e5992a60e71e8044e26a19e2800d0a882",
+   "replacements": {}
+  },
+  {
+   "file": "LP2B1S10_PROTECTED_POSTCAMPAIGN_ADJUDICATION_attempt1_expected_keys_incomplete.json",
+   "sourceSHA256": "01908d52f58df0dafed8c13aa3b4c222852015523e83445ac84a3fb8ccb296eb",
+   "publishedSHA256": "01908d52f58df0dafed8c13aa3b4c222852015523e83445ac84a3fb8ccb296eb",
+   "replacements": {}
+  },
+  {
+   "file": "PRESTART_05_closure.json",
+   "sourceSHA256": "f332714a3b62621700558f5e7556970b5b8f634d10aa8adbd5e6ca4fb298e113",
+   "publishedSHA256": "c7378fbfb92748fe7168096f1567b2280af2ae25f6a966771746b0e3c1be49d2",
+   "replacements": {}
+  },
+  {
+   "file": "PRESTART_06_histories.json",
+   "sourceSHA256": "a2b488214ed48f51833ac7b3440315bad53714084b9472a1264b9f6a898b5c97",
+   "publishedSHA256": "3a6f6dbdb1bdfc676e01859fc85c904468f4a1f9e94129ed422a0e2419f0bf91",
+   "replacements": {}
+  },
+  {
+   "file": "PRESTART_07_figures.json",
+   "sourceSHA256": "f4f34694df284e0ae88359fb9b32eb2c2f7400d2b9ba6d154e6f37921e4a776e",
+   "publishedSHA256": "5ae06724fd3549cb54a0f88be816bacf9883c9cf847bd65c82c367ccf81f803e",
+   "replacements": {}
+  },
+  {
+   "file": "PRESTART_08_figures2.json",
+   "sourceSHA256": "f2aa4d7df3108405580506bc1f36f19214c17f764c90293cbb701716e24c1830",
+   "publishedSHA256": "b9cff42c76e45bdc962210546c7d0ed09ef96c3d8be28df256ecbc249e507033",
+   "replacements": {}
+  },
+  {
+   "file": "REVOCATION_TREE_CHECK.txt",
+   "sourceSHA256": "5cb90b10718ab9cf7bcecfa8bfb8cd09d35d1555aea27200c89c66a768ec9789",
+   "publishedSHA256": "5cb90b10718ab9cf7bcecfa8bfb8cd09d35d1555aea27200c89c66a768ec9789",
+   "replacements": {}
+  },
+  {
+   "file": "msgRev.txt",
+   "sourceSHA256": "cb08a3b8d12cbe91f6fd4b829debf9289ad7ad236bd0a94d4232bbf073a2f330",
+   "publishedSHA256": "cb08a3b8d12cbe91f6fd4b829debf9289ad7ad236bd0a94d4232bbf073a2f330",
+   "replacements": {}
+  },
+  {
+   "file": "LP2B1S10_CAMPAIGN_ARCHIVE_RECORD.json",
+   "sourceSHA256": "6a51151272f7737c2a4d73775e770a984d1d61467776b73089fc0f0d9d0d7aec",
+   "publishedSHA256": "6a51151272f7737c2a4d73775e770a984d1d61467776b73089fc0f0d9d0d7aec",
+   "replacements": {}
+  },
+  {
+   "file": "LP2B1S10_PROTECTED_FINAL_eef3f63.json",
+   "sourceSHA256": "7a4de1084947da9435c862b4e37f9977f76e7776ce9604044f3d9eee103b0b1e",
+   "publishedSHA256": "7a4de1084947da9435c862b4e37f9977f76e7776ce9604044f3d9eee103b0b1e",
+   "replacements": {}
+  },
+  {
+   "file": "LP2B1S10_PROTECTED_FINAL_ADJUDICATION_eef3f63.json",
+   "sourceSHA256": "a1ce749c5244330ed5a5f0059edf922f9b717c440fddd821d06d7f8ba08609b1",
+   "publishedSHA256": "a1ce749c5244330ed5a5f0059edf922f9b717c440fddd821d06d7f8ba08609b1",
+   "replacements": {}
+  }
+ ]
+}

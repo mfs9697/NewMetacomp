@@ -1,0 +1,808 @@
+{
+  "schema": "NewMetacomp.G2.LP2B1S10.Tests.v1",
+  "passed": 95,
+  "total": 96,
+  "failedTests": [
+    "G18_S11_forecast_failure_information_unavailable"
+  ],
+  "physicalSolves": 0,
+  "token": "G2LP2B1S10|policy=c115a6533cd958a6e79308582ff11577033b7bf211ef8f4bf462a53e58f1af46|g2source=7e5683703bd104547ef5d013aa0253ad2819b59dc58693957e2d04b4707f0947|lp2source=357dfdcdb576d2866b9d1b41a14265300a14c30700d6475f995881041ba822ca|lp2a2source=f1d7e4d67b91968e16ebaead13be86667c7776ce48971ed5206c7f136fae7afd|lp2a3source=fa3bcecfa9cd3044253d5a72253e2058bccd044d32345f51650dcd775f42e002|lp2b1source=9c7a1260e3bde5b59e1d93c47bc99cc4d7b89f9b0cc6e874572fb378f1717bee|lp2b1eqsource=74a0edd827daca5714a1347705abc1429a7a573116ad3c438f9e5a1c12dfbf1f|closure=76614f269810c6970544bca0c1c0f84ebf9131935554ebd75e57e24f819f65f7|lp2b1s10source=48d88b2d51f668e34d9ef00a90afb1fda178966f0db9258399c0d1dd2448f4c7|parent=9f3c173fadd370ae3e455b3aef3d5aa4d1f3035faf6100d717d4175ae33f194b|qualification=773f42aef75b13542efc6a169c9f526f6e64597a8d359df0ab067abf6cf161df|eqcampaign=91ff13fa86617f8236b09c439f7048f4542520e79c31003c01f07957e5cf17b9|case=soft1|state=S10|admissions=1|seed=0.40|campaign=G2-LP2B1-S10-001|run=run_lp2b1_s10_v1",
+  "policySHA256": "c115a6533cd958a6e79308582ff11577033b7bf211ef8f4bf462a53e58f1af46",
+  "lp2b1s10SourceSHA256": "48d88b2d51f668e34d9ef00a90afb1fda178966f0db9258399c0d1dd2448f4c7",
+  "sourceCommit": "cedfa5bac7baa6a797d0c1762cb8ffd3fe01696f",
+  "tests": [
+    {
+      "name": "A0_no_GO_correct_token_refused_real_preflight",
+      "pass": true
+    },
+    {
+      "name": "A1_token_status_no_GO",
+      "pass": true
+    },
+    {
+      "name": "A2_run_receipt_summary_absent",
+      "pass": true
+    },
+    {
+      "name": "A3_single_target_one_attempt_seed040",
+      "pass": true
+    },
+    {
+      "name": "A4_preflight_bypass_refused",
+      "pass": true
+    },
+    {
+      "name": "A5_historical_roots_include_EQ_exclude_new",
+      "pass": true
+    },
+    {
+      "name": "A6_expected_quality_and_limits_unchanged",
+      "pass": true
+    },
+    {
+      "name": "A7_EQ_campaign_evidence_23_outputs_archive",
+      "pass": true
+    },
+    {
+      "name": "A8_parent_pins_issue",
+      "pass": true
+    },
+    {
+      "name": "A9_forbidden_names_include_A3_and_EQ",
+      "pass": true
+    },
+    {
+      "name": "B1_target_qualification_all_checks",
+      "pass": true
+    },
+    {
+      "name": "B2_tip_bitwise_S10_arc_65p4",
+      "pass": true
+    },
+    {
+      "name": "B3_guide_gap_matlab_bitwise_issue_within_1e12",
+      "pass": true
+    },
+    {
+      "name": "B4_independent_MTS_and_recurrence",
+      "pass": true
+    },
+    {
+      "name": "B5_shifted_EQ_predictor_not_used",
+      "pass": true
+    },
+    {
+      "name": "B6_failed_mesh_is_baseline_same_polyline",
+      "pass": true
+    },
+    {
+      "name": "B7_wrong_parent_pin_fails",
+      "pass": true
+    },
+    {
+      "name": "B8_wrong_failed_mesh_pin_fails",
+      "pass": true
+    },
+    {
+      "name": "B9_shifted_EQ_tip_as_target_fails",
+      "pass": true
+    },
+    {
+      "name": "B10_wrong_terminal_pin_fails",
+      "pass": true
+    },
+    {
+      "name": "B11_guide_gap_issue_value_beyond_1e12_fails",
+      "pass": true
+    },
+    {
+      "name": "B12_wrong_grandparent_link_fails",
+      "pass": true
+    },
+    {
+      "name": "D1_qualification_canonical_equals_pin",
+      "pass": true
+    },
+    {
+      "name": "D2_repeat_arrays_canonical_equal",
+      "pass": true
+    },
+    {
+      "name": "D3_metadata_digest_repeat_equal",
+      "pass": true
+    },
+    {
+      "name": "M1_exactly_7_passes",
+      "pass": true
+    },
+    {
+      "name": "M2_below_refuses",
+      "pass": true
+    },
+    {
+      "name": "M3_nan_refuses",
+      "pass": true
+    },
+    {
+      "name": "G1_no_GO_refused_real_gate",
+      "pass": true
+    },
+    {
+      "name": "G2_inert_GO_file_without_binding_refused",
+      "pass": true
+    },
+    {
+      "name": "G3_no_receipt_refused",
+      "pass": true
+    },
+    {
+      "name": "G4_receipt_other_token_refused",
+      "pass": true
+    },
+    {
+      "name": "G5_existing_ledger_ADMIT_refused_one_attempt",
+      "pass": true
+    },
+    {
+      "name": "G6_existing_case_folder_refused_one_attempt",
+      "pass": true
+    },
+    {
+      "name": "G7_historical_root_refused",
+      "pass": true
+    },
+    {
+      "name": "G8_memory_refusal_before_folder_and_admission",
+      "pass": true
+    },
+    {
+      "name": "G9_target_failure_HOLD_before_folder",
+      "pass": true
+    },
+    {
+      "name": "G10_injection_outside_tempdir_refused",
+      "pass": true
+    },
+    {
+      "name": "G11_test_roots_outside_test_root_refused",
+      "pass": true
+    },
+    {
+      "name": "G12_replay_root_inside_run_root_refused",
+      "pass": true
+    },
+    {
+      "name": "G13_real_geometry_digest_mismatch_HOLD_before_FEM",
+      "pass": true
+    },
+    {
+      "name": "G13b_hold_stage_geometry_attempt_19_real_digest",
+      "pass": true
+    },
+    {
+      "name": "G13c_verifier_partial_hold",
+      "pass": true
+    },
+    {
+      "name": "G14_real_geometry_fabricated_K_synthetic_STATE_TERMINAL",
+      "pass": true
+    },
+    {
+      "name": "G14b_verifier_accepts_synthetic_closure",
+      "pass": true
+    },
+    {
+      "name": "G14c_STATE_links_original_S9_and_qualification",
+      "pass": true
+    },
+    {
+      "name": "G15_one_attempt_no_retry_after_success",
+      "pass": true
+    },
+    {
+      "name": "G16_failed_solver_gates_HOLD_no_STATE",
+      "pass": true
+    },
+    {
+      "name": "G16b_verifier_partial_hold",
+      "pass": true
+    },
+    {
+      "name": "G17_negative_KI_MTS_HOLD_no_STATE",
+      "pass": true
+    },
+    {
+      "name": "G18_S11_forecast_failure_information_unavailable",
+      "pass": false
+    },
+    {
+      "name": "G18b_verifier_flags_forecast_discrepancy",
+      "pass": true
+    },
+    {
+      "name": "G19_pre_solve_memory_HOLD_after_MESH_PHASE",
+      "pass": true
+    },
+    {
+      "name": "G20_cached_operation_meshed_once_two_real_meshings_total",
+      "pass": true
+    },
+    {
+      "name": "J1_copy_verifies",
+      "pass": true
+    },
+    {
+      "name": "J2_extra_file_hold",
+      "pass": true
+    },
+    {
+      "name": "J3_missing_manifest_hold",
+      "pass": true
+    },
+    {
+      "name": "J4_tampered_MESH_link_hold",
+      "pass": true
+    },
+    {
+      "name": "J5_missing_ledger_ADMIT_hold",
+      "pass": true
+    },
+    {
+      "name": "J6_other_token_hold",
+      "pass": true
+    },
+    {
+      "name": "J7_other_parent_hold",
+      "pass": true
+    },
+    {
+      "name": "J8_stray_run_root_file_hold",
+      "pass": true
+    },
+    {
+      "name": "J9_no_records_outcome",
+      "pass": true
+    },
+    {
+      "name": "H1_valid_record_passes",
+      "pass": true
+    },
+    {
+      "name": "H2_mutation_refused_decision",
+      "pass": true
+    },
+    {
+      "name": "H2_mutation_refused_decisionUrl",
+      "pass": true
+    },
+    {
+      "name": "H2_mutation_refused_token",
+      "pass": true
+    },
+    {
+      "name": "H2_mutation_refused_campaignId",
+      "pass": true
+    },
+    {
+      "name": "H2_mutation_refused_runName",
+      "pass": true
+    },
+    {
+      "name": "H2_mutation_refused_target",
+      "pass": true
+    },
+    {
+      "name": "H2_mutation_refused_admissions",
+      "pass": true
+    },
+    {
+      "name": "H2_mutation_refused_physicalSolves",
+      "pass": true
+    },
+    {
+      "name": "H2_mutation_refused_attemptsPerSolve",
+      "pass": true
+    },
+    {
+      "name": "H2_mutation_refused_seedSpacing_mm",
+      "pass": true
+    },
+    {
+      "name": "H2_mutation_refused_approvedHead",
+      "pass": true
+    },
+    {
+      "name": "H2_mutation_refused_contractEvidenceFile",
+      "pass": true
+    },
+    {
+      "name": "H3_caller_token_mismatch_refused",
+      "pass": true
+    },
+    {
+      "name": "H4_missing_field_refused",
+      "pass": true
+    },
+    {
+      "name": "H5_extra_activation_file_refused",
+      "pass": true
+    },
+    {
+      "name": "H6_wrong_parent_refused",
+      "pass": true
+    },
+    {
+      "name": "H7_not_ancestor_refused",
+      "pass": true
+    },
+    {
+      "name": "H8_evidence_sha_mismatch_refused",
+      "pass": true
+    },
+    {
+      "name": "H9_evidence_failed_tests_refused",
+      "pass": true
+    },
+    {
+      "name": "H10_evidence_physical_solve_refused",
+      "pass": true
+    },
+    {
+      "name": "H11_evidence_other_token_refused",
+      "pass": true
+    },
+    {
+      "name": "H12_non_struct_refused",
+      "pass": true
+    },
+    {
+      "name": "I_real_git_valid",
+      "pass": true
+    },
+    {
+      "name": "I_real_git_wrong_parent",
+      "pass": true
+    },
+    {
+      "name": "I_real_git_extra_file",
+      "pass": true
+    },
+    {
+      "name": "I_real_git_post_revocation",
+      "pass": true
+    },
+    {
+      "name": "I_real_git_root_commit",
+      "pass": true
+    },
+    {
+      "name": "I_real_git_not_a_repo",
+      "pass": true
+    },
+    {
+      "name": "I_cmd_caret_defect_still_reproduced_HEAD_tilde_used",
+      "pass": true
+    },
+    {
+      "name": "I_metacharacter_argument_refused",
+      "pass": true
+    },
+    {
+      "name": "Z_no_physical_solve_sentinel_never_called",
+      "pass": true
+    },
+    {
+      "name": "Z_repository_roots_still_absent",
+      "pass": true
+    }
+  ],
+  "target": {
+    "checks": {
+      "parentRecords": true,
+      "parentIdentity": true,
+      "parentLinks": true,
+      "mtsIndependent": true,
+      "forecast": true,
+      "failedMesh": true,
+      "terminal": true,
+      "nominalClearance": true,
+      "notShiftedEq": true
+    },
+    "info": {
+      "mts": {
+        "theta_deg": -1.7328171539890624,
+        "thetaIndependent_deg": -1.7328171539890624,
+        "diff_rad": 0,
+        "stationarity": 0,
+        "parentMTS_deg_state": -1.7328171539890624
+      },
+      "forecast": {
+        "tip_mm": [
+          114.29544883822506,
+          63.185594911516127
+        ],
+        "tangent": [
+          0.4401270339243456,
+          0.897935517734407
+        ],
+        "heading_deg": 63.888013319156777,
+        "arc_mm": 65.399999999999991,
+        "parentMTS_deg": -1.7328171539890624,
+        "independentTipDiff_mm": 0
+      },
+      "nominal": {
+        "classification": "MATRIX_ADVANCE",
+        "guideRingGap_mm": [
+          4.6329563816383335,
+          34.900088262551904,
+          80.724292541508
+        ],
+        "gapMinusIssueValue_mm": -7.1054273576010019E-15,
+        "clearance": {
+          "segmentToRingPolygon_mm": [
+            19.634474474810748,
+            49.900868927518545,
+            95.724847576588857
+          ],
+          "segmentToHolePolygon_mm": [
+            32.33345911094672,
+            62.600414481244592,
+            108.42443999746432
+          ],
+          "tipToRingPolygon_mm": [
+            19.634474474810748,
+            49.900868927518545,
+            95.724847576588857
+          ],
+          "tipToHolePolygon_mm": [
+            32.33345911094672,
+            62.600414481244592,
+            108.42443999746432
+          ],
+          "segmentToNominalRing_mm": [
+            19.632956381638333,
+            49.900088262551904,
+            95.724292541508
+          ],
+          "tipToNominalRing_mm": [
+            19.632956381638333,
+            49.900088262551904,
+            95.724292541508
+          ],
+          "guideRingMargin_mm": [
+            4.6329563816383335,
+            34.900088262551904,
+            80.724292541508
+          ],
+          "qRingMargin_mm": [
+            16.032956381638332,
+            46.3000882625519,
+            92.124292541508012
+          ],
+          "segmentPlate_mm": [
+            112.53494070252768,
+            393.70455116177493,
+            59.5938528405785,
+            140.01440508848387
+          ],
+          "tipPlate_mm": [
+            114.29544883822506,
+            393.70455116177493,
+            63.185594911516127,
+            140.01440508848387
+          ],
+          "guidePlateMargin_mm": [
+            99.295448838225056,
+            378.70455116177493,
+            48.185594911516127,
+            125.01440508848387
+          ],
+          "qPlateMargin_mm": [
+            110.69544883822506,
+            390.10455116177491,
+            59.585594911516125,
+            136.41440508848387
+          ],
+          "nonadjacentSegment_mm": 3.9999999999999964,
+          "tipEarlierSegment_mm": 7.9990853563224373,
+          "rimEarlierMargin_mm": 4.3552387057614794,
+          "miterDenominator": 1.99954270430413
+        },
+        "tipToRingCircle_mm": [
+          19.632956381638333,
+          49.900088262551904,
+          95.724292541508
+        ]
+      }
+    },
+    "parentSHA256": "79ebecbc21b4d9425e3a2b82a9bc17270373a85f2a7c26d11cfe1e7c9b45aec6"
+  },
+  "driverRealGeometry": {
+    "stage": "STATE_ACCEPTED",
+    "geometry": {
+      "pass": true,
+      "checks": {
+        "attempt19": true,
+        "attemptCanonicalEqualsPin": true,
+        "joinPass": true,
+        "pairing": true,
+        "kinkedAudit34": true,
+        "phaseAudit": true,
+        "chords76": true,
+        "canonicalEqualsPin": true,
+        "canonicalEqualsAttempt": true,
+        "qualificationFilePin": true,
+        "qualificationArraysEqual": true,
+        "attemptArraysEqual": true,
+        "protectedTopology": true,
+        "ringPolygonsEqualArchived": true,
+        "stationCoverage": true
+      },
+      "expected": {
+        "expectedT3": true,
+        "expectedMinAngle": true,
+        "expectedMaxRatio": true,
+        "expectedChords": true,
+        "qParents2443": true,
+        "T3Limit": true,
+        "attemptGuide1mm": true
+      },
+      "canonicalSHA256": "54293d2a527f9bec33605ffea10c8f56af46a56291157f0d911cf68301b85bd2",
+      "metadataSHA256": "15829842b80c80923d1c09cb388769c0c933d13a2a7d7b812e15bac81c7ea242",
+      "chordsPerCircle": [
+        76,
+        76,
+        76
+      ],
+      "activeAreaGeometric_mm2": 1012.1525285981612,
+      "stations": {
+        "problemsNew": [],
+        "problemsArchived": [],
+        "nNew": 369,
+        "nArchived": 337,
+        "nearNew": 57,
+        "nearArchived": 57,
+        "nearMatched": 57,
+        "rangeNew": [
+          0,
+          65.399999999999991
+        ],
+        "rangeArchived": [
+          0,
+          65.399999999999991
+        ]
+      },
+      "attemptChecks": "19/19",
+      "attemptCanonicalSHA256": "54293d2a527f9bec33605ffea10c8f56af46a56291157f0d911cf68301b85bd2",
+      "attemptArraysSHA256": "79367eb3cadf12ce8c7e3aef6d8f65e6fc48b5066ec1afac4c7e9298bc03d990",
+      "T3": 30357,
+      "minAngle_deg": 23.179107436795395,
+      "maxNeighborRatio": 1.6015350873084404,
+      "topology": {
+        "pass": true,
+        "checks": {
+          "blockRows": true,
+          "function": true,
+          "injective": true,
+          "coordinates": true,
+          "nodalQ": true,
+          "qActiveRows": true,
+          "T3block": true,
+          "banks": true,
+          "tip": true,
+          "coincidenceOld": true,
+          "coincidenceNew": true
+        },
+        "blockNodes": 5953,
+        "bankPairsInBlock": 56,
+        "distinctBankDOFsInBlock": 226,
+        "tipOld": 1114,
+        "tipNew": 1114,
+        "tipOffsetFromPolyline_mm": [
+          0,
+          0
+        ]
+      },
+      "actualClassification": "MATRIX_ADVANCE",
+      "guideRingGap_mm": [
+        4.6329563816383335,
+        34.900088262551904,
+        80.724292541508
+      ]
+    },
+    "S11": {
+      "polyline_mm": [
+        [
+          101.6,
+          0
+        ],
+        [
+          101.6,
+          25.4
+        ],
+        [
+          102.39826203613242,
+          29.319537947471577
+        ],
+        [
+          103.25866686020588,
+          33.225904998672874
+        ],
+        [
+          104.24504715803435,
+          37.102379415982476
+        ],
+        [
+          105.35058232560786,
+          40.946568796496685
+        ],
+        [
+          106.57091154428718,
+          44.75587274840673
+        ],
+        [
+          107.90161973099126,
+          48.528036016591017
+        ],
+        [
+          109.33966475408087,
+          52.260599011580808
+        ],
+        [
+          110.883847446255,
+          55.950517684558555
+        ],
+        [
+          112.53494070252768,
+          59.5938528405785
+        ],
+        [
+          114.29544883822506,
+          63.185594911516127
+        ],
+        [
+          116.16376170776115,
+          66.722458920992011
+        ]
+      ],
+      "classification": "MATRIX_ADVANCE",
+      "guideRingGap_mm": [
+        2.320956528153058,
+        30.921106288872835,
+        76.7693251469581
+      ],
+      "clearancePass": true,
+      "tipToRingCircle_mm": [
+        17.320956528153058,
+        45.921106288872835,
+        91.7693251469581
+      ],
+      "note": "S11 forecast for information only: no mesh, admission or solve"
+    },
+    "files": 11,
+    "ledgerFiles": 4
+  },
+  "verifier": {
+    "j1": "VERIFIED_ACCEPTED",
+    "j2": [
+      "RECORD_SET: expected 11 files, found [S10/EXTRA.txt, S10/GEOMETRY_h040/ATTEMPT.json, S10/GEOMETRY_h040/ATTEMPT_ARRAYS.mat, S10/MESH.mat, S10/PHASE.mat, S10/PHASE.mat.manifest.json, S10/SOLUTION.mat, S10/SOLUTION.mat.manifest.json, S10/STATE.mat, S10/STATE.mat.manifest.json, TERMINAL.mat, TERMINAL.mat.manifest.json]"
+    ],
+    "j3": [
+      "RECORD_SET: expected 11 files, found [S10/GEOMETRY_h040/ATTEMPT.json, S10/GEOMETRY_h040/ATTEMPT_ARRAYS.mat, S10/MESH.mat, S10/PHASE.mat, S10/PHASE.mat.manifest.json, S10/SOLUTION.mat, S10/SOLUTION.mat.manifest.json, S10/STATE.mat, S10/STATE.mat.manifest.json, TERMINAL.mat]",
+      "MANIFEST: a record fails its manifest",
+      "READ: MATLAB:structRefFromNonStruct: Dot indexing is not supported for variables of this type."
+    ],
+    "j4": [
+      "CHECK_LINKS"
+    ],
+    "j5": [
+      "LEDGER: ADMIT keys must be exactly soft1_S10"
+    ],
+    "j6": [
+      "LEDGER: integrity, receipt or token",
+      "CHECK_TOKEN"
+    ],
+    "j7": [
+      "CHECK_PARENT",
+      "CHECK_TERMINAL"
+    ],
+    "j8": [
+      "RECORD_SET: run root must contain only soft1/"
+    ]
+  },
+  "realGit": {
+    "matlab": "9.14.0.2206163 (R2023a)",
+    "comSpec": "C:\\WINDOWS\\system32\\cmd.exe",
+    "git": "git version 2.53.0.windows.1",
+    "cases": [
+      {
+        "case": "valid",
+        "approvedHead": "414afcd9ed85e7aa70d61d070c7bfb355f878a3c",
+        "parentStatus": 0,
+        "parentValue": "414afcd9ed85e7aa70d61d070c7bfb355f878a3c",
+        "command": "git -C \"<fixture>\" rev-parse --verify HEAD~1",
+        "validatorPass": true,
+        "failed": [],
+        "externalPass": true
+      },
+      {
+        "case": "wrong_parent",
+        "approvedHead": "18721d60ae29cea7421e8b9c569c64b6710bdd53",
+        "parentStatus": 0,
+        "parentValue": "414afcd9ed85e7aa70d61d070c7bfb355f878a3c",
+        "command": "git -C \"<fixture>\" rev-parse --verify HEAD~1",
+        "validatorPass": false,
+        "failed": [
+          "activationBinding"
+        ],
+        "externalPass": false
+      },
+      {
+        "case": "extra_file",
+        "approvedHead": "414afcd9ed85e7aa70d61d070c7bfb355f878a3c",
+        "parentStatus": 0,
+        "parentValue": "414afcd9ed85e7aa70d61d070c7bfb355f878a3c",
+        "command": "git -C \"<fixture>\" rev-parse --verify HEAD~1",
+        "validatorPass": false,
+        "failed": [
+          "activationBinding"
+        ],
+        "externalPass": false
+      },
+      {
+        "case": "post_revocation",
+        "approvedHead": "414afcd9ed85e7aa70d61d070c7bfb355f878a3c",
+        "parentStatus": 0,
+        "parentValue": "d904c54b39c3203915003de27ce98bd43bf917d2",
+        "command": "git -C \"<fixture>\" rev-parse --verify HEAD~1",
+        "validatorPass": false,
+        "failed": [
+          "activationBinding"
+        ],
+        "externalPass": false
+      },
+      {
+        "case": "root_commit",
+        "approvedHead": "414afcd9ed85e7aa70d61d070c7bfb355f878a3c",
+        "parentStatus": 128,
+        "parentValue": "",
+        "command": "git -C \"<fixture>\" rev-parse --verify HEAD~1",
+        "validatorPass": false,
+        "failed": [
+          "ancestor",
+          "activationBinding"
+        ],
+        "externalPass": false
+      },
+      {
+        "case": "not_a_repo",
+        "approvedHead": "414afcd9ed85e7aa70d61d070c7bfb355f878a3c",
+        "parentStatus": 128,
+        "parentValue": "",
+        "command": "git -C \"<fixture>\" rev-parse --verify HEAD~1",
+        "validatorPass": false,
+        "failed": [
+          "ancestor",
+          "activationBinding"
+        ],
+        "externalPass": false
+      }
+    ],
+    "commits": {
+      "c0": "18721d60ae29cea7421e8b9c569c64b6710bdd53",
+      "c1": "414afcd9ed85e7aa70d61d070c7bfb355f878a3c",
+      "cA": "d904c54b39c3203915003de27ce98bd43bf917d2",
+      "cX": "f7e1f00a209f1faf5795228461b7a1f7470b74d2",
+      "cV": "634fb478830f11d16a6e1b483fbe427452e326d3",
+      "cR": "41567676f2605e2b4ec71fa865c0100b393adf3b"
+    }
+  },
+  "tempRootRemoved": true,
+  "wallSeconds": 50.5203395,
+  "options": {
+    "OutFile": "<repo>\\outputs\\g2_lp2b1s10_readiness_v1\\tests_v1\\LP2B1S10_TESTS.json",
+    "RealGeometry": true,
+    "RealGit": true
+  },
+  "matlab": "9.14.0.2206163 (R2023a)"
+}

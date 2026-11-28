@@ -1,0 +1,604 @@
+{
+ "schema": "NewMetacomp.G2.LP2B1S10.Policy.v1",
+ "status": "PROPOSED_NOT_AUTHORIZED",
+ "assignment": "G2-LP2-B1-S10, https://github.com/mfs9697/NewMetacomp/issues/81; start head d030ac2878ca8b11f2c085960496e8ad01ba1853 (PR #79)",
+ "scope": "Readiness of exactly ONE future physical admission and solve: soft1 S10 (mask 100, ratio 0.5, 4 mm increment, s = 65.4 mm) at the qualified 0.40 mm bank seed spacing, continuing the ORIGINAL accepted LP2-A3 soft1 S9 STATE. One attempt; no retry, resumption or fallback; S11 forecast for information only; no S11 mesh, admission or solve; no equivalence criterion on the target; no LP2-B2.",
+ "authority": {
+  "a3ScientificAcceptance": "https://github.com/mfs9697/NewMetacomp/pull/75#pullrequestreview-6069396048",
+  "b1GeometryAcceptance": "https://github.com/mfs9697/NewMetacomp/pull/77#pullrequestreview-6072320621",
+  "b1eqReadinessReview": "https://github.com/mfs9697/NewMetacomp/pull/79#pullrequestreview-6084428945",
+  "b1eqDemonstrationAcceptance": "https://github.com/mfs9697/NewMetacomp/pull/79#pullrequestreview-6085607255",
+  "startHead": "d030ac2878ca8b11f2c085960496e8ad01ba1853"
+ },
+ "campaignId": "G2-LP2B1-S10-001",
+ "target": {
+  "caseId": "soft1",
+  "stateIndex": 10,
+  "state": "S10",
+  "mask": [
+   1,
+   0,
+   0
+  ],
+  "ratio": 0.5,
+  "increment_mm": 4,
+  "arc_mm": 65.4,
+  "admissions": 1,
+  "physicalSolves": 1,
+  "attempts": 1,
+  "retry": false,
+  "resumption": false,
+  "fallback": false,
+  "adaptiveStep": false,
+  "expectedTip_mm": [
+   114.29544883822506,
+   63.18559491151613
+  ],
+  "expectedClassification": "MATRIX_ADVANCE",
+  "ring1GuideGap_mm": {
+   "matlabGuard": 4.6329563816383335,
+   "issueValue": 4.632956381638341,
+   "issueValueSource": "independent Python LP2-A3 analysis (LP2A3_ANALYSIS.json); |difference| <= 1e-12 mm required",
+   "matlabSource": "g2_lp2a3_guard on the full-precision candidate tip (LP2A3 record dump / LP2-B1 WP0 / attempt JSON)"
+  }
+ },
+ "parent": {
+  "kind": "ORIGINAL accepted LP2-A3 soft1 S9 STATE (sole authoritative parent; NOT the LP2-B1-EQ re-solve)",
+  "folder": "outputs/g2_lp2a3_paths_v1/run_lp2a3_s9_s11_v1/soft1/S9",
+  "STATE": {
+   "record": {
+    "path": "outputs/g2_lp2a3_paths_v1/run_lp2a3_s9_s11_v1/soft1/S9/STATE.mat",
+    "sha256": "79ebecbc21b4d9425e3a2b82a9bc17270373a85f2a7c26d11cfe1e7c9b45aec6"
+   },
+   "manifest": {
+    "path": "outputs/g2_lp2a3_paths_v1/run_lp2a3_s9_s11_v1/soft1/S9/STATE.mat.manifest.json",
+    "sha256": "b2f451373cb6ffc8424a522bab577629f0099f82b94c833bec99f90b960e8506"
+   }
+  },
+  "MESH": {
+   "path": "outputs/g2_lp2a3_paths_v1/run_lp2a3_s9_s11_v1/soft1/S9/MESH.mat",
+   "sha256": "5afd6e8199ca797ced1a73ba7584c29334abdad7d2413d1bc39a2e0385d1eae0"
+  },
+  "PHASE": {
+   "record": {
+    "path": "outputs/g2_lp2a3_paths_v1/run_lp2a3_s9_s11_v1/soft1/S9/PHASE.mat",
+    "sha256": "fe0ad27f471d052153edbebe6ecf39e525021f5051c4572b97e3f89907f0c83e"
+   },
+   "manifest": {
+    "path": "outputs/g2_lp2a3_paths_v1/run_lp2a3_s9_s11_v1/soft1/S9/PHASE.mat.manifest.json",
+    "sha256": "b797bf9e60f394d60eba04dc0e45464f88cc94fd5d640ca3cb5b8d717651f2bb"
+   }
+  },
+  "SOLUTION": {
+   "record": {
+    "path": "outputs/g2_lp2a3_paths_v1/run_lp2a3_s9_s11_v1/soft1/S9/SOLUTION.mat",
+    "sha256": "ae981011e8092115037b0ae910cd92d2e7e352b2fcb88677425dfd564abcc54b"
+   },
+   "manifest": {
+    "path": "outputs/g2_lp2a3_paths_v1/run_lp2a3_s9_s11_v1/soft1/S9/SOLUTION.mat.manifest.json",
+    "sha256": "48430b77e0c315394577abf2aa92e8612304c7c83dedb6920c1f7aa1c6e6ce71"
+   }
+  },
+  "ADMIT": {
+   "record": {
+    "path": "outputs/g2_lp2a3_campaign_ledger/G2-LP2A3-001/ADMIT_soft1_S9.mat",
+    "sha256": "d0ab9305e48a75ac73bca946bc94e9e6d29f69fad607867298175a717c90a216"
+   },
+   "manifest": {
+    "path": "outputs/g2_lp2a3_campaign_ledger/G2-LP2A3-001/ADMIT_soft1_S9.mat.manifest.json",
+    "sha256": "0aabbccd4acdf1c61bbedc0b95710c3a17cad4e4c7038e4ea4f2084f96a664fb"
+   }
+  },
+  "RECEIPT": {
+   "record": {
+    "path": "outputs/g2_lp2a3_campaign_ledger/G2-LP2A3-001/RECEIPT.mat",
+    "sha256": "b52014a9caf21e1cd135dbf4c1f7ce021d185a7ff4012fc18df2ab7f98443a7e"
+   },
+   "manifest": {
+    "path": "outputs/g2_lp2a3_campaign_ledger/G2-LP2A3-001/RECEIPT.mat.manifest.json",
+    "sha256": "3a6f692abb829a7ee26f425bdfc296dc5266d5b43e8bd64794034985db0a999b"
+   }
+  },
+  "grandparentS8": {
+   "path": "outputs/g2_lp2a_paths_v1/run_lp2a_s5_s8_v1/soft1/S8/STATE.mat",
+   "sha256": "67d92ab42a3cab540fce3b74f6478e85b11d0b54b527b7e815f6c44d159ad303"
+  },
+  "nominalGeometry": "clearanceGeometry stored in the soft1 S9 STATE (as the LP2-B1 WP1 target attempt)"
+ },
+ "failedA3S10": {
+  "note": "immutable evidence of the LP2-A3 soft1 S10 local NUMERICAL_HOLD (0.45 mm join failed globalNeighborRatioAtMost1p8); preserved, never resumed",
+  "TERMINAL": {
+   "record": {
+    "path": "outputs/g2_lp2a3_paths_v1/run_lp2a3_s9_s11_v1/soft1/TERMINAL.mat",
+    "sha256": "8f0289fdd4f9c665fb1666d50aa0a1a3126210cc5f05b70e048d9616328761e7"
+   },
+   "manifest": {
+    "path": "outputs/g2_lp2a3_paths_v1/run_lp2a3_s9_s11_v1/soft1/TERMINAL.mat.manifest.json",
+    "sha256": "58b1abc4dd9773efa75b78049e9216491e2dfb9acebbb7a86bf5980b4a118dc6"
+   }
+  },
+  "FAILED_MESH": {
+   "path": "outputs/g2_lp2a3_paths_v1/run_lp2a3_s9_s11_v1/soft1/S10/FAILED_MESH.mat",
+   "sha256": "ab54ecaf0ff41bb7cd16cff0eb62c29cb9104d56490201337367bca6b54b8e12"
+  },
+  "HOLD": {
+   "record": {
+    "path": "outputs/g2_lp2a3_paths_v1/run_lp2a3_s9_s11_v1/soft1/S10/HOLD.mat",
+    "sha256": "dc4043f300dd459fceb4280022f8f1d2e1130c859ee8bb3b0d0a480e9d909ba0"
+   },
+   "manifest": {
+    "path": "outputs/g2_lp2a3_paths_v1/run_lp2a3_s9_s11_v1/soft1/S10/HOLD.mat.manifest.json",
+    "sha256": "01648627e4b029dba1f56f5bc80b2c07da9a007bdea510d47a7b4faf949a5e0e"
+   }
+  },
+  "ADMIT": {
+   "record": {
+    "path": "outputs/g2_lp2a3_campaign_ledger/G2-LP2A3-001/ADMIT_soft1_S10.mat",
+    "sha256": "fbe2ad38d4fe3072c1d00656c87c99bd661ef294c11e57a47541aa299863d297"
+   },
+   "manifest": {
+    "path": "outputs/g2_lp2a3_campaign_ledger/G2-LP2A3-001/ADMIT_soft1_S10.mat.manifest.json",
+    "sha256": "6d05bd1b1c606ead133219e2c581138c26adfa41b22c0786780af0cf3629f0cd"
+   }
+  },
+  "expectedSavedSummary": {
+   "T3": 30387,
+   "minAngle_deg": 30.126847,
+   "maxNeighborRatio": 1.841237,
+   "joinGatesPassed": 12,
+   "joinGatesTotal": 13,
+   "failedGate": "globalNeighborRatioAtMost1p8"
+  },
+  "baselineUse": "protected-block baseline of the 0.40 mm admission (same geometry), exactly as the LP2-B1 WP1 target attempt"
+ },
+ "qualification": {
+  "attempt": "T_soft1_S10_h040",
+  "arrays": {
+   "path": "outputs/g2_lp2b1_geometry_v1/wp1_attempt2/T_soft1_S10_h040/ATTEMPT_ARRAYS.mat",
+   "sha256": "086b6671a733bafad3874dee8d50c84bc52e6bfaa6ba0174caae09995c2f2a88"
+  },
+  "attemptJson": {
+   "path": "outputs/g2_lp2b1_geometry_v1/wp1_attempt2/T_soft1_S10_h040/ATTEMPT.json",
+   "sha256": "73f296f7f13e8a9e77b522c0d1247604d2137299bc5ffae7da1072d68c6af4b7"
+  },
+  "repeatArrays": {
+   "path": "outputs/g2_lp2b1_geometry_v1/wp1_attempt2/T_soft1_S10_h040_REPEAT/ATTEMPT_ARRAYS.mat",
+   "sha256": "f13e163a762613c2a600d7d3961b190729bbe3f08da9c7a024982c6530fdff1a"
+  },
+  "repeatJson": {
+   "path": "outputs/g2_lp2b1_geometry_v1/wp1_attempt2/T_soft1_S10_h040_REPEAT/ATTEMPT.json",
+   "sha256": "a376c3927c5ad0ff4f3c7052abe9e534312b8e929861a90500a471b0e4007035"
+  },
+  "wp1Target": {
+   "path": "outputs/g2_lp2b1_geometry_v1/wp1_attempt2/LP2B1_WP1_TARGET.json",
+   "sha256": "9fa97df9a2ed8ef69ed759ffd173b90fa00cafc6b0ec34e933a3bbff37acf494"
+  },
+  "wp1Repeat": {
+   "path": "outputs/g2_lp2b1_geometry_v1/wp1_attempt2/LP2B1_WP1_REPEAT.json",
+   "sha256": "6f5145402eed2f48327ed4a004ebfc5e02244fa97eecce5d0baede2608b6f57b"
+  },
+  "canonicalSHA256": "54293d2a527f9bec33605ffea10c8f56af46a56291157f0d911cf68301b85bd2",
+  "T3": 30357,
+  "seedSpacing_mm": 0.4,
+  "minAngle_deg": 23.179107436795395,
+  "maxNeighborRatio": 1.6015350873084404,
+  "b1ArchiveSHA256": "5a5a4179c987d04dcf14cf3d2552b8f9f1d9c370c370b0a6bd6c930748bbbd42",
+  "b1ArchiveRecord": {
+   "path": "docs/research/G2_LP2B1_evidence/closure/LP2B1_ARCHIVE_RECORD.json",
+   "sha256": "db58840eda9c22dd90fd12081b5c1117cf0056a7c6eefaec0dd34ac14d38ec89"
+  }
+ },
+ "b1eqEvidence": {
+  "archiveSHA256": "1d739f80fe77597e3749de7e939abf8f572bc48f27bb703c28d02f94634d6e8a",
+  "archiveName": "NewMetacomp_G2_LP2B1EQ_Campaign_20261127.zip",
+  "archiveMembers": 136,
+  "archiveRecord": {
+   "path": "docs/research/G2_LP2B1EQ_evidence/campaign/post/LP2B1EQ_CAMPAIGN_ARCHIVE_RECORD.json",
+   "sha256": "5aeb0378fa664ee72dd48dfdade91b32433331aa3afc30d33b1e156e0ed8598a"
+  },
+  "policy": {
+   "path": "matlab/g2/lp2b1eq/G2_LP2B1EQ_POLICY_v1.json",
+   "sha256": "b113a7c6d7b2e8fe9950d817ccca3c851c05f1e347c73f66c604b9c41e54eecb"
+  },
+  "independentAudit": {
+   "path": "docs/research/G2_LP2B1EQ_evidence/campaign/verify/LP2B1EQ_AUDIT_v3.json",
+   "sha256": "4a128792a284ba1040622327950a7444e294fa28a23d44bcf73d8670675eeba9"
+  },
+  "outputs": [
+   {
+    "path": "outputs/LP2B1EQ_CAMPAIGN.json",
+    "sha256": "7dbddb7aab58786c1d5b00bcdba3de2ca9d8deba691a62125166a8998c1dea75"
+   },
+   {
+    "path": "outputs/g2_lp2b1_eq_receipts/G2-LP2B1-EQ-001/RECEIPT.mat",
+    "sha256": "fd8e0b3c50006e9b1e93aa96f19ea39258f29bc5e93e9671e918aa6f025ef9df"
+   },
+   {
+    "path": "outputs/g2_lp2b1_eq_receipts/G2-LP2B1-EQ-001/RECEIPT.mat.manifest.json",
+    "sha256": "ce677661d484e8997b4f416d595c33de064d9824e78d1ad58af6f539d661da80"
+   },
+   {
+    "path": "outputs/g2_lp2b1_eq_v1/run_lp2b1_eq_v1/EQB-H-S10/COMPARISON.json",
+    "sha256": "8c0cf24d4ab0557c998eae2639f8792e0d58f6e867b0992dc199c623d0d59ea3"
+   },
+   {
+    "path": "outputs/g2_lp2b1_eq_v1/run_lp2b1_eq_v1/EQB-H-S10/COMPARISON.mat",
+    "sha256": "7b5db9180797bb148eb96e3af0aa418ac1b75df292048de90379daa00670ffd9"
+   },
+   {
+    "path": "outputs/g2_lp2b1_eq_v1/run_lp2b1_eq_v1/EQB-H-S10/COMPARISON.mat.manifest.json",
+    "sha256": "6d969f2677a631d5762c4eb820c10337d52c1a62d7e9692e897e82266feef30b"
+   },
+   {
+    "path": "outputs/g2_lp2b1_eq_v1/run_lp2b1_eq_v1/EQB-H-S10/GEOMETRY_h040/ATTEMPT.json",
+    "sha256": "07bd7215c0db39bfc1542fc513d784cec8d686ec640d9304dde31e4d82ca7fb5"
+   },
+   {
+    "path": "outputs/g2_lp2b1_eq_v1/run_lp2b1_eq_v1/EQB-H-S10/GEOMETRY_h040/ATTEMPT_ARRAYS.mat",
+    "sha256": "16828b03582b66a48ff5512f0b4e02fce137158e75addc5f6f13bf0ce5ee75ef"
+   },
+   {
+    "path": "outputs/g2_lp2b1_eq_v1/run_lp2b1_eq_v1/EQB-H-S10/MESH.mat",
+    "sha256": "3e5cfd549ec865f9bc7b71633eb35da129923ccce53bc2ba55ac64dcf431ff65"
+   },
+   {
+    "path": "outputs/g2_lp2b1_eq_v1/run_lp2b1_eq_v1/EQB-H-S10/PHASE.mat",
+    "sha256": "f8f5f1d6ba0970737401459dde9034fc789eb191c0a919d2a96bc13afd86bdb7"
+   },
+   {
+    "path": "outputs/g2_lp2b1_eq_v1/run_lp2b1_eq_v1/EQB-H-S10/PHASE.mat.manifest.json",
+    "sha256": "f69382b23e04c1c343ae808ddbd0500154c515451b15f7b1056f3723a42cbdca"
+   },
+   {
+    "path": "outputs/g2_lp2b1_eq_v1/run_lp2b1_eq_v1/EQB-H-S10/SOLUTION.mat",
+    "sha256": "f57c4bbbf60b755cac8391737698930c9b756b5b7dfc32d954675042b8c3f4ee"
+   },
+   {
+    "path": "outputs/g2_lp2b1_eq_v1/run_lp2b1_eq_v1/EQB-H-S10/SOLUTION.mat.manifest.json",
+    "sha256": "e042be1890d39f558e59fb9d9c0bcc6b2cb018275670e415a1aac0c6054eb0e2"
+   },
+   {
+    "path": "outputs/g2_lp2b1_eq_v1/run_lp2b1_eq_v1/EQB-soft1-S9/COMPARISON.json",
+    "sha256": "94ab9b3509921672ce0d1aff2afc0f4341972fea1a77dfd406fbe5efcc95516f"
+   },
+   {
+    "path": "outputs/g2_lp2b1_eq_v1/run_lp2b1_eq_v1/EQB-soft1-S9/COMPARISON.mat",
+    "sha256": "71aa928bea5df9df289059ae0c0e5a4eee3014caae046fe3e4319f21748a47ce"
+   },
+   {
+    "path": "outputs/g2_lp2b1_eq_v1/run_lp2b1_eq_v1/EQB-soft1-S9/COMPARISON.mat.manifest.json",
+    "sha256": "9e261efa025241a8728ba779b285026cfa47cd642c05025d18ccf9acef4400d3"
+   },
+   {
+    "path": "outputs/g2_lp2b1_eq_v1/run_lp2b1_eq_v1/EQB-soft1-S9/GEOMETRY_h040/ATTEMPT.json",
+    "sha256": "2ed2ed5489fed8f17f77bd5cbaed80d6dccd5aad9274daa4af459cc3bc6aea3f"
+   },
+   {
+    "path": "outputs/g2_lp2b1_eq_v1/run_lp2b1_eq_v1/EQB-soft1-S9/GEOMETRY_h040/ATTEMPT_ARRAYS.mat",
+    "sha256": "58f17b2fa2aaba1391366681b59608de82a2f45995c2efbc5258d4e23174855b"
+   },
+   {
+    "path": "outputs/g2_lp2b1_eq_v1/run_lp2b1_eq_v1/EQB-soft1-S9/MESH.mat",
+    "sha256": "f95d7846674a60b165b8c4586f189b4024bbc30e2961a70666e1dc405a469cc6"
+   },
+   {
+    "path": "outputs/g2_lp2b1_eq_v1/run_lp2b1_eq_v1/EQB-soft1-S9/PHASE.mat",
+    "sha256": "146c0ca9fdcd0683ea6c4cf39e80f5613e2d8735e8872bee929f2f859f5145e7"
+   },
+   {
+    "path": "outputs/g2_lp2b1_eq_v1/run_lp2b1_eq_v1/EQB-soft1-S9/PHASE.mat.manifest.json",
+    "sha256": "223210b5f43e3aa65d55bf73b26d318711e96a0e38322a15b353edae9ebc8a5d"
+   },
+   {
+    "path": "outputs/g2_lp2b1_eq_v1/run_lp2b1_eq_v1/EQB-soft1-S9/SOLUTION.mat",
+    "sha256": "40425a1eddea6625ba3f692c682941015db85c6fe99c3271f7d1ded3b4e023ad"
+   },
+   {
+    "path": "outputs/g2_lp2b1_eq_v1/run_lp2b1_eq_v1/EQB-soft1-S9/SOLUTION.mat.manifest.json",
+    "sha256": "a34543467ab2cbde87ff5cb528d55555fd6e7acf04904129df56c24d8b3eec43"
+   }
+  ],
+  "acceptance": "SCIENTIFIC_ACCEPT_LP2B1_EQ_DEMONSTRATION / EQUIVALENT_AT_0p40 (qualification evidence of the 0.40 mm family; NOT a proof that the target is equivalent or converged)"
+ },
+ "policyPins": {
+  "lp1": {
+   "path": "matlab/g2/G2_LP1_POLICY_v2.json",
+   "sha256": "074d7edc981920537726314f781f24b41ac7224c18d594d6a1b15343084e5091"
+  },
+  "lp2": {
+   "path": "matlab/g2/lp2/G2_LP2A_POLICY_v1.json",
+   "sha256": "093a546b9bae54d8fab0026420c8d85dced85f0e0e6ed212d597b3fd1aa6eec5"
+  },
+  "lp2a2": {
+   "path": "matlab/g2/lp2a2/G2_LP2A2_EQ_POLICY_v1.json",
+   "sha256": "6f2c290b37d4f8291f428ec8b9e0a886fe6b31fc901bee5781f2518e67c94756"
+  },
+  "lp2a3": {
+   "path": "matlab/g2/lp2a3/G2_LP2A3_POLICY_v1.json",
+   "sha256": "7a6e17f8baa85c6e6f10186bfab3a9c10c9363e0acb5e532c00095961bf45d43"
+  },
+  "lp2b1Pins": {
+   "path": "matlab/g2/lp2b1/G2_LP2B1_PINS_v1.json",
+   "sha256": "fbef586dcbff895d7dc77e5ce3ad007a4e209516514182cc4ebd426fbba1b2f6"
+  },
+  "lp2b1Prereg": {
+   "path": "matlab/g2/lp2b1/G2_LP2B1_PREREG_v1.json",
+   "sha256": "3d51140b80075cf27dd21820f16e65ceaa1456ea7a512acbc6ffe9888c70f9b1"
+  },
+  "lp2b1AmendmentA1": {
+   "path": "matlab/g2/lp2b1/G2_LP2B1_PREREG_AMENDMENT_A1.json",
+   "sha256": "78564d86d5a979700a590f16ef8b6a746655f7d55b199eab1a9f2ef607880c50"
+  },
+  "lp2b1eq": {
+   "path": "matlab/g2/lp2b1eq/G2_LP2B1EQ_POLICY_v1.json",
+   "sha256": "b113a7c6d7b2e8fe9950d817ccca3c851c05f1e347c73f66c604b9c41e54eecb"
+  },
+  "trajectory": {
+   "path": "matlab/g2/G2_TRAJECTORY_POLICY_v1.json",
+   "sha256": "a593e6874dbf1cb1f063b2d7877e6ac5fc19724208d59931d90ecfb5d5ff14f5"
+  }
+ },
+ "sourcePins": {
+  "g2SourceSHA256": "7e5683703bd104547ef5d013aa0253ad2819b59dc58693957e2d04b4707f0947",
+  "lp2SourceSHA256": "357dfdcdb576d2866b9d1b41a14265300a14c30700d6475f995881041ba822ca",
+  "lp2a2SourceSHA256": "f1d7e4d67b91968e16ebaead13be86667c7776ce48971ed5206c7f136fae7afd",
+  "lp2a3SourceSHA256": "fa3bcecfa9cd3044253d5a72253e2058bccd044d32345f51650dcd775f42e002",
+  "lp2b1SourceSHA256": "9c7a1260e3bde5b59e1d93c47bc99cc4d7b89f9b0cc6e874572fb378f1717bee",
+  "lp2b1eqSourceSHA256": "74a0edd827daca5714a1347705abc1429a7a573116ad3c438f9e5a1c12dfbf1f",
+  "closureSourceSHA256": "76614f269810c6970544bca0c1c0f84ebf9131935554ebd75e57e24f819f65f7",
+  "lp2b1s10SourceSHA256": "d544fcfde1cfaa1e7118e0c5959551bdddb1cd477739bcf55376c45fe8388ab9",
+  "definition": "g2: sorted relative-path sha256 lines of matlab/g2/*.m and matlab/g2/vendor_p010_a14d8872/*.m; lp2, lp2a2, lp2a3, lp2b1, lp2b1eq, lp2b1s10 and scripts/g2/lp2a2/closure: sorted \"name sha256\" lines of the folder *.m; SHA-256 of the newline-joined string (g2_lp1_digest)"
+ },
+ "meshFamily": {
+  "function": "UNCHANGED g2_lp2b1eq_geometry (accepted LP2-B1-EQ admission): g2_lp2b1_attempt 19/19 + identical g2_lp2a2_join(P,k+2,t,[xo,{SeedSpacing_mm,0.40}],40000) + g2_lp2a2_pairing_audit + g2_lp1_audit + g2_m4b_ring_activation; baseline = the stored FAILED_MESH of the same geometry; NO ladder, NO other spacing",
+  "seedSpacing_mm": 0.4,
+  "ExteriorOptions": {
+   "BottomVertices_mm": [
+    25.4,
+    482.6
+   ],
+   "TopVertices_mm": 254,
+   "TipGuideRadius_mm": 15,
+   "TipGuideHface_mm": 1.5,
+   "MaxT3Elements": 40000
+  },
+  "expected": {
+   "T3": 30357,
+   "minAngle_deg": 23.179107436795395,
+   "maxNeighborRatio": 1.6015350873084404,
+   "chordsPerCircle": [
+    76,
+    76,
+    76
+   ],
+   "qActiveT6Parents": 2443,
+   "coreRadius_mm": 3.0,
+   "collarRadius_mm": 3.3,
+   "limits": {
+    "minAngle_deg": 20,
+    "maxNeighborRatio": 1.8,
+    "maxT3": 40000
+   }
+  },
+  "canonicalDigest": "SHA-256 over, in this order, X3,T3,X6,T6,upperBankT6,lowerBankT6,nodalQ,qActiveT6Rows,crackPolyline: for each, int64 size vector bytes then double(a(:)) column-major bytes (little endian), identical to canon() of g2_lp2b1_attempt",
+  "metadataNotInDigest": "elementRows, extraVertexXY, physicalTipNode, gates and the remaining saved summary fields are compared with the qualification ATTEMPT_ARRAYS.mat by isequal (summary except the timing field nativeMeshingSeconds); ring polygons and 76 chords per circle from the audit",
+  "protectedTopology": "g2_lp2b1eq_topology versus the stored FAILED_MESH: element-local bijection of the 2916 protected T6 rows, coordinates and nodal q bitwise, distinct coincident bank IDs except the single physical tip node, tip within the inherited 1e-9 mm of the polyline end with identical old/new coordinates"
+ },
+ "bvp": {
+  "model": "idealized pin/roller vertical point load",
+  "P_N": 1,
+  "thickness_mm": 12.7,
+  "E_MPa": 3268.115,
+  "nu": 0.35,
+  "plane": "stress",
+  "pin_mm": [
+   25.4,
+   0
+  ],
+  "roller_mm": [
+   482.6,
+   0
+  ],
+  "load_mm": [
+   254,
+   203.2
+  ]
+ },
+ "qAnnuli_mm": [
+  [
+   0.4,
+   2.6
+  ],
+  [
+   0.2,
+   1
+  ],
+  [
+   0.4,
+   1.6
+  ],
+  [
+   0.8,
+   2.6
+  ],
+  [
+   1.2,
+   2.4
+  ]
+ ],
+ "geometry": {
+  "centres_mm": [
+   [
+    152.4,
+    69.85
+   ],
+   [
+    152.4,
+    120.65
+   ],
+   [
+    152.4,
+    171.45
+   ]
+  ],
+  "holeR_mm": 6.35,
+  "ringR_mm": 19.05,
+  "plate_mm": [
+   508,
+   203.2
+  ],
+  "expectedChords": 76,
+  "tipGuideRadius_mm": 15,
+  "collarRadius_mm": 3.3,
+  "channelHalfWidth_mm": 0.02,
+  "minSegmentRingClearance_mm": 1.52,
+  "minQClearance_mm": 1,
+  "minNonadjacentClearance_mm": 0.16,
+  "distanceTolerance_mm": 1e-09,
+  "nominalCircleEnvelopeRequired": true
+ },
+ "ringProximityGuard": {
+  "function": "g2_lp2a3_guard",
+  "rule": "min_i(||tip - c_i|| - R_ring - 15 mm) >= 1 mm for EVERY ring i, irrespective of activation; evaluated on the full-precision candidate tip BEFORE any admission or mesh; exactly 1 mm passes, below fails; no rounding",
+  "minGap_mm": 1.0,
+  "guideRadius_mm": 15,
+  "ringR_mm": 19.05,
+  "objectTypes": "active ring -> PHYSICAL_INTERFACE (INTERFACE_APPROACH), passive ring -> NUMERICAL_RING (PASSIVE_CONTOUR_APPROACH); a proximity stop is neither an interface encounter nor crack arrest"
+ },
+ "resources": {
+  "matlabRelease": "R2023a",
+  "pdeRequired": true,
+  "oneMatlabProcess": true,
+  "freeRAMBeforeMATLABStart_GiB_min": 8.2,
+  "freeRAMInsideMATLAB_GiB_min": 7,
+  "preflightGuard_GiB": 5,
+  "archiveDevices": 2,
+  "memoryTiming": "g2_lp2a2_eq_memgate(7) immediately before each admission (failure before the state folder exists: pre-admission memory HOLD, global) and again immediately before each solve (failure after admission: global HOLD); the inherited 5 GiB guard of g2_lp1_admit_state and of the solve is unchanged; no automatic retry"
+ },
+ "tolerances": {
+  "nodeMatch_mm": 1e-09,
+  "nearTipRadius_mm": 3.3,
+  "mtsStationarity_rel": 1e-12,
+  "ring1GuideGapIssueValue_mm": 1e-12,
+  "note": "no C1-C11 equivalence criterion on the target (no valid 0.45 mm S10 solution exists); nodeMatch/nearTipRadius only serve the unchanged admission station check"
+ },
+ "physics": "unchanged: g2_m4b_ring_activation(mask 100) on the audited phase owner map -> g2_m4b_sif_partial (G2_TRAJECTORY_POLICY_v1 BVP, 16 numerical gates, signed K, COD, five-annulus EDI + 4x4) -> g2_mts_direction; matrix E = 3268.115 MPa, ring 1 E*0.5, nu 0.35, plane stress, P = 1 N, thickness 12.7 mm",
+ "acceptance": [
+  "target qualification (parent pins/links/identity, signed-MTS forecast bitwise = FAILED_MESH polyline = TERMINAL candidate = pinned tip, nominal clearance and 1 mm guard MATRIX_ADVANCE)",
+  "pre-admission 7 GiB memory gate, then g2_lp1_admit_state (5 GiB guard, no partial-state retry) with the campaign ledger ADMIT (exactly one, key soft1_S10)",
+  "g2_lp2b1eq_geometry PASS (attempt 19/19, canonical = pin, 14 arrays = qualification, pairing 10/10, audit 34/34, four-mask phase audit, 76 chords, protected topology, ring polygons, stations) and expected T3/min angle/max ratio exactly",
+  "actual-polygon clearance on the 0.40 mm clearance geometry and the 1 mm guide-to-every-ring guard: MATRIX_ADVANCE (as LP2-A3 computeState)",
+  "7 GiB and 5 GiB memory gates before the solve",
+  "all 16 g2_m4b_sif_partial gates (K.pass)",
+  "KI > 0 and admissible tensile MTS root (status OK, stationarity <= 1e-12)",
+  "kink admissibility recorded (as LP2-A3)",
+  "STATE written only after all of the above; TERMINAL with the S11 forecast for information only"
+ ],
+ "protected": {
+  "knownManifestSHA256": "e756d64aee23adde0ea4a1662d0e9e77dbae3eb27c1195145a0056367fff1f35",
+  "knownFiles": 832,
+  "b1OutputFiles": 43,
+  "previousUnionFiles": 891,
+  "previousUnionManifestSHA256": "e351f5aca3629da34f99bd25e738bba33ea515ad6d4b6dc7c848bcb4e975d054",
+  "b1eqCampaignOutputs": 23
+ },
+ "historicalRoots": [
+  "outputs/g2_a1_campaign_ledger",
+  "outputs/g2_a1_campaign_log",
+  "outputs/g2_a1_contract_20261122_221128_091",
+  "outputs/g2_a1_fixed_path_v1",
+  "outputs/g2_a1_geometry_v1",
+  "outputs/g2_a1_prephysical_batch",
+  "outputs/g2_lp1_a0_campaign_log",
+  "outputs/g2_lp1_campaign_ledger",
+  "outputs/g2_lp1_matrix_paths_v1",
+  "outputs/g2_lp2a2_eq_v1",
+  "outputs/g2_lp2a3_campaign_ledger",
+  "outputs/g2_lp2a3_paths_v1",
+  "outputs/g2_lp2a_campaign_ledger",
+  "outputs/g2_lp2a_paths_v1",
+  "outputs/g2_lp2b1_eq_receipts",
+  "outputs/g2_lp2b1_eq_v1",
+  "outputs/g2_lp2b1_geometry_v1",
+  "outputs/g2_lp2b1eq_readiness_v1",
+  "outputs/g2_m4_alt_family_v1",
+  "outputs/g2_m4b_r1_s2alt_v1",
+  "outputs/g2_m4b_ring_factorial_v1",
+  "outputs/g2_m5x6_campaign_ledger",
+  "outputs/g2_m5x6_crossed_v1",
+  "outputs/g2_material_evolution_v1",
+  "outputs/g2_material_trajectories_v1",
+  "outputs/g2_p010_isolated",
+  "outputs/g2_protected_mesh",
+  "outputs/g2_trajectory_chain_v1_attempt2",
+  "outputs/g2_wp3_kinked_mesh",
+  "outputs/g2_wp3_state",
+  "outputs/lp2a2_figures"
+ ],
+ "authorization": {
+  "goPath": "matlab/g2/lp2b1s10/G2_LP2B1S10_GO.json",
+  "goPresent": false,
+  "decision": "GO_LP2B1_S10",
+  "campaignId": "G2-LP2B1-S10-001",
+  "campaignScope": "LP2B1_S10_SOFT1_SINGLE_STATE_0p40",
+  "runName": "run_lp2b1_s10_v1",
+  "runRoot": "outputs/g2_lp2b1_s10_v1/run_lp2b1_s10_v1",
+  "receiptRoot": "outputs/g2_lp2b1_s10_receipts/G2-LP2B1-S10-001",
+  "summaryPath": "outputs/LP2B1S10_CAMPAIGN.json",
+  "forbiddenRunNames": [
+   "run_20261122_lp1_v1",
+   "run_a0_lp1_repro_v1",
+   "run_a1_family_b_s4_v1",
+   "run_m5x6_crossed_s4_b9_v1",
+   "run_lp2a_s5_s8_v1",
+   "run_lp2a3_s9_s11_v1",
+   "run_lp2b1_eq_v1"
+  ],
+  "forbiddenCampaignIds": [
+   "G2-LP1-A0-001",
+   "G2-A1-FB-001",
+   "G2-M5-X6-001",
+   "G2-LP2A-001",
+   "G2-LP2A2-EQ-001",
+   "G2-LP2A3-001",
+   "G2-LP2B1-EQ-001"
+  ],
+  "contractEvidenceDir": "docs/research/G2_LP2B1S10_evidence/",
+  "activation": "GO file only, committed directly on the reviewed head (validator: ancestor + HEAD~1 == approvedHead + sole changed file, via g2_lp2a2_git); single external entry g2_lp2b1s10_external_run writes the ledger RECEIPT; the driver refuses a physical call without it",
+  "resumption": "none"
+ },
+ "records": {
+  "run": [
+   "soft1/S10/GEOMETRY_h040/ATTEMPT.json",
+   "soft1/S10/GEOMETRY_h040/ATTEMPT_ARRAYS.mat",
+   "soft1/S10/MESH.mat",
+   "soft1/S10/PHASE.mat",
+   "soft1/S10/PHASE.mat.manifest.json",
+   "soft1/S10/SOLUTION.mat",
+   "soft1/S10/SOLUTION.mat.manifest.json",
+   "soft1/S10/STATE.mat",
+   "soft1/S10/STATE.mat.manifest.json",
+   "soft1/TERMINAL.mat",
+   "soft1/TERMINAL.mat.manifest.json"
+  ],
+  "ledger": [
+   "RECEIPT.mat",
+   "RECEIPT.mat.manifest.json",
+   "ADMIT_soft1_S10.mat",
+   "ADMIT_soft1_S10.mat.manifest.json"
+  ],
+  "onFailure": "HOLD.json in soft1/S10 (never overwritten); partial records preserved; no TERMINAL, no STATE"
+ },
+ "excluded": [
+  "physical FEM during readiness",
+  "live GO during readiness",
+  "new STATE during readiness",
+  "S11 mesh, admission or solve",
+  "other seed spacings",
+  "equivalence criteria on the target",
+  "LP2-B2",
+  "retries, resumption or fallback",
+  "alteration of the closed LP2-A3 ledger or any historical record",
+  "merges"
+ ]
+}
